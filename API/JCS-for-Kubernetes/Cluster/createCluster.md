@@ -43,8 +43,14 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters
 |**masterCidr**|String|True| |k8s的master的cidr|
 |**accessKey**|String|True| |用户的AccessKey，插件调用open-api时的认证凭证|
 |**secretKey**|String|True| |用户的SecretKey，插件调用open-api时的认证凭证|
-|**userMetrics**|Boolean|False| |是否启用用户自定义监控，默认不启用|
+|**userMetrics**|Boolean|False| |deprecated 在addonsConfig中同时指定，将被addonsConfig的设置覆盖 <br>是否启用用户自定义监控|
+|**addonsConfig**|AddonConfigSpec[]|False| |集群组件配置|
 
+### AddonConfigSpec
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |组件名称，目前支持customMetrics、logging|
+|**enabled**|Boolean|False| |是否开启该组件，默认为false。|
 ### NodeGroupSpec
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

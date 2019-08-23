@@ -19,6 +19,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码；默认为1|
 |**pageSize**|Integer|False| |分页大小；默认为20；取值范围[10, 100]|
+|**tags**|TagFilter[]|False| |Tag筛选条件|
 |**filters**|Filter[]|False| |name - 节点组名称，模糊匹配，支持单个      <br>id - 节点组 id，支持多个     <br>clusterId - 根据clusterId查询        <br>clusterName - 根据名称查询 cluster             <br>|
 
 ### Filter
@@ -27,6 +28,11 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups
 |**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
+### TagFilter
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |Tag键|
+|**values**|String[]|False| |Tag值|
 
 ## 返回参数
 |名称|类型|描述|
@@ -54,10 +60,24 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups
 |**agId**|String|node group的ag id ，通过agid可以查询该node group下的实例|
 |**instanceTemplateId**|String|node group的ag id对应的实例模板|
 |**state**|String|状态  [pending,running,resizing,reconciling,deleting,deleted,error,running_with_error(部分节点有问题)]|
+|**tags**|Tag[]| |
 |**updateTime**|String|更新时间|
 |**stateMessage**|String|状态变更原因|
-|**autoRepair**|String|是否开启自动修复|
+|**autoRepair**|Boolean|是否开启自动修复|
+|**progress**|NodeGroupProgress|控制节点操作进度|
 |**createdTime**|String|创建时间|
+### NodeGroupProgress
+|名称|类型|描述|
+|---|---|---|
+|**nodeGroupId**|String|节点组 id|
+|**action**|String|操作类型, upgrade, downgrade, rollback|
+|**totalCount**|Integer|总node个数|
+|**updatedCount**|Integer|升级完成node个数|
+### Tag
+|名称|类型|描述|
+|---|---|---|
+|**key**|String|Tag键|
+|**value**|String|Tag值|
 ### NodeNetwork
 |名称|类型|描述|
 |---|---|---|

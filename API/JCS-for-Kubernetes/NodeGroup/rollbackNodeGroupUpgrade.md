@@ -1,24 +1,22 @@
-# setUserMetrics
+# rollbackNodeGroupUpgrade
 
 
 ## 描述
-Deprecated 建议使用 setAddons 接口 <br>设置用户自定义监控状态
+回滚未升级完的节点组
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:setUserMetrics
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId}:rollbackNodeGroupUpgrade
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**clusterId**|String|True| |集群 ID|
+|**nodeGroupId**|String|True| |节点组 ID|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**enabled**|Boolean|False| |是否开启自定义监控|
+无
 
 
 ## 返回参数

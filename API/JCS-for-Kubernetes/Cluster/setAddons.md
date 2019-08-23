@@ -1,14 +1,14 @@
-# setUserMetrics
+# setAddons
 
 
 ## 描述
-Deprecated 建议使用 setAddons 接口 <br>设置用户自定义监控状态
+设置集群组件
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:setUserMetrics
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:setAddons
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,8 +18,13 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:se
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**enabled**|Boolean|False| |是否开启自定义监控|
+|**addonsConfig**|AddonConfigSpec[]|True| |需要设置的集群组件配置|
 
+### AddonConfigSpec
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |组件名称，目前支持customMetrics、logging|
+|**enabled**|Boolean|False| |是否开启该组件，默认为false。|
 
 ## 返回参数
 |名称|类型|描述|
