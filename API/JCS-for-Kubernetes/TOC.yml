@@ -21,6 +21,16 @@ items:
       href: Cluster/modifyCluster.md
     - name: 设置用户自定义监控
       href: Cluster/setUserMetrics.md
+    - name: 设置集群组件
+      href: Cluster/setAddons.md
+    - name: 设置自动升级
+      href: Cluster/setAutoUpgrade.md
+    - name: 查询集群操作进度
+      href: Cluster/describeProgress.md
+    - name: 触发升级
+      href: Cluster/upgradeCluster.md
+    - name: 终止升级
+      href: Cluster/abortUpgrade.md
   - name: 节点组
     items:
     - name: 创建节点组
@@ -37,6 +47,8 @@ items:
       href: NodeGroup/setAutoRepair.md
     - name: 设置节点组大小
       href: NodeGroup/setNodeGroupSize.md
+    - name: 回滚未升级完的节点组
+      href: NodeGroup/rollbackNodeGroupUpgrade.md
   - name: 配额
     items:
     - name: 查询配额
@@ -45,3 +57,13 @@ items:
     items:
     - name: 查询版本信息
       href: ServiceConfig/describeVersions.md
+    - name: 查询服务配置信息
+      href: ServiceConfig/describeImages.md
+    - name: 查询节点版本
+      href: ServiceConfig/describeNodeVersion.md
+    - name: 查询集群服务配置信息
+      href: ServiceConfig/describeServerConfig.md
+    - name: 查询可升级的控制节点版本
+      href: ServiceConfig/describeUpgradableMasterVersions.md
+    - name: 查询可升级的节点版本
+      href: ServiceConfig/describeUpgradableNodeVersions.md
