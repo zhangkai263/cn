@@ -213,7 +213,12 @@ items:
         href: Live-Video/describeLivePornData.md
       - name: 查询播放URL排行
         href: Live-Video/describeUrlRanking.md
-
+  - name: 证书管理
+    items:
+      - name: 查询证书
+        href: Live-Video/describeLiveDomainCertificate.md
+      - name: 设置证书
+        href: Live-Video/setLiveDomainCertificate.md
   - name: 鉴权相关
     items:
       - name: 直播推流鉴权
