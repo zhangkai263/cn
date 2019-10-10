@@ -1,12 +1,12 @@
-# MySQL 性能测试
+# 性能测试步骤
 针对不同的云数据库 MySQL 规格，他们的最大连接数和最大 IOPS 是不一样的，参见[这里](../Introduction/Specifications/MySQL-Specifications.md)。
 
 下面是针对云数据库 MySQL 的性能测试教程
 
 ## 测试环境
 * 所有测试均在华北-北京，可用区A完成
-* 测试用的云主机规格：4C 16GB
-* 测试用的云主机镜像：CentOS 6.5 64位
+* 测试用的云主机规格：8C 32GB
+* 测试用的云主机镜像：CentOS 7.4 64位
 * 测试用的云数据库 MySQL 版本：5.7
 
 ## 测试工具
@@ -14,13 +14,13 @@
 SysBench 是一个基于 LuaJIT 的可脚本的多线程基准测试工具。它最常用于数据库基准测试，但也可以用于创建不涉及数据库服务器的任意复杂的工作负载。
 
 #### 安装
-1. sysbench 下载地址，[点击下载](https://github.com/akopytov/sysbench/archive/1.0.zip)
+1. sysbench 下载地址，[点击下载](https://github.com/akopytov/sysbench/archive/1.0.17.zip)
 2. 安装命令
 
 ```
 $ yum install gcc gcc-c++ autoconf automake make libtool bzr mysql-devel
-$ unzip 1.0.zip
-$ cd sysbench-1.0
+$ unzip sysbench-1.0.17.zip
+$ cd sysbench-1.0.17
 $ ./autogen.sh
 $ ./configure --prefix=/usr
 $ make
@@ -38,19 +38,19 @@ $ make install
 ### 准备数据
 
 ```
-$ sysbench ./share/sysbench/oltp_read_write.lua --table_size=10000000 --db-driver=mysql --tables=10 --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX prepare
+$ sysbench ./share/sysbench/oltp_read_write.lua --table_size=10000000 --tables=64 --threads=32 --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX prepare
 ```
 
 ### 性能压测
 
 ```
-$ sysbench ./share/sysbench/oltp_read_write.lua --tables=10 --threads=32 --max-requests=999999999 --time=3600 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX run
+$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --max-requests=999999999 --time=1800 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX run
 ```
 
 ### 环境清理
 
 ```
-$ sysbench ./share/sysbench/oltp_read_write.lua --tables=10 --threads=32 --max-requests=999999999 --time=3600 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX cleanup
+$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --max-requests=999999999 --time=3600 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX cleanup
 ```
 
 ## 测试模型
