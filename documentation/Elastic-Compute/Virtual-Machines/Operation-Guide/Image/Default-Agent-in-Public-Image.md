@@ -78,9 +78,15 @@ https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-wind
 https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-win-deploy.ps1 <br>
 https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/MD5.exe <br>
 
-2、打开powershll，进入安装包所在的目录（C:\jcloud）执行下述命令进行安装 <br>
+2、在下载目录使用powershell执行下述指令，卸载旧版本（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
+```
+.\jcloud-jcs-agent-win-deploy.ps1 uninstall
+```
+
+3、打开powershll，进入安装包所在的目录（C:\jcloud）执行下述命令进行安装 <br>
 ```
 .\jcloud-jcs-agent-win-deploy.ps1 install
+PS C:\Program Files\JD.com\jCloud\Agent\Scripts\Windows> .\InitializeInstance.ps1 （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
 ```
 
 3、执行`ps -ef`命令看到JCSAgentCore、MonitorPlugin和UpgradePlugin三个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
