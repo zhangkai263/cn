@@ -32,6 +32,7 @@
       - name: 定义物模型
         href: Getting-Started/Product_Model.md
   - name: 操作指南
+    items:
       - name: 创建产品
         href: Operation-Guide/Create-Product.md
       - name: 添加单个设备
