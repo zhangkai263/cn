@@ -3,11 +3,8 @@
 
 受系统升级和组件演进的客观因素影响，早期官方镜像中可能未安装以下组件，建议您核查当前系统的安装情况后逐一完成安装。
 
-    * 请注意以下安装顺序要求：
-      1. 私有镜像导入安装时：
-         - 如在导入前安装，请在外部环境下安装JCS-Agent，导入启动主机后再安装ifrit；
-         - 如在导入后安装，请在使用导入镜像创建的主机中，安装JCS-Agent并重启主机，再行安装ifrit；
-      2. 镜像内agent更新以获得新功能时：请在安装JCS-Agent后重启主机，再行安装ifrit。
+    * 请注意：
+      私有镜像导入安装场景时，请在外部环境下安装除ifrit以外的其他agent，导入京东云环境后再行安装ifrit。
     
 
 | 组件名称    | 相关进程名称    | 主要功能     | 不安装有何影响    |
@@ -29,7 +26,7 @@
 ### 组件介绍
 JCS-Agent是京东云自研的云主机核心组件，可提供诸如云主机基本信息（密码、密钥）注入、用户数据注入、Windows系统KSM激活、监控数据上报等功能。
 
-2018年8月-12月之间官方镜像陆续升级，完成了JCS-Agent的默认安装，早期官方镜像中存在安装cloud-init和qemu-guest-agent的情况，此类镜像依然具有主机基本信息注入和监控上报功能，但用户数据注入、Windows系统KMS激活及后续新增功能均无法支持，如您当前使用的是早期agent建议您更换为JCS-Agent（如您当前使用的JCS-Agent为低于1.0.728的版本，建议您参照下方操作进行新版本的安装，以便获得Ifrit的自动升级管理功能）。
+2018年8月-12月之间官方镜像陆续升级，完成了JCS-Agent的默认安装，早期官方镜像中存在安装cloud-init和qemu-guest-agent的情况，此类镜像依然具有主机基本信息注入和监控上报功能，但用户数据注入、Windows系统KMS激活及后续新增功能均无法支持，如您当前使用的是早期agent建议您更换为JCS-Agent（如您当前使用的JCS-Agent为低于1.0.728的版本，建议您参照下方操作进行新版本的安装，以便获得Ifrit的自动升级管理功能。
 
 云市场镜像安装JCS-Agent的情况视镜像发布时间（基于何版本的官方镜像制作）和服务商制作情况，如您依赖JCS-Agent提供的某些特殊功能，请咨询云市场确认镜像内agent情况后再行使用。
 
@@ -61,12 +58,18 @@ Windows：`wmic process where caption="MonitorPlugin.exe" get caption,commandlin
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux-deploy.py <br>
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux.zip <br>
 
-2、在存放安装包和脚本的目录中执行下述命令进行安装。<br>
+2、在下载目录执行下述指令，卸载旧版本（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
 ```
-python jcloud-jcs-agent-linux-deploy.py install
+python jcloud-jcs-agent-linux-deploy.py uninstall
 ```
 
-3、执行`ps -ef`看到JCSAgentCore、MonitorPlugin和UpgradePlugin三个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
+3、在下载目录执行下述指令，安装最新版本。<br>
+```
+python jcloud-jcs-agent-linux-deploy.py install
+python /usr/local/share/jcloud/agent/scripts/linux/entry.py （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
+```
+
+4、执行`ps -ef`看到JCSAgentCore、MonitorPlugin和UpgradePlugin三个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
 
 **Windows:**<br>
 1、下载安装包、安装脚本和MD5工具，将其下载至同一目录中（比如： C:\jcloud）。<br>
