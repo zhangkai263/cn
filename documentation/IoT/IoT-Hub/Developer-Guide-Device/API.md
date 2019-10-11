@@ -24,9 +24,7 @@ uint32_t iot_mqtt_generate_msgid();
 "data": {}
 }
 ```
-  Msgid 用于判断上下行消息对
-  Version 判断当前的协议版本
-  Code   应用状态码 类型为iot_mqtt_reply_code_t;
+  Msgid 用于判断上下行消息对Version 判断当前的协议版本 Code   应用状态码 类型为iot_mqtt_reply_code_t;
   Message 用于错误信息描述
 
 ## 判断topic类型

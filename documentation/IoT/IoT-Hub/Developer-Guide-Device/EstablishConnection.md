@@ -28,6 +28,7 @@
 
 参数说明：
 
+
 | **iot_mqtt_param_t****参数名** | **参数类型**            | **描述**             |
 | ------------------------------ | ----------------------| -------------------- |
 | port                           | uint16_t              | MQTT Broker端口      |
@@ -38,7 +39,7 @@
 | pub_key                        | char*                 | 认证 MQTT Broker 的 CA 证书    |
 | clean_session                  | uint8_t               | 是否清除 MQTT 会话     |
 | request_timeout_ms             | uint32_t              | MQTT 消息请求的超时设置      |
-| keepalive_interval_ms          | uint32_t              | MQTT 心跳间隔
+| keepalive_interval_ms          | uint32_t              | MQTT 心跳间隔 |
 | write_buf_size                 | uint32_t              | size of write buffer |
 | read_buf_size                  | uint32_t              | size of read buffer  |
 | handle_event                  | iot_mqtt_event_handle_t | MQTT 事件处理回调函数   |
