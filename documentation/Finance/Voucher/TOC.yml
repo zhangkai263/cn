@@ -1,9 +1,9 @@
-name: 提货券管理
+  name: 提货券
   href: 
   items:
   - name: 提货券介绍
-    herf: Billing-method/Prepay.md
+    href: Voucher/Product-Overview.md
   - name: 提货券常见问题
-    herf: Billing-rule/Subscription.md
+    href: Voucher/Faq.md
 
 
