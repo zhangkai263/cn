@@ -167,7 +167,7 @@ https://iaas-cns-download.s3.cn-north-1.jdcloud-oss.com/JdogMonitor/jdog-op-agen
 2、运行以下指令进行安装。<br>
 ```
 mkdir -p /usr/local/share/jcloud/jdog-monitor
-tar zxvf jdog-op-agent-master-fbe96b07-0306202642.tar -C /usr/local/share/jcloud/jdog-monitor
+tar zxvf jdog-op-agent-master-7a35746b-0709091136.tar -C /usr/local/share/jcloud/jdog-monitor
 /usr/local/share/jcloud/jdog-monitor/scripts/jdog_service install
 ```
 
