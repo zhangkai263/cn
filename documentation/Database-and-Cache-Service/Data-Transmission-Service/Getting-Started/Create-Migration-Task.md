@@ -20,7 +20,7 @@
 
 3. 在创建迁移任务页，填写任务名称、源库信息、目的库信息。
 
-   ![](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-001.png)
+   ![](../../../../image/Data-Transmission-Service/dts-001.png)
 
    任务名称：
 
@@ -47,7 +47,7 @@
 
 4. 先写完成，点击**下一步**，进入下一步选择迁移类型与迁移对象。
 
-   ![1568966127085](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-002.png)
+   ![1568966127085](../../../../image/Data-Transmission-Service/dts-002.png)
 
    迁移类型：可选择结构迁移、全量迁移、增量迁移。
 
