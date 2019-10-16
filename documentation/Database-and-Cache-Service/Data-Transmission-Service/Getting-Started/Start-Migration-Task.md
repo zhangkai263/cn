@@ -10,7 +10,7 @@
 
 2. 等待预检查完成，可在预检查弹窗查看进度与检查结果。
 
-   ![1568967659421](C:\Users\yinxingtao\AppData\Roaming\Typora\typora-user-images\1568967659421.png)
+   ![1568967659421](../../../../image/Data-Transmission-Service/dts-006.png)
 
 3. 预检查完成，点击下一步，执行数据迁移。
 
