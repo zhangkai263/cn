@@ -2,7 +2,7 @@
 
 ## 业务架构
 
-![1568968591708](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-003.png)
+![1568968591708](../../../../image/Data-Transmission-Service/dts-003.png)
 
 **说明**
 
@@ -14,7 +14,7 @@
 
 ## 数据迁移基本原理
 
-![1568968924973](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-004.png)
+![1568968924973](../../../../image/Data-Transmission-Service/dts-004.png)
 
 **说明：**
 
