@@ -56,3 +56,6 @@ https://monitor.jdcloud-api.com/v2/regions/{regionId}/metrics/{metric}/lastDowns
 |返回码|描述|
 |---|---|
 |**200**|查看某资源的最后一个点|
+
+
+
