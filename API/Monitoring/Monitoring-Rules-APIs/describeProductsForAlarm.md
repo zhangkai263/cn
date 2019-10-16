@@ -50,3 +50,5 @@ https://monitor.jdcloud-api.com/v2/groupAlarms:products
 |返回码|描述|
 |---|---|
 |**200**|查询可用于创建规则的product列表|
+
+

@@ -98,3 +98,6 @@ https://monitor.jdcloud-api.com/v2/groupAlarmsHistory
 |返回码|描述|
 |---|---|
 |**200**|查询告警历史|
+
+
+

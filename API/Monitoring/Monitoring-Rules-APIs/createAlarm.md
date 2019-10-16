@@ -109,3 +109,5 @@ https://monitor.jdcloud-api.com/v2/groupAlarms
 |返回码|描述|
 |---|---|
 |**200**|创建规则返回结果|
+
+

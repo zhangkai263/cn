@@ -43,3 +43,5 @@ https://monitor.jdcloud-api.com/v2/groupAlarms/{alarmId}/contacts
 |返回码|描述|
 |---|---|
 |**200**|查询规则联系人|
+
+
