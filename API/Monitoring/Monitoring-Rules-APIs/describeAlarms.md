@@ -116,3 +116,5 @@ https://monitor.jdcloud-api.com/v2/groupAlarms
 |返回码|描述|
 |---|---|
 |**200**|查询规则列表|
+
+
