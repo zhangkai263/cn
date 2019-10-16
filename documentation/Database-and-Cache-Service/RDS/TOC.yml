@@ -370,8 +370,14 @@
         href: Best-Practices/Upgrade-Database-Version/Upgrade-MySQL.md 
   - name: 教程 
     items:
-    - name: MySQL 性能测试 
-      href: Tutorial/MySQL-Performance-Test.md 
+    - name: 性能测试 
+    items:
+        - name: MySQL 性能测试 
+        items:
+            - name: 性能测试步骤 
+            href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Step.md 
+            - name: 性能测试结果 
+            href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Result.md 
   - name: 常见问题
     items:
     - name: FAQ
