@@ -26,7 +26,7 @@ kubernetes集群(系统)： 需要创建kubernetes集群时，开启了“集群
 
 **聚合方式**   
 多个维度聚合成1个维度时，多维度值之间的聚合方式。直观可以理解为多条上报的数据线合并为1条线时，多条线之间合并处理的统计方式，提供： avg、sum、max、min 4 中选项。包含如下两种场景。  
-假设上报的了countError 这个监控指标，其上报维度如下：
+假设上报的了countError 这个监控指标，其上报维度如下：  
 ①env=sc, modules=management, service=monitor  
 ②env=yf,modules=management,service=monitor  
 ③env=cs,service=monitor  
