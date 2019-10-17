@@ -6,7 +6,7 @@
 
 ### 查看监控图  
 1.登录京东云控制台，点击管理->云监控->自定义监控，进入监控图查询页面。  
- ![查询监控图](../../../../../image/Cloud-Monitor/CustomMetric/chart-view_0.png)  
+![查询监控图](../../../../../image/Cloud-Monitor/CustomMetric/chart-view_0.png)  
 
 2.根据需求配置地域、命名空间、监控指标、聚合方式、 指标维度的信息。各个字段的含义可查看[查看监控图](https://docs.jdcloud.com/cn/monitoring/chart-view)。
 
@@ -15,8 +15,8 @@
 
 ### 配置报警
 
-1.在上边步骤中查询的出的监控图中，点击“配置报警”按钮，打开“添加报警规则”页面。
- ![添加报警规则](../../../../../image/Cloud-Monitor/CustomMetric/create_alram.png)
+1.在上边步骤中查询的出的监控图中，点击“配置报警”按钮，打开“添加报警规则”页面。  
+![添加报警规则](../../../../../image/Cloud-Monitor/CustomMetric/create_alram.png)
 
 2.根据需求，配置如下信息：  
 - 设置基本信息， 规则名称、地域、命名空间、监控指标、聚合方式及监控维度，同查询监控图中配置的一致，可根据需要调整。 
