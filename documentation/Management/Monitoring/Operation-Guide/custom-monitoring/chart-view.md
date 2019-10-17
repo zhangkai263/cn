@@ -1,7 +1,7 @@
 # 查看监控图
 
-指定维度查询监控数据， 支持查看上报的原始上报的监控数据，也支持查询聚合维度的监控数据。页面布局如下：页面布局信息如下：  
-![系统模板](../../../../../image/Cloud-Monitor/CustomMetric/chart-view.png)  
+&nbsp&nbsp&nbsp&nbsp 指定维度查询监控数据， 支持查看上报的原始上报的监控数据，也支持查询聚合维度的监控数据。页面布局如下：
+![系统模板](.. /../../../../image/Cloud-Monitor/CustomMetric/chart-view.png)  
 
 
 ### 查询条件区域  
