@@ -13,7 +13,7 @@
 ![创建密钥弹窗](/image/Key-Management-Service/Key-Management/创建密钥弹窗2.png)
 
 ### OpenAPI创建密钥
-请参见： [OpenAPI创建密钥](/API/Key-Management-Service/Key-Management-Service/createKey.md)
+请参见： [OpenAPI创建密钥](/API/Key-Management-Service/Key-Management-Service/createKey.md) 
 
 
 # 相关参考
