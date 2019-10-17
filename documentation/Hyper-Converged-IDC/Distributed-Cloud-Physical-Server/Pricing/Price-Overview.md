@@ -48,6 +48,7 @@
    <tr>
        <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽</B></td>
        <td colspan="2"><B>包年包月</B></td>
    </tr>
@@ -56,8 +57,9 @@
        <td><B>元/年</B></td>
    </tr>
    <tr>
-      <td rowspan="6">电信</td>
-      <td rowspan="6">华东-台州<br/>
+      <td rowspan="12">电信</td>
+      <td rowspan="12">华东-台州<br/>
+      <td rowspan="6"><B>带宽</B></td>
       <td>1Mbps</td>
       <td>19</td>
       <td>228</td>
@@ -83,10 +85,41 @@
      <td>1140</td>
    </tr>
    <tr>
-     <td>6Mbps及以上，n为带宽值，单价为19</td>
-     <td>5M总价+(n-5)*单价</td>
+     <td>6Mbps及以上，n为带宽值</td>
+     <td>n*19*12</td>
      <td>95+(n-5)*19</td>
   </tr>
+  <tr>
+        <td rowspan="6"><B>extra-bw-up</B></td>
+        <td>1Mbps</td>
+        <td>4</td>
+        <td>48</td>
+    </tr>
+    <tr>
+        <td>2Mbps</td>
+        <td>8</td>
+        <td>96</td>
+    </tr>
+    <tr>
+        <td>3Mbps</td>
+        <td>12</td>
+        <td>144</td>
+    </tr>
+    <tr>
+        <td>4Mbps</td>
+        <td>16</td>
+        <td>192</td>
+    </tr>
+    <tr>
+        <td>5Mbps</td>
+        <td>20</td>
+        <td>240</td>
+    </tr>
+    <tr>
+        <td>6Mbps及以上，n为带宽值</td>
+        <td>n*4</td>
+        <td>n*4*12</td>
+    </tr>
 </table>
 
 
