@@ -4,7 +4,7 @@
 
 ### 控制台创建密钥
 
-在密钥列表页中，点击“创建”按钮。
+在密钥列表页中，点击“创建”按钮。 
 
 ![创建密钥](/image/Key-Management-Service/Key-Management/创建密钥2.png)
 
