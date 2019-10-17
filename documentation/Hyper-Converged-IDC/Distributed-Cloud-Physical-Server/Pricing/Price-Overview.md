@@ -86,8 +86,8 @@
    </tr>
    <tr>
      <td>6Mbps及以上，n为带宽值</td>
+     <td>n*19</td>
      <td>n*19*12</td>
-     <td>95+(n-5)*19</td>
   </tr>
   <tr>
         <td rowspan="6"><B>额外上行带宽</B></td>
