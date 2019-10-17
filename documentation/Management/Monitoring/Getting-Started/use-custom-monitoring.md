@@ -16,7 +16,7 @@
 ### 配置报警
 
 1.在上边步骤中查询的出的监控图中，点击“配置报警”按钮，打开“添加报警规则”页面。  
-![添加报警规则](../../../../../image/Cloud-Monitor/CustomMetric/create_alram.png)
+![添加报警规则](../../../../image/Cloud-Monitor/CustomMetric/create_alram.png)
 
 2.根据需求，配置如下信息：  
 - 设置基本信息， 规则名称、地域、命名空间、监控指标、聚合方式及监控维度，同查询监控图中配置的一致，可根据需要调整。 
