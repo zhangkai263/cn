@@ -5,6 +5,10 @@
     href: Real-Name-Verification.md
   - name: 个人实名认证操作指引
     href: Personal-Account-Verification.md
+      - name: 实名手机认证
+        href: Personal-Account-Phone.md
+      - name: 扫脸认证
+        href: Personal-Account-Face.md
   - name: 企业实名认证操作指引
     href: Business-Account-Verification.md
   - name: 企业实名认证信息更新
