@@ -6,7 +6,7 @@
 
 ### 查看监控图  
 1.登录京东云控制台，点击管理->云监控->自定义监控，进入监控图查询页面。  
-![查询监控图](../../../../../image/Cloud-Monitor/CustomMetric/chart-view_0.png)  
+![查询监控图](../../../../image/Cloud-Monitor/CustomMetric/chart-view_0.png)  
 
 2.根据需求配置地域、命名空间、监控指标、聚合方式、 指标维度的信息。各个字段的含义可查看[查看监控图](https://docs.jdcloud.com/cn/monitoring/chart-view)。
 
