@@ -2,7 +2,7 @@
 
 迁移任务启动后将先执行预检查，检查源库、目标库是否可连通及版本、设置等是否满足迁移要求，预检查通过后，才可执行数据库迁移。
 
-以下为不同数据库类型的检查项，请
+以下为不同数据库类型的检查项，请在创建任务前提前检查相关项。
 
 
 
@@ -17,7 +17,6 @@
 | 源端BinlogMode     | 检查源端binlog_format是ROW                                   |
 | 源端BinlogRowImage | 检查源端binlog_row_image是FULL                               |
 | 源端Schema         | 检查源端是否存在数据校验库`_jdts_check__xxxx`                |
-| *源端Table引擎*    | 不检查                                                       |
 | 源端Table          | 检查源端是否存设置的待迁移Table                              |
 | 源端Table主键      | 检查源端Table是否有主键                                      |
 | 源端Table外键      | 检查源端是否有外键                                           |
