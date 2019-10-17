@@ -90,7 +90,7 @@
      <td>95+(n-5)*19</td>
   </tr>
   <tr>
-        <td rowspan="6"><B>extra-bw-up</B></td>
+        <td rowspan="6"><B>额外上行带宽</B></td>
         <td>1Mbps</td>
         <td>4</td>
         <td>48</td>
