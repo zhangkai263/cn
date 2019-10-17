@@ -36,7 +36,7 @@
 ```
 <BucketName>.<Endpoint>
 ```
-[外网域名- endpoint ](../../API-Reference-S3-Compatible/Regions-And-Endpoints.md)
+[外网域名-endpoint](../../API-Reference-S3-Compatible/Regions-And-Endpoints.md)
 
 自定义域名绑定成功后，OSS中存储文件的访问地址可使用自定义域名。例如，您的存储空间example位于华北-北京，对象文件名称为test.jpg，绑定的自定义域名为hello-world.com，则该对象访问地址为：
 
