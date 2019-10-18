@@ -50,11 +50,11 @@
        <td rowspan="2"><B>节点</B></td>
        <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽</B></td>
-       <td colspan="2"><B>包年包月</B></td>
+       <td ><B>包年包月</B></td>
    </tr>
    <tr>
        <td><B>元/月</B></td>
-       <td><B>元/年</B></td>
+     
    </tr>
    <tr>
       <td rowspan="12">电信</td>
@@ -62,63 +62,57 @@
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
       <td>19</td>
-      <td>228</td>
+      
    </tr>
    <tr>
       <td>2Mbps</td>
       <td>38</td>
-      <td>456</td>
+      
    </tr>
    <tr>
      <td>3Mbps</td>
      <td>57</td>
-     <td>684</td>
+     
    </tr>
    <tr>
      <td>4Mbps</td>
      <td>76</td>
-     <td>912</td>
+     
    </tr>
    <tr>
      <td>5Mbps</td>
      <td>95</td>
-     <td>1140</td>
+     
    </tr>
    <tr>
      <td>6Mbps及以上，n为带宽值</td>
      <td>n*19</td>
-     <td>n*19*12</td>
+     
   </tr>
   <tr>
-        <td rowspan="6">额外上行带宽</td>
+    <td rowspan="6">额外上行带宽</td>
         <td>1Mbps</td>
         <td>4</td>
-        <td>48</td>
     </tr>
     <tr>
         <td>2Mbps</td>
         <td>8</td>
-        <td>96</td>
     </tr>
     <tr>
         <td>3Mbps</td>
-        <td>12</td>
-        <td>144</td>
+        <td>12</td>  
     </tr>
     <tr>
         <td>4Mbps</td>
         <td>16</td>
-        <td>192</td>
     </tr>
     <tr>
         <td>5Mbps</td>
         <td>20</td>
-        <td>240</td>
     </tr>
     <tr>
         <td>6Mbps及以上，n为带宽值</td>
         <td>n*4</td>
-        <td>n*4*12</td>
     </tr>
 </table>
 
