@@ -1,15 +1,5 @@
 # 快速入门
 
-## 申请公测
-
-由于当前数据加密服务产品正在公测，故您需要申请公测资格后，方能正常使用。
-
-[申请公测连接](https://www.jdcloud.com/cn/public/testApply/cloudhsm)
-
-添加公测表格并等待审核
-
-![申请公测表格](/image/JDCloudHSM/GettingStart/申请公测表格.png)
-
 ## 购买实例
 
 请按照[购买步骤](../Pricing/Purchase-Process.md)购买数据加密服务实例
