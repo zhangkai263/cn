@@ -2,4 +2,5 @@
 
 |名称|解释|
 |-|-|
-|2018年12月|产品第一次对外发布dfdfdfdfdfdfdfdfdfdfdfdfd<br />ffffffffff| 
+|RPO|Recovery Point Objective（数据恢复点目标），指应用发生故障时预期的数据丢失量。例如，RPO = 15 分钟，表示在应用发生故障时，最近 15 分钟的数据无法在云上恢复。
+<br />| 
