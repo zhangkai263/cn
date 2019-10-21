@@ -2,7 +2,7 @@
 
 **使用流程：**
 
-![](F:\work\EdgeComputing\边缘网络隧道(ent)\pic\快速开始.png)
+![](../../../../image/Edge-Network-Tunnel/Quick-Start.png)
 
 ###### 步骤一：下载SDK
 
