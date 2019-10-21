@@ -1,6 +1,6 @@
 **基础架构图：**
 
-![](../../../../image/Middleware/Edge-Network-Tunnel/architecture.png)
+![](../../../../image/Edge-Network-Tunnel/architecture.png)
 
 
 
