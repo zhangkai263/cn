@@ -2,7 +2,9 @@
 
 - 网关负责代理子设备的认证、与云端的数据通信、管理子设备的信息和状态。网关与子设备之间的通信由厂商处理。
 - 网关功能通过 iot_config.h 中的 DEVICE_GATEWAY 宏来控制。
+- GATEWAY_MQTT_COMM_ENABLED开启网关的mqtt网络通道。网关同时支持子设备的一型一密和一机一密。
 - 编译生成的执行文件在 build/x86_64/bin/gateway_example 。
+
 
 ## 设备拓扑关系
 
@@ -111,6 +113,21 @@
 
 ```
 
+
+## 获取子设备的identifier和device secret
+
+bool iot_gateway_dynamic_auth(iot_dev_auth_info_t *meta_info,iot_cm_init_param_t *params);
+
+接口说明：真对一型一密的子设备获取设备的identifier和device secret。
+
+返回值：成功返回true ，失败返回false
+
+参数说明：
+
+| **参数名** | **参数类型**        | **必填** | **描述**           |
+| ---------- | ------------------- | -------- | ------------------ |
+| meta_info  | iot_dev_auth_info_t | 是       | 这边的验证信息     |
+| params     | iot_cm_init_param_t | 是       | 网络连接的初始参数 |
 
 
 ## 发送数据到云端

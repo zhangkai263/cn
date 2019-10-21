@@ -11,5 +11,5 @@
 | 一机一密      | 设备通过ProductKey、Identifier、DeviceSecret进行验证连接     |
 | 三元组        | 设备的ProductKey、Identifier、DeviceSecret称为三元组         |
 | 网关设备      | 具有连接和管理子设备，并代理子设备与云端进行认证和通信的设备    |
-| 子设备       | 不可直接连接云端需要通过代理连接云端的设备        |
+| 子设备       |通过网关代理连接至云端的设备        |
 
