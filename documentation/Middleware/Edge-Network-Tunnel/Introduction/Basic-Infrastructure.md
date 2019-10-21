@@ -1,6 +1,6 @@
 **基础架构图：**
 
-![](F:\work\EdgeComputing\边缘网络隧道(ent)\pic\ent架构图.png)
+![](../../../../image/Middleware/Edge-Network-Tunnel/architecture.png)
 
 
 
