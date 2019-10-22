@@ -33,9 +33,9 @@
 
 
 ## 查询结果
-查询列表展示消息的Message ID、Business ID、Tag以及存储时间。进一步可查看消息详情和消息轨迹。
+查询列表展示消息的Message ID、Business ID、Tag以及存储时间。进一步可查看消息详情，其中包含消息轨迹。
 #### 消息详情
 查询详情里详细展示了消息的Message Body、Userproperties以及消息体大小。
 ![查询4](../../../../../image/Internet-Middleware/Message-Queue/查询-04.png)
 #### 消息轨迹
-消息轨迹可以展示消息的完整生产和消费过程，详情参见[消息轨迹](Message-Trace.md)。
+消息轨迹部分可以展示消息的完整生产和消费过程，详情参见[消息轨迹](Message-Trace.md)。
