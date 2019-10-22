@@ -18,4 +18,4 @@
 4.	设置查询时间，查看慢日志记录。
 
 展示如下所示：
-![慢日志查询](https://github.com/jdcloudcom/cn/blob/master/image/Redis/slowlog.png)
+![慢日志查询](https://github.com/jdcloudcom/cn/blob/master/image/Redis/slowlog.jpg)
