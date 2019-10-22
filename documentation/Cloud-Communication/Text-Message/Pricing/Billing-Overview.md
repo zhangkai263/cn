@@ -19,13 +19,13 @@
       <tr>
          <td>2</td>
          <td>1万条</td>
-         <td><del>450元</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动价390元</td>
+         <td><del>450元</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动价390元</td>
          <td><del>0.045元/条</del>&nbsp;&nbsp;&nbsp;&nbsp;活动价0.0390元</td>
       </tr>
       <tr>
          <td>3</td>
          <td>10万条</td>
-         <td><del>4000元</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动价3800元</td>
+         <td><del>4000元</del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动价3800元</td>
          <td><del>0.040元/条</del>&nbsp;&nbsp;&nbsp;&nbsp;活动价0.0380元</td>
       </tr>
       <tr>
