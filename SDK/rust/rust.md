@@ -3,17 +3,6 @@
 京东云Rust签名工具提供了Rust语言访问京东云OpenAPI时的请求签名功能。
 
 在开始调用京东云open API之前，需提前在京东云用户中心账户管理下的[AccessKey管理页面](https://uc.jdcloud.com/accesskey/index)申请accesskey和secretKey密钥对（简称AK/SK）。AK/SK信息请妥善保管，如果遗失可能会造成非法用户使用此信息操作您在云上的资源，给你造成数据和财产损失。
-# jdcloud_signer: jdcloud.com API signer
-
-[![Build Status](https://travis-ci.org/jdcloud-api/jdcloud-sdk-rust-signer.svg?branch=master)](https://travis-ci.org/jdcloud-api/jdcloud-sdk-rust-signer)
-[![MIT licensed](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![crates.io](https://meritbadge.herokuapp.com/jdcloud_signer)](https://crates.io/crates/jdcloud_signer)
-[![Released API docs](https://docs.rs/jdcloud_signer/badge.svg)](https://docs.rs/jdcloud_signer)
-[![codecov](https://codecov.io/gh/jdcloud-api/jdcloud-sdk-rust-signer/branch/master/graph/badge.svg)](https://codecov.io/gh/jdcloud-api/jdcloud-sdk-rust-signer)
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 
 - [Usage: 普通方式](#usage-%E6%99%AE%E9%80%9A%E6%96%B9%E5%BC%8F)
@@ -25,12 +14,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
-# 京东云 Rust 签名库
-## 基本说明
-京东云Rust签名工具提供了Rust语言访问京东云OpenAPI时的请求签名功能。
-
-在开始调用京东云open API之前，需提前在京东云用户中心账户管理下的[AccessKey管理页面](https://uc.jdcloud.com/accesskey/index)申请accesskey和secretKey密钥对（简称AK/SK）。AK/SK信息请妥善保管，如果遗失可能会造成非法用户使用此信息操作您在云上的资源，给你造成数据和财产损失。
 ## Usage: 普通方式
 
 ### Cargo.toml
