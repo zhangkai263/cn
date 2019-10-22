@@ -375,9 +375,9 @@
       - name: MySQL 性能测试 
         items:
         - name: 性能测试步骤 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Step.md 
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Step.md
         - name: 性能测试结果 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Result.md 
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Result.md
   - name: 常见问题
     items:
     - name: FAQ
