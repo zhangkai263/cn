@@ -10,7 +10,7 @@
 ## 操作步骤
 ### 1. 在topic列表，选择想要订阅topic所在行的“订阅”按钮
 
-![订阅步骤1](../../../../../../image/Internet-Middleware/Message-Queue/订阅-01.png)
+![订阅步骤1](../../../../../image/Internet-Middleware/Message-Queue/订阅-01.png)
 
 ### 2.填写完订阅者信息，点击“订阅”按钮
 
