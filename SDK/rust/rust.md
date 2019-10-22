@@ -1,3 +1,16 @@
+# jdcloud_signer: jdcloud.com API signer
+
+[![Build Status](https://travis-ci.org/jdcloud-api/jdcloud-sdk-rust-signer.svg?branch=master)](https://travis-ci.org/jdcloud-api/jdcloud-sdk-rust-signer)
+[![MIT licensed](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![crates.io](https://meritbadge.herokuapp.com/jdcloud_signer)](https://crates.io/crates/jdcloud_signer)
+[![Released API docs](https://docs.rs/jdcloud_signer/badge.svg)](https://docs.rs/jdcloud_signer)
+[![codecov](https://codecov.io/gh/jdcloud-api/jdcloud-sdk-rust-signer/branch/master/graph/badge.svg)](https://codecov.io/gh/jdcloud-api/jdcloud-sdk-rust-signer)
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+
 - [Usage: 普通方式](#usage-%E6%99%AE%E9%80%9A%E6%96%B9%E5%BC%8F)
   - [Cargo.toml](#cargotoml)
   - [使用范例](#%E4%BD%BF%E7%94%A8%E8%8C%83%E4%BE%8B)
