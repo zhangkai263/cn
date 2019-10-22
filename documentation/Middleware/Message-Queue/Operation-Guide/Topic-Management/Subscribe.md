@@ -14,7 +14,7 @@
 
 ### 2.填写完订阅者信息，点击“订阅”按钮
 
-![订阅步骤2]../../../../../image/Internet-Middleware/Message-Queue/订阅-02.png)  
+![订阅步骤2](../../../../../image/Internet-Middleware/Message-Queue/订阅-02.png)  
 I. Consumer Group ID为Topic下唯一，如果有相同名称的Consumer Group ID被创建，则无法创建成功。并且Consumer Group ID只能包含字母、数字、连字符(-)和下划线(_)，长度7-64字符。  
 II. Consumer Group ID 和topic的关系是多对多关系（N：M），同一个Consumer Group ID可以订阅多个topic，同一个topic可以对应多个Consumer Group ID。  
 
