@@ -1,5 +1,5 @@
 # 性能测试步骤
-针对不同的云数据库 MySQL 规格，他们的最大连接数和最大 IOPS 是不一样的，参见[这里](../Introduction/Specifications/MySQL-Specifications.md)。
+针对不同的云数据库 MySQL 规格，他们的最大连接数和最大 IOPS 是不一样的，参见[这里](../../../Introduction/Specifications/MySQL-Specifications.md)。
 
 下面是针对云数据库 MySQL 的性能测试教程
 
@@ -29,10 +29,10 @@ $ make install
 
 ## 数据库实例初始化
 ### 创建账号
-参见 [创建账号](../Operation-Guide/Account/Create-Account/MySQL-Create-Account.md)。
+参见 [创建账号](../../../Operation-Guide/Account/Create-Account/MySQL-Create-Account.md)。
 
 ### 创建库
-参见 [创建库](../Operation-Guide/Database-Management/Create-Database.md), 需要创建一个库名为 ***sbtest*** 的库，并且记得创建库的时候需要给之前创建的账号授予新建库的读写权限。
+参见 [创建库](../../../Operation-Guide/Database-Management/Create-Database.md), 需要创建一个库名为 ***sbtest*** 的库，并且记得创建库的时候需要给之前创建的账号授予新建库的读写权限。
 
 ## 测试命令
 ### 准备数据
