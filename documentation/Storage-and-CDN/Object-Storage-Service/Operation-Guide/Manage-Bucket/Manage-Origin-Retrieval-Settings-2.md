@@ -92,14 +92,14 @@ Expires
 - 传递所有 HTTP header会将所有header透传过去，包括host头（一般是bucketname.endpoint，如bucketname.s3.cn-north-1.jcloudcs.com），由于大部分源站会对host头做校验，可能导致源站无法识别请求，所以您要慎重勾选。如果您确定要透传所有 header，请尽量在`禁止传递指定 HTTP header`中配置禁止传递host头和其他可能会影响源站识别的header。
 - 以下HTTP header类型不支持设置HTTP header传递规则：
     
-        - 以下前缀开头的header：
-            - x-oss-
-        - 所有标准HTTP header，例如：
-            - authorization2
-            - authorization
-            - content-length
-            - range
-            - date
+       以下前缀开头的header：
+           x-oss-
+       所有标准HTTP header，例如：
+           authorization2
+           authorization
+           content-length
+           range
+           date
              
 (4)单击确定,提交规则。
 
