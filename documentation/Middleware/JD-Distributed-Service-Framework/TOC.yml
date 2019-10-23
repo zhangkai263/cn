@@ -47,7 +47,7 @@ items:
           herf: Operation-Guide/Resource-Manage/JDSFGW.md
     - name: 应用管理
       items:
-        - name: 应用列表
+        - name: 应用部署
           herf: Operation-Guide/APP-Manage/APPList.md
         - name: 配置管理
           herf: Operation-Guide/APP-Manage/Config-Manage.md
@@ -59,6 +59,8 @@ items:
       items:
         - name: 调用链分析服务
           herf: Operation-Guide/DevOps/Analysis-Service.md       
+        - name: 日志配置
+          herf: Operation-Guide/DevOps/LogConfig.md       
 - name: 常见问题
   herf: FAQ/faq.md
 
