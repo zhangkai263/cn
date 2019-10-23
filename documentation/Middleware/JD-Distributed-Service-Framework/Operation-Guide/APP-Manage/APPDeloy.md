@@ -9,7 +9,7 @@
 
 ## 环境准备
 
-1、 准备云主机，安全组要求内网端口全开，或者单独设置开放端口（必须）50001、8090、8080.
+1、 准备云主机，安全组要求内网端口全开，或者单独设置开放端口（必须）50001、8090、8080。
 
 2、已经开通所需资源如：云主机、微服务平台等。
 
@@ -18,17 +18,17 @@
 
 ### STEP1：创建应用
 
-登录微服务平台控制台，一次创建如下内容：
+登录微服务平台控制台，可依次参考创建如下内容：
 
-- 1、先创建命名空间。过程参考： [命名空间](../Namespace.md) 。
+1、先创建命名空间。过程参考： [命名空间](../Namespace.md) 。
 
-- 2、再创建资源池。并往资源池中导入云主机，用于应用的部署。过程参考： [创建资源池并导入云主机](../Resource-Manage/Resource-List.md)  。
+2、再创建资源池。并往资源池中导入云主机，用于应用的部署。过程参考： [创建资源池并导入云主机](../Resource-Manage/Resource-List.md)  。
 
-- 3、接着创建应用。过程参考： [应用管理](APPList.md)  
+3、接着创建应用。过程参考： [应用管理](APPList.md)  
 
 **例如：**
 
-您可创建名为 jdsf-demo-producer的应用, 选择：JAR包部署，标准Java应用运行环境， OpenJDK1.8。
+您可创建名为 jdsf-demo-producer的应用，选择：JAR包部署，标准Java应用运行环境，OpenJDK1.8。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy.png)
 
@@ -38,7 +38,7 @@
 
 点击应用名称，进入部署组列表页，配置好将执行的部署组信息。
 
-若尚未创建部署组，则需先新建。新建过程参考： [部署组](Deploy-Group.md)   
+若尚未创建部署组，则需先新建。新建过程参考： [部署组](Deploy-Group.md)   。
 
 **例如：**
 
@@ -48,11 +48,13 @@
 
 2、新建部署组，填写基本信息，选择部署目标。
 
-如：部署组名称（jdsf-deploy-group-producer），选择我们刚创建好的命名空间 （如： jdsf_dev_wys）
+例如：部署组名称（jdsf-deploy-group-producer），选择我们刚创建好的命名空间 （如： jdsf_dev_wys）
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-xjbsz.png)
 
-3、关联云主机；如：首先选择命名空间下的一个资源池（如： 我们刚建好的 jdsf_resource_sh_wys），然后选择此资源池下的两台云主机。
+3、关联云主机。
+
+例如：首先选择命名空间下的一个资源池，如我们刚建好的 jdsf_resource_sh_wys，然后选择此资源池下的两台云主机。
 
 选择部署目标
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-bsmb.png)
@@ -96,11 +98,13 @@
 
 - 请使用已执行成功且构建类型为应用包的构建序号。
 
+- 路径，指运行jar/war包的相对路径，是相对于云编译 out_dir文件夹的路径。
+
 - “应用版本号”将注册于注册中心 tag 中的 appVersion 里。您可在注册中心的服务实例详细信息中查看到该参数。服务实例详细信息位置：注册中心>服务管理>实例详情>实例详细信息 。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs-yby-slxq.png)
 
-- 路径，指运行jar/war包的相对路径，是相对于云编译 out_dir文件夹的路径。
+
 
 
 ### STEP4：实施部署
@@ -168,7 +172,8 @@
 
 ```  
 
-以下截图内容为启用鉴权后，请求被拦截的状态：
+
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr4.png)
+(上图内容为启用鉴权后，请求被拦截的状态)
 
