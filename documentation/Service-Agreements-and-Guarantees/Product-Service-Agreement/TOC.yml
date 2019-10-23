@@ -99,7 +99,7 @@ items:
   - name: 边缘云公网IP服务条款
     href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
   - name: 边缘网络隧道(ENT)服务协议
-    href: Edge-Network-Tunnel-Terms-Of-Service
+    href: Edge-Network-Tunnel-Terms-Of-Service.md
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -167,7 +167,7 @@ items:
   - name: 数据加密服务等级协议（SLA）
     href: JDCloudHSM-Level-Agreements-SLA.md
   - name: 数据传输(DTS)服务协议
-    href: Data-Transmission-Service-Terms-Of-Service   
+    href: Data-Transmission-Service-Terms-Of-Service.md 
   - name: 智能设计产品服务协议
     href: Intelligent-Design-Terms-Of-Service.md
   - name: 京东云提货券服务协议
