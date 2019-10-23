@@ -51,6 +51,8 @@ items:
           herf: Operation-Guide/APP-Manage/Deploy-Group.md
         - name: 应用部署
           herf: Operation-Guide/APP-Manage/APPDeloy.md
+        - name: Agent安装
+          href: Operation-Guide/APP-Manage/Install-Agent.md
     - name: 配置管理
       herf: Operation-Guide/APP-Manage/Config-Manage.md
     - name: 服务鉴权
