@@ -79,6 +79,8 @@ items:
   items:
     - name: 日志采集——应用安全网关日志采集
       href: Best-Practices/Practice-waf.md
+    - name: 日志转储配置——ALB访问日志转储
+      href: Operation-Guide/LogTransfer/EasyCase.md
     - name: 日志监控配置——业务应用日志监控
       href: Operation-Guide/LogMonitor/EasyCase.md
 - name: 常见问题
