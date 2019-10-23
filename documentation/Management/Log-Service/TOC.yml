@@ -69,10 +69,16 @@ items:
           href: Operation-Guide/LogSearch/KVSearch.md
     - name: 日志转储
       href: Operation-Guide/LogTransfer.md
+    - name: 日志监控
+      items:
+        - name: 日志监控配置
+          href: Operation-Guide/LogMonitor/MonitorConfig.md
 - name: 最佳实践
   items:
-    - name: 应用安全网关日志
+    - name: 日志采集——应用安全网关日志采集
       href: Best-Practices/Practice-waf.md
+    - name: 日志监控配置——业务应用日志监控
+      href: Operation-Guide/LogMonitor/EasyCase.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 文档历史记录
