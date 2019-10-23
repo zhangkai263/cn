@@ -1,15 +1,5 @@
 # 京东云 C++ 签名库
 
-C++ signing library for jdcloud.com
-
-[![Build Status](https://travis-ci.org/jdcloud-api/jdcloud-sdk-cpp-signer.svg?branch=master)](https://travis-ci.org/jdcloud-api/jdcloud-sdk-cpp-signer)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/95b764853f0d4660916c3f1f9a4c5749)](https://app.codacy.com/app/lidaobing/jdcloud-sdk-cpp-signer?utm_source=github.com&utm_medium=referral&utm_content=jdcloud-api/jdcloud-sdk-cpp-signer&utm_campaign=Badge_Grade_Dashboard)
-[![CodeFactor](https://www.codefactor.io/repository/github/jdcloud-api/jdcloud-sdk-cpp-signer/badge)](https://www.codefactor.io/repository/github/jdcloud-api/jdcloud-sdk-cpp-signer)
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
 - [版本 0.1.0 的使用说明](#%E7%89%88%E6%9C%AC-010-%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 - [基本说明](#%E5%9F%BA%E6%9C%AC%E8%AF%B4%E6%98%8E)
 - [安装方法](#%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95)
