@@ -3,7 +3,7 @@
 国内文本短信采用预付费的方式，按发送条数计算, 具体价格(包括验证码，通知，营销类短信) 请参考下表。<br><br>
 
 **短信套餐包**<br>
-![套餐包](../../../../image/Text-Message/dx-000tp-tcb.png)<br><br>
+![套餐包](../../../../image/Text-Message/dx-000tp-tcb2.png)<br><br>
 
 **自定义价格**<br>
 ![自定义](../../../../image/Text-Message/dx-000tp-zdy.png)<br><br>
