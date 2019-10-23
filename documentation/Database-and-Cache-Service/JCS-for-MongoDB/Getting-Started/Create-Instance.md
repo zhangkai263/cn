@@ -15,7 +15,7 @@
 
 2. 在“实例列表”页面，点击 **创建** ，进入“创建实例”页面。
 
-   ![创建实例](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-003.png)
+   ![创建实例](../../../../../image/mongodb/mongo-003.png)
 
 3. 在“创建实例”页面，选择计费类型，可选择：**包年包月** 或 **按配置**。
 
