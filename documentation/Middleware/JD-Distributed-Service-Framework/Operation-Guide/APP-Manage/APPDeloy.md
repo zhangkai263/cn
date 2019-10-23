@@ -6,17 +6,70 @@
 
 当新建完应用，需要通过部署程序包来实施应用在实例上的注册和发现。
 
+
+## 环境准备
+
+1、 准备云主机，安全组要求内网端口全开，或者单独设置开放端口（必须）50001、8090、8080.
+
+2、已经开通所需资源如：云主机、微服务平台等。
+
+
 ## 操作步骤
 
-1、登录微服务平台控制台。	在左侧导航栏点击应用管理，进入应用列表页，选择要进行部署的应用。
+### STEP1：创建应用
 
-若尚未创建应用，则需先新建。新建过程参考： [应用管理](APPList.md)  
+登录微服务平台控制台，一次创建如下内容：
 
-2、点击应用名称，进入部署组列表页，配置好将执行的部署组信息。
+- 1、先创建命名空间。过程参考： [命名空间](../Namespace.md) 。
+
+- 2、再创建资源池。并往资源池中导入云主机，用于应用的部署。过程参考： [创建资源池并导入云主机](../Resource-Manage/Resource-List.md)  。
+
+- 3、接着创建应用。过程参考： [应用管理](APPList.md)  
+
+**例如：**
+
+您可创建名为 jdsf-demo-producer的应用, 选择：JAR包部署，标准Java应用运行环境， OpenJDK1.8。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy.png)
+
+
+
+### STEP2：创建部署组
+
+点击应用名称，进入部署组列表页，配置好将执行的部署组信息。
 
 若尚未创建部署组，则需先新建。新建过程参考： [部署组](Deploy-Group.md)   
 
-3、配置关于发起部署的相关信息。
+**例如：**
+
+当您创建完名为 jdsf-demo-producer的应用后，可按照如下步骤操作：
+
+1、进入该应用的部署组tab页。
+
+2、新建部署组，填写基本信息，选择部署目标。
+
+如：部署组名称（jdsf-deploy-group-producer），选择我们刚创建好的命名空间 （如： jdsf_dev_wys）
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-xjbsz.png)
+
+3、关联云主机；如：首先选择命名空间下的一个资源池（如： 我们刚建好的 jdsf_resource_sh_wys），然后选择此资源池下的两台云主机。
+
+选择部署目标
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-bsmb.png)
+
+完成关联云主机
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-glyzj.png)
+
+
+4、填写部署组其他信息。如果无要求，默认即可。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-qtxx.png)
+
+5、部署完成。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-bswc.png)
+
+
+### STEP3：配置关于发起部署的相关信息
 
 目前支持两种部署来源：程序包、云编译。下面将分别介绍。
 
@@ -24,6 +77,7 @@
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs.png)
 
+注意：
 
 - 为提升用户体验，**系统将在云主机中使用Supervisor来管理用户服务。**
 
@@ -49,7 +103,8 @@
 - 路径，指运行jar/war包的相对路径，是相对于云编译 out_dir文件夹的路径。
 
 
-4、实施部署。
+### STEP4：实施部署
+
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-xq.png)
 
@@ -59,10 +114,13 @@
 
 - 用户还可查看每个实例的部署信息。
 
-- 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+- 删除应用时，将可同时删除程序包和历史记录。
 
 
-5、验证应用是否已正常启动，可采用如下方式：
+
+### STEP5：验证部署。
+
+验证部署的应用是否已正常启动，可采用如下方式：
 
 ##### 方法1：如果有外网且开放了相应端口，可以直接访问。
 
