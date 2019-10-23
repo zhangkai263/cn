@@ -51,32 +51,9 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-del-1.png)
 
 
-### 部署应用
+### 应用部署
 
-1、 登录微服务平台控制台。	在左侧导航栏点击应用管理，进入应用列表页。
-
-2、对于需要部署的应用，点击操作列的发起部署。
-
-- 为提升用户体验，**系统将在云主机中使用Supervisor来管理用户服务。**
-
-- 如果已经创建了相应的部署组，则可直接配置好部署来源、选择部署组后，即可发起部署。
-
-- 如果还未创建部署组，可点击“新建部署组”，先新建部署组后再部署。关于部署组内容以及应用部署的更多详细内容，可查看  [部署组](Deploy-Group.md)   章节。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs.png)
-
-
-3、实施部署。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-xq.png)
-
-**说明：**
-
-- 部署完成后，可进行回滚、重新部署等操作。
-
-- 用户还可查看每个实例的部署信息。
-
-- 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+该内容，请参考 ： [应用部署](APPDeloy.md)  章节。。
 
 
 ### 实例部署信息
