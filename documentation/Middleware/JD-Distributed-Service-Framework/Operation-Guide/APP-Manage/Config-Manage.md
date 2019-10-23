@@ -27,8 +27,11 @@
 
 1、注意同一服务上，不能创建同名配置。
 
+
 2、类型选择 创建应用配置。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-create.png)
+
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-create.png)
   
   
 第3步：发布配置  
@@ -55,7 +58,8 @@
 1、注意同一服务上，不能创建同名配置。
 
 2、类型选择 创建全局配置。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/pzgl-fb-qjpz-xj.png)
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/pzgl-fb-qjpz-xj.png)
   
   
 第3步：发布配置  
@@ -68,41 +72,39 @@
 ### 查看配置项的版本信息
 
 点击配置项的名称。进入版本列表页，可查看该配置发布的所有版本。
-   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision.png)
    
    
 点击版本号名称可查看版本详情。
-   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-detail-new.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-detail-new.png)
 
 
 
 ### 查看配置的发布历史
 选择配置管理列表中某条配置，可查看该条配置的发布历史记录。
- ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-history-new.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-history-new.png)
 
 
 ### 生成新版本
 第1步： 进入配置管理列表，点击配置项的名称，进入该配置的版本管理页。
- ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/pzgl-xdlb.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/pzgl-xdlb.png)
  
 
 第2步：点击操作中的生成新版本，进入版本编辑页。保存后生成新版本。
-   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-add-new.png)
-  
-**说明：**
 
 - 这里默认的父版本号为您上一步中选择的版本的版本号。
 
 - 默认展示父版本内容。
 
 - 新版本号需要大于所有老版本号。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-add-new.png)
+  
+
+
 
 
 第3步： 发布新版本。
 
-
-  
-**说明：**
 - 发布后，新版本会替代原有版本作为线上版本。
 
 - 在版本修订列表中，需至少保留1条版本记录。如您需要删除所有记录，请在上一级“配置管理”中删除整条配置记录。
