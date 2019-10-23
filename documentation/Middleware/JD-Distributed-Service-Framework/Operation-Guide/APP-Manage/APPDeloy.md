@@ -16,7 +16,7 @@
 
 ## 操作步骤
 
-### STEP1：创建应用
+STEP1：创建应用
 
 登录微服务平台控制台，可依次参考创建如下内容：
 
@@ -34,7 +34,7 @@
 
 
 
-### STEP2：创建部署组
+STEP2：创建部署组
 
 点击应用名称，进入部署组列表页，配置好将执行的部署组信息。
 
@@ -71,7 +71,8 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-bswc.png)
 
 
-### STEP3：配置关于发起部署的相关信息
+
+STEP3：配置关于发起部署的相关信息
 
 1、目前支持两种部署来源：程序包、云编译。下面将分别介绍。
 
@@ -116,7 +117,7 @@
 
 
 
-### STEP4：实施部署
+STEP4：实施部署
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-xq.png)
@@ -131,7 +132,7 @@
 
 
 
-### STEP5：验证部署。
+STEP5：验证部署。
 
 验证部署的应用是否已正常启动，可采用如下方式：
 
