@@ -77,7 +77,7 @@
 
 2、发起部署任务时，写入到部署目标（云主机）的全局环境变量中的环境变量如下：
 
-:---|
+| :- |
 |  JDSF_CONSUL_HOST   |  
 |  JDSF_CONSUL_PORT   |  
 |  JDSF_REGISTRY_ADDRESS   |  
