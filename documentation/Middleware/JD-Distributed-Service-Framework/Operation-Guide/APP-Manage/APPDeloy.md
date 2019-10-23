@@ -20,7 +20,7 @@
 
 目前支持两种部署来源：程序包、云编译。下面将分别介绍。
 
-###  程序包部署
+#####  程序包部署
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs.png)
 
@@ -32,7 +32,7 @@
 - 配置启动参数。
 
 
-###  云编译部署
+#####  云编译部署
 
 如果您已经使用云编译进行了构建，可直接通过云编译部署。
 
@@ -62,30 +62,53 @@
 - 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
 
 
-5、验证应用是否已正常启动
+5、验证应用是否已正常启动，可采用如下方式：
 
-1）如果有外网且开放了相应端口，可以直接访问以下内容，判断响应码200且返回 "status": "OK" 等字样信息 ；
+##### 方法1：如果有外网且开放了相应端口，可以直接访问以下内容：
 
 ```yaml
 
 {ip}:{端口}/api/v1/test
 
 ```  
+若响应码为200且返回 "status": "OK" 等信息，表示调用成功。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr1.png)
 
 
-2)或登陆部署该应用的机器， 执行    curl -v http://127.0.0.1:{端口}/api/v1/test  ,
 
-判断响应码200，且返回 "status": "OK" 等字样信息 ；
+##### 方法2：登陆部署该应用的机器查看。
+
+执行以下代码：
+
+```yaml
+
+   curl -v http://127.0.0.1:{端口}/api/v1/test 
+
+```  
+若响应码为200且返回 "status": "OK" 等信息，表示调用成功。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr2.png)
 
-3）若 Consumer与Producer 应用均已部署， 且在同一命名空间下，可在请求Consumer以下的地址，发起对Producer的调用。 若返回 "status": "OK" 等字样信息 ,表示服务间调用正常。
+
+##### 方法3：判断服务间的调用。
+
+若 Consumer与Producer 应用均已部署， 且在同一命名空间下，可在请求Consumer以下的地址，发起对Producer的调用。 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr3.png)
 
-4）若已开启服务治理鉴权功能，可通过 curl -v （或直接在POSTMAN中使用外网IP请求）查看状态码，判断请求是否已被拦截。
+若返回 "status": "OK" 等字样信息 ,表示服务间调用正常。
+
+
+##### 方法4：通过 curl方式。
+
+若已开启服务治理鉴权功能，可通过以下代码查看状态码，或直接在POSTMAN中使用外网IP请求查看状态码，判断请求是否已被拦截。
+
+```yaml
+
+    curl -v 
+
+```  
 
 （以下图片为启用鉴权后，请求被拦截的状态）
 
