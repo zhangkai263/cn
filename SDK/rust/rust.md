@@ -5,15 +5,6 @@
 在开始调用京东云open API之前，需提前在京东云用户中心账户管理下的[AccessKey管理页面](https://uc.jdcloud.com/accesskey/index)申请accesskey和secretKey密钥对（简称AK/SK）。AK/SK信息请妥善保管，如果遗失可能会造成非法用户使用此信息操作您在云上的资源，给你造成数据和财产损失。
 
 
-- [Usage: 普通方式](#usage-%E6%99%AE%E9%80%9A%E6%96%B9%E5%BC%8F)
-  - [Cargo.toml](#cargotoml)
-  - [使用范例](#%E4%BD%BF%E7%94%A8%E8%8C%83%E4%BE%8B)
-- [Usage: 只签名方式](#usage-%E5%8F%AA%E7%AD%BE%E5%90%8D%E6%96%B9%E5%BC%8F)
-  - [Cargo.toml](#cargotoml-1)
-  - [使用范例](#%E4%BD%BF%E7%94%A8%E8%8C%83%E4%BE%8B-1)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## Usage: 普通方式
 
 ### Cargo.toml
