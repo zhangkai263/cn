@@ -27,7 +27,7 @@
 
 **说明：**
 
--  Java运行环境目前支持OpenJDK1.7、OpenJDK1.8。
+-  Java运行环境目前支持JDK1.7、OpenJDK1.8。
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-1.png)
@@ -53,7 +53,7 @@
 
 ### 应用部署
 
-该内容，请参考 ： [应用部署](APPDeloy.md)  章节。。
+该内容，请参考 ： [应用部署](APPDeloy.md)  。
 
 
 ### 实例部署信息
