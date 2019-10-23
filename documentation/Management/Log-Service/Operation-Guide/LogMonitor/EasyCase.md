@@ -39,7 +39,7 @@
 {"paymentStatus": "failed"}
 {"paymentStatus":"succeed"}
 ```
-7.点击**测试**，可以看到测试数据结果中显示：从样本日志中的6条数据中得出日志原文的计数为3count。结果列表中显示符合条件的样本中的日志数据。符合预期，点击确定，完成配置。
+7.点击"测试"，可以看到测试数据结果中显示：从样本日志中的6条数据中得出日志原文的计数为3count。结果列表中显示符合条件的样本中的日志数据。符合预期，点击确定，完成配置。
 
 ![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/monitorcase05.jpg)
 
