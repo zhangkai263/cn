@@ -41,7 +41,7 @@ brew install libjdcloud_signer --HEAD
 5. 使用Visual Studio打开Demo.sln解决方案，编译。生成路径为：src/Debug。
 ## 使用方法
 
-* 请参考 [examples](./examples)
+* 请参考 [examples](https://github.com/jdcloud-api/jdcloud-sdk-cpp-signer/tree/master/examples)
 
 ### 调用方法
 
