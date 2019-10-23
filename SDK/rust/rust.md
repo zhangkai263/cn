@@ -18,7 +18,7 @@ jdcloud_signer = "0.1"
 
 ### 使用范例
 
-详细范例参见 [client.rs](./examples/client.rs)
+详细范例参见 [client.rs](https://github.com/jdcloud-api/jdcloud-sdk-rust-signer/blob/master/examples/client.rs)
 
 ```sh
 $ export JDCLOUD_AK="..."
