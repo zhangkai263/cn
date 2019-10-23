@@ -1,25 +1,5 @@
 # 京东云 C++ 签名库
 
-- [版本 0.1.0 的使用说明](#%E7%89%88%E6%9C%AC-010-%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
-- [基本说明](#%E5%9F%BA%E6%9C%AC%E8%AF%B4%E6%98%8E)
-- [安装方法](#%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95)
-  - [Linux (Ubuntu)](#linux-ubuntu)
-  - [MacOS](#macos)
-  - [Windows](#windows)
-- [使用方法](#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
-  - [调用方法](#%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95)
-- [FAQ](#faq)
-  - [如何使用 openssl 1.1 编译？](#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-openssl-11-%E7%BC%96%E8%AF%91)
-    - [Ubuntu 18.04](#ubuntu-1804)
-    - [MacOS X](#macos-x)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## 版本 0.1.0 的使用说明
-
-* 请参考: https://github.com/jdcloud-api/jdcloud-sdk-cpp-signer/blob/v0.1.0/README.md
-
-以下为git master分支版本的使用说明
 
 ## 基本说明
 京东云C++签名工具提供了C++语言访问京东云OpenAPI时的请求签名功能，它以AccessKey和SecretKey为素材，将HTTP请求的相关信息经过多次处理，再加上时间和nonce随机值对请求进行签名。使用本签名工具可以节省您编写签名过程的时间，没有正确签名，有可能会造成无法正常访问京东云OpenAPI。使用签名功能，可以保证您的身份不被冒充。请注意AK/SK的安全。
