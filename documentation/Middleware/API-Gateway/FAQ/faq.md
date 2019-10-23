@@ -51,7 +51,7 @@
 
 
 **12.京东云用户签名跟API网关签名不同之处是什么？是否后端都能拿到pin和userid？**
-答：京东云用户签名的AK/SK来自于[账户管理]（https://uc.jdcloud.com/account/accesskey） ，API网关签名是在API网关产品里创建的。
+答：京东云用户签名的AK/SK来自于[账户管理](https://uc.jdcloud.com/account/accesskey)。[API网关签名](https://apigateway-console.jdcloud.com/accessSecretKey)是在API网关产品里创建的。
 但对于这两种方式，后端都能拿到pin和userid。
 
 
