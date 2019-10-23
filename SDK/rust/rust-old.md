@@ -18,25 +18,34 @@ jdcloud_signer = "0.1"
 
 ### 使用范例
 
-详细范例参见 [client.rs](./examples/client.rs)
+```Rust
+use jdcloud_signer::{Credential, Signer, Client};
+use http::Request;
+use serde_json::Value;
 
-```sh
-$ export JDCLOUD_AK="..."
-$ export JDCLOUD_SK="..."
-$ cargo run --example client
-    Finished dev [unoptimized + debuginfo] target(s) in 0.37s
-     Running `target/debug/examples/client`
-status: 200 OK
-content-type: "application/json; charset=utf-8"
-transfer-encoding: "chunked"
-connection: "close"
-date: "Mon, 22 Jul 2019 09:18:34 GMT"
-x-jdcloud-request-id: "bkrovrdrv8ewru46782326noreauvdsf"
-x-jdcloud-operationid: "describeInstances"
-x-jdcloud-upstream-latency: "310"
-x-jdcloud-proxy-latency: "30"
-via: "jd-gateway/1.0.1"
-requestId: "bkrovrdrv8ewru46782326noreauvdsf"
+fn main() {
+    let ak = "...";
+    let sk = "...";
+    let credential = Credential::new(ak, sk);
+    let signer = Signer::new(credential, "vm".to_string(), "cn-north-1".to_string());
+
+    let mut req = Request::builder();
+    let mut req = req.method("GET")
+        .uri("https://vm.jdcloud-api.com/v1/regions/cn-north-1/instances")
+        .body("".to_string()).unwrap();
+    signer.sign_request(&mut req).unwrap();
+
+    let client = Client::new();
+    let mut res = client.execute(req).unwrap();
+
+    println!("status: {}", res.status());
+    for header in res.headers().into_iter() {
+        println!("{}: {:?}", header.0, header.1);
+    }
+    let text = res.text().unwrap();
+    let json: Value = serde_json::from_str(&text).unwrap();
+    println!("requestId: {}", json["requestId"]);
+}
 ```
 
 ## Usage: 只签名方式
@@ -61,7 +70,7 @@ jdcloud_signer = { version = "0.1", default-features = false }
 
 ### 使用范例
 
-```rust
+```Rust
 use jdcloud_signer::{Credential, Signer};
 use http::Request;
 
@@ -79,20 +88,3 @@ fn main() {
     println!("{}", req);
 }
 ```
-
-更多调用示例参考  [SDK使用Demo](https://github.com/jdcloud-api/jdcloud-sdk-rust-signer/tree/master/examples)
-
-
-
-
-
-**注意：**
-
-- 京东云并没有提供其他下载方式，请务必使用上述官方下载方式！
-
-- version 的版本号需要使用京东云产品提供的最新版本号。例如：示例中VM所使用的最新版本号可到官方提供的API  [更新历史](../../API/Virtual-Machines/ChangeLog.md)  中查询到。
-
-- 每支云产品都有自己的Client，当调用该产品API时，需使用该产品的Client。例如：使用云主机的VmClient只能调用云主机（Vm）的接口；使用高可用组的AgClient只能调用高可用组（Ag）的接口。
-
-
- 
