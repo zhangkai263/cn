@@ -33,6 +33,8 @@ items:
           href: Introduction/ResourceLog/MySQLLog.md
         - name: Kubernetes集群系统日志
           href: Introduction/ResourceLog/KubernetesLog.md
+        - name: 云缓存Redis日志
+          href: Introduction/ResourceLog/RedisLog.md
 - name: 产品定价
   items:
     - name: 计费概述
