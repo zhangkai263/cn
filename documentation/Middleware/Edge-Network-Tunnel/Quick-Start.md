@@ -2,7 +2,7 @@
 
 **使用流程：**
 
-![](../../../../image/Edge-Network-Tunnel/Quick-Start.png)
+![](../../../image/Edge-Network-Tunnel/Quick-Start.png)
 
 ###### 步骤一：下载SDK
 
