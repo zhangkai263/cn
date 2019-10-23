@@ -32,9 +32,9 @@
 - 配置启动参数。
 
 
-###  云编译
+###  云编译部署
 
-如果您已经使用云编译进行了构建，可直接通过云编译内容来部署。
+如果您已经使用云编译进行了构建，可直接通过云编译部署。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs-yby.png)
 
@@ -42,9 +42,7 @@
 
 - 请使用已执行成功且构建类型为应用包的构建序号。
 
-- “应用版本号”将注册于注册中心 tag 中的 appVersion 里。您可在注册中心的服务实例详细信息中查看到该参数。
-
-服务实例详细信息位置：注册中心>服务管理>实例详情>实例详细信息 
+- “应用版本号”将注册于注册中心 tag 中的 appVersion 里。您可在注册中心的服务实例详细信息中查看到该参数。服务实例详细信息位置：注册中心>服务管理>实例详情>实例详细信息 。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs-yby-slxq.png)
 
@@ -62,3 +60,34 @@
 - 用户还可查看每个实例的部署信息。
 
 - 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+
+
+5、验证应用是否已正常启动
+
+1）如果有外网且开放了相应端口，可以直接访问以下内容，判断响应码200且返回 "status": "OK" 等字样信息 ；
+
+```yaml
+
+{ip}:{端口}/api/v1/test
+
+```  
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr1.png)
+
+
+2)或登陆部署该应用的机器， 执行    curl -v http://127.0.0.1:{端口}/api/v1/test  ,
+
+判断响应码200，且返回 "status": "OK" 等字样信息 ；
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr2.png)
+
+3）若 Consumer与Producer 应用均已部署， 且在同一命名空间下，可在请求Consumer以下的地址，发起对Producer的调用。 若返回 "status": "OK" 等字样信息 ,表示服务间调用正常。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr3.png)
+
+4）若已开启服务治理鉴权功能，可通过 curl -v （或直接在POSTMAN中使用外网IP请求）查看状态码，判断请求是否已被拦截。
+
+（以下图片为启用鉴权后，请求被拦截的状态）
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr4.png)
+
