@@ -2,7 +2,7 @@
 
 
 
- ### 1.在创建完API分组后，即可在API分组列表页的“更多”中选择生成SDK和文档。
+ ### 1.在创建完API分组后，即可在API分组列表页的“更多”中选择生成SDK和文档,并进行下载。
  
  ![访问授权](../../../../image/Internet-Middleware/API-Gateway/SDK1.png)
  
