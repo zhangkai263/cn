@@ -110,7 +110,7 @@
 
 ```  
 
-（以下图片为启用鉴权后，请求被拦截的状态）
+以下截图内容为启用鉴权后，请求被拦截的状态：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr4.png)
 
