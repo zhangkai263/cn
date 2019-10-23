@@ -11,4 +11,4 @@
 |s3.cn-east-2.jdcloud-oss.com|s3-internal.cn-east-2.jdcloud-oss.com|华东-上海(cn-east-2)|http/https|
 |s3.cn-south-1.jdcloud-oss.com|s3-internal.cn-south-1.jdcloud-oss.com|华南-广州(cn-south-1)|http/https|
 
-注：原有域名 `s3.<REGION>.jcloudcs.com` 可兼容使用；为了您的数据更加安全，推荐您使用HTTPS。
+注：原有域名`s3.<REGION>.jcloudcs.com`可兼容使用；为了您的数据更加安全，推荐您使用HTTPS。
