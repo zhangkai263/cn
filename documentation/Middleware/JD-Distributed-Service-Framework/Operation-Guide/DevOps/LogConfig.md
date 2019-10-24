@@ -1,10 +1,10 @@
 #  日志配置服务
 
-日志服务，为用户提供了对于应用的日志采集、存储、搜索等功能。微服务平台通过ES管理日志；用户可通过部署组，来给应用配置日志的采集规则等信息。
+日志服务，为用户提供了对于应用的日志采集、存储、搜索等功能。微服务平台通过ES管理日志；用户可给应用配置日志的采集规则等信息。
 
 用户在JDSF平台上使用日志配置服务的流程如下。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-flow.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-flow1.png)
 
 
 ## 操作场景
