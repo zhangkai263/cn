@@ -51,7 +51,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
 |**chargeUnit**|String|False| |预付费计费单位，预付费必填，当chargeMode为prepaid_by_duration时有效，取值为：month、year，默认为month|
 |**chargeDuration**|Integer|False| |预付费计费时长，预付费必填，当chargeMode取值为prepaid_by_duration时有效。当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3|
-|**autoRenew**|boolean|False|False|True为开通自动续费，False为不开通自动续费。开通后，将以本次创建时的购买时长作为自动续费周期。自动续费周期可在京东云交易功能中进行修改。|
+|**autoRenew**|boolean|False|false|true为开通自动续费，false为不开通自动续费,，仅对包年包月资源有效。开通后，将以本次创建时的购买时长作为自动续费周期，自动续费周期可在续费管理功能中进行修改。|
 
 ## 成功的响应
 
