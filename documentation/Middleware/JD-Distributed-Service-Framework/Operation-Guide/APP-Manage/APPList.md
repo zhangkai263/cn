@@ -30,7 +30,7 @@
 -  Java运行环境目前支持JDK1.7、OpenJDK1.8。
 
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-1.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-11.png)
 
 
 ### 删除应用
