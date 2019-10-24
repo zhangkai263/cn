@@ -37,7 +37,7 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
 
 
-关于如何创建的详细步骤可参考：[创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
+如果需要了解如何使用Kibana，请参考： [创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
 
 
 **注意：ES需要使用6.5.4版本，且与用户应用在同一VPC内。** 
