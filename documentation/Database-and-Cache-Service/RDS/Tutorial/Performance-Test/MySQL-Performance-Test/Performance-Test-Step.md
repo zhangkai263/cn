@@ -44,13 +44,13 @@ $ sysbench ./share/sysbench/oltp_read_write.lua --table_size=10000000 --tables=6
 ### 性能压测
 
 ```
-$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --max-requests=999999999 --time=1800 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX run
+$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --time=1800 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX run
 ```
 
 ### 环境清理
 
 ```
-$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --max-requests=999999999 --time=3600 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX cleanup
+$ sysbench ./share/sysbench/oltp_read_write.lua --tables=64 --threads=32 --table_size=10000000  --db-driver=mysql --mysql-host=XXX --mysql-user=XXX --mysql-password=XXX cleanup
 ```
 
 ## 测试模型
