@@ -196,7 +196,7 @@
 </tr>              
 </table>
 
-**推流SDK** 
+**播放SDK** 
 <table>
 <tr>
     <td>功能点</td>
