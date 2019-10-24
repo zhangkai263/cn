@@ -32,7 +32,7 @@
 
 3、为样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”，完成创建。
 
-例如下图范例所示：
+创建完成后，例如下图范例所示：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
 
