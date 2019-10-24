@@ -20,7 +20,13 @@
 
 ###  创建日志配置项
 
+1、 登录微服务平台控制台。在左侧导航栏点击日志管理，进入应用列表页。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-list.png)
 
+2、 在列表上方，点击新建应用，进入创建页。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-create.png)
+
+3、 设置基本信息，单击确定，完成创建。
 
 
 
