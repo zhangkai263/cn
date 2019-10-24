@@ -26,7 +26,7 @@
 
 1、创建一条ES。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-1.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-11.png)
 
 2、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”，需要与ES同名。
 
