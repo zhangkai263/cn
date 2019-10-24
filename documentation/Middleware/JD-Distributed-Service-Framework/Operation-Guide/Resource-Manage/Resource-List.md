@@ -18,9 +18,21 @@
 
 1、	登录微服务平台控制台。在左侧导航栏点击资源管理，进入资源池管理列表页。
 
-2、	在列表上方，点击新建资源池，进入创建页。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-list.png)
 
-3、	设置资源池信息，单击确定完成创建。
+2、	在列表上方，点击新建资源池，进入创建页。设置资源池信息，单击确定完成创建。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-create-pool.png)
+
+3、资源池信息。
+
+其中可用云主机数量，指运行中的云主机数量；资源池云主机，指当前这个资源池中的云主机总数量。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-pool-detail.png)
+
+4、资源池中的云主机信息。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-pool-vmlist.png)
 
 
 
@@ -37,15 +49,13 @@
 
 1、	登录微服务平台控制台。在左侧导航栏点击资源管理，进入资源池列表页。
 
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-list.png)
+
 2、	对于需要删除的资源，点击操作列的删除。
 
+- 在删除资源池前，需要先将该资源池中的所有云主机都删除掉。
 
-
-**说明：**
-
-1、在删除前，需要先清理资源池中的所有云主机。
-
-2、用户需在删除数据前，自行做好数据备份工作。
+- 用户需在删除数据前，还需自行做好数据备份工作。
 
 
 ### 导入云主机
@@ -53,7 +63,6 @@
 1、	登录微服务平台控制台。在左侧导航栏点击资源管理，进入资源池列表页。
 
 2、	对于需要进行操作的资源池，点击操作列的导入云主机操作。
-
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-import-1.png)
@@ -67,6 +76,7 @@
 
 
 ### 移除云主机
+
 1、登录微服务平台控制台。	在左侧导航栏点击资源管理，进入资源池列表页。
 
 2、点击ID进入云主机列表页，选择需要移除的云主机，进行删除。用户需在删除数据前，需要先把云主机从部署组中解除绑定再进行删除。
