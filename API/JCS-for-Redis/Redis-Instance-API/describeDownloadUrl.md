@@ -1,16 +1,14 @@
-# modifyCacheInstanceClass
+# describeDownloadUrl
 
 
 ## 描述
-变更缓存Redis实例规格（变配），只能变更运行状态的实例规格，变更的规格不能与之前的相同。
-预付费用户，从集群版变配到主从版，新规格的内存大小要大于老规格的内存大小，从主从版到集群版，新规格的内存大小要不小于老规格的内存大小。
-
+获取缓存Redis实例的备份文件临时下载地址
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}:modifyCacheInstanceClass
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/backup:describeDownloadUrl
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -20,7 +18,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cacheInstanceClass**|String|True| |变更后的实例规格|
+|**baseId**|String|True| |备份任务ID|
 
 
 ## 返回参数
@@ -32,9 +30,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**orderNum**|String|本次变更请求的订单编号|
+|**downloadUrls**|[DownloadUrl[]](#DownloadUrl)|备份文件下载信息列表|
+### <a name="DownloadUrl">DownloadUrl</a>
+|名称|类型|描述|
+|---|---|---|
+|**name**|String|名称|
+|**link**|String|下载链接|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+|**404**|NOT_FOUND|

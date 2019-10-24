@@ -1,16 +1,14 @@
-# modifyCacheInstanceClass
+# createBackup
 
 
 ## 描述
-变更缓存Redis实例规格（变配），只能变更运行状态的实例规格，变更的规格不能与之前的相同。
-预付费用户，从集群版变配到主从版，新规格的内存大小要大于老规格的内存大小，从主从版到集群版，新规格的内存大小要不小于老规格的内存大小。
-
+创建并执行缓存Redis实例的备份任务，只能为手动备份，可设置备份文件名称
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}:modifyCacheInstanceClass
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/backup
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -20,7 +18,8 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cacheInstanceClass**|String|True| |变更后的实例规格|
+|**fileName**|String|True| |备份文件名称，只支持英文数字和下划线的组合，长度不超过32个字符|
+|**backupType**|Integer|True| |备份类型：手动备份为1，只能为手动备份|
 
 
 ## 返回参数
@@ -32,7 +31,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**orderNum**|String|本次变更请求的订单编号|
+|**baseId**|String|本次备份任务ID，可用于查询本次备份任务的结果|
 
 ## 返回码
 |返回码|描述|
