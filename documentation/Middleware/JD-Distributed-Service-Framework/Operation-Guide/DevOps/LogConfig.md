@@ -25,7 +25,7 @@
 
 创建可参考：[创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
 
-**注意：ES需要使用6.5.4版本，且与用户应用在同一VPC内**
+**注意：ES需要使用6.5.4版本，且与用户应用在同一VPC内。** 
 
 ### 第2步：创建日志配置
 
