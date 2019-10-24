@@ -36,6 +36,7 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-create.png)
 
 以下为主要字段说明：
+
 | 字段	|  说明  |
 | :- | :- | 
 |  地域	|  所属地域。注意日志需要与应用同属一个VPC内。 |
