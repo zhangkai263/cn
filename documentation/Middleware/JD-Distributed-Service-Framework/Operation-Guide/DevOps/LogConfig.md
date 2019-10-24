@@ -4,6 +4,7 @@
 
 用户在JDSF平台上使用日志配置服务的流程如下。
 
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-flow.png)
 
 
 ## 操作场景
@@ -23,6 +24,8 @@
 ### 第1步：创建ES
 
 创建可参考：[创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
+
+**注意：ES需要使用6.5.4版本**
 
 ### 第2步：创建日志配置
 
@@ -61,7 +64,9 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-bg-app.png)
 
 
-### 第4步：发起部署组部署，使日志配置生效。
+### 第4步：发起部署，使日志配置生效。
+
+发起部署的规程，回重新执行
 
 目前可从两个入口可执行部署。
 
