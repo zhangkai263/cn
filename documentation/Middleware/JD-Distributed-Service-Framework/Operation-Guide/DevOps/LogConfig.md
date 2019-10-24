@@ -50,6 +50,8 @@
 
 3、 设置基本信息，单击确定，完成创建。
 
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-detail.png)
+
 
 ### 第3步：绑定部署组
 
@@ -78,15 +80,21 @@
 
 ### 第5步：查看日志。
 
-1、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”。
+1、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”。并为样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”。例如下图范例所示：
 
-2、为上一步骤中的样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”；
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-1.png)
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-detail.png)
+2、在ES上创建同名内容。例如下图范例所示：
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
+
+3、配置成功后，可查看日志
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-3.png)
 
 
 
-3、如果需要了解如何使用Kibana，请参考： [使用Kibana](../../../JCS-for-Elasticsearch/Best-Practices/using_kibana.md)  
+如果需要了解如何使用Kibana，请参考： [使用Kibana](../../../JCS-for-Elasticsearch/Best-Practices/using_kibana.md)  
 
 
 
