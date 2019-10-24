@@ -23,7 +23,22 @@
 
 ### 第1步：创建ES
 
-创建可参考：[创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
+
+1、创建一条ES。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-1.png)
+
+2、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”，需要与ES同名。
+
+3、为样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”，完成创建。
+
+例如下图范例所示：
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
+
+
+关于如何创建的详细步骤可参考：[创建ES](../../../JCS-for-Elasticsearch/Introduction/Product-Overview.md)  
+
 
 **注意：ES需要使用6.5.4版本，且与用户应用在同一VPC内。** 
 
@@ -80,18 +95,9 @@
 
 ### 第5步：查看日志。
 
-1、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”。并为样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”。例如下图范例所示：
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-1.png)
-
-2、在ES上创建同名内容。例如下图范例所示：
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
-
-3、配置成功后，可查看日志
+点击“操作”中的查看日志查看日志信息
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-3.png)
-
 
 
 如果需要了解如何使用Kibana，请参考： [使用Kibana](../../../JCS-for-Elasticsearch/Best-Practices/using_kibana.md)  
