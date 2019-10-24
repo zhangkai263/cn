@@ -1,6 +1,6 @@
 **基础架构图：**
 
-![](../../../../image/Edge-Network-Tunnel/architecture.png)
+<img src="../../../../image/Edge-Network-Tunnel/architecture.png" style="zoom:70%;" />
 
 
 

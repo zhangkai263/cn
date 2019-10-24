@@ -1,4 +1,4 @@
-SDK请在‘*下载专区*’进行下载。
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
 
 1. 将Go SDK作为plugin来构建项目
 
