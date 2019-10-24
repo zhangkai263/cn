@@ -135,10 +135,10 @@
 
 ```yaml
 
-{ip}:{端口}/api/v1/test
+{ip}:{端口}/API路径
 
 ```  
-若响应码为200且返回 "status": "OK" 等信息，表示调用成功。
+若响应码为200且返回 "status": "OK" 等信息，表示调用成功。例如下图示例供参考：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr1.png)
 
@@ -150,17 +150,17 @@
 
 ```yaml
 
-   curl -v http://127.0.0.1:{端口}/api/v1/test 
+   curl -v http://127.0.0.1:{端口}/API路径
 
 ```  
-若响应码为200且返回 "status": "OK" 等信息，表示调用成功。
+若响应码为200且返回 "status": "OK" 等信息，表示调用成功。例如下图供参考：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr2.png)
 
 
 ##### 方法3：判断服务间的调用。
 
-若 Consumer与Producer 应用均已部署， 且在同一命名空间下，可在请求Consumer以下的地址，发起对Producer的调用。 
+若 Consumer与Producer 应用均已部署， 且在同一命名空间下，可在请求Consumer以下的地址，发起对Producer的调用。 例如下图示例供参考：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr3.png)
 
@@ -177,7 +177,7 @@
 
 ```  
 
-
+例如下图示例供参考：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-qr4.png)
 (上图内容为启用鉴权后，请求被拦截的状态)
