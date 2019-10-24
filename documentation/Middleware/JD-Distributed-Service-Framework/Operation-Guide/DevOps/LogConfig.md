@@ -78,7 +78,15 @@
 
 ### 第5步：查看日志。
 
-在日志列表页，点击操作中的查看日志。使用Kibana请参考： [使用Kibana](../../../JCS-for-Elasticsearch/Best-Practices/using_kibana.md)  
+1、定义索引模式，选择Index Patterns，索引名称是“日志配置名称”。
+
+2、为上一步骤中的样本数据集Shakespeare定义索引“shakes*”，然后点击“Create”；
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-detail.png)
+
+
+
+3、如果需要了解如何使用Kibana，请参考： [使用Kibana](../../../JCS-for-Elasticsearch/Best-Practices/using_kibana.md)  
 
 
 
