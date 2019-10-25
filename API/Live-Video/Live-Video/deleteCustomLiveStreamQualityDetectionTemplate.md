@@ -40,7 +40,6 @@ https://live.jdcloud-api.com/v1/qualityDetectionCustoms/{template}
 DELETE
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionCustoms/yourQualityDetectionTemplate
-
 ```
 
 ## 返回示例

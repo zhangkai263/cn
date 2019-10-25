@@ -58,7 +58,6 @@ https://live.jdcloud-api.com/v1/qualityDetectionCustoms
 GET
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionCustoms?filters.1.name=template&filters.1.values.1=yourQualityDetectionTemplate
-
 ```
 
 ## 返回示例

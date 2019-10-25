@@ -38,8 +38,8 @@ https://live.jdcloud-api.com/v1/qualityDetectionCustoms:template
 POST
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionCustoms:template
-
 ```
+
 ```
 {
     "modules": [

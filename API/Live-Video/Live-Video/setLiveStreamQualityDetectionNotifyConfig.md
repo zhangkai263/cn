@@ -39,8 +39,8 @@ https://live.jdcloud-api.com/v1/qualityDetectionNotifys:config
 POST
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionNotifys:config
-
 ```
+
 ```
 {
     "notifyUrl": "http://xxx.com/xxx/xxx", 

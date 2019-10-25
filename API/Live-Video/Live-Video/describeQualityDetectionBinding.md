@@ -48,10 +48,10 @@ https://live.jdcloud-api.com/v1/qualityDetectionTemplates/{template}:binding
 |**503**|Service unavailable|
 
 ## 请求示例
+
 GET
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionTemplates/template:binding
-
 ```
 
 ## 返回示例

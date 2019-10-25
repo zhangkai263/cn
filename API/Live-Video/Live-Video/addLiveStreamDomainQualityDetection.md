@@ -40,8 +40,8 @@ https://live.jdcloud-api.com/v1/qualityDetectionDomains:template
 POST
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionDomains:template
-
 ```
+
 ```
 {
     "publishDomain": "push.yourdomain.com", 

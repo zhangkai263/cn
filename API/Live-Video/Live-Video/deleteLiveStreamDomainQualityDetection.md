@@ -41,7 +41,6 @@ https://live.jdcloud-api.com/v1/qualityDetectionDomains/{publishDomain}/template
 DELETE
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionDomains/push.yourdomain.com/templates/yourQualityDetectionTemplate
-
 ```
 
 ## 返回示例

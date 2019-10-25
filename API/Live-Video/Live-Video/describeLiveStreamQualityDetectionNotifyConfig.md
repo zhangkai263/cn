@@ -42,10 +42,10 @@ https://live.jdcloud-api.com/v1/qualityDetectionNotifys/{publishDomain}:config
 |**503**|Service unavailable|
 
 ## 请求示例
+
 GET
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionNotifys/push.yourdomain.com:config
-
 ```
 
 ## 返回示例
