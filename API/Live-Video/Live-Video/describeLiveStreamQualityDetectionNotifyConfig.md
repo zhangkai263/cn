@@ -22,7 +22,7 @@ https://live.jdcloud-api.com/v1/qualityDetectionNotifys/{publishDomain}:config
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|Object| |
 |**requestId**|String|requestId|
 
 ### <a name="Result">Result</a>
