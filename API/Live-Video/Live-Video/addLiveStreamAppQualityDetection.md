@@ -41,8 +41,8 @@ https://live.jdcloud-api.com/v1/qualityDetectionApps:template
 POST
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionApps:template
-
 ```
+
 ```
 {
     "appName": "yourapp", 

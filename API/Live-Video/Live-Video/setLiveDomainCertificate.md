@@ -40,11 +40,12 @@ https://live.jdcloud-api.com/v1/liveDomainCertificate
 |**503**|Service unavailable|
 
 ## 请求示例
+
 POST
 ```
 https://live.jdcloud-api.com/v1/liveDomainCertificate
-
 ```
+
 ```
 {
     "cert": "xxx", 

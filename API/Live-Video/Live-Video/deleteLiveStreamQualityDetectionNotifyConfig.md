@@ -39,7 +39,6 @@ https://live.jdcloud-api.com/v1/qualityDetectionNotifys/{publishDomain}:config
 DELETE
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionNotifys/push.yourdomain.com:config
-
 ```
 
 ## 返回示例
