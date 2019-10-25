@@ -42,7 +42,6 @@ https://live.jdcloud-api.com/v1/qualityDetectionApps/{publishDomain}/appNames/{a
 DELETE
 ```
 https://live.jdcloud-api.com/v1/qualityDetectionApps/push.yourdomain.com/appNames/yourapp/templates/yourQualityDetectionTemplate
-
 ```
 
 ## 返回示例
