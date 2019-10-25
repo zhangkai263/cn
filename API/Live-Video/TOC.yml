@@ -151,6 +151,32 @@ items:
         href: Live-Video/describeLiveStreamSnapshotNotifyConfig.md
       - name: 删除截图回调配置
         href: Live-Video/deleteLiveStreamSnapshotNotifyConfig.md
+  - name: 直播质量检测
+    items:
+      - name: 添加直播质量检测模板
+        href: Live-Video/addCustomLiveStreamQualityDetectionTemplate.md
+      - name: 修改直播质检模板
+        href: Live-Video/updateCustomLiveStreamQualityDetectionTemplate.md
+      - name: 删除直播质量检测模板
+        href: Live-Video/deleteCustomLiveStreamQualityDetectionTemplate.md
+      - name: 查询直播质量检测模板列表
+        href: Live-Video/describeCustomLiveStreamQualityDetectionTemplates.md
+      - name: 添加域名质量检测配置
+        href: Live-Video/addLiveStreamDomainQualityDetection.md
+      - name: 删除域名质量检测配置
+        href: Live-Video/deleteLiveStreamDomainQualityDetection.md
+      - name: 添加应用质量检测配置
+        href: Live-Video/addLiveStreamAppQualityDetection.md
+      - name: 删除应用级别质量检测模板配置
+        href: Live-Video/deleteLiveStreamAppQualityDetection.md
+      - name: 设置直播质量检测回调通知地址
+        href: Live-Video/setLiveStreamQualityDetectionNotifyConfig.md
+      - name: 删除质量检测回调配置
+        href: Live-Video/deleteLiveStreamQualityDetectionNotifyConfig.md
+      - name: 查询质量检测回调配置
+        href: Live-Video/describeLiveStreamQualityDetectionNotifyConfig.md
+      - name: 查询质量检测模板绑定
+        href: Live-Video/describeQualityDetectionBinding.md
   - name: 直播水印
     items:
       - name: 添加直播水印模板
