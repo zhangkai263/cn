@@ -155,8 +155,6 @@ items:
     items:
       - name: 添加直播质量检测模板
         href: Live-Video/addCustomLiveStreamQualityDetectionTemplate.md
-      - name: 修改直播质检模板
-        href: Live-Video/updateCustomLiveStreamQualityDetectionTemplate.md
       - name: 删除直播质量检测模板
         href: Live-Video/deleteCustomLiveStreamQualityDetectionTemplate.md
       - name: 查询直播质量检测模板列表
