@@ -167,4 +167,34 @@ downloadUrl:可下载地址<br>
 status:状态[success]<br>
 </td>
 </tr>
+<tr>
+    <td>质量检测回调<br/>
+    <td>{<br>
+	"publishDomain": "push1-test-yjh.jd.com",<br>
+	"appName": "mqd-app-test",<br>
+	"module": "Brightness",<br>
+	"startTime": 1571301677664,<br>
+	"endTime": 1571301684919,<br>
+	"type": "video",<br>
+	"version": "v1.0",<br>
+	"streamName": "mqd-stream-test-1"<br>
+	}<br>    
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>
+streamName:流名称<br>
+module:质检项<br>
+      目前只支持：<br>
+     - BlackScreen - 黑屏<br>
+     - PureColor - 纯色<br>
+     - ColorCast - 偏色<br>
+      - FrozenFrame - 静帧<br>
+      - Brightness - 亮度<br>
+      - Contrast - 对比度<br>
+type：类型 video;audio<br>
+startTime:异常开始时间<br>
+stopTime:异常结束时间<br>
+</td>
+</tr>	
 </table>
