@@ -29,6 +29,8 @@ items:
       href: Operation-Guide/CreatePlan-JD-Cloud-DRS.md
     - name: 启用预案
       href: Operation-Guide/StartPlan-JD-Cloud-DRS.md
+    - name: 监控预案
+      href: Operation-Guide/MonitorPlan-JD-Cloud-DRS.md     
     - name: 停用预案
       href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
     - name: 切换故障
