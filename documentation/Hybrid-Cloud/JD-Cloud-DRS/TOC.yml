@@ -16,17 +16,23 @@ items:
 
 - name: 入门指南
   items:
-    - name: 概述与环境部署
-      href: Getting-Started/Anti-JDFusion-Basic-Started.md
+    - name: 概述
+      href: Getting-Started/Anti-JD-Cloud-DRS-Basic-Started.md
+    - name: 容灾类型
+      href: Getting-Started/Type-JD-Cloud-DRS-Basic-Started.md      
       
 - name: 操作指南
   items:
-    - name: 如何获取邀请码
-      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
-    - name: 如何登录JDFuison控制台
-      href: Operation-Guide/jdfusion-cloud-uc.md
-    - name: Deployment操作指南
-      href: Operation-Guide/jdfusion-cloud-deployment.md 
+    - name: 登录
+      href: Operation-Guide/Login-JD-Cloud-DRS.md
+    - name: 创建容灾预案
+      href: Operation-Guide/CreatePlan-JD-Cloud-DRS.md
+    - name: 启用预案
+      href: Operation-Guide/StartPlan-JD-Cloud-DRS.md
+    - name: 停用预案
+      href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
+    - name: 切换故障
+      href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
       
 - name: 历史发布
   items:
