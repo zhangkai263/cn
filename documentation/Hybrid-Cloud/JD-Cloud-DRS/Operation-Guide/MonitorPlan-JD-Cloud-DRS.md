@@ -4,6 +4,6 @@
  
  系统显示已创建的容灾预案列表，点击预案详情链接，进入预案监控页面。
  
-![创建实例](https://github.com/yangwla/cn/blob/patch-5/image/JD-Cloud-DRS/monitor-plan.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JD-Cloud-DRS/monitor-plan.png)
 
 在预案详情页面，可以查看容灾预案的状态和被保护资源的运行状态。
