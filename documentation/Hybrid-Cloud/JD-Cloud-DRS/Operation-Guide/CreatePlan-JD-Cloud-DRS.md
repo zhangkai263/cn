@@ -10,4 +10,4 @@
 ### 添加容灾资源
 
 在添加容灾预案页面，配置需要灾备的信息，包括源端和灾备端。同一个预案可添加多个资源。
-![创建实例](https://github.com/yangwla/cn/blob/patch-5/image/JD-Cloud-DRS/rongzaiziyuan.png)
+![创建实例](https://github.com/yangwla/cn/blob/patch-5/image/JD-Cloud-DRS/tianjiaziyuan.png)
