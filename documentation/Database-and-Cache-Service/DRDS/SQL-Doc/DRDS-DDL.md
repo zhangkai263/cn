@@ -94,7 +94,7 @@ drop table ddl_demo1,ddl_demo2,ddl_demo3, ddl_demo4;
 ```
 
 ## 扩展拆分表
->备注： 只支持扩展按时间或日期进行拆分的表
+>备注： 只支持按时间或日期进行拆分的表
 
 对于按日期时间进行拆分的表，每个分表只存储一个时间段的数据，不会循环使用。当分表用尽后，用户需要手动对分表进行扩展。扩展分表有两个步骤：
 
@@ -126,5 +126,18 @@ sub db name：是 DRDS 在RDS MySQL上的分库名，可以在控制台实例详
 alter table demo_timetb add partitions on db1_drds_593c_17,db1_drds_593c_18,db1_drds_593c_19,db1_drds_593c_20;
 ```
 
+## 删除拆分表的分区
+>备注： 只支持按时间或日期进行拆分的表
+
+对于按时间或日期进行拆分的表，可以通过直接删除某个分库上的分表进行历史数据的高效批量清理，预发如下：
+```SQL
+alter table <table name> drop dbpartition <sub db name>;
+```
+sub db name：是 DRDS 在RDS MySQL上的分库名，可以在控制台实例详情中【库管理】页面中查看当前数据库的所有分库名
+
+例如 表timetb在分库db1_drds_593c_17的存储的历史数据是24个月以前的，不再需要，可以通过下面的SQL直接清除。
+```SQL
+alter table timetb drop dbpartition db1_drds_593c_17;
+```
 
 
