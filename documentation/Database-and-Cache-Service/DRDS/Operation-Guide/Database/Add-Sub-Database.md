@@ -27,8 +27,11 @@ DRDS 支持 按数值、字符串以及日期时间进行拆分。
 ![DB列表](../../../../../image/DRDS/add-sub-db-2.png)
 
 **3. 执行SQL命令，扩展分表**
-添加分库完成后，可以连接到DRDS 数据库中，执行SQL 扩展相应的分表，例如
+添加分库完成后，可以连接到DRDS 数据库中，执行SQL 扩展相应的分表
+
+例如对于表timetb,在所有的新增分库上扩展分表，SQL为
 ```SQL
-alter table timetb add partitions on all dbpartions;
+alter table timetb add partitions on all dbpartition;
 ```
+
 具体的SQL语法及说明可参考文档
