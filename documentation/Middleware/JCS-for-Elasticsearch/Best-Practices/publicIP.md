@@ -4,6 +4,6 @@
 ### 操作说明
 1. 登录京东云[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)创建一台和云搜索Elasticsearch集群实例处于同一个VPC的云主机，给虚拟机配置一个外网IP,并测试是否能ping通外网。</br>
 2. 在云主机上安装反向代理nginx，并配置转发到es实例的地址。</br>
-3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)创建与该云主机绑定的安全组，由于云主机的安全组默认是全部禁止，需要在安全组详情页面设置进入流量规则和出流量规则白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。</br>
+3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)创建与该云主机绑定的安全组，由于云主机的安全组默认是全部禁止，因此在安全组详情页面设置进入流量规则和出流量规则白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/public1.png)
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/public2.png)
