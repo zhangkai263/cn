@@ -94,6 +94,8 @@ drop table ddl_demo1,ddl_demo2,ddl_demo3, ddl_demo4;
 ```
 
 ## 扩展拆分表
+>备注： 只支持扩展按时间或日期进行拆分的表
+
 对于按日期时间进行拆分的表，每个分表只存储一个时间段的数据，不会循环使用。当分表用尽后，用户需要手动对分表进行扩展。扩展分表有两个步骤：
 
 1. 通过控制台添加分库
@@ -101,8 +103,8 @@ drop table ddl_demo1,ddl_demo2,ddl_demo3, ddl_demo4;
 
 例如，用户的某个DRDS数据库有24个分库，其中表tab1按年月拆分，每个月一个分表，因此总共可以存储24个月的数据。如果用户需要存储更多时间段的数据，需在控制台上，添加新的分库，并通过SQL 扩展分表。
 
-### 在所有新增的分库中扩展分表
-推荐使用这种方式扩展分表
+### 1. 在所有新增的分库中扩展分表
+在所有新增的分库中扩展分表，推荐使用这种方式
 ```SQL
 alter table <table name> add partitions on all dbpartitions;
 ```
@@ -112,11 +114,12 @@ alter table <table name> add partitions on all dbpartitions;
 alter table demo_timetb add partitions on all dbpartitions;
 ```
 
-### 在指定的分库中扩展分表
+### 2. 在指定的分库中扩展分表
 如果只想在特定的分库上扩展分表，可以使用下面的SQL：
 ```SQL
 alter table <table name> add partitions on <sub db name1>,<sub db name1>,<sub db name1>,.......
 ```
+<sub db name> 是 DRDS 在RDS MySQL上的分库名，可以在控制台实例详情中【库管理】页面中查看当前数据库的所有分库名
 
 例如在分库 db1_drds_593c_17,db1_drds_593c_18,db1_drds_593c_19,db1_drds_593c_20 中扩展分库
 ```SQL
