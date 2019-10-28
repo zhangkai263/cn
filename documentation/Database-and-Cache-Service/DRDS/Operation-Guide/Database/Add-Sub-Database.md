@@ -34,4 +34,4 @@ DRDS 支持 按数值、字符串以及日期时间进行拆分。
 alter table timetb add partitions on all dbpartition;
 ```
 
-具体的SQL语法及说明可参考文档
+具体的SQL语法及说明可参考文档[DRDS DDL SQL 语法](../../SQL-Doc/DRDS-DDL.md) （“扩展拆分表”部分）
