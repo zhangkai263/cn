@@ -119,7 +119,7 @@ alter table demo_timetb add partitions on all dbpartitions;
 ```SQL
 alter table <table name> add partitions on <sub db name1>,<sub db name1>,<sub db name1>,.......
 ```
-<sub db name> 是 DRDS 在RDS MySQL上的分库名，可以在控制台实例详情中【库管理】页面中查看当前数据库的所有分库名
+sub db name：是 DRDS 在RDS MySQL上的分库名，可以在控制台实例详情中【库管理】页面中查看当前数据库的所有分库名
 
 例如在分库 db1_drds_593c_17,db1_drds_593c_18,db1_drds_593c_19,db1_drds_593c_20 中扩展分库
 ```SQL
