@@ -97,6 +97,8 @@
        href: Best-Practices/plugin.md
      - name: 使用kibana
        href: Best-Practices/using_kibana.md
+     - name: 公网访问
+       href: Best-Practices/publicIP.md
      - name: 性能指标
        href: Best-Practices/performance.md
      - name: 监控告警配置建议
