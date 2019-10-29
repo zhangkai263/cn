@@ -23,8 +23,8 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/ipBlackList
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

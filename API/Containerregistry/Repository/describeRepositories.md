@@ -19,6 +19,7 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/listRepositories
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**filters**|Filter[]|False| |name - 仓库名称，模糊匹配，支持单个<br>|
+|**registryName**|String|False| |注册表名|
 |**pageNumber**|Integer|False| |页码；默认为1|
 |**pageSize**|Integer|False| |分页大小；默认为20；取值范围[10, 100]|
 

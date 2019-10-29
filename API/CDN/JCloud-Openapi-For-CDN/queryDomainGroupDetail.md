@@ -21,16 +21,16 @@ https://cdn.jdcloud-api.com/v1/domainGroup/{id}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**domainGroupName**|String|域名组名称|
 |**domains**|String[]|域名组成员|
 |**primaryDomain**|String|主域名|
 |**shareCache**|String|是否共享缓存|
+|**domainGroupName**|String|域名组名称|
 
 ## 返回码
 |返回码|描述|

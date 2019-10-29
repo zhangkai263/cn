@@ -4,7 +4,7 @@
 **制作容器镜像**  
 Docker Hub是Docker的官方镜像仓库，拥有大量高质量镜像，可以直接下载使用。如果不能满足需求，可以制作容器镜像，下面介绍用Dockerfile制作容器镜像的方法。  
 ## 1、安装Docker，
-      还请参考[docker安装](https://docs.docker.com/install/)。  
+   还请参考[docker安装](https://docs.docker.com/install/)。  
 ## 2、创建Dockerfile文件  
 新建一个目录，在里面新建一个dockerfile文件  
 ```
@@ -17,7 +17,7 @@ Dockerfile内容如下：
 FROM nginx
 RUN echo ' <h1> Hello, Docker! </h1> ' > /usr/share/nginx/html/index.html
 ```  
-**备注：**  
+**备注:**  
     这个Dockerfile包含两条指令：  
 　　FROM： 必不可少的命令，从某个镜像作为基，以centos为例。如 FROM <image_name> ，或者 FROM <image_name>:<tag>. 如果不加tag，默认为latest。先从本地镜像仓库去搜索基镜像，如过本地没有，在网上docker registry查询。  
 　　RUN：建立新的镜像时，可以执行在系统里的命令，如安装特定的软件以及设置环境变量。  

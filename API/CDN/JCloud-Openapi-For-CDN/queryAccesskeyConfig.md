@@ -21,15 +21,15 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/accesskeyConfig
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**accesskeyKeep**|Integer|是否是回源鉴权 0表示是 1表示否|
-|**accesskeyKey**|String|密码，长度为8到32|
 |**accesskeyType**|Integer|鉴权类型，0表示无鉴权，1表示参数鉴权，2表示路径鉴权|
+|**accesskeyKey**|String|密码，长度为8到32|
+|**accesskeyKeep**|Integer|是否是回源鉴权 0表示是 1表示否|
 
 ## 返回码
 |返回码|描述|

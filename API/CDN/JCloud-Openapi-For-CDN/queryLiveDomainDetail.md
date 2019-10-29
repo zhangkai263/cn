@@ -21,62 +21,68 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**accesskeyKey**|String|url鉴权key|
-|**accesskeyType**|Integer|url鉴权开关|
-|**allowApps**|String[]|app列表|
-|**allowNoReferHeader**|String|允许无refer|
-|**allowNullReferHeader**|String|允许空refer|
-|**archiveNo**|String|备案号|
-|**audioType**|String|音频格式AAC|
-|**authLifeTime**|Integer|authLifeTime|
-|**backSourceType**|String|回源类型目前只能未rtmp|
-|**blackIpsEnable**|String|是否开启ip黑名单|
-|**certificate**|String|https证书|
-|**cname**|String|cname|
-|**createdTime**|String|创建时间|
-|**defaultSourceHost**|String|默认回源host|
 |**domainType**|String|域名类型|
-|**externId**|String|外部关联id|
-|**flvUrls**|String[]|flvUrls|
-|**forwardAccessKeyType**|Integer|转推鉴权开关|
-|**forwardCustomVhost**|String|forwardCustomVhost|
-|**forwardPrivateKey**|String|转推鉴权key|
-|**hdlCname**|String|hdlCname|
-|**hdlDomain**|String|hdlDomain|
-|**hlsCname**|String|hlsCname|
-|**hlsDomain**|String|hlsDomain|
-|**hlsUrls**|String[]|hlsUrls|
-|**ignoreQueryString**|String|ignoreQueryString|
-|**ips**|String[]|ip黑名单列表|
-|**notifyCustomAuthKey**|String|推断流通知key|
-|**notifyCustomUrl**|String|推断流通知Url|
-|**originAccessKeyType**|Integer|回源鉴权开关|
-|**originDomain**|String|回源域名|
-|**originPrivateKey**|String|回源鉴权key|
-|**playAuthLifeTime**|Integer|playAuthLifeTime|
 |**playDomain**|String|播放域名|
-|**protocolConverts**|ProtocolConvert[]|转协议|
 |**publishDomain**|String|推流域名|
-|**publishNormalTimeout**|String|推流中断超时时间(单位秒)|
-|**pushWhiteIps**|Arrary|推流IP白名单|
-|**referList**|String[]|referList|
-|**referType**|String|referType|
-|**rsaKey**|String|https私钥|
-|**rtmpCname**|String|rtmpCname|
-|**rtmpDomain**|String|rtmpDomain|
-|**rtmpUrls**|String[]|rtmpUrls|
+|**originDomain**|String|回源域名|
+|**createdTime**|String|创建时间|
+|**cname**|String|cname|
 |**siteType**|String|站点类型推流push，拉流pull|
+|**status**|String|域名状态|
 |**source**|BackSourceInfo|回源信息|
 |**sourceType**|String|域名回源类型|
-|**status**|String|域名状态|
-|**type**|String|域名类型|
+|**backSourceType**|String|回源类型目前只能未rtmp|
 |**videoType**|String|视频格式 H.264|
+|**audioType**|String|音频格式AAC|
+|**type**|String|域名类型|
+|**defaultSourceHost**|String|默认回源host|
+|**archiveNo**|String|备案号|
+|**rtmpDomain**|String|rtmpDomain|
+|**rtmpCname**|String|rtmpCname|
+|**hdlDomain**|String|hdlDomain|
+|**hdlCname**|String|hdlCname|
+|**hlsDomain**|String|hlsDomain|
+|**hlsCname**|String|hlsCname|
+|**forwardCustomVhost**|String|forwardCustomVhost|
+|**flvUrls**|String[]|flvUrls|
+|**hlsUrls**|String[]|hlsUrls|
+|**rtmpUrls**|String[]|rtmpUrls|
+|**protocolConverts**|ProtocolConvert[]|转协议|
+|**certificate**|String|https证书|
+|**rsaKey**|String|https私钥|
+|**accesskeyType**|Integer|url鉴权开关|
+|**accesskeyKey**|String|url鉴权key|
+|**playAuthLifeTime**|Integer|playAuthLifeTime|
+|**authLifeTime**|Integer|authLifeTime|
+|**forwardAccessKeyType**|Integer|转推鉴权开关|
+|**forwardPrivateKey**|String|转推鉴权key|
+|**originAccessKeyType**|Integer|回源鉴权开关|
+|**originPrivateKey**|String|回源鉴权key|
+|**allowApps**|String[]|app列表|
+|**ips**|String[]|ip黑名单列表|
+|**blackIpsEnable**|String|是否开启ip黑名单|
+|**externId**|String|外部关联id|
+|**ignoreQueryString**|String|ignoreQueryString|
+|**referType**|String|referType|
+|**referList**|String[]|referList|
+|**allowNoReferHeader**|String|允许无refer|
+|**allowNullReferHeader**|String|允许空refer|
+|**pushWhiteIps**|Arrary|推流IP白名单|
+|**publishNormalTimeout**|String|推流中断超时时间(单位秒)|
+|**notifyCustomUrl**|String|推断流通知Url|
+|**notifyCustomAuthKey**|String|推断流通知key|
+|**certFrom**|String|证书来源有两种类型：default,ssl|
+|**sslCertId**|String|ssl证书id|
+|**certName**|String|证书名称|
+|**certType**|String|证书类型|
+|**sslCertStartTime**|String| |
+|**sslCertEndTime**|String| |
 ### ProtocolConvert
 |名称|类型|描述|
 |---|---|---|
@@ -85,20 +91,20 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 ### BackSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**domain**|DomainSourceInfo[]| |
 |**ips**|IpSourceInfo[]| |
+|**domain**|DomainSourceInfo[]| |
 |**ossSource**|String| |
 ### DomainSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**domain**|String| |
 |**priority**|Integer| |
 |**sourceHost**|String| |
+|**domain**|String| |
 ### IpSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**ip**|String| |
 |**master**|Integer| |
+|**ip**|String| |
 |**ratio**|Double| |
 
 ## 返回码

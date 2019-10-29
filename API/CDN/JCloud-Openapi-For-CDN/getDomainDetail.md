@@ -21,8 +21,8 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -30,47 +30,53 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**allStatus**|String| |
 |**allowNoReferHeader**|String| |
 |**allowNullReferHeader**|String| |
-|**archiveNo**|String| |
-|**auditStatus**|String| |
-|**avgFileSize**|Long| |
-|**backSourceType**|String| |
-|**certificate**|String| |
-|**cname**|String| |
-|**created**|String| |
 |**dailyBandWidth**|Integer| |
-|**defaultSourceHost**|String|默认的回源host|
-|**domain**|String| |
 |**forbiddenType**|String| |
-|**httpType**|String| |
-|**jumpType**|String| |
 |**maxFileSize**|Long| |
 |**minFileSize**|Long| |
-|**modified**|String| |
+|**sumFileSize**|Long| |
+|**avgFileSize**|Long| |
 |**referList**|String[]| |
 |**referType**|String| |
-|**rsaKey**|String| |
+|**domain**|String| |
+|**cname**|String| |
+|**archiveNo**|String| |
+|**type**|String| |
+|**created**|String| |
+|**modified**|String| |
+|**status**|String| |
+|**auditStatus**|String| |
 |**source**|BackSourceInfo| |
 |**sourceType**|String| |
-|**status**|String| |
-|**sumFileSize**|Long| |
-|**type**|String| |
+|**defaultSourceHost**|String|默认的回源host|
+|**backSourceType**|String| |
+|**httpType**|String| |
+|**certificate**|String| |
+|**rsaKey**|String| |
+|**jumpType**|String| |
+|**certFrom**|String| |
+|**sslCertId**|String| |
+|**certName**|String| |
+|**certType**|String| |
+|**sslCertStartTime**|String| |
+|**sslCertEndTime**|String| |
 ### BackSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**domain**|DomainSourceInfo[]| |
 |**ips**|IpSourceInfo[]| |
+|**domain**|DomainSourceInfo[]| |
 |**ossSource**|String| |
 ### DomainSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**domain**|String| |
 |**priority**|Integer| |
 |**sourceHost**|String| |
+|**domain**|String| |
 ### IpSourceInfo
 |名称|类型|描述|
 |---|---|---|
-|**ip**|String| |
 |**master**|Integer| |
+|**ip**|String| |
 |**ratio**|Double| |
 
 ## 返回码

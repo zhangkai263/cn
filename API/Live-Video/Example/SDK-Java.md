@@ -4,6 +4,7 @@
 
 ### 1、引入依赖
 
+```
     <!-- 京东云SDK核心包 -->
     <dependency>
         <groupId>com.jdcloud.sdk</groupId>
@@ -16,7 +17,8 @@
         <artifactId>live</artifactId>
         <version>${version}</version>
     </dependency>
-    
+```
+
 ### 2、调用步骤
 
 #### Step 1.设置accessKey和secretKey
@@ -29,6 +31,8 @@
 
 
 #### 以下是查询单个直播域名详情的调用示例
+
+```java
 
     import com.jdcloud.sdk.JdcloudSdkException;
     import com.jdcloud.sdk.auth.CredentialsProvider;
@@ -76,6 +80,7 @@
         }
     }
     
+```
 
 ## 其他调用方式
-&emsp;&emsp;GitHub [访问地址](https://github.com/jdcloud-api)
+- GitHub [访问地址](https://github.com/jdcloud-api)

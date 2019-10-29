@@ -14,34 +14,34 @@ https://cdn.jdcloud-api.com/v1/liveDomain:batchCreate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backHttpType**|String|False| | |
-|**backSourceType**|String|False| |回源类型，目前只能为rtmp|
-|**defaultSourceHost**|String|False| |默认回源host|
-|**domainSource**|DomainSourceInfo[]|False| | |
-|**ipSource**|IpSourceInfo[]|False| | |
 |**playDomain**|String|False| |播放域名|
 |**publishDomain**|String|False| |创建推流域名时，必传推流域名|
-|**siteType**|String|False| |站点类型pull(拉流)push(推流)|
 |**sourceType**|String|False| |回源类型只能是[ips,domain]中的一种|
+|**backHttpType**|String|False| | |
+|**defaultSourceHost**|String|False| |默认回源host|
+|**siteType**|String|False| |站点类型pull(拉流)push(推流)|
+|**backSourceType**|String|False| |回源类型，目前只能为rtmp|
+|**ipSource**|IpSourceInfo[]|False| | |
+|**domainSource**|DomainSourceInfo[]|False| | |
 
 ### DomainSourceInfo
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domain**|String|False| | |
 |**priority**|Integer|False| | |
 |**sourceHost**|String|False| | |
+|**domain**|String|False| | |
 ### IpSourceInfo
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ip**|String|False| | |
 |**master**|Integer|False| | |
+|**ip**|String|False| | |
 |**ratio**|Double|False| | |
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

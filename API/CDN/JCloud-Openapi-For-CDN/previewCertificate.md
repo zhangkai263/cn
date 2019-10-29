@@ -23,18 +23,18 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/certificate
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**endDate**|String| |
-|**issuer**|String| |
 |**sigAlgName**|String| |
-|**sigHashAlgName**|String| |
+|**issuer**|String| |
 |**startDate**|String| |
+|**endDate**|String| |
 |**user**|String| |
+|**sigHashAlgName**|String| |
 
 ## 返回码
 |返回码|描述|

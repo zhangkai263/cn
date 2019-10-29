@@ -18,15 +18,15 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/monitor
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**cycle**|Integer|False| |探测周期，取值1和5，单位为分钟|
-|**httpRequestHeader**|Object|False| | |
 |**monitorPath**|String|False| |探测路径|
+|**httpRequestHeader**|Object|False| |http请求头|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
