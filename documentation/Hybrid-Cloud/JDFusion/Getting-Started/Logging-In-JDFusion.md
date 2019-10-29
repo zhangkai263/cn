@@ -6,4 +6,4 @@
 
 ![Logging-In-JDFusion](../../../../image/JDFusion/Logging-In-JDFusion.png)                                        
 
-在此页面，输入系统管理员的用户名、密码，点击“登录”按钮，进入云纳管平台。
+在此页面，输入用户名、密码，点击“登录”按钮，进入云纳管平台。
