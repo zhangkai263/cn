@@ -6,7 +6,7 @@
 
 图：已经纳管的云平台列表页面
 
-![register-1](../../../../image/JDFuison/register-1.png)
+![register-1](../../../../image/JDFusion/register-1.png)
 
 在此页面，点击“创建”按钮，弹出纳管云平台页面，如图：纳管云平台页面所示。
 
@@ -14,7 +14,11 @@
 
 ![register-2](../../../../image/JDFusion/register-2.png)
 
-在此页面选择要纳管的云平台以及配置信息。
+在此页面选择要纳管的云平台。
 
+图：配置云平台页面
 
+![register-3](../../../../image/JDFusion/register-3.png)
+
+根据已选择的云平台，配置相关的访问配置信息。
 
