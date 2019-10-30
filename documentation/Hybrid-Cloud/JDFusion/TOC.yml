@@ -32,18 +32,26 @@ items:
       href: Getting-Started/Create-VM.md    
     - name: 为云主机绑定EIP
       href: Getting-Started/BoundEIP-VM.md        
-      
-      
-      
-      
+    
 - name: 操作指南
   items:
-    - name: 如何获取邀请码
+    - name: 资源概览
       href: Operation-Guide/jdfusion-cloud-InvitationCode.md
-    - name: 如何登录JDFuison控制台
-      href: Operation-Guide/jdfusion-cloud-uc.md
-    - name: Deployment操作指南
-      href: Operation-Guide/jdfusion-cloud-deployment.md 
+    - name: 云主机相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
+    - name: 云硬盘相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md     
+    - name: 网络相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
+    - name: 云硬盘相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md       
+    - name: 数据库相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
+    - name: 对象存储相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md  
+    - name: 云安全相关
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md 
+      
       
 - name: 历史发布
   items:
