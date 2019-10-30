@@ -66,6 +66,6 @@
 
 ![](../../../image/User/Account-Mgmt/wechat-login6.png)
 
-在特殊情况下，你会无法使用微信登录，因为你的京东云账号已经绑定了另一个微信账号；或者你的账号是京东账号，只能通过京东登录，请返回登录页选择 “京东登录” —— 当账号完成升级（查看 [京东账号管理](https://docs.jdcloud.com/cn/account-management/manage-jd-account) - 京东账号升级为京东云账号）后，才支持绑定微信账号、使用微信登录。
+在特殊情况下，你会无法使用微信登录，因为你的京东云账号已经绑定了另一个微信账号；或者你的账号是京东账号，只能通过京东登录，请返回登录页选择 “京东登录” —— 当账号完成升级（查看 [《京东账号管理》](https://docs.jdcloud.com/cn/account-management/manage-jd-account) - 京东账号升级为京东云账号）后，才支持绑定微信账号、使用微信登录。
 
 ![](../../../image/User/Account-Mgmt/wechat-login4.png)
