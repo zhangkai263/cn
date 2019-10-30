@@ -51,6 +51,8 @@
             href: Operation-Guide/Database/View-Database.md        
           - name: 删除数据库
             href: Operation-Guide/Database/Delete-Database.md
+          - name: 添加分库
+            href: Operation-Guide/Database/Add-Sub-Database.md
           - name: 数据库水平扩容
             items:            
             - name: 概述
