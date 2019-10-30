@@ -30,4 +30,4 @@
 
 ![Associated-With-KMS-3](../../../../image/JDFusion/Associated-With-KMS-3.png)
 
-在此页面选择，可以对秘钥进行轮换操作和禁止操作。
+在此页面选择，可以对秘钥进行轮换、禁止和删除操作。
