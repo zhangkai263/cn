@@ -22,13 +22,13 @@ items:
       href: Getting-Started/Logging-In-JDFusion.md      
     - name: 纳管云平台
       href: Getting-Started/Create-Register.md
-      - name: 创建VPC和子网
+    - name: 创建VPC和子网
       href: Getting-Started/Create-Network.md
     - name: 创建EIP
       href: Getting-Started/Create-EIP.md     
-     - name: 创建云主机
+    - name: 创建云主机
       href: Getting-Started/Create-VM.md    
-     - name: 为云主机绑定EIP
+    - name: 为云主机绑定EIP
       href: Getting-Started/BoundEIP-VM.md        
       
       
