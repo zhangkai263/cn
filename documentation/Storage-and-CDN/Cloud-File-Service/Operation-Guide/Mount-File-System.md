@@ -21,6 +21,7 @@
 3.创建目录，如创建名为nfs的目录：
 
 `sudo mkdir nfs`
+
 Ubuntu系统运行如下命令：
 `mkdir nfs`
 
