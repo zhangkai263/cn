@@ -24,6 +24,8 @@ items:
       href: Getting-Started/Create-Register.md
     - name: 创建VPC和子网
       href: Getting-Started/Create-Network.md
+    - name: 创建安全组
+      href: Getting-Started/Create-SecurityGroup.md      
     - name: 创建EIP
       href: Getting-Started/Create-EIP.md     
     - name: 创建云主机
