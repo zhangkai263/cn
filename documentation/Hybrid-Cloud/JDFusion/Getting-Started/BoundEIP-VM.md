@@ -4,7 +4,7 @@
 
 图：EIP列表页面
 
-![eip-vm-1](../../../../image/JDFusion/eip-wm-1.png)
+![eip-vm-1](../../../../image/JDFusion/eip-vm-1.png)
 
 在此页面，选择要绑定的EIP，点击“绑定资源”按钮，弹出绑定EIP页面，如图：绑定EIP页面所示。
 
