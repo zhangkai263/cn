@@ -6,7 +6,7 @@
 
 图一：京东账号用户，请通过京东登录访问
 
-![](../../../image/User/Account-Mgmt/login2.png)
+![](../../../image/User/Account-Mgmt/login2-1030.png)
 
 图二：京东账号登录
 
