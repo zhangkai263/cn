@@ -1,7 +1,7 @@
 # 基础架构
 基础架构图如下：
-![创建实例](https://github.com/jdcloudcom/cn/blob/JDFusion/image/JDFusion/JDFusion-jcjg.jpg)
-   JDFusion与用户的主要交互方式为控制台界面、CLI和API，其中：
+![创建实例](../../../../image/JDFusion/JDFusion-jcjg.jpg)
+   云纳管与用户的主要交互方式为控制台界面、CLI和API，其中：
  - 控制台：融合云提供的主要交付方式，为用户提供直观、简洁的操作体验。
  - CLI工具：基于Bash环境的命令行工具，使其可以基于脚本等形式对融合云进行访问。
  - API：标准的基于HTTP协议的RestfulAPI接口，其他系统可以通过API与融合云进行集成。用户通过控制台实现的功能，均可以通过API实现。
