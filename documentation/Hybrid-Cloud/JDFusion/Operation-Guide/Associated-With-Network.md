@@ -60,13 +60,13 @@
 
 图：弹性网卡列表页面
 
-![Associated-With-Network-8](../../../../image/JDStack-Agility/Associated-With-Network-8.png)
+![Associated-With-Network-8](../../../../image/JDFusion/Associated-With-Network-8.png)
 
 在此页面，点击“创建”按钮，弹出创建弹性网卡页面，如图：创建弹性网卡页面所示。
 
 图：创建弹性网卡页面
 
-![Associated-With-Network-9](../../../../image/JDStack-Agility/Associated-With-Network-9.png)
+![Associated-With-Network-9](../../../../image/JDFusion/Associated-With-Network-9.png)
 
 在此页面输入名称、选择区域、选择VPC、选择子网、选择安全组、分配IP，点击“确定”按钮，弹出“创建成功”提示，您可以在弹性网卡列表页面中看到您所创建的弹性网卡，如图：弹性网卡列表页面所示。
 
@@ -78,7 +78,7 @@
 
 图：绑定资源页面
 
-![Associated-With-Network-10](../../../../image/JDStack-Agility/Associated-With-Network-10.png)
+![Associated-With-Network-10](../../../../image/JDFusion/Associated-With-Network-10.png)
 
 在此页面选择绑定的云主机，点击“确定”按钮，弹出“绑定成功”提示，您可以在弹性网卡列表页面中看到您绑定的云主机信息。
 
@@ -88,6 +88,6 @@
 
 图：解绑资源页面
 
-![Associated-With-Network-11](../../../../image/JDStack-Agility/Associated-With-Network-11.png)
+![Associated-With-Network-11](../../../../image/JDFusion/Associated-With-Network-11.png)
 
 在此页面选择解绑的云主机，点击“确定”按钮，弹出“解绑成功”提示，您可以在弹性网卡列表页面中看到您绑定的云主机信息。
