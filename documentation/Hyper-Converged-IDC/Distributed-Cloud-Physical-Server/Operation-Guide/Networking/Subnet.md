@@ -4,7 +4,7 @@
 
 打开控制台，在左侧导航栏依次点击分布式云物理服务器->子网，进入子网列表页，点击 **创建** ，弹框如下图：<br/>
 
-根据需求选择 **节点** ，运营商，私有网络，填写名称，填写CIDR，点击 **确定** ，即可创建1个子网。
+根据需求选择 **节点** ，运营商，私有网络，填写名称，填写主要CIDR，可以继续添加次要CIDR（非必填，目前只能添加1个），点击 **确定** ，即可创建1个子网。
 ![创建子网弹框](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-006.png)
 
 ## 查看子网
