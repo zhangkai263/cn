@@ -37,6 +37,14 @@
         href: Getting-Started/Overview.md
       - name: 创建集群
         href: Getting-Started/Create-ES.md
+      - name: 管理数据
+        items:
+        - name: 管理数据概述
+          href: Getting-Started/dataview.md
+        - name: 创建索引
+          href: Getting-Started/addindex.md
+        - name: 创建文档
+          href: Getting-Started/adddoc.md
       - name: 管理集群
         items:
         - name: 查看集群
