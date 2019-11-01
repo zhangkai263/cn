@@ -20,7 +20,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
 |**name**|String|False| |私有网络名称|
-|**filters**|[Filter[]](#Filter)|False| |vpcId - 私有网络ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](Filter)|False| |vpcId - 私有网络ID，精确匹配，支持多个<br>|
 
 ### <a name="Filter">Filter</a>
 |名称|类型|是否必需|默认值|描述|
@@ -32,13 +32,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**vpcs**|[Vpc[]](#Vpc)| |
+|**vpcs**|[Vpc[]](Vpc)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|

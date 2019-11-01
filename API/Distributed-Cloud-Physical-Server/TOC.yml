@@ -1,6 +1,6 @@
-name: 分布式云物理服务器
-href:
-items:
+  name: 分布式云物理服务器
+  href:
+  items:
   - name: 接口概览
     href: overview.md
   - name: 更新历史
@@ -35,8 +35,6 @@ items:
             href: Distributed-Cloud-Physical-Server/reinstallInstance.md
           - name: describeInstance
             href: Distributed-Cloud-Physical-Server/describeInstance.md
-          - name: modifyBandwidth
-            href: Distributed-Cloud-Physical-Server/modifyBandwidth.md
           - name: resetPassword
             href: Distributed-Cloud-Physical-Server/resetPassword.md
           - name: describeInstances
@@ -76,13 +74,13 @@ items:
           - name: createKeypairs
             href: Distributed-Cloud-Physical-Server/createKeypairs.md
           - name: queryKeypairs
-            href: Distributed-Cloud-Physical-Server/queryKeypairs.md
+            href: Distributed-Cloud-Physical-Server/describeKeypairs.md
           - name: importKeypairs
             href: Distributed-Cloud-Physical-Server/importKeypairs.md
           - name: deleteKeypairs
             href: Distributed-Cloud-Physical-Server/deleteKeypairs.md
           - name: queryKeypair
-            href: Distributed-Cloud-Physical-Server/queryKeypair.md
+            href: Distributed-Cloud-Physical-Server/describeKeypair.md
       - name: 私有网络相关接口
         items:
           - name: describeVpc
