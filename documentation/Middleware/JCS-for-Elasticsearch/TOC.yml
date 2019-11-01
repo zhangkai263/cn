@@ -49,6 +49,8 @@
           href: Getting-Started/querydoc.md
         - name: 集群分析
           href: Getting-Started/clusteranaly.md
+        - name: 删除索引
+          href: Getting-Started/deleteindex.md
       - name: 管理集群
         items:
         - name: 查看集群
