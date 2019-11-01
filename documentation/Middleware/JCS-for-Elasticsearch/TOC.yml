@@ -45,6 +45,10 @@
           href: Getting-Started/addindex.md
         - name: 创建文档
           href: Getting-Started/adddoc.md
+        - name: 查询文档
+          href: Getting-Started/querydoc.md
+        - name: 集群分析
+          href: Getting-Started/clusteranaly.md
       - name: 管理集群
         items:
         - name: 查看集群
