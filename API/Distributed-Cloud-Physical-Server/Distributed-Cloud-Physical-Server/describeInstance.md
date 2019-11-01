@@ -22,13 +22,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](Result)| |
+|**result**|(Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**instance**|[Instance](Instance)| |
+|**instance**|(Instance)| |
 ### <a name="Instance">Instance</a>
 |名称|类型|描述|
 |---|---|---|
@@ -64,7 +64,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**publicIpv6**|String|公网IPv6|
 |**keypairId**|String|密钥对id|
 |**agentStatus**|String|agent状态|
-|**charge**|[Charge](Charge)|计费信息|
+|**charge**|(Charge)|计费信息|
 ### <a name="Charge">Charge</a>
 |名称|类型|描述|
 |---|---|---|

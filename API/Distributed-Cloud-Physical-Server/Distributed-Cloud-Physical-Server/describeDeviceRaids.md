@@ -24,13 +24,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/raids
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](Result)| |
+|**result**|(Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**raids**|[Raid[]](Raid)| |
+|**raids**|(Raid)| |
 ### <a name="Raid">Raid</a>
 |名称|类型|描述|
 |---|---|---|

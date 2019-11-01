@@ -26,7 +26,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:disas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](Result)| |
+|**result**|(Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>

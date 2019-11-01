@@ -25,13 +25,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets/{subnetId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](Result)| |
+|**result**|(Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**subnet**|[Subnet](Subnet)|子网详细信息|
+|**subnet**|(Subnet)|子网详细信息|
 ### <a name="Subnet">Subnet</a>
 |名称|类型|描述|
 |---|---|---|

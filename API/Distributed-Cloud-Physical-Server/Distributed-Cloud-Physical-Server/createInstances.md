@@ -61,7 +61,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**count**|Integer|True| |购买数量|
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
-|**charge**|[ChargeSpec](ChargeSpec)|True| |计费配置|
+|**charge**|(ChargeSpec)|True| |计费配置|
 ### <a name="ChargeSpec">ChargeSpec</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](Result)| |
+|**result**|(Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
