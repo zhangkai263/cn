@@ -23,13 +23,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceTypes
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|(Result)| |
+|**result**|Result| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**deviceTypes**|(DeviceType)| |
+|**deviceTypes**|DeviceType| |
 ### <a name="DeviceType">DeviceType</a>
 |名称|类型|描述|
 |---|---|---|
