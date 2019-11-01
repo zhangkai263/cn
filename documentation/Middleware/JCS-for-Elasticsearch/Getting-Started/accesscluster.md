@@ -42,12 +42,16 @@ curl -XGET 内网域名/_cat
 云搜索Elasticsearch完全兼容原生Elasticsearch，支持所有原生API，用户只需要使用原生客户端library就可以访问，或者是一些社区包装过的library，例如spring-data-elasticsearch。</br>
 1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
 2. 初始化客户端代码。</br>
+
    - [5.X版本HTTP客户端初始化](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/5.6/java-rest-high-getting-started-initialization.html)和[5.X版本HTTP客户端library](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/5.6/java-rest-high-getting-started-initialization.html)。代码样例如下：
+   
    ```
    RestHighLevelClient client = new RestHighLevelClient(
         RestClient.builder(new HttpHost("es-nlb-es-gukc9h9e0g.jvessel-open-hb.jdcloud.com", 9200, "http")).build());  
    ```
+   
    - [6.X版本HTTP客户端初始化]( https://www.elastic.co/guide/en/elasticsearch/client/java-rest/6.5/java-rest-high-getting-started-initialization.html)和[6.X版本HTTP客户端library](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/6.5/java-rest-high-getting-started-maven.html)。代码样例如下：
+   
    ```
    RestHighLevelClient client = new RestHighLevelClient(
         RestClient.builder(
