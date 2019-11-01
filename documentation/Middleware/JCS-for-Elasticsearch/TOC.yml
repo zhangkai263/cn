@@ -37,6 +37,8 @@
         href: Getting-Started/Overview.md
       - name: 创建集群
         href: Getting-Started/Create-ES.md
+      - name: 访问集群
+        href: Getting-Started/accesscluster.md
       - name: 管理数据
         items:
         - name: 管理数据概述
@@ -51,7 +53,7 @@
           href: Getting-Started/clusteranaly.md
         - name: 删除数据
           href: Getting-Started/deleteindex.md
-      - name: 管理集群
+      - name: 配置集群
         items:
         - name: 查看集群
           href: Getting-Started/View-ES.md
