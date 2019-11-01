@@ -107,7 +107,7 @@
     items:
      - name: 规格容量评估
        href: Best-Practices/Capacity-Assessment.md
-     - name: 访问集群示例
+     - name: 加载示例数据
        href: Best-Practices/connect-ES.md
      - name: 数据接入集群
        href: Best-Practices/plugin.md
