@@ -23,10 +23,8 @@ items:
       href: Pricing/Price-Overview.md
 - name: 操作指南
   items:
-    - name: 主播PC端操作指南
-      href: Operation-Guide/PC-push.md  
-    - name: 主播APP端操作指南
-      href: Operation-Guide/APP-push.md
+    - name: 主播端操作指南
+      href: Operation-Guide/push.md  
     - name: H5观看端
       href: Operation-Guide/H5-wacthing.md
 - name: 常见问题
