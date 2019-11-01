@@ -44,3 +44,9 @@ https://monitor.jdcloud-api.com/v2/groupAlarms:metrics
 |返回码|描述|
 |---|---|
 |**200**|查询可用创建监控规则的指标列表结果|
+
+
+
+
+
+

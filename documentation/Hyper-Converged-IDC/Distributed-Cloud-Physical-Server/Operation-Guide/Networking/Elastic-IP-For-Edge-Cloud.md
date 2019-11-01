@@ -20,7 +20,7 @@
 
 ## 计费概述
 
-弹性公网IP支持包年包月的计费方式。包年包月：按照带宽配置预付费。
+弹性公网IP支持包年包月的计费方式。包年包月：按照带宽配置预付费，弹性公网IP支持带宽和额外上行带宽2个计费项。
 
 **欠费/到期说明**
 
@@ -43,7 +43,7 @@
 包年包月为预付费方式，一次性支付一个月、多个月或多年的费用，适用于提前预估弹性公网IP带宽需求的场景，价格相比按配置计费更低廉。
 
 示例：
-您在2017-8-2 10:00:00购买1个月1M带宽的电信弹性公网IP，月单价为23元，则您需要支付的费用为23=23* 1元，您可以使用该资源至2017-9-2 23:59:59。
+您在2017-8-2 10:00:00购买1个月1M带宽、1M额外上行带宽的电信弹性公网IP，月单价总和为23元，则您需要支付的费用为23=23* 1元，您可以使用该资源至2017-9-2 23:59:59。
 
 详细说明：
 提前支付数月或数年的费用，目前购买时间段支持1个月~9个月、1年、2年、3年；费用在您创建资源时一次性扣除；
@@ -61,14 +61,14 @@
 打开控制台，在左侧导航栏依次点击分布式云物理服务器->弹性公网IP，进入弹性公网IP列表页，点击 **申请** ，弹框如下图：<br/>
 
 根据需求选择 **节点**，运营商，带宽计费模式，线路类型，带宽上限，购买时长和数量，点击 **确定** ，即可创建1个弹性公网IP。
-![创建eip](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-0088.png)
+![创建eip](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/create-eip.png)
 
 ## 查看弹性公网IP
 
 打开控制台，在左侧导航栏依次点击分布式云物理服务器->弹性公网IP，进入弹性公网IP列表页，查看弹性公网IP信息，如下图：<br/>
 
 点击弹性公网IP **公网IP ID/地址** ，跳转详情页，查看弹性公网IP详情信息。
-![查看eip表页](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-009.png)
+![查看eip表页](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/eip-list.png)
 
 ## 绑定弹性公网IP
 
@@ -87,4 +87,4 @@
 ## 修改带宽
 
 打开控制台，在左侧导航栏依次点击分布式云物理服务器->弹性公网IP，点击操作中的 **修改带宽** 按钮，弹框选择需要调整的带宽大小，即可完成操作。
-![修改带宽](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-012.png)
+![修改带宽](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/modify-eip.png)

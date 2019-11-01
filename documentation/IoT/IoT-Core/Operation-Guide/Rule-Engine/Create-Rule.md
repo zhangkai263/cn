@@ -40,7 +40,7 @@ function Filter(msg, metadata, msgType) {
 
 ```
 
-| 属性 | 描述
+| 属性 | 描述|
 | ----- | ----- |
 |msg| 用户产品中定义的属性，设备上报数据|
 |metadata| 静态 元数据<br>metadata 元数据中包括：<br> metadata.deviceName 为设备名称 <br> metadata.identifier 为设备Key <br> metadata.ts 为消息上报的时间  <br> metadata.version 为当前版本 |

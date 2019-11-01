@@ -41,7 +41,7 @@
         href: Operation-Guide/Create-Application2.md
       - name: 应用部署组列表
         href: Operation-Guide/Deployment-Group-List.md
-      - name: 应用里程牌列表
+      - name: 应用里程碑列表
         href: Operation-Guide/Milestone-List.md  
       - name: 在应用中新建部署组
         href: Operation-Guide/Create-Deployment-Group.md
