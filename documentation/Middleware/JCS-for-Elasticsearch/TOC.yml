@@ -111,7 +111,7 @@
        href: Best-Practices/connect-ES.md
      - name: 数据接入集群
        href: Best-Practices/plugin.md
-     - name: 使用kibana
+     - name: 通过kibana构建可视化分析系统
        href: Best-Practices/using_kibana.md
      - name: 公网访问
        href: Best-Practices/publicIP.md
