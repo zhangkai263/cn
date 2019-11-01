@@ -37,6 +37,20 @@
         href: Getting-Started/Overview.md
       - name: 创建集群
         href: Getting-Started/Create-ES.md
+      - name: 管理数据
+        items:
+        - name: 管理数据概述
+          href: Getting-Started/dataview.md
+        - name: 创建索引
+          href: Getting-Started/addindex.md
+        - name: 创建文档
+          href: Getting-Started/adddoc.md
+        - name: 查询文档
+          href: Getting-Started/querydoc.md
+        - name: 集群分析
+          href: Getting-Started/clusteranaly.md
+        - name: 删除数据
+          href: Getting-Started/deleteindex.md
       - name: 管理集群
         items:
         - name: 查看集群
@@ -97,6 +111,8 @@
        href: Best-Practices/plugin.md
      - name: 使用kibana
        href: Best-Practices/using_kibana.md
+     - name: 公网访问
+       href: Best-Practices/publicIP.md
      - name: 性能指标
        href: Best-Practices/performance.md
      - name: 监控告警配置建议
