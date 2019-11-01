@@ -21,3 +21,7 @@
 **4.直播带货**   
   
 ![](https://github.com/jdcloudcom/cn/blob/elive/image/elive/4.%E7%9B%B4%E6%92%AD%E5%B8%A6%E8%B4%A7.png)
+
+**5.查看佣金数据**   
+  
+![](https://github.com/jdcloudcom/cn/blob/elive/image/elive/5.查看数据.png)
