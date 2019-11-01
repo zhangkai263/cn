@@ -27,4 +27,4 @@
 ![](https://github.com/jdcloudcom/cn/blob/elive/image/elive/5.查看数据.png)
 
 **主播PC端直播间运营**    
-https://github.com/jdcloudcom/cn/blob/elive/image/elive/%E4%B8%BB%E6%92%ADPC%E7%AB%AF.png
+![](https://github.com/jdcloudcom/cn/blob/elive/image/elive/%E4%B8%BB%E6%92%ADPC%E7%AB%AF.png)
