@@ -37,6 +37,8 @@
         href: Getting-Started/Overview.md
       - name: 创建集群
         href: Getting-Started/Create-ES.md
+      - name: 访问集群
+        href: Getting-Started/accesscluster.md
       - name: 管理数据
         items:
         - name: 管理数据概述
@@ -51,7 +53,7 @@
           href: Getting-Started/clusteranaly.md
         - name: 删除数据
           href: Getting-Started/deleteindex.md
-      - name: 管理集群
+      - name: 配置集群
         items:
         - name: 查看集群
           href: Getting-Started/View-ES.md
@@ -105,11 +107,11 @@
     items:
      - name: 规格容量评估
        href: Best-Practices/Capacity-Assessment.md
-     - name: 访问集群示例
+     - name: 加载示例数据
        href: Best-Practices/connect-ES.md
      - name: 数据接入集群
        href: Best-Practices/plugin.md
-     - name: 使用kibana
+     - name: 通过kibana构建可视化分析系统
        href: Best-Practices/using_kibana.md
      - name: 公网访问
        href: Best-Practices/publicIP.md
