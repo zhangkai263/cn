@@ -16,30 +16,30 @@
 
 2. 在Windows Server桌面，右键点击”开始“菜单，选择”磁盘管理“。
 
-   ![image-20191105114716738](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105114716738.png)
+   ![windows-diskmg.png](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-diskmg.png)
 
 3. 进入”磁盘管理“后，系统会自动识别未初始化的磁盘。
 
-   ![image-20191105115100335](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105115100335.png)
+   ![windows-disc-autoini](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disc-autoini.png)
 
    也可以通过右键单击所需初始化的磁盘，选择”初始化磁盘“。
 
-   ![image-20191105115506135](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105115506135.png)
+   ![windows-disc-ini2](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disc-ini2.png)
 
 4. 在弹出框中，选择所需初始化的磁盘及分区格式。此示例中选用MBR分区格式。
 
    注：可选的磁盘分区形式包括MBR和GPT两种。小于2TB的云硬盘，可以选用MBR分区，大于2TB的云硬盘或预计未来将扩容超过2TB的云硬盘，建议选用GPT分区。
 
-   ![image-20191105132734090](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105132734090.png)
+   ![image-20191105132734090](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disc-ini3.png)
 
 5. 点击”确定“后，该磁盘由”没有初始化“状态变更为”联机“状态。此时，右键单击该磁盘的“未分配”区域，选择“新建简单卷”，进入创建向导。根据向导提示，依次指定卷大小、驱动区号和文件系统格式，单击“完成”后，即可完成对该磁盘的分区操作。
 
-   ![image-20191105133332455](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105133332455.png)
+   ![windows-disk-inisize](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disk-inisize.png)
 
-   ![image-20191105133342178](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105133342178.png)
+   ![windows-disk-ininame](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disk-ininame.png)
 
-   ![image-2019110513335012](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105133350125.png)
+   ![windows-disk-inifs](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disk-inifs.png)
 
    6. 完成后，在“这台电脑“中，即可看到新增的分区及格式化后的云硬盘。
 
-      ![image-20191105133602450](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191105133602450.png)
+      ![windows-disk-inidone](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/windows-disk-inidone.png)
