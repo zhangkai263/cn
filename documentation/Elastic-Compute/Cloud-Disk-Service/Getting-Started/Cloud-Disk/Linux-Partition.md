@@ -36,7 +36,7 @@
 
    9） 输入 w ，开始分区。fdisk将在分区完成后退出。
 
-   ![1571465767927](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\1571465767927.png)
+   ![Linux-MBR](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/Linux-MBR.png)
 
 
 
@@ -88,8 +88,8 @@ yum install -y parted
    
    6） 执行 q ，退出parted分区工具。
 
-![image-20191104200013941](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191104200013941.png)
+![Linux-GPT](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/Linux-GPT.PNG)
 
-​		7）此时执行 `lsblk` 可以看到 /dev/vdb下已经增加了“/dev/vdb1”的新分区。
+	7）此时执行 `lsblk` 可以看到 /dev/vdb下已经增加了“/dev/vdb1”的新分区。
 
-![image-20191104200208334](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\image-20191104200208334.png)
+![Linux-GPT-lsblk](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/Linux-GPT-lsblk.PNG)
