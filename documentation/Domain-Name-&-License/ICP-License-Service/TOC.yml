@@ -6,7 +6,11 @@
       - name: 备案介绍
         href: Getting-Started/Introduction.md
       - name: 备案流程
-        href: Getting-Started/Process.md
+        items:
+          - name: 新增备案
+            href: Getting-Started/Process/Addition-Filing.md
+          - name: 新增网站（有主体）
+            href: Getting-Started/Process/Addition-Website.md      
       - name: 管局规则
         items:
           - name: 安徽
@@ -103,8 +107,6 @@
           href: Loading/Common-data/Guangdong-Province-Personal-Verification-Checklist-Download.md
         - name: 广东省单位核验单下载
           href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
-        - name: 北京地区多域名核验单
-          href: Loading/Common-data/Beijing-multi-domain-verification-form.md  
   - name: 流程帮助
     items:
        - name: 工信部短信验证说明

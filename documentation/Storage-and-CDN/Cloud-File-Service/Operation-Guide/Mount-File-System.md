@@ -21,6 +21,7 @@
 3.创建目录，如创建名为nfs的目录：
 
 `sudo mkdir nfs`
+
 Ubuntu系统运行如下命令：
 `mkdir nfs`
 
@@ -32,15 +33,9 @@ Ubuntu系统运行如下命令：
 
 ![MtIp](../../../../image/Cloud-File-Service/MtIp.png)
 
-如，挂载目标的目录为10.0.0.30:/cfs，挂载到上一步创建的nfs目录。**注意，因挂载工具默认NFS协议为4.0版本，所以CentOS 7.2及以下版本的挂载命令略有不同：**
+如，挂载目标的目录为10.0.0.30:/cfs，挂载到上一步创建的nfs目录。**注意，挂载命令默认NFS协议为4.0版本，挂载时也可以根据对版本、性能和一致性的不同要求增加相应参数，请见文末说明**
 
-**CentOS 6.9至CentOS 7.2版本运行以下命令：**
-
-`sudo mount -t nfs,nfsvers=4.0 10.0.0.30:/cfs nfs`
-
-CentOS 7.3及以上版本运行以下命令：
-
-`sudo mount -t nfs 10.0.0.30:/cfs nfs`
+`mount -t nfs -o vers=4,minorversion=0 10.0.0.30:/cfs nfs`
 
 在Ubuntu系统的终端下，运行如下命令：
 
@@ -50,7 +45,7 @@ CentOS 7.3及以上版本运行以下命令：
 
 `df -h`
 
-挂载成功后会出现“Filesystem”为挂载目标IP，“Mounted on”为上一步指定目录的记录。
+挂载成功后会出现“Filesystem”为挂载目标IP:/cfs，“Mounted on”为上一步指定目录的记录。
 
 ![Mount&Check](../../../../image/Cloud-File-Service/mount_target.png)
 
@@ -58,13 +53,14 @@ CentOS 7.3及以上版本运行以下命令：
 
 1. 云文件服务暂不支持使用传输中的数据加密，即不支持使用以下命令挂载文件系统。
 
-sudo mount -t nfs -o tls 10.0.0.30:/cfs nfs
+mount -t nfs -o tls 10.0.0.30:/cfs nfs
 
 2. 挂载文件存储时，挂载选项的默认值如下，大多数情况下，请避免修改默认的参数值，以免对性能或稳定性造成影响：
-
-- rw：以可读写模式加载
+- -o lookupcache=all : 设置是否缓存文件存储上的目录，可取值为： all,none,pos。默认为all，即相信缓存中的数据。当取值为none时，即不缓存目录，有利于不同节点同时挂载文件存储时的数据一致性，但影响readdir操作的性能；取值为pos（或positive）时，nfs客户端会在读取时对cache进行验证。
+- -o ac ： 设置是否缓存文件的属性数据。默认为ac，即缓存文件属性。当设置为noac时，有利于不同节点同事挂载文件存储时的数据一致性，但影响文件读取的性能。
+- rw：以可读写模式挂载。 当设置为 -ro时，以只读模式挂载。
 - relatime：访问文件时，仅在 atime 早于文件的更改时间时对 atime 进行更新。
-- vers=4.1：NFS协议版本为4.1
+- vers=4：NFS协议版本为4.0
 - rsize=1048576 ：设置 NFS 客户端对每个网络 READ 请求可以接收的数据最大字节数。在从文件存储上的文件读取数据时应用此值。默认设为最大值：1048576。
 - wsize=1048576：设置 NFS 客户端对每个网络 WRITE 请求可以发送的数据最大字节数。在从文件存储上的文件读取数据时应用此值。默认设为最大值：1048576。
 - namlen=255：设定远程服务器所允许的最长文件名为255字节。
