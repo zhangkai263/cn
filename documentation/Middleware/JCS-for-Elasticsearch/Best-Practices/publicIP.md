@@ -21,7 +21,11 @@
 
 # ./nginx                     //启动nginx,配置文件位置/usr/local/nginx/conf/nginx.conf
 ```
-3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)创建安全组并绑定云主机[绑定云主机](https://docs.jdcloud.com/cn/virtual-machines/associate-security-group)，由于云主机的安全组默认是全部禁止，因此在安全组详情页设置[进入流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-inbound-rules)和[出流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-outbound-rules)白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。</br>
+3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)
+
+创建安全组并绑定云主机[绑定云主机](https://docs.jdcloud.com/cn/virtual-machines/associate-security-group)
+
+由于云主机的安全组默认是全部禁止，因此在安全组详情页设置[进入流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-inbound-rules)和[出流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-outbound-rules)白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。</br>
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/public1.png)
 
