@@ -1,15 +1,13 @@
-SDK请在‘*下载专区*’进行下载。
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
 
 1.	使用共享库构建项目
-		安装共享库
-用如下命令安装libentapi库：
+	a) 安装共享库，用如下命令安装libentapi库：
 
-	```
-sudo cp libentapi.so /usr/lib/  //动态库安装
 ```
-
-		构建应用
-	按照API文档编写自己的应用如: example.c
+	sudo cp libentapi.so /usr/lib/  //动态库安装
+```
+	
+	b) 构建应用，按照API文档编写自己的应用如: example.c
 	
 	```
 	gcc -o example example.c -L. -Wl,-dy –lentapi
@@ -17,8 +15,7 @@ sudo cp libentapi.so /usr/lib/  //动态库安装
 	```
 	
 2. 使用静态库构建项目
-   	构建应用
-   按照API文档编写自己的应用如: example.c，如将libentapi.a置于同一文件夹下，可使用如下命令构建：
+   构建应用，按照API文档编写自己的应用如: example.c，将libentapi.a置于同一文件夹下，可使用如下命令构建：
 
    ```
    gcc -o example example.c -L. -Wl,-dn -lentapi -Wl,-dy -lpthread
