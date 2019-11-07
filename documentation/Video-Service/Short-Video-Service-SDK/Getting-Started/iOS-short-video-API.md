@@ -86,3 +86,82 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
 //预览时间点
 [self.mediaEdit seekToTime:CMTimeMake(600, 600)];
 
+**7.编辑模块** 
+短视频的编辑可以进行一下功能的设置，设置接口在JDMediaEdit类中有详细备注，详细解释和示例代码如下：
+7.1 添加
+1、在一个item之前插入
+/*!
+ @abstract   在一个item之前插入一个时间线item
+ @param      item  要插入的item
+ @param      referenceItem  参考的item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)insertMovieTimeLineItem:(JDSMovieTimeLineItem*)item beforeItem:(JDSMovieTimeLineItem*)referenceItem;
+
+2、在一个item之后插入
+/*!
+ @abstract   在一个item之后插入一个时间线item
+ @param      item  要插入的item
+ @param      referenceItem  参考的item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)insertMovieTimeLineItem:(JDSMovieTimeLineItem*)item afterItem:(JDSMovieTimeLineItem*)referenceItem;
+
+   3、在尾部追加
+
+/*!
+ @abstract   在尾部添加时间线item
+ @param      item  要添加的item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)appendMovieTimeLineItem:(JDSMovieTimeLineItem*)item;
+
+7.2 裁剪
+/*!
+ @abstract   设置视频裁剪的起始时间和终止时间
+ @param      item  时间线item
+ @param      startTime 起始时间，变速后
+ @param      endTime 起始时间，变速后
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)clipMovieTimeLineItem:(JDSMovieTimeLineItem*)item withStartTime:(CMTime)startTime endTime:(CMTime)endTime
+
+7.3 分割
+/*!
+ @abstract   分割一个movie item
+ @param      time  分割时间点
+ */
+- (BOOL)splitMovieItemAtTime:(CMTime)time   
+ 
+7.4 复制
+/*!
+ @abstract   复制一个movie item，并放在后面
+ @param      item  时间线item
+ */
+- (BOOL)copyMovieTimeLineItem:(JDSMovieTimeLineItem*)item;
+
+7.5 变速
+/*!
+ @abstract   设置播放速率
+ @param      item  时间线item
+ @param      rate  播放速率
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setMovieTimeLineItem:(JDSMovieTimeLineItem*)item withRate:(double)rate
+
+7.6 旋转
+/*!
+ @abstract   设置滤镜名称
+ @param      item  时间线item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setMovieTimeLineItem:(JDSMovieTimeLineItem*)item withRotationMode:(GPUImageRotationMode)rotationMode
+
+7.7 删除
+/*!
+ @abstract   删除一个时间线item
+ @param      item  要删除的item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)removeMovieTimeLineItem:(JDSMovieTimeLineItem *)item
+
