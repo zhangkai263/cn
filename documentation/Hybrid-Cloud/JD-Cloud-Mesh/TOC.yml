@@ -56,10 +56,23 @@ items:
       items:
         - name: 资源概览
           href: Operation-Guide/Resource-Overview.md
+          
+          
+          
     - name: 跨云容灾
-      items:
-        - name: 资源概览
-          href: Operation-Guide/Resource-Overview.md         
+      items:       
+        - name: 创建容灾预案
+          href: Operation-Guide/CreatePlan-JD-Cloud-DRS.md
+        - name: 启用预案
+          href: Operation-Guide/StartPlan-JD-Cloud-DRS.md
+        - name: 监控预案
+          href: Operation-Guide/MonitorPlan-JD-Cloud-DRS.md     
+        - name: 停用预案
+          href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
+        - name: 切换故障
+          href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
+
+
 
   - name: 历史发布
   items:
