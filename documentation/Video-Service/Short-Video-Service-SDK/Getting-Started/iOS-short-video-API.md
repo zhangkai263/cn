@@ -2,14 +2,14 @@
 
 **短视频SDK的基本使用流程**   
 
-关于SDK使用时的接入步骤：
-1、创建短视频接口类。
-2、初始化短视频的默认参数。
-3、设置预览窗口
-4、添加视频、图片到时间线上
-5、注册短视频代理，接收预览状态。
-6、播放预览。
-下面按照步骤分别介绍具体使用方法：  
+关于SDK使用时的接入步骤：  
+1、创建短视频接口类。  
+2、初始化短视频的默认参数。  
+3、设置预览窗口。  
+4、添加视频、图片到时间线上。  
+5、注册短视频代理，接收预览状态。  
+6、播放预览。  
+下面按照步骤分别介绍具体使用方法：    
 
 **1.创建短视频接口类** 
 
@@ -187,4 +187,164 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
  @result     成功返回YES，失败返回NO
  */
 - (BOOL)removeMovieTimeLineItem:(JDSMovieTimeLineItem *)item
+```
+
+**8.滤镜**
+
+设置不同的滤镜效果，filternName区分，我们目前支持六种不同风格的滤镜。
+```
+/*!
+ @abstract   设置滤镜名称
+ @param      item  时间线item
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setMovieTimeLineItem:(JDSMovieTimeLineItem*)item withVideoFilterName:(NSString*)filterName
+
+//回显跟酒该item的属性filternName是否又值
+item.filternName
+```
+**9.字幕、贴纸**
+
+贴纸可以增加动态和静态贴纸，暂提供10种素材、字幕支持缩放、拖动、删除等。
+```
+/*!
+ @abstract   获取所有水印字幕时间线Item数组
+ @result     返回所有水印字幕时间线Item数组
+ */
+- (NSArray *)getLayerTimeLineItemArray;
+/*!
+ @abstract   获取某个时间点的水印字幕时间线Item数组
+ @param      time  时间点
+ @result     返回某个时间点的水印字幕时间线Item数组
+ */
+- (NSArray *)getLayerTimeLineItemArrayAtTime:(CMTime)time;
+/*!
+ @abstract   添加水印字幕时间线Item
+ @param      timeLineItem  时间线 timeLineItem
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)addLayerTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem;
+/*!
+ @abstract   移除水印字幕时间线Item
+ @param      timeLineItem  时间线timeLineItem
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)removeLayerTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem;
+/*!
+ @abstract   修改水印字幕时间线Item在时间线上的时间范围
+ @param      timeLineItem  时间线timeLineItem
+ @param      timeRangeInWhole  水印字幕时间线Item在时间线上的时间范围
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setLayerTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem
+        withTimeRangeInWhole:(CMTimeRange)timeRangeInWhole;
+
+/*!
+ @abstract   修改水印字幕是否可编辑
+ @param      timeLineItem  时间线timeLineItem
+ @param      canEdit  时间线timeLineItem是否可编辑
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setLayerTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem
+                 withCanEdit:(BOOL)canEdit;
+
+/*!
+ @abstract   开始编辑水印字幕
+ @param      timeLineItem  开始编辑的时间线timeLineItem
+ */
+- (void)beginEditTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem;
+/*!
+ @abstract   结束编辑水印字幕
+ @param      timeLineItem  结束编辑的时间线timeLineItem
+ */
+- (void)endEditTimeLineItem:(JDSLayerTimeLineItem *)timeLineItem;
+```
+
+**10.背景音乐**
+
+音乐可对原声和背景音乐的音量进行设置，可以选择不同的音乐，支持选择音乐加入的范围，支持增加多段音乐。
+```
+/*!
+ @abstract   获取所有背景音乐数组
+ @result     返回所有背景音乐数组
+ */
+- (NSArray *)getBGMTimeLineItemArray;
+/*!
+ @abstract   获取某个时间点的背景音乐数组
+ @param      time  时间点
+ @result     返回某个时间点的背景音乐数组
+ */
+- (NSArray *)getBGMTimeLineItemArrayAtTime:(CMTime)time;
+/*!
+ @abstract   添加背景音乐
+ @param      timeLineItem  时间线timeLineItem
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)addBGMTimeLineItem:(JDSBGMTimeLineItem *)timeLineItem;
+/*!
+ @abstract   移除背景音乐
+ @param      timeLineItem  时间线timeLineItem
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)removeBGMTimeLineItem:(JDSBGMTimeLineItem *)timeLineItem;
+/*!
+ @abstract   修改背景音乐在时间线上的时间范围与背景音乐相对于自己的开始与播放时长
+ @param      timeLineItem  时间线timeLineItem
+ @param      timeRangeInWhole  景音乐在时间线上的时间范围
+ @param      timeRangeInAsset  背景音乐相对于自己的开始与播放时长
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setBGMTimeLineItem:(JDSBGMTimeLineItem *)timeLineItem
+      withTimeRangeInWhole:(CMTimeRange)timeRangeInWhole
+      withTimeRangeInAsset:(CMTimeRange)timeRangeInAsset;
+
+/*!
+ @abstract   设置背景音乐播放速率
+ @param      item  时间线item
+ @param      rate  背景音乐播放速率
+ @result     成功返回YES，失败返回NO
+ */
+- (BOOL)setBGMTimeLineItem:(JDSBGMTimeLineItem*)item withRate:(double)rate;
+
+/*!
+ @abstract   设置背景音乐是否静音
+ @param      timeLineItem  时间线item
+ @param      mute  是否静音 YES 为静音 NO 为正常音量播放
+ */
+- (void)setBGMTimeLineItem:(JDSBGMTimeLineItem *)timeLineItem
+                  WithMute:(BOOL)mute;
+
+/*!
+ @abstract   设置背景音乐音量
+ @param      timeLineItem  时间线item
+ @param      volume  背景音乐音量
+ */
+- (void)setBGMTimeLineItem:(JDSBGMTimeLineItem *)timeLineItem
+                WithVolume:(double)volume;
+```
+**11.合成**
+
+合成时先配置合成参数，然后调用接口，回调中可以查看合成进度。
+```
+/*!
+ @abstract  开始合成
+ @param config 合成输出配置对象
+ */
+-(void)startExportWithConfig:(JDMEOutputConfig*)config;
+
+/*!
+ @abstract  媒体编辑合成进度变化回调
+ @param progress 当前进度
+ */
+- (void)onExportProgressChanged:(float)progress;
+
+/*!
+ @abstract  媒体编辑合成完成回调
+ */
+- (void)onExportFinish;
+
+/*!
+ @abstract  媒体编辑合成取消
+ */
+- (void)onExportCancel;
 ```
