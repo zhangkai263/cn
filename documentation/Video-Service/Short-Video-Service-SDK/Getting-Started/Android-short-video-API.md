@@ -19,7 +19,7 @@
                 android:visibility="gone" />
         </RelativeLayout>
 ``` 
-注：StickerView是贴纸的view。
+注：StickerView是贴纸的view。  
 2.利用ButterKnife初始化预览View：
 ```
     @BindView(R.id.edit_preview)
