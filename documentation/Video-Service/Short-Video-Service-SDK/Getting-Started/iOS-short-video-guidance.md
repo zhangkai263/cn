@@ -21,7 +21,7 @@ iOS端短视频SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sd
 短视频SDK的工程目录如下：包含头文件Headers。头文件描述详情请参看接口文档。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Short-Video-Service-SDK/image/Short-Video-Service-SDK/ios1.png)  
 **配置项目**  
-1、手动导入SDK。从Demo中拷贝jdcloud_shortvideo_ios.framework，导入拖入您的Xcode工程中。 
+1、手动导入SDK。从Demo中拷贝jdcloud_shortvideo_ios.framework，导入拖入您的Xcode工程中。   
 2、手动导入GPUImage库。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Short-Video-Service-SDK/image/Short-Video-Service-SDK/ios2.png)      
 
