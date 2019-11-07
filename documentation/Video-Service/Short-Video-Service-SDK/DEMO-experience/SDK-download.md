@@ -8,9 +8,9 @@
     <td>下载地址</td>
 </tr>
 <tr>
-    <td>Android端</td>
+    <td>短视频Android端</td>
     <td><a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_ios.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
-    <td>IOS端</td>
+    <td>短视频IOS端</td>
     <td><a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_ios.zip">点击下载</a><br/> </td>
