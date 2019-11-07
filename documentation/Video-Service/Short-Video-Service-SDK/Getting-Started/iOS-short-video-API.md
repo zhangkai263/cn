@@ -26,7 +26,8 @@ JDMediaEdit类，为短视频SDK的核心类，提供所有视频编辑、预览
 self.mediaEdit = [[JDMediaEdit alloc] initWithPreviewConfig:previewConfig withDelegate:self];
 ```
 
-**2.初始化短视频默认参数**  
+**2.初始化短视频默认参数**    
+
 JDMEPreviewConfig类配置短视频的默认参数，每个属性参数有一个对应的默认值，关于默认值和参数范围，参见JDMEPreviewConfig类提供的属性和方法。
 初始化默认系统参数
 ```
@@ -51,7 +52,8 @@ self.playerView = [[UIView alloc] initWithFrame:CGRectMake(50, 88, 200, 300)];
 [_mediaEdit startPreview:_playerView];
 ```
 
-**4.添加图片到时间线上**  
+**4.添加图片到时间线上**   
+
 填写播放地址，播放器SDK支持RMVB、AVI、MKV、MP4、MOV等格式。
 ```
 //修改一个工程中文件或者手机本地视频
@@ -62,7 +64,8 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
    [self.mediaEdit appendMovieTimeLineItem:item];
 ```
 
-**5.注册短视频代理事件**  
+**5.注册短视频代理事件**   
+
 引入<JDMediaEditDelegate>	播放器回调代理
 播放器回调有二个，注册delegate可接受对应的回调，代码如下：
 ```
@@ -79,8 +82,9 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
 - (void)onThumbnailChanged:(JDSMovieTimeLineItem*)item thumbnail:(JDSThumbnail*)thumbnail;
 ```
 
-**6.准备预览播放**  
-短视频预览的控制接口，基本控制功能有播放、停止、暂停、Seek。更详细接口请参考接口文档。
+**6.准备预览播放**   
+
+短视频预览的控制接口，基本控制功能有播放、停止、暂停、Seek。
 ```
 //暂停
 [self.mediaEdit pausePreview];
@@ -94,7 +98,8 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
 [self.mediaEdit seekToTime:CMTimeMake(600, 600)];
 ```
 
-**7.编辑模块** 
+**7.编辑模块**   
+
 短视频的编辑可以进行一下功能的设置，设置接口在JDMediaEdit类中有详细备注，详细解释和示例代码如下：
 7.1 添加  
 1、在一个item之前插入  
