@@ -1,4 +1,4 @@
-name: 移动直播 SDK
+name: 短视频 SDK
 href:
 items:
 - name: 产品简介
@@ -11,6 +11,8 @@ items:
       href: Introduction/Benefits.md
     - name: 产品功能
       href: Introduction/Features.md 
+    - name: 应用场景
+      href: Introduction/Application-Scenarios.md 
 - name: 产品定价
   href: Pricing/Billing-Overview.md
 - name: DEMO体验
@@ -21,26 +23,14 @@ items:
       href: DEMO-experience/SDK-download.md
 - name: 入门指南
   items:
-    - name: 推流SDK
-      items:
-        - name: Android端快速集成
-          href: Getting-Started/Android-push-guidance.md
-        - name: Android端SDK的使用
-          href: Getting-Started/Android-push-API.md
-        - name: iOS端快速集成
-          href: Getting-Started/iOS-push-guidance.md
-        - name: iOS端SDK的使用
-          href: Getting-Started/iOS-push-API.md
-    - name: 播放器SDK
-      items:
-        - name: Android端快速集成
-          href: Getting-Started/Android-play-guidance.md
-        - name: Android端SDK的使用
-          href: Getting-Started/Android-play-API.md
-        - name: iOS端快速集成
-          href: Getting-Started/iOS-play-guidance.md
-        - name: iOS端SDK的使用
-          href: Getting-Started/iOS-play-API.md
+    - name: Android端快速集成
+          href: Getting-Started/Android-short-video-guidance.md
+    - name: Android端SDK的使用
+          href: Getting-Started/Android-short-video-API.md
+    - name: iOS端快速集成
+          href: Getting-Started/iOS-short-video-guidance.md
+    - name: iOS端SDK的使用
+          href: Getting-Started/iOS-short-video-API.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 相关资源
