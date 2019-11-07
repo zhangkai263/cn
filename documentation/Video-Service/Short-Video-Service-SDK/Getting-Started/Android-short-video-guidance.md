@@ -38,10 +38,14 @@ libs/jdc_live.jar，libs/jdcloudplayerjar，libs/jdc_sv.jar: SDK jar包
 将jniLibs目录拷贝到目标工程的src\main\jniLibs;
 
 2)修改proguard(混淆)文件，添加如下规则：
+```
 -keep class com.jdcloud.media.** {
   *;
 }
+```
+
 3)在AndroidManifest.xml文件中申请相应权限
+```
 <!-- 使用权限 -->
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -60,5 +64,6 @@ libs/jdc_live.jar，libs/jdcloudplayerjar，libs/jdc_sv.jar: SDK jar包
 <!-- 硬件特性 -->
 <uses-feature android:name="android.hardware.camera" />
 <uses-feature android:name="android.hardware.camera.autofocus" />
+```
 
 4）将demo assets目录下的所有文件夹copy到目标工程的assets目录下。
