@@ -100,7 +100,7 @@ NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yd
 
 **7.编辑模块**   
 
-短视频的编辑可以进行一下功能的设置，设置接口在JDMediaEdit类中有详细备注，详细解释和示例代码如下：
+短视频的编辑可以进行一下功能的设置，设置接口在JDMediaEdit类中有详细备注，详细解释和示例代码如下：    
 7.1 添加  
 1、在一个item之前插入  
 ```
