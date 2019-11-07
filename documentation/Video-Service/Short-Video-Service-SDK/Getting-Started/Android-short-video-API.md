@@ -113,7 +113,7 @@ mVideoEdit.applyFilter(filter);//添加滤镜
 mVideoEdit.replaceFilter(lastFilter, null, false);//移除滤镜
 mVideoEdit.queueLastFrame();//暂停状态时，使得滤镜在预览区域立即生效
 
-* **字母贴纸**  
+* **字幕贴纸**  
 1.在xml中布局StickerView，参照：5.4. 简单视频编辑示例的第一步。并实例化StickerView
 @BindView(R.id.sticker_panel)
 StickerView mTickerView;  //贴纸预览区域（图片贴纸和字幕贴纸公用）
