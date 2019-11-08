@@ -4,14 +4,14 @@
 
 图：主机组列表页面
 
-![vm-1](../../../../image/JDFusion/vm-1.png)
+![vm-1](../../../../image/JD-Cloud-Mesh/vm-1.png)
 
 在此页面，点击“创建”按钮，弹出创建主机页面，如图：创建OpenStack主机页面所示。
 
 图：创建主机页面
 
-![vm-2](../../../../image/JDFusion/vm-2.png)
+![vm-2](../../../../image/JD-Cloud-Mesh/vm-2.png)
 
-![vm-3](../../../../image/JDFusion/vm-3.png)
+![vm-3](../../../../image/JD-Cloud-Mesh/vm-3.png)
 
-![vm-4](../../../../image/JDFusion/vm-4.png)
+![vm-4](../../../../image/JD-Cloud-Mesh/vm-4.png)
