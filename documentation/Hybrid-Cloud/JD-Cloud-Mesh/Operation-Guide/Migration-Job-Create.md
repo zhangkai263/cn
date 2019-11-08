@@ -3,7 +3,7 @@
  
  在首页导航栏选择 产品-迁移-数据库-迁移任务，系统进入迁移任务相关操作界面。系统显示已创建的数据库迁移任务列表。
  
-![创建实例](../../../../image/JD-Cloud-DRS/migration-job-list.png)
+![创建实例](../../../../image/JD-Cloud-Mesh/migration-job-list.png)
 
 点击左上角【创建】，进入创建迁移任务页面，输入创建迁移任务信息，包括基本信息，任务配置，源数据库配置，目标数据库配置。
 
@@ -13,4 +13,4 @@
 
 目标数据库配置：选择目标数据库实例，并根据目标数据库实例信息，填写数据库信息。
 
-![创建实例](../../../../image/JD-Cloud-DRS/migration-job-create.png)
+![创建实例](../../../../image/JD-Cloud-Mesh/migration-job-create.png)
