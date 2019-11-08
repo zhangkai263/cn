@@ -53,6 +53,8 @@
             href: Operation-Guide/Instance/Reset-Password.md
           - name: 自定义数据
             href: Operation-Guide/Instance/User-Data.md
+          - name: 别名IP范围
+            href: Operation-Guide/Instance/Alisas-IP.md
       - name: 网络
         items:
           - name: 私有网络
