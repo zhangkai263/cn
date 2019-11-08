@@ -54,10 +54,16 @@ items:
           href: Operation-Guide/Associated-With-KMS.md
     - name: 跨云迁移
       items:
-        - name: 资源概览
-          href: Operation-Guide/Resource-Overview.md
-          
-          
+        - name: 创建数据源
+          href: Operation-Guide/Migration-DB-Create.md       
+        - name: 创建迁移实例
+          href: Operation-Guide/Migration-Instance-Create.md       
+        - name: 创建迁移任务
+          href: Operation-Guide/Migration-Job-Create.md        
+        - name: 启动迁移任务
+          href: Operation-Guide/Migration-Job-Start.md  
+        - name: 可视化监控
+          href: Operation-Guide/Migration-Job-Monitor.md    
           
     - name: 跨云容灾
       items:       
@@ -71,8 +77,6 @@ items:
           href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
         - name: 切换故障
           href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
-
-
 
   - name: 历史发布
   items:
