@@ -10,5 +10,5 @@
 
 数据源配置信息包括数据源类型（源数据源和目标数据源），数据库类型（MySQL、SQL Server），实例类型（RDS实例，自建实例），实例ID，地址，端口，字符集，数据库账号和密码。
 
-![创建实例](../../../../image/JD-Cloud-DRS/migration-db-create.png)
+![创建实例](../../../../image/JD-Cloud-Mesh/migration-db-create.png)
 
