@@ -21,7 +21,7 @@ x86
 本章节提供一个快速集成京东云短视频SDK基础功能的示例。
 
 * **获取SDK和DEMO**  
-Android短视频SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_android.zip">点击下载</a><br/>  
+Android短视频SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/shortvideo/lib.zip">点击下载</a><br/>  
 
 * **工程目录结构**  
 demo: 示例工程，演示本SDK主要接口功能的使用
