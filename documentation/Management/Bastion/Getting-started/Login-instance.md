@@ -5,3 +5,6 @@ BS运维指运维人员以RAM用户身份登录堡垒机控制台，进入Web运
 该运维方式仅支持RAM用户账号使用，且仅支持Windows环境。在使用BS运维时，您需要安装单点登录器并完成Web运维配置。
 ### 操作步骤
 实名认证是在京东云购买并使用资源的前提，您可选择对账号进行个人实名认证或企业实名认证，详见[实名认证](../../../User-Service/Real-Name-Verification/Real-Name-Verification.md)。
+
+
+## CS运维
