@@ -13,7 +13,6 @@ items:
       href: Introduction/Benefits.md
     - name: 产品功能
       href: Introduction/Features.md
-
 - name: 入门指南
   items:
     - name: 概述
@@ -63,8 +62,7 @@ items:
         - name: 启动迁移任务
           href: Operation-Guide/Migration-Job-Start.md  
         - name: 可视化监控
-          href: Operation-Guide/Migration-Job-Monitor.md    
-          
+          href: Operation-Guide/Migration-Job-Monitor.md            
     - name: 跨云容灾
       items:       
         - name: 创建容灾预案
@@ -77,9 +75,7 @@ items:
           href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
         - name: 切换故障
           href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
-
   - name: 历史发布
   items:
     - name: 文档历史发布
       href: Related-Resources/Document-History.md
-
