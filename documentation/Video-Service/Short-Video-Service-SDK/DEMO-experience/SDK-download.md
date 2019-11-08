@@ -9,8 +9,13 @@
 </tr>
 <tr>
     <td>短视频Android端</td>
-    <td><a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_ios.zip">点击下载</a><br/> </td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/shortvideo/lib.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
     <td>短视频IOS端</td>
-    <td><a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_ios.zip">点击下载</a><br/> </td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/shortvideo/jdcloud_shortvideo_ios.framework.zip">点击下载</a><br/> </td>
+</tr>                
+</table>
+
+
+
