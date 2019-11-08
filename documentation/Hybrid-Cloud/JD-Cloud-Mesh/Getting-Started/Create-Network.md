@@ -6,13 +6,13 @@
 
 图：私有网络列表页面
 
-![vpc-1](../../../../image/JDFusion/vpc-1.png)
+![vpc-1](../../../../image/JD-Cloud-Mesh/vpc-1.png)
 
 在此页面，点击“创建”按钮，弹出创建私有网络页面，如图：创建OpenStack私有网络页面所示。
 
 图：创建私有网络页面
 
-![vpc-2](../../../../image/JDFusion/vpc-2.png)
+![vpc-2](../../../../image/JD-Cloud-Mesh/vpc-2.png)
 
 ## 创建子网
 
@@ -22,13 +22,13 @@
 
 图：子网列表页面
 
-![subnet-1](../../../../image/JDFusion/subnet-1.png)
+![subnet-1](../../../../image/JD-Cloud-Mesh/subnet-1.png)
 
 在此页面，点击“创建”按钮，弹出创建子网页面，如图：创建OpenStack子网页面所示。
 
 图：创建子网页面
 
-![subnet-2](../../../../image/JDFusion/subnet-2.png)
+![subnet-2](../../../../image/JD-Cloud-Mesh/subnet-2.png)
 
 
 
