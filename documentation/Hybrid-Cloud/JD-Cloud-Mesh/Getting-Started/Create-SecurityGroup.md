@@ -4,10 +4,10 @@
 
 图：安全组列表页面
 
-![sg-1](../../../../image/JDFusion/sg-1.png)
+![sg-1](../../../../image/JD-Cloud-Mesh/sg-1.png)
 
 在此页面，点击“创建”按钮，弹出创建安全组页面，如图：创建OpenStack安全组页面所示。
 
 图：创建安全组页面
 
-![sg-2](../../../../image/JDFusion/sg-2.png)
+![sg-2](../../../../image/JD-Cloud-Mesh/sg-2.png)
