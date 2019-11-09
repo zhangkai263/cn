@@ -20,7 +20,7 @@
 
 进入秘钥列表页面，如图：秘钥列表页面所示。
 
-图：云硬盘列表页面
+图：秘钥列表页面
 
 ![Associated-With-KMS-1](../../../../image/JD-Cloud-Mesh/Associated-With-KMS-1.png)
 
