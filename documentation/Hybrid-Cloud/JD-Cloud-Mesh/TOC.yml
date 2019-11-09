@@ -18,7 +18,7 @@ items:
     - name: 概述
       href: Getting-Started/Anti-JDFusion-Basic-Started.md
     - name: 登录
-      href: Getting-Started/Logging-In-JDFusion.md      
+      href: Getting-Started/Logging-In-Mesh.md      
     - name: 纳管云平台
       href: Getting-Started/Create-Register.md
     - name: 创建VPC和子网
