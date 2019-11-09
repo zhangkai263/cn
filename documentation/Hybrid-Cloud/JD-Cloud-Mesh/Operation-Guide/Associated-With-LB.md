@@ -20,13 +20,13 @@
 
 图：负载均衡列表页面
 
-![Associated-With-LB-1](../../../../image/JDFusion/Associated-With-LB-1.png)
+![Associated-With-LB-1](../../../../image/JD-Cloud-Mesh/Associated-With-LB-1.png)
 
 在此页面，点击“创建”按钮，弹出创建负载均衡页面，如图：创建负载均衡页面所示。
 
 图：创建负载均衡页面
 
-![Associated-With-LB-2](../../../../image/JDFusion/Associated-With-LB-2.png)
+![Associated-With-LB-2](../../../../image/JD-Cloud-Mesh/Associated-With-LB-2.png)
 
 在此页面输入名称、选择网络、子网、点击“确定”按钮，弹出“创建成功”提示，您可以在负载均衡列表页面中看到您创建的负载均衡信息。
 
@@ -38,13 +38,13 @@
 
 图：绑定公网IP页面
 
-![Associated-With-LB-3](../../../../image/JDFusion/Associated-With-LB-3.png)
+![Associated-With-LB-3](../../../../image/JD-Cloud-Mesh/Associated-With-LB-3.png)
 
 在此页面选择公网IP地址，点击“确定”按钮，弹出“绑定成功”提示，您可以在负载均衡详情页面中看到您绑定的公网IP信息，如图：负载均衡详情页面所示。
 
 图：负载均衡详情页面
 
-![Associated-With-LB-4](../../../../image/JDFusion/Associated-With-LB-4.png)
+![Associated-With-LB-4](../../../../image/JD-Cloud-Mesh/Associated-With-LB-4.png)
 
 ## 添加监听器
 
@@ -54,13 +54,13 @@
 
 图：添加监听器页面
 
-![Associated-With-LB-5](../../../../image/JDFusion/Associated-With-LB-5.png)
+![Associated-With-LB-5](../../../../image/JD-Cloud-Mesh/Associated-With-LB-5.png)
 
 在此页面输入名称、选择协议、连接限制、输入端口号，点击“确定”按钮，弹出“创建成功”提示，您可以在负载均衡详情页面中看到您创建的监听器信息，如图：负载均衡监听器详情页面所示。
 
 图：负载均衡监听器详情页面
 
-![Associated-With-LB-6](../../../../image/JDFusion/Associated-With-LB-6.png)
+![Associated-With-LB-6](../../../../image/JD-Cloud-Mesh/Associated-With-LB-6.png)
 
 注意：同一负载均衡下的监听端口不可重复，监听器创建后监听协议、端口不允许修改。
 
@@ -70,13 +70,13 @@
 
 图：创建虚拟服务器组页面
 
-![Associated-With-LB-7](../../../../image/JDFusion/Associated-With-LB-7.png)
+![Associated-With-LB-7](../../../../image/JD-Cloud-Mesh/Associated-With-LB-7.png)
 
 在此页面输入组名称、选择实例、输入端口号和权重，点击“确定”按钮，弹出“创建成功”提示，您可以在负载均衡详情页面中看到您创建的虚拟服务组信息，如图：负载均衡虚拟服务器组详情页面所示。
 
 图：负载均衡虚拟服务器组详情页面
 
-![Associated-With-LB-8](../../../../image/JDFusion/Associated-With-LB-8.png)
+![Associated-With-LB-8](../../../../image/JD-Cloud-Mesh/Associated-With-LB-8.png)
 
 
 
