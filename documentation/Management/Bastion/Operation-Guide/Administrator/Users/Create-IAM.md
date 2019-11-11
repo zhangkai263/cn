@@ -15,7 +15,11 @@
 
 **给子用户授予策略**
 
-访问子用户列表，点击【授权】按钮，可快捷的授予子用户相应的策略。
+访问子用户列表，点击【授权】按钮。
+
+在授权策略页面，搜索以下授权策略：
+JDCloudBastionHostFullAccess（管理员权限）
+JDCloudBastionHostReadOnlyAccess（运维员权限）
 
 ![子用户列表策略授权弹窗页面](../../../../image/IAM/SubUserManagement/子用户授权页面.jpg)
 
