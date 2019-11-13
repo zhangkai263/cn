@@ -6,6 +6,6 @@
 - 可以根据任务名称进行模糊匹配搜索
 - 可以进行运行，终止任务等操作
 
-![工作流运维](../../../../../../image/Data-Factory/work-flow-op-1.png)
+![工作流运维](../../../../../image/Data-Factory/work-flow-op-1.png)
 
 
