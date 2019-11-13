@@ -33,9 +33,6 @@ items:
           href: Operation-Guide/Operation-Center/Task-list.md
         - name: 实例列表
           href: Operation-Guide/Operation-Center/Task-list.md
-    - name: 运维中心
-      href: Operation-Guide/Operation-Center/Task-list.md
-      
 - name: 数据上云工具
   items:
     - name: xDatacmd
