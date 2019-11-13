@@ -16,9 +16,9 @@
 
 ![创建工作流1](../../../../../image/Data-Factory/create-work-flow-2.png)
 
-![创建工作流1](../../../../../image/Data-Factory/create-work-flow-3.png)
-
 右键单击SPARK任务，可以对任务进行启动、编辑、查看日志、删除及重试。
+
+![创建工作流1](../../../../../image/Data-Factory/create-work-flow-3.png)
 
 #### 4. 设置数据集成任务
 
