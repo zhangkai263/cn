@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除直播流状态通知
+删除直播流状态回调地址
 
 ## 请求方式
 DELETE
@@ -21,7 +21,7 @@ https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码
@@ -33,3 +33,16 @@ https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 |**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+DELETE
+```
+https://live.jdcloud-api.com/v1/streamNotifys/push.yourdomain.com
+```
+
+## 返回示例
+```
+{
+    "requestId": "bgvmivir54gddpgi764se9f4kfr7ge41"
+}
+```

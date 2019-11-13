@@ -2,7 +2,9 @@
 
 
 ## 描述
-删除域名录制配置
+删除域名级别录制模板配置
+- 删除域名级别录制模板配置,重新推流后生效
+
 
 ## 请求方式
 DELETE
@@ -12,14 +14,8 @@ https://live.jdcloud-api.com/v1/recordDomains/{publishDomain}/templates/{templat
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**publishDomain**|String|True| |推流加速域名|
-|**template**|String|True| |录制模板自定义名称:
-  - 标准质量模板：sd、hd、hsd
-  - 自定义模板: 枚举类型校验，忽略大小写，自动删除空格,
-               取值要求：数字、大小写字母或短横线("-"),
-               首尾不能有特殊字符("-")
-  - <b>注意: 不能与标准的转码模板和已定义命名重复</b>
-|
+|**publishDomain**|String|True| |推流域名|
+|**template**|String|True| |录制模板|
 
 ## 请求参数
 无
@@ -28,7 +24,7 @@ https://live.jdcloud-api.com/v1/recordDomains/{publishDomain}/templates/{templat
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码
@@ -40,3 +36,16 @@ https://live.jdcloud-api.com/v1/recordDomains/{publishDomain}/templates/{templat
 |**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+DELETE
+```
+https://live.jdcloud-api.com/v1/recordDomains/push.yourdomain.com/templates/yourrecordtemplate
+```
+
+## 返回示例
+```
+{
+    "requestId": "bgvmivir54gddpgi764se9f4kfr7ge41"
+}
+```

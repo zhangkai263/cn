@@ -23,6 +23,7 @@
 # ./nginx                     //启动nginx,配置文件位置/usr/local/nginx/conf/nginx.conf
 ```
 
+
 3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)
 
 创建安全组并绑定云主机[绑定云主机](https://docs.jdcloud.com/cn/virtual-machines/associate-security-group)

@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询直播流状态通知
+查询直播流状态回调地址
 
 ## 请求方式
 GET
@@ -22,13 +22,13 @@ https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**publishDomain**|String|您的加速域名|
-|**notifyUrl**|String|回调地址|
+|**publishDomain**|String|推流域名|
+|**notifyUrl**|String|流状态回调地址|
 
 ## 返回码
 |返回码|描述|
@@ -39,3 +39,20 @@ https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 |**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+GET
+```
+https://live.jdcloud-api.com/v1/streamNotifys/push.yourdomain.com
+```
+
+## 返回示例
+```
+{
+    "requestId": "bgvmivir54gddpgi764se9f4kfr7ge41", 
+    "result": {
+        "notifyUrl": "http://xxx.com/xxx/xxx", 
+        "publishDoamin": "push.yourdomain.com"
+    }
+}
+```

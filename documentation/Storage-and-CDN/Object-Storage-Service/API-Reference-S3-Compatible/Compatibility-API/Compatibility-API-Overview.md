@@ -37,6 +37,10 @@
 |PUT Bucket lifecycle|设置Bucket的生命周期规则|未支持：Transition、AbortIncompleteMultipartUpload<br>兼容：[PUT Bucket lifecycle](./Operations-On-Bucket/Put-Bucket-Lifecycle.md)|[PUT Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTlifecycle.html)|
 |GET Bucket lifecycle|设置Bucket的生命周期规则|兼容：[GET Bucket lifecycle](./Operations-On-Bucket/Get-Bucket-Lifecycle.md)|[GET Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETlifecycle.html)|
 |DELETE Bucket lifecycle|删除Bucket的生命周期规则|兼容：[DELETE Bucket lifecycle](./Operations-On-Bucket/Delete-Bucket-Lifecycle.md)|[DELETE Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETElifecycle.html)|
+|Put Bucket tagging|设置Bucket的标签|兼容：[Put Bucket tagging](./Operations-On-Bucket/Put-Bucket-Tagging.md)|[Put Bucket tagging](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTtagging.html)|
+|Get Bucket tagging|获取Bucket的标签|兼容：[Get Bucket tagging](./Operations-On-Bucket/Get-Bucket-Tagging.md)|[Get Bucket tagging](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETtagging.html)|
+|Put Bucket accelerate|设置Bucket传输加速配置|兼容：[Put Bucket accelerate](./Operations-On-Bucket/PUT-Bucket-accelerate.md)|[Put Bucket accelerate](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html)|
+|Get Bucket accelerate|获取Bucket传输加速配置|兼容：[Get Bucket accelerate](./Operations-On-Bucket/GET-Bucket-accelerate.md)|[Get Bucket accelerate](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETaccelerate.html)|
 
 # 关于 Object 操作 
 
@@ -52,6 +56,7 @@
 |Complete MultiPart Upload|把上传的多个part合并成一个Object|兼容[Complete Multipart Upload](./Operations-On-Objects/Complete-Multipart-Upload-2.md)| [Complete MultiPart Upload](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadComplete.html)|
 |Abort MultiPart Upload|终止一个分块上传任务并删除已上传的块|兼容[Abort MultiPart Upload](./Operations-On-Objects/Abort-Multipart-Upload-2.md)| [Abort MultiPart Upload](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadAbort.html)|
 |List Parts|获取特定分块上传操作中的已上传的块|兼容[List Parts](./Operations-On-Objects/List-Parts-2.md)| [List Parts](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadListParts.html)|
-|POST Object|通过表单上传文件到OSS|兼容[POST Object](./Post-Object-2.md)|[POST Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectPOST.html)|
+|POST Object|通过表单上传文件到OSS|兼容[POST Object](./Operations-On-Objects/Post-Object-2.md)|[POST Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectPOST.html)|
 |Put Object Copy|拷贝一个在OSS上已经存在的object成另外一个object|未支持：x-amz-copy-source-if-match，<br>x-amz-copy-source-if-none-match，<br>x-amz-copy-source-if-unmodified-since，<br>x-amz-copy-source-if-modified-since，<br>x-amz-tagging-directive<br>x-amz-storage-class<br>支持STANDARD和REDUCED_REDUNDANCY<br>兼容[PUT Object - Copy](./Operations-On-Objects/Put-Object-Copy-2.md)|[PUT Object - Copy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectCOPY.html)|
 |Upload Part Copy|通过从一个已存在的Object中拷贝数据来上传一个Part。|未支持：x-amz-copy-source-if-match，<br>x-amz-copy-source-if-none-match，<br>x-amz-copy-source-if-unmodified-since，<br>x-amz-copy-source-if-modified-since<br>兼容[Upload Part - Copy](./Operations-On-Objects/Upload-Part-Copy-2.md)|[Upload Part - Copy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadUploadPartCopy.html)|
+|POST Object restore|恢复归档存储对象得到临时副本|未支持:Select <br>兼容[POST Object restore](./Operations-On-Objects/Post-Object-Restore.md)|[POST Object restore](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectPOSTrestore.html)|

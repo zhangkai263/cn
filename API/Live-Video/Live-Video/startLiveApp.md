@@ -2,7 +2,9 @@
 
 
 ## 描述
-启用APP
+启用应用
+- 启用 停用 状态的应用
+
 
 ## 请求方式
 PUT
@@ -21,7 +23,7 @@ https://live.jdcloud-api.com/v1/apps:start
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码
@@ -33,3 +35,23 @@ https://live.jdcloud-api.com/v1/apps:start
 |**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+PUT
+```
+https://live.jdcloud-api.com/v1/apps:start
+```
+
+```
+{
+    "appName": "yourapp", 
+    "publishDomain": "push.yourdomain.com"
+}
+```
+
+## 返回示例
+```
+{
+    "requestId": "bgvmivir54gddpgi764se9f4kfr7ge41"
+}
+```
