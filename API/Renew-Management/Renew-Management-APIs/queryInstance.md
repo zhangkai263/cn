@@ -26,9 +26,9 @@ https://renewal.jdcloud-api.com/v2/regions/{regionId}/instances
 |**serviceCode**|String|True| |产品线|
 |**instanceName**|String|False| |资源名称|
 |**instanceId**|String|False| |资源ID|
-|**renewStatus**|String|True| |资源续费状态(AUTO-开通自动续费资源,MANUAL-未开通自动续费资源,ALL-全部资源)|
-|**billingType**|String|False| |资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)，不传显示全部资源|
-|**expireType**|String|False| |资源到期类型(EXPIRED-已到期,UNEXPIRED-未到期,ONE-1天内到期,THREE-3天内到期,SEVEN-7天内到期,ALL_TIME-全部)|
+|**renewStatus**|String|True| |资源续费状态(AUTO-开通自动续费资源,MANUAL-未开通自动续费资源,ALL-全部资源)，默认为全部|
+|**billingType**|String|False| |资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)，不传显示全部计费类型的资源|
+|**expireType**|String|False| |资源到期类型(EXPIRED-已到期,UNEXPIRED-未到期,ONE-1天内到期,THREE-3天内到期,SEVEN-7天内到期,ALL_TIME-全部)，默认为全部|
 |**ipAddress**|String|False| |主机绑定的内网IP地址|
 |**pageNumber**|Integer|False| |当前页码，不传默认为1|
 |**pageSize**|Integer|False| |每页条数，不传默认为10|
@@ -52,12 +52,12 @@ https://renewal.jdcloud-api.com/v2/regions/{regionId}/instances
 |**resourceId**|String|资源ID|
 |**resourceName**|String|资源名称|
 |**region**|String|地域|
-|**billingType**|String|资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)，不传显示全部资源|
+|**billingType**|String|资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)|
 |**expireTime**|String|资源到期时间|
 |**lastTime**|Integer|倒计时|
 |**autoRenewStatus**|String|自动续费状态(UNOPENED-未开通,OPENED-已开通)|
 |**autoRenewPeriod**|String|自动续费周期，单位为月|
-|**associateResource**|String|是否绑定关联资源一并续费(BIND-是,UNBIND-否)|
+|**associateResource**|String|是否绑定关联资源一并开通自动续费(AUTO_RENEW:关联包年包月资源一并自动续费 UN_AUTO_RENEW：关联包年包月资源不自动续费)|
 |**extendField**|String|扩展字段，包括数据库类型、资源特殊说明等|
 |**relationList**|RelationResource[]|绑定资源列表|
 ### RelationResource
@@ -68,7 +68,7 @@ https://renewal.jdcloud-api.com/v2/regions/{regionId}/instances
 |**resourceId**|String|资源ID|
 |**resourceName**|String|资源名称|
 |**region**|String|地域|
-|**billingType**|String|资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)，不传显示全部资源|
+|**billingType**|String|资源计费类型(CONFIG-按配置,FLOW-按用量,MONTHLY-包年包月)|
 |**expireTime**|String|资源到期时间|
 |**lastTime**|Integer|倒计时|
 |**autoRenewStatus**|String|自动续费状态(UNOPENED-未开通,OPENED-已开通)|
