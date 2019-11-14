@@ -9,7 +9,7 @@
 手动安装，请登录到待安装/异常主机，执行以下命令
 
 ```
-curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_deploy | bash
+curl -fsSL https://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install | bash -s zero-agent
 ```
 
 以向华北-北京地域的云主机安装Agent为例，
