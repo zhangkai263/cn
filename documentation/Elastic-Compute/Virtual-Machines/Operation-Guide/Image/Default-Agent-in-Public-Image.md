@@ -104,7 +104,7 @@ Ifrit是京东云自研的轻量、通用的部署运维工具，可实现对其
 **Linux：** <br>
 * 公网/外网环境：<br>
 ```
-wget -c http://devops-hb.s3.cn-north-1.jdcloud-oss.com/ifrit/ifrit-agent-external-v0.01.465.534ae3d.20190523181914.bin -O installer && sh installer -- -a jcs-agent-core,jcs-agent-upgrade,jcs-agent-script,jcs-agent-monitor -O /usr/local/share/jcloud/ifrit && rm -f installer
+wget -c http://devops-hb.s3.cn-north-1.jdcloud-oss.com/ifrit/ifrit-agent-external-v0.01.465.534ae3d.20190523181914.bin -O installer && sh installer -- -a jcs-agent-core,jcs-agent-script,jcs-agent-monitor -O /usr/local/share/jcloud/ifrit && rm -f installer
 ```
 
 * 京东云内网环境<br>
