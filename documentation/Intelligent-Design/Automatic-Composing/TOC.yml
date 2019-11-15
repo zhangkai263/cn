@@ -1,4 +1,4 @@
-name: 智能配色
+name: 智能合图
 href:
 items:
 - name: 产品简介
@@ -17,11 +17,11 @@ items:
   items:
     - name: 获取AK/SK
       href: SDK-Rerference/Authentication-Keys.md
-    - name: SDK使用方法
+    - name: SDK下载
       href: SDK-Rerference/Environment-Preparation.md
 - name: 接口文档
   items:
     - name: 接口概述
-      href: Api-Document/Image-Colors.md
+      href: Api-Document/Image-Composing.md
     - name: 错误码
       href: SDK-Rerference/Error-Codes.md

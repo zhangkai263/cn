@@ -1,5 +1,5 @@
 ## JAVA SDK<br>
-请前往控制台下载SDK http://ling-console.jdcloud.com/server/debug/cutout?sdk=1 。<br>
+请前往控制台下载SDK。<br>
 
 ## Python SDK<br>
 请按以下说明准备好环境。<br>
@@ -15,4 +15,4 @@ pip install jdcloud-apim-sdk
  <br>
 
  ## SDK使用指南
- 建议前往控制台 <a href="http://storage.jd.com/survey/ling-cutout-demo.java.zip">下载demo</a>！
+ 建议前往控制台下载demo！
