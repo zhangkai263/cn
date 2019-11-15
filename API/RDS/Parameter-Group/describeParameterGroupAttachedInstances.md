@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看参数组绑定的云数据库实例<br>- 仅支持MySQL
+查看参数组绑定的云数据库实例<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -25,14 +25,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**instances**|AttachedDBInstance[]| |
+|**instances**|[AttachedDBInstance[]](#AttachedDBInstance)| |
 |**totalCount**|Integer| |
-### AttachedDBInstance
+### <a name="AttachedDBInstance">AttachedDBInstance</a>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|

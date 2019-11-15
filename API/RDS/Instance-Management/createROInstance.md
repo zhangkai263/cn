@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建MySQL的只读实例<br>- 仅支持MySQL
+创建MySQL的只读实例<br> - 仅支持MySQL<br> - 创建的只读实例跟主实例在同一个VPC同一个子网中<br> * 只读实例只支持按配置计费
 
 ## 请求方式
 POST
@@ -33,9 +33,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**roInstanceId**|String[]|新创建的只读实例ID的列表|

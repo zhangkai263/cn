@@ -18,9 +18,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/paramet
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**parameters**|Parameter[]|True| |修改的实例参数|
+|**parameters**|[Parameter[]](#Parameter)|True| |修改的实例参数|
 
-### Parameter
+### <a name="Parameter">Parameter</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |参数名称|

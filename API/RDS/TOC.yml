@@ -1,16 +1,18 @@
-  name: äº‘æ•°æ®åº“ RDS
+  name: ÔÆÊı¾İ¿â RDS
   href: 
   items:
-  - name: æ¥å£æ¦‚è§ˆ
+  - name: ½Ó¿Ú¸ÅÀÀ
     href: overview.md
-  - name: æ›´æ–°å†å²
+  - name: ¸üĞÂÀúÊ·
     href: ChangeLog.md
-  - name: æ¥å£ä¿¡æ¯
+  - name: ½Ó¿ÚĞÅÏ¢
     items:
-      - name: è´¦å·ç®¡ç†
+      - name: ÕËºÅ¹ÜÀí
         items:
           - name: createAccount
             herf: Account-Management/createAccount.md
+          - name: createSuperAccount
+            herf: Account-Management/createSuperAccount.md
           - name: deleteAccount
             herf: Account-Management/deleteAccount.md
           - name: describeAccounts
@@ -21,10 +23,8 @@
             herf: Account-Management/resetPassword.md
           - name: revokePrivilege
             herf: Account-Management/revokePrivilege.md
-          - name: createSuperAccount
-            herf: Account-Management/createSuperAccount.md
 
-      - name: å®¡è®¡ç®¡ç†
+      - name: Éó¼Æ¹ÜÀí
         items:
           - name: createAudit
             herf: Audit-Management/createAudit.md
@@ -47,12 +47,12 @@
           - name: modifyAudit
             herf: Audit-Management/modifyAudit.md
 
-      - name: å¯ç”¨åŒºç®¡ç†
+      - name: ¿ÉÓÃÇø¹ÜÀí
         items:
           - name: describeAzs
             herf: AvailabilityZones/describeAzs.md
             
-      - name: å¤‡ä»½ç®¡ç†
+      - name: ±¸·İ¹ÜÀí
         items:
           - name: createBackup
             herf: Backup-Management/createBackup.md
@@ -63,7 +63,7 @@
           - name: describeBackups
             herf: Backup-Management/describeBackups.md
 
-      - name: Binlogç®¡ç†
+      - name: Binlog¹ÜÀí
         items:
           - name: describeBinlogDownloadURL
             herf: Binlog/describeBinlogDownloadURL.md
@@ -72,7 +72,7 @@
           - name: clearBinlogs
             herf: Binlog/clearBinlogs.md
 
-      - name: å•åº“ä¸Šäº‘
+      - name: µ¥¿âÉÏÔÆ
         items:
           - name: deleteImportFile
             herf: Cloud-on-Single-Database/deleteImportFile.md
@@ -83,7 +83,7 @@
           - name: setImportFileShared
             herf: Cloud-on-Single-Database/setImportFileShared.md
 
-      - name: è·¨åœ°åŸŸå¤‡ä»½
+      - name: ¿çµØÓò±¸·İ
         items:
           - name: createBackupSynchronicity
             herf: Cross-region-synchronization-service/createBackupSynchronicity.md
@@ -94,7 +94,7 @@
           - name: createInstanceByTimeInCrossRegion
             herf: Cross-region-synchronization-service/createInstanceByTimeInCrossRegion.md
 
-      - name: æ•°æ®åº“ç®¡ç†
+      - name: Êı¾İ¿â¹ÜÀí
         items:
           - name: createDatabase
             herf: Database-Management/createDatabase.md
@@ -109,12 +109,12 @@
           - name: restoreDatabaseFromOSS
             herf: Database-Management/restoreDatabaseFromOSS.md
             
-      - name: é”™è¯¯æ—¥å¿—
+      - name: ´íÎóÈÕÖ¾
         items:
           - name: describeErrorLogs
             herf: Error-Logs/describeErrorLogs.md 
 
-      - name: å®ä¾‹ç®¡ç†
+      - name: ÊµÀı¹ÜÀí
         items:
           - name: createInstance
             herf: Instance-Management/createInstance.md
@@ -157,14 +157,16 @@
           - name: restoreInstance
             herf: Instance-Management/restoreInstance.md
 
-      - name: æ—¥å¿—ç®¡ç†
+      - name: ÈÕÖ¾¹ÜÀí
         items:
+          - name: describeLogs
+            herf: LOG/describeLogDownloadURL.md
           - name: describeLogs
             herf: LOG/describeLogs.md
           - name: updateLogDownloadURLInternal
             herf: LOG/updateLogDownloadURLInternal.md
 
-      - name: å‚æ•°ç»„ç®¡ç†
+      - name: ²ÎÊı×é¹ÜÀí
         items:
           - name: copyParameterGroup
             herf: Parameter-Group/copyParameterGroup.md
@@ -185,14 +187,14 @@
           - name: modifyParameterGroupParameters
             herf: Parameter-Group/modifyParameterGroupParameters.md
 
-      - name: å‚æ•°ç®¡ç†
+      - name: ²ÎÊı¹ÜÀí
         items:
           - name: describeParameters
             herf: Parameters/describeParameters.md
           - name: modifyParameters
             herf: Parameters/modifyParameters.md
      
-      - name: æ€§èƒ½ç»Ÿè®¡
+      - name: ĞÔÄÜÍ³¼Æ
         items:
           - name: describeActiveQueryPerformance
             herf: Performance-Statistics/describeActiveQueryPerformance.md
@@ -205,7 +207,7 @@
           - name: describeSlowLogs
             herf: Performance-Statistics/describeSlowLogs.md
 
-      - name: SQL æ‹¦æˆª
+      - name: SQL À¹½Ø
         items:
           - name: describeIntercept
             herf: SQL-Interception/describeIntercept.md
@@ -216,36 +218,36 @@
           - name: enableIntercept
             herf: SQL-Interception/enableIntercept.md
 
-      - name: é€æ˜æ•°æ®åŠ å¯†
+      - name: Í¸Ã÷Êı¾İ¼ÓÃÜ
         items:
           - name: describeTde
             herf: TDE/describeTde.md
           - name: enableTde
             herf: TDE/enableTde.md
             
-      - name: ç™½åå•
+      - name: °×Ãûµ¥
         items:
           - name: describeWhiteList
             herf: White-List/describeWhiteList.md
           - name: modifyWhiteList
             herf: White-List/modifyWhiteList.md
             
-  - name: å®ä¾‹è§„æ ¼
+  - name: ÊµÀı¹æ¸ñ
     items:
-      - name: MySQL å®ä¾‹è§„æ ¼
+      - name: MySQL ÊµÀı¹æ¸ñ
         href: Instance-Specifications/Instance-Specifications-MySQL.md
-      - name: Percona å®ä¾‹è§„æ ¼
+      - name: Percona ÊµÀı¹æ¸ñ
         href: Instance-Specifications/Instance-Specifications-Percona.md
-      - name: MariaDB å®ä¾‹è§„æ ¼
+      - name: MariaDB ÊµÀı¹æ¸ñ
         href: Instance-Specifications/Instance-Specifications-MariaDB.md
-      - name: SQL Server å®ä¾‹è§„æ ¼
+      - name: SQL Server ÊµÀı¹æ¸ñ
         href: Instance-Specifications/Instance-Specifications-SQLServer.md
 
-  - name: æšä¸¾å‚æ•°è¯´æ˜
+  - name: Ã¶¾Ù²ÎÊıËµÃ÷
     items:
-      - name: æšä¸¾ç±»å‹å®šä¹‰
+      - name: Ã¶¾ÙÀàĞÍ¶¨Òå
         href: Enum-Definitions/Enum-Definitions.md
-      - name: åœ°åŸŸåŠå¯ç”¨åŒºåˆ—è¡¨
+      - name: µØÓò¼°¿ÉÓÃÇøÁĞ±í
         href: Enum-Definitions/Regions-AZ.md
-      - name: ç‰ˆæœ¬å·
+      - name: °æ±¾ºÅ
         href: Enum-Definitions/apiVersion.md
