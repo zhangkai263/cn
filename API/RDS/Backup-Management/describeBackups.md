@@ -30,12 +30,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeBackups#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**backup**|[Backup[]](#Backup)|备份集合|
+|**backup**|[Backup[]](describeBackups#Backup)|备份集合|
 |**totalCount**|Integer|总记录数|
 ### <a name="Backup">Backup</a>
 |名称|类型|描述|

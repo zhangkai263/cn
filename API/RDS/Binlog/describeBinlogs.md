@@ -27,13 +27,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/binlogs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeBinlogs#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总记录数|
-|**binlogs**|[Binlog[]](#Binlog)|备份集合|
+|**binlogs**|[Binlog[]](describeBinlogs#Binlog)|备份集合|
 ### <a name="Binlog">Binlog</a>
 |名称|类型|描述|
 |---|---|---|

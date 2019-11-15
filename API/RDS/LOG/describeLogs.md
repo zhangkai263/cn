@@ -20,7 +20,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/log:des
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)。pageNumber为-1时，返回所有数据页码；超过总页数时，显示最后一页;|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为100，取值范围：[10,100]，用于查询列表的接口|
-|**filters**|[Filter[]](#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：logType, 支持operator选项：eq, 仅支持 MySQL，Percona，MariaDB<br>|
+|**filters**|[Filter[]](describeLogs#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：logType, 支持operator选项：eq, 仅支持 MySQL，Percona，MariaDB<br>|
 
 ### <a name="Filter">Filter</a>
 |名称|类型|是否必需|默认值|描述|
@@ -32,12 +32,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/log:des
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeLogs#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**logs**|[Log[]](#Log)| |
+|**logs**|[Log[]](describeLogs#Log)| |
 |**totalCount**|Integer| |
 ### <a name="Log">Log</a>
 |名称|类型|描述|

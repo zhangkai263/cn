@@ -22,12 +22,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeParameterGroupParameters#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**parameters**|[ParameterGroupParameter[]](#ParameterGroupParameter)| |
+|**parameters**|[ParameterGroupParameter[]](describeParameterGroupParameters#ParameterGroupParameter)| |
 ### <a name="ParameterGroupParameter">ParameterGroupParameter</a>
 |名称|类型|描述|
 |---|---|---|

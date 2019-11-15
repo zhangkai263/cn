@@ -19,7 +19,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities:createIn
 |---|---|---|---|---|
 |**restoreTime**|String|True| |根据源实例的哪个时间点创建新实例|
 |**serviceId**|String|True| |跨地域备份同步服务ID|
-|**instanceSpec**|[RestoredNewDBInstanceSpec](#RestoredNewDBInstanceSpec)|True| |新建实例规格|
+|**instanceSpec**|[RestoredNewDBInstanceSpec](createInstanceByTimeInCrossRegion#RestoredNewDBInstanceSpec)|True| |新建实例规格|
 
 ### <a name="RestoredNewDBInstanceSpec">RestoredNewDBInstanceSpec</a>
 |名称|类型|是否必需|默认值|描述|
@@ -31,7 +31,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities:createIn
 |**vpcId**|String|True| |VPC的ID|
 |**subnetId**|String|True| |子网ID|
 |**parameterGroup**|String|False| |参数组ID, 缺省系统会创建一个默认参数组<br>- 仅支持MySQL|
-|**chargeSpec**|[ChargeSpec](#ChargeSpec)|True| |计费规格，包括计费类型，计费周期等|
+|**chargeSpec**|[ChargeSpec](createInstanceByTimeInCrossRegion#ChargeSpec)|True| |计费规格，包括计费类型，计费周期等|
 |**instanceStorageType**|String|False| |存储类型，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md), 缺省值为：LOCAL_SSD<br>- 仅支持MySQL|
 |**instancePort**|String|False| |应用访问端口, 仅支持 MySQL，Percona, MariaDB, 默认值为 3306|
 |**storageEncrypted**|Boolean|False| |实例数据加密(存储类型为云硬盘才支持数据加密)。false：不加密，true：加密，缺省为false<br>- 仅支持MySQL|
@@ -48,7 +48,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities:createIn
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](createInstanceByTimeInCrossRegion#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
