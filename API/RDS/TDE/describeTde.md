@@ -22,9 +22,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/tde
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**status**|String|当前实例是否已经开启TDE功能，如已开启，返回true；如未开启，返回false；开启中，返回pending|

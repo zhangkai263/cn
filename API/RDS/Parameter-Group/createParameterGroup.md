@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建一个参数组<br>- 仅支持MySQL
+创建一个参数组<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 POST
@@ -26,9 +26,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**parameterGroupId**|String| |
