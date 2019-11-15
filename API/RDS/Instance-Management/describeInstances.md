@@ -19,8 +19,8 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)。pageNumber为-1时，返回所有数据页码；超过总页数时，显示最后一页;|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为10，取值范围：[10,100]，且为10的整数倍|
-|**filters**|[Filter[]](#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>instanceId, 支持operator选项：eq<br>instanceName, 支持operator选项：eq, like<br>engine, 支持operator选项：eq<br>engineVersion, 支持operator选项：eq<br>instanceStatus, 支持operator选项：eq<br>vpcId, 支持operator选项：eq<br>instanceType, 支持operator选项：eq<br>internalDomainName, 支持operator选项：eq<br>publicDomainName, 支持operator选项：eq<br>|
-|**tagFilters**|[TagFilter[]](#TagFilter)|False| |资源标签|
+|**filters**|[Filter[]](describeInstances#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>instanceId, 支持operator选项：eq<br>instanceName, 支持operator选项：eq, like<br>engine, 支持operator选项：eq<br>engineVersion, 支持operator选项：eq<br>instanceStatus, 支持operator选项：eq<br>vpcId, 支持operator选项：eq<br>instanceType, 支持operator选项：eq<br>internalDomainName, 支持operator选项：eq<br>publicDomainName, 支持operator选项：eq<br>|
+|**tagFilters**|[TagFilter[]](describeInstances#TagFilter)|False| |资源标签|
 
 ### <a name="TagFilter">TagFilter</a>
 |名称|类型|是否必需|默认值|描述|
@@ -37,12 +37,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeInstances#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**dbInstances**|[DBInstance[]](#DBInstance)| |
+|**dbInstances**|[DBInstance[]](describeInstances#DBInstance)| |
 |**totalCount**|Integer| |
 ### <a name="DBInstance">DBInstance</a>
 |名称|类型|描述|
@@ -64,9 +64,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |**publicDomainName**|String|实例公网域名<br>- 仅支持MySQL|
 |**internalDomainName**|String|实例内网域名<br>- 仅支持MySQL|
 |**createTime**|String|实例创建时间|
-|**backupSynchronicity**|[BackupSynchronicityAbstract[]](#BackupSynchronicityAbstract)|实例跨地域备份服务开启相关信息|
-|**charge**|[Charge](#Charge)|计费配置|
-|**tags**|[Tag[]](#Tag)|标签信息|
+|**backupSynchronicity**|[BackupSynchronicityAbstract[]](describeInstances#BackupSynchronicityAbstract)|实例跨地域备份服务开启相关信息|
+|**charge**|[Charge](describeInstances#Charge)|计费配置|
+|**tags**|[Tag[]](describeInstances#Tag)|标签信息|
 |**sourceInstanceId**|String|MySQL、PostgreSQL只读实例对应的主实例ID|
 ### <a name="Tag">Tag</a>
 |名称|类型|描述|

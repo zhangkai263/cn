@@ -22,12 +22,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/paramet
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeParameters#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**parameters**|[DBInstanceParameter[]](#DBInstanceParameter)|实例配置参数列表|
+|**parameters**|[DBInstanceParameter[]](describeParameters#DBInstanceParameter)|实例配置参数列表|
 ### <a name="DBInstanceParameter">DBInstanceParameter</a>
 |名称|类型|描述|
 |---|---|---|

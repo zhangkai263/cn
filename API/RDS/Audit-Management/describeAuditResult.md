@@ -24,7 +24,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |**accountName**|String|False| |账号名|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为10，取值范围：10、20、50|
-|**filters**|[Filter[]](#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
+|**filters**|[Filter[]](describeAuditResult#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
 
 ### <a name="Filter">Filter</a>
 |名称|类型|是否必需|默认值|描述|
@@ -36,12 +36,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeAuditResult#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**auditResult**|[AuditResult[]](#AuditResult)| |
+|**auditResult**|[AuditResult[]](describeAuditResult#AuditResult)| |
 |**totalCount**|Integer| |
 ### <a name="AuditResult">AuditResult</a>
 |名称|类型|描述|

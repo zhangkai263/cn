@@ -22,7 +22,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeAudit#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|

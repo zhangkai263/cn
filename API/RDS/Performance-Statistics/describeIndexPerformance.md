@@ -27,13 +27,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeIndexPerformance#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**missingIndexResult**|[MissingIndexResult[]](#MissingIndexResult)|当queryType为Missing时，返回结果集为MissingIndexResult<br>当queryType为其他值时，该字段为空|
-|**indexPerformanceResult**|[IndexPerformanceResult[]](#IndexPerformanceResult)|当queryType为Missing时，该字段为空<br>当queryType为其他值时，返回IndexPerformanceResult|
+|**missingIndexResult**|[MissingIndexResult[]](describeIndexPerformance#MissingIndexResult)|当queryType为Missing时，返回结果集为MissingIndexResult<br>当queryType为其他值时，该字段为空|
+|**indexPerformanceResult**|[IndexPerformanceResult[]](describeIndexPerformance#IndexPerformanceResult)|当queryType为Missing时，该字段为空<br>当queryType为其他值时，返回IndexPerformanceResult|
 |**totalCount**|Integer|总记录条数|
 |**pageNumber**|Integer|当前数据的页码|
 |**pageSize**|Integer|每页显示的数据条数|

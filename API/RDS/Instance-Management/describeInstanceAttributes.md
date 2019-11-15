@@ -22,12 +22,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeInstanceAttributes#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**dbInstanceAttributes**|[DBInstanceAttribute](#DBInstanceAttribute)| |
+|**dbInstanceAttributes**|[DBInstanceAttribute](describeInstanceAttributes#DBInstanceAttribute)| |
 ### <a name="DBInstanceAttribute">DBInstanceAttribute</a>
 |名称|类型|描述|
 |---|---|---|
@@ -56,12 +56,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**auditStatus**|String|审计状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- 仅支持MySQL|
 |**instanceStatus**|String|实例状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**createTime**|String|实例创建时间|
-|**charge**|[Charge](#Charge)|计费配置|
+|**charge**|[Charge](describeInstanceAttributes#Charge)|计费配置|
 |**sourceInstanceId**|String|MySQL只读实例对应的主实例ID<br>- 仅支持MySQL|
 |**roInstanceIds**|String[]|只读实例ID列表<br>- 仅支持MySQL|
-|**primaryNode**|[DBInstanceNode](#DBInstanceNode)|高可用集群中主节点的信息<br>- 仅支持SQL Server|
-|**secondaryNode**|[DBInstanceNode](#DBInstanceNode)|高可用集群中从节点的信息<br>- 仅支持SQL Server|
-|**tags**|[Tag[]](#Tag)|标签信息|
+|**primaryNode**|[DBInstanceNode](describeInstanceAttributes#DBInstanceNode)|高可用集群中主节点的信息<br>- 仅支持SQL Server|
+|**secondaryNode**|[DBInstanceNode](describeInstanceAttributes#DBInstanceNode)|高可用集群中从节点的信息<br>- 仅支持SQL Server|
+|**tags**|[Tag[]](describeInstanceAttributes#Tag)|标签信息|
 ### <a name="Tag">Tag</a>
 |名称|类型|描述|
 |---|---|---|

@@ -27,12 +27,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeParameterModifyRecords#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**records**|[ParameterModifyRecords[]](#ParameterModifyRecords)| |
+|**records**|[ParameterModifyRecords[]](describeParameterModifyRecords#ParameterModifyRecords)| |
 |**totalCount**|Integer| |
 ### <a name="ParameterModifyRecords">ParameterModifyRecords</a>
 |名称|类型|描述|

@@ -27,7 +27,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/errorLo
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**errorLogs**|[ErrorLog[]](#ErrorLog)|错误日志文件的集合|
+|**errorLogs**|[ErrorLog[]](describeErrorLogs#ErrorLog)|错误日志文件的集合|
 ### <a name="ErrorLog">ErrorLog</a>
 |名称|类型|描述|
 |---|---|---|

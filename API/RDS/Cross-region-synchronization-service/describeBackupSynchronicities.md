@@ -24,12 +24,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeBackupSynchronicities#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**backupSynchronicities**|[BackupSynchronicity[]](#BackupSynchronicity)| |
+|**backupSynchronicities**|[BackupSynchronicity[]](describeBackupSynchronicities#BackupSynchronicity)| |
 |**totalCount**|Integer| |
 ### <a name="BackupSynchronicity">BackupSynchronicity</a>
 |名称|类型|描述|

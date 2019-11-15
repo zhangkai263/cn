@@ -28,12 +28,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeSlowLogAttributes#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**slowLogsAttributes**|[SlowLogAttributes[]](#SlowLogAttributes)|慢日志信息|
+|**slowLogsAttributes**|[SlowLogAttributes[]](describeSlowLogAttributes#SlowLogAttributes)|慢日志信息|
 |**totalCount**|Integer|总记录条数|
 ### <a name="SlowLogAttributes">SlowLogAttributes</a>
 |名称|类型|描述|

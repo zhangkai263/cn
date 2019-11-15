@@ -26,12 +26,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeDatabases#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**databases**|[Database[]](#Database)| |
+|**databases**|[Database[]](describeDatabases#Database)| |
 |**totalCount**|Integer| |
 ### <a name="Database">Database</a>
 |名称|类型|描述|
@@ -40,7 +40,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |**dbStatus**|String|数据库状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- **MySQL：不支持，不返回该字段**<br>- **SQL Server：返回该字段**|
 |**characterSetName**|String|字符集，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**createTime**|String|数据库创建时间，格式YYYY-MM-DD HH:mm:ss<br>- 仅支持SQL Server|
-|**accessPrivilege**|[DBAccessPrivilege[]](#DBAccessPrivilege)|该数据库相关账户权限列表|
+|**accessPrivilege**|[DBAccessPrivilege[]](describeDatabases#DBAccessPrivilege)|该数据库相关账户权限列表|
 ### <a name="DBAccessPrivilege">DBAccessPrivilege</a>
 |名称|类型|描述|
 |---|---|---|

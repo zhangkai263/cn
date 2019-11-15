@@ -22,12 +22,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeWhiteList#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**whiteLists**|[WhiteList[]](#WhiteList)|白名单列表|
+|**whiteLists**|[WhiteList[]](describeWhiteList#WhiteList)|白名单列表|
 ### <a name="WhiteList">WhiteList</a>
 |名称|类型|描述|
 |---|---|---|

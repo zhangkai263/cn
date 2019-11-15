@@ -24,12 +24,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|[Result](describeParameterGroups#Result)| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**parameterGroups**|[ParameterGroup[]](#ParameterGroup)| |
+|**parameterGroups**|[ParameterGroup[]](describeParameterGroups#ParameterGroup)| |
 |**totalCount**|Integer| |
 ### <a name="ParameterGroup">ParameterGroup</a>
 |名称|类型|描述|
