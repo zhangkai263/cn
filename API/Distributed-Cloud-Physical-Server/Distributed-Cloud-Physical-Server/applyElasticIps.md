@@ -19,7 +19,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**elasticIpSpec**|ElasticIpSpec|True| |弹性公网IP配置|
+|**elasticIpSpec**|[ElasticIpSpec](#ElasticIpSpec)|True| |弹性公网IP配置|
 
 ### <a name="ElasticIpSpec">ElasticIpSpec</a>
 |名称|类型|是否必需|默认值|描述|
@@ -27,7 +27,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |**bandwidth**|Integer|True| |带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
 |**count**|Integer|True| |购买数量|
-|**charge**|ChargeSpec|True| |计费配置|
+|**charge**|[ChargeSpec](#ChargeSpec)|True| |计费配置|
 ### <a name="ChargeSpec">ChargeSpec</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -40,7 +40,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>

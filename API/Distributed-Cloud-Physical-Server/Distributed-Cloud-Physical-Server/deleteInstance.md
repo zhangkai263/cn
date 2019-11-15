@@ -1,14 +1,16 @@
-# stopInstance
+# deleteInstance
 
 
 ## 描述
-对单台分布式云物理服务器执行关机操作，只能停止running状态的服务器<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>
+删除单台云物理物理服务器，只能删除运行running、停止stopped、错误error状态的服务器<br/>
+不能删除没有计费信息的服务器<br/>
+
 
 ## 请求方式
-PUT
+DELETE
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:stopInstance
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -30,7 +32,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:stopI
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**success**|Boolean|关机操作是否成功|
+|**success**|Boolean|删除操作是否成功|
 
 ## 返回码
 |返回码|描述|

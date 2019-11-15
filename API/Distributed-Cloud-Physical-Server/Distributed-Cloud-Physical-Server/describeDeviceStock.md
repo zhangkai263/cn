@@ -1,21 +1,23 @@
-# describeLineTypes
+# describeDeviceStock
 
 
 ## 描述
-查询链路类型列表
+查询分布式云物理服务器库存
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceStock
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域ID，可调用接口（describeEdCPSRegions）获取分布式云物理服务器支持的地域|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**deviceType**|String|False| |实例类型，调用接口（describeDeviceTypes）获取实例类型|
 
 
 ## 返回参数
@@ -27,12 +29,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**lineTypes**|[LineType[]](#LineType)| |
-### <a name="LineType">LineType</a>
+|**devicesStock**|[ResourceStock[]](#ResourceStock)| |
+### <a name="ResourceStock">ResourceStock</a>
 |名称|类型|描述|
 |---|---|---|
-|**lineType**|String|链路类型|
-|**region**|String|地域|
+|**deviceType**|String|实例类型, 如 edcps.c.normal1|
+|**region**|String|区域代码, 如 cn-east-tz1|
+|**available**|Integer|可用库存|
 
 ## 返回码
 |返回码|描述|

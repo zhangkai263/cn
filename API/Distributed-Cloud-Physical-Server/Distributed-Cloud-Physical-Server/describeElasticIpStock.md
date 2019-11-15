@@ -1,14 +1,14 @@
-# describeLineTypes
+# describeElasticIpStock
 
 
 ## 描述
-查询链路类型列表
+查询弹性公网IP库存
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIpStock
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -27,12 +27,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**lineTypes**|[LineType[]](#LineType)| |
-### <a name="LineType">LineType</a>
-|名称|类型|描述|
-|---|---|---|
-|**lineType**|String|链路类型|
 |**region**|String|地域|
+|**available**|Integer|可用弹性公网IP库存|
+|**availableBandwidth**|Integer|可用带宽库存|
+|**availableExtraUplinkBandwidth**|Integer|可用额外上行带宽库存|
 
 ## 返回码
 |返回码|描述|

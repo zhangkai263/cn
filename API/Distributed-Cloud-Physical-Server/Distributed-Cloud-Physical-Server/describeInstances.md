@@ -28,7 +28,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**subnetId**|String|False| |子网ID|
 |**enableInternet**|String|False| |是否启用外网, yes/no|
 |**keypairId**|String|False| |密钥对id|
-|**filters**|Filter|False| |instanceId - 分布式云物理服务器ID，精确匹配，支持多个<br/><br>privateIp - 分布式云物理服务器内网IP，精确匹配，支持多个<br/><br>status - 分布式云物理服务器状态，参考分布式云物理服务器状态，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](#Filter)|False| |instanceId - 分布式云物理服务器ID，精确匹配，支持多个<br/><br>privateIp - 分布式云物理服务器内网IP，精确匹配，支持多个<br/><br>status - 分布式云物理服务器状态，参考分布式云物理服务器状态，精确匹配，支持多个<br>|
 
 ### <a name="Filter">Filter</a>
 |名称|类型|是否必需|默认值|描述|
@@ -40,13 +40,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**instances**|Instance| |
+|**instances**|[Instance[]](#Instance)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
@@ -85,7 +85,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**publicIpv6**|String|公网IPv6|
 |**keypairId**|String|密钥对id|
 |**agentStatus**|String|agent状态|
-|**charge**|Charge|计费信息|
+|**charge**|[Charge](#Charge)|计费信息|
 ### <a name="Charge">Charge</a>
 |名称|类型|描述|
 |---|---|---|

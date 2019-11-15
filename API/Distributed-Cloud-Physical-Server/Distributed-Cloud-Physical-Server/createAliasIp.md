@@ -1,14 +1,14 @@
-# createVpc
+# createAliasIp
 
 
 ## 描述
-创建私有网络
+添加别名IP
 
 ## 请求方式
 PUT
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,14 +18,18 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**vpcSpec**|[VpcSpec](#VpcSpec)|True| |子网配置|
+|**aliasIpSpec**|[AliasIpSpec](#AliasIpSpec)|True| |别名IP配置|
 
-### <a name="VpcSpec">VpcSpec</a>
+### <a name="AliasIpSpec">AliasIpSpec</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cidr**|String|True| |私有网络范围|
-|**name**|String|True| |名称|
-|**description**|String|True| |描述|
+|**instanceId**|String|False| |实例ID|
+|**aliasIps**|[AliasIpInfo[]](#AliasIpInfo)|False| |别名ip配置|
+### <a name="AliasIpInfo">AliasIpInfo</a>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**id**|String|False| |主CIDR或次要CIDR id|
+|**cidr**|String|False| |cidr段|
 
 ## 返回参数
 |名称|类型|描述|
@@ -36,7 +40,18 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**vpcId**|String|私有网络ID|
+|**successList**|[AliasIpSuccessInfo[]](#AliasIpSuccessInfo)| |
+|**errorList**|[AliasIpErrorInfo[]](#AliasIpErrorInfo)| |
+### <a name="AliasIpErrorInfo">AliasIpErrorInfo</a>
+|名称|类型|描述|
+|---|---|---|
+|**cidr**|String|cidr段|
+|**message**|String|错误信息|
+### <a name="AliasIpSuccessInfo">AliasIpSuccessInfo</a>
+|名称|类型|描述|
+|---|---|---|
+|**aliasIpId**|String|别名IP id|
+|**cidr**|String|cidr段|
 
 ## 返回码
 |返回码|描述|
