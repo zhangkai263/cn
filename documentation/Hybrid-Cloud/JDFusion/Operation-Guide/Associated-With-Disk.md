@@ -45,7 +45,7 @@
 
 图：制作快照页面
 
-![Associated-With-Disk-5](../../../../image/JDFusiony/Associated-With-Disk-5.png)
+![Associated-With-Disk-5](../../../../image/JDFusion/Associated-With-Disk-5.png)
 
 在此页面，输入快照名称，点击“确定”按钮，弹出创建成功提示，则在云硬盘快照列表页中，可以看到新建快照信息。
 

@@ -17,10 +17,6 @@ items:
   items:
     - name: 获取AK/SK
       href: SDK-Rerference/Authentication-Keys.md
-    - name: 签名算法
-      href: SDK-Rerference/Authorization-Rules.md
-    - name: 调用方法
-      href: SDK-Rerference/Call-Methods.md
     - name: SDK使用方法
       href: SDK-Rerference/Environment-Preparation.md
 - name: 接口文档

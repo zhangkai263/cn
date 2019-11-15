@@ -15,5 +15,5 @@ curl -fsSL https://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install | bash -s
 | ifrit-agent  | 管理进程 |  1234 |
 | ifrit-supervise  | 管理进程 |  |
 | hawkeye-agent  | 用于监控 |  1235 |
-| log-agent  | 用于日志采集 |   |
-| zero-agent  | 控制系统agent ，用于部署、初始化、日志查询等 |   |
+| log-agent  | 用于日志采集 | 2000,2001,2003  |
+| zero-agent  | 控制系统agent ，用于部署、初始化、日志查询等 | 2001,2002  |

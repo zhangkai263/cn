@@ -2,15 +2,15 @@
 
 **使用流程：**
 
-![](../../../image/Edge-Network-Tunnel/Quick-Start.png)
+<img src="../../../image/Edge-Network-Tunnel/Quick-Start.png" style="zoom:85%;" />
 
 ###### 步骤一：下载SDK
 
-根据技术选型，选择对应的SDK(C、Go)进行下载；
+根据技术选型，选择对应的SDK(C、Go)进行下载;
 
 ###### 步骤二：终端注册/连接使用
 
-调用SDK-API对终端进行注册，之后可以和其他终端进行连接、发送信息、获取信息等操作，详情请查阅'*SDK文档*';
+调用SDK-API对终端进行注册，之后可以和其他终端进行连接、发送信息、获取信息等操作，详情请查阅'*[SDK文档](SDK-Reference/Overview.md)*';
 
 ###### 步骤三：使用详情查看
 

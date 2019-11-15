@@ -22,13 +22,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/importF
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeImportFiles#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**importFiles**|ImportFile[]|导入文件的集合|
-### ImportFile
+|**importFiles**|[ImportFile[]](describeImportFiles#ImportFile)|导入文件的集合|
+### <a name="ImportFile">ImportFile</a>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|文件名称|

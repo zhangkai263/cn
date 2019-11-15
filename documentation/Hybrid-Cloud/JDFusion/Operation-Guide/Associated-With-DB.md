@@ -28,7 +28,7 @@
 
 图：创建账号页面
 
-![Associated-With-DB-4](../../../../image/JDusion/Associated-With-DB-4.png)
+![Associated-With-DB-4](../../../../image/JDFusion/Associated-With-DB-4.png)
 
 点击“确定”按钮，完成账号创建，新创建的账户会在账户列表中显示。
 

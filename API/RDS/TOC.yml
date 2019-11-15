@@ -159,6 +159,8 @@
 
       - name: 日志管理
         items:
+          - name: describeLogDownloadURL
+            herf: LOG/describeLogDownloadURL.md
           - name: describeLogs
             herf: LOG/describeLogs.md
           - name: updateLogDownloadURLInternal
