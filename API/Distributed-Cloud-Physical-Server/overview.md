@@ -14,13 +14,20 @@ v1
 |---|---|---|
 |**applyElasticIps**|PUT|申请弹性公网IP<br>|
 |**associateElasticIp**|PUT|绑定弹性公网IP<br>|
+|**createAliasIp**|PUT|添加别名IP|
 |**createInstances**|PUT|创建一台或多台指定配置的分布式云物理服务器<br/><br>- 地域与可用区<br/><br>  \- 调用接口（queryEdCPSRegions）获取分布式云物理服务器支持的地域与可用区<br/><br>- 实例类型<br/><br>  \- 调用接口（describeDeviceTypes）获取物理实例类型列表<br/><br>  \- 不能使用已下线、或已售馨的实例类型<br/><br>- 操作系统<br/><br>  \- 可调用接口（describeOS）获取分布式云物理服务器支持的操作系统列表<br/><br>- 存储<br/><br>  \- 数据盘多种RAID可选，可调用接口（describeDeviceRaids）获取服务器支持的RAID列表<br/><br>- 网络<br/><br>  \- 网络类型目前支持vpc<br/><br>  \- 线路目前支持联通un、电信ct、移动cm<br/><br>  \- 支持不启用外网，如果启用外网，带宽范围[1,200] 单位Mbps<br/><br>- 其他<br/><br>  \- 购买时长，可按年或月购买：月取值范围[1,9], 年取值范围[1,3]<br/><br>  \- 密码设置参考公共参数规范<br/><br>|
 |**createKeypairs**|PUT|创建密钥对|
+|**createSecondaryCidr**|PUT|添加次要CIDR|
 |**createSubnet**|PUT|创建子网|
 |**createVpc**|PUT|创建私有网络|
+|**deleteAliasIp**|DELETE|删除别名IP|
+|**deleteInstance**|DELETE|删除单台云物理物理服务器，只能删除运行running、停止stopped、错误error状态的服务器<br/><br>不能删除没有计费信息的服务器<br/><br>|
 |**deleteKeypairs**|DELETE|删除密钥对|
+|**deleteSecondaryCidr**|DELETE|删除次要CIDR|
 |**deleteSubnet**|DELETE|删除子网|
 |**deleteVpc**|DELETE|删除私有网络<br>|
+|**deleteelasticIp**|DELETE|删除弹性公网IP<br>|
+|**describeAliasIps**|GET|查询别名IP列表|
 |**describeAvailablePrivateIp**|GET|查询可用的私有IP列表|
 |**describeDeviceRaids**|GET|查询某种实例类型的分布式云物理服务器支持的RAID类型，可查询系统盘RAID类型和数据盘RAID类型|
 |**describeDeviceStock**|GET|查询分布式云物理服务器库存|
@@ -38,6 +45,7 @@ v1
 |**describeKeypairs**|GET|查询密钥对列表|
 |**describeLineTypes**|GET|查询链路类型列表|
 |**describeOS**|GET|查询分布式云物理服务器支持的操作系统|
+|**describeSecondaryCidrs**|GET|查询次要CIDR列表|
 |**describeSubnet**|GET|查询子网详情|
 |**describeSubnets**|GET|查询子网列表|
 |**describeVpc**|GET|查询私有网络详情|
