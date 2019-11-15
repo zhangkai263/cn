@@ -87,7 +87,7 @@
 
 ### 第5步：查看日志。
 
-定义索引模式，选择Index Patterns，索引名称是“日志配置名称”，需要与ES同名。例如下图范例所示：
+定义索引模式，选择Index Patterns，索引名称需要使用与ES同名的“日志配置名称” 。例如下图范例所示：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
 
