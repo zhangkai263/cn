@@ -16,12 +16,6 @@ OSS提供简单的Web服务接口，可用于存储和提取任意数量的数�
 
 ### OSS提供哪些存储类别?
 
-OSS目前支持标准存储、低频存储、归档存储和低冗余存储。
+OSS目前支持标准存储、低频存储、归档存储和低冗余存储（不推荐）。
 
 不同存储类型详细介绍请参考[京东云对象存储类型介绍](https://docs.jdcloud.com/cn/object-storage-service/storageclass-overview)。价格具体请参考[OSS价格总览](https://docs.jdcloud.com/cn/object-storage-service/price-overview)。
-
-### 如何使用低冗余存储类型?
-
-京东云支持通过兼容AWS S3 的 API、各语言SDK 方式使用低冗余存储。
-
-通过京东云OSS兼容AWS S3 的 API、各语言SDK 使用低冗余存储，即在上传Object 时请求增加x-amz-storage-class属性，并设置其值为REDUCED_REDUNDANCY。具体参考[PUTObject](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Objects/Put-Object.md)。
