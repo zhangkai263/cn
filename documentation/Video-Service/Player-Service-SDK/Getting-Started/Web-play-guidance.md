@@ -55,14 +55,14 @@
 <tr>
     <td>MP4</td>
     <td>只适用点播</td>
-    <td>（http://xxx.vod.myjdcloud.com/xxx.mp4）</td>
+    <td>http://xxx.vod.myjdcloud.com/xxx.mp4</td>
     <td>√</td>
     <td>√</td>
 </tr>                
 </table>
 
 注意：  
-1)播放 RTMP 格式的视频必须启用 Flash，目前浏览器默认禁用 Flash，需用户手动开启；  
+1)播放RTMP格式的视频必须启用 Flash，目前浏览器默认禁用Flash，需用户手动开启；  
 2)使用flv.js + JDplayer.js 跨域播放视频资源时，需在服务器根域名下的跨域配置文件中进行跨域配置，并且按照如下说明配置Request Header和Respones Header；  
 Request Header配置：
 ```
