@@ -235,7 +235,7 @@
 </tr>     
 <tr>
     <td>点播多格式支持</td>
-    <td>支持多种视频封装格式，如MP4、FLV、M3U8、TS、MOV等</td>
+    <td>支持多种视频封装格式，如MP4、FLV、M3U8、MOV等</td>
 </tr> 
 <tr>
     <td>监听事件</td>
