@@ -55,7 +55,7 @@
 <tr>
     <td>MP4</td>
     <td>只适用点播</td>
-    <td>http: //xxx .vod. myjdcloud .com/xxx.mp4</td>
+    <td>“http://xxx.vod.myjdcloud.com/xxx.mp4”</td>
     <td>√</td>
     <td>√</td>
 </tr>                
