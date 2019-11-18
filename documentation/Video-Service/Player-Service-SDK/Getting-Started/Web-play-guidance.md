@@ -55,7 +55,7 @@
 <tr>
     <td>MP4</td>
     <td>只适用点播</td>
-    <td>http://xxx.vod.myjdcloud.com/xxx.mp4</td>
+    <td>http: //xxx .vod. myjdcloud .com/xxx.mp4</td>
     <td>√</td>
     <td>√</td>
 </tr>                
@@ -82,40 +82,3 @@ Access-Control-Expose-Headers: Content-Length
 A、截止2020年12月底之前，因为目前浏览器和研发Flash控件的Adobe还没有抛弃Flash控件，并且Flash控件支持的视频源格式较多，兼容性较好，需兼容低版本IE浏览器的用户，可以使用Flash控件的方式播放FLV，兼容Chrome, FireFox, Safari 10, IE8及以上 and Edge，使用该方式播放flv，需要手动开启浏览器Flash插件，不显示播放速率菜单；  
 B、若不考虑兼容低版本IE浏览器，可以使用flv.js+JDplayer.js结合播放FLV，采用HTML5 技术[Media Source Extensions](https://w3c.github.io/media-source/)，即便浏览器不再支持Flash控件，也可播放FLV，兼容Chrome, FireFox，IE11 and Edge，该方式采用H5技术，播放flv时，可显示播放速率菜单。
 
-
-“[Media Source Extensions](https://Media Source Extensions)”
-
-
-* **获取SDK**  
-Android端推流SDK&播放器SDK请<a href="Media Source Extensions">点击下载</a><br/>  
-
-* **工程目录结构**  
-demo: 示例工程，演示本SDK主要接口功能的使用    
-libs: 集成SDK需要的所有库文件    
-jniLibs/[armeabi-v7a|arm64-v8a|x86]: 各平台的so库    
-libs/jdc_live.jar: SDK jar包    
-
-* **配置项目**    
-引入目标库, 将libs目录下的库文件引入到目标工程中并添加依赖。
-可参考下述配置方式（以Android Studio为例）：  
-1)导入SDK
-手动集成：
-将libs目录copy到目标工程的libs下；
-将jniLibs目录拷贝到目标工程的src\main\jniLibs;
-
-2)修改proguard(混淆)文件，添加如下规则：
-```
--keep class com.jdcloud.media.player.** {
-  *;
-}
-```
-
-3)在AndroidManifest.xml文件中申请相应权限
-```
-<!-- 使用权限 -->
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.WAKE_LOCK" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-```
