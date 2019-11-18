@@ -1,22 +1,23 @@
-# describeVpc
+# describeSecondaryCidrs
 
 
 ## 描述
-查询私有网络详情
+查询次要CIDR列表
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域ID，可调用接口（describeEdCPSRegions）获取分布式云物理服务器支持的地域|
-|**vpcId**|String|True| |私有网络ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**subnetId**|String|True| |子网ID|
 
 
 ## 返回参数
@@ -28,16 +29,20 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**vpc**|[Vpc](#Vpc)|私有网络详细信息|
-### <a name="Vpc">Vpc</a>
+|**secondaryCidrs**|[SecondaryCidr[]](#SecondaryCidr)| |
+### <a name="SecondaryCidr">SecondaryCidr</a>
 |名称|类型|描述|
 |---|---|---|
+|**secondaryCidrId**|String|次要cidr的ID|
+|**cidr**|String|次要cidr|
 |**region**|String|地域代码, 如cn-east-tz1|
-|**vpcId**|String|私有网络ID|
-|**name**|String|私有网络名称|
-|**cidr**|String|私有网络CIDR|
-|**description**|String|描述|
-|**createTime**|String|创建时间|
+|**az**|String|可用区, 如cn-east-tz1a|
+|**subnetId**|String|子网ID|
+|**name**|String|次要cidr名称|
+|**vpcId**|String|私有网络Id|
+|**vpcName**|String|私有网络名称|
+|**availableIpCount**|Integer|可用ip数量|
+|**totalIpCount**|Integer|总ip数量|
 
 ## 返回码
 |返回码|描述|

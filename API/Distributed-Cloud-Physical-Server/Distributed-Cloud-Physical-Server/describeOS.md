@@ -24,13 +24,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/os
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**oss**|Os| |
+|**oss**|[Os[]](#Os)| |
 ### <a name="Os">Os</a>
 |名称|类型|描述|
 |---|---|---|

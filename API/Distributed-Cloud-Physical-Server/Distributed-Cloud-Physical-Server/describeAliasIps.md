@@ -1,14 +1,14 @@
-# describeVpcs
+# describeAliasIps
 
 
 ## 描述
-查询私有网络列表
+查询别名IP列表
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -19,15 +19,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
-|**name**|String|False| |私有网络名称|
-|**filters**|[Filter[]](#Filter)|False| |vpcId - 私有网络ID，精确匹配，支持多个<br>|
+|**subnetId**|String|False| |子网ID|
+|**instanceId**|String|False| |实例ID|
+|**cidr**|String|False| |CIDR段，模糊搜索|
 
-### <a name="Filter">Filter</a>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
@@ -38,19 +33,20 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**vpcs**|[Vpc[]](#Vpc)| |
+|**aliasIps**|[AliasIp[]](#AliasIp)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <a name="Vpc">Vpc</a>
+### <a name="AliasIp">AliasIp</a>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-east-tz1|
-|**vpcId**|String|私有网络ID|
-|**name**|String|私有网络名称|
-|**cidr**|String|私有网络CIDR|
-|**description**|String|描述|
-|**createTime**|String|创建时间|
+|**instanceId**|String|实例ID|
+|**region**|String|地域|
+|**az**|String|可用区|
+|**subnetId**|String|子网ID|
+|**secondaryCidrId**|String|次要cidr ID|
+|**aliasIpId**|String|别名IP ID|
+|**cidr**|String|cidr段|
 
 ## 返回码
 |返回码|描述|

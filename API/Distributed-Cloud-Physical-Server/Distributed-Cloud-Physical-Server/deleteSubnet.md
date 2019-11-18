@@ -24,7 +24,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets/{subnetId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
