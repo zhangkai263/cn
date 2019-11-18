@@ -82,3 +82,78 @@ Access-Control-Expose-Headers: Content-Length
 A、截止2020年12月底之前，因为目前浏览器和研发Flash控件的Adobe还没有抛弃Flash控件，并且Flash控件支持的视频源格式较多，兼容性较好，需兼容低版本IE浏览器的用户，可以使用Flash控件的方式播放FLV，兼容Chrome, FireFox, Safari 10, IE8及以上 and Edge，使用该方式播放flv，需要手动开启浏览器Flash插件，不显示播放速率菜单；  
 B、若不考虑兼容低版本IE浏览器，可以使用flv.js+JDplayer.js结合播放FLV，采用HTML5 技术[Media Source Extensions](https://w3c.github.io/media-source/)，即便浏览器不再支持Flash控件，也可播放FLV，兼容Chrome, FireFox，IE11 and Edge，该方式采用H5技术，播放flv时，可显示播放速率菜单。
 
+## 初始化参数
+播放器初始化需要传入两个参数，第一个为播放器容器 ID（即video标签上的ID，该ID名称可自定义,  例如：<video id=“player-video-id”></video>），第二个为功能参数对象。
+```
+var player = JDplayer('player-video-id', options);
+```
+1.options参数列表
+options对象可配置的参数：
+<table>
+<tr>
+    <td>名称</td>
+    <td>类型</td>
+    <td>默认值</td>
+    <td>说明</td>
+</tr>
+<tr>
+    <td>width</td>
+    <td>String/Number</td>
+    <td>无</td>
+    <td>播放器区域宽度，单位像素，按需设置，可通过 CSS 控制播放器尺寸。</td>
+</tr>
+<tr>
+    <td>height</td>
+    <td>String/Number</td>
+    <td>无</td>
+    <td>播放器区域高度，单位像素，按需设置，可通过 CSS 控制播放器尺寸。</td>
+</tr>
+<tr>
+    <td>controls</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示播放器的控制栏，可选值有“false”， “true”。</td>
+</tr>
+<tr>
+    <td>poster</td>
+    <td>String</td>
+    <td>无</td>
+    <td>设置封面图片完整地址url。注意：封面功能在部分移动端播放环境下可能失效，因为移动端视频播放环境相对比较复杂，各种浏览器和 App 的 Webview 对 H5 video 实现的方式并不统一，所以如果遇到功能失效的情况，请联系我们</td>
+</tr>
+<tr>
+    <td>autoplay</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>是否自动播放，，可选值有“false”， “true” ，移动端由于系统限制，大部分机型设置 true 无效。</td>
+</tr>
+<tr>
+    <td>playbackRates</td>
+    <td>Array</td>
+    <td>[0.5，1，1.5，2]</td>
+    <td>设置变速播放倍率选项，仅 HTML5 播放模式有效。</td>
+</tr>
+<tr>
+    <td>loop</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>是否循环播放，可选值有“false”， “true”。</td>
+</tr>
+<tr>
+    <td>muted</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>是否静音播放，可选值有“false”， “true”。</td>
+</tr>
+<tr>
+    <td>playbackRates</td>
+    <td>Array</td>
+    <td>[0.5，1，1.5，2]</td>
+    <td>设置变速播放倍率选项，仅 HTML5 播放模式有效。</td>
+</tr>
+<tr>
+    <td>playbackRates</td>
+    <td>Array</td>
+    <td>[0.5，1，1.5，2]</td>
+    <td>设置变速播放倍率选项，仅 HTML5 播放模式有效。</td>
+</tr>                
+</table>
