@@ -90,7 +90,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
 
     ```
     - name: OPTION
-      value: allow_other
+      value: -o allow_other -o umask=0000
     ```
 
 
