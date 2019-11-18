@@ -24,13 +24,13 @@ items:
 - name: 入门指南
   items:
     - name: Android端快速集成
-          href: Getting-Started/Android-short-video-guidance.md
+      href: Getting-Started/Android-short-video-guidance.md
     - name: Android端SDK的使用
-          href: Getting-Started/Android-short-video-API.md
+      href: Getting-Started/Android-short-video-API.md
     - name: iOS端快速集成
-          href: Getting-Started/iOS-short-video-guidance.md
+      href: Getting-Started/iOS-short-video-guidance.md
     - name: iOS端SDK的使用
-          href: Getting-Started/iOS-short-video-API.md
+      href: Getting-Started/iOS-short-video-API.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 相关资源
