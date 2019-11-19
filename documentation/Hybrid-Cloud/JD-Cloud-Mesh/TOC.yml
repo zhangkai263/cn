@@ -16,7 +16,7 @@ items:
 - name: 入门指南
   items:
     - name: 概述
-      href: Getting-Started/Anti-JDFusion-Basic-Started.md
+      href: Getting-Started/Anti-Mesh-Basic-Started.md
     - name: 登录
       href: Getting-Started/Logging-In-Mesh.md      
     - name: 纳管云平台
