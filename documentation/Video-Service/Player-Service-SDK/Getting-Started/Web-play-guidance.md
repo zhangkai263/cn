@@ -299,3 +299,134 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 
 注意：   
 与播放进度条相关的设置项 ‘currentTimeDisplay’、‘timeDivider’ 、‘durationDisplay’, 当 ‘progressControl’ 设置为 true 时，对前三者的设置 true 或 false 可能不生效。
+
+## 对象方法
+初始化播放器返回对象的方法列表：
+<table>
+<tr>
+    <td>名称</td>
+    <td>参数及类型</td>
+    <td>返回值及类型</td>
+    <td>说明</td>
+</tr>
+<tr>
+    <td>ready(function)</td>
+    <td>(Function)</td>
+    <td>无</td>
+    <td>设置播放器初始化完成后的回调。</td>
+</tr>
+<tr>
+    <td>play()</td>
+    <td>无</td>
+    <td>无</td>
+    <td>播放以及恢复播放。</td>
+</tr>
+<tr>
+    <td>pause()</td>
+    <td>无</td>
+    <td>无</td>
+    <td>暂停播放。</td>
+</tr>
+<tr>
+    <td>currentTime(seconds)</td>
+    <td>(Number)</td>
+    <td>(Number)</td>
+    <td>获取当前播放时间点，或者设置播放时间点，该时间点不能超过视频时长。</td>
+</tr>
+<tr>
+    <td>duration()</td>
+    <td>无</td>
+    <td>(Number)</td>
+    <td>获取视频时长。</td>
+</tr>
+<tr>
+    <td>volume(percent)</td>
+    <td>(Number)[0，1][可选]</td>
+    <td>(Number)/设置时无返回</td>
+    <td>获取或设置播放器音量。</td>
+</tr>
+<tr>
+    <td>poster(src)</td>
+    <td>(String)</td>
+    <td>(String)/设置时无返回</td>
+    <td>获取或设置播放器封面。</td>
+</tr>
+<tr>
+    <td>requestFullscreen()</td>
+    <td>无</td>
+    <td>无</td>
+    <td>进入全屏模式。</td>
+</tr>
+<tr>
+    <td>exitFullscreen()</td>
+    <td>无</td>
+    <td>无</td>
+    <td>退出全屏模式。</td>
+</tr>
+<tr>
+    <td>isFullscreen()</td>
+    <td>无</td>
+    <td>Boolean</td>
+    <td>返回是否进入了全屏模式。</td>
+</tr>
+<tr>
+    <td>on(type，listerner)</td>
+    <td>(String, Function)</td>
+    <td>无</td>
+    <td>监听事件。</td>
+</tr>
+<tr>
+    <td>one(type，listerner)	</td>
+    <td>(String, Function)</td>
+    <td>无</td>
+    <td>监听事件，事件处理函数最多只执行1次。</td>
+</tr>
+<tr>
+    <td>off(type，listerner)</td>
+    <td>(String, Function)</td>
+    <td>无</td>
+    <td>解绑事件监听。</td>
+</tr>
+<tr>
+    <td>buffered()</td>
+    <td>无</td>
+    <td>TimeRanges</td>
+    <td>返回视频缓冲区间。</td>
+</tr>
+<tr>
+    <td>bufferedPercent()</td>
+    <td>无</td>
+    <td>值范围[0，1]</td>
+    <td>返回缓冲长度占视频时长的百分比。</td>
+</tr>
+<tr>
+    <td>width()</td>
+    <td>(Number)[可选]</td>
+    <td>(Number)/设置时无返回</td>
+    <td>获取或设置播放器区域宽度，如果通过 CSS 设置播放器尺寸，该方法将无效。</td>
+</tr>
+<tr>
+    <td>height()</td>
+    <td>(Number)[可选]</td>
+    <td>(Number)/设置时无返回</td>
+    <td>获取或设置播放器区域高度，如果通过 CSS 设置播放器尺寸，该方法将无效。</td>
+</tr>
+<tr>
+    <td>videoWidth()</td>
+    <td>无</td>
+    <td>(Number)</td>
+    <td>获取视频分辨率的宽度。</td>
+</tr>
+<tr>
+    <td>videoHeight()</td>
+    <td>无</td>
+    <td>(Number)</td>
+    <td>获取视频分辨率的高度。</td>
+</tr>
+<tr>
+    <td>dispose()</td>
+    <td>无</td>
+    <td>无</td>
+    <td>销毁播放器。</td>
+</tr>                
+</table>
