@@ -16,7 +16,7 @@ items:
 - name: 入门指南
   items:
     - name: 概述
-      href: Getting-Started/Anti-JDFusion-Basic-Started.md
+      href: Getting-Started/Anti-Mesh-Basic-Started.md
     - name: 登录
       href: Getting-Started/Logging-In-Mesh.md      
     - name: 纳管云平台
@@ -36,7 +36,7 @@ items:
     - name: 多云管理
       items:
         - name: 资源概览
-          href: Operation-Guide/Resource-Overview.md
+          href: Operation-Guide/jdfusion-cloud-InvitationCode.md
         - name: 云主机相关
           href: Operation-Guide/Associated-With-Instance.md        
         - name: 云硬盘相关
@@ -77,5 +77,5 @@ items:
           href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
 - name: 历史发布
   items:
-    - name: 文档历史发布
-      href: Related-Resources/Document-History.md
+     - name: 文档历史发布
+       href: Related-Resources/Document-History.md
