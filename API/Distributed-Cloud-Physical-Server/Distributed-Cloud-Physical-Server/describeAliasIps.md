@@ -27,13 +27,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**aliasIps**|[AliasIp[]](#AliasIp)| |
+|**aliasIps**|<a href="#AliasIp">AliasIp[]</a>| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|

@@ -35,7 +35,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**instanceSpec**|[InstanceSpec](#InstanceSpec)|True| |描述分布式云物理服务器配置|
+|**instanceSpec**|<a href="#InstanceSpec">InstanceSpec</a>|True| |描述分布式云物理服务器配置|
 
 ### <a name="InstanceSpec">InstanceSpec</a>
 |名称|类型|是否必需|默认值|描述|
@@ -61,8 +61,8 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**count**|Integer|True| |购买数量|
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
-|**charge**|[ChargeSpec](#ChargeSpec)|True| |计费配置|
-|**aliasIps**|[AliasIpInfo[]](#AliasIpInfo)|False| |别名ip配置|
+|**charge**|<a href="#ChargeSpec">ChargeSpec</a>|True| |计费配置|
+|**aliasIps**|<a href="#AliasIpInfo">AliasIpInfo[]</a>|False| |别名ip配置|
 ### <a name="AliasIpInfo">AliasIpInfo</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -80,7 +80,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>

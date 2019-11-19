@@ -22,13 +22,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIp**|[ElasticIp](#ElasticIp)|弹性公网IP详细信息|
+|**elasticIp**|<a href="#ElasticIp">ElasticIp</a>|弹性公网IP详细信息|
 ### <a name="ElasticIp">ElasticIp</a>
 |名称|类型|描述|
 |---|---|---|
@@ -43,7 +43,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**instanceId**|String|实例ID|
 |**createTime**|String|创建时间|
 |**aliasIpId**|String|别名IP id|
-|**charge**|[Charge](#Charge)|计费信息|
+|**charge**|<a href="#Charge">Charge</a>|计费信息|
 ### <a name="Charge">Charge</a>
 |名称|类型|描述|
 |---|---|---|

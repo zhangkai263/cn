@@ -23,13 +23,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**secondaryCidrs**|[SecondaryCidr[]](#SecondaryCidr)| |
+|**secondaryCidrs**|<a href="#SecondaryCidr">SecondaryCidr[]</a>| |
 ### <a name="SecondaryCidr">SecondaryCidr</a>
 |名称|类型|描述|
 |---|---|---|

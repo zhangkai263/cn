@@ -26,13 +26,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**vpc**|[Vpc](#Vpc)|私有网络详细信息|
+|**vpc**|<a href="#Vpc">Vpc</a>|私有网络详细信息|
 ### <a name="Vpc">Vpc</a>
 |名称|类型|描述|
 |---|---|---|

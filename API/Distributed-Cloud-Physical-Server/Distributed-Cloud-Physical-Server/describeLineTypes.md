@@ -21,13 +21,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**lineTypes**|[LineType[]](#LineType)| |
+|**lineTypes**|<a href="#LineType">LineType[]</a>| |
 ### <a name="LineType">LineType</a>
 |名称|类型|描述|
 |---|---|---|

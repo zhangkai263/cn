@@ -18,7 +18,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**secondaryCidrSpec**|[SecondaryCidrSpec](#SecondaryCidrSpec)|True| |次要cidr配置|
+|**secondaryCidrSpec**|<a href="#SecondaryCidrSpec">SecondaryCidrSpec</a>|True| |次要cidr配置|
 
 ### <a name="SecondaryCidrSpec">SecondaryCidrSpec</a>
 |名称|类型|是否必需|默认值|描述|
@@ -30,7 +30,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
