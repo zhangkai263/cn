@@ -182,6 +182,7 @@ options对象可配置的参数：
 [ 
         
 &nbsp&nbsp&nbsp&nbsp&nbsp{
+
 type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等
 src: 'http://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址
 },
