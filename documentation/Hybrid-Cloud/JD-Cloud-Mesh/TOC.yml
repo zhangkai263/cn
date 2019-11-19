@@ -75,7 +75,7 @@ items:
           href: Operation-Guide/StopPlan-JD-Cloud-DRS.md      
         - name: 切换故障
           href: Operation-Guide/SwitchPlan-JD-Cloud-DRS.md
-  - name: 历史发布
+- name: 历史发布
   items:
-    - name: 文档历史发布
-      href: Related-Resources/Document-History.md
+     - name: 文档历史发布
+       href: Related-Resources/Document-History.md
