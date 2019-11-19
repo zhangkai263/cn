@@ -1,0 +1,47 @@
+  name: DDoS 防护包
+  href:
+  items:
+  - name: 产品简介
+    items:
+    - name: 产品概述
+      herf : Introduction/Product-Overview.md
+    - name : 核心概念
+      herf: Introduction/Core-Concepts.md
+    - name: 基础架构
+      herf: Introduction/Basic-Infrastructure.md
+    - name: 产品功能
+      herf: Introduction/Functions.md
+    - name: 产品规格
+      herf: Introduction/Specification.md
+    - name: 限制说明
+      herf: Introduction/Restrictions.md
+  - name: 产品定价
+    items:
+    - name: 计费概述
+      herf: Pricing/Billing-Overview.md
+    - name: 计费规则
+      herf: Pricing/Billing-Rules.md
+    - name: 价格总览
+      herf: Pricing/Price-Overview.md
+    - name: 购买流程
+      herf: Pricing/Purchase-Process.md 
+  - name: 入门指南
+    items:
+    - name: 创建实例
+      herf: Getting-Started/Create-Instance.md
+    - name: 绑定防护对象
+      herf: Getting-Started/Bind-Protected-Resource.md
+  - name: 操作指南
+    items:
+    - name: 防护规则设置
+      herf: Operation-Guide/Protection-Rules-Setting.md
+    - name: 查看操作日志
+      herf: Operation-Guide/View-The-Operation-Log.md
+    - name: 查看安全报表
+      herf: Operation-Guide/View-The-Security-Report.md
+    - name: 试用活动说明
+      herf: Operation-Guide/Trial-description.md
+  - name: 常见问题
+    herf: FAQ/FAQ.md
+  - name: 文档历史记录
+    href: Related-Resources/Document-History.md

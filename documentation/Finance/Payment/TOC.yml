@@ -1,0 +1,21 @@
+  name: 付款方式
+  href: 
+  items:
+  - name: 支付方式说明
+    href: Payment-Process/Payment-Methods.md   
+  - name: 企业网银说明
+    items:
+      - name: 企业网银支付概述
+        href: B2B-Payment-Operation-Guide/Corpbank-Redirect-Online-Payment-Operation-Guidance.md
+      - name: 中国建设银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-CCB.md
+      - name: 中国农业银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-ABC.md
+      - name: 招商银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-CMB.md
+      - name: 中国工商银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-ICBC.md
+      - name: 交通银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-BCM.md
+      - name: 中国银行企业网银支付步骤
+        href: B2B-Payment-Operation-Guide/The-Steps-Of-Online-Banking-Payment-In-BOC.md

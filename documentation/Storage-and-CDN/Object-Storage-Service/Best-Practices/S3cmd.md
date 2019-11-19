@@ -11,40 +11,39 @@ S3cmd是一个免费的命令行工具客户端，用于在Amazon S3和其他使
 S3cmd环境要求：S3cmd在Linux（Fedora，RedHat，SuSe，Ubuntu，Debian等）和Apple MAC上运行。需要Python 2.6或更高版本。S3cmd version 2也与Python 3.x兼容。
 
 Python版本查看：Linux shell环境下输入python并回车，来查看Python的版本。如下所示：
+
 ```
 Python 2.7.12 (default, Dec  4 2017, 14:50:18) 
 [GCC 5.4.0 20160609] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
+
 以上说明python安装成功。如果没有安装Python，可以从[python官网](https://www.python.org/?spm=a2c4g.11186623.2.4.YmMQuB)获取Python的安装包。网站有详细的安装说明来指导您如何安装和使用Python。
 
 ## 安装使用
 
 **下载S3cmd**
+
 ```
-git clone https://github.com/s3tools/s3cmd.git
+git clone https://github.com/jdcloud-cmw/s3cmd.git
 ```
-**源码修改**
-
-使用V4签名，不使用V2签名，从https://github.com/s3tools/s3cmd.git下载后进入以下目录。
-
-文件目录：s3cmd/S3/S3.py，其中第254行修改为：self.endpoint_requires_signature_v4 = True
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-091.png)
 
 **S3cmd安装**
+
 ```
-sudo cp -f s3cmd/ /usr/local/
+sudo cp -rf s3cmd/ /usr/local/
 sudo ln -s /usr/local/s3cmd/s3cmd /usr/bin/s3cmd
 ```
 
 **配置文件**
 
 配置文件为~/.s3cfg，下面是使用的配置文件的内容：
+
 ```
 [default]
 access_key = [you access key]
+secret_key = [you secret key]
 access_token = 
 add_encoding_exts = 
 add_headers = 
@@ -100,7 +99,6 @@ reduced_redundancy = False
 requester_pays = False
 restore_days = 1
 restore_priority = Standard
-secret_key = [you secret key]
 send_chunk = 65536
 server_side_encryption = False
 signature_v2 = False
@@ -112,10 +110,10 @@ stop_on_error = False
 storage_class = 
 urlencoding_mode = normal
 use_http_expect = False
-use_https = False
+use_https = True
 use_mime_magic = True
 verbosity = WARNING
-website_endpoint = http://%(bucket)s.s3-website-%(location)s.amazonaws.com/
+website_endpoint = http://%(bucket)s.s3.%(location)s.amazonaws.com/
 website_error = 
 website_index = index.html
 ```
@@ -211,7 +209,7 @@ Commands：
     <td>Synchronize a directory tree to S3 (checks files freshness using size and md5 checksum, unless overridden by options, see below)<br>s3cmd sync LOCAL_DIR s3://BUCKET[/PREFIX] or s3://BUCKET[/PREFIX] LOCAL_DIR<br>注：不会自动同步，需要自己输入这条命令来同步一个目录。</td>
 </tr>
 <tr>
-    <td>Sign an S3 URL to provide limited public access with expiry s3cmd signurl<br>s3://BUCKET/OBJECT <expiry_epoch|+expiry_offset></td>
+    <td>Sign an S3 URL to provide limited public access with expiry <br>s3cmd signurl s3://BUCKET/OBJECT &lt; expiry_epoch|+expiry_offset &gt; </td>
 </tr>
 </table>
 

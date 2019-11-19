@@ -4,13 +4,13 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/What-is-Elastic-Network-Interface.md
+        href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品功能
-        href: Introduction/Functions.md
+        href: Introduction/Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -64,24 +64,11 @@
           - name: Linux临时配置
             href: Operation-Guide/VM-Configuration/Linux-Temporary-Configuration.md    
           - name: Linux永久配置
-            href: Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md  
-  - name: 最佳实践
-    items:
-    status: 0
-  - name: 问题排查
-    items:
-    status: 0      
+            href: Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md
+          - name: 辅助网卡路由配置
+            href: Operation-Guide/VM-Configuration/ENI-Routing-Configuration.md
   - name: 常见问题
-    href: FAQ/FAQ.md
-  - name: API参考
-    href:
-    status: 0      
-  - name: SDK参考
-    href:
-    status: 0      
-  - name: 用户协议
-    items:
-    status: 0        
+    href: FAQ/FAQ.md         
   - name: 相关资源
     items:
     - name: 文档历史记录

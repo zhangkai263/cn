@@ -3,7 +3,9 @@
   items:
   - name: 代金券使用
     href: Management-coupon.md
-  - name: 金券查看
+  - name: 代金券查看
     href: View-coupons.md
+  - name: 代金券激活
+    href: Activate-coupon.md
   - name: 常见问题
     href: FAQ.md
