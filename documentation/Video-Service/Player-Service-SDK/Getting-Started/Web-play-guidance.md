@@ -202,15 +202,32 @@ options对象可配置的参数：
 配置播放媒资， type - 媒体类型 src - 媒资地址</td>
 </tr>
 <tr>
-    <td>fluid</td>
-    <td>Boolean</td>
-    <td>false</td>
-    <td>根据容器大小自适应。</td>
-</tr>
-<tr>
-    <td>fluid</td>
-    <td>Boolean</td>
-    <td>false</td>
-    <td>根据容器大小自适应。</td>
+    <td>resolutions</td>
+    <td>Array</td>
+    <td>无</td>
+    <td>        
+[
+        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{   
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx-sd.mp4', // url地址   
+resolution: '标清', // 自定义清晰度名称
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+
+...
+
+{
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'video/mp4',   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx-hd.mp4',   
+resolution: '高清'
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+
+]
+
+用户根据需要配置所需展示切换的清晰度， type - 媒体类型 src - 媒资地址 resolution - 自定义清晰度</td>
 </tr>                
 </table>
