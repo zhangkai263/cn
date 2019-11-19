@@ -566,67 +566,38 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 * 重新进行播放流程。</td>
 </tr>
 <tr>
-    <td>durationchange</td>
-    <td>视频的时长数据发生变化时触发。</td>
+    <td>3 - MEDIA_ERR_DECODE</td>
+    <td>The media playback was aborted due to a corruption problem or because the media used features your browser did not support（视频解码时发生错误）。
+
+可能原因：视频数据异常，解码器解码失败。
+
+解决方案：
+* 尝试重新转码再进行播放，排除由于转码流程引入的问题。
+* 确认原始视频是否正常。</td>
 </tr>
 <tr>
-    <td>loadedmetadata</td>
-    <td>已加载视频的 metadata。</td>
+    <td>4 - MEDIA_ERR_SRC_NOT_SUPPORTED</td>
+    <td>The media could not be loaded, either because the server or network failed or because the format is not supported（视频因格式不支持或者服务器或网络的问题无法加载）。
+
+可能原因：
+* 获取不到视频数据，CDN 资源不存在或者没有返回视频数据。
+* 当前播放环境不支持播放该视频格式。
+
+解决方案：
+* 查看浏览器控制台网络请求信息，确认视频数据请求是否正常。
+* 确认是否按照使用文档加载了对应视频格式的播放脚本。
+* 确认当前浏览器和页面环境是否支持将要播放的视频格式。</td>
 </tr>
 <tr>
-    <td>loadeddata</td>
-    <td>当前帧的数据已加载，但没有足够的数据来播放视频的下一帧时，触发该事件。</td>
-</tr>
-<tr>
-    <td>progress</td>
-    <td>在获取到媒体数据时触发。</td>
-</tr>
-<tr>
-    <td>canplay</td>
-    <td>当播放器能够开始播放视频时触发。</td>
-</tr>
-<tr>
-    <td>canplaythrough</td>
-    <td>当播放器预计能够在不停下来进行缓冲的情况下持续播放指定的视频时触发。</td>
-</tr>
-<tr>
-    <td>error</td>
-    <td>视频播放出现错误时触发。</td>
-</tr>
-<tr>
-    <td>pause</td>
-    <td>暂停时触发。</td>
-</tr>
-<tr>
-    <td>ratechange</td>
-    <td>播放速率变更时触发。</td>
-</tr>
-<tr>
-    <td>seeked</td>
-    <td>搜寻指定播放位置结束时触发。</td>
-</tr>
-<tr>
-    <td>seeking</td>
-    <td>搜寻指定播放位置开始时触发。</td>
-</tr>
-<tr>
-    <td>timeupdate</td>
-    <td>当前播放位置有变更，可以理解为 currentTime 有变更。</td>
-</tr>
-<tr>
-    <td>volumechange</td>
-    <td>设置音量或者 muted 属性值变更时触发。</td>
-</tr>
-<tr>
-    <td>waiting</td>
-    <td>播放停止，下一帧内容不可用时触发。</td>
-</tr>
-<tr>
-    <td>ended</td>
-    <td>视频播放已结束时触发。此时 currentTime 值等于媒体资源最大值。</td>
-</tr>
-<tr>
-    <td>fullscreenchange</td>
-    <td>全屏状态切换时触发。</td>
+    <td>5 - MEDIA_ERR_ENCRYPTED</td>
+    <td>The media is encrypted and we do not have the keys to decrypt it（视频解密时发生错误）。
+
+可能原因：
+* 解密用的密钥不正确。
+* 请求密钥接口返回异常。
+* 当前播放环境不支持视频解密功能。
+
+解决方案：
+* 确认密钥是否正确，以及密钥接口是否返回正常。</td>
 </tr>                
 </table>
