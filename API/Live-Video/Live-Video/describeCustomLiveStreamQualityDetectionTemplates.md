@@ -28,7 +28,7 @@ https://live.jdcloud-api.com/v1/qualityDetectionCustoms
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Object| |
+|**result**|Result| |
 |**requestId**|String|requestId|
 
 ### <a name="Result">Result</a>

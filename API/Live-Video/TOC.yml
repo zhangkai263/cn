@@ -239,10 +239,14 @@ items:
         href: Live-Video/describeUrlRanking.md
   - name: 证书管理
     items:
-      - name: 查询证书
+      - name: 查询直播证书
         href: Live-Video/describeLiveDomainCertificate.md
-      - name: 设置证书
+      - name: 设置直播证书
         href: Live-Video/setLiveDomainCertificate.md
+      - name: 查询回看证书
+        href: Live-Video/describeLiveRestartDomainCertificate.md
+      - name: 设置回看证书
+        href: Live-Video/setLiveRestartDomainCertificate.md
   - name: 鉴权相关
     items:
       - name: 直播推流鉴权
