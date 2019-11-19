@@ -103,3 +103,5 @@ ps: 媒资扩展名位于链接最后时，可以省略type属性。
 
 ### Step4. 多清晰度支持
 #### 4.1原理介绍
+Web 播放器支持多清晰度，如下图所示：
+!(https://github.com/jdcloudcom/cn/blob/cn-Player-Service-SDK/image/Player-Service-SDK/web%E6%92%AD%E6%94%BE%E5%99%A81.png)
