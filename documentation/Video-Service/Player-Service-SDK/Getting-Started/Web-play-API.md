@@ -1,5 +1,5 @@
 ## 对接攻略
-Step1. 页面准备工作  
+### Step1. 页面准备工作  
 在需要播放视频的页面（PC 或 H5）中引入初始化脚本。
 ```
 <script src="https://j.jdcloud.com/video/player/1.0.0/libs/jdplayer.min.js"></script>;
