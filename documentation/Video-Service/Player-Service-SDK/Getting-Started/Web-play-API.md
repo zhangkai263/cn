@@ -105,3 +105,44 @@ ps: 媒资扩展名位于链接最后时，可以省略type属性。
 #### 4.1原理介绍
 Web 播放器支持多清晰度，如下图所示：
 ![播放器多清晰度.png](https://github.com/jdcloudcom/cn/blob/cn-Player-Service-SDK/image/Player-Service-SDK/web播放器1.png)
+
+播放器本身是没有能力去改变视频清晰度的，视频源只有一种清晰度，称之为原画，而原画视频的编码格式和封装格式多种，Web 端无法支持播放所有的视频格式，如点播支持以 H.264 为视频编码，MP4 和 FLV 为封装格式的视频。
+
+#### 4.2代码实现
+多清晰度支持的代码实现如下所示：
+```
+var player = JDplayer('id_video_container', {
+resolutions: [
+ {
+ src: 'http://www.vod.myjdcloud.com/xxx-sd.flv', //请替换成实际可用的播放地址
+type: 'video/flv', // 各视频资源type见表1.1， 媒体资源扩展名不在地址最后时，改项必须配置，否则可以省略
+
+ resolution: '标清'
+ },
+{
+ src: 'http://www.vod.myjdcloud.com/xxx-hd.mp4', 
+ type: 'video/mp4',  
+ resolution: '高清'
+ },
+{
+ src: 'http://www.vod.myjdcloud.com/xxx-fhd.m3u8', 
+ type: 'application/x-mpegURL',  
+ resolution: '超清'
+ }
+]
+autoplay : true,      //iOS 下 safari 浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+poster : 'http://www.test.com/myimage.jpg',
+width :  '480', //视频的显示宽度，请尽量使用视频分辨率宽度， 需视频根据容器自适应宽度时，设置fluid属性，该项不设置
+height : '320', //视频的显示高度，请尽量使用视频分辨率高度， 需视频根据容器自适应高度时，设置fluid属性，该项不设置
+fluid :  true //视频大小根据容器自适应
+});
+```
+
+#### 4.3实现用例
+使用多种分辨率的设置及切换功能。线上示例如下，在 PC 浏览器中右键单击【查看页面源码】即可查看页面的代码实现：<a href="https://j.jdcloud.com/video/player/1.0.0/index.html">分辨率实现</a><br/>
+
+正常情况将看到如下效果：
+![播放器多分辨率.png](https://github.com/jdcloudcom/cn/blob/cn-Player-Service-SDK/image/Player-Service-SDK/web%E6%92%AD%E6%94%BE%E5%99%A82.png)
+注意：
+* PC 端现已支持多种清晰度播放及切换的功能，移动端尚未支持。  
+* 以上示例链接仅用于文档演示，请勿用于生产环境
