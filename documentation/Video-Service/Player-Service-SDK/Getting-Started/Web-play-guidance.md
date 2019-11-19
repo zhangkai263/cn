@@ -83,7 +83,10 @@ A、截止2020年12月底之前，因为目前浏览器和研发Flash控件的Ad
 B、若不考虑兼容低版本IE浏览器，可以使用flv.js+JDplayer.js结合播放FLV，采用HTML5 技术[Media Source Extensions](https://w3c.github.io/media-source/)，即便浏览器不再支持Flash控件，也可播放FLV，兼容Chrome, FireFox，IE11 and Edge，该方式采用H5技术，播放flv时，可显示播放速率菜单。
 
 ## 初始化参数
-播放器初始化需要传入两个参数，第一个为播放器容器 ID（即video标签上的ID，该ID名称可自定义,例如：<video id=“player-video-id”></video>），第二个为功能参数对象。
+播放器初始化需要传入两个参数，第一个为播放器容器 ID（即video标签上的ID，该ID名称可自定义, 例如：
+```
+<video id=“player-video-id”></video>
+```），第二个为功能参数对象。
 ```
 var player = JDplayer('player-video-id', options);
 ```
