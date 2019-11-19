@@ -143,6 +143,7 @@ fluid :  true //视频大小根据容器自适应
 
 正常情况将看到如下效果：
 ![播放器多分辨率.png](https://github.com/jdcloudcom/cn/blob/cn-Player-Service-SDK/image/Player-Service-SDK/web%E6%92%AD%E6%94%BE%E5%99%A82.png)
+
 注意：
 * PC 端现已支持多种清晰度播放及切换的功能，移动端尚未支持。  
-* 以上示例链接仅用于文档演示，请勿用于生产环境
+* 以上示例链接仅用于文档演示，请勿用于生产环境。
