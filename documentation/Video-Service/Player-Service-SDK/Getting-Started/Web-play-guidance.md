@@ -178,25 +178,23 @@ options对象可配置的参数：
     <td>sources</td>
     <td>Array</td>
     <td>无</td>
-    <td>  
-[ 
+    <td>```
+    [
+        {
+          type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等
+          src: 'http://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址
+        },
 
-      {  
-      
-      type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等  
-      src: 'http://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址  
-      },  
+    ...
 
-...  
+    {
+      type: 'video/flv',
+      src: 'http://xxx.vod.myjdcloud.com/xxx66.flv' // url地址
+        }
 
-{  
-      type: 'video/flv',  
-      src: 'http://xxx.vod.myjdcloud.com/xxx66.flv' // url地址  
-      }  
-
-]  
-
-配置播放媒资， type - 媒体类型 src - 媒资地址</td>
+    ]
+    ```    
+    配置播放媒资， type - 媒体类型 src - 媒资地址</td>
 </tr>
 <tr>
     <td>fluid</td>
