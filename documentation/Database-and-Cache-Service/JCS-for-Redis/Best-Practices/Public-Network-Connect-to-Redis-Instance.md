@@ -1,6 +1,6 @@
 # 公网连接Redis实例
 
-## 通过云主机代理转发连接实例(window)
+## 通过云主机代理转发连接实例(Window)
 
 如果需要本地电脑连接京东云缓存Redis，您可以借助 SSH 的端口转发功能实现，以下以 Xshell 为例，说明设置方式。
 
@@ -71,7 +71,9 @@
 ```sysctl –p```
 
 ![5](../../../../image/Redis/11.png)
+
 ![5](../../../../image/Redis/12.png)
+
 
 3、添加iptables转发规则
 
@@ -86,7 +88,9 @@
 ```iptables -t nat -A POSTROUTING -p tcp -d 10.0.5.252 --dport 6379 -j SNAT --to-source 10.0.7.186```
     
 ![5](../../../../image/Redis/13.png)
+
 ![5](../../../../image/Redis/14.png)
+
 
 4、保存并重启iptables服务
 
@@ -95,6 +99,7 @@
 ```service iptables restart```
 
 5、连接测试（Linux）
+
 ![5](../../../../image/Redis/15.png)
 
 ## 注意事项
