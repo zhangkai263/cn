@@ -543,9 +543,9 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 </tr>
 <tr>
     <td>1 - MEDIA_ERR_ABORTED</td>
-    <td>You aborted the media playback （视频数据加载过程中被中断）。           
-* 可能原因：   
-网络中断。 
+    <td>You aborted the media playback （视频数据加载过程中被中断）。             
+可能原因：     
+网络中断。   
 
 浏览器异常中断。  
 
