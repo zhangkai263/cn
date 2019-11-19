@@ -1,7 +1,7 @@
 ## 简单播放示例
 
 1.新建播放器：  
-播放SDK核心类是JDCloudPlayer，提供的核心view是JDCloudVideoView，JDCloudVideoView可以实现播放器开始、暂停、重播、seek等功能，能满足基础的播放器功能。也可以利用JDCloudPlayer自己实现view。创建代码如下：  
+播放器SDK核心类是JDCloudPlayer，提供的核心view是JDCloudVideoView，JDCloudVideoView可以实现播放器开始、暂停、重播、seek等功能，能满足基础的播放器功能。也可以利用JDCloudPlayer自己实现view。创建代码如下：  
 ```
 JDCloudVideoView  mJDCloudVideoView =new JDCloudVideoView(context);
 ```
