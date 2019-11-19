@@ -18,13 +18,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**aliasIpSpec**|[AliasIpSpec](#AliasIpSpec)|True| |别名IP配置|
+|**aliasIpSpec**|<a href="#AliasIpSpec">AliasIpSpec</a>|True| |别名IP配置|
 
 ### <a name="AliasIpSpec">AliasIpSpec</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**instanceId**|String|False| |实例ID|
-|**aliasIps**|[AliasIpInfo[]](#AliasIpInfo)|False| |别名ip配置|
+|**aliasIps**|<a href="#AliasIpInfo">AliasIpInfo[]</a>|False| |别名ip配置|
 ### <a name="AliasIpInfo">AliasIpInfo</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -34,14 +34,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**successList**|[AliasIpSuccessInfo[]](#AliasIpSuccessInfo)| |
-|**errorList**|[AliasIpErrorInfo[]](#AliasIpErrorInfo)| |
+|**successList**|<a href="#AliasIpSuccessInfo">AliasIpSuccessInfo[]</a>| |
+|**errorList**|<a href="#AliasIpErrorInfo">AliasIpErrorInfo[]</a>| |
 ### <a name="AliasIpErrorInfo">AliasIpErrorInfo</a>
 |名称|类型|描述|
 |---|---|---|

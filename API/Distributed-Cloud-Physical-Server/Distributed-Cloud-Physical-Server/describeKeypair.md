@@ -22,13 +22,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/keypairs/{keypairId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)| |
+|**result**|<a href="#Result">Result</a>| |
 |**requestId**|String| |
 
 ### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**server**|[Keypair](#Keypair)|密钥对详细信息|
+|**server**|<a href="#Keypair">Keypair</a>|密钥对详细信息|
 ### <a name="Keypair">Keypair</a>
 |名称|类型|描述|
 |---|---|---|
