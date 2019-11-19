@@ -232,7 +232,7 @@ resolution: '高清'
 </tr>                
 </table>
 
-2.controlBar 参数列表
+2.controlBar 参数列表    
 controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 <table>
 <tr>
@@ -290,9 +290,9 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
     <td>是否显示时间分割符，可选值有“false”， “true”</td>
 </tr>
 <tr>
-    <td>preload</td>
-    <td>String</td>
-    <td>auto</td>
+    <td>volumePanel</td>
+    <td>Boolean</td>
+    <td>true</td>
     <td>是否显示音量控制，可选值有“false”， “true”</td>
 </tr>                
 </table>
