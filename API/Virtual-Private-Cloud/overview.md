@@ -17,13 +17,11 @@ v1
 |**modifyVpc**|PATCH|修改私有网络接口|
 |**describeVpcs**|GET|查询私有网络列表|
 |**describeVpc**|GET|查询Vpc信息详情|
-
 |**createSubnet**|POST|创建子网|
 |**deleteSubnet**|DELETE|删除子网|
 |**modifySubnet**|PATCH|修改子网接口|
 |**describeSubnets**|GET|查询子网列表|
 |**describeSubnet**|GET|查询子网信息详情|
-
 |**createRouteTable**|POST|创建路由表|
 |**deleteRouteTable**|DELETE|删除路由表|
 |**modifyRouteTable**|PATCH|修改路由表属性|
@@ -34,7 +32,6 @@ v1
 |**modifyRouteTableRules**|POST|修改路由表规则|
 |**describeRouteTables**|GET|查询路由表列表|
 |**describeRouteTable**|GET|查询路由表信息详情|
-
 |**createNetworkAcl**|POST|创建networkAcl接口|
 |**deleteNetworkAcl**|DELETE|删除networkAcl接口|
 |**modifyNetworkAcl**|PATCH|修改networkAcl接口|
@@ -45,7 +42,6 @@ v1
 |**modifyNetworkAclRules**|POST|修改networkAcl接口|
 |**describeNetworkAcls**|GET|查询Acl列表|
 |**describeNetworkAcl**|GET|查询networkAcl资源详情|
-
 |**assignSecondaryIps**|POST|给网卡分配secondaryIp接口|
 |**associateElasticIp**|POST|给网卡绑定弹性Ip接口|
 |**disassociateElasticIp**|POST|给网卡解绑弹性Ip接口|
@@ -55,13 +51,11 @@ v1
 |**describeNetworkInterface**|GET|查询弹性网卡信息详情|
 |**describeNetworkInterfaces**|GET|查询弹性网卡列表|
 |**modifyNetworkInterface**|PATCH|修改弹性网卡接口|
-
 |**createElasticIps**|POST|创建一个或者多个弹性Ip|
 |**deleteElasticIp**|DELETE|删除弹性Ip|
 |**modifyElasticIp**|PATCH|修改弹性IP|
 |**describeElasticIp**|GET|ElasticIp资源信息详情|
 |**describeElasticIps**|GET|查询弹性ip列表|
-
 |**createNetworkSecurityGroup**|POST|创建安全组|
 |**deleteNetworkSecurityGroup**|DELETE|删除安全组|
 |**modifyNetworkSecurityGroup**|PATCH|修改安全组属性|
@@ -70,7 +64,6 @@ v1
 |**modifyNetworkSecurityGroupRules**|POST|修改安全组规则|
 |**describeNetworkSecurityGroup**|GET|查询安全组信息详情|
 |**describeNetworkSecurityGroups**|GET|查询安全组列表|
-
 |**createVpcPeering**|POST|创建VpcPeering接口|
 |**deleteVpcPeering**|DELETE|删除VpcPeering接口|
 |**modifyVpcPeering**|PUT|修改VpcPeering接口|
