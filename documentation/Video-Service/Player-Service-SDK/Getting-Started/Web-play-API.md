@@ -7,3 +7,36 @@
 注意：  
 直接用本地网页无法调试，Web 播放器无法处理该情况下的跨域问题。
 
+### Step2. 在 HTML 中放置容器
+在需要展示播放器的页面位置加入播放器容器，即放一个 div 并命名，例如 id_video_container，视频画面都会在容器里渲染。对于容器的大小控制，您可以使用 div 的属性进行控制，示例代码如下：
+```
+ <div id="id_video_container" style="width:100%; height:auto;">
+<video id="my-video" class="jdplayer"></video>
+
+ </div> 
+ ```
+### Step3. 对接视频播放
+编写 Javascript 代码，作用是去指定的 URL 地址拉取音视频流，并将视频画面呈现到添加的容器内。
+#### 简单播放
+如下是一个直播格式的 URL 地址，使用 HLS（M3U8）协议，如果主播在直播中，则用 VLC 等播放器是可以直接打开该 URL 进行观看的：
+```
+http://www.live.myjdcloud.com/xxx.m3u8 // m3u8 播放地址
+```
+
+如果要在手机浏览器上播放该 URL 的视频，则 Javascript 代码如下：
+```
+var player = JDplayer('id_video_container', {
+sources: [
+ {
+ src: 'http://www.live.myjdcloud.com/xxx.m3u8', //请替换成实际可用的播放地址
+type: 'application/x-mpegURL' // 各视频资源type见开发文档中平台、协议及格式支持“支持多种播放协议表”， 媒体资源扩展名不在地址最后时，改项必须配置，否则可以省略
+
+ }
+]
+autoplay : true,      //iOS 下 safari 浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+poster : 'http://www.test.com/myimage.jpg',
+width :  '480', //视频的显示宽度，请尽量使用视频分辨率宽度， 需视频根据容器自适应宽度时，设置fluid属性，该项不设置
+height : '320', //视频的显示高度，请尽量使用视频分辨率高度， 需视频根据容器自适应高度时，设置fluid属性，该项不设置
+fluid :  true //视频大小根据容器自适应
+});
+```
