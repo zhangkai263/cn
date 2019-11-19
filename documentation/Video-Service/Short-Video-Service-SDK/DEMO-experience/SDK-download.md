@@ -8,12 +8,12 @@
     <td>下载地址</td>
 </tr>
 <tr>
-    <td>短视频Android端</td>
+    <td>移动端播放器Android端</td>
     <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/shortvideo/lib.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
-    <td>短视频IOS端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/shortvideo/jdcloud_shortvideo_ios.framework.zip">点击下载</a><br/> </td>
+    <td>移动端播放器IOS端</td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/iOS-sdk-v1.0.0-2019-11-19.zip">点击下载</a><br/> </td>
 </tr>                
 </table>
 
