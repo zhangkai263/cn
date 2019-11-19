@@ -36,7 +36,7 @@ items:
     - name: 多云管理
       items:
         - name: 资源概览
-          href: Operation-Guide/Resource-Overview.md
+          href: Operation-Guide/jdfusion-cloud-InvitationCode.md
         - name: 云主机相关
           href: Operation-Guide/Associated-With-Instance.md        
         - name: 云硬盘相关
