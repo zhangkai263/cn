@@ -118,7 +118,7 @@ options对象可配置的参数：
     <td>poster</td>
     <td>String</td>
     <td>无</td>
-    <td>设置封面图片完整地址url。注意：封面功能在部分移动端播放环境下可能失效，因为移动端视频播放环境相对比较复杂，各种浏览器和 App 的 Webview 对 H5 video 实现的方式并不统一，所以如果遇到功能失效的情况，请联系我们</td>
+    <td>设置封面图片完整地址url。注意：封面功能在部分移动端播放环境下可能失效，因为移动端视频播放环境相对比较复杂，各种浏览器和 App 的 Webview 对 H5 video 实现的方式并不统一，所以如果遇到功能失效的情况，请联系我们。</td>
 </tr>
 <tr>
     <td>autoplay</td>
@@ -145,15 +145,68 @@ options对象可配置的参数：
     <td>是否静音播放，可选值有“false”， “true”。</td>
 </tr>
 <tr>
-    <td>playbackRates</td>
-    <td>Array</td>
-    <td>[0.5，1，1.5，2]</td>
-    <td>设置变速播放倍率选项，仅 HTML5 播放模式有效。</td>
+    <td>preload</td>
+    <td>String</td>
+    <td>auto</td>
+    <td>是否需要预加载，可选值有"auto"，"metadata"和"none" ，移动端由于系统限制，设置 auto 无效。</td>
 </tr>
 <tr>
-    <td>playbackRates</td>
+    <td>bigPlayButton</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示居中的播放按钮（浏览器劫持嵌入的播放按钮无法去除）。</td>
+</tr>
+<tr>
+    <td>controlBar</td>
+    <td>Object</td>
+    <td>无</td>
+    <td>设置控制栏属性的参数组合，后面有详细介绍。</td>
+</tr>
+<tr>
+    <td>aspectRatio</td>
+    <td>String</td>
+    <td>无</td>
+    <td>将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）。</td>
+</tr>
+<tr>
+    <td>fluid</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>根据容器大小自适应。</td>
+</tr>
+<tr>
+    <td>sources</td>
     <td>Array</td>
-    <td>[0.5，1，1.5，2]</td>
-    <td>设置变速播放倍率选项，仅 HTML5 播放模式有效。</td>
+    <td>无</td>
+    <td>
+、、、
+[
+    {
+      type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等
+      src: 'http://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址
+     },
+
+...
+
+{
+      type: 'video/flv',
+      src: 'http://xxx.vod.myjdcloud.com/xxx66.flv' // url地址
+     }
+
+]
+ 、、、
+配置播放媒资， type - 媒体类型 src - 媒资地址</td>
+</tr>
+<tr>
+    <td>fluid</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>根据容器大小自适应。</td>
+</tr>
+<tr>
+    <td>fluid</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>根据容器大小自适应。</td>
 </tr>                
 </table>
