@@ -86,7 +86,8 @@ B、若不考虑兼容低版本IE浏览器，可以使用flv.js+JDplayer.js结�
 播放器初始化需要传入两个参数，第一个为播放器容器 ID（即video标签上的ID，该ID名称可自定义, 例如：
 ```
 <video id=“player-video-id”></video>
-```），第二个为功能参数对象。
+```
+），第二个为功能参数对象。
 ```
 var player = JDplayer('player-video-id', options);
 ```
