@@ -17,7 +17,7 @@ SDK编译环境Xcode 8.0及以上版本，Xcode运行环境OS X 10.10 及以上�
 **下载工程**   
 iOS端播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/iOS-sdk-v1.0.0-2019-11-19.zip">点击下载</a>  
 **工程目录结构**   
-推流SDK的工程目录如下：包含头文件Headers。  
+播放器SDK的工程目录如下：包含头文件Headers。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE1.png)  
 **配置项目**  
 1.手动导入SDK。从Demo中拷贝JDCloudPlayerFramework.framework，导入拖入您的Xcode工程中    
