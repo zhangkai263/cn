@@ -50,7 +50,7 @@
 
   运维人员的领导，拥有更高级别的运维权限，如创建和管理运维人员，具有运维监控模块、系统设置模块、后台管理中用户管理模块的访问与操作权限。运维管理员仅能将运维人员的权限赋予其所在及以下组织中的用户。
 
-![User-System-1](../../../../image/JD-Cloud-Swift-HCI-Edition/User-System-1.png)
+![User-System-1](../../../../image/JD-Cloud-Swift/User-System-1.png)
 
 
 
