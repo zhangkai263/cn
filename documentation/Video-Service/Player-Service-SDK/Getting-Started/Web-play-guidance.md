@@ -556,8 +556,14 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 * 重新进行播放流程。</td>
 </tr>
 <tr>
-    <td>loadstart</td>
-    <td>开始加载数据时触发。</td>
+    <td>2 - MEDIA_ERR_NETWORK</td>
+    <td>A network error caused the media download to fail part-way（由于网络问题造成加载视频失败）。
+
+可能原因：网络中断。
+
+解决方案:
+* 查看浏览器控制台网络请求信息，确认网络请求是否正常。
+* 重新进行播放流程。</td>
 </tr>
 <tr>
     <td>durationchange</td>
