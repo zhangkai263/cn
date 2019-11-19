@@ -64,3 +64,42 @@ fluid :  true //视频大小根据容器自适应
 
 这段代码中增加了 FLV 的播放地址，在PC端使用京彩播放器播放直播流时，如果 FLV 、RTMP和 HLS（M3U8）这三个地址都是可以出流，建议使用 FLV或RTMP 链路，从而实现更低的延迟。
 
+表1.1 常用视频类型
+<table>
+<tr>
+    <td>封装格式</td>
+    <td>类型（type）</td>
+</tr>
+<tr>
+    <td>MP4</td>
+    <td>video/mp4</td>
+</tr>
+<tr>
+    <td>M3U8</td>
+    <td>application/x-mpegURL</td>
+</tr>
+<tr>
+    <td>FLV</td>
+    <td>video/flv 或 video/x-flv</td>
+</tr>                
+</table>
+
+表1.2  RTMP协议类型
+<table>
+<tr>
+    <td>封装格式</td>
+    <td>类型（type）</td>
+</tr>
+<tr>
+    <td>MP4</td>
+    <td>rtmp/mp4</td>
+</tr>
+<tr>
+    <td>FLV</td>
+    <td>rtmp/flv</td>
+</tr>                
+</table>
+ps: 媒资扩展名位于链接最后时，可以省略type属性。
+
+### Step4. 多清晰度支持
+#### 4.1原理介绍
