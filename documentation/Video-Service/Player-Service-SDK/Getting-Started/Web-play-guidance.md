@@ -450,128 +450,173 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
  <table>
 <tr>
     <td>名称</td>
-    <td>参数及类型</td>
-    <td>返回值及类型</td>
-    <td>说明</td>
+    <td>介绍</td>
 </tr>
 <tr>
-    <td>ready(function)</td>
-    <td>(Function)</td>
-    <td>无</td>
-    <td>设置播放器初始化完成后的回调。</td>
+    <td>play</td>
+    <td>已经开始播放，调用 play() 方法或者设置了 autuplay 为 true 且生效时触发，这时 paused 属性为 false。</td>
 </tr>
 <tr>
-    <td>play()</td>
-    <td>无</td>
-    <td>无</td>
-    <td>播放以及恢复播放。</td>
+    <td>playing</td>
+    <td>因缓冲而暂停或停止后恢复播放时触发，paused 属性为 false 。通常用这个事件来标记视频真正播放，play 事件只是开始播放，画面并没有开始渲染。</td>
 </tr>
 <tr>
-    <td>pause()</td>
-    <td>无</td>
-    <td>无</td>
-    <td>暂停播放。</td>
+    <td>loadstart</td>
+    <td>开始加载数据时触发。</td>
 </tr>
 <tr>
-    <td>currentTime(seconds)</td>
-    <td>(Number)</td>
-    <td>(Number)</td>
-    <td>获取当前播放时间点，或者设置播放时间点，该时间点不能超过视频时长。</td>
+    <td>durationchange</td>
+    <td>视频的时长数据发生变化时触发。</td>
 </tr>
 <tr>
-    <td>duration()</td>
-    <td>无</td>
-    <td>(Number)</td>
-    <td>获取视频时长。</td>
+    <td>loadedmetadata</td>
+    <td>已加载视频的 metadata。</td>
 </tr>
 <tr>
-    <td>volume(percent)</td>
-    <td>(Number)[0，1][可选]</td>
-    <td>(Number)/设置时无返回</td>
-    <td>获取或设置播放器音量。</td>
+    <td>loadeddata</td>
+    <td>当前帧的数据已加载，但没有足够的数据来播放视频的下一帧时，触发该事件。</td>
 </tr>
 <tr>
-    <td>poster(src)</td>
-    <td>(String)</td>
-    <td>(String)/设置时无返回</td>
-    <td>获取或设置播放器封面。</td>
+    <td>progress</td>
+    <td>在获取到媒体数据时触发。</td>
 </tr>
 <tr>
-    <td>requestFullscreen()</td>
-    <td>无</td>
-    <td>无</td>
-    <td>进入全屏模式。</td>
+    <td>canplay</td>
+    <td>当播放器能够开始播放视频时触发。</td>
 </tr>
 <tr>
-    <td>exitFullscreen()</td>
-    <td>无</td>
-    <td>无</td>
-    <td>退出全屏模式。</td>
+    <td>canplaythrough</td>
+    <td>当播放器预计能够在不停下来进行缓冲的情况下持续播放指定的视频时触发。</td>
 </tr>
 <tr>
-    <td>isFullscreen()</td>
-    <td>无</td>
-    <td>Boolean</td>
-    <td>返回是否进入了全屏模式。</td>
+    <td>error</td>
+    <td>视频播放出现错误时触发。</td>
 </tr>
 <tr>
-    <td>on(type，listerner)</td>
-    <td>(String, Function)</td>
-    <td>无</td>
-    <td>监听事件。</td>
+    <td>pause</td>
+    <td>暂停时触发。</td>
 </tr>
 <tr>
-    <td>one(type，listerner)	</td>
-    <td>(String, Function)</td>
-    <td>无</td>
-    <td>监听事件，事件处理函数最多只执行1次。</td>
+    <td>ratechange</td>
+    <td>播放速率变更时触发。</td>
 </tr>
 <tr>
-    <td>off(type，listerner)</td>
-    <td>(String, Function)</td>
-    <td>无</td>
-    <td>解绑事件监听。</td>
+    <td>seeked</td>
+    <td>搜寻指定播放位置结束时触发。</td>
 </tr>
 <tr>
-    <td>buffered()</td>
-    <td>无</td>
-    <td>TimeRanges</td>
-    <td>返回视频缓冲区间。</td>
+    <td>seeking</td>
+    <td>搜寻指定播放位置开始时触发。</td>
 </tr>
 <tr>
-    <td>bufferedPercent()</td>
-    <td>无</td>
-    <td>值范围[0，1]</td>
-    <td>返回缓冲长度占视频时长的百分比。</td>
+    <td>timeupdate</td>
+    <td>当前播放位置有变更，可以理解为 currentTime 有变更。</td>
 </tr>
 <tr>
-    <td>width()</td>
-    <td>(Number)[可选]</td>
-    <td>(Number)/设置时无返回</td>
-    <td>获取或设置播放器区域宽度，如果通过 CSS 设置播放器尺寸，该方法将无效。</td>
+    <td>volumechange</td>
+    <td>设置音量或者 muted 属性值变更时触发。</td>
 </tr>
 <tr>
-    <td>height()</td>
-    <td>(Number)[可选]</td>
-    <td>(Number)/设置时无返回</td>
-    <td>获取或设置播放器区域高度，如果通过 CSS 设置播放器尺寸，该方法将无效。</td>
+    <td>waiting</td>
+    <td>播放停止，下一帧内容不可用时触发。</td>
 </tr>
 <tr>
-    <td>videoWidth()</td>
-    <td>无</td>
-    <td>(Number)</td>
-    <td>获取视频分辨率的宽度。</td>
+    <td>ended</td>
+    <td>视频播放已结束时触发。此时 currentTime 值等于媒体资源最大值。</td>
 </tr>
 <tr>
-    <td>videoHeight()</td>
-    <td>无</td>
-    <td>(Number)</td>
-    <td>获取视频分辨率的高度。</td>
+    <td>fullscreenchange</td>
+    <td>全屏状态切换时触发。</td>
+</tr>                
+</table>
+
+## 错误码
+当播放器触发 error 事件时，监听函数会返回错误码，其中3位数以上的错误码为媒体数据接口错误码。错误码列表：
+ <table>
+<tr>
+    <td>名称</td>
+    <td>描述</td>
 </tr>
 <tr>
-    <td>dispose()</td>
-    <td>无</td>
-    <td>无</td>
-    <td>销毁播放器。</td>
+    <td>0 - MEDIA_ERR_CUSTOM</td>
+    <td>用户错误，该错误码在video.js中没有默认提示信息</td>
+</tr>
+<tr>
+    <td>1 - MEDIA_ERR_ABORTED</td>
+    <td>You aborted the media playback （视频数据加载过程中被中断）。
+可能原因： 
+#网络中断。
+浏览器异常中断。
+解决方案：
+查看浏览器控制台网络请求信息，确认网络请求是否正常。
+重新进行播放流程。</td>
+</tr>
+<tr>
+    <td>loadstart</td>
+    <td>开始加载数据时触发。</td>
+</tr>
+<tr>
+    <td>durationchange</td>
+    <td>视频的时长数据发生变化时触发。</td>
+</tr>
+<tr>
+    <td>loadedmetadata</td>
+    <td>已加载视频的 metadata。</td>
+</tr>
+<tr>
+    <td>loadeddata</td>
+    <td>当前帧的数据已加载，但没有足够的数据来播放视频的下一帧时，触发该事件。</td>
+</tr>
+<tr>
+    <td>progress</td>
+    <td>在获取到媒体数据时触发。</td>
+</tr>
+<tr>
+    <td>canplay</td>
+    <td>当播放器能够开始播放视频时触发。</td>
+</tr>
+<tr>
+    <td>canplaythrough</td>
+    <td>当播放器预计能够在不停下来进行缓冲的情况下持续播放指定的视频时触发。</td>
+</tr>
+<tr>
+    <td>error</td>
+    <td>视频播放出现错误时触发。</td>
+</tr>
+<tr>
+    <td>pause</td>
+    <td>暂停时触发。</td>
+</tr>
+<tr>
+    <td>ratechange</td>
+    <td>播放速率变更时触发。</td>
+</tr>
+<tr>
+    <td>seeked</td>
+    <td>搜寻指定播放位置结束时触发。</td>
+</tr>
+<tr>
+    <td>seeking</td>
+    <td>搜寻指定播放位置开始时触发。</td>
+</tr>
+<tr>
+    <td>timeupdate</td>
+    <td>当前播放位置有变更，可以理解为 currentTime 有变更。</td>
+</tr>
+<tr>
+    <td>volumechange</td>
+    <td>设置音量或者 muted 属性值变更时触发。</td>
+</tr>
+<tr>
+    <td>waiting</td>
+    <td>播放停止，下一帧内容不可用时触发。</td>
+</tr>
+<tr>
+    <td>ended</td>
+    <td>视频播放已结束时触发。此时 currentTime 值等于媒体资源最大值。</td>
+</tr>
+<tr>
+    <td>fullscreenchange</td>
+    <td>全屏状态切换时触发。</td>
 </tr>                
 </table>
