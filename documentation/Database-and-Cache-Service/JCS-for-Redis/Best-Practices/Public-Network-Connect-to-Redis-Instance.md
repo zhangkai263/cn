@@ -52,23 +52,33 @@
 
 1、登录同VPC下的云主机(有公网)，安装iptables，并设置开机启动
 
-```yum install iptables-services```
+```
+yum install iptables-services
+```
 
-```systemctl enable iptables.service```
+```
+systemctl enable iptables.service
+```
 
 2、开启转发功能：
 
      #编辑配置文件
      
-```vi /etc/sysctl.conf```
+```
+vi /etc/sysctl.conf
+```
 
     #添加或者修改以下内容
     
-```net.ipv4.ip_forward = 1```
+```
+net.ipv4.ip_forward = 1
+```
 
     #保存后，使修改内容生效
     
-```sysctl –p```
+```
+sysctl –p
+```
 
 ![5](../../../../image/Redis/11.png)
 
@@ -77,15 +87,23 @@
 
 3、添加iptables转发规则
 
-``` iptables -t nat -A PREROUTING -p tcp --dport [要转发的端口号] -j DNAT --to-destination [要转发的服务器IP] ``` 
+```
+iptables -t nat -A PREROUTING -p tcp --dport [要转发的端口号] -j DNAT --to-destination [要转发的服务器IP] 
+``` 
    
-``` iptables -t nat -A POSTROUTING -p tcp -d [要转发的服务器IP] --dport [要转发的端口号] -j SNAT --to-source [本机IP] ```
+``` 
+iptables -t nat -A POSTROUTING -p tcp -d [要转发的服务器IP] --dport [要转发的端口号] -j SNAT --to-source [本机IP]
+```
     
 例如：云主机内网ip为10.0.7.186，redis域名为：redis-xxxxxxxx.cn-north-1.redis.jdcloud.com，可通过ping redis域名得到ip，假设为10.0.5.252，则要添加的转发规则是：
     
-```iptables -t nat -A PREROUTING -p tcp --dport 6379 -j DNAT --to-destination 10.0.5.252:6379```
+```
+iptables -t nat -A PREROUTING -p tcp --dport 6379 -j DNAT --to-destination 10.0.5.252:6379
+```
     
-```iptables -t nat -A POSTROUTING -p tcp -d 10.0.5.252 --dport 6379 -j SNAT --to-source 10.0.7.186```
+```
+iptables -t nat -A POSTROUTING -p tcp -d 10.0.5.252 --dport 6379 -j SNAT --to-source 10.0.7.186
+```
     
 ![5](../../../../image/Redis/13.png)
 
@@ -94,9 +112,13 @@
 
 4、保存并重启iptables服务
 
-```service iptables save```
+```
+service iptables save
+```
 
-```service iptables restart```
+```
+service iptables restart
+```
 
 5、连接测试（Linux）
 
