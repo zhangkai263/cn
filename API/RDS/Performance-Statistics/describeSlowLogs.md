@@ -28,26 +28,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeSlowLogs#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**slowLogs**|SlowLogDigest[]|慢日志信息|
+|**slowLogs**|[SlowLogDigest[]](describeSlowLogs#SlowLogDigest)|慢日志信息|
 |**totalCount**|Integer|总记录条数|
-### SlowLogDigest
+### <a name="SlowLogDigest">SlowLogDigest</a>
 |名称|类型|描述|
 |---|---|---|
 |**dbName**|String|数据库名，表示该SQL是在哪个数据库中执行的|
 |**sql**|String|SQL语句|
 |**executionTime**|String|SQL语句执行的开始时间，格式为YYYY-MM-DD hh:mm:ss|
 |**executionCount**|Integer|SQL语句的执行次数|
-|**elapsedTime**|DigestData|SQL语句执行的时长，单位秒|
-|**lockTime**|DigestData|SQL语句等待锁的时间，单位秒|
-|**sqlLength**|DigestData|SQL语句的长度|
-|**rowsExamined**|DigestData|SQL语句扫描的行数|
-|**rowsReturned**|DigestData|SQL语句返回的行数|
-### DigestData
+|**elapsedTime**|[DigestData](describeSlowLogs#DigestData)|SQL语句执行的时长，单位秒|
+|**lockTime**|[DigestData](describeSlowLogs#DigestData)|SQL语句等待锁的时间，单位秒|
+|**sqlLength**|[DigestData](describeSlowLogs#DigestData)|SQL语句的长度|
+|**rowsExamined**|[DigestData](describeSlowLogs#DigestData)|SQL语句扫描的行数|
+|**rowsReturned**|[DigestData](describeSlowLogs#DigestData)|SQL语句返回的行数|
+### <a name="DigestData">DigestData</a>
 |名称|类型|描述|
 |---|---|---|
 |**pct95**|Float|表示执行结果中95% 数据小于或等于此数值|

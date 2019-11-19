@@ -23,6 +23,7 @@
 	- [部署组](../Operation-Guide/APP-Manage/Deploy-Group.md)
 - 运维管理
 	- [调用链分析服务](../Operation-Guide/DevOps/Analysis-Service.md)
+	- [日志配置](../Operation-Guide/DevOps/LogConfig.md)
 	
 
 

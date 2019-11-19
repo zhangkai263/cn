@@ -22,9 +22,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/interce
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeIntercept#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**available**|Boolean| |

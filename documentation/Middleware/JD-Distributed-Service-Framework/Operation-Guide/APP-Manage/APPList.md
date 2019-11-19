@@ -27,10 +27,10 @@
 
 **说明：**
 
--  Java运行环境目前支持OpenJDK1.7、OpenJDK1.8。
+-  Java运行环境目前支持JDK1.7、OpenJDK1.8。
 
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-1.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-11.png)
 
 
 ### 删除应用
@@ -41,9 +41,9 @@
 
 **说明：**
 
-- 需先删除部署组，才能删除应用；否则无法删除。
+- 如果有部署组，需要先删除部署组，才能删除应用；否则无法删除。
 
-- 删除时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+- 删除应用时，将同时删除程序包和部署历史。
 
 - 用户需在删除数据前，自行做好数据备份工作。
 
@@ -51,37 +51,14 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-del-1.png)
 
 
-### 部署应用
+### 应用部署
 
-1、 登录微服务平台控制台。	在左侧导航栏点击应用管理，进入应用列表页。
-
-2、对于需要部署的应用，点击操作列的发起部署。
-
-- 为提升用户体验，**系统将在云主机中使用Supervisor来管理用户服务。**
-
-- 如果已经创建了相应的部署组，则可直接配置好部署来源、选择部署组后，即可发起部署。
-
-- 如果还未创建部署组，可点击“新建部署组”，先新建部署组后再部署。关于部署组内容，可查看  [部署组](Deploy-Group.md)   章节。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs.png)
-
-
-3、实施部署。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-xq.png)
-
-**说明：**
-
-- 部署完成后，可进行回滚、重新部署等操作。
-
-- 用户还可查看每个实例的部署信息。
-
-- 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+该内容，请参考 ： [应用部署](APPDeloy.md)  。
 
 
 ### 实例部署信息
 
-1、 用户可查看当前应用，通过哪些部署组，被部署至哪些实例上；并可对每个实例上的应用，进行启动应用、停止应用操作。
+1、 用户可查看当前应用，通过哪些部署组，被部署至哪些实例上；并可对每个实例上的应用，进行启动应用、停止应用等操作。
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-slbsxx.png)
@@ -94,7 +71,11 @@
 
 ### 程序包管理
 
-程序包管理中上传的是，当前应用在部署中所使用的程序包。在删除应用的同时，用户可选择是否同步删除应用下的所有程序包；删除前用户需自行备份。
+1、程序包管理中上传的是当前应用在部署中所使用的程序包。
+
+2、在删除应用的同时，将删除应用下的所有程序包；删除前用户需自行备份。
+
+3、目前，程序包支持JAR, WAR两种类型，最大支持256兆。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-cxb-list-1.png)
 
