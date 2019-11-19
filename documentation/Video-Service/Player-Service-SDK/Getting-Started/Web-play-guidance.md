@@ -231,3 +231,71 @@ resolution: '高清'
 用户根据需要配置所需展示切换的清晰度， type - 媒体类型 src - 媒资地址 resolution - 自定义清晰度</td>
 </tr>                
 </table>
+
+2.controlBar 参数列表
+controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
+<table>
+<tr>
+    <td>名称</td>
+    <td>类型</td>
+    <td>默认值</td>
+    <td>说明</td>
+</tr>
+<tr>
+    <td>currentTimeDisplay</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示视频当前时间，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>durationDisplay</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示视频时长，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>fullscreenToggle</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示全屏按钮，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>playbackRateMenuButton</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示播放速率选择按钮，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>playToggle</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示播放、暂停切换按钮，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>progressControl</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示播放进度条，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>remainingTimeDisplay</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示播放剩余时间，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>timeDivider</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>是否显示时间分割符，可选值有“false”， “true”</td>
+</tr>
+<tr>
+    <td>preload</td>
+    <td>String</td>
+    <td>auto</td>
+    <td>是否显示音量控制，可选值有“false”， “true”</td>
+</tr>                
+</table>
+
+注意：   
+与播放进度条相关的设置项 ‘currentTimeDisplay’、‘timeDivider’ 、‘durationDisplay’, 当 ‘progressControl’ 设置为 true 时，对前三者的设置 true 或 false 可能不生效。
