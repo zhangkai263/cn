@@ -192,7 +192,7 @@ type: 'video/flv',
 src: 'http://xxx.vod.myjdcloud.com/xxx66.flv' // url地址
 }
 ]
-```
+
 配置播放媒资， type - 媒体类型 src - 媒资地址</td>
 </tr>
 <tr>
