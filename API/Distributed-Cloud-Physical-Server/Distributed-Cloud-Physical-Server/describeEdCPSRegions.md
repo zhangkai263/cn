@@ -18,20 +18,20 @@ https://edcps.jdcloud-api.com/v1/edgeRegions
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|<a href="#Result">Result</a>| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <a name="Result">Result</a>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**regions**|<a href="#Region">Region[]</a>| |
-### <a name="Region">Region</a>
+|**regions**|[Region[]](#region)| |
+### <div id="Region">Region</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如 cn-east-tz1|
 |**regionName**|String|地域名称，如 华东-台州|
-|**azs**|<a href="#Az">Az[]</a>|可用区列表|
-### <a name="Az">Az</a>
+|**azs**|[Az[]](#az)|可用区列表|
+### <div id="Az">Az</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码，如 cn-east-tz1|
