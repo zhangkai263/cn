@@ -49,7 +49,7 @@
 publishDomain:推流域名<br>  
 appName:应用名称<br>  
 streamName:流名称<br>  
-event:事件[publish_started,publish_ ]done, record_done<br>  
+event:事件publish_started,publish_done<br>  
 status:状态[success]<br>  
 eventTime:触发时间,毫秒数<br>  
 pushParams:推流参数<br></td>
@@ -71,7 +71,7 @@ pushParams:推流参数<br></td>
 publishDomain:推流域名<br>  
 appName:应用名称<br>  
 streamName:流名称<br>  
-event:事件[publish_started,publish_ ]done, record_done<br>  
+event:事件publish_started,publish_done<br>  
 status:状态[success]<br>  
 </td>
 </tr>
@@ -97,11 +97,11 @@ status:状态[success]<br>
 publishDomain:推流域名<br>  
 appName:应用名称<br>  
 streamName:流名称<br>  
-event:事件[publish_started,publish_ ]done, record_done<br>  
+event:事件publish_started,record_done<br>  
 status:状态[success]<br>
 format:录制格式<br>
-startTime:录制开始时间<br>
-stopTime:录制结束时间<br>
+startTime:录制开始时间（毫秒时间戳）<br>
+stopTime:录制结束时间（毫秒时间戳）<br>
 downloadUrl:可下载地址<br>  
 </td>
 </tr>
@@ -136,7 +136,7 @@ downloadUrl:可下载地址<br>
 publishDomain:推流域名<br>  
 appName:应用名称<br>  
 streamName:流名称<br>  
-event:事件[publish_started,publish_ ]done, record_done<br>  
+event:事件publish_started,record_done<br>  
 status:状态[success]<br>
 duration:录制文件时长(毫秒)<br>
 fileSize:文件大小(kb)<br>
@@ -192,9 +192,9 @@ module:质检项<br>
       - FrozenFrame - 静帧<br>
       - Brightness - 亮度<br>
       - Contrast - 对比度<br>
-type：类型 video;audio<br>
-startTime:异常开始时间<br>
-stopTime:异常结束时间<br>
+type：类型 video<br>
+startTime:异常开始时间（毫秒时间戳）<br>
+endTime:异常结束时间（毫秒时间戳）<br>
 </td>
 </tr>	
 </table>
