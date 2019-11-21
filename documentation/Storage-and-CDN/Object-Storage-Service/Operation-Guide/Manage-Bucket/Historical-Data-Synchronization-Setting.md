@@ -18,11 +18,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->数据同步->历史数据同步
 
-![历史数据同步](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-165.png)
+![历史数据同步](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-165.png)
 
 2.单击 新建任务，打开历史数据同步规则配置对话框。
 
-![配置历史数据同步](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-166.png)
+![配置历史数据同步](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-166.png)
 
 3.选择目标存储空间所在的地域及存储空间名称。
 
@@ -52,7 +52,7 @@
 
 创建任务后，可以在历史数据同步列表中查看任务进度和状态，并进行取消任务等操作。
 
-![查看历史数据同步任务](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-167.png)
+![查看历史数据同步任务](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-167.png)
 
 说明：
 
