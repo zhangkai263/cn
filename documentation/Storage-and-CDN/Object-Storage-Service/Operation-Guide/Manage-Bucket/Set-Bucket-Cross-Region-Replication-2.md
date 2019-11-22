@@ -4,7 +4,7 @@
 
 ## 使用场景
 
-增量数据同步与[历史数据同步](../../../Historical-Data-Synchronization-Setting.md)配合使用，可以实现以下需求：
+增量数据同步与[历史数据同步](../../Operation-Guide/Manage-Bucket/Historical-Data-Synchronization-Setting.md)配合使用，可以实现以下需求：
 
 * 数据复制：由于业务原因，需要将数据从一个空间迁移至另一个空间。
 
