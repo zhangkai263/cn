@@ -32,10 +32,10 @@
 
 ## 通知回调信息样例
 
-<table border="2">
+<table>
     <thead>
     <tr>
-        <td style="width: 12%;">消息类型<br>
+        <td>消息类型<br>
         <td>消息体示例</td>
         <td>消息体示例说明</td>
         <td>消息体字段说明</td>
