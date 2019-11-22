@@ -53,8 +53,8 @@
 ![](../../../../image/vm/Getting-Start-Linux-Create-IP.png)
 
 11. 设置实例名称、描述：
-您需要设置创建的主机名，名称不可为空，只支持中文、数字、大小写字母、英文下划线“ _ ”、中划线“ - ”及点“.”，且不能超过128字符，如果为批量创建购买，名称以“xxx1”、“xxx2”依次显示。同时支持为实例添加描述，描述允许为空，若添加长度不能超过256字符。
-![](../../../../image/vm/Getting-Start-Linux-Create-information.png)
+您需要设置创建的主机名，名称不可为空，只支持中文、数字、大小写字母、英文下划线“ _ ”、中划线“ - ”及点“.”，且不能超过128字符，如果为批量创建购买，名称以“xxx1”、“xxx2”依次显示。同时支持为实例添加描述，描述允许为空，若添加长度不能超过256字符。另外，您可以选择为创建的主机添加标签，每个标签由 1 个“键”和 1 个“值”组成，标签键值不能以 "jrn:" “jdc-”开头，仅支持中文，大小写英文、数字及如下符号“ _.,:/=+-@ ”。最多能够绑定10个标签至本次创建的主机。如果为批量创建购买，标签将与批量创建出的每台主机相绑定。关于标签的编辑操作请查阅 [编辑标签](../Operation-Guide/Tag/Edit-Tag.md)。  
+![](../../../../image/vm/CreateWithTags1.png)
 
     * hostname默认配置规则：
       暂不支持在主机创建时自定义hostname，系统会在实例名称命名符合 RFC-952 和 RFC-1123 规则的前提下，取主机名称来设置hostname。若实例名称不符合规范，则系统会对部分字符进行转换，转换后若符合规范则截短（linux不超过63个字符，windows不超过15个字符）后配置hostname，否则会以默认hostname来配置，默认形式为“server-<*instance-id*>”。
@@ -95,5 +95,7 @@
 
 [弹性公网IP价格](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)
 
+[编辑标签](../Operation-Guide/Tag/Edit-Tag.md)
+ 
 [SSH密钥](../Operation-Guide/Key-Pair/KeyPair-Overview.md)
 
