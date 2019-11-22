@@ -73,8 +73,10 @@ items:
              href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Website-2.md
-           - name: 跨区域复制设置
+           - name: 增量数据同步设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Cross-Region-Replication-2.md
+           - name: 历史数据同步设置
+             href: Operation-Guide/Manage-Bucket/Historical-Data-Synchronization-Setting.md
            - name: 自定义域名设置
              href: Operation-Guide/Manage-Bucket/Set-Custom-Domain-Name-2.md
            - name: 回调通知
