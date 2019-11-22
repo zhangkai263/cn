@@ -115,6 +115,8 @@
        href: Best-Practices/using_kibana.md
      - name: 公网访问
        href: Best-Practices/publicIP.md
+     - name: MySQL数据同步
+       href: Best-Practices/mysqltoes.md
      - name: 性能指标
        href: Best-Practices/performance.md
      - name: 监控告警配置建议

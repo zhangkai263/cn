@@ -4,6 +4,7 @@
 ### 操作说明
 1. 登录京东云[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)创建一台和云搜索Elasticsearch集群实例处于同一个VPC的云主机，并[绑定公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
 2. 在云主机上安装反向代理nginx，并配置转发到es实例的地址。下面以CentOS7的系统的云主机为例来说明如何安装nginx和配置反向代理，详细配置参数请参考[nginx文档](http://nginx.org/en/docs/configure.html)。</br>
+
 ```
 # yum update      //更新库和必要的支持
 
@@ -21,11 +22,14 @@
 
 # ./nginx                     //启动nginx,配置文件位置/usr/local/nginx/conf/nginx.conf
 ```
+
+
 3. 前往[云主机安全组](https://cns-console.jdcloud.com/host/netSecurity/list)
+
 
 创建安全组并绑定云主机[绑定云主机](https://docs.jdcloud.com/cn/virtual-machines/associate-security-group)
 
-由于云主机的安全组默认是全部禁止，因此在安全组详情页设置[进入流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-inbound-rules)和[出流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-outbound-rules)白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。</br>
+由于云主机的安全组默认是全部禁止，因此在安全组详情页设置[进入流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-inbound-rules)和[出流量规则](https://docs.jdcloud.com/cn/virtual-machines/configurate-outbound-rules)  白名单，完成后即可通过该主机作为代理访问云搜索Elasticsearch集群实例。
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/public1.png)
 

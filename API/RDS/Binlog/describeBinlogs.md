@@ -2,7 +2,7 @@
 
 
 ## 描述
-获取MySQL实例中binlog的详细信息<br>- 仅支持MySQL
+获取MySQL实例中binlog的详细信息<br>- 仅支持 MySQL, Percona, MariaDB
 
 ## 请求方式
 GET
@@ -27,14 +27,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/binlogs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeBinlogs#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总记录数|
-|**binlogs**|Binlog[]|备份集合|
-### Binlog
+|**binlogs**|[Binlog[]](describeBinlogs#Binlog)|备份集合|
+### <a name="Binlog">Binlog</a>
 |名称|类型|描述|
 |---|---|---|
 |**binlogBackupId**|String|binlog日志备份ID|
