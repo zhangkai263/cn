@@ -319,12 +319,30 @@
         - name: 删除备份同步服务
           href: Operation-Guide/Cross-Region-Synchronization-Service/Delete-Cross-Region-Synchronization-Service.md
            
-      - name: 日志管理
+      - name: 日志服务
         items:
+        - name: 日志管理
+          items:
+          - name: MySQL 日志管理 
+            href: Operation-Guide/Log/Log-Management/MySQL-Log-Management.md   
+          - name: Percona 日志管理 
+            href: Operation-Guide/Log/Log-Management/Percona-Log-Management.md   
+          - name: MariaDB 日志管理 
+            href: Operation-Guide/Log/Log-Management/MariaDB-Log-Management.md   
+          - name: PostgreSQL 日志管理 
+            href: Operation-Guide/Log/Log-Management/PostgreSQL-Log-Management.md   
+        - name: 日志下载
+          items:
+          - name: MySQL 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/MySQL-Log-Download.md   
+          - name: Percona 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/Percona-Log-Download.md   
+          - name: MariaDB 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/MariaDB-Log-Download.md   
+          - name: PostgreSQL 日志下载 
+            href: Operation-Guide/Log/Log-Download/PostgreSQL-Log-Download.md   
         - name: 慢日志 
           href: Operation-Guide/Log/Log-Management.md   
-        - name: PostgreSQL 日志管理 
-          href: Operation-Guide/Log/PostgreSQL-Log-Management.md   
       - name: 设置访问模式
         href: Operation-Guide/Set-Access-Mode.md     
       - name: PostgreSQL 插件 
