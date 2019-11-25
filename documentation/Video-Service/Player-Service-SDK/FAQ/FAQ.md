@@ -5,7 +5,7 @@
 A：播放器SDK包括Android端，IOS端，Web/H5端。
 
 
-**Q：支持哪些播放协议？**
+**Q：播放器SDK支持哪些播放协议？**
 
 A：播放器SDK支持RTMP、HLS、HDL多种协议播放。
 
