@@ -50,7 +50,7 @@ var player = JDplayer('my_video', {
 sources: [
  {
  src: 'http://www.live.myjdcloud.com/xxx.flv', //请替换成实际可用的播放地址
-type: 'video/flv' // 各视频资源type见 表1.1， 媒体资源扩展名不在地址最后时，改项必须配置，否则可以省略
+type: 'video/flv' // 各视频资源type见 表1.1， 媒体资源扩展名不在地址最后时，该项必须配置，否则可以省略
 
  }
 ]
@@ -111,11 +111,11 @@ Web 播放器支持多清晰度，如下图所示：
 #### 4.2代码实现
 多清晰度支持的代码实现如下所示：
 ```
-var player = JDplayer('id_video_container', {
+var player = JDplayer('my_video', {
 resolutions: [
  {
  src: 'http://www.vod.myjdcloud.com/xxx-sd.flv', //请替换成实际可用的播放地址
-type: 'video/flv', // 各视频资源type见表1.1， 媒体资源扩展名不在地址最后时，改项必须配置，否则可以省略
+type: 'video/flv', // 各视频资源type见表1.1， 媒体资源扩展名不在地址最后时，该项必须配置，否则可以省略
 
  resolution: '标清'
  },
