@@ -27,21 +27,21 @@
 <tr>
     <td>HLS（M3U8）</td>
     <td>可用于点播</td>
-    <td>http://xxx.vod.myjdcloud.com/xxx.m3u8</td>
+    <td>http ://xxx.vod.myjdcloud.com/xxx.m3u8</td>
     <td>√</td>
     <td>√</td>
 </tr>
 <tr>
     <td>FLV</td>
     <td>可用于直播</td>
-    <td>http://xxx.live.myjdcloud.com/xxx.flv</td>
+    <td>http ://xxx.live.myjdcloud.com/xxx.flv</td>
     <td>√</td>
     <td>×</td>
 </tr>
 <tr>
     <td>FLV</td>
     <td>可用于点播</td>
-    <td>http://xxx.vod.myjdcloud.com/xxx.flv</td>
+    <td>http ://xxx.vod.myjdcloud.com/xxx.flv</td>
     <td>√</td>
     <td>×</td>
 </tr>
@@ -55,7 +55,7 @@
 <tr>
     <td>MP4</td>
     <td>只适用点播</td>
-    <td>http://xxx.vod.myjdcloud.com/xxx.mp4</td>
+    <td>http ://xxx.vod.myjdcloud.com/xxx.mp4</td>
     <td>√</td>
     <td>√</td>
 </tr>                
@@ -188,7 +188,7 @@ options对象可配置的参数：
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{   
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http ://xxx.vod.myjdcloud.com/xxx55.mp4' // url地址   
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
 
@@ -197,7 +197,7 @@ options对象可配置的参数：
 {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'video/flv',   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx66.flv' // url地址
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http ://xxx.vod.myjdcloud.com/xxx66.flv' // url地址
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
 
@@ -215,7 +215,7 @@ options对象可配置的参数：
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{   
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx-sd.mp4', // url地址   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http ://xxx.vod.myjdcloud.com/xxx-sd.mp4', // url地址   
 resolution: '标清', // 自定义清晰度名称
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
@@ -225,7 +225,7 @@ resolution: '标清', // 自定义清晰度名称
 {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'video/mp4',   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http://xxx.vod.myjdcloud.com/xxx-hd.mp4',   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: 'http ://xxx.vod.myjdcloud.com/xxx-hd.mp4',   
 resolution: '高清'
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
