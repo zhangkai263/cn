@@ -20,7 +20,7 @@
 <tr>
     <td>HLS（M3U8）</td>
     <td>可用于直播</td>
-    <td>http://xxx.live.myjdcloud.com/xxx.m3u8</td>
+    <td>http ://xxx.live.myjdcloud.com/xxx.m3u8</td>
     <td>√</td>
     <td>√</td>
 </tr>
