@@ -7,7 +7,7 @@
 
 ## 平台、协议及格式支持
 1.支持Chrome、Firefox、IE11/Edge、Safari等主流浏览器；  
-2.支持多种视频封装格式，如MP4、FLV、M3U8、MOV等；  
+2.支持多种视频封装格式，如MP4、FLV、M3U8等；  
 3.支持多种播放协议：
 <table>
 <tr>
@@ -122,7 +122,7 @@ options对象可配置的参数：
     <td>poster</td>
     <td>String</td>
     <td>无</td>
-    <td>设置封面图片完整地址url。注意：封面功能在部分移动端播放环境下可能失效，因为移动端视频播放环境相对比较复杂，各种浏览器和 App 的 Webview 对 H5 video 实现的方式并不统一，所以如果遇到功能失效的情况，请联系我们。</td>
+    <td>设置封面图片完整地址url。注意：封面功能在部分移动端播放环境下可能失效，因为移动端视频播放环境相对比较复杂，各种浏览器和 App 的 Webview 对 H5 video 实现的方式并不统一，所以如果遇到功能失效的情况，请联系我们（联系电话：4006151212）。</td>
 </tr>
 <tr>
     <td>autoplay</td>
@@ -232,7 +232,7 @@ resolution: '高清'
 
 ]
 
-用户根据需要配置所需展示切换的清晰度， type - 媒体类型 src - 媒资地址 resolution - 自定义清晰度</td>
+用户根据需要配置所需展示切换的清晰度， type - 媒体类型 src - 媒资地址 resolution - 自定义清晰度名称</td>
 </tr>                
 </table>
 
@@ -543,7 +543,7 @@ controlBar 参数可以配置播放器控制栏的功能，支持的属性有：
 </tr>
 <tr>
     <td>0 - MEDIA_ERR_CUSTOM</td>
-    <td>用户错误，该错误码在video.js中没有默认提示信息</td>
+    <td>用户错误</td>
 </tr>
 <tr>
     <td>1 - MEDIA_ERR_ABORTED</td>
