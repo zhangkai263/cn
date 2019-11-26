@@ -18,27 +18,23 @@ Windows Server 2008、Windows Server 2012 R2 及Windows Server 2016均支持使�
 
    2.1 服务器管理器安装
 
-   1）打开“服务器管理器”功能，如下图所示。
+   1）打开“服务器管理器”功能，点击“添加角色和功能”，单击“下一步”；
 
-![1570708236652](C:\Users\wangguanyang\AppData\Roaming\Typora\typora-user-images\1570708236652.png)
+![install_nfs1](../../../../image/Cloud-File-Service/install_nfs1.png)
 
-​		2）点击“添加角色和功能”，单击“下一步”；
+	2）进入“安装类型”，默认选择“基于角色或基于功能的安装”，无需修改，单击“下一步”；
 
-![install_nfs1](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\install_nfs1.png)
+![install_nfs2](../../../../image/Cloud-File-Service/install_nfs2.png)
 
-​		3）进入“安装类型”，默认选择“基于角色或基于功能的安装”，无需修改，单击“下一步”；
+	3）进入“服务器选择”，默认选中当前服务器，无需修改，单击“下一步”；
 
-![install_nfs2](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\install_nfs2.png)
+	4）在“功能”中，勾选”NFS客户端“，单击”下一步“；
 
-​		4）进入“服务器选择”，默认选中当前服务器，无需修改，单击“下一步”；
+![install_nfs4](../../../../image/Cloud-File-Service/install_nfs4.png)
 
-​		5）在“功能”中，勾选”NFS客户端“，单击”下一步“；
+	5）在”确认“窗口中点击”安装“按钮，开始安装。
 
-![install_nfs4](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\install_nfs4.png)
-
-​		6）在”确认“窗口中点击”安装“按钮，开始安装。
-
-![install_nfs5-1](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\install_nfs5.png)
+![install_nfs5-1](../../../../image/Cloud-File-Service/install_nfs5.png)
 
 2.2 windows PowerShell安装
 
@@ -46,7 +42,7 @@ Windows Server 2008、Windows Server 2012 R2 及Windows Server 2016均支持使�
 
  `install-windowsfeature nfs-Client` 
 
-![install_nfs_powershell](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\install_nfs_powershell.png)
+![install_nfs_powershell](../../../../image/Cloud-File-Service/install_nfs_powershell.png)
 
 2.3 无论使用上述哪种方式安装NFS客户端，安装完成后**均需要重启云主机**，以完整完成NFS客户端的安装。
 
@@ -54,13 +50,13 @@ Windows Server 2008、Windows Server 2012 R2 及Windows Server 2016均支持使�
 
    3.1 按win+R，输入regedit或者在应用搜索中找到regedit，运行注册表编辑器；
 
-   ![regedit1](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\regedit1.png)
+   ![regedit1](../../../../image/Cloud-File-Service/regedit1.png)
 
    3.2 在注册表中找到HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default 这项，并增加AnonymousUid和AnonymousGid 两个 REG_DWORD 值，数值为0。
 
    修改完成后，重启虚机，以使注册表修改生效。
 
-   ![regedit2](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\regedit2.png)
+   ![regedit2](../../../../image/Cloud-File-Service/regedit2.png)
 
 4. 重启该云主机，以完成nfs-client的安装及修改的注册表生效。
 
@@ -72,8 +68,8 @@ Windows Server 2008、Windows Server 2012 R2 及Windows Server 2016均支持使�
 
    挂载成功后，如下图所示，在“资源管理器”中也可看到挂载好的CFS服务。
 
-   ![mounted1](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\mounted1.png)
+   ![mounted1](../../../../image/Cloud-File-Service/mounted1.png)
 
-   ![mounted2](D:\01 CFS\帮助文档、运维评审\帮助文档图片\Windows挂载\mounted2.png)
+   ![mounted2](../../../../image/Cloud-File-Service/mounted2.png)
 
    
