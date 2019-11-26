@@ -48,7 +48,7 @@
 
 下载[京东云 App](https://console.jdcloud.com/download)，使用 App 的控制台左上角的“扫一扫”功能扫描二维码
 
-![](../../../../image/User/Legalface/app.png)
+<div align=center><img width="150" height="150" src="../../../../image/User/Legalface/app.png"/></div>
 
 
 ## 6. 在 App 上完成扫脸
