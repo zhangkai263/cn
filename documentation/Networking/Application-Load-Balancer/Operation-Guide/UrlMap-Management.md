@@ -60,7 +60,7 @@ URL路径支持精确匹配和前缀匹配两种。
 
 5. 点击转发规则列表栏中操作列的**删除**，可删除已添加的规则。
 
-        注意：新添加的转发规则组绑定监听器后才会生效，具体请见[监听器配置指导](../Operation-Guide/Listener-Management.md)。
+      注意：新添加的转发规则组绑定监听器后才会生效，具体请见[监听器配置指导](Listener-Management.md)。
 
 ## 管理转发规则组
 <div id="user-content-3"></div>
