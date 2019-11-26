@@ -46,7 +46,7 @@
 
 ## 5. 使用京东云 App 扫描二维码
 
-下载京东云 App，使用 App 的控制台左上角的“扫一扫”功能扫描二维码
+下载[京东云 App](https://console.jdcloud.com/download)，使用 App 的控制台左上角的“扫一扫”功能扫描二维码
 
 
 
