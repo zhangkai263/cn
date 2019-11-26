@@ -15,5 +15,7 @@
         href: Business/Remit.md
       - name: 法人扫脸认证
         href: Business/Legal.md
+      - name: 企业更新实名
+        href: Business/Update.md
   - name: 实名认证常见问题
     href: FAQs.md
