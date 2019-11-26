@@ -48,7 +48,7 @@
 
 下载京东云 App，使用 App 的控制台左上角的“扫一扫”功能扫描二维码
 
-![](../../../../image/User/Legalface/app.jpg)
+
 
 ## 6. 在 App 上完成扫脸
 
