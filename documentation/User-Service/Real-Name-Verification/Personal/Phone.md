@@ -6,25 +6,25 @@
 ## 流程图解
 1. 进入实名认证页面，在“个人认证”选项卡里点击“立即认证”。
 
-![](../../../image/User/personal/%E9%A6%96%E9%A1%B5.png)
+![](../../../../image/User/personal/%E9%A6%96%E9%A1%B5.png)
 
 2. 如果系统检测到您的账号已经在京东商城/京东金融完成了个人实名认证，会自动弹出如下弹窗，您可以点击“立即授权”授权京东云获取您在京东商城/京东金融的实名信息。
 
-![](../../../image/User/personal/%E7%AB%8B%E5%8D%B3%E6%8E%88%E6%9D%83.png)
+![](../../../../image/User/personal/%E7%AB%8B%E5%8D%B3%E6%8E%88%E6%9D%83.png)
 
 3. 如果您的账号未在京东商城/京东金融完成个人实名认证或者您选择“暂不授权，手动认证”，则进入选择个人实名认证方式的页面，您可以选择“实名手机认证”或“扫脸认证”。
 
-![](../../../image/User/face/%E9%80%89%E6%8B%A9%E6%89%8B%E6%9C%BA%E5%AE%9E%E5%90%8D.png)
+![](../../../../image/User/face/%E9%80%89%E6%8B%A9%E6%89%8B%E6%9C%BA%E5%AE%9E%E5%90%8D.png)
 
 
 4. 选择实名手机认证后，点击下一步，需要在如下页面填写您的姓名、身份证号、本人名下手机号，并接收手机验证码来提交验证。
 
-![](../../../image/User/personal/%E5%A1%AB%E5%86%991.png)
+![](../../../../image/User/personal/%E5%A1%AB%E5%86%991.png)
 
 
 5. 信息验证无误，账号通过了个人实名认证。
 
-![](../../../image/User/personal/%E8%AE%A4%E8%AF%81%E6%88%90%E5%8A%9F.png)
+![](../../../../image/User/personal/%E8%AE%A4%E8%AF%81%E6%88%90%E5%8A%9F.png)
 
 
 注：如果系统检测到您的身份信息存在被盗用风险时，为了保护您的账号和身份信息安全，需要您进行扫脸认证，流程如下：
@@ -32,17 +32,17 @@
 
 1. PC 的个人实名认证页面自动展示待扫描的二维码
 
-![](../../../image/User/personal/%E4%BA%8C%E7%BB%B4%E7%A0%8111.jpg)
+![](../../../../image/User/personal/%E4%BA%8C%E7%BB%B4%E7%A0%8111.jpg)
 
 2. 您需要下载[京东云 APP](https://console.jdcloud.com/download) 并使用京东云 APP 的扫一扫功能扫描 PC 端的二维码
 
 3. 根据 APP 提示完成扫脸认证
 
-![](../../../image/User/personal/%E6%89%AB%E8%84%B8.jpg)
+![](../../../../image/User/personal/%E6%89%AB%E8%84%B8.jpg)
 
 4. 扫脸校验通过后，您可以在 PC 端查看实名认证状态
 
-![](../../../image/User/face/%E5%AE%8C%E6%88%90.png)
+![](../../../../image/User/face/%E5%AE%8C%E6%88%90.png)
 
 
 
