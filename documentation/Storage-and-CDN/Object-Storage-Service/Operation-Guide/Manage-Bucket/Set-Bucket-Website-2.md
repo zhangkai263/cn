@@ -4,7 +4,7 @@
 
 ## 静态网站托管规则说明
 
-1.静态网站托管规则是Bucket级别的，默认Bucket不开启静态网站托管规则。静态网站托管规则在开启后会对Get Object（获取Object）、Get Bucket（List Objects，获取Object列表）和Head Object（获取Object Metadata）三个操作产生影响，这三个操作的访问行为将发生改变。对静态网站根域名的签名访问，会返回Get Bucket（List Objects，获取Object列表）结果。
+1.静态网站托管规则是Bucket级别的，默认Bucket不开启静态网站托管规则。静态网站托管规则在开启后会对Get Object（获取Object）、Get Bucket（List Objects，获取Object列表）和Head Object（获取Object Metadata）三个操作产生影响，这三个操作的访问行为将发生改变。对静态网站根域名的签名访问，会返回Get Bucket结果。
 
 2.京东云对象存储支持通过OSS服务域名（如oss.cn-north-1.jcloudcs.com）、S3服务域名（s3.cn-north-1.jdcloud-oss.com）和用户自定义域名对Bucket及Object进行访问和操作。在用户未开启和配置静态网站托管规则时，使用上述三种方式访问Bucket下的Object是等效的；在开启配置了静态网站托管规则后，访问开启静态网站托管规则的Bucket下面的资源时，目前只有使用兼容S3服务的域名和自定义域名访问才会支持静态网站托管的业务逻辑，而使用OSS服务域名对该Bucket下的资源进行访问和操作时，行为和未开启静态网站托管之前是一样的，未来标准服务域名也将支持静态网站托管的业务逻辑。
 
