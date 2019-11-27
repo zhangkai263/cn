@@ -24,7 +24,7 @@
 
    **⑤湖北授权书（网站负责人不是法人时提供）**
 
-   ⑥企业备案需要提供 [《湖北备案电子商务说明》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hubei/%E6%B9%96%E5%8C%97%E5%A4%87%E6%A1%88%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E8%AF%B4%E6%98%8E.docx)
+   ⑥企业备案需要提供 [《湖北备案电子商务说明》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hubei/hbdssm.docx)
 
 **湖北个人备案规则：**
 
