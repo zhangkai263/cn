@@ -35,7 +35,7 @@ Ubuntu系统运行如下命令：
 
 如，挂载目标的目录为10.0.0.30:/cfs，挂载到上一步创建的nfs目录。**注意，挂载命令默认NFS协议为4.0版本，挂载时也可以根据对版本、性能和一致性的不同要求增加相应参数，请见文末说明**
 
-`mount -t nfs -o vers=4,minorversion=0 10.0.0.30:/cfs nfs`
+`mount -t nfs -o vers=4,minorversion=0 -o noresvport 10.0.0.30:/cfs nfs`
 
 在Ubuntu系统的终端下，运行如下命令：
 
