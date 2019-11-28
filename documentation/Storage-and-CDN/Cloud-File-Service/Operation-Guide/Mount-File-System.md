@@ -39,7 +39,7 @@ Ubuntu系统运行如下命令：
 
 在Ubuntu系统的终端下，运行如下命令：
 
-`mount -t nfs -o vers=4,minorversion=0 -o noresvport 10.0.0.30:/cfs nfs`
+`mount -t nfs -o noresvport 10.0.0.30:/cfs nfs`
 
 5.通过运行以下命令，验证是否挂载成功：
 
