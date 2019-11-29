@@ -2,7 +2,7 @@
 
 **Q：播放器SDK都包括那些端？**
 
-A：播放器SDK包括Android端，IOS端，Web/H5端。
+A：播放器SDK包括Android端，iOS端，Web/H5端。
 
 
 **Q：播放器SDK支持哪些播放协议？**
