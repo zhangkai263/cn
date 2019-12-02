@@ -1,6 +1,6 @@
 # DEMO体验
 
-1. Web/h5端播放器SDK<a href="https://j.jdcloud.com/video/player/1.0.0/index.html">点击体验</a><br/> 
+1. Web/H5端播放器SDK<a href="https://j.jdcloud.com/video/player/1.0.0/index.html">点击体验</a><br/> 
 
 2. 移动端播放器SDK扫描以下二维码可体验功能及效果。iOS支持8.0以上系统、Android支持5.0及以上 (API level 21)  
 说明：由于受到微信和QQ限制，请使用手机自带扫码或其他扫码软件扫描安装。<br />

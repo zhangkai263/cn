@@ -191,7 +191,7 @@
 </tr>                
 </table>
 
-**2.Web、h5播放器SDK**  
+**2.Web/ H5播放器SDK**  
 <table>
 <tr>
     <td>功能点</td>
@@ -235,7 +235,7 @@
 </tr>     
 <tr>
     <td>点播多格式支持</td>
-    <td>支持多种视频封装格式，如MP4、FLV、M3U8、MOV等</td>
+    <td>支持多种视频封装格式，如MP4、FLV、M3U8等</td>
 </tr> 
 <tr>
     <td>监听事件</td>
@@ -255,6 +255,6 @@
 </tr>
 <tr>
     <td>第三方视频播放</td>
-    <td>支持通过source直接插入媒资资源播放</td>
+    <td>支持通过Source直接插入媒资资源播放</td>
 </tr>                
 </table>
