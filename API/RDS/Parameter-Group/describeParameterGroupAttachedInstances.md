@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看参数的修改历史<br>- 仅支持MySQL
+查看参数组绑定的云数据库实例<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -25,18 +25,18 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeParameterGroupAttachedInstances#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**instances**|AttachedDBInstance[]| |
+|**instances**|[AttachedDBInstance[]](describeParameterGroupAttachedInstances#AttachedDBInstance)| |
 |**totalCount**|Integer| |
-### AttachedDBInstance
+### <a name="AttachedDBInstance">AttachedDBInstance</a>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|
-|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
+|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**instanceType**|String|实例类型，例如主实例，只读实例等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engine**|String|实例引擎类型，如MySQL或SQL Server等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engineVersion**|String|实例引擎版本，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|

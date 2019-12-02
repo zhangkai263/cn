@@ -9,7 +9,7 @@
 
 
 ## 前提条件
-- 已注册京东云账号，并完成实名认证。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud)。
+- 已注册京东云账号，并完成实名认证。如果还没有账号请 [注册](https://user.jdcloud.com/register)。
 
 
 ## 操作步骤
@@ -69,5 +69,5 @@ API 分组创建完成您就可以创建 API 了，创建 API 是定义 API 请�
 ###  第6步: API调用者下载和使用SDK包
 
 - 快速上手
-	- [快速发布和调用一个API应用](../Best-Practices/example_for_create_api.md)
+	- [快速发布和调用一个API应用](../Getting-Started/example_console.md)
 

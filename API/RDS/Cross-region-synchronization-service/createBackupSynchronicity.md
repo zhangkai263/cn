@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建一个跨地域备份同步服务。<br>- 仅支持MySQL
+创建一个跨地域备份同步服务。
 
 ## 请求方式
 POST
@@ -24,9 +24,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createBackupSynchronicity#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**serviceId**|String|跨地域备份同步服务ID|

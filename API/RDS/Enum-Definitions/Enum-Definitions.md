@@ -242,5 +242,6 @@
 |取值|说明|
 |-|-|
 |LOCAL_SSD|本地SSD|
+|LOCAL_NVME|本地NVME|
 |EBS_SSD|SSD云盘|
 
