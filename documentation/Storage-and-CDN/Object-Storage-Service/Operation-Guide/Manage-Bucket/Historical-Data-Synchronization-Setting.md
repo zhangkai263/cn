@@ -52,7 +52,7 @@
 
 创建任务后，可以在历史数据同步列表中查看任务进度和状态，并进行取消任务等操作。
 
-![查看历史数据同步任务](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-167.png)
+![查看历史数据同步任务](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-167.png)
 
 说明：
 
