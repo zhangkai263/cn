@@ -14,9 +14,6 @@
 
 ## 支持的元数据列表
 
-Cache-Control、Content-Disposition、Content-Encoding、Content-Type、Expires
-、x-amz-meta-
-
 名称|描述|备注
 ---|---|---
 Cache-Control|[RFC2616](https://www.ietf.org/rfc/rfc2616.txt?spm=a2c4g.11186623.2.9.5b613bdb255OGR&file=rfc2616.txt)中定义的缓存规则控制。|Cache-Control的值不能超过30个字符。
