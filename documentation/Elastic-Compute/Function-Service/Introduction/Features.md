@@ -28,4 +28,4 @@
 | ---------- | ------------ | ---------- |
 | 对象存储OSS触发器  | 异步调用     | [对象存储OSS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
 | API网关触发器 | 同步调用     | [API网关触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
-| 队列服务JQS触发器 | 异步调用     | [队列服务JQS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
+| 队列服务JQS触发器 | 异步调用     | [队列服务JQS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md)|
