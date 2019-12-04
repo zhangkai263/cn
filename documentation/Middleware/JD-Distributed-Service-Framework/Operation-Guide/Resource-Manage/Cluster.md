@@ -8,22 +8,31 @@
 ## 操作步骤
 
 ### 注册中心
-登录微服务平台控制台。在左侧导航栏的资源管理下，点击注册中心并进入列表页。
+1、登录微服务平台控制台。在左侧导航栏的资源管理下，点击注册中心并进入列表页。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list.png)
  
- 点击注册中心的名字，可查看到当前注册的基本信息。用户可在基本信息中查询到节点名称、节点版本、节点所在可用区、节点地址、运行状态等信息。
- 
+2、点击注册中心的名字，可查看到当前注册的基本信息。用户可在基本信息中查询到节点名称、节点版本、节点所在可用区、节点地址、运行状态等信息。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-jbxx.png)
 
 
 ### 服务管理
+用户可查看每个注册中心里的服务情况。入口：资源管理>注册中心>服务管理。
 
+1、所有服务的列表。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-fwgl.png)
 
+2、查询每个服务的实例情况和每个实例的详情。
 
+服务列表
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-fwgl-sllb.png)
 
-**说明：**
+实例详情
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-fwgl-sllb-slxq.png)
+
 
 
 
 ### 监控
-可对当前注册中心的状态、服务实例情况、发布情况等信息进行监控，并配置报警规则。
+
+可对当前注册中心的状态、服务实例情况、发布情况等信息进行监控，并配置报警规则。入口：资源管理>注册中心>监控。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list-jk.png)
