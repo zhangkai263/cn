@@ -12,7 +12,8 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list.png)
  
  点击注册中心的名字，可查看到当前注册的基本信息。用户可在基本信息中查询到节点名称、节点版本、节点所在可用区、节点地址、运行状态等信息。
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/ zczx-jbxx.png)
+ 
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-jbxx.png)
 
 
 ### 服务管理
