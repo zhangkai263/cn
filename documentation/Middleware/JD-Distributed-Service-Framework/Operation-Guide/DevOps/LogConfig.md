@@ -74,7 +74,7 @@
 
 2、在部署组的新建/编辑页中。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-bg-app.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-bg-app-1214.png)
 
 
 ### 第4步：发起部署，使日志配置生效。
