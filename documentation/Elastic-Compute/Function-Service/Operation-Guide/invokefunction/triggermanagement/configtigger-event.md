@@ -135,32 +135,36 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ```
 {
-     "Records": [
+    "Records":[
         {
-            "version": "0", 
-            "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
-            "time": "2006-01-02T15:04:05.999999999Z",
-            "source": "jqs",
-            "base64OwnerPin": "NTk0MDM1MjYzMDE5",
-            "resources": [
-                "jrn:jqs:cn-north-1:accountID:qname"
+            "version":"0",
+            "id":"9fd19a5b-ddff-41b8-9689-e539cfb5dc41",
+            "time":"2019-10-28T15:00:19.45626304+08:00",
+            "source":"jqs",
+            "base64OwnerPin":"based64Pin",
+            "resources":[
+                "jqs-jrn"
             ],
-            "region": "cn-north-1",
-            "detailType": "jqspullReceived",
-            "detail": { 
-                "messageId": "059f36b4-87a3-44ab-83d2-661975830a7d",
-                "receiptHandle": "AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...",
-                "body": "test",
-                "attributes": {
-                    "ApproximateReceiveCount": "1",
-                    "SentTimestamp": "1545082649183",
-                    "SenderId": "AIDAIENQZJOLO23YVJ4VO",
-                    "ApproximateFirstReceiveTimestamp": "1545082649185"
-                  },
-                "messageAttributes": {},
-                "md5OfBody": "098f6bcd4621d373cade4e832627b4f6",
-             }
-      ]
+            "region":"cn-north-1",
+            "detailType":"jqspullReceived",
+            "detail":{
+                "messageId":"41783100ccd4ac4030b3b12061058618",
+                "receiptHandle":"based64receiptHandle",
+                "body":"test",
+                "attributes":{
+                    "ApproximateFirstReceiveTimestamp":"1572246000180643518",
+                    "ApproximateReceiveCount":"1",
+                    "MessageDeduplicationId":"",
+                    "MessageGroupId":"",
+                    "SenderId":"senderpin",
+                    "SentTimestamp":"1572245999697935359",
+                    "SequenceNumber":""
+                },
+                "messageAttributes":null,
+                "md5OfBody":"098f6bcd4621d373cade4e832627b4f6"
+            }
+        }
+    ]
 }
 
 ```
