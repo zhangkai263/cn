@@ -28,10 +28,10 @@
 通过调整配置，可扩容命名空间的实例规格。
 
 1、登录微服务平台控制台，进入命名空间列表页。
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/mmkj-list.png)
+![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/mmkj-list-1.png)
 
 2、进入调整配置页。
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/mmkj-tzpz.png)
+![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/mmkj-tzpz.png)
 
 3、选择所需规格，单击立即购买按钮，完成创建。
 
@@ -39,7 +39,13 @@
 
 -  当前注册中心调整配置，只支持扩容，不支持缩容。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-yyks.png)
+
+ 
+### 编辑
+
+当前支持对命名空间的名称和描述进行修改。
+
+![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/mmkj-list-edit.png)
   
 
  
