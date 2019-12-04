@@ -109,6 +109,7 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 } 
 
 ```
+
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
 **参数说明**：网关与Function间的body内容不经过Base64编码。
@@ -163,3 +164,5 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 }
 
 ```
+
+队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-tigger.md)。 
