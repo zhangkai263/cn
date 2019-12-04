@@ -105,6 +105,8 @@ items:
             href: Operation-Guide/Manage-Object/Delete-Object.md
           - name: 表单上传
             href: Operation-Guide/Manage-Object/Post-Object-1.md                  
+          - name: 管理元数据
+            href: Operation-Guide/Manage-Object/User-Defined-Metadata.md
           - name: 用量监控
             href: Operation-Guide/Manage-Object/Usage-Monitoring.md
           - name: 还原归档对象
