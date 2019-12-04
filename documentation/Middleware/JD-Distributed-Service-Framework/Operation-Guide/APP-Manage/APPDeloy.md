@@ -66,7 +66,7 @@
 4、填写部署组其他信息。如果无要求，默认即可。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-qtxx.png)
 
-5、部署完成。
+5、创建部署组完成。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-bswc.png)
 
