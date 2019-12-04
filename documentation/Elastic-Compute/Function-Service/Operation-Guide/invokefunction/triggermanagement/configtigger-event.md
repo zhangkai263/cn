@@ -131,7 +131,7 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ### 事件格式
 
-当函数服务消费队列服务消息队列中的消息时，会轮询指定队列，通过一个包含队列消息的event异步调用函数。
+当函数服务消费队列服务消息队列中的消息时，会轮询指定队列，通过一个包含队列消息的`event`异步调用函数。
 
 ```
 {
@@ -165,4 +165,4 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ```
 
-队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-tigger.md)。 
+队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-trigger.md)。 
