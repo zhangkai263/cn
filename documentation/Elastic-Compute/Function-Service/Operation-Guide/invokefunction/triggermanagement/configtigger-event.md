@@ -126,4 +126,40 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
  } 
 ```
 
+## 队列服务JQS触发器
 
+### 事件格式
+
+当函数服务消费队列服务消息队列中的消息时，会轮询指定队列，通过一个包含队列消息的event异步调用函数。
+
+```
+{
+     "Records": [
+        {
+            "version": "0", 
+            "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
+            "time": "2006-01-02T15:04:05.999999999Z",
+            "source": "jqs",
+            "base64OwnerPin": "NTk0MDM1MjYzMDE5",
+            "resources": [
+                "jrn:jqs:cn-north-1:accountID:qname"
+            ],
+            "region": "cn-north-1",
+            "detailType": "jqspullReceived",
+            "detail": { 
+                "messageId": "059f36b4-87a3-44ab-83d2-661975830a7d",
+                "receiptHandle": "AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...",
+                "body": "test",
+                "attributes": {
+                    "ApproximateReceiveCount": "1",
+                    "SentTimestamp": "1545082649183",
+                    "SenderId": "AIDAIENQZJOLO23YVJ4VO",
+                    "ApproximateFirstReceiveTimestamp": "1545082649185"
+                  },
+                "messageAttributes": {},
+                "md5OfBody": "098f6bcd4621d373cade4e832627b4f6",
+             }
+      ]
+}
+
+```
