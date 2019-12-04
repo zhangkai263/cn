@@ -16,6 +16,7 @@
 #!/bin/bash 
 echo 'launch-1a' >> /root/text1.txt
 ```
+
 ```
 #!/usr/bin/env python
 #-*- coding: utf-8-*-
@@ -26,6 +27,7 @@ f1 = open('/root/python2-text1.txt', 'a+')
 f1.writelines([str(tempstr)])
 f1.close()
 ```
+
 ```
 <cmd>
 echo %random%>cmd-text1.txt
