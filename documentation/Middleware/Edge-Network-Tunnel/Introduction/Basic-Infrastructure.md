@@ -1,6 +1,6 @@
 **基础架构图：**
 
-![architecture.png](../../../image/Edge-Network-Tunnel/architecture.png)
+![architecture.png](../../../../image/Edge-Network-Tunnel/architecture.png)
 
 
 **关键组件：**
