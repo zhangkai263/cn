@@ -13,7 +13,7 @@ SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
    ./example
    ```
 	
-2. 使用静态库构建项目
+2. 使用静态库构建项目<br>
    构建应用，按照API文档编写自己的应用如: example.c，将libentapi.a置于同一文件夹下，可使用如下命令构建：
 
    ```
