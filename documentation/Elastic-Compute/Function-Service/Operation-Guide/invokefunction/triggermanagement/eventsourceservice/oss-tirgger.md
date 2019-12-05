@@ -1,12 +1,17 @@
 # OSS触发器
 
-对象存储服务（OSS：Object Storage Service）是京东云自主研发的大规模分布式对象存储服务，面向企业和个人开发者提供高可用、低成本、强安全的云端存储服务。您可以实现对数据的统一管理，满足各类存储需求。  
+对象存储服务（OSS：Object Storage Service）是京东云自主研发的大规模分布式对象存储服务，面向企业和个人开发者提供高可用、低成本、强安全的云端存储服务。您可以实现对数据的统一管理，满足各类存储需求。   
+
+
 
  ## 触发器配置
  
+ 
 触发器示例：ossTrigger.yml
 
+
 ```YAML
+
 triggerConfig:
     events:
         s3:ObjectCreated:Put
@@ -15,7 +20,10 @@ triggerConfig:
        key:
            prefix: sourcefile/
            suffix: .gif
+           
 ```
+
+
 
 **说明：**
 
