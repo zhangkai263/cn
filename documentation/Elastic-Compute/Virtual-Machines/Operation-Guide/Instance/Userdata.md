@@ -19,7 +19,7 @@ echo 'launch-1a' >> /root/text1.txt
 
 ```
 #!/usr/bin/env python
-#-*- coding: utf-8-*-
+# -*- coding: utf-8-*-
 import random
 seq = list(range(1,10))
 tempstr = random.sample(seq,3)
