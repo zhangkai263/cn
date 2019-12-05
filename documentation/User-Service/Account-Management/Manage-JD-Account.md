@@ -7,7 +7,7 @@
 
 京东云的账号系统整体升级，于2019年7月18日起开始支持独立于京东个人业务的云账号，在这之前注册的账号，都属于京东商城的账号系统。如果访问 “[账户管理-基本资料](https://uc.jdcloud.com/account/basic-info)” 时看到如下页面，说明你的账号属于未升级的京东账号：
 
-![](../../../image/User/Account-Mgmt/jdInfo1.PNG)
+![](../../../image/User/Account-Mgmt/jdInfo1-copy.PNG)
 
 **什么是京东云账号**
 
