@@ -25,10 +25,10 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods:checkPodName
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](checkpodname#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|用户指定 podName 是否通过校验 0 通过 1 名称为空 2 不符合规范 3 重名。|
