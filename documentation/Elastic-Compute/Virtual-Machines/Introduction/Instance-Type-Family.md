@@ -8,6 +8,7 @@
 * 计算优化型：[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
+* 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
 * GPU型：[GPU标准型](instance-type-family#user-content-6)
 
 ## 通用型
@@ -227,6 +228,80 @@ g.n1.8xlarge|32|128|4 |	 |
 |h.g1.4xlarge|16|64|4
 |h.g1.6xlarge|24|96|4
 
+## 存储优化型
+
+存储优化型当前提供存储优化IO型及存储优化大数据型，为您提供高性能的本地存储资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+
+<div id="user-content-7"></div>
+### 存储优化IO型
+
+**规格类型特点：**
+
+* vCPU与内存比为1:4
+* 提供低时延高IO的本地存储
+* 处理器：
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* 高性能关系数据库
+	* NoSQL数据库
+	* ElasticSearch等场景
+
+**实例规格**
+
+第一代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.i1.xlarge|4|16|1 x 960GB SSD|4
+|s.i1.2xlarge|8|32|2 x 960GB SSD|4
+|s.i1.4xlarge|16|64|4 x 960GB SSD|4
+|s.i1.8xlarge|32|128|8 x 960GB SSD|4
+|s.i1.14xlarge|56|224|14 x 960GB SSD|4
+
+<div id="user-content-8"></div>
+### 存储优化大数据型
+
+**规格类型特点：**
+
+* vCPU与内存比约为1:4
+* 提供低时延高容量及高吞吐的本地存储
+* 处理器：
+	* 第二代：2.1 GHz主频的Intel Xeon Silver 4116（Skylake）处理器
+	* 第一代：2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* Hadoop MapReduce、HDFS、Hive、HBase
+	* 其他海量数据存储区及计算的业务场景
+
+**实例规格**
+
+第二代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.d2.xlarge|4|22|1 x 10000GB HDD|4
+|s.d2.2xlarge|8|44|2 x 10000GB HDD|4
+|s.d2.4xlarge|16|88|4 x 10000GB HDD|4
+|s.d2.8xlarge|32|176|8 x 10000GB HDD|4
+|s.d2.10xlarge|40|220|14 x 10000GB HDD|4
+
+第一代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.d1.xlarge|4|22|1 x 6000GB HDD|4
+|s.d1.2xlarge|8|44|2 x 6000GB HDD|4
+|s.d1.4xlarge|16|88|4 x 6000GB HDD|4
+|s.d1.8xlarge|32|176|8 x 6000GB HDD|4
+|s.d1.10xlarge|40|220|14 x 6000GB HDD|4
+
 ## GPU型
 
 GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
@@ -244,7 +319,7 @@ GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。�
 * 处理器：
 	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
 	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
-* 支持本地数据盘（临时存储），请注意 **关机时本地数据盘数据将被清空** ，并支持以下类型云硬盘：
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
 	* 通用型SSD云盘
 	* 性能型SSD云盘
 	* 容量型HDD云盘

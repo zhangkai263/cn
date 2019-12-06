@@ -11,6 +11,7 @@
 | username   | String   | 是           | 京东用户名pin                                                |
 | signature  | String   | 是           |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61)|
 | ips     | String   | 是           | 待查询的ip,多个ip使用逗号分隔，参数示例“1.1.1.1,2.2.2.2”,支持IPV6查询|
+| ipType  | String   | 否           | 取值范围[ipv6,ipv4]，不传默认不区分ip类型。    |
 
  ## **3. 返回参数**
 

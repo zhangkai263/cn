@@ -22,6 +22,7 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billSummary:list
 |**appCode**|String|False| |产品线代码|
 |**serviceCode**|String|False| |产品代码|
 |**resourceIds**|String[]|False| |资源单id列表|
+|**tags**|Map[]|False| |标签|
 |**pageIndex**|Integer|False| |pageIndex|
 |**pageSize**|Integer|False| |pageSize|
 
@@ -62,6 +63,12 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billSummary:list
 |**balancePayFee**|Number|余额支付金额|
 |**cashPayFee**|Number|现金支付金额|
 |**arrearFee**|Number|欠费金额|
+|**tagDetails**|ResourceTagVo[]|标签明细|
+### ResourceTagVo
+|名称|类型|描述|
+|---|---|---|
+|**tagKey**|String|标签键|
+|**tagValue**|String|标签值|
 ### Pagination
 |名称|类型|描述|
 |---|---|---|

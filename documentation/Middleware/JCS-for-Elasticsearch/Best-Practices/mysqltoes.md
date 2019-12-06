@@ -68,6 +68,7 @@ canal.instance.dbPassword	| MySQL数据库的密码。
 ```
 vi conf/application.yml
 ```
+
 参数 | 参数说明
 -- | --
 canal.conf.canalServerHost	| canalDeployer访问地址。保持默认（127.0.0.1:11111）即可。
@@ -80,9 +81,11 @@ canal.conf.canalAdapters.groups.outerAdapters.properties.security.auth	| <京东
 canal.conf.canalAdapters.groups.outerAdapters.properties.cluster.name	| 京东云ES实例的ID，可在实例的基本信息概览页面获取。
 
 2）修改conf/es/*.yml文件，定义MySQL数据到ES数据的映射字段
+
 ```
 vi conf/es/*.yml
 ```
+
 参数 | 参数说明
 -- | --
 esMapping._index | 创建表和字段章节中，在ES实例中所创建的索引的名称。本文使用es_test。
@@ -91,9 +94,11 @@ esMapping._id	| 需要同步到ES实例的文档的id，可自定义。本文使
 esMapping.sql	| SQL语句，用来查询需要同步到ES中的字段。
 
 3） 启动Canal-adapter服务。
+
 ```
 ./bin/startup.sh
 ```
+
 4. 导出增量数据。</br>
 
 1） 在MySQL数据库中，管理数据库testml中testml表的数据。新增数据示例如下：

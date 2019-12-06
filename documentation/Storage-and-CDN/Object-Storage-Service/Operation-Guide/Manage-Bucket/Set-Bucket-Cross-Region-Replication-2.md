@@ -20,11 +20,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->增量数据同步
 
-![增量数据同步](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-041.png)
+![增量数据同步](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-041.png)
 
 2.单击 开启按钮，打开增量数据同步配置对话框。
 
-![配置增量数据同步](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-042.png)
+![配置增量数据同步](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-042.png)
 
 3.选择目标存储空间所在的地域及存储空间名称。
 
