@@ -1,25 +1,30 @@
-# setNodeGroupSize
+# setAddons
 
 
 ## 描述
-调整工作节点组实例数量
+设置集群组件
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId}:setNodeGroupSize
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:setAddons
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |工作节点组 ID|
+|**clusterId**|String|True| |集群 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**expectCount**|Integer|True| |预期目标节点数量|
+|**addonsConfig**|[AddonConfigSpec[]](setaddons#addonconfigspec)|True| |需要设置的集群组件配置|
 
+### <div id="addonconfigspec">AddonConfigSpec</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |组件名称，目前支持customMetrics、logging|
+|**enabled**|Boolean|False| |是否开启该组件，默认为false。|
 
 ## 返回参数
 |名称|类型|描述|
