@@ -18,7 +18,7 @@
 
 - [产品优势](../Introduction/Benefits.md)
 - [产品功能](../Introduction/Features.md)
-- [价格总览](../Pricing/Price-Overview.md)
 - [计费规则](../Pricing/Billing-Rules.md)
-- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
-- [查看边缘计算结果](../Operation-Guide/Edge-Module/View-Module-Result.md)
+- [管理边缘应用](../Operation-Guide/Edge-App.md)
+- [管理子设备](../Operation-Guide/SubDevice.md)
+- [管理消息路由](../Operation-Guide/MsgRouter.md)
