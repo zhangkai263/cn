@@ -37,6 +37,8 @@
           href: Operation-Guide/SubDevice.md
         - name: 管理消息路由
           href: Operation-Guide/MsgRouter.md
+        - name: AI模型转换指南
+          href: Operation-Guide/Trans-ModelFile.md
   - name: 最佳实践
     items:
     - name: 边缘视觉应用
