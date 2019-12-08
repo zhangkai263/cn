@@ -28,10 +28,7 @@
    | 产品     | 选择需要添加的子设备所属的产品。产品创建时请使用与设备服务相关的物模型模板。当前IP摄像头设备服务支持使用IP摄像头模板创建的产品。 |
    | 设备     | 选择需要添加的子设备，每次仅能添加一个。已经添加过的设备无法再次添加。 |
    | 设备协议 | 设备接入协议的配置参数，供客户自行配置其设备信息。IP摄像头设备服务支持ONVIF协议。 |
-   | ip       | 需要添加的IP摄像头的IPv4地址。                               |
-   | port     | IP摄像头的端口号                                             |
-   | user     | 访问IP摄像头的用户名                                         |
-   | password | 访问IP摄像头的密码                                           |
+   | ONVIF协议配置参数 | ip: 需要添加的IP摄像头的IPv4地址<br>port: IP摄像头的端口号<br>user: 访问IP摄像头的用户名<br>password: 访问IP摄像头的密码 |
 
    点击“确定”后，在当前页下方子设备列表中，可以查看子设备添加状态，并可对子设备进行控制操作。
    
@@ -87,4 +84,5 @@
 
 - [创建边缘计算节点](../../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../../Getting-Started/Install-Edge-System.md)
-- ​                               
+- [管理边缘应用](../Operation-Guide/Edge-App.md)
+- [管理消息路由](../Operation-Guide/MsgRouter.md)                          
