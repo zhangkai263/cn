@@ -12,6 +12,4 @@
 - [产品概述](../Introduction/Product-Overview.md)
 - [核心概念](../Introduction/Core-Concepts.md)
 - [产品功能](../Introduction/Features.md)
-- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
-- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
 
