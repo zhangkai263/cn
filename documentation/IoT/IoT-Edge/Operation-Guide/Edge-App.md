@@ -101,7 +101,7 @@
 
 ### 		调用服务
 如您想使用自己的AI模型进行视觉检测，您可通过调用对象检测应用的服务，将您自己的模型文件更新至边缘节点上。
-您的模型文件必须符合OpenVino的框架，如您使用的是其他框架的模型，请您参考[AI模型转换指南](../Operation-Guide/Trans-ModelFile.md)
+您的模型文件必须符合OpenVino的框架，如您使用的是其他框架的模型，请您参考[AI模型转换指南](../Operation-Guide/Trans-ModelFile.md)。
 
 
 添加检测模型（ addModel）
