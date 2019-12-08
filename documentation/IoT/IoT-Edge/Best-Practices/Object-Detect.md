@@ -95,3 +95,9 @@
 
     *命令发送成功后,设备服务收到消息, 显示log - Stop camera(${yourdevicename}) ， 摄像头设备停止捕捉图片。*
     
+    ## 相关参考
+
+- [管理边缘应用](../Operation-Guide/Edge-App.md)
+- [管理子设备](../Operation-Guide/SubDevice.md)
+- [管理消息路由](../Operation-Guide/MsgRouter.md)
+
