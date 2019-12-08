@@ -17,4 +17,6 @@
 - [计费规则](../Pricing/Billing-Rules.md)
 - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
-- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+- [管理边缘应用](../Operation-Guide/Edge-App.md)
+- [管理子设备](../Operation-Guide/SubDevice.md)
+- [管理消息路由](../Operation-Guide/MsgRouter.md)
