@@ -16,12 +16,9 @@
     - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
     - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
 - 操作指南
-    - [部署边缘应用](../Operation-Guide/Edge-Module/Deploy-Edge-App.md)
-    - [添加子设备](../Operation-Guide/Edge-Module/Add-Sub-Device.md)
-    - [管理边缘应用](../Operation-Guide/Edge-Module/Manage-Edge-App.md)
-    - [管理子设备](../Operation-Guide/Edge-Module/Manage-Sub-Device.md)
-    - [消息路由](../Operation-Guide/Edge-Module/Message-Router.md)
-    - [升级边缘系统](../Operation-Guide/Edge-Module/Update-Edge-System.md)
+    - [管理边缘应用](../Operation-Guide/Edge-App.md)
+    - [管理子设备](../Operation-Guide/SubDevice.md)
+    - [管理消息路由](../Operation-Guide/MsgRouter.md)
 
 ## 计费
 
