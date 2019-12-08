@@ -43,7 +43,7 @@
 
 ## 查看对象检测结果
 
-1. 登录 [物联网中心服务 控制台](https://iot-console.jdcloud.com/iothub)。
+1. 登录 [京东云 控制台](https://console.jdcloud.com/overview)。
 
 2. 进入您创建的用于存储边缘计算结果的OSS Bucket目录下查看当前应用的检测结果。
 
