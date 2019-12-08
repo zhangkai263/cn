@@ -2,7 +2,7 @@
 
 ## 智能
 
-提供本地数据处理，AI学习、推断、识别等能力，让边缘具备一定的AI计算和推断能力。
+提供本地数据处理，AI学习、推断、识别等能力，将云端的计算服务下沉至边缘。
 
 ## 便捷
 
@@ -30,5 +30,5 @@
 - [产品规格](../Introduction/Specifications.md)
 - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
-- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+- [边缘应用管理](../Operation-Guide/Edge-App.md)
 
