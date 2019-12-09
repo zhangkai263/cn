@@ -20,21 +20,21 @@ items:
   - name: 操作指南
     items:
       - name: 脚本构造
-        href: Operation-Guide/脚本构造.md
+        href: Operation-Guide/Script-Structure.md
       - name: 运行脚本
-        href: Operation-Guide/运行脚本.md
+        href: Operation-Guide/Script-Running.md
       - name: 压测结果分析
-        href: Operation-Guide/压测结果分析.md
+        href: Operation-Guide/Result-Analyse.md
       - name: 定时任务
-        href: Operation-Guide/定时任务.md
+        href: Operation-Guide/Timing-Task.md
       - name: 高失败率告警及邮件发送处理
-        href: Operation-Guide/高失败率告警及邮件发送处理.md
+        href: Operation-Guide/Notice.md
       - name: 跟踪日志和错误日志采集
-        href: Operation-Guide/跟踪日志和错误日志采集.md        
+        href: Operation-Guide/Log-Tracing.md     
       - name: HTTP2插件支持
-        href: Operation-Guide/HTTP2插件支持.md    
+        href: Operation-Guide/HTTP2.md 
       - name: MQTT插件支持
-        href: Operation-Guide/MQTT插件支持.md     
+        href: Operation-Guide/MQTT.md     
   - name: 用户协议
     items:
         - name: 服务条款
