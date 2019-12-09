@@ -9,7 +9,7 @@
 | 资源池 | 云主机 | K8S集群 |
 | 部署介质 | WAR包、JAR包 | 镜像 |
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/cvmk8sdeploy.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/cvmk8sdeploy1.png)
 
 
 
