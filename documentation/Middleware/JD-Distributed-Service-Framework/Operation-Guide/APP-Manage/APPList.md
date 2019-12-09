@@ -1,20 +1,19 @@
 #  应用管理概述
-应用，是一组具有特定功能组成的集合。当前平台提供虚拟机应用的部署，用户可通过虚拟机部署方式，部署应用程序包到云主机上。
-
-- 1台云主机上只能部署1个应用；
-- 支持WAR包、JAR包部署。
+应用，是一组具有特定功能组成的集合。当应用完成开发后可通过控制台进行应用部署，目前已支持虚拟机应用部署,集成K8S容器应用部署。
 
 
-## 操作场景
+|   | 云主机部署 | K8S容器应用部署 |
+| :- | :- | :- |
+| 操作场景 | 为传统部署方式。用户在命名空间（如预发环境、线上环境）中，部署程序包、创建应用、删除应用等。 | 在京东云上使用K8S集群后，可通过JDSF部署K8S应用。 |
+| 部署方式 | 部署应用程序包到云主机上。1台云主机上只能部署1个应用。 | 部署K8S应用到京东云上的K8S集群。  |
+| 资源池 | 云主机 | K8S集群 |
+| 部署介质 | WAR包、JAR包 | 镜像 |
 
-例如，用户在命名空间（如预发环境、线上环境）中，部署程序包、创建应用、删除应用等。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/cvmk8sdeploy.png)
+
+
 
 ## 应用的基本操作
-
-应用的操作流程如下：
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow.png)
-
 
 
 ### 创建应用
@@ -24,10 +23,6 @@
 2、	在列表上方，点击新建应用，进入创建页。
 
 3、	设置基本信息，单击确定，完成创建。
-
-**说明：**
-
--  Java运行环境目前支持JDK1.7、OpenJDK1.8、OpenJDK11。
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-11.png)
@@ -53,10 +48,20 @@
 
 ### 应用部署
 
-该内容，请参考 ：
+云主机应用部署流程如下：
 
- -  [云主机中部署应用](APPDeloy.md)  
- -  [K8S中部署应用](K8SAPPDeloy.md)   
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-yzj.png)
+
+
+详情请参考 ：[云主机中部署应用](APPDeloy.md)  
+ 
+ 
+ K8S容器应用部署流程如下：
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-k8s.png)
+
+详情请参考 ：[K8S中部署应用](APPDeloyK8S.md)   
+ 
 
 **说明：**
 
