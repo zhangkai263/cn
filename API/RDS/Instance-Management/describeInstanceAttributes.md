@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询RDS实例（MySQL、SQL Server等）的详细信息以及MySQL只读实例详细信息
+查询RDS实例（MySQL、SQL Server等）的详细信息以及MySQL/PostgreSQL只读实例详细信息
 
 ## 请求方式
 GET
@@ -22,21 +22,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeInstanceAttributes#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**dbInstanceAttributes**|DBInstanceAttribute| |
-### DBInstanceAttribute
+|**dbInstanceAttributes**|[DBInstanceAttribute](describeInstanceAttributes#DBInstanceAttribute)| |
+### <a name="DBInstanceAttribute">DBInstanceAttribute</a>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|
-|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
+|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**instanceType**|String|实例类型，例如主实例，只读实例等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engine**|String|实例引擎类型，如MySQL或SQL Server等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engineVersion**|String|实例引擎版本，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**instanceClass**|String|实例规格代码|
+|**instanceStorageType**|String|存储类型，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
+|**storageEncrypted**|Boolean|实例数据加密. false：不加密; true：加密|
 |**instanceStorageGB**|Integer|磁盘，单位GB|
 |**instanceCPU**|Integer|CPU核数|
 |**instanceMemoryMB**|Integer|内存大小，单位MB|
@@ -44,29 +46,34 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**azId**|String[]|可用区ID，第一个为主实例在的可用区，参见[地域及可用区对照表](../Enum-Definitions/Regions-AZ.md)|
 |**vpcId**|String|VPC的ID|
 |**subnetId**|String|子网的ID|
+|**parameterGroupId**|String|参数组的ID<br>- 仅支持MySQL|
+|**parameterGroupName**|String|参数组的名称<br>- 仅支持MySQL|
+|**parameterStatus**|String|参数的状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- 仅支持MySQL|
 |**internalDomainName**|String|实例内网域名|
 |**publicDomainName**|String|实例公网域名|
 |**instancePort**|String|应用访问端口|
-|**connectionMode**|String|访问模式，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
-|**auditStatus**|String|审计状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
+|**connectionMode**|String|访问模式，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- 仅支持MySQL|
+|**auditStatus**|String|审计状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- 仅支持MySQL|
 |**instanceStatus**|String|实例状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**createTime**|String|实例创建时间|
-|**charge**|Charge|计费配置|
-|**primaryNode**|DBInstanceNode|高可用集群中主节点的信息<br>- 仅支持SQL Server|
-|**secondaryNode**|DBInstanceNode|高可用集群中从节点的信息<br>- 仅支持SQL Server|
-|**tags**|Tag[]|标签信息|
-### Tag
+|**charge**|[Charge](describeInstanceAttributes#Charge)|计费配置|
+|**sourceInstanceId**|String|MySQL只读实例对应的主实例ID<br>- 仅支持MySQL|
+|**roInstanceIds**|String[]|只读实例ID列表<br>- 仅支持MySQL|
+|**primaryNode**|[DBInstanceNode](describeInstanceAttributes#DBInstanceNode)|高可用集群中主节点的信息<br>- 仅支持SQL Server|
+|**secondaryNode**|[DBInstanceNode](describeInstanceAttributes#DBInstanceNode)|高可用集群中从节点的信息<br>- 仅支持SQL Server|
+|**tags**|[Tag[]](describeInstanceAttributes#Tag)|标签信息|
+### <a name="Tag">Tag</a>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String|标签键|
 |**value**|String|标签值|
-### DBInstanceNode
+### <a name="DBInstanceNode">DBInstanceNode</a>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|节点id|
 |**name**|String|节点名称|
 |**status**|String|节点状态|
-### Charge
+### <a name="Charge">Charge</a>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

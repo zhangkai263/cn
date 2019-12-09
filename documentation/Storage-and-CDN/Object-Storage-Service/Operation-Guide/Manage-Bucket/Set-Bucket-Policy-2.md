@@ -32,7 +32,7 @@
       - （2）Bucket Policy中各个字段的定义如下：
          a. 用户授权：定义了该Bucket Policy所影响到的用户，默认值为 “*”， 语义是对全部用户生效，若需要只针对部分用户生效，请点击“自定义用户”，并在文本框中 输入对应用户的用户ID指定用户时，您无需输入前缀“arn:aws:iam::”，按照如下方式输入：
          1.主账号：AccountID
-         2.子账号 AccountID：user/username。每行一个用户ID，即通过换行符间隔多个AccountID
+         2.子账号 AccountID：username/username。每行一个用户ID，即通过换行符间隔多个AccountID
          （注：您的AccountID可以到用户管理中去查询，效果如下图）。
          
         ![用户授权1](../../../../../image/Object-Storage-Service/OSS-033.png)

@@ -2,7 +2,7 @@
 
 
 ## 描述
-仅支持查看MySQL实例的审计内容
+仅支持查看MySQL实例的审计内容<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB
 
 ## 请求方式
 GET
@@ -24,9 +24,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |**accountName**|String|False| |账号名|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为10，取值范围：10、20、50|
-|**filters**|Filter[]|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
+|**filters**|[Filter[]](describeAuditResult#Filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
 
-### Filter
+### <a name="Filter">Filter</a>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -36,14 +36,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeAuditResult#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**auditResult**|AuditResult[]| |
+|**auditResult**|[AuditResult[]](describeAuditResult#AuditResult)| |
 |**totalCount**|Integer| |
-### AuditResult
+### <a name="AuditResult">AuditResult</a>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|SQL开始执行时间|
