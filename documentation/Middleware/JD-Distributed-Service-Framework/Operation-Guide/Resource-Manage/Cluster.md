@@ -14,6 +14,14 @@
 2、点击注册中心的名字，可查看到当前注册的基本信息。用户可在基本信息中查询到节点名称、节点版本、节点所在可用区、节点地址、运行状态等信息。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-jbxx.png)
 
+**说明**
+
+注册中心禁止 ICMP请求，如需测试可使用 telnet 请求 8500 端口。检测注册中心是否可用的方法可尝试如下操作：
+
+   curl 'http://{域名+端口}/v1/agent/members'
+
+
+
 
 ### 服务管理
 用户可查看每个注册中心里的服务情况。
@@ -41,3 +49,5 @@
 
 可对当前注册中心的状态、服务实例情况、发布情况等信息进行监控，并配置报警规则。入口：资源管理>注册中心>监控。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list-jk.png)
+
+
