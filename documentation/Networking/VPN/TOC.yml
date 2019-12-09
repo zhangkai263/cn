@@ -26,8 +26,10 @@
       - name: 应用场景
         items:
           - name: 混合云环境互联
-            href: Introduction/Application-Scenarios/Connection-To-IDC&Office.md
-          - name: 多云互联
+            href: Introduction/Application-Scenarios/Connection-Into-IDC&Office.md
+          - name: VPN作为专线的备份，共同构建混合云
+            href: Introduction/Application-Scenarios/Connection-With-DirectConnect.md
+          - name: 多云环境互联
             href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
   - name: 产品定价
     items:
@@ -79,9 +81,10 @@
     items:
        - name: 混合云VPN高可用
          href: Best-Practices/VPN-High-Available.md
-       - name: VPN连接Amazon AWS
-         href: Best-Practices/Connection-With-Amazon.md
-    status: 0
+       - name: 专线VPN混合云解决方案
+         href: Best-Practices/Connection-With-DirectConnect.md
+       - name: VPN连接到亚马逊AWS
+         href: Best-Practices/Connection-Into-Amazon.md
   - name: 问题排查
     items:
     status: 0
