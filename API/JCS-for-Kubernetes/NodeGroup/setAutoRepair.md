@@ -2,7 +2,7 @@
 
 
 ## 描述
-设置节点组的自动修复
+设置工作节点组的自动修复
 
 ## 请求方式
 POST
@@ -13,7 +13,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |节点组 ID|
+|**nodeGroupId**|String|True| |工作节点组 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

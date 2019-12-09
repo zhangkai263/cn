@@ -1,14 +1,14 @@
-# setNodeGroupSize
+# rollbackNodeGroupUpgrade
 
 
 ## 描述
-调整工作节点组实例数量
+回滚未升级完的工作节点组
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId}:setNodeGroupSize
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId}:rollbackNodeGroupUpgrade
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -16,9 +16,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |**nodeGroupId**|String|True| |工作节点组 ID|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**expectCount**|Integer|True| |预期目标节点数量|
+无
 
 
 ## 返回参数
