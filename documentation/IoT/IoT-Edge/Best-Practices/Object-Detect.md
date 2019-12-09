@@ -58,42 +58,6 @@
    ​		视频文件：如在对象检测应用影子中设置了开启录像，则在检测到目标后，会持续录制一段时间（时间请配置应用影子参数duration。默认为10秒）的视频。例如：video_20191105140045.mp4 
 
    
-
-## 在边缘节点控制
-
-1. 打开边缘节点的Termail
-
-2. 查询 metadata service 地址
-    ```
-    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' edgex-core-metadata
-    ```
-   查询 command service 地址
-    ```
-    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' edgex-core-command
-    ```
-3. 查询内部设备 id 和 streaming 命令 id
-    ```
-    curl http://${metadata_addr}:48081/api/v1/device/name/${yourdevicename}
-    ```
-    其中：${metadata_addr} 为上一条指令中查询出来的 metadata service 地址
-         ${yourdevicename} 为您在边缘计算部署时创建的设备名称。
-4. 向 command 服务发送 streaming 命令
-
-    **打开设备**
-
-    ```
-    curl -v -H 'Content-Type: application/json' -X PUT -d '{"streaming":"on"}'http://${cmd_addr}:48082/api/v1/device/${device_id}/command/${cmd_id}   
-    ```
-
-    *命令发送成功后,设备服务收到消息, 显示log - Run camera(${yourdevicename}) ， 摄像头设备开始捕捉图片并储存在本机目录 $HOME/edgedata/${yourdevicename}下，JPEG 图片被上传到您创建的 OSS 目录下。*
-
-    **关闭设备**
-
-    ```
-    curl -v -H 'Content-Type: application/json' -X PUT -d '{"streaming":"off"}'http://${cmd_addr}:48082/api/v1/device/${device_id}/command/${cmd_id}   
-    ```
-
-    *命令发送成功后,设备服务收到消息, 显示log - Stop camera(${yourdevicename}) ， 摄像头设备停止捕捉图片。*
     
     ## 相关参考
 
