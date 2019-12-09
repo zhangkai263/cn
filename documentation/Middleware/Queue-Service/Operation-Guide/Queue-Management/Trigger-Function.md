@@ -4,7 +4,7 @@
 ## 前提条件
 
 - 已经在队列服务创建好标准队列，FIFO队列暂不支持此功能
-- 在函数服务想要触发的函数已经配置服务角色，并且添加了系统策略：JDCloudQueueServiceTriggerFunction至函数服务角色权限
+- 在函数服务想要触发的函数已经配置服务角色，并且添加了系统策略：JDCloudQueueServiceTriggerFunction至函数服务角色权限（操作步骤[请参考](../../../../Elastic-Compute/Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md)）
 
 ## 注意事项
 
