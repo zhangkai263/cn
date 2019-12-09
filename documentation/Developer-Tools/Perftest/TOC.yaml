@@ -20,34 +20,23 @@ items:
   - name: 操作指南
     items:
       - name: 脚本构造
-        href: Operation-Guide/Create-Pipeline.md
-      - name: 编辑流水线
-        href: Operation-Guide/Edit-Pipeline.md
-      - name: 查看流水线
-        href: Operation-Guide/View-Pipeline.md
-      - name: 发布流水线
-        href: Operation-Guide/Release-Pipeline.md
-      - name: 查看执行历史记录
-        href: Operation-Guide/View-Execution-History.md
-      - name: 删除流水线
-        href: Operation-Guide/Delete-Pipeline.md        
-      - name: 操作类型-源代码
-        href: Operation-Guide/Source-Action.md    
-      - name: 操作类型-构建
-        href: Operation-Guide/Build-Action.md    
-      - name: 操作类型-部署
-        href: Operation-Guide/Deploy-Action.md        
-      - name: 添加更多操作
-        href: Operation-Guide/Add-Action.md    
-      - name: 编辑操作
-        href: Operation-Guide/Edit-Action.md    
-      - name: 停止操作
-        href: Operation-Guide/Check-Action.md    
-      - name: 删除操作
-        href: Operation-Guide/Delete-Action.md   
-  - name: 最佳实践
+        href: Operation-Guide/脚本构造.md
+      - name: 运行脚本
+        href: Operation-Guide/运行脚本.md
+      - name: 压测结果分析
+        href: Operation-Guide/压测结果分析.md
+      - name: 定时任务
+        href: Operation-Guide/定时任务.md
+      - name: 高失败率告警及邮件发送处理
+        href: Operation-Guide/高失败率告警及邮件发送处理.md
+      - name: 跟踪日志和错误日志采集
+        href: Operation-Guide/跟踪日志和错误日志采集.md        
+      - name: HTTP2插件支持
+        href: Operation-Guide/HTTP2插件支持.md    
+      - name: MQTT插件支持
+        href: Operation-Guide/MQTT插件支持.md     
+  - name: 用户协议
     items:
-        - name: 构建并部署到京东云-云部署
+        - name: 服务条款
           href: Best-Practices/Deployment-On-CodeDeploy.md 
-        - name: 构建并部署到Kubernetes集群
-          href: Best-Practices/Deployment-On-K8S.md
+
