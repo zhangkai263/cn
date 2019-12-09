@@ -18,7 +18,11 @@
 
 注册中心禁止 ICMP请求，如需测试可使用 telnet 请求 8500 端口。检测注册中心是否可用的方法可尝试如下操作：
 
-   curl 'http://{域名+端口}/v1/agent/members'
+    # curl 'http://{域名+端口}/v1/agent/members'
+    
+
+
+   
 
 
 
