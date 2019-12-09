@@ -48,7 +48,7 @@
 
 ### 应用部署
 
-云主机应用部署流程如下：
+1、云主机应用部署流程如下：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-yzj.png)
 
@@ -56,7 +56,7 @@
 详情请参考 ：[云主机中部署应用](APPDeloy.md)  
  
  
- K8S容器应用部署流程如下：
+2、K8S容器应用部署流程如下：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-k8s.png)
 
@@ -70,6 +70,7 @@
 2. 重做新操作系统，不会改动安全组。部署成功就可以正常停止/启动应用。
 
 3.如果用户手动改动安全组或者云主机里面的防火墙设置，可能会影响停止/启动应用的功能。
+
 
 
 ### 实例部署信息
@@ -91,7 +92,7 @@
 
 2、在删除应用的同时，将删除应用下的所有程序包；删除前用户需自行备份。
 
-3、目前，程序包支持JAR, WAR两种类型，最大支持256兆。
+3、目前，程序包支持JAR, WAR两种类型。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-cxb-list-1.png)
 
@@ -99,7 +100,7 @@
 
 ### 部署历史
 
-该节内容，可查看部署组章节。在删除部署组的同时，用户可选择是否同步删除部署历史；删除前用户需自行备份。
+在删除部署组的同时，将同步删除部署历史；删除前用户需自行备份。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-bsz-history-list.png)
 
