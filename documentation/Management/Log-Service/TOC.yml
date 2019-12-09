@@ -35,6 +35,8 @@ items:
           href: Introduction/ResourceLog/KubernetesLog.md
         - name: 云缓存Redis日志
           href: Introduction/ResourceLog/RedisLog.md
+        - name: PostgreSQL日志
+          href: Introduction/ResourceLog//PGLog.md
 - name: 产品定价
   items:
     - name: 计费概述

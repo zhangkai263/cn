@@ -154,11 +154,8 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
                 "attributes":{
                     "ApproximateFirstReceiveTimestamp":"1572246000180643518",
                     "ApproximateReceiveCount":"1",
-                    "MessageDeduplicationId":"",
-                    "MessageGroupId":"",
                     "SenderId":"senderpin",
-                    "SentTimestamp":"1572245999697935359",
-                    "SequenceNumber":""
+                    "SentTimestamp":"1572245999697935359"
                 },
                 "messageAttributes":null,
                 "md5OfBody":"098f6bcd4621d373cade4e832627b4f6"
