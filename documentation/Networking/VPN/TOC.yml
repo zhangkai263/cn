@@ -1,4 +1,4 @@
-﻿  name: 私有网络
+﻿  name: VPN
   href:
   items:
   - name: 产品简介
@@ -13,84 +13,74 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         items:
-          - name: VPC
-            href: Introduction/Features/VPC-Features.md
-          - name: 子网
-            href: Introduction/Features/Subnet-Features.md
-          - name: ACL
-            href: Introduction/Features/Network-ACL-Features.md
-          - name: 安全组
-            href: Introduction/Features/Security-Group-Features.md
-          - name: NFV
-            href: Introduction/Features/NFV-Features.md
-          - name: 路由表
-            href: Introduction/Features/Route-Table-Features.md
-          - name: VPC对等连接
-            href: Introduction/Features/VPC-Peering-Features.md
+          - name: 边界网关
+            href: Introduction/Features/Border-Gateway-Features.md
+          - name: VPC接口
+            href: Introduction/Features/VPC-Interface-Features.md
+          - name: 客户网关
+            href: Introduction/Features/Customer-Gateway-Features.md
+          - name: VPN连接
+            href: Introduction/Features/VPN-Connection-Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景
         items:
-          - name: 基础业务上云
-            href: Introduction/Application-Scenarios/Basic-Business-Into-Cloud.md
-          - name: 混合云数据高速互通
-            href: Introduction/Application-Scenarios/Hybrid-Cloud-Data-InterConnect-With-High-Speed.md
-          - name: 业务安全访问控制
-            href: Introduction/Application-Scenarios/Business-Security-Access-Control.md
-          - name: 多虚机共享公网IP访问外网
-            href: Introduction/Application-Scenarios/Multiple-Virtual-Machines-Use-Shared-IpAddress-To-Access-Internet.md
+          - name: 混合云环境互联
+            href: Introduction/Application-Scenarios/Connection-To-IDC&Office.md
+          - name: 多云互联
+            href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
   - name: 产品定价
     items:
-      - name: 计费规则
+      - name: 计费概述
         href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md
   - name: 入门指南
     items:
-       - name: 私有网络中创建云主机实例
-         href: Getting-Started/Create-Virtual-Machine-Instance-In-VPC.md
-       - name: 标准WEB+APP+DB架构服务部署
-         href: Getting-Started/Standard-WEB-APP-DB-Architectural-Service-Deployment.md
-       - name: 私有网络中云主机与公网互通
-         href: Getting-Started/Virtual-Machine-In-VPC-InterConnect-With-Internet.md
-       - name: 子网业务安全访问控制
-         href: Getting-Started/Subnet-Business-Security-Access-Control.md
-       - name: 主机实例安全组规则配置
-         href: Getting-Started/Virtual-Machine-Instance-Security-Group-Rule-Configuration.md
-       - name: 安全组规则典型配置
-         href: Getting-Started/Security-Group-Rules-Typically-Configured.md
-       - name: 多主机共享公网IP
-         href: Getting-Started/Muitiple-Virtual-Machine-Use-Shared-IpAddress.md
-       - name: 基于子网的策略路由管理
-         href: Getting-Started/Subnet-Based-Policy-Routing-Management.md
-       - name: VPC对等连接
-         href: Getting-Started/VPC-Peering.md
-       - name: 边界网关连通多VPC
-         href: Getting-Started/Multiple-VPCs-Interconnection.md
-       - name: NAT实例网关
-         href: Getting-Started/NAT-Instance-Gateway.md
-       - name: VPN镜像网关
-         href: Getting-Started/VPN-Mirror-Gateway.md
+       - name: 连接本地数据中心
+         href: Getting-Started/Connection-With-On-Premise.md
   - name: 操作指南
     items:
-       - name: VPC配置
-         href: Operation-Guide/VPC-Configuration.md
-       - name: 子网配置
-         href: Operation-Guide/Subnet-Configuration.md
-       - name: 路由表配置
-         href: Operation-Guide/Route-Table-Configuration.md
-       - name: ACL配置
-         href: Operation-Guide/Network-ACL-Configuration.md
-       - name: 安全组配置
-         href: Operation-Guide/Security-Group-Configuration.md
-       - name: NFV配置
+       - name: 边界网关管理
          items:
-          - name: NAT实例网关配置
-            href: Operation-Guide/NFV-Configuration/NAT-Instance-Gateway-Configuration.md
-          - name: VPN镜像网关配置
-            href: Operation-Guide/NFV-Configuration/VPN-Mirror-Gateway-Configuration.md
-       - name: VPC对等连接
-         href: Operation-Guide/VPC-Peering-Configuration.md
+          - name: 边界网关配置
+            href: Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md
+          - name: VPC接口配置
+            href: Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md
+       - name: 客户网关管理
+         items:
+          - name: 客户网关配置
+            href: Operation-Guide/Customer-Gateway-Management/Customer-Gateway-Configuration.md
+       - name: VPN连接管理
+         items:
+          - name: VPN连接配置
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md
+          - name: VPN隧道配置
+            href: Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md
+       - name: 客户端管理
+         items:
+          - name: 思科客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md
+          - name: 华为客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Huawei-Configuration.md
+          - name: strongSwan客户端配置
+            href: Operation-Guide/Client-Site-Configuration/StrongSwan-Configuration.md
+       - name: 路由管理
+         items:
+          - name: 边界网关路由配置
+            href: Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md
+          - name: VPC路由配置
+            href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
+       - name: 混合云VPN高可用
+         href: Best-Practices/VPN-High-Available.md
+       - name: VPN连接Amazon AWS
+         href: Best-Practices/Connection-With-Amazon.md
     status: 0
   - name: 问题排查
     items:

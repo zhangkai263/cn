@@ -7,10 +7,6 @@ VPN产品由京东云自主研发，基于标准的IPsec协议，基于Site-To-S
 
 具体逻辑架构如下图：
 
-``图待更新``
-![](../../../../image/Networking/Virtual-Private-Cloud/Basic-Infrastructure.png)
-
-
 
 ### 组件
 

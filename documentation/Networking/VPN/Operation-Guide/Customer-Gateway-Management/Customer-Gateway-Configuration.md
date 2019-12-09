@@ -15,20 +15,20 @@ c)输入客户网关的名称、BGP ASN、公网地址个数、公网地址、�
   客户端双IP能极大地提升业务的可用性，云端两个公网地址和客户端两个公网地址间建立1对1的VPN隧道，其使用场景详见[]()。
   客户端四IP适用于和Amazon AWS间的多云部署，其使用场景详见[]()。
 ```
-![]()
+![](../../../../../image/Networking/VPN/Operation-Guide/create-cgw.png)
 
 ##### 2.修改客户网关
 您可对客户网关的名称、描述及公网地址进行修改。</br>
 a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
 b)选择相应的客户网关，进入客户网关详情页面；</br>
 c)支持修改客户网关名称、描述及公网地址，各配置项的限制同创建客户网关，当该客户网关未创建VPN隧道时可以修改公网地址；</br>
-![]()
+![](../../../../../image/Networking/VPN/Operation-Guide/update-cgw.png)
 
 ##### 3.删除客户网关
 若您不再需要客户网关，可将其删除。</br>
 a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
 b)选择相应的客户网关，点击操作列中的“删除”，当该客户网关未创建VPN连接时可以删除；</br>
-![]()
+![](../../../../../image/Networking/VPN/Operation-Guide/delete-cgw.png)
 
 
-更多内容，详见[]()
+更多内容，详见[配置VPN连接](../../Operation-Guide/VPN-Connection-Management/VPN-Connection.md)。

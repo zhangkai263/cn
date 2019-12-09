@@ -1,10 +1,10 @@
 # 使用限制
 #### 京东云对客户端VPN设备的要求
-* 支持标准的IPsec协议；
+* 支持标准的IPsec协议，支持隧道模式，支持ESP；
 * 支持IKE、IPsec两阶段协商的相关参数；
 * 支持基于Route-Based VPN，需绑定隧道至设备的逻辑接口；
-* 使用Static的、Internet-routable的IPv4地址终结VPN隧道；
-* 客户端是防火墙设备，或配置了安全策略，需放行如下协议端口：
+* 客户端使用Static的、Internet-routable的IPv4地址作为隧道外层地址，用于终结VPN隧道；
+* 若客户端是防火墙设备，或配置了安全策略，需放行如下协议端口：
   - UDP 500，用于IKE协商；
   - IP 50，用于IPsec ESP协商及加密的数据包传输；
   - UDP 4500，若您的客户端设备位于NAT设备之后，则需要同时启用NAT Traversal (NAT-T)；

@@ -1,7 +1,7 @@
-## 华为防火墙设备IPsec VPN配置
+## Cisco防火墙设备IPsec VPN配置
 在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
-本文以华为 USG6530为例，讲述如何在华为设备上配置VPN，适用于HUAWEI USG6500系列防火墙。
+本文以Cisco C3900为例，讲述如何在Cisco设备上配置VPN，适用于Cisco IOS 15.0+ software。
 
 网络拓扑示例如下：
 |         |   VPN公网地址   |    内网网段    |
@@ -9,7 +9,7 @@
 |  云端   | 116.xxx.xxx.10  | 192.168.0.0/24 |
 | 企业IDC | 220.xxx.xxx.150 |  10.0.0.0/16   |
 
-VPN隧道配置示例如下(以一条隧道为例，为保证业务的高可用，请使用VPN云端的两个公网地址分别于客户端创建隧道)：
+VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可用，请使用VPN云端的两个公网地址分别于客户端创建隧道``)：
 | 参数类型  |           参数            |      取值       |
 |:---------:|:-------------------------:|:---------------:|
 |   通用    |       云端公网地址        | 116.xxx.xxx.10  |
@@ -25,7 +25,7 @@ VPN隧道配置示例如下(以一条隧道为例，为保证业务的高可用�
 |           |    IKE SA Lifetime(s)     |      14400      |
 | IPsec配置 |       报文封装模式        |    隧道模式     |
 |           |         安全协议          |       ESP       |
-|           |         DH Group          |     Group14     |
+|           |         DH Group          |     Group19     |
 |           |         认证算法          |     SHA256      |
 |           |         加密算法          |     aes128      |
 |           |   IPsec SA Lifetime(s)    |      3600       |
@@ -37,68 +37,67 @@ VPN隧道配置示例如下(以一条隧道为例，为保证业务的高可用�
 1.登录防火墙设备的命令行配置界面；
 2.配置IKE策略：
 ```
-  # config dpd
-  ike dpd type periodic
-  ike dpd idle-time 10
-  ike dpd retransmit-interval 5
+  ! config ike algorithm
+  crypto ikev2 proposal proposal_jdcloud
+    encryption aes-cbc-128
+    integrity sha256
+    group 19
+  exit
 
-  # config ike algorithm
-  ike proposal 1
-    encryption-algorithm aes-128
-    dh group19
-    authentication-algorithm sha2-256
-    authentication-method pre-share
-    integrity-algorithm hmac-sha2-256
-    prf hmac-sha2-256
-    sa duration 14400
+  ! config ike policy
+  crypto ikev2 policy policy_jdcloud
+    match fvrf any
+    proposal proposal_jdcloud
+  exit
 ```
 3.配置身份认证及预共享密钥：
 ```
-  # config authentication and psk
-  ike peer ike81111574934
-    undo version 1
-    exchange-mode auto
-    pre-shared-key secret
-    ike-proposal 1
-    remote-address 116.xxx.xxx.10
+  ! config authentication and psk
+  crypto ikev2 profile ike_profile_jdcloud
+    match identity remote address 116.xxx.xxx.10 255.255.255.255
+    identity local address 220.xxx.xxx.150
+    authentication remote pre-share key secret
+    authentication local pre-share key secret
+    lifetime 14400
+    dpd 10 8 periodic
+  exit
 ```
 4.配置IPsec策略及隧道：
 ```
-  ipsec sha2 compatible enable
+  ! config ipsec security protocol
+  crypto ipsec transform-set transform-jdcloud esp-aes esp-sha256-hmac
+    mode tunnel
+  exit
 
-  # config ipsec security protocol
-  ipsec proposal prop81111574934
-    esp authentication-algorithm sha2-256
-    esp encryption-algorithm aes-128
+  !config ipsec policy
+  crypto ipsec profile ipsec_profile_jdcloud
+    set transform-set transform-jdcloud
+    set pfs group19
+    set ikev2-profile ike_profile_jdcloud
+  exit
 
-  # config ipsec policy and logic interface
-  ipsec policy ipsec8111157491 1 isakmp
-    pfs dh-group14
-    security acl 3002
-    ike-peer ike81111574934
-    proposal prop81111574934
-    tunnel local 220.xxx.xxx.150
-    sa trigger-mode auto
-    sa duration traffic-based 0
-    sa duration time-based 3600
-    route inject dynamic
+  ! config logic interface
+  interface Tunnel1
+    ip address 169.254.1.1 255.255.255.252
+    ip tcp adjust-mss 1379
+    tunnel source 220.xxx.xxx.150
+    tunnel mode ipsec ipv4
+    tunnel destination 116.xxx.xxx.10
+    ip virtual-reassembly
+  exit
 
-  # use ipsec with physical interface
-  interface GigabitEthernet1/0/0
-    description jdcloud_test
-    undo shutdown
-    ip address 2.2.2.3 255.255.255.248
-    vrrp vrid 107 virtual-ip 220.xxx.xxx.150 255.255.255.224 active
-    gateway 220.xxx.xxx.1
-    service-manage https permit
-    service-manage ping permit
-    redirect-reverse next-hop 220.xxx.xxx.1
-    ipsec policy ipsec8111157491
+  ! config sla
+  ip sla 100
+    icmp-echo 169.254.1.2 source-interface Tunnel1
+    frequency 5
+  exit
+
+  ip sla schedule 100 life forever start-time now
+  track 100 ip sla 100 reachability
 ```
 5.配置ACL，允许所需的网段通信：
 ```
-  acl number 3002
-    rule 5 permit ip source 10.0.0.0 0.0.255.255 destination 192.168.0.0 0.0.0.255
+  access-list 100 permit ip 10.0.0.0 0.0.255.255 192.168.0.0 0.0.0.255
 ```
 6.配置路由(以静态路由为例)：
 ```
@@ -108,4 +107,4 @@ VPN隧道配置示例如下(以一条隧道为例，为保证业务的高可用�
 9.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
-其它要求，请参考[限制说明](../../../Introduction/Restrictions)。
+其它要求，请参考[限制说明](../../../Introduction/Restrictions.md)。
