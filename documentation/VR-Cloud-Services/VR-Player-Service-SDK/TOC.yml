@@ -1,4 +1,4 @@
-name: 播放器 SDK
+name: VR 播放器 SDK
 href:
 items:
 - name: 产品简介
@@ -23,22 +23,14 @@ items:
       href: DEMO-experience/SDK-download.md
 - name: 入门指南
   items:
-    - name: Web/h5端播放器SDK
-      items:
-        - name: Web/h5端开发说明文档
-          href: Getting-Started/Web-play-guidance.md
-        - name: Web/h5端对接攻略
-          href: Getting-Started/Web-play-API.md
-    - name: 移动端播放器SDK
-      items:
-        - name: Android端快速集成
-          href: Getting-Started/Android-play-guidance.md
-        - name: Android端SDK的使用
-          href: Getting-Started/Android-play-API.md
-        - name: iOS端快速集成
-          href: Getting-Started/iOS-play-guidance.md
-        - name: iOS端SDK的使用
-          href: Getting-Started/iOS-play-API.md
+    - name: Android端快速集成
+      href: Getting-Started/Android-play-guidance.md
+    - name: Android端SDK的使用
+      href: Getting-Started/Android-play-API.md
+    - name: iOS端快速集成
+      href: Getting-Started/iOS-play-guidance.md
+    - name: iOS端SDK的使用
+      href: Getting-Started/iOS-play-API.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 相关资源

@@ -1,9 +1,9 @@
 
 # 产品概述
 
-播放器SDK是京东云推出的提供视频点播和直播播放的播放器软件开发工具包，包括Web/H5、Android、iOS等多终端，主要功能包括直播流/点播文件的播放、倍速播放、视频封面/循环播放设置等，旨在帮助开发者快速具备播放器能力支撑。
+VR播放器SDK是京东云推出的应用于移动端VR播放的软件开发工具包，同时覆盖Android端和iOS端，支持VR直播流/点播文件的播放，旨在帮助开发者快速具备VR播放能力支撑。
 
-播放器SDK结合京东云直播、点播产品，可为客户提供包括推流/上传、京享超清转码、截图/水印、分发、播放等视频端到端的解决方案。
+VR播放器SDK结合京东云VR直播、VR点播产品，可为客户提供VR视频采集、拼接、推流/上传、VR处理、分发、VR播放等一站式VR云服务解决方案，让客户快速具备VR业务支撑能力。
 
-直播产品介绍请参见“[产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/Video-Service/Live-Video/Introduction/Product-Overview.md)”。  
-点播产品介绍请参见“[产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/Video-Service/Video-on-Demand/Introduction/Product-Overview.md)”。
+VR直播产品介绍请参见“[产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/VR-Cloud-Services/VR-Live/Introduction/Product-Overview.md)”。  
+VR点播产品介绍请参见“[产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/VR-Cloud-Services/VR-Video-On-Demand/Introduction/Product-Overview.md)”。
