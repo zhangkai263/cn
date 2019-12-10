@@ -1,6 +1,6 @@
 # 定时任务
 ## 页面构造定时任务
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/32.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/32.png)
 功能说明：
 创建测试脚本后，可在“定时任务管理”菜单中创建定时任务并对定时任务进行管理
 参数说明：
@@ -17,7 +17,7 @@
 - 测试机IP : 需要输入被测服务IP
 - 运行参数：请详看“执行脚本”页面说明
 ## 我的定时任务
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/33.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/33.png)
 操作规则说明
 - 定时状态：新创建、进行中、已结束、已取消、已删除
 - 创建完定时任务后初始状态为“新创建”
