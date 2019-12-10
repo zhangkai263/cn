@@ -44,7 +44,7 @@
   - name: 入门指南
     items:
        - name: 连接本地数据中心
-         href: Getting-Started/Connection-With-On-Premise.md
+         href: Getting-Started/Connection-Into-On-Premise.md
   - name: 操作指南
     items:
        - name: 边界网关管理
@@ -79,7 +79,7 @@
             href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
-       - name: 混合云VPN高可用
+       - name: VPN高可用
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
          href: Best-Practices/Connection-With-DirectConnect.md

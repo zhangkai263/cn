@@ -12,7 +12,7 @@ VPC接口(VPC Attachment)，VPC接口是京东云提供的一种服务，用于�
 
 - 路由传播功能：VPC路由表和边界网关路由表之间可通过VPC接口实现双向路由动态传播。
 
-  VPC->边界网关方向的路由传播：当基于边界网关创建VPC接口时，如果传播VPC网段选择“VPC全部网段”或者“指定子网网段”时，即为路由自动传播方式。边界网关传播路由表会依据配置的子网范围、自动添加或者删除到达相关子网的路由表项，路由前缀为子网网段、下一跳为连接指定VPC和边界网关的VPC接口。有关边界网关路由表配置路由传播的更多内容，详见[VPC接口操作手册](../../Operation-Guide/Border-Gateway-Management/VPC-Attachment.md)。
+  VPC->边界网关方向的路由传播：当基于边界网关创建VPC接口时，如果传播VPC网段选择“VPC全部网段”或者“指定子网网段”时，即为路由自动传播方式。边界网关传播路由表会依据配置的子网范围、自动添加或者删除到达相关子网的路由表项，路由前缀为子网网段、下一跳为连接指定VPC和边界网关的VPC接口。有关边界网关路由表配置路由传播的更多内容，详见[VPC接口操作手册](../../Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md)。
 
   边界网关->VPC方向的路由传播：当VPC路由表配置路由传播时，填写路由传播的源边界网关与路由传播范围，系统将自动把该边界网关有效路由表中符合传播范围的路由规则、自动添加到VPC路由表内，并且下一跳指向源边界网关。有关VPC路由表配置路由传播的更多内容，详见[VPC路由表操作手册](https://docs.jdcloud.com/cn/virtual-private-cloud/route-table-configuration)。；
 

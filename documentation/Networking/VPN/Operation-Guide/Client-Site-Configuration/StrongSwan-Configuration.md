@@ -110,10 +110,10 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
   ipsec start
 ```
-11.配置云端路由，详见[]()
+11.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
 12.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
 有关strongSwan的更多内容，详见[strongSwan文档](https://strongswan.org/documentation.html?spm=a2c4g.11186623.2.13.2d4c346eTfyt9H)。
 
-其它要求，请参考[限制说明](../../../Introduction/Restrictions.md)。
+其它要求，请参考[限制说明](../../Introduction/Restrictions.md)。

@@ -38,7 +38,6 @@ e)为每个隧道分别配置两阶段协商所使用的参数，包括IKE版本
 ```
   京东云VPN隧道的参数很多都给出了默认值，这些默认值是我们在经过多次实际业务和安全测试后确定下来的推荐配置，不建议客户使用低于这些配置的选项。
 ```
-![]()
 
 ##### 2.修改VPN隧道
 您可对VPN隧道的隧道IP、预共享密钥、IKE版本等参数进行修改。</br>
@@ -73,4 +72,4 @@ b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)点击“监控”Tab，可以查看该VPN连接下当前存在的所有VPN隧道的监控信息，监控指标包括：隧道原始流出流量速率、隧道原始流入流量速率、隧道加密后流出流量速率、隧道加密后流入流量速率、隧道流出数据包速率、隧道流入数据包速率；</br>
 ![](../../../../../image/Networking/VPN/Operation-Guide/watching-vpntunnel.png)
 
-有关配置隧道客户端VPN设备的方式，详见：[客户端配置](../Client-Site-Configuration)。
+有关配置隧道客户端VPN设备的方式，详见：[客户端配置](../../Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md)。

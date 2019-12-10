@@ -24,4 +24,4 @@
 
 ## 操作步骤
 1.访问京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)； </br>
-2.登录控制台，具体操作请参考[创建VPN连接](../Operation-Guide/VPN-Connection-Management/VPN-Connection.md)；
+2.登录控制台，具体操作请参考[创建VPN连接](../Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md)；

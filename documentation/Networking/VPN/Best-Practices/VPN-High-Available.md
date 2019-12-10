@@ -18,14 +18,14 @@ a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/bo
 b)选择使用VPN的地域，点击创建边界网关；</br>
 c)边界网关支持运行BGP路由协议，当前京东云边界网关的BGP ASN固定为65000，后续会开放修改；</br>
 
-更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Management/Border-Gateway.md)。
+更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md)。
 
 ###### 步骤2.创建VPC接口
 a)登录[京东云VPC接口控制台](https://cns-console.jdcloud.com/host/vpcAttachment/list)；  </br>
 b)选择使用VPN的地域，点击创建VPC接口；</br>
 c)选择步骤1中创建的边界网关，选择要通过该边界网关路由流量的VPC，选择要传播到该边界网关中的VPC网段，创建VPC接口后，被选择的网段将自动添加到该边界网关的传播路由表中，下一跳指向此步骤创建的VPC接口；</br>
 
-更多内容，详见[VPC接口管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Management/Border-Gateway.md)。
+更多内容，详见[VPC接口管理](../Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md)。
 
 ###### 步骤3.创建客户网关
 a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
@@ -34,7 +34,7 @@ c)客户网关是客户端VPN设备在云端的逻辑表示，客户将基于边
 d)若客户端设备支持BGP路由协议，请指定客户端的BGP ASN；</br>
 e)客户端支持配置多个公网地址，基于业务高可用的考虑，选择客户端双IP，创建客户网关；</br>
 
-更多内容，详见[客户网关管理](../Operation-Guide/Customer-Gateway-Management/Customer-Gateway.md)。
+更多内容，详见[客户网关管理](../Operation-Guide/Customer-Gateway-Management/Customer-Gateway-Configuration.md)。
 
 ###### 步骤4.创建VPN连接
 a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
@@ -45,7 +45,7 @@ e)选择连接类型，当前仅支持隧道内外层地址均为IPv4地址簇�
 f)选择是否启用BGP路由，基于业务高可用的考虑，默认启用BGP路由，此时将基于边界网关和客户网关建立BGP会话；</br>
 g)创建VPN连接后，会自动分配两个云端公网地址，用于和客户端公网地址间建立VPN隧道；</br>
 
-更多内容，详见[VPN连接管理](../Operation-Guide/VPN-Connection-Management/VPN-Connection.md)。
+更多内容，详见[VPN连接管理](../Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md)。
 
 ###### 步骤5.创建VPN隧道
 a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
@@ -57,26 +57,26 @@ e)为每个隧道分别配置两阶段协商所使用的参数，包括IKE版本
 京东云基于安全性和性能的综合考虑，给出了默认的隧道IKE和IPsec推荐配置，建议客户按推荐配置协商建立VPN隧道。
 ```
 
-更多内容，详见[VPN隧道管理](../Operation-Guide/VPN-Connection-Management/VPN-Tunnel.md)。
+更多内容，详见[VPN隧道管理](../Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md)。
 
 ###### 步骤6.配置VPN客户端
-a)当前[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)尚不提供VPN隧道客户端配置下载功能，配置客户端设备时请参考[]()；</br>
-b)已测试支持的客户端路由器/防火墙设备列表，详见[]()，相同厂商的不同平台、软件版本间的VPN配置项差异性基本不大，可按相同系列已通过测试的客户端推荐配置进行设置，若有问题，请咨询您的设备提供商；</br>
+a)当前[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)尚不提供VPN隧道客户端配置下载功能；</br>
+b)已测试支持的客户端路由器/防火墙设备列表，详见[使用限制](../Introduction/Restrictions.md)，相同厂商的不同平台、软件版本间的VPN配置项差异性基本不大，可按相同系列已通过测试的客户端推荐配置进行设置，若有问题，请咨询您的设备提供商；</br>
 c)未在b中列出的设备厂商型号，可参考设备厂商给出的配置手册进行标准的IPsec配置；</br>
 d)``完成客户端VPN设备配置后，云端默认会主动发起协商建立隧道``，此时可在[京东云控制台](https://console.jdcloud.com/overview)中查看隧道的运行状态是否更新为“UP”，若为“UP”，则表示隧道协商成功，若为“DOWN”，请参考[FAQ](../FAQ/FAQ.md)进行故障处理；</br>
 
-更多内容，详见[VPN客户端管理](../Operation-Guide/Client-Site-Configuration)。
+更多内容，详见[VPN客户端管理](../Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md)。
 
 ###### 步骤7.配置BGP
-a)京东云支持与VPN客户端设备之间运行EBGP路由协议，客户端设备需使用与京东云边界网关不同的BGP ASN，京东云使用的BGP ASN见[边界网关的ASN](#步骤1.创建边界网关)；</br>
-b)建立BGP使用的互联地址为隧道的内层地址，详见[隧道内层IP](#步骤5.创建VPN隧道)；</br>
+a)京东云支持与VPN客户端设备之间运行EBGP路由协议，客户端设备需使用与京东云边界网关不同的BGP ASN，京东云使用的BGP ASN见[边界网关的ASN](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md)；</br>
+b)建立BGP使用的互联地址为隧道的内层地址，详见[VPN隧道管理](../Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md)；</br>
 c)云端BGP的其它配置使用默认配置，可在客户端设备上进行修改；</br>
 
 ###### 步骤8.配置路由
 a)京东云VPN连接支持在云端和客户端之间使用BGP动态路由；</br>
 b)配置边界网关路由表和VPC路由表的路由传播；</br>
 
-有关路由传播的更多内容，详见[配置边界网关路由](../Operation-Guide/Route-Configuration/Border-Gateway-Route-Configuration.md)和[配置VPC路由](../Operation-Guide/Route-Configuration/VPC-Route-Configuration.md)。
+有关路由传播的更多内容，详见[配置边界网关路由](../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)和[配置VPC路由](../Operation-Guide/Route-Management/VPC-Route-Configuration.md)。
 
 ###### 步骤9.测试连通性并验证路由切换
 a)登录[京东云云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，在创建了服务的地域下，要和企业IDC内网网段互通的VPC中创建一台云主机，确认该云主机所在子网的路由表中存在正确去往企业IDC内网网段的路由；  </br>
