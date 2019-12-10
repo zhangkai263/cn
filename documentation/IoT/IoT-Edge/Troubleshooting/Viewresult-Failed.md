@@ -14,7 +14,7 @@
 
 4. 完成上述几步后，请重新启动计算模块。
 
-5. 详细操作步骤请您参考[边缘视觉检测实践](../Best-Practices/Object-Detect.md)
+5. 详细操作步骤请您参考[边缘视觉检测实践](../Best-Practices/Object-Detect.md)。
 
 ## 后续处理
 
