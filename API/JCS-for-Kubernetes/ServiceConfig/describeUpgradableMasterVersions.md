@@ -1,35 +1,34 @@
-# describeVersions
+# describeUpgradableMasterVersions
 
 
 ## 描述
-查询版本信息
+查询可升级的控制节点版本
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/versions
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}/upgradableMasterVersions
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |Region ID|
+|**clusterId**|String|True| |集群 ID|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**masterVersion**|String|False| |集群的大版本，如 1.12.4-jcs.1|
+无
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeversions#result)| |
+|**result**|[Result](describeupgradablemasterversions#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**masterVersions**|[MasterVersion[]](describeversions#masterversion)| |
+|**masterVersions**|[MasterVersion[]](describeupgradablemasterversions#masterversion)| |
 ### <div id="masterversion">MasterVersion</div>
 |名称|类型|描述|
 |---|---|---|
@@ -37,7 +36,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/versions
 |**isDefault**|Boolean|是否默认版本|
 |**defaultNodeVersion**|String|默认工作节点版本号|
 |**versionStatus**|String|版本状态|
-|**nodeVersions**|[NodeVersion[]](describeversions#nodeversion)|node 节点的配置|
+|**nodeVersions**|[NodeVersion[]](describeupgradablemasterversions#nodeversion)|node 节点的配置|
 ### <div id="nodeversion">NodeVersion</div>
 |名称|类型|描述|
 |---|---|---|

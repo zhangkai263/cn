@@ -256,11 +256,11 @@ g.n1.8xlarge|32|128|4 |	 |
 
 实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
 :---|:---|:---|:---|:---
-|s.i1.xlarge|4|16|1 x 960GB SSD|4
-|s.i1.2xlarge|8|32|2 x 960GB SSD|4
-|s.i1.4xlarge|16|64|4 x 960GB SSD|4
-|s.i1.8xlarge|32|128|8 x 960GB SSD|4
-|s.i1.14xlarge|56|224|14 x 960GB SSD|4
+|s.i1.xlarge|4|16|1 x 894GB SSD|4
+|s.i1.2xlarge|8|32|2 x 894GB SSD|4
+|s.i1.4xlarge|16|64|4 x 894GB SSD|4
+|s.i1.8xlarge|32|128|8 x 894GB SSD|4
+|s.i1.14xlarge|56|224|14 x 894GB SSD|4
 
 <div id="user-content-8"></div>
 ### 存储优化大数据型
@@ -284,23 +284,23 @@ g.n1.8xlarge|32|128|4 |	 |
 
 第二代：
 
-实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储，GB）|网卡多队列
 :---|:---|:---|:---|:---
-|s.d2.xlarge|4|22|1 x 10000GB HDD|4
-|s.d2.2xlarge|8|44|2 x 10000GB HDD|4
-|s.d2.4xlarge|16|88|4 x 10000GB HDD|4
-|s.d2.8xlarge|32|176|8 x 10000GB HDD|4
-|s.d2.10xlarge|40|220|14 x 10000GB HDD|4
+|s.d2.xlarge|4|22|1 x 9313 HDD|4
+|s.d2.2xlarge|8|44|2 x 9313 HDD|4
+|s.d2.4xlarge|16|88|4 x 9313 HDD|4
+|s.d2.8xlarge|32|176|8 x 9313 HDD|4
+|s.d2.10xlarge|40|220|14 x 9313 HDD|4
 
 第一代：
 
-实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储，GB）|网卡多队列
 :---|:---|:---|:---|:---
-|s.d1.xlarge|4|22|1 x 6000GB HDD|4
-|s.d1.2xlarge|8|44|2 x 6000GB HDD|4
-|s.d1.4xlarge|16|88|4 x 6000GB HDD|4
-|s.d1.8xlarge|32|176|8 x 6000GB HDD|4
-|s.d1.10xlarge|40|220|14 x 6000GB HDD|4
+|s.d1.xlarge|4|22|1 x 5587 HDD|4
+|s.d1.2xlarge|8|44|2 x 5587 HDD|4
+|s.d1.4xlarge|16|88|4 x 5587 HDD|4
+|s.d1.8xlarge|32|176|8 x 5587 HDD|4
+|s.d1.10xlarge|40|220|14 x 5587 HDD|4
 
 ## GPU型
 
@@ -332,17 +332,17 @@ GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。�
 
 第一代：
 
-实例规格|vCPU（核）|内存（GB）|GPU|本地数据盘（临时存储）|网卡多队列
+实例规格|vCPU（核）|内存（GB）|GPU|本地数据盘（临时存储，GB）|网卡多队列
 :---|:---|:---|:---|:---|:---|
-|p.n1p40.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 960GB SSD|4
-|p.n1p40.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 960GB SSD|4
-|p.n1p40.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 960GB SSD|4
-|p.n1p40h.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 1200GB HDD|4
-|p.n1p40h.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 1200GB HDD|4
-|p.n1p40h.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 1200GB HDD|4
-|p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 6000GB HDD|4
-|p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 6000GB HDD|4
-|p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 6000GB HDD|4
+|p.n1p40.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 894 SSD|4
+|p.n1p40.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 894 SSD|4
+|p.n1p40.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 894 SSD|4
+|p.n1p40h.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 1117 HDD|4
+|p.n1p40h.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 1117 HDD|4
+|p.n1p40h.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 1117 HDD|4
+|p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 5587 HDD|4
+|p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 5587 HDD|4
+|p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 5587 HDD|4
 
 
 请注意：

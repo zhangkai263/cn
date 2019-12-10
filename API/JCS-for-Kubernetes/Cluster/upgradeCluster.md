@@ -1,24 +1,26 @@
-# setNodeGroupSize
+# upgradeCluster
 
 
 ## 描述
-调整工作节点组实例数量
+触发升级
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId}:setNodeGroupSize
+https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:upgradeCluster
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |工作节点组 ID|
+|**clusterId**|String|True| |集群 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**expectCount**|Integer|True| |预期目标节点数量|
+|**scope**|String|True| |升级范围|
+|**nodeGroupIds**|String[]|False| |节点组 id|
+|**version**|String|True| |指定升级到的版本|
 
 
 ## 返回参数
