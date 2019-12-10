@@ -3,7 +3,7 @@
 
 ### 操作步骤
 ##### 1.创建VPC接口
-创建VPC接口并设置VPC传播网段，详见[VPC接口管理](../Border-Gateway-Management/VPC-Attachment.md)。
+创建VPC接口并设置VPC传播网段，详见[VPC接口管理](../../Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md)。
 
 ##### 2.VPC路由表添加去往边界网关的路由
 在VPC和边界网关之间创建VPC接口后，可以在VPC路由表中设置将边界网关路由表的路由传播到VPC路由表。

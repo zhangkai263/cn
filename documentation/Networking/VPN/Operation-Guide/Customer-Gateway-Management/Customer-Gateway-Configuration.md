@@ -11,9 +11,9 @@ c)输入客户网关的名称、BGP ASN、公网地址个数、公网地址、�
 * 客户网关支持多个公网地址，基于业务高可用的考虑，请客户端至少使用两个公网地址与云端建立VPN隧道；
 
 ```
-  客户端单IP适用于大多数业务场景，云端两个公网地址和客户端一个公网地址之间分别建立一条VPN隧道，共计两条隧道，基本满足业务高可用的需求，其使用场景详见[]()。
-  客户端双IP能极大地提升业务的可用性，云端两个公网地址和客户端两个公网地址间建立1对1的VPN隧道，其使用场景详见[]()。
-  客户端四IP适用于和Amazon AWS间的多云部署，其使用场景详见[]()。
+  客户端单IP适用于大多数业务场景，云端两个公网地址和客户端一个公网地址之间分别建立一条VPN隧道，共计两条隧道，基本满足业务高可用的需求。
+  客户端双IP能极大地提升业务的可用性，云端两个公网地址和客户端两个公网地址间建立1对1的VPN隧道。
+  客户端四IP适用于和Amazon AWS间的多云部署。
 ```
 ![](../../../../../image/Networking/VPN/Operation-Guide/create-cgw.png)
 
@@ -31,4 +31,4 @@ b)选择相应的客户网关，点击操作列中的“删除”，当该客户
 ![](../../../../../image/Networking/VPN/Operation-Guide/delete-cgw.png)
 
 
-更多内容，详见[配置VPN连接](../../Operation-Guide/VPN-Connection-Management/VPN-Connection.md)。
+更多内容，详见[配置VPN连接](../../Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md)。

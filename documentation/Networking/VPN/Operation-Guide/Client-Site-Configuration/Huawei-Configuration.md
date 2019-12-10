@@ -104,8 +104,8 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
-8.配置云端路由，详见[]()
+8.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
 9.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
-其它要求，请参考[限制说明](../../../Introduction/Restrictions.md)。
+其它要求，请参考[限制说明](../../Introduction/Restrictions.md)。

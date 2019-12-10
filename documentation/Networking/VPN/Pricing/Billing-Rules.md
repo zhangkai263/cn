@@ -18,5 +18,5 @@ VPN隧道按其实际使用时长计费，统计时间精确到秒，适用于�
 * 当您的VPN连接欠费后，将在欠费后停止服务，停止服务后不再计费；
 * 当您的VPN连接欠费后，会向您发送资源欠费通知，请您务必注意查看通知并及时充值，以免造成不必要的损失，详细请参考到期&欠费提醒；
 * 从停止服务时刻起您的资源和资源中的数据保留7天，7天后会向您发送资源释放回收通知，资源回收后数据将无法找回；
-* 当您补缴欠费金额后，资源将自动恢复使用并重新开始计费。若充值后资源未恢复成运行状态，请您手动[启用隧道](../Operation-Guide/VPN-Connection-Management/VPN-Tunnel.md)；
-* 如您不想继续使用VPN连接，请及时[删除VPN连接](../Operation-Guide/VPN-Connection-Management/VPN-Connection.md)。
+* 当您补缴欠费金额后，资源将自动恢复使用并重新开始计费。若充值后资源未恢复成运行状态，请您手动[启用隧道](../Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md)；
+* 如您不想继续使用VPN连接，请及时[删除VPN连接](../Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md)。

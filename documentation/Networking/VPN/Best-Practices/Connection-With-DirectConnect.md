@@ -19,14 +19,14 @@ VPN对客户端设备的要求，详见[使用限制](../Introduction/Restrictio
 a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
 b)选择使用服务的地域，点击创建边界网关；</br>
 c)边界网关支持运行BGP路由协议，当前京东云边界网关的BGP ASN固定为65000，后续会开放修改；</br>
-更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Management/Border-Gateway.md)。
+更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md)。
 
 ###### 步骤2.创建VPC接口
 a)登录[京东云VPC接口控制台](https://cns-console.jdcloud.com/host/vpcAttachment/list)；  </br>
 b)选择使用服务的地域，点击创建VPC接口；</br>
 c)选择步骤1中创建的边界网关，选择要通过该边界网关路由流量的VPC，选择要传播到该边界网关中的VPC网段，创建VPC接口后，被选择的网段将自动添加到该边界网关的传播路由表中，下一跳指向此步骤创建的VPC接口；</br>
 
-更多内容，详见[VPC接口管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Management/Border-Gateway.md)。
+更多内容，详见[VPC接口管理](../Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md)。
 
 ###### 步骤3.创建专线连接
 详见[创建同账号同地域专线连接](https://docs.jdcloud.com/cn/direct-connection/connect-to-the-same-account-or-region-direct-connetct)。

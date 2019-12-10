@@ -19,7 +19,7 @@ d)边界网关支持运行BGP路由协议，当前京东云边界网关的BGP AS
 a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
 b)点击相应的边界网关，进入边界网关详情页；</br>
 c)详情页支持修改边界网关名称、配置路由表、新建/编辑VPC接口，后续会开放修改边界网关的BGP ASN；</br>
-d)配置边界网关路由表，边界网关路由表支持两种路由：静态路由、BGP动态/传播路由，其中静态路由是在路由表中静态配置的路由，BGP动态/传播路由是通过BGP路由协议从其他BGP Peer设备处学习到的路由，或者通过VPC接口传播的VPC路由。其中静态路由支持编辑，BGP动态路由需要在BGP Peer设备处修改其发布的路由，VPC传播路由通过修改VPC接口的传播网段进行更新。有关边界网关路由表配置路由传播的更多内容，详见[VPC接口操作手册](VPC-Attachment.md)。；</br>
+d)配置边界网关路由表，边界网关路由表支持两种路由：静态路由、BGP动态/传播路由，其中静态路由是在路由表中静态配置的路由，BGP动态/传播路由是通过BGP路由协议从其他BGP Peer设备处学习到的路由，或者通过VPC接口传播的VPC路由。其中静态路由支持编辑，BGP动态路由需要在BGP Peer设备处修改其发布的路由，VPC传播路由通过修改VPC接口的传播网段进行更新。有关边界网关路由表配置路由传播的更多内容，详见[VPC接口操作手册](VPC-Attachment-Configuration.md)。；</br>
 ![](../../../../../image/Networking/VPN/Operation-Guide/update-bgw.png)
 
 ##### 3.删除边界网关

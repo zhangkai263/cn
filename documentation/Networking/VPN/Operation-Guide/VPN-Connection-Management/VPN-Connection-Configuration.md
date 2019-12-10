@@ -1,7 +1,7 @@
 ## VPN连接
 VPN连接(VPN Connection)，VPN连接是一组云端公网地址和一组客户端公网地址间建立的多条VPN隧道的集合。
 
-有关VPN隧道的更多内容，详见[VPN隧道操作](../VPN-Tunnel-Management/Cloud-Site-Configuration/VPN-Tunnel)。
+有关VPN隧道的更多内容，详见[VPN隧道操作](../../Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md)。
 
 ### 操作步骤
 ##### 1.创建VPN连接
