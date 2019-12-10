@@ -82,7 +82,7 @@
 
 ## 相关参考，
 
-- [创建边缘计算节点](../../Getting-Started/Create-Edgenode.md)
-- [安装Edge系统](../../Getting-Started/Install-Edge-System.md)
+- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
+- [安装Edge系统](../Getting-Started/Install-Edge-System.md)
 - [管理边缘应用](../Operation-Guide/Edge-App.md)
 - [管理消息路由](../Operation-Guide/MsgRouter.md)                          
