@@ -3,16 +3,16 @@
 本地下载安装JMETER，通过JMeter编写和调试自己的脚本。 （请使用最近的JMeter 5.0版本，避免脚本版本不兼容带来的问题。安装使用很简单，网上有大量的教程可参考）
 ### 脚本配置说明：
 1. 添加线程组
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/6.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/7.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/6.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/7.png)
 参数说明：
 - Num of threads:线程数，相当于虚拟用户数
 - Ramp up period：首次启动所有线程所需的总时间
 - Loop count:循环次数
 2. 添加HTTP请求
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/8.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/9.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/10.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/8.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/9.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/10.png)
 参数说明：
 - Name:请求名称
 - Server name or ip:被测服务域名或IP
@@ -20,20 +20,20 @@
 - Port numumber:端口号
 - Protocol:协议类型
 3. 添加监听器
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/11.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/12.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/11.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/12.png)
 以上就完成了一个简单的JMETER脚本构造，保存生成的 .jmx 文件后上传到到平台构造压测平台脚本。
 ### 上传构造好的JMETER脚本
 1. 添加脚本
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/13.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/13.png)
 2. 选取脚本文件
- ![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/14.png)
+ ![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/14.png)
 参数说明： 
 - 任务名称: 测试（脚本）名称
 - 脚本类型（HTTP、JAVA）：目前仅支持HTTP
 - 脚本文件：上传对应脚本文件（jmx文件、测试需要的其他CSV文件等请一并上传(支持10M以内的文件上传 )）
 3. 上传成功后在脚本列表中会显示对应脚本信息
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/15.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/15.png)
 操作说明：
 - 更新脚本：对已经创建的脚本可以重新上传脚本文件
 - 执行：执行已生成脚本
@@ -42,7 +42,7 @@
 - 删除：删除脚本
 - 创建定时：针对该脚本创建一个定时任务
 ## 在线创建脚本
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/16.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/16.png)
 参数说明：
 - 测试名称：测试名称
 - 采样器名称：一次请求的名称
