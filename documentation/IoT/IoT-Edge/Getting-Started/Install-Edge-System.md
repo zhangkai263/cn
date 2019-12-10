@@ -20,7 +20,8 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
    ```
    sudo apt install docker
-   sudo apt install docker-compose
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o    /usr/local/bin/docker-compose
+   sudo chmod +x /usr/local/bin/docker-compose
    sudo apt install pass
    ```
 
@@ -30,27 +31,6 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    sudo gpasswd –a $USER docker
    ```
 
-   创建deamonjson文件。
-
-   ```
-   sudo vi /etc/docker/daemon.json
-   ```
-
-   将下面内容写入deamon.json文件，您可根据您边缘节点的资源情况自行配置下面的参数：
-
-   ```
-   {
-       "log-opts":{
-             "max-size":"10m",
-             "max-file":"3"
-          } 
-   }
-   ```
-
-   max-size 表示每个docker产生的每一个日志文件的大小限制，
-
-   max-file 表示每个docker产生的日志文件个数限制，只限整型。
-
    **注意：完成上述所有步骤后，请重启系统。**
 
 2. 解压缩Edge安装包至任意目录下（${destdir}）
@@ -59,10 +39,10 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    tar zxvf jdcloud-iot-edge-install.tar.gz –C ${destdir}
    ```
 
-3. 拷贝边缘节点配置文件**configuration.toml**至安装包解压目录 sys-mgmt-agent/res/ 下
+3. 拷贝边缘节点配置文件**configuration.toml**至安装包解压目录 edge-mgmt-agent/res/ 下
 
    ```
-   cp configuration.toml ${destdir}/sys-mgmt-agent/res/
+   cp configuration.toml ${destdir}/edge-mgmt-agent/res/
    ```
 
 4. 进入解压缩后的目录${destdir}，执行安装脚本，完成Edge系统安装。
