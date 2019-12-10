@@ -12,7 +12,7 @@
 
 ## 新建消息路由
 
-1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/iotedge)。
+1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/edge)。
 
 2. 点击左侧菜单进入“边缘节点”页面，点击任意边缘节点名称，进入边缘节点详情页。
 
