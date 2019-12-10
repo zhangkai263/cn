@@ -9,7 +9,7 @@
 - 已经创建好了物联网引擎实例。如果还没有创建，请登录 [物联网引擎控制台](https://iot-console.jdcloud.com/core) 创建实例。
 
 ## 操作步骤
-1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/iotedge)。
+1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/edge)。
 
 2. 在“边缘节点列表”页面，点击 **新建边缘节点** ，进入“新建边缘节点”页面。
 
