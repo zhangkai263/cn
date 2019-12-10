@@ -3,10 +3,10 @@
 ### 页面告警提示
 正在执行的脚本，若持续2min验证点成功率一直低于90%，视为无效测试，会在界面提示用户“警告：成功率低于90%持续了2分钟，建议终止”，此时用户可以手动取消本次测试。
 涉及到页面：执行页面、执行历史页面、链接页面
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/34.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/34.png)
 ### 发送告警邮件
 高失败率情况会给脚本创建人发送告警邮件，可点击详情查看
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/35.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/35.png)
 补充说明：
 - 失败告警功能同步处理定时引发的高失败率情形
 - 查看入口：”我的定时任务“→"执行历史"→"查看详情/复制链接"，进入页面可以看具体测试执行情况
