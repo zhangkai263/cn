@@ -2,7 +2,7 @@
 # 压测结果分析
 ## 结果数据分析
 ### 总体数据分析
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/26.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/26.png)
 
 说明：测试结果5s刷新一次最新处理结果，随时间实时更新
 指标说明：
@@ -13,7 +13,7 @@
 - 耗时趋势图：以5s为单位显示5s内请求耗时大小随时间变化
 - 用户活跃线程数：以5s为单位活跃线程数量随时间变化
 ### 详细数据分析
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/27.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/27.png)
 详细数据项：
 - 操作页面：测试具体对应操作page
 - 平均时间：基于每个页面请求平均响应时间
@@ -40,11 +40,11 @@
 ## 结果对比
 ### 选择同一脚本多次执行结果对比分析
 操作入口：测试脚本→执行历史，全选或者部分选择执行历史，点击“对比”进入结果对比页面
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/28.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/29.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/28.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/29.png)
 ## 被测系统监控情况
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/30.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/30.png)
 ## 压测引擎监控情况
-![](https://github.com/jdcloudcom/cn/blob/cn-perftest/image/%20Perftest/31.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-perftest-v1/image/Perftest/31.png)
 
 
