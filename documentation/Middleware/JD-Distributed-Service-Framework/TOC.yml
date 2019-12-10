@@ -49,8 +49,8 @@ items:
           herf: Operation-Guide/APP-Manage/APPList.md        
         - name: 云主机中部署应用
           herf: Operation-Guide/APP-Manage/APPDeloy.md
-        - name: K8S中部署应用
-          herf: Operation-Guide/APP-Manage/APPDeloyK8S.md
+  #      - name: K8S中部署应用
+  #       herf: Operation-Guide/APP-Manage/APPDeloyK8S.md
         - name: 部署组
           herf: Operation-Guide/APP-Manage/Deploy-Group.md
         - name: Agent安装
@@ -61,8 +61,8 @@ items:
       items:
         - name: 服务鉴权
           herf: Operation-Guide/APP-Manage/Service-Assignuse.md        
-        - name: 服务路由
-          herf: Operation-Guide/APP-Manage/Service-Rules.md          
+ #       - name: 服务路由
+ #         herf: Operation-Guide/APP-Manage/Service-Rules.md          
     - name: 调用链分析服务
       herf: Operation-Guide/DevOps/Analysis-Service.md       
     - name: 日志配置
