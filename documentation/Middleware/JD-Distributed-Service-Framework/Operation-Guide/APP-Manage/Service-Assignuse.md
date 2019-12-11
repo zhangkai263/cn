@@ -19,7 +19,7 @@
 
 2、在列表中的应用，即用户可进行服务治理的应用。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/ser-list.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/ser-list-20191211.png)
 
 ### 查看服务鉴权信息
 
