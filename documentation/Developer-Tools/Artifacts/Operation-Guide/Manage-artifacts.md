@@ -3,7 +3,6 @@
 ## 上传制品
 
 用户可以通过页面上传制品到用户私库，release仓库是非覆盖式，snapshot仓库是覆盖式，上传snapshot仓库时制品版本号要符合snapshot的命名规范。
-![](/image/Artifacts/private.png)
 ![](/image/Artifacts/upload.png)
 
 ## 制品搜索
