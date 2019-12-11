@@ -28,7 +28,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    将当前用户$USER添加至docker用户组下
 
    ```
-   sudo gpasswd –a $USER docker
+   sudo gpasswd -a $USER docker
    ```
 
    **注意：完成上述所有步骤后，请重启系统。**
