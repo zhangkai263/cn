@@ -24,7 +24,7 @@
     <td>支持自有移动端VR播放器SDK及常见的第三方如potplayer等播流软件</td>
 </tr>
 <tr>
-    <td rowspan="8"> VR直播处理<br/>
+    <td rowspan="10"> VR直播处理<br/>
     <td>FOV切换</td>
     <td>将VR视频解构为多个数据流，与播放端结合，让用户随时能看到最优的视口，为客户带来更高分辨率、更低的流式传输成本。</td>
 </tr>
