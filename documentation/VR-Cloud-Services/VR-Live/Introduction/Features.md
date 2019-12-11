@@ -7,7 +7,7 @@
     <td>详细内容</td>
 </tr>
 <tr>
-    <td rowspan="5"> 推拉流/播放方式及协议<br/>
+    <td rowspan="4"> 推拉流/播放方式及协议<br/>
     <td>推流协议</td>
     <td>支持RTMP协议推流</td>
 </tr>
