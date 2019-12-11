@@ -2,7 +2,7 @@
 京东云云数据库 PostgreSQL 提供了错误日志统计，您可以根据统计信息进行应用程序的优化。
 
 ## 操作步骤
-1. 登录 [云数据库 RDS 管理控制台](https://rds-console.jdcloud.com/database) 。    
+1. 登录 [云数据库 RDS 管理控制台]（https://rds-console.jdcloud.com/database）。    
 2. 选择目标实例，点击目标实例，进入实例详情页 。  
 
 ### 查看错误日志
