@@ -23,3 +23,9 @@
         href: Getting-Started/Public-Proxy.md
       - name: 用户私库
         href: Getting-Started/Private.md
+  - name: 操作指南
+    items:
+      - name: 制品管理
+        href: Operation-Guide/Manage-artifacts.md
+      - name: 仓库浏览
+        href: Operation-Guide/Repository-browse.md

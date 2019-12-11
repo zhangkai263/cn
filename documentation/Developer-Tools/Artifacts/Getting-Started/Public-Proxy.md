@@ -2,17 +2,8 @@
 
 ## 代理库列表
 
-京东云制品库提供了对maven公共库的代理功能，代理的仓库列表如下：
+京东云制品库提供了对maven公共库的代理功能，仓库列表可以在公共代理库页面查看。
 
-| 仓库名称 | 仓库源地址 | 京东云制品库代理地址 |
-| :- | :- | :- |
-| central | https://repo1.maven.org/maven2/ | https://maven.jdcloud.com/repos/content/repositories/central/ |
-| jcenter | https://jcenter.bintray.com/ | https://maven.jdcloud.com/repos/content/repositories/jcenter/ |
-| public | central和jcenter聚合仓库 | https://maven.jdcloud.com/repos/content/groups/public/ |
-| google | https://maven.google.com/ | https://maven.jdcloud.com/repos/content/repositories/google/ |
-| gradle-plugin | https://plugins.gradle.org/m2/ | https://maven.jdcloud.com/repos/content/repositories/gradle-plugin/ |
-| spring | https://repo.spring.io/libs-milestone/ | https://maven.jdcloud.com/repos/content/repositories/spring/ |
-| spring-plugin | https://repo.spring.io/plugins-release/ | https://maven.jdcloud.com/repos/content/repositories/spring-plugin/ |
 
 ## 配置指南
 
