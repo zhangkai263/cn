@@ -17,8 +17,7 @@
 	- [注册中心](../Operation-Guide/Resource-Manage/Cluster.md)
 	- [微服务网关](../Operation-Guide/Resource-Manage/JDSFGW.md)
 - 应用管理
-	- [在云主机中部署应用](../Operation-Guide/APP-ManageAPPDeloy.md)
-	- [在K8S中部署应用](../Operation-Guide/APP-Manage/K8SAPPDeloy.md)
+	- [在云主机中部署应用](../Operation-Guide/APP-ManageAPPDeloy.md)	
 	- [配置管理](../Operation-Guide/APP-Manage/Config-Manage.md)
 	- [服务治理](../Operation-Guide/APP-Manage/Service-Assignuse.md)
 - 运维管理
