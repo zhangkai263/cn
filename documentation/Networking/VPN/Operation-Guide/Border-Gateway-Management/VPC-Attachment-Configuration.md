@@ -25,7 +25,7 @@ c)输入VPC接口的名称、选择边界网关、选择VPC、指定要传播到
 a)登录[京东云VPC接口控制台](https://cns-console.jdcloud.com/host/vpcAttachment/list)；  </br>
 b)选择相应的VPC接口，点击操作列中的“编辑”，进入编辑VPC接口页面；</br>
 c)支持修改VPC接口名称、指定的VPC及传播的子网网段，各配置项的限制同创建VPC接口，不支持修改VPC接口的边界网关；</br>
-![](../../../../../image/Networking/VPN/Operation-Guide/update-vpcAttachment.png)
+![](../../../../../image/Networking/VPN/Operation-Guide/update-vpcattachment.png)
 
 ##### 3.删除VPC接口
 若您不再需要VPC接口，可将其删除。</br>

@@ -4,12 +4,14 @@
 本文以华为 USG6530为例，讲述如何在华为设备上配置VPN，适用于HUAWEI USG6500系列防火墙。
 
 网络拓扑示例如下：
+
 |         |   VPN公网地址   |    内网网段    |
 |:-------:|:---------------:|:--------------:|
 |  云端   | 116.xxx.xxx.10  | 192.168.0.0/24 |
 | 企业IDC | 220.xxx.xxx.150 |  10.0.0.0/16   |
 
 VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可用，请使用VPN云端的两个公网地址分别于客户端创建隧道``)：
+
 | 参数类型  |           参数            |      取值       |
 |:---------:|:-------------------------:|:---------------:|
 |   通用    |       云端公网地址        | 116.xxx.xxx.10  |
@@ -35,6 +37,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 #### 主要配置步骤
 1.登录防火墙设备的命令行配置界面；
+
 2.配置IKE策略：
 ```
   # config dpd
@@ -52,6 +55,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     prf hmac-sha2-256
     sa duration 14400
 ```
+
 3.配置身份认证及预共享密钥：
 ```
   # config authentication and psk
@@ -62,6 +66,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     ike-proposal 1
     remote-address 116.xxx.xxx.10
 ```
+
 4.配置IPsec策略及隧道：
 ```
   ipsec sha2 compatible enable
@@ -95,17 +100,21 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     redirect-reverse next-hop 220.xxx.xxx.1
     ipsec policy ipsec8111157491
 ```
+
 5.配置ACL，允许所需的网段通信：
 ```
   acl number 3002
     rule 5 permit ip source 10.0.0.0 0.0.255.255 destination 192.168.0.0 0.0.0.255
 ```
+
 6.配置路由(以静态路由为例)：
 ```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
-8.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
-9.测试连通性：
+
+7.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
+
+8.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
 其它要求，请参考[限制说明](../../Introduction/Restrictions.md)。
