@@ -13,7 +13,7 @@ docker --version
 docker-compose --version
 ```
 
-2. 请确认您填写的用户配置文件（configuration.toml）是否正确，具体请参考 [安装Edge系统](../Getting-Started/Install-Edge-System.md) 。
+2. 请确认您的用户配置文件（configuration.toml）是否正确，具体请参考 [安装Edge系统](../Getting-Started/Install-Edge-System.md) 。
 
    
 

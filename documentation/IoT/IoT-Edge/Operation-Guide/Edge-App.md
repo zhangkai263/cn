@@ -95,7 +95,7 @@
 | 参数              | 描述                 | 输入说明                                                     |
 | ----------------- | -------------------- | ------------------------------------------------------------ |
 | detectHardware    | 检测硬件             | 当前应用做检测时，依赖的硬件资源，默认值为：0:CPU<br>0:CPU 仅使用CPU进行计算<br>2:HDDL 仅使用HDDL进行计算<br>20:HDDLCPU 优先使用HDDL计算，CPU辅助计算<br>|
-| targetLabels      | 检测目标             | 填写期望的检测目标名称。最大填写Label数为10个。为空则依据最大检测数和设定的置信度，输出对应的检测结果。填写方式为{"label1","label2","label3"}参考示例{"person","cup",”bicycle“}。 对象检测应用默认的目标名称请参考[Label文件](../../../../image/IoT/IoT-Edge/objectLabel.txt) |
+| targetLabels      | 检测目标             | 填写期望的检测目标名称。最大填写Label数为10个，置空请填写[]。为空则依据最大检测数和设定的置信度，输出对应的检测结果。填写方式为["label1","label2","label3"]参考示例["person","cup","bicycle"]。 对象检测应用默认的目标名称请参考[Label文件](../../../../image/IoT/IoT-Edge/objectLabel.txt) |
 | recordVideoSwitch | 检测到目标，录制视频 | ON/OFF。默认值为ON。录像会同时保存在本地和云端对象存储中。**注意：单路摄像头在1280x720分辨率下，每小时产生的录像文件约为2.2GB，请确保您的本地硬盘有足够空间。系统会在每天凌晨2点进行清理。** |
 | duration          | 录制视频时长         | 单位：秒，类型：整型，输入范围：5~30，步长为1 。默认值为：10 |
 | modelName         | 检测模型名称         | 填写对象检测应用使用的AI模型文件名，不能带扩展名。名称输入长度最长为：256个字符。 对象检测应用内置模型文件为：vgg_coco_ssd_300x300_openvino_FP16 |
@@ -123,7 +123,7 @@
 
 ## 相关参考
 
-- [创建边缘计算节点](../../Getting-Started/Create-Edgenode.md)
-- [安装Edge系统](../../Getting-Started/Install-Edge-System.md) 
+- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
+- [安装Edge系统](../Getting-Started/Install-Edge-System.md) 
 - [管理子设备](../Operation-Guide/SubDevice.md)
 - [管理消息路由](../Operation-Guide/MsgRouter.md)

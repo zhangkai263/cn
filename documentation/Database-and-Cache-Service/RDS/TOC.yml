@@ -342,7 +342,9 @@
           - name: PostgreSQL 日志下载 
             href: Operation-Guide/Log/Log-Download/PostgreSQL-Log-Download.md   
         - name: 慢日志 
-          href: Operation-Guide/Log/Log-Management.md   
+          href: Operation-Guide/Log/SlowLogs.md   
+        - name: 错误日志 
+          href: Operation-Guide/Log/ErrorLog.md  
       - name: 设置访问模式
         href: Operation-Guide/Set-Access-Mode.md     
       - name: PostgreSQL 插件 
