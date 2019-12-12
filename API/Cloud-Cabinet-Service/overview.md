@@ -12,9 +12,11 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
+|**describeBandwidthTraffic**|GET|查询带宽（出口）流量（资源）详情|
+|**describeBandwidthTraffics**|GET|查询带宽（出口）流量列表|
 |**describeCabinets**|GET|查询机柜列表|
 |**describeIdcs**|GET|查询IDC机房列表|
 |**describeMetricData**|GET|查看某资源单个监控项数据|
 |**describeMetrics**|GET|查询可用监控项列表|
 |**describeRooms**|GET|查询机房房间号列表|
-|**lastDownsample**|GET|查看某资源的最后一个监控数据点|
+|**lastDownsample**|GET|查看某资源的最后一个监控数据点（目前只支持机柜电流）|
