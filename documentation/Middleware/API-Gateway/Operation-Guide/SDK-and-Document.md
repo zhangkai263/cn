@@ -6,7 +6,6 @@
  
  ![访问授权](../../../../image/Internet-Middleware/API-Gateway/SDK1.png)
  
- 
  ![访问授权](../../../../image/Internet-Middleware/API-Gateway/SDK2.png)
  
  ### 2.各语言签名库地址

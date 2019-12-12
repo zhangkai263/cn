@@ -18,7 +18,7 @@
 
 图：安全组详情页面
 
-![Associated-With-Network-3](../../../../image/JDStack-Agility/Associated-With-Network-3.png)
+![Associated-With-Network-3](../../../../image/JDFusion/Associated-With-Network-3.png)
 
 在此页面，可以点击操作项的“入站规则”，“出站规则”，实现对安全组的管理功能。
 

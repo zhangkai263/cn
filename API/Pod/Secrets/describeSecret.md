@@ -23,21 +23,21 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/secrets/{name}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describesecret#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**secret**|Secret| |
-### Secret
+|**secret**|[Secret](describesecret#secret)| |
+### <div id="secret">Secret</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|镜像仓库认证信息名称|
 |**type**|String|镜像仓库认证信息类型|
 |**createdAt**|String|镜像仓库认证信息创建时间|
-|**data**|DockerRegistryData|镜像仓库认证信息数据|
-### DockerRegistryData
+|**data**|[DockerRegistryData](describesecret#dockerregistrydata)|镜像仓库认证信息数据|
+### <div id="dockerregistrydata">DockerRegistryData</div>
 |名称|类型|描述|
 |---|---|---|
 |**server**|String|registry服务器地址|

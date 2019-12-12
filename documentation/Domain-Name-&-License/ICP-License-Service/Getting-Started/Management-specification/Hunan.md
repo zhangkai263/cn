@@ -4,7 +4,7 @@
 
 2. 单位必须以最新的三证合一证件备案
 
-3. 主体负责人为法人，网站负责人不是法人时，需提供湖南授权书（![img](http://cms.jcloud.com/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif)[湖南授权书.doc](https://img1.jcloudcs.com/cms/03b45fc0-c674-4f20-9837-b3c61f806c1320180503110328.doc)）
+3. 主体负责人为法人，网站负责人不是法人时，需提供湖南授权书 [《湖南授权书》](https://img1.jcloudcs.com/cms/03b45fc0-c674-4f20-9837-b3c61f806c1320180503110328.doc)
 
 4. 所有负责人不得未满18周岁
 
@@ -14,7 +14,7 @@
 
 7. **已备案网站打开后**，网页下方须有备案号超链接以及网站版权归属标识，**未备案的域名不得打开网站，否则备案会失败**
 
-8.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/网站建设方案书.docx)
+8.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/hnwzfa.docx)
 
 9. 备案前准备资料：
 
@@ -44,7 +44,7 @@
 
 5. **已备案网站打开后**，网页下方须有备案号超链接以及网站版权归属标识，**未备案的域名不得打开网站，否则备案会失败**
 
-6.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/网站建设方案书.docx)
+6.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/hnwzfa.docx)
 
 7. 备案前准备资料：
 

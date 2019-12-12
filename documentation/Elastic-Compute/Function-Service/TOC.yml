@@ -81,6 +81,8 @@ items:
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md 
                - name: API网关触发器   
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
+               - name: 队列服务JQS触发器   
+                 href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md
                     
 
       - name: 环境变量管理
