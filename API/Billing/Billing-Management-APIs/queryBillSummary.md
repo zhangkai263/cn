@@ -51,7 +51,6 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billSummary:list
 |**resourceId**|String|资源id|
 |**resourceName**|String|资源名称|
 |**region**|String|区域|
-|**actionTypeName**|String|费用类型|
 |**formula**|String|规格|
 |**startTime**|String|计费开始时间|
 |**endTime**|String|计费结束时间|
