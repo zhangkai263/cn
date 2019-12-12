@@ -7,7 +7,9 @@
 
 ## 环境准备
 
-需提前配置环境依赖项，请参考： [微服务平台 spring cloud 插件说明](../../Getting-Started/JDSF-Plugin.md)
+如需使用本功能，必须引用JDSF提供的插件。目前我们已提供Spring Cloud 插件，dubbo插件即将提供。
+
+配置环境依赖项请参考： [微服务平台 Spring Cloud 插件说明](../../Getting-Started/JDSF-Plugin.md)
 
 
 
