@@ -60,7 +60,7 @@
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-k8s.png)
 
-详情请参考 ：[K8S中部署应用](APPDeloyK8S.md)   
+
  
 
 **说明：**
