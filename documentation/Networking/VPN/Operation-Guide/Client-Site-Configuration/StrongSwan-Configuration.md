@@ -4,34 +4,36 @@
 本文以strongSwan 5.3.5为例，讲述如何在Ubuntu 16.04 x86_64主机上配置strongSwan VPN，适用于开源软件客户端。
 
 网络拓扑示例如下：
-| Site端  |   VPN公网地址   |    内网网段    |
+
+|         |   VPN公网地址   |    内网网段    |
 |:-------:|:---------------:|:--------------:|
 |  云端   | 116.xxx.xxx.10  | 192.168.0.0/24 |
 | 企业IDC | 220.xxx.xxx.150 |  10.0.0.0/16   |
 
 VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可用，请使用VPN云端的两个公网地址分别于客户端创建隧道``)：
-|       参数类型        |           参数            |      取值       |
-|:---------------------:|:-------------------------:|:---------------:|
-|         通用          |       云端公网地址        | 116.xxx.xxx.10  |
-|         通用          |     客户网关公网地址      | 220.xxx.xxx.150 |
-|         通用          |         Local ID          | 116.xxx.xxx.10  |
-|         通用          |         Remote ID         | 220.xxx.xxx.150 |
-|         通用          |          隧道IP           | 169.254.1.1/30  |
-|        IKE配置        |        预共享密钥         |     secret      |
-|        IKE配置        |          IKE版本          |       v2        |
-|        IKE配置        |         DH Group          |     Group2      |
-|        IKE配置        |         认证算法          |      SHA1       |
-|        IKE配置        |         加密算法          |     aes128      |
-|        IKE配置        |    IKE SA Lifetime(s)     |      14400      |
-|       IPsec配置       |       报文封装模式        |    隧道模式     |
-|       IPsec配置       |         安全协议          |       ESP       |
-|       IPsec配置       |         DH Group          |     Group2      |
-|       IPsec配置       |         认证算法          |      SHA1       |
-|       IPsec配置       |         加密算法          |     aes128      |
-|       IPsec配置       |   IPsec SA Lifetime(s)    |      3600       |
-|       IPsec配置       |  IPsec SA Lifetime(Byte)  |        0        |
-|       IPsec配置       | IPsec SA Lifetime(Packet) |        0        |
-| IKE配置(暂时放在最后) |            DPD            |      开启       |
+
+| 参数类型  |           参数            |      取值       |
+|:---------:|:-------------------------:|:---------------:|
+|   通用    |       云端公网地址        | 116.xxx.xxx.10  |
+|           |     客户网关公网地址      | 220.xxx.xxx.150 |
+|           |         Local ID          | 116.xxx.xxx.10  |
+|           |         Remote ID         | 220.xxx.xxx.150 |
+|           |          隧道IP           | 169.254.1.1/30  |
+|  IKE配置  |        预共享密钥         |     secret      |
+|           |          IKE版本          |       v2        |
+|           |         DH Group          |     Group2      |
+|           |         认证算法          |      SHA1       |
+|           |         加密算法          |     aes128      |
+|           |    IKE SA Lifetime(s)     |      14400      |
+| IPsec配置 |       报文封装模式        |    隧道模式     |
+|           |         安全协议          |       ESP       |
+|           |         DH Group          |     Group2      |
+|           |         认证算法          |      SHA1       |
+|           |         加密算法          |     aes128      |
+|           |   IPsec SA Lifetime(s)    |      3600       |
+|           |  IPsec SA Lifetime(Byte)  |        0        |
+|           | IPsec SA Lifetime(Packet) |        0        |
+|           |            DPD            |      开启       |
 
 #### 主要配置步骤
 1.Ubuntu安装strongSwan：
