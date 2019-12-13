@@ -79,7 +79,7 @@
             href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
-       - name: VPN高可用
+       - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
          href: Best-Practices/Connection-With-DirectConnect.md
