@@ -22,19 +22,16 @@ libs/jdcvrplayer.jar: SDK jar包
 
 * **配置项目**    
 配置好播放器sdk后, 将libs目录下的库文件jdcvrplayer.jar引入到目标工程中并添加依赖。   
-可参考下述配置方式（以Android Studio为例）：
-
+可参考下述配置方式（以Android Studio为例）：   
 1)导入SDK  
 手动集成：   
-将libs目录copy到目标工程的libs下；
-
+将libs目录copy到目标工程的libs下；   
 2)修改proguard(混淆)文件，添加如下规则：
 ```
 -keep class com.jdcloud.vrlib.** {
   *;
 }
-```
-
+```   
 3)在AndroidManifest.xml文件中申请相应权限   
 添加了集成播放器所需要的权限后，不需要额外添加权限。
 
