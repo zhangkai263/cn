@@ -32,6 +32,6 @@ libs/jdcvrplayer.jar: SDK jar包
   *;
 }
 ```   
-3)在AndroidManifest.xml文件中申请相应权限   
-添加了集成播放器所需要的权限后，不需要额外添加权限。
+  3)在AndroidManifest.xml文件中申请相应权限   
+  添加了集成播放器所需要的权限后，不需要额外添加权限。
 
