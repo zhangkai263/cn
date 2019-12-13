@@ -21,7 +21,7 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/metrics/{metric}/metricData
 |**resourceId**|String|True| |资源ID|
 |**startTime**|Integer|True| |查询时间范围的开始时间， UNIX时间戳，（最多支持最近90天数据查询）|
 |**endTime**|Integer|True| |查询时间范围的结束时间， UNIX时间戳，（最多支持最近90天数据查询）|
-|**timeInterval**|String|False| |时间间隔：分钟m、小时h、天d，如： 10分钟=10m、1小时=1h，3天=3d；默认5m，最小支持5m，最大90d|
+|**timeInterval**|String|False| |时间间隔：分钟m、小时h、天d，如： 10分钟=10m、1小时=1h，3天=3d；默认5m，最小支持5m，最大90d<br>目前带宽上、下行流量查询，会根据时间范围是否超过2小时，设定时间间隔为1m或5m|
 
 
 ## 返回参数
