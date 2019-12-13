@@ -1,10 +1,11 @@
 ## SDK的使用  
-VR视频播放SDK的基本使用流程如下：
-1.配置VR视频播放配置管理对象。
-2.用设置配置管理对象初始化VR视频播放管理器。
-3.用VR视频播放管理器切换视频是否开启鱼眼。
+VR视频播放SDK的基本使用流程如下：  
+1.配置VR视频播放配置管理对象。  
+2.用设置配置管理对象初始化VR视频播放管理器。   
+3.用VR视频播放管理器切换视频是否开启鱼眼。  
  
 **配置VR视频播放管理对象** 
+
 JDCloudVRConfiguration类配置VR视频播放，每个函数参数有一个对应的默认值，关于默认值和参数范围，参考API文档或注释。可以根据需求调用相应的函数，修改对应的功能。JDCloudVRConfiguration类的对象提供初始化VR视频播放管理类，VR视频播放管理类初始化后，不支持再次调用JDCloudVRConfiguration对象相应的函数。
 
 使用：   
@@ -33,6 +34,7 @@ JDCloudVRConfiguration *config = [[JDCloudVRConfiguration alloc] init];
 ```
 
 **用设置配置管理对象初始化VR视频播放管理器**  
+
 JDCloudVRLibrary类，为VR视频播放管理类，切换VR视频开启与关闭鱼眼功能。  
 引入头文件#import“JDCloudVRLibrary.h” 
 ```
@@ -43,6 +45,7 @@ JDCloudVRLibrary类，为VR视频播放管理类，切换VR视频开启与关闭
 self.vrLibrary = [[JDCloudVRLibrary alloc] initWithConfiguration:config];
 ```  
 **用VR视频播放管理器切换视频是否开启鱼眼**   
+
 当点击相应的切换时候开启或者关闭鱼眼播放时，可以使用 JDCloudVRLibrary类的setAntiDistortionEnabled方法进行开启或者关闭。示例代码如下：
 ```
 [self.vrLibrary setAntiDistortionEnabled:isAntiDistortion];
