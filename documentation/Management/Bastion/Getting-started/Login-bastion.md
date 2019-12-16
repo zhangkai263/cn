@@ -5,7 +5,7 @@
 
 1、 登录 京东云控制台，选择“云服务列表> 监控与运维> 堡垒机”
 
-![](/image/Bastion/login-bs.PNG) 
+![](/image/Bastion/login-bs.png) 
 
 2、 选择要登录的堡垒机实例，单击管理
 
