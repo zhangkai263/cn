@@ -7,6 +7,8 @@
 
 1、 IAM子用户可以通过堡垒机控制台页面的，管理 按钮 跳进堡垒机实例。也可以通过在浏览器中输入堡垒机域名，输入账号和密码，点击“登录”，登录运维堡垒机；
 
-![](/image/Bastion/login-bs.png) 
+![](/image/Bastion/domain.png) 
+
+![](/image/Bastion/login-ins.png) 
 
 ## SSH 客户端运维
