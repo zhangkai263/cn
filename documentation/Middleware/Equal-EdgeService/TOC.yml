@@ -5,8 +5,6 @@ name: 对等边缘服务
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: 基本概念
-        href: Introduction/Core-Concepts.md
       - name: 产品架构
         href: Introduction/Basic-Infrastructure.md
       - name: 核心功能
@@ -19,14 +17,6 @@ name: 对等边缘服务
         href: Pricing/Billing-Overview.md
   - name: 快速开始
     href: Quick-Start.md
-  - name: SDK文档
-    items:
-      - name: 概览
-        href: SDK-Reference/Overview.md
-      - name: C
-        href: SDK-Reference/C.md
-      - name: Go
-        href: SDK-Reference/Go.md
   - name: 下载专区
     href: Download-Center.md
   - name: 相关协议
