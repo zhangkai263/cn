@@ -15,74 +15,28 @@ items:
       href: Introduction/Restrictions.md
     - name: 应用场景 
       href: Introduction/Application-Scenarios.md
-    - name: 日志服务IAM说明 
-      href: /Introduction/LogService-IAM.md
-    - name: 云产品日志说明
-      items:
-        - name: 应用安全网关日志
-          href: Introduction/ResourceLog/WAFLog.md
-        - name: 函数服务日志
-          href: Introduction/ResourceLog/FunctionLog.md
-        - name: 云搜索Elasticsearch日志
-          href: Introduction/ResourceLog/esLog.md
-        - name: API网关日志
-          href: Introduction/ResourceLog/apiLog.md
 - name: 产品定价
   items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
 - name: 入门指南
   items:
-    - name: 入门指导
-      href: Getting-Started/LogService-Started.md
+    - name: 事件订阅
+      href: Getting-Started/Events-Subscription.md
 - name: 操作指南
   items:
-    - name: 日志采集
-      items:
-        - name: 云产品日志采集
-          href: Operation-Guide/LogCollection/CloudResource.md
-        - name: 业务应用日志采集
-          href: Operation-Guide/LogCollection/CustomLog.md
-        - name: Agent安装教程
-          href: Operation-Guide/LogCollection/AgentInstall.md
-    - name: 日志管理
-      items:
-        - name: 日志集管理
-          href: Operation-Guide/LogSet/LogSetManagement.md
-        - name: 日志主题管理
-          href: Operation-Guide/LogSet/LogTopicManagement.md
-        - name: 日志配置管理
-          href: Operation-Guide/LogSet/collectionConfigManagement.md
-    - name: 日志检索
-      items:
-        - name: 日志检索语法
-          href: Operation-Guide/LogSearch/LS-grammar.md
-        - name: 全文检索
-          href: Operation-Guide/LogSearch/fullTextSearch.md
-        - name: 键值检索
-          href: Operation-Guide/LogSearch/KVSearch.md
-    - name: 日志转储
-      href: Operation-Guide/LogTransfer.md
-    - name: 日志监控
-      items:
-        - name: 日志监控配置
-          href: Operation-Guide/LogMonitor/MonitorConfig.md
+    - name: 创建事件订阅
+      href: Operation-Guide/CreateRule.md
 - name: 最佳实践
   items:
-    - name: 日志采集——应用安全网关日志采集
-      href: Best-Practices/Practice-waf.md
-    - name: 日志转储配置——ALB访问日志转储
-      href: Operation-Guide/LogTransfer/EasyCase.md
-    - name: 日志监控配置——业务应用日志监控
-      href: Operation-Guide/LogMonitor/BestMonitor.md
+    - name: 云主机报警时重启云主机
+      href: Best-Practices/Practice-RestartVM.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 文档历史记录
   href: Related-Resources/Document-History.md 
 - name: 用户协议
-  items:
-    - name: 服务条款
-      href: User-Agreement/Product-Terms-Of-Service.md        
+  status: 0
 - name: SLA         
   status: 0       
 - name: 备案         
