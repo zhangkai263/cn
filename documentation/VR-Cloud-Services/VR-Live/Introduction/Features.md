@@ -21,7 +21,7 @@
 </tr>
 <tr>
     <td>播放方式</td>
-    <td>支持自有移动端VR播放器SDK及常见的第三方如potplayer等播流软件</td>
+    <td>支持自有移动端VR播放器SDK及常见的第三方播流软件</td>
 </tr>
 <tr>
     <td rowspan="10"> VR直播处理<br/>
