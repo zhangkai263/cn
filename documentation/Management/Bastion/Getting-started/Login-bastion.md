@@ -9,4 +9,7 @@
 
 2、 选择要登录的堡垒机实例，单击管理
 
+![](/image/Bastion/management.png) 
+
 3、 成功登录指定的堡垒机实例
+
