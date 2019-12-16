@@ -8,9 +8,20 @@
 
 2、 前往资产 > 主机管理 页面，点击 导入京东云主机 按钮
 
+![](/image/Bastion/import-ecs1.png) 
+
 3、 在导入云主机对话框中，勾选要导入的主机，并单击导入。
 
-4、 导入成功之后，编辑 主机，添加 主机账号。
+![](/image/Bastion/import-ecs2.png) 
+
+4、 导入成功之后，编辑 主机，添加 资源账户。
+
+选择一个已经提供的资源
+
+![](/image/Bastion/import-ecs3.png) 
 
 
+或者新添加一个，提供主机登录名和密码
+
+![](/image/Bastion/import-ecs4.png) 
 
