@@ -12,7 +12,7 @@
 本章节提供一个快速集成京东云播放器SDK基础功能的示例。
 
 * **获取SDK和demo**  
-Android端VR播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/android-sdk-v1.0.0-2019-11-19.zip">点击下载</a><br/>  
+Android端VR播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/VR/Android/jdcvrplayer.jar">点击下载</a><br/>  
 
 * **工程目录结构**  
 demo: 示例工程，演示本SDK主要接口功能的使用   
