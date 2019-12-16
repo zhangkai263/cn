@@ -11,5 +11,7 @@
 
 ![](/image/Bastion/management.png) 
 
-3、 成功登录指定的堡垒机实例
+3、 成功登录指定的堡垒机实例。
+
+![](/image/Bastion/board.png) 
 
