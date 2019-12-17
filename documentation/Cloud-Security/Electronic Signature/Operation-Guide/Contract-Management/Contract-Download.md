@@ -6,5 +6,5 @@
 
 在合同管理页面中，点击“下载”按钮。
 
-![下载合同](/image/Electronic-Signature/下载合同.pngg)
+![下载合同](/image/Electronic-Signature/下载合同.png)
 
