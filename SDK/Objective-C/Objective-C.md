@@ -1,76 +1,81 @@
-# 简介
+# JDCloud Objective-C Open API SDK
 
-&emsp;&emsp;欢迎使用京东云开发者  iOS 工具套件（使用 swift 语言编写）。使用京东云 iOS SDK，您无需复杂编程就可以访问京东云提供的各种服务。    
-&emsp;&emsp;为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看OpenAPI使用入门。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://docs.jdcloud.com/cn/?act=3)下具体产品线的API文档。
+## 简介
 
-# 环境准备 & 编译
+&emsp;&emsp;欢迎使用京东云开发者  iOS 工具套件（使用 Objective-C 语言编写）。使用京东云 iOS SDK，您无需复杂编程就可以访问京东云提供的各种服务。    
+&emsp;&emsp;为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看OpenAPI使用入门。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://www.jdcloud.com/help/faq?act=3)下具体产品线的API文档。
 
-* 此代码使用 Xcode 10.1 编写，swift 版本为 4.2 如果编译请注意开发 IDE 的版本和 Swift 的版本。
+## 环境准备 & 编译
 
-* 代码兼容`swift package manage` 可以使用 swift 命令在 Mac OS 系统下编译，可以使用 `Swift package manage` 进行包管理
+* 此代码使用 XCode 10.1 编写,打卡项目需要安装 XCode。
 
-* 目前已经有项目的解决方案文件和 `objc` 的头支持,支持 Objective-C 的项目引用，具体方法请查看 [Apple 官方开发文档](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_swift_into_objective-c)。如果要编写 Objective-c 的 framework， 推荐使用 [C++ 签名库](https://github.com/jdcloud-api/jdcloud-sdk-cpp-signer)，将代码包含到项目中进行编译。
+## 调用方法
 
-* 目前没有验证对 `linux（ubuntu 18.04 LTS and 16.04 LTS）`的编译和使用支持，如有需求遇到使用问题请在项目中提交Issues。
+* 目前没有上传 pod 因此请手动引用源码到您的项目中进行编译。
 
-# SDK 使用方法
+* 关于使用方法请查看项目的`JDCloudOCSDKVmTests` 文件夹下的`JDCloudOCSDKVmTests.m` 文件 ，简单的调用示例如下：
 
-* 使用 Cocoapods 进行包管理的请使用 `pod install` 命令进行安装 需要使用的框架，目标框架会自动引用
-    例如：
+```Objective-C
 
-```Shell
-pod install {framework name}
-```
+-(void)testRequestSync{
+    /// init Credential
+    Credential * credential = [[Credential alloc]initWithAccessKeyId:@"your jdcloud ak" secretAccessKey:@"your jdcloud sk"];
+    
+    /// if use internal service create this object and set client sdkEnvironment property
+    SDKEnvironment* sdkEnvironment = [[SDKEnvironment alloc]initWithEndPoint:@"apigw-internal.cn-north-1.jcloudcs.com"];
 
-* 使用`swift package manage` 进行包管理的请将引用的包配置在自己的`Package.Swift` 的 `dependencies` 中
+    /// init client if use default environment please write like this "VmClient* vmClient = [[VmClient alloc] initWithCredential:credential]"
+    VmClient* vmClient = [[VmClient alloc] initWithCredential:credential sdkEnvironment:sdkEnvironment];
 
-```Swift
-dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/jdcloud-api/jdcloud-sdk-ios.git", from: "0.0.11"),
-    ]
-```
+    /// if set debug true  it will write debug log
+    [GlobalConfig setDebug:true];
 
-* 此外可以使用代码编译framework 直接引用 framework，或者直接将代码拷贝到项目中与项目一起编译
+    // set httpRequestProtocol if use internal set http else do not need to set this property , default value is https
+    vmClient.httpRequestProtocol = @"http";
 
-# 调用方法
+    // create request param
+    VmDescribeInstancesRequest* describeInstancesRequest = [[VmDescribeInstancesRequest alloc]initWithRegion:@"cn-north-1"];
+    
+    // call sync method , if you want call async method see "JDCloudOCSDKVmTests/JDCloudOCSDKVmTests.m"
+    NSDictionary* result = [vmClient describeInstancesSyncWithRequest:describeInstancesRequest];
 
-    1. 设置accessKey和secretKey
-    2. 创建Client
-    3. 设置请求参数
-    4. 执行请求得到响应
-
-* 以下为查询用户主机实例列表的调用实例，具体请查看项目Tests目录下的 `VmTest.swift`.
-
-```Swift
-// 京东云官网 申请的 AccessKey 和 SecretAccessKey
-let credentials = Credential(accessKeyId: "your jdcloud ak", secretAccessKey: "your jdcloud sk");
-        
-// 初始化调用业务线的客户端
-let vmClient = VmJDCloudClient(credential: credentials)
-       
-// 创建请求参数，具体的请求参数查看 OPEN API 调用文档
-let describeInstancesRequest = DescribeInstancesRequest(regionId: "cn-north-1");
-       
-// 全局 debug 设定 打开后可以看到签名数据 方便调试
-GlobalConfig.debug = true
-        
-// 执行请求，因有异常抛出需要自行处理，如果返回结果中有 AnyObject 类型需要 自行使用 SwiftJson 等框架处理resultString ，而requestResponse 中不会包含AnyObject 类型的结果
-try vmClient.describeInstancesAsync(request: describeInstancesRequest) { (statusCode, requestResponse, error,resultString) in
-// 回调方法执行自己的业务逻辑
-  print(statusCode)
-  print(requestResponse)
-  print(error)
+    //get response data, the result key please see client notice
+    VmDescribeInstancesResponse* response = [result objectForKey:@"describeInstancesResponse"];
+    NSLog(@"总条数为：%@",[[response result] totalCount]);
 }
+  
 ```
 
-**注意：**
+## 注意事项
 
-- 京东云并没有提供其他下载方式，请务必使用上述官方下载方式！
+* 如果需要设置额外的header，例如要调用开启了MFA操作保护的接口，需要传递x-jdcloud-security-token，则按照如下方式：
 
-- version 的版本号需要使用京东云产品提供的最新版本号。例如：示例中VM所使用的最新版本号可到官方提供的API  [更新历史](../../API/Virtual-Machines/ChangeLog.md)  中查询到。
+```
 
-- 每支云产品都有自己的Client，当调用该产品API时，需使用该产品的Client。例如：使用云主机的VmClient只能调用云主机（Vm）的接口；使用高可用组的AgClient只能调用高可用组（Ag）的接口。
+    [vmClient addCustomerHeaderWithKey:@"x-jdcloud-security-token" value:@"xxx"]
+
+```
+
+* 如果需要设置访问点，配置超时等，请参考下面的例子：
+
+```
+    
+    Credential * credential = [[Credential alloc]initWithAccessKeyId:@"ak" secretAccessKey:@"sk"];
+    // set request host
+    SDKEnvironment* sdkEnvironment = [[SDKEnvironment alloc]initWithEndPoint:@"apigw-internal.cn-north-1.jcloudcs.com"];
+    VmClient* vmClient = [[VmClient alloc] initWithCredential:credential sdkEnvironment:sdkEnvironment];
+    [GlobalConfig setDebug:true];
+    VmDescribeInstancesRequest* describeInstancesRequest = [[VmDescribeInstancesRequest alloc]initWithRegion:@"cn-north-1"];
+    vmClient.httpRequestProtocol = @"http";
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    [vmClient describeInstancesAsyncWithRequest:describeInstancesRequest completionHandler:^(int statusCode, VmDescribeInstancesResponse * _Nullable describeInstancesResponse, NSData * _Nullable responseData, NSError * _Nullable error) {
+        NSLog(@"总条数为：%@",[[describeInstancesResponse result] totalCount]);
+        dispatch_semaphore_signal(semaphore);
+    }];
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+
+```
+ 
 
 
  
