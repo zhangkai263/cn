@@ -87,7 +87,10 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     sa duration traffic-based 0
     sa duration time-based 3600
     route inject dynamic
+```
 
+5.配置隧道：
+```
   # use ipsec with physical interface
   interface GigabitEthernet1/0/0
     description jdcloud_test
@@ -101,20 +104,20 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     ipsec policy ipsec8111157491
 ```
 
-5.配置ACL，允许所需的网段通信：
+6.配置ACL，允许所需的网段通信：
 ```
   acl number 3002
     rule 5 permit ip source 10.0.0.0 0.0.255.255 destination 192.168.0.0 0.0.0.255
 ```
 
-6.配置路由(以静态路由为例)：
+7.配置路由(以静态路由为例)：
 ```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
 
-7.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
+8.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
 
-8.测试连通性：
+9.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
 其它要求，请参考[限制说明](../../Introduction/Restrictions.md)。

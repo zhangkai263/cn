@@ -67,7 +67,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
   exit
 ```
 
-4.配置IPsec策略及隧道：
+4.配置IPsec策略：
 ```
   ! config ipsec security protocol
   crypto ipsec transform-set transform-jdcloud esp-aes esp-sha256-hmac
@@ -80,7 +80,10 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
     set pfs group19
     set ikev2-profile ike_profile_jdcloud
   exit
+```
 
+5.配置隧道：
+```
   ! config logic interface
   interface Tunnel1
     ip address 169.254.1.1 255.255.255.252
@@ -101,19 +104,19 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
   track 100 ip sla 100 reachability
 ```
 
-5.配置ACL，允许所需的网段通信：
+6.配置ACL，允许所需的网段通信：
 ```
   access-list 100 permit ip 10.0.0.0 0.0.255.255 192.168.0.0 0.0.0.255
 ```
 
-6.配置路由(以静态路由为例)：
+7.配置路由(以静态路由为例)：
 ```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
 
-7.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
+8.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。
 
-8.测试连通性：
+9.测试连通性：
 在云端子网创建主机，ping企业IDC内网中的一台实例的内网地址。
 
 其它要求，请参考[限制说明](../../Introduction/Restrictions.md)。
