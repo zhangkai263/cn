@@ -5,4 +5,4 @@
 ### 控制台删除合同
 
 在合同管理页面中，点击“删除”按钮。
-/image/Electronic-Signature/删除合同.png
+!image/Electronic-Signature/下载合同.png
