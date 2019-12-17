@@ -6,8 +6,8 @@
 
 在印章管理页面中，点击“添加合同模板”按钮。
 
-![1576584960362](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576584960362.png)
+![合同模板添加](/image/Electronic-Signature/合同模板添加.png)
 
 在弹窗中完善合同模板信息，包括合同模板名称，导入合同模板文件；填写完成后点击确定，完成合同模板的添加。
 
-![1576586152370](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576586152370.png)
+![完善合同模板信息](/image/Electronic-Signature/完善合同模板信息.pngg)
