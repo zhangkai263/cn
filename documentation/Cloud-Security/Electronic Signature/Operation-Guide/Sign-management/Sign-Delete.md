@@ -6,5 +6,5 @@
 
 在印章管理页面中，点击“删除”按钮。
 
-![1576584782809](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576584782809.png)
+![印章删除](/image/Electronic-Signature/印章删除.png)
 
