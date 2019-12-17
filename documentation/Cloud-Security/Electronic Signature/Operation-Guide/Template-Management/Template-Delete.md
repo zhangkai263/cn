@@ -6,5 +6,5 @@
 
 在合同模板管理页面中，点击“删除”按钮。
 
-![1576586343312](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576586343312.png)
+![合同模板删除](/image/Electronic-Signature/合同模板删除.png)
 
