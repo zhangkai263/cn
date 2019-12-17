@@ -6,5 +6,5 @@
 
 在合同管理页面中，点击“删除”按钮。
 
-![删除合同](image/Electronic-Signature/删除合同.png)
+![删除合同](/image/Electronic-Signature/删除合同.png)
 
