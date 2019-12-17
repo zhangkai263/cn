@@ -6,5 +6,5 @@
 
 在印章管理页面中，点击“下载”按钮。
 
-![1576584722432](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576584722432.png)
+![印章下载](/image/Electronic-Signature/印章下载.png)
 
