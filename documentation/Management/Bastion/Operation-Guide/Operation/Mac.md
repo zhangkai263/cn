@@ -6,16 +6,20 @@
 
 1、 打开命令行终端
 
-![](/image/Bastion/domain.png) 
-
-![](/image/Bastion/login-ins.png) 
-
 2、 输入命令：ssh 运维堡垒机用户名@运维堡垒机ip
+
+![](/image/Bastion/relay.png) 
 
 3、 正确的输入密码之后，系统会发送短信验证码
 
+![](/image/Bastion/relay3.png) 
+
 4、 输入完正确的验证，登录到运维堡垒机运维界面，界面显示可运维的主机和主机组（红色为主机组，绿色为主机）
+
+![](/image/Bastion/relay1.png) 
 
 5、 选择要运维的主机或主机组，输入前面的数字，按Enter键即可显示可以登录主机的账户
 
 6、 选择一个账户，输入前面的数字，即可用该账户登录到目标主机进行运维操作
+
+![](/image/Bastion/relay2.png) 
