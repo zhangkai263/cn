@@ -11,7 +11,7 @@
 
 * 代码兼容`swift package manage` 可以使用 swift 命令在 Mac OS 系统下编译，可以使用 `Swift package manage` 进行包管理
 
-* 如果您需要使用 Objective-C 版本的SDK[请点击此处](../../../../Swift/Swift.md)。
+* 如果您需要使用 Objective-C 版本的SDK[请点击此处](../../Swift/Swift.md)。
 
 * 目前没有验证对 `linux（ubuntu 18.04 LTS and 16.04 LTS）`的编译和使用支持，如有需求遇到使用问题请在项目中提交Issues。
 
