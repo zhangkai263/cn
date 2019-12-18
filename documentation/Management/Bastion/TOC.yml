@@ -68,8 +68,8 @@ items:
       - name: 运维手册
         items:
           - name: WEB浏览器运维
-            href: Operation-Guide/Instance/Instance-Overview.md
+            href: Operation-Guide/Operation/Web.md
           - name: SSH协议运维
-            href: Operation-Guide/Instance/Instance-Overview.md
+            href: Operation-Guide/Operation/SSH.md
           - name: MAC系统运维
-            href: Operation-Guide/Instance/Instance-Overview.md
+            href: Operation-Guide/Operation/Mac.md
