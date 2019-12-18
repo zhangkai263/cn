@@ -8,3 +8,5 @@
 
 ![合同模板删除](/image/Electronic-Signature/合同模板删除.png)
 
+### OpenAPI删除合同模板
+请参见： [OpenAPI删除合同模板](/API/Electronic-Signature/Template-Management/deleteTemplate.md) 
