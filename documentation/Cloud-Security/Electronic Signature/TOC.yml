@@ -1,47 +1,47 @@
-name: µç×ÓÇ©ÕÂ
+name: ç”µå­ç­¾ç« 
 href:
 items:
-- name: ²úÆ·¼ò½é
+- name: äº§å“ç®€ä»‹
   items:
-    - name: ²úÆ·¸ÅÊö
+    - name: äº§å“æ¦‚è¿°
       href: Introduction/Product-Overview.md
-    - name: ºËĞÄ¸ÅÄî
+    - name: æ ¸å¿ƒæ¦‚å¿µ
       href: Introduction/Core-Concepts.md
-    - name: ²úÆ·ÓÅÊÆ
+    - name: äº§å“ä¼˜åŠ¿
       href: Introduction/Benefits.md
-    - name: ²úÆ·¹¦ÄÜ
+    - name: äº§å“åŠŸèƒ½
       href: Introduction/Features.md
-    - name: ÏŞÖÆËµÃ÷
+    - name: é™åˆ¶è¯´æ˜
       href: Introduction/Restrictions.md
-- name: ²úÆ·¶¨¼Û
+- name: äº§å“å®šä»·
   items:
-    - name: ¼Æ·Ñ¸ÅÊö
+    - name: è®¡è´¹æ¦‚è¿°
       href: Pricing/Billing-Overview.md
-    - name: ¼Æ·Ñ¹æÔò
+    - name: è®¡è´¹è§„åˆ™
       href: Pricing/Price-Overview.md
-- name: ²Ù×÷Ö¸ÄÏ
+- name: æ“ä½œæŒ‡å—
   items:
-    - name: ¿ªÍ¨·şÎñ
+    - name: å¼€é€šæœåŠ¡
       href: Operation-Guide/Active.md
-    - name: Ó¡ÕÂ¹ÜÀí
+    - name: å°ç« ç®¡ç†
       items:
-        - name: ÉÏ´«Ó¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Upload.md
-        - name: ÏÂÔØÓ¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Download.md
-        - name: É¾³ıÓ¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Delete.md
-     - name: ºÏÍ¬Ä£°å¹ÜÀí
+        - name: ä¸Šä¼ å°ç« 
+          href: Operation-Guide/Stamp-management/Stamp-Upload.md
+        - name: ä¸‹è½½å°ç« 
+          href: Operation-Guide/Stamp-management/Stamp-Download.md
+        - name: åˆ é™¤å°ç« 
+          href: Operation-Guide/Stamp-management/Stamp-Delete.md
+     - name: åˆåŒæ¨¡æ¿ç®¡ç†
       items:
-        - name: ÉÏ´«ºÏÍ¬Ä£°å
+        - name: ä¸Šä¼ åˆåŒæ¨¡æ¿
           href: Operation-Guide/Template-Management/Template-Upload.md
-        - name: ÏÂÔØÓ¡ÕÂ
+        - name: ä¸‹è½½å°ç« 
           href: Operation-Guide/Template-Management/Template-Download.md
-        - name: É¾³ıÓ¡ÕÂ
+        - name: åˆ é™¤å°ç« 
           href: Operation-Guide/Template-Management/Template-Delete.md
- - name: ºÏÍ¬¹ÜÀí
+ - name: åˆåŒç®¡ç†
       items:
-        - name: ÏÂÔØºÏÍ¬
+        - name: ä¸‹è½½åˆåŒ
           href: Operation-Guide/Contract-Management/Contract-Download.md
-        - name: É¾³ıºÏÍ¬
+        - name: åˆ é™¤åˆåŒ
           href: Operation-Guide/Contract-Management/Contract-Delete.md
