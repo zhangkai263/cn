@@ -1,5 +1,14 @@
 # 安装与配置
 
+## 安装 sca CLI（Linux/Mac）
+
+1.在git上下载安装包至本地，安装；  
+2.执行以下命令，验证sca是否安装成功。  
+sca --version  
+返回类似如下信息，则表示安装成功。 
+sca CLI, version 0.0.1
+
+
 ## 安装Docker
 
 SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在本地运行函数代码的环境。SCF CLI 的 local invoke 命令将会使用 Docker 的管理接口实现相关交互。
