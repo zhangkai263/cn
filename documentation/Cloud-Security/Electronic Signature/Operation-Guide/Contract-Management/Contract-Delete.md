@@ -8,3 +8,5 @@
 
 ![删除合同](/image/Electronic-Signature/删除合同.png)
 
+### OpenAPI删除合同
+请参见： [OpenAPI删除合同](/API/Electronic-Signature/Contract-Management/deleteContract.md) 
