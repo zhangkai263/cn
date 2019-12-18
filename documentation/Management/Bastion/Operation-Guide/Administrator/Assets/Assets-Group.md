@@ -8,7 +8,11 @@
 
 1、 进入资产 > 主机组管理页，选择 新建主机组
 
+![](/image/Bastion/hostGroupList.png) 
+
 2、 在新建主机组页面，填写主机组名称、选择主机，完成新建
+
+![](/image/Bastion/addHostGroup.png) 
 
 **编辑用户组**
 
@@ -18,6 +22,7 @@
 
 2、 在主机组列表中，单击 编辑，可以编辑主机组及主机组成员
 
+![](/image/Bastion/editHostGroup.png) 
 
 **删除主机组**
 
@@ -34,3 +39,7 @@
 1、 进入资产 > 主机组管理页，点击需要查看的主机组名称，进入主机组详情页
 
 2、 在主机组详情页，可以 添加主机到主机组，移除主机，查看主机组成员等
+
+![](/image/Bastion/detailHostGroup.png) 
+
+
