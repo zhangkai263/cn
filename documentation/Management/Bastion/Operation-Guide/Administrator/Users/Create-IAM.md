@@ -43,6 +43,8 @@ JDCloudBastionHostReadOnlyAccess（运维员权限）
 
 1、子用户创建并完成授权之后，登录堡垒机实例。
 
+![](/image/Bastion/management.png) 
+
 2、前往用户 > 用户管理页面，单击导入IAM子用户
 
 ![](/image/Bastion/import-iam.png) 
