@@ -43,4 +43,8 @@
 
 2、 点击 创建备份，可以生成备份文件
 
+![](/image/Bastion/backup.png) 
+
+
+
 
