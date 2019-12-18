@@ -12,5 +12,5 @@
 
 [![完善印章信息](https://github.com/liangzy3/cn/raw/Electronic-Signature-1/image/Electronic-Signature/%E5%AE%8C%E5%96%84%E5%8D%B0%E7%AB%A0%E4%BF%A1%E6%81%AF.png)](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/image/Electronic-Signature/完善印章信息.png)
 
-### OpenAPI上传
-请参见： [OpenAPI上传](/API/Electronic-Signature/Stamp-Management/uploadStamp.md) 
+### OpenAPI上传印章
+请参见： [OpenAPI上传印章](/API/Electronic-Signature/Stamp-Management/uploadStamp.md) 
