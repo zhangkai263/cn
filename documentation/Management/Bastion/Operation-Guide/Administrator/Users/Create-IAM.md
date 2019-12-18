@@ -7,11 +7,11 @@
 
 登录京东云控制台，进入访问控制 > 用户管理，点击【创建】按钮，在创建子用户窗口填写子用户信息：
 
-![创建子用户页面](../../../../image/IAM/SubUserManagement/创建子用户页面.jpg)
+![](/image/IAM/SubUserManagement/创建子用户页面.jpg) 
 
 子账号创建成功后，您可以选择下载或者邮件的方式下载子用户的密码和访问秘钥信息。
 
-![子用户创建成功页面](../../../../image/IAM/SubUserManagement/子用户创建成功页面.jpg)
+![](/image/IAM/SubUserManagement/子用户创建成功页面.jpg) 
 
 **给子用户授予策略**
 
@@ -21,7 +21,7 @@
 JDCloudBastionHostFullAccess（管理员权限）
 JDCloudBastionHostReadOnlyAccess（运维员权限）
 
-![子用户列表策略授权弹窗页面](../../../../image/IAM/SubUserManagement/子用户授权页面.jpg)
+![](/image/IAM/SubUserManagement/子用户授权页面.jpg) 
 
 **子用户安全凭证设置**
 
