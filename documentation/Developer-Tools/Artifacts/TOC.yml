@@ -29,3 +29,11 @@
         href: Operation-Guide/Manage-artifacts.md
       - name: 仓库浏览
         href: Operation-Guide/Repository-browse.md
+  - name: 相关资源
+   items:
+      - name: 京东云制品库服务公测试用协议
+        href: Related-Resources/Service-Agreement-For-Open-Test.md
+      - name: 京东云制品库服务服务协议
+        href: Related-Resources/Service-Agreement.md
+      - name: 文档历史记录
+        href: Related-Resources/Release-History.md
