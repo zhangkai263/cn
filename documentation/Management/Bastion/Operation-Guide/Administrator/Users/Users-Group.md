@@ -8,7 +8,11 @@
 
 1、 进入用户 > 用户组管理页，选择 新建用户组
 
+![](/image/Bastion/userGroup1.png) 
+
 2、 在新建用户组页面，填写用户组名称、选择用户，完成新建
+
+![](/image/Bastion/userGroup.png) 
 
 **编辑用户组**
 
@@ -17,6 +21,8 @@
 1、 进入用户 > 用户组管理页。
 
 2、 在用户组列表中，单击 编辑，可以编辑用户组及用户组成员
+
+![](/image/Bastion/editUserGroup.png) 
 
 
 **删除用户组**
