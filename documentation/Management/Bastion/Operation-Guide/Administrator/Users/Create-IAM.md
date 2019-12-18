@@ -31,13 +31,13 @@ JDCloudBastionHostReadOnlyAccess（运维员权限）
 - 为子用户开启操作保护，当子用户的虚拟MFA启用后，主账号可以为子用户开启操作保护。这样子用户在操作主账号授予的敏感操作时将需要进行虚拟MFA验证。
 - 为子用户启用访问秘钥。
 
- ![子用户安全凭证页面](../../../../image/IAM/SubUserManagement/子用户安全凭证页面.jpg)
+![](/image/IAM/SubUserManagement/子用户安全凭证页面.jpg) 
 
 **子用户登录控制台**
 
 每个主账号都有单独的子用户登录链接，请务必提供此登录链接给子用户，确保子用户顺利登录子用户控制台页面。
 
-![子用户登录页](../../../../image/IAM/Summary/子用户登录页.jpg)
+![](/image/IAM/Summary/子用户登录页.jpg) 
 
 **堡垒机实例中导入IAM子用户**
 
