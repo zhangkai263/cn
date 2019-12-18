@@ -61,12 +61,12 @@ items:
           href: Operation-Guide/resource-monitoring/view-resource-rules.md     
         - name: 添加报警规则
           items:
-            -name: 批量添加报警
-             href: Operation-Guide/resource-monitoring/add-rule-in-batches.md
-            -name: 指定资源添加报警
-             href: Operation-Guide/resource-monitoring/add-rule.md
-            -name: 基于标签添加报警
-             href: Operation-Guide/resource-monitoring/add-rule-tags.md 
+            - name: 批量添加报警
+              href: Operation-Guide/resource-monitoring/add-rule-in-batches.md
+            - name: 指定资源添加报警
+              href: Operation-Guide/resource-monitoring/add-rule.md
+            - name: 基于标签添加报警
+              href: Operation-Guide/resource-monitoring/add-rule-tags.md 
         - name: 管理报警规则
           href: Operation-Guide/resource-monitoring/resource-rules.md  
         - name: 报警模板
