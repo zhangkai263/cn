@@ -69,32 +69,16 @@ items:
       href: Operation-Guide/Live-Log.md
 - name: 直播工具
   items:
-    - name: SDK简介
+    - name: VR播放器SDK简介
       href: SDK-Reference/SDK-introduction.md
-    - name: 推流SDK
-      items:
-        - name: 功能特性
-          href: SDK-Reference/pushstream-feature.md
-        - name: Android端快速集成
-          href: SDK-Reference/Android-push-guidance.md
-        - name: Android端SDK的使用
-          href: SDK-Reference/Android-push-API.md
-        - name: iOS端快速集成
-          href: SDK-Reference/iOS-push-guidance.md
-        - name: iOS端SDK的使用
-          href: SDK-Reference/iOS-push-API.md
-    - name: 播放器SDK
-      items:
-        - name: 功能特性
-          href: SDK-Reference/playstream-feature.md
-        - name: Android端快速集成
-          href: SDK-Reference/Android-play-guidance.md
-        - name: Android端SDK的使用
-          href: SDK-Reference/Android-play-API.md
-        - name: iOS端快速集成
-          href: SDK-Reference/iOS-play-guidance.md
-        - name: iOS端SDK的使用
-          href: SDK-Reference/iOS-play-API.md
+    - name: Android端快速集成
+      href: SDK-Reference/Android-play-guidance.md
+    - name: Android端SDK的使用
+      href: SDK-Reference/Android-play-API.md
+    - name: iOS端快速集成
+      href: SDK-Reference/iOS-play-guidance.md
+    - name: iOS端SDK的使用
+      href: SDK-Reference/iOS-play-API.md
 - name: 最佳实践
   href: Best-Practices/Practices.md
 - name: 问题排查
