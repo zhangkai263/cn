@@ -26,7 +26,8 @@ hello_world3      Python3.6            Active          2019-12-17 11:23:47      
 删除云端命名为hello_world的函数。
 ```
 $ sca function del -n hello_world
-FunctionName     Runtime              Status          CreateTime                  ModTime                                             hello_world      Python3.6            Active          2019-12-17 11:23:47          2019-12-17 11:23:47
+FunctionName     Runtime              Status          CreateTime                  ModTime
+hello_world      Python3.6            Active          2019-12-17 11:23:47          2019-12-17 11:23:47
 ensure to delete or not? Y/N
 N
 ``` 
