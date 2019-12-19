@@ -42,7 +42,7 @@
 
 登入控制台->对象存储->空间管理->新建空间->高级设置
 
-![开启对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-170.png)
+![开启对象锁定](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-170.png)
 
 细节说明：
 
@@ -52,11 +52,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个bucket->空间设置->对象锁定
 
-![空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-171.png)
+![空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-171.png)
 
 2.点击编辑，进入设置页面。
 
-![设置空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-172.png)
+![设置空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-172.png)
 
 3.选择保留模式，并指定保留期。
 
@@ -70,11 +70,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个bucket->Object管理->某一文件->操作->更多->对象锁定
 
-![对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-173.png)
+![对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-173.png)
 
 2.点击对象锁定，进入设置页面。
 
-![设置对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-174.png)
+![设置对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/cn-oss-1/image/Object-Storage-Service/OSS-174.png)
 
 3.选择保留模式，并指定保留到期日期。
 
