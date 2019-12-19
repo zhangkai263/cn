@@ -31,7 +31,7 @@ SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在�
 当 Docker 启动完成后，会出现终端窗口等待输入。此时，您可以通过输入 docker version 命令确定 Docker 是否安装成功、启动成功。  
 
 ### 在 Linux 上安装 Docker
-Linux 中的 Docker，可以通过各个发行版中带有的包管理工具完成安装，也可以通过二进制包完成安装。各不同发行版本的 Linux 安装方法可见如下链接：
+在Linux 中安装Docker，可以通过不同发行版中带有的包管理工具完成安装，也可以通过二进制包完成安装。不同发行版本的 Linux 安装方法如下：
 
 #### CentOS 操作系统
 获取 [CentOS版本](https://docs.docker.com/install/linux/docker-ce/centos/)的 Docker 安装包。  
