@@ -7,7 +7,8 @@
 
 ![](/image/Bastion/login-bs.png) 
 
-2、 选择要登录的堡垒机实例，单击管理
+2、 选择要登录的堡垒机实例，单击管理；
+    系统会默认生成超级管理员账户admin，用于管理堡垒机
 
 ![](/image/Bastion/management.png) 
 
