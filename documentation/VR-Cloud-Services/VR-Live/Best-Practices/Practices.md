@@ -11,11 +11,11 @@ VR直播需要用到专业的VR采集设备及相关软件，如Detu、Insta360�
 ##
 ## 3.VR直播信号推流
 
-*##3.1 开通京东云VR直播服务
+**3.1 开通京东云VR直播服务**
 
 在推流之前，你需要开通京东云VR直播服务，并在控制台创建推流域名及绑定CNAME等操作，具体详见“[入门指南](https://github.com/jdcloudcom/cn/blob/edit/documentation/VR-Cloud-Services/VR-Live/Getting-Started/Service-Provisioning.md)”。
 
-*##3.2 VR直播推流
+**3.2 VR直播推流**
 
 A.使用VR设备厂商提供的推理工具推流  
 很多VR采集设备厂商提供直播推流工具，在推流之前您需要下载并安装厂商提供的推流工具，按照操作说明进行推流即可，在此过程中您需要将3.1中配置好的推流域名作为输出的推流地址。
