@@ -97,8 +97,6 @@ items:
           href: SDK-Reference/iOS-play-API.md
 - name: 最佳实践
   href: Best-Practices/Practices.md
-- name: 教程
-  status: 0
 - name: 问题排查
   items:
     - name: 推流连接失败
