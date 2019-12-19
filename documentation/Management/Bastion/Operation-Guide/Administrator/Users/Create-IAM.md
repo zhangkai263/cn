@@ -47,6 +47,6 @@ JDCloudBastionHostReadOnlyAccess（运维员权限）
 
 ![](/image/Bastion/import-iam.png) 
 
-3、在导入IAM子账号对话框中，勾选要导入到实例中的IAM子账号，并单击导入
+3、在导入IAM子账号对话框中，勾选要导入到实例中的IAM子账号，并单击导入。
 
    成功将京东云子账号导入到指定的堡垒机实例。
