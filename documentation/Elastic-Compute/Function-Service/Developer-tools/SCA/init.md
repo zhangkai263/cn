@@ -15,7 +15,7 @@
 | -r   | runtime    | N    | 生成的项目运行环境，可选值为python2.7、python3.6、3.7。默认值为 python3.6 | python2.7      |
 | -o   | output-dir | N    | 指定项目生成的目录，默认为当前目录。                         | /root/sca/code |
 
-## 使用案例  
+## 使用示例  
 在/home/xxx/sca目录下创建名称为helloworld，运行时为python 3.6的项目。    
 ```
 $ scf init --runtime python2.7 --name testproject --output-dir /Users/xxx/code/scf/
