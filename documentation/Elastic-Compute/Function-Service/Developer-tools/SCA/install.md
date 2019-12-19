@@ -8,6 +8,8 @@ sca --version
 返回类似如下信息，则表示安装成功。 
 sca CLI, version 0.0.1
 
+## 配置账号信息  
+sca安装完成后，进行初始化配置，将JDCloud
 
 ## 安装Docker
 
