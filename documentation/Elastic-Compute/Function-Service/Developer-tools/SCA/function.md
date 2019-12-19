@@ -19,7 +19,8 @@
 查看云端函数列表。    
 ```
 $ sca function list 
-FunctionName     Runtime             Status         CreateTime                 ModTime                                                     hello_world      Python3.6           Active         2019-12-17 11:23:47        2019-12-17 11:23:47
+FunctionName     Runtime             Status         CreateTime                 ModTime 
+hello_world      Python3.6           Active         2019-12-17 11:23:47        2019-12-17 11:23:47                                  
 hello_world2     Python3.6           Active         2019-12-17 11:23:47        2019-12-17 11:23:47
 hello_world3     Python3.6           Active         2019-12-17 11:23:47        2019-12-17 11:23:47
 ``` 
