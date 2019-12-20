@@ -14,6 +14,8 @@
 | forbiddenUrl   | String | 否        |只有封禁类型是url时，此参数是必填项，每次只能封禁一个URL，如需多个，则需请求多次，url必须以/开头  |
 | reason   | String | 是       | 封禁原因 |
 | linkOther   | String | 否       | 关联封禁参数为y表示不允许添加关联根域下所有域名。为空或者n表示只封禁当前域名，不做添加域名限制 |
+|shareCacheDomainForbid | String | 否 | 1为封禁共享缓存域名，0为不封禁共享缓存域名|
+
 ### 3. 返回参数
 
 | **名称**         | **描述**               |

@@ -25,6 +25,8 @@
             href: Introduction/Application-Scenarios/Video-Acceleration.md
           - name: 视频直播加速
             href: Introduction/Application-Scenarios/Live-Acceleration.md  
+          - name: CDN动态加速
+            href: Introduction/Application-Scenarios/Dynamic-Acceleration.md
           - name: CDN边缘计算
             href: Introduction/Application-Scenarios/CDN-Edge-Computing.md
   - name: 产品定价
