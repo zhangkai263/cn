@@ -3,12 +3,11 @@
 
 工具下载用于管理员下载审计需要用到的工具
 
-## 下载离线播放器
+## 离线播放器
 
 离线播放器用于离线查看下载的会话审计日志。
 
-参照以下步骤下载离线播放器：
+Mac 系统下载地址：https://open-tools.s3.cn-north-1.jdcloud-oss.com/release/bastion/darwin/20191219/BastionPlayer.tar.gz
 
-1、 在管理员页面，点击 右上方的用户菜单，选择工具下载。
 
-2、 在工具下载页，下载离线播放器，并安装在本地。
+Windows 系统下载地址：https://open-tools.s3.cn-north-1.jdcloud-oss.com/release/bastion/win64/20191219/BastionPlayer.tar.gz
