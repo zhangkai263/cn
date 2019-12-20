@@ -28,7 +28,7 @@
 
 * 对象存储控制台的请求默认携带x-amz-bypass-governance-retention:true请求头，具有权限的用户在控制台做以上操作会成功。
 
-* 文件所有者默认具有s3:BypassGovernanceMode权限。
+* 文件所有者默认具有s3:BypassGovernanceMode和s3:PutObjectRetention权限。
 
 * 同时拥有s3:PutObjectRetention权限和s3:BypassGovernanceMode权限的用户，在请求中携带x-amz-bypass-governance-retention:true请求头，可以缩短或关闭监管模式的保留周期。
 
