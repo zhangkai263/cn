@@ -4,7 +4,7 @@
 
 ## 函数管理命令    
 ### 查看函数列表信息
-`sca function list`  查看云端已存在函数资源的列表
+`sca function list`  查看云端已存在函数资源的列表。
 ### 查看函数配置
 `sca function info`  查看已部署云端函数配置。
 ### 删除云端函数
