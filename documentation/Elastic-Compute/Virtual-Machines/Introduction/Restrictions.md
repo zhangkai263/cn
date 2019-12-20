@@ -1,7 +1,7 @@
 # 使用限制
 
 ## 账号限制
-* 您创建云主机所使用京东云账号需进行实名认证，详细内容请参见[实名认证](http://docs.jdcloud.com/cn/real-name-verification/real-name-verification)；
+* 您创建云主机所使用京东云账号需进行实名认证，详细内容请参见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 * 创建包年包月计费实例需预付实例费用，创建按配置计费实例需要您的账户余额及可用代金券之和不低于消费门槛。
 
 ## 使用限制
@@ -15,8 +15,8 @@
 * Windows Server系统实例支持密码登录，Linux系统实例支持密码及SSH密钥方式登录。
 
 ## 其他限制
-限制项|限制规则|例外申请方式   
-:---|:---|:---     
+限制项   |限制规则|例外申请方式   
+:------- |:---|:---     
 可选择的云主机实例规格|请参见[云主机实例规格](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)|工单 
 可选择的官方镜像种类|可参见[官方镜像发行版](https://docs.jdcloud.com/cn/virtual-machines/image-type)|工单         
 单地域实例限额|20台|工单
