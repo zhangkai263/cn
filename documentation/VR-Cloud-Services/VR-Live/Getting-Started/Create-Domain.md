@@ -8,4 +8,3 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/64%E6%96%B0%E5%BB%BA%E5%9F%9F%E5%90%8D.png)
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/3%E6%96%B0%E5%BB%BA%E5%9F%9F%E5%90%8D3.png)
-
