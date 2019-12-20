@@ -30,11 +30,11 @@
 
 * 文件所有者默认具有s3:BypassGovernanceMode权限。
 
-* 同时拥有s3:PutObjectRetention权限和s3:BypassGovernanceMode权限的用户，在请求中携带x-amz-bypass-governance-retention:true请求头，可以缩短监管模式的保留周期。
+* 同时拥有s3:PutObjectRetention权限和s3:BypassGovernanceMode权限的用户，在请求中携带x-amz-bypass-governance-retention:true请求头，可以缩短或关闭监管模式的保留周期。
 
 ### 合规性模式
 
-在合规性模式下，任何用户都不能覆盖或删除文件。一旦设置为合规性模式，则保留模式不能修改为监管模式，也不能删除。合规模式的保留周期不能缩短。
+在合规性模式下，任何用户都不能覆盖或删除文件。一旦设置为合规性模式，则保留模式不能修改为监管模式，也不能删除。合规模式的保留周期不能被缩短和关闭。
 
 ## 依法保留
 
