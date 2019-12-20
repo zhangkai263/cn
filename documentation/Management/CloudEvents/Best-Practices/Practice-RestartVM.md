@@ -10,7 +10,7 @@
 
 ## 场景图 ##
 
-![]()
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/CloudEvents/CE-application.jpg)
 
 ## 操作流程 ##
 
@@ -24,6 +24,8 @@
 
 5. 订阅对象选择对云主机甲设置了内存大于80%的那条报警规则
 
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/CloudEvents/bestpractice02.jpg)
+
 6. 目的地选择**云主机重启API**
 
 7. 地域选择**华北-北京**
@@ -31,6 +33,8 @@
 8. 云主机选择**云主机甲**
 
 9. 点击**确定**，完成事件订阅规则的设置。
+
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/CloudEvents/bestpractice03.jpg)
 
 
 
