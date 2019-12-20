@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询直播域名详情
+查询直播域名详情v1
 
 ## 请求方式
 GET
@@ -21,85 +21,92 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](querylivedomaindetail#result)| |
 |**requestId**|String| |
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**accesskeyKey**|String|url鉴权key|
+|**domainType**|String|域名类型|
+|**playDomain**|String|播放域名|
+|**publishDomain**|String|推流域名|
+|**originDomain**|String|回源域名|
+|**createdTime**|String|创建时间|
+|**cname**|String|cname|
+|**siteType**|String|站点类型推流push，拉流pull|
+|**status**|String|域名状态|
+|**source**|[BackSourceInfo](querylivedomaindetail#backsourceinfo)|回源信息|
+|**sourceType**|String|域名回源类型|
+|**backSourceType**|String|回源类型目前只能未rtmp|
+|**videoType**|String|视频格式 H.264|
+|**audioType**|String|音频格式AAC|
+|**type**|String|域名类型|
+|**defaultSourceHost**|String|默认回源host|
+|**archiveNo**|String|备案号|
+|**rtmpDomain**|String|rtmpDomain|
+|**rtmpCname**|String|rtmpCname|
+|**hdlDomain**|String|hdlDomain|
+|**hdlCname**|String|hdlCname|
+|**hlsDomain**|String|hlsDomain|
+|**hlsCname**|String|hlsCname|
+|**forwardCustomVhost**|String|forwardCustomVhost|
+|**flvUrls**|String[]|flvUrls|
+|**hlsUrls**|String[]|hlsUrls|
+|**rtmpUrls**|String[]|rtmpUrls|
+|**protocolConverts**|[ProtocolConvert[]](querylivedomaindetail#protocolconvert)|转协议|
+|**certificate**|String|https证书|
+|**rsaKey**|String|https私钥|
 |**accesskeyType**|Integer|url鉴权开关|
+|**accesskeyKey**|String|url鉴权key|
+|**playAuthLifeTime**|Integer|playAuthLifeTime|
+|**authLifeTime**|Integer|authLifeTime|
+|**forwardAccessKeyType**|Integer|转推鉴权开关|
+|**forwardPrivateKey**|String|转推鉴权key|
+|**originAccessKeyType**|Integer|回源鉴权开关|
+|**originPrivateKey**|String|回源鉴权key|
 |**allowApps**|String[]|app列表|
+|**ips**|String[]|ip黑名单列表|
+|**blackIpsEnable**|String|是否开启ip黑名单|
+|**externId**|String|外部关联id|
+|**ignoreQueryString**|String|ignoreQueryString|
+|**referType**|String|referType|
+|**referList**|String[]|referList|
 |**allowNoReferHeader**|String|允许无refer|
 |**allowNullReferHeader**|String|允许空refer|
-|**archiveNo**|String|备案号|
-|**audioType**|String|音频格式AAC|
-|**authLifeTime**|Integer|authLifeTime|
-|**backSourceType**|String|回源类型目前只能未rtmp|
-|**blackIpsEnable**|String|是否开启ip黑名单|
-|**certificate**|String|https证书|
-|**cname**|String|cname|
-|**createdTime**|String|创建时间|
-|**defaultSourceHost**|String|默认回源host|
-|**domainType**|String|域名类型|
-|**externId**|String|外部关联id|
-|**flvUrls**|String[]|flvUrls|
-|**forwardAccessKeyType**|Integer|转推鉴权开关|
-|**forwardCustomVhost**|String|forwardCustomVhost|
-|**forwardPrivateKey**|String|转推鉴权key|
-|**hdlCname**|String|hdlCname|
-|**hdlDomain**|String|hdlDomain|
-|**hlsCname**|String|hlsCname|
-|**hlsDomain**|String|hlsDomain|
-|**hlsUrls**|String[]|hlsUrls|
-|**ignoreQueryString**|String|ignoreQueryString|
-|**ips**|String[]|ip黑名单列表|
-|**notifyCustomAuthKey**|String|推断流通知key|
-|**notifyCustomUrl**|String|推断流通知Url|
-|**originAccessKeyType**|Integer|回源鉴权开关|
-|**originDomain**|String|回源域名|
-|**originPrivateKey**|String|回源鉴权key|
-|**playAuthLifeTime**|Integer|playAuthLifeTime|
-|**playDomain**|String|播放域名|
-|**protocolConverts**|ProtocolConvert[]|转协议|
-|**publishDomain**|String|推流域名|
-|**publishNormalTimeout**|String|推流中断超时时间(单位秒)|
 |**pushWhiteIps**|Arrary|推流IP白名单|
-|**referList**|String[]|referList|
-|**referType**|String|referType|
-|**rsaKey**|String|https私钥|
-|**rtmpCname**|String|rtmpCname|
-|**rtmpDomain**|String|rtmpDomain|
-|**rtmpUrls**|String[]|rtmpUrls|
-|**siteType**|String|站点类型推流push，拉流pull|
-|**source**|BackSourceInfo|回源信息|
-|**sourceType**|String|域名回源类型|
-|**status**|String|域名状态|
-|**type**|String|域名类型|
-|**videoType**|String|视频格式 H.264|
-### ProtocolConvert
+|**publishNormalTimeout**|String|推流中断超时时间(单位秒)|
+|**notifyCustomUrl**|String|推断流通知Url|
+|**notifyCustomAuthKey**|String|推断流通知key|
+|**certFrom**|String|证书来源有两种类型：default,ssl|
+|**sslCertId**|String|ssl证书id|
+|**certName**|String|证书名称|
+|**certType**|String|证书类型|
+|**sslCertStartTime**|String| |
+|**sslCertEndTime**|String| |
+|**accelerateRegion**|String| |
+### <div id="protocolconvert">ProtocolConvert</div>
 |名称|类型|描述|
 |---|---|---|
 |**sourceProtocol**|String|源协议,目前只能为rtmp|
 |**targetProtocol**|String|目标协议|
-### BackSourceInfo
+### <div id="backsourceinfo">BackSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**domain**|DomainSourceInfo[]| |
-|**ips**|IpSourceInfo[]| |
+|**ips**|[IpSourceInfo[]](querylivedomaindetail#ipsourceinfo)| |
+|**domain**|[DomainSourceInfo[]](querylivedomaindetail#domainsourceinfo)| |
 |**ossSource**|String| |
-### DomainSourceInfo
+### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**domain**|String| |
-|**priority**|Integer| |
-|**sourceHost**|String| |
-### IpSourceInfo
+|**priority**|Integer|优先级（1-10）|
+|**sourceHost**|String|回源host|
+|**domain**|String|回源域名|
+### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**ip**|String| |
-|**master**|Integer| |
-|**ratio**|Double| |
+|**master**|Integer|1：主；2：备|
+|**ip**|String|回源IP|
+|**ratio**|Double|占比|
 
 ## 返回码
 |返回码|描述|
