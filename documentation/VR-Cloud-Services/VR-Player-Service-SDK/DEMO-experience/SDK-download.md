@@ -13,6 +13,6 @@
 </tr>
 <tr>
     <td>iOS端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/VR/iOS/VR-SDK.zip">点击下载</a><br/> </td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/VR/iOS/VR-SDK-1.2.zip">点击下载</a><br/> </td>
 </tr>                
 </table>
