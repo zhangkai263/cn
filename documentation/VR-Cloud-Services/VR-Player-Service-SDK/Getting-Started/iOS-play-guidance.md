@@ -16,7 +16,7 @@ Xcode运行环境OS X 10.10 及以上版本
 本章节提供一个快速集成京东云VR视频播放SDK基础功能的示例。 
 具体可以参考demo工程中的相应文件。  
 **下载工程**   
-iOS端VR播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/VR/iOS/VR-SDK.zip">点击下载</a>  
+iOS端VR播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/VR/iOS/VR-SDK-1.2.zip">点击下载</a>  
 **工程目录结构**   
 推流SDK的工程目录如下：包含头文件headers与lib。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-VR-Cloud-Services/image/VR-Cloud-Services/VR%E6%92%AD%E6%94%BE%E5%99%A8SDK-iOS1.png)  
