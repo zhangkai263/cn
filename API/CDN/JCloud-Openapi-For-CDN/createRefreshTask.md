@@ -18,6 +18,7 @@ https://cdn.jdcloud-api.com/v1/task
 |**urls**|String[]|True| | |
 
 
+
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
@@ -25,6 +26,7 @@ https://cdn.jdcloud-api.com/v1/task
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
+
 |名称|类型|描述|
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|

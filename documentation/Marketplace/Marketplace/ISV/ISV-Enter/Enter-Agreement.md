@@ -475,4 +475,4 @@
 
 “京东”设定专用邮箱接受服务商的投诉jiancha@jd.com， “京东”会对所有信息提供者及所提供的全部资料严格保密。
 
-[云市场平台入驻协议---PDF下载](/image/Marketplace/PDF/云市场平台入驻协议.pdf)
+[云市场平台入驻协议---PDF下载](https://docs-downloads.oss.cn-north-1.jcloudcs.com/%25E4%25BA%2591%25E5%25B8%2582%25E5%259C%25BA%25E5%25B9%25B3%25E5%258F%25B0%25E5%2585%25A5%25E9%25A9%25BB%25E5%258D%258F%25E8%25AE%25AE.pdf)

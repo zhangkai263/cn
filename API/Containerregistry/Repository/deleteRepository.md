@@ -3,7 +3,7 @@
 
 ## 描述
 删除指定用户下某个镜像仓库.
-
+</br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
@@ -18,7 +18,9 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 |**repositoryName**|String|True| |镜像仓库名称|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**force**|Boolean|False| |是否强制删除有镜像的镜像仓库|
 
 
 ## 返回参数

@@ -17,15 +17,15 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/userAgentConfig
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**userAgentList**|String[]|False| |UA列表,如果userAgentList为空,则为全部删除|
 |**userAgentType**|String|False| |userAgent类型,取值：block（黑名单）,allow（白名单）,默认为block|
+|**userAgentList**|String[]|False| |UA列表,如果userAgentList为空,则为全部删除|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

@@ -109,6 +109,7 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 } 
 
 ```
+
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
 **参数说明**：网关与Function间的body内容不经过Base64编码。
@@ -119,11 +120,50 @@ API网关触发器配置详清参见[API网关触发器](../triggermanagement/ev
 Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ```
-{     
-    "statusCode": httpStatusCode,     
-    "headers": {"headerName":"headerValue",...},     
-    "body": "..." 
+{     
+   "statusCode":httpStatusCode,
+   "headers":{"headerName":"headerValue", ...}, 
+   "body":"..."
  } 
 ```
 
+## 队列服务JQS触发器
 
+### 事件格式
+
+当函数服务消费队列服务消息队列中的消息时，会轮询指定队列，通过一个包含队列消息的`event`异步调用函数。
+
+```
+{
+    "Records":[
+        {
+            "version":"0",
+            "id":"9fd19a5b-ddff-41b8-9689-e539cfb5dc41",
+            "time":"2019-10-28T15:00:19.45626304+08:00",
+            "source":"jqs",
+            "base64OwnerPin":"based64Pin",
+            "resources":[
+                "jqs-jrn"
+            ],
+            "region":"cn-north-1",
+            "detailType":"jqspullReceived",
+            "detail":{
+                "messageId":"41783100ccd4ac4030b3b12061058618",
+                "receiptHandle":"based64receiptHandle",
+                "body":"test",
+                "attributes":{
+                    "ApproximateFirstReceiveTimestamp":"1572246000180643518",
+                    "ApproximateReceiveCount":"1",
+                    "SenderId":"senderpin",
+                    "SentTimestamp":"1572245999697935359"
+                },
+                "messageAttributes":null,
+                "md5OfBody":"098f6bcd4621d373cade4e832627b4f6"
+            }
+        }
+    ]
+}
+
+```
+
+队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-trigger.md)。 

@@ -47,6 +47,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**ip**|String|True| |回源IP|
 |**ratio**|Double|False| |占比|
 
+
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|

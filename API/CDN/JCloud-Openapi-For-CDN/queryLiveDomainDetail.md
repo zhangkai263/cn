@@ -108,6 +108,7 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 |**ip**|String|回源IP|
 |**ratio**|Double|占比|
 
+
 ## 返回码
 |返回码|描述|
 |---|---|

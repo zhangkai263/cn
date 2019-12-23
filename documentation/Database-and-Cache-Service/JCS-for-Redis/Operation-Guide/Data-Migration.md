@@ -1,12 +1,12 @@
 # 数据迁移
 
-1.数据迁移概述
+## 1.数据迁移概述
 
 - 迁移工具redis-migrate-tool目前支持公网自建、云主机自建、专线接入、VPN接入、云缓存Redis实例的迁移。
 
 - 迁移工具redis-migrate-tool暂只支持源实例版本为Redis2.8、Redis3.2实例的数据迁移，迁移目标实例版本为Redis2.8，后续我们将更新支持更多的版本。
 
-2.迁移术语
+## 2.迁移术语
 
 术语|解释
 :--|:--
@@ -15,7 +15,7 @@
 云主机自建|用户在京东云服务器上部署的Redis 服务迁移至京东云Redis
 公网自建|用户在外网环境下部署的 Redis 服务迁移至京东云Redis
 
-3.数据迁移说明
+## 3.数据迁移说明
 
 云缓存Redis提供数据导入工具(linux 版本) redis-migration-tool，工具支持迁移 Redis 2.8和Redis3.2版本的 AOF数据，数据迁移说明如下：
 
@@ -57,7 +57,7 @@ servers:
  - jredis-cn-north-1-prod-redis-i02bbe91or.jdcloud.com:6379
 ```
 
-使用方式：
+## 4.使用方式：
 
 1.下载解压[redis-migrate-tool.tar.gz](https://img1.jcloudcs.com/cms/4c5a2fc3-1dc5-468c-89d5-7d38dbc1a5c720180910162509.gz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
 

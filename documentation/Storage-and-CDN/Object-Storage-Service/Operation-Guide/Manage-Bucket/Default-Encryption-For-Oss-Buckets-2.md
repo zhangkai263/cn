@@ -46,7 +46,7 @@ HeadObject
 
 |名称|描述|示例|
 |:-|:-|:-|
-|x-aws-server-side-encryption|指定服务端加密方式|x-aws-server-side-encryption：aws-kms|
+|x-aws-server-side-encryption|指定服务端加密方式|x-aws-server-side-encryption：aws:kms|
 
 ##  使用OSS管理控制台，设置默认加密
 

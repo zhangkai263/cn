@@ -28,6 +28,7 @@ https://cdn.jdcloud-api.com/v1/task:queryLivePrefetchTask
 |---|---|---|
 |**result**|[QueryLivePrefetchItem[]](queryliveprefetchtask#queryliveprefetchitem)| |
 ### <div id="queryliveprefetchitem">QueryLivePrefetchItem</div>
+
 |名称|类型|描述|
 |---|---|---|
 |**stream**|String| |

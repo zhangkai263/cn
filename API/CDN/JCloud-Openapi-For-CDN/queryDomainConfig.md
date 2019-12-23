@@ -21,35 +21,35 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/config
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**cacheRules**|CacheRule[]| |
-|**groupName**|String|group|
+|**ignoreQueryString**|String|忽略参数[on,off]|
+|**range**|String|range参数[on,off]|
 |**httpType**|String|httpType参数[on,off]|
 |**httpsCertificate**|String|https证书|
-|**httpsJumpType**|String|跳转类型[default,http,https]|
 |**httpsRsaKey**|String|rsa秘钥|
-|**ignoreQueryString**|String|忽略参数[on,off]|
-|**isShareOpen**|String| |
-|**jcdnTimeAnti**|String| |
-|**range**|String|range参数[on,off]|
-|**shareCache**|String| |
+|**httpsJumpType**|String|跳转类型[default,http,https]|
+|**videoDraft**|String|是否支持视频拖拽[on,off]|
+|**groupName**|String|group|
 |**shareId**|Long| |
 |**shareName**|String| |
-|**videoDraft**|String|是否支持视频拖拽[on,off]|
+|**jcdnTimeAnti**|String| |
+|**shareCache**|String| |
+|**isShareOpen**|String| |
+|**cacheRules**|CacheRule[]| |
 ### CacheRule
 |名称|类型|描述|
 |---|---|---|
-|**cacheType**|String| |
+|**weight**|Integer| |
+|**ttl**|Long| |
 |**contents**|String| |
 |**createTime**|String| |
-|**ttl**|Long| |
 |**updateTime**|String| |
-|**weight**|Integer| |
+|**cacheType**|String| |
 
 ## 返回码
 |返回码|描述|

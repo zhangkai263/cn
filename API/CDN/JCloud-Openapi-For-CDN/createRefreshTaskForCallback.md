@@ -30,6 +30,7 @@ https://cdn.jdcloud-api.com/v1/task:createForCallback
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
+
 |名称|类型|描述|
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|

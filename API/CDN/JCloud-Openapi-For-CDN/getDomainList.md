@@ -37,6 +37,7 @@ https://cdn.jdcloud-api.com/v1/domain
 |**pageNumber**|Integer| |
 |**domains**|[ListDomainItem[]](getdomainlist#listdomainitem)|域名列表|
 ### <div id="listdomainitem">ListDomainItem</div>
+
 |名称|类型|描述|
 |---|---|---|
 |**cname**|String| |
@@ -49,6 +50,7 @@ https://cdn.jdcloud-api.com/v1/domain
 |**type**|String| |
 |**auditStatus**|String| |
 |**accelerateRegion**|String| |
+
 
 ## 返回码
 |返回码|描述|

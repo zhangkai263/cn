@@ -18,14 +18,14 @@ https://cdn.jdcloud-api.com/v1/ossBuckets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**ossBuckets**|Object[]| |
 |**total**|Integer| |
+|**ossBuckets**|Object[]| |
 
 ## 返回码
 |返回码|描述|

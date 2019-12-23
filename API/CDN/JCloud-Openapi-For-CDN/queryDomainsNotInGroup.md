@@ -18,8 +18,8 @@ https://cdn.jdcloud-api.com/v1/domainGroup:notInGroup
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|

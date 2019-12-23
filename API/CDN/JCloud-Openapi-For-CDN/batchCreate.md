@@ -35,6 +35,7 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 ### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+
 |**priority**|Integer|True| |优先级（1-10）|
 |**sourceHost**|String|False| |回源host|
 |**domain**|String|True| |回源域名|

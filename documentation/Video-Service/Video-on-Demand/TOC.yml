@@ -39,12 +39,16 @@ items:
       href: Getting-Started/Video-Play.md
 - name: 操作指南
   items:
-    - name: 媒资管理
+    - name: 视频管理
       href: Operation-Guide/Media-Asset-Management.md
     - name: 视频处理
       href: Operation-Guide/Video-Processing.md
     - name: 全局配置
-      href: Operation-Guide/Global-Settings.md  
+      href: Operation-Guide/Global-Settings.md
+    - name: 统计分析
+      href: Operation-Guide/Statistical-Analysis.md
+    - name: 访问控制（IAM）
+      href: Operation-Guide/IAM.md     
 - name: 最佳实践
   items:
     - name: 终端格式建议

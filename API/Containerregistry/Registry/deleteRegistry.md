@@ -3,7 +3,7 @@
 
 ## 描述
 删除指定用户下某个 registry.
-
+</br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
