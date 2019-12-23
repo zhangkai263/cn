@@ -14,9 +14,10 @@ https://cdn.jdcloud-api.com/v1/task:createLivePrefetchTask
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**urlList**|String[]|False| |预热的URL|
-|**prefetchTime**|Integer|False| |预热时长|
-|**action**|String|False| |操作类型只能是[start,stop]中的一种|
+|**urlList**|String[]|True| |预热的URL|
+|**prefetchTime**|Integer|True| |预热时长|
+|**action**|String|True| |操作类型只能是[start,stop]中的一种|
+
 
 
 ## 返回参数

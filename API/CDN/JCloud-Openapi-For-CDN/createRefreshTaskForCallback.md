@@ -14,22 +14,23 @@ https://cdn.jdcloud-api.com/v1/task:createForCallback
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**taskType**|String|False| |刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
-|**urlItems**|UrlItem[]|False| | |
+|**taskType**|String|True| |刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
+|**urlItems**|[UrlItem[]](createrefreshtaskforcallback#urlitem)|True| | |
 
-### UrlItem
+### <div id="urlitem">UrlItem</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**url**|String|False| |任务url|
+|**url**|String|True| |任务url|
 |**urlId**|Long|False| |回报任务的id|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createrefreshtaskforcallback#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
+
 |名称|类型|描述|
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|
