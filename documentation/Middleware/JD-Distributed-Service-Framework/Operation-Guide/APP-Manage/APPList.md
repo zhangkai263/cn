@@ -25,7 +25,7 @@
 3、	设置基本信息，单击确定，完成创建。
 
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-11.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-12.png)
 
 
 ### 删除应用
@@ -60,7 +60,7 @@
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-k8s.png)
 
-
+详情请参考 ：[在K8S容器中部署应用](APPDeloyK8S.md)  
  
 
 **说明：**
