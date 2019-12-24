@@ -55,16 +55,13 @@
 
 -   资源池需要与其将所服务的命名空间，属于同一VPC内。
 -   在资源池中，用户可进行新建/删除资源池、导入云主机、移除云主机等操作。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-create-1.png)
-
-
+ 
 
 ### 删除资源池
 
 1、	登录微服务平台控制台。在左侧导航栏点击资源管理，进入资源池列表页。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-list.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-list-1.png)
 
 2、	对于需要删除的资源，点击操作列的删除。
 
