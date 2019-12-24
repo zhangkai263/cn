@@ -106,6 +106,22 @@ Resources:
 通过 [本地调试函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/local.md) ，在部署前，用户可在本地的模拟环境中运行代码，发送模拟测试事件，验证函数执行，获取运行信息及日志。在运行本地调试前，需确保本地环境中已经安装并启动 Docker。      
 ` sca local `  
 
+### 打包部署
+根据指定的函数模板配置文件，将配置文件中的指定代码包、函数配置等信息， [打包部署到云端](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/deploy.md) 。      
+` sca deploy ` 
+
+### 函数管理
+通过函数管理，您可以[查看云端函数列表](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_list.md)、[查询函数配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_info.md)，并可以[删除函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_delete.md)。
+`sca function list`  查看云端已存在函数资源的列表。                
+`sca function info`  查看已部署云端函数配置。             
+`sca function del`   删除已部署云端函数。          
+
+### 云端调用函数
+通过invoke命令用户可于本地[调用云端函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/invoke.md)，进行测试验证。       
+` sca invoke `
 
 
+### 云端日志
+通过[查询云端日志命令](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/logs.md)，您可以查看云端函数执行日志。
+`sca log`  查询指定云端函数某时段内的执行日志。              
 
