@@ -39,7 +39,7 @@
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/rsm-pool-detail.png)
 
-| 概念 | 解释 |
+| 字段 | 说明 |
 | :- | :- |
 |  可用云主机数量 |  指运行中的云主机数量。 |
 |  资源池云主机  |  指当前这个资源池中的云主机总数量。  |
