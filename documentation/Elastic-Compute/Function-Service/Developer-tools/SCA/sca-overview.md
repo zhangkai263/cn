@@ -14,10 +14,9 @@ sca cli基于go开发完成，您只需下载安装包，即可安装使用。
 
 ### 安装 sca CLI（Linux/Mac）
 
-1.在git上下载安装包至本地，安装；  
-2.执行以下命令，验证sca是否安装成功。  
-` sca version ` 
-返回类似如下信息，则表示安装成功。 
+1.在git上下载安装包至本地；  
+2.执行以下命令，验证sca版本。  
+` sca version `      
 `JD Serverless Cloud Application Version: 0.0.1`
 
 ### 配置账号信息  
