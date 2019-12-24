@@ -15,7 +15,12 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 3、已经将需要部署的信息上传到镜像中。
 
-4、**注意：** 使用K8S部署需要在拉取镜像过程中获取授权，因此请提前在K8S中开通授权。授权详情请参考：[集成容器镜像仓库](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Deploy-Container-Registry.md) 。
+4、**注意：** 
+
+-  使用K8S部署需要在拉取镜像过程中获取授权，因此请提前在K8S中开通授权。授权详情请参考：[集成容器镜像仓库](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Deploy-Container-Registry.md) 。
+
+-  使用 K8S 将会产生负载均衡费用。
+
 
 
 ## 操作步骤
