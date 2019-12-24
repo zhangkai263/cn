@@ -117,6 +117,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 7.配置路由(以静态路由为例)：
 ```shell
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
+  set routing-options static route 192.168.0.0/24 qualified-next-hop 10.10.10.1
 ```
 
 8.配置云端路由，详见[配置边界网关路由表](../../Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md)。

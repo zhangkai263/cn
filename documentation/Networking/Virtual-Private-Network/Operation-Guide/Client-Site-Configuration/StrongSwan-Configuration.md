@@ -114,7 +114,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 9.配置路由(以静态路由为例)：
 ```shell
-  sudo ip route add 192.168.0.0/16 dev jdcloud_tunnel1 metric 100
+  ip route add 192.168.0.0/16 dev jdcloud_tunnel1 metric 100
 ```
 
 10.启动strongSwan：
