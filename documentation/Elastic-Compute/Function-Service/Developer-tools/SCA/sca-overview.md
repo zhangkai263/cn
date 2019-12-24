@@ -21,16 +21,13 @@ sca -version
 `JD Serverless Cloud Application Version: 0.0.1`
 
 ### 配置账号信息  
-sca安装完成后，进行初始化配置，将JDCloud的账号信息同步至sca中。  
+sca安装完成后，进行初始化配置，将JDCloud的账号信息同步至sca中。       
+`$ sca config `        
 配置信息如下：  
 地域：产品地域信息，目前只支持华北地域；  
 账户ID：用户的账户ID可在用户管理--基本资料中获取；  
-SecretID 及 SecretKey：用户的AK、SK信息可在用户管理--Access Key管理中获取。
-
-```
-$ sca config
-
-```
+SecretID 及 SecretKey：用户的AK、SK信息可在用户管理--Access Key管理中获取。  
+详情参考[sca config](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)
 
 
 ### 安装Docker
