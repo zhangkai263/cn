@@ -18,27 +18,22 @@
 
 ### 第1步：在JDSF中新建命名空间、新建云主机类型资源池
 
-1、在JDSF中新建命名空间，过程参考： [命名空间](../Namespace.md) 。
+登录微服务平台控制台，可依次参考创建如下内容：
 
-2、在JDSF中新建K8S集群资源池，过程参考： [新建资源池](../Resource-Manage/Resource-List.md) 。
+1、在JDSF中新建命名空间。过程参考： [命名空间](../Namespace.md) 。
+
+2、再创建资源池。并往资源池中导入云主机，用于应用的部署。过程参考： [创建资源池并导入云主机](../Resource-Manage/Resource-List.md)  。
 
 
 ### 第2步：创建应用
 
-登录微服务平台控制台，可依次参考创建如下内容：
-
-1、先创建命名空间。过程参考： [命名空间](../Namespace.md) 。
-
-2、再创建资源池。并往资源池中导入云主机，用于应用的部署。过程参考： [创建资源池并导入云主机](../Resource-Manage/Resource-List.md)  。
-
-3、接着在新建应用页面中，选择创建云主机应用。注意：Java运行环境目前支持JDK1.7、OpenJDK1.8、OpenJDK11。
+在新建应用页面中，选择创建云主机应用。注意：Java运行环境目前支持JDK1.7、OpenJDK1.8、OpenJDK11。
 
 **例如：**
 
 您可创建名为 jdsf-demo-producer的应用，选择：JAR包部署，标准Java应用运行环境，OpenJDK1.8。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy.png)
-
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-1.png)
 
 
 ### 第3步：创建部署组
