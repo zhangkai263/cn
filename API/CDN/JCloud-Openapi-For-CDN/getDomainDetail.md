@@ -21,10 +21,10 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](getdomaindetail#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**allStatus**|String| |
@@ -46,7 +46,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**modified**|String| |
 |**status**|String| |
 |**auditStatus**|String| |
-|**source**|BackSourceInfo| |
+|**source**|[BackSourceInfo](getdomaindetail#backsourceinfo)| |
 |**sourceType**|String| |
 |**defaultSourceHost**|String|默认的回源host|
 |**backSourceType**|String| |
@@ -60,24 +60,25 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**certType**|String| |
 |**sslCertStartTime**|String| |
 |**sslCertEndTime**|String| |
-### BackSourceInfo
+|**accelerateRegion**|String|加速区域|
+### <div id="backsourceinfo">BackSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**ips**|IpSourceInfo[]| |
-|**domain**|DomainSourceInfo[]| |
+|**ips**|[IpSourceInfo[]](getdomaindetail#ipsourceinfo)| |
+|**domain**|[DomainSourceInfo[]](getdomaindetail#domainsourceinfo)| |
 |**ossSource**|String| |
-### DomainSourceInfo
+### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**priority**|Integer| |
-|**sourceHost**|String| |
-|**domain**|String| |
-### IpSourceInfo
+|**priority**|Integer|优先级（1-10）|
+|**sourceHost**|String|回源host|
+|**domain**|String|回源域名|
+### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**master**|Integer| |
-|**ip**|String| |
-|**ratio**|Double| |
+|**master**|Integer|1：主；2：备|
+|**ip**|String|回源IP|
+|**ratio**|Double|占比|
 
 ## 返回码
 |返回码|描述|
