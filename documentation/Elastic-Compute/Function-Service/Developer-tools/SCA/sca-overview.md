@@ -2,7 +2,7 @@
 
 ## 简介
 
-SCA CLI 是京东云无服务器云应用（Serverless Cloud Application，SCA）命令行工具。对京东云serverless应用服务提供更加便捷的本地管理功能，包括本地函数管理：本地测试、打包、部署、云端测试等。
+[SCA CLI](https://github.com/jdcloud-serverless/sca)是京东云无服务器云应用（Serverless Cloud Application，SCA）命令行工具。对京东云serverless应用服务提供更加便捷的本地管理功能，包括本地函数管理：本地测试、打包、部署、云端测试等。
 sca cli 通过一个函数模板配置文件template.yaml，完成函数资源的描述，并基于配置文件实现本地代码及配置部署到云端的过程。
 
 ## 运行环境
@@ -26,13 +26,12 @@ sca安装完成后，进行初始化配置，将JDCloud的账号信息同步至s
 地域：产品地域信息，目前只支持华北地域；  
 账户ID：用户的账户ID可在用户管理--基本资料中获取；  
 SecretID 及 SecretKey：用户的AK、SK信息可在用户管理--Access Key管理中获取。  
-详情参考[sca config](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)
+详情参考：[sca config](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)
 
 
 ### 安装Docker
 
-SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在本地运行函数代码的环境。SCF CLI 的 local invoke 命令将会使用 Docker 的管理接口实现相关交互。
-
+SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在本地运行函数代码的环境。SCF CLI 的 local 命令将会使用 Docker 的管理接口实现相关交互。     
 如果您需要使用本地调试、运行能力，请确保 Docker 已正确安装。
 如果您当前不需要使用 Docker 或者计划稍后再安装 Docker 时，可跳过此步骤。
 
