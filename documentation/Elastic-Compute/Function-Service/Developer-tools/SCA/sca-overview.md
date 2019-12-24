@@ -99,6 +99,12 @@ Resources:
 ```
 
 ### 验证配置文件
+ [验证template.yaml文件](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/validate.md)                
+` sca validate `        
+
+### 本地测试
+通过 [本地调试函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/local.md) ，在部署前，用户可在本地的模拟环境中运行代码，发送模拟测试事件，验证函数执行，获取运行信息及日志。在运行本地调试前，需确保本地环境中已经安装并启动 Docker。      
+` sca local `  
 
 
 
