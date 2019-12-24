@@ -74,10 +74,10 @@ SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在�
 ### 配置文件template.yaml
 sca cli 通过一个函数模板配置文件template.yaml，完成函数资源的描述，并基于配置文件实现本地代码及配置部署到云端。格式如下：
 ```
-ROSTemplateFormatVersion: "2019-12-24"
-Transform: JDCloud::Serverless-2019-11-10
+ROSTemplateFormatVersion: "2019-12-25"
+Transform: JDCloud::Serverless-2019-12-25
 Resources:
-  function-sca1224:
+  test-function:
     Type: JDCloud::Serverless::Function
     Properties:
       Handler: index.handler
@@ -95,7 +95,7 @@ Resources:
       LogConfig:
         LogSet: ""
         LogTopic: ""
-      Events: []
+      
 ```
 
 ### 验证配置文件
