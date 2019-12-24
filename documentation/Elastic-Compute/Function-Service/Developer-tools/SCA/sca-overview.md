@@ -2,7 +2,7 @@
 
 ## 简介
 
-[SCA CLI](https://github.com/jdcloud-serverless/sca)是京东云无服务器云应用（Serverless Cloud Application，SCA）命令行工具。对京东云serverless应用服务提供更加便捷的本地管理功能，包括本地函数管理：本地测试、打包、部署、云端测试等。
+[SCA CLI](https://github.com/jdcloud-serverless/sca)是京东云无服务器云应用（Serverless Cloud Application，SCA）命令行工具。对京东云serverless应用服务提供更加便捷的本地管理功能，包括本地函数管理：本地测试、打包、部署、云端测试等。          
 sca cli 通过一个函数模板配置文件template.yaml，完成函数资源的描述，并基于配置文件实现本地代码及配置部署到云端的过程。
 
 ## 运行环境
@@ -65,6 +65,40 @@ SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在�
 ##### 二进制包
 获取 [二进制包](https://docs.docker.com/install/linux/docker-ce/binaries/) 。  
 解压并运行二进制包，即可完成 Docker 的下载安装和启动。
+
+
+### 初始化项目       
+通过 [初始化项目](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/init.md) ，用户可快速创建一个简单的模板，包括代码文件、配置文件，基于模板可进一步进行配置及开发后，可直接打包部署云端。
+`sca init`    
+
+### 配置文件template.yaml
+sca cli 通过一个函数模板配置文件template.yaml，完成函数资源的描述，并基于配置文件实现本地代码及配置部署到云端。格式如下：
+```
+ROSTemplateFormatVersion: "2019-12-24"
+Transform: JDCloud::Serverless-2019-11-10
+Resources:
+  function-sca1224:
+    Type: JDCloud::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Timeout: 280
+      MemorySize: 128
+      Runtime: python3.6
+      Description: This is a template of function which name is "test-function"
+      CodeUri: ./
+      Env: {}
+      Role: ""
+      Policies: ""
+      VPCConfig:
+        Vpc: ""
+        Subnet: ""
+      LogConfig:
+        LogSet: ""
+        LogTopic: ""
+      Events: []
+```
+
+### 验证配置文件
 
 
 
