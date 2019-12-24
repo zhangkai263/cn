@@ -31,32 +31,10 @@ items:
   href: Getting-Started/Started.md
 - name: 操作指南
   items:
-    - name: 概览
-      href: Operation-Guide/Live-overview.md  
-    - name: 域名管理
-      href: Operation-Guide/Domain-Management.md
-    - name: 直播推流
-      href: Operation-Guide/Live-Streaming.md
-    - name: 直播播放
-      href: Operation-Guide/Live-Broadcast.md    
-    - name: 直播转码
-      href: Operation-Guide/Live-Transcoding.md
-    - name: 直播水印
-      href: Operation-Guide/Live-watermark.md 
-    - name: 直播录制
-      href: Operation-Guide/Live-Recording.md  
-    - name: 直播截图
-      href: Operation-Guide/Live-Snapshot.md 
-    - name: 直播回调
-      href: Operation-Guide/Live-Callback.md  
-    - name: 直播鉴权
-      href: Operation-Guide/Live-Authentication.md
-    - name: 流管理
-      href: Operation-Guide/Streaming-Management.md
-    - name: 统计分析
-      href: Operation-Guide/Statistical-Analysis.md
-    - name: 日志管理
-      href: Operation-Guide/Live-Log.md
+    - name: 检测任务列表
+      href: Operation-Guide/Task-List.md
+    - name: 全局配置
+      href: Operation-Guide/Configuration.md
 - name: 问题排查
   items:
     - name: 检测失败
