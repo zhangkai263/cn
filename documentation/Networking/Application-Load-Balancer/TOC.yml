@@ -41,7 +41,7 @@
         href: Getting-Started/Create-Backend.md
       - name: 创建虚拟服务器组
         href: Getting-Started/Create-TargetGroup.md
-      - name: 注册服务实例
+      - name: 修改虚拟服务器组
         href: Getting-Started/Register-Targets.md
       - name: 创建高可用组
         href: Getting-Started/Create-AvailabilityGroup.md
