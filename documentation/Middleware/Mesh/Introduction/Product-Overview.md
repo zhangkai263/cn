@@ -7,6 +7,6 @@
 -  服务治理功能升级、独立于业务模块升级
 -  运行时动态调整各种规则和策略
 
-![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/struct-sidecar.png)
+![](../../../../image/Internet-Middleware/Mesh/struct-sidecar.png)
 
 
