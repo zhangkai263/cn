@@ -65,6 +65,8 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 部署后，还可进行回滚、重新部署操作。
 
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-bsxq.png)
+
 
 
 
