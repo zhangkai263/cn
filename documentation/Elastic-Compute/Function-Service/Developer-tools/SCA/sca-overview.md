@@ -50,21 +50,14 @@ SCF CLI 支持使用 Docker 容器管理工具启动和使用容器，作为在�
 #### 在 Linux 上安装 Docker
 在Linux 中安装Docker，可以通过不同发行版中带有的包管理工具完成安装，也可以通过二进制包完成安装。不同发行版本的 Linux 安装方法如下：
 
-##### CentOS 操作系统
-获取 [CentOS版本](https://docs.docker.com/install/linux/docker-ce/centos/)的 Docker 安装包。  
-执行 sudo yum install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。
-##### Debian 操作系统
-获取 [Debian版本](https://docs.docker.com/install/linux/docker-ce/debian/)的 Docker 安装包。  
-执行 sudo apt-get install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。
-##### Fedora 操作系统
-获取 [Fedora版本](https://docs.docker.com/install/linux/docker-ce/fedora/)的 Docker 安装包。  
-执行 sudo dnf install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。
-##### Ubuntu 操作系统 
-获取 [Ubuntu版本](https://docs.docker.com/install/linux/docker-ce/ubuntu/) 的 Docker 安装包。  
-执行 sudo apt-get install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。
-##### 二进制包
-获取 [二进制包](https://docs.docker.com/install/linux/docker-ce/binaries/) 。  
-解压并运行二进制包，即可完成 Docker 的下载安装和启动。
+| 版本            | 下载地址                                                     | 安装方式                                                     |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| CentOS 操作系统 | [CentOS版本](https://docs.docker.com/install/linux/docker-ce/centos/) | 执行 sudo yum install docker-ce docker-ce-cli containerd.io 命令，安装 Docker 。 |
+| Debian 操作系统 | [Debian版本](https://docs.docker.com/install/linux/docker-ce/debian/) | 执行 sudo apt-get install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。 |
+| Fedora 操作系统 | [Fedora版本](https://docs.docker.com/install/linux/docker-ce/fedora/) | 执行 sudo dnf install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。 |
+| Ubuntu 操作系统 | [Ubuntu版本](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | 执行 sudo apt-get install docker-ce docker-ce-cli containerd.io 命令，安装 Docker。 |
+| 二进制包        | [二进制包](https://docs.docker.com/install/linux/docker-ce/binaries/) | 解压并运行二进制包，即可完成 Docker 的下载安装和启动。       |
+
 
 
 ### 初始化项目       
