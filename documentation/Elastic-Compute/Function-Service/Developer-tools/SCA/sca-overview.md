@@ -98,7 +98,7 @@ Resources:
 ` sca deploy ` 
 
 ### 函数管理
-通过函数管理，您可以[查看云端函数列表](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_list.md)、[查询函数配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_info.md)，并可以[删除函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_delete.md)。
+通过函数管理，您可以[查看云端函数列表](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_list.md)、[查询函数配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_info.md)，并可以[删除函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_delete.md)。               
 `sca function list`  查看云端已存在函数资源的列表。                
 `sca function info`  查看已部署云端函数配置。             
 `sca function del`   删除已部署云端函数。          
