@@ -26,5 +26,5 @@
 
 ![补全工单信息](/image/Intelligent-Edge-Security/补全工单信息.png)
 
-6、 开通智能边缘安全服务后，即可在【智能边缘安全】--【域名列表】--【添加域名】，可参考[入门指南](https://github.com/liangzy3/cn/blob/Intelligent-Edge-Security-1/documentation/Intelligent-Edge-Security/Getting-Started/Getting-Started.md)
+6、 开通智能边缘安全服务后，即可在【智能边缘安全】--【域名列表】--【添加域名】，可参考[入门指南](https://github.com/liangzy3/cn/blob/Intelligent-Edge-Security-1/documentation/Cloud-Security/Intelligent-Edge-Security/Getting-Started/Getting-Started.md)
 
