@@ -1,6 +1,6 @@
 # 访问控制
 
-**Referer防盗链**
+##  Referer防盗链
 
 通过配置访问的referer黑白名单来对访问者身份进行识别和过滤，从而限制资源被恶意访问的情况。
 
@@ -16,18 +16,18 @@
 
 - 支持泛域名规则配置
 
-**URL鉴权 **
+## URL鉴权 
 
   设置鉴权Key对URL进行加密，保护用户源站资源。
 
   ![URL鉴权](/image/Intelligent-Edge-Security/URL鉴权.png)
 
-**UA访问控制**
+## UA访问控制
 
 通过配置访问的UA黑白名单来对访问者身份进行识别和过滤，从而限制资源被访问的情况。
  ![UA访问控制](/image/Intelligent-Edge-Security/UA访问控制.png)
 
-**IP黑名单**
+## IP黑名单
 
 禁止来自黑名单的IP访问该域名
 
