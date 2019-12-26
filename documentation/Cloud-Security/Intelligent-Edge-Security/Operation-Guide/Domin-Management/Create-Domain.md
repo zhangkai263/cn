@@ -2,7 +2,7 @@
 
 1、进入智能边缘安全控制台【域名列表】页面； 点击“添加域名”；
 
-![添加域名](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/添加域名.png)
+![添加域名](/image/Intelligent-Edge-Security/添加域名.png)
 
 2、 在打开的“新增加速域名”页面中填写或选择以下信息，然后点击“确定”按钮。
 
@@ -18,5 +18,5 @@
 
 - 回源方式：请根据实际需求选择IP回源、域名回源，并对应填写源站IP地址、源站域名。京东云CDN支持多IP负载均衡回源，以及多IP、多域名备份回源，请您根据实际需要填写回源配置。
 
-![域名基本信息配置](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/域名基本信息配置.png)
+![域名基本信息配置](/image/Intelligent-Edge-Security/域名基本信息配置.png)
 

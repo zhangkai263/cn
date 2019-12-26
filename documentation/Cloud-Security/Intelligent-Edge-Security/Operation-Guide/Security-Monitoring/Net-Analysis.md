@@ -6,7 +6,7 @@
 
 1、进入智能边缘安全控制台【安全防护】页面； 点击“网络层监控”；
 
-![网络层监控](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/网络层监控.png)
+![网络层监控](/image/Intelligent-Edge-Security/网络层监控.png)
 
 ## 报表类型
 
@@ -15,16 +15,16 @@
 1. 流量监控
    包括防护前的流量和防护后的流量对比。单击图例，可只查看防护前或防护后的流量。鼠标移到到图上可展示该线条的流量数据。
 
-    ![网络层监控-流量监控](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/网络层监控-流量监控.png)
+    ![网络层监控-流量监控](/image/Intelligent-Edge-Security/网络层监控-流量监控.png)
 
 2. 攻击类型
    可查看攻击类型
 
-   ![网络层监控-攻击类型](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/网络层监控-攻击类型.png)
+   ![网络层监控-攻击类型](/image/Intelligent-Edge-Security/网络层监控-攻击类型.png)
 
 3. 攻击日志
    
    详细展示攻击开始时间、攻击结束时间、攻击峰值、攻击类型和是否触发黑洞封禁。
    
-   ![网络层监控-攻击日志](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/网络层监控-攻击日志.png)
+   ![网络层监控-攻击日志](/image/Intelligent-Edge-Security/网络层监控-攻击日志.png)
 

@@ -23,6 +23,8 @@ name: 智能边缘安全
     items:
     - name: 入门概述
       herf: Getting-Started/Getting-Started.md
+      - name: 创建实例
+      herf: Getting-Started/Create-Instance.md
     - name: 开通服务
       herf: Getting-Started/Open-edgesecurity-service.md
   - name: 操作指南
@@ -49,6 +51,7 @@ name: 智能边缘安全
       items:
         - name: 应用层监控
         herf: Operation-Guide/Security-Monitoring/Web-Analysis.md
-        - name: 选择合适的转发方式
+        - name: 网络层监控
         herf: Operation-Guide/Security-Monitoring/Net-Analysis.md     
-  
+        - name: 文档历史记录
+        href: Related-Resources/Document-History.md

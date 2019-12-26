@@ -6,7 +6,7 @@
 
 1、进入智能边缘安全控制台【安全防护】页面； 点击“应用层监控”；
 
-![应用层监控](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/应用层监控.png)
+![应用层监控](/image/Intelligent-Edge-Security/应用层监控.png)
 
 ## 报表类型
 
@@ -15,14 +15,14 @@
 1. 攻击来源报表
    展示访问来源的分布统计信息，以柱状图展示TOP5访问来源区域和TOP10访问来源IP。
 
-    ![应用层监控-攻击来源报表](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/应用层监控-攻击来源报表.png)
+    ![应用层监控-攻击来源报表](/image/Intelligent-Edge-Security/应用层监控-攻击来源报表.png)
 
 2. 攻击请求量
    可查看攻击请求量。
 
-   ![应用层监控-攻击来请求量](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/应用层监控-攻击请求量.png)
+   ![应用层监控-攻击来请求量](/image/Intelligent-Edge-Security/应用层监控-攻击请求量.png)
 
 3. 攻击日志
    详细展示攻击IP、所属地区、攻击流量、攻击峰值、攻击时间、攻击方法、URL、攻击类型和动作。
    
-   ![应用层监控-攻击日志](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/应用层监控-攻击日志.png)
+   ![应用层监控-攻击日志](/image/Intelligent-Edge-Security/应用层监控-攻击日志.png)

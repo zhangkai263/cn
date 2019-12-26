@@ -16,7 +16,7 @@
 
 2、 点击“添加域名”；
 
-![添加域名](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image)/**Intelligent-Edge-Security**/添加域名.png)
+![添加域名](/image)/Intelligent-Edge-Security/添加域名.png)
 
 3、 在打开的“新增加速域名”页面中填写或选择以下信息，然后点击“确定”按钮。
 
@@ -29,13 +29,13 @@
 
 1. 回源方式：请根据实际需求选择IP回源、域名回源，并对应填写源站IP地址、源站域名。京东云智能边缘安全支持多IP负载均衡回源，以及多IP、多域名备份回源，请您根据实际需要填写回源配置。
 
-![域名基本信息配置](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image)/**Intelligent-Edge-Security**/域名基本信息配置.png)
+![域名基本信息配置](/image)/Intelligent-Edge-Security/域名基本信息配置.png)
 
 **第三步：绑定CNAME**
 
 1、 进入智能边缘安全客户控制台【域名列表】页面,复制通过审核域名的CNAME;
 
-![查看CNAME记录](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image)/**Intelligent-Edge-Security**/查看CNAME记录.png)
+![查看CNAME记录](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/查看CNAME记录.png)
 
 2、 登录域名DNS服务提供商控制台完成 CNAME 配置。
 
@@ -43,11 +43,11 @@
 
 1）登录[京东云控制台](https://www.jdcloud.com/index)，并进入[【域名服务--云解析】](https://dns-console.jdcloud.com/list)页面，点击需要绑定的域名
 
-[![image.png](https://camo.githubusercontent.com/882c98288586362f69f4f5b30fa821955af881ca/68747470733a2f2f696d67312e6a636c6f756463732e636f6d2f636d732f61653231353731642d383331622d343965322d626561312d62653936363161666132643732303138303432333134313632372e706e67)](https://camo.githubusercontent.com/882c98288586362f69f4f5b30fa821955af881ca/68747470733a2f2f696d67312e6a636c6f756463732e636f6d2f636d732f61653231353731642d383331622d343965322d626561312d62653936363161666132643732303138303432333134313632372e706e67)
+![CNAME绑定](/image/Intelligent-Edge-Security/CNAME绑定.png)
 
 2）选中需要绑定的域名，点击“解析”，进入域名解析界面，点击“添加解析”，记录类型选择为“CNAME”,在记录值中填写京东云客户控制台为该域名分配的CNAME信息，格式为“*.*.*.jcloud-智能边缘安全.com”，线路类型设为“默认”即可，然后保存。
 
-[![image.png](https://camo.githubusercontent.com/43acf18ba6fc41b8d0925d70c572339e0ef052da/68747470733a2f2f696d67312e6a636c6f756463732e636f6d2f636d732f33646466316630312d616166642d346133662d613964392d30616437616238616334613832303138303332303139343432322e706e67)](https://camo.githubusercontent.com/43acf18ba6fc41b8d0925d70c572339e0ef052da/68747470733a2f2f696d67312e6a636c6f756463732e636f6d2f636d732f33646466316630312d616166642d346133662d613964392d30616437616238616334613832303138303332303139343432322e706e67)
+![域名解析](/image/Intelligent-Edge-Security/域名解析.png)
 
 3、 修改DNS服务器需要0-72小时的全球生效时间，如果发现某些地方记录没有生效，并且修改DNS的时间还不到72小时，请您耐心等待。
 

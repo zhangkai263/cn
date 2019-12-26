@@ -4,7 +4,7 @@
 
 通过配置访问的referer黑白名单来对访问者身份进行识别和过滤，从而限制资源被恶意访问的情况。
 
-![Referer防盗链](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/Referer防盗链.png)
+![Referer防盗链](/image/Intelligent-Edge-Security/Referer防盗链.png)
 
 - referer黑名单：不允许符合规则的请求来访问；referer白名单：允许符合规则的请求来访问
 
@@ -20,18 +20,18 @@
 
   设置鉴权Key对URL进行加密，保护用户源站资源。
 
-  ![URL鉴权](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/URL鉴权.png)
+  ![URL鉴权](/image/Intelligent-Edge-Security/URL鉴权.png)
 
 **UA访问控制**
 
 通过配置访问的UA黑白名单来对访问者身份进行识别和过滤，从而限制资源被访问的情况。
- ![UA访问控制](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/UA访问控制.png)
+ ![UA访问控制](/image/Intelligent-Edge-Security/UA访问控制.png)
 
 **IP黑名单**
 
 禁止来自黑名单的IP访问该域名
 
-![IP黑名单](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/IP黑名单.png)
+![IP黑名单](/image/Intelligent-Edge-Security/IP黑名单.png)
 
 - 可设置多个IP以及IP地址段，最多添加50个
 - 不能重复添加同一个IP
