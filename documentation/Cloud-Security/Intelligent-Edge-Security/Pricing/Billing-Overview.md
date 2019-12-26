@@ -48,5 +48,4 @@
 
 ## 相关参考
 
-- [计费规则](https://github.com/liangzy3/cn/blob/edit/documentation/Cloud-Security/Anti-DDoS-Pro/Pricing/Billing-Rules.md)
 - [价格总览](https://github.com/liangzy3/cn/blob/edit/documentation/Cloud-Security/Anti-DDoS-Pro/Pricing/Price-Overview.md)
