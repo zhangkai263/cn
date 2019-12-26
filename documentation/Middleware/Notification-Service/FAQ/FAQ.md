@@ -13,7 +13,7 @@
 
 2. 通知服务中的有哪些限制？
 
-   限制详情可前往[限制说明](../Introduction/restrictions)查看。
+   限制详情可前往[限制说明](../Introduction/restrictions.md)查看。
 
 3. 通知服务是否支持公网/VPC服务?
 
