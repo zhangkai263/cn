@@ -77,7 +77,7 @@ numRetries - numNoDelayRetries - numMinDelayRetries - numMaxDelayRetries
 ```
 
 
-退避策略：
+退避策略函数：
 
 ![退避策略公式](../../../../../image/Internet-Middleware/Notification-Service/退避策略公式.png)
 
