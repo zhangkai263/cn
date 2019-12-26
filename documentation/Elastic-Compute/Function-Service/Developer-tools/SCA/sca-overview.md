@@ -24,7 +24,8 @@ sca cli基于go开发完成，您只需下载安装包，即可安装使用。
 `JD Serverless Cloud Application Version: 0.0.1`
 
 ### 配置账号信息  
-sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)，将JDCloud的账号信息同步至sca中。          
+sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)，将JDCloud的账号信息同步至sca中。 
+
 ` sca config  `        
 
 
