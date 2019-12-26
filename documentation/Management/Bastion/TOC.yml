@@ -40,32 +40,32 @@ items:
         items:
           - name: 登录堡垒机系统
             href: Operation-Guide/Administrator/Login-Bastion.md
-          - items: 用户
-              - name: 用户管理
-                href: Operation-Guide/Administrator/Users/Users.md
-              - name: 用户组管理
-                href: Operation-Guide/Administrator/Users/Users-Group.md
-              - name: 导入京东云IAM子用户
-                href: Operation-Guide/Administrator/Users/Create-IAM.md
-          - items: 资产
-              - name: 主机管理
-                href: Operation-Guide/Administrator/Assets/Assets.md
-              - name: 主机组管理
-                href: Operation-Guide/Administrator/Assets/Assets-Group.md
-              - name: 账户管理
-                href: Operation-Guide/Administrator/Assets/Account.md
-          - items: 权限
-              - name: 规则管理
-                href: Operation-Guide/Administrator/Authorization/Rules.md
-              - name: 授权管理
-                href: Operation-Guide/Administrator/Authorization/Permission.md
-          - items: 审计
-              - name: 实时审计
-                href: Operation-Guide/Administrator/Audit/Real-Time-Session.md
-              - name: 会话审计
-                href: Operation-Guide/Administrator/Audit/Session-Audit.md
-              - name: 操作审计
-                href: Operation-Guide/Administrator/Audit/Operational-Audit.md
+              - items: 用户
+                  - name: 用户管理
+                    href: Operation-Guide/Administrator/Users/Users.md
+                  - name: 用户组管理
+                    href: Operation-Guide/Administrator/Users/Users-Group.md
+                  - name: 导入京东云IAM子用户
+                    href: Operation-Guide/Administrator/Users/Create-IAM.md
+              - items: 资产
+                  - name: 主机管理
+                    href: Operation-Guide/Administrator/Assets/Assets.md
+                  - name: 主机组管理
+                    href: Operation-Guide/Administrator/Assets/Assets-Group.md
+                  - name: 账户管理
+                    href: Operation-Guide/Administrator/Assets/Account.md
+              - items: 权限
+                  - name: 规则管理
+                    href: Operation-Guide/Administrator/Authorization/Rules.md
+                  - name: 授权管理
+                    href: Operation-Guide/Administrator/Authorization/Permission.md
+              - items: 审计
+                  - name: 实时审计
+                    href: Operation-Guide/Administrator/Audit/Real-Time-Session.md
+                  - name: 会话审计
+                    href: Operation-Guide/Administrator/Audit/Session-Audit.md
+                  - name: 操作审计
+                    href: Operation-Guide/Administrator/Audit/Operational-Audit.md
     items:
       - name: 运维手册
         items:
