@@ -30,7 +30,7 @@
 	* 进入[NVIDIA官网](https://www.nvidia.com/Download/Find.aspx)；
 	* 手动查找适用于实例的驱动程序，并单击【搜索】。筛选信息说明如下图所示。<br>![](../../../../../image/vm/GPUdriver5new.png)
 	* 确认无误后，两次单击【下载】按钮，下图是CentOS7.6的驱动截图。<br>![](../../../../../image/vm/GPUdriver6new.png)<br>![](../../../../../image/vm/GPUdriver6nnew.png)
-	* 在centos7.4中也可以通过以下命令直接下载上述驱动，其中下载链接可在上图中右键点击下载按钮获取：
+	* 在CentOS 7.6中也可以通过以下命令直接下载上述驱动，其中下载链接可在上图中右键点击下载按钮获取：
 	
 `wget http://cn.download.nvidia.com/tesla/440.33.01/nvidia-driver-local-repo-rhel7-440.33.01-1.0-1.x86_64.rpm`
 	
@@ -56,6 +56,9 @@
 	* 安装完成后，执行以下命令：
 ```
 nvidia-smi
+
 ```
-若出现下图类似信息则说明安装成功。<br>![](../../../../../image/vm/GPUdriver10new.png)
+	
+	* 若出现下图类似信息则说明安装成功。
+<br>![](../../../../../image/vm/GPUdriver10new.png)
 	
