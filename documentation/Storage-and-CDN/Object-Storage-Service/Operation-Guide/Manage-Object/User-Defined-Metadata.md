@@ -23,6 +23,4 @@ Content-Type|[RFC2616](https://www.ietf.org/rfc/rfc2616.txt?spm=a2c4g.11186623.2
 Expires|[RFC2616](https://www.ietf.org/rfc/rfc2616.txt?spm=a2c4g.11186623.2.9.5b613bdb255OGR&file=rfc2616.txt)中定义的过期时间。|支持Unix时间戳、GMT、ISO8601三种格式。 
 x-amz-meta-\*|可自行指定键值的自定义元数据|自定义元数据的键值相加不能超过2KB。
 
-细节说明：
-* 默认元数据的值，需要满足[RFC2616](https://www.ietf.org/rfc/rfc2616.txt?spm=a2c4g.11186623.2.9.5b613bdb255OGR&file=rfc2616.txt)的标准。
-* 默认元数据的值可以被修改，但不能被删除。
+* 细节说明：默认元数据的值，需要满足[RFC2616](https://www.ietf.org/rfc/rfc2616.txt?spm=a2c4g.11186623.2.9.5b613bdb255OGR&file=rfc2616.txt)的标准。
