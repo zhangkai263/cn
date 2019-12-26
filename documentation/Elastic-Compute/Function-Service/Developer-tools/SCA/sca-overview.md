@@ -14,12 +14,12 @@ sca cli基于go开发完成，您只需下载安装包，即可安装使用。
 
 ### 安装 sca cli（Linux/Mac）
 
-执行以下命令进行下载安装：           
+执行以下命令一步完成下载安装：           
 `·curl -O https://raw.githubusercontent.com/jdcloud-serverless/sca/master/hack/install.sh && chmod +777 install.sh && sh install.sh && source ~/.bashrc`     
 
-或者您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)；  
+或者您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)后，执行`chmod +x sca`命令给予可执行权限后运行；  
 
-2.执行以下命令，验证sca版本。  
+### 查询sca版本
 ` sca version `      
 `JD Serverless Cloud Application Version: 0.0.1`
 
