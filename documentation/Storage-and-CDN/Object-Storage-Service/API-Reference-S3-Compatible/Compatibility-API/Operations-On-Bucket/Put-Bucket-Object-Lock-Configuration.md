@@ -36,7 +36,7 @@ ObjectLockConfiguration|ObjectLockEnabled和Rule容器<br>类型：Container|是
 ObjectLockEnabled|ObjectLock状态<br>有效值：Enabled<br>类型:String<br>父标签：ObjectLockConfiguration|是
 Rule|DefaultRetention容器<br>类型：Container<br>父标签：ObjectLockConfiguration|否
 DefaultRetention|Mode、Days和Years容器类型：Container<br>父标签：Rule|有Rule时必须
-Mode|保留周期模式<br>有效值：GOVERNANCE、COMPLIANCE<br>类型:String<br>父标签：DefaultRetention|有Rule时必须
+Mode|保留周期模式<br>有效值：GOVERNANCE、COMPLIANCE<br>类型：String<br>父标签：DefaultRetention|有Rule时必须
 Days|保留天数<br>有效值：1-36500<br>类型:Positive Integer（正整数）<br>父标签：DefaultRetention|有Rule且无Years时必须
 Years|保留年数<br>有效值：1-100<br>类型:Positive Integer（正整数）<br>父标签：DefaultRetention|有Rule且无Days时必须
 
