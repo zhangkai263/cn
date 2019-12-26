@@ -10,7 +10,7 @@
 
 - 已经开通所需资源如：云主机、云网格、K8S集群等。网格依赖于K8S存在。
 
-- 开放外网访问，系统会自动创建京东云负载均衡组件并申请公网IP，带宽为1Mbps，收费标准请参考 [弹性公网IP](../../../Hyper-Converged-IDC/Cloud-Physical-Server/Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md) 的收费  。
+- **注意:** 若需要开放外网访问，将产生弹性公网IP费用。在此中场景下，系统会自动创建京东云负载均衡组件并申请公网IP，带宽为1Mbps，收费标准请参考 [弹性公网IP](../../../Hyper-Converged-IDC/Cloud-Physical-Server/Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md) 的收费  。
 	
 
 
