@@ -8,7 +8,7 @@ sca cli 通过一个函数模板配置文件template.yaml，完成函数资源�
 ## 运行环境
 
 sca cli支持Linux、Mac运行；    
-sca cli基于go开发完成，您只需下载安装包，即可安装使用。    
+sca cli基于go开发完成，您只需下载安装包，即可使用。    
 
 ## 开始使用
 
