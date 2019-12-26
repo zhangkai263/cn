@@ -37,7 +37,7 @@ RetainUntilDate|保留到期日<br>类型：dateTime<br>父标签：Retention|�
 PUT /<object-key>?retention HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: 643
-x-amz-date: Thu, 12 Apr 2018 21:37:21 GMT
+Date: Thu, 12 Apr 2018 21:37:21 GMT
 Authorization: authorization string
 
 <Retention>
