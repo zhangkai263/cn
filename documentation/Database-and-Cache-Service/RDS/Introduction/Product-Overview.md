@@ -4,7 +4,7 @@
 ## 云数据库 RDS 特点
 * 当前京东云数据库支持 MySQL，Percona，MariaDB, SQL Server, PostgreSQL 五种数据库类型。
 * 自动搭建主从高可用架构，故障迁移自动完成，无需用户干预。
-* MySQL，Percona, MariaDB 支持添加最多 8 个只读实例，横向扩展数据库性能。
+* MySQL，Percona, MariaDB,PostgreSQL支持添加最多 8 个只读实例，横向扩展数据库性能。
 * 备份数据同步至京东云存储，提供 3 副本存储，确保数据安全。
 * 支持弹性扩容，根据业务情况随时调整资源。
 

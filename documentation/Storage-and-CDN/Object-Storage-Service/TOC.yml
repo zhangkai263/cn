@@ -111,6 +111,8 @@ items:
             href: Operation-Guide/Manage-Object/Usage-Monitoring.md
           - name: 还原归档对象
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
+          - name: 对象锁定
+            href: Operation-Guide/Manage-Object/Object-Lock.md
       - name: 权限控制
         items:
            - name: 权限控制概述

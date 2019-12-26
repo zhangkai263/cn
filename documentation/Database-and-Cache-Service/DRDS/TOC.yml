@@ -62,7 +62,15 @@
             - name: 查看扩容任务
               href: Operation-Guide/Database/Expand-Database/View-Expansion-Task.md
             - name: 检查并清理
-              href: Operation-Guide/Database/Expand-Database/Drop-Migrated-Databases.md               
+              href: Operation-Guide/Database/Expand-Database/Drop-Migrated-Databases.md 
+      - name: 安全管理
+        items:
+          - name: 设置IP白名单
+            href: Operation-Guide/Security/Set-Whitelist.md
+      - name: 性能优化
+        items:
+          - name: 功能介绍
+            href: Operation-Guide/Performance/Performace-Introduction.md
   - name: SQL 文档
     items:
       - name: DRDS SQL 简介

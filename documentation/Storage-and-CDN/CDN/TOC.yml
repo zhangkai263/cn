@@ -25,6 +25,8 @@
             href: Introduction/Application-Scenarios/Video-Acceleration.md
           - name: 视频直播加速
             href: Introduction/Application-Scenarios/Live-Acceleration.md  
+          - name: CDN动态加速
+            href: Introduction/Application-Scenarios/Dynamic-Acceleration.md
           - name: CDN边缘计算
             href: Introduction/Application-Scenarios/CDN-Edge-Computing.md
   - name: 产品定价
@@ -91,7 +93,7 @@
             href: Operation-Guide/Living-video/Create-living-domain.md
           - name: 禁播
             href: Operation-Guide/Living-video/Forbidden-Stream.md
-  - name: API 参考
+  - name: 旧版API参考
     items:
       - name: CDN OPEN API
         items:
