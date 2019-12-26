@@ -15,7 +15,7 @@
 1. 攻击来源报表
    展示访问来源的分布统计信息，以柱状图展示TOP5访问来源区域和TOP10访问来源IP。
 
-    ![应用层监控-攻击来源报表](/image/Intelligent-Edge-Security/应用层监控-攻击来源报表.png)
+    ![应用层监控-攻击来源](/image/Intelligent-Edge-Security/应用层监控-攻击来源.png)
 
 2. 攻击请求量
    可查看攻击请求量。

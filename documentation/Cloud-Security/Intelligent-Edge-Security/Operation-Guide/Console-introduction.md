@@ -4,7 +4,7 @@
 
 登录[智能边缘控制台 ](https://edgesecurity-console.jdcloud.com/overview)后，首页展示的是当前客户的智能边缘安全服务总体情况，如下：
 
-![控制台简介](/image)/Intelligent-Edge-Security/控制台简介.png)
+![控制台简介](/image/Intelligent-Edge-Security/控制台简介.png)
 
 内容包括：
 

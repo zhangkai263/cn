@@ -13,7 +13,7 @@
 2. 单击**网络层防护**。
 
 3. 开启网络层防护开关。
-   ![网络层防护开关](/image/Intelligent-Edge-Security/网络层防护开关.png)
+![网络层防护开关](/image/Intelligent-Edge-Security/网络层防护开关.png)
 
 4. 单击**设置规则**，设置详细规则。
 

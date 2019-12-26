@@ -48,4 +48,4 @@
 
 ## 相关参考
 
-- [价格总览](https://github.com/liangzy3/cn/blob/edit/documentation/Cloud-Security/Intelligent-Edge-Security/Pricing/Price-Overview.md)
+- [价格总览](https://github.com/liangzy3/cn/blob/Intelligent-Edge-Security-1/documentation/Cloud-Security/Intelligent-Edge-Security/Pricing/Price-Overview.md)

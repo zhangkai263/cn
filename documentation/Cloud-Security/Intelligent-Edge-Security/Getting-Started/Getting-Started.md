@@ -16,7 +16,7 @@
 
 2、 点击“添加域名”；
 
-![添加域名](/image)/Intelligent-Edge-Security/添加域名.png)
+![添加域名](/image/Intelligent-Edge-Security/添加域名.png)
 
 3、 在打开的“新增加速域名”页面中填写或选择以下信息，然后点击“确定”按钮。
 
@@ -29,13 +29,13 @@
 
 1. 回源方式：请根据实际需求选择IP回源、域名回源，并对应填写源站IP地址、源站域名。京东云智能边缘安全支持多IP负载均衡回源，以及多IP、多域名备份回源，请您根据实际需要填写回源配置。
 
-![域名基本信息配置](/image)/Intelligent-Edge-Security/域名基本信息配置.png)
+![域名基本信息配置](/image/Intelligent-Edge-Security/域名基本信息配置.png)
 
 **第三步：绑定CNAME**
 
 1、 进入智能边缘安全客户控制台【域名列表】页面,复制通过审核域名的CNAME;
 
-![查看CNAME记录](/[image](https://github.com/liangzy3/cn/tree/Intelligent-Edge-Security-1/image/Intelligent-Edge-Security/查看CNAME记录.png)
+![查看CNAME记录](/image/Intelligent-Edge-Security/查看CNAME记录.png)
 
 2、 登录域名DNS服务提供商控制台完成 CNAME 配置。
 
@@ -53,4 +53,4 @@
 
 **第四步：启用智能边缘安全服务**
 
-域名审核通过后，服务配置会在15分钟后生效。
+域名审核通过后，加速服务配置会在15分钟后生效，同时可配置网络层防护和应用层规则，兼顾安全和加速的目标。
