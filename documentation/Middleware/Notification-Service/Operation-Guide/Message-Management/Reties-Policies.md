@@ -79,7 +79,7 @@ numRetries - numNoDelayRetries - numMinDelayRetries - numMaxDelayRetries
 
 退避策略：
 
-![退避策略公式](../../../../image/Internet-Middleware/Notification-Service/退避策略公式.png)
+![退避策略公式](../../../../../image/Internet-Middleware/Notification-Service/退避策略公式.png)
 
 其中y为延迟时间，x为重试次数，y2为最大延迟时间，y1为最小延迟时间，x2为退避策略阶段重试次数，x1为1， α 值控制横轴伸缩曲线
 
