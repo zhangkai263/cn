@@ -12,7 +12,7 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/metrics/{metric}/metricData
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**idc**|String|True| |机房名称（英文标识）|
+|**idc**|String|True| |IDC机房ID|
 |**metric**|String|True| |监控项英文标识(id)|
 
 ## 请求参数
