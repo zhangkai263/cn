@@ -28,7 +28,7 @@ Authorization: authorization string
 ---|---|---
 Retention|Mode和RetainUntilDate容器<br>类型：Container|是
 Mode|保留周期模式<br>有效值：GOVERNANCE、COMPLIANCE<br>类型：String<br>父标签：Retention|否
-RetainUntilDate|保留到期日<br>类型：dateTime<br>父标签：Retention|有Mode时必须
+RetainUntilDate|保留到期日<br>类型：dateTime（形如2019-06-16T10:00:00.000Z）<br>父标签：Retention|与Mode同时存在或同时不存在
 
 ## 示例
 ### 请求示例
