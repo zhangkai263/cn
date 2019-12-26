@@ -35,7 +35,7 @@ Status|依法保留状态<br>有效值：ON、OFF<br>类型：String<br>父标�
 PUT /<object-key>?legal-hold HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: 341
-x-amz-date: Thu, 12 Apr 2018 21:37:21 GMT
+Date: Thu, 12 Apr 2018 21:37:21 GMT
 Authorization: authorization string
 
 <LegalHold>
