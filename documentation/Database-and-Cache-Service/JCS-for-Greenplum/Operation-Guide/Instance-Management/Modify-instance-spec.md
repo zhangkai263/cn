@@ -17,7 +17,7 @@
 
    - 升级节点规格
 
-     ![image-20191226144738092](../../../../../image\JCS-for-Greenplum\jdw-015.png)
+     ![image-20191226144738092](../../../../../image/JCS-for-Greenplum/jdw-015.png)
      
      变更方式：选择**升级节点规格**
    
@@ -27,7 +27,7 @@
    
    - 扩展节点数量
 
-     ![image-20191226150310512](../../../../../image\JCS-for-Greenplum\jdw-016.png)
+     ![image-20191226150310512](../../../../../image/JCS-for-Greenplum/jdw-016.png)
    
      变更方式：选择**扩展节点数量**。
      
