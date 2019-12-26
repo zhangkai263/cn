@@ -100,6 +100,8 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
   - name: 边缘网络隧道(ENT)服务协议
     href: Edge-Network-Tunnel-Terms-Of-Service.md
+  - name: 对等边缘服务(JEES)服务条款
+    href: JD-Cloud-Equal-Edge-Service-Terms-Of-Service.md   
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
