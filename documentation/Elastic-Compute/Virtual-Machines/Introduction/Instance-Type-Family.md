@@ -44,7 +44,7 @@
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
-	* 第三代：2.5 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器  
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -113,7 +113,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 * vCPU与内存比约为1:2
 * 处理器：
-	* 第三代：2.5 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -183,7 +183,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 * vCPU与内存比约为1:8
 * 处理器：
-	* 第三代：2.5 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器 
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器 
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
