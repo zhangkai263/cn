@@ -21,17 +21,17 @@ https://edcps.jdcloud-api.com/v1/edgeRegions
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**regions**|[Region[]](#region)| |
-### <div id="Region">Region</div>
+### <div id="region">Region</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如 cn-east-tz1|
 |**regionName**|String|地域名称，如 华东-台州|
 |**azs**|[Az[]](#az)|可用区列表|
-### <div id="Az">Az</div>
+### <div id="az">Az</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码，如 cn-east-tz1|

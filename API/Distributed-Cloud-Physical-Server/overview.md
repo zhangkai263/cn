@@ -34,10 +34,12 @@ v1
 |**describeDeviceTypes**|GET|查询分布式云物理服务器实例类型|
 |**describeEdCPSRegions**|GET|查询分布式分布式云物理服务器地域列表|
 |**describeElasticIp**|GET|查询弹性公网IP详情|
+|**describeElasticIpQuota**|GET|查询弹性公网IP配额|
 |**describeElasticIpStock**|GET|查询弹性公网IP库存|
 |**describeElasticIps**|GET|查询弹性公网IP列表<br/><br>支持分页查询，默认每页20条<br/><br>|
 |**describeInstance**|GET|查询单台分布式云物理服务器详细信息|
 |**describeInstanceName**|GET|查询分布式云物理服务器名称|
+|**describeInstanceQuota**|GET|查询分布式云物理服务器配额|
 |**describeInstanceRaid**|GET|查询单个分布式云物理服务器已安装的RAID信息，包括系统盘RAID信息和数据盘RAID信息|
 |**describeInstanceStatus**|GET|查询单个分布式云物理服务器硬件监控信息|
 |**describeInstances**|GET|批量查询分布式云物理服务器详细信息<br/><br>支持分页查询，默认每页20条<br/><br>|
@@ -45,6 +47,7 @@ v1
 |**describeKeypairs**|GET|查询密钥对列表|
 |**describeLineTypes**|GET|查询链路类型列表|
 |**describeOS**|GET|查询分布式云物理服务器支持的操作系统|
+|**describeRenewalResourceList**|GET|查询资源名称和资源绑定关系|
 |**describeSecondaryCidrs**|GET|查询次要CIDR列表|
 |**describeSubnet**|GET|查询子网详情|
 |**describeSubnets**|GET|查询子网列表|
