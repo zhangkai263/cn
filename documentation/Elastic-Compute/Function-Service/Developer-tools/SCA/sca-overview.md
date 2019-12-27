@@ -26,7 +26,14 @@ sca cli基于go开发完成，您只需下载安装包，即可使用。
 ### 配置账号信息  
 sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)，将JDCloud的账号信息同步至sca中。 
 
-` sca config  `        
+```
+#sca config
+[>] JDCould accountid = 11111(your acount id)
+[>] JDCould region = cn-north-1
+[>] JDCould access-key = 0123abcd(your ak)
+[>] JDCould secret-key = abcd0123(your sk)
+
+```       
 
 
 
@@ -90,12 +97,17 @@ Resources:
 ### 验证配置文件
  [验证template.yaml文件](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/validate.md)    
  
-`  sca validate  `        
+```
+# sca validate -t template.yaml
+validate success.
+```
 
 ### 本地测试
 通过 [本地调试函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/local.md) ，在部署前，用户可在本地的模拟环境中运行代码，发送模拟测试事件，验证函数执行，获取运行信息及日志。在运行本地调试前，需确保本地环境中已经安装并启动 Docker。  
 
 `   sca local  `  
+
+
 
 ### 打包部署
 根据指定的函数模板配置文件，将配置文件中的指定代码包、函数配置等信息， [打包部署到云端](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/deploy.md) 。 
