@@ -2,7 +2,7 @@
 在使用堡垒机进行主机运维前，管理员需要在堡垒机实例中创建堡垒机用户。本文将指导管理员在堡垒机实例中导入京东云IAM子用户作为堡垒机用户。除了导入京东云IAM子用户作为堡垒机用户以外，您还可以手动添加或批量导入用户作为堡垒机用户。更多信息，请参见用户管理。
 
 ## 前提条件
-* 已经创建IAM子用户。关于创建IAM子用户的具体操作，请参见 [创建IAM用户](../../Management/IAM/Identity-Management/Sub-User.md)。
+* 已经创建IAM子用户。关于创建IAM子用户的具体操作，请参见 [创建IAM用户](../../IAM/Identity-Management/Sub-User.md)。
 * 要导入的子账号拥有堡垒机关联权限。
 
   堡垒机用户权限分为管理员和普通用户两种，对应京东云访问控制的系统权限策略分别是ADCloudBastionHostFullAccess和JDCloudBastionHostOperateOnlyAccess。
