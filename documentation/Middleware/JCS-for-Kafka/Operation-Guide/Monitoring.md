@@ -9,3 +9,5 @@
 3.在详情页面，点击“监控”进入监控页面。</br>
 
 4.监控时段可选择据当前时间“1小时”、“6小时”、“12小时”进行选择，也可由日历时间段自主选择。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/监控.png)
