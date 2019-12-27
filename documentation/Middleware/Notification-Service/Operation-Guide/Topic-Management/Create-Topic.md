@@ -14,7 +14,7 @@
 
 3. 显示名称：最大长度为256字符，在推送邮件消息时，已设置显示名称，发件人则为"显示名称<example@example.com>"，否则为"<example@example.com>"。
 
-4. 主题传输重试策略（HTTP/S）是主题设置其所有HTTP/S订阅的传输重试策略，有默认设置，如果无特殊需求可以不作修改，详情可查看[消息传输重试策略](../Operation-Guide/Message-Management/Reties-Policies.md)。
+4. 主题传输重试策略（HTTP/S）是主题设置其所有HTTP/S订阅的传输重试策略，有默认设置，如果无特殊需求可以不作修改，详情可查看[消息传输重试策略](../Message-Management/Reties-Policies.md)。
 
    说明：
 
