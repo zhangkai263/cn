@@ -4,7 +4,7 @@
 
 整体流程：
 
-- 在控制台中创建日志集，日志主题，并添加采集配置。
+- 在控制台中创建日志集，日志主题，并添加采集配置。[添加业务应用日志采集配置](https://docs.jdcloud.com/cn/log-service/customlog)
 - 登录云主机，安装agent。
 
 ### Agent安装步骤
