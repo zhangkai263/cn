@@ -45,12 +45,12 @@ A：网关是整个系统的出口，通常情况下一个网关即可满足业�
 
 **Q：网格组件支持哪些？网格组件没有外网IP怎么办？**
 
-A：组件包括kiali，grafana、jaeger、bookinfo示例、prometheus。云网格使用ingress开放了前四种组件，在安装后可以看到访问地址。
+A：组件包括kiali，grafana、jaeger、bookinfo示例、prometheus。云网格使用ingress开放了部分前四种组件，并自动生成了网关及配置，在安装后可以在组件管理页面看到访问地址。
 
 
 **Q：网格gateway和k8s gateway分别指什么？**
 
-A：网格的网关和  K8S 的ingress不是一回事，目前云网格使用istio gateway引流，未使用  K8S  ingress。前者主要用于7层流量控制，方便网格内流量控制，后者主要用于4层流量。当然也可以根据业务需要组合使用。
+A：网格的网关和  K8S 的ingress不是一回事，目前云网格使用istio gateway引流，未使用  K8S  ingress。
 
 
 **Q：如何使用网格的故障注入？**
