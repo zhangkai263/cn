@@ -28,7 +28,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modif
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|分布式云物理服务器名称|

@@ -22,9 +22,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/avail
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Array|可用私有IP集合|
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
+### <div id="result">Result</div>
+|名称|类型|描述|
+|---|---|---|
+|**availablePrivateIps**|String[]|可用私有IP集合|
 
 ## 返回码
 |返回码|描述|

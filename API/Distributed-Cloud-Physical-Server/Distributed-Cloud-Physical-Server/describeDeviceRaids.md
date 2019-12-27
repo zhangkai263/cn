@@ -27,11 +27,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/raids
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**raids**|[Raid[]](#raid)| |
-### <div id="Raid">Raid</div>
+### <div id="raid">Raid</div>
 |名称|类型|描述|
 |---|---|---|
 |**volumeType**|String|磁盘类型, 如 system/data|
