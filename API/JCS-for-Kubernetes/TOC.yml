@@ -61,8 +61,6 @@ items:
     items:
     - name: 查询版本信息
       href: ServiceConfig/describeVersions.md
-    - name: 查询服务配置信息
-      href: ServiceConfig/describeImages.md
     - name: 查询节点版本
       href: ServiceConfig/describeNodeVersion.md
     - name: 查询集群服务配置信息
