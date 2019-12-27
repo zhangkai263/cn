@@ -44,8 +44,10 @@ items:
         href: Operation-Guide/Deleting-Mount-Target.md
       - name: 修改挂载目标
         href: Operation-Guide/Editing-Mount-Target.md
-      - name: 挂载文件存储
+      - name: Linux操作系统挂载文件存储
         href: Operation-Guide/Mount-File-System.md
+      - name: Windows操作系统挂载文件存储
+        herf: Operation-Guide/Mount-File-System-win.md
       - name: 卸载文件存储
         href: Operation-Guide/Unmount-File-System.md
       - name: 删除文件存储

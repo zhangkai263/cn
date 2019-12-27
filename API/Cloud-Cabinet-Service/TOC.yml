@@ -1,0 +1,25 @@
+name: 云托管服务
+href: 
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 资源相关接口
+        items:
+          - name: describeIdcs
+            href: Resource-API/describeIdcs.md
+          - name: describeRooms
+            href: Resource-API/describeRooms.md
+          - name: describeCabinets
+            href: Resource-API/describeCabinets.md            
+      - name: 监控相关接口
+        items:
+          - name: describeMetrics
+            href: Monitor-API/describeMetrics.md
+          - name: describeMetricData
+            href: Monitor-API/describeMetricData.md
+          - name: lastDownsample
+            href: Monitor-API/lastDownsample.md            

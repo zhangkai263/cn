@@ -2,7 +2,7 @@
 
 
 ## 描述
-仅支持MySQL实例开启数据库审计
+仅支持MySQL实例开启数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB
 
 ## 请求方式
 POST

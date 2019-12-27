@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看参数的修改历史<br>- 仅支持MySQL
+查看参数的修改历史<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -27,14 +27,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeParameterModifyRecords#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
-|**records**|ParameterModifyRecords[]| |
+|**records**|[ParameterModifyRecords[]](describeParameterModifyRecords#ParameterModifyRecords)| |
 |**totalCount**|Integer| |
-### ParameterModifyRecords
+### <a name="ParameterModifyRecords">ParameterModifyRecords</a>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|参数名称|
