@@ -143,9 +143,9 @@ sca invoke -n test-function
         LogTopic: "LogTopicID"
 ````
 
-示例：查询sca-001函数最近600000秒日志
+示例：查询test-function函数最近600000秒日志：
 ```
-# sca logs -n sca-001 -d 600000
+# sca logs -n test-function -d 600000
 2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r Report Invoke boue3nfsqrshctda7hp792adjrap4r6r,Duration :7.54ms  BilledDuration: 100ms  Memory Size: 128 MB
 2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r End Invoke
 2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r {}
