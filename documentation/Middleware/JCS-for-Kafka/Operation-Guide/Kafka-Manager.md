@@ -64,6 +64,7 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 在列表信息页面，点击相应id号，可查看其详细信息及其对应的Topic等信息。</br>
 
 5. Consumer管理</br>
+
 1). Consumer Group查看</br>
 
 集群列表页面点击顶部“Consumers”可查看Consumer Group相关信息。点击Consumer Group列表的某个组，会显示这个Consumer Group中在消耗的Topic列表，包括分区覆盖率，和总延迟量。
