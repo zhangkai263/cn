@@ -117,7 +117,14 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters
 |**stateMessage**|String|状态变更原因|
 |**autoRepair**|Boolean|是否开启自动修复|
 |**progress**|[NodeGroupProgress](describeclusters#nodegroupprogress)|控制节点操作进度|
+|**caConfig**|[CAConfig](describeclusters#caconfig)|自动伸缩配置|
 |**createdTime**|String|创建时间|
+### <div id="caconfig">CAConfig</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Boolean|是否启用了自动伸缩<br>|
+|**maxNode**|Integer|自动扩容最大工作节点数|
+|**minNode**|Integer|自动扩容最小工作节点数|
 ### <div id="nodegroupprogress">NodeGroupProgress</div>
 |名称|类型|描述|
 |---|---|---|
