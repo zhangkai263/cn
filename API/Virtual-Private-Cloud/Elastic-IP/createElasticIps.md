@@ -20,7 +20,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |**maxCount**|Integer|True| |购买弹性ip数量；取值范围：[1,100]|
 |**elasticIpAddress**|String|False| |指定弹性ip地址进行创建，当申请创建多个弹性ip时，必须为空|
 |**elasticIpSpec**|ElasticIpSpec|True| |弹性ip规格|
+|**userTags**|[Tag[]](createelasticips#tag)|False| |用户标签|
 
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|True| |Tag键|
+|**value**|String|True| |Tag值|
 ### ElasticIpSpec
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
