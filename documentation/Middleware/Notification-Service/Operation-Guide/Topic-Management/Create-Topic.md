@@ -2,6 +2,8 @@
 
 在通知服务控制台，点击创建主题按钮，进入到创建主题页面。
 
+![创建](../../../../../image/Internet-Middleware/Notification-Service/创建主题1.png)
+
 1. region选择：可以选择“华北-北京、华东-上海、华南-广州”三个region。
 
 2. 主题名称创建后不能修改。
