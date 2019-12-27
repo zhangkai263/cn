@@ -17,6 +17,7 @@ v1
 |**createNodeGroup**|POST|创建工作节点组<br>- 要求集群状态为running<br>|
 |**deleteCluster**|DELETE|删除集群，以及集群的所有node节点，网络，云盘等所有资源。|
 |**deleteNodeGroup**|DELETE|集群摘除工作节点组并删除工作节点组|
+|**deleteNodeInstances**|POST|从工作节点组中删除指定实例|
 |**describeCluster**|GET|查询单个集群详情。|
 |**describeClusters**|GET|查询集群列表|
 |**describeNodeGroup**|GET|查询单个工作节点组详情|
@@ -34,6 +35,7 @@ v1
 |**setAddons**|POST|设置集群组件|
 |**setAutoRepair**|POST|设置工作节点组的自动修复|
 |**setAutoUpgrade**|POST|设置自动升级|
+|**setNodeGroupCA**|POST|设置工作节点组自动伸缩|
 |**setNodeGroupSize**|POST|调整工作节点组实例数量|
 |**setUserMetrics**|POST|Deprecated 建议使用 setAddons 接口 <br>设置用户自定义监控状态|
 |**upgradeCluster**|POST|触发升级|
