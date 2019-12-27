@@ -48,7 +48,7 @@ Reviews部署了三个版本：
  
 ![组件详情界面](../../../../image/Internet-Middleware/Mesh/example-bs-step4.png)
 
-使用公网地址+“/productpage”（例如本集群的http://114.67.183.240/productpage）即可访问示例程序，如下图示例程序界面所示。
+使用公网地址+“/productpage”（ 例如本集群的http://114.67.183.240/productpage ）即可访问示例程序，如下图示例程序界面所示。
 
 ![示例程序界面](../../../../image/Internet-Middleware/Mesh/example-bs-step5.png) 
 
@@ -63,7 +63,7 @@ Reviews部署了三个版本：
 
 ##  示例程序分流功能演示
 
-	从Bookinfo示例程序服务架构可知，productpage服务调用reviews服务来展示页面，而reviews服务部署了三个不同版本（不同版本返回内容不同），默认情况下，productpage随机访问reviews服务。因此可以配置reviews服务的分流策略，对productpage服务到reviews服务的流量进行治理，以下步骤将演示流量配置过程。
+从Bookinfo示例程序服务架构可知，productpage服务调用reviews服务来展示页面，而reviews服务部署了三个不同版本（不同版本返回内容不同），默认情况下，productpage随机访问reviews服务。因此可以配置reviews服务的分流策略，对productpage服务到reviews服务的流量进行治理，以下步骤将演示流量配置过程。
 
 #### STEP1: 创建网关
 
@@ -86,11 +86,17 @@ Reviews部署了三个版本：
 
 ![虚拟服务页面](../../../../image/Internet-Middleware/Mesh/example-rkflgz-step1.png)  
  
-示例程序在安装过程中，默认为productpage服务创建了一个入口分流规则，该规则默认host为*（所有的外部请求），gateway绑定了默认创建的bookinfo-gateway网关，分流规则是准确匹配url中的“/productpage”，可直接使用默认入口分流规则。
+示例程序在安装过程中：
+
+-  默认为productpage服务创建了一个入口分流规则，该规则默认host为 * （所有的外部请求）
+
+-  gateway绑定了默认创建的bookinfo-gateway网关，分流规则是准确匹配url中的“/productpage”，可直接使用默认入口分流规则。
  
 ![productpage服务入口分流规则页面](../../../../image/Internet-Middleware/Mesh/example-rkflgz-step2.png)  
 
-如果需要另外创建新的入口分流规则，可进行后续的创建服务入口分流规则，可自由配置入口规则的接入域名、绑定网关和添加分流规则。分流规则支持Header、URI、权重分流三种方式。通常，Header和URI方式使用较多，其中URI方式又支持精确匹配、前缀匹配两种方式。
+如果需要另外创建新的入口分流规则，可进行后续的创建服务入口分流规则，可自由配置入口规则的接入域名、绑定网关和添加分流规则。
+
+分流规则支持Header、URI、权重分流三种方式。通常，Header和URI方式使用较多，其中URI方式又支持精确匹配、前缀匹配两种方式。
  
 ![创建服务入口分流规则页面](../../../../image/Internet-Middleware/Mesh/example-rkflgz-step3.png)  
 
@@ -129,7 +135,17 @@ Reviews部署了三个版本：
 
 ![虚拟服务页面](../../../../image/Internet-Middleware/Mesh/example-nbflgz-step1.png)  
 
-如下图所示，选择进入reviews服务的分流规则中的内部分流规则页面，可选择header或者url配置分流规则。本文档将演示使用header分流规则，配置匹配header带有end-user:jason流量转发到到步骤三中创建的v1逻辑子集（version:v1）中，配置匹配header带有end-user:alice流量转发到到步骤三中创建的v2逻辑子集（version:v2）中配置匹配header带有end-user:bob流量转发到到步骤三中创建的v3逻辑子集（version:v3）中，默认随机全部reviews实例被随机访问（为匹配到以上header）。
+如下图所示，选择进入reviews服务的分流规则中的内部分流规则页面，可选择header或者url配置分流规则。
+
+本文档将演示使用header分流规则：
+
+-  配置匹配header带有end-user:jason流量转发到到步骤三中创建的v1逻辑子集（version:v1）中 
+
+-  配置匹配header带有end-user:alice流量转发到到步骤三中创建的v2逻辑子集（version:v2）中
+
+-  配置匹配header带有end-user:bob流量转发到到步骤三中创建的v3逻辑子集（version:v3）中
+
+-  默认随机全部reviews实例被随机访问（为匹配到以上header）。
  
 ![内部分流规则配置界面](../../../../image/Internet-Middleware/Mesh/example-nbflgz-step2.png)  
 
@@ -155,7 +171,7 @@ Reviews部署了三个版本：
 
 ####  演示3：
 
-登录到bob用户，密码为任意值皆可，刷新productpage服务页面，访问页面如图5-4所示，页面调用ratings服务,返回红色的1-5颗星，说明分流到reviews的v3版本，证明分流配置达到期望，有效果。
+登录到bob用户，密码为任意值皆可，刷新productpage服务页面，访问页面如图所示，页面调用ratings服务,返回红色的1-5颗星，说明分流到reviews的v3版本，证明分流配置达到期望，有效果。
 
 ![alice用户登录访问productpage服务页面](../../../../image/Internet-Middleware/Mesh/example-ys-step3.png)     
 
