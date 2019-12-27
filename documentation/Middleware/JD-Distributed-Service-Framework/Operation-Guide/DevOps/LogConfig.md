@@ -16,6 +16,8 @@
 
 需要先开通ES服务。
 
+**注意：JDSF平台将向ES中写入数据，但ES需要请用户自行维护，保证有足够的资源来进行日志的存储和处理。**
+
 
 ## 操作步骤
 
@@ -72,7 +74,7 @@
 
 2、在部署组的新建/编辑页中。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-bg-app.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-bg-app-1214.png)
 
 
 ### 第4步：发起部署，使日志配置生效。
@@ -87,7 +89,7 @@
 
 ### 第5步：查看日志。
 
-定义索引模式，选择Index Patterns，索引名称是“日志配置名称”，需要与ES同名。例如下图范例所示：
+定义索引模式，选择Index Patterns，索引名称需要使用与ES同名的“日志配置名称” 。例如下图范例所示：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/log-es-2.png)
 

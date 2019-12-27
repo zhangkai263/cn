@@ -26,5 +26,13 @@
 
 | 触发器     | 函数调用方式 | 参考       |
 | ---------- | ------------ | ---------- |
-| OSS触发器  | 异步调用     | [OSS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
+| 对象存储OSS触发器  | 异步调用     | [对象存储OSS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
 | API网关触发器 | 同步调用     | [API网关触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
+| 队列服务JQS触发器 | 异步调用     | [队列服务JQS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md)|
+
+## 函数管理方式
+
+您可以通过以下方式管理函数：
+- 控制台
+- API、SDK
+- SCA CLI本地开发工具

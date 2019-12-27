@@ -20,9 +20,10 @@ https://cdn.jdcloud-api.com/v1/domain:query
 |**pageSize**|Integer|False|20|pageSize,默认值为20,最大值为50|
 |**status**|String|False| |根据域名状态查询, 可选值[offline, online, configuring, auditing, audit_reject]|
 |**type**|String|False| |域名类型，(web:静态小文件，download:大文件加速，vod:视频加速，live:直播加速),不传查所有|
-|**tagFilters**|TagFilter[]|False| |标签过滤条件|
+|**accelerateRegion**|String|False| |加速区域，(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球),不传为全球|
+|**tagFilters**|[TagFilter[]](getdomainlistbyfilter#tagfilter)|False| |标签过滤条件|
 
-### TagFilter
+### <div id="tagfilter">TagFilter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**key**|String|False| | |
@@ -31,17 +32,17 @@ https://cdn.jdcloud-api.com/v1/domain:query
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](getdomainlistbyfilter#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer| |
 |**pageSize**|Integer| |
 |**pageNumber**|Integer| |
-|**domains**|ListDomainItemByFilter[]| |
-### ListDomainItemByFilter
+|**domains**|[ListDomainItemByFilter[]](getdomainlistbyfilter#listdomainitembyfilter)| |
+### <div id="listdomainitembyfilter">ListDomainItemByFilter</div>
 |名称|类型|描述|
 |---|---|---|
 |**cname**|String| |
@@ -50,10 +51,12 @@ https://cdn.jdcloud-api.com/v1/domain:query
 |**created**|String| |
 |**modified**|String| |
 |**status**|String| |
+|**wafStatus**|String| |
 |**type**|String| |
 |**auditStatus**|String| |
-|**tags**|Tag[]| |
-### Tag
+|**accelerateRegion**|String| |
+|**tags**|[Tag[]](getdomainlistbyfilter#tag)| |
+### <div id="tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String| |

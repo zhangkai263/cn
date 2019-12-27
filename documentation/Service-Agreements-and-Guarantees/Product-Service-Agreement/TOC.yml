@@ -100,6 +100,8 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
   - name: 边缘网络隧道(ENT)服务协议
     href: Edge-Network-Tunnel-Terms-Of-Service.md
+  - name: 对等边缘服务(JEES)服务条款
+    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -148,6 +150,8 @@ items:
     href: IoT-Link-Service-Terms-Of-Service.md
   - name: 物联网卡服务等级协议（SLA）
     href: IoT-Link-Service-Level-Agreements-SLA.md
+  - name: 物联网智能边缘计算服务条款
+    href: IoT-Edge-Terms-Of-Service.md    
   - name: 云文件服务协议
     href: Cloud-File-Service-terms-of-service.md
   - name: 云文件服务等级服务协议（SLA）
@@ -176,3 +180,10 @@ items:
     href: Recommended-Rebate-User-Agreement.md
   - name: 我的世界教育版-演示版服务协议
     href: MEE-Demo-Service-Terms-Of-Service.md
+  - name: 云托管机柜租赁服务条款
+    href: Cloud-Cabinet-Service-Terms-Of-Service.md
+  - name: 云托管机柜租赁服务等级协议（SLA）
+    href: Cloud-Cabinet-Service-Level-Agreements-SLA.md
+  - name: 互联网数据中心用户入网责任书
+    href: IDC-User-Internet-Access-Responsibility-Statement.md
+    

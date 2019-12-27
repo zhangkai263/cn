@@ -81,6 +81,8 @@ items:
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md 
                - name: API网关触发器   
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
+               - name: 队列服务JQS触发器   
+                 href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md
                     
 
       - name: 环境变量管理
@@ -107,6 +109,11 @@ items:
              href: Operation-Guide/use-cases/apig-case.md  
            - name: Python WSGI Web 服务迁移至函数服务
              href: Operation-Guide/use-cases/wsgi.md
+  
+  - name: 开发者工具
+    items:
+      - name: SCA CLI
+        href: Developer-tools/SCA/sca-overview.md 
   
   - name: 常见问题
     href: FAQ.md  

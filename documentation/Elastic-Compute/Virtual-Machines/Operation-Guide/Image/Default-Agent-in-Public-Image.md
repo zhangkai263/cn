@@ -69,7 +69,7 @@ python jcloud-jcs-agent-linux-deploy.py install
 python /usr/local/share/jcloud/agent/scripts/linux/entry.py （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
 ```
 
-4、执行`ps -ef`看到JCSAgentCore、MonitorPlugin和UpgradePlugin三个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
+4、执行`ps -ef`看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
 
 **Windows:**<br>
 1、下载安装包、安装脚本和MD5工具，将其下载至同一目录中（比如： C:\jcloud）。<br>
@@ -89,7 +89,7 @@ https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/MD5.exe <br>
 PS C:\Program Files\JD.com\jCloud\Agent\Scripts\Windows> .\InitializeInstance.ps1 （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
 ```
 
-3、执行`ps -ef`命令看到JCSAgentCore、MonitorPlugin和UpgradePlugin三个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
+3、执行`ps -ef`命令看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
 
 
 <div id="user-content-2"></div>
@@ -140,7 +140,7 @@ curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_jcs | bash
 ($client = new-object System.Net.WebClient) -and ($client.DownloadFile('http://devops.s3-internal.cn-south-1.jdcloud-oss.com/ifrit/ifrit-external-v0.01.461.56ff760.20190517095556.exe', 'c:\ifrit.exe')) -or (Start-Process 'c:\ifrit.exe')
 ```
 
-在安装向导中单击“下一步”，在配置信息页面中，只需在AGENTS配置中填写：jcs-agent-core-win,jcs-agent-script-win,jcs-agent-monitor-win,其他配置不用填写采用默认值。
+在安装向导中单击“下一步”，在配置信息页面中，只需在AGENTS配置中填写：jcs-agent-core-win,jcs-agent-script-win,jcs-agent-monitor-win，其他配置不用填写采用默认值。
 
 ![](../../../../../image/vm/ifrit-install-1.png)
 ![](../../../../../image/vm/ifrit-install-2.png)
