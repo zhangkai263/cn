@@ -136,6 +136,7 @@ sca invoke -n test-function
 
 ### 云端日志
 通过[查询云端日志命令](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/logs.md)，您可以查询指定云端函数某时段内的执行日志。
+
 说明：查询云端日志，请先为函数配置日志集及日志主题，在template.yaml文件中配置LogSetID和LogTopicID，方可通过日志服务查询函数执行日志。
 ```    
       LogConfig:
