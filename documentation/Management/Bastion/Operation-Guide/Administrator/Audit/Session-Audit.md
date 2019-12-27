@@ -31,3 +31,12 @@
  ![](/image/Bastion/mingAudit2.png) 
 
 3、 在命令查询页，可以通过时间段、主机IP、来源IP、操作类型、内容等条件定位命令执行日志
+
+## 离线播放器
+
+离线播放器用于离线查看下载的会话审计日志。
+
+Mac 系统下载地址：https://open-tools.s3.cn-north-1.jdcloud-oss.com/release/bastion/darwin/20191219/BastionPlayer.tar.gz
+
+
+Windows 系统下载地址：https://open-tools.s3.cn-north-1.jdcloud-oss.com/release/bastion/win64/20191219/BastionPlayer.tar.gz

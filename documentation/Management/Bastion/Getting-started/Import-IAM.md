@@ -5,9 +5,9 @@
 * 已经创建IAM子用户。关于创建IAM子用户的具体操作，请参见 [创建IAM用户](../../IAM/Identity-Management/Sub-User.md)。
 * 要导入的子账号拥有堡垒机关联权限。
 
-  堡垒机用户权限分为管理员和普通用户两种，对应京东云访问控制的系统权限策略分别是ADCloudBastionHostFullAccess和JDCloudBastionHostOperateOnlyAccess。
+  堡垒机用户权限分为管理员和普通用户两种，对应京东云访问控制的系统权限策略分别是JDCloudBastionHostFullAccess和JDCloudBastionHostOperateOnlyAccess。
   
-  京东云主账号登录为管理员权限，可以查看和管理所有数据。子账号权限由主账号分配，可被分配管理员权限或者普通用户权限。从权限最小的角度，一般建议您为子账号分配普通用户权限，在堡垒机实例中分配运维规则。
+  京东云主账号登录超级管理员权限，可以查看和管理所有数据。子账号权限由主账号分配，可被分配管理员权限或者普通用户权限。从权限最小的角度，一般建议您为子账号分配普通用户权限，在堡垒机实例中分配运维规则。
 
   关于为子账号授权的具体操作，请参见为 [给子用户授予策略](../../IAM/Identity-Management/Sub-User.md)。
 

@@ -21,7 +21,7 @@
 
 ![](/image/Bastion/import-ecs5.png) 
 
-2、 选择一个已经提供的资源
+2、 选择一个已经提供的资源账号
 
 ![](/image/Bastion/import-ecs3.png) 
 
