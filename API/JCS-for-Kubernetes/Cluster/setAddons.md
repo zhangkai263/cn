@@ -18,9 +18,9 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:se
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**addonsConfig**|AddonConfigSpec[]|True| |需要设置的集群组件配置|
+|**addonsConfig**|[AddonConfigSpec[]](setaddons#addonconfigspec)|True| |需要设置的集群组件配置|
 
-### AddonConfigSpec
+### <div id="addonconfigspec">AddonConfigSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |组件名称，目前支持customMetrics、logging|

@@ -24,22 +24,22 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}/pr
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeprogress#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**masterProgress**|MasterProgress| |
-|**nodeGroupProgresses**|NodeGroupProgress[]| |
-### NodeGroupProgress
+|**masterProgress**|[MasterProgress](describeprogress#masterprogress)| |
+|**nodeGroupProgresses**|[NodeGroupProgress[]](describeprogress#nodegroupprogress)| |
+### <div id="nodegroupprogress">NodeGroupProgress</div>
 |名称|类型|描述|
 |---|---|---|
-|**nodeGroupId**|String|节点组 id|
+|**nodeGroupId**|String|工作节点组 id|
 |**action**|String|操作类型, upgrade, downgrade, rollback|
-|**totalCount**|Integer|总node个数|
-|**updatedCount**|Integer|升级完成node个数|
-### MasterProgress
+|**totalCount**|Integer|总工作节点个数|
+|**updatedCount**|Integer|升级完成工作节点个数|
+### <div id="masterprogress">MasterProgress</div>
 |名称|类型|描述|
 |---|---|---|
 |**action**|String|操作类型 upgrade,rollback,downgrade 等|

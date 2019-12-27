@@ -33,22 +33,26 @@ items:
       href: Cluster/abortUpgrade.md
   - name: 节点组
     items:
-    - name: 创建节点组
+    - name: 创建工作节点组
       href: NodeGroup/createNodeGroup.md
-    - name: 删除节点组
+    - name: 删除工作节点组
       href: NodeGroup/deleteNodeGroup.md
-    - name: 查询节点组详情
+    - name: 查询工作节点组详情
       href: NodeGroup/describeNodeGroup.md
-    - name: 查询节点组列表
+    - name: 查询工作节点组列表
       href: NodeGroup/describeNodeGroups.md
-    - name: 修改节点组属性
+    - name: 修改工作节点组属性
       href: NodeGroup/modifyNodeGroup.md
     - name: 设置自动升级
       href: NodeGroup/setAutoRepair.md
-    - name: 设置节点组大小
+    - name: 设置工作节点组大小
       href: NodeGroup/setNodeGroupSize.md
-    - name: 回滚未升级完的节点组
+    - name: 回滚未升级完的工作节点组
       href: NodeGroup/rollbackNodeGroupUpgrade.md
+    - name: 设置工作节点组自动伸缩
+      href: NodeGroup/setNodeGroupCA.md
+    - name: 从工作节点组中删除指定实例
+      href: NodeGroup/deleteNodeInstances.md
   - name: 配额
     items:
     - name: 查询配额

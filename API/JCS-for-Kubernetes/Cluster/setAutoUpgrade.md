@@ -19,9 +19,9 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:se
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**autoUpgrade**|Boolean|True| |开启或者关闭集群自动升级，开启时必须指定 maintenancePolicy|
-|**maintenanceWindow**|MaintenanceWindowSpec|False| |开启集群自动升级, 必须配置集群维护策略|
+|**maintenanceWindow**|[MaintenanceWindowSpec](setautoupgrade#maintenancewindowspec)|False| |开启集群自动升级, 必须配置集群维护策略|
 
-### MaintenanceWindowSpec
+### <div id="maintenancewindowspec">MaintenanceWindowSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**periodType**|String|False| |daily, weekly, monthly， 默认 weekly|

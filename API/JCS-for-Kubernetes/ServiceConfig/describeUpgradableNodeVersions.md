@@ -24,14 +24,14 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}/up
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeupgradablenodeversions#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**ndoeVersions**|NodeVersion[]| |
-### NodeVersion
+|**ndoeVersions**|[NodeVersion[]](describeupgradablenodeversions#nodeversion)| |
+### <div id="nodeversion">NodeVersion</div>
 |名称|类型|描述|
 |---|---|---|
 |**version**|String|节点版本号|
