@@ -47,7 +47,9 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 |参数|说明 
 :--|:---
-|Topic |Topic名称，用户自定义即可
-|Patitions |Topic的分区数，≥1，适当的分区数可以提高吞吐量
-|Replication Factor |副本数，用于保障kafka的高可用
-
+|Delete Topic|删除Topic
+|Reassign Partitions |平衡集群负载，可为assigned replica中选举一个新的leader，还可改变partition中的assigned replica
+|Add Partitions |增加分区
+|Update Config |Topic配置信息更新
+|Manual Partition Assignments |手动为每个分区下的副本分配broker，如下如，完成后点击Save Partition Assigment即可
+|Create Partition Assignments |系统自动为每个分区下的副本分配broker
