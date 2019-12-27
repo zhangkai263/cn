@@ -10,7 +10,9 @@ items:
     - name: 产品功能
       herf: Introduction/Features.md    
     - name: 应用场景 
-      herf: Introduction/Application-Scenarios.md    
+      herf: Introduction/Application-Scenarios.md   
+    - name: 限制说明 
+      herf: Introduction/Restrictions.md
 - name: 产品定价
   items:
     - name: 计费概述
