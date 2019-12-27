@@ -110,10 +110,10 @@ items:
            - name: Python WSGI Web 服务迁移至函数服务
              href: Operation-Guide/use-cases/wsgi.md
   
-  - name: 开发者工具
-    items:
-      - name: SCA CLI
-        href: Developer-tools/SCA/sca-overview.md 
+  - name: 开发者工具                   
+    items:                           
+      - name: SCA CLI                           
+        href: Developer-tools/SCA/sca-overview.md                                  
   
   - name: 常见问题
     href: FAQ.md  
@@ -136,4 +136,4 @@ items:
   - name: 相关资源
     status: 0
     items:
-
+    
