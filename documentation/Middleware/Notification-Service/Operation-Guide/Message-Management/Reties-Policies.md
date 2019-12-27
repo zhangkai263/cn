@@ -37,7 +37,7 @@
 
 控制台设置
 
-图
+![创建](../../../../../image/Internet-Middleware/Notification-Service/传输重试策略1.png)
 
 SDK设置-JSON 预览
 
