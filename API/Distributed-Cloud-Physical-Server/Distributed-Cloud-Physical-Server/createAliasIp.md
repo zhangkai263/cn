@@ -20,12 +20,12 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
 |**aliasIpSpec**|[AliasIpSpec](#aliasipspec)|True| |别名IP配置|
 
-### <div id="aliasipspec">AliasIpSpec</div>
+### <div id="AliasIpSpec">AliasIpSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**instanceId**|String|False| |实例ID|
 |**aliasIps**|[AliasIpInfo[]](#aliasipinfo)|False| |别名ip配置|
-### <div id="aliasipinfo">AliasIpInfo</div>
+### <div id="AliasIpInfo">AliasIpInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**id**|String|False| |主CIDR或次要CIDR id|
@@ -37,17 +37,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**successList**|[AliasIpSuccessInfo[]](#aliasipsuccessinfo)| |
 |**errorList**|[AliasIpErrorInfo[]](#aliasiperrorinfo)| |
-### <div id="aliasiperrorinfo">AliasIpErrorInfo</div>
+### <div id="AliasIpErrorInfo">AliasIpErrorInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**cidr**|String|cidr段|
 |**message**|String|错误信息|
-### <div id="aliasipsuccessinfo">AliasIpSuccessInfo</div>
+### <div id="AliasIpSuccessInfo">AliasIpSuccessInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**aliasIpId**|String|别名IP id|

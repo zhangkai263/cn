@@ -26,11 +26,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceStock
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**devicesStock**|[ResourceStock[]](#resourcestock)| |
-### <div id="resourcestock">ResourceStock</div>
+### <div id="ResourceStock">ResourceStock</div>
 |名称|类型|描述|
 |---|---|---|
 |**deviceType**|String|实例类型, 如 edcps.c.normal1|
