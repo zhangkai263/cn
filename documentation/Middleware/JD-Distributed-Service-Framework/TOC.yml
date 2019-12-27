@@ -21,8 +21,6 @@ items:
   items:
     - name: 计费概述
       herf: Pricing/Billing-Overview.md
-    - name: 购买流程
-      herf: Pricing/Purchase-Process.md 
 - name: 入门指南
   items:
     - name: 服务使用概述
@@ -49,8 +47,8 @@ items:
           herf: Operation-Guide/APP-Manage/APPList.md        
         - name: 云主机中部署应用
           herf: Operation-Guide/APP-Manage/APPDeloy.md
-  #      - name: K8S中部署应用
-  #       herf: Operation-Guide/APP-Manage/APPDeloyK8S.md
+        - name: K8S中部署应用
+          herf: Operation-Guide/APP-Manage/APPDeloyK8S.md
         - name: 部署组
           herf: Operation-Guide/APP-Manage/Deploy-Group.md
         - name: Agent安装
