@@ -23,7 +23,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}/s
 |**listenerId**|String|False| |监听器Id|
 |**filters**|[Filter[]](#filter)|False| |serverId - 后端服务器ID，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -36,14 +36,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}/s
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**servers**|[Server[]](#server)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="server">Server</div>
+### <div id="Server">Server</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverId**|String|服务器ID|

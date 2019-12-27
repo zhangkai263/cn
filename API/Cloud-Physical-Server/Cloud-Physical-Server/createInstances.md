@@ -37,7 +37,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
 |**instanceSpec**|[InstanceSpec](#instancespec)|True| |描述云物理服务器配置|
 
-### <div id="instancespec">InstanceSpec</div>
+### <div id="InstanceSpec">InstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**az**|String|True| |可用区, 如 cn-east-1|
@@ -62,7 +62,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
 |**charge**|[ChargeSpec](#chargespec)|True| |计费配置|
-### <div id="chargespec">ChargeSpec</div>
+### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
@@ -77,7 +77,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceIds**|String[]| |

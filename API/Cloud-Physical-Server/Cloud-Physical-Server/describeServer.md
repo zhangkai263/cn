@@ -26,11 +26,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}/s
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**server**|[Server](#server)|后端服务器详细信息|
-### <div id="server">Server</div>
+### <div id="Server">Server</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverId**|String|服务器ID|

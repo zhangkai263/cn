@@ -25,11 +25,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**listener**|[Listener](#listener)|监听器详细信息|
-### <div id="listener">Listener</div>
+### <div id="Listener">Listener</div>
 |名称|类型|描述|
 |---|---|---|
 |**listenerId**|String|监听器ID|

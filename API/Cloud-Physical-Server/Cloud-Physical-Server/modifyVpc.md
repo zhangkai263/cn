@@ -29,11 +29,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**vpc**|[Vpc](#vpc)|私有网络详细信息|
-### <div id="vpc">Vpc</div>
+### <div id="Vpc">Vpc</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-north-1|

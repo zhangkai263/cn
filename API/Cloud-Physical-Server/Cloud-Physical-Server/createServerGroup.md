@@ -20,7 +20,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
 |**serverGroupSpec**|[ServerGroupSpec](#servergroupspec)|True| |虚拟服务器组配置|
 
-### <div id="servergroupspec">ServerGroupSpec</div>
+### <div id="ServerGroupSpec">ServerGroupSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**loadBalancerId**|String|False| |负载均衡ID|
@@ -32,7 +32,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverGroupId**|String|服务器组ID|

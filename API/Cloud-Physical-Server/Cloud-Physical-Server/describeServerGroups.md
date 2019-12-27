@@ -23,7 +23,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 |**loadBalancerId**|String|False| |负载均衡ID|
 |**filters**|[Filter[]](#filter)|False| |serverGroupId   - 虚拟服务器组ID，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -36,14 +36,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverGroups**|[ServerGroup[]](#servergroup)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="servergroup">ServerGroup</div>
+### <div id="ServerGroup">ServerGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡ID|

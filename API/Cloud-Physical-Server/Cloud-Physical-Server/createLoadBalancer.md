@@ -20,7 +20,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
 |**loadBalancerSpec**|[LoadBalancerSpec](#loadbalancerspec)|True| |负载均衡配置|
 
-### <div id="loadbalancerspec">LoadBalancerSpec</div>
+### <div id="LoadBalancerSpec">LoadBalancerSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**netType**|String|True| |网络类型，取值public|
@@ -31,7 +31,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs
 |**applyElasticIp**|Boolean|True| |是否申请弹性公网Ip|
 |**bandwidth**|Integer|True| |带宽|
 |**charge**|[ChargeSpec](#chargespec)|True| |计费配置|
-### <div id="chargespec">ChargeSpec</div>
+### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
@@ -46,7 +46,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡实例ID|

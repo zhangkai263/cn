@@ -29,7 +29,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:resetPa
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|重置结果|
