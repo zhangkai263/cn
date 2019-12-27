@@ -25,11 +25,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverGroup**|[ServerGroup](#servergroup)|服务器组详细信息|
-### <div id="servergroup">ServerGroup</div>
+### <div id="ServerGroup">ServerGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡ID|

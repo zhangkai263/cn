@@ -27,7 +27,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡ID|

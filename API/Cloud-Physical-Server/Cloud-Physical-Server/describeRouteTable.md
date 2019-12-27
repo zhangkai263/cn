@@ -25,11 +25,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**routeTable**|[RouteTable](#routetable)|路由表详细信息|
-### <div id="routetable">RouteTable</div>
+### <div id="RouteTable">RouteTable</div>
 |名称|类型|描述|
 |---|---|---|
 |**routeTableId**|String|路由表ID|
@@ -38,7 +38,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**name**|String|名称|
 |**createTime**|String|创建时间|
 |**routes**|[Route[]](#route)|路由规则|
-### <div id="route">Route</div>
+### <div id="Route">Route</div>
 |名称|类型|描述|
 |---|---|---|
 |**destinationCidr**|String|目标网段|

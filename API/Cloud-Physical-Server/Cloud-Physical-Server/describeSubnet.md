@@ -25,11 +25,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnets/{subnetId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**subnet**|[Subnet](#subnet)|子网详细信息|
-### <div id="subnet">Subnet</div>
+### <div id="Subnet">Subnet</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-1|

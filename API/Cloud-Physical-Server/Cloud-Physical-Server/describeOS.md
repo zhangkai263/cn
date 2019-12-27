@@ -27,11 +27,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/os
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**oss**|[Os[]](#os)| |
-### <div id="os">Os</div>
+### <div id="Os">Os</div>
 |名称|类型|描述|
 |---|---|---|
 |**osTypeId**|String|操作系统系统类型ID|

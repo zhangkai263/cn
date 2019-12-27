@@ -25,11 +25,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**elasticIp**|[ElasticIp](#elasticip)|弹性公网IP详细信息|
-### <div id="elasticip">ElasticIp</div>
+### <div id="ElasticIp">ElasticIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-tz1|
@@ -45,7 +45,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**aliasIpId**|String|别名IP id|
 |**aliasIp**|String|别名IP ip|
 |**charge**|[Charge](#charge)|计费信息|
-### <div id="charge">Charge</div>
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

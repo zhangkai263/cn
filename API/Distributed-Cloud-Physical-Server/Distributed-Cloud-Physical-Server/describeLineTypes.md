@@ -24,11 +24,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**lineTypes**|[LineType[]](#linetype)| |
-### <div id="linetype">LineType</div>
+### <div id="LineType">LineType</div>
 |名称|类型|描述|
 |---|---|---|
 |**lineType**|String|链路类型|

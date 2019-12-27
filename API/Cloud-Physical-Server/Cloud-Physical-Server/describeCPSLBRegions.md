@@ -21,17 +21,17 @@ https://cps.jdcloud-api.com/v1/cpslbRegions
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**regions**|[Region[]](#region)| |
-### <div id="region">Region</div>
+### <div id="Region">Region</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如 cn-east-1|
 |**regionName**|String|地域名称，如 华东一区|
 |**azs**|[Az[]](#az)|可用区列表|
-### <div id="az">Az</div>
+### <div id="Az">Az</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码，如 cn-east-1|
