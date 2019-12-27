@@ -44,32 +44,38 @@ SDK推荐您使用AWS SNS SDK, 京东云队列服务支持了AWS SNS SDK的接�
 
 
 
-以Java SDK为例进行说明，其他方式及开发语言请参考[其他章节](../SDK-Rerference/Overview.md)。
+以Go SDK为例进行说明，其他方式及开发语言请参考[其他章节](../SDK-Rerference/SDK-Overview.md)。
 
-1.以Maven方式引入依赖
+1.安装AWS SDK for Go
 
 ```
-<dependency>  
-    <groupId>com.amazonaws</groupId>  
-    <artifactId>aws-java-sdk-sns</artifactId>  
-    <version>x.x.x</version>      
-     //设置为 Java SDK for Amazon SNS 的最新版本号 
-</dependency>
+go get github.com/aws/aws-sdk-go
+
 ```
-
-关于 Java SDK for Amazon SNS 的最新版本号，请[查看](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sns)。
-
-或者下载[AWS SDK](https://aws.amazon.com/cn/sdk-for-java/)自行添加。
 
 2.初始化，将AK&SK、接入点地址和Region信息填入。
 
-```
-  final String accessKey = "your accesskey";
-  final String secretKey = "your secretkey";
-  final String endpoint = "your region endpoint";
-  final String region = "your region";
-   
-  待编辑
+
+```Go
+
+var ses *session.Session
+ regionId := Config().Region
+ accessKey := Config().AccountConfig.AccessKey
+ secretKey := Config().AccountConfig.SecretKey
+ endPoint := Config().JnsServerConfig.JnsServer
+
+ses, _ = session.NewSession(&aws.Config{
+   Region: aws.String(regionId),
+   Credentials: credentials.NewStaticCredentials(accessKey, secretKey, ""),
+   Endpoint: aws.String(endPoint),
+   //DisableSSL: aws.Bool(true),
+  })
+
+ _, err := ses.Config.Credentials.Get()
+ if err != nil {
+  log.Fatal("凭据创建失败")
+ }
+ client := sns.New(ses)
                   
    
 ```
