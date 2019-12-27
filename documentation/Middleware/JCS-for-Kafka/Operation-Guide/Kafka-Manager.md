@@ -17,10 +17,20 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 ### 操作说明
 1. 在实例列表页面，点击操作列的“Kafka Manager”可跳转至当前实例的Kafka Manager页面。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/Kafka-Manager.png)
+
 2. 点击实例名称进入详情页面，可查看“Topic”和“Brokers”。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image1.png)
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image2.png)
+
 3. Topic管理</br>
 
 1). 新建Topic</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image3.png)
 
 点击上方Topic下拉菜单，点击Create填写相应参数创建topic，主要参数说明如下：</br>
 
@@ -33,14 +43,27 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 2). 查看Topic</br>
 
 点击Topic后的数字，可进行topic列表的查看。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image4.png)
+
 在Topic列表页，可查看Topic名称、分区数、Broker数、副本数等相关信息。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image5.png)
+
 点击Topic名称，可进一步查看具体信息。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image6.png)
+
 
 3). 重新分区</br>
 
 在Topic具体信息页面，点击“Generate Partition Assignments”可完成相应Topic和Broker的重新分区。</br>
 
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image7.png)
+
 4). 增加分区</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image8.png)
 
 在Topic具体信息页面，点击“Add Partitions”可增加分区。</br>
 
@@ -61,7 +84,13 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 点击Broker后的数字，可查看集群id、Host、端口等列表信息。</br>
 
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image9.png)
+
 在列表信息页面，点击相应id号，可查看其详细信息及其对应的Topic等信息。</br>
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image10.png)
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image11.png)
 
 5. Consumer管理</br>
 
@@ -69,8 +98,12 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 集群列表页面点击顶部“Consumers”可查看Consumer Group相关信息。点击Consumer Group列表的某个组，会显示这个Consumer Group中在消耗的Topic列表，包括分区覆盖率，和总延迟量。
 
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image11.png)
+
 2). Consumer查看
 
 进入Consumer Group列表页，点击某个Topic名称可以详细查看此Topic的具体Consumer，包括数据总量、消费进度、延迟量等。
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image12.png)
 
 Kafka-manager的更多用法和指引请参考 [官方文档](https://github.com/yahoo/kafka-manager)。</br>
