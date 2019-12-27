@@ -16,9 +16,9 @@ items:
   - name: 产品定价
     items:
       - name: 计费概述
-        href: Pricing/Billing-Overview.md
+        href: Prising/Billing-Overview.md
       - name: 计费规则
-        href: Pricing/Billing-Rules.md
+        href: Prising/Billing-Rules.md
   - name: 入门指南
     items:
       - name: 概览
