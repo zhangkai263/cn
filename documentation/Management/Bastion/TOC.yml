@@ -22,17 +22,17 @@ items:
   - name: 入门指南
     items:
       - name: 概览
-        href: Getting-Started/Getting-Started.md
+        href: Getting-started/Getting-Started.md
       - name: 登录堡垒机系统
-        href: Getting-Started/Login-Bastion.md
+        href: Getting-started/Login-Bastion.md
       - name: 导入京东云云主机
-        href: Getting-Started/Import-ECS.md
+        href: Getting-started/Import-ECS.md
       - name: 导入京东云IAM子用户
-        href: Getting-Started/Import-IAM.md
+        href: Getting-started/Import-IAM.md
       - name: 创建运维规则并授权
-        href: Getting-Started/Create-Rules.md
+        href: Getting-started/Create-Rules.md
       - name: 主机运维
-        href: Getting-Started/Login-Instance.md
+        href: Getting-started/Login-Instance.md
         
   - name: 操作指南
     items:
