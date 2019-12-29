@@ -5,3 +5,5 @@
 ```
 请注意：实例删除后，数据无法恢复，请您谨慎操作。 
 ```
+
+![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/删除实例.png)
