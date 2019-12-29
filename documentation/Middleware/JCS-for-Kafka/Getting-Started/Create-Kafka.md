@@ -19,7 +19,7 @@
 * “实例版本”：当前版本支持V1.0.1、V0.10.2。</br>
 * “节点规格”：可以根据具体业务情况选择不同云主机规格。</br>
 * “存储规格”：可以根据具体业务情况选择不同存储规格。</br>
-* “节点数量”：支持工单方式提升节点配额。</br> 
+* “节点数量”：一个节点为一个Broker，支持工单方式提升节点配额。</br> 
 6.指定实例的网络规格相关参数，包括“私有网络”、“子网”。</br>
 * “私有网络”： 京东公有云上自定义的逻辑隔离的网络空间，更多说明请参见[私有网络功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-features)。</br>
 * “子网”： 子网是所属VPC IP地址范围内的 IP 地址块，更多说明请参见[子网功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。</br>
