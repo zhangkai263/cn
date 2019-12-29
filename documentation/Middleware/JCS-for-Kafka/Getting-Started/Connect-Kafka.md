@@ -15,3 +15,6 @@ ssh 用户名@公网IP
 curl -XGET 内网域名/_cat
 ```
 
+### 通过客户端访问
+消息队列Kafka版完全兼容原生Kafka，支持所有原生API，详细使用方式请参考[官方指南](https://kafka.apache.org/documentation/#api)。
+
