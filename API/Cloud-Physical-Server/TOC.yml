@@ -41,18 +41,12 @@
             href: Cloud-Physical-Server/resetPassword.md
           - name: describeInstances
             href: Cloud-Physical-Server/describeInstances.md
-          - name: deleteInstance
-            href: Cloud-Physical-Server/deleteInstance.md
           - name: associateElasticIp
             href: Cloud-Physical-Server/associateElasticIp.md
           - name: disassociateElasticIp
             href: Cloud-Physical-Server/disassociateElasticIp.md
           - name: describeInstanceMonitorInfo
             href: Cloud-Physical-Server/describeInstanceMonitorInfo.md
-          - name: describeInstanceQuota
-            href: Cloud-Physical-Server/describeInstanceQuota.md
-          - name: describeRenewalResourceList
-            href: Cloud-Physical-Server/describeRenewalResourceList.md
       - name: 地域相关接口
         items:
           - name: describeRegiones
@@ -69,10 +63,6 @@
             href: Cloud-Physical-Server/describeElasticIp.md
           - name: modifyElasticIpBandwidth
             href: Cloud-Physical-Server/modifyElasticIpBandwidth.md
-          - name: deleteelasticIp
-            href: Cloud-Physical-Server/deleteelasticIp.md
-          - name: describeElasticIpQuota
-            href: Cloud-Physical-Server/describeElasticIpQuota.md
       - name: 子网相关接口
         items:
           - name: describeBasicSubnet
@@ -131,10 +121,6 @@
             href: Cloud-Physical-Server/startLoadBalancer.md
           - name: stopLoadBalancer
             href: Cloud-Physical-Server/stopLoadBalancer.md
-          - name: deleteLoadBalancer
-            href: Cloud-Physical-Server/deleteLoadBalancer.md
-          - name: describeLoadBalancerQuota
-            href: Cloud-Physical-Server/describeLoadBalancerQuota.md
           - name: associateElasticIpLB
             href: Cloud-Physical-Server/associateElasticIpLB.md
           - name: disassociateElasticIpLB
@@ -167,8 +153,6 @@
             href: Cloud-Physical-Server/addServers.md
           - name: describeServers
             href: Cloud-Physical-Server/describeServers.md
-          - name: describeServer
-            href: Cloud-Physical-Server/describeServer.md
           - name: modifyServer
             href: Cloud-Physical-Server/modifyServer.md
           - name: removeServer
