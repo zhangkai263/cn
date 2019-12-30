@@ -82,6 +82,8 @@ items:
     href: Api-Gateway-Terms-Of-Service.md
   - name: API网关服务等级协议（SLA）
     href: Api-Gateway-Level-Agreements-SLA.md
+  - name: API中心服务条款
+    href: API-Center-Service-Terms-Of-Service.md   
   - name: 云物理服务器服务协议
     href: Cloud-Physics-Server-Service-Clause.md
   - name: 云物理服务器服务等级协议（SLA）
@@ -186,4 +188,8 @@ items:
     href: Cloud-Cabinet-Service-Level-Agreements-SLA.md
   - name: 互联网数据中心用户入网责任书
     href: IDC-User-Internet-Access-Responsibility-Statement.md
+  - name: 云服务网格服务条款
+    href: Mesh-Service-Terms-Of-Service.md
+  - name: 智能边缘安全服务条款
+    href: Intelligent-Edge-Security-Terms-Of-Service.md   
     
