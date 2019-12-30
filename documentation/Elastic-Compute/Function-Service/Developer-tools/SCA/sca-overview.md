@@ -7,7 +7,7 @@ sca cli 通过一个函数模板配置文件template.yaml，完成函数资源�
 
 ## 运行环境
 
-sca cli支持Linux运行；    
+sca cli支持Linux、Mac运行；    
 sca cli基于go开发完成，您只需下载安装包，即可使用。    
 
 ## 开始使用
@@ -17,7 +17,16 @@ sca cli基于go开发完成，您只需下载安装包，即可使用。
 执行以下命令一步完成下载安装：           
 `·curl -O https://raw.githubusercontent.com/jdcloud-serverless/sca/master/hack/install.sh && chmod +777 install.sh && sh install.sh && source ~/.bashrc`     
 
-或者，您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)后，执行`chmod +x sca`命令给予可执行权限后运行。  
+### 安装 sca cli（Mac）
+
+执行以下命令一步完成下载安装：    
+
+` curl -O https://raw.githubusercontent.com/jdcloud-serverless/sca/master/hack/install-mac.sh && chmod +x install-mac.sh && sh install-mac.sh && source ~/.bashrc  `
+
+
+此外，您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)后，执行`chmod +x sca`命令给予可执行权限后运行。  
+
+
 
 ### 查询sca版本
 ` sca version `      
