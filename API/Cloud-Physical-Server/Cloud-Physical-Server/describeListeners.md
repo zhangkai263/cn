@@ -21,9 +21,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
 |**name**|String|False| |名称|
 |**loadBalancerId**|String|False| |负载均衡实例ID，精确匹配|
-|**filters**|[Filter[]](#filter)|False| |listenerId - 监听器ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describelisteners#filter)|False| |listenerId - 监听器ID，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -33,17 +33,17 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describelisteners#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**listeners**|[Listener[]](#listener)| |
+|**listeners**|[Listener[]](describelisteners#listener)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="Listener">Listener</div>
+### <div id="listener">Listener</div>
 |名称|类型|描述|
 |---|---|---|
 |**listenerId**|String|监听器ID|

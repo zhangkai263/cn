@@ -21,9 +21,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
 |**name**|String|False| |名称|
 |**loadBalancerId**|String|False| |负载均衡ID|
-|**filters**|[Filter[]](#filter)|False| |serverGroupId   - 虚拟服务器组ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describeservergroups#filter)|False| |serverGroupId   - 虚拟服务器组ID，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -33,17 +33,17 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeservergroups#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**serverGroups**|[ServerGroup[]](#servergroup)| |
+|**serverGroups**|[ServerGroup[]](describeservergroups#servergroup)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="ServerGroup">ServerGroup</div>
+### <div id="servergroup">ServerGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡ID|

@@ -22,14 +22,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeroutetable#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**routeTable**|[RouteTable](#routetable)|路由表详细信息|
-### <div id="RouteTable">RouteTable</div>
+|**routeTable**|[RouteTable](describeroutetable#routetable)|路由表详细信息|
+### <div id="routetable">RouteTable</div>
 |名称|类型|描述|
 |---|---|---|
 |**routeTableId**|String|路由表ID|
@@ -37,8 +37,8 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**vpcId**|String|私有网络ID|
 |**name**|String|名称|
 |**createTime**|String|创建时间|
-|**routes**|[Route[]](#route)|路由规则|
-### <div id="Route">Route</div>
+|**routes**|[Route[]](describeroutetable#route)|路由规则|
+### <div id="route">Route</div>
 |名称|类型|描述|
 |---|---|---|
 |**destinationCidr**|String|目标网段|

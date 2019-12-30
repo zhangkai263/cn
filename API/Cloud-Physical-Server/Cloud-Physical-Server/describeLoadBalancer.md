@@ -22,14 +22,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeloadbalancer#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**loadBalancer**|[LoadBalancer](#loadbalancer)|负载均衡实例详细信息|
-### <div id="LoadBalancer">LoadBalancer</div>
+|**loadBalancer**|[LoadBalancer](describeloadbalancer#loadbalancer)|负载均衡实例详细信息|
+### <div id="loadbalancer">LoadBalancer</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡实例ID|
@@ -44,8 +44,8 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}
 |**name**|String|名称|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
-|**charge**|[Charge](#charge)|计费配置|
-### <div id="Charge">Charge</div>
+|**charge**|[Charge](describeloadbalancer#charge)|计费配置|
+### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

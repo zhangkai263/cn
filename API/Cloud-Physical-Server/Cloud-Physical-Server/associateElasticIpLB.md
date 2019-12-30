@@ -25,10 +25,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}:associat
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](associateelasticiplb#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|绑定结果|

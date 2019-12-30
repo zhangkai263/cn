@@ -24,10 +24,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](modifyservergroup#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡ID|
