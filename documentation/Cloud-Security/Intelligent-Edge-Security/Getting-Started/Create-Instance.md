@@ -14,7 +14,7 @@
 1. 登录 [智能边缘安全控制台](https://edge-security-console.jdcloud.com/overview)。
 2. 在“概览页”页面，点击 **立刻购买** ，进入“购买实例”页面。 
 ![创建实例](/image/Intelligent-Edge-Security/创建实例.png)
-3.选择合适的线路和防护套餐，建议购买保底防护+弹性防护的组合方式。![创建实例2](/image/Intelligent-Edge-Security/创建实例2.png)
+3.选择合适安全防护套餐，建议购买保底防护+弹性防护的组合方式。![创建实例2](/image/Intelligent-Edge-Security/创建实例2.png)
 
 购买支付以后，即成功创建一个实例。
 
