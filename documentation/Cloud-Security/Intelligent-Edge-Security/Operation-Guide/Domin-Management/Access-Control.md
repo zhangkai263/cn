@@ -33,5 +33,5 @@
 
 ![IP黑名单](/image/Intelligent-Edge-Security/IP黑名单.png)
 
-- 可设置多个IP以及IP地址段，最多添加50个
-- 不能重复添加同一个IP
+- 可设置多个IP以及IP地址段，最多添加50个；
+- 不能重复添加同一个IP。

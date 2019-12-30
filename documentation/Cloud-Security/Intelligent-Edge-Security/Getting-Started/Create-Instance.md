@@ -1,6 +1,6 @@
 # 创建实例
 
-您可以通过智能边缘安全控制台或 API 快速创建智能边缘安全实例，关于实例的计费说明请参见“[价格总览](https://docs.jdcloud.com/cn/Intelligent-Edge-Security/Pricing/Price-Overview)”、“[计费规则](https://docs.jdcloud.com/cn/Intelligent-Edge-Security/Pricing/Billing-Rules)”。
+您可以通过智能边缘安全控制台或 API 快速创建智能边缘安全实例，关于实例的计费说明请参见“[价格总览](https://docs.jdcloud.com/cn/Intelligent-Edge-Security/Pricing/Price-Overview)”、“[计费规则](https://docs.jdcloud.com/cn/Intelligent-Edge-Security/Pricing/Price-Overview.md)”。
 
 本文介绍通过控制台创建智能边缘安全实例。
 
