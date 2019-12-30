@@ -12,12 +12,21 @@ sca cli基于go开发完成，您只需下载安装包，即可使用。
 
 ## 开始使用
 
-### 安装 sca cli（Linux/Mac）
+### 安装 sca cli（Linux）
 
 执行以下命令一步完成下载安装：           
 `·curl -O https://raw.githubusercontent.com/jdcloud-serverless/sca/master/hack/install.sh && chmod +777 install.sh && sh install.sh && source ~/.bashrc`     
 
-或者，您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)后，执行`chmod +x sca`命令给予可执行权限后运行。  
+### 安装 sca cli（Mac）
+
+执行以下命令一步完成下载安装：    
+
+` curl -O https://raw.githubusercontent.com/jdcloud-serverless/sca/master/hack/install-mac.sh && chmod +x install-mac.sh && sh install-mac.sh && source ~/.bashrc  `
+
+
+此外，您可以[下载安装包至本地](https://github.com/jdcloud-serverless/sca/releases)后，执行`chmod +x sca`命令给予可执行权限后运行。  
+
+
 
 ### 查询sca版本
 ` sca version `      
@@ -26,7 +35,14 @@ sca cli基于go开发完成，您只需下载安装包，即可使用。
 ### 配置账号信息  
 sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/config.md)，将JDCloud的账号信息同步至sca中。 
 
-` sca config  `        
+```
+#sca config
+[>] JDCould accountid = 11111(your acount id)
+[>] JDCould region = cn-north-1
+[>] JDCould access-key = 0123abcd(your ak)
+[>] JDCould secret-key = abcd0123(your sk)
+
+```       
 
 
 
@@ -90,17 +106,27 @@ Resources:
 ### 验证配置文件
  [验证template.yaml文件](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/validate.md)    
  
-`  sca validate  `        
+```
+# sca validate -t template.yaml
+validate success.
+```
 
 ### 本地测试
 通过 [本地调试函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/local.md) ，在部署前，用户可在本地的模拟环境中运行代码，发送模拟测试事件，验证函数执行，获取运行信息及日志。在运行本地调试前，需确保本地环境中已经安装并启动 Docker。  
 
-`   sca local  `  
+```
+#  sca local
+
+```  
+
 
 ### 打包部署
 根据指定的函数模板配置文件，将配置文件中的指定代码包、函数配置等信息， [打包部署到云端](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/deploy.md) 。 
 
-` sca deploy ` 
+```
+sca deploy -n test-function
+```
+
 
 ### 函数管理
 通过函数管理，您可以[查看云端函数列表](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_list.md)、[查询函数配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_info.md)，并可以[删除函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_delete.md)。               
@@ -111,11 +137,41 @@ Resources:
 ### 云端调用函数
 通过invoke命令用户可于本地[调用云端函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/invoke.md)，进行测试验证。
 
-` sca invoke `
+```
+sca invoke -n test-function
+
+```
 
 
 ### 云端日志
 通过[查询云端日志命令](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/logs.md)，您可以查询指定云端函数某时段内的执行日志。
 
-`  sca log  `                
+说明：查询云端日志，请先为函数配置日志集及日志主题，在template.yaml文件中配置LogSetID和LogTopicID，方可通过日志服务查询函数执行日志。
+```    
+      LogConfig:
+        LogSet: "LogSetID"
+        LogTopic: "LogTopicID"
+````
+
+示例：查询test-function函数最近600000秒日志：
+```
+# sca logs -n test-function -d 600000
+2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r Report Invoke boue3nfsqrshctda7hp792adjrap4r6r,Duration :7.54ms  BilledDuration: 100ms  Memory Size: 128 MB
+2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r End Invoke
+2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r {}
+2019-12-19T10:35:05+08:00 boue3nfsqrshctda7hp792adjrap4r6r Start Invoke
+2019-12-19T10:17:35+08:00 boudqumbcw08a43ri4aw86340n8a85ge Report Invoke boudqumbcw08a43ri4aw86340n8a85ge,Duration :6.03ms  BilledDuration: 100ms  Memory Size: 128 MB
+2019-12-19T10:17:35+08:00 boudqumbcw08a43ri4aw86340n8a85ge End Invoke
+2019-12-19T10:17:35+08:00 boudqumbcw08a43ri4aw86340n8a85ge {}
+2019-12-19T10:17:35+08:00 boudqumbcw08a43ri4aw86340n8a85ge Start Invoke
+2019-12-19T10:17:35+08:00 boudrskojdn2sidrihc59obk9dchnf46 Report Invoke boudrskojdn2sidrihc59obk9dchnf46,Duration :7.50ms  BilledDuration: 100ms  Memory Size: 128 MB
+2019-12-19T10:17:35+08:00 boudrskojdn2sidrihc59obk9dchnf46 End Invoke
+2019-12-19T10:17:35+08:00 boudrskojdn2sidrihc59obk9dchnf46 {}
+2019-12-19T10:17:35+08:00 boudrskojdn2sidrihc59obk9dchnf46 Start Invoke
+2019-12-18T17:31:32+08:00 botw3dovepe5iek2wap4ue5a6kverf5t Report Invoke botw3dovepe5iek2wap4ue5a6kverf5t,Duration :8.31ms  BilledDuration: 100ms  Memory Size: 128 MB
+2019-12-18T17:31:32+08:00 botw3dovepe5iek2wap4ue5a6kverf5t End Invoke
+2019-12-18T17:31:32+08:00 botw3dovepe5iek2wap4ue5a6kverf5t {u'base64OwnerPin': u'NTk0MDM1MjYzMDE5', u'resources': [], u'detail': {u'requestContext': {u'sourceIp': u'10.0.2.14', u'requestId': u'c6af9ac6-7b61-11e6-9a41-93e8deadbeef', u'identity': {u'user': u'', u'accountId': u'', u'authType': u'', u'apiKey': u''}, u'stage': u'test', u'apiId': u'testsvc'}, u'body': u'string of request payload', u'headers': {u'header': u'headerValue'}, u'pathParameters': {u'pathParam': u'pathValue'}, u'queryParameters': {u'queryParam': u'queryValue'}, u'path': u'api request path', u'httpMethod': u'GET/POST/DELETE/PUT/PATCH'}, u'source': u'apigateway', u'version': u'0', u'id': u'6a7e8feb-b491-4cf7-a9f1-bf3703467718', u'time': u'2006-01-02T15:04:05.999999999Z', u'detailType': u'ApiGatewayReceived', u'region': u'cn-north-1'}
+2019-12-18T17:31:32+08:00 botw3dovepe5iek2wap4ue5a6kverf5t Start Invoke
+
+```
 
