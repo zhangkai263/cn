@@ -183,7 +183,23 @@ Deploy function (test-function) success .
 通过函数管理，您可以[查看云端函数列表](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_list.md)、[查询函数配置](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_info.md)，并可以[删除函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/function_delete.md)。               
 `sca function list`  查看云端已存在函数资源的列表。   
 `sca function info`  查看已部署云端函数配置。             
-`sca function del`   删除已部署云端函数。          
+`sca function del`   删除已部署云端函数。     
+
+示例：查询云端test-function函数配置详情：
+``` 
+sca function info -n test-function   
+```
+```
++---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
+| FUNCTION NAME |          DESCRIPTION           | VERSION |  RUNTIME  | TIMEOUT | MEMORY SIZE |    HANDLER    |                                          CODE URL                                          |     CREATE TIME      |
++---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
+| test-function | This is a template of function | LATEST  | python3.6 | 300 s   | 128 MB      | index.handler | http://oss-function-hb.s3.cn-north-1.jcloudcs.com/jcloudiaas2%3Atest-function%3ALATEST.zip | 2019-12-30T03:10:32Z |
+|               | which name is "test-function"  |         |           |         |             |               |                                                                                            |                      |
++---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
+
+```
+
+
 
 ### 云端调用函数
 通过invoke命令用户可于本地[调用云端函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/invoke.md)，进行测试验证。
