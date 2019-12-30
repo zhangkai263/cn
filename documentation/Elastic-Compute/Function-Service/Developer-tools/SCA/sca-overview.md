@@ -76,7 +76,7 @@ sca cli 支持使用 Docker 容器管理工具启动和使用容器，作为在�
 ### 初始化项目       
 通过 [初始化项目](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/init.md) ，用户可快速创建一个简单的模板，包括代码文件、配置文件，基于模板可进一步进行配置及开发后，可直接打包部署云端。     
 
-示例：在当前目录初始化创建testproject（默认）工程，默认函数名称：test-function，运行时为：python3.6，您也可以通过配置参数创建：
+示例：在当前目录初始化创建testproject（默认）工程，默认函数名称：test-function，运行时：python3.6，您也可以通过配置参数创建：
 
 `  sca init   `  
 
