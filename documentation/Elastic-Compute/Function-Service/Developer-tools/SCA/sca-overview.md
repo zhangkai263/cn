@@ -48,7 +48,7 @@ sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverle
 
 
 
-### 安装Docker(执行local命令必须)
+### 安装Docker(local命令必须)
 
 sca cli 支持使用 Docker 容器管理工具启动和使用容器，作为在本地运行函数代码的环境。sca cli的 local 命令将会使用 Docker 的管理接口实现相关交互。     
 
