@@ -19,9 +19,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}/s
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**serverSpec**|[ServerSpec[]](#serverspec)|True| |后端服务器配置|
+|**serverSpec**|[ServerSpec[]](addservers#serverspec)|True| |后端服务器配置|
 
-### <div id="ServerSpec">ServerSpec</div>
+### <div id="serverspec">ServerSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**instanceId**|String|False| |后端云物理服务器ID|
@@ -31,10 +31,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/serverGroups/{serverGroupId}/s
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](addservers#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverIds**|String[]|后端服务器ID|

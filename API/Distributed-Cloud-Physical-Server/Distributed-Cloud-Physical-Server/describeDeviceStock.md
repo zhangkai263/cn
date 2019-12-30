@@ -23,14 +23,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceStock
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describedevicestock#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**devicesStock**|[ResourceStock[]](#resourcestock)| |
-### <div id="ResourceStock">ResourceStock</div>
+|**devicesStock**|[ResourceStock[]](describedevicestock#resourcestock)| |
+### <div id="resourcestock">ResourceStock</div>
 |名称|类型|描述|
 |---|---|---|
 |**deviceType**|String|实例类型, 如 edcps.c.normal1|

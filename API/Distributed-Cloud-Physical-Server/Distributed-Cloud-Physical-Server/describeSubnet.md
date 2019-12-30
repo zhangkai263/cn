@@ -22,14 +22,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets/{subnetId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describesubnet#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**subnet**|[Subnet](#subnet)|子网详细信息|
-### <div id="Subnet">Subnet</div>
+|**subnet**|[Subnet](describesubnet#subnet)|子网详细信息|
+### <div id="subnet">Subnet</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-tz1|
