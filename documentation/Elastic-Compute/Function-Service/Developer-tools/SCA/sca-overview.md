@@ -193,7 +193,7 @@ sca function info -n test-function
 +---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
 | FUNCTION NAME |          DESCRIPTION           | VERSION |  RUNTIME  | TIMEOUT | MEMORY SIZE |    HANDLER    |                                          CODE URL                                          |     CREATE TIME      |
 +---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
-| test-function | This is a template of function | LATEST  | python3.6 | 300 s   | 128 MB      | index.handler | http://oss-function-hb.s3.cn-north-1.jcloudcs.com/jcloudiaas2%3Atest-function%3ALATEST.zip | 2019-12-30T03:10:32Z |
+| test-function | This is a template of function | LATEST  | python3.6 | 300 s   | 128 MB      | index.handler | http://oss-function-hb.s3.cn-north-1.jcloudcs.com/xxxxxx%3Atest-function%3ALATEST.zip | 2019-12-30T03:10:32Z |
 |               | which name is "test-function"  |         |           |         |             |               |                                                                                            |                      |
 +---------------+--------------------------------+---------+-----------+---------+-------------+---------------+--------------------------------------------------------------------------------------------+----------------------+
 
