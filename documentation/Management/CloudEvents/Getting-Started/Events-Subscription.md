@@ -28,5 +28,6 @@
 
 当订阅对象中选择的报警规则发生告警时，指定的云主机进行重启，若报警未恢复，则云主机会不断进行重启。
 
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/CloudEvents/createCE01.jpg)
 
 
