@@ -8,5 +8,5 @@
 | 订阅者       | 可以创建订阅关系的用户。                                     |
 | 订阅终端     | 接收主题消息的终端节点。如果订阅终端类型为HTTP/S，则订阅终端为HTTP/S地址，如果订阅终端类型为SMS，则订阅终端为手机号码，如果订阅终端类型为Email，则订阅终端为邮箱地址。 |
 | 重试策略     | 通知服务在推送用户发送到主题的消息的时候，如果在尝试推送时无法成功传送消息，就会进行重试。用户可以为HTTP/S类型的终端订阅自定义重试策略。为其他类型的订阅设置了传输策略，[详情请查看](../Operation-Guide/Message-Management/Reties-Policies.md)。 |
-| 筛选策略     | 筛选策略使得订阅者可以获得其感兴趣的消息通知，而不是接收发布到该主题的每条消息，[详情请查看](../Operation-Guide/Subscription-Management/Filter-Policies.md)。 |
+| 筛选策略     | 筛选策略使得订阅者可以获得其感兴趣的消息通知，而不是接收发布到该主题的每条消息，[详情请查看](../Operation-Guide/Subscription-Management/Filtering-Policies.md)。 |
 | 原始消息传输 | 当订阅开启原始消息传输后，推送消息不包含通知服务JSON格式的元数据，只包含原始消息本身。 |
