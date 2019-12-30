@@ -161,7 +161,7 @@ Status: Image is up to date for jdccloudserverless/sca:python36
 ### 打包部署
 根据指定的函数模板配置文件，将配置文件中的指定代码包、函数配置等信息， [打包部署到云端](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/deploy.md) 。 
 
-示例：将当前目录template.yaml配置中的函数部署至云端，默认覆盖云端重名函数。
+示例：将当前目录template.yaml配置中的函数部署至云端，默认覆盖云端重名函数：
 ```
 sca deploy 
 ```
@@ -188,7 +188,7 @@ Deploy function (test-function) success .
 ### 云端调用函数
 通过invoke命令用户可于本地[调用云端函数](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/invoke.md)，进行测试验证。
 
-示例：本地测试云端test-function函数
+示例：本地测试云端test-function函数：
 ```
 sca invoke -n test-function
 
@@ -210,7 +210,7 @@ RequestId: bp4no1qq6sh2v13hpoed8vdpfqr84n05 		 Billed Duration: 100 ms 		Memory 
 ### 云端日志
 通过[查询云端日志命令](https://github.com/jdcloud-serverless/sca/blob/master/doc/usage/logs.md)，您可以查询指定云端函数某时段内的执行日志。
 
-说明：查询云端日志，请先为函数配置日志集及日志主题，在template.yaml文件中配置LogSetID和LogTopicID，方可通过日志服务查询函数执行日志。
+说明：查询云端日志，请先为函数配置日志集及日志主题，在template.yaml文件中配置LogSetID和LogTopicID，方可通过日志服务查询函数执行日志：
 ```    
       LogConfig:
         LogSet: "LogSetID"
