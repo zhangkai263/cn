@@ -188,6 +188,10 @@ items:
     href: Cloud-Cabinet-Service-Level-Agreements-SLA.md
   - name: 互联网数据中心用户入网责任书
     href: IDC-User-Internet-Access-Responsibility-Statement.md
+  - name: 京东云微服务平台（JDSF）服务条款
+    href: JDCloud-Distributed-Service-Framework-Terms-Of-Service.md
+  - name: 京东云微服务平台（JDSF）服务等级协议（SLA）
+    href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md  
   - name: 云服务网格服务条款
     href: Mesh-Service-Terms-Of-Service.md
   - name: 智能边缘安全服务条款
