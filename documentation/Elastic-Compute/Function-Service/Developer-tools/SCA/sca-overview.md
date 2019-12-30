@@ -51,8 +51,9 @@ sca安装完成后，进行[初始化配置](https://github.com/jdcloud-serverle
 ### 安装Docker(执行local命令必须)
 
 sca cli 支持使用 Docker 容器管理工具启动和使用容器，作为在本地运行函数代码的环境。sca cli的 local 命令将会使用 Docker 的管理接口实现相关交互。     
-如果您需要使用本地调试、运行能力，请确保 Docker 已正确安装。
-如果您当前不需要使用 Docker 或者计划稍后再安装 Docker 时，可跳过此步骤。
+
+- 如果您需要使用本地调试、运行能力，请确保 Docker 已正确安装。                          
+- 如果您当前不需要使用 Docker 或者计划稍后再安装 Docker 时，可跳过此步骤。                       
 
 #### 在 Mac 上安装 Docker
 | 版本                                 | 下载地址                                                     | 安装方式                                                     |
