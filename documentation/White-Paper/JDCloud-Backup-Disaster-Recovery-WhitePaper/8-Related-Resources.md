@@ -1,7 +1,7 @@
-# 备份和容灾技术白皮书下载链接
+# 澶囦唤鍜屽鐏炬妧鏈櫧鐨功涓嬭浇閾炬帴
 
-## 相关链接
+## 鐩稿叧閾炬帴
 
-京东云备份和容灾技术白皮书PDF下载链接如下：
+鍏充簬鏇村鐨勪含涓滀簯澶囦唤鍜屽鐏撅紝浠ュ強浜笢浜戝浠藉拰瀹圭伨鎶�鏈櫧鐨功PDF鐗堢殑鏌ョ湅涓庝笅杞斤紝鍙闂互涓嬮摼鎺ワ細
 
-- [备份和容灾技术白皮书](https://img1.jcloudcs.com/portal/whitepaper/BackupAndDisasterRecoveryTechnologies.pdf "备份和容灾技术白皮书")
+- [澶囦唤鍜屽鐏炬妧鏈櫧鐨功](https://img1.jcloudcs.com/portal/whitepaper/BackupAndDisasterRecoveryTechnologies.pdf "澶囦唤鍜屽鐏炬妧鏈櫧鐨功")
