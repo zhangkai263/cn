@@ -16,11 +16,9 @@
 5）在京东云-云编译中，对示例代码进行构建，构建过程中下载私有依赖包
 
 
-### Clone示例代码至代码托管
+### 将代码上传至代码托管
 
-代码示例地址为：https://code.jdcloud.com/devops-demo/java-demo.git
-
-请将此示例代码clone至代码托管中，代码托管的地址为：https://code.jdcloud.com/
+京东云的代码托管服务地址为：https://code.jdcloud.com/
 
 ### 在制品上传私有依赖包，获取私库配置
 
