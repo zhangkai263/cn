@@ -46,6 +46,8 @@
             href: Operation-Guide/Topic-Management/Manage-Topic.md
       - name: 订阅管理
         items:
+          - name: 订阅确认
+            href: Operation-Guide/Subscription-Management/Subscription-Confirm.md
           - name: 订阅筛选策略
             href: Operation-Guide/Subscription-Management/Filtering-Policies.md
       - name: 消息管理
