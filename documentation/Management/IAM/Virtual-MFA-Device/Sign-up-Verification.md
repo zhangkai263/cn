@@ -6,8 +6,8 @@
 
 登录问题请查看链接：[MFA登录验证常见问题](https://docs.jdcloud.com/cn/iam/mfa-faqs)
 
-![账号登录MFA扫码验证页](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/MFA扫码认证.png)
+![MFA扫码验证页](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/MFA扫码认证.png)
 
-![账号MFA验证码页面](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/MFA验证码认证.png)
+![MFA验证码页面](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/MFA验证码认证.png)
 
 
