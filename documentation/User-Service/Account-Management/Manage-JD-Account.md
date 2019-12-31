@@ -32,7 +32,9 @@
 
 京东云支持使用京东账号开通业务。使用京东账号登录时，请在登录页下方选择 “京东登录”。
 
-![](../../../image/User/Account-Mgmt/login2-1030.png)
+![](../../../image/User/Account-Mgmt/log1.2-1231.PNG)
+
+![](../../../image/User/Account-Mgmt/log4-1231.png)
 
 ![](../../../image/User/Account-Mgmt/log4.png)
 
