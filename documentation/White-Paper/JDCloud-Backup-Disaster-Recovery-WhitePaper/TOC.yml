@@ -11,8 +11,10 @@ items:
 - name: 系统容灾解决方案
   href: 4-System-Disaster-Recovery-Solution.md
 - name: 典型场景和行业解决方案
-  href: 5-Typical-Scenarious&Industry-Solutions.md
-- name: 总结&引用
-  href: 6&7-Summary&References.md
+  href: 5-Typical-Scenarious-and-Industry-Solutions.md
+- name: 总结
+  href: 6-Summary.md
+- name: 引用
+  href: 7-References.md
 - name: 备份和容灾技术白皮书下载链接
   href: 8-Related-Resources.md
