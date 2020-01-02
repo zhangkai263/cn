@@ -1,7 +1,7 @@
 # 创建裸金属云主机
 
 ## 官方镜像创建
-您可以在华北-北京地域使用2020年1月2日及之后提供的以下官方镜像：CentOS 7.2、CentOS 7.4及CentOS 7.6创建裸金属云主机。
+您可以在华北-北京地域使用2020年1月2日及之后提供的以下官方镜像：CentOS 7.2、CentOS 7.4及CentOS 7.6创建裸金属云主机。具体实例创建操作可参考[创建实例](https://docs.jdcloud.com/cn/virtual-machines/create-instance)。
 
 
 ## 私有镜像创建
