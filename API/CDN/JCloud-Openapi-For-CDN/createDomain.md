@@ -17,39 +17,42 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**avgFileSize**|Long|False| | |
-|**backSourceType**|String|False| |回源方式,只能是[https,http]中的一种,默认http|
-|**cdnType**|String|False| |点播域名的类型只能是[vod,download,web]中的一种|
-|**dailyBandWidth**|Long|False| |日带宽(Mbps)|
-|**defaultSourceHost**|String|False| | |
-|**domainSource**|DomainSourceInfo[]|False| | |
-|**httpType**|String|False| | |
-|**ipSource**|IpSourceInfo[]|False| | |
+|**x-jdcloud-channel**|String|False|cdn|域名来源cdn/cdn,video视频云|
+|**sourceType**|String|True| |回源类型只能是[ips,domain,oss]中的一种|
+|**cdnType**|String|True| |点播域名的类型只能是[vod,download,web]中的一种|
+|**backSourceType**|String|True| |回源方式,只能是[https,http]中的一种,默认http|
+|**dailyBandWidth**|Long|True| |日带宽(Mbps)|
+|**quaility**|String|False| |服务质量,只能是[good,general]中的一种,默认为good|
 |**maxFileSize**|Long|False| | |
 |**minFileSize**|Long|False| | |
-|**ossSource**|String|False| | |
-|**quaility**|String|False| |服务质量,只能是[good,general]中的一种,默认为good|
-|**sourceType**|String|False| |回源类型只能是[ips,domain,oss]中的一种|
 |**sumFileSize**|Long|False| | |
+|**avgFileSize**|Long|False| | |
+|**defaultSourceHost**|String|False| | |
+|**httpType**|String|False| | |
+|**ipSource**|[IpSourceInfo[]](createdomain#ipsourceinfo)|False| | |
+|**domainSource**|[DomainSourceInfo[]](createdomain#domainsourceinfo)|False| | |
+|**ossSource**|String|False| | |
+|**accelerateRegion**|String|False| |加速区域:(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
 
-### DomainSourceInfo
+### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domain**|String|False| | |
-|**priority**|Integer|False| | |
-|**sourceHost**|String|False| | |
-### IpSourceInfo
+|**priority**|Integer|True| |优先级（1-10）|
+|**sourceHost**|String|False| |回源host|
+|**domain**|String|True| |回源域名|
+### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ip**|String|False| | |
-|**master**|Integer|False| | |
-|**ratio**|Double|False| | |
+|**master**|Integer|True| |1：主；2：备|
+|**ip**|String|True| |回源IP|
+|**ratio**|Double|False| |占比|
+
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

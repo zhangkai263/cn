@@ -3,7 +3,7 @@
 
 ## 描述
 删除指定用户下某个 registry.
-
+</br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
@@ -29,9 +29,9 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

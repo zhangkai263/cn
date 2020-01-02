@@ -8,6 +8,7 @@
 * 计算优化型：[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
+* 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
 * GPU型：[GPU标准型](instance-type-family#user-content-6)
 
 ## 通用型
@@ -15,13 +16,15 @@
 
 ### 通用共享型
 <div id="user-content-1"></div>
+
 **规格类型特点：**
 
 * vCPU与内存比为1:1或1:2
 * 处理器：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
-* 支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 访问量较小的个人网站初级阶段
 	* 微服务
@@ -36,15 +39,18 @@
 
 ### 通用标准型
 <div id="user-content-2"></div>
+
 **规格类型特点:**
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器  
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
-* 支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 各种类型和规模的企业级应用
 	* 中小型数据系统、缓存、搜索集群
@@ -52,6 +58,22 @@
 	* 计算集群、依赖内存的数据处理
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.n3.medium|1|4|1
+|g.n3.large|2|8|2
+|g.n3.xlarge|4|16|4
+|g.n3.2xlarge|8|32|4
+|g.n3.3xlarge|12|48|4
+|g.n3.4xlarge|16|64|4
+|g.n3.6xlarge|24|96|4
+|g.n3.8xlarge|32|128|4
+|g.n3.12xlarge|48|192|4
+|g.n3.16xlarge|64|256|4
+|g.n3.18xlarge|72|288|4
 
 第二代
 
@@ -84,16 +106,20 @@ g.n1.8xlarge|32|128|4 |	 |
 计算优化型当前提供计算优化标准型，为您提供高性能的计算资源，可满足。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
 <div id="user-content-3"></div>
+
 ### 计算优化标准型
+
 **规格类型特点：**
 
-* vCPU与内存比为1:2（c.n1.xlarge_m	、c.n1.2xlarge_s、c.n1.2xlarge_m及c.n1.4xlarge_m规格除外）
+* vCPU与内存比约为1:2
 * 处理器：
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
-* 支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 批处理工作负载
 	* Web前端服务器
@@ -102,6 +128,21 @@ g.n1.8xlarge|32|128|4 |	 |
 	* 高性能科学和工程应用
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|c.n3.large|2|4|2
+|c.n3.xlarge|4|8|4
+|c.n3.2xlarge|8|16|4
+|c.n3.3xlarge|12|24|4
+|c.n3.4xlarge|16|32|4
+|c.n3.6xlarge|24|48|4
+|c.n3.8xlarge|32|64|4
+|c.n3.12xlarge|48|96|4
+|c.n3.16xlarge|64|128|4
+|c.n3.18xlarge|72|176|4
 
 第二代
 
@@ -135,23 +176,38 @@ g.n1.8xlarge|32|128|4 |	 |
 内存优化型当前提供内存优化标准型，适用于存在大量内存操作、查找和计算的应用。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
 <div id="user-content-4"></div>
+
 ### 内存优化标准型
 
 **规格类型特点：**
 
-* vCPU与内存比为1:8（m.n1.medium规格除外）
+* vCPU与内存比约为1:8
 * 处理器：
+	* 第三代：2.6 GHz主频的Intel Xeon  Gold 6267（Cascade Lake）处理器 
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
-* 支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 高性能数据库、内存数据库
 	* 数据分析与挖掘、分布式内存缓存
 	* Hadoop、Spark群集以及其他企业大内存需求应用
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|m.n3.large|2|16|2
+|m.n3.xlarge|4|32|4
+|m.n3.2xlarge|8|64|4
+|m.n3.3xlarge|12|96|4
+|m.n3.4xlarge|16|128|4
+|m.n3.6xlarge|24|192|4
+|m.n3.8xlarge|32|256|4
 
 第二代
 
@@ -183,6 +239,7 @@ g.n1.8xlarge|32|128|4 |	 |
 高频计算型当前提供高频计算通用型，为您提供高性能的计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
 <div id="user-content-5"></div>
+
 ### 高频计算通用型
 
 **规格类型特点：**
@@ -192,9 +249,10 @@ g.n1.8xlarge|32|128|4 |	 |
 * 处理器：
 	* 第二代：3.2 GHz主频的Intel Xeon Gold 6146（Skylake）处理器
 	* 第一代：3.2 GHz主频的Intel Xeon E5-2667 v4（Broadwell）处理器
-* 支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 高性能Web前端服务器
 	* 高性能科学和工程应用
@@ -222,11 +280,88 @@ g.n1.8xlarge|32|128|4 |	 |
 |h.g1.4xlarge|16|64|4
 |h.g1.6xlarge|24|96|4
 
+## 存储优化型
+
+存储优化型当前提供存储优化IO型及存储优化大数据型，为您提供高性能的本地存储资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+
+<div id="user-content-7"></div>
+
+### 存储优化IO型
+
+**规格类型特点：**
+
+* vCPU与内存比为1:4
+* 提供低时延高IO的本地存储
+* 处理器：
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* 高性能关系数据库
+	* NoSQL数据库
+	* ElasticSearch等场景
+
+**实例规格**
+
+第一代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.i1.xlarge|4|16|1 x 894GB SSD|4
+|s.i1.2xlarge|8|32|2 x 894GB SSD|4
+|s.i1.4xlarge|16|64|4 x 894GB SSD|4
+|s.i1.8xlarge|32|128|8 x 894GB SSD|4
+|s.i1.14xlarge|56|224|14 x 894GB SSD|4
+
+<div id="user-content-8"></div>
+
+### 存储优化大数据型
+
+**规格类型特点：**
+
+* vCPU与内存比约为1:4
+* 提供低时延高容量及高吞吐的本地存储
+* 处理器：
+	* 第二代：2.1 GHz主频的Intel Xeon Silver 4116（Skylake）处理器
+	* 第一代：2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* Hadoop MapReduce、HDFS、Hive、HBase
+	* 其他海量数据存储区及计算的业务场景
+
+**实例规格**
+
+第二代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储，GB）|网卡多队列
+:---|:---|:---|:---|:---
+|s.d2.xlarge|4|22|1 x 9313 HDD|4
+|s.d2.2xlarge|8|44|2 x 9313 HDD|4
+|s.d2.4xlarge|16|88|4 x 9313 HDD|4
+|s.d2.8xlarge|32|176|8 x 9313 HDD|4
+|s.d2.10xlarge|40|220|14 x 9313 HDD|4
+
+第一代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储，GB）|网卡多队列
+:---|:---|:---|:---|:---
+|s.d1.xlarge|4|22|1 x 5587 HDD|4
+|s.d1.2xlarge|8|44|2 x 5587 HDD|4
+|s.d1.4xlarge|16|88|4 x 5587 HDD|4
+|s.d1.8xlarge|32|176|8 x 5587 HDD|4
+|s.d1.10xlarge|40|220|14 x 5587 HDD|4
+
 ## GPU型
 
-GPU型当前提供GPU标准型，为您提供高性能的一够计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
 <div id="user-content-6"></div>
+
 ### GPU标准型
 
 **规格类型特点：**
@@ -239,9 +374,10 @@ GPU型当前提供GPU标准型，为您提供高性能的一够计算资源。�
 * 处理器：
 	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
 	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
-* 支持本地数据盘（临时存储），请注意 **关机时本地数据盘数据将被清空** ，并支持以下两种云硬盘：
-	* 高效云盘
-	* SSD云盘
+* 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
 * 适用场景：
 	* 科学计算
 	* 机器学习
@@ -251,17 +387,17 @@ GPU型当前提供GPU标准型，为您提供高性能的一够计算资源。�
 
 第一代：
 
-实例规格|vCPU（核）|内存（GB）|GPU|本地数据盘（临时存储）|网卡多队列
+实例规格|vCPU（核）|内存（GB）|GPU|本地数据盘（临时存储，GB）|网卡多队列
 :---|:---|:---|:---|:---|:---|
-|p.n1p40.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 960GB SSD|4
-|p.n1p40.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 960GB SSD|4
-|p.n1p40.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 960GB SSD|4
-|p.n1p40h.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 1200GB HDD|4
-|p.n1p40h.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 1200GB HDD|4
-|p.n1p40h.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 1200GB HDD|4
-|p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 6000GB HDD|4
-|p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 6000GB HDD|4
-|p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 6000GB HDD|4
+|p.n1p40.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 894 SSD|4
+|p.n1p40.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 894 SSD|4
+|p.n1p40.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 894 SSD|4
+|p.n1p40h.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 1117 HDD|4
+|p.n1p40h.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 1117 HDD|4
+|p.n1p40h.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 1117 HDD|4
+|p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 5587 HDD|4
+|p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 5587 HDD|4
+|p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 5587 HDD|4
 
 
 请注意：

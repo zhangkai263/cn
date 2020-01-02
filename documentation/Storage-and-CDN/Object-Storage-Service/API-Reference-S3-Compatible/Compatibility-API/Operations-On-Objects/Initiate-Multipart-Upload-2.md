@@ -7,7 +7,7 @@
 ### 语法
 ```
 POST /ObjectName?uploads HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -25,19 +25,15 @@ Content-MD5|对报文主体进行MD5算法获得128位二进制数，在通过Ba
 Content-Type|表示请求中的MIME类型。<br>Type: String<br>Default: binary/octet-stream<br>Valid Values: MIME types<br>Constraints: None|否
 Expect|客户端使用Expect告知OSS，期望出现某种特定的行为。若OSS无法做出回应而发生错误时，请求报文主体将不会发送。<br>Type: String<br>Default: None<br>Valid Values: 100-continue<br>Constraints: None|否
 Expires|Object缓存过期时间。<br>Type: String<br>Default: None<br>Constraints: None|否
-x-amz-storage-class| Object存储类型，如果未指定，默认为标准存储。<br>Type: Enum<br>Default: STANDARD<br>Valid Values: STANDARD、REDUCED_REDUNDANCY|否
+x-amz-storage-class| Object存储类型，如果未指定，默认为标准存储。<br>Type: Enum<br>Default: STANDARD<br>Valid Values: STANDARD、GLACIER、REDUCED_REDUNDANCY、STANDARD_IA|否
+x-amz-meta-\*|以x-amz-meta- 前缀开头的Header为用户自定义Header。自定义Header的大小（包括key、value）UTF-8编码下不能超过2K。|否
 
 ### 请求元素
 无请求元素
 
 ## 响应
 ### 响应Header
-
-名称|描述
----|---
-x-amz-abort-date|若该Bucket配置了中止未完成的分段上传的生命周期策略（Put Bucket Lifecycle上线后支持），并且前缀与该Object名称匹配，则响应包括此Header，另还包括x-amz-abort-rule-id标头，该标头提供定义此操作的生命周期配置规则的ID。<br>Type: String
-x-amz-abort-rule-id|该Header与x-amz-abort-date一起返回，用于标识生命周期规则。<br>String
-x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线后支持)，响应中将包含包含该Header。<br>Type: String
+无特殊Header
 
 ### 响应元素
 
@@ -52,7 +48,7 @@ UploadID|分片上传ID。<br>Type: String<br>Ancestors: InitiateMultipartUpload
 ### 请求示例
 ```
 POST /example-object?uploads HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<region>.jdcloud-oss.com
 Date: Mon, 1 Nov 2010 20:34:56 GMT
 Authorization: <authorization string>
 ```

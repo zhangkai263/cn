@@ -23,9 +23,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/azs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeAzs#Result)| |
 
-### Result
+### <a name="Result">Result</a>
 |名称|类型|描述|
 |---|---|---|
 |**azs**|String[]|可用区的ID的列表|

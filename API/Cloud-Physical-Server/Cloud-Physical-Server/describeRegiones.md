@@ -10,34 +10,35 @@ GET
 ## 请求地址
 https://cps.jdcloud-api.com/v1/regions
 
-无
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**networkType**|String|False| |网络类型basic/vpc, 默认basic|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](describeregiones#result)| |
 |**requestId**|String| |
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**regions**|Region[]| |
-### Region
+|**regions**|[Region[]](describeregiones#region)| |
+### <div id="region">Region</div>
 |名称|类型|描述|
 |---|---|---|
-|**azs**|Az[]|可用区列表|
 |**region**|String|地域代码, 如 cn-east-1|
 |**regionName**|String|地域名称，如 华东一区|
-### Az
+|**azs**|[Az[]](describeregiones#az)|可用区列表|
+### <div id="az">Az</div>
 |名称|类型|描述|
 |---|---|---|
+|**region**|String|地域代码，如 cn-east-1|
 |**az**|String|可用区代码，如 cn-east-1a|
 |**azName**|String|可用区名称|
-|**region**|String|地域代码，如 cn-east-1|
 
 ## 返回码
 |返回码|描述|

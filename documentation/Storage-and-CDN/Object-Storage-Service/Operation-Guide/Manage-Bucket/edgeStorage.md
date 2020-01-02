@@ -1,3 +1,4 @@
+*该功能目前处于内部测试阶段，暂未对外开放*
 # 边缘存储
 
 边缘存储（Edge Storage）底层利用IPFS（星际文件系统）搭建的系统，拥有如下特性：
@@ -8,26 +9,37 @@
 
 3.天然的P2P网络分发特性，节约用户带宽成本。
 
+* 使用场景：[监控视频存储](edgeStorage#user-content-1)、[物联网边缘存储](edgeStorage#user-content-2)、[数据存储和备份](edgeStorage#user-content-3)、[互联网信息安全](edgeStorage#user-content-4)、[区块链应用](edgeStorage#user-content-5)
+* 控制台操作过程：[开启“边缘存储”服务](edgeStorage#user-content-6)、[OSS同步至边缘存储](edgeStorage#user-content-7)、[边缘存储同步至OSS](edgeStorage#user-content-8)
+* API统一信息：[API统一信息](edgeStorage#user-content-9)
+* API详情：[同步至边缘存储](edgeStorage#user-content-10)、[边缘存储同步至OSS](edgeStorage#user-content-11)、[查看文件管理](edgeStorage#user-content-12)、[查看同步日志](edgeStorage#user-content-13)
+* 常见问题：[常用命令及API列表](edgeStorage#user-content-14)、[非公网IPFS文件能否同步至OSS？](edgeStorage#user-content-15)
+
 ## 使用场景
 
 当您有以下需要时，设置边缘存储可能对您有所帮助： 
 
+<div id="user-content-1"></div>
 * 监控视频存储：城市交通，学校，政府，工业园区，商业楼宇，智能住宅，酒店等有监控需求的场所。以上场景共性是分布着大量的监控设备，由于本地存储受限，无法满足视频数据量日益增大的场景。
 
+<div id="user-content-2"></div>
 * 物联网边缘存储：物联网的边缘设备增多，边缘节点的存储需求也增大。作为离线存储的应用场景，在边缘节点上部署存储服务，将数据加速存储在边缘节点中，并终将数据持久化到保存用户的数据中心或云端。
 
+<div id="user-content-3"></div>
 * 数据存储和备份：应用于日志文件，图片，音视频，静态网站托管，备份和归档，私有云存储等场景。同时应用于本地数据备份，跨云厂商数据备份等场景。
 
+<div id="user-content-4"></div>
 * 互联网信息安全：近年来，国内社会发生过多次因黑客入侵而导致的规模用户信息泄漏事件，都对用户造成了很大的损失和影响，如果采用的去中心化的存储架构，所有数据访问都分布在不同的节点，想要入侵就要攻击所有节点，从而有效地保证了数据的安全，保护了用户的隐私。
 
+<div id="user-content-5"></div>
 * 区块链应用：作为链下数据存储的底层支撑。
 
 
-
-## 在控制台中操作过程如下：
+## 控制台操作过程
 
 
 1.开启“边缘存储”服务
+<div id="user-content-6"></div>
 
 1）登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->边缘存储
 
@@ -42,6 +54,7 @@
 备注：确认“边缘存储”服务是已经开启的状态，才能在进行以下操作。
 
 2.OSS同步至边缘存储
+<div id="user-content-7"></div>
 
 1）登入控制台->对象存储->空间管理->进入某个Bucket->Object管理
 
@@ -58,6 +71,7 @@
 4）单击“确定”按钮，页面右上出现任务数量及查看详情。
 
 3.边缘存储同步至OSS。
+<div id="user-content-8"></div>
 
 1）登入控制台->对象存储->边缘存储->文件管理
 
@@ -77,6 +91,7 @@
 
 
 ## API统一信息
+<div id="user-content-9"></div>
 
 - 服务域名：apigw-internal.cn-north-1.jcloudcs.com
 - 认证: [JD API 网关](https://www.jdcloud.com/cn/products/api-gateway) 统一认证
@@ -84,6 +99,7 @@
 ## API 详情
 
 ### 1.同步至边缘存储
+<div id="user-content-10"></div>
 
 POST /v1/regions/{region}/tasks HTTP/1.1
 
@@ -162,6 +178,7 @@ HTTP/1.1 200 OK
 |taskIds| []string|	任务 taskId 数组|
 
 ### 2.边缘存储同步至OSS
+<div id="user-content-11"></div>
 
 POST /v1/regions/{region}/tasks HTTP/1.1
 
@@ -240,6 +257,7 @@ HTTP/1.1 200 OK
 |taskIds| []string|	任务 taskId 数组|
 
 ### 3.查看文件管理
+<div id="user-content-12"></div>
 
 GET /v1/regions/{region}/files?total=100&marker=xxx&filter=<CID> HTTP/1.1
 
@@ -321,6 +339,7 @@ x-jdcloud-pin: "henry",
 |deletedTime|string|预计删除时间，UTC|
 
 ### 4.查看同步日志
+<div id="user-content-13"></div>
 
 GET /v1/regions/{region}/tasks?migrationType=1&state=1&marker=xxxxx HTTP/1.1
 
@@ -422,6 +441,7 @@ x-jdcloud-pin: "userPin"
 
 ## 常见问题
 ### 1.常用命令及API列表
+<div id="user-content-14"></div>
 ipfs add file 本地添加文件到 IPFS 网络
 
 ipfs object get <cid> 查询文件 object 信息
@@ -433,4 +453,5 @@ ipfs cat <cid> file 下载 IPFS 网络中的文件到本地
 API列表：https://docs.ipfs.io/reference/api/cli/
 
 ### 2.非公网IPFS文件能否同步至OSS？
+<div id="user-content-15"></div>
 不能，同步任务会失败。

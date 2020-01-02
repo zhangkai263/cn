@@ -17,16 +17,16 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/httpHeader
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**headerName**|String|False| |header名|
 |**headerType**|String|False| |header类型[resp,req]|
+|**headerName**|String|False| |header名|
 |**headerValue**|String|False| |header值|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

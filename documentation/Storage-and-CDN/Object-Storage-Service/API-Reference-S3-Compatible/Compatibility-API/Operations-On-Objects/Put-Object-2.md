@@ -9,7 +9,7 @@
 ### 语法
 ```
 PUT /ObjectName HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -30,15 +30,12 @@ Content-MD5|对报文主体进行MD5算法获得128位二进制数，再通过Ba
 Content-Type|表示请求中的MIME类型。<br>Type: String<br>Default: binary/octet-stream<br>Valid Values: MIME types<br>Constraints: None|否
 Expect|客户端使用Expect告知OSS，期望出现某种特定的行为。若OSS无法做出回应而发生错误时，请求报文主体将不会发送。<br>Type: String<br>Default: None<br>Valid Values: 100-continue<br>Constraints: None|否
 Expires|Object缓存过期时间。<br>Type: String<br>Default: None<br>Constraints: None|否
-x-amz-storage-class| Object存储类型，如果未指定，默认为标准存储。<br>Type: Enum<br>Default: STANDARD<br>Valid Values: STANDARD、REDUCED_REDUNDANCY|否
+x-amz-storage-class| Object存储类型，如果未指定，默认为标准存储。<br>Type: Enum<br>Default: STANDARD<br>Valid Values: STANDARD、 GLACIER、REDUCED_REDUNDANCY、STANDARD_IA|否
+x-amz-meta-\*|以x-amz-meta- 前缀开头的Header为用户自定义Header。自定义Header的大小（包括key、value）UTF-8编码下不能超过2K。|否
 
 ## 响应
 ### 响应Header
-除了通用响应Header外，还包括以下响应Header。
-
-名称|描述
----|---
-x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线后支持)，响应中将包含包含该Header。<br>Type: String
+无特殊Header
 
 ### 响应元素
 无特殊响应元素
@@ -47,7 +44,7 @@ x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线
 ### 请求示例
 ```
 PUT /my-image.jpg HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<region>.jdcloud-oss.com 
 Date: Wed, 12 Oct 2009 17:50:00 GMT
 Authorization: <authorization string>
 Content-Type: text/plain
@@ -67,8 +64,3 @@ Content-Length: 0
 Connection: close
 Server: JDCloudOSS
 ```
-
-
-
-
-

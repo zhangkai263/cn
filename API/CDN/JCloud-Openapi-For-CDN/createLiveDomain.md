@@ -1,4 +1,4 @@
-# createLiveDomain
+# CreateLiveDomain
 
 
 ## 描述
@@ -14,34 +14,36 @@ https://cdn.jdcloud-api.com/v1/liveDomain:batchCreate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backHttpType**|String|False| | |
-|**backSourceType**|String|False| |回源类型，目前只能为rtmp|
-|**defaultSourceHost**|String|False| |默认回源host|
-|**domainSource**|DomainSourceInfo[]|False| | |
-|**ipSource**|IpSourceInfo[]|False| | |
-|**playDomain**|String|False| |播放域名|
+|**x-jdcloud-channel**|String|False|cdn|域名来源cdn/cdn,video视频云|
+|**playDomain**|String|True| |播放域名|
 |**publishDomain**|String|False| |创建推流域名时，必传推流域名|
-|**siteType**|String|False| |站点类型pull(拉流)push(推流)|
-|**sourceType**|String|False| |回源类型只能是[ips,domain]中的一种|
+|**sourceType**|String|True| |回源类型只能是[ips,domain]中的一种|
+|**backHttpType**|String|False| | |
+|**defaultSourceHost**|String|False| |默认回源host|
+|**siteType**|String|True| |站点类型pull(拉流)push(推流)|
+|**backSourceType**|String|False| |回源类型，目前只能为rtmp|
+|**ipSource**|[IpSourceInfo[]](batchcreatelivedomain#ipsourceinfo)|False| | |
+|**domainSource**|[DomainSourceInfo[]](batchcreatelivedomain#domainsourceinfo)|False| | |
+|**accelerateRegion**|String|False| |加速区域(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
 
-### DomainSourceInfo
+### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domain**|String|False| | |
-|**priority**|Integer|False| | |
-|**sourceHost**|String|False| | |
-### IpSourceInfo
+|**priority**|Integer|True| |优先级（1-10）|
+|**sourceHost**|String|False| |回源host|
+|**domain**|String|True| |回源域名|
+### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ip**|String|False| | |
-|**master**|Integer|False| | |
-|**ratio**|Double|False| | |
+|**master**|Integer|True| |1：主；2：备|
+|**ip**|String|True| |回源IP|
+|**ratio**|Double|False| |占比|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

@@ -21,8 +21,8 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

@@ -2,7 +2,12 @@
 
 **业务场景**
 
-华北地区，两个VPC有通过内网IP的通信需求，详情如下：
+在一个地域内，当超过3个以上的VPC之间需要两两互通时，通过VPC对等连接配置操作步骤繁琐，就可以通过多个VPC都与同一个边界网关互联、简化配置。不过通过边界网关互联的VPC互通，网络延迟会比VPC对等连接要高。
+
+本配置指导主要利用VPC路由表和边界网关路由表的静态路由配置为例，动态传播路由方式请参考专线服务的相关具体文档。
+本文档以华北地区两个VPC有通过内网IP的通信需求为例，提供配置指导。
+
+详情如下：
 
 - 第一个VPC
 
@@ -71,8 +76,9 @@
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Border-Gateway-Connects-VPC/Step4-2.png)
 
-6) 配置完路由表需将路由表绑定至需要互通的子网，并在第二个VPC中使用同样的步骤创建并配置路由表RTBforBGWBtoA。
+6) 配置完路由表需将路由表绑定至需要互通的子网。
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Border-Gateway-Connects-VPC/Step4-3.png) 
+7）在第二个VPC中使用同样的步骤创建并配置路由表RTBforBGWBtoA。
 
-配置完成后两端VPC即可通过内网IP建立连接。同理，可以通过边界网关连通同地域下多个私有网络。
+配置完成后两端VPC即可通过内网IP建立连接。同理，可以通过边界网关连通同地域下多个私有网络(支持VPC Hub功能)。

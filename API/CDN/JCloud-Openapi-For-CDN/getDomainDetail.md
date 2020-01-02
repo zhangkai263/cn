@@ -21,57 +21,64 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](getdomaindetail#result)| |
 |**requestId**|String| |
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**allStatus**|String| |
 |**allowNoReferHeader**|String| |
 |**allowNullReferHeader**|String| |
-|**archiveNo**|String| |
-|**auditStatus**|String| |
-|**avgFileSize**|Long| |
-|**backSourceType**|String| |
-|**certificate**|String| |
-|**cname**|String| |
-|**created**|String| |
 |**dailyBandWidth**|Integer| |
-|**defaultSourceHost**|String|默认的回源host|
-|**domain**|String| |
 |**forbiddenType**|String| |
-|**httpType**|String| |
-|**jumpType**|String| |
 |**maxFileSize**|Long| |
 |**minFileSize**|Long| |
-|**modified**|String| |
+|**sumFileSize**|Long| |
+|**avgFileSize**|Long| |
 |**referList**|String[]| |
 |**referType**|String| |
-|**rsaKey**|String| |
-|**source**|BackSourceInfo| |
-|**sourceType**|String| |
-|**status**|String| |
-|**sumFileSize**|Long| |
-|**type**|String| |
-### BackSourceInfo
-|名称|类型|描述|
-|---|---|---|
-|**domain**|DomainSourceInfo[]| |
-|**ips**|IpSourceInfo[]| |
-|**ossSource**|String| |
-### DomainSourceInfo
-|名称|类型|描述|
-|---|---|---|
 |**domain**|String| |
-|**priority**|Integer| |
-|**sourceHost**|String| |
-### IpSourceInfo
+|**cname**|String| |
+|**archiveNo**|String| |
+|**type**|String| |
+|**created**|String| |
+|**modified**|String| |
+|**status**|String| |
+|**auditStatus**|String| |
+|**source**|[BackSourceInfo](getdomaindetail#backsourceinfo)| |
+|**sourceType**|String| |
+|**defaultSourceHost**|String|默认的回源host|
+|**backSourceType**|String| |
+|**httpType**|String| |
+|**certificate**|String| |
+|**rsaKey**|String| |
+|**jumpType**|String| |
+|**certFrom**|String| |
+|**sslCertId**|String| |
+|**certName**|String| |
+|**certType**|String| |
+|**sslCertStartTime**|String| |
+|**sslCertEndTime**|String| |
+|**accelerateRegion**|String|加速区域|
+### <div id="backsourceinfo">BackSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**ip**|String| |
-|**master**|Integer| |
-|**ratio**|Double| |
+|**ips**|[IpSourceInfo[]](getdomaindetail#ipsourceinfo)| |
+|**domain**|[DomainSourceInfo[]](getdomaindetail#domainsourceinfo)| |
+|**ossSource**|String| |
+### <div id="domainsourceinfo">DomainSourceInfo</div>
+|名称|类型|描述|
+|---|---|---|
+|**priority**|Integer|优先级（1-10）|
+|**sourceHost**|String|回源host|
+|**domain**|String|回源域名|
+### <div id="ipsourceinfo">IpSourceInfo</div>
+|名称|类型|描述|
+|---|---|---|
+|**master**|Integer|1：主；2：备|
+|**ip**|String|回源IP|
+|**ratio**|Double|占比|
 
 ## 返回码
 |返回码|描述|

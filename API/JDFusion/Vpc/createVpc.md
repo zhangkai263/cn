@@ -17,33 +17,27 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_vpcs
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateVpcReq|True| |创建VPC|
-|**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
-|**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
+|**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
+|**authorization**|String|True| |获取方式请参考签名算法指导文档|
+|**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
+|**vpc**|VpcInfo|True| |创建VPC|
 
-### CreateVpcReq
+### VpcInfo
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**vpc**|CreateVpc|False| | |
-### CreateVpc
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**addressPrefix**|String|False| |地址范围|
-|**cidrBlock**|String|True| |VPC的网段|
-|**cloudID**|String|False| |所属云提供商ID|
-|**createdTime**|String|False| |创建时间|
-|**description**|String|False| |VPC 描述|
 |**id**|String|False| |Vpc的Id|
 |**name**|String|False| |私有网络名称|
-|**userCidr**|String|False| |用户侧网络的网段|
+|**cidrBlock**|String|False| |地址范围|
+|**description**|String|False| |VPC 描述|
+|**createdTime**|String|False| |创建时间|
+|**cloudID**|String|False| |所属云提供商ID|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|请求ID|
 |**result**|Result| |
+|**requestId**|String|请求ID|
 
 ### Result
 |名称|类型|描述|
@@ -52,15 +46,15 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_vpcs
 ### ResourceTFInfo
 |名称|类型|描述|
 |---|---|---|
-|**body**|String|请求体|
-|**cloudId**|String|cloud ID|
-|**createdTime**|String|创建时间|
-|**provider**|String|cloud provider|
-|**result**|String|执行结果|
-|**status**|String|状态|
-|**updateTime**|String|更新时间|
-|**userId**|String|user ID|
 |**uuid**|String|uuid|
+|**body**|String|请求体|
+|**status**|String|状态|
+|**result**|String|执行结果|
+|**createdTime**|String|创建时间|
+|**updateTime**|String|更新时间|
+|**provider**|String|cloud provider|
+|**cloudId**|String|cloud ID|
+|**userId**|String|user ID|
 
 ## 返回码
 |返回码|描述|

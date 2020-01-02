@@ -21,6 +21,8 @@
             herf: Account-Management/resetPassword.md
           - name: revokePrivilege
             herf: Account-Management/revokePrivilege.md
+          - name: createSuperAccount
+            herf: Account-Management/createSuperAccount.md
 
       - name: 审计管理
         items:
@@ -67,8 +69,8 @@
             herf: Binlog/describeBinlogDownloadURL.md
           - name: describeBinlogs
             herf: Binlog/describeBinlogs.md
-          - name: describeBinlogs
-            herf: Binlog/describeBinlogs.md
+          - name: clearBinlogs
+            herf: Binlog/clearBinlogs.md
 
       - name: 单库上云
         items:
@@ -89,6 +91,8 @@
             herf: Cross-region-synchronization-service/deleteBackupSynchronicity.md
           - name: describeBackupSynchronicities
             herf: Cross-region-synchronization-service/describeBackupSynchronicities.md
+          - name: createInstanceByTimeInCrossRegion
+            herf: Cross-region-synchronization-service/createInstanceByTimeInCrossRegion.md
 
       - name: 数据库管理
         items:
@@ -118,6 +122,8 @@
             herf: Instance-Management/createInstanceByTime.md
           - name: createInstanceFromBackup
             herf: Instance-Management/createInstanceFromBackup.md
+          - name: createROInstance
+            herf: Instance-Management/createROInstance.md
           - name: deleteInstance
             herf: Instance-Management/deleteInstance.md
           - name: describeBackupPolicy
@@ -132,6 +138,8 @@
             href: Instance-Management/disableInternetAccess.md
           - name: enableInternetAccess
             href: Instance-Management/enableInternetAccess.md
+          - name: exchangeInstanceDns
+            href: Instance-Management/exchangeInstanceDns.md
           - name: failoverInstance
             herf: Instance-Management/failoverInstance.md
           - name: modifyBackupPolicy
@@ -142,17 +150,42 @@
             herf: Instance-Management/modifyInstanceName.md
           - name: modifyInstanceSpec
             herf: Instance-Management/modifyInstanceSpec.md
+          - name: modifyParameterGroup
+            herf: Instance-Management/modifyParameterGroup.md
           - name: rebootInstance
             herf: Instance-Management/rebootInstance.md
           - name: restoreInstance
             herf: Instance-Management/restoreInstance.md
 
+      - name: 日志管理
+        items:
+          - name: describeLogDownloadURL
+            herf: LOG/describeLogDownloadURL.md
+          - name: describeLogs
+            herf: LOG/describeLogs.md
+          - name: updateLogDownloadURLInternal
+            herf: LOG/updateLogDownloadURLInternal.md
+
       - name: 参数组管理
         items:
+          - name: copyParameterGroup
+            herf: Parameter-Group/copyParameterGroup.md
+          - name: createParameterGroup
+            herf: Parameter-Group/createParameterGroup.md
           - name: deleteParameterGroup
             herf: Parameter-Group/deleteParameterGroup.md
+          - name: describeParameterGroupAttachedInstances
+            herf: Parameter-Group/describeParameterGroupAttachedInstances.md
+          - name: describeParameterGroupParameters
+            herf: Parameter-Group/describeParameterGroupParameters.md
+          - name: describeParameterGroups
+            herf: Parameter-Group/describeParameterGroups.md
+          - name: describeParameterModifyRecords
+            herf: Parameter-Group/describeParameterModifyRecords.md
           - name: modifyParameterGroupAttribute
             herf: Parameter-Group/modifyParameterGroupAttribute.md
+          - name: modifyParameterGroupParameters
+            herf: Parameter-Group/modifyParameterGroupParameters.md
 
       - name: 参数管理
         items:
@@ -163,6 +196,8 @@
      
       - name: 性能统计
         items:
+          - name: describeActiveQueryPerformance
+            herf: Performance-Statistics/describeActiveQueryPerformance.md
           - name: describeIndexPerformance
             herf: Performance-Statistics/describeIndexPerformance.md
           - name: describeQueryPerformance
@@ -174,10 +209,21 @@
 
       - name: SQL 拦截
         items:
+          - name: describeIntercept
+            herf: SQL-Interception/describeIntercept.md
+          - name: describeInterceptResult
+            herf: SQL-Interception/describeInterceptResult.md
           - name: disableIntercept
             herf: SQL-Interception/disableIntercept.md
           - name: enableIntercept
             herf: SQL-Interception/enableIntercept.md
+
+      - name: 透明数据加密
+        items:
+          - name: describeTde
+            herf: TDE/describeTde.md
+          - name: enableTde
+            herf: TDE/enableTde.md
             
       - name: 白名单
         items:
@@ -190,6 +236,10 @@
     items:
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
+      - name: Percona 实例规格
+        href: Instance-Specifications/Instance-Specifications-Percona.md
+      - name: MariaDB 实例规格
+        href: Instance-Specifications/Instance-Specifications-MariaDB.md
       - name: SQL Server 实例规格
         href: Instance-Specifications/Instance-Specifications-SQLServer.md
 

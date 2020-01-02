@@ -1,4 +1,4 @@
-# 使用存储网关
+# 使用NFS访问
 
 部署存储网关并启动完成后，可使用Linux实例作为NFS客户端访问存储网关，存储网关与各来访NFS客户端需部署在同一VPC下。
 
@@ -45,3 +45,5 @@ umount <local-directory>
 **5.使用限制**
 
 存储网关当前不支持文件锁、软链接、硬链接等操作，NFS客户端需使用root用户执行访问操作，暂不支持其他用户访问。
+
+注：NFS Client若为CentOS 7.1/CentOS 7.2系统，需手动升级系统内核，相关说明请参考[运维指南](../Operation-Guide/Operation-Maintenance.md)。
