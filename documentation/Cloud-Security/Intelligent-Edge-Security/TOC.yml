@@ -1,57 +1,57 @@
-name: ÖÇÄÜ±ßÔµ°²È«
+name: æ™ºèƒ½è¾¹ç¼˜å®‰å…¨
   href:
   items:
-  - name: ²úÆ·¼ò½é
+  - name: äº§å“ç®€ä»‹
     items:
-    - name: ²úÆ·¸ÅÊö
+    - name: äº§å“æ¦‚è¿°
       herf : Introduction/Product-Overview.md
-    - name : ºËĞÄ¸ÅÄî
+    - name : æ ¸å¿ƒæ¦‚å¿µ
       herf: Introduction/Core-Concepts.md
-    - name: ²úÆ·ÓÅÊÆ
+    - name: äº§å“ä¼˜åŠ¿
       herf: Introduction/Benefits.md
-    - name: ²úÆ·¹¦ÄÜ
+    - name: äº§å“åŠŸèƒ½
       herf: Introduction/Features.md
-    - name: Ó¦ÓÃ³¡¾° 
+    - name: åº”ç”¨åœºæ™¯ 
       herf: Introduction/Scene.md    
-  - name: ²úÆ·¶¨¼Û
+  - name: äº§å“å®šä»·
     items:
-    - name: ¼Æ·Ñ¸ÅÊö
+    - name: è®¡è´¹æ¦‚è¿°
       herf: Pricing/Billing-Overview.md
-    - name: ¼Û¸ñ×ÜÀÀ
+    - name: ä»·æ ¼æ€»è§ˆ
       herf: Pricing/Price-Overview.md
-  - name: ÈëÃÅÖ¸ÄÏ
+  - name: å…¥é—¨æŒ‡å—
     items:
-    - name: ÈëÃÅ¸ÅÊö
+    - name: å…¥é—¨æ¦‚è¿°
       herf: Getting-Started/Getting-Started.md
-      - name: ´´½¨ÊµÀı
+      - name: åˆ›å»ºå®ä¾‹
       herf: Getting-Started/Create-Instance.md
-    - name: ¿ªÍ¨·şÎñ
+    - name: å¼€é€šæœåŠ¡
       herf: Getting-Started/Open-edgesecurity-service.md
-  - name: ²Ù×÷Ö¸ÄÏ
+  - name: æ“ä½œæŒ‡å—
     items:
-    - name: ¿ØÖÆÌ¨¼ò½é
+    - name: æ§åˆ¶å°ç®€ä»‹
         href: Operation-Guide/Console-introduction.md  
-    - name: ÓòÃû¹ÜÀí
+    - name: åŸŸåç®¡ç†
       items:
-        - name: Ìí¼ÓÓòÃû
+        - name: æ·»åŠ åŸŸå
           herf: Operation-Guide/Domin-Management/Create-Domain.md
-        - name: ·ÃÎÊ¿ØÖÆ
+        - name: è®¿é—®æ§åˆ¶
           herf: Operation-Guide/Domin-Management/Access-Control.md
-        - name: »ØÔ´ÅäÖÃ
+        - name: å›æºé…ç½®
           herf: Operation-Guide/Domin-Management/Back-To-Origin-Configuration.md
-        - name: ÅäÖÃHTTPS
+        - name: é…ç½®HTTPS
           herf: Operation-Guide/Domin-Management/Set-HTTPS.md
-        - name: Ó¦ÓÃ²ã·À»¤ÅäÖÃ
+        - name: åº”ç”¨å±‚é˜²æŠ¤é…ç½®
           herf: Operation-Guide/Domin-Management/Web-Application-Firewall.md
-    - name: ÍøÂç²ã·À»¤ÅäÖÃ
+    - name: ç½‘ç»œå±‚é˜²æŠ¤é…ç½®
       items:
-        - name: ÍøÂç²ã·À»¤ÅäÖÃ
+        - name: ç½‘ç»œå±‚é˜²æŠ¤é…ç½®
           herf: Operation-Guide/Anti-DDOS/Protection-Configuration.md
-    - name: °²È«¼à¿Ø
+    - name: å®‰å…¨ç›‘æ§
       items:
-        - name: Ó¦ÓÃ²ã¼à¿Ø
+        - name: åº”ç”¨å±‚ç›‘æ§
         herf: Operation-Guide/Security-Monitoring/Web-Analysis.md
-        - name: ÍøÂç²ã¼à¿Ø
+        - name: ç½‘ç»œå±‚ç›‘æ§
         herf: Operation-Guide/Security-Monitoring/Net-Analysis.md     
-        - name: ÎÄµµÀúÊ·¼ÇÂ¼
+        - name: æ–‡æ¡£å†å²è®°å½•
         href: Related-Resources/Document-History.md
