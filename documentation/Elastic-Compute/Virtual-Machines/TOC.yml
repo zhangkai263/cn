@@ -99,7 +99,7 @@ items:
             items: 
               - name: 裸金属云主机概述
                 href:  Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md
-              - name: 启动裸金属云主机
+              - name: 创建裸金属云主机
                 href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
           - name: 自定义数据
             href: Operation-Guide/Instance/Userdata.md
