@@ -57,7 +57,7 @@ mount -o nouuid /dev/vdb1 newFile
 您可查询当前目录下该镜像文件是否存在。
 ![](../../../../../../image/vm/ImgTranfer6.png)
 
-该镜像文件为Bare Metal型云主机可使用的镜像文件。请通过以下操作将该镜像文件导入您的私有镜像。
+该镜像文件为裸金属云主机可使用的镜像文件。请通过以下操作将该镜像文件导入您的私有镜像。
 
 ## 上传镜像文件
 操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件下载链接。<br>
@@ -67,5 +67,5 @@ mount -o nouuid /dev/vdb1 newFile
 导入镜像请参考 [私有镜像导入](../../Image/Import-Private-Image.md#importIMG)
 
 ## 京东云处理
-镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被Bare Metal型云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。
+镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被裸金属云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。
 
