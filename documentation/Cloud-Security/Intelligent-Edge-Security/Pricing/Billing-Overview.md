@@ -48,5 +48,5 @@ DDoS弹性防护部分按日计费，按照前一日实际发生的，超出保�
 
 ## 相关参考
 
-- [价格总览](https://github.com/liangzy3/documentation/Cloud-Security/Intelligent-Edge-Security/Pricing/Price-Overview.md)
+- [价格总览](Price-Overview.md)
 
