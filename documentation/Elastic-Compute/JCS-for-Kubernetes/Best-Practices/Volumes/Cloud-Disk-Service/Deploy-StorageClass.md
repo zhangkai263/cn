@@ -1,5 +1,5 @@
 
-# 部署StorageClass
+# 部署StorageClass(适配Kubernetes 1.12版本)
 
 StorageClass为Kubernetes集群提供了描述存储类别（class）的方法，包含provisioner、parameters 和 reclaimPolicy等字段，当 class 需要动态分配持久化存储时会使用到。  
 京东云为Kubernetes集群提供了自定义卷插件[kubernetes.io/jdcloud-ebs](https://kubernetes.io/docs/concepts/storage/storage-classes/)， 将provisioner定义为京东云自定义卷插件，可以使用京东云云硬盘为Kubernetes集群提供持久化存储。目前，在Kubernetes集群服务中，提供三种storageclass:
