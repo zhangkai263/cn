@@ -1,6 +1,9 @@
 
 # 部署Service（新版本）
-从1.12.3-jcs.4版本开始，Service支持新版本LoadBalancer，新版本中不仅支持应用负载均衡(alb),网络负载均衡(nlb)以及分布式网络负载均衡(DNLB)，还支持丰富的配置项，同时还可以复用已创建的LoadBalancer，为用户提供了极大地灵活性。
+从1.12.3-jcs.4版本开始，Service支持新版本LoadBalancer，新版本中不仅支持应用负载均衡(alb),网络负载均衡(nlb)以及分布式网络负载均衡(DNLB)，还支持丰富的配置项，同时还可以复用已创建的LoadBalancer，为用户提供了极大地灵活性。  
+
+**说明** 用户仍然可以使用老的service配置文件，新版本集群可以兼容。另外文章中尽量举例详细说明参数的配置，实际使用时用户只要填一个必填项指定lb类型，其他annotation参数都不需要指定即可轻松使用service服务
+
 
 **Kubernetes Service**   
 - Kubernetes Service定义了这样一种抽象：一个 Pod 的逻辑分组，一种可以访问它们的策略-通常称为微服务。这一组 Pod 能够被 Service 访问到，通常是通过 Label Selector（查看下面了解，为什么可能需要没有 selector 的 Service）实现的。一个 Service 在 Kubernetes 中是一个REST对象，和Pod类似.像所有的 REST 对象一样， Service 定义可以基于 POST 方式，请求 apiserver 创建新的实例。  
@@ -21,7 +24,7 @@ loadBalancerId: "alb-xxxxxx"                             # 重用已有的LB，�
 loadBalancerType: "alb(default)/nlb/dnlb"                # 【必填项】要创建的JD LB的类型,创建后不支持变更
 securityGroupIds: ["sg-xxxxxxxx1","sg-xxxxxxxx2"]        # 可选项，如不指定则绑定默认安全组，变更会触发SG的绑定解绑，最后一个SG不能解绑
 internal: true/false(default)                            # true表示LB实例不会绑定公网IP，只内部使用；false表示为外部服务，会绑定公网IP。修改可能会触发IP的创建，绑定或者解绑，不会自动删除
-elasticIp:                                               # 默然创建按配置收费
+elasticIp:                                               # 默认创建按配置收费
   elasticIpId: "fip-xxxxxxxxxxx"                         # 创建时不为空则不会创建新的FIP，更换LB绑定的公网IP，如果IP已经被其他资源绑定则报错
   bandwidthMbps: 100                                     # 默认5M带宽，变更会触发扩容缩容，但是包年包月的IP不支持此参数
   provider: "bgp/no_bgp"                                 # 公网IP的类型
@@ -66,12 +69,12 @@ nodeSelector: "key1=value,key2 in (aaa,bbb,ccc)"         # key是node的lable里
 
 ```
 ## 创建ALB service
-1、创建LoadBalancer alb类型的service，命名为myservice.yaml文件定义如下：
+1、创建LoadBalancer alb类型的service，命名为alb-service.yaml文件定义如下：
 ```
 kind: Service
 apiVersion: v1
 metadata:
-  name: myservice
+  name: alb-service
   labels:
     run: myapp
   annotations:
@@ -84,12 +87,19 @@ metadata:
         provider: "bgp"
         reclaimPolicy: "delete"
       listeners:
-        - protocol: "https"
-          certificateId: "cert-xznjiosne5" 
-          connectionIdleTimeSeconds: 1800
+        - protocol: "http"
+          connectionIdleTimeSeconds: 600
           backend:
-            sessionStickiness: false
+            sessionStickiness: true
             algorithm: "IpHash"
+          healthCheckSpec:
+            protocol: "http"                   #healthcheck部分不要指定port，K8s分配nodeport后，健康检查会默认还是用nodeport端口。如果用户分配了专门的nodeport用来提供探活服务，则可以指定port
+            healthyThresholdCount: 3
+            unhealthyThresholdCount: 3
+            checkTimeoutSeconds: 3
+            intervalSeconds: 5
+            httpPath: "/"
+            httpCode: ["2xx","3xx","4xx"]
         - protocol: "http"
           connectionIdleTimeSeconds: 1800
           backend:
@@ -102,25 +112,24 @@ metadata:
             httpForwardedHost: false
             httpForwardedVip: false
         - protocol: "tcp"
-        - protocol: "tls"
-          certificateId: "cert-xznjiosne5"
+          connectionIdleTimeSeconds: 600
+          backend:
+            algorithm: "IpHash"
+            proxyProtocol: false
 spec:
   externalTrafficPolicy: Local
   ports:
-    - name: https
+    - name: http1
       protocol: TCP
       port: 8080
       targetPort: 80
-      nodePort: 30789
-    - name: http
+      nodePort: 30790
+    - name: http2
       protocol: TCP
       port: 8081
       targetPort: 80
     - name: tcp
       port: 8082
-      targetPort: 80
-    - name: tls
-      port: 8083
       targetPort: 80
   type: LoadBalancer
   selector:
@@ -249,6 +258,36 @@ status:
 
 ## 创建DNLB service
 1、创建LoadBalancer nlb类型的service，命名为dnlbservice.yaml文件定义如下：
+```
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: dnlb
+  name: dnlb
+  annotations:
+    service.beta.kubernetes.io/jdcloud-load-balancer-spec: |
+      version: "v1"
+      loadBalancerType: dnlb
+      internal: false
+      listeners:
+        - protocol: "tcp"
+          connectionIdleTimeSeconds: 1800
+          backend:
+            algorithm: "IpHash"
+spec:
+  ports:
+  - name: tcp
+    port: 8086
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: myapp
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+
+```
 
 2、测试和验证的步骤和alb service一致
 
