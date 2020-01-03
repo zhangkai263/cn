@@ -85,7 +85,7 @@ metadata:
         reclaimPolicy: "delete"
       listeners:
         - protocol: "https"
-          certificateId: "cert-xznjiosne5" 
+          certificateId: "cert-xznjiosne5"        #证书id需要在京东云控制台上通过F12抓取
           connectionIdleTimeSeconds: 1800
           backend:
             sessionStickiness: false
