@@ -13,7 +13,7 @@
 ![MFA扫码验证页](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA认证扫码.png)
 
 
-第二种是手动输入验证码的方式，您可以打开京东云APP并且依次点击“我的-MFA认证”，查看对应账号的MFA验证码，手动输入6位数字安全码。
+2. 手动输入验证码，您可以打开京东云APP并且依次点击“我的-MFA认证”，查看对应账号的MFA验证码，手动输入6位数字安全码。
 
 ![MFA验证码页面](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA认证安全码.png)
 
