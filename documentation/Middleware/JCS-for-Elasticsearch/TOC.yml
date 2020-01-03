@@ -60,7 +60,7 @@
         - name: 变更配置
           href: Getting-Started/Change-ES.md
         - name: 删除集群
-          href: Getting-Started/Delete-ES.md  
+          href: Getting-Started/Delete-ES.md
   - name: 操作指南
     items:
       - name: 专用主节点
