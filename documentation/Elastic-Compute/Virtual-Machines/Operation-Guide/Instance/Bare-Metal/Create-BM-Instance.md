@@ -7,7 +7,7 @@
 ## 私有镜像创建
 裸金属云主机需要您的镜像支持UEFI启动。若您需要通过京东云上私有镜像创建裸金属云主机，请根据以下文档将您的私有镜像转换为支持UEFI启动的镜像。目前只有私有镜像操作系统版本为CentOS 7.2、CentOS 7.4、CentOS 7.6的镜像支持以下操作。
 
-如果您需要将当前实例迁移至裸金属云主机上，请确保您当前实例的操作系统版本属于CentOS 7.2、CentOS 7.4、CentOS 7.6。如果您当前实例的镜像分类为云硬盘系统盘，[将镜像转换为支持UEFI启动的镜像](Create-BM-Instance.md#ImageTrans)中第一步可忽略，您可直接将此实例作为文档中的vm1并根据文档执行后续步骤；如果您当前实例的镜像分类为本地盘系统盘，请先为此实例制作镜像并完成[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image),再根据以下文档逐步操作。
+如果您需要将当前实例迁移至裸金属云主机上，请确保您当前实例的操作系统版本属于CentOS 7.2、CentOS 7.4、CentOS 7.6。如果您当前实例的镜像分类为云硬盘系统盘，[将镜像转换为支持UEFI启动的镜像](Create-BM-Instance#ImageTrans)中第一步可忽略，您可直接将此实例作为文档中的vm1并根据文档执行后续步骤；如果您当前实例的镜像分类为本地盘系统盘，请先为此实例制作镜像并完成[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image),再根据以下文档逐步操作。
 
 如果您想需要将您在本地或其他云环境下的应用迁移至京东云裸金属云主机上，请先将您的应用以镜像形式保存并执行[私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image)。
 
@@ -72,7 +72,7 @@ mount -o nouuid /dev/vdb1 newFile
 云主机中镜像文件上传至对象存储可参考文档[使用S3fs在Linux实例上挂载Bucket](https://docs.jdcloud.com/cn/object-storage-service/s3fs)，上传步骤需要较长时间请耐心等待。如需要快速完成上传，可选择上调弹性公网IP带宽。在上传完成后获取文件下载链接。
 
 ### 导入镜像
-导入镜像请参考 [私有镜像导入](../../Image/Import-Private-Image.md#importIMG)
+导入镜像请参考 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image#importIMG)
 
 ### 京东云处理
 镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被裸金属云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。
