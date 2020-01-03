@@ -12,12 +12,13 @@
 如果您想需要将您在本地或其他云环境下的应用迁移至京东云裸金属云主机上，请先将您的应用以镜像形式保存并执行[私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image)。
 
 ### 操作步骤
+
 ![](../../../../../../image/vm/BM-Image-Transfer1.png)
 
 <div id="ImageTrans"></div>
 
 ### 将镜像转换为支持UEFI启动的镜像：
-1. 使用您的私有镜像创建一台镜像分类为云硬盘系统盘的云主机VM1。
+1. 使用您的私有镜像创建一台镜像分类为云硬盘系统盘的云主机VM1。<br>
 ![](../../../../../../image/vm/ImgTranfer1.png)
 2. 在VM1中下载并运行脚本：
 ```
@@ -27,13 +28,13 @@
    
   ./os-init.sh
 ```
-3. 当脚本执行完成后，在控制台将vm1停止，将将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)。
+3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)。
 4. 将已卸载的vm1系统盘作为数据盘挂载在另一台操作系统与vm1相同的云主机vm2上。为可参考文档[挂载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk)。请确保vm1与vm2使用的操作系统一致，如vm1操作系统为CentOS 7.6，vm2操作系统为CentOS 7.4，vm1与vm2均为CentOS操作系统。
 5. 挂载完成后，登录云主机vm2, 可以通过如下命令来查看磁盘分区信息：
 ```
   lsblk
 ```
- 如下图所示，新挂载的磁盘设备是/dev/vdb1，lsblk 的输出从完整的设备路径中去掉了 /dev/ 前缀。/dev/vdb1即为原主机vm1的系统盘。
+ 如下图所示，新挂载的磁盘设备是/dev/vdb1，lsblk 的输出从完整的设备路径中去掉了 /dev/ 前缀。/dev/vdb1即为原主机vm1的系统盘。<br>
  
  ![](../../../../../../image/vm/ImgTranfer3.png)
 
@@ -42,7 +43,7 @@
 mkdir newFile
 mount -o nouuid /dev/vdb1 newFile
 ```
-挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。
+挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br>
 ![](../../../../../../image/vm/ImgTranfer4.png)
 
 7. 在当前目录（挂载点的上层目录）下载脚本并运行，请确保脚本文件在挂载点的上层目录中：
@@ -59,16 +60,18 @@ mount -o nouuid /dev/vdb1 newFile
 ```
   ./generate-img.sh newFile centos7 20G
 ```
-出现下图说明bm-generate-img.sh运行完成：
+出现下图说明bm-generate-img.sh运行完成：<br>
+
 ![](../../../../../../image/vm/ImgTranfer5.png)
 
-您可查询当前目录下该镜像文件是否存在。
+您可查询当前目录下该镜像文件是否存在。<br>
+
 ![](../../../../../../image/vm/ImgTranfer6.png)
 
 该镜像文件为裸金属云主机可使用的镜像文件。请通过以下操作将该镜像文件导入您的私有镜像。
 
 ### 上传镜像文件
-操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件下载链接。<br>
+操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像相同地域的存储空间中，并获取文件下载链接。<br>
 云主机中镜像文件上传至对象存储可参考文档[使用S3fs在Linux实例上挂载Bucket](https://docs.jdcloud.com/cn/object-storage-service/s3fs)，上传步骤需要较长时间请耐心等待。如需要快速完成上传，可选择上调弹性公网IP带宽。在上传完成后获取文件下载链接。
 
 ### 导入镜像
