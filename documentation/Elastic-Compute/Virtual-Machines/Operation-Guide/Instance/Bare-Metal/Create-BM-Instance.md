@@ -72,7 +72,7 @@ mount -o nouuid /dev/vdb1 newFile
 云主机中镜像文件上传至对象存储可参考文档[使用S3fs在Linux实例上挂载Bucket](https://docs.jdcloud.com/cn/object-storage-service/s3fs)，上传步骤需要较长时间请耐心等待。如需要快速完成上传，可选择上调弹性公网IP带宽。在上传完成后获取文件下载链接。
 
 ### 导入镜像
-导入镜像请参考 [私有镜像导入](../../Image/Import-Private-Image.md#importIMG)
+导入镜像请参考 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image#importIMG)
 
 ### 京东云处理
 镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被裸金属云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。
