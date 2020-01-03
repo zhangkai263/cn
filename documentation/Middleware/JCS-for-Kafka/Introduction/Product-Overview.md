@@ -5,7 +5,7 @@
 	- [创建实例](../Getting-Started/create-kafka.md)
 	- [访问实例](../Best-Practices/connect-kafka.md)
 - 操作指南
-	- [使用Kafka Manager](../Best-Practices/using_manager.md)
+	- [使用Kafka Manager](../Operation-Guide/Kafka-Manager.md)
 	- [查看监控信息](../Operation-Guide/Monitoring.md)
 ### 计费
 消息队列Kafka支持按配置后付费和包年包月预付费两种计费类型，公测期间仅开放按配置的计费方式，详细说明请参见：[价格总览](../Pricing/Price-Overview.md)。
