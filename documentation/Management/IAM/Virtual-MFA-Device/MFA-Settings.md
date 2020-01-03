@@ -40,7 +40,7 @@ Step 1：获取并输入MFA验证码
 
 绑定成功后，京东云APP会每隔30秒刷新一组动态验证码，请在MFA验证码有效期内输入一组六位验证码，点击确认开启，完成虚拟MFA设备的绑定。
 
-![MFA开启1](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA开启1.png)
+![MFA开启1](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA开启1.1.png)
 
 Step 2: 设置成功
 
