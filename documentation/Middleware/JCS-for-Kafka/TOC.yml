@@ -31,8 +31,6 @@ items:
       href: Getting-Started/Connect-Kafka.md
 - name: 操作指南
   items:
-    - name: 实例管理
-      items:
     - name: 查看实例
       href: Operation-Guide/View-Kafka.md
     - name: 规格变更
