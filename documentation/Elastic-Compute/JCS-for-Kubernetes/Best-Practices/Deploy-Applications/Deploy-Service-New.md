@@ -66,12 +66,12 @@ nodeSelector: "key1=value,key2 in (aaa,bbb,ccc)"         # key是node的lable里
 
 ```
 ## 创建ALB service
-1、创建LoadBalancer alb类型的service，命名为myservice.yaml文件定义如下：
+1、创建LoadBalancer alb类型的service，命名为alb-service.yaml文件定义如下：
 ```
 kind: Service
 apiVersion: v1
 metadata:
-  name: myservice
+  name: alb-service
   labels:
     run: myapp
   annotations:
@@ -84,12 +84,19 @@ metadata:
         provider: "bgp"
         reclaimPolicy: "delete"
       listeners:
-        - protocol: "https"
-          certificateId: "cert-xznjiosne5"        #证书id需要在京东云控制台上通过F12抓取
-          connectionIdleTimeSeconds: 1800
+        - protocol: "http"
+          connectionIdleTimeSeconds: 600
           backend:
-            sessionStickiness: false
+            sessionStickiness: true
             algorithm: "IpHash"
+          healthCheckSpec:
+            protocol: "http"                   #healthcheck部分不要指定port，K8s分配nodeport后，健康检查会默认还是用nodeport端口。如果用户分配了专门的nodeport用来提供探活服务，则可以指定port
+            healthyThresholdCount: 3
+            unhealthyThresholdCount: 3
+            checkTimeoutSeconds: 3
+            intervalSeconds: 5
+            httpPath: "/"
+            httpCode: ["2xx","3xx","4xx"]
         - protocol: "http"
           connectionIdleTimeSeconds: 1800
           backend:
@@ -102,25 +109,24 @@ metadata:
             httpForwardedHost: false
             httpForwardedVip: false
         - protocol: "tcp"
-        - protocol: "tls"
-          certificateId: "cert-xznjiosne5"
+          connectionIdleTimeSeconds: 600
+          backend:
+            algorithm: "IpHash"
+            proxyProtocol: false
 spec:
   externalTrafficPolicy: Local
   ports:
-    - name: https
+    - name: http1
       protocol: TCP
       port: 8080
       targetPort: 80
-      nodePort: 30789
-    - name: http
+      nodePort: 30790
+    - name: http2
       protocol: TCP
       port: 8081
       targetPort: 80
     - name: tcp
       port: 8082
-      targetPort: 80
-    - name: tls
-      port: 8083
       targetPort: 80
   type: LoadBalancer
   selector:
@@ -265,8 +271,6 @@ metadata:
         - protocol: "tcp"
           connectionIdleTimeSeconds: 1800
           backend:
-            connectionDrainingSeconds: 300
-            sessionStickyTimeout: 300
             algorithm: "IpHash"
 spec:
   ports:
