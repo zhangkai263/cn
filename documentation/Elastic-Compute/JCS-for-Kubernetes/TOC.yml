@@ -87,6 +87,8 @@
             href: Best-Practices/Deploy-Applications/Deploy-Deployment.md
          -  name: 部署Service
             href: Best-Practices/Deploy-Applications/Deploy-Service.md
+         -  name: 部署Service（新版）
+            href: Best-Practices/Deploy-Applications/Deploy-Service-New.md
      - name: 使用云硬盘作为Volume
        items:
         -  name: 部署StorageClass
