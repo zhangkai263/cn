@@ -21,7 +21,7 @@ loadBalancerId: "alb-xxxxxx"                             # 重用已有的LB，�
 loadBalancerType: "alb(default)/nlb/dnlb"                # 【必填项】要创建的JD LB的类型,创建后不支持变更
 securityGroupIds: ["sg-xxxxxxxx1","sg-xxxxxxxx2"]        # 可选项，如不指定则绑定默认安全组，变更会触发SG的绑定解绑，最后一个SG不能解绑
 internal: true/false(default)                            # true表示LB实例不会绑定公网IP，只内部使用；false表示为外部服务，会绑定公网IP。修改可能会触发IP的创建，绑定或者解绑，不会自动删除
-elasticIp:                                               # 默然创建按配置收费
+elasticIp:                                               # 默认创建按配置收费
   elasticIpId: "fip-xxxxxxxxxxx"                         # 创建时不为空则不会创建新的FIP，更换LB绑定的公网IP，如果IP已经被其他资源绑定则报错
   bandwidthMbps: 100                                     # 默认5M带宽，变更会触发扩容缩容，但是包年包月的IP不支持此参数
   provider: "bgp/no_bgp"                                 # 公网IP的类型
@@ -249,6 +249,38 @@ status:
 
 ## 创建DNLB service
 1、创建LoadBalancer nlb类型的service，命名为dnlbservice.yaml文件定义如下：
+```
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: dnlb
+  name: dnlb
+  annotations:
+    service.beta.kubernetes.io/jdcloud-load-balancer-spec: |
+      version: "v1"
+      loadBalancerType: dnlb
+      internal: false
+      listeners:
+        - protocol: "tcp"
+          connectionIdleTimeSeconds: 1800
+          backend:
+            connectionDrainingSeconds: 300
+            sessionStickyTimeout: 300
+            algorithm: "IpHash"
+spec:
+  ports:
+  - name: tcp
+    port: 8086
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: myapp
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+
+```
 
 2、测试和验证的步骤和alb service一致
 
