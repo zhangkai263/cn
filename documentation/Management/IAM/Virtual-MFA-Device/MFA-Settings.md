@@ -40,10 +40,13 @@ Step 1：获取并输入MFA验证码
 
 绑定成功后，京东云APP会每隔30秒刷新一组动态验证码，请在MFA验证码有效期内输入一组六位验证码，点击确认开启，完成虚拟MFA设备的绑定。
 
+![MFA开启1](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA开启1.png)
+
 Step 2: 设置成功
 
 完成绑定，一组动态验证码绑定成功，您在下次登录控制台时需要校验该账户已绑定的MFA设备的动态码。 同时我们建议您通过开启敏感操作验证，继续提升账号的安全性。
 
+![MFA开启2](https://github.com/jdcloudcom/cn/blob/1231-ycx/image/IAM/Virtual-MFA-Device/MFA开启2.png)
 
 # 禁用虚拟MFA设备
 当您不再使用MFA验证保护时，可以选择禁用。在通过安全操作验证后，直接在开启的入口处，点击禁用，即可生效。 需要注意的是，禁用MFA会导致绑定该账号的设备动态验证码不可用，若您重新开启，请绑定新的设备并告知共享账号的人员。 如果您需要更换MFA令牌，在解绑老的MFA后，绑定新的MFA即可。
