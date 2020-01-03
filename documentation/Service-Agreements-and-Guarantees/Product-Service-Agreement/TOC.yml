@@ -82,6 +82,8 @@ items:
     href: Api-Gateway-Terms-Of-Service.md
   - name: API网关服务等级协议（SLA）
     href: Api-Gateway-Level-Agreements-SLA.md
+  - name: API中心服务条款
+    href: API-Center-Service-Terms-Of-Service.md   
   - name: 云物理服务器服务协议
     href: Cloud-Physics-Server-Service-Clause.md
   - name: 云物理服务器服务等级协议（SLA）
@@ -100,6 +102,8 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
   - name: 边缘网络隧道(ENT)服务协议
     href: Edge-Network-Tunnel-Terms-Of-Service.md
+  - name: 对等边缘服务(JEES)服务条款
+    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -184,4 +188,12 @@ items:
     href: Cloud-Cabinet-Service-Level-Agreements-SLA.md
   - name: 互联网数据中心用户入网责任书
     href: IDC-User-Internet-Access-Responsibility-Statement.md
+  - name: 京东云微服务平台（JDSF）服务条款
+    href: JDCloud-Distributed-Service-Framework-Terms-Of-Service.md
+  - name: 京东云微服务平台（JDSF）服务等级协议（SLA）
+    href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md  
+  - name: 云服务网格服务条款
+    href: Mesh-Service-Terms-Of-Service.md
+  - name: 智能边缘安全服务条款
+    href: Intelligent-Edge-Security-Terms-Of-Service.md   
     

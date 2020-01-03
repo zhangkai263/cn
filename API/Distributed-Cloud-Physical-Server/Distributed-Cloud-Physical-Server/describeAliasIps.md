@@ -22,22 +22,29 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |**subnetId**|String|False| |子网ID|
 |**instanceId**|String|False| |实例ID|
 |**cidr**|String|False| |CIDR段，模糊搜索|
+|**filters**|[Filter[]](describealiasips#filter)|False| |aliasIpId - 别名IP id<br/><br>|
 
+### <div id="filter">Filter</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
+|**operator**|String|False| |过滤条件的操作符，默认eq|
+|**values**|String[]|True| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describealiasips#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**aliasIps**|[AliasIp[]](#aliasip)| |
+|**aliasIps**|[AliasIp[]](describealiasips#aliasip)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="AliasIp">AliasIp</div>
+### <div id="aliasip">AliasIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|
