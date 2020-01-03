@@ -39,7 +39,7 @@ l 域名回源最多可配置5个域名，区分优先级进行回源，优先�
 ![源站监控](/image/Intelligent-Edge-Security/源站监控.png)
 
 - “监控链接”配置内容为：（二选一）
-- 标准监控链接：在客户加速域名根目录下放入特定的文件，如：[www.jdcloud.com/monitor.gif](http://www.jdcloud.com/monitor.gif)
+- 标准监控链接：在客户加速域名根目录下放入特定的文件
 - 自定义监控链接:文本框输入，由客户自定义监测文件及监测文件路径
 - 探测周期：分为一分钟和五分钟
 - Headers：指探测方身份校验信息，以key-value形式客户自定义
