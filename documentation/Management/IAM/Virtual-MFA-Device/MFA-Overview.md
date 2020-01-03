@@ -6,4 +6,4 @@ MFA (Multi-Factor Authentication) 是一种简单有效的最佳安全实践，�
 # 京东云APP
 京东云APP是京东云为方便用户提供的统一虚拟MFA设备，我们建议您通过此应用程序绑定您的用户信息，生成动态验证码。
 
-![京东云APP](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/京东云APP.png)
+![京东云APP](https://github.com/jdcloudcom/cn/blob/1231_ycx/image/IAM/Virtual-MFA-Device/%E4%BA%AC%E4%B8%9C%E4%BA%91APP.png)
