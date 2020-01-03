@@ -1,6 +1,8 @@
 
 # 部署Service（新版本）
 从1.12.3-jcs.4版本开始，Service支持新版本LoadBalancer，新版本中不仅支持应用负载均衡(alb),网络负载均衡(nlb)以及分布式网络负载均衡(DNLB)，还支持丰富的配置项，同时还可以复用已创建的LoadBalancer，为用户提供了极大地灵活性。
+**说明** 用户仍然可以使用老的service配置文件，新版本集群可以兼容。另外文章中尽量举例详细说明参数的配置，实际使用时用户只要填一个必填项指定lb类型，其他annotation参数都不需要指定即可轻松使用service服务
+
 
 **Kubernetes Service**   
 - Kubernetes Service定义了这样一种抽象：一个 Pod 的逻辑分组，一种可以访问它们的策略-通常称为微服务。这一组 Pod 能够被 Service 访问到，通常是通过 Label Selector（查看下面了解，为什么可能需要没有 selector 的 Service）实现的。一个 Service 在 Kubernetes 中是一个REST对象，和Pod类似.像所有的 REST 对象一样， Service 定义可以基于 POST 方式，请求 apiserver 创建新的实例。  
