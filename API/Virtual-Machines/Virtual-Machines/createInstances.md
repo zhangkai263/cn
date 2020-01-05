@@ -31,10 +31,8 @@
             - 如果是cloud类型的包年包月的云硬盘，默认为False，不可修改
     - 数据盘
         - 磁盘分类，数据盘仅支持cloud
-        - 云硬盘类型可以选择ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1
+        - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
         - 磁盘大小
-            - premium-hdd：范围[20,3000]GB，步长为10G
-            - ssd：范围[20,1000]GB，步长为10G
             - hdd.std1、ssd.gp1、ssd.io1: 范围[20-16000]GB，步长为10GB
         - 自动删除
             - 默认自动删除，如果是包年包月的云硬盘，此参数不生效
