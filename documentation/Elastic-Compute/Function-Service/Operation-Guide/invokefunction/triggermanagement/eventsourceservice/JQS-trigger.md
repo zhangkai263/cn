@@ -6,12 +6,15 @@
 
 ## 函数服务角色权限
 
-在创建队列服务JQS触发器前，请确认待绑定的Function函数已添加服务角色，且服务角色策略包含Function轮询队列服消息队列获取消息事件的以下必备的接口权限：  
+在创建队列服务JQS触发器前，请确认待绑定的Function函数配置中的“权限配置”/“Role”已添加服务角色，且服务角色策略包含Function轮询队列服消息队列获取消息事件的以下必备的接口权限：  
 ReceiveMessage  
 DeleteMessage  
 DeleteMessageBatch
 
-您需要提前在“访问控制”--“角色管理”中创建一个服务角色，信任“函数服务"代表您访问京东云资源，为此角色添加轮询队列服务JQS的权限（可直接添加JQS在IAM策略中预置的JDCloudQueueServiceTriggerFunction队列服务触发函数权限的系统策略至此角色）。若Function权限配置中未添加带有轮询队列服务JQS接口权限，则 创建触发器失败。
+添加服务角色，您需要提前在“访问控制”--“角色管理”中创建一个“服务角色”，信任“函数服务"代表您访问京东云资源，为此角色添加轮询队列服务JQS的权限（可直接添加JQS在IAM策略中预置的JDCloudQueueServiceTriggerFunction队列服务触发函数权限的系统策略至此角色）。若Function权限配置中未添加带有轮询队列服务JQS接口权限，则 创建触发器失败。
+
+
+
 
 ## 触发器配置
 
