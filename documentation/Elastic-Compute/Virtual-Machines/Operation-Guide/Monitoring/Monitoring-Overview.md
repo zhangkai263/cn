@@ -81,7 +81,7 @@
         <td> 磁盘每秒读取的字节数</td>
         <td> Bps </td>
         <td rowspan="7"> 不低于'3.0.989'版本的JCS-Agent</td>
-        <td rowspan="4"> 维度：设备文件名（以'devName'为tag上报）<br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br>Linux系统如磁盘有分区，则按分区统计上报，若无分区则按磁盘统计上报；Windows系统均按盘符统计上报。<br>查询监控说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定设备文件名/盘符查询监控数据<br>* 如不指定，则查询结果为上报数据中全部设备文件名/盘符对应的数据之和<br>报警设置说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定设备文件名/盘符设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有设备文件名/盘符</td>   
+        <td rowspan="4"> 维度：设备文件名（以'devName'为tag上报）如：<br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br>Linux系统如磁盘有分区，则按分区统计上报，若无分区则按磁盘统计上报；Windows系统均按盘符统计上报。<br>查询监控说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定设备文件名/盘符查询监控数据<br>* 如不指定，则查询结果为上报数据中全部设备文件名/盘符对应的数据之和<br>报警设置说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定设备文件名/盘符设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有设备文件名/盘符</td>   
     </tr>    
     <tr>
         <td> 磁盘写吞吐量  <br>vm.disk.dev.bytes.write</td>
@@ -91,18 +91,18 @@
     <tr>
         <td> 磁盘读IOPS  <br>vm.disk.dev.io.read</td>
         <td> 磁盘每秒读请求数量</td>
-        <td> Count/s</td> 
+        <td> Count</td> 
     </tr>    
     <tr>
         <td> 磁盘写IOPS  <br>vm.disk.dev.io.write</td>
         <td> 磁盘每秒写请求数量</td>
-        <td> Count/s</td> 
+        <td> Count</td> 
     </tr>        
     <tr>
         <td> 磁盘使用率  <br>vm.disk.dev.used</td>
         <td>磁盘已使用空间百分比</td>
         <td> % </td>
-        <td rowspan="3"> 维度：挂载点（以‘mountPoint’为tag上报）<br>* Linux：'mountPoint'='/','/mnt', ...<br>* Windows：‘mountPoint’='C','D', ...<br>Linux系统按挂载点统计上报；Windows系统按盘符统计上报。<br>查询监控说明：<br>* 可指定tagKey=mountPoint，tagValue=xxx来指定挂载点/盘符查询监控数据<br>* 如不指定，则“磁盘使用量”查询结果为上报数据中全部挂载点/盘符对应的数据之和，其余指标为算术平均。<br>报警设置说明：<br>* 可指定tagKey=mountPoint，tagValue=xxx来指定设备文件名/盘符设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有设备文件名/盘符<br>仅Linux系统提供'磁盘inode使用率'指标</td>   
+        <td rowspan="3"> 维度：挂载点（以‘mountPoint’为tag上报）如：<br>* Linux：'mountPoint'='/','/mnt', ...<br>* Windows：‘mountPoint’='C','D', ...<br>Linux系统按挂载点统计上报；Windows系统按盘符统计上报。<br>查询监控说明：<br>* 可指定tagKey=mountPoint，tagValue=xxx来指定挂载点/盘符查询监控数据<br>* 如不指定，则“磁盘使用量”查询结果为上报数据中全部挂载点/盘符对应的数据之和，其余指标为算术平均。<br>报警设置说明：<br>* 可指定tagKey=mountPoint，tagValue=xxx来指定设备文件名/盘符设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有设备文件名/盘符<br>仅Linux系统提供'磁盘inode使用率'指标</td>   
     </tr>  
     <tr>
         <td> 磁盘使用量 <br>vm.disk.dev.used.bytes</td>
@@ -117,26 +117,26 @@
     <tr>
         <td rowspan="7">网络</td>
         <td> 网络入带宽（Host）  <br>vm.network.bytes.incoming</td>
-        <td> 网卡每秒入流量（全部网卡）</td>
+        <td> 网卡每秒接收的比特数（全部网卡之和）</td>
         <td> bps </td>
         <td rowspan="2"> 无</td>
         <td rowspan="2"> 维度：无<br>宿主机采集，实例整体网络带宽，不分区内外网</td>   
     </tr>
     <tr>
         <td> 网络出带宽（Host）  <br>vm.network.bytes.outgoing</td>
-        <td> 网卡每秒出流量（全部网卡）</td>
+        <td> 网卡每秒发送的比特数（全部网卡之和）</td>
         <td> bps </td>
     </tr>
     <tr>
-        <td> 网络入带宽（Host）  <br>vm.network.dev.bytes.in</td>
-        <td> 网卡每秒入流量</td>
+        <td> 网络入带宽  <br>vm.network.dev.bytes.in</td>
+        <td> 网卡每秒接收的比特数</td>
         <td> bps </td>
         <td rowspan="5"> 不低于'3.0.989'版本的JCS-Agent</td>
-        <td rowspan="4"> 维度：网卡（以‘devName’为tag上报）<br>* Linux/Windows：'devName'='eth0','eth1', ...<br>查询监控说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定网卡索引查询监控数据<br>* 如不指定，则查询结果为上报数据中全部网卡对应的数据之和<br>报警设置说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定网卡设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有网卡<br>网卡整体数据指标，不分区内外网</td>   
+        <td rowspan="4"> 维度：网卡（以‘devName’为tag上报）如：<br>* Linux/Windows：'devName'='eth0','eth1', ...<br>查询监控说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定网卡索引查询监控数据<br>* 如不指定，则查询结果为上报数据中全部网卡对应的数据之和<br>报警设置说明：<br>* 可指定tagKey=devName，tagValue=xxx来指定网卡设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有网卡<br>网卡整体数据指标，不分区内外网</td>   
     </tr>
     <tr>
-        <td> 网络出带宽（Host）  <br>vm.network.dev.bytes.out</td>
-        <td> 网卡每秒出流量</td>
+        <td> 网络出带宽 <br>vm.network.dev.bytes.out</td>
+        <td> 网卡每秒发送的比特数</td>
         <td> bps </td> 
     </tr>
     <tr>
@@ -161,7 +161,7 @@
         <td> GPU功耗</td>
         <td> Wt </td>
         <td rowspan="7"> 不低于'3.0.989'版本的JCS-Agent</td>
-        <td rowspan="7"> 维度：GPU卡（以‘gpu_index’为tag上报）<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>查询监控说明：<br>* 可指定tagKey=gpu_index，tagValue=xxx来指定GPU卡索引查询监控数据<br>* 如不指定，则“GPU功耗”和“GPU内存使用量”查询结果为上报数据中全部GPU卡对应的数据之和，其余指标为算术平均<br>报警设置说明：<br>* 可指定tagKey=gpu_index，tagValue=xxx来指定GPU卡设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有GPU卡<br>仅GPU实例规格有此组指标</td>   
+        <td rowspan="7"> 维度：GPU卡（以‘gpu_index’为tag上报）如：<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>查询监控说明：<br>* 可指定tagKey=gpu_index，tagValue=xxx来指定GPU卡索引查询监控数据<br>* 如不指定，则“GPU功耗”和“GPU内存使用量”查询结果为上报数据中全部GPU卡对应的数据之和，其余指标为算术平均<br>报警设置说明：<br>* 可指定tagKey=gpu_index，tagValue=xxx来指定GPU卡设置报警规则<br>* 如不指定，则报警规则自动应用于上报数据中所有GPU卡<br>仅GPU实例规格有此组指标</td>   
     </tr>    
     <tr>
         <td> GPU温度 <br>vm.gpu.temperature</td>
@@ -221,4 +221,4 @@
 ## 其他
 * bps表示每秒传输bit数，ps为per second，意同/s；
 * Bps表示每秒传输Byte数，ps为per second，意同/s；
-* Kbps=1024bps，KBps=1024Bps。
+* Kbps=1000bps，KBps=1000Bps。
