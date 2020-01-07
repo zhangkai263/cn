@@ -21,10 +21,10 @@ https://cdn.jdcloud-api.com/v1/domainGroup/{id}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](querydomaingroupdetail#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**domains**|String[]|域名组成员|

@@ -1,22 +1,26 @@
 # 使用限制
 
 ## 账号限制
-* 您创建云主机所使用京东云账号需进行实名认证，详细内容请参见[实名认证](http://docs.jdcloud.com/cn/real-name-verification/real-name-verification)；
+* 您创建云主机所使用京东云账号需进行实名认证，详细内容请参见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 * 创建包年包月计费实例需预付实例费用，创建按配置计费实例需要您的账户余额及可用代金券之和不低于消费门槛。
 
 ## 使用限制
 * 暂不支持二次虚拟化（如安装使用VMware及Hyper-V）。
 * 暂不支持外接硬件设备（如U盘、外接硬盘、银行U盾等）。
 * NAT Instance当前仅支持Centos 7.2 系统。
-* 第一代实例规格无法与第二代实例规格之间互相调配，详细内容请参见[调整配置](http://docs.jdcloud.com/cn/virtual-machines/resize-instance)。
+* 若系统盘为本地盘，则不允许跨代调配，如从第一代实例规格调整至第二代实例规格，详细内容请参见[调整配置](http://docs.jdcloud.com/cn/virtual-machines/resize-instance)。
+* 第一代云主机及裸金属云主机不支持加密云盘。
+* 第一代云主机（除GPU类型）不支持高可用组。
+* 第三代云主机及存储优化大数据型s.d2及s.d1不支持本地盘作系统盘.
+* 第三代云主机不支持Windows Server 2008镜像。
 * 对于Windows Server系统实例，目前最高支持的vCPU为64核。同时建议最低选购1核2GB，以保证业务高效运行。
 * 单台实例单个内网IP只允许绑定一个弹性公网IP。
 * 暂不支持多播协议，建议改为使用单播点对点方式。
 * Windows Server系统实例支持密码登录，Linux系统实例支持密码及SSH密钥方式登录。
 
 ## 其他限制
-限制项|限制规则|例外申请方式   
-:---|:---|:---     
+限制项   |限制规则|例外申请方式   
+:------- |:---|:---     
 可选择的云主机实例规格|请参见[云主机实例规格](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)|工单 
 可选择的官方镜像种类|可参见[官方镜像发行版](https://docs.jdcloud.com/cn/virtual-machines/image-type)|工单         
 单地域实例限额|20台|工单

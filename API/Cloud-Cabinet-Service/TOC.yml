@@ -23,3 +23,7 @@ items:
             href: Monitor-API/describeMetricData.md
           - name: lastDownsample
             href: Monitor-API/lastDownsample.md            
+          - name: describeBandwidthTraffics
+            href: Monitor-API/describeBandwidthTraffics.md
+          - name: describeBandwidthTraffic
+            href: Monitor-API/describeBandwidthTraffic.md

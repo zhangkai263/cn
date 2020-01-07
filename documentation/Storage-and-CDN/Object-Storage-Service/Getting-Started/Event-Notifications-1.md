@@ -78,12 +78,12 @@ s3:ObjectRemoved:Delete |删除文件
 **说明**
 
 * 资源描述：可以是前缀、后缀以及前后缀，请注意不同资源的描述不能有交集。
-* 前缀与后缀：设置Object的前后缀可以达到只关注bucekt中部分Object的目标。
+* 前缀与后缀：设置Object的前后缀可以达到只关注bucket中部分Object的目标。
       例如：
-   -  要关注bucekt中所有的文件，则前缀、后缀都不填。
-   -  要关注bucekt中目录jdcloudoss下的所有文件，则前缀填 jdcloudoss/，后缀不填。
-   -  要关注bucekt中所有的.jpg的图片，则前缀不填，后缀填 .jpg。
-   -  要关注bucekt中目录jdcloudoss下的.mp3格式的影片，则前缀填 jdcloudoss/，后缀填 .mp3。
+   -  要关注bucket中所有的文件，则前缀、后缀都不填。
+   -  要关注bucket中目录jdcloudoss下的所有文件，则前缀填 jdcloudoss/，后缀不填。
+   -  要关注bucket中所有的.jpg的图片，则前缀不填，后缀填 .jpg。
+   -  要关注bucket中目录jdcloudoss下的.mp3格式的影片，则前缀填 jdcloudoss/，后缀填 .mp3。
    
  6.在 **发送到** 下拉框中，选择【http(s)】或者【函数服务】，完成接收终端的设置。
  

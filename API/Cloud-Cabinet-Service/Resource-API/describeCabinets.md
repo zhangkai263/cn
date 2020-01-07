@@ -12,16 +12,16 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/cabinets
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**idc**|String|True| |IDC机房id|
+|**idc**|String|True| |IDC机房ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞)|
-|**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|Filter[]|False| |roomNo - 房间号，精确匹配，支持多个<br>cabinetId - 机柜ID，精确匹配，支持多个<br>|
+|**pageNumber**|Integer|False|1|页码, 默认为1|
+|**pageSize**|Integer|False|20|分页大小，默认为20|
+|**filters**|[Filter[]](describecabinets#filter)|False| |roomNo - 房间号，精确匹配，支持多个<br>cabinetId - 机柜ID，精确匹配，支持多个<br>|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,23 +31,31 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/cabinets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describecabinets#result)| |
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**cabinets**|Cabinet[]|机柜列表|
+|**cabinets**|[DescribeCabinet[]](describecabinets#describecabinet)|机柜列表|
 |**pageNumber**|Integer|页码|
 |**pageSize**|Integer|分页大小|
 |**totalCount**|Integer|总数量|
-### Cabinet
+### <div id="describecabinet">DescribeCabinet</div>
 |名称|类型|描述|
 |---|---|---|
 |**idc**|String|机房英文标识|
 |**idcName**|String|机房名称|
 |**cabinetId**|String|机柜Id|
 |**cabinetNo**|String|机柜编码|
+|**roomNo**|String|房间号|
+|**cabinetSpace**|Integer|机柜空间(U)|
+|**cabinetPower**|Integer|额定电流(A)|
+|**cabinetType**|String|机柜类型 formal:正式机柜 reserved:预留机柜|
+|**cabinetOpenStatus**|String|机柜开通状态 disabled:未开通 enabling:开通中 enabled:已开通 disabling:关闭中|
+|**cabinetOpenTime**|String|开通时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**startTime**|String|起租时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**endTime**|String|退租时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
 |返回码|描述|

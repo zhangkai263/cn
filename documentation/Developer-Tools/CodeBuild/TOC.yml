@@ -61,3 +61,5 @@
     items:
           - name: 构建镜像并存储至镜像仓库
             href: Best-Practices/Build-Image-Container.md
+          - name: 在maven工程中使用京东云制品库
+            href: Best-Practices/Build-Maven-Private.md
