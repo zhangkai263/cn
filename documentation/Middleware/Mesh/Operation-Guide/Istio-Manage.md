@@ -11,7 +11,14 @@
 **注意:** 
 
 -  若需要开放外网访问，将产生弹性公网IP费用。在此中场景下，系统会自动创建京东云负载均衡组件并申请公网IP，带宽为1Mbps，收费标准请参考 [弹性公网IP](../../../Hyper-Converged-IDC/Cloud-Physical-Server/Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md) 的收费  。
-	
+
+-  京东云保证云服务网格在K8S集群正常的情况下，可安装，可变更。
+
+-  京东云保证在Istio服务正常的情况下，您可通过本产品管理云服务网格的多种服务治理功能。
+
+-  您可通过京东云云监控查看Istio服务的运行状况。
+
+-  如果您对所在VPC的网络配置、Kubernetes集群所用资源、Istio服务所在命名空间、应用pod中的代理服务进行错误的运维行为，将可能导致云服务网格功能失效、应用数据访问失效等问题。
 
 
 ## 操作说明

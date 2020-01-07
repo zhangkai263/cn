@@ -2,7 +2,7 @@
 
 您可以直接使用京东云提供的[云主机价格计算器](https://www.jdcloud.com/calculator/calHost)查看您所需的产品组合对应价格，也可以查阅相关资源价格总览用以估算投入成本。
 
-请注意：价格总览中价格为统一官方标价，不包用户括折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
+请注意：价格总览中价格为统一官方标价，不包括用户折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
 
 
 京东云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
@@ -27,7 +27,7 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="28">通用</td>
+      <td rowspan="29">通用</td>
       <td rowspan="2">共享</td>
       <td>g.s1.micro</td>
       <td>1</td>
@@ -49,7 +49,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="26">标准</td>
+      <td rowspan="27">标准</td>
       <td>g.n3.medium</td>
       <td>1</td>
       <td>4</td>
@@ -237,6 +237,16 @@
       <td>6540.75</td>
       <td>30.277</td>
       <td>22.71</td>
+      <td></td>
+   </tr>
+      <tr> 
+      <td>g.n2.metal</td>
+      <td>80</td>
+      <td>384</td>
+      <td>9690</td>
+      <td>7267.5</td>
+      <td>33.65</td>
+      <td>25.23</td>
       <td></td>
    </tr>
    <tr>

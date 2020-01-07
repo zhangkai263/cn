@@ -8,7 +8,7 @@
 
 1、拨打电话：4006151212，由客服为您开通智能边缘安全服务。
 
-2、进入[智能边缘安全工单系统](https://ticket.jdcloud.com/myorder/form?cateId=3&questionId=20)，填报【使用权限申请】工单，客服会联系您处理智能边缘安全服务开通事宜。
+2、进入[智能边缘安全工单系统](https://ticket.jdcloud.com/applyorder/form?cateId=4&questionId=843)，填报【使用权限申请】工单，客服会联系您处理智能边缘安全服务开通事宜。
 
 **第二步：添加智能边缘安全加速域名**
 

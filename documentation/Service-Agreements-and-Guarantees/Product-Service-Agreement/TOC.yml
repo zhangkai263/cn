@@ -104,10 +104,14 @@ items:
     href: Edge-Network-Tunnel-Terms-Of-Service.md
   - name: 对等边缘服务(JEES)服务条款
     href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
+  - name: 通知服务(JNS)服务条款
+    href: JD-Cloud-Notification-Service-Terms-Of-Service.md      
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
     href: Message-Queuing-JCQ-Service-Level-Protocol-SLA.md
+  - name: 消息队列Kafka服务条款
+    href: Jcs-For-Kafka-Terms-Of-Service.md
   - name: 分布式关系数据库DRDS试用服务协议
     href: Distributed-Relational-Database-DRDS-Trial-Service-Clause.md
   - name: 分布式关系数据库DRDS服务协议

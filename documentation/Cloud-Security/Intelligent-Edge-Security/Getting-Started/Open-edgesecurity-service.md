@@ -12,11 +12,11 @@
 
 2、 注册完成后，登录[京东云控制台](https://uc.jdcloud.com/login?returnUrl=https%3A%2F%2Fconsole.jcloud.com%2F)
 
-[![登录京东云控制台](/image/Intelligent-Edge-Security/登录京东云控制台.png)]
+![登录京东云控制台](/image/Intelligent-Edge-Security/登录京东云控制台.png)
 
 3、 进入控制台页面，点击右上角【工单】--【提交工单】
 
-[![选择工单](/image/Intelligent-Edge-Security/选择工单.png)]
+![选择工单](/image/Intelligent-Edge-Security/选择工单.png)
 
 4、 选择【智能边缘安全】，进入提交工单页面
 
@@ -26,5 +26,5 @@
 
 ![补全工单信息](/image/Intelligent-Edge-Security/补全工单信息.png)
 
-6、 开通智能边缘安全服务后，即可在【智能边缘安全】--【域名列表】--【添加域名】，可参考[入门指南](https://github.com/liangzy3/cn/documentation/Cloud-Security/Intelligent-Edge-Security/Getting-Started/Getting-Started.md)
+6、 开通智能边缘安全服务后，即可在【智能边缘安全】--【域名列表】--【添加域名】，可参考[入门指南](../Getting-Started/Getting-Started.md)
 

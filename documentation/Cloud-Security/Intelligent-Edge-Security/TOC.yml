@@ -1,6 +1,6 @@
-name: 智能边缘安全
-href:
-items:
+  name: 智能边缘安全
+  href:
+  items:
   - name: 产品简介
     items:
     - name: 产品概述
@@ -30,7 +30,7 @@ items:
   - name: 操作指南
     items:
     - name: 控制台简介
-       href:Operation-Guide/Console-introduction.md  
+      href: Operation-Guide/Console-introduction.md  
     - name: 域名管理
       items:
         - name: 添加域名
@@ -50,8 +50,8 @@ items:
     - name: 安全监控
       items:
         - name: 应用层监控
-           herf:Operation-Guide/Security-Monitoring/Web-Analysis.md
+          herf: Operation-Guide/Security-Monitoring/Web-Analysis.md
         - name: 网络层监控
-           herf:Operation-Guide/Security-Monitoring/Net-Analysis.md     
+          herf: Operation-Guide/Security-Monitoring/Net-Analysis.md     
   - name: 文档历史记录
     href: Related-Resources/Document-History.md
