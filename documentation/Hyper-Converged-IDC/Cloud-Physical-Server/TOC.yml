@@ -121,6 +121,10 @@
             href: Operation-Guide/SSH-Key-Pair/Description-SSH-Key-Pair.md
           - name: 操作步骤
             href: Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md
+      - name: 操作审计
+        items:
+          - name: 概述
+            href: Operation-Guide/Audit-Trail/Audit-Trail-Ovewview.md
   - name: 最佳实践
     items:
     - name: NAT网关网络安全方案
