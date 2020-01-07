@@ -60,12 +60,17 @@ Windows：`wmic process where caption="MonitorPlugin.exe" get caption,commandlin
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux-deploy.py <br>
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux.zip <br>
 
-2、在下载目录执行下述指令，卸载旧版本（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
+2、在下载目录执行下述指令，卸载旧版本。（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
 ```
 python jcloud-jcs-agent-linux-deploy.py uninstall
 ```
 
-3、执行`ps -ef`看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
+3、在下载目录执行下述指令，安装最新版本。<br>
+```
+python jcloud-jcs-agent-linux-deploy.py install
+```
+
+4、执行`ps -ef`看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
 
 **Windows:**<br>
 1、下载安装包、安装脚本和MD5工具，将其下载至同一目录中（比如： C:\jcloud）。<br>
@@ -78,8 +83,12 @@ https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/MD5.exe <br>
 ```
 .\jcloud-jcs-agent-win-deploy.ps1 uninstall
 ```
+3、打开powershll，进入安装包所在的目录（C:\jcloud）执行下述命令进行安装
+```
+.\jcloud-jcs-agent-win-deploy.ps1 install
+```
 
-3、执行`ps -ef`命令看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
+4、执行`ps -ef`命令看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
 
 
 <div id="user-content-2"></div>
