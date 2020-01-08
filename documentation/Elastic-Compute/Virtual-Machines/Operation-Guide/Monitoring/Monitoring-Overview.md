@@ -200,6 +200,7 @@
  
  
 <div id="user-content-1"></div>
+
 ## 监控插件安装说明
 云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，官方镜像在2019年5月-7月期间进行升级默认安装了升级工具'ifrit'以实现JCS-Agent的自动升级。<br>
 如您当前实例中未安装JCS-Agent或已安装但版本过低不具备自动升级能力，可在确保已卸载早期系统组件cloud-init和QGA的前提下，直接安装ifrit，安装完成10分钟内，JCS-Agent会被自动安装/更新为最新版本。<br>
@@ -227,3 +228,4 @@
 * Kbps=1000bps，KBps=1000Bps。
   
  
+   
