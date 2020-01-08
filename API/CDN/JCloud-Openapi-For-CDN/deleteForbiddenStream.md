@@ -17,13 +17,14 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/stream:unForbidden
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**deleteStreams**|DeleteStream[]|False| |要删除的禁播流|
+|**deleteStreams**|[DeleteStream[]](#deletestream)|True| |要删除的禁播流|
 
-### DeleteStream
+### <div id="DeleteStream">DeleteStream</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**stream**|String|False| |禁播流|
-|**app**|String|False| |封禁推流的app|
+|**stream**|String|True| |禁播流|
+|**app**|String|True| |封禁推流的app|
+|**publishIp**|String|True| | |
 
 ## 返回参数
 |名称|类型|描述|

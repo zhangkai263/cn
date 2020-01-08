@@ -23,13 +23,13 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/protocolConvert
 |**sslCertId**|String|False| |ssl证书id|
 |**syncToSsl**|Boolean|False| |是否同步到ssl,boolean值，取值true或者false|
 |**certName**|String|False| |syncToSsl是true时，certName是必填项|
-|**protocolConverts**|ProtocolConvert[]|False| | |
+|**protocolConverts**|[ProtocolConvert[]](#protocolconvert)|False| | |
 
-### ProtocolConvert
+### <div id="ProtocolConvert">ProtocolConvert</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**sourceProtocol**|String|False| |源协议,目前只能为rtmp|
-|**targetProtocol**|String|False| |目标协议|
+|**sourceProtocol**|String|True| |源协议,目前只能为rtmp|
+|**targetProtocol**|String|True| |目标协议|
 
 ## 返回参数
 |名称|类型|描述|

@@ -18,10 +18,10 @@ https://cdn.jdcloud-api.com/v1/serviceNode:getAllUpperNodeIpList
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ipList**|String[]| |

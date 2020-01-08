@@ -18,16 +18,22 @@ https://cdn.jdcloud-api.com/v1/console:areaIspList
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**mainLand**|AreaIspItem[]| |
-|**overseas**|AreaIspItem[]| |
-|**isp**|AreaIspItem[]| |
-### AreaIspItem
+|**mainLand**|[AreaIspItem[]](#areaispitem)|大陆城市|
+|**overseas**|[AreaIspItem[]](#areaispitem)|海外国家|
+|**isp**|[AreaIspItem[]](#areaispitem)|国内运营商|
+|**gangaotai**|[AreaIspItem[]](#areaispitem)|港澳台|
+|**oceanica**|[AreaIspItem[]](#areaispitem)|大洋洲国家|
+|**southAmerica**|[AreaIspItem[]](#areaispitem)|南美洲国家|
+|**northAmerica**|[AreaIspItem[]](#areaispitem)|北美洲国家|
+|**asia**|[AreaIspItem[]](#areaispitem)| |
+|**europe**|[AreaIspItem[]](#areaispitem)|欧洲国家|
+### <div id="AreaIspItem">AreaIspItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**description**|String| |

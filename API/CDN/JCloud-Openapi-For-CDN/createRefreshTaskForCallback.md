@@ -15,9 +15,9 @@ https://cdn.jdcloud-api.com/v1/task:createForCallback
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**taskType**|String|True| |刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
-|**urlItems**|[UrlItem[]](createrefreshtaskforcallback#urlitem)|True| | |
+|**urlItems**|[UrlItem[]](#urlitem)|True| | |
 
-### <div id="urlitem">UrlItem</div>
+### <div id="UrlItem">UrlItem</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**url**|String|True| |任务url|
@@ -26,11 +26,10 @@ https://cdn.jdcloud-api.com/v1/task:createForCallback
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createrefreshtaskforcallback#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
-
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|

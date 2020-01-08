@@ -20,15 +20,14 @@ https://cdn.jdcloud-api.com/v1/task:queryLivePrefetchTask
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](queryliveprefetchtask#result)|预热详情|
+|**result**|[Result](#result)|预热详情|
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**result**|[QueryLivePrefetchItem[]](queryliveprefetchtask#queryliveprefetchitem)| |
-### <div id="queryliveprefetchitem">QueryLivePrefetchItem</div>
-
+|**result**|[QueryLivePrefetchItem[]](#queryliveprefetchitem)| |
+### <div id="QueryLivePrefetchItem">QueryLivePrefetchItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**stream**|String| |

@@ -17,24 +17,24 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/backSource
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**sourceType**|String|False| |回源类型只能为[ips,domain]中的一种|
+|**sourceType**|String|True| |回源类型只能为[ips,domain]中的一种|
 |**backSourceType**|String|False| | |
 |**defaultSourceHost**|String|False| |默认回源host|
-|**domainSource**|DomainSourceInfo[]|False| | |
-|**ipSource**|IpSourceInfo[]|False| | |
+|**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
+|**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 
-### IpSourceInfo
+### <div id="IpSourceInfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**master**|Integer|False| | |
-|**ip**|String|False| | |
-|**ratio**|Double|False| | |
-### DomainSourceInfo
+|**master**|Integer|True| |1：主；2：备|
+|**ip**|String|True| |回源IP|
+|**ratio**|Double|False| |占比|
+### <div id="DomainSourceInfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**priority**|Integer|False| | |
-|**sourceHost**|String|False| | |
-|**domain**|String|False| | |
+|**priority**|Integer|True| |优先级（1-10）|
+|**sourceHost**|String|False| |回源host|
+|**domain**|String|True| |回源域名|
 
 ## 返回参数
 |名称|类型|描述|

@@ -17,7 +17,7 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/backSourceHost
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**sourceHost**|String|False| |默认回源host|
+|**sourceHost**|String|True| |默认回源host|
 
 
 ## 返回参数

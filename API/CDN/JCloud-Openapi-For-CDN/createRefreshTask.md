@@ -18,15 +18,13 @@ https://cdn.jdcloud-api.com/v1/task
 |**urls**|String[]|True| | |
 
 
-
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createrefreshtask#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
-
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|

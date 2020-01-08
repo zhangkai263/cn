@@ -19,7 +19,6 @@ https://cdn.jdcloud-api.com/v1/task:createLivePrefetchTask
 |**action**|String|True| |操作类型只能是[start,stop]中的一种|
 
 
-
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|

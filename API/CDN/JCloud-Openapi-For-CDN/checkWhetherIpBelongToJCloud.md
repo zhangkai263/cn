@@ -23,17 +23,18 @@ https://cdn.jdcloud-api.com/v1/ip:whetherBelongToJCloud
 |**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ipList**|[CheckWhetherIpBelongToJCloudItem[]](#checkwhetheripbelongtojclouditem)| |
-### <div id="checkwhetheripbelongtojclouditem">CheckWhetherIpBelongToJCloudItem</div>
+### <div id="CheckWhetherIpBelongToJCloudItem">CheckWhetherIpBelongToJCloudItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String| |
 |**belongToJCloud**|Boolean| |
 |**country**|String| |
 |**province**|String| |
+|**city**|String| |
 |**isp**|String| |
 
 ## 返回码
