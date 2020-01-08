@@ -6,5 +6,5 @@
 
 在合同管理页面中，点击“下载”按钮。
 
-![1576586518163](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576586518163.png)
+![下载合同.png](/image/Electronic-Signature/下载合同.png)
 
