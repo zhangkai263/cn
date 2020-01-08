@@ -50,6 +50,6 @@
 - 为子用户开启操作保护，当子用户的虚拟MFA启用后，主账号可以为子用户开启操作保护。这样子用户在操作主账号授予的敏感操作时将需要进行虚拟MFA验证
 - 为子用户管理 AKSK
 
- ![子用户安全凭证页面](../../../../image/IAM/SubUserManagement/子用户安全凭证页面.jpg)
+ ![子用户安全凭证页面](../../../../image/IAM/SubUserManagement/security.png)
 
 
