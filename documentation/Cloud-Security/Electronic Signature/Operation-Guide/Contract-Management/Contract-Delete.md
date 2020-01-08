@@ -6,7 +6,5 @@
 
 在合同管理页面中，点击“删除”按钮。
 
-![删除合同](/image/Electronic-Signature/删除合同.png)
+![下载合同.png](image/Electronic-Signature/删除合同.png)
 
-### OpenAPI删除合同
-请参见： [OpenAPI删除合同](/API/Electronic-Signature/Contract-Management/deleteContract.md) 

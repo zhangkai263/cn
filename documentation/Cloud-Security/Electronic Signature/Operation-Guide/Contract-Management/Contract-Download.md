@@ -6,7 +6,5 @@
 
 在合同管理页面中，点击“下载”按钮。
 
-![下载合同](/image/Electronic-Signature/下载合同.png)
+![1576586518163](C:\Users\liangzhiyong3\AppData\Roaming\Typora\typora-user-images\1576586518163.png)
 
-### OpenAPI下载合同
-请参见： [OpenAPI下载合同](/API/Electronic-Signature/Contract-Management/downloadContract.md) 
