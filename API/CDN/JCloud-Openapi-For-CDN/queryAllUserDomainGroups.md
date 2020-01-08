@@ -1,14 +1,14 @@
-# queryDomainsNotInGroup
+# queryAllUserDomainGroups
 
 
 ## 描述
-查询未分组域名
+查询用户所有的域名组
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://cdn.jdcloud-api.com/v1/domainGroup:notInGroup
+https://cdn.jdcloud-api.com/v1/domainGroup:listAll
 
 
 ## 请求参数
@@ -24,7 +24,12 @@ https://cdn.jdcloud-api.com/v1/domainGroup:notInGroup
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**domains**|String[]| |
+|**groups**|[SimpleGroupItem[]](#simplegroupitem)| |
+### <div id="SimpleGroupItem">SimpleGroupItem</div>
+|名称|类型|描述|
+|---|---|---|
+|**name**|String| |
+|**id**|Long| |
 
 ## 返回码
 |返回码|描述|

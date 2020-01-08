@@ -17,10 +17,10 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/httpType
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**httpType**|String|False| |http类型,只能为http或者https,默认为http.当设为https时,需要调用“设置通讯协议”接口上传证书和私钥|
+|**httpType**|String|True| |http类型,只能为http或者https,默认为http.当设为https时,需要调用“设置通讯协议”接口上传证书和私钥|
 |**certificate**|String|False| |用户证书,当Type为https时必须设置|
 |**rsaKey**|String|False| |证书私钥|
-|**jumpType**|String|False| |有三种类型：default、http、https|
+|**jumpType**|String|True| |有三种类型：default、http、https|
 |**certFrom**|String|False| |证书来源有两种类型：default,ssl|
 |**sslCertId**|String|False| |ssl证书id|
 |**syncToSsl**|Boolean|False| |是否同步到ssl,boolean值，取值true或者false|
@@ -30,9 +30,13 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/httpType
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Object| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
+### <div id="Result">Result</div>
+|名称|类型|描述|
+|---|---|---|
+|**taskId**|String|任务taskId|
 
 ## 返回码
 |返回码|描述|

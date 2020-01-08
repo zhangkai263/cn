@@ -17,10 +17,10 @@ https://cdn.jdcloud-api.com/v1/domainGroup/{id}:update
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domains**|String[]|False| |域名组内域名，包含主域名|
+|**domains**|String[]|True| |域名组内域名，包含主域名|
 |**primaryDomain**|String|False| |主域名,开启共享缓存时必传|
-|**shareCache**|String|False| |是否共享内存|
-|**domainGroupName**|String|False| | |
+|**shareCache**|String|True| |是否共享内存|
+|**domainGroupName**|String|True| | |
 
 
 ## 返回参数

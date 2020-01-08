@@ -29,24 +29,23 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**avgFileSize**|Long|False| | |
 |**defaultSourceHost**|String|False| | |
 |**httpType**|String|False| | |
-|**ipSource**|[IpSourceInfo[]](createdomain#ipsourceinfo)|False| | |
-|**domainSource**|[DomainSourceInfo[]](createdomain#domainsourceinfo)|False| | |
+|**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
+|**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
 |**accelerateRegion**|String|False| |加速区域:(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
 
-### <div id="domainsourceinfo">DomainSourceInfo</div>
+### <div id="DomainSourceInfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**priority**|Integer|True| |优先级（1-10）|
 |**sourceHost**|String|False| |回源host|
 |**domain**|String|True| |回源域名|
-### <div id="ipsourceinfo">IpSourceInfo</div>
+### <div id="IpSourceInfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**master**|Integer|True| |1：主；2：备|
 |**ip**|String|True| |回源IP|
 |**ratio**|Double|False| |占比|
-
 
 ## 返回参数
 |名称|类型|描述|

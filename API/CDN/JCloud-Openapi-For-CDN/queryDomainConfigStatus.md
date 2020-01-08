@@ -1,23 +1,21 @@
-# setFollowSourceProtocol
+# queryDomainConfigStatus
 
 
 ## 描述
-设置协议跟随回源
+查询域名配置状态
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
-https://cdn.jdcloud-api.com/v1/domain/{domain}/followSourceProtocol
+https://cdn.jdcloud-api.com/v1/domain/{taskId}/status
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domain**|String|True| |用户域名|
+|**taskId**|String|True| |任务ID|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**status**|String|True| |开关取值[on,off]|
+无
 
 
 ## 返回参数
@@ -29,7 +27,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/followSourceProtocol
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**taskId**|String|任务id|
+|**taskStatus**|String|任务状态,[success:成功,failed:失败,configuring:配置中]|
 
 ## 返回码
 |返回码|描述|

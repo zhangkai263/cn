@@ -24,17 +24,17 @@ https://cdn.jdcloud-api.com/v1/domainGroup
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](querydomaingrouplist#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer| |
 |**pageSize**|Integer| |
 |**pageNumber**|Integer| |
-|**domainGroups**|[DomainGroupItem[]](querydomaingrouplist#domaingroupitem)| |
-### <div id="domaingroupitem">DomainGroupItem</div>
+|**domainGroups**|[DomainGroupItem[]](#domaingroupitem)| |
+### <div id="DomainGroupItem">DomainGroupItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**domains**|String[]|域名组成员|

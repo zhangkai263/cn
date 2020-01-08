@@ -17,16 +17,16 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/certificate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**content**|String|False| | |
+|**content**|String|True| | |
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**sigAlgName**|String| |

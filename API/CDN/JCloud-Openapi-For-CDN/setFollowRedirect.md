@@ -17,7 +17,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/followRedirect
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**status**|String|False| |开关取值[on,off]|
+|**status**|String|True| |开关取值[on,off]|
 
 
 ## 返回参数

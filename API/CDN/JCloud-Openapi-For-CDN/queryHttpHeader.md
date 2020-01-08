@@ -21,15 +21,15 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/httpHeader
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**domain**|String| |
-|**headers**|QueryHttpHeaderResp[]| |
-### QueryHttpHeaderResp
+|**headers**|[QueryHttpHeaderResp[]](#queryhttpheaderresp)| |
+### <div id="QueryHttpHeaderResp">QueryHttpHeaderResp</div>
 |名称|类型|描述|
 |---|---|---|
 |**headerType**|String| |
