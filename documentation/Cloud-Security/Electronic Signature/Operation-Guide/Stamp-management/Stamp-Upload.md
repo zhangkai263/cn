@@ -10,6 +10,5 @@
 
 在弹窗中完善密钥信息，包括印章名称，上传印章文件；填写完成后点击确定，完成印章的添加。
 
-<div style=”align: center”>
 ![完善印章信息.png](/image/Electronic-Signature/完善印章信息.png)
-</div>
+
