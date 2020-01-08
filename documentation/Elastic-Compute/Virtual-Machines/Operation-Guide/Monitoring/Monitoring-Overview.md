@@ -29,7 +29,7 @@
         <td> 非空闲vCPU所占的百分比</td>
         <td> % </td>
         <td> 官方镜像内置的Agent，所有版本均支持此指标采集</td>
-        <td> 维度：无<br>降采样方式：avg<br>聚合方式：avg</td>   
+        <td> 维度：无</td>   
     </tr>
     <tr>
         <td> CPU平均负载（1min）  <br>vm.avg.load1</td>
