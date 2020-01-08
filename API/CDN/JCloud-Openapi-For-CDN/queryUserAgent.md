@@ -21,10 +21,10 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/userAgentConfig
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryuseragent#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**domain**|String| |

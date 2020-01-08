@@ -26,17 +26,17 @@ https://cdn.jdcloud-api.com/v1/domain
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getdomainlist#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer| |
 |**pageSize**|Integer| |
 |**pageNumber**|Integer| |
-|**domains**|[ListDomainItem[]](#listdomainitem)|域名列表|
-### <div id="ListDomainItem">ListDomainItem</div>
+|**domains**|[ListDomainItem[]](getdomainlist#listdomainitem)|域名列表|
+### <div id="listdomainitem">ListDomainItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**cname**|String| |

@@ -25,22 +25,22 @@ https://cdn.jdcloud-api.com/v1/statistics:topIp
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querystatisticstopip#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String| |
 |**endTime**|String| |
 |**domain**|String| |
-|**ipData**|[StatisticsTopIpData[]](#statisticstopipdata)| |
-### <div id="StatisticsTopIpData">StatisticsTopIpData</div>
+|**ipData**|[StatisticsTopIpData[]](querystatisticstopip#statisticstopipdata)| |
+### <div id="statisticstopipdata">StatisticsTopIpData</div>
 |名称|类型|描述|
 |---|---|---|
 |**count**|Integer| |
-|**ips**|[StatisticsTopIpItem[]](#statisticstopipitem)| |
-### <div id="StatisticsTopIpItem">StatisticsTopIpItem</div>
+|**ips**|[StatisticsTopIpItem[]](querystatisticstopip#statisticstopipitem)| |
+### <div id="statisticstopipitem">StatisticsTopIpItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String| |

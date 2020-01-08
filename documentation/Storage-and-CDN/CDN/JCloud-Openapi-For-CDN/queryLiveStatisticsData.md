@@ -31,17 +31,17 @@ https://cdn.jdcloud-api.com/v1/liveStatistics
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querylivestatisticsdata#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String| |
 |**endTime**|String| |
 |**domain**|String| |
-|**statistics**|[StatisticsDataItem[]](#statisticsdataitem)| |
-### <div id="StatisticsDataItem">StatisticsDataItem</div>
+|**statistics**|[StatisticsDataItem[]](querylivestatisticsdata#statisticsdataitem)| |
+### <div id="statisticsdataitem">StatisticsDataItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|
