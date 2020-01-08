@@ -38,7 +38,7 @@ parameters:
   archiveOnDelete: "false"          #archiveOnDelete定义为false时，删除NFS Server中对应的目录，为true则保留；
 ```
 
-*** 备注：CFS目前暂不支持flock，如果应用需要flock支持，请开工单单独开通
+备注：CFS目前暂不支持flock，如果应用需要flock支持，请开工单单独开通
 
 * 使用Yaml文件创建Storage Class：
 
