@@ -3,8 +3,8 @@
 
 受系统升级和组件演进的客观因素影响，早期官方镜像中可能未安装以下组件，建议您核查当前系统的安装情况后逐一完成安装。
 
-    * 请注意：
-      私有镜像导入安装场景时，请在外部环境下安装除ifrit以外的其他agent，导入京东云环境后再行安装ifrit。
+    * 提示：
+      ifrit可实现JCS-Agent的自动安装和更新，在导入镜像/镜像组件更新场景下，建议您参照下方指导，在确保云主机内cloud-init和QGA已卸载的前提下，直接安装ifrit。安装完成后最多等待10分钟即可完成JCS-Agent的安装或更新。
     
 
 | 组件名称    | 相关进程名称    | 主要功能     | 不安装有何影响    |
@@ -52,13 +52,15 @@ Linux：`ps -ef|grep MonitorPlugin`<br>
 Windows：`wmic process where caption="MonitorPlugin.exe" get caption,commandline /value`
 
 ### 安装方式
+**（建议您[安装ifrit](default-agent-in-public-image#user-content-2) 后由其自动拉起JCS-Agent，此方式下可跳过下述安装步骤。）**
+
 **Linux：**<br>
 1、下载下述安装包和安装脚本，将其下载至同一目录中（比如：/root/jcloud）。<br>
-若主机未绑定公网IP，请将链接中的bucket地址"bj"和地域参数"cn-north-1"分别替换成主机所在地域的代码："gz","cn-south-1"(华南-广州)、"sq","cn-east-1"(华东-宿迁)、"sh","cn-east-2"(华东-上海)。<br>
+若主机未绑定公网IP需要内网环境下载，请将链接中的bucket地址"bj"和地域参数"cn-north-1"分别替换成主机所在地域的代码："gz","cn-south-1"(华南-广州)、"sq","cn-east-1"(华东-宿迁)、"sh","cn-east-2"(华东-上海)，并将域名中的"s3"改为"s3-internal"。<br>
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux-deploy.py <br>
 https://bj-jcs-agent-linux.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-linux.zip <br>
 
-2、在下载目录执行下述指令，卸载旧版本（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
+2、在下载目录执行下述指令，卸载旧版本。（**此步骤用于更新JCS-Agent时操作，如当前未安装可跳过**）<br>
 ```
 python jcloud-jcs-agent-linux-deploy.py uninstall
 ```
@@ -66,14 +68,13 @@ python jcloud-jcs-agent-linux-deploy.py uninstall
 3、在下载目录执行下述指令，安装最新版本。<br>
 ```
 python jcloud-jcs-agent-linux-deploy.py install
-python /usr/local/share/jcloud/agent/scripts/linux/entry.py （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
 ```
 
 4、执行`ps -ef`看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包和安装脚本。
 
 **Windows:**<br>
 1、下载安装包、安装脚本和MD5工具，将其下载至同一目录中（比如： C:\jcloud）。<br>
-若主机未绑定公网IP，请将链接中的地域参数"cn-north-1"替换成主机所在地域的代码："cn-south-1"(华南-广州)、"cn-east-1"(华东-宿迁)、"cn-east-2"(华东-上海)。<br>
+若主机未绑定公网IP需要内网环境下载，请将链接中的地域参数"cn-north-1"替换成主机所在地域的代码："cn-south-1"(华南-广州)、"cn-east-1"(华东-宿迁)、"cn-east-2"(华东-上海)，并将域名中的"s3"改为"s3-internal"。<br>
 https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-windows-manual.zip <br>
 https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/jcloud-jcs-agent-win-deploy.ps1 <br>
 https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/MD5.exe <br>
@@ -82,14 +83,12 @@ https://bj-jcs-agent-windows.s3.cn-north-1.jdcloud-oss.com/MD5.exe <br>
 ```
 .\jcloud-jcs-agent-win-deploy.ps1 uninstall
 ```
-
-3、打开powershll，进入安装包所在的目录（C:\jcloud）执行下述命令进行安装 <br>
+3、打开powershll，进入安装包所在的目录（C:\jcloud）执行下述命令进行安装
 ```
 .\jcloud-jcs-agent-win-deploy.ps1 install
-PS C:\Program Files\JD.com\jCloud\Agent\Scripts\Windows> .\InitializeInstance.ps1 （此指令用于导入镜像后安装JCS-Agent或更新JCS-Agent时执行，如导入镜像前在京东云外部环境安装，请跳过）
 ```
 
-3、执行`ps -ef`命令看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
+4、执行`ps -ef`命令看到JCSAgentCore和MonitorPlugin两个进程即表示安装成功。安装成功后可以删除安装包、安装脚本和MD5工具。
 
 
 <div id="user-content-2"></div>
@@ -98,7 +97,7 @@ PS C:\Program Files\JD.com\jCloud\Agent\Scripts\Windows> .\InitializeInstance.ps
 ### 组件介绍
 Ifrit是京东云自研的轻量、通用的部署运维工具，可实现对其所管理组件的部署、升级、卸载等管理操作。Ifrit与JCS-Agent配合工作，实现对JCS-Agent的自动化升级。
 
-官方镜像将在2019年5月-7月期间陆续升级，完成Ifrit的默认安装。云市场镜像安装情况视镜像发布时间（基于何版本的官方镜像制作）和服务商制作情况，具体请咨询云市场。
+官方镜像于2019年5月-7月期间陆续升级，完成Ifrit的默认安装。云市场镜像安装情况视镜像发布时间（基于何版本的官方镜像制作）和服务商制作情况，具体请咨询云市场。
 
 ### 安装方式
 **Linux：** <br>
