@@ -196,6 +196,10 @@
 	</thead>
 </table> 
  
+ 
+ 
+ 
+ 
 <div id="monitorplugin"></div>
 
 ## 监控插件安装说明
