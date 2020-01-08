@@ -31,7 +31,9 @@
 | 概念名称    | 概念解释 | 
 | :------    | :------ |
 | 角色 JRN   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
-| 角色 JRN   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
-| 角色 JRN   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
-| 角色 JRN   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
-| 短文本     | 中等文本 | 
+| 信任关系   | 信任关系是创建角色时所指定的可以扮演角色的实体身份，可以是京东云账号、京东云服务或外部身份提供商。角色只能由其信任的实体身份所扮演。 | 
+| 代入角色   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
+| 会话策略   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
+| 权限策略   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
+| 信任策略   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
+| 临时凭证   | 角色JRN 为京东云角色的全局资源描述符，遵循京东云 JRN 命名规范，格式为 jrn:iam::accountID:role/角色名称 | 
