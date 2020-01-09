@@ -62,6 +62,8 @@ step3触发方式：
 规则名称：10min-timing                  
 规则描述：10分钟定时
 事件来源类型：定时事件       
-定时模式：固定频率 10分钟
+定时模式：固定频率 10分钟 或  定时表达式 */10 * * * *
+
+![timing4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing4.PNG) 
 
 
