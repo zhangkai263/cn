@@ -26,9 +26,9 @@ step2函数配置：
 - 超时时间：100秒                                               
 - 描述、环境变量、权限配置：此处默认不配置
 - 高级配置： 
-         日志集：func_log
-         日志主题：log-function
-         说明：日志集、日志主题需提前在日志服务创建
+         日志集：func_log                  
+         日志主题：log-function                            
+         说明：日志集、日志主题需提前在日志服务创建                                      
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1-2.PNG) 
 
 step3触发方式：
