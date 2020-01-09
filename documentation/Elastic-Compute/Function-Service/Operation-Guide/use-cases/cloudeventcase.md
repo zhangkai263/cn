@@ -70,7 +70,7 @@ step3触发方式：
 事件来源类型：定时事件                                          
 定时模式：固定频率 10分钟 或  定时表达式( [查看规则](https://docs.jdcloud.com/cn/cloudevents/crongrammar) ) */10 * * * * 
 
-完成
+以上，完成定时规则触发器创建。
 
 ![timing4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing4.PNG) 
 
