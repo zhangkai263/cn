@@ -10,13 +10,26 @@
 
 登陆函数服务控制台，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
+step1函数代码:
+
 - 函数运行时： python 3.6
 - 函数模板：自定义模板                     
 - 函数名称：timing-function（您可以设置自己的函数名）                           
 - 函数入口：根据提示填写，默认index.handler                
-- 函数代码：默认自定义模板                     
+- 函数代码：默认自定义模板 
+
+![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1.PNG) 
+
+step2函数配置：
+
 - 函数执行内存：128MB                 
 - 超时时间：100秒                                               
-- 描述、环境变量、权限配置、高级配置：此处默认不配置（您可根据需要配置环境变量、函数网络及日志输出）            
-- 触发器：不配置触发器                                              
+- 描述、环境变量、权限配置、高级配置：此处默认不配置（您可根据需要配置环境变量、函数网络及日志输出）  
+![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing2.PNG) 
+
+step3触发方式：
+
+- 触发器：不配置触发器        
+![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing3.PNG) 
+
 单击”完成“，完成函数创建。
