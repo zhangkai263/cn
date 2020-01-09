@@ -29,7 +29,7 @@
 | 对象存储OSS | 异步调用     | [对象存储OSS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
 | API网关 | 同步调用     | [API网关触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
 | 队列服务JQS | 异步调用     | [队列服务JQS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/JQS-trigger.md)|
-| 云事件 | 异步调用     | [云事件触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/cloudevent.md)|
+| 云事件服务 | 异步调用     | [云事件触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/cloudevent.md)|
 
 ## 函数管理方式
 
