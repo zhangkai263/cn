@@ -23,7 +23,7 @@
 | * 规则名称 |    不为空且只允许中文、数字、大小写字母、英文下划线“_”及中划线“-”，不超过32个字符       |
 | 规则描述   | 不超过256个字符  |
 | * 事件来源类型  | 定时事件  |
-| 定时模式  | 固定频率 或 [定时表达式](https://docs.jdcloud.com/cn/cloudevents/crongrammar)  |
+| 定时模式  | 固定频率（1-100 分钟/小时/天） 或  [定时表达式](https://docs.jdcloud.com/cn/cloudevents/crongrammar)  |
 
 ### 创建自定义事件
 
