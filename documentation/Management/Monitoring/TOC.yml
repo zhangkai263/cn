@@ -103,6 +103,8 @@ items:
       href: Metrics/k8s.md  
     - name: 弹性公网IP
       href: Metrics/ip.md
+    - name: 负载均衡
+      href: Metrics/lb.md
     - name: 云数据库RDS
       href: Metrics/rds.md
 - name: 教程
