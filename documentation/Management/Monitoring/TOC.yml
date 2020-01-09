@@ -10,8 +10,6 @@ items:
       href: Introduction/Basic-Infrastructure.md
     - name: 产品优势
       href: Introduction/Benefits.md
-    - name: 监控指标
-      href: Introduction/Metrics.md
     - name: 产品规格
       href: Introduction/Specifications.md
       status: 0
@@ -93,6 +91,8 @@ items:
       href: Best-Practices/daily-business-monitoring.md
 - name: 云资源监控指标
   items:
+    - name: 云主机
+      href: Metrics/Metrics.md
     - name: 云主机
       href: Metrics/vm.md
     - name: 云硬盘
