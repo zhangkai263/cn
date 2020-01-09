@@ -24,19 +24,19 @@ https://cdn.jdcloud-api.com/v1/logs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querydomainslog#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**logs**|[DomainsLog[]](#domainslog)| |
-### <div id="DomainsLog">DomainsLog</div>
+|**logs**|[DomainsLog[]](querydomainslog#domainslog)| |
+### <div id="domainslog">DomainsLog</div>
 |名称|类型|描述|
 |---|---|---|
 |**domain**|String|域名|
-|**domainLogs**|[DomainLog[]](#domainlog)| |
-### <div id="DomainLog">DomainLog</div>
+|**domainLogs**|[DomainLog[]](querydomainslog#domainlog)| |
+### <div id="domainlog">DomainLog</div>
 |名称|类型|描述|
 |---|---|---|
 |**url**|String|下载链接|
