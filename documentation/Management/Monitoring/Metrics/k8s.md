@@ -1,6 +1,7 @@
-产品线监控数据的servicecode：jke
+kubernetes集群获取监控数的servicecode为jke，提供集群、节点组和节点三个维度的指标数据。具体如下：
 
-# 集群
+**集群** 
+
 metric | 中文名称 | 英文名称 | 单位 | 说明
 ---|--- |--- |---|---
 jke.node.status.ready | 节点就绪状态 | Node Ready Status | 无| 
@@ -21,7 +22,10 @@ jke.vm.disk.bytes.write | 系统盘写流量 | Disk Write Bytes | Bps |
 jke.vm.network.bytes.incoming | 网络进流量 | Network Incoming Bytes | bps|
 jke.vm.network.bytes.outgoing | 网络出流量 | NNetwork Outgoing Bytes | bps|
 
-# 节点组/节点
+**节点组/节点**  
+- 获取节点组监控数据时，tags中的nodegroup_id需指定需查询的节点组ID。
+- 获取节点监控数据时，需要指定节点所在的节点组及节点信息，tags中nodegroup_id需指定节点所属的节点组ID，node_id需指定查询的节点ID。
+
 metric | 中文名称 | 英文名称 | 单位 | 说明
 ---|--- |--- |---|---
 jke.cpu_util | CPU使用率 | CPU Usage | % | 
