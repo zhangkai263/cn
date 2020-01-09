@@ -41,7 +41,7 @@ items:
       href: SDK-Rerference/python.md 
     - name: php 参考
       href: SDK-Rerference/php.md 
-    - name: dotnet 参考
+    - name: .net 参考
       href: SDK-Rerference/dotnet.md 
 - name: 相关协议
   items:

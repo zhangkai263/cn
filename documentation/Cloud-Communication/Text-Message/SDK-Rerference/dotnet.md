@@ -1,13 +1,13 @@
 ## .net 参考  
 **一. 环境准备**  
-下载安装dotnet开发环境，[下载地址：](https://dotnet.microsoft.com/download)  
+下载安装dotnet开发环境，[下载地址](https://dotnet.microsoft.com/download)  
 执行如下命令
 ```
 dotnet --version
 ```
 确认安装成功  
  
-注意：dotnet需要2.0以上版本，具体要求参考[京东云官网帮助文档：](https://docs.jdcloud.com/cn/sdk/dotnet)  
+注意：dotnet需要2.0以上版本，具体要求参考[京东云官网帮助文档](https://docs.jdcloud.com/cn/sdk/dotnet)  
 <br><br>
 **二. SDK安装**  
 安装京东云核心包  
@@ -24,9 +24,9 @@ dotnet add package JDCloudSDK.Sms --version 1.2.0.1
 关于 .net 短信包的最新版本号，请[查看](https://www.nuget.org/packages/JDCloudSDK.Sms/)  
 
 <br><br>
-**三. 示例代码 **  
+**三. 示例代码**  
 
- ```php
+ ```
 using System;
  
  

@@ -2,14 +2,14 @@
 **一、安装京东云Python SDK，两种安装方式 pip安装或下载sdk手动安装。**  
 京东云Python SDK适用于Python 2.7.* 和 3.* 版本  
 1. pip安装：  
-```python
+```
 pip install -U jdcloud_sdk
 ```  
  
 2. 下载sdk手动安装：  
 sdk下载地址： [SDK-1.6.39](https://files.pythonhosted.org/packages/99/9d/48054c24d9d940a173b11d5bd87a149a1ce418330cdafa9f9d077fc6a83e/jdcloud_sdk-1.6.39.tar.gz)  
 下载SDK后， 解压包，进入 ./jdcloud_sdk-1.6.39 目录 ，然后通过如下命令安装  
-```python
+```
 python setup.py install
 ```  
 
@@ -17,7 +17,7 @@ python setup.py install
 <br><br>
 **二. 示例代码**  
 
- ```python
+ ```
 # coding=utf-8
 from jdcloud_sdk.core.credential import Credential
 from jdcloud_sdk.services.sms.client.SmsClient import SmsClient
