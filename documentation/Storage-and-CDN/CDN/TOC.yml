@@ -107,7 +107,7 @@
           - name: 回源跟随302
             href: API-Reference/CDN-Open-API/Set-Follow-302-Configuration.md
           - name: 回源策略变更
-            href: API-Reference/CDN-Open-API/Change-back-To-source.md
+            href: API-Reference/CDN-Open-API/Change-back-To-Source.md
           - name: 缓存策略变更
             href: API-Reference/CDN-Open-API/Change-Cache-policy.md
           - name: 服务状态变更
