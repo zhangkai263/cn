@@ -18,7 +18,7 @@ SDK环境依赖, 建议使用Maven 方式引入依赖：
 关于 Java SDK 的最新版本号，请[查看](https://mvnrepository.com/artifact/com.jdcloud.sdk/sms)  
 
 <br><br>
-**二. 示例代码：**  
+**二. 示例代码**  
  ```
 import com.google.gson.Gson;
 import com.jdcloud.sdk.auth.CredentialsProvider;
