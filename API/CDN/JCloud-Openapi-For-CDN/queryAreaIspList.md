@@ -18,22 +18,22 @@ https://cdn.jdcloud-api.com/v1/console:areaIspList
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryareaisplist#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**mainLand**|[AreaIspItem[]](#areaispitem)|大陆城市|
-|**overseas**|[AreaIspItem[]](#areaispitem)|海外国家|
-|**isp**|[AreaIspItem[]](#areaispitem)|国内运营商|
-|**gangaotai**|[AreaIspItem[]](#areaispitem)|港澳台|
-|**oceanica**|[AreaIspItem[]](#areaispitem)|大洋洲国家|
-|**southAmerica**|[AreaIspItem[]](#areaispitem)|南美洲国家|
-|**northAmerica**|[AreaIspItem[]](#areaispitem)|北美洲国家|
-|**asia**|[AreaIspItem[]](#areaispitem)| |
-|**europe**|[AreaIspItem[]](#areaispitem)|欧洲国家|
-### <div id="AreaIspItem">AreaIspItem</div>
+|**mainLand**|[AreaIspItem[]](queryareaisplist#areaispitem)|大陆城市|
+|**overseas**|[AreaIspItem[]](queryareaisplist#areaispitem)|海外国家|
+|**isp**|[AreaIspItem[]](queryareaisplist#areaispitem)|国内运营商|
+|**gangaotai**|[AreaIspItem[]](queryareaisplist#areaispitem)|港澳台|
+|**oceanica**|[AreaIspItem[]](queryareaisplist#areaispitem)|大洋洲国家|
+|**southAmerica**|[AreaIspItem[]](queryareaisplist#areaispitem)|南美洲国家|
+|**northAmerica**|[AreaIspItem[]](queryareaisplist#areaispitem)|北美洲国家|
+|**asia**|[AreaIspItem[]](queryareaisplist#areaispitem)| |
+|**europe**|[AreaIspItem[]](queryareaisplist#areaispitem)|欧洲国家|
+### <div id="areaispitem">AreaIspItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**description**|String| |

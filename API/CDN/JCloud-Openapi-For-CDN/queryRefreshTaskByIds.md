@@ -21,13 +21,13 @@ https://cdn.jdcloud-api.com/v1/task:queryByIds
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryRefreshTaskByIds#result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**tasks**|[RefreshTask[]](#refreshtask)| |
+|**tasks**|[RefreshTask[]](queryRefreshTaskByIds#refreshtask)| |
 ### <div id="RefreshTask">RefreshTask</div>
 |名称|类型|描述|
 |---|---|---|

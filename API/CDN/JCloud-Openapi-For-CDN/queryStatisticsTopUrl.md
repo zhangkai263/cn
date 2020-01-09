@@ -25,22 +25,22 @@ https://cdn.jdcloud-api.com/v1/statistics:topUrl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querystatisticstopurl#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String| |
 |**endTime**|String| |
 |**domain**|String| |
-|**urlData**|[StatisticsTopUrlData[]](#statisticstopurldata)| |
-### <div id="StatisticsTopUrlData">StatisticsTopUrlData</div>
+|**urlData**|[StatisticsTopUrlData[]](querystatisticstopurl#statisticstopurldata)| |
+### <div id="statisticstopurldata">StatisticsTopUrlData</div>
 |名称|类型|描述|
 |---|---|---|
 |**count**|Integer| |
-|**urls**|[StatisticsTopUrlItem[]](#statisticstopurlitem)| |
-### <div id="StatisticsTopUrlItem">StatisticsTopUrlItem</div>
+|**urls**|[StatisticsTopUrlItem[]](querystatisticstopurl#statisticstopurlitem)| |
+### <div id="statisticstopurlitem">StatisticsTopUrlItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**url**|String| |

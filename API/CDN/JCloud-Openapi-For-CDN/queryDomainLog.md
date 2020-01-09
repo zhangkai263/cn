@@ -28,17 +28,17 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/log
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querydomainlog#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**total**|Integer|总的数量|
 |**pageSize**|Integer|页面大小|
 |**pageNumber**|Integer|页面页数|
-|**urls**|[DomainLog[]](#domainlog)| |
-### <div id="DomainLog">DomainLog</div>
+|**urls**|[DomainLog[]](querydomainlog#domainlog)| |
+### <div id="domainlog">DomainLog</div>
 |名称|类型|描述|
 |---|---|---|
 |**url**|String|下载链接|

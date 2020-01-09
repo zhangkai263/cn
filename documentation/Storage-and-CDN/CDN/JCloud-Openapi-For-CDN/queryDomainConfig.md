@@ -21,10 +21,10 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/config
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querydomainconfig#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ignoreQueryString**|String|忽略参数[on,off]|
@@ -40,8 +40,8 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/config
 |**jcdnTimeAnti**|String| |
 |**shareCache**|String| |
 |**isShareOpen**|String| |
-|**cacheRules**|[CacheRule[]](#cacherule)| |
-### <div id="CacheRule">CacheRule</div>
+|**cacheRules**|[CacheRule[]](querydomainconfig#cacherule)| |
+### <div id="cacherule">CacheRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**weight**|Integer| |

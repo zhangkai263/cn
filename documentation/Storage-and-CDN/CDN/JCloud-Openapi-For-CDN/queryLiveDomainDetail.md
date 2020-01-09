@@ -21,10 +21,10 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querylivedomaindetail#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**domainType**|String|域名类型|
@@ -35,7 +35,7 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 |**cname**|String|cname|
 |**siteType**|String|站点类型推流push，拉流pull|
 |**status**|String|域名状态|
-|**source**|[BackSourceInfo](#backsourceinfo)|回源信息|
+|**source**|[BackSourceInfo](querylivedomaindetail#backsourceinfo)|回源信息|
 |**sourceType**|String|域名回源类型|
 |**backSourceType**|String|回源类型目前只能未rtmp|
 |**videoType**|String|视频格式 H.264|
@@ -53,7 +53,7 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 |**flvUrls**|String[]|flvUrls|
 |**hlsUrls**|String[]|hlsUrls|
 |**rtmpUrls**|String[]|rtmpUrls|
-|**protocolConverts**|[ProtocolConvert[]](#protocolconvert)|转协议|
+|**protocolConverts**|[ProtocolConvert[]](querylivedomaindetail#protocolconvert)|转协议|
 |**certificate**|String|https证书|
 |**rsaKey**|String|https私钥|
 |**accesskeyType**|Integer|url鉴权开关|
@@ -84,24 +84,24 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}
 |**sslCertStartTime**|String| |
 |**sslCertEndTime**|String| |
 |**accelerateRegion**|String| |
-### <div id="ProtocolConvert">ProtocolConvert</div>
+### <div id="protocolconvert">ProtocolConvert</div>
 |名称|类型|描述|
 |---|---|---|
 |**sourceProtocol**|String|源协议,目前只能为rtmp|
 |**targetProtocol**|String|目标协议|
-### <div id="BackSourceInfo">BackSourceInfo</div>
+### <div id="backsourceinfo">BackSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**ips**|[IpSourceInfo[]](#ipsourceinfo)| |
-|**domain**|[DomainSourceInfo[]](#domainsourceinfo)| |
+|**ips**|[IpSourceInfo[]](querylivedomaindetail#ipsourceinfo)| |
+|**domain**|[DomainSourceInfo[]](querylivedomaindetail#domainsourceinfo)| |
 |**ossSource**|String| |
-### <div id="DomainSourceInfo">DomainSourceInfo</div>
+### <div id="domainsourceinfo">DomainSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**priority**|Integer|优先级（1-10）|
 |**sourceHost**|String|回源host|
 |**domain**|String|回源域名|
-### <div id="IpSourceInfo">IpSourceInfo</div>
+### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**master**|Integer|1：主；2：备|

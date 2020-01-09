@@ -26,23 +26,23 @@ https://cdn.jdcloud-api.com/v1/statistics:groupByArea
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querymixstatisticswithareadata#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String| |
 |**endTime**|String| |
 |**domain**|String| |
-|**statistics**|[StatisticsWithAreaGroupDetail[]](#statisticswithareagroupdetail)| |
-### <div id="StatisticsWithAreaGroupDetail">StatisticsWithAreaGroupDetail</div>
+|**statistics**|[StatisticsWithAreaGroupDetail[]](querymixstatisticswithareadata#statisticswithareagroupdetail)| |
+### <div id="statisticswithareagroupdetail">StatisticsWithAreaGroupDetail</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|
 |**endTime**|String|UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|
-|**data**|[StatisticsWithAreaGroupDetailItem[]](#statisticswithareagroupdetailitem)| |
-### <div id="StatisticsWithAreaGroupDetailItem">StatisticsWithAreaGroupDetailItem</div>
+|**data**|[StatisticsWithAreaGroupDetailItem[]](querymixstatisticswithareadata#statisticswithareagroupdetailitem)| |
+### <div id="statisticswithareagroupdetailitem">StatisticsWithAreaGroupDetailItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**area**|String| |

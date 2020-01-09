@@ -21,14 +21,14 @@ https://cdn.jdcloud-api.com/v1/task/{taskId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryrefreshtaskbyid#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**task**|[RefreshTask](#refreshtask)| |
-### <div id="RefreshTask">RefreshTask</div>
+|**task**|[RefreshTask](queryrefreshtaskbyid#refreshtask)| |
+### <div id="refreshtask">RefreshTask</div>
 |名称|类型|描述|
 |---|---|---|
 |**createDate**|String|任务创建时间,UTC时间|
@@ -39,8 +39,8 @@ https://cdn.jdcloud-api.com/v1/task/{taskId}
 |**retryStatus**|String|重试状态(unretry:不重试,retry:重试)|
 |**taskStatus**|String|任务状态(running:执行中,success:成功,failed:失败)|
 |**taskType**|String|刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
-|**urlTasks**|[UrlTask[]](#urltask)|详细的任务|
-### <div id="UrlTask">UrlTask</div>
+|**urlTasks**|[UrlTask[]](queryrefreshtaskbyid#urltask)|详细的任务|
+### <div id="urltask">UrlTask</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskType**|String|刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
