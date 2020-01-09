@@ -26,9 +26,10 @@ step2函数配置：
 - 超时时间：100秒                                               
 - 描述、环境变量、权限配置：此处默认不配置
 - 高级配置： 
-         日志集：
-         日志主题：
-![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing2.PNG) 
+         日志集：func_log
+         日志主题：log-function
+         说明：日志集、日志主题需提前在日志服务创建
+![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1-2.PNG) 
 
 step3触发方式：
 
@@ -64,7 +65,7 @@ step3触发方式：
 事件订阅：创建新的订阅规则                 
 规则名称：10min-timing                                     
 事件来源类型：定时事件                   
-定时模式：固定频率 10分钟 或  定时表达式 */10 * * * *
+定时模式：固定频率 10分钟 或  定时表达式( [查看规则](https://docs.jdcloud.com/cn/cloudevents/crongrammar) ) */10 * * * * 
 
 完成
 
