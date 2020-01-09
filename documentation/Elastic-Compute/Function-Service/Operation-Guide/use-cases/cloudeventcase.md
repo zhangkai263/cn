@@ -24,7 +24,10 @@ step2函数配置：
 
 - 函数执行内存：128MB                 
 - 超时时间：100秒                                               
-- 描述、环境变量、权限配置、高级配置：此处默认不配置（您可根据需要配置环境变量、函数网络及日志输出）  
+- 描述、环境变量、权限配置：此处默认不配置
+- 高级配置： 
+         日志集：
+         日志主题：
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing2.PNG) 
 
 step3触发方式：
@@ -55,15 +58,21 @@ step3触发方式：
 ## 创建触发器    
 创建云事件触发器，您可以提前在云事件服务控制台创建订阅规则，指定该函数为目的地；或在函数服务控制台添加已有订阅规则或创建新的订阅规则。下面说明如何在函数服务控制台创建新的云事件触发器。
 
-1. 在“timing-function”函数详情页面，选择”触发器”tab,单击“创建触发器”。
+在“timing-function”函数详情页面，选择”触发器”tab,单击“创建触发器”，创建一个10分钟定时触发器。
 
 触发器类型：云事件触发器            
 事件订阅：创建新的订阅规则                 
-规则名称：10min-timing                  
-规则描述：10分钟定时
-事件来源类型：定时事件       
+规则名称：10min-timing                                     
+事件来源类型：定时事件                   
 定时模式：固定频率 10分钟 或  定时表达式 */10 * * * *
 
+完成
+
 ![timing4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing4.PNG) 
+
+##  查看函数执行
+
+
+
 
 
