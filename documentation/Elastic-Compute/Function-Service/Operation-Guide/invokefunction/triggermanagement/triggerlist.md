@@ -17,4 +17,4 @@
    
 4. 云事件触发器
    - 说明：[云事件触发器说明](eventsourceservice/cloudevent.md)
-
+   - 示例：[云事件触发器示例](../../use-cases/cloudeventcase.md)
