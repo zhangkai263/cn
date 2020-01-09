@@ -1,5 +1,5 @@
-﻿## JAVA 参考  
-**环境准备**  
+## JAVA 参考  
+**一. 环境准备**  
 请按以下说明准备好环境。  
 JAVA环境依赖  
 请确保已经安装了 JDK 环境，若未安装请前往 Oracle 官网下载；  
@@ -19,8 +19,8 @@ SDK环境依赖
   
 关于 Java SDK 的最新版本号，请[查看](https://mvnrepository.com/artifact/com.jdcloud.sdk/sms)  
 
-
-## 示例代码：
+<br><br>
+**二. 示例代码：**  
  ```java
 import com.google.gson.Gson;
 import com.jdcloud.sdk.auth.CredentialsProvider;
