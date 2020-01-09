@@ -5,7 +5,7 @@ JAVA环境依赖, 请确保已经安装了 JDK 8 环境，若未安装请前往 
 
 SDK环境依赖, 建议使用Maven 方式引入依赖：  
 
- ```java
+ ```
 <dependency>
    <groupId>com.jdcloud.sdk</groupId>
    <artifactId>sms</artifactId>
@@ -19,7 +19,7 @@ SDK环境依赖, 建议使用Maven 方式引入依赖：
 
 <br><br>
 **二. 示例代码：**  
- ```java
+ ```
 import com.google.gson.Gson;
 import com.jdcloud.sdk.auth.CredentialsProvider;
 import com.jdcloud.sdk.auth.StaticCredentialsProvider;
