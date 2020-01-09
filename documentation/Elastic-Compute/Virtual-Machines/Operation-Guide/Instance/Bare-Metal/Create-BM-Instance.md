@@ -28,10 +28,11 @@
    
   ./os-init.sh
 ```
-3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)
 
+3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)
 4. 将已卸载的vm1系统盘作为数据盘挂载在另一台操作系统与vm1相同的云主机vm2上。为可参考文档[挂载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk)。请确保vm1与vm2使用的操作系统一致，如vm1操作系统为CentOS 7.6，vm2操作系统为CentOS 7.4，vm1与vm2均为CentOS操作系统。
 5. 挂载完成后，登录云主机vm2, 可以通过如下命令来查看磁盘分区信息：
+
 ```
   lsblk
 ```
