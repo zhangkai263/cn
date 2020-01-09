@@ -1,4 +1,4 @@
-﻿## Python 参考  
+## Python 参考  
 **一、安装京东云Python SDK，两种安装方式 pip安装或下载sdk手动安装。**  
 京东云Python SDK适用于Python 2.7.* 和 3.* 版本  
 1. pip安装：  
@@ -15,7 +15,7 @@ python setup.py install
 
 关于 python SDK 的最新版本号，请[查看](https://pypi.org/project/jdcloud-sdk/#history)  
 
-## 示例代码  
+**二. 示例代码**  
 
  ```python
 # coding=utf-8
