@@ -42,7 +42,7 @@ items:
     - name: php 参考
       href: SDK-Rerference/php.md 
     - name: dotnet 参考
-      href: SDK-Rerference/dotnet.md 
+      href: SDK-Rerference/.net.md 
 - name: 相关协议
   items:
     - name: 服务协议
