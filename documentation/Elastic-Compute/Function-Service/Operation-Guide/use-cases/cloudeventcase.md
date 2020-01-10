@@ -66,7 +66,7 @@ step3触发方式：
 
 - 触发器类型：云事件触发器                                 
 - 事件订阅：创建新的订阅规则                                  
-- 规则名称：10min-timing                                                               
+- 规则名称：1min-timing                                                               
 - 事件来源类型：定时事件                                          
 - 定时模式：固定频率 1分钟 或  定时表达式( [查看规则](https://docs.jdcloud.com/cn/cloudevents/crongrammar) ) */1 * * * * 
 
@@ -81,7 +81,7 @@ step3触发方式：
 
 ![JQS13](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS13.PNG) 
 
-![JQS14](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS14.PNG) 
+![JQS14](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS14.png) 
 
 
 
