@@ -82,10 +82,10 @@ authToken字段Base64解码后，得到JSON格式字符串，包含字段如下�
 使用AWS SDK在服务端上传，可参考如下版本：
 # JAVA上传示例
 **安装依赖**
-、、、
+```
 <dependency>
     <groupId>com.amazonaws</groupId>  
     <artifactId>aws-java-sdk-s3</artifactId>  
     <version>1.11.136</version>  
 </dependency>
-、、、
+```
