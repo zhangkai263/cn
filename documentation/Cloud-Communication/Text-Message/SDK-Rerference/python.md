@@ -46,8 +46,8 @@ def testBatchSendMsg():
         parameters = BatchSendParameters(regionId=regionId, templateId=templateId,
                                          signId=signId, phoneList=phoneList)
         # 设置模板参数， 非必填
-        # params = []
-        # parameters.setParams(params=params)
+        params = []
+        parameters.setParams(params=params)
         request = BatchSendRequest(parameters)
         resp = client.send(request)
         if resp.error is not None:
