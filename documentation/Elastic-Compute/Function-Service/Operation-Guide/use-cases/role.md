@@ -20,10 +20,10 @@
 ![JQS3](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS3.PNG) 
 
 ## 策略说明
-JQS-func服务角色策略至少包含Function轮询队列服消息队列获取消息事件的以下必备的接口权限：
-ReceiveMessage
-DeleteMessage
-DeleteMessageBatch
+JQS-func服务角色策略至少包含Function轮询队列服消息队列获取消息事件的以下必备的接口权限：        
+ReceiveMessage     
+DeleteMessage           
+DeleteMessageBatch            
 
 ## 授权策略       
 为已创建的JQS-func角色授权策略，在角色列表页，“JQS-func”角色操作中选择"授权"。
@@ -45,7 +45,7 @@ DeleteMessageBatch
 在创建队列服务JQS触发器前，您可在创建函数step2:函数配置--“权限配置”中，添加已创建好的JQS-func服务角色；或为已创建函数，在函数详情中添加已创建好的JQS-func服务角色。
 注意：未正确配置函数权限的function无法创建队列服务JQS触发器。
 
-![JQS9](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS9.PNG) 
+![JQS9](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS9.png) 
 
 ![JQS10](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS10.PNG) 
 
