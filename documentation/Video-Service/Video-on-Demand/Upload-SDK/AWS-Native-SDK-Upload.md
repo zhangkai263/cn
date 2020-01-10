@@ -94,14 +94,14 @@ authToken字段Base64解码后，得到JSON格式字符串，包含字段如下�
 ```
 **分片上传**
 
-对于大文件，可以切分成片上传，分片上传(Multipart Upload)分为如下3个步骤:   
+对于大文件，可以切分成片上传，分片上传(Multipart Upload)分为如下3个步骤：  
 1.初始化一个分片上传任务（InitiateMultipartUpload）  
 调用ossClient.initiateMultipartUpload方法返回OSS创建的全局唯一的uploadId。
 
 2.逐个或并行上传分片（UploadPart）  
 调用ossClient.uploadPart方法上传分片数据。
 
-注意：
+注意：    
 A.OSS会将服务器端收到Part数据的MD5值放在ETag头内返回给用户。   
 B.Part号码的范围是1~10000。如果超出这个范围，将返回400 ,错误码：TooManyParts。   
 C.每次上传part时都要把流定位到此次上传块开头所对应的位置。   
@@ -218,5 +218,4 @@ public class Upload {
                 .build();
     }
 }
-
 ```
