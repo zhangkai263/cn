@@ -62,17 +62,29 @@ step3触发方式：
 ## 创建触发器    
 创建云事件触发器，您可以提前在云事件服务控制台创建订阅规则，指定该函数为目的地；或在函数服务控制台添加已有订阅规则或创建新的订阅规则。下面说明如何在函数服务控制台创建新的云事件触发器。
 
-在“timing-function”函数详情页面，选择”触发器”tab,单击“创建触发器”，创建一个10分钟定时触发器。
+在“timing-function”函数详情页面，选择”触发器”tab,单击“创建触发器”，创建一个1分钟定时触发器。
 
 - 触发器类型：云事件触发器                                 
 - 事件订阅：创建新的订阅规则                                  
 - 规则名称：10min-timing                                                               
 - 事件来源类型：定时事件                                          
-- 定时模式：固定频率 10分钟 或  定时表达式( [查看规则](https://docs.jdcloud.com/cn/cloudevents/crongrammar) ) */10 * * * * 
+- 定时模式：固定频率 1分钟 或  定时表达式( [查看规则](https://docs.jdcloud.com/cn/cloudevents/crongrammar) ) */1 * * * * 
 
 以上，完成定时规则触发器创建。
 
-![timing4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing4.PNG) 
+![timing6](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing6.PNG) 
+
+
+## 查看函数执行日志
+
+在日志服务控制台，选择“日志检索”，选择“JQS-func”函数配置的日志集、日志主题，可查询该函数日志，每1分钟执行一次：
+
+![JQS13](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS13.PNG) 
+
+![JQS14](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS14.PNG) 
+
+
+
 
 
 
