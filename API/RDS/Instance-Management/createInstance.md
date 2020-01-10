@@ -17,9 +17,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceSpec**|[DBInstanceSpec](createInstance#DBInstanceSpec)|True| |新建实例规格|
+|**instanceSpec**|[DBInstanceSpec](createinstance#dbinstancespec)|True| |新建实例规格|
 
-### <a name="DBInstanceSpec">DBInstanceSpec</a>
+### <div id="dbinstancespec">DBInstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**instanceName**|String|False| |实例名，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
@@ -31,12 +31,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |**vpcId**|String|True| |VPC的ID|
 |**subnetId**|String|True| |子网ID|
 |**parameterGroup**|String|False| |参数组ID, 缺省系统会创建一个默认参数组<br>- 仅支持MySQL|
-|**chargeSpec**|[ChargeSpec](createInstance#ChargeSpec)|True| |计费规格，包括计费类型，计费周期等|
+|**chargeSpec**|[ChargeSpec](createinstance#chargespec)|True| |计费规格，包括计费类型，计费周期等|
 |**instanceStorageType**|String|False| |存储类型，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md), 缺省值为：LOCAL_SSD<br>- 仅支持MySQL|
-|**instancePort**|String|False| |应用访问端口, 仅支持 MySQL，Percona, MariaDB, 默认值为 3306|
+|**instancePort**|String|False| |应用访问端口，支持的端口范围：1150～5999。MySQL、Percona、MariaDB的默认值为 3306；SQL SQL Server的默认值为1433，不支持5022；PostgreSQL的默认端口号为5432；|
 |**storageEncrypted**|Boolean|False| |实例数据加密(存储类型为云硬盘才支持数据加密)。false：不加密，true：加密，缺省为false<br>- 仅支持MySQL|
 |**instanceType**|String|False| |实例的高可用架构。standalone：单机，cluster：主备双机架构，缺省为cluster<br>- 仅支持SQL Server|
-### <a name="ChargeSpec">ChargeSpec</a>
+### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
@@ -48,9 +48,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createInstance#Result)| |
+|**result**|[Result](createinstance#result)| |
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String| |
