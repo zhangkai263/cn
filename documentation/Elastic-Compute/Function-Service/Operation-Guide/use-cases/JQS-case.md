@@ -15,7 +15,7 @@ step1函数代码:
 - 函数模板：队列服务JQS触发器使用指导                                  
 - 函数名称：JQS-func（您可以设置自己的函数名）                                      
 - 函数入口：index.handler  (Handler格式为：[文件名][函数名])                         
-- 函数代码：默认队列服务JQS示例代码              
+- 函数代码：默认队列服务JQS示例代码（函数从队列服务JQS的消息队列中轮询消息，打印消息内容及属性）           
 
 ![jqs1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS1.PNG) 
 
@@ -53,7 +53,11 @@ function会轮询指定消息队列，并将消息内容以 event 的形式作�
 
 测试函数--在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
 
-执行成功后，可在控制台查看实时函数执行日志。
+执行成功后，可在控制台查看实时函数执行日志。成功print测试事件中以下内容。
+
+jqs_message：队列服务JQS消息事件的内容     
+receive_count：消息已被消费的次数        
+message_attributes：用户自定义消息属性             
 
 ![jqs7](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS7.PNG) 
 
