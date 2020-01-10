@@ -4,7 +4,6 @@
 
 本示例介绍如何配置队列服务JQS触发器，实现拉取消息队列中待消费消息，打印消息内容。
 
-## 创建消息队列
 
 ## 创建函数
 
@@ -59,5 +58,20 @@ function会轮询指定消息队列，并将消息内容以 event 的形式作�
 ![jqs7](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS7.PNG) 
 
 ## 创建队列服务JQS触发器
+
+在“JQS-func”函数详情页面，选择”触发器”tab,单击“创建触发器”--"队列服务JQS触发器"。您可以选择已创建的消息队列或单击“新建队列”至队列服务控制台[创建消息队列](https://docs.jdcloud.com/cn/queue-service/create-queue) 。             
+说明：函数服务只支持类型为：标准队列的消息队列触发函数执行。  
+
+触发器类型：队列服务JQS触发器                                 
+消息队列：选择已创建的消息队列                                
+批处理大小：1                                         
+
+以上，完成队列服务JQS触发器创建。
+
+![jqs8](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS8.PNG) 
+
+
+
+
 
 
