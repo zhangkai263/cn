@@ -11,7 +11,7 @@ ReceiveMessage
 DeleteMessage  
 DeleteMessageBatch
 
-添加服务角色，您需要提前在“访问控制”--“角色管理”中创建一个“服务角色”，信任“函数服务"代表您访问京东云资源，为此角色添加轮询队列服务JQS的权限（可直接添加JQS在IAM策略中预置的JDCloudQueueServiceTriggerFunction队列服务触发函数权限的系统策略至此角色）。若Function权限配置中未添加带有轮询队列服务JQS接口权限，则创建触发器失败。
+添加服务角色，您需要提前在“访问控制”--“角色管理”中创建一个“服务角色”，信任“函数服务"代表您访问京东云资源，为此角色添加轮询队列服务JQS的权限（可直接添加JQS在IAM策略中预置的JDCloudQueueServiceTriggerFunction队列服务触发函数权限的系统策略至此角色）。若Function权限配置中未添加带有轮询队列服务JQS接口权限，则创建触发器失败。详情可参考[创建服务角色](../../../use-cases/role.md) 。
 
 
  ![role1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/role1.png)
