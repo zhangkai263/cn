@@ -1,6 +1,6 @@
 # 函数权限配置示例
 
-访问控制（Identity and Access Management， IAM）是京东云提供的一项用户身份管理与资源访问控制服务。                   
+[访问控制（Identity and Access Management， IAM）](https://docs.jdcloud.com/cn/iam/product-overview)是京东云提供的一项用户身份管理与资源访问控制服务。                   
 函数服务使用IAM基于服务角色的权限管理机制。策略（policy）表示访问某个服务的能力，为服务角色（role）绑定指定策略，则服务角色就具有了访问该服务的能力。                 
 
 在对京东云产品进行访问时， 需要拥有对该产品的访问权限。函数服务目前涉及的权限为：函数服务访问事件源服务，需要授予函数服务访问事件源服务的权限。涉及到的事件源服务为：队列服务JQS。
