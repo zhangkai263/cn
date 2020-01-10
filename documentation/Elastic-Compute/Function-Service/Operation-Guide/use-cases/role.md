@@ -35,7 +35,7 @@ DeleteMessageBatch
 
 ![JQS4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS4.PNG) 
 
-以上完成JQS-func服务角色的创建及策略授权。      
+以上，完成JQS-func服务角色的创建及策略授权。      
 ![JQS6](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS6.PNG) 
 
 
