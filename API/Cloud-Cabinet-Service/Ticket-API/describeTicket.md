@@ -1,37 +1,33 @@
-# describeTickets
+# describeTicket
 
 
 ## 描述
-查询工单列表
+查询工单详情
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://jdccs.jdcloud-api.com/v1/tickets
+https://jdccs.jdcloud-api.com/v1/tickets/{ticketNo}
 
-
-## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**pageNumber**|Integer|False|1|页码, 默认为1|
-|**pageSize**|Integer|False|20|分页大小，默认为20|
-|**type**|String|False| |工单TAB类型 pendingProcess:待我处理 pendingReview:待审核 processing:处理中 all:全部(默认)|
+|**ticketNo**|String|True| |工单编号|
+
+## 请求参数
+无
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describetickets#result)| |
+|**result**|[Result](describeticket#result)| |
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**tickets**|[Ticket[]](describetickets#ticket)|工单列表|
-|**pageNumber**|Integer|页码|
-|**pageSize**|Integer|分页大小|
-|**totalCount**|Integer|总数量|
+|**ticket**|[Ticket](describeticket#ticket)|工单详情|
 ### <div id="ticket">Ticket</div>
 |名称|类型|描述|
 |---|---|---|
