@@ -14,6 +14,7 @@
 
 3. 队列服务JQS触发器
    - 说明：[队列服务JQS触发器说明](eventsourceservice/JQS-trigger.md)
+   - 示例：[队列服务JQS触发器示例](../../use-cases/JQS-case.md)
    
 4. 云事件触发器
    - 说明：[云事件触发器说明](eventsourceservice/cloudevent.md)
