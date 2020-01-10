@@ -22,9 +22,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:describ
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeBackupPolicy#Result)| |
+|**result**|[Result](describebackuppolicy#result)| |
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startWindow**|String|自动备份开始时间窗口，范围00:00-23:59，时间范围差不得小于30分钟。<br>例如：00:00-01:00，表示0点到1点开始进行数据库自动备份，备份完成时间则跟实例大小有关，不一定在这个时间范围中|
@@ -36,3 +36,28 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:describ
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeBackupPolicy() {
+    DescribeBackupPolicyRequest request = new DescribeBackupPolicyRequest();
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    DescribeBackupPolicyResponse response = rdsClient.describeBackupPolicy(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4rp0pwo23umuub3f3h6knwma27787", 
+    "result": {
+        "backupBinlog": "true", 
+        "retentionPeriod": 7, 
+        "startWindow": "02:00-03:00"
+    }
+}
+```
