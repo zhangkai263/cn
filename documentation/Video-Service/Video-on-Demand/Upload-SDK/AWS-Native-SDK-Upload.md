@@ -108,7 +108,7 @@ C.每次上传part时都要把流定位到此次上传块开头所对应的位�
 D.每次上传part之后，OSS的返回结果是一个UploadPartResult对象，他是包含上传块的ETag与块编号（PartNumber）的组合.  
 E.在后续完成分片上传的步骤中会用到它，因此我们需要将其保存起来。一般来讲我们将这些 UploadPartResult对象保存到List中。   
 
-3.完成分片上传（CompleteMultipartUpload)。   
+3.完成分片上传（CompleteMultipartUpload)     
 所有分片上传完成后，调用ossClient.completeMultipartUpload方法将所有分片合并成完整的文件。   
 在执行该操作时，需要提供所有有效的分片列表（包括分片号和分片ETAG）；OSS收到提交的分片列表后，会逐一验证每个分片的有效性。当所有的数据Part验证通过后，OSS将把这些分片组合成一个完整的Object。
 
