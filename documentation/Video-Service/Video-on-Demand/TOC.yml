@@ -49,6 +49,10 @@ items:
       href: Operation-Guide/Statistical-Analysis.md
     - name: 访问控制（IAM）
       href: Operation-Guide/IAM.md     
+- name: 上传SDK
+  items:
+    - name: AWS原生SDK上传
+      href: Upload-SDK/AWS-Native-SDK-Upload.md
 - name: 最佳实践
   items:
     - name: 终端格式建议
