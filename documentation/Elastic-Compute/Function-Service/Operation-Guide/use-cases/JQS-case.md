@@ -55,9 +55,9 @@ function会轮询指定消息队列，并将消息内容以 event 的形式作�
 
 执行成功后，可在控制台查看实时函数执行日志。成功print测试事件中以下内容。
 
-jqs_message：队列服务JQS消息事件的内容     
-receive_count：消息已被消费的次数        
-message_attributes：用户自定义消息属性             
+jqs_message：test(队列服务JQS消息事件的内容)                 
+receive_count：1 (消息已被消费的次数)        
+message_attributes：None（用户自定义消息属性)                
 
 ![jqs7](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS7.PNG) 
 
