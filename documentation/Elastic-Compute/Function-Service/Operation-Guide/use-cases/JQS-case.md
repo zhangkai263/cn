@@ -76,11 +76,12 @@ message_attributes：None（用户自定义消息属性)
 
 
 ## 查看函数执行日志
-在队列服务JQS控制台，选择绑定“JQS-func”函数的消息队列，选择“发送消息”，发送一条消息内容为“test1”的消息。
+在队列服务JQS控制台，选择绑定“JQS-func”函数的消息队列，选择“发送消息”，连续发送4条消息，消息内容为“test1”、“test2”、“test3”、“test4”。
 
-在日志服务控制台，选择“日志检索”，选择“JQS-func”函数配置的日志集、日志主题，可查询该条函数日志，“test1”消息已成功触发函数执行如下：
+在日志服务控制台，选择“日志检索”，选择“JQS-func”函数配置的日志集、日志主题，可查询该条函数日志，4条消息已成功触发函数执行如下：
 
-![jqs11](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS11.PNG) 
+![jqs13](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS13.PNG) 
 
+![jqs12](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/JQS12.PNG) 
 
 
