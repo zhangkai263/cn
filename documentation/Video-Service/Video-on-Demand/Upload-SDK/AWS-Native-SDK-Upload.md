@@ -4,12 +4,14 @@
 
 # 准备工作
 **服务开通**
+
 请确认您已开通了视频点播服务，如未开通，请参考[开通服务](https://github.com/jdcloudcom/cn/blob/edit/documentation/Video-Service/Video-on-Demand/Getting-Started/Service-Provisioning.md)。
 
 # 上传步骤
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-On-Demand/image/Video-on-Demand/AWS%E5%8E%9F%E7%94%9FSDK%E4%B8%8A%E4%BC%A0%E6%AD%A5%E9%AA%A4.png)
 
 **访问点播SDK获取上传地址和上传凭证信息，包含如下字段：**
+
 <table>
 <tr>
     <td>变量名</td>
@@ -30,6 +32,7 @@
 </table>
 
 **使用Base64 解析上传凭证(authToken)，得到OSS的上传地址和授权信息**
+
 authToken字段Base64解码后，得到JSON格式字符串，包含字段如下：
 <table>
 <tr>
@@ -74,6 +77,7 @@ authToken字段Base64解码后，得到JSON格式字符串，包含字段如下�
 
 # 代码实现
 **核心代码实现共分4步：**
+
 1.使用AKSK初始化VOD客户端   
 2.获取视频上传地址和凭证   
 3.解析并使用上传凭证和地址初始化AWS客户端    
