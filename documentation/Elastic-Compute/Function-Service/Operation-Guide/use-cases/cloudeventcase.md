@@ -74,7 +74,7 @@ step3触发方式：
 
 ![timing4](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing4.PNG) 
 
-##  查看函数执行
+
 
 
 
