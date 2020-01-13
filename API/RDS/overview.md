@@ -35,13 +35,14 @@ v1
 |**deleteImportFile**|DELETE|删除用户通过单库上云工具上传的数据库备份文件<br>- 仅支持SQL Server|
 |**deleteInstance**|DELETE|删除一个RDS实例或者MySQL/PostgreSQL的只读实例。删除MySQL/PostgreSQL主实例时，会同时将对应的MySQL/PostgreSQL只读实例也删除<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
 |**deleteParameterGroup**|DELETE|删除参数组<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL|
+|**describeAccountPrivilege**|GET|查看RDS实例的账号的权限信息 \- 仅支持 MySQL，Percona，MariaDB|
 |**describeAccounts**|GET|查看某个RDS实例下所有账号信息，包括账号名称、对各个数据库的访问权限信息等|
 |**describeActiveQueryPerformance**|GET|根据用户定义的查询条件，获取正在执行中的SQL执行的性能信息。用户可以根据这些信息查找与SQL执行相关的性能瓶颈，并进行优化。<br>- 仅支持SQL Server|
 |**describeAudit**|GET|查看当前实例已开启的审计选项。如当前实例未开启审计，则返回空<br>- 仅支持SQL Server|
 |**describeAuditDownloadURL**|GET|获取某个审计文件的下载链接，同时支持内链和外链，链接的有效时间为24小时<br>- 仅支持SQL Server|
 |**describeAuditFiles**|GET|获取当前实例下的所有审计结果文件的列表<br>- 仅支持SQL Server|
 |**describeAuditOptions**|GET|获取当前系统所支持的各种数据库版本的审计选项及相应的推荐选项<br>- 仅支持SQL Server|
-|**describeAuditResult**|GET|仅支持查看MySQL实例的审计内容<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB|
+|**describeAuditResult**|GET|仅支持查看MySQL实例的审计内容<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB, PostgreSQL|
 |**describeAzs**|GET|查看指定地域下各种RDS数据库支持的可用区，不同类型的RDS支持的可用区不一样|
 |**describeBackupDownloadURL**|GET|获取整个备份或备份中单个文件的下载链接。<br>- 当输入参数中有文件名时，获取该文件的下载链接。<br>- 输入参数中无文件名时，获取整个备份的下载链接。<br>由于备份机制的差异，使用该接口下载备份时，SQL Server必须输入文件名，每个文件逐一下载，不支持下载整个备份。SQL Server备份中的文件名（不包括后缀）即为备份的数据库名。例如文件名为my_test_db.bak，表示该文件是my_test_db数据库的备份。<br>MySQL可下载整个备份集，但不支持单个文件的下载。|
 |**describeBackupPolicy**|GET|查看RDS实例备份策略。根据数据库类型的不同，支持的备份策略也略有差异，具体请看返回参数中的详细说明|
@@ -50,6 +51,7 @@ v1
 |**describeBinlogDownloadURL**|GET|获取MySQL实例的binlog的下载链接<br>- 仅支持 MySQL, Percona, MariaDB|
 |**describeBinlogs**|GET|获取MySQL实例中binlog的详细信息<br>- 仅支持 MySQL, Percona, MariaDB|
 |**describeDatabases**|GET|获取当前实例的所有数据库详细信息的列表|
+|**describeErrorLog**|GET|查询PostgreSQL实例的错误日志的概要信息。<br>- 仅支持PostgreSQL|
 |**describeErrorLogs**|GET|获取SQL Server 错误日志及下载信息<br>- 仅支持SQL Server|
 |**describeImportFiles**|GET|获取用户通过单库上云工具上传到该实例上的文件列表<br>- 仅支持SQL Server|
 |**describeIndexPerformance**|GET|根据用户定义的查询条件，获取索引性能的统计信息，并提供缺失索引及索引创建建议。用户可以根据这些信息查找与索引相关的性能瓶颈，并进行优化。<br>- 仅支持SQL Server|
@@ -65,25 +67,31 @@ v1
 |**describeParameterGroups**|GET|获取当前账号下所有的参数组列表<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL|
 |**describeParameterModifyRecords**|GET|查看参数的修改历史<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL|
 |**describeParameters**|GET|查看SQL Server实例的配置参数<br>- 仅支持SQL Server|
+|**describePrivilege**|GET|查看云数据库 RDS 的权限信息 \- 仅支持 MySQL，Percona，MariaDB|
 |**describeQueryPerformance**|GET|根据用户定义的查询条件，获取SQL执行的性能统计信息，例如慢SQL等。用户可以根据这些信息查找与SQL执行相关的性能瓶颈，并进行优化。<br>- 仅支持SQL Server|
+|**describeSSL**|GET|查看当前实例已开启加密连接。|
 |**describeSlowLogAttributes**|GET|查询MySQL实例的慢日志的详细信息。<br>- 仅支持MySQL|
 |**describeSlowLogs**|GET|查询MySQL实例的慢日志的概要信息。<br>- 仅支持MySQL|
+|**describeTables**|GET|获取当前实例的指定库的表列表信息 \- 仅支持 MySQL，Percona，MariaDB|
 |**describeTde**|GET|查看当前实例是否开启TDE|
 |**describeWhiteList**|GET|查看RDS实例当前白名单。白名单是允许访问当前实例的IP/IP段列表，缺省情况下，白名单对本VPC开放。如果用户开启了外网访问的功能，还需要对外网的IP配置白名单。|
-|**disableAudit**|POST|仅支持MySQL实例关闭数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB|
+|**disableAudit**|POST|仅支持MySQL实例关闭数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB, PostgreSQL|
 |**disableIntercept**|POST|关闭数据库的高安全模式<br>- 仅支持MySQL|
 |**disableInternetAccess**|POST|关闭RDS实例的外网访问功能。关闭后，用户无法通过Internet访问RDS，但可以在京东云内网通过内网域名访问|
-|**enableAudit**|POST|仅支持MySQL实例开启数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB|
+|**enableAudit**|POST|仅支持MySQL实例开启数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB, PostgreSQL|
 |**enableIntercept**|POST|开启数据库的高安全模式<br>- 仅支持MySQL|
 |**enableInternetAccess**|POST|开启RDS实例的外网访问功能。开启后，用户可以通过internet访问RDS实例|
+|**enableSSL**|POST|开启数据库的加密连接, 同时会重启数据库实例|
 |**enableTde**|POST|开启数据库的TDE功能|
 |**exchangeInstanceDns**|POST|交换两个实例的域名，包括内网域名和外网域名。如果一个实例有外网域名，一个没有，则不允许交换。<br>- 仅支持SQL Server|
 |**failoverInstance**|POST|对RDS实例进行主备切换。<br>注意：如果实例正在进行备份，那么主备切换将会终止备份操作。可以查看备份策略中的备份开始时间确认是否有备份正在运行。如果确实需要在实例备份时进行主备切换，建议切换完成 后，手工进行一次实例的全备<br>对于SQL Server，主备切换后30分钟内，不支持按时间点恢复/创建，例如在10:05分用户进行了主备切换，那么10:05 ~ 10:35这个时间段不能进行按时间点恢复/创建。<br>- 仅支持SQL Server|
 |**getUploadKey**|POST|获取单库上云工具上传文件的需要的Key。单库上云工具需要正确的key值方能连接到京东云<br>- 仅支持SQL Server|
+|**grantAccountPrivilege**|POST|授予账号的数据库细粒度的访问权限 \- 仅支持 MySQL，Percona，MariaDB|
 |**grantPrivilege**|POST|授予账号的数据库访问权限，即该账号对数据库拥有什么权限。一个账号可以对多个数据库具有访问权限。<br>为便于管理，RDS对权限进行了归类，目前提供以下两种权限<br>- ro：只读权限，用户只能读取数据库中的数据，不能进行创建、插入、删除、更改等操作。<br>- rw：读写权限，用户可以对数据库进行增删改查等操作|
 |**modifyAudit**|POST|修改当前的审计选项。当前已有审计选项可以通过describeAudit获得，支持的全部选项可以通过getAuditOptions获得。<br>- 仅支持SQL Server|
 |**modifyBackupPolicy**|POST|修改RDS实例备份策略，目前仅支持用户修改“自动备份开始时间窗口”这个参数，其他参数暂不开放修改|
 |**modifyConnectionMode**|POST|修改MySQL实例的连接模式：标准模式(standard) 和高安全模式(security).<br>- **标准模式**：响应时间短，但没有 SQL 审计和拦截的能力。<br>- **高安全模式**：具备一定的 SQL注入拦截能力（通过分析表达式、关键系统函数等来实现防御 SQL 注入攻击），并可开启 SQL 审计，但会增加一定的响应时间。<br>- 仅支持MySQL|
+|**modifyInstanceAz**|POST|修改实例的可用区，例如将实例的可用区从单可用区调整为多可用区|
 |**modifyInstanceName**|POST|修改实例名称，可支持中文，实例名的具体规则可参见帮助中心文档:[名称及密码限制](../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**modifyInstanceSpec**|POST|实例扩容，支持升级实例的CPU，内存及磁盘。|
 |**modifyParameterGroup**|PUT|修改RDS实例的参数组<br>- 仅支持MySQL|
@@ -97,6 +105,7 @@ v1
 |**restoreDatabaseFromFile**|POST|从用户通过单库上云工具上传到云上的备份文件中恢复单个数据库<br>- 仅支持SQL Server|
 |**restoreDatabaseFromOSS**|POST|从上传到OSS的备份文件中恢复单个数据库<br>- 仅支持SQL Server|
 |**restoreInstance**|POST|使用实例的全量备份覆盖恢复当前实例|
+|**restoreInstanceByTime**|POST|根据时间点，选择单表恢复当前实例<br>- 仅支持MySQL|
 |**revokePrivilege**|POST|取消该账号对某个数据库的所有权限。权限取消后，该账号将不能访问此数据库。取消账号对某个数据库的访问权限，不影响该账号对其他数据库的访问权限|
 |**setImportFileShared**|POST|设置或取消上传文件是否共享给同一账号下的其他实例。缺省情况下，文件仅在上传的实例上可见并可导入，其他实例不可见不可导入。如果需要该文件在其他实例上也可导入，可将此文件设置为共享<br>- 仅支持SQL Server|
 |**updateLogDownloadURLInternal**|POST|设置日志文件的下载链接过期时间，重新生成 PostgreSQL 的日志文件下载地址|

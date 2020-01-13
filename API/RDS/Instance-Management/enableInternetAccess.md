@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:enableI
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testEnableInternetAccess() {
+    EnableInternetAccessRequest request = new EnableInternetAccessRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    EnableInternetAccessResponse response = rdsClient.enableInternetAccess(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa51721t8vscgc223qqpcagsqhtpgr7"
+}
+```

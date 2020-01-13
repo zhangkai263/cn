@@ -29,9 +29,9 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}:deleteStreams
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**okTaskIds**|Number[]|删除成功的转码任务ID列表|
-|**notFoundTaskIds**|Number[]|未找到的转码任务ID列表|
-|**failedTaskIds**|Number[]|删除失败的转码任务ID列表|
+|**okTaskIds**|Long[]|删除成功的转码任务ID列表|
+|**notFoundTaskIds**|Long[]|未找到的转码任务ID列表|
+|**failedTaskIds**|Long[]|删除失败的转码任务ID列表|
 
 ## 返回码
 |返回码|描述|
