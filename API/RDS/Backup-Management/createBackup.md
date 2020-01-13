@@ -18,9 +18,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**instanceId**|String|False| |RDS实例ID，唯一标识一个实例|
-|**backupSpec**|BackupSpec|False| |备份规格|
+|**backupSpec**|[BackupSpec](createbackup#backupspec)|False| |备份规格|
 
-### BackupSpec
+### <div id="backupspec">BackupSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**backupName**|String|False| |备份名称<br>SQL Server：最长支持64个英文字符或等长的中文字符<br>MySQL：只允许数字、小写字母及英文下划线“_”,不超过32字符|
@@ -29,9 +29,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createbackup#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**backupId**|String|备份Id|
@@ -40,3 +40,29 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testCreateBackup() {
+    CreateBackupRequest createBackupRequest = new CreateBackupRequest();
+    createBackupRequest.setInstanceId("mysql-wp4e9ztap2");
+    createBackupRequest.setRegionId("cn-north-1");
+    BackupSpec backupSpec = new BackupSpec();
+    backupSpec.setBackupName("dj_backup");
+    createBackupRequest.setBackupSpec(backupSpec);
+    CreateBackupResponse createBackupResponse = rdsClient.createBackup(createBackupRequest);
+    System.out.println(new Gson().toJson(createBackupResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2wfjr9bqrim7g6v93vkmnb78hf74n", 
+    "result": {
+        "backupId": "0313e588-44d0-4b20-b532-6eebb9d83352"
+    }
+}
+```

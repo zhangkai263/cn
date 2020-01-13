@@ -23,9 +23,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/azs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeazs#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**azs**|String[]|可用区的ID的列表|
@@ -34,3 +34,30 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/azs
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeAzs() {
+    DescribeAzsRequest request = new DescribeAzsRequest();
+    request.setEngine("MySQL");
+    request.setRegionId("cn-north-1");
+    DescribeAzsResponse response = rdsClient.describeAzs(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2vibb9hrscave4tdhacpqd8od3i5e", 
+    "result": {
+        "azs": [
+            "cn-north-1a", 
+            "cn-north-1b", 
+            "cn-north-1c"
+        ]
+    }
+}
+```

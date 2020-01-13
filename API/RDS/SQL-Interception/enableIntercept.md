@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/interce
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testEnableIntercept() {
+    EnableInterceptRequest request = new EnableInterceptRequest();
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setRegionId("cn-north-1");
+    EnableInterceptResponse response = rdsClient.enableIntercept(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpakbc5ihe8icrgq0b7cre48fkgk3n7o"
+}
+```

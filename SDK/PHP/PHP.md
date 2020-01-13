@@ -2,7 +2,7 @@
 # 简介 #
   欢迎使用京东云开发者PHP工具套件（PHP SDK）。使用京东云PHP SDK，您无需复杂编程就可以访问京东云提供的各种服务。 
 
-  为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[京东云OpenAPI使用入门](http://www.jdcloud.com/help/detail/355/isCatalog/0)。要了解每个API的具体参数和含义，请参考程序注释或参考OpenAPI&SDK下具体产品线的API文档。
+  为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[京东云OpenAPI使用入门](https://docs.jdcloud.com/cn/common-declaration/api/introduction)。要了解每个API的具体参数和含义，请参考程序注释或参考OpenAPI&SDK下具体产品线的API文档。
 
 
 
@@ -40,8 +40,17 @@ composer install
 SDK使用中的任何问题，欢迎您在Github项目[SDK使用问题反馈页面](https://github.com/jdcloud-api/jdcloud-sdk-php/issues)交流。
 
 
-注意：京东云并没有提供其他下载方式，请务必使用上述官方下载方式！
 
+**注意：**
+
+- 京东云并没有提供其他下载方式，请务必使用上述官方下载方式！
+
+- version 的版本号需要使用京东云产品提供的最新版本号。例如：示例中VM所使用的最新版本号可到官方提供的API  [更新历史](../../API/Virtual-Machines/ChangeLog.md)  中查询到。
+
+- 每支云产品都有自己的Client，当调用该产品API时，需使用该产品的Client。例如：使用云主机的VmClient只能调用云主机（Vm）的接口；使用高可用组的AgClient只能调用高可用组（Ag）的接口。
+
+
+ 
  
 
 ## 调用示例 ##

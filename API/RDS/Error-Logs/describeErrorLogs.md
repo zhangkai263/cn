@@ -22,13 +22,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/errorLo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeerrorlogs#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**errorLogs**|ErrorLog[]|错误日志文件的集合|
-### ErrorLog
+|**errorLogs**|[ErrorLog[]](describeerrorlogs#errorlog)|错误日志文件的集合|
+### <div id="errorlog">ErrorLog</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|错误日志文件名称|
@@ -42,3 +42,35 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/errorLo
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeErrorLogs() {
+    DescribeErrorLogsRequest request = new DescribeErrorLogsRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    DescribeErrorLogsResponse response = rdsClient.describeErrorLogs(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4j42ju7ouu8s8m39m0w4h1ps7kqg4", 
+    "result": {
+        "errorLogs": [
+            {
+                "internalURL": "http://oss-internal.cn-north-1.jcloudcs.com/jddbsqlserver/sqlserver-83uqv7avy4/errorlog/ERRORLOG?Expires=1593939719&AccessKey=E3136A5602E671CD26D5A7B56A05F965&Signature=TECg4lQyjLGzeU9Zm9SNoluSIds=", 
+                "lastUpdateTime": "2020-01-07 16:58:22", 
+                "name": "ERRORLOG", 
+                "publicURL": "http://oss.cn-north-1.jcloudcs.com/jddbsqlserver/sqlserver-83uqv7avy4/errorlog/ERRORLOG?Expires=1593939719&AccessKey=E3136A5602E671CD26D5A7B56A05F965&Signature=TECg4lQyjLGzeU9Zm9SNoluSIds=", 
+                "sizeByte": 45072, 
+                "uploadTime": "2020-01-07 17:01:59"
+            }
+        ]
+    }
+}
+```

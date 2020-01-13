@@ -13,27 +13,15 @@ docker --version
 docker-compose --version
 ```
 
-2. 请按照下方所述方法确认您下载的安装包是否正确。
-
-   - 进入边缘节点详情页，点击查看配置信息，记录安装包MD5值，并将其保存为md5.txt文件，内容如下：
-```
-e0ierfndmjs9a7649b6f2cm3d8gbfu387 jdc-edge-install.tar.gz
-```
-   - 将md5.txt和jdc-edge-install.tar.gz安装包放至同一目录下，输入下方指令，校验安装包是否正确
-
-```
-md5sum -c md5.txt
-```
-
-3. 请确认您填写的用户配置文件（UserConfig.toml）是否正确，具体请参考 [安装Edge系统](../Getting-Started/Install-Edge-System.md) 。
+2. 请确认您的用户配置文件（configuration.toml）是否正确，具体请参考 [安装Edge系统](../Getting-Started/Install-Edge-System.md) 。
 
    
 
-4. 请确认您的设备配置已经满足[产品规格](../Introduction/Specifications.md)中所列的全部要求。
+3. 请确认您的设备配置已经满足[产品规格](../Introduction/Specifications.md)中所列的全部要求。
 
    
 
-5. 请确认您设备的网络连接是否正常。
+4. 请确认您设备的网络连接是否正常。
 
 ## 后续处理
 

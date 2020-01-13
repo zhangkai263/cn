@@ -26,22 +26,22 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describedatabases#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**databases**|Database[]| |
+|**databases**|[Database[]](describedatabases#database)| |
 |**totalCount**|Integer| |
-### Database
+### <div id="database">Database</div>
 |名称|类型|描述|
 |---|---|---|
 |**dbName**|String|数据库名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**dbStatus**|String|数据库状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- **MySQL：不支持，不返回该字段**<br>- **SQL Server：返回该字段**|
 |**characterSetName**|String|字符集，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**createTime**|String|数据库创建时间，格式YYYY-MM-DD HH:mm:ss<br>- 仅支持SQL Server|
-|**accessPrivilege**|DBAccessPrivilege[]|该数据库相关账户权限列表|
-### DBAccessPrivilege
+|**accessPrivilege**|[DBAccessPrivilege[]](describedatabases#dbaccessprivilege)|该数据库相关账户权限列表|
+### <div id="dbaccessprivilege">DBAccessPrivilege</div>
 |名称|类型|描述|
 |---|---|---|
 |**accountName**|String|账号名称|
@@ -51,3 +51,47 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeDatabases() {
+    DescribeDatabasesRequest request = new DescribeDatabasesRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    DescribeDatabasesResponse response = rdsClient.describeDatabases(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3nt4613954dn6hp9k8d1wc4f5prwp", 
+    "result": {
+        "databases": [
+            {
+                "accessPrivilege": [
+                    {
+                        "accountName": "ac", 
+                        "privilege": "rw"
+                    }, 
+                    {
+                        "accountName": "dj_ac", 
+                        "privilege": "rw"
+                    }
+                ], 
+                "characterSetName": "utf8", 
+                "dbName": "dj_db"
+            }, 
+            {
+                "accessPrivilege": [], 
+                "characterSetName": "utf8", 
+                "dbName": "test_db"
+            }
+        ], 
+        "totalCount": 2
+    }
+}
+```

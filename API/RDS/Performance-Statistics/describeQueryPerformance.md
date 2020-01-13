@@ -27,16 +27,16 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describequeryperformance#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**queryPerformanceResult**|QueryPerformanceResult[]|查询性能统计结果集|
+|**queryPerformanceResult**|[QueryPerformanceResult[]](describequeryperformance#queryperformanceresult)|查询性能统计结果集|
 |**totalCount**|Integer|总记录条数|
 |**pageNumber**|Integer|当前数据的页码|
 |**pageSize**|Integer|每页显示的数据条数|
-### QueryPerformanceResult
+### <div id="queryperformanceresult">QueryPerformanceResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sql**|String|sql语句|
@@ -53,3 +53,44 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeQueryPerformance() {
+    DescribeQueryPerformanceRequest request = new DescribeQueryPerformanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setQueryType("LogicalReads");
+    request.setPageSize(10);
+    request.setPageNumber(1);
+    DescribeQueryPerformanceResponse response = rdsClient.describeQueryPerformance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaohu1t9up4ide0a9g4pwcoinp86hwn", 
+    "result": {
+        "pageNumber": 1, 
+        "pageSize": 10, 
+        "queryPerformanceResult": [
+            {
+                "elapsedTime": 1, 
+                "executionCount": 7, 
+                "lastExecutionTime": "2020-01-08 14:35:51.440", 
+                "lastRows": 3, 
+                "logicalReads": 43, 
+                "logicalWrites": 0, 
+                "physicalReads": 0, 
+                "sql": "select 1", 
+                "workerTime": 1
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

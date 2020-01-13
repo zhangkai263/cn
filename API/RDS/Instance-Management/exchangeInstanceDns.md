@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:exchang
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testExchangeInstanceDns() {
+    ExchangeInstanceDnsRequest request = new ExchangeInstanceDnsRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setTargetInstanceId("sqlserver-0nyjcvjxls");
+    request.setRegionId("cn-north-1");
+    ExchangeInstanceDnsResponse response = rdsClient.exchangeInstanceDns(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa61wag1qsn1pcvq86ksr053pfpnt75"
+}
+```

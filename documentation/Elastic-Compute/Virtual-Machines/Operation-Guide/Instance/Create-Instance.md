@@ -11,6 +11,15 @@
 
 <div id="user-content-1"></div>
 
+## 限制
+
+* 第一代云主机不支持加密挂载加密云硬盘；
+* 第一代云主机（GPU类型除外）不支持高可用组；
+* 第一代存储优化大数据型s.d1及第二代存储优化大数据型s.d2不支持本地系统盘；
+* 对于Windows Server系统实例，目前最高支持的vCPU为64核；
+* NAT Instance当前仅支持Centos 7.2 系统。
+
+
 ## 自定义创建
 自定义创建是指您需要根据业务场景自行选配地域、可用区、实例规格、镜像、私有网络、安全组及登录密码等信息。根据操作系统平台类型不同，详细创建步骤可参见  [创建Linux实例](http://docs.jdcloud.com/cn/virtual-machines/create-linux-instance) 及 [创建Windows实例](http://docs.jdcloud.com/cn/virtual-machines/create-windows-instance)。
 

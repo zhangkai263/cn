@@ -6,7 +6,7 @@
 
 示例请求
 
-```json
+```
 https://monitor.jdcloud-api.com/v1/metrics?serviceCode=vm
 ```
 
@@ -70,13 +70,13 @@ https://monitor.jdcloud-api.com/v1/metrics?serviceCode=vm
 
 示例请求
 
-```json
+```
 https://monitor.jdcloud-api.com/v1/regions/cn-north-1/metrics/memory.usage/metricData?timeInterval=1h&serviceCode=vm&resourceId=i-test01&tags.1.key=role&tags.1.values.1=M
 ```
 
 返回
 
-```json
+```
 {
     "requestId": "4b2d2495-33d4-4b44-a0c1-a9deb31370a1",
     "result": {
@@ -145,17 +145,17 @@ https://monitor.jdcloud-api.com/v1/regions/cn-north-1/metrics/memory.usage/metri
 
 ### 3. lastDownsample
 
-**查看某资源的最后一个监控数据点**
+**查看某资源的某个监控项的数据并聚合为一个点。默认是查询最后一个点**
 
 请求示例
 
-```json
+```
 https://monitor.jdcloud-api.com/v1/regions/cn-north-1/metrics/memory.usage/lastDownsample?timeInterval=1h&serviceCode=vm&resourceId=i-test01
 ```
 
 返回
 
-```json
+```
 {
     "requestId": "345b7934-f178-46a2-bfc8-786e8af363fb",
     "result": {
@@ -163,10 +163,13 @@ https://monitor.jdcloud-api.com/v1/regions/cn-north-1/metrics/memory.usage/lastD
             {
                 "metric": "memory.usage",
                 "name": "i-test01",
-                "value": 4
+                "value": 4  
             }
         ]
     }
 }
+
+
 ```
+
 
