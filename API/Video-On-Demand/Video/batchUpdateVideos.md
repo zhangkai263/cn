@@ -21,7 +21,7 @@ https://vod.jdcloud-api.com/v1/videos:batchUpdate
 |---|---|---|---|---|
 |**videoId**|String|False| |视频ID|
 |**name**|String|False| |视频名称|
-|**categoryId**|Number|False| |分类ID|
+|**categoryId**|Long|False| |分类ID|
 |**tags**|String[]|False| |视频标签|
 |**coverUrl**|String|False| |封面图地址|
 |**description**|String|False| |视频描述信息|
