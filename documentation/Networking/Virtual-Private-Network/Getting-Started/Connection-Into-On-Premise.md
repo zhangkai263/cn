@@ -3,14 +3,14 @@
 
 ### 业务场景
 客户将核心/非适宜上云的业务部署在自建IDC内，非核心业务/扩展业务部署在京东云VPC内，需要打通IDC和公有云VPC的网络环境，实现内网通信。</br>
-![](../../../../image/Networking/VPN/Getting-Started/connection-into-idc.png)
+![](../../../../image/Networking/Virtual-Private-Network/Getting-Started/connection-into-idc.png)
 
 ### 前置条件
 企业IDC内的网段与公有云VPC内的网段不能重叠。
 对客户端设备的要求，详见[使用限制](../Introduction/Restrictions.md)。
 
 ### 配置步骤
-![](../../../../image/Networking/VPN/Getting-Started/connection-into-idc-step.png)
+![](../../../../image/Networking/Virtual-Private-Network/Getting-Started/connection-into-idc-step.png)
 
 ### 详细步骤
 ###### 步骤1.创建边界网关

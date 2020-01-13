@@ -18,17 +18,17 @@ c)输入VPC接口的名称、选择边界网关、选择VPC、指定要传播到
 ```
 
 有关VPC路由表配置路由传播的更多内容，详见[VPC路由表路由传播](https://docs.jdcloud.com/cn/virtual-private-cloud/route-table-configuration)。
-![](../../../../../image/Networking/VPN/Operation-Guide/create-vpcattachment.png)
+![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/create-vpcattachment.png)
 
 ##### 2.修改VPC接口
 您可对VPC接口的名称、指定的VPC及传播的子网网段进行修改。</br>
 a)登录[京东云VPC接口控制台](https://cns-console.jdcloud.com/host/vpcAttachment/list)；  </br>
 b)选择相应的VPC接口，点击操作列中的“编辑”，进入编辑VPC接口页面；</br>
 c)支持修改VPC接口名称、指定的VPC及传播的子网网段，各配置项的限制同创建VPC接口，不支持修改VPC接口的边界网关；</br>
-![](../../../../../image/Networking/VPN/Operation-Guide/update-vpcattachment.png)
+![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/update-vpcattachment.png)
 
 ##### 3.删除VPC接口
 若您不再需要VPC接口，可将其删除。</br>
 a)登录[京东云VPC接口控制台](https://cns-console.jdcloud.com/host/vpcattachment/list)；  </br>
 b)选择相应的VPC接口，点击操作列中的“删除”。删除VPC接口后，VPC路由表的传播关系、VPC以及边界网关相应的传播路由会被自动删除；</br>
-![](../../../../../image/Networking/VPN/Operation-Guide/delete-vpcattachment.png)
+![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/delete-vpcattachment.png)

@@ -3,7 +3,7 @@
 
 ### 业务场景
 客户基于业务可用性的角度考虑，将业务部署到多个公有云厂商提供的服务中，多个业务之间需要互相访问或实现故障切换。</br>
-![](../../../../image/Networking/VPN/Best-Practices/connection-with-amazon.png)
+![](../../../../image/Networking/Virtual-Private-Network/Best-Practices/connection-with-amazon.png)
 
 ### 前置条件
 京东云VPC内的网段与Amazon AWS VPC内的网段不能重叠。
@@ -12,7 +12,7 @@
 ###### 步骤1.京东云创建边界网关
 
 a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
-b)选择使用VPN的地域，点击创建边界网关；</br>
+b)选择使用Virtual-Private-Network的地域，点击创建边界网关；</br>
 c)边界网关支持运行BGP路由协议，当前京东云边界网关的BGP ASN固定为65000，后续会开放修改；</br>
 
 更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md).
