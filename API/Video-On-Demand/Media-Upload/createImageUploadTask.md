@@ -22,10 +22,10 @@ https://vod.jdcloud-api.com/v1/imageUploadTask
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|获取图片上传地址和凭证结果|
+|**result**|[Result](createimageuploadtask#result)|获取图片上传地址和凭证结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**imageId**|String|图片ID|

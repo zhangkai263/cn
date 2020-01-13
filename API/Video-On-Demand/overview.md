@@ -48,9 +48,9 @@ v1
 |**listCategories**|GET|查询分类列表。按照分页方式，返回分类列表信息。|
 |**listDomains**|GET|查询域名列表|
 |**listHeaders**|GET|查询域名访问头参数列表|
-|**listQualityDetectionTemplates**|GET|查询质测模板列表。</br>|
-|**listTranscodeTemplates**|GET|查询转码模板列表。</br>允许通过条件过滤查询，支持的过滤字段如下：</br>  \- source[eq] 按模板来源精确查询</br>  \- templateType[eq] 按模板类型精确查询</br>|
-|**listVideos**|GET|查询视频列表信息。</br>允许通过条件过滤查询，支持的过滤字段如下：</br>  \- status[eq] 按视频状态精确查询</br>  \- categoryId[eq] 按分类ID精确查询</br>  \- videoId[eq] 按视频ID精确查询</br>  \- name[eq] 按视频名称精确查询</br>|
+|**listQualityDetectionTemplates**|GET|查询质测模板列表。<br>|
+|**listTranscodeTemplates**|GET|查询转码模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- source[eq] 按模板来源精确查询<br>  \- templateType[eq] 按模板类型精确查询<br>|
+|**listVideos**|GET|查询视频列表信息。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- status[eq] 按视频状态精确查询<br>  \- categoryId[eq] 按分类ID精确查询<br>  \- videoId[eq] 按视频ID精确查询<br>  \- name[eq] 按视频名称精确查询<br>|
 |**listWatermarks**|GET|查询水印列表|
 |**refreshVideoUploadTask**|GET|刷新视频上传地址和凭证|
 |**setDefaultDomain**|POST|设为默认域名|

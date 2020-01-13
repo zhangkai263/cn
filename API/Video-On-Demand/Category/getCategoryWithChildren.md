@@ -21,20 +21,20 @@ https://vod.jdcloud-api.com/v1/categories/{categoryId}:getWithChildren
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询分类及其子分类结果|
+|**result**|[Result](getcategorywithchildren#result)|查询分类及其子分类结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|分类ID|
 |**name**|String|分类名称|
 |**level**|Integer|分类级别|
 |**description**|String|分类描述|
-|**children**|SubCategory[]|下级分类|
+|**children**|[SubCategory[]](getcategorywithchildren#subcategory)|下级分类|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
-### SubCategory
+### <div id="subcategory">SubCategory</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|分类ID|

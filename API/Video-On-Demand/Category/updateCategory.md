@@ -25,10 +25,10 @@ https://vod.jdcloud-api.com/v1/categories/{categoryId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|修改分类结果|
+|**result**|[Result](updatecategory#result)|修改分类结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|分类ID|

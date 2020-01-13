@@ -22,14 +22,14 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|提交转码作业结果|
+|**result**|[Result](submittranscodejob#result)|提交转码作业结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**tasks**|SubmittedTranscodeTask[]|已提交的转码任务|
-### SubmittedTranscodeTask
+|**tasks**|[SubmittedTranscodeTask[]](submittranscodejob#submittedtranscodetask)|已提交的转码任务|
+### <div id="submittedtranscodetask">SubmittedTranscodeTask</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskId**|Long|任务ID|
