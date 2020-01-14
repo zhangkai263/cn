@@ -102,13 +102,20 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-zdks-2.png)
 
+例如：当配置自动扩缩如上图所示的时候，表示如果当前如果 cpu 负载超过应用部署配置的资源上限的50% 的时候 Kubernetes 会自动创建一个 Pod 扩充应用实例，如果扩容完成后所有的 Pod 资源都超过了每个 Pod资源上限的50%，Kubernetes 还会继续的扩缩，直到达到 5 个 Pod 的为止，当 应用 负载回落后，Kubernetes 将自动的进行缩容，移除部分 Pod 回收资源。需要注意的是只有在使用京东云Kubernetes 1.12.3-jcs.4 以上的版本才支持自动扩缩容（HPA）。
+
+
 2）手动扩缩
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-sdks.png)
 
+例如：当配置如上图所示的时候，会修改应用的实例数量到设置的数量，如果当前设置值小于当前部署的实例数量 会进行缩容操作；如果当前设置值大于当前部署的实例数量 会进行扩容操作。
+
+
 4、配置扩缩规格。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step3.png)
+
 
 
 
@@ -124,3 +131,4 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-fzjh.png)
 
+可参考： [Nginx-ingress controller部署](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Ingress/Deploy-Ingress-NGINX-Controller.md)
