@@ -11,7 +11,7 @@ API 分组是 API 的基础管理单元。SDK是基于该API分组生成的。�
 ### STEP1:点击左侧菜单 **API分组管理** ，进入分组列表页
 登录 [API网关 控制台](https://apigateway-console.jdcloud.com/apiGroupList)。
 
- ![API分组管理](../../../../../image/Internet-Middleware/API-Gateway/apigroup-1.png)
+ ![API分组管理](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-1.png)
  
  
  ### STEP2:创建API分组
