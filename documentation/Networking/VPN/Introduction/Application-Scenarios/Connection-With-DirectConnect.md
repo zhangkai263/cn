@@ -7,6 +7,6 @@
   路由层面控制流量默认流经专线，当专线路由失效时，流量流经VPN连接。
 ```
 
-![](../../../../../image/Networking/Virtual-Private-Network/Introduction/work-with-directconnect.png)
+![](../../../../../image/Networking/VPN/Introduction/work-with-directconnect.png)
 
 专线VPN主备方案示例见[专线VPN混合云方案](../../Best-Practices/Connection-With-DirectConnect.md)。

@@ -3,7 +3,7 @@
 
 ### 业务场景
 客户基于业务可用性的角度考虑，将业务部署到多个公有云厂商提供的服务中，多个业务之间需要互相访问或实现故障切换。</br>
-![](../../../../image/Networking/Virtual-Private-Network/Best-Practices/connection-with-amazon.png)
+![](../../../../image/Networking/VPN/Best-Practices/connection-with-amazon.png)
 
 ### 前置条件
 京东云VPC内的网段与Amazon AWS VPC内的网段不能重叠。

@@ -6,6 +6,6 @@
   多个互联的网络环境之间内网网段不能冲突，并且本地数据中心的VPN网关必须配置至少一个静态公网IP。
 ```
 
-![](../../../../../image/Networking/Virtual-Private-Network/Getting-Started/connection-into-idc.png)
+![](../../../../../image/Networking/VPN/Getting-Started/connection-into-idc.png)
 
 更多内容，详见[企业IDC连接公有云](../../Getting-Started/Connection-Into-On-Premise.md)。

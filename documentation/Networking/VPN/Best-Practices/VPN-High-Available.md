@@ -3,7 +3,7 @@
 
 ### 业务场景
 客户将核心/非适宜上云的业务部署在自建IDC内，非核心业务/扩展业务部署在京东云VPC内，需要打通IDC和公有云VPC的网络环境，实现内网通信，同时保证业务的高可用。</br>
-![](../../../../image/Networking/Virtual-Private-Network/Best-Practices/vpn-high-available.png)
+![](../../../../image/Networking/VPN/Best-Practices/vpn-high-available.png)
 
 ### 前置条件
 * 企业IDC内的网段与公有云VPC内的网段不能重叠。

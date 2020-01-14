@@ -4,7 +4,7 @@
 ### 业务场景
 客户将核心/非适宜上云的业务部署在自建IDC内，非核心业务/扩展业务部署在京东云VPC内，需要通过专线和VPN打通企业IDC和公有云VPC的网络环境，实现内网通信。</br>
 
-![](../../../../image/Networking/Virtual-Private-Network/Introduction/work-with-directconnect.png)
+![](../../../../image/Networking/VPN/Introduction/work-with-directconnect.png)
 
 ### 前置条件
 * 企业IDC内的网段与公有云VPC内的网段不能重叠。

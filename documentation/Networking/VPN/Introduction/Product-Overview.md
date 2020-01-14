@@ -16,7 +16,7 @@ VPN产品涉及的产品包括：边界网关、客户网关、VPN连接、VPN�
 ```
 
 ### VPN整体结构
-![](../../../../image/Networking/Virtual-Private-Network/Introduction/product-view.png)
+![](../../../../image/Networking/VPN/Introduction/product-view.png)
 
 
 

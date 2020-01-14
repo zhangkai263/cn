@@ -18,7 +18,7 @@ c)输入VPN连接的名称、描述、边界网关、客户网关、路由方式
   VPN连接的高可用状态：当VPN连接的客户网关存在至少两个公网地址，云端的两个公网地址分别和客户端不同的公网地址之间建立了VPN隧道，且云端的每个公网地址所创建的VPN隧道中均至少有一个隧道的运行状态是UP，此时VPN连接的高可用状态为“高可用”，否则为“非高可用”。
 ```
 
-![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/create-vpnconnection.png)
+![](../../../../../image/Networking/VPN/Operation-Guide/create-vpnconnection.png)
 
 ##### 2.修改VPN连接
 您可对VPN连接的名称、描述及路由方式进行修改。</br>
@@ -30,10 +30,10 @@ c)支持修改VPN连接名称、描述及路由方式，各配置项的限制同
 
   路由方式由静态修改为启用BGP时，将使用VPN隧道的隧道IP作为互联地址，以边界网关的BGP ASN、客户网关的BGP ASN建立BGP会话。
 ```
-![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/update-vpnconnection.png)
+![](../../../../../image/Networking/VPN/Operation-Guide/update-vpnconnection.png)
 
 ##### 3.删除VPN连接
 若您不再需要VPN连接，可将其删除。</br>
 a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，点击操作列中的“删除”，当该VPN连接未创建VPN隧道时可以删除；</br>
-![](../../../../../image/Networking/Virtual-Private-Network/Operation-Guide/delete-vpnconnection.png)
+![](../../../../../image/Networking/VPN/Operation-Guide/delete-vpnconnection.png)
