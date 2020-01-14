@@ -241,7 +241,7 @@
                - name: batchCreate
                  href: JCloud-Openapi-For-CDN/batchCreate.md
                - name: batchCreateLiveDomain
-                 href: JCloud-Openapi-For-CDN/batchCreateLiveDomain.md.md
+                 href: JCloud-Openapi-For-CDN/batchCreateLiveDomain.md
           - name: 域名配置查询
             items:
                - name: getDomainDetail
