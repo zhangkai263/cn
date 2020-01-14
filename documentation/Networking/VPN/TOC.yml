@@ -63,6 +63,8 @@
             href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md
           - name: VPN隧道配置
             href: Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md
+          - name: VPN连接监控
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Monitoring.md
        - name: 客户端管理
          items:
           - name: 思科客户端配置
@@ -108,4 +110,3 @@
     - name: 文档历史记录
       href:
       status: 0
-
