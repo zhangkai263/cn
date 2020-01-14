@@ -1,4 +1,4 @@
-#  在Kubernetes中部署应用
+#  Kubernetes应用部署
 
 Kubernetes集群采用管理节点全托管的方式，为用户提供简单易用、高可靠、功能强大的容器管理服务。而在微服务平台上，用户可以便捷地通过 Kubernetes部署方式实现Kubernetes容器应用部署。以下将介绍内容包括通过 JDSF 控制台实现对Kubernetes容器应用部署、删除、应用扩缩容、配置负载均衡等。
 
