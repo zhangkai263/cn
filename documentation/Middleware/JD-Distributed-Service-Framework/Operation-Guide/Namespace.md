@@ -19,6 +19,8 @@
 
 -  注册中心也将同步生成，管理该命名空间下的所有服务的注册发现。
 
+-  目前“系统分配”提供支持多可用区，“用户自选”只支持选择1个可用区。
+
 ![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/np-create-1.png)
 
 
