@@ -18,7 +18,7 @@
 	- [微服务网关](../Operation-Guide/Resource-Manage/JDSFGW.md)
 - 应用管理
 	- [在云主机中部署应用](../Operation-Guide/APP-Manage/APPDeloy.md)
-	- [在K8S中部署应用](../Operation-Guide/APP-Manage/APPDeloyK8S.md)
+	- [在Kubernetes中部署应用](../Operation-Guide/APP-Manage/APPDeloyK8S.md)
 	- [配置管理](../Operation-Guide/APP-Manage/Config-Manage.md)
 	- [服务治理](../Operation-Guide/APP-Manage/Service-Assignuse.md)
 - 运维管理
