@@ -27,10 +27,12 @@ items:
       herf: Getting-Started/Getting-Started.md
     - name: 入门示例
       herf: Getting-Started/Basic-Example.md
-    - name: 使用API网关开放VPC内的接口
-      herf: Getting-Started/GW_VPC.md
     - name: 微服务平台插件说明
       herf: Getting-Started/JDSF-Plugin.md
+    - name: 使用API网关开放VPC内的接口
+      herf: Getting-Started/GW_VPC.md
+    - name: Kubernetes 应用部署
+      herf: Getting-Started/Demo-Deploy-K8S.md
 - name: 操作指南
   items:
     - name: 命名空间
@@ -47,7 +49,7 @@ items:
           herf: Operation-Guide/APP-Manage/APPList.md        
         - name: 云主机中部署应用
           herf: Operation-Guide/APP-Manage/APPDeloy.md
-        - name: K8S中部署应用
+        - name: Kubernetes应用部署
           herf: Operation-Guide/APP-Manage/APPDeloyK8S.md
         - name: 部署组
           herf: Operation-Guide/APP-Manage/Deploy-Group.md
