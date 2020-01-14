@@ -17,13 +17,13 @@ API分组信息创建完成后，需要通过发布才能使用。目前京东�
 
 首先，进入 **API分组管理**页，并找到要发布的分组
 
-![APIgroup列表页](../../../../../image/Internet-Middleware/API-Gateway/apigroup-1.png)
+![APIgroup列表页](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-1.png)
 
 
 
 ### STEP2:点击操作中的 **发布**：
 
-![发布](../../../../../image/Internet-Middleware/API-Gateway/apigroup-fb.png)
+![发布](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-2.png)
 
 
 说明：
@@ -39,14 +39,14 @@ API分组信息创建完成后，需要通过发布才能使用。目前京东�
 
 ### STEP3:在部署管理中，管理各个环境下发布的版本：
 发布完成后，可在部署管理页中，看到各个环境的部署情况。
-![部署列表](../../../../../image/Internet-Middleware/API-Gateway/bslb-list.png)
+![部署列表](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-3.png)
 
 API 网关支持对测试/线上的 API 做版本管理，您可以发布 API、下线 API 还可以切换版本，切换版本是实时生效。
-![切换版本](../../../../../image/Internet-Middleware/API-Gateway/bslb-qhbb.png)
+![切换版本](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-4.png)
 
 ### STEP4:下线
 如需下线，可直接点击下线操作。实时生效。
 
-![下线](../../../../../image/Internet-Middleware/API-Gateway/bslb-xx.png)
+![下线](../../../../../image/Internet-Middleware/API-Gateway/group-publishing-5.png)
 
 
