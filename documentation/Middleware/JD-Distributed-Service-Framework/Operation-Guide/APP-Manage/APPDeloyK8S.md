@@ -100,7 +100,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 1）自动扩缩
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-zdks.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-zdks-2.png)
 
 2）手动扩缩
 
