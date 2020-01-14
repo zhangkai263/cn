@@ -1,7 +1,7 @@
-## 华为防火墙设备IPsec VPN配置
+jdcloud_ike_peer_test## 华三防火墙设备IPsec VPN配置
 在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
-本文以华为 USG6530为例，讲述如何在华为设备上配置VPN，适用于HUAWEI USG6500系列防火墙，其它系列设备请参考此示例进行配置。
+本文以华三 MSR800为例，讲述如何在华三设备上配置VPN，适用于H3C MSR系列防火墙，其它系列设备请参考此示例进行配置。
 
 网络拓扑示例如下(``以下拓扑及操作步骤的配置仅为示例，实际配置时，请将示例配置项中的值替换为您使用的实际参数值``)：
 
@@ -21,7 +21,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 |  | 隧道IP | 169.254.1.1/30 |
 | IKE配置 | 预共享密钥 | secret |
 |  | IKE版本 | v2 |
-|  | DH Group | Group19 |
+|  | DH Group | Group2 |
 |  | 认证算法 | SHA256 |
 |  | 加密算法 | aes128 |
 |  | IKE SA Lifetime(s) | 14400 |
@@ -41,30 +41,31 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 2.配置IKE策略：
 ```shell
   # config dpd
-  ike dpd type periodic
-  ike dpd idle-time 10
-  ike dpd retransmit-interval 5
+  ike dpd jdvpndpd
+    interval-time 10
+    time-out 10
+  quit
 
   # config ike algorithm
   ike proposal 1
-    encryption-algorithm aes-128
-    dh group19
-    authentication-algorithm sha2-256
+    encryption-algorithm aes-cbc
     authentication-method pre-share
-    integrity-algorithm hmac-sha2-256
-    prf hmac-sha2-256
+    dh group2
     sa duration 14400
+    authentication-algorithm sha
+  quit
 ```
 
 3.配置身份认证及预共享密钥：
 ```shell
   # config authentication and psk
   ike peer jdcloud_ike_peer_test
-    undo version 1
-    exchange-mode auto
-    pre-shared-key secret
-    ike-proposal 1
     remote-address 116.xxx.xxx.10
+    pre-shared-key secret
+    exchange-mode main
+    proposal 1
+    dpd jdvpndpd
+  quit
 ```
 
 4.配置IPsec策略及隧道：
@@ -72,36 +73,37 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
   ipsec sha2 compatible enable
 
   # config ipsec security protocol
-  ipsec proposal jdcloud_ipsec_proposal_test
-    esp authentication-algorithm sha2-256
-    esp encryption-algorithm aes-128
+  ipsec transform-set jdcloud_ipsec_proposal_test
+    encapsulation-mode tunnel
+    esp encryption-algorithm aes-cbc-128
+    esp authentication-algorithm sha1
+  quit
 
   # config ipsec policy and logic interface
-  ipsec policy jdcloud_ipsec_policy_test 1 isakmp
-    pfs dh-group14
-    security acl 3002
+  ipsec profile jdcloud_ipsec_profile_test
     ike-peer jdcloud_ike_peer_test
-    proposal jdcloud_ipsec_proposal_test
-    tunnel local 220.xxx.xxx.150
-    sa trigger-mode auto
-    sa duration traffic-based 0
+    pfs dh-group2
     sa duration time-based 3600
-    route inject dynamic
+    transform-set jdcloud_ipsec_proposal_test
+  quit
+
+  ipsec anti-replay check
+    ipsec anti-replay window 128
 ```
 
 5.配置隧道：
 ```shell
   # use ipsec with physical interface
-  interface GigabitEthernet1/0/0
-    description jdcloud_test
+  interface jdcloud_tunnel1
+    ip address 169.254.1.1 255.255.255.252
+    ip virtual-reassembly
+    source 220.xxx.xxx.150
+    destination 116.xxx.xxx.10
+    tunnel-protocol ipsec ipv4
+    ipsec profile jdcloud_ipsec_profile_test
+    tcp mss 1380
     undo shutdown
-    ip address xxx.xxx.xxx.xxx 255.255.255.248
-    vrrp vrid 107 virtual-ip 220.xxx.xxx.150 255.255.255.224 active
-    gateway 220.xxx.xxx.1
-    service-manage https permit
-    service-manage ping permit
-    redirect-reverse next-hop 220.xxx.xxx.1
-    ipsec policy jdcloud_ipsec_policy_test
+  quit
 ```
 
 6.配置ACL，允许所需的网段通信：
