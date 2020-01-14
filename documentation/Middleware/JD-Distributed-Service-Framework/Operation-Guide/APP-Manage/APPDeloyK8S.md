@@ -1,7 +1,8 @@
 #  在K8S中部署应用
 
-Kubernetes集群采用管理节点全托管的方式，为用户提供简单易用、高可靠、功能强大的容器管理服务。而在微服务平台上，用户可以便捷地通过K8S部署方式实现K8S容器应用部署。以下将介绍如何通过 JDSF 控制台实现对容器应用部署的操作。
+Kubernetes集群采用管理节点全托管的方式，为用户提供简单易用、高可靠、功能强大的容器管理服务。而在微服务平台上，用户可以便捷地通过K8S部署方式实现K8S容器应用部署。以下将介绍内容包括通过 JDSF 控制台实现对K8S容器应用部署、删除、应用扩缩容、配置负载均衡等。
 
+ 
 
 ## 操作场景
 
@@ -25,7 +26,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ## 操作步骤
 
-### 第1步：在JDSF中新建命名空间、新建K8S集群资源池
+### 部署应用
+
+#### 第1步：在JDSF中新建命名空间、新建K8S集群资源池
 
 1、在JDSF中新建命名空间，过程参考： [命名空间](../Namespace.md) 。
 
@@ -35,13 +38,13 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 2、在JDSF中新建K8S集群资源池，过程参考： [新建资源池](../Resource-Manage/Resource-List.md) 。
 
-### 第2步：创建应用
+#### 第2步：创建应用
 
 在新建应用页面中，选择创建K8S应用。 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yybs-cjyy-k8s.png)
 
-### 第3步：对应用发起部署
+#### 第3步：对应用发起部署
 
 在应用管理列表中，选择要部署的K8S应用，点击操作中的“发起部署”，进入配置部署信息页。其中基本信息、容器及镜像信息，为必填部分内容；高级设置部分可以选填。
 
@@ -64,16 +67,60 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-create-np.png)
 
 
-### 第4步：执行部署
+#### 第4步：执行部署
 
 部署后，还可进行回滚、重新部署操作。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-bsxq.png)
 
 
+###  删除应用
+
+1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
+
+2、对于需要删除的应用，点击操作列的删除。
+
+3、用户需在删除数据前，自行做好数据备份工作。
+
+
+###  扩缩容
+
+针对K8S资源池的扩容，可以在微服务平台中进行配置。
+
+1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
+
+2、选择需要配置扩缩容的应用，点击应用名称，进入应用详情页。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq.png)
+
+点击操作栏中的详情，可在应用设置中对运行Pod总数、规格进行调整。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step1.png)
+
+3、配置扩缩条件。目前支持自动扩缩和手动扩缩两种方式。
+
+1）自动扩缩
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-zdks.png)
+
+2）手动扩缩
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step2-sdks.png)
+
+4、配置扩缩规格。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step3.png)
 
 
 
+###  配置负载均衡
 
+1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
 
+2、选择需要配置扩缩容的应用，点击应用名称，进入应用详情页。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq.png)
+
+3、点击操作栏中的详情，可在应用设置中进行负载均衡配置。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-fzjh.png)
 
