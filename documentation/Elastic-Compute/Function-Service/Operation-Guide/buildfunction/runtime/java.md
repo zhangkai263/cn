@@ -117,7 +117,7 @@ public class SimpleResponse {
 }
 ```
 
-准备调用的输入文件：
+输入控制台测试事件如下：
 ```JSON
 {
   "firstName": "FunctionService",
@@ -125,7 +125,7 @@ public class SimpleResponse {
 }
 
 ```
-使用 fcli 调用结果：
+测试结果如下：
 
 ```Java
 >>> invk hello-java -f /tmp/a.json
