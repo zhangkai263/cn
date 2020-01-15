@@ -40,4 +40,4 @@
   
 10.跳转支付确认页面成功付款后返回集群列表页面。您创建的集群将展现在集群列表中。且集群状态为“创建中”，耐心等待几分钟，创建成功后集群状态会变为“运行”。如果集群创建失败，请根据界面提示，重新创建集群。</br>
   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-07.png)
-  ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-08.png)
+ 
