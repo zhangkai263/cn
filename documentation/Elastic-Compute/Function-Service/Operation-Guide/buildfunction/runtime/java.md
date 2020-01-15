@@ -125,7 +125,7 @@ public class SimpleResponse {
 }
 
 ```
-测试结果如下：
+返回如下：
 
 ```Java
 
