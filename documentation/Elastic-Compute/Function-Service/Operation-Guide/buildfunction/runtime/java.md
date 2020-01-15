@@ -55,7 +55,7 @@ public class HelloFC implements StreamRequestHandler {
 ### PojoRequestHandler
 一个简单的处理函数定义如下：
 
-```
+```Java
 package example;
 
 import com.jdcloud.function.Context;
@@ -71,7 +71,7 @@ public class HelloFC implements PojoRequestHandler<SimpleRequest, SimpleResponse
 ```
 
 
-```
+```Java
 package example;
 
 public class SimpleRequest {
@@ -98,7 +98,7 @@ public class SimpleRequest {
 
 ```
 
-```
+```Java
 package example;
 public class SimpleResponse {
     String message;
@@ -116,7 +116,7 @@ public class SimpleResponse {
 ```
 
 准备调用的输入文件：
-```
+```JSON
 {
   "firstName": "FunctionService",
   "lastName": "JDcloud"
@@ -125,7 +125,7 @@ public class SimpleResponse {
 ```
 使用 fcli 调用结果：
 
-```
+```Java
 >>> invk hello-java -f /tmp/a.json
 {"message":"Hello, FunctionService JDcloud"}
 >>>
