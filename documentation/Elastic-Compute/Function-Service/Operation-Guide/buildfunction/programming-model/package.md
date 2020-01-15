@@ -23,4 +23,4 @@
 * 在Linux下打包时，可以进入函数代码目录，通过调用zip命令将源文件指定为代码目录下的所有文件，生成部署程序包，例如： `zip /codefile/func_code.zip * -r`。
 
  
-2.运行时为：Java时，函数部署包的格式必需为编译打包后的.jar格式。您可以使用使用 maven 打包 jar，或使用 IDEA 打包 jar。
+2.运行时为：Java时，函数部署包的格式必需为编译打包后的.jar格式。您可以使用 maven 打包 jar，或使用 IDEA 打包 jar。
