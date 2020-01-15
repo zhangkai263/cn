@@ -140,7 +140,7 @@ public class SimpleResponse {
 
 - 事件入参及返回参数类型支持
 1. Java 基础类型，包括 byte，int，short，long，float，double，char，boolen 这八种基本类型和包装类，也包含 String 类型。           
-2. POJO 类型，[Plain Old Java Object](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM，您应使用可变 POJO 及公有 getter 和 setter，在代码中提供相应类型的实现。
+2. POJO 类型，[Plain Old Java Object](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)，您应使用可变 POJO 及公有 getter 和 setter，在代码中提供相应类型的实现。
 - Context 入参              
 使用 Context 需要在代码中使用 `com.jdcloud.function.Context`; 引入包，并在打包时带入 jar 包。
 
