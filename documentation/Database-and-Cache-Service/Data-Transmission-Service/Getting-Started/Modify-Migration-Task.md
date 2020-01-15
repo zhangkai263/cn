@@ -10,12 +10,10 @@
 
 2. 选择未开始或预检失败的迁移任务，点击**修改任务配置**。
 
-   ![image-20200113180223366](D:/MD/DTS/帮助文档/image/Data-Transmission-Service/dts-013.png)
+   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-013.png)
 
-3. ![image-20200113175505316](D:/MD/DTS/帮助文档/image/Data-Transmission-Service/dts-009.png)
+3.  在修改任务配置页面，可修改源库与目标库信息、迁移类型、迁移对象等。  
 
-4.  在修改任务配置页面，可修改源库与目标库信息、迁移类型、迁移对象等。  
+   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-014.png)
 
-   ![image-20200113180223366](D:/MD/DTS/帮助文档/image/Data-Transmission-Service/dts-014.png)
-
-5. 修改任务配置完成后，可再次启动迁移任务。  
+4. 修改任务配置完成后，可再次启动迁移任务。  
