@@ -18,9 +18,9 @@ PUT blog_index
 
 "age": { "type": "integer" }
 
-}
-}
-}
+               }
+         }
+            }
 }
 ```
 响应如下时代表索引创建成功：
