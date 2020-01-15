@@ -11,6 +11,11 @@ Java 语言由于需要编译后才可以在 JVM 虚拟机中运行。因此在�
 - 不支持在线编辑：不支持直接上传代码，所以不支持在线编辑代码。Java 运行时的函数，在函数详情页只可上传新的 jar 包。
 
 ## 处理程序
+用户使用Java编程时，需要实现函数服务的接口类，包括以下2各预定义接口可以选择：
+
+1.`StreamRequestHandler`以流的方式接受调用输入event和返回执行结果，用户需要从`inputStream`中读取调用函数时的输入，处理完成后把函数执行结果写入到outputStream中来返回。
+
+2.`PojoRequestHandler`通过泛型的方式，用户可以自定义输入和输出的类型，但是它们必须是[`POJO`类型](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)
 
 ### StreamRequestHandler
 一个简单的处理函数定义如下：
@@ -39,7 +44,12 @@ public class HelloFC implements StreamRequestHandler {
     }
 }
 ```
-由于 Java 包含有包的概念，因此处理程序和其他语言有所不同，需要带有包信息。代码例子中对应的执行方法为 example.HelloFC::handleRequest，此处 example 标识为 Java package，HelloFC 标识为类，handleRequest 标识为类方法。
+
+
+
+由于 Java 包含有包的概念，因此处理程序和其他语言有所不同，需要带有包信息。代码例子中对应的执行方法Handler为 : example.HelloFC::handleRequest，此处 example 标识为 Java package，HelloFC 标识为类，handleRequest 标识为类方法。Handler” 的格式为 {package}.{class}::{method}。包名和类名可以是任意的，但是需要与创建函数时的 “Handler” 字段相对应，类方法必须为handleRequest。
+
+用户的代码中必须要实现函数计算预定义的接口。上面的例子中实现了StreamRequestHandler，其中的 inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
 
 
 ### PojoRequestHandler
