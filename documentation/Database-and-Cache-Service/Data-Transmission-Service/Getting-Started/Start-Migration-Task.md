@@ -12,7 +12,7 @@
 
 2. 等待预检查完成，可在预检查弹窗查看进度与检查结果。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-006.png)
+   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-012.png)
 
 3. 预检查完成，点击下一步，执行数据迁移。
 
