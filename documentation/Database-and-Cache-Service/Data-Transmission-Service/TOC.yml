@@ -19,14 +19,20 @@
         href: Getting-Started/Create-Migration-Task.md
       - name: 启动迁移任务
         href: Getting-Started/Start-Migration-Task.md
+      - name: 修改任务配置
+        href: Getting-Started/Modify-Migration-Task.md
+      - name: 查看迁移任务进度
+        href: Getting-Started/Describe-Task-Progress.md
+      - name: 查看迁移任务详情
+        href: Getting-Started/Describe-Task-Detail.md
+      - name: 执行数据校验
+        href: Getting-Started/Data-Comparison-Description.md
       - name: 结束迁移任务
         href: Getting-Started/Stop-Migration-Task.md
       - name: 支持的数据库类型与版本
         href: Getting-Started/Database-Type-and-Version.md
       - name: 预检查说明
         href: Getting-Started/Task-Assessment-Description.md
-      - name: 数据一致性校验说明
-        href: Getting-Started/Data-Comparison-Description.md
       - name: JSON方式定义迁移对象
         href: Getting-Started/Define-The-Migration-Object-in-JSON.md
   - name: 操作指南
