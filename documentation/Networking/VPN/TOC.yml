@@ -63,6 +63,8 @@
             href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md
           - name: VPN隧道配置
             href: Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md
+          - name: VPN连接监控
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Monitoring.md
        - name: 客户端管理
          items:
           - name: 思科客户端配置
@@ -79,7 +81,7 @@
             href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
-       - name: VPN高可用
+       - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
          href: Best-Practices/Connection-With-DirectConnect.md
@@ -108,4 +110,3 @@
     - name: 文档历史记录
       href:
       status: 0
-

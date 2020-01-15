@@ -55,6 +55,10 @@
 
 2.SORT命令支持将结果写入destination中，因此，要确保destination和key 在同一个槽中，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
 
+- redis2.8 lua脚本中不支持的命令有：bgsave，bgrewriteaof，shutdown，config
+
+- redis4.0 lua脚本中不支持的命令有：swapdb，rename，renamenx，bgsave，bgrewriteaof，shutdown，config，cluster，post，host
+
 ## 4.0新增支持的命令
 
 | Key(键) | Hash(哈希表) | SortedSet（有序集合） | Server（服务器） | Scripting(脚本) | HyperLogLog（HLL） |   Geo(地理位置)   | Pub/Sub（发布/订阅） |

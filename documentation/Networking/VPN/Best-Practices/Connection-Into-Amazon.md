@@ -12,7 +12,7 @@
 ###### 步骤1.京东云创建边界网关
 
 a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
-b)选择使用VPN的地域，点击创建边界网关；</br>
+b)选择使用Virtual-Private-Network的地域，点击创建边界网关；</br>
 c)边界网关支持运行BGP路由协议，当前京东云边界网关的BGP ASN固定为65000，后续会开放修改；</br>
 
 更多内容，详见[边界网关管理](../Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md).
