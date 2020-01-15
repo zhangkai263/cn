@@ -15,9 +15,9 @@ Java 语言需要编译后才可在容器中运行。因此在函数服务中的
 ## 处理程序
 用户使用Java编程时，需要实现函数服务的接口类，包括以下2个预定义接口可以选择：
 
-1.`StreamRequestHandler`以流的方式接受调用输入event和返回执行结果，用户需要从`inputStream`中读取调用函数时的输入，处理完成后把函数执行结果写入到outputStream中来返回。
+1.`StreamRequestHandler`以流的方式接受输入event和返回执行结果，用户需要从`inputStream`中读取调用函数时的输入，处理完成后把函数执行结果写入到outputStream中返回。
 
-2.`PojoRequestHandler`通过泛型的方式，用户可以自定义输入和输出的类型，但是它们必须是[`POJO`类型](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)。
+2.`PojoRequestHandler`通过泛型的方式，用户可以自定义输入和输出的类型，但必须是[`POJO`类型](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)。
 
 ### StreamRequestHandler
 一个简单的处理函数定义如下：
