@@ -117,7 +117,7 @@ public class SimpleResponse {
 }
 ```
 
-输入控制台测试事件如下：
+测试事件如下：
 ```JSON
 {
   "firstName": "FunctionService",
@@ -128,9 +128,9 @@ public class SimpleResponse {
 测试结果如下：
 
 ```Java
->>> invk hello-java -f /tmp/a.json
-{"message":"Hello, FunctionService JDcloud"}
->>>
+
+"message":"Hello, FunctionService JDcloud"
+
 ```
 
 
