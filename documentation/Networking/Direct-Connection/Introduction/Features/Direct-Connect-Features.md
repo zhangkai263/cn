@@ -48,7 +48,7 @@
 
 #### **京东云专线接入点覆盖情况**
 
-![](../../../../../image/Networking/Direct-Connect-Service/IXP-Location.png)
+![](../../../../../image/Networking/Direct-Connect-Service/Feature/IXP-Location.png)
 
 
 
