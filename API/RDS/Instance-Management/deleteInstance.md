@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteInstance() {
+    DeleteInstanceRequest request = new DeleteInstanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-4kopy2wqc3");
+    DeleteInstanceResponse response = rdsClient.deleteInstance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4otkbpdiwmomei1s23irbgawe6skn"
+}
+```

@@ -592,7 +592,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="21">计算优化</td>
+      <td rowspan="21">内存优化</td>
       <td rowspan="21">标准</td>
       <td>m.n3.large</td>
       <td>2</td>
@@ -634,7 +634,7 @@
       <td></td>
    </tr>
    <tr>
-      <td>c.n3.4xlarge</td>
+      <td>m.n3.4xlarge</td>
       <td>16</td>
       <td>128</td>
       <td>2544</td>
@@ -644,7 +644,7 @@
       <td></td>
    </tr>
    <tr>
-      <td>c.n3.6xlarge</td>
+      <td>m.n3.6xlarge</td>
       <td>24</td>
       <td>192</td>
       <td>3816</td>
@@ -654,7 +654,7 @@
       <td></td>
    </tr>
    <tr>
-      <td>c.n3.8xlarge</td>
+      <td>m.n3.8xlarge</td>
       <td>32</td>
       <td>256</td>
       <td>5088</td>

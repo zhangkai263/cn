@@ -7,7 +7,7 @@
 ## 私有镜像创建
 裸金属云主机需要您的镜像支持UEFI启动。若您需要通过京东云上私有镜像创建裸金属云主机，请根据以下文档将您的私有镜像转换为支持UEFI启动的镜像。目前只有私有镜像操作系统版本为CentOS 7.2、CentOS 7.4、CentOS 7.6的镜像支持以下操作。
 
-如果您需要将当前实例迁移至裸金属云主机上，请确保您当前实例的操作系统版本属于CentOS 7.2、CentOS 7.4、CentOS 7.6。如果您当前实例的镜像分类为云硬盘系统盘，[将镜像转换为支持UEFI启动的镜像](Create-BM-Instance#ImageTrans)中第一步可忽略，您可直接将此实例作为文档中的vm1并根据文档执行后续步骤；如果您当前实例的镜像分类为本地盘系统盘，请先为此实例制作镜像并完成[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image),再根据以下文档逐步操作。
+如果您需要将当前实例迁移至裸金属云主机上，请确保您当前实例的操作系统版本属于CentOS 7.2、CentOS 7.4、CentOS 7.6。如果您当前实例的镜像分类为云硬盘系统盘，[将镜像转换为支持UEFI启动的镜像](create-bm-instance#user-content-2)中第一步可忽略，您可直接将此实例作为文档中的vm1并根据文档执行后续步骤；如果您当前实例的镜像分类为本地盘系统盘，请先为此实例制作镜像并完成[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image),再根据以下文档逐步操作。
 
 如果您想需要将您在本地或其他云环境下的应用迁移至京东云裸金属云主机上，请先将您的应用以镜像形式保存并执行[私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image)。
 
@@ -15,7 +15,7 @@
 
 ![](../../../../../../image/vm/BM-Image-Transfer1.png)
 
-<div id="ImageTrans"></div>
+<div id="user-content-2"></div>
 
 ### 将镜像转换为支持UEFI启动的镜像：
 1. 使用您的私有镜像创建一台镜像分类为云硬盘系统盘的云主机VM1。<br>
@@ -28,9 +28,11 @@
    
   ./os-init.sh
 ```
-3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)。
+
+3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)
 4. 将已卸载的vm1系统盘作为数据盘挂载在另一台操作系统与vm1相同的云主机vm2上。为可参考文档[挂载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk)。请确保vm1与vm2使用的操作系统一致，如vm1操作系统为CentOS 7.6，vm2操作系统为CentOS 7.4，vm1与vm2均为CentOS操作系统。
 5. 挂载完成后，登录云主机vm2, 可以通过如下命令来查看磁盘分区信息：
+
 ```
   lsblk
 ```
@@ -39,10 +41,12 @@
  ![](../../../../../../image/vm/ImgTranfer3.png)
 
 6. 需要执行以下命令创建一个文件（下述命令创建新文件newFile）作为/dev/vdb1的挂载点并将其挂载：
+
 ```
 mkdir newFile
 mount -o nouuid /dev/vdb1 newFile
 ```
+
 挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br>
 ![](../../../../../../image/vm/ImgTranfer4.png)
 
@@ -75,7 +79,7 @@ mount -o nouuid /dev/vdb1 newFile
 云主机中镜像文件上传至对象存储可参考文档[使用S3fs在Linux实例上挂载Bucket](https://docs.jdcloud.com/cn/object-storage-service/s3fs)，上传步骤需要较长时间请耐心等待。如需要快速完成上传，可选择上调弹性公网IP带宽。在上传完成后获取文件下载链接。
 
 ### 导入镜像
-导入镜像请参考 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image#importIMG)
+导入镜像请参考 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image#user-content-1)
 
 ### 京东云处理
 镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被裸金属云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。

@@ -22,8 +22,8 @@ https://cdn.jdcloud-api.com/v1/liveDomain:batchCreate
 |**defaultSourceHost**|String|False| |默认回源host|
 |**siteType**|String|True| |站点类型pull(拉流)push(推流)|
 |**backSourceType**|String|False| |回源类型，目前只能为rtmp|
-|**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
-|**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
+|**ipSource**|[IpSourceInfo[]](batchcreatelivedomain#ipsourceinfo)|False| | |
+|**domainSource**|[DomainSourceInfo[]](batchcreatelivedomain#domainsourceinfo)|False| | |
 |**accelerateRegion**|String|False| |加速区域(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
 
 ### <div id="DomainSourceInfo">DomainSourceInfo</div>

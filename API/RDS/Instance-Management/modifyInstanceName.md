@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改实例名称，可支持中文，实例名的具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)
+修改实例名称，可支持中文，实例名的具体规则可参见帮助中心文档:[名称及密码限制](../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)
 
 ## 请求方式
 POST
@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyI
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyInstanceName() {
+    ModifyInstanceNameRequest request = new ModifyInstanceNameRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setInstanceName("hdj_test2");
+    ModifyInstanceNameResponse response = rdsClient.modifyInstanceName(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4ua83cwmp7se0m4i7a85a51ht16pp"
+}
+```

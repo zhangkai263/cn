@@ -1,20 +1,16 @@
-name: 短网址 Shorturl
-  href:
-  items:
+name: 短网址
+href:
+items:
     - name: 产品简介
       items:
         - name: 产品概述
           href: Introduction/Product-Overview.md
         - name: 核心概念
           href: Introduction/Core-Concepts.md
-        - name: 基础架构
-          href: Introduction/Basic-Infrastructure.md
         - name: 产品优势
           href: Introduction/Benefits.md
         - name: 产品功能
           href: Introduction/Features.md
-        - name: 产品规格
-          href: Introduction/Specifications.md
         - name: 限制说明
           href: Introduction/Restrictions.md
         - name: 应用场景
@@ -40,11 +36,11 @@ name: 短网址 Shorturl
     - name: 操作指南
       items:
         - name: 概览
-            href: Operation-Guide/Shorturl-Overview.md
+          href: Operation-Guide/Shorturl-Overview.md
         - name: 传参说明
-            href: Operation-Guide/Shorturl-Parameter-Info.md
+          href: Operation-Guide/Shorturl-Parameter-Info.md
         - name: 特别提示
-          - href: Operation-Guide/Special-Tip.md
+          href: Operation-Guide/Special-Tip.md
     - name: 最佳实践
       items:
         - name: 短信中使用短网址进行信息推广

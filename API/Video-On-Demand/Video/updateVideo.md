@@ -18,7 +18,7 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |视频名称|
-|**categoryId**|Number|False| |分类ID|
+|**categoryId**|Long|False| |分类ID|
 |**tags**|String[]|False| |标签|
 |**coverUrl**|String|False| |封面地址|
 |**description**|String|False| |视频描述信息|
