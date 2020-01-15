@@ -51,7 +51,7 @@ public class HelloFC implements StreamRequestHandler {
 
 由于 Java 包含有包的概念，因此处理程序和其他语言有所不同，需要带有包信息。代码例子中对应的执行方法Handler为 : example.HelloFC::handleRequest，此处 example 为 Java package，HelloFC 为类，handleRequest 为类方法。**Handler” 的格式为 {package}.{class}::{method}** 。包名和类名可以是任意的，但是需要与创建函数时的 “Handler” 字段相对应，类方法必须为handleRequest。
 
-用户的代码中必须要实现函数计算预定义的接口。上面的例子中实现了StreamRequestHandler，其中的 inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
+用户的代码中必须要实现函数服务预定义的接口。上面的例子中实现了StreamRequestHandler，其中的 inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
 
 
 ### PojoRequestHandler
