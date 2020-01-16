@@ -123,6 +123,10 @@ items:
             href: Operation-Guide/Image/Public-Image-Update-Record.md 
           - name: 制作私有镜像
             href: Operation-Guide/Image/Create-Private-Image.md
+          - name: 镜像类型转换
+            href: Operation-Guide/Image/Convert-Image.md
+          - name: 复制镜像
+            href: Operation-Guide/Image/Copy-Image.md
           - name: 导入镜像
             items:
               - name: 导入私有镜像
@@ -135,14 +139,12 @@ items:
                 href: Operation-Guide/Image/Convert-Image-File-Format.md
               - name: ISO格式镜像转换
                 href: Operation-Guide/Image/Convert-Image-File-Format-From-ISO.md
+          - name: 导出镜像
+            href: Operation-Guide/Image/Export-Private-Image.md
           - name: 共享私有镜像
             href: Operation-Guide/Image/Share-Image.md
           - name: 取消共享私有镜像
             href: Operation-Guide/Image/Cancel-Share-Image.md
-          - name: 镜像类型转换
-            href: Operation-Guide/Image/Convert-Image.md
-          - name: 复制镜像
-            href: Operation-Guide/Image/Copy-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
       - name: 存储
