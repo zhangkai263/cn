@@ -75,7 +75,7 @@
 
 因为法律安全规范，发送短信需要发送者申请短信签名和短信模板，通过审核后才能正常发送短信。所以在通知服务需要发送的短信内容要在[文本短信](https://sms-console.jdcloud.com/overview)服务中申请。
 
-参考文档：
+参考文档：  
 [签名申请](https://docs.jdcloud.com/cn/text-message/signature)  
 [模板申请](https://docs.jdcloud.com/cn/text-message/content)  
 [模板变量规则](https://docs.jdcloud.com/cn/text-message/para)
