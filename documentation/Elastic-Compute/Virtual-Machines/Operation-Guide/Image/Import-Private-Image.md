@@ -96,7 +96,12 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 由于华北-北京地域的云硬盘做系统盘功能处于灰度开放期间，如您无法在私有镜像列表中查看到导入成功的云盘系统盘镜像，请提交工单申请权限。
 
 如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求整处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+* OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
+* CLI指令示意：
 
+```
+jdc vm image-tasks --region-id cn-east-2 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
+```
 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
 
 导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
