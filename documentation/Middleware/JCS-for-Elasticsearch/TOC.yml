@@ -87,7 +87,7 @@
         href: Operation-Guide/control.md
       - name: Kibana
         href: Operation-Guide/Kibana.md 
-      - name: Kibana
+      - name: Head
         href: Operation-Guide/head.md
       - name: 监控集群
         items: 
