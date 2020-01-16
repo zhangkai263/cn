@@ -22,10 +22,10 @@ https://vqd.jdcloud-api.com/v1/vqdTemplates
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|创建视频质检模板结果|
+|**result**|[Result](createvqdtemplate#result)|创建视频质检模板结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**templateId**|String|模板ID|

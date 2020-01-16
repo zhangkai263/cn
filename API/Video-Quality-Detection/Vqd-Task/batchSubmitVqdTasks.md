@@ -14,10 +14,10 @@ https://vqd.jdcloud-api.com/v1/vqdTasks:batchSubmit
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**mediaList**|[VqdMediaObject[]](#vqdmediaobject)|True| |媒体列表|
+|**mediaList**|[VqdMediaObject[]](batchsubmitvqdtasks#vqdmediaobject)|True| |媒体列表|
 |**templateId**|String|True| |检测模板ID|
 
-### <div id="VqdMediaObject">VqdMediaObject</div>
+### <div id="vqdmediaobject">VqdMediaObject</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**mediaUrl**|String|True| |媒体URL|
@@ -26,10 +26,10 @@ https://vqd.jdcloud-api.com/v1/vqdTasks:batchSubmit
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|批量提交视频质检任务结果|
+|**result**|[Result](batchsubmitvqdtasks#result)|批量提交视频质检任务结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskIds**|String[]| |

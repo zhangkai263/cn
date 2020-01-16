@@ -21,10 +21,10 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询域名结果|
+|**result**|[Result](getdomain#result)|查询域名结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域名ID|

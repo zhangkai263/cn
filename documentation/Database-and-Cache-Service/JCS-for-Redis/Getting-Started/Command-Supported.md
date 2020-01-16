@@ -57,7 +57,7 @@
 
 - redis2.8 lua脚本中不支持的命令有：bgsave，bgrewriteaof，shutdown，config
 
-- redis4.0 lua脚本中不支持的命令有：swapdb，rename，renamenx，bgsave，bgrewriteaof，shutdown，config，cluster，post，host
+- redis4.0 lua脚本中不支持的命令有：swapdb，rename，renamenx，bgsave，bgrewriteaof，shutdown，config，cluster，post，host:
 
 ## 4.0新增支持的命令
 

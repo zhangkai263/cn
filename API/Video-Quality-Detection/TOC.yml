@@ -16,7 +16,7 @@ items:
       - name: 视频质检模板管理
         items:
           - name: 查询质检模板列表
-            href: Vqd-Template/listTranscodeVqdTemplates.md
+            href: Vqd-Template/listVqdTemplates.md
           - name: 创建质检模板
             href: Vqd-Template/createVqdTemplate.md
           - name: 查询质检模板

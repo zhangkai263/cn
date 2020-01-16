@@ -21,10 +21,10 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:getHttpSsl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询CDN域名SSL配置结果|
+|**result**|[Result](gethttpssl#result)|查询CDN域名SSL配置结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**source**|String|证书来源。取值范围：default|

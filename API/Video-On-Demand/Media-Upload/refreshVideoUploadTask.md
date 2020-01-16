@@ -20,10 +20,10 @@ https://vod.jdcloud-api.com/v1/videoUploadTask:refresh
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|刷新视频上传地址和凭证结果|
+|**result**|[Result](refreshvideouploadtask#result)|刷新视频上传地址和凭证结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**videoId**|String|视频ID|
