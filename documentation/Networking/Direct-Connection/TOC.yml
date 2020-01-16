@@ -67,16 +67,16 @@
             href: Operation-Guide/Direct-Connection-Management/Connection-Monitoring.md
           - name: 专线通道监控
             href: Operation-Guide/Direct-Connection-Management/Private-VirtualInterface-Monitoring.md
-      - name: 托管连接管理
-        items:
-         - name: 托管专线配置
-           href: Operation-Guide/Hosted-Connect-Management/Hosted-Connection-Configuration.md
-         - name: 托管通道配置
-           href: Operation-Guide/Hosted-Connect-Management/Hosted-Private-VirtualInterface-Configuration.md
-         - name: 托管专线监控
-           href: Operation-Guide/Hosted-Connect-Management/Hosted-Connection-Monitoring.md
-         - name: 托管通道监控
-           href: Operation-Guide/Hosted-Connect-Management/Hosted-Private-VirtualInterface-Monitoring.md
+       - name: 托管连接管理
+         items:
+          - name: 托管专线配置
+            href: Operation-Guide/Hosted-Connect-Management/Hosted-Connection-Configuration.md
+          - name: 托管通道配置
+            href: Operation-Guide/Hosted-Connect-Management/Hosted-Private-VirtualInterface-Configuration.md
+          - name: 托管专线监控
+            href: Operation-Guide/Hosted-Connect-Management/Hosted-Connection-Monitoring.md
+          - name: 托管通道监控
+            href: Operation-Guide/Hosted-Connect-Management/Hosted-Private-VirtualInterface-Monitoring.md
        - name: 路由管理
          items:
           - name: 边界网关路由配置
