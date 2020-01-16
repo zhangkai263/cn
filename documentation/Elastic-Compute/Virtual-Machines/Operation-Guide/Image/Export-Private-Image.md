@@ -16,7 +16,7 @@
 * 镜像必须为“可用”状态，错误或其他中间状态镜像无法导出；
 * Windows Server操作系统的镜像不支持导出（若镜像来源为导入镜像，则无此限制）；
 * 镜像必须为您的私有镜像，官方镜像、云市场镜像或其他人共享给您的镜像，即使有使用权限也无法直接导出原镜像；
-* 镜像必须为“云硬盘系统盘”镜像，如您的镜像是“本地盘系统盘”镜像，可以通过[转换镜像格式](https://docs.jdcloud.com/cn/virtual-machines/convert-image)功能转换为“云硬盘系统盘”镜像后再导出。
+* 镜像必须为“云硬盘系统盘”镜像，如您的镜像是“本地盘系统盘”镜像，可以通过[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image)功能转换为“云硬盘系统盘”镜像后再导出。
 
 
 
@@ -112,3 +112,19 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx role-name image
 ```
 jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json '{"taskIds":[xxx]}'
 ```
+
+## 相关参考
+
+[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image)
+
+[创建OSS存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)
+
+[服务角色](https://docs.jdcloud.com/cn/iam/role)
+
+[镜像导出OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)
+
+[查询镜像任务OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)
+
+[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   
+
+[CLI配置](https://docs.jdcloud.com/cn/cli/config)
