@@ -52,7 +52,7 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 
 ### 2、准备镜像文件
 支持RAW、VHD、QCOW2、VMDK四种格式的镜像文件导入，请在生成镜像文件时指定正确的文件格式。<br>
-不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md) [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
+不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 
 ### 3、上传镜像文件
 操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件下载链接。<br>
@@ -67,9 +67,9 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 <div id="user-content-1"></div>
 
 由于目前导入镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
-接口文档见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
-CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
-CLI指令示意：
+* OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
+* CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
+* CLI指令示意：
 ```
 jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest
 ```
@@ -101,3 +101,25 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 
 导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
+## 相关参考
+[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)
+
+[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+
+[virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver)
+
+[镜像自检工具](Image-Check-Tool.md)
+
+[转换镜像格式](Convert-Image-File-Format.md) 
+
+[ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
+
+[镜像导入OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)
+
+[镜像任务查询OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 
+
+[CLI安装](https://docs.jdcloud.com/cn/cli/installation) 
+
+[CLI配置](https://docs.jdcloud.com/cn/cli/config)
+
+[Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)
