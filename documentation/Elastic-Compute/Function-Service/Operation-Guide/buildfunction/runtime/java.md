@@ -16,7 +16,7 @@ Java 语言需要编译后才可在容器中运行。因此在函数服务中的
 
 由于 Java 包含有包的概念，因此处理程序和其他语言有所不同，需要带有包信息。
 
-函数入口执行方法**Handler” 的格式为 {package}.{class}::{method}** 。包名和类名可以是任意的，但是需要与创建函数时的 “Handler” 字段相对应，类方法必须为handleRequest。
+**函数执行入口 Handler” 的格式为 {package}.{class}::{method}** 。包名和类名可以是任意的，但是需要与创建函数时的 “Handler” 字段相对应，类方法必须为handleRequest。
 
 
 用户使用Java编程时，需要实现函数服务的接口类，包括以下2个预定义接口可以选择：
@@ -53,7 +53,7 @@ public class HelloFC implements StreamRequestHandler {
 }
 ```
 
-代码例子中对应的函数入口执行方法Handler为 : example.HelloFC::handleRequest，此处 example 为 Java package，HelloFC 为类，handleRequest 为类方法。                    
+代码例子中对应的函数执行入口 Handler为 : example.HelloFC::handleRequest，此处 example 为 Java package，HelloFC 为类，handleRequest 为类方法。                    
 用户的代码中必须要实现函数服务预定义的接口。上面的例子中实现了StreamRequestHandler，其中， inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
 
 
