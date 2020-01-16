@@ -94,7 +94,7 @@
             href: Operation-Guide/Living-video/Create-living-domain.md
           - name: 禁播
             href: Operation-Guide/Living-video/Forbidden-Stream.md
-  - name: API 参考
+  - name: 旧版API参考
     items:
       - name: CDN OPEN API
         items:
@@ -226,8 +226,10 @@
             href: API-Reference/Live-Video-Open-Api/Query-online-Number.md
           - name: 设置推流IP白名单
             href: API-Reference/Live-Video-Open-Api/Set-Push-IP-Whitelist.md
-  - name: 新版OpenAPI参考
+  - name: 新版API参考
     items:
+      - name: 新旧版本API差异
+        href: diff.md
       - name: 接口概览
         href: overview.md
       - name: 接口信息
@@ -238,8 +240,8 @@
                  href: JCloud-Openapi-For-CDN/createDomain.md
                - name: batchCreate
                  href: JCloud-Openapi-For-CDN/batchCreate.md
-               - name: createLiveDomain
-                 href: JCloud-Openapi-For-CDN/createLiveDomain.md
+               - name: batchCreateLiveDomain
+                 href: JCloud-Openapi-For-CDN/batchCreateLiveDomain.md.md
           - name: 域名配置查询
             items:
                - name: getDomainDetail
