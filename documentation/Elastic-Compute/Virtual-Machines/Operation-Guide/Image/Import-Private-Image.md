@@ -100,7 +100,7 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 * CLI指令示意：
 
 ```
-jdc vm image-tasks --region-id cn-east-2 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
+jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
 ```
 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
 
