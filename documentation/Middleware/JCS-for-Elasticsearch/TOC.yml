@@ -64,15 +64,19 @@
   - name: 操作指南
     items:
       - name: 专用主节点
-        href: Operation-Guide/Dedicated-master.md 
+        href: Operation-Guide/Dedicated-master.md
+      - name: 协调节点
+        href: Operation-Guide/coordination_node.md
+      - name: Kibana
+        href: Operation-Guide/Kibana.md 
+      - name: Head
+        href: Operation-Guide/head.md
       - name: 插件支持
         href: Operation-Guide/IK.md
       - name: Elasticsearch日志
         href: Operation-Guide/eslog.md
       - name: 自定义词库
         href: Operation-Guide/dic.md 
-      - name: 协调节点
-        href: Operation-Guide/coordination_node.md   
       - name: 快照
         items: 
         - name: 创建快照
@@ -85,10 +89,6 @@
           href: Operation-Guide/deletesnapshot.md
       - name: 访问控制
         href: Operation-Guide/control.md
-      - name: Kibana
-        href: Operation-Guide/Kibana.md 
-      - name: Head
-        href: Operation-Guide/head.md
       - name: 监控集群
         items: 
         - name: 查看监控信息
