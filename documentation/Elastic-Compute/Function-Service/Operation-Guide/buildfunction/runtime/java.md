@@ -152,9 +152,4 @@ public class SimpleResponse {
 
 请使用 Maven 创建 jar 部署包。创建完成后，可通过控制台页面直接上传包（小于50M），完成部署包提交。
 
-## 日志
 
-您可以使用如下语句来打印日志输出，并在函数日志中查看输出：
-```Java
-System.out.println("Hello world!");
-```
