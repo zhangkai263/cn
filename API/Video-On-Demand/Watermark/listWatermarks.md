@@ -21,18 +21,18 @@ https://vod.jdcloud-api.com/v1/watermarks
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询水印列表结果|
+|**result**|[Result](listwatermarks#result)|查询水印列表结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|WatermarkObject[]|分页内容|
-### WatermarkObject
+|**content**|[WatermarkObject[]](listwatermarks#watermarkobject)|分页内容|
+### <div id="watermarkobject">WatermarkObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|水印ID|

@@ -14,9 +14,9 @@ https://vod.jdcloud-api.com/v1/videos:batchUpdate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**bulkItems**|BatchUpdateVideosBulkItem[]|True| |批量更新视频的条目集合|
+|**bulkItems**|[BatchUpdateVideosBulkItem[]](batchupdatevideos#batchupdatevideosbulkitem)|True| |批量更新视频的条目集合|
 
-### BatchUpdateVideosBulkItem
+### <div id="batchupdatevideosbulkitem">BatchUpdateVideosBulkItem</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**videoId**|String|False| |视频ID|
@@ -29,10 +29,10 @@ https://vod.jdcloud-api.com/v1/videos:batchUpdate
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|批量修改视频信息结果|
+|**result**|[Result](batchupdatevideos#result)|批量修改视频信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**okVideoIds**|String[]|更新成功的视频ID列表|

@@ -14,9 +14,9 @@ https://vod.jdcloud-api.com/v1/qualityDetectionJobs:batchSubmit
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**bulkItems**|SubmitQualityDetectionJobRequestObject[]|False| | |
+|**bulkItems**|[SubmitQualityDetectionJobRequestObject[]](batchsubmitqualitydetectionjobs#submitqualitydetectionjobrequestobject)|False| | |
 
-### SubmitQualityDetectionJobRequestObject
+### <div id="submitqualitydetectionjobrequestobject">SubmitQualityDetectionJobRequestObject</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**mediaId**|String|False| |媒资ID|
