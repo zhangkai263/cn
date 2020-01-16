@@ -20,21 +20,21 @@ https://vqd.jdcloud-api.com/v1/vqdTasks/{taskId}:queryResult
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryvqdtaskresult#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**vqdTaskResultObject**|[VqdTaskResultObject](#vqdtaskresultobject)| |
-### <div id="VqdTaskResultObject">VqdTaskResultObject</div>
+|**vqdTaskResultObject**|[VqdTaskResultObject](queryvqdtaskresult#vqdtaskresultobject)| |
+### <div id="vqdtaskresultobject">VqdTaskResultObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskId**|String|任务ID|
 |**status**|String|结果状态。<br>- FINISHED_SUCCESS<br>- FINISHED_FAILURE<br>|
-|**defects**|[VqdDefectObject[]](#vqddefectobject)| |
+|**defects**|[VqdDefectObject[]](queryvqdtaskresult#vqddefectobject)| |
 |**errorCode**|String|错误码|
-### <div id="VqdDefectObject">VqdDefectObject</div>
+### <div id="vqddefectobject">VqdDefectObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**item**|String|检测项目|
