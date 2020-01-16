@@ -4,20 +4,20 @@
 私有镜像导出，是指将您在京东云环境下制作的私有镜像，导出至同地域下的京东云对象存储空间中。导出之后，可随时下载镜像文件用作其他环境下的部署。
 
 	* 请注意：
-	  1. 导出功能当前仅在华东-上海地域支持，如有其他地域镜像需要导出，请先将镜像复制到华东-上海后再行导出；
-	  2. 仅支持系统盘镜像导出，即使镜像有关联的数据盘快照，也仅会导出系统盘镜像文件；
-	  3. 导出的镜像文件格式为QCOW2。
+	  1. 导出功能当前仅在华东-上海地域支持，如有其他地域镜像需要导出，请先将镜像复制到华东-上海后再行导出
+	  2. 仅支持系统盘镜像导出，即使镜像有关联的数据盘快照，也仅会导出系统盘镜像文件
+	  3. 导出的镜像文件格式为QCOW2
 
 ## 前提条件
 ### 服务角色要求
-* 由于导出镜像需要对您的对象存储空间进行写入操作，因此需要您创建服务角色并授予系统相应的访问权限，请参照下方操作步骤中的说明进行创建。
+* 由于导出镜像需要对您的对象存储空间进行操作，因此需要您创建服务角色并授予系统相应的访问权限，请参照下方操作步骤中的说明进行创建。
 
 ### 镜像要求
-* 镜像为“可用”状态，错误或其他中间状态镜像无法导出；
-* 镜像不是Windows Server操作系统（若镜像来源为导入镜像，则无此限制）；
-* 镜像必须为您的私有镜像，官方镜像、云市场镜像、或其他人共享给您的镜像，即使有使用权限也无法直接导出原镜像；
-* 镜像为“云硬盘系统盘”镜像，如您的镜像是“本地盘系统盘”镜像，可以通过[转换镜像格式](https://docs.jdcloud.com/cn/virtual-machines/convert-image)功能转换为“云硬盘系统盘”镜像后再导出；
-* 如镜像包含数据盘快照，则默认仅导出系统盘镜像文件；
+* 镜像必须为“可用”状态，错误或其他中间状态镜像无法导出；
+* Windows Server操作系统的镜像不支持导出（若镜像来源为导入镜像，则无此限制）；
+* 镜像必须为您的私有镜像，官方镜像、云市场镜像或其他人共享给您的镜像，即使有使用权限也无法直接导出原镜像；
+* 镜像必须为“云硬盘系统盘”镜像，如您的镜像是“本地盘系统盘”镜像，可以通过[转换镜像格式](https://docs.jdcloud.com/cn/virtual-machines/convert-image)功能转换为“云硬盘系统盘”镜像后再导出；
+
 
 
 ### 对象存储要求
@@ -28,12 +28,12 @@
 ![](../../../../../image/vm/image-export-image1.png)
 
 ### 1、确认对象存储空间<br>
-镜像只能导出到同地域下OSS的Bucket中，因此如果有多个地域下的私有镜像需要导出，请确认各地域下均有可以存放镜像文件的Bucket（当前仅支持华东-上海地域）。有关Bucket创建请参考：[创建存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)。<br>
+镜像只能导出到同地域下OSS的Bucket中，因此如果有多个地域下的私有镜像需要导出，请确认各地域下均有可以存放镜像文件的Bucket（当前仅支持华东-上海地域）。<br>有关Bucket创建请参考：[创建存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)。<br>
 ### 2、创建服务角色<br>
 访问 [角色管理控制台](https://iam-console.jdcloud.com/role/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【角色管理】进入角色管理页面。<br>
 ![](../../../../../image/vm/image-export-image2.png)
 
-点击【创建角色】，选择“服务角色”，在角色创建页面中，自定义服务角色名称，如：image-export，该角色名称需要在导出时作为必传参数提供。在信任关系中选择“云硬盘”（云硬盘系统盘镜像本质是云硬盘快照，因此导出最终操作是由云硬盘服务代表您向对象存储写入镜像文件）。<br>
+点击【创建角色】，选择“服务角色”，在角色创建页面中，自定义服务角色名称，如：image-export，该角色名称需要在导出时作为必传参数提供。<br>在信任关系中选择“云硬盘”（云硬盘系统盘镜像本质是云硬盘快照，因此导出最终操作是由云硬盘服务代表您向对象存储写入镜像文件）。<br>
 ![](../../../../../image/vm/image-export-image3.png)
 
 ### 3、为服务角色创建策略<br>
@@ -85,7 +85,7 @@
 ### 5、导出镜像
 由于目前导出镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
 导出任务提交成功后请记住接口返回的'exportTaskId'，以用于调用task查询接口获知导出进度。
-* 接口文档见：<br>
+* OpenAPI文档见：[镜像导出](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
 * CLI指令示意：
 
@@ -105,8 +105,9 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx role-name image
 | clientToken	 | string    | 否   | 用户导出镜像的幂等性保证。如传参值与某次的clientToken相同，则认为是同一个请求，将返回相同的请求结果。长度不能超过64个字符
 
 ## 查看导出进度
-成功提交导出镜像请求后，可通过 [镜像任务查询接口](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks) 查看导出进展。
-CLI指令示意：
+成功提交导出镜像请求后，可通过镜像任务查询接口查看导出进展。
+* OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
+* CLI指令示意：
 
 ```
 jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json '{"taskIds":[xxx]}'
