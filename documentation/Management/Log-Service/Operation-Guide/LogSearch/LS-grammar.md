@@ -1,4 +1,61 @@
-## 检索语法及规则  
+## 一、全文检索语法及规则  
+
+全文检索目前为模糊查询，您可以输入检索词对日志内容进行筛选过滤。
+
+### 1.查询单个词
+
+如果只包含大小写字母，数字，或者下划线，可以直接进行查询。如果包含其它字符，需要将查询词放入双引号""内，双引号内的查询词可以包含任意字符。如果查询词本身包含双引号或者不可见字符，请使用转义。示例：
+
+1.	error ：查询词为error
+2.	“error” ： 查询词为error
+3.	“test-log” : 查询词为test-log
+4.	test-log : 非法查询词，请使用双引号“”进行包含
+5.	“\"hello world\"” : 查询词为 “hello world”
+6.	“hello world” ： 查询词为hello world
+
+### 2.要同时包含多个词时 （“与”关系）
+
+使用一个或者多个空格分开，或者在该词前使用加号 “+” ，示例：
+
+1.	error warn ：查询包含error 并且 包含 warn的日志数据
+2.	+error +warn ： 查询包含error 并且 包含 warn的日志数据
+3.	error +warn ：查询包含error 并且 包含 warn的日志数据
+
+### 3.要同时排除某个词 （“非”关系）
+
+在该词前使用“-” ，示例：
+
+1.	error -test ： 查询包含error，并且不包含 test的日志数据
+2.	-error -warn ： 查询不包含error， 并且不包含warn的日志数据
+3.	error - “hello world” ： 查询包含error，并且不包含 hello world的日志数据
+
+### 4.要查询包含其中任意一个词时（“或”关系）
+
+在每个查询词前使用“?”， 示例：
+
+1.	?error ?warn ： 查询包含error 或者包含 warn的日志数据
+2.	? error ? "hello world" ： 查询包含error 或者包含hello world的日志数据
+
+**当前不支持（）[] 等操作符进行与或非组合关系查询**
+
+### 5.如果查询多个词，有“与”或者“非”关系时， “或”关系词会被忽略。示例：
+
+1.	error ?warn ：查询包含error的日志数据， 存在与关系词 error，?warn 被忽略， 等同于 error
+2.	+error ?warn : 查询包含error的日志数据， 存在与关系词 error，?warn 被忽略， 等同于 error
+3.	error warn ?test : 查询包含error并且包含warn的日志数据，等同于 error warn
+4.	-error ?warn : 查询不包含error的日志数据，存在非关系词 error，?warn 被忽略，等同于 -error
+5.	error -test ?warn : 查询包含error，并且不包含 test的日志数据, ?warn 被忽略，等同于 error -test
+
+### 6.保留字符说明
+
+| 保留字符说明 | 特殊含义 | 备注 |
+|---|---|---|
+| +	|与|默认不填为与， 例如包含error：查询词 +error ，等同于 error。如果需要查包含 +error， 请使用“”包含查询词，即： “+error”|
+| -	|非|优先级和“与”一致， 例如不包含error：查询词 -error|
+| ？|或|优先级最低，当查询语句中出现“与”或者“非”关系时，会被忽略。即目前只支持多个或关系查询。不支持“与”+“或”， “非”+“或”的组合查询|
+
+
+## 二、键值检索语法及规则  
 
 语法 | 语义
 ---|---
