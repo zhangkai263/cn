@@ -167,3 +167,49 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 ```
 
 队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-trigger.md)。 
+
+
+## 云事件触发器
+
+云事件会把事件请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function可通过如下结构去获取和处理需要的参数。
+
+
+### 事件格式
+
+```
+{
+    "Records": [
+        {
+            "version":"0",
+            "id":"2f30509d-3c5e-443e-9bd2-ebb9dda74e68",
+            "time":"2019-12-20T03:17:29Z",
+            "source":"events",
+            "base64OwnerPin":"amNsb3VkX21vbml0b3I=",
+            "resource":["bnti0hqm4n7mrlluj9cg"],
+            "region":"cn-north-1",
+            "detailType":"resourcesMonitor",
+            "detail": {
+                "version":"1.0",
+                "id":"85bf4aa3-3fb3-4cbb-ba52-cab54edae769",
+                "detailType":"resourcesMonitor",
+                "source":"jcloud.monitor.alert",
+                "pin":"jcloud_monitor",
+                "time":"2019-12-20T11:17:29+0800",
+                "region":"cn-north-1",
+                "resources":["alarm-aqoz718971"],
+                    "detail": {
+                        "content":"content",
+                        "resourceId":"mysql-fo32fberwl",
+                        "ruleId":" ",
+                        "serviceCode":"database",
+                        "threshold":7.77,
+                        "time":"2019-12-20T11:17:09+08:00",
+                        "times":2723,
+                        "value":11.43282585600461
+                    }
+            } 
+        }
+    ]
+}
+
+```
