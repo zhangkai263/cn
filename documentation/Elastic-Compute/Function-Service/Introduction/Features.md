@@ -12,12 +12,12 @@
 | Python 3.7   | Python 3.7 版本 | [python runtime](../Operation-Guide/buildfunction/runtime/python.md) | 
 | NodeJS 6    | NodeJS 6.17 版本 | [nodejs runtime](../Operation-Guide/buildfunction/runtime/nodejs.md) | 
 | NodeJS 8    | NodeJS 8.16 版本 | [nodejs runtime](../Operation-Guide/buildfunction/runtime/nodejs.md) | 
-| Java 8   | Java 8 版本 | [java runtime](../Operation-Guide/buildfunction/runtime/java.md) | 
+
 
 
 ## 函数支持多种代码上传方式
 
-函数代码管理方式支持在线编辑和本地.zip/.jar包上传。
+函数代码管理方式支持在线编辑和本地.zip 包上传。
 
 ## 函数支持多种触发器类型
 
