@@ -40,11 +40,11 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/cabinets/{cabinetId}
 |**cabinetSpace**|Integer|机柜空间(U)|
 |**cabinetPower**|Integer|额定电流(A)|
 |**cabinetType**|String|机柜类型 formal:正式机柜 reserved:预留机柜|
-|**cabinetOpenStatus**|String|机柜开通状态 disabled:未开通 enabling:开通中 enabled:已开通 disabling:关闭中|
-|**cabinetOpenTime**|String|开通时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
-|**expireTime**|String|到期时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
-|**reserveStartTime**|String|预留开始时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
-|**reserveEndTime**|String|预留结束时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**cabinetOpenStatus**|String|机柜开通状态 disabled:未开通 enabling:开通中 enabled:已开通 disabling:关电中|
+|**cabinetOpenTime**|String|开通时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
+|**expireTime**|String|到期时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
+|**reserveStartTime**|String|预留开始时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
+|**reserveEndTime**|String|预留结束时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
 |**deviceNum**|Integer|设备数量|
 |**rackUOccupy**|Integer|占用U数(U)|
 |**rackUFree**|Integer|空闲U数(U)|

@@ -46,7 +46,7 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/devices/{deviceId}
 |**deviceType**|String|设备类型 server:服务器 network:网络设备 storage:存储设备 other:其他设备|
 |**assetBelong**|String|资产归属 own:自备 lease:租赁|
 |**assetStatus**|String|资产状态 launched:已上架 opened:已开通 canceling:退订中 operating:操作中 modifing:变更中|
-|**deviceOpenTime**|String|开通时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**deviceOpenTime**|String|开通时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
 |**cpuCore**|String|CPU|
 |**memory**|String|内存|
 |**disk**|String|磁盘|

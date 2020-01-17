@@ -51,10 +51,11 @@ https://jdccs.jdcloud-api.com/v1/alarmHistory
 |**times**|Integer|连续多少次后报警|
 |**noticePeriod**|Integer|通知周期 单位：小时|
 |**status**|String|规则状态 disabled:禁用 enabled:启用|
-|**switchboard**|Object[]| |
+|**managementIp**|String|IP地址|
+|**ifName**|String|端口名称|
 |**alarmStatus**|String|报警状态 normal:正常 alarm:报警|
 |**value**|Double|报警值|
-|**noticeTime**|String|报警时间 遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**noticeTime**|String|报警时间 遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
 
 ## 返回码
 |返回码|描述|
