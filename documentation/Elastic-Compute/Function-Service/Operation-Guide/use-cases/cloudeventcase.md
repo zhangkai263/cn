@@ -10,7 +10,7 @@
 
 登陆函数服务控制台，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-step1函数代码:
+**step1函数代码**
 
 - 函数运行时： python 3.6
 - 函数模板：自定义模板                     
@@ -20,7 +20,7 @@ step1函数代码:
 
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1.PNG) 
 
-step2函数配置：
+**step2函数配置**
 
 - 函数执行内存：128MB                 
 - 超时时间：100秒                                               
@@ -31,7 +31,7 @@ step2函数配置：
          说明：日志集、日志主题需提前在日志服务创建                                      
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1-2.PNG) 
 
-step3触发方式：
+**step3触发方式**
 
 - 触发器：不配置触发器        
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing3.PNG) 
