@@ -47,7 +47,9 @@ items:
                - name: Python
                  href: Operation-Guide/buildfunction/runtime/python.md     
                - name: NodeJS
-                 href: Operation-Guide/buildfunction/runtime/nodejs.md       
+                 href: Operation-Guide/buildfunction/runtime/nodejs.md  
+               - name: Java
+                 href: Operation-Guide/buildfunction/runtime/java.md
            - name: 编程模型
              items:
                - name: 处理程序
