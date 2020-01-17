@@ -49,8 +49,8 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/ips
 |**ipId**|String|公网IP实例ID|
 |**cidrAddr**|String|IP地址段|
 |**networkAddr**|String|网络位地址|
-|**gatewayAddr**|Integer|网关地址|
-|**broadcastAddr**|Integer|广播地址|
+|**gatewayAddr**|String|网关地址|
+|**broadcastAddr**|String|广播地址|
 |**status**|String|状态 normal:正常 abnormal:异常|
 
 ## 返回码
