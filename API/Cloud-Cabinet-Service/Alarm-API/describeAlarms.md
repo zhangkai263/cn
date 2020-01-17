@@ -52,7 +52,6 @@ https://jdccs.jdcloud-api.com/v1/alarms
 |**times**|Integer|连续多少次后报警|
 |**noticePeriod**|Integer|通知周期 单位：小时|
 |**status**|String|规则状态 disabled:禁用 enabled:启用|
-|**switchboard**|Object[]| |
 
 ## 返回码
 |返回码|描述|
