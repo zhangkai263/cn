@@ -119,3 +119,4 @@ c:\windows\system32\Sysprep\sysprep.exe /generalize /oobe /shutdown
 执行完该命令会弹出对话框，等待直到完成，系统会自动关机，完成升级Virtio驱动的全部流程。
 
 需要特别注意的是，在卸载和安装后都要重启系统以保证更新驱动生效。
+
