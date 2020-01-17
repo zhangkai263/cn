@@ -296,6 +296,8 @@ g.n1.8xlarge|32|128|4 |	 |
 * vCPU与内存比为1:4
 * 提供低时延高IO的本地存储
 * 处理器：
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
 	* 通用型SSD云盘
@@ -307,6 +309,25 @@ g.n1.8xlarge|32|128|4 |	 |
 	* ElasticSearch等场景
 
 **实例规格**
+
+
+第三代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.i3.2xlarge|8|32|1 x 1862 NVMe SSD|4
+|s.i3.4xlarge|16|64|2 x 1862 NVMe SSD|4
+|s.i3.6xlarge|24|96|3 x 1862 NVMe SSD|4
+|s.i3.8xlarge|32|128|4 x 1862 NVMe SSD|4
+|s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|4
+|s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|4
+|s.i3.22large|88|352|8 x 1862 NVMe SSD|4
+
+第二代：
+
+实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
+:---|:---|:---|:---|:---
+|s.i2.metal|88|384|1 x 1862 NVMe SSD|60
 
 第一代：
 
