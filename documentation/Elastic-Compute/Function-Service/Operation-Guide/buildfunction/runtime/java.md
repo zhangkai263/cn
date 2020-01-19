@@ -58,7 +58,7 @@ public class HelloFC implements StreamRequestHandler {
 
 **引入接口库**
 
-代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.sml引用：
+代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.xml引用：
 
 ```
 <dependency>
