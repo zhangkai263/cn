@@ -56,20 +56,7 @@ public class HelloFC implements StreamRequestHandler {
 代码例子中对应的函数执行入口 Handler为 : example.HelloFC::handleRequest，此处 example 为 Java package，HelloFC 为类，handleRequest 为类方法。                    
 用户的代码中必须要实现函数服务预定义的接口。上面的例子中实现了StreamRequestHandler，其中， inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
 
-**引入接口库**
 
-代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.xml引用：
-
-```
-<dependency>
-    <groupId>com.jdcloud.function</groupId>
-    <artifactId>java-runtime</artifactId>
-    <version>1.0.0</version>
-</dependency>
-
-```
-
-通过[ maven ](https://mvnrepository.com/artifact/com.jdcloud.function/java-runtime) 仓库可获取java-runtime的最新版本号，亦可直接下载添加至java工程中。
 
 ### PojoRequestHandler
 一个简单的处理函数定义如下：
@@ -161,6 +148,20 @@ public class SimpleResponse {
 - Context 入参              
 使用 Context 需要在代码中使用 `com.jdcloud.function.Context`; 引入包，并在打包时带入 jar 包。
 
+**引入接口库**
+
+代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.xml引用：
+
+```
+<dependency>
+    <groupId>com.jdcloud.function</groupId>
+    <artifactId>java-runtime</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+```
+
+通过[ maven ](https://mvnrepository.com/artifact/com.jdcloud.function/java-runtime) 仓库可获取java-runtime的最新版本号，亦可直接下载添加至java工程中。
 
 ## 部署包上传
 
