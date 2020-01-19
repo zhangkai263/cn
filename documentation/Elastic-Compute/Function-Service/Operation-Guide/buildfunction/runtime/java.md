@@ -148,7 +148,7 @@ public class SimpleResponse {
 - Context 入参              
 使用 Context 需要在代码中使用 `com.jdcloud.function.Context`; 引入包，并在打包时带入 jar 包。
 
-**引入接口库**
+**引入接口库说明**
 
 代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.xml引用：
 
