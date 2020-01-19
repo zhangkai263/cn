@@ -91,7 +91,7 @@
 * CLI指令示意：
 
 ```
-jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx role-name image-export --oss-url https://test-export.s3.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
+jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name image-export --oss-url https://test-export.s3.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
 ```
 
 #### 接口参数说明：
