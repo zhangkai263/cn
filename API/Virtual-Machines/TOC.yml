@@ -68,7 +68,7 @@
           - name: importImage
             href: Image/importImage.md
           - name: exportImage
-            href: Image/ExportImage.md            
+            href: Image/exportImage.md            
           - name: modifyImageAttribute
             href: Image/modifyImageAttribute.md
           - name: shareImage
