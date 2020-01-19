@@ -28,7 +28,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:exportImage
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
