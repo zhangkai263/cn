@@ -43,14 +43,14 @@
 
 #### mongos
 
-| 规格代码         | 规格    | 最大连接数 | 最大IOPS |
-| :--------------- | :------ | :--------- | :------- |
-| mongo.m1.small   | 1核2G   | 1000       | 1000     |
-| mongo.m1.medium  | 2核4G   | 2000       | 2000     |
-| mongo.m1.large   | 4核8G   | 4000       | 4000     |
-| mongo.m1.xlarge  | 8核16G  | 8000       | 8000     |
-| mongo.m1.2xlarge | 8核32G  | 16000      | 14000    |
-| mongo.m1.4xlarge | 16核64G | 32000      | 16000    |
+| 规格代码          | 规格    | 最大连接数 | 最大IOPS |
+| :---------------- | :------ | :--------- | :------- |
+| mongos.m1.small   | 1核2G   | 1000       | 1000     |
+| mongos.m1.medium  | 2核4G   | 2000       | 2000     |
+| mongos.m1.large   | 4核8G   | 4000       | 4000     |
+| mongos.m1.xlarge  | 8核16G  | 8000       | 8000     |
+| mongos.m1.2xlarge | 8核32G  | 16000      | 14000    |
+| mongos.m1.4xlarge | 16核64G | 32000      | 16000    |
 
 #### configserver
 
