@@ -10,7 +10,7 @@
 2.	“error” ： 查询词为error
 3.	“test-log” : 查询词为test-log
 4.	test-log : 非法查询词，请使用双引号“”进行包含
-5.	“\"hello world\"” : 查询词为 “hello world”
+5.	``“\"hello world\"”`` : 查询词为 “hello world”
 6.	“hello world” ： 查询词为hello world
 
 ### 2.要同时包含多个词时 （“与”关系）
