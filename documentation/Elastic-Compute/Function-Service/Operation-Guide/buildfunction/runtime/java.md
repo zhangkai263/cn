@@ -161,7 +161,7 @@ public class SimpleResponse {
 
 ```
 
-通过[ maven ](https://mvnrepository.com/artifact/com.jdcloud.function/java-runtime) 仓库可获取java-runtime的最新版本号，亦可直接下载添加至java工程中。
+通过[ maven ](https://mvnrepository.com/artifact/com.jdcloud.function/java-runtime) 仓库可获取java-runtime的最新版本号，亦可直接下载添加打入 jar 包。
 
 ## 部署包上传
 
