@@ -1,6 +1,6 @@
 ### 步骤一：产品开通<br>
 1. 首先申请公测，用户在[官网产品页](https://www.jdcloud.com/cn/products/jd-cloud-equal-edge-service)填写使用‘对等边缘服务’产品的申请信息（含业务场景描述）等，由人工评估审核完成后进行开通。<br>
-2. 进行开通产品服务，用户登录[控制台](https://epnc-console.jdcloud.com/consumer)，阅读并同意《边缘网络隧道服务条款》之后，点击‘立即开通’按钮，完成产品开通工作。
+2. 进行开通产品服务，用户登录[控制台](https://epnc-console.jdcloud.com/consumer)，阅读并同意《对等边缘服务条款》之后，点击‘立即开通’按钮，完成产品开通工作。
 
 ### 步骤二：生成任务<br>
 在任务的列表页，如下图：
