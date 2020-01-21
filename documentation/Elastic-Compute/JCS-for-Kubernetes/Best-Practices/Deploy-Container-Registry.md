@@ -145,7 +145,7 @@ spec:
                   name: c-tokens-fresher-secret
                   key: sk
             imagePullPolicy: Always
-            image: jdcloudiaas/jcrtoken:cronjob
+            image: jdcloudiaas/jcrtoken:cronjob  # 1.16集群请换成 jdcloudiaas/jcrtoken:cronjob-14.6
 ```  
 4、执行以下命令，运行：
 ```
