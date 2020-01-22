@@ -2,34 +2,34 @@
 
 ## **下载证书**
 
-1. 进入控制台，从左侧导航栏依次选择 **云安全** -> **SSL数字证书** -> **证书管理**，进入SSL数字证书管理页面
+1、进入控制台，从左侧导航栏依次选择 **云安全** -> **SSL数字证书** -> **证书管理**，进入SSL数字证书管理页面
 
-[![证书列表页面](/image/SSL-Certification/证书列表页面.png)
+![证书列表页面](/image/SSL-Certification/证书列表页面.png)
 
-1. 选择需要下载的证书，点击右侧 **下载**，下载证书。
+2、选择需要下载的证书，点击右侧 **下载**，下载证书。
 
-   [![下载对应格式的证书]()
+[![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
 
 ## 创建目录
 
-1.      在**Apache**安装目录中新建cert目录，并将解压的Apache证书、 证书链文件和密钥文件拷贝到cert目录中。如果需要安装多个证书，需在**Apache**目录中新建对应数量的**cert**目录，用于存放不同的证书。
+1、在**Apache**安装目录中新建cert目录，并将解压的Apache证书、 证书链文件和密钥文件拷贝到cert目录中。如果需要安装多个证书，需在**Apache**目录中新建对应数量的**cert**目录，用于存放不同的证书。
 
-##  **配置httpd.conf文件
+##  配置httpd.conf文件
 
-\1.      修改httpd.conf配置文件。
+1、修改httpd.conf配置文件。
 
-1)      在Apache安装目录下，打开Apache/conf/httpd.conf文件，并找到以下参数，按照下文中注释内容进行配置。
+1)在Apache安装目录下，打开Apache/conf/httpd.conf文件，并找到以下参数，按照下文中注释内容进行配置。
 
 ```
-2)  #LoadModule ssl_module modules/mod_ssl.so  #删除行首的配置语句注释符号“#”加载mod_ssl.so模块启用SSL服务，Apache默认是不启用该模块的。如果找不到该配置，请重新编译mod_ssl模块。
+#LoadModule ssl_module modules/mod_ssl.so  #删除行首的配置语句注释符号“#”加载mod_ssl.so模块启用SSL服务，Apache默认是不启用该模块的。如果找不到该配置，请重新编译mod_ssl模块。
 #Include conf/extra/httpd-ssl.conf  #删除行首的配置语句注释符号“#”。                 
 ```
 
-3)  保存httpd.conf文件并退出。
+2)  保存httpd.conf文件并退出。
 
-\2.      修改httpd-ssl.conf配置文件。
+2、修改httpd-ssl.conf配置文件。
 
-1)      打开Apache/conf/extra/httpd-ssl.conf文件并找到以下参数，按照下文中注释内容进行配置。 证书路径建议使用绝对路径。
+1)开Apache/conf/extra/httpd-ssl.conf文件并找到以下参数，按照下文中注释内容进行配置。 证书路径建议使用绝对路径。
 
 **说明** 根据操作系统的不同，http-ssl.conf文件也可能存放在conf.d/ssl.conf目录中。
 
@@ -62,13 +62,13 @@
 
 **说明** 需注意您的浏览器版本是否支持SNI功能，如果不支持，多域名证书配置将无法生效。
 
-2)      保存httpd-ssl.conf文件并退出。
+2)保存httpd-ssl.conf文件并退出。
 
-\3.      重启Apache服务器使SSL配置生效。
+3、重启Apache服务器使SSL配置生效。
 
 在Apache的bin目录下执行以下命令：
 
-1)      停止Apache服务。
+1)停止Apache服务。
 
 ```
 apachectl -k stop
@@ -80,7 +80,7 @@ apachectl -k stop
 apachectl -k start
 ```
 
-\4.  **可选：** 修改httpd.conf文件，设置HTTP请求自动跳转HTTPS。
+4. **可选：** 修改httpd.conf文件，设置HTTP请求自动跳转HTTPS。
 
 在httpd.conf文件中的`<VirtualHost *:80> </VirtualHost>`中间，添加以下重定向代码。
 
