@@ -14,7 +14,7 @@
 
 1、在**Tomcat**安装目录下新建**cert**目录，将解压的证书和密码文件拷贝到**cert**目录下。
 
-##  **配置server.xml**
+##  **配置server.xml**文件
 
 1、修改配置文件server.xml，并保存。
 

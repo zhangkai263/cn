@@ -25,7 +25,7 @@
 #Include conf/extra/httpd-ssl.conf  #删除行首的配置语句注释符号“#”。                 
 ```
 
-2)  保存httpd.conf文件并退出。
+2)保存httpd.conf文件并退出。
 
 2、修改httpd-ssl.conf配置文件。
 
