@@ -1,49 +1,75 @@
-name: µç×ÓÇ©ÕÂ
-href:
+name: SSL æ•°å­—è¯ä¹¦
+href: 
 items:
-- name: ²úÆ·¼ò½é
+- name: äº§å“ç®€ä»‹
   items:
-    - name: ²úÆ·¸ÅÊö
+    - name: äº§å“æ¦‚è¿°
       href: Introduction/Product-Overview.md
-    - name: ºËĞÄ¸ÅÄî
+    - name: æ ¸å¿ƒæ¦‚å¿µ
       href: Introduction/Core-Concepts.md
-    - name: ²úÆ·ÓÅÊÆ
+    - name: åŸºç¡€æ¶æ„
+      href: 
+      status: 0
+    - name: äº§å“ä¼˜åŠ¿
       href: Introduction/Benefits.md
-    - name: ²úÆ·¹¦ÄÜ
+    - name: äº§å“åŠŸèƒ½
       href: Introduction/Features.md
-    - name: ÏŞÖÆËµÃ÷
-      href: Introduction/Restrictions.md
-- name: ²úÆ·¶¨¼Û
+    - name: äº§å“è§„æ ¼
+      href: 
+      status: 0
+    - name: é™åˆ¶è¯´æ˜
+      href: 
+      status: 0
+    - name: åº”ç”¨åœºæ™¯
+      href: Introduction/Application-Scenarios.md
+- name: äº§å“å®šä»·
   items:
-    - name: ¼Æ·Ñ¸ÅÊö
+    - name: è®¡è´¹æ¦‚è¿°
       href: Pricing/Billing-Overview.md
-    - name: ¼Æ·Ñ¹æÔò
-      href: Pricing/Price-Overview.md
-    - name: ¹ºÂòÁ÷³Ì
-      href: Pricing/Purchase-Process.md 
-- name: ²Ù×÷Ö¸ÄÏ
+      status: 0
+    - name: è®¡è´¹è§„åˆ™
+      href: 
+      status: 0
+    - name: ä»·æ ¼æ€»è§ˆ
+      href: 
+      status: 0
+    - name: è´­ä¹°æµç¨‹
+      href: Operation-Guide/Apply-SSL-Certificate.md
+    - name: ç»­è´¹æµç¨‹
+      href: 
+      status: 0
+    - name: å¦‚ä½•é€‰æ‹©è¯ä¹¦
+      href:
+      status: 0
+- name: æ“ä½œæŒ‡å—
   items:
-    - name: ¿ªÍ¨·şÎñ
-      href: Operation-Guide/Active.md
-    - name: Ó¡ÕÂ¹ÜÀí
-      items:
-        - name: ÉÏ´«Ó¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Upload.md
-        - name: ÏÂÔØÓ¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Download.md
-        - name: É¾³ıÓ¡ÕÂ
-          href: Operation-Guide/Sign-management/Sign-Delete.md
-    - name: ºÏÍ¬Ä£°å¹ÜÀí
-      items:
-        - name: ÉÏ´«ºÏÍ¬Ä£°å
-          href: Operation-Guide/Template-Management/Template-Upload.md
-        - name: ÏÂÔØÓ¡ÕÂ
-          href: Operation-Guide/Template-Management/Template-Download.md
-        - name: É¾³ıÓ¡ÕÂ
-          href: Operation-Guide/Template-Management/Template-Delete.md
-    - name: ºÏÍ¬¹ÜÀí
-      items:
-        - name: ÏÂÔØºÏÍ¬
-          href: Operation-Guide/Contract-Management/Contract-Download.md
-        - name: É¾³ıºÏÍ¬
-          href: Operation-Guide/Contract-Management/Contract-Delete.md
+    - name: ä¸Šä¼ SSLè¯ä¹¦
+      herf: Operation-Guide/Upload-SSL-Certificate.md
+    - name: ç®¡ç†SSLè¯ä¹¦
+      herf: Operation-Guide/Manage-SSL-Certificate.md
+    - name: ä¸‹è½½SSLè¯ä¹¦
+      herf: Operation-Guide/Download-SSL-Certificate.md 
+    - name: åˆ é™¤SSLè¯ä¹¦
+      herf: Operation-Guide/Delete-SSL-Certificate.md
+    - name: è¿½åŠ åŸŸå
+      herf: Operation-Guide/Add-Domain.md
+    - name: é‡é¢å‘è¯ä¹¦
+      herf: Operation-Guide/Reissue-SSL-Sertificate.md
+    - name: åŠé”€è¯ä¹¦
+      herf: Operation-Guide/Revocate-SSL-Certificate.md
+    - name: æäº¤èµ„æ–™-Symantecå…è´¹DVè¯ä¹¦
+      herf: Operation-Guide/Symantec-DV-Complete.md  
+    - name: æäº¤èµ„æ–™-GeoTrustä»˜è´¹OV/EVè¯ä¹¦
+      herf: Operation-Guide/GeoTrust-OEV-Complete.md
+- name: SSLè¯ä¹¦å®‰è£…æŒ‡å—
+  items:
+    - name: ApacheæœåŠ¡å™¨å®‰è£…è¯ä¹¦
+      herf: SSL-Setting/SSL-Apache.md
+    - name: IISæœåŠ¡å™¨å®‰è£…è¯ä¹¦
+      herf: Operation-Guide/SSL-IIS.md
+    - name: NginxæœåŠ¡å™¨å®‰è£…è¯ä¹¦
+      herf: Operation-Guide/SSL-Nginx.md 
+    - name: TomcatæœåŠ¡å™¨å®‰è£…è¯ä¹¦
+      herf: Operation-Guide/SSL-Tomcat.md
+- name: å¸¸è§é—®é¢˜
+  herf: FAQ/FAQ.md  
