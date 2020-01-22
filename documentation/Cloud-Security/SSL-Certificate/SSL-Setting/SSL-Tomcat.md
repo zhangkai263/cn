@@ -12,11 +12,11 @@
 
 ## 创建目录
 
-在**Tomcat**安装目录下新建**cert**目录，将解压的证书和密码文件拷贝到**cert**目录下。
+1、在**Tomcat**安装目录下新建**cert**目录，将解压的证书和密码文件拷贝到**cert**目录下。
 
 ##  **配置server.xml**
 
-修改配置文件server.xml，并保存。
+1、修改配置文件server.xml，并保存。
 
 文件路径：Tomcat安装目录/conf/server.xml
 
@@ -75,7 +75,7 @@ protocol="HTTP/1.1"
 </security-constraint>
 ```
 
-**重启Tomcat。**
+2、重启Tomcat。
 
 ## 后续操作
 

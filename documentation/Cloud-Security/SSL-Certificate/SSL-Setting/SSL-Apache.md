@@ -8,7 +8,7 @@
 
 2、选择需要下载的证书，点击右侧 **下载**，下载证书。
 
-[![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
+![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
 
 ## 创建目录
 
@@ -60,7 +60,7 @@
 </VirtualHost>
 ```
 
-**说明** 需注意您的浏览器版本是否支持SNI功能，如果不支持，多域名证书配置将无法生效。
+**说明：**需注意您的浏览器版本是否支持SNI功能，如果不支持，多域名证书配置将无法生效。
 
 2)保存httpd-ssl.conf文件并退出。
 
@@ -74,13 +74,13 @@
 apachectl -k stop
 ```
 
-2)  开启Apache服务。
+2)开启Apache服务。
 
 ```
 apachectl -k start
 ```
 
-4. **可选：** 修改httpd.conf文件，设置HTTP请求自动跳转HTTPS。
+4、**可选：** 修改httpd.conf文件，设置HTTP请求自动跳转HTTPS。
 
 在httpd.conf文件中的`<VirtualHost *:80> </VirtualHost>`中间，添加以下重定向代码。
 

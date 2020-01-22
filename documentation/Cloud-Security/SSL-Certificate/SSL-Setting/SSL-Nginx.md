@@ -8,15 +8,15 @@
 
 2、选择需要下载的证书，点击右侧 **下载**，下载证书。
 
-[![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
+![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
 
-## 创建目录**
+## 创建目录
 
-登录您的Nginx服务器，在Nginx安装目录（默认Nginx安装目录为/usr/local/nginx/conf）下创建**cert**目录，并将下载的证书文件和密钥文件拷贝到**cert**目录中。
+1、登录您的Nginx服务器，在Nginx安装目录（默认Nginx安装目录为/usr/local/nginx/conf）下创建**cert**目录，并将下载的证书文件和密钥文件拷贝到**cert**目录中。
 
 ## **修改nginx.conf文件**
 
-修改Nginx安装目录/conf/nginx.conf文件。
+1、修改Nginx安装目录/conf/nginx.conf文件。
 
 找到以下配置信息：
 
@@ -58,9 +58,9 @@ index index.html index.htm;
 }                     
 ```
 
-**保存nginx.conf文件后退出。**
+2、保存nginx.conf文件后退出。
 
-**执行以下命令重启Nginx服务器。**
+3、执行以下命令重启Nginx服务器。
 
 ```
 nginx -s stop
