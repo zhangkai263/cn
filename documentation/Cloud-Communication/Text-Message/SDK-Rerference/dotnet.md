@@ -10,17 +10,22 @@ dotnet --version
 注意：dotnet需要2.0以上版本，具体要求参考[京东云官网帮助文档](https://docs.jdcloud.com/cn/sdk/dotnet)  
 <br><br>
 **二. SDK安装**  
+构建工程，在新建的工程目录下执行如下命令  
+```
+dotnet new console -lang "C#"
+```  
 安装京东云核心包  
 ```
 dotnet add package JDCloudSDK.Core --version 0.2.10
 ```  
-关于 .net 核心包的最新版本号, https://www.nuget.org/packages/JDCloudSDK.Core/  
+关于 .net 核心包的最新版本号，https://www.nuget.org/packages/JDCloudSDK.Core/  
 
 安装短信包  
 ```
 dotnet add package JDCloudSDK.Sms --version 1.2.0.1
 ```  
-
+如果使用vscode工具开发，可以使用NuGet Package Manager插件，搜索京东云核心包(JDCloudSDK.Core)和短信包(JDCloudSDK.Sms)  
+注意：所安装的版本需要参考官网最新版本做响应修改  
 关于 .net 短信包的最新版本号，https://www.nuget.org/packages/JDCloudSDK.Sms/  
 
 <br><br>
