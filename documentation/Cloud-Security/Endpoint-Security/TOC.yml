@@ -31,6 +31,8 @@ items:
       href: Operation-Guide/Suspicious-Operation.md
     - name: 合规基线
       href: Operation-Guide/Compliance-Baseline.md         
+    - name: 病毒木马
+      href: Operation-Guide/Virus-Detection.md     
     - name: 资产管理
       href: Operation-Guide/Asset-Management.md   
   - name: 最佳实践
