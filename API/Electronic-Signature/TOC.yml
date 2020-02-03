@@ -1,7 +1,6 @@
 name: 电子签章
-  href:
+href: 
   items:
-
   - name: 接口概览
     href: overview.md
   - name: 更新历史
@@ -39,11 +38,11 @@ name: 电子签章
             href: Contract-Management/deleteContract.md
           - name: 获取合同列表
             href: Contract-Management/describeContractList.md
-        - name: 合同签章
-          href: Contract-Management/verifyContract.md
+          - name: 合同签章
+            href: Contract-Management/verifyContract.md
       - name: 服务管理
         items:
-          - name:开通服务
+          - name: 开通服务
             href: Service-Management/applyService.md
           - name: 查询服务开通状态
             href: Service-Management/describeApplyStatus.md
@@ -54,5 +53,5 @@ name: 电子签章
           - name: 禁用合同存管
       - name: 数据统计
         items:
-          - name:数据统计
+          - name: 数据统计
             href: Resource-Statistics/getStatistics.md
