@@ -45,7 +45,7 @@ protocol="HTTP/1.1"
 
 **说明**
 
-其中**port**属性根据实际情况修改（https默认端口为443）。如果使用其他端口号，则您需要使用https://yourdomain:port的方式来访问您的网站。
+其中**port**属性根据实际情况修改（https默认端口为443）。如果使用其他端口号，则您需要使用https://yourdomain:port 的方式访问您的网站。
 
 其中**keystoreFile**代表证书文件的路径，请用您证书的文件名替换domain name。
 
