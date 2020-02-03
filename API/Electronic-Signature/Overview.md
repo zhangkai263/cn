@@ -12,7 +12,7 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**applyService**|GET|申请开通电子签章服务（cloudsign）|
+|**applyService**|GET|申请开通电子签章服务|
 |**deleteContract**|DELETE|删除已签章的合同<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
 |**deleteStamp**|DELETE|删除印章<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
 |**deleteTemplate**|DELETE|删除合同模板<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
