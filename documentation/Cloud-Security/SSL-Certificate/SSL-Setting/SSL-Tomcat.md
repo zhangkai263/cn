@@ -4,11 +4,11 @@
 
 1、进入控制台，从左侧导航栏依次选择 **云安全** -> **SSL数字证书** -> **证书管理**，进入SSL数字证书管理页面
 
-[![证书列表页面](/image/SSL-Certification/证书列表页面.png)
+![证书列表页面](/image/SSL-Certification/证书列表页面.png)
 
 2、选择需要下载的证书，点击右侧 **下载**，下载证书。
 
-[![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
+![下载对应格式的证书](/image/SSL-Certification/下载对应格式的证书.png)
 
 ## 创建目录
 
