@@ -17,7 +17,6 @@
 ![运行mmc](/image/SSL-Certification/运行mmc.png)
 
 控制台首页
-
 ![控制台](/image/SSL-Certification/控制台.png)
 
 2、单击**文件** **>** **添加****/****删除管理单元**打开**添加****/****删除管理单元**对话框。
