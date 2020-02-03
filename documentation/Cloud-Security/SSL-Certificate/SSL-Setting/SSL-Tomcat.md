@@ -45,8 +45,7 @@ protocol="HTTP/1.1"
 
 **说明**
 
-其中**port**属性根据实际情况修改（https默认端口为443）。如果使用其他端口号，则访问网站时必须输入https://www.domain.com:port。
-
+其中**port**属性根据实际情况修改（https默认端口为443）。 如果您使用其他端口如：8443，则访问网站时必须输入https://www.domain.com:8443。
 其中**keystoreFile**代表证书文件的路径，请用您证书的文件名替换domain name。
 
 其中**keystorePass**代表证书密码，请替换为密码文件pfx-password.txt中的内容。
