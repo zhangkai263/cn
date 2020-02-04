@@ -20,13 +20,13 @@
 		<td >标准计算型</td>
 		<td >cps.c.normal</td>
 		<td >6300</td>
-	        <td >4725</td>
+	        <td >--</td>
     </tr>
 	<tr>   
 		<td >计算效能型Ⅰ</td>
 		<td >cps.c.perf1</td>
 		<td >7000</td>
-	        <td >5250</td>
+	        <td >--</td>
     </tr>
 	<tr>   
 		<td >计算效能型Ⅰ（二代）</td>
@@ -57,7 +57,7 @@
 		<td >标准存储型</td>
 		<td >cps.s.normal</td>
 		<td >4500</td>
-	        <td >3375</td>
+	        <td >--</td>
     </tr>
 	<tr>   
 		<td >标准存储型（二代）</td>
@@ -76,7 +76,7 @@
 		<td >GPUⅠ</td>
 		<td >cps.gpu.1</td>
 		<td >23000</td>
-	        <td >17250</td>
+	        <td >--</td>
     </tr>
 	<tr>   
 		<td >GPUⅡ</td>
@@ -143,37 +143,7 @@
 <td>1500+(n-5)*960</td>
 </tr>
 <tr>
-<td rowspan="6">华东-宿迁</td>
-<td>1Mbps</td>
-<td>17.25</td>
-<td>207</td>
-</tr>
-<tr>
-<td>2Mbps</td>
-<td>34.5</td>
-<td>414</td>
-</tr>
-<tr>
-<td>3Mbps</td>
-<td>53.25</td>
-<td>639</td>
-</tr>
-<tr>
-<td>4Mbps</td>
-<td>72</td>
-<td>864</td>
-</tr>
-</tr>
-<tr>
-<td>5Mbps</td>
-<td>93.75</td>
-<td>1125</td>
-</tr>
-<tr>
-<td>6Mbps及以上，n为带宽值</td>
-<td>93.75+(n-5)*60</td>
-<td>1125+(n-5)*720</td>
-</tr>
+
 </table>
 
 
