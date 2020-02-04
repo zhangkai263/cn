@@ -116,7 +116,7 @@
             href: API-Reference/CDN-Open-API/Set-http-type.md
           - name: 设置忽略参数
             href: API-Reference/CDN-Open-API/Set-IgnoreArgs.md
-          - name: 设置rang参数
+          - name: 设置range参数
             href: API-Reference/CDN-Open-API/Set-range.md
           - name: 设置referer黑白名单
             href: API-Reference/CDN-Open-API/Set-referer.md

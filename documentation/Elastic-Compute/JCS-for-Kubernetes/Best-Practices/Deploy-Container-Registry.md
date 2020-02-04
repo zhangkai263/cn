@@ -14,7 +14,7 @@ kubectl create secret docker-registry my-secret --docker-server=myregistry-cn-no
 3、创建资源的时候，imagePullSecrets使用my-secret:  
 例
 ```
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1beta1   #1.16集群请换成 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -93,7 +93,7 @@ spec:
               name: c-tokens-fresher-secret
               key: sk
         imagePullPolicy: Always
-        image: jdcloudiaas/jcrtoken:cronjob
+        image: jdcloudiaas/jcrtoken:cronjob # 1.16集群请换成 jdcloudiaas/jcrtoken:cronjob-14.6
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -145,7 +145,7 @@ spec:
                   name: c-tokens-fresher-secret
                   key: sk
             imagePullPolicy: Always
-            image: jdcloudiaas/jcrtoken:cronjob
+            image: jdcloudiaas/jcrtoken:cronjob  # 1.16集群请换成 jdcloudiaas/jcrtoken:cronjob-14.6
 ```  
 4、执行以下命令，运行：
 ```
@@ -155,7 +155,7 @@ kubectl create -f cronjob.yaml
 5、创建资源时，image选取使用ak和sk用户下的镜像，imagePullSecrets使用jcr-pull-secret：  
 例：
 ```
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1beta1  #1.16集群请换成 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:

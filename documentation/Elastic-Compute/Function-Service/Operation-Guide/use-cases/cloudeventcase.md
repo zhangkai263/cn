@@ -10,7 +10,7 @@
 
 登陆函数服务控制台，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-step1函数代码:
+**step1函数代码**
 
 - 函数运行时： python 3.6
 - 函数模板：自定义模板                     
@@ -20,18 +20,18 @@ step1函数代码:
 
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1.PNG) 
 
-step2函数配置：
+**step2函数配置**
 
 - 函数执行内存：128MB                 
 - 超时时间：100秒                                               
 - 描述、环境变量、权限配置：此处默认不配置
-- 高级配置： 
+- 高级配置：                                       
          日志集：func_log                  
          日志主题：log-function                            
          说明：日志集、日志主题需提前在日志服务创建                                      
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing1-2.PNG) 
 
-step3触发方式：
+**step3触发方式**
 
 - 触发器：不配置触发器        
 ![timing1](https://github.com/jdcloudcom/cn/blob/function0116/image/Elastic-Compute/functionservice/timing3.PNG) 
@@ -40,11 +40,11 @@ step3触发方式：
 
 ## 测试函数
 
-在创建触发器之前，可以先通过控制台配置测试事件模拟一函数执行。
+在创建触发器之前，可以先通过控制台配置测试事件模拟函数执行。
 
 云事件事件源会以 event 的形式作为输入参数传递给函数，您可以通过控制台测试事件将 event 传给函数，测试编码是否正确。
 
-创建测试事件
+**创建测试事件**                                     
 进入”函数列表“页面，单击”timing-function“函数，进入函数详情页面，选择”配置测试事件”，
 
 - 配置测试事件：创建新的测试事件                       
@@ -52,7 +52,9 @@ step3触发方式：
 - 事件名称：test                         
 - 单击“保存”，完成测试事件创建。                                     
 
-测试函数--在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
+
+**测试函数**                                
+在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
 
 执行成功后，可在控制台查看实时函数执行日志。
 

@@ -73,6 +73,7 @@
   ]
 }
 ```
+
 ### 4、为服务角色授权策略<br>
 返回角色管理列表，找到第2步中创建的服务角色“image-export”，点击操作中的【授权】。
 ![](../../../../../image/vm/image-export-image7.png)  
@@ -90,7 +91,7 @@
 * CLI指令示意：
 
 ```
-jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx role-name image-export --oss-url https://test-export.s3.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
+jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name image-export --oss-url https://test-export.s3.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
 ```
 
 #### 接口参数说明：
