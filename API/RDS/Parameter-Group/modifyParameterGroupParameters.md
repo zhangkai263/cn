@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改参数组的参数<br>- 仅支持MySQL
+修改参数组的参数<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 PUT
@@ -18,9 +18,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**parameters**|Parameter[]|True| |修改的参数|
+|**parameters**|[Parameter[]](modifyparametergroupparameters#parameter)|True| |修改的参数|
 
-### Parameter
+### <div id="parameter">Parameter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |参数名称|
@@ -34,3 +34,27 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PUT
+```
+public void testModifyParameterGroupParameters() {
+    ModifyParameterGroupParametersRequest request = new ModifyParameterGroupParametersRequest();
+    request.setParameterGroupId("mysql-pg-e4zkfymxwt");
+    Parameter parameter = new Parameter();
+    parameter.setName("binlog_cache_size");
+    parameter.setValue("5000");
+    request.addParameter(parameter);
+    request.setRegionId("cn-north-1");
+    ModifyParameterGroupParametersResponse response = rdsClient.modifyParameterGroupParameters(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpao8wga4wnjbj1p3rq6uw9nj2468sek"
+}
+```

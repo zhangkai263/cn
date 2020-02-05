@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/importF
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testSetImportFileShared(){
+    SetImportFileSharedRequest request=new SetImportFileSharedRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    request.setFileName("db1_1.bak");
+    request.setShared("true");
+    SetImportFileSharedResponse response= rdsClient.setImportFileShared(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4mid6vo1chcv7qarhhifq0wp51ceh"
+}
+```

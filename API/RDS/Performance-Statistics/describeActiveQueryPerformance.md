@@ -27,16 +27,16 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeactivequeryperformance#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**activeQueryPerformanceResult**|ActiveQueryPerformanceResult[]|查询性能统计结果集|
+|**activeQueryPerformanceResult**|[ActiveQueryPerformanceResult[]](describeactivequeryperformance#activequeryperformanceresult)|查询性能统计结果集|
 |**totalCount**|Integer|总记录条数|
 |**pageNumber**|Integer|当前数据的页码|
 |**pageSize**|Integer|每页显示的数据条数|
-### ActiveQueryPerformanceResult
+### <div id="activequeryperformanceresult">ActiveQueryPerformanceResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sql**|String|sql语句|
@@ -51,3 +51,31 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeActiveQueryPerformance() {
+    DescribeActiveQueryPerformanceRequest request = new DescribeActiveQueryPerformanceRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setPageNumber(1);
+    request.setPageSize(10);
+    request.setRegionId("cn-north-1");
+    DescribeActiveQueryPerformanceResponse response = rdsClient.describeActiveQueryPerformance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaokdet7i0w6kji3dhck0pooh0qecgo", 
+    "result": {
+        "activeQueryPerformanceResult": [], 
+        "pageNumber": 1, 
+        "pageSize": 10, 
+        "totalCount": 0
+    }
+}
+```

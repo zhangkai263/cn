@@ -22,10 +22,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:describ
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeinstancename#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|云物理服务器名称|

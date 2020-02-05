@@ -19,9 +19,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**accountPrivileges**|AccountPrivilege[]|True| |账号的访问权限|
+|**accountPrivileges**|[AccountPrivilege[]](grantprivilege#accountprivilege)|True| |账号的访问权限|
 
-### AccountPrivilege
+### <div id="accountprivilege">AccountPrivilege</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**dbName**|String|False| |数据库名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
@@ -35,3 +35,30 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testGrantPrivilege() {
+    GrantPrivilegeRequest grantPrivilegeRequest = new GrantPrivilegeRequest();
+    grantPrivilegeRequest.setAccountName("dj_ac");
+    grantPrivilegeRequest.setInstanceId("mysql-wp4e9ztap2");
+    grantPrivilegeRequest.setRegionId("cn-north-1");
+    AccountPrivilege accountPrivilege1 = new AccountPrivilege();
+    accountPrivilege1.setDbName("dj_db");
+    accountPrivilege1.setPrivilege("rw");
+    List<AccountPrivilege> aps = new ArrayList<AccountPrivilege>();
+    aps.add(accountPrivilege1);
+    grantPrivilegeRequest.setAccountPrivileges(aps);
+    GrantPrivilegeResponse grantPrivilegeResponse = rdsClient.grantPrivilege(grantPrivilegeRequest);
+    System.out.println(new Gson().toJson(grantPrivilegeResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa08gdtob57p1ok65p1wpn86k9r7i1w"
+}
+```

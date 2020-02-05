@@ -47,6 +47,16 @@
     items:
       - name: 使用须知
         href: Operation-Guide/Terms-and-Conditions.md
+      - name: 实例
+        items:
+          - name: 重置密码
+            href: Operation-Guide/Instance/Reset-Password.md
+          - name: 自定义数据
+            href: Operation-Guide/Instance/User-Data.md
+          - name: 别名IP范围
+            href: Operation-Guide/Instance/Alisas-IP.md
+          - name: 标签
+            href: Operation-Guide/Instance/Tag.md
       - name: 网络
         items:
           - name: 私有网络
@@ -79,7 +89,7 @@
             href: Operation-Guide/Remote-Login/Description-Remote-Login.md
           - name: 操作步骤
             href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
-      - name: 分布式云物理服务器生命周期管理
+      - name: 生命周期管理
         items:
           - name: 功能描述
             href: Operation-Guide/Distributed-Cloud-Physical-Server-Life-Cycle-Management/Description-Distributed-Cloud-Physical-Server-Life-Cycle-Management.md
@@ -97,6 +107,16 @@
             href: Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md
           - name: 操作步骤
             href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps-Adjust-Public-Network-Bandwidth.md
+      - name: SSH密钥
+        items:
+          - name: 概述
+            href: Operation-Guide/SSH-Key-Pair/Description-SSH-Key-Pair.md
+          - name: 操作步骤
+            href: Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md
+      - name: 操作审计
+        items:
+          - name: 概述
+            href: Operation-Guide/Audit-Trail/Audit-Trail-Overview.md
   - name: 最佳实践
     items:
     - name: NAT网关网络安全方案

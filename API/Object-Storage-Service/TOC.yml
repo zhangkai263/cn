@@ -2,7 +2,7 @@
  href: 
  items:
  - name: API概览
-   href: Overview.md
+   href: overview.md
  - name: 更新历史
    href: ChangeLog.md
  - name: 对象存储API
@@ -21,3 +21,14 @@
         href: OSS-APIs/getBackSourceConfiguration.md
       - name: deleteBackSourceConfiguration
         href: OSS-APIs/deleteBackSourceConfiguration.md
+      - name: getSingleBucketCapacity
+        href: OSS-APIs/getSingleBucketCapacity.md
+      - name: createHistoricalReplicatTask
+        href: OSS-APIs/createHistoricalReplicatTask.md
+      - name: abortHistoricalReplicatTask
+        href: OSS-APIs/abortHistoricalReplicatTask.md
+      - name: getHistoricalReplicatTask
+        href: OSS-APIs/getHistoricalReplicatTask.md
+      - name: listHistoricalReplicatTasks
+        href: OSS-APIs/listHistoricalReplicatTasks.md 
+        

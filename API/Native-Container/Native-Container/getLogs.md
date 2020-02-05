@@ -9,7 +9,7 @@
 GET
 
 ## 请求地址
-https://nc.jdcloud-api.com/v1/regions/{regionId}/containers/{containerId}:getLogs
+https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers/{containerId}:getLogs
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -27,10 +27,10 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/containers/{containerId}:getLog
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](getlogs#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**logs**|Object| |

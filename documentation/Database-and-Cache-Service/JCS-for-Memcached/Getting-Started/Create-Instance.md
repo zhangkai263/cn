@@ -12,7 +12,7 @@
 1. 登录Memcached 控制台。
 
 2. 在“实例列表”页面，点击“创建”按钮，跳转到新建实例页。
-   ![创建实例](https://github.com/jdcloudcom/cn/blob/JCS-for-Memcached/image/Memcached/create-Memcached-instance.jpg)
+   ![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Memcached/create-Memcached-instance.png)
 
 3. 在新建实例页选择付费方式、地域、规格、网络、部署方案、基本信息、购买量等信息
 

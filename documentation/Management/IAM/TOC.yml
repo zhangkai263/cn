@@ -49,19 +49,23 @@ items:
                 href: Policy-Management/Policy_v3/Elements.md
               - name: 语法结构
                 href: Policy-Management/Policy_v3/Syntax-Structure.md
+              - name: IAM权限判断规则
+                href: Policy-Management/Policy_v3/effect.md
               - name: 操作描述方式
                 href: Policy-Management/Policy_v3/Action.md
               - name: 资源描述方式
                 href: Policy-Management/Policy_v3/Resource.md
+              - name: 条件描述方式
+                href: Policy-Management/Policy_v3/Condition.md
       - name: 设置
         href: Setting.md        
-      - name: 虚拟 MFA 设备
+      - name: MFA 多因子认证
         items:
           - name: 概述
             href: Virtual-MFA-Device/MFA-Overview.md   
-          - name: MFA 设置
+          - name: MFA 开启流程
             href: Virtual-MFA-Device/MFA-Settings.md
-          - name: 登录验证
+          - name: 登录认证
             href: Virtual-MFA-Device/Sign-up-Verification.md
           - name: 第三方应用程序安装及使用指导
             href: Virtual-MFA-Device/Third-party-Apps.md

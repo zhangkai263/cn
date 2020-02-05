@@ -121,7 +121,7 @@ curl -X PUT -T testfile "http://testbucket.s3.cn-north-1.jcloudcs.com/testkey?X-
 
 ## 配置回调通知
 
-由于移动应用上传数据时，并不通过应用服务器中转，而是直接传输至OSS。若应用服务器需要知道移动应用上传了哪些文件吗，可以通过配置回调通知功能实现。更多信息请参考[回调通知](../Operation-Guide/Manage-Bucket/Callback-Notification-2.md)，您可以指定存储桶资源变动时及时进行回调通知。
+由于移动应用上传数据时，并不通过应用服务器中转，而是直接传输至OSS。若应用服务器需要知道移动应用上传了哪些文件，可以通过配置回调通知功能实现。更多信息请参考[回调通知](../Operation-Guide/Manage-Bucket/Callback-Notification-2.md)，您可以指定存储桶资源变动时及时进行回调通知。
 
 您可按照以下示例配置您的应用服务器作为回调服务器，当回调通知触发时，OSS将会向回调URL发起消息通知，事件消息为JSON格式，您可以从事件消息中解析您需要的内容。
 

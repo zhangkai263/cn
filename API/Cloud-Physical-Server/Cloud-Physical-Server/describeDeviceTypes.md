@@ -23,14 +23,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/deviceTypes
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describedevicetypes#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**deviceTypes**|DeviceType[]| |
-### DeviceType
+|**deviceTypes**|[DeviceType[]](describedevicetypes#devicetype)| |
+### <div id="devicetype">DeviceType</div>
 |名称|类型|描述|
 |---|---|---|
 |**deviceType**|String|实例类型, 如 cps.c.normal|

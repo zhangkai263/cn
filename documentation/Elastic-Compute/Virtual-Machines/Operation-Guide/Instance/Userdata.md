@@ -1,7 +1,6 @@
 # 自定义数据
 
 实例自定义数据是指，在实例创建时，用户可以将可执行脚本以指定的数据格式传入实例，实现对实例启动行为的自定义。您可通过该功能，在实例启动后自动完成诸如下载/升级/安装软件、开启服务、修改系统配置、初始化服务环境等操作。<br>
-自定义数据功能目前处于公测阶段，如需使用，请提交工单申请使用资格。
 
 * [格式要求](Userdata#user-content-1)
 * [执行说明](Userdata#user-content-2)
@@ -17,8 +16,10 @@
 #!/bin/bash 
 echo 'launch-1a' >> /root/text1.txt
 ```
+
 ```
 #!/usr/bin/env python
+# -*- coding: utf-8-*-
 import random
 seq = list(range(1,10))
 tempstr = random.sample(seq,3)
@@ -26,6 +27,7 @@ f1 = open('/root/python2-text1.txt', 'a+')
 f1.writelines([str(tempstr)])
 f1.close()
 ```
+
 ```
 <cmd>
 echo %random%>cmd-text1.txt
@@ -39,6 +41,7 @@ echo %random%>cmd-text1.txt
 
       请注意：
       * 为避免格式不兼容，在使用bash或python格式脚本时，请在Linux环境下完成编码并进行调试后再行输入。
+      * python格式下，如脚本中有中文，请务必在首行后添加'# -*- coding: utf-8 -*-'，如无中文则此行可省略。
 
 <div id="user-content-2"></div>
 
@@ -59,7 +62,7 @@ echo %random%>cmd-text1.txt
 * 私有/共享镜像：如果制作私有镜像的实例是使用官方镜像创建且创建时间不早于2018年12月14日，则使用私有/共享镜像创建实例，可正常使用该功能；<br>
 * 云市场镜像：云市场镜像更新频率取决于服务商，不同镜像支持自定义数据功能的情况各异，请提交工单或联系京东云技术支持咨询。
 
-您可以通过查看实例内JCS-Agent的版本，来确认基于当前实例制作的私有镜像是否支持此功能：<br>
+您可以通过下述方法查看实例内JCS-Agent的版本，确认基于当前实例制作的私有镜像是否支持此功能，若当前实例内安装的agent为早期其他组件或JCS-Agent版本过低，请参照 [官方镜像系统组件](http://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) 进行安装。<br>
 
 ### Linux系统<br>
 1.确认当前实例内安装了JCS-Agent，并处于运行状态。
