@@ -4,13 +4,13 @@
 
 ### 步骤二：生成任务<br>
 在任务的列表页，如下图：
-![task_list.png](../../../image/Equal-EdgeService/task_list.png)
+![task_list.png](../../../image/Equal-EdgeService/task_list_cp.png)
 
 点击***位置1***，进行创建任务：填写任务的基本信息，同时可以进行新增版本，也可以在列表页任务的操作项点击‘新增版本’完善操作，可参考下面的操作。<br>
-![create_task.png](../../../image/Equal-EdgeService/create_task.png)<br>
+![create_task.png](../../../image/Equal-EdgeService/create_task_cp.png)<br>
 
 点击***位置2***，进行新增版本：<br>
-![create_version.png](../../../image/Equal-EdgeService/create_version.png)<br>
+![create_version.png](../../../image/Equal-EdgeService/create_version_cp.png)<br>
 镜像选择：目前支持从第三方镜像库docker.io拉取镜像（从docker公开repo中读取镜像）<br>
 规格：选择自身业务所需要的资源（CPU、内存），该属性为产品收费项（产品目前为公测期，可免费试用）<br>
 端口映射：输入容器中业务本身所需要的端口号<br>
@@ -18,15 +18,15 @@
 *注意，新增版本之后，我们只是记录了完成该版本所需要的资源信息，并没有发布版本，需要点击列表页中的‘蓝绿发布’对任务进行发布部署*
 
 点击***位置3***，进行蓝绿发布：在这里选择对任务下版本的实例发布数量，点击‘发布’按钮进行任务的下发部署<br>
-![release.png](../../../image/Equal-EdgeService/release.png)<br>
+![release.png](../../../image/Equal-EdgeService/release_cp.png)<br>
 
 点击***位置4***，进行任务的版本信息查看：在添加完成版本之后，可以在任务列表页针对每一个任务进行展开，查看其添加的版本信息<br>
 
 点击***位置5***，进行终止任务：对已选择的版本进行实例销毁，停止该版本的实例运行<br>
-![stop_version.png](../../../image/Equal-EdgeService/stop_version.png)
+![stop_version.png](../../../image/Equal-EdgeService/stop_version_cp.png)
 
 ### 步骤三：查看实例<br>
-![instance_list.png](../../../image/Equal-EdgeService/instance_list.png)<br>
+![instance_list.png](../../../image/Equal-EdgeService/instance_list_cp.png)<br>
 这里展示所有的实例信息。可以通过任务进行筛选，获取该任务下的实例运行情况
 
 ### 步骤四：设备接入<br>
