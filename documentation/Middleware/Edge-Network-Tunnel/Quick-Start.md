@@ -11,9 +11,9 @@
 #### 步骤二：终端注册
 调用SDK-API对终端进行注册，可查阅'*[SDK文档](SDK-Reference/Overview.md)*'中对API的说明;
 在产品控制台，可以看到注册成功的终端设备，并查看终端的状态信息、对应的隧道连接数、产生的日志等终端相关基本信息，如下图所示：
-![terminal_list.png](../../../image/Edge-Network-Tunnel/terminal_list.png)
+![terminal_list.png](../../../image/Edge-Network-Tunnel/terminal_list_cp.png)
 
 #### 步骤三：建立连接
 终端注册成功之后，就可以同其他终端进行连接。当通道建立成功后即可发送消息、获取消息；
 在产品控制台，可以查看隧道产生的流量、连接时长等信息，如下图所示。同时，通过云监控，对隧道的网络流量、网络速率、网络延迟、丢包率进行了监控。
-![tunnel_service.png](../../../image/Edge-Network-Tunnel/tunnel_service.png)
+![tunnel_service.png](../../../image/Edge-Network-Tunnel/tunnel_service_cp.png)
