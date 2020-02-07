@@ -6,5 +6,5 @@
 1. 登录 [堡垒机控制台](https://bastion-console.jdcloud.com/list)。
 2. 在堡垒机列表中，选择需要变更计费类型的目标实例，点击 ***操作*** 这一列的 ***续费***。
 3. 续费的页面如下图
-![续费](https://img1.jcloudcs.com/cms/fab1d66b-e027-41c7-bd1b-91ba6f7950f920180404134106.png)
+![](/image/Bastion/renewal.png) 
 4. 阅读完堡垒机 服务条款，点击去支付，按照提示完成后续操作。
