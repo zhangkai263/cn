@@ -1,4 +1,4 @@
-SDK请在‘*[下载专区](../Download-Center.md)*’进行下载，本文档主要通过 Go Plugins 的方式使用 ENT。
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载，本文档主要通过 Go Plugins 的方式使用 ENT；代码请参照SDK中ENT-Go/Example/下的两个example文件
 
 1. 准备工作<br>
    将 entplugin 文件夹及其中的 entplugin.go 移至自己项目的根目录，同时在 Plugins 中选择合适的系统和CPU架构下的 entplugin.so 文件，将其移动的项目的 entplugin 目录下。
