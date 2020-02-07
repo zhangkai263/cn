@@ -1,4 +1,4 @@
-name: 空气质量预测
+name: 客源地预测
 href:
 items:
 - name: 产品简介
@@ -22,4 +22,4 @@ items:
 - name: 接口文档
   items:
     - name: 接口概述
-      href: API-Document/Customer-Source-Model.md
+      href: Api-Document/Customer-Source-Model.md

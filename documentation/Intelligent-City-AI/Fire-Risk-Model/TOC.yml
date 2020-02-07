@@ -1,4 +1,4 @@
-name: 空气质量预测
+name: 火灾风险推断
 href:
 items:
 - name: 产品简介
@@ -22,4 +22,4 @@ items:
 - name: 接口文档
   items:
     - name: 接口概述
-      href: API-Document/Fire-Risk-Model.md
+      href: Api-Document/Fire-Risk-Model.md
