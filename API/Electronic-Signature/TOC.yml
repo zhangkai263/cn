@@ -40,18 +40,3 @@ href:
             href: Contract-Management/describeContractList.md
           - name: 合同签章
             href: Contract-Management/verifyContract.md
-      - name: 服务管理
-        items:
-          - name: 开通服务
-            href: Service-Management/applyService.md
-          - name: 查询服务开通状态
-            href: Service-Management/describeApplyStatus.md
-          - name: 签章系统加密密钥
-            href: Service-Management/setKmsKeyId.md
-          - name: 启用合同存管
-            href: Service-Management/enableContractSave.md
-          - name: 禁用合同存管
-      - name: 数据统计
-        items:
-          - name: 数据统计
-            href: Resource-Statistics/getStatistics.md
