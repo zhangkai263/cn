@@ -6,7 +6,7 @@
 - 进入 [堡垒机 列表页](https://bastion-console.jdcloud.com/list)，可以看到当前区域下的堡垒机 实例的概要信息，包括规格和到期时间等。
 - 点击【创建】按钮，新建一个实例。
 
-![实例列表](../../../../image/bastion/Instance-List.png)
+![](/image/Bastion/Instance-List.png) 
    
 ## 2. 购买堡垒机
 在堡垒机购买页面，根据您的业务需求完成实例规格配置。
@@ -22,17 +22,17 @@
 ## 3. 确认购买
 信息输入完成后，可查看点击页面右边的价格信息，并点击【立即购买】
 
-![创建实例1](../../../../image/bastion/Create-Instance-1.png)
+![](/image/Bastion/Create-Instance-1.png) 
 
 ## 4. 支付订单
 然后进入订单确认页面，确认购买信息无误后，点击【立即支付】
 
-![创建实例2](../../../../image/bastion/Create-Instance-2.png)
+![](/image/Bastion/Create-Instance-2.png) 
 
 ## 5. 实例创建中
 支付成功后自动返回实例列表页面，能看到实例状态为"初始化中"。若列表中未出现新购买的堡垒机，请手工刷新列表。
 
-![创建实例3](../../../../image/bastion/Create-Instance-3.png)
+![](/image/Bastion/Create-Instance-3.png) 
 
 ## 6. 创建完成
 初始化过程耗时1-2分钟，点击刷新按钮，显示实例创建完成，状态显示为“运行中”即表示正常运行
