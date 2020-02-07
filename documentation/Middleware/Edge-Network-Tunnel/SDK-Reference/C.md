@@ -1,26 +1,41 @@
-SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载<br>
+【本文档的操作环境为Linux系统 (Ubuntu、CentOS)】
 
-1. 使用共享库构建项目<br>
-   a) 安装共享库，用如下命令安装libentapi库：
-
+1. 使用ENT动态库构建项目<br>
+   a) 用如下命令安装libentapi库：<br>
+   安装对应系统和 CPU 架构的 .so 库文件
    ```
-   sudo cp libentapi.so /usr/lib/  //动态库安装
+   sudo cp libentapi.so /usr/lib/
+   sudo ldconfig                       //动态库安装
    ```
-   b) 构建应用，按照API文档编写自己的应用如: example.c
-
+   b) 编译 example_a.c 和 example_b.c：<br>
+   将 Include 中的头文件 entapi.h 和 Example 目录下的 example_a.c、example_b.c 放在同一目录下，编译 example_a.c 和example_b.c
    ```
-   gcc -o example example.c -L. -Wl,-dy –lentapi
-   ./example
+   gcc -o example_a example_a.c -L. -Wl,-dy -lentapi
+   gcc -o example_b example_b.c -L. -Wl,-dy -lentapi
+   ```
+   c) 打开两个终端先启动 example_b, 再启动 example_a：
+   ```
+   ./example_b
+   ```
+   ```
+   ./example_a
    ```
 	
-2. 使用静态库构建项目<br>
-   构建应用，按照API文档编写自己的应用如: example.c，将libentapi.a置于同一文件夹下，可使用如下命令构建：
-
+2. 使用ENT静态库构建项目<br>
+   a) 编译 example_a.c 和 example_b.c：<br>
+   拷贝 Include 目录中的头文件 entapi.h，Example 目录下的 example_a.c、example_b.c 以及 Lib 中相应 *.a 库文件（选择对应系统和 CPU 架构）放在同一目录下，并编译 example_a.c 和 example_b.c
    ```
-   gcc -o example example.c -L. -Wl,-dn -lentapi -Wl,-dy -lpthread
-   ./example
+   gcc -o example_a example_a.c -L. -Wl,-dn -lentapi -Wl,-dy -lpthread
+   gcc -o example_b example_b.c -L. -Wl,-dn -lentapi -Wl,-dy -lpthread
    ```
-
+   b) 打开两个终端先启动 example_b, 再启动 example_a：
+   ```
+   ./example_b
+   ```
+   ```
+   ./example_a
+   ```
 3. API文档
 
    <table>
