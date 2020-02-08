@@ -7,7 +7,7 @@
 ![Quick-Start.png](../../../image/Edge-Network-Tunnel/Quick-Start.png)
 
 #### 步骤一：下载SDK
-根据技术选型，选择对应的SDK(C、Go)进行下载（SDK请在‘*[下载专区](../Download-Center.md)*’进行下载）;
+根据技术选型，选择对应的SDK(C、Go)进行下载（SDK请在‘*[下载专区](./Download-Center.md)*’进行下载）;
 
 #### 步骤二：终端注册
 调用SDK-API对终端进行注册，可查阅'*[SDK文档](SDK-Reference/Overview.md)*'中对API的说明;
