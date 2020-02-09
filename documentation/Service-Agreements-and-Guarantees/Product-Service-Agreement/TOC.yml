@@ -58,8 +58,10 @@ items:
     href: Cloud-Host-Security-Service-Clause.md
   - name: 云硬盘服务协议
     href: Cloud-Hard-Disk-Service-Clause.md
-  - name: 公网IP服务协议
+  - name: 弹性公网IP服务协议
     href: Public-Network-IP-Service-Clause.md
+  - name: 弹性公网IP服务等级协议（SLA）
+    href: Elastic-IP-Level-Agreement-SLA.md   
   - name: IP高防服务协议
     href: IP-High-Protection-Clause.md
   - name: IP高防服务等级协议（SLA）
@@ -84,6 +86,8 @@ items:
     href: Api-Gateway-Level-Agreements-SLA.md
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
+  - name: API中心用户服务协议
+    href: API-Center-Terms-Of-Service.md       
   - name: 云物理服务器服务协议
     href: Cloud-Physics-Server-Service-Clause.md
   - name: 云物理服务器服务等级协议（SLA）

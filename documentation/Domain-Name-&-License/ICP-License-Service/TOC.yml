@@ -1,6 +1,6 @@
-  name: 备案服务
-  href:
-  items:
+name: 备案服务
+href:
+items:
   - name: 备案入门
     items:
       - name: 备案介绍
@@ -10,7 +10,11 @@
           - name: 新增备案
             href: Getting-Started/Process/Addition-Filing.md
           - name: 新增网站（有主体）
-            href: Getting-Started/Process/Addition-Website.md      
+            href: Getting-Started/Process/Addition-Website.md
+          - name: 网站变更
+            href: Getting-Started/Process/Change-Website.md 
+          - name: 变更接入
+            href: Getting-Started/Process/Change-Access.md     
       - name: 管局规则
         items:
           - name: 安徽
@@ -84,7 +88,7 @@
       - name: 取消接入说明
         href: FAQ/Cancel-Access.md
       - name: 接入备案说明
-        Href: FAQ/Access-Filing-Notes.md
+        href: FAQ/Access-Filing-Notes.md
   - name: 用户协议
     items:
        - name: 协助更改备案信息服务在线服务条款
@@ -101,16 +105,16 @@
         href: Loading/Internet-Information-Service-Filing-Commitment.md
       - name: 常用资料下载
         items:
-        - name: 各省备案授权书
-          href: Loading/Common-data/Provincial-filing-authorization.md
-        - name: 全国核验单下载
-          href: Loading/Common-data/National-verification-checklist-download.md
-        - name: 广东省个人核验单下载
-          href: Loading/Common-data/Guangdong-Province-Personal-Verification-Checklist-Download.md
-        - name: 广东省单位核验单下载
-          href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
-        - name: 政府网站备案说明
-          href: Loading/Common-data/Government-Website-Description.md
+          - name: 各省备案授权书
+            href: Loading/Common-data/Provincial-filing-authorization.md
+          - name: 全国核验单下载
+            href: Loading/Common-data/National-verification-checklist-download.md
+          - name: 广东省个人核验单下载
+            href: Loading/Common-data/Guangdong-Province-Personal-Verification-Checklist-Download.md
+          - name: 广东省单位核验单下载
+            href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
+          - name: 政府网站备案说明
+            href: Loading/Common-data/Government-Website-Description.md
   - name: 流程帮助
     items:
        - name: 工信部短信验证说明

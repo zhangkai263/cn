@@ -14,7 +14,7 @@
 | ---------- | -------- | ------------ | ------------------------------------------------------------ |
 | username   | String   | 是           | 京东用户名pin                                                |
 | signature  | String   | 是           |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
-| domain     | String   | 是           | 待查询的域名，支持多域名查询，参数示例“www.a.com,www.b.com” ；当domain为空时，查询的是该usename下全部域名的带宽总和 |
+| domain     | String   | 是           | 待查询的域名，支持多域名查询，参数示例“www.a.com,www.b.com” |
 | start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00；查询的时间跨度不能超过31天 |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间; |
 | ipType     | String   | 否           | 取值范围[ipv6,ipv4]，不传默认不区分ip类型。  |

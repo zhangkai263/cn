@@ -40,8 +40,21 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidthTraffics/{bandwidthId}
 |**totalTrafficOut**|Double|总下行实时流量|
 |**bandwidth**|Integer|总带宽|
 |**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
-|**relatedIp**|Object[]|关联的公网IP|
-|**switchboard**|Object[]| |
+|**relatedIp**|[RelatedIp[]](describebandwidthtraffic#relatedip)|关联的公网IP|
+|**switchboard**|[DescribeSwitchboard[]](describebandwidthtraffic#describeswitchboard)|交换机信息|
+### <div id="describeswitchboard">DescribeSwitchboard</div>
+|名称|类型|描述|
+|---|---|---|
+|**ip**|String|IP|
+|**port**|String|端口|
+|**trafficIn**|Double|上行实时流量|
+|**trafficOut**|Double|下行实时流量|
+|**alarmStatus**|String|报警状态 normal:正常 alarm:报警|
+### <div id="relatedip">RelatedIp</div>
+|名称|类型|描述|
+|---|---|---|
+|**cidrAddr**|String|IP地址段|
+|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 
 ## 返回码
 |返回码|描述|

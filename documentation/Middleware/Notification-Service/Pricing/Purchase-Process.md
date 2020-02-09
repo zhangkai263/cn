@@ -5,5 +5,5 @@
 ## 入口：[产品介绍页](https://www.jdcloud.com/cn/products/notification-service)
 
 1. 登录京东云官网https://www.jdcloud.com/cn/。
-2. 选择“产品>互联网中间件>通知服务”。
+2. 选择“产品>企业应用>互联网中间件>通知服务”。
 3. 弹出通知服务的产品介绍页，点击**立即使用**。

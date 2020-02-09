@@ -20,10 +20,10 @@ https://vqd.jdcloud-api.com/v1/vqdTemplates/{templateId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|查询视频质检模板信息结果|
+|**result**|[Result](getvqdtemplate#result)|查询视频质检模板信息结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**templateId**|String|模板ID|

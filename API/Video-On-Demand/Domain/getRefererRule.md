@@ -21,16 +21,16 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:getRefererRule
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询CDN域名Referer防盗链规则配置结果|
+|**result**|[Result](getrefererrule#result)|查询CDN域名Referer防盗链规则配置结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleType**|String|规则类型，取值 'referer'|
-|**config**|RefererRuleConfigObject|Referer防盗链规则配置对象|
+|**config**|[RefererRuleConfigObject](getrefererrule#refererruleconfigobject)|Referer防盗链规则配置对象|
 |**enabled**|Boolean|是否启用该规则|
-### RefererRuleConfigObject
+### <div id="refererruleconfigobject">RefererRuleConfigObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**strategy**|String|启用策略。取值范围：<br>  denial - 拒绝<br>  allowance - 允许<br>|

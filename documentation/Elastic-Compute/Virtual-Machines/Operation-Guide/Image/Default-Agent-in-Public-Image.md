@@ -41,7 +41,7 @@ CentOS：`rpm -e cloud-init`、`rm -rf /etc/conf/cloud/*`、`rm -rf /var/lib/clo
 Ubuntu：` apt-get purge cloud-init`  <br>
 Windows：【控制面板】—【程序】，找到Cloudbase-Init，右键点击卸载
 
-② qemu-guest-qgent卸载清理：<br>
+② qemu-guest-agent卸载清理：<br>
 CentOS：`rpm -e qemu-guest-agent`、`rm -fr /var/log/qemu-ga` <br>
 Ubuntu：`apt-get purge qemu-guest-agent` <br>
 Windows：【控制面板】—【程序】，找到qemu-guest-agent，右键点击卸载
@@ -191,5 +191,3 @@ https://iaas-cns-download.s3.cn-north-1.jdcloud-oss.com/JdogMonitor/jdog-monitor
 
 2、以管理员(administrator)权限运行jdog-monitor.exe 进行安装。
 
-
- 

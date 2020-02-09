@@ -41,8 +41,8 @@ https://jdccs.jdcloud-api.com/v1/tickets
 |**ticketTypeName**|String|工单类型|
 |**status**|String|工单状态 pendingReview:待审核 已撤销 revoked:已撤销 processing:处理中 pendingVerification:待核验 pendingClose:待关单 rejected:已拒绝 completed:已完成 cancelled:已取消 draft:草稿中|
 |**description**|String|描述|
-|**createdTime**|String|创建时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
-|**closedTime**|String|关闭时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**createdTime**|String|创建时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
+|**closedTime**|String|关闭时间，遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
 |**phone**|String|电话|
 |**email**|String|邮箱|
 |**idc**|String|机房英文标识|

@@ -16,9 +16,9 @@ https://vod.jdcloud-api.com/v1/domains
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**sorts**|Sort[]|False| | |
+|**sorts**|[Sort[]](listdomains#sort)|False| | |
 
-### Sort
+### <div id="sort">Sort</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |排序属性名|
@@ -27,18 +27,18 @@ https://vod.jdcloud-api.com/v1/domains
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询域名列表结果|
+|**result**|[Result](listdomains#result)|查询域名列表结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|DomainObject[]|分页内容|
-### DomainObject
+|**content**|[DomainObject[]](listdomains#domainobject)|分页内容|
+### <div id="domainobject">DomainObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域名ID|
