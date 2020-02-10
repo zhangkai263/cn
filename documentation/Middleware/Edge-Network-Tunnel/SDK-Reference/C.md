@@ -1,5 +1,5 @@
-SDK请在‘*[下载专区](../Download-Center.md)*’进行下载<br>
-【本文档的操作环境为Linux系统 (Ubuntu、CentOS)】
+【本文档的操作环境为Linux系统 (Ubuntu、CentOS)】<br>
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载；代码请参照SDK中ENT/Example/Linux下的两个.c文件<br>
 
 1. 使用ENT动态库构建项目<br>
    a) 用如下命令安装libentapi库：<br>
@@ -194,49 +194,3 @@ SDK请在‘*[下载专区](../Download-Center.md)*’进行下载<br>
    	</td>
      </tr>
    </table>
-
-4. 实例代码
-
-   ```
-   1.	#include <sys/types.h>
-   2.	#include <stdio.h>
-   3.	#include <string.h>
-   4.	#include <unistd.h>
-   5.	#include "entapi.h"
-   6.	 
-   7.	void ConnectHandler(const char*);
-   8.	 
-   9.	int main() {
-   10.	    int res;
-   11.	    void (*f)(const char*);
-   12.	    res = Register("test", "Peer2", DEFAULT_SERVER_ADDR);
-   13.	    if (res < 0) {
-   14.	        printf("register of Peer2 is %d\n", res);
-   15.	    }
-   16.	    f = ConnectHandler;
-   17.	    SetConnectHandler(f);
-   18.	    sleep(20); // hold the process
-   19.	}
-   20.	 
-   21.	void ConnectHandler(const char* connectID) {
-   22.	    char buf[50];
-   23.	    int nRead, nWrite;
-   24.	    SetTimeout(connectID, 5000);
-   25.	    sleep(1); // wait peer1 to send
-   26.	    while (1) {
-   27.	        nRead = Read(connectID, buf);
-   28.	        if (nRead < 0) {
-   29.	            printf("Peer2 fail to read from connect: %s\n", connectID);
-   30.	            return;
-   31.	        }
-   32.	        printf("Peer2 read data: %s\n", buf);
-   33.	        nWrite = Write(connectID, buf, nRead);
-   34.	        if (nWrite < 0) {
-   35.	            printf("Peer2 fail to read from connect: %s\n", connectID);
-   36.	            return;
-   37.	        }
-   38.	        printf("Peer2 write data: %s\n", buf);
-   39.	    }
-   40.	}
-   ```
-
