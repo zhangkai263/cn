@@ -7,7 +7,7 @@
     href: ChangeLog.md
   - name: 接口信息
     items:
-      - name: 负载均衡
+      - name: 负载均衡-1
         items:
           - name: createLoadBalancer
             href: LoadBalancer/createLoadBalancer.md
