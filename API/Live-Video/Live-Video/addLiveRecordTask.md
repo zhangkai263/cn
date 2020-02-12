@@ -4,6 +4,7 @@
 ## 描述
 添加打点录制任务
 - 您可以调用此接口精确提取已录制的文件中所需要的部分
+- 打点录制最多可以请求最近7天的录制内容
 
 
 ## 请求方式
@@ -30,8 +31,8 @@ https://live.jdcloud-api.com/v1/records/{publishDomain}/appNames/{appName}/strea
 ### RecordTime
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**startTime**|String|True| |开始时间<br>- UTC时间<br>  格式: yyyy-MM-dd'T'HH:mm:ss'Z'<br>  示例: 2018-10-21T10:00:00Z<br>|
-|**endTime**|String|True| |结束时间<br>- UTC时间<br>  格式: yyyy-MM-dd'T'HH:mm:ss'Z'<br>  示例: 2018-10-21T10:00:00Z<br>|
+|**startTime**|String|True| |开始时间(最近7天的录制时间)<br>- UTC时间<br>  格式: yyyy-MM-dd'T'HH:mm:ss'Z'<br>  示例: 2018-10-21T10:00:00Z<br>|
+|**endTime**|String|True| |结束时间(最近7天的录制时间)<br>- UTC时间<br>  格式: yyyy-MM-dd'T'HH:mm:ss'Z'<br>  示例: 2018-10-21T10:00:00Z<br>|
 
 ## 返回参数
 |名称|类型|描述|
