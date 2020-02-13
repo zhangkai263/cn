@@ -63,6 +63,8 @@
         href: Operation-Guide/Parameter-Modification.md
       - name: 慢日志查询
         href: Operation-Guide/SlowLog.md
+      - name: 安全组白名单
+        href: Operation-Guide/Whitelist.md
       - name: 监控报警
         items:
           - name: 查看监控信息
