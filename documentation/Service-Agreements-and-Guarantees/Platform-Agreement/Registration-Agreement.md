@@ -151,5 +151,5 @@
 
 12.4 您点击本协议下方的 同意并继续 按钮即视为您完全接受本协议，在点击之前请您再次确认已知悉并完全理解本协议的全部内容。
 
-[京东用户注册协议-PDF下载](https://docs-downloads.oss.cn-north-1.jcloudcs.com/Registration-Agreement-pdf.pdf)
+[京东用户注册协议-PDF下载](https://github.com/jdcloudcom/cn/blob/jccsgithub-patch-11/image/Service-Agreements-and-Guarantees/Platform-Agreement/JDcloud-Registration-Agreement.pdf)
 
