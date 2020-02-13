@@ -69,5 +69,7 @@ API 分组创建完成您就可以创建 API 了，创建 API 是定义 API 请�
 ###  第6步: API调用者下载和使用SDK包
 
 - 快速上手
-	- [快速发布和调用一个API应用](../Getting-Started/example_console.md)
+	- [使用签名密钥的方式构建API](../Getting-Started/example_SignatureKey.md)
+	- [使用Function函数构建API](../Getting-Started/example_function.md)
+	- [使用订阅密钥的方式构建API](../Getting-Started/example_subscriptionKey.md)
 
