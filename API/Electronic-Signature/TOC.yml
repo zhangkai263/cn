@@ -1,42 +1,42 @@
-name: 鐢靛瓙绛剧珷
+name: 电子签章
 href: 
   items:
-  - name: 鎺ュ彛姒傝
+  - name: 接口概览
     href: overview.md
-  - name: 鏇存柊鍘嗗彶
+  - name: 更新历史
     href: ChangeLog.md
-  - name: 鎺ュ彛淇℃伅
+  - name: 接口信息
     items:
-      - name: 鍗扮珷绠＄悊鎺ュ彛
+      - name: 印章管理接口
         items:
-          - name: 涓婁紶鍗扮珷
+          - name: 上传印章
             href: Stamp-Management/uploadStamp.md
-          - name: 涓嬭浇鍗扮珷
+          - name: 下载印章
             href: Stamp-Management/downloadStamp.md
-          - name: 鍒犻櫎鍗扮珷
+          - name: 删除印章
             href: Stamp-Management/deleteStamp.md
-          - name: 鑾峰彇鍗扮珷鍒楄〃
+          - name: 获取印章列表
             href: Stamp-Management/describeStampList.md
-      - name: 鍚堝悓妯℃澘绠＄悊
+      - name: 合同模板管理
         items:
-          - name: 涓婁紶鍚堝悓妯℃澘
+          - name: 上传合同模板
             href: Template-Management/uploadTemplate.md
-          - name: 涓嬭浇鍚堝悓妯℃澘
+          - name: 下载合同模板
             href: Template-Management/downloadTemplate.md
-          - name: 鍒犻櫎鍚堝悓妯℃澘
+          - name: 删除合同模板
             href: Template-Management/deleteTemplate.md
-          - name: 鑾峰彇鍚堝悓妯℃澘鍒楄〃
+          - name: 获取合同模板列表
             href: Template-Management/describeTemplateList.md
 
-      - name: 鍚堝悓绠＄悊
+      - name: 合同管理
         items:
-          - name: 涓嬭浇鍚堝悓
+          - name: 下载合同
             href: Contract-Management/downloadContract.md
-          - name: 鍚堝悓楠岀
+          - name: 合同验签
             href: Contract-Management/verifyContract.md
-          - name: 鍒犻櫎鍚堝悓
+          - name: 删除合同
             href: Contract-Management/deleteContract.md
-          - name: 鑾峰彇鍚堝悓鍒楄〃
+          - name: 获取合同列表
             href: Contract-Management/describeContractList.md
-          - name: 鍚堝悓绛剧珷
+          - name: 合同签章
             href: Contract-Management/verifyContract.md
