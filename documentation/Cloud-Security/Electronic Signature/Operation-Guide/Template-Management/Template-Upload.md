@@ -11,3 +11,7 @@
 在弹窗中完善合同模板信息，包括合同模板名称，导入合同模板文件；填写完成后点击确定，完成合同模板的添加。
 
 ![完善合同模板信息.png](/image/Electronic-Signature/完善合同模板信息.png)
+
+### OpenAPI添加合同模板
+
+请参见： [OpenAPI添加合同模板](/API/Electronic-Signature/Template-Management/uploadTemplate.md)

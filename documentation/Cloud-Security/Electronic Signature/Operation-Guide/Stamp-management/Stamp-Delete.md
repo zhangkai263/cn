@@ -8,3 +8,7 @@
 
 ![印章删除.png](/image/Electronic-Signature/印章删除.png)
 
+### OpenAPI删除印章
+
+请参见： [OpenAPI删除印章](/API/Electronic-Signature/Stamp-Management/deleteStamp.md)
+

@@ -8,3 +8,6 @@
 
 ![印章下载.png](/image/Electronic-Signature/印章下载.png)
 
+### OpenAPI下载印章
+
+请参见： [OpenAPI下载印章](/API/Electronic-Signature/Stamp-Management/downloadStamp.md)
