@@ -22,3 +22,7 @@ items:
         href: Image-Style-Delimiter-API/getStyleDelimiter.md
       - name: deleteStyleDelimiter  
         href: Image-Style-Delimiter-API/deleteStyleDelimiter.md
+      - name: submitTranscodeJob
+        href: Transcode/submitTranscodeJob.md
+      - name: listTranscodeJobs
+        href: Transcode/listTranscodeJobs.md
