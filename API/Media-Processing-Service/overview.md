@@ -20,3 +20,5 @@ v1
 |**setStyleDelimiter**|PUT|设置样式分隔符。|
 |**getStyleDelimiter**|GET|获取bucket的图片样式分隔符配置。|
 |**deleteStyleDelimiter**|DELETE|删除bucket的图片样式分隔符配置。|
+|**submitTranscodeJob**|POST|提交转码作业|
+|**listTranscodeJobs**|GET|查询转码作业列表。<br>支持如下过滤器：<br>- title[eq] 按照输入视频标题进行精确匹配<br>|
