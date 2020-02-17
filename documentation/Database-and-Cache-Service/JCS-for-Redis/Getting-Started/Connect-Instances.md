@@ -27,3 +27,5 @@ redis-cli -h [host] -p [port] -a [password]
 # 测试连通性
 
 请使用标准的redis-cli工具测试连通性，并使用命令redis-cli -h [host] ping查看是否连通
+
+(注：Redis 4.0请用这个方法测试连通，直接ping不通)
