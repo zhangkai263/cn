@@ -6,13 +6,13 @@
 
 3.或者进入详情页，点击右上角【操作】下拉变更配置
 
-![变更配置](https://github.com/jdcloudcom/cn/blob/master/image/Redis/change-conf1.png)
 ![变更配置2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/change-conf2.png)
 
 4.下拉框选择扩容到的容量，点击【立即支付】按钮，进行扩容
 
- - 包年包月资源仅支持升级内存
+ - 升降配支持主从跨集群、集群跨主从
  
- - 按配置资源支持升、降内存
+ - 变配后的规格内存必须大于目前已用大小
+
 
 
