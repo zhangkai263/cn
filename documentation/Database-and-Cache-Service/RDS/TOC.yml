@@ -401,7 +401,9 @@
       - name: 从客户端连接 SQL Server
         href: Best-Practices/Connect-Database-Instance/Client-Connect-SQLServer.md
       - name: 从云主机连接 SQL Server
-        href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md  
+        href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md
+      - name: 连接PostgreSQL实例
+        href: Best-Practices/Connect-Database-Instance/Connect-Instance-PostgreSQL.md
     - name: 升级数据库版本
       items:
       - name: 升级数据库 MySQL 版本 
