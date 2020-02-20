@@ -17,9 +17,13 @@
 ### 参数说明
 
  \<user\> 用户名，京东云PostgreSQL数据库账号
+ 
  \<host\> 要访问的云数据库的域名，域名展示在云数据库的详情页面
+ 
  \<port\> 端口号，默认端口为5432，端口号展示在云数据库的详情页面
+ 
  \<database\> 需要连接的数据库名，默认的管理数据库是postgres
+ 
  -W是强制用户输入连接密码选项，上述命令执行后，根据提示输入密码
     
 ### 示例
@@ -29,13 +33,19 @@
 
 ## 2、通过客户端pgAdmin登录云数据库PostgreSQL
  1.将要访问RDS实例的IP地址加入RDS白名单中。
+ 
  2.启动pgAdmin 4客户端。
+ 
  3.右击Servers，选择创建 > 服务器。
+ 
 ![Connect-Instance-PostgreSQL1](../../../../image/RDS/Connect-Instance-PostgreSQL1.png)
 
-4，在创建-服务器页面的通常标签页面中，输入服务器名称。
+4.在创建-服务器页面的通常标签页面中，输入服务器名称。
+
 ![Connect-Instance-PostgreSQL2](../../../../image/RDS/Connect-Instance-PostgreSQL2.png)
-5，选择Connection标签页，输入要连接的实例信息。
+
+5.选择Connection标签页，输入要连接的实例信息。
+
 ![Connect-Instance-PostgreSQL3](../../../../image/RDS/Connect-Instance-PostgreSQL3.png)
 ### 参数说明
 
@@ -47,9 +57,13 @@
     4，在基本信息栏中，即可查看内外网地址及内外网端口信息。
     
  端口：若使用内网连接，需输入RDS实例的内网端口。若使用外网连接，需输入RDS实例的外网端口。
+ 
  用户名：RDS实例的高权限账号名称。
+ 
  密码：RDS实例的高权限账号所对应的密码。
       
-6，单击保存。
-7，若连接信息无误，选择Servers > 服务器名称 > 数据库 > postgres，会出现如下界面，则表示连接成功。
+6.单击保存。
+
+7.若连接信息无误，选择Servers > 服务器名称 > 数据库 > postgres，会出现如下界面，则表示连接成功。
+
 ![Connect-Instance-PostgreSQL4](../../../../image/RDS/Connect-Instance-PostgreSQL4.png)
