@@ -12,13 +12,14 @@
 2，在京东云RDS控制台创建PostgreSQL实例用户；
 3，执行如下命令连接云数据库PostgreSQL：
 
- *psql  -U <user> -h <host> -p <port> -d <database> -W*
+ *psql  -U\<user\> -h\<host\> -p\<port\> -d\<database\> -W*
     
 ### 参数说明
- <user> 用户名，京东云PostgreSQL数据库账号
- <host> 要访问的云数据库的域名，域名展示在云数据库的详情页面
- <port> 端口号，默认端口为5432，端口号展示在云数据库的详情页面
- <database> 需要连接的数据库名，默认的管理数据库是postgres
+
+ \<user\> 用户名，京东云PostgreSQL数据库账号
+ \<host\> 要访问的云数据库的域名，域名展示在云数据库的详情页面
+ \<port\> 端口号，默认端口为5432，端口号展示在云数据库的详情页面
+ \<database\> 需要连接的数据库名，默认的管理数据库是postgres
  -W是强制用户输入连接密码选项，上述命令执行后，根据提示输入密码
     
 ### 示例
@@ -27,9 +28,9 @@
 *psql  -U test_user -h 192.168.0.44 -p 5432 -d postgres -W*
 
 ## 2、通过客户端pgAdmin登录云数据库PostgreSQL
-1，将要访问RDS实例的IP地址加入RDS白名单中。
-2，启动pgAdmin 4客户端。
-3，右击Servers，选择创建 > 服务器。
+ 1.将要访问RDS实例的IP地址加入RDS白名单中。
+ 2.启动pgAdmin 4客户端。
+ 3.右击Servers，选择创建 > 服务器。
 ![Connect-Instance-PostgreSQL1](../../../../image/RDS/Connect-Instance-PostgreSQL1.png)
 
 4，在创建-服务器页面的通常标签页面中，输入服务器名称。
