@@ -1,4 +1,6 @@
-该产品监控数据的servicecode为jcq，提供Topic 和 ConsumerGroup 两个维度的指标数据。
+## 消息队列JCQ
+
+获取该产品监控数据的servicecode为jcq，提供Topic 和 ConsumerGroup 两个维度的指标数据。
 
 ### Topic
 
