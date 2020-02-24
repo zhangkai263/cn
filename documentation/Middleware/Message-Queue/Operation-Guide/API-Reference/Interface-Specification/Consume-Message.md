@@ -21,7 +21,7 @@ GET {Http接入点}/v1/messages HTTP/1.1
 | consumeFromWhere     | string     | Optional     | 默认的起始消费位置，可选值：HEAD、TAIL，defaultValue = HEAD |
 | filterExpressionType | string     | Optional     | 消息过滤表达式类型，目前可选值只有TAG                       |
 | filterExpression     | string     | Optional     | 消息过滤表达式，默认没有过滤，如果需要过滤，此参数与filterExpressionType需同时传入 |
-| ack                  | bool       | Optional     | 拉消息时是否由服务端自动ACK，可选值true、false，默认值defaultValue = false  |
+| ack                  | string     | Optional     | 拉消息时是否由服务端自动ACK，可选值true、false，默认值defaultValue = false  |
 
 - Response Body
 
