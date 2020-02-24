@@ -14,7 +14,7 @@
 
 7. **已备案网站打开后**，网页下方须有备案号超链接以及网站版权归属标识，**未备案的域名不得打开网站，否则备案会失败**
 
-8.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/hnwzfa.docx)
+8.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/wzjsfas.docx)
 
 9. 备案前准备资料：
 
@@ -44,7 +44,7 @@
 
 5. **已备案网站打开后**，网页下方须有备案号超链接以及网站版权归属标识，**未备案的域名不得打开网站，否则备案会失败**
 
-6.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/hnwzfa.docx)
+6.  主体存在备案时，需提供 [《网站建设方案书》](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/hunan/wzjsfas.docx)
 
 7. 备案前准备资料：
 
