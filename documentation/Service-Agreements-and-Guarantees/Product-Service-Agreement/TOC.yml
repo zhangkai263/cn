@@ -86,6 +86,8 @@ items:
     href: Api-Gateway-Level-Agreements-SLA.md
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
+  - name: API中心用户服务协议
+    href: API-Center-Terms-Of-Service.md       
   - name: 云物理服务器服务协议
     href: Cloud-Physics-Server-Service-Clause.md
   - name: 云物理服务器服务等级协议（SLA）

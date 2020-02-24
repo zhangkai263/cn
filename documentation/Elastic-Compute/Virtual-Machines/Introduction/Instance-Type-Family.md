@@ -368,7 +368,7 @@ g.n1.8xlarge|32|128|4 |	 |
 |s.d2.2xlarge|8|44|2 x 9313 HDD|4
 |s.d2.4xlarge|16|88|4 x 9313 HDD|4
 |s.d2.8xlarge|32|176|8 x 9313 HDD|4
-|s.d2.10xlarge|40|220|14 x 9313 HDD|4
+|s.d2.10xlarge|40|220|12 x 9313 HDD|4
 
 第一代：
 
@@ -378,7 +378,7 @@ g.n1.8xlarge|32|128|4 |	 |
 |s.d1.2xlarge|8|44|2 x 5587 HDD|4
 |s.d1.4xlarge|16|88|4 x 5587 HDD|4
 |s.d1.8xlarge|32|176|8 x 5587 HDD|4
-|s.d1.10xlarge|40|220|14 x 5587 HDD|4
+|s.d1.10xlarge|40|220|12 x 5587 HDD|4
 
 ## GPU型
 
