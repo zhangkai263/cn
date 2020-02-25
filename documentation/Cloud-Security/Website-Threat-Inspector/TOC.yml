@@ -4,27 +4,11 @@ name: 网站威胁扫描
   - name: 产品简介
     items:
       - name: 产品概览
-        href: Introduction/XXX.md
-      - name: 产品架构
+        href: Introduction/Product-Overview.md
+      - name: 技术架构
         href: Introduction/Basic-Infrastructure.md
       - name: 功能特性
-        href: Introduction/XXX.md
-      - name: 技术优势
-        href: Introduction/XXX.md
-      - name: 应用场景
-        href: Introduction/XXX.md
-  - name: 快速入门
-    items:
-      - name: 使用该产品的前提条件
-        href: Getting-Started/XXX.md
-      - name: 步骤1-添加网站
-        href: Getting-Started/Step-1.md
-      - name: 步骤2-放行回源IP
-        href: Getting-Started/Step-2.md
-      - name: 步骤3-本地验证
-        href: Getting-Started/Step-3.md 
-      - name: 步骤4-修改DNS解析
-        href: Getting-Started/Step-4.md
+        href: Introduction/Features.md
   - name: 用户指南
     items:
       - name: 威胁概览
@@ -35,14 +19,3 @@ name: 网站威胁扫描
         href: Operation-Guide/Task-Management.md
       - name: 风险管理
         href: Operation-Guide/Risk-Management.md
-  - name: 产品定价
-    items:
-      - name: 产品价格
-        href: Pricing/Threat-Overview.md
-      - name: 购买服务
-        href: Pricing/Asset-Management.md
-      - name: 升级和续费
-        href: Pricing/Task-Management.md
-      - name: 服务到期说明
-        href: Pricing/Risk-Management.md
-
