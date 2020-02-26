@@ -35,7 +35,7 @@ https://cloudsign.jdcloud-api.com/v1/contract
 | ------------------- | -------- | ------------------------ |
 | **contractId**      | String   | 合同ID                   |
 | **contractTitle**   | String   | 合同标题                 |
-| **stampNames**      | String[] | 印章名称(可能有多个印章) |
+| **stampNames**      | String | 印章名称(可能有多个印章) |
 | **contractContent** | String   | 合同文件（base64）       |
 | **contractDigest**  | String   | 合同文件摘要             |
 | **createTime**      | String   | 合同签章时间             |
