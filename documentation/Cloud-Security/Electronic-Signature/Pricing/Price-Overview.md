@@ -16,7 +16,7 @@
 
 ### 预付费
 
-[预付费资源包](/Electronic-Signature/Pricing/Resource-Packages.md)包括电子签章资源包和合同存管容量包，按统一的包年包月方式计费，可购买多个资源包和容量包。
+[预付费资源包](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/documentation/Cloud-Security/Electronic-Signature/Pricing/Resource-Packages.md)包括电子签章资源包和合同存管容量包，按统一的包年包月方式计费，可购买多个资源包和容量包。
 
 # 计费说明
 
