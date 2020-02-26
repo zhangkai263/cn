@@ -10,11 +10,11 @@
 
 使用Adobe Reader软件打开下载的合同，找到签章位置
 
-[![签章图片.png](/image/Electronic-Signature/签章图片.png)
+![签章图片.png](/image/Electronic-Signature/签章图片.png)
 
 单击签章，查看签名属性
 
-[![查看签名属性.png](/image/Electronic-Signature/查看签名属性.png)
+![查看签名属性.png](/image/Electronic-Signature/查看签名属性.png)
 
 ### OpenAPI验签合同
 
