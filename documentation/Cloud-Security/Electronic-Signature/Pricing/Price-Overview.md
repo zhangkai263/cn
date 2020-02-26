@@ -36,7 +36,7 @@
 
 按用量计费，后付费，具体如下：
 
-电子签章[OpenAPI合同签章接口](/API/Electronic-Signature/Contract-Management/signContract)调用0.6元/次，按天计费，计费周期为每天0时-24时，每天6时，进行前一天的账单结算。
+电子签章[OpenAPI合同签章接口](/API/Electronic-Signature/Contract-Management/signContract.md)调用0.6元/次，按天计费，计费周期为每天0时-24时，每天6时，进行前一天的账单结算。
 
 ## 合同存管容量包:
 
