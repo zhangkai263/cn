@@ -10,12 +10,12 @@
 
 1. 登录 [电子签章控制台](https://cloudsign-console.jdcloud.com/overview)。
 
-2. 在“概览页”页面，点击 **快速购买链接** ，进入“购买资源包”页面。 [![资源包快速购买](/image/Electronic-Signature/资源包快速购买.png)
+2. 在“概览页”页面，点击 **快速购买链接** ，进入“购买资源包”页面。 ![资源包快速购买](/image/Electronic-Signature/资源包快速购买.png)
 
 3. 选择合适的电子签章和合同存管资源包
 
-   [![购买资源包](/image/Electronic-Signature/购买资源包.png)
+   ![购买资源包](/image/Electronic-Signature/购买资源包.png)
 
 4. 在“概览页”页面，点击 **资源包页面** ，进入“资源包概览”页面。
 
-   [![资源包概览](/image/Electronic-Signature/资源包概览.png)
+   ![资源包概览](/image/Electronic-Signature/资源包概览.png)
