@@ -28,11 +28,11 @@ items:
     - name: 印章管理
       items:
         - name: 上传印章
-          href: Operation-Guide/Sign-management/Sign-Upload.md
+          href: Operation-Guide/Stamp-management/Stamp-Upload.md
         - name: 下载印章
-          href: Operation-Guide/Sign-management/Sign-Download.md
+          href: Operation-Guide/Stamp-management/Stamp-Download.md
         - name: 删除印章
-          href: Operation-Guide/Sign-management/Sign-Delete.md
+          href: Operation-Guide/Stamp-management/Stamp-Delete.md
     - name: 合同模板管理
       items:
         - name: 上传合同模板
