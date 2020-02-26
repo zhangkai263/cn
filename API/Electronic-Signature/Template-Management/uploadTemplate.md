@@ -14,7 +14,7 @@ https://cloudsign.jdcloud-api.com/v1/template
 ## 请求参数
 | 名称             | 类型                          | 是否必需 | 默认值 | 描述 |
 | ---------------- | ----------------------------- | -------- | ------ | ---- |
-| **templateSpec** | [TemplateSpec](#templatespec) | True     |        |      |
+| **templateSpec** | TemplateSpec | True     |        |      |
 
 ### <div id="templatespec">TemplateSpec</div>
 | 名称                | 类型   | 是否必需 | 默认值 | 描述                   |
@@ -26,7 +26,7 @@ https://cloudsign.jdcloud-api.com/v1/template
 ## 返回参数
 | 名称          | 类型              | 描述   |
 | ------------- | ----------------- | ------ |
-| **result**    | [Result](#result) |        |
+| **result**    | Result|        |
 | **requestId** | String            | 请求ID |
 
 ### <div id="result">Result</div>

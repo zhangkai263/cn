@@ -22,20 +22,20 @@ https://cloudsign.jdcloud-api.com/v1/contract
 ## 返回参数
 | 名称          | 类型              | 描述   |
 | ------------- | ----------------- | ------ |
-| **result**    | [Result](#result) |        |
+| **result**    | Result |        |
 | **requestId** | String            | 请求ID |
 
 ### <div id="result">Result</div>
 | 名称             | 类型                            | 描述     |
 | ---------------- | ------------------------------- | -------- |
-| **contractList** | [ContractInfo[]](#contractinfo) | 合同列表 |
+| **contractList** | ContractInfo | 合同列表 |
 | **totalCount**   | Integer                         | 合同数量 |
 ### <div id="contractinfo">ContractInfo</div>
 | 名称                | 类型     | 描述                     |
 | ------------------- | -------- | ------------------------ |
 | **contractId**      | String   | 合同ID                   |
 | **contractTitle**   | String   | 合同标题                 |
-| **stampNames**      | String[] | 印章名称(可能有多个印章) |
+| **stampNames**      | String | 印章名称(可能有多个印章) |
 | **contractContent** | String   | 合同文件（base64）       |
 | **contractDigest**  | String   | 合同文件摘要             |
 | **createTime**      | String   | 合同签章时间             |
