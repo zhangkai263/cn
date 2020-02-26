@@ -6,7 +6,7 @@
 
 在合同管理页面中，点击“下载”按钮。
 
-[![下载合同.png](/image/Electronic-Signature/下载合同.png)
+![下载合同.png](/image/Electronic-Signature/下载合同.png)
 
 ### OpenAPI下载合同
 
