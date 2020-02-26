@@ -130,7 +130,7 @@ items:
     - name: CDN
       href: Metrics/CDN.md
     - name: 消息队列JCQ
-      href: Metrics/.md
+      href: Metrics/jcq.md
     - name: 云搜索 ElasticSearch
       href: Metrics/es.md  
 - name: 教程
