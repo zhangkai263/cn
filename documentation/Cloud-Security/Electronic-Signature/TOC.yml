@@ -47,3 +47,5 @@ items:
           href: Operation-Guide/Contract-Management/Contract-Download.md
         - name: 删除合同
           href: Operation-Guide/Contract-Management/Contract-Delete.md
+        - name: 验签合同
+          href: Operation-Guide/Contract-Management/Contract-Verify.md
