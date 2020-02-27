@@ -1,9 +1,12 @@
 # 提交工单
 
-打开控制台，选择智能IDC->云托管服务->工单管理->提交工单，如下图：
-![](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS006.png)
+打开控制台，选择云托管服务->工单管理->提交工单，选择需要提交的运维服务工单。
 
-点击 **机柜初装** 工单模板，跳转到提交工单页面，需要客户填写信息，支持保存工单或者立即提交，如下图：
-![提交工单填写页面查看连接](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS007.png)
+根据用户需求选择相应类型的工单，填写工单内容：
+1、点击 **立即提交**，工单提交完成，跳转到我的工单列表查看；
 
-填写完以上信息，点击 **提交** 按钮，工单提交完成，跳转到我的工单列表查看。
+2、点击 **保存草稿**，保存当前工单草稿至我的工单，跳转到**我的工单**列表查看；
+
+3、点击**取消**，取消提交工单操作，跳转至**提交工单**页。
+
+# 运维服务列表
