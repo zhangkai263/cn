@@ -1,23 +1,41 @@
 # 签名算法 #
-## 步骤1：创建标准请求串并加密 ##
-首先要将请求按照下面的固定形式进行拼接，生成标准请求串。 
-示例伪代码
+### 京东云提供的签名算法共分为四个部分。
+## 步骤1：创建规范请求 ##
+要开始签名过程，请创建一个字符串，其中包含来自标准（规范）格式的请求的信息。这可确保 JDCLOUD 在收到请求时计算出的签名与您计算出的签名相同。
+
+按照此处的步骤创建请求的规范版本。否则，您的版本与 JDCLOUD 计算得到的版本将不匹配，请求将被拒绝。
+以下示例演示了创建规范请求的伪代码。
+ 
+#### 例 规范请求伪代码
  
 
 	CanonicalRequest =
 	  HTTPRequestMethod + '\n' +
-	  CanonicalURI + '\n' +
-	  (CanonicalQueryString or '') + '\n' +
-	  CanonicalHeaders + '\n' +
-	  SignedHeaders + '\n' +
-	  Lowercase(HexEncode(Hash(RequestPayload or '')))
+          CanonicalURI + '\n' +
+          (CanonicalQueryString or '') + '\n' +
+          CanonicalHeaders + '\n' +
+          SignedHeaders + '\n' +
+          Lowercase(HexEncode(Hash(RequestPayload or '')))
 
 
-在此伪代码中：
 
-HTTPRequestMethod即HTTP协议请求方式，如POST、GET等，使用全大写字母表示。
+在此伪代码中，Hash 表示生成消息摘要的函数，通常是 SHA-256。（在该过程稍后的阶段中，您将指定要使用的哈希算法。）HexEncode 表示以小写字母形式返回摘要的 base-16 编码的函数。例如，HexEncode("m") 返回值 6d 而不是 6D。输入的每一个字节都必须表示为两个十六进制字符。 
 
-CanonicalURI即URI编码后的请求路径。
+以下示例演示如何构造规范形式的 VM 请求。原始请求在从客户端发送到 JDCLOUD 时可能看上去与此类似，不过此示例还不包括签名信息。
+ 
+#### 例 请求
+ 
+
+        GET https:// vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?                 serviceCode=vm&startTime= 2018-04-04T06:01:46ZHTTP/1.1
+        Host: vm.jdcloud-api.com
+        Content-Type: application/json
+        x-jdcloud-date: 20180404T061302Z
+        x-jdcloud-nonce:ed558a3b-9808-4edb-8597-187bda63a4f2
+
+
+
+
+
 
 CanonicalQueryString为请求查询字符串。要构建规范查询字符串，首先按字符代码对**参数名按升序**进行排序，如果重复名称的参数再**按值升序**进行排序。然后对每个**参数名称和值分别进行URI编码**（请不要重复编码）。接着通过从排序列表中的第一个参数名称开始构建规范查询字符串。**对于每个参数，附加URI编码的参数名称，后跟等号字符（=），后跟URI编码的参数值**。对没有值的参数使用空字符串。在每个参数值之后附加&符号，除了列表中的最后一个值。
 
