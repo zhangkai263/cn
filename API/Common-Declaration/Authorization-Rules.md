@@ -26,7 +26,7 @@
 #### 例 请求
  
 
-        GET https:// vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?                 serviceCode=vm&startTime= 2018-04-04T06:01:46ZHTTP/1.1
+        GET https:// vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime= 2018-04-04T06:01:46ZHTTP/1.1
         Host: vm.jdcloud-api.com
         Content-Type: application/json
         x-jdcloud-date: 20180404T061302Z
