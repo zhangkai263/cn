@@ -6,7 +6,7 @@
 
 参照以下步骤，查看系统说明信息：
 
-1. 登录[京东云电子签章概览页](https://cloudsign-console.jdcloud.com/overview)。
+1. 登录[京东云电子签章概览页](https://cloudsign-console.jdcloud.com/sign)。
 
 2. 前往概览页面。
 

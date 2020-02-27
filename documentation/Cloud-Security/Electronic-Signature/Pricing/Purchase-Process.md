@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [电子签章控制台](https://cloudsign-console.jdcloud.com/overview)。
+1. 登录 [电子签章控制台](https://cloudsign-console.jdcloud.com/sign)。
 
 2. 在“概览页”页面，点击 **快速购买链接** ，进入“购买资源包”页面。 ![资源包快速购买](/image/Electronic-Signature/资源包快速购买.png)
 
