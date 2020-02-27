@@ -13,7 +13,7 @@
 
 <table>
 	<tr>
-	    <th style="width:300px">工单类型</th>
+	    <th style="width:300px;">工单类型</th>
 	    <th>工单名称</th>
 	    <th>描述</th>  
 	</tr >
