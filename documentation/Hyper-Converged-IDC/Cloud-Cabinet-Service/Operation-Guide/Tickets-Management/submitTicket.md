@@ -11,7 +11,7 @@
 
 # 运维服务列表
 
-<table width="1500" cellspacing="0" align="center">
+<table>
 	<tr>
 	    <th>工单类型</th>
 	    <th>工单名称</th>
