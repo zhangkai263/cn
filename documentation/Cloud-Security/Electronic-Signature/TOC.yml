@@ -25,6 +25,8 @@ items:
       href: Pricing/Resource-Packages.md       
 - name: 操作指南
   items:
+    - name: 开通服务
+      href: Operation-Guide/Active.md
     - name: 印章管理
       items:
         - name: 上传印章
