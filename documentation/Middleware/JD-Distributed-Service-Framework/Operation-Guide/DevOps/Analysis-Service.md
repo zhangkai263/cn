@@ -17,11 +17,13 @@
 
 目前调用链支持两种收费方式：按配置（根据小时收费）、包年包月。您可根据需要，选择不同计费方式。
 
-您需依次录入服务名称、选择集群网络及子网ID、调用日志并发写入数量、备注等信息。然后点击保存，完成创建过程
+您需依次录入服务名称、备注、选择集群网络及子网ID、TPS、购买信息等信息。然后点击保存，完成创建过程。
 
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-create-bnby.png)
    
-这里的调用日志并发写入数量需要您根据集群的TPS进行估计，其含义可以理解为整个业务集群总TPS乘以采样率。如果不太确定，建议选较低的档，然后根据系统运行起来后的实际TPS进行扩容。调用链分析服务只支持扩容，不支持缩容，请避免选择的规格过大。
+这里的调用日志并发写入数量需要您根据集群的TPS进行估计，其含义可以理解为整个业务集群总TPS乘以采样率。如果不太确定，建议选较低的档，然后根据系统运行起来后的实际TPS进行扩容。
+
+目前调用链分析服务只支持扩容，暂时不支持缩容，请避免选择的规格过大。
 
 调用链分析服务直接部署在用户VPC中，会根据用户选择的不同规格占用VPC中的不同数量的内网IP，请确保所选子网动态IP充足。
  
@@ -32,49 +34,52 @@
 
 
 第1步：选择调用链，然后点击您需要查看的服务名称。
-  
+
+  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-list-1.png)
+   
 
 第2步：查看详情。
  
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-detail-1.png)
 
-请根据连接调用链服务使用的不同网络协议，选择合适的调用链地址。
+您可根据连接调用链服务使用的不同网络协议，选择合适的调用链地址进行使用。
 
 
 
 ###  依赖图谱
 
 第1步：先选择您需要查看的调用链服务，然后点击依赖图谱操作。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-list-1.png)
+   
     
-第2步：选择时间单位，查看依赖图谱
+第2步：选择时间单位，查看依赖图谱。
 
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-yltp-xzsj.png)
  
- 选择时间范围后，将加载该时段内的图普信息
+ 选择时间范围后，将加载该时段内的图普信息。
  
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-yltp-1.png)
    
  ###  调用链查询
  
- 调用链服务提供了高级检索功能，用户可根据时间范围、当前调用链服务中的服务名、方法名、好实、IP、状态码等方式，查询调用链信息
+ 调用链服务提供了高级检索功能，您可根据时间范围、当前调用链服务中的服务名、方法名、好实、IP、状态码等方式，查询调用链信息。
 
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-dylcx.png)
    
-第3步：点击具体的服务，查看Trace信息
-   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dly-trace.png)
+第3步：点击某一个Trace id，可查询该trace id 的信息。
+  
    
-第4步：点击一个具体的Trace，查看Trace详情
-   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dly-trace-detail.png)
 
  ###  根据Trace id查询
  
- 您可根据Trace id检索信息。
+ 您也可根据Trace id直接检索信息。
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-traceid-cx.png)
 
 
 ###   调整配置
 
-目前仅支持“按配置”计费类型的资源，进行升配调整，暂不支持降配。
+目前仅支持进行升配调整，暂不支持降配。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-tzpz.png)
  
@@ -82,10 +87,10 @@
 
 ###   转包年包月
 
-对于“按配置”计费类型的资源，支持转为包年包月收费类型。
+对于“按配置”计费类型的资源，支持转为“包年包月”收费类型。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-zbnby.png)
 
-暂不支持由包年包月计费类型转为按配置计费类型。如您在操作过程中有任何问题，可咨询客服。
+暂不支持由“包年包月”计费类型转为“按配置”计费类型。如您在操作过程中有任何问题，可咨询客服。
 
 ###   删除服务
 
