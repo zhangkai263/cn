@@ -51,7 +51,7 @@
 如果绝对路径为空，则使用正斜杠 (/)。在示例VM请求中，URI中的绝对路径为：/v1/regions/cn-north-1/metrics/cpu_util/metricData
 
 #### 例 规范 URI
-     / 
+     cpu_util/metricData 
 
 3. 添加规范查询字符串，后跟换行符。如果请求不包括查询字符串，请使用空字符串（实际上是空白行）。示例请求具有以下查询字符串。
 
