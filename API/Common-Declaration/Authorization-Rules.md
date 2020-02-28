@@ -11,7 +11,7 @@
  
 
 	CanonicalRequest =
-	  HTTPRequestMethod + '\n' +
+	   HTTPRequestMethod + '\n' +
           CanonicalURI + '\n' +
           (CanonicalQueryString or '') + '\n' +
           CanonicalHeaders + '\n' +
