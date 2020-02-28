@@ -48,8 +48,7 @@
 
 #### 注意：
 例外情况是，您没有使用规范的 URI 路径来提出请求。例如，如果您拥有包含名为 my-object//example//photo.user 的对象的存储桶，请使用该路径。如果将该路径标准化为 my-object/example/photo.user，则会导致请求失败。有关更多信息，请参阅 任务 1：创建规范请求。 
-如果绝对路径为空，则使用正斜杠 (/)。在示例 VM 请求中，URI 中的主机后没有任何内容，因此，绝对路径为空。
-
+如果绝对路径为空，则使用正斜杠 (/)。在示例VM请求中，URI中的绝对路径为：/v1/regions/cn-north-1/metrics/cpu_util/metricData
 
 #### 例 规范 URI
      / 
