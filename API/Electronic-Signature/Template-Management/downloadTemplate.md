@@ -21,13 +21,13 @@ https://cloudsign.jdcloud-api.com/v1/template/{templateId}
 ## 返回参数
 | 名称          | 类型              | 描述   |
 | ------------- | ----------------- | ------ |
-| **result**    | [Result](#result) |        |
+| **result**    | Result|        |
 | **requestId** | String            | 请求ID |
 
 ### <div id="result">Result</div>
 | 名称             | 类型                          | 描述 |
 | ---------------- | ----------------------------- | ---- |
-| **templateInfo** | [TemplateInfo](#templateinfo) |      |
+| **templateInfo** | TemplateInfo |      |
 ### <div id="templateinfo">TemplateInfo</div>
 | 名称                 | 类型   | 描述                   |
 | -------------------- | ------ | ---------------------- |

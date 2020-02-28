@@ -97,16 +97,42 @@ items:
       href: Metrics/vm.md
     - name: 云硬盘
       href: Metrics/disk.md
-    - name: 容器实例
+    - name: 原生容器
       href: Metrics/nativecontainer.md
     - name: kubernetes集群
-      href: Metrics/k8s.md  
+      href: Metrics/k8s.md
+    - name: 弹性伸缩
+      href: Metrics/autoscaling.md
+    - name: 函数服务
+      href: Metrics/function.md   
     - name: 弹性公网IP
       href: Metrics/ip.md
+    - name: 专线服务
+      href: Metrics/DirectConnection.md
+    - name: NAT网关
+      href: Metrics/natgateway.md
     - name: 负载均衡
       href: Metrics/lb.md
     - name: 云数据库RDS
       href: Metrics/rds.md
+    - name: DRDS
+      href: Metrics/drds.md
+    - name: 云缓存 Memcached
+      href: Metrics/Memcached.md
+    - name: 云数据库 InfluxDB
+      href: Metrics/tsds.md
+    - name: 云数据库 Greenplum
+      href: Metrics/jdw.md
+    - name: 数据传输 DTS
+      href: Metrics/dts.md
+    - name: 对象存储
+      href: Metrics/oss.md
+    - name: CDN
+      href: Metrics/CDN.md
+    - name: 消息队列JCQ
+      href: Metrics/jcq.md
+    - name: 云搜索 ElasticSearch
+      href: Metrics/es.md  
 - name: 教程
   items:
   status: 0
