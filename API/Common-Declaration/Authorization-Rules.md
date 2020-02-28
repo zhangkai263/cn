@@ -26,7 +26,7 @@
 #### 例 请求
  
 
-        GET https:// vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime= 2018-04-04T06:01:46ZHTTP/1.1
+        GET https://vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime=2018-04-04T06:01:46ZHTTP/1.1
         Host: vm.jdcloud-api.com
         Content-Type: application/json
         x-jdcloud-date: 20180404T061302Z
@@ -201,7 +201,7 @@ Lowercase 表示将所有字符转换为小写字母的函数。Trimall 函数�
 
 #### 例  HTTPS 请求
 
-      GET https:// vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData? serviceCode=vm&startTime=    2018-04-04T06:01:46ZHTTP/1.1
+      GET https://vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime=2018-04-04T06:01:46ZHTTP/1.1
       Host: vm.jdcloud-api.com
       Content-Type: application/json
       x-jdcloud-date: 20180404T061302Z
@@ -260,7 +260,7 @@ JDCLOUD 不需要您使用特定字符编码来对待签字符串进行编码。
 请注意，哈希过程中所使用的日期的格式为 YYYYMMDD（例如，20180404），不包括时间。 
 确保以正确的顺序为您要使用的编程语言指定 HMAC 参数。在此示例中，密钥是第一个参数，数据 (消息) 是第二个参数，但您使用的函数可能以不同顺序指定密钥和数据。
 使用摘要 (二进制格式) 来派生密钥。大多数语言都有用来计算二进制格式哈希（通常称为摘要）或十六进制编码哈希（称为十六进制摘要）的函数。派生密钥需要使用二进制格式摘要。
-以下示例显示了用于派生签名密钥的输入以及所生成的输出，其中 kSecret = D375D9DAA59BA2471A1192C264B0307D。 
+以下示例显示了用于派生签名密钥的输入以及所生成的输出，其中 kSecret = 93C107EF1F3A0C46C6329C04F561A29E。 
 该示例使用与任务 1 和任务 2 中的请求相同的参数（对 VM 的请求，位于 cn-north-1 区域，2018 年 4 月 4 日）。
 
 #### 示例输入
