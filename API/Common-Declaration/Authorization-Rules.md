@@ -297,11 +297,11 @@ JDCLOUD 不需要您使用特定字符编码来对待签字符串进行编码。
 
 Authorization的格式为：
                  
-        JDCLOUD2-HMAC-SHA256 Credential={Access Key}/{Date}/{Region}/{Service}/jdcloud2_request, SignedHeaders={SignedHeaders}, Signature={signResult}
+    JDCLOUD2-HMAC-SHA256 Credential={Access Key}/{Date}/{Region}/{Service}/jdcloud2_request, SignedHeaders={SignedHeaders}, Signature={signResult}
 
 下面的示例说明一个完整的 Authorization 标头：
         
-	curl -X GET -H "x-jdcloud-date:20180404T061302Z" -H "x-jdcloud-nonce:ed558a3b-9808-4edb-8597-187bda63a4f2" -H "Authorization:JDCLOUD2-HMAC-SHA256 Credential=C61249XXXXXXXXXXXXXXXXXX/20180404/cn-north-1/vm/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=9b2026198d3acbf99da395e23a994ed369a0d70f5b4a5d7567dd0caf3009656d" -H "Content-Type:application/json" "http://vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime=2018-04-04T06:01:46Z"
+    curl -X GET -H "x-jdcloud-date:20180404T061302Z" -H "x-jdcloud-nonce:ed558a3b-9808-4edb-8597-187bda63a4f2" -H "Authorization:JDCLOUD2-HMAC-SHA256 Credential=C61249XXXXXXXXXXXXXXXXXX/20180404/cn-north-1/vm/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=9b2026198d3acbf99da395e23a994ed369a0d70f5b4a5d7567dd0caf3009656d" -H "Content-Type:application/json" "http://vm.jdcloud-api.com/v1/regions/cn-north-1/metrics/cpu_util/metricData?serviceCode=vm&startTime=2018-04-04T06:01:46Z"
 
 请注意以下几点：
 
