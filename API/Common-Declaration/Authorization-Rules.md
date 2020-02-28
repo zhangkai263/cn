@@ -10,8 +10,8 @@
 #### 例 规范请求伪代码
  
 
-	CanonicalRequest =
-	   HTTPRequestMethod + '\n' +
+	  CanonicalRequest =
+	  HTTPRequestMethod + '\n' +
           CanonicalURI + '\n' +
           (CanonicalQueryString or '') + '\n' +
           CanonicalHeaders + '\n' +
