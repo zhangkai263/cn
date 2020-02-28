@@ -9,7 +9,6 @@
  
 #### 例 规范请求伪代码
  
-
 	  CanonicalRequest =
 	  HTTPRequestMethod + '\n' +
           CanonicalURI + '\n' +
