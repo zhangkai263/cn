@@ -37,13 +37,13 @@
 1. 首先是 HTTP 请求方法（GET、PUT、POST 等），后跟换行符。 
 
 #### 例 请求方法
-        GET 
+     GET 
 
 2. 添加规范 URI 参数，后跟换行符。规范 URI 是 URI 的绝对路径部分的 URI 编码版本，该版本是 URI 中的一切 - 从 HTTP 主机到开始查询字符串参数（如果有）的问号字符（“?”）。
 根据 [RFC 3986](http://tools.ietf.org/html/rfc3986) 标准化 URI 路径。移除冗余和相对路径部分。路径中每个部分都必须 URI 编码。 
 
 #### 例 使用编码的规范 URI
-        /v1/regions/cn-north-1/instances/jdcloud%20api/
+     /v1/regions/cn-north-1/instances/jdcloud%20api/
 
 
 #### 注意：
@@ -165,7 +165,6 @@ Lowercase 表示将所有字符转换为小写字母的函数。Trimall 函数�
        x-jdcloud-nonce:ed558a3b-9808-4edb-8597-187bda63a4f2 
 
        content-type;host;x-jdcloud-date;x-jdcloud-nonce
-
        e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
  
  
