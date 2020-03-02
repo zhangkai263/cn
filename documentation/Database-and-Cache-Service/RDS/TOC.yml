@@ -221,8 +221,10 @@
           href: Operation-Guide/Security/Set-Whitelist.md
         - name: 透明数据加密 TDE
           href: Operation-Guide/Security/tde.md
-        - name: 配置 SSL 证书 
+        - name: MySQL 配置 SSL 证书 
           href: Operation-Guide/Security/Configure-SSL.md
+        - name: SQL Server 配置 SSL 证书 
+          href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           
       - name: 单库上云
         items:
