@@ -1,0 +1,26 @@
+name: 实名认证
+  href:
+  items:
+
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 企业实名认证接口
+        items:
+          - name: 企业代理人信息核验
+            href: Company/checkAgent.md
+          - name: 企业基础信息核验
+            href: Company/checkCompanyInfo.md
+          - name: 企业所有信息核验
+            href: Company/checkCompanyLegalPersonAndAgent.md
+          - name: 企业打款以及验证
+            href: Company/checkCompanyTransfer.md
+          - name: 企业法人信息校验
+            href: Company/checkLegalPerson.md
+      - name: 个人实名认证接口
+        items:
+          - name: 个人实名认证
+            href: Person/checkPersonalUser.md
