@@ -27,9 +27,69 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="29">通用</td>
-      <td rowspan="2">共享</td>
-      <td>g.s1.micro</td>
+      <td rowspan="35">通用</td>
+      <td rowspan="8">共享</td>
+      <td>g.s2.micro</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.28</td>
+      <td>--</td>
+      <td>0.12</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.small</td>
+      <td>1</td>
+      <td>2</td>
+      <td>60.5</td>
+      <td>--</td>
+      <td>0.21</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.s2.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>90.75</td>
+      <td>--</td>
+      <td>0.32</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>181.69</td>
+      <td>--</td>
+      <td>0.63</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>363</td>
+      <td>--</td>
+      <td>1.26</td>
+      <td>--</td>
+      <td></td>
+   </tr>   
+    <tr>
+      <td>g.s2.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>726.75</td>
+      <td>--</td>
+      <td>2.52</td>
+      <td>--</td>
+      <td></td>
+   </tr>    
+    <tr>     
+     <td>g.s1.micro</td>
       <td>1</td>
       <td>1</td>
       <td>56</td>
@@ -320,7 +380,37 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="27">计算优化</td>
+      <td rowspan="30">计算优化</td>
+      <td rowspan="3">共享</td>
+      <td>c.s2.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>125.3</td>
+      <td>--</td>
+      <td>0.41</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>250.6</td>
+      <td>--</td>
+      <td>0.82</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>501.2</td>
+      <td>--</td>
+      <td>1.65</td>
+      <td>--</td>
+      <td></td>
+   </tr>
       <td rowspan="27">标准</td>
       <td>c.n3.large</td>
       <td>2</td>
@@ -592,7 +682,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="21">计算优化</td>
+      <td rowspan="21">内存优化</td>
       <td rowspan="21">标准</td>
       <td>m.n3.large</td>
       <td>2</td>
