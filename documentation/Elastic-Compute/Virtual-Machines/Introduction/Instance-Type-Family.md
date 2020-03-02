@@ -5,7 +5,7 @@
 以下为当前京东云在售的实例规格类型信息，不同地域可售卖实例类型及规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
-* 计算优化型：[计算优化标准型](instance-type-family#user-content-3)
+* 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
@@ -16,11 +16,15 @@
 
 ### 通用共享型
 <div id="user-content-1"></div>
+通用共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，允许不同实例的vCPU互相争抢物理CPU资源。通用共享型实例拥有高性价比的优点，但是不提供性能SLA保证。
+
 
 **规格类型特点：**
 
-* vCPU与内存比为1:1或1:2
-* 处理器：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+* vCPU与内存比为1:1、1:2或1:4，提供多种处理器内存配比。
+* 处理器： 
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -31,6 +35,19 @@
 	* 测试环境
 
 **实例规格**
+
+第二代
+
+实例规格|vCPU（核）|内存（GB）
+:---|:---|:---
+|g.s2.micro|1|1
+|g.s2.small|1|2
+|g.s2.medium|1|4
+|g.s2.large|2|8
+|g.s2.xlarge|4|16
+|g.s2.2xlarge|8|32
+
+第一代
 
 实例规格|vCPU（核）|内存（GB）
 :---|:---|:---
@@ -89,7 +106,7 @@
 |g.n2.18xlarge|72|288|4
 |g.n2.metal|80|384|60
 
-**关于裸金属云主机g.n2.metal更详细说明请查阅[裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)
+**关于裸金属云主机g.n2.metal更详细说明请查阅[裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
 
 第一代
 
@@ -106,11 +123,34 @@ g.n1.8xlarge|32|128|4 |	 |
 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用。
 
 ## 计算优化型
-计算优化型当前提供计算优化标准型，为您提供高性能的计算资源，可满足。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+计算优化型当前提供计算优化共享型及计算优化标准型，其中计算优化标准型可满足每一个vCPU都对应一个Intel Xeon处理器的超线程核，为您提供高性能的计算资源。
+### 计算优化共享型
+<div id="user-content-9"></div>
+计算优化共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，允许不同实例的vCPU互相争抢物理CPU资源。计算优化共享型实例拥有高性价比的优点，但是不提供性能SLA保证。
 
-<div id="user-content-3"></div>
+**规格类型特点：**
+
+* vCPU与内存比约为1:2
+* 处理器：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* 小规模机器学习、数据分析
+	* 小规模爬虫
+	* 小规模批量计算
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GB）
+:---|:---|:---
+|c.s2.large|2|4
+|c.s2.xlarge|4|8
+|c.s2.2xlarge|8|16
 
 ### 计算优化标准型
+<div id="user-content-3"></div>
 
 **规格类型特点：**
 
