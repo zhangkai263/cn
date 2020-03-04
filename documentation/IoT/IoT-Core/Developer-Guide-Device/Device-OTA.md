@@ -20,7 +20,7 @@
 
 ## 固件升级流程：
 
-![升级流程](../../../../../image/IoT/IoT-Engine/OTA/SDK-OTA01.png)
+![升级流程](../../../../image/IoT/IoT-Engine/OTA/SDK-OTA01.png)
 
 ## 接口说明
 
