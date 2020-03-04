@@ -291,5 +291,5 @@ e) 其他京东智联云有充足理由需要对多个京东智联云账户进�
 ### 12、 法律适用与管辖
 本服务条款之效力、解释、变更、执行与争议解决均适用中华人民共和国法律。因本服务条款产生之争议，均应依照中华人民共和国法律予以处理，并提交本合同签订地北京市大兴区有管辖权人民法院审判。
 
-[京东智联云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/JDcloud-Service-Agreement.pdf)
+[京东智联云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/JDcloud-Service-Agreement-x.pdf)
 
