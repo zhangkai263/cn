@@ -16,7 +16,7 @@
 
 | 功能         | 描述                                                         | scene    | label                                                        |
 | :----------- | :----------------------------------------------------------- | :------- | :----------------------------------------------------------- |
-| 垃圾文本检测 | 结合行为、内容，采用多维度、多模型、多检测手段，识别文本中的垃圾内容，规避色情、广告、灌水、渉政、辱骂等内容风险。 | antispam | normal：正常文本                                                  ad：广告                                                 politics：涉政<br />terrorism：暴恐                                     abuse：辱骂       <br />porn：色情<br />contraband：违禁<br /> |
+| 垃圾文本检测 | 结合行为、内容，采用多维度、多模型、多检测手段，识别文本中的垃圾内容，规避色情、广告、灌水、渉政、辱骂等内容风险。 | antispam | normal：正常文本                                                  ad：广告                                                 politics：涉政<br />terrorism：暴恐                                     abuse：辱骂       <br />porn：色情<br />contraband：违禁<br />other：其他 |
 
 ## 请求参数
 
@@ -115,14 +115,14 @@ https://censor.jdcloud-api.com/v1/text:scan
 
 ```
 {
-  "requestId": "149ea2c9-eeab-4263-a0ee-a854bd871f46",
+  "requestId": "bqfmguuo6d68mmbca0kw7cqeni8wmqqo",
   "result": {
     "data": [
       {
         "code": 200,
         "msg": "OK",
         "dataId": "dataId-1",
-        "taskId": "e80d769d-9088-46c0-90c0-d8a408eabb3c",
+        "taskId": "txte80d769d-9088-46c0-90c0-d8a408eabb3c",
         "content": "法论大法好",
         "filteredContent": "法论大法好",
         "results": [

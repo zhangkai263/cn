@@ -140,13 +140,13 @@ https://censor.jdcloud-api.com/v1/image:asyncscan
 
 ```
 {
-  "requestId": "1a7eed7c-a898-4dec-825b-3641f597551a",
+  "requestId": "bqfmguuo6d68mmbca0kw7cqeni8wmqqo",
   "result": {
     "data": [
       {
         "code": 200,
         "msg": "OK",
-        "taskId": "d169fa6b-191c-45f6-a344-6dba8f4972ad"        
+        "taskId": "imgd169fa6b-191c-45f6-a344-6dba8f4972ad"        
         ]
       }
     ]
