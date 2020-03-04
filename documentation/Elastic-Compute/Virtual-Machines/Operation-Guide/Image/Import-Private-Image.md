@@ -45,12 +45,12 @@
 ## 导入步骤
 
 ![](../../../../../image/vm/Image-Import-Image-Overview.png)<br>
-### 1、准备镜像文件
+### 1、镜像准备
 为保证导入镜像的可用性，请务必在导入前参照上述京东云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东云规范后再行操作导入。<br>
 同时为了保证导入镜像在京东云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
 Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的自检，使用方法请参见：[镜像自检工具](Image-Check-Tool.md)
 
-### 2、准备镜像文件
+### 2、镜像文件生成
 支持RAW、VHD、QCOW2、VMDK四种格式的镜像文件导入，请在生成镜像文件时指定正确的文件格式。<br>
 不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 

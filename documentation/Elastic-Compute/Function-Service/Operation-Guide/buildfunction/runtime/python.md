@@ -32,17 +32,9 @@ context：使用此参数向您的处理程序传递运行时信息。
 
 ## 日志
 
-您可以使用 print 或 logging 模块来打印日志输出，并在函数日志中查看：
+您可以使用 print 语句来打印日志输出，并在函数日志中查看。
 
-```Python
-import logging
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-def main_handler(event, context):
-    logger.info('got event{}'.format(event))
-    print("got event{}".format(event))
-    return 'Hello World!'
-```
+
 
 
 ## 使用内置模块

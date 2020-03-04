@@ -4,21 +4,46 @@ items:
     href: overview.md
   - name: 更新历史
     href: ChangeLog.md
-  - name: 媒体处理相关接口
+  - name: 接口信息
     items:
-      - name: createThumbnailTask
-        href: Media-Processing-APIs/createThumbnailTask.md
-      - name: getNotification
-        href: Media-Processing-APIs/getNotification.md
-      - name: getThumbnailTask
-        href: Media-Processing-APIs/getThumbnailTask.md
-      - name: listThumbnailTask
-        href: Media-Processing-APIs/listThumbnailTask.md
-      - name: setNotification
-        href: Media-Processing-APIs/setNotification.md
-      - name: setStyleDelimiter
-        href: Image-Style-Delimiter-API/setStyleDelimiter.md
-      - name: getStyleDelimiter
-        href: Image-Style-Delimiter-API/getStyleDelimiter.md
-      - name: deleteStyleDelimiter  
-        href: Image-Style-Delimiter-API/deleteStyleDelimiter.md
+      - name: 媒体处理相关接口
+        items:
+          - name: createThumbnailTask
+            href: Media-Processing-APIs/createThumbnailTask.md
+          - name: getNotification
+            href: Media-Processing-APIs/getNotification.md
+          - name: getThumbnailTask
+            href: Media-Processing-APIs/getThumbnailTask.md
+          - name: listThumbnailTask
+            href: Media-Processing-APIs/listThumbnailTask.md
+          - name: setNotification
+            href: Media-Processing-APIs/setNotification.md
+          - name: setStyleDelimiter
+            href: Image-Style-Delimiter-API/setStyleDelimiter.md
+          - name: getStyleDelimiter
+            href: Image-Style-Delimiter-API/getStyleDelimiter.md
+          - name: deleteStyleDelimiter  
+            href: Image-Style-Delimiter-API/deleteStyleDelimiter.md
+      - name: 视频转码
+        items:
+          - name: 提交转码作业
+            href: Transcode/submitTranscodeJob.md
+          - name: 查询转码作业列表
+            href: Transcode/listTranscodeJobs.md
+          - name: 查询转码作业详情
+            href: Transcode/getTranscodeJob.md
+      - name: 转码模板管理
+        items:
+          - name: 创建转码模板
+            href: Transcode-Template/createTranscodeTemplate.md
+          - name: 查询转码模板
+            href: Transcode-Template/getTranscodeTemplate.md
+          - name: 更新转码模板
+            href: Transcode-Template/updateTranscodeTemplate.md
+          - name: 修改转码模板
+            href: Transcode-Template/modifyTranscodeTemplate.md
+          - name: 查询转码模板列表
+            href: Transcode-Template/listTranscodeTemplates.md
+          - name: 删除转码模板
+            href: Transcode-Template/deleteTranscodeTemplate.md
+

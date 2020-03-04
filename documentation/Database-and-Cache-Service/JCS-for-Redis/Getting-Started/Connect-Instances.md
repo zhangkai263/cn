@@ -24,3 +24,8 @@ redis-cli -h [host] -p [port] -a [password]
 在实例详情页使用Web-cli连接实例，前提是该实例已设置密码，免密无法使用Web-cli，安全起见，请关闭免密，设置密码后再使用Redis Web Cli。
 ![Webcli](https://github.com/jdcloudcom/cn/blob/master/image/Redis/webcli.png)
 
+# 测试连通性
+
+请使用标准的redis-cli工具测试连通性，并使用命令redis-cli -h [host] ping查看是否连通
+
+(注：Redis 4.0请用这个方法测试连通性，不能直接发送ping命令测试)

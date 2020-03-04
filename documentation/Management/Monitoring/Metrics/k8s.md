@@ -7,11 +7,11 @@ metric | 中文名称 | 英文名称 | 单位 | 说明
 jke.node.status.ready | 节点就绪状态 | Node Ready Status | 无| 
 jke.node.status.notready | 节点未就绪状态 | Node NotReady Status | 无 | 
 jke.node.status.unknown | 节点未知状态 | Node Unknown Status | 无 | 
-jke.pod.pending.count | 节点中待运行Pod数量 | Pending Pod Count | 
-jke.pod.running.count | 节点中运行中Pod数量 | Running Pod Count |
-jke.pod.succeeded.count | 节点中成功Pod数量 |  Succeeded Pod Count | 
-jke.pod.failed.count | 节点中失败Pod数量 | Failed Pod Count | 
-jke.pod.unknown.count| 节点中未知状态Pod数量 | Unknown Pod Count | 
+jke.pod.pending.count | 节点中待运行Pod数量 | Pending Pod Count | 无| 
+jke.pod.running.count | 节点中运行中Pod数量 | Running Pod Count |无| 
+jke.pod.succeeded.count | 节点中成功Pod数量 |  Succeeded Pod Count | 无| 
+jke.pod.failed.count | 节点中失败Pod数量 | Failed Pod Count | 无| 
+jke.pod.unknown.count| 节点中未知状态Pod数量 | Unknown Pod Count | 无| 
 jke.api.request.count | API请求次数 | Api Request Count | 次| 
 jke.api.request.size | API请求字节 | Api Reqeust Size | byte | 
 jke.api.response.size | API响应字节 | Api Response Size  | byte | 
