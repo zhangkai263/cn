@@ -13,5 +13,5 @@ tel: 400 615 1212<br />
 mail:jdcloud@jd.com<br />
 服务时间: 7*24小时支持<br /><br />
 5. 京东智联云微信服务号<br />
-wechat: 京东云JDCloud<br />
+wechat: 京东智联云（JD-jcloud）<br />
 服务时间: 7*24小时支持
