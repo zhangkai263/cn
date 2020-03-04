@@ -315,5 +315,5 @@
 
 6. **注销本京东智联云账户并不代表本京东智联云账户注销前的账户行为和相关责任得到豁免或减轻。**
 
-[京东智联云隐私政策-PDF下载]https://github.com/jdcloudcom/cn/blob/jccsgithub-patch-11/image/Service-Agreements-and-Guarantees/Platform-Agreement/JDcloud-Privacy-Policy.pdf)
+[京东智联云隐私政策-PDF下载](https://github.com/jdcloudcom/cn/blob/jccsgithub-patch-11/image/Service-Agreements-and-Guarantees/Platform-Agreement/JDcloud-Privacy-Policy.pdf)
 
