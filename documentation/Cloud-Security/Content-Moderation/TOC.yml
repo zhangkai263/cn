@@ -1,4 +1,4 @@
-﻿name: 内容安全
+name: 内容安全
 href:
 items:
   - name: 产品简介
@@ -47,7 +47,7 @@ items:
             href: API-Document/Image-Detection-API/Image-Asynchronous-Detection-API.md
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name:文档历史更新
-    href:Document-Update-History/Doucument-Update-History.md
+  - name: 文档历史更新
+    href: Document-Update-History/Doucument-Update-History.md
 
 
