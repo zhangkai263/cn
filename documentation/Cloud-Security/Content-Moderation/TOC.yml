@@ -30,7 +30,7 @@ items:
       - name: 检测结果查询
         href: Operation-Guide/Query-Detection-Result.md
       - name: 流量包管理
-        href: Operation-Guide/Resource-Package-Management.md
+        href: Operation-Guide/Resource-package-management.md
   - name: API指南
     items:
       - name: API概览
