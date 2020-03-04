@@ -5,7 +5,7 @@
 ### 前提条件
 
 1. 设备端支持OTA升级服务
-2. 设备端需集成京东云物联网设备开发SDK，详情请见：[设备端OTA升级](../Developer-Guide-Device/Device-OTA.md)
+2. 设备端需集成京东云物联网设备开发SDK，详情请见：[设备端OTA升级](../../Developer-Guide-Device/Device-OTA.md)
 
 ### 操作步骤
 
