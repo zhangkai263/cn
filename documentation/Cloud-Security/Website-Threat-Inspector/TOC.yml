@@ -1,13 +1,15 @@
-  name: 网站威胁扫描
-  href: 
-  items:
+name: 网站威胁扫描
+href: 
+items:
   - name: 产品简介
     items:
-      - name: 网站威胁扫描系统
+      - name: 产品概览
         href: Introduction/Product-Overview.md
-      - name: 产品架构
+      - name: 技术架构
         href: Introduction/Basic-Infrastructure.md
-  - name: 操作手册
+      - name: 产品功能
+        href: Introduction/Features.md
+  - name: 用户指南
     items:
       - name: 威胁概览
         href: Operation-Guide/Threat-Overview.md
@@ -16,6 +18,4 @@
       - name: 任务管理
         href: Operation-Guide/Task-Management.md
       - name: 风险管理
-        href: Operation-Guide/Risk-Management.md         
-
-
+        href: Operation-Guide/Risk-Management.md

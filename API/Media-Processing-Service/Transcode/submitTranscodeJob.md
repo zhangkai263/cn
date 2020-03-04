@@ -16,7 +16,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs:submit
 |---|---|---|---|---|
 |**accessKey**|String|True| |输入对象存储 accessKey，必须参数|
 |**secretKey**|String|True| |输入对象存储 accessKey，必须参数|
-|**endpoint**|String|True| |输入对象存储 endpoint，必须参数，如 s3.cn-north-1.jcloudcs.com|
+|**endpoint**|String|True| |输入对象存储 endpoint。必须参数，内网域名，如 s3-internal.cn-north-1.jcloudcs.com|
 |**bucket**|String|True| |输入对象存储 bucket，必须参数|
 |**objectKey**|String|True| |输入对象存储 objectKey，必须参数|
 |**title**|String|False| |输入视频标题，可选参数，默认会从 objectKey 中截取|
@@ -28,7 +28,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs:submit
 |---|---|---|---|---|
 |**accessKey**|String|False| |输出对象存储 accessKey，可选参数，默认与输入 accessKey 保持一致|
 |**secretKey**|String|False| |输出对象存储 secretKey，可选参数，默认与输入 secretKey 保持一致|
-|**endpoint**|String|False| |输出对象存储 endpoint，可选参数，默认与输入 endpoint 保持一致，如 s3.cn-north-1.jcloudcs.com|
+|**endpoint**|String|False| |输出对象存储 endpoint。可选参数，内网域名，默认与输入 endpoint 保持一致，如 s3-internal.cn-north-1.jcloudcs.com|
 |**bucket**|String|False| |输出对象存储 bucket，可选参数，默认与输入 bucket 保持一致|
 |**outputList**|[TranscodeOutputObject[]](submittranscodejob#transcodeoutputobject)|True| |输出集合，必须参数，非空集|
 ### <div id="transcodeoutputobject">TranscodeOutputObject</div>

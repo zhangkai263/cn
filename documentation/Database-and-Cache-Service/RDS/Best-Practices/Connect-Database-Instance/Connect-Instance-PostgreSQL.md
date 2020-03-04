@@ -38,15 +38,15 @@
  
  3.右击Servers，选择创建 > 服务器。
  
-![Connect-Instance-PostgreSQL1](../../../../image/RDS/Connect-Instance-PostgreSQL1.png)
+![Connect-Instance-PostgreSQL1](../../../../../image/RDS/Connect-Instance-PostgreSQL1.png)
 
 4.在创建-服务器页面的通常标签页面中，输入服务器名称。
 
-![Connect-Instance-PostgreSQL2](../../../../image/RDS/Connect-Instance-PostgreSQL2.png)
+![Connect-Instance-PostgreSQL2](../../../../../image/RDS/Connect-Instance-PostgreSQL2.png)
 
 5.选择Connection标签页，输入要连接的实例信息。
 
-![Connect-Instance-PostgreSQL3](../../../../image/RDS/Connect-Instance-PostgreSQL3.png)
+![Connect-Instance-PostgreSQL3](../../../../../image/RDS/Connect-Instance-PostgreSQL3.png)
 ### 参数说明
 
  主机名称/地址：若使用内网连接，需输入RDS实例的内网地址。若使用外网连接，需输入RDS实例的外网地址。查看RDS实例的内外网地址及端口信息的步骤如下：
@@ -66,4 +66,4 @@
 
 7.若连接信息无误，选择Servers > 服务器名称 > 数据库 > postgres，会出现如下界面，则表示连接成功。
 
-![Connect-Instance-PostgreSQL4](../../../../image/RDS/Connect-Instance-PostgreSQL4.png)
+![Connect-Instance-PostgreSQL4](../../../../../image/RDS/Connect-Instance-PostgreSQL4.png)
