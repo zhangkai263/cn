@@ -6,4 +6,4 @@
 
 图片检测结果查询操作：可以选择识别场景、识别结果、送审时间范围、TaskID、DataID中若干项，点击查询。
 
-![image-20191210144524641](C:\Users\wangxuejiao17\AppData\Roaming\Typora\typora-user-images\image-20191210144524641.png)
+![image](../../../../image/Content-Moderation/Operation-Guide/Statistics-View/check-image.png)
