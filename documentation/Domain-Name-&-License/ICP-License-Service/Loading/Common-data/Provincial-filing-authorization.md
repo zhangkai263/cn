@@ -8,7 +8,7 @@
 
 [湖南授权书.docx](https://img1.jcloudcs.com/cms/80ad981a-776b-41c1-8979-817b32fdc4b520171206193651.docx)
 
-[上海授权书.docx](https://img1.jcloudcs.com/cms/f0dcfab2-4426-4de3-ac01-1db2f1a8cc2720171206193651.docx)
+[上海授权书.docx](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/shanghai/shanghaishouquanshu.docx)
 
 [网站备案授权书.doc](https://img1.jcloudcs.com/cms/64c5905a-5592-4c9d-ac1a-d56c993dee5720171206193651.doc)
 
