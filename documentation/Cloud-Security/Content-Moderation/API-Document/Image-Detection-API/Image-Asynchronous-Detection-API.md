@@ -22,8 +22,8 @@
 
 | 描述                       | scene     | label                                                        |
 | :------------------------- | :-------- | :----------------------------------------------------------- |
-| 识别图片中的色情内容。     | porn      | normal：正常图片，无色情内容<br />sexy：性感图片<br />porn：色情图片<br />vulgarphoto：低俗图片 |
-| 识别图片中的暴恐涉政内容。 | terrorism | normal：正常图片  <br />bloody：血腥<br />explosion：爆炸烟光<br />weapon：武器<br />politics：涉政<br />terrorist：涉恐人物<br />riot ： 暴乱<br />flag：旗帜<br />others：其他 |
+| 识别图片中的色情内容。     | porn      | normal：正常图片，无色情内容<br />sexy：性感图片<br />porn：色情图片<br />vulgar：低俗图片 |
+| 识别图片中的暴恐涉政内容。 | terrorism | normal：正常图片  <br />bloody：血腥<br />explosion：爆炸烟光<br />weapon：武器<br />politics：涉政<br />terrorist：涉恐人物<br />riot ： 暴乱<br />flag：旗帜<br />other：其他 |
 
 **关于检测时长**
 
