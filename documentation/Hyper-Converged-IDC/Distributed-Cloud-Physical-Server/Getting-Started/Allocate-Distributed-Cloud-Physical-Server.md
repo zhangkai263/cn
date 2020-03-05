@@ -1,29 +1,30 @@
 ## 配置分布式云物理服务器
 
-- 配置节点与运营商
+- 计费模式
 
-![配置地域与可用区](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-003.png)
+提供**包年包月**和**按配置**两种计费模式，请参考[计费规则](../Pricing/Billing-Rules.md)。
 
-- 配置主机规格：
-参考[产品规格](../Introduction/Specifications.md)。
+- 节点与运营商
 
-- 选取镜像
+当前提供**华东-台州（电信1）**边缘节点，更多节点还在筹备中。选择最靠近您的节点，可降低访问延时、提高下载速度。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如，目前支持“标准镜像”镜像类型。
+-规格
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中“标准镜像”支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
+提供**计算、存储**两类实例规格，您可根据不同的业务场景选择最优配置，参考[产品规格](../Introduction/Specifications.md)。
 
-![镜像选择](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-028.png)
+- 镜像
 
-- 配置存储：
+目前支持**标准镜像**镜像类型。镜像类型支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
-选取系统盘和数据盘的RAID模式。
+- 存储
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（说明：某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
+选取系统盘和数据盘的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
 
-![配置存储](https://github.com/jdcloudcom/cn/blob/cn-distributed-cloud-physical-service/documentation/Hyper-Converged-IDC/Distributed-Cloud-Physical-Server/Image/DCPS-029.png)
+- 网络数量与名称
 
-- 配置网络
+支持单网口和双网口两种模式。若选择单网口(指逻辑网口接口)，默认显示主网口（bond0）；若选择双网口，默认显示主网口（eth0）和辅网口（eth1）。
+
+- 网口与带宽设置
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部网络** ：用户只有第一次配置网络的时候可以选择内网CIDR地址段。后续创建的分布式云物理服务器将使用第一次配置的内网CIDR地址段。
 
