@@ -9,7 +9,7 @@
 |  | 云端 | 企业IDC |
 |:---:|:---:|:---:|
 | 互通网段 | 192.168.0.0/24 | 10.0.0.0/16 |
-| vlanId | 100 | 100 |
+| vlanId | 10 | 10 |
 | BGP ASN | 64512 | 65001 |
 | 互联地址 | 172.16.0.2/30 | 172.16.0.1/30 |
 |  | 172.16.0.6/30 | 172.16.0.5/30 |
@@ -17,14 +17,19 @@
 #### 主要配置步骤
 1.登录防火墙设备的命令行配置界面，参考如下配置信息进行配置vlan及BGP信息：
 ```
+    # 端口1配置第一对互联
     interface Ten-GigabitEthernet1/0/1
       port link-mode route
 
-    interface Ten-GigabitEthernet1/0/1.100
+    interface Ten-GigabitEthernet1/0/1.10
       description dltest
       ip address 192.168.1.1 255.255.255.252
 
-    interface Ten-GigabitEthernet1/0/1.101
+    # 端口2/另一台路由器配置第二对互联，若设备仅支持一个物理端口配置，请在以上的子接口中使用subip配置第二对互联地址
+    interface Ten-GigabitEthernet1/0/2
+      port link-mode route
+
+    interface Ten-GigabitEthernet1/0/2.10
       description dltest
       ip address 192.168.1.5 255.255.255.252
 
@@ -34,7 +39,7 @@
     peer 192.168.1.6 as-number 64512
 
     address-family ipv4 unicast
-    network 10.0.0.0 255.255.0.0
+      network 10.0.0.0 255.255.0.0
 
     peer 192.168.1.2 enable
     peer 192.168.1.6 enable
