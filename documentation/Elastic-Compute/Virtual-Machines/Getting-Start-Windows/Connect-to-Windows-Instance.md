@@ -52,7 +52,7 @@ VNC登陆的场景至少包括以下几种：
 * 暂不支持文件上传下载。
 
 ## 本地为Windows，使用远程桌面登录Windows实例
-使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
+使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东智联云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
 1. 点击电脑【开始】按钮，找到“运行”<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-menu.png)<br>
 2. 在运行中输入mstsc命令，点击确定，即可打开远程桌面连接对话框。<br>
@@ -63,7 +63,7 @@ VNC登陆的场景至少包括以下几种：
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc2.png)
 5. 勾选“不再询问我是否连接到此计算机”，点击【是】。<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png)
-6. 成功连接到您在京东云创建的Windows实例。<br>
+6. 成功连接到您在京东智联云创建的Windows实例。<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png)
 7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
 
