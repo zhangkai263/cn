@@ -10,7 +10,7 @@ items:
       - name: 产品功能
         href: Introduction/Functional-Description.md
       - name: 应用场景
-        href: Introduction/Benefits.md
+        href: Introduction/Scene.md
   - name: 产品定价
     items:
       - name: 计费概述
