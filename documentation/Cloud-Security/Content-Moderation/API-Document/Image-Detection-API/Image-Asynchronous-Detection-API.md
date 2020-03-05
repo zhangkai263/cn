@@ -125,11 +125,8 @@ POST
   "scenes": [
     "porn"
   ],
-  "callback": "http://xxx.xxx.xxx/callback",
-  "seed": "xx",
   "tasks": [
     {
-      "dataId": "dataid-1",
       "url": "http://xxx.xxx.xxx/img1.jpg"
     }
   ]
@@ -146,7 +143,14 @@ POST
       {
         "code": 200,
         "msg": "OK",
-        "taskId": "imgd169fa6b-191c-45f6-a344-6dba8f4972ad"        
+        "taskId": "imgd169fa6b-191c-45f6-a344-6dba8f4972ad",
+        "results": [
+          {
+            "scene": "porn",
+            "label": "normal",
+            "score": 100,
+            "suggestion": "pass"
+          }
         ]
       }
     ]
