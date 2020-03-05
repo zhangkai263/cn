@@ -2,7 +2,7 @@
 
 本文提供了调用文本垃圾检测任务的具体内容，旨在帮助您编写程序构建HTTP调用请求。
 
-- 关于如何构造HTTP请求，请参见[请求结构](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。
+- 关于如何构造HTTP请求，请参见**请求结构**。
 
 ### 描述
 
@@ -26,7 +26,7 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/text:scan
+/v1/text:scan
 
 
 ### 请求参数

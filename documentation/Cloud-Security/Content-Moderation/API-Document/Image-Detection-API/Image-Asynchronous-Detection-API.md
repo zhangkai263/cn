@@ -44,7 +44,7 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:asyncscan
+/v1/image:asyncscan
 
 
 ### 请求参数
@@ -175,7 +175,7 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:results
+/v1/image:results
 
 
 ### 请求参数

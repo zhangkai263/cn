@@ -43,7 +43,7 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:scan
+/v1/image:scan
 
 ### 请求参数
 
