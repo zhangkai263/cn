@@ -1,4 +1,4 @@
-﻿name: 内容安全
+name: 内容安全
 href:
 items:
   - name: 产品简介
@@ -30,7 +30,7 @@ items:
       - name: 检测结果查询
         href: Operation-Guide/Query-Detection-Result.md
       - name: 流量包管理
-        href: Operation-Guide/Resource-Package-Management.md
+        href: Operation-Guide/Resource-package-management.md
   - name: API指南
     items:
       - name: API概览
@@ -47,7 +47,7 @@ items:
             href: API-Document/Image-Detection-API/Image-Asynchronous-Detection-API.md
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: 文档历史记录
-     href: Document-Update-History/Doucument-Update-History.md
+  - name: 文档历史更新
+    href: Document-Update-History/Doucument-Update-History.md
 
 

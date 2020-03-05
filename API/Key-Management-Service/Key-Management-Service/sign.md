@@ -1,14 +1,14 @@
-# decrypt
+# sign
 
 
 ## 描述
-使用密钥对数据进行解密，针对非对称密钥：使用私钥进行加密
+使用非对称密钥的私钥签名,签名算法仅支持RSA_PKCS1_PADDING填充方式,最大签名数据长度为4K字节
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://kms.jdcloud-api.com/v1/key/{keyId}:Decrypt
+https://kms.jdcloud-api.com/v1/key/{keyId}:Sign
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -17,7 +17,7 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:Decrypt
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ciphertextBlob**|String|False| |密文数据 Base64-encoded binary data object|
+|**plaintext**|String|False| |需要签名的数据 Base64-encoded binary data object|
 
 
 ## 返回参数
@@ -29,10 +29,9 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:Decrypt
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**plaintext**|String|明文数据 Base64-encoded binary data object|
+|**signature**|String|签名|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**404**|Not found|

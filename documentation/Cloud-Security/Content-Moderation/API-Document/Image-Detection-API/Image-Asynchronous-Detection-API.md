@@ -1,6 +1,6 @@
 ## 		图片异步检测接口
 
-本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见[请求结构](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。
+本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见OpenAPI内的请求结构。
 
 ### 描述
 
@@ -44,17 +44,17 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:asyncscan
+/v1/image:asyncscan
 
 
 ### 请求参数
 
-| 名称         | 类型                      | 是否必需 | 默认值 | 描述                                                         |
-| ------------ | ------------------------- | -------- | ------ | ------------------------------------------------------------ |
-| **scenes**   | String[]                  | True     |        | 指定检测场景                                                 |
-| **tasks**    | [ImageTask[]](#imagetask) | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，每个元素的具体结构描述见ImageTask。 |
-| **callback** | String                    | False    |        | 异步检测结果回调通知您的URL，支持HTTP/HTTPS。该字段为空时，您必须定时检索检测结果。 |
-| **seed**     | String                    | False    |        | 随机字符串，该值用于回调通知请求中的签名。当使用callback时，该字段必须提供。 |
+| 名称         | 类型        | 是否必需 | 默认值 | 描述                                                         |
+| ------------ | ----------- | -------- | ------ | ------------------------------------------------------------ |
+| **scenes**   | String[]    | True     |        | 指定检测场景                                                 |
+| **tasks**    | ImageTask[] | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，每个元素的具体结构描述见ImageTask。 |
+| **callback** | String      | False    |        | 异步检测结果回调通知您的URL，支持HTTP/HTTPS。该字段为空时，您必须定时检索检测结果。 |
+| **seed**     | String      | False    |        | 随机字符串，该值用于回调通知请求中的签名。当使用callback时，该字段必须提供。 |
 
 #### ImageTask
 
@@ -91,15 +91,15 @@ https://censor.jdcloud-api.com/v1/image:asyncscan
 
 返回body中的data字段是JSON数组，每一个元素包含如下字段：
 
-| 名称       | 类型              | 描述 |
-| ---------- | ----------------- | ---- |
-| **result** | [Result](#result) |      |
+| 名称       | 类型   | 描述 |
+| ---------- | ------ | ---- |
+| **result** | Result |      |
 
 #### Result
 
-| 名称     | 类型                    | 描述 |
-| -------- | ----------------------- | ---- |
-| **data** | [TaskData[]](#taskdata) |      |
+| 名称     | 类型       | 描述 |
+| -------- | ---------- | ---- |
+| **data** | TaskData[] |      |
 
 #### TaskData
 
@@ -140,13 +140,13 @@ https://censor.jdcloud-api.com/v1/image:asyncscan
 
 ```
 {
-  "requestId": "1a7eed7c-a898-4dec-825b-3641f597551a",
+  "requestId": "bqfmguuo6d68mmbca0kw7cqeni8wmqqo",
   "result": {
     "data": [
       {
         "code": 200,
         "msg": "OK",
-        "taskId": "d169fa6b-191c-45f6-a344-6dba8f4972ad"        
+        "taskId": "imgd169fa6b-191c-45f6-a344-6dba8f4972ad"        
         ]
       }
     ]
@@ -175,7 +175,7 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:results
+/v1/image:results
 
 
 ### 请求参数
@@ -188,46 +188,46 @@ https://censor.jdcloud-api.com/v1/image:results
 
 返回body中的data字段是JSON数组，每一个元素包含如下字段：
 
-| 名称       | 类型              | 描述 |
-| ---------- | ----------------- | ---- |
-| **result** | [Result](#result) |      |
+| 名称       | 类型   | 描述 |
+| ---------- | ------ | ---- |
+| **result** | Result |      |
 
 #### Result
 
-| 名称     | 类型                          | 描述 |
-| -------- | ----------------------------- | ---- |
-| **data** | [ImageResult[]](#imageresult) |      |
+| 名称     | 类型          | 描述 |
+| -------- | ------------- | ---- |
+| **data** | ImageResult[] |      |
 
 #### ImageResult
 
-| 名称        | 类型                                      | 描述                                                         |
-| ----------- | ----------------------------------------- | ------------------------------------------------------------ |
-| **code**    | Integer                                   | 错误码，和HTTP的status code一致                              |
-| **msg**     | String                                    | 错误描述信息                                                 |
-| **dataId**  | String                                    | 对应请求的dataId                                             |
-| **taskId**  | String                                    | 该检测任务的ID                                               |
-| **results** | [ImageResultDetail[]](#imageresultdetail) | 返回结果。调用成功时（code=200），返回结果中包含一个或多个元素。每个元素是个结构体，具体结构描述见ImageResultDetail |
+| 名称        | 类型                | 描述                                                         |
+| ----------- | ------------------- | ------------------------------------------------------------ |
+| **code**    | Integer             | 错误码，和HTTP的status code一致                              |
+| **msg**     | String              | 错误描述信息                                                 |
+| **dataId**  | String              | 对应请求的dataId                                             |
+| **taskId**  | String              | 该检测任务的ID                                               |
+| **results** | ImageResultDetail[] | 返回结果。调用成功时（code=200），返回结果中包含一个或多个元素。每个元素是个结构体，具体结构描述见ImageResultDetail |
 
 #### ImageResultDetail
 
-| 名称               | 类型                              | 描述                                                         |
-| ------------------ | --------------------------------- | ------------------------------------------------------------ |
-| **scene**          | String                            | 检测场景，和调用请求中的场景对应                             |
-| **label**          | String                            | 检测结果的分类，与具体的scene对应。取值范围参考scene和label说明 |
-| **score**          | Number                            | 结果为该分类的概率，取值范围为0.00-100.00。值越高，表示越有可能属于改该子分类 |
-| **suggestion**     | String                            | 建议用户执行的操作，取值范围pass：图片正常，无需进行其余操作，或者未识别出目标对象review：检测结果不确定，需要进行人工审核，或识别出目标对象block：图片违规，建议执行进一步操作（如直接删除或做限制处理） |
-| **hintWordsInfos** | [HintWordsInfo[]](#hintwordsinfo) | 命中该风险的上下文信息。具体结构描述见hintWordsInfo          |
-| **sfaceData**      | [SFaceData[]](#sfacedata)         | 图片中包含暴恐识涉政内容时，返回识别出来的暴恐涉政信息，具体结构描述见sfaceData |
+| 名称               | 类型            | 描述                                                         |
+| ------------------ | --------------- | ------------------------------------------------------------ |
+| **scene**          | String          | 检测场景，和调用请求中的场景对应                             |
+| **label**          | String          | 检测结果的分类，与具体的scene对应。取值范围参考scene和label说明 |
+| **score**          | Number          | 结果为该分类的概率，取值范围为0.00-100.00。值越高，表示越有可能属于改该子分类 |
+| **suggestion**     | String          | 建议用户执行的操作，取值范围pass：图片正常，无需进行其余操作，或者未识别出目标对象review：检测结果不确定，需要进行人工审核，或识别出目标对象block：图片违规，建议执行进一步操作（如直接删除或做限制处理） |
+| **hintWordsInfos** | HintWordsInfo[] | 命中该风险的上下文信息。具体结构描述见hintWordsInfo          |
+| **sfaceData**      | SFaceData[]     | 图片中包含暴恐识涉政内容时，返回识别出来的暴恐涉政信息，具体结构描述见sfaceData |
 
 #### SFaceData
 
-| 名称      | 类型            | 描述                                            |
-| --------- | --------------- | ----------------------------------------------- |
-| **x**     | Number          | 以图片左上角为坐标原点，logo区域左上角到y轴距离 |
-| **y**     | Number          | 以图片左上角为坐标原点，logo区域左上角到x轴距离 |
-| **w**     | Number          | logo区域宽度                                    |
-| **h**     | Number          | logo区域高度                                    |
-| **faces** | [Face[]](#face) | 识别出的人脸信息，具体结构描述见face            |
+| 名称      | 类型   | 描述                                            |
+| --------- | ------ | ----------------------------------------------- |
+| **x**     | Number | 以图片左上角为坐标原点，logo区域左上角到y轴距离 |
+| **y**     | Number | 以图片左上角为坐标原点，logo区域左上角到x轴距离 |
+| **w**     | Number | logo区域宽度                                    |
+| **h**     | Number | logo区域高度                                    |
+| **faces** | Face[] | 识别出的人脸信息，具体结构描述见face            |
 
 #### Face
 
