@@ -1,7 +1,7 @@
 # 使用限制
 
 ## 账号限制
-* 您创建云主机所使用京东云账号需进行实名认证，详细内容请参见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
+* 您创建云主机所使用京东智联云账号需进行实名认证，详细内容请参见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 * 创建包年包月计费实例需预付实例费用，创建按配置计费实例需要您的账户余额及可用代金券之和不低于消费门槛。
 
 ## 使用限制
