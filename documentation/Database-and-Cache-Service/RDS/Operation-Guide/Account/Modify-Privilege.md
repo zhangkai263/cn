@@ -21,4 +21,3 @@
 
 
 
-![修改权限2](../../../../../image/RDS/Modify-Privilege-2.png)

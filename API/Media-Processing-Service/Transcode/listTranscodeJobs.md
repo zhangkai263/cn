@@ -41,26 +41,26 @@ https://mps.jdcloud-api.com/v1/transcodeJobs
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|[TranscodeJob[]](listtranscodejobs#transcodejob)|分页内容|
-### <div id="transcodejob">TranscodeJob</div>
+|**content**|[TranscodeJobInfo[]](listtranscodejobs#transcodejobinfo)|分页内容|
+### <div id="transcodejobinfo">TranscodeJobInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**jobId**|String|作业ID|
 |**title**|String|输入文件标题|
-|**tasks**|[TranscodeTask[]](listtranscodejobs#transcodetask)|转码任务集合|
-### <div id="transcodetask">TranscodeTask</div>
+|**tasks**|[TranscodeTaskInfo[]](listtranscodejobs#transcodetaskinfo)|转码任务集合|
+### <div id="transcodetaskinfo">TranscodeTaskInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**jobId**|String|作业ID|
 |**taskId**|String|任务ID|
-|**fileUrl**|String|输出文件地址|
+|**objectKey**|String|输出文件 objectKey|
 |**format**|String|输出视频格式|
 |**width**|String|输出画面宽度|
 |**height**|String|输出画面高度|
 |**bitrate**|String|输出码率|
 |**framerate**|String|输出帧率|
 |**definition**|String|输出清晰度|
-|**status**|String|任务状态|
+|**status**|String|任务状态。in-process, succeeded, failed<br>|
 |**finishTime**|String|任务结束时间|
 
 ## 返回码
@@ -91,12 +91,12 @@ https://mps.jdcloud-api.com/v1/mt/transcodeJobs?pageNumber=1&pageSize=10
                     {
                         "bitrate": "32767", 
                         "definition": "HD", 
-                        "fileUrl": "https://s3.cn-north-1.jcloudcs.com/mps-output-bucket/冠状病毒怎么预防.mp4", 
                         "finishTime": "2020-02-12T12:14:43Z", 
                         "format": "mp4", 
                         "framerate": "25", 
                         "height": "768", 
                         "jobId": "10001", 
+                        "objectKey": "冠状病毒怎么预防.mp4", 
                         "status": "1", 
                         "taskId": "10001", 
                         "width": "1024"

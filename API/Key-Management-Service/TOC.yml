@@ -45,6 +45,12 @@
             href: Key-Management-Service/scheduleKeyVersionDeletion.md
           - name: 取消计划删除密钥版本
             href: Key-Management-Service/cancelKeyVersionDeletion.md
+          - name: 获取非对称密钥的公钥
+            href: Key-Management-Service/getPublicKey.md
+          - name: 私钥签名
+            href: Key-Management-Service/sign.md
+          - name: 公钥验签
+            href: Key-Management-Service/validate.md
       - name: 机密数据管理接口
         items:
           - name: 创建机密数据

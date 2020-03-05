@@ -1,0 +1,53 @@
+name: 内容安全
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/What-is-Content-Moderation.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Functional-Description.md
+      - name: 应用场景
+        href: Introduction/Benefits.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 价格说明
+        href: Pricing/Price-Overview.md
+      - name: 购买方式
+        href: Pricing/Purchase-Process.md
+  - name: 快速入门
+    items:
+      - name: 快速接入
+        href: Getting-Started/Getting-Started.md
+  - name: 操作指南
+    items:
+      - name: 统计数据查看
+        href: Operation-Guide/Statistics-View.md
+      - name: 检测结果查询
+        href: Operation-Guide/Query-Detection-Result.md
+      - name: 流量包管理
+        href: Operation-Guide/Resource-package-management.md
+  - name: API指南
+    items:
+      - name: API概览
+        href: API-Document/API-Overview.md
+      - name: 文本检测
+        items:
+          - name: 文本同步检测接口
+            href:  API-Document/Text-Detection-API/Text-Synchronous-Detection-API.md
+      - name: 图片检测
+        items:
+          - name: 图片同步检测接口
+            href: API-Document/Image-Detection-API/Image-Synchronous-Detection-API.md
+          - name: 图片异步检测接口
+            href: API-Document/Image-Detection-API/Image-Asynchronous-Detection-API.md
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: 文档历史更新
+    href: Document-Update-History/Doucument-Update-History.md
+
+

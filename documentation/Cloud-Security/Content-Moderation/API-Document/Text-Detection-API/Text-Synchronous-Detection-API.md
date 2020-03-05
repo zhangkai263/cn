@@ -2,7 +2,7 @@
 
 本文提供了调用文本垃圾检测任务的具体内容，旨在帮助您编写程序构建HTTP调用请求。
 
-- 关于如何构造HTTP请求，请参见[请求结构](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。
+- 关于如何构造HTTP请求，请参见OpenAPI的请求结构。
 
 ### 描述
 
@@ -16,7 +16,9 @@
 
 | 功能         | 描述                                                         | scene    | label                                                        |
 | :----------- | :----------------------------------------------------------- | :------- | :----------------------------------------------------------- |
-| 垃圾文本检测 | 结合行为、内容，采用多维度、多模型、多检测手段，识别文本中的垃圾内容，规避色情、涉政、暴恐、广告、辱骂等内容风险。 | antispam | normal：正常文本 spam：含垃圾信息ad：广告politics：涉政terrorism：暴恐abuse：辱骂porn：色情  flood：灌水contraband：违禁<br />meaningless：无意义 |
+| 垃圾文本检测 | 结合行为、内容，采用多维度、多模型、多检测手段，识别文本中的垃圾内容，规避色情、广告、灌水、渉政、辱骂等内容风险。 | antispam | normal：正常文本                                                  ad：广告                                                 politics：涉政<br />terrorism：暴恐                                     abuse：辱骂       <br />porn：色情<br />contraband：违禁<br />other：其他 |
+
+## 请求参数
 
 ### 请求方式
 
@@ -24,15 +26,15 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/text:scan
+/v1/text:scan
 
 
 ### 请求参数
 
-| 名称       | 类型                    | 是否必需 | 默认值 | 描述                                                         |
-| ---------- | ----------------------- | -------- | ------ | ------------------------------------------------------------ |
-| **scenes** | String[]                | True     |        | 指定检测场景，固定值：antispam                               |
-| **tasks**  | [TextTask[]](#texttask) | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，即最多对10段文本进行检测。每个元素的具体结构描述见TextTask。 |
+| 名称       | 类型       | 是否必需 | 默认值 | 描述                                                         |
+| ---------- | ---------- | -------- | ------ | ------------------------------------------------------------ |
+| **scenes** | String[]   | True     |        | 指定检测场景，固定值：antispam                               |
+| **tasks**  | TextTask[] | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，即最多对10段文本进行检测。每个元素的具体结构描述见TextTask。 |
 
 #### TextTask
 
@@ -43,37 +45,37 @@ https://censor.jdcloud-api.com/v1/text:scan
 
 ### 返回参数
 
-| 名称       | 类型              | 描述 |
-| ---------- | ----------------- | ---- |
-| **result** | [Result](#result) |      |
+| 名称       | 类型   | 描述 |
+| ---------- | ------ | ---- |
+| **result** | Result |      |
 
 #### Result
 
-| 名称     | 类型                        | 描述 |
-| -------- | --------------------------- | ---- |
-| **data** | [TextResult[]](#textresult) |      |
+| 名称     | 类型         | 描述 |
+| -------- | ------------ | ---- |
+| **data** | TextResult[] |      |
 
 #### TextResult
 
-| 名称                | 类型                                    | 描述                                                         |
-| ------------------- | --------------------------------------- | ------------------------------------------------------------ |
-| **code**            | Integer                                 | 错误码，和HTTP的status code一致                              |
-| **msg**             | String                                  | 错误描述信息                                                 |
-| **dataId**          | String                                  | 对应请求的dataId                                             |
-| **taskId**          | String                                  | 该检测任务的ID                                               |
-| **content**         | String                                  | 对应请求的内容                                               |
-| **filteredContent** | String                                  | 如果检测文本命中您自定义关键词词库中的词，该字段会返回，并将命中的关键词替换为"*" |
-| **results**         | [TextResultDetail[]](#textresultdetail) | 返回结果。调用成功时（code=200），返回结果中包含一个或多个元素。每个元素是个结构体，具体结构描述见result |
+| 名称                | 类型               | 描述                                                         |
+| ------------------- | ------------------ | ------------------------------------------------------------ |
+| **code**            | Integer            | 错误码，和HTTP的status code一致                              |
+| **msg**             | String             | 错误描述信息                                                 |
+| **dataId**          | String             | 对应请求的dataId                                             |
+| **taskId**          | String             | 该检测任务的ID                                               |
+| **content**         | String             | 对应请求的内容                                               |
+| **filteredContent** | String             | 如果检测文本命中您自定义关键词词库中的词，该字段会返回，并将命中的关键词替换为"*" |
+| **results**         | TextResultDetail[] | 返回结果。调用成功时（code=200），返回结果中包含一个或多个元素。每个元素是个结构体，具体结构描述见result |
 
 #### TextResultDetail
 
-| 名称               | 类型                              | 描述                                                         |
-| ------------------ | --------------------------------- | ------------------------------------------------------------ |
-| **scene**          | String                            | 检测场景，和调用请求中的场景对应                             |
-| **label**          | String                            | 检测结果的分类，与具体的scene对应。取值范围参考scene 和 label说明 |
-| **score**          | Number                            | 结果为该分类的概率，取值范围为0.00-100.00。值越高，表示越有可能属于该分类subLabel |
-| **suggestion**     | String                            | 建议用户执行的操作，取值范围pass：文本正常，无需进行其余操作，或者未识别出目标对象review：检测结果不确定，需要进行人工审核，或识别出目标对象block：图片违规，建议执行进一步操作（如直接删除或做限制处理） |
-| **hintWordsInfos** | [HintWordsInfo[]](#hintwordsinfo) | 命中该风险的上下文信息。具体结构描述见hintWordsInfo          |
+| 名称               | 类型            | 描述                                                         |
+| ------------------ | --------------- | ------------------------------------------------------------ |
+| **scene**          | String          | 检测场景，和调用请求中的场景对应                             |
+| **label**          | String          | 检测结果的分类，与具体的scene对应。取值范围参考scene 和 label说明 |
+| **score**          | Number          | 结果为该分类的概率，取值范围为0.00-100.00。值越高，表示越有可能属于该分类subLabel |
+| **suggestion**     | String          | 建议用户执行的操作，取值范围pass：文本正常，无需进行其余操作，或者未识别出目标对象review：检测结果不确定，需要进行人工审核，或识别出目标对象block：图片违规，建议执行进一步操作（如直接删除或做限制处理） |
+| **hintWordsInfos** | HintWordsInfo[] | 命中该风险的上下文信息。具体结构描述见hintWordsInfo          |
 
 #### HintWordsInfo
 
@@ -113,14 +115,14 @@ https://censor.jdcloud-api.com/v1/text:scan
 
 ```
 {
-  "requestId": "149ea2c9-eeab-4263-a0ee-a854bd871f46",
+  "requestId": "bqfmguuo6d68mmbca0kw7cqeni8wmqqo",
   "result": {
     "data": [
       {
         "code": 200,
         "msg": "OK",
         "dataId": "dataId-1",
-        "taskId": "e80d769d-9088-46c0-90c0-d8a408eabb3c",
+        "taskId": "txte80d769d-9088-46c0-90c0-d8a408eabb3c",
         "content": "法论大法好",
         "filteredContent": "法论大法好",
         "results": [

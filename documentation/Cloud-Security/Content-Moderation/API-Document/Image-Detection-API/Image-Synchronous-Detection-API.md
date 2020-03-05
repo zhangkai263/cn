@@ -1,6 +1,6 @@
 ## 		图片同步检测接口
 
-本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见[请求结构](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。
+本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见请求结构。
 
 ### 描述
 
@@ -20,8 +20,8 @@
 
 | 描述                       | scene     | label                                                        |
 | :------------------------- | :-------- | :----------------------------------------------------------- |
-| 识别图片中的色情内容。     | porn      | normal：正常图片，无色情内容<br />sexy：性感图片<br />porn：色情图片<br />vulgarphoto：低俗图片 |
-| 识别图片中的暴恐涉政内容。 | terrorism | normal：正常图片  <br />bloody：血腥<br />explosion：爆炸烟光<br />weapon：武器<br />politics：涉政<br />terrorist：涉恐人物<br />riot ： 暴乱<br />flag：旗帜<br />others：其他 |
+| 识别图片中的色情内容。     | porn      | normal：正常图片，无色情内容<br />sexy：性感图片<br />porn：色情图片<br />vulgar：低俗图片<br />other：其他 |
+| 识别图片中的暴恐涉政内容。 | terrorism | normal：正常图片  <br />bloody：血腥<br />explosion：爆炸烟光<br />weapon：武器<br />politics：涉政<br />terrorist：涉恐人物<br />riot ： 暴乱<br />flag：旗帜<br />other：其他 |
 
 
 **关于检测时长**
@@ -43,18 +43,18 @@ POST
 
 ### 请求地址
 
-https://censor.jdcloud-api.com/v1/image:scan
+/v1/image:scan
 
 ### 请求参数
 
-关于在请求中必须包含的公共请求参数，请参见[公共参数](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。
+关于在请求中必须包含的公共请求参数，请参见公共参数。
 
 请求body是一个JSON对象，字段说明如下：
 
-| 名称       | 类型                      | 是否必需 | 默认值 | 描述                                                         |
-| ---------- | ------------------------- | -------- | ------ | ------------------------------------------------------------ |
-| **scenes** | String[]                  | True     |        | 指定检测场景                                                 |
-| **tasks**  | [ImageTask[]](#imagetask) | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，即最多对10段文本进行检测。每个元素的具体结构描述见ImageTask。 |
+| 名称       | 类型        | 是否必需 | 默认值 | 描述                                                         |
+| ---------- | ----------- | -------- | ------ | ------------------------------------------------------------ |
+| **scenes** | String[]    | True     |        | 指定检测场景                                                 |
+| **tasks**  | ImageTask[] | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，即最多对10段文本进行检测。每个元素的具体结构描述见ImageTask。 |
 
 #### ImageTask
 
@@ -69,15 +69,15 @@ https://censor.jdcloud-api.com/v1/image:scan
 
 返回body中的data字段是JSON数组，每一个元素包含如下字段：
 
-| 名称       | 类型              | 描述 |
-| ---------- | ----------------- | ---- |
-| **result** | [Result](#result) |      |
+| 名称       | 类型   | 描述 |
+| ---------- | ------ | ---- |
+| **result** | Result |      |
 
 #### Result
 
-| 名称     | 类型                          | 描述 |
-| -------- | ----------------------------- | ---- |
-| **data** | [ImageResult[]](#imageresult) |      |
+| 名称     | 类型          | 描述 |
+| -------- | ------------- | ---- |
+| **data** | ImageResult[] |      |
 
 #### ImageResult
 
@@ -120,18 +120,18 @@ https://censor.jdcloud-api.com/v1/image:scan
 
 ```
 {
-  "requestId": "1a7eed7c-a898-4dec-825b-3641f597551a",
+  "requestId": "bqfmguuo6d68mmbca0kw7cqeni8wmqqo",
   "result": {
     "data": [
       {
         "code": 200,
         "msg": "OK",
-        "taskId": "d169fa6b-191c-45f6-a344-6dba8f4972ad",
+        "taskId": "imgd169fa6b-191c-45f6-a344-6dba8f4972ad",
         "results": [
           {
             "scene": "porn",
             "label": "normal",
-            "score": 0,
+            "score": 100,
             "suggestion": "pass"
           }
         ]
