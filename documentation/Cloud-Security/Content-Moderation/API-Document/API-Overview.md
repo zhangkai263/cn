@@ -6,7 +6,7 @@
 
 API服务是通过API URL发起HTTP/HTTPS POST请求。
 
-发起API请求的URL由不同参数拼凑而成，有固定的[请求结构](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)。URL中包含公共参数、您的签名和某个API接口的具体参数。 
+发起API请求的URL由不同参数拼凑而成，有固定的请求结构（请查看OpenAPI文档）。URL中包含公共参数、您的签名和某个API接口的具体参数。 
 
 ### 检测类API导航
 
