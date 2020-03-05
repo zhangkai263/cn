@@ -1,7 +1,7 @@
 # 私有镜像导出
 
 ## 功能概述
-私有镜像导出，是指将您在京东云环境下制作的私有镜像，导出至同地域下的京东云对象存储空间中。导出之后，可随时下载镜像文件用作其他环境下的部署。
+私有镜像导出，是指将您在京东智联云环境下制作的私有镜像，导出至同地域下的京东智联云对象存储空间中。导出之后，可随时下载镜像文件用作其他环境下的部署。
 
 	* 请注意：
 	  1. 导出功能当前仅在华东-上海地域支持，如有其他地域镜像需要导出，请先将镜像复制到华东-上海后再行导出
@@ -30,14 +30,14 @@
 ### 1、确认对象存储空间<br>
 镜像只能导出到同地域下OSS的Bucket中，因此如果有多个地域下的私有镜像需要导出，请确认各地域下均有可以存放镜像文件的Bucket（当前仅支持华东-上海地域）。<br>有关Bucket创建请参考：[创建存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)。<br>
 ### 2、创建服务角色<br>
-访问 [角色管理控制台](https://iam-console.jdcloud.com/role/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【角色管理】进入角色管理页面。<br>
+访问 [角色管理控制台](https://iam-console.jdcloud.com/role/list)，或访问 [京东智联云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【角色管理】进入角色管理页面。<br>
 ![](../../../../../image/vm/image-export-image2.png)
 
 点击【创建角色】，选择“服务角色”，在角色创建页面中，自定义服务角色名称，如：image-export，该角色名称需要在导出时作为必传参数提供。<br>在信任关系中选择“云硬盘”（云硬盘系统盘镜像本质是云硬盘快照，因此导出最终操作是由云硬盘服务代表您向对象存储写入镜像文件）。<br>
 ![](../../../../../image/vm/image-export-image3.png)
 
 ### 3、为服务角色创建策略<br>
-访问 [策略管理控制台](https://iam-console.jdcloud.com/policy/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【策略管理】进入策略管理页面。
+访问 [策略管理控制台](https://iam-console.jdcloud.com/policy/list)，或访问 [京东智联云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【策略管理】进入策略管理页面。
 ![](../../../../../image/vm/image-export-image4.png)
 点击【创建策略】，选择“策略编辑器，在策略创建页面中，自定义策略名称，如：image-export-policy。将下方JSON格式策略模板复制到内容输入区域。<br>
 ![](../../../../../image/vm/image-export-image5.png)  
