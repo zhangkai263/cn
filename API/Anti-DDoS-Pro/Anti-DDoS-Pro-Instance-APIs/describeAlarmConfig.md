@@ -22,26 +22,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:desc
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describealarmconfig#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describealarmconfig#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describealarmconfig#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|AlarmConfig| |
-### AlarmConfig
+|**data**|[AlarmConfig](describealarmconfig#alarmconfig)| |
+### <div id="alarmconfig">AlarmConfig</div>
 |名称|类型|描述|
 |---|---|---|
 |**blackHoleAlarmEmailStatus**|Integer|黑洞告警邮件开关 0 关闭 1 开启|

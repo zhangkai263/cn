@@ -24,26 +24,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describewhitelistruleofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describewhitelistruleofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describewhitelistruleofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|WebWhiteListRule| |
-### WebWhiteListRule
+|**data**|[WebWhiteListRule](describewhitelistruleofwebrule#webwhitelistrule)| |
+### <div id="webwhitelistrule">WebWhiteListRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|白名单规则 Id|
@@ -54,8 +54,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**pattern**|Integer|匹配规则, mode 为 uri, cookie 和 header 时有效. 包含以下匹配规则: <br>- 0: 完全匹配<br>- 1: 前缀匹配<br>- 2: 包含<br>- 3: 正则匹配<br>- 4: 后缀匹配|
 |**action**|Integer|命中后处理动作. <br>- 0: 放行<br>- 1: CC 防护|
 |**status**|Integer|规则状态. <br>- 0: 关闭<br>- 1: 开启|
-|**geoList**|Geo[]|geo 白名单地域列表|
-### Geo
+|**geoList**|[Geo[]](describewhitelistruleofwebrule#geo)|geo 白名单地域列表|
+### <div id="geo">Geo</div>
 |名称|类型|描述|
 |---|---|---|
 |**label**|String|geo 拦截地域|

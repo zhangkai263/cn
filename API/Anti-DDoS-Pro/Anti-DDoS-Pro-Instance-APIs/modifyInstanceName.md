@@ -18,9 +18,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:rena
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**renameInstanceSpec**|RenameInstanceSpec|True| |修改实例名称请求参数|
+|**renameInstanceSpec**|[RenameInstanceSpec](modifyinstancename#renameinstancespec)|True| |修改实例名称请求参数|
 
-### RenameInstanceSpec
+### <div id="renameinstancespec">RenameInstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |实例名称|
@@ -28,22 +28,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:rena
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyinstancename#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifyinstancename#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifyinstancename#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 修改实例名称失败, 1: 修改实例名称成功|
