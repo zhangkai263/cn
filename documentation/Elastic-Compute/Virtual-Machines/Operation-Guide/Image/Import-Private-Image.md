@@ -1,7 +1,7 @@
 # 私有镜像导入
 ## 功能概述
 
-私有镜像导入是指，将您在本地或其他云环境下所用服务器的系统盘以镜像的形式保存并导入到京东云环境，以便快速实现京东云上的业务部署。<br>
+私有镜像导入是指，将您在本地或其他云环境下所用服务器的系统盘以镜像的形式保存并导入到京东智联云环境，以便快速实现京东智联云上的业务部署。<br>
 
 导入镜像使用说明：<br>
 * 导入镜像当前仅支持导入系统盘镜像；
@@ -46,8 +46,8 @@
 
 ![](../../../../../image/vm/Image-Import-Image-Overview.png)<br>
 ### 1、镜像准备
-为保证导入镜像的可用性，请务必在导入前参照上述京东云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东云规范后再行操作导入。<br>
-同时为了保证导入镜像在京东云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
+为保证导入镜像的可用性，请务必在导入前参照上述京东智联云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东智联云规范后再行操作导入。<br>
+同时为了保证导入镜像在京东智联云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
 Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的自检，使用方法请参见：[镜像自检工具](Image-Check-Tool.md)
 
 ### 2、镜像文件生成
@@ -104,7 +104,7 @@ jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json
 ```
 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
 
-导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
+导入成功后，如需配置京东智联云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
 ## 相关参考
 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)
