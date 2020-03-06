@@ -18,7 +18,7 @@
 
 ###  第2步：查看API分组的监控详情
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/mo-jkxx.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_1.png)
 
 
 
@@ -28,7 +28,7 @@
 在第1步中，选择要设置报警规则的API分组，然后点击新增报警规则
 
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/mo-bjgz-list.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_2.png)
  
  
  
@@ -36,7 +36,7 @@
 更多详细设置请参考：
 
 
-- [设置报警规则](../../../../Management/Monitoring/Operation-Guide/site-monitoring/site-monitoring-alarm.md)
+- [设置报警规则](../../../../Management/Monitoring/Operation-Guide/site-monitoring/monitor_3.md)
 
 
 
