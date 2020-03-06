@@ -18,9 +18,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modi
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**modifyInstanceEPBSpec**|ModifyInstanceEPBSpec|True| |修改实例名称请求参数|
+|**modifyInstanceEPBSpec**|[ModifyInstanceEPBSpec](modifyepb#modifyinstanceepbspec)|True| |修改实例名称请求参数|
 
-### ModifyInstanceEPBSpec
+### <div id="modifyinstanceepbspec">ModifyInstanceEPBSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ep**|Integer|True| |弹性带宽: 单位 Gbps|
@@ -28,22 +28,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyepb#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifyepb#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifyepb#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 修改失败, 1: 修改成功|
