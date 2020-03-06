@@ -2,32 +2,33 @@
 
 - 计费模式
 
-提供**包年包月**和**按配置**两种计费模式，请参考[计费规则](../Pricing/Billing-Rules.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提供**包年包月**和**按配置**两种计费模式，请参考[计费规则](../Pricing/Billing-Rules.md)。
 
 - 节点与运营商
 
-当前提供**华东-台州（电信1）**边缘节点，更多节点还在筹备中。选择最靠近您的节点，可降低访问延时、提高下载速度。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当前提供**华东-台州（电信1）**边缘节点，更多节点还在筹备中。选择最靠近您的节点，可降低访问延时、提高下载速度。
 
 - 规格
 
-提供**计算、存储**两类实例规格，您可根据不同的业务场景选择最优配置，参考[产品规格](../Introduction/Specifications.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提供**计算、存储**两类实例规格，您可根据不同的业务场景选择最优配置，参考[产品规格](../Introduction/Specifications.md)。
 
 - 镜像
 
-目前支持**标准镜像**镜像类型。镜像类型支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前支持**标准镜像**镜像类型。镜像类型支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
 - 存储
 
-选取系统盘和数据盘的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取**系统盘**和**数据盘**的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
 
 - 网络数量与名称
 
-支持单网口和双网口两种模式。若选择单网口(指逻辑网口接口)，默认显示主网口（bond0）；若选择双网口，默认显示主网口（eth0）和辅网口（eth1）。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支持**单网口**和**双网口**两种模式。若选择**单网口**(指逻辑网口接口)，默认显示**主网口（bond0）**；若选择**双网口**，默认显示**主网口（eth0）**和**辅网口（eth1）**。
 
 - 网口与带宽设置
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部网络** ：用户只有第一次配置网络的时候可以选择内网CIDR地址段。后续创建的分布式云物理服务器将使用第一次配置的内网CIDR地址段。
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 若选择**单网口**，则此处为**主网口（bond0）**的信息。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **私有网络与子网**：用户需要先行规划并创建私有网络和子网。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部IP** ：为用户指定主网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **防火墙** ：操作系统安装完成后，系统对外网网络只开放IN方向的22端口。操作系统安装成功后，用户可自行登录操作系统更改iptable设置。详情请参考[防火墙设置操作指南](../Operation-Guide/Network-And-Security/Steps-Network-And-Security.md)。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：
