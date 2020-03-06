@@ -1,12 +1,12 @@
 # 查看报警规则  
 1. 登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。  
-![任务列表](../../../../../image/Cloud-Detection/task-site-list.png) 
+![任务列表](../../../../../image/Cloud-Detection/task-site-list1.png) 
 2. 选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面，可以查看到已设置的报警规则及其状态信息   
 ![规则列表](../../../../../image/Cloud-Detection/alarmrule_site-1.png) 
 
 # 设置报警规则  
 1. 登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。  
-![任务列表](../../../../../image/Cloud-Detection/task-site-list.png) 
+![任务列表](../../../../../image/Cloud-Detection/task-site-list1.png) 
 2. 选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面，点击“新增报警规则”，打开设置报警规则页面。  
 ![设置报警规则](../../../../../image/Cloud-Detection/SetAlarm-1.png) 
 3. 按照以下步骤配置信息  
@@ -28,7 +28,7 @@
 
 # 修改报警规则  
 1. 登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。  
-![任务列表](../../../../../image/Cloud-Detection/task-site-list.png) 
+![任务列表](../../../../../image/Cloud-Detection/task-site-list1.png) 
 2. 选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面，选中需要修改的报警规则，点击“修改”按钮，进入修改报警规则页面。  
 ![设置报警规则](../../../../../image/Cloud-Detection/ModifyAlarm-1.png)
 3. 可更改规则名称、触发条件和通知策略可根据需要进行修改（可参考创建报规则页面）。  
@@ -39,7 +39,7 @@
 
 # 查看通知对象  
 1. 登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。  
-![任务列表](../../../../../image/Cloud-Detection/task-site-list.png) 
+![任务列表](../../../../../image/Cloud-Detection/task-site-list1.png) 
 2. 选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面。  
 ![规则列表](../../../../../image/Cloud-Detection/alarmrule_site-1.png)  
 3. 选择需要查看的报警规则，点击“通知对象”，可以查看到该条规则设置的通知联系人。  
@@ -47,7 +47,7 @@
 
 # 报警历史   
 1.登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。  
-![任务列表](../../../../../image/Cloud-Detection/task-site-list.png) 
+![任务列表](../../../../../image/Cloud-Detection/task-site-list1.png) 
 2.选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面  
 ![规则列表](../../../../../image/Cloud-Detection/alarmrule_site-1.png)  
 3.选择需要查看的报警规则，点击“报警历史”，可以查看到该条规则历史报警情况。默认展示最近3天的报警历史，支持自定义时间段查看对应告警历史。
