@@ -1,5 +1,5 @@
 # Windows系统SQL镜像登陆方法
-京东云部分Windows镜像系统自带微软SQL Server数据库，客户在第一次登陆SQL Server时可能会遇到无法登陆的情况；
+京东智联云部分Windows镜像系统自带微软SQL Server数据库，客户在第一次登陆SQL Server时可能会遇到无法登陆的情况；
 
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9FSQL%E9%95%9C%E5%83%8F%E7%99%BB%E9%99%86%E6%96%B9%E6%B3%9501.png)
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9FSQL%E9%95%9C%E5%83%8F%E7%99%BB%E9%99%86%E6%96%B9%E6%B3%9502.png)

@@ -1,5 +1,5 @@
 # Windows Update更新设置
-京东云Windows系统服务器默认没有开启Windows Update检查更新，用户可以自行对检查更新做设置，配置的方法如下：
+京东智联云Windows系统服务器默认没有开启Windows Update检查更新，用户可以自行对检查更新做设置，配置的方法如下：
 
 1.点击"开始"-"控制面板"；
 
