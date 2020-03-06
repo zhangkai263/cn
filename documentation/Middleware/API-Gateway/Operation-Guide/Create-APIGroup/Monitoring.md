@@ -13,12 +13,12 @@
 ##  操作步骤：
 ###  第1步：进入监控页
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/mo-list.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_1.png)
 
 
 ###  第2步：查看API分组的监控详情
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_1.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_2.png)
 
 
 
@@ -28,7 +28,7 @@
 在第1步中，选择要设置报警规则的API分组，然后点击新增报警规则
 
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_2.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/monitor_3.png)
  
  
  
@@ -36,7 +36,7 @@
 更多详细设置请参考：
 
 
-- [设置报警规则](../../../../Management/Monitoring/Operation-Guide/site-monitoring/monitor_3.md)
+- [设置报警规则](https://docs.jdcloud.com/cn/monitoring/createrule)
 
 
 
