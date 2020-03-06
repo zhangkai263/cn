@@ -60,7 +60,7 @@ echo %random%>cmd-text1.txt
 
 * 官方镜像：2018年12月14日以后使用官方镜像创建实例，均可正常使用该功能；<br>
 * 私有/共享镜像：如果制作私有镜像的实例是使用官方镜像创建且创建时间不早于2018年12月14日，则使用私有/共享镜像创建实例，可正常使用该功能；<br>
-* 云市场镜像：云市场镜像更新频率取决于服务商，不同镜像支持自定义数据功能的情况各异，请提交工单或联系京东云技术支持咨询。
+* 云市场镜像：云市场镜像更新频率取决于服务商，不同镜像支持自定义数据功能的情况各异，请提交工单或联系京东智联云技术支持咨询。
 
 您可以通过下述方法查看实例内JCS-Agent的版本，确认基于当前实例制作的私有镜像是否支持此功能，若当前实例内安装的agent为早期其他组件或JCS-Agent版本过低，请参照 [官方镜像系统组件](http://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) 进行安装。<br>
 
@@ -99,7 +99,7 @@ wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
 <div id="user-content-4"></div>
 
 ## 操作步骤
-1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问京东云控制台点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
+1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东智联云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
 2. 选择创建实例所属地域，点击【创建】按钮进入云主机实例购买页面。
 3. 选择镜像并完成其他基本配置后，在“高级选项”区域开启“自定义数据”功能。
 ![](../../../../../image/vm/Operation-Guide-Instance-userdata5.png)

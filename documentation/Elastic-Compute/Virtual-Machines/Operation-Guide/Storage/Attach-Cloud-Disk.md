@@ -12,7 +12,7 @@
 
 云硬盘默认作为数据盘挂载至实例，详细操作步骤如下：
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要挂载云硬盘的实例，点击名称进入详情页。
 4. 点击【磁盘】Tab-【挂载】按钮。
@@ -22,7 +22,7 @@
 
 若实例当前需未挂载系统盘，即未挂载设备名为 /dev/vda 的云硬盘，可以将云硬盘作为系统盘挂载至实例。详细操作步骤如下：
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要挂载云硬盘的实例，点击名称进入详情页。
 4. 点击【磁盘】Tab-【挂载】按钮。
