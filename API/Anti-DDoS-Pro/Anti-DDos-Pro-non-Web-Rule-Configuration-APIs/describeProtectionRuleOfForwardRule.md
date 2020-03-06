@@ -23,26 +23,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeprotectionruleofforwardrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeprotectionruleofforwardrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeprotectionruleofforwardrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**protectionRule**|ForwardProtectionRule| |
-### ForwardProtectionRule
+|**protectionRule**|[ForwardProtectionRule](describeprotectionruleofforwardrule#forwardprotectionrule)| |
+### <div id="forwardprotectionrule">ForwardProtectionRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**spoofIpEnable**|Integer|虚假源与空连接, 0: 关闭, 1: 开启|
@@ -56,8 +56,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**dstConcurrentConnLimitValue**|Long|目的并发连接速率|
 |**datagramRangeMin**|Long|报文最小长度|
 |**datagramRangeMax**|Long|报文最大长度|
-|**geoBlackList**|Geo[]|geo 拦截地域列表|
-### Geo
+|**geoBlackList**|[Geo[]](describeprotectionruleofforwardrule#geo)|geo 拦截地域列表|
+### <div id="geo">Geo</div>
 |名称|类型|描述|
 |---|---|---|
 |**label**|String|geo 拦截地域|

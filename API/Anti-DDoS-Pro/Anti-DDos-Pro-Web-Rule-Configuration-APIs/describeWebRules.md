@@ -27,17 +27,17 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describewebrules#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|WebRule[]| |
+|**dataList**|[WebRule[]](describewebrules#webrule)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|
-### WebRule
+### <div id="webrule">WebRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|规则 Id|
@@ -45,14 +45,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**domain**|String|子域名|
 |**cname**|String|规则的 CNAME|
 |**cnameStatus**|Integer|CNAME 解析状态, 0: 解析异常, 1: 解析正常|
-|**protocol**|WebRuleProtocol| |
+|**protocol**|[WebRuleProtocol](describewebrules#webruleprotocol)| |
 |**customPortStatus**|Integer|是否为自定义端口号, 0: 为默认, 1: 为自定义|
 |**port**|Integer[]|HTTP 协议的端口号, 如 80,81|
 |**httpsPort**|Integer[]|HTTPS 协议的端口号, 如 443,8443|
 |**httpOrigin**|Integer|是否开启 HTTP 回源, 0: 为不开启, 1: 为开启, 当勾选 HTTPS 时可以配置该属性|
 |**status**|Integer|0: 防御状态, 1: 回源状态|
 |**originType**|String|回源类型: A 或者 CNAME|
-|**originAddr**|OriginAddrItem[]|回源域名, originType 为 A 时返回该字段|
+|**originAddr**|[OriginAddrItem[]](describewebrules#originaddritem)|回源域名, originType 为 A 时返回该字段|
 |**originDomain**|String|回源域名, originType 为 CNAME 时返回该字段|
 |**onlineAddr**|String[]|备用的回源地址列表, 为一个域名或者多个 IP 地址|
 |**httpCertStatus**|Integer|证书状态. <br>- 0: 异常<br>- 1: 正常<br>- 2: 证书未上传|
@@ -66,13 +66,19 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**webSocketStatus**|Integer|webSocket 状态, 0: 关闭, 1: 开启|
 |**blackListEnable**|Integer|黑名单状态, 0: 关闭, 1: 开启|
 |**whiteListEnable**|Integer|白名单状态, 0: 关闭, 1: 开启|
-### OriginAddrItem
+|**geoRsRoute**|[GeoRsRoute[]](describewebrules#georsroute)|按区域分流回源配置|
+### <div id="georsroute">GeoRsRoute</div>
+|名称|类型|描述|
+|---|---|---|
+|**geo**|String|要设置的区域编码, 查询 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/describeWebRuleRSGeoAreas'>describeWebRuleRSGeoAreas</a> 接口获取可设置的地域编码|
+|**rsAddr**|String[]|对应区域的回源IP的列表|
+### <div id="originaddritem">OriginAddrItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|回源ip|
 |**weight**|Integer|权重|
 |**inJdCloud**|Boolean|是否为京东云内公网ip|
-### WebRuleProtocol
+### <div id="webruleprotocol">WebRuleProtocol</div>
 |名称|类型|描述|
 |---|---|---|
 |**http**|Boolean|http 协议|

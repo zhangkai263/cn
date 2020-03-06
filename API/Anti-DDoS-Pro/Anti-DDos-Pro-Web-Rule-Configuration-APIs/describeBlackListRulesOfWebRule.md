@@ -26,29 +26,29 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeblacklistrulesofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeblacklistrulesofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeblacklistrulesofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|WebBlackListRule[]| |
+|**dataList**|[WebBlackListRule[]](describeblacklistrulesofwebrule#webblacklistrule)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|
-### WebBlackListRule
+### <div id="webblacklistrule">WebBlackListRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|黑名单规则 Id|
@@ -60,8 +60,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**action**|Integer|命中后处理动作. <br>- 0: 放行<br>- 1: CC 防护|
 |**actionValue**|String|命中后处理值, action 为 2 时 actionValue 为跳转路径|
 |**status**|Integer|规则状态. <br>- 0: 关闭<br>- 1: 开启|
-|**geoList**|Geo[]|geo 黑名单地域列表, mode 不为 geo 或未设置时此字段为空|
-### Geo
+|**geoList**|[Geo[]](describeblacklistrulesofwebrule#geo)|geo 黑名单地域列表, mode 不为 geo 或未设置时此字段为空|
+### <div id="geo">Geo</div>
 |名称|类型|描述|
 |---|---|---|
 |**label**|String|geo 拦截地域|
