@@ -15,17 +15,17 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |模板名称。长度不超过128个字符。UTF-8编码。<br>|
-|**video**|Video|True| |视频参数配置|
-|**audio**|Audio|True| |音频参数配置|
-|**encapsulation**|Encapsulation|True| |封装配置|
+|**video**|[Video](createtranscodetemplate#video)|True| |视频参数配置|
+|**audio**|[Audio](createtranscodetemplate#audio)|True| |音频参数配置|
+|**encapsulation**|[Encapsulation](createtranscodetemplate#encapsulation)|True| |封装配置|
 |**definition**|String|True| |清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**templateType**|String|False|jdchd|模板类型。取值范围：<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 
-### Encapsulation
+### <div id="encapsulation">Encapsulation</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**format**|String|False| |封装格式|
-### Audio
+### <div id="audio">Audio</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**codec**|String|False| |音频编码。取值范围：aac|
@@ -33,7 +33,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |**sampleRate**|Integer|False| |音频采样率。取值范围：8000、11025、12000、16000、22050、24000、32000、44100、48000、64000、88200、96000|
 |**channels**|Integer|False| |音频声道数：1、2|
 |**comfortable**|Boolean|False| |是否开启舒适音频：true、false|
-### Video
+### <div id="video">Video</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**codec**|String|False| |视频编码。取值范围：h265、h264|
@@ -45,27 +45,27 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|创建转码模板结果|
+|**result**|[Result](createtranscodetemplate#result)|创建转码模板结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|模板ID|
 |**name**|String|模板名称。长度不超过128个字符。UTF-8编码。<br>|
-|**video**|Video|视频参数配置|
-|**audio**|Audio|音频参数配置|
-|**encapsulation**|Encapsulation|封装配置|
+|**video**|[Video](createtranscodetemplate#video)|视频参数配置|
+|**audio**|[Audio](createtranscodetemplate#audio)|音频参数配置|
+|**encapsulation**|[Encapsulation](createtranscodetemplate#encapsulation)|封装配置|
 |**definition**|String|清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**source**|String|模板来源。取值范围：<br>  system - 系统预置<br>  custom - 用户自建<br>|
 |**templateType**|String|模板类型。取值范围：<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
-### Encapsulation
+### <div id="encapsulation">Encapsulation</div>
 |名称|类型|描述|
 |---|---|---|
 |**format**|String|封装格式|
-### Audio
+### <div id="audio">Audio</div>
 |名称|类型|描述|
 |---|---|---|
 |**codec**|String|音频编码。取值范围：aac|
@@ -73,7 +73,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |**sampleRate**|Integer|音频采样率。取值范围：8000、11025、12000、16000、22050、24000、32000、44100、48000、64000、88200、96000|
 |**channels**|Integer|音频声道数：1、2|
 |**comfortable**|Boolean|是否开启舒适音频：true、false|
-### Video
+### <div id="video">Video</div>
 |名称|类型|描述|
 |---|---|---|
 |**codec**|String|视频编码。取值范围：h265、h264|
@@ -88,7 +88,6 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
-|**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
 

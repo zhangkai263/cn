@@ -1,10 +1,10 @@
-﻿  name: 专线服务
+  name: 专线服务
   href:
   items:
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/Direct-Connect-Service-Overview.md
+        href: Introduction/Product-Overview.md
       - name: 基础架构
         href: Introduction/Basic-Infrastructure.md
       - name: 核心概念
@@ -19,6 +19,8 @@
             href: Introduction/Features/Hosted-Connect-Features.md
           - name: 边界网关
             href: Introduction/Features/Border-Gateway-Features.md
+          - name: VPC接口
+            href: Introduction/Features/VPC-Interface-Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景
@@ -31,20 +33,32 @@
             href: Introduction/Application-Scenarios/Hybrid-Cloud-Deployments-Under-Regulatory-Requirements.md
   - name: 产品定价
     items:
-      - name: 计费规则
+      - name: 计费概述
         href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md
   - name: 入门指南
     items:
-       - name: 同账号同地域专线连接
+       - name: 同地域专线连接
          href: Getting-Started/Connect-To-The-Same-Account-Or-Region-Direct-Connetct.md
-       - name: 同账号同地域托管连接
+       - name: 同地域托管连接
          href: Getting-Started/Connect-To-The-Same-Account-Or-Region-Hosted-Connetct.md
+       - name: 同地域多VPC互联
+         href: Getting-Started/Multiple-VPC-Interconnection.md
   - name: 操作指南
     items:
-       - name: 专线连接
-         href: Operation-Guide/Direct-Connect.md
-       - name: 托管连接
-         href: Operation-Guide/Hosted-Connect.md
+      - name: 边界网关
+        href: Operation-Guide/Border-Gateway.md
+      - name: VPC接口
+        href: Operation-Guide/VPC-Attachment.md
+      - name: 专线连接
+        href: Operation-Guide/Direct-Connect.md
+      - name: 托管连接
+        href: Operation-Guide/Hosted-Connect.md
   - name: 最佳实践
     items:
     status: 0
@@ -69,4 +83,3 @@
     - name: 文档历史记录
       href:
       status: 0
-

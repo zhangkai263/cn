@@ -15,17 +15,17 @@ https://vod.jdcloud-api.com/v1/imageUploadTask
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**httpMethod**|String|False| |HTTP 请求方法，取值范围：GET、POST、PUT、DELETE、HEAD、PATCH，默认值为 PUT|
-|**fileName**|String|False| |文件名称|
+|**fileName**|String|True| |文件名称|
 |**fileSize**|Long|False| |文件大小|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|获取图片上传地址和凭证结果|
+|**result**|[Result](createimageuploadtask#result)|获取图片上传地址和凭证结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**imageId**|String|图片ID|

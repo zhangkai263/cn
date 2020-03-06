@@ -24,14 +24,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/raids
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describedeviceraids#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**raids**|Raid[]| |
-### Raid
+|**raids**|[Raid[]](describedeviceraids#raid)| |
+### <div id="raid">Raid</div>
 |名称|类型|描述|
 |---|---|---|
 |**volumeType**|String|磁盘类型, 如 system/data|

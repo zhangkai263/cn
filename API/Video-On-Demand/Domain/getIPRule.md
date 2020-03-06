@@ -21,16 +21,16 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:getIPRule
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询CDN域名IP黑名单规则配置结果|
+|**result**|[Result](getiprule#result)|查询CDN域名IP黑名单规则配置结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleType**|String|规则类型，取值 'ip'|
-|**config**|IPRuleConfigObject|IP黑名单规则配置对象|
+|**config**|[IPRuleConfigObject](getiprule#ipruleconfigobject)|IP黑名单规则配置对象|
 |**enabled**|Boolean|是否启用该规则|
-### IPRuleConfigObject
+### <div id="ipruleconfigobject">IPRuleConfigObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**ips**|String[]|IP黑名单列表|

@@ -1,6 +1,5 @@
-
-
 # 简介
+
 
 &emsp;&emsp;欢迎使用京东云开发者 .NET 工具套件（.NET SDK）。使用京东云 .NET SDK，您无需复杂编程就可以访问京东云提供的各种服务。    
 &emsp;&emsp;为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看OpenAPI使用入门。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://www.jdcloud.com/help/faq?act=3)下具体产品线的API文档。
@@ -36,11 +35,19 @@ Install-Package JDCloudSDK.Vm -Version 1.2.0.1
 
 ```powershell
 dotnet add package JDCloudSDK.Vm --version 1.2.0.1
-```
+```  
+
+您还可以下载SDK的源码直接添加到项目中或者编译为DLL再引用到项目中。  
+
+SDK使用中的任何问题，欢迎您在[SDK使用问题反馈页面](https://github.com/jdcloud-api/jdcloud-sdk-net/issues)交流
 
 请选择自己需要使用的模块安装。
 
-SDK使用中的任何问题，欢迎您在Github项目[SDK使用问题反馈页面](https://github.com/jdcloud-api/jdcloud-sdk-net/issues)交流。
+<em> 注意：</em> 请使用包管理器将 JDCloudSDK.Core  的版本更新到0.2.8,因为0.2.7 版本在post传输数据的时候如果值内有空格会将空格处理掉导致后端发生异常
+
+```powershell
+Install-Package JDCloudSDK.Core -Version 0.2.8
+```
 
 # 调用SDK
 
@@ -53,14 +60,17 @@ SDK使用中的任何问题，欢迎您在Github项目[SDK使用问题反馈页�
 以下是查询单个云主机实例详情的调用示例
 
 ```csharp
+using System;
+
+using Newtonsoft.Json;
+
 using JDCloudSDK.Core.Auth;
 using JDCloudSDK.Core.Client;
 using JDCloudSDK.Core.Http;
-using Newtonsoft.Json;
-using System;
 using JDCloudSDK.Vm.Model;
 using JDCloudSDK.Vm.Apis;
 using JDCloudSDK.Vm.Client;
+
 namespace JDCloudSDK.ConsoleTest
 {
     class Program
@@ -71,6 +81,7 @@ namespace JDCloudSDK.ConsoleTest
             string accessKeyId = "{accessKey}";
             string secretAccessKey = "{secretKey}";
             CredentialsProvider credentialsProvider = new StaticCredentialsProvider(accessKeyId, secretAccessKey);
+            
             //2. 创建XXXClient
             VmClient vmClient = new VmClient.DefaultBuilder()
                      .CredentialsProvider(credentialsProvider)
@@ -81,6 +92,7 @@ namespace JDCloudSDK.ConsoleTest
             DescribeInstanceRequest request = new DescribeInstanceRequest();
             request.RegionId="cn-north-1";
             request.InstanceId="i-c0se9uju";
+            
             //4. 执行请求
             var response = vmClient.DescribeInstance(request).Result;
             Console.WriteLine(JsonConvert.SerializeObject(response))
@@ -94,7 +106,37 @@ namespace JDCloudSDK.ConsoleTest
 
 ```csharp
 vmClient.SetCustomHeader("x-jdcloud-security-token","xxx");
+```  
+如果需要设置访问点，配置超时等，请参考下面的例子：  
+
+```csharp
+
+//1.设置accessKey和secretKey
+string accessKeyId = "";
+string secretAccessKey = "";
+CredentialsProvider credentialsProvider = new StaticCredentialsProvider(accessKeyId, secretAccessKey);
+//2.构建请求终结点配置
+SDKEnvironment sdkEnvironment = new SDKEnvironment("nativecontainer.internal.cn-north-1.jdcloud-api.com");
+//3.创建XXXClient
+VmClient vmClient = new VmClient.DefaultBuilder()
+        .CredentialsProvider(credentialsProvider)
+        .Environment(sdkEnvironment) //指定非默认的Endpoint
+        .HttpRequestConfig(new HttpRequestConfig(Protocol.HTTP, 50))  // 设置请求http schema HTTP or HTTPS ,50 为超时时间默认为秒
+        .Build();
+
 ```
+
+如果要读取请求response的各种信息（例如某一个header的值），可按照如下方式：  
+
+```csharp
+ Dictionary<string,List<string>> headers = response.HttpResponse.Header;
+if (headers.ContainsKey("headerKey")) {
+    List<string> headerValue = headers["headerKey"];
+}
+```  
+
+更多调用示例参考[SDK使用Demo](https://github.com/jdcloud-api/jdcloud-sdk-net/tree/master/sdk/src/Examples)
+
 
 **注意：**
 
@@ -103,6 +145,3 @@ vmClient.SetCustomHeader("x-jdcloud-security-token","xxx");
 - version 的版本号需要使用京东云产品提供的最新版本号。例如：示例中VM所使用的最新版本号可到官方提供的API  [更新历史](../../API/Virtual-Machines/ChangeLog.md)  中查询到。
 
 - 每支云产品都有自己的Client，当调用该产品API时，需使用该产品的Client。例如：使用云主机的VmClient只能调用云主机（Vm）的接口；使用高可用组的AgClient只能调用高可用组（Ag）的接口。
-
-
- 

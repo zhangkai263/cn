@@ -65,3 +65,4 @@ Windows系统可使用微软官方提供的 [Disk2vhd](https://docs.microsoft.co
 ```
 .\qemu-img.exe info image_out.qcow2
 ```
+

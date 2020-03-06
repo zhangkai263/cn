@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除参数组<br>- 仅支持MySQL
+删除参数组<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 DELETE
@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteParameterGroup() {
+    DeleteParameterGroupRequest request = new DeleteParameterGroupRequest();
+    request.setRegionId("cn-north-1");
+    request.setParameterGroupId("mysql-pg-ap9dc33crt");
+    DeleteParameterGroupResponse response = rdsClient.deleteParameterGroup(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpao4p0b09ccwn0hnfrikc8cmg9nqj97"
+}
+```

@@ -19,6 +19,7 @@
 |文件系统|* xfs、ext3、ext4|
 |分区|* MBR分区|
 |虚拟化驱动|* 仅支持KVM虚拟化，需要安装virtio驱动|
+|启动方式|* 仅支持BIOS，暂不支持UEFI方式
 |网络|* 暂不支持Ipv6地址|
 |系统基本环境 |* 关闭防火墙，放行TCP 22端口<br>* 开启DHCP服务<br>* 确保系统盘有剩余空间<br>* 确保文件系统完整|
 |系统配置|* /etc/fstab 如有配置自动挂载，请删除<br>* /etc/udev/rules.d如有70-persistent-net.rules配置，请删除<br>* 请勿修改 /etc/shadow为 只读<br>* 请勿修改 /etc/selinux/config 开启 SELinux<br>* 请勿修改/etc/grub/grub.cfg<br>* 请勿修改 /boot/grub/menu.lst
@@ -34,6 +35,7 @@
 |文件系统|* NTFS|
 |分区|* MBR分区|
 |虚拟化驱动|* 仅支持KVM虚拟化，需要安装virtio驱动|
+|启动方式|* 仅支持BIOS，暂不支持UEFI方式
 |网络|* 暂不支持Ipv6地址|
 |系统基本环境 |* 关闭防火墙，放行RDP 3389端口<br>* 确保系统盘有剩余空间<br>* 确保文件系统完整|
 |系统配置|* 请勿修改关键系统文件|
@@ -43,14 +45,14 @@
 ## 导入步骤
 
 ![](../../../../../image/vm/Image-Import-Image-Overview.png)<br>
-### 1、准备镜像文件
-为保证导入镜像的可用性，请务必在导入前参照上述京东云镜像制作要求进行镜像配置检测，确认导入镜像符合京东云规范后再行操作导入。<br>
+### 1、镜像准备
+为保证导入镜像的可用性，请务必在导入前参照上述京东云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东云规范后再行操作导入。<br>
 同时为了保证导入镜像在京东云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
 Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的自检，使用方法请参见：[镜像自检工具](Image-Check-Tool.md)
 
-### 2、准备镜像文件
+### 2、镜像文件生成
 支持RAW、VHD、QCOW2、VMDK四种格式的镜像文件导入，请在生成镜像文件时指定正确的文件格式。<br>
-不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md) [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
+不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 
 ### 3、上传镜像文件
 操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件下载链接。<br>
@@ -61,7 +63,16 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 ![](../../../../../image/vm/Image-Import-Image-Step2.png)
 
 ### 4、导入镜像
-由于目前导入镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。接口文档见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
+
+<div id="user-content-1"></div>
+
+由于目前导入镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
+* OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
+* CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
+* CLI指令示意：
+```
+jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest
+```
 
 导入接口参数说明如下：
 
@@ -82,9 +93,38 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 ## 查看及测试镜像
 成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度。
 
-如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求整处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+由于华北-北京地域的云硬盘做系统盘功能处于灰度开放期间，如您无法在私有镜像列表中查看到导入成功的云盘系统盘镜像，请提交工单申请权限。
 
+如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求整处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+* OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
+* CLI指令示意：
+
+```
+jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
+```
 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
 
 导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
+## 相关参考
+[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)
+
+[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+
+[virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver)
+
+[镜像自检工具](Image-Check-Tool.md)
+
+[转换镜像格式](Convert-Image-File-Format.md) 
+
+[ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
+
+[镜像导入OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)
+
+[镜像任务查询OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 
+
+[CLI安装](https://docs.jdcloud.com/cn/cli/installation) 
+
+[CLI配置](https://docs.jdcloud.com/cn/cli/config)
+
+[Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)

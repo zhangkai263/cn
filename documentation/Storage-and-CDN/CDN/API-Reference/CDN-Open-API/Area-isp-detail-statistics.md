@@ -13,6 +13,7 @@
 | domain     | String   | 是           | 待查询的域名，支持多域名查询，格式为"www.a.com,www.b.com" 查询的结果为每一个域名的详细数据 |
 | start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00；查询的时间跨度不能超过1小时  |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间，时间跨度最大为1个小时，且粒度为5分钟           |
+| ipType     | String   | 否           |取值范围[ipv6,ipv4]，不传默认不区分ip类型                   |
 
 ## **3. 返回参数**
 

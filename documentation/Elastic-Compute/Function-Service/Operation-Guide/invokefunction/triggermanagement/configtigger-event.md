@@ -109,6 +109,7 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 } 
 
 ```
+
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
 **参数说明**：网关与Function间的body内容不经过Base64编码。
@@ -126,4 +127,94 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
  } 
 ```
 
+## 队列服务JQS触发器
 
+### 事件格式
+
+当函数服务消费队列服务消息队列中的消息时，会轮询指定队列，通过一个包含队列消息的`event`异步调用函数。
+
+```
+{
+    "Records":[
+        {
+            "version":"0",
+            "id":"9fd19a5b-ddff-41b8-9689-e539cfb5dc41",
+            "time":"2019-10-28T15:00:19.45626304+08:00",
+            "source":"jqs",
+            "base64OwnerPin":"based64Pin",
+            "resources":[
+                "jqs-jrn"
+            ],
+            "region":"cn-north-1",
+            "detailType":"jqspullReceived",
+            "detail":{
+                "messageId":"41783100ccd4ac4030b3b12061058618",
+                "receiptHandle":"based64receiptHandle",
+                "body":"test",
+                "attributes":{
+                    "ApproximateFirstReceiveTimestamp":"1572246000180643518",
+                    "ApproximateReceiveCount":"1",
+                    "SenderId":"senderpin",
+                    "SentTimestamp":"1572245999697935359"
+                },
+                "messageAttributes":null,
+                "md5OfBody":"098f6bcd4621d373cade4e832627b4f6"
+            }
+        }
+    ]
+}
+
+```
+
+队列服务JQS触发器配置详清参见[队列服务JQS触发器](../triggermanagement/eventsourceservice/JQS-trigger.md)。 
+
+
+## 云事件触发器
+
+云事件会把事件请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function可通过如下结构去获取和处理需要的参数。
+
+
+### 事件格式
+
+下例为系统事件event格式
+
+```
+{
+    "Records": [
+        {
+            "version":"0",
+            "id":"2f30509d-3c5e-443e-9bd2-ebb9dda74e68",
+            "time":"2019-12-20T03:17:29Z",
+            "source":"events",
+            "base64OwnerPin":"amNsb3VkX21vbml0b3I=",
+            "resource":["bnti0hqm4n7mrlluj9cg"],
+            "region":"cn-north-1",
+            "detailType":"resourcesMonitor",
+            "detail": {
+                "version":"1.0",
+                "id":"85bf4aa3-3fb3-4cbb-ba52-cab54edae769",
+                "detailType":"resourcesMonitor",
+                "source":"jcloud.monitor.alert",
+                "pin":"jcloud_monitor",
+                "time":"2019-12-20T11:17:29+0800",
+                "region":"cn-north-1",
+                "resources":["alarm-aqoz718971"],
+                    "detail": {
+                        "content":"content",
+                        "resourceId":"mysql-fo32fberwl",
+                        "ruleId":" ",
+                        "serviceCode":"database",
+                        "threshold":7.77,
+                        "time":"2019-12-20T11:17:09+08:00",
+                        "times":2723,
+                        "value":11.43282585600461
+                    }
+            } 
+        }
+    ]
+}
+
+```
+
+
+云事件触发器配置详清参见[云事件触发器](../triggermanagement/eventsourceservice/cloudevent.md)。 

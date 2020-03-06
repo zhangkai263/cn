@@ -22,7 +22,7 @@
 ![](../../../../../image/vm/Operation-Guide-Image-copy2.png)
 3. 在确认弹窗中会显示所选源镜像镜像包含的快照数量，以及除当前地域外其他支持复制操作的地域下私有镜像及云硬盘快照的配额用量。点击【确定】，开始镜像复制任务。
 ![](../../../../../image/vm/Operation-Guide-Image-copy3.png)
-4. 复制任务提交成功后，副本镜像会显示“创建中”状态，同时以百分比的形式显示整体复制进度。副本镜像名称与源镜像相同，自动添加描述自段，可创建完成后自行修改。
+4. 复制任务提交成功后，副本镜像会显示“创建中”状态，同时以百分比的形式显示整体复制进度。副本镜像名称与源镜像相同，自动添加描述字段，可创建完成后自行修改。
  ![](../../../../../image/vm/Operation-Guide-Image-copy4.png)
  ![](../../../../../image/vm/Operation-Guide-Image-copy5.png)
  
@@ -34,3 +34,4 @@
 
 
   [1]: https://cns-console.jdcloud.com/host/image/list
+

@@ -17,10 +17,10 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:setIPRule
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**config**|IPRuleConfigObject|True| |IP黑名单规则配置对象|
+|**config**|[IPRuleConfigObject](setiprule#ipruleconfigobject)|True| |IP黑名单规则配置对象|
 |**enabled**|Boolean|True| |是否启用该规则|
 
-### IPRuleConfigObject
+### <div id="ipruleconfigobject">IPRuleConfigObject</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ips**|String[]|True| |IP黑名单列表|

@@ -1,7 +1,6 @@
 # 自定义数据
 
 实例自定义数据是指，在实例创建时，用户可以将可执行脚本以指定的数据格式传入实例，实现对实例启动行为的自定义。您可通过该功能，在实例启动后自动完成诸如下载/升级/安装软件、开启服务、修改系统配置、初始化服务环境等操作。<br>
-自定义数据功能目前处于公测阶段，如需使用，请提交工单申请使用资格。
 
 * [格式要求](Userdata#user-content-1)
 * [执行说明](Userdata#user-content-2)
@@ -17,8 +16,10 @@
 #!/bin/bash 
 echo 'launch-1a' >> /root/text1.txt
 ```
+
 ```
 #!/usr/bin/env python
+# -*- coding: utf-8-*-
 import random
 seq = list(range(1,10))
 tempstr = random.sample(seq,3)
@@ -26,6 +27,7 @@ f1 = open('/root/python2-text1.txt', 'a+')
 f1.writelines([str(tempstr)])
 f1.close()
 ```
+
 ```
 <cmd>
 echo %random%>cmd-text1.txt
@@ -39,6 +41,7 @@ echo %random%>cmd-text1.txt
 
       请注意：
       * 为避免格式不兼容，在使用bash或python格式脚本时，请在Linux环境下完成编码并进行调试后再行输入。
+      * python格式下，如脚本中有中文，请务必在首行后添加'# -*- coding: utf-8 -*-'，如无中文则此行可省略。
 
 <div id="user-content-2"></div>
 

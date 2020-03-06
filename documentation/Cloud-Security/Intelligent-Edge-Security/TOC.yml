@@ -1,0 +1,57 @@
+  name: 智能边缘安全
+  href:
+  items:
+  - name: 产品简介
+    items:
+    - name: 产品概述
+      herf : Introduction/Product-Overview.md
+    - name : 核心概念
+      herf: Introduction/Core-Concepts.md
+    - name: 产品优势
+      herf: Introduction/Benefits.md
+    - name: 产品功能
+      herf: Introduction/Features.md
+    - name: 应用场景 
+      herf: Introduction/Scene.md    
+  - name: 产品定价
+    items:
+    - name: 计费概述
+      herf: Pricing/Billing-Overview.md
+    - name: 价格总览
+      herf: Pricing/Price-Overview.md
+  - name: 入门指南
+    items:
+    - name: 入门概述
+      herf: Getting-Started/Getting-Started.md
+    - name: 创建实例
+      herf: Getting-Started/Create-Instance.md
+    - name: 开通服务
+      herf: Getting-Started/Open-edgesecurity-service.md
+  - name: 操作指南
+    items:
+    - name: 控制台简介
+      href: Operation-Guide/Console-introduction.md  
+    - name: 域名管理
+      items:
+        - name: 添加域名
+          herf: Operation-Guide/Domin-Management/Create-Domain.md
+        - name: 访问控制
+          herf: Operation-Guide/Domin-Management/Access-Control.md
+        - name: 回源配置
+          herf: Operation-Guide/Domin-Management/Back-To-Origin-Configuration.md
+        - name: 配置HTTPS
+          herf: Operation-Guide/Domin-Management/Set-HTTPS.md
+        - name: 应用层防护配置
+          herf: Operation-Guide/Domin-Management/Web-Application-Firewall.md
+    - name: 网络层防护配置
+      items:
+        - name: 网络层防护配置
+          herf: Operation-Guide/Anti-DDOS/Protection-Configuration.md
+    - name: 安全监控
+      items:
+        - name: 应用层监控
+          herf: Operation-Guide/Security-Monitoring/Web-Analysis.md
+        - name: 网络层监控
+          herf: Operation-Guide/Security-Monitoring/Net-Analysis.md     
+  - name: 文档历史记录
+    href: Related-Resources/Document-History.md

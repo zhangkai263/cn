@@ -21,17 +21,8 @@
         href: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
-      - name: 计费概述
-        href: Pricing/Billing-Overview.md
       - name: 计费规则
         href: Pricing/Billing-Rules.md
-      - name: 价格总览
-        href: Pricing/Price-Overview.md
-      - name: 购买流程
-        href: Pricing/Purchase-Process.md
-      - name: 续费流程
-        href: Pricing/Renew-Process.md
-        status: 0
   - name: 入门指南
     items:
       - name: 创建边缘节点
@@ -40,16 +31,18 @@
         href: Getting-Started/Install-Edge-System.md
   - name: 操作指南
     items:
-      - name: 边缘计算操作
-        items:
-          - name: 部署边缘计算模块
-            href: Operation-Guide/Edge-Module/Deploy-Edge-Module.md
-          - name: 查看边缘计算结果
-            href: Operation-Guide/Edge-Module/View-Module-Result.md
+        - name: 管理边缘应用
+          href: Operation-Guide/Edge-App.md
+        - name: 管理子设备
+          href: Operation-Guide/SubDevice.md
+        - name: 管理消息路由
+          href: Operation-Guide/MsgRouter.md
+        - name: AI模型转换指南
+          href: Operation-Guide/Trans-ModelFile.md
   - name: 最佳实践
     items:
-    - name: 控制边缘节点子设备
-      href: Best-Practices/Control-Device.md
+    - name: 边缘视觉应用
+      href: Best-Practices/Object-Detect.md
   - name: 教程
     items:
     status: 0
