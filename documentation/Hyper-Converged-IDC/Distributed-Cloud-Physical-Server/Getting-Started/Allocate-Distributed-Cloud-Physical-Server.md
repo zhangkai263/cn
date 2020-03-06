@@ -26,21 +26,23 @@
 
 - 网口与带宽设置
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 若选择**单网口**，则此处为**主网口（bond0）**的信息。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 若选择**单网口**，则此处为**主网口（bond0）** 的信息：</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **私有网络与子网**：用户需要先行规划并创建私有网络和子网。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部IP** ：为用户指定主网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **带宽计费模式** ：支持 **按固定带宽**，选择“按固定带宽”计费，弹性公网IP计费类型与实例计费类型一致。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **线路** ：目前边缘节点支持单线，目前已上线节点支持电信。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **带宽上限** ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **额外上行带宽** ：用户可选择额外上行带宽范围为0Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限，具体操作步骤参见[修改公网带宽](../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)章节。
+
+- 安全设置
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **防火墙** ：操作系统安装完成后，系统对外网网络只开放IN方向的22端口。操作系统安装成功后，用户可自行登录操作系统更改iptable设置。详情请参考[防火墙设置操作指南](../Operation-Guide/Network-And-Security/Steps-Network-And-Security.md)。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：
-
-弹性公网IP可以绑定分布式云物理服务器。
-
-用户可以在创建分布式云物理服务器时选择购买或不购买弹性公网IP。购买时勾选弹性公网IP，则由系统自动分配，用户不可修改弹性公网IP。
-
-用户可选择范围从1M最高至10240Mbps的公网带宽速率（10240Mbps为可提供的带宽最大值，根据不同节点该带宽值可能会不同，请根据实际节点合理选择），并可在创建后执行“修改带宽”操作。
-具体操作步骤参见[修改公网带宽](../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)章节。
-
-- 配置服务器基本信息：
+- 配置服务器基本信息
 配置服务器名称、描述、操作系统密码。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **实例名称** ：实例名称是指分布式云物理服务器的别名，用户可以自定义设置，设置完成后可以通过分布式云物理服务器列表中使用别名来筛选。一次购买多台分布式云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台分布式云物理服务器。
