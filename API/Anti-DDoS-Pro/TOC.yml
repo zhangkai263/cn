@@ -55,6 +55,8 @@
             href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceName.md
       - name: IP高防网站转发配置相关接口
         items:
+          - name: bindCert
+            href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/bindCert.md
           - name: createBlackListRuleOfWebRule
             href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/createBlackListRuleOfWebRule.md
           - name: createCCProtectionRuleOfWebRule
@@ -89,6 +91,8 @@
             href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/describeWebRuleBlackListGeoAreas.md
           - name: describeWebRuleBlackListUsage
             href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/describeWebRuleBlackListUsage.md
+          - name: describeWebRuleRSGeoAreas
+            href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/describeWebRuleRSGeoAreas.md
           - name: describeWebRules
             href: Anti-DDos-Pro-Web-Rule-Configuration-APIs/describeWebRules.md
           - name: describeWebRuleWhiteListGeoAreas

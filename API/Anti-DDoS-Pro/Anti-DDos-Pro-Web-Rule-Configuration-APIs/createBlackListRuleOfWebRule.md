@@ -19,9 +19,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**webBlackListRuleSpec**|WebBlackListRuleSpec|True| |添加网站类规则的黑名单规则请求参数|
+|**webBlackListRuleSpec**|[WebBlackListRuleSpec](createblacklistruleofwebrule#webblacklistrulespec)|True| |添加网站类规则的黑名单规则请求参数|
 
-### WebBlackListRuleSpec
+### <div id="webblacklistrulespec">WebBlackListRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |黑名单规则名称|
@@ -36,22 +36,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createblacklistruleofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](createblacklistruleofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](createblacklistruleofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 添加失败, 1: 添加成功|

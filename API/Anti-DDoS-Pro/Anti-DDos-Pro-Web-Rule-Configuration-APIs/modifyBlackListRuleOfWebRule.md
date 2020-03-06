@@ -20,9 +20,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**webBlackListRuleSpec**|WebBlackListRuleSpec|True| |修改网站类规则的黑名单规则请求参数|
+|**webBlackListRuleSpec**|[WebBlackListRuleSpec](modifyblacklistruleofwebrule#webblacklistrulespec)|True| |修改网站类规则的黑名单规则请求参数|
 
-### WebBlackListRuleSpec
+### <div id="webblacklistrulespec">WebBlackListRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |黑名单规则名称|
@@ -37,22 +37,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyblacklistruleofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifyblacklistruleofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifyblacklistruleofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|修改结果, 0: 修改失败, 1: 修改成功|
