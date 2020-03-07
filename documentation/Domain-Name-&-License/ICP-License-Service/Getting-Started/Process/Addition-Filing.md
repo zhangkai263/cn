@@ -2,7 +2,7 @@
 
 **第一步：登录备案系统验证备案类型**
 
-（1）打开京东云官网[www.jdcloud.com](http://www.jdcloud.com/)打开后点击右上方“备案”
+（1）打开京东智联云官网[www.jdcloud.com](http://www.jdcloud.com/)打开后点击右上方“备案”
 
 ![1](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-20190830/image/ICP-License-Service/Addition-Filing-cn-1.jpg)
 
@@ -52,19 +52,19 @@
 
 ![11](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-20190830/image/ICP-License-Service/Addition-Filing-cn-11.jpg)
 
-（3）提交信息后等待京东云初审审核
+（3）提交信息后等待京东智联云初审审核
 
 ![12](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-20190830/image/ICP-License-Service/Addition-Filing-cn-12.jpg)
 
-后续京东云备案专员将在1个工作日内与您联系。初审通过后，即进入当面核验环节
+后续京东智联云备案专员将在1个工作日内与您联系。初审通过后，即进入当面核验环节
 
 **第四步：当面核验**
 
-**（1）** 初审通过后, 登录京东云备案系统，办理网站负责人拍照核验。
+**（1）** 初审通过后, 登录京东智联云备案系统，办理网站负责人拍照核验。
 
-ü  如无京东云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
+ü  如无京东智联云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东智联云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
 
-ü  如有京东云幕布并已拍照，请直接**上传照片**。
+ü  如有京东智联云幕布并已拍照，请直接**上传照片**。
 
 **拍照要求：**
 
@@ -72,7 +72,7 @@ a)     拍照人与网站负责人必须为同一人；
 
 b)     负责人需站在背景幕布中间位置，仅拍上半身即可；
 
-c)      整个背景画布必须是京东云画布，幕布为蓝色且字迹清晰；
+c)      整个背景画布必须是京东智联云画布，幕布为蓝色且字迹清晰；
 
 d)     负责人着装需要符合当季节（例如：冬天不能穿半袖衣服拍照）。
 
@@ -80,8 +80,8 @@ d)     负责人着装需要符合当季节（例如：冬天不能穿半袖衣�
 
 ![14](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-20190830/image/ICP-License-Service/Addition-Filing-cn-14.jpg)
 
-（2）照片通过审核后，京东云将在 1 个工作日内将您的备案信息提交至通信管理局审核
+（2）照片通过审核后，京东智联云将在 1 个工作日内将您的备案信息提交至通信管理局审核
 
 ![15](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-20190830/image/ICP-License-Service/Addition-Filing-cn-15.jpg)
 
-管局审核结果将以短信及邮件形式通知。您也可以登录京东云备案系统主页查看您的备案信息情况。
+管局审核结果将以短信及邮件形式通知。您也可以登录京东智联云备案系统主页查看您的备案信息情况。
