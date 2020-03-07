@@ -89,6 +89,8 @@ items:
         href: FAQ/Cancel-Access.md
       - name: 接入备案说明
         href: FAQ/Access-Filing-Notes.md
+      - name: 网站备案号超链接设置
+        href: FAQ/About-Adding-Hyperlink-Of-Record-Number-To-Website.md
   - name: 用户协议
     items:
        - name: 协助更改备案信息服务在线服务条款
@@ -123,9 +125,9 @@ items:
          href: Process/Provincial-supplementary-materials.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
-       - name: 京东云“备案用时多久送多久”说明
+       - name: 京东智联云“备案用时多久送多久”说明
          href: Process/How-long-does-it-take-to-file-for-a-long-time.md
        - name: 线下备案注销汇总
          href: Process/Offline-cancel-cancellation-summary.md
-       - name: 京东云备案注销申请方式
+       - name: 京东智联云备案注销申请方式
          href: Process/Cancel-Filing-application-method.md
