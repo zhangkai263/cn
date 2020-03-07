@@ -19,9 +19,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**certInfoModifySpec**|CertInfoModifySpec|True| |编辑网站规则证书信息请求参数|
+|**certInfoModifySpec**|[CertInfoModifySpec](modifycertinfo#certinfomodifyspec)|True| |编辑网站规则证书信息请求参数|
 
-### CertInfoModifySpec
+### <div id="certinfomodifyspec">CertInfoModifySpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certId**|String|False| |证书 Id<br>- 如果传 certId, 请确认已经上传了相应的证书<br>- certId 缺省时网站规则将使用 httpsCertContent, httpsRsaKey 对应的证书|
@@ -31,22 +31,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifycertinfo#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifycertinfo#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifycertinfo#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|上传 SSL 证书结果, 0: 删除证书失败, 1: 删除证书成功|

@@ -23,26 +23,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeblacklistruleofforwardrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeblacklistruleofforwardrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeblacklistruleofforwardrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|ForwardBlackListRule| |
-### ForwardBlackListRule
+|**data**|[ForwardBlackListRule](describeblacklistruleofforwardrule#forwardblacklistrule)| |
+### <div id="forwardblacklistrule">ForwardBlackListRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**status**|Integer|是否开启, 0: 关闭, 1: 开启|
