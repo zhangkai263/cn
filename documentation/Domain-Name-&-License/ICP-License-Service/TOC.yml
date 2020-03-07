@@ -89,6 +89,8 @@ items:
         href: FAQ/Cancel-Access.md
       - name: 接入备案说明
         href: FAQ/Access-Filing-Notes.md
+      - name: 网站备案号超链接设置
+        href: FAQ/About-Adding-Hyperlink-Of-Record-Number-To-Website.md
   - name: 用户协议
     items:
        - name: 协助更改备案信息服务在线服务条款
