@@ -71,6 +71,10 @@
             href: Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md
           - name: 华为客户端配置
             href: Operation-Guide/Client-Site-Configuration/Huawei-Configuration.md
+          - name: 华三客户端配置
+            href: Operation-Guide/Client-Site-Configuration/H3C-Configuration.md
+          - name: 瞻博客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Juniper-Configuration.md
           - name: strongSwan客户端配置
             href: Operation-Guide/Client-Site-Configuration/StrongSwan-Configuration.md
        - name: 路由管理
