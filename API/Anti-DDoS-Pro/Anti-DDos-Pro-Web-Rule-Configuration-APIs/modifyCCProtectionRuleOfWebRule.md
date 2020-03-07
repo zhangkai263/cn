@@ -20,9 +20,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ccProtectionRuleSpec**|CCProtectionRuleSpec|True| |修改 CC 防护规则请求参数|
+|**ccProtectionRuleSpec**|[CCProtectionRuleSpec](modifyccprotectionruleofwebrule#ccprotectionrulespec)|True| |修改 CC 防护规则请求参数|
 
-### CCProtectionRuleSpec
+### <div id="ccprotectionrulespec">CCProtectionRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |CC 防护规则名称, 不允许为空, 长度不超过 32 个字符, 支持中文, 大小写字母, 数字及字符'-'、'/'、'.'、'_'|
@@ -36,22 +36,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyccprotectionruleofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifyccprotectionruleofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifyccprotectionruleofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 修改失败, 1: 修改成功|

@@ -18,20 +18,20 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**forwardRuleSpec**|ForwardRuleSpec|True| |添加非网站类规则请求参数|
+|**forwardRuleSpec**|[ForwardRuleSpec](createforwardrule#forwardrulespec)|True| |添加非网站类规则请求参数|
 
-### ForwardRuleSpec
+### <div id="forwardrulespec">ForwardRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**protocol**|String|True| |协议: TCP 或者 UDP|
 |**port**|Integer|True| |端口号, 取值范围[1, 65535]|
 |**algorithm**|String|True| |转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originType**|String|True| |回源类型: A 或者 CNAME|
-|**originAddr**|OriginAddrItem[]|False| | |
+|**originAddr**|[OriginAddrItem[]](createforwardrule#originaddritem)|False| | |
 |**onlineAddr**|String[]|False| |备用的回源地址列表, 可以配置为一个域名或者多个 ip 地址|
 |**originDomain**|String|False| |回源域名|
 |**originPort**|Integer|True| |回源端口号, 取值范围[1, 65535]|
-### OriginAddrItem
+### <div id="originaddritem">OriginAddrItem</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ip**|String|False| |回源ip|
@@ -41,22 +41,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createforwardrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](createforwardrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](createforwardrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 添加规则失败, 1: 添加规则成功|

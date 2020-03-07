@@ -21,31 +21,31 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/describeGeoAreas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describegeoareas#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describegeoareas#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describegeoareas#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|Country[]| |
-### Country
+|**dataList**|[Country[]](describegeoareas#country)| |
+### <div id="country">Country</div>
 |名称|类型|描述|
 |---|---|---|
 |**label**|String|国家或地区名称|
 |**value**|String|国家或地区编码|
-|**children**|Country[]| |
+|**children**|[Country[]](describegeoareas#country)| |
 
 ## 返回码
 |返回码|描述|

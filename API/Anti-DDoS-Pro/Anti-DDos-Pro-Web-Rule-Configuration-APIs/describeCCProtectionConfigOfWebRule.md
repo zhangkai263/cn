@@ -23,26 +23,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeccprotectionconfigofwebrule#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeccprotectionconfigofwebrule#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeccprotectionconfigofwebrule#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|CCProtectionConfig| |
-### CCProtectionConfig
+|**data**|[CCProtectionConfig](describeccprotectionconfigofwebrule#ccprotectionconfig)| |
+### <div id="ccprotectionconfig">CCProtectionConfig</div>
 |名称|类型|描述|
 |---|---|---|
 |**enable**|Integer|网站规则的 CC 防护状态, 0: 关闭, 1: 开启|
