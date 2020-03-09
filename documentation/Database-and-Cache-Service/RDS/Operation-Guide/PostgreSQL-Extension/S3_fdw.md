@@ -34,7 +34,7 @@ s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，�
 ## 辅助函数
 |参数名|用途|
 |---|---|
-|s3_fdw_list_file(relname text, schema text DEFAULT ‘public’|用于获得某个外部表所匹配的OSS上的文件名和文件的大小|
+|s3_fdw_list_file(relname text, schema text DEFAULT ‘public’)|用于获得某个外部表所匹配的OSS上的文件名和文件的大小|
 ### 示例
 
 
@@ -169,9 +169,9 @@ pgbench=> explain insert into local select * from oss;
 
 ## s3_fdw 注意事项
 
--s3_fdw是在PostgreSQL FOREIGN TABLE框架下开发的外部表插件
+1.s3_fdw是在PostgreSQL FOREIGN TABLE框架下开发的外部表插件
 
--数据导入的性能和PostgreSQL集群的资源（CPU IO MEM NET）相关，也和OSS相关
+2.数据导入的性能和PostgreSQL集群的资源（CPU IO MEM NET）相关，也和OSS相关
 
 
 
