@@ -33,15 +33,15 @@
         href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
-      - name: 入门指南概述
+      - name: 入门概述
         href: Getting-Started/Getting-Started.md
-      - name: 创建分布式云物理服务器
-        href: Getting-Started/Create-Distributed-Cloud-Physical-Server.md
-      - name: 配置分布式云物理服务器
+      - name: 确定配置项
         href: Getting-Started/Allocate-Distributed-Cloud-Physical-Server.md
-      - name: 查看分布式云物理服务器
+      - name: 创建实例
+        href: Getting-Started/Create-Distributed-Cloud-Physical-Server.md
+      - name: 查看实例
         href: Getting-Started/Check-Distributed-Cloud-Physical-Server.md
-      - name: 删除分布式云物理服务器
+      - name: 删除实例
         href: Getting-Started/Delete-Distributed-Cloud-Physical-Server.md
   - name: 操作指南
     items:
