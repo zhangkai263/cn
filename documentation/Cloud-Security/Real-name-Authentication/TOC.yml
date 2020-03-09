@@ -1,31 +1,31 @@
-name: ÊµÃûÈÏÖ¤
+name: å®åè®¤è¯äº§å“
 href:
 items:
-- name: ²úÆ·¼ò½é
+- name: äº§å“ç®€ä»‹
   items:
-    - name: ²úÆ·¸ÅÊö
+    - name: äº§å“æ¦‚è¿°
       href: Introduction/Product-Overview.md
-    - name: ºËĞÄ¸ÅÄî
+    - name: æ ¸å¿ƒæ¦‚å¿µ
       href: Introduction/Core-Concepts.md
-    - name: ²úÆ·ÓÅÊÆ
+    - name: äº§å“ä¼˜åŠ¿
       href: Introduction/Benefits.md
-    - name: ²úÆ·¹¦ÄÜ
+    - name: äº§å“åŠŸèƒ½
       href: Introduction/Features.md
-    - name: ÏŞÖÆËµÃ÷
+    - name: é™åˆ¶è¯´æ˜
       href: Introduction/Restrictions.md
-- name: ²úÆ·¶¨¼Û
+- name: äº§å“å®šä»·
   items:
-    - name: ¼Æ·Ñ¸ÅÊö
+    - name: è®¡è´¹æ¦‚è¿°
       href: Pricing/Billing-Overview.md
-    - name: ¼Æ·Ñ¹æÔò
+    - name: è®¡è´¹è§„åˆ™
       href: Pricing/Price-Overview.md
-    - name: ¹ºÂòÁ÷³Ì
+    - name: è´­ä¹°æµç¨‹
       href: Pricing/Purchase-Process.md
-    - name: Ô¤¸¶·Ñ×ÊÔ´°ü
+    - name: é¢„ä»˜è´¹èµ„æºåŒ…
       href: Pricing/Resource-Packages.md       
-- name: ²Ù×÷Ö¸ÄÏ
+- name: æ“ä½œæŒ‡å—
   items:
-    - name: ¿ªÍ¨·şÎñ
+    - name: å¼€é€šæœåŠ¡
       href: Operation-Guide/Active.md
-    - name: ÊµÃûÈÏÖ¤¸ÅÀÀ
+    - name: å®åè®¤è¯æ¦‚è§ˆ
       href: Operation-Guide/Resource-Statistics/Overview.md
