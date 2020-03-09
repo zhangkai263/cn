@@ -1,7 +1,6 @@
 ## 创建实例
 
-- 在您成功注册账号，完成实名认证并确保账户余额充足之后，点击京东云官网产品页面中的“立即购买”按钮，跳转到分布式云物理服务器的控制台页面。
-
-- 目前支持购买实例，请根据您的需求来购买产品。
+1、访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)
+2、
 
 
