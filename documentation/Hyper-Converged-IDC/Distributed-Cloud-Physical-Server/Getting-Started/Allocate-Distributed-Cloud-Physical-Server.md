@@ -14,7 +14,7 @@
 
 - 镜像
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前支持**标准镜像**镜像类型。镜像类型支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前支持**标准镜像**。镜像类型包括CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
 - 存储
 
@@ -26,7 +26,7 @@
 
 - 网口与带宽设置
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选择**单网口**时，以下为**主网口（bond0）** 的信息：</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主网口** 的信息：</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **私有网络与子网**：用户需要先行规划并创建私有网络和子网。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部IP** ：为用户指定主网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。</br>
 
@@ -46,7 +46,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **实例名称** ：实例名称是指分布式云物理服务器的名称，用户可以自定义设置，设置完成后可以通过分布式云物理服务器列表中使用名称来搜索。若单次购买多台分布式云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台服务器。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **描述** ：可选择为实例添加描述。</br>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主机名** ：主机名是指分布式云物理服务器操作系统内部的计算机名，用户可以自定义设置，分布式云物理服务器实例成功生产后可以通过登录服务器内部查看。若单次购买多台分布式云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台服务器。（主机名为可选项，如果不输入主机名，则默认使用“host-内网IPv4地址第三段-内网IPv4地址第四段”为主机名。）</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **用户名** ：根据所选操作系统自动设置，Linux系统默认为 **root** 。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **登录方式** ：密码同时用于远程登录和控制台登录。</br>
@@ -55,7 +54,7 @@
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、密钥登录：对于Linux系统，可以选择SSH密钥登录，若采用密钥登录方式须先创建或导入密钥，详见(../Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md) 。</br>
                                                                                      
 - 高级设置：
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见(../Operation-Guide/Instance/User-Data.md) 。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见(../../../Operation-Guide/Instance/User-Data.md) 。</br>
 
 - 购买量：
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在完成全部配置选择后，确定购买实例的数量，购买数量受限该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
