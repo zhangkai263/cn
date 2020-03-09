@@ -69,5 +69,5 @@
 **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../../../Operation-Guide/Instance/User-Data.md)。
 
 - 购买量    
-在完成全部配置后，确定购买实例的数量，购买数量受限该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
+在完成全部配置后，确定购买实例数量，购买数量受限与该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
 
