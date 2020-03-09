@@ -1,4 +1,4 @@
-## 查看分布式云物理服务器
+## 查看实例
 
 访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)点击左侧导航“智能IDC-分布式云物理服务器-实例”，进入实例列表页可以查看实例信息。
 
