@@ -69,10 +69,10 @@ pgbench=> CREATE SERVER s3_fdw_server FOREIGN DATA WRAPPER s3_fdw options(host '
 创建USER MAPPING
 pgbench=> CREATE USER MAPPING FOR CURRENT_USER SERVER s3_fdw_server OPTIONS (access_key_id 'xxxxxx', secret_access_key 'xxxxxx');
 
- 创建OSS外部表
+创建OSS外部表
 pgbench=> CREATE FOREIGN TABLE oss(id integer, name character varying, password character varying) SERVER s3_fdw_server OPTIONS(dir 's3_fdw_dir/', format 'csv');
 
- 创建本地表
+创建本地表
 pgbench=> CREATE TABLE local(id integer, name character varying, password character varying);
 
 往本地表先插入200条数据
@@ -83,7 +83,7 @@ INSERT 0 200
 pgbench=> insert into oss select * from local;
 INSERT 0 200
 
- 查询外部表
+查询外部表
 pgbench=> select * from oss;
  id  |               name               |             password             
 ...
@@ -163,6 +163,15 @@ pgbench=> explain insert into local select * from oss;
    ->  Foreign Scan on oss  (cost=0.00..22.00 rows=200 width=70)
          OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
 (3 rows)
+``` 
+
+## s3_fdw 注意事项
+
+-s3_fdw是在PostgreSQL FOREIGN TABLE框架下开发的外部表插件
+
+-数据导入的性能和PostgreSQL集群的资源（CPU IO MEM NET）相关，也和OSS相关
+
+
 
 
 
