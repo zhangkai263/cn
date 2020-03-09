@@ -20,7 +20,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取**系统盘**和**数据盘**的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详见[产品规格](../Introduction/Specifications.md)。
 
-- 网络数量与名称
+- 网口数量与名称
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支持**单网口**和**双网口**两种模式。若选择**单网口**(指逻辑网口接口)，默认显示**主网口（bond0）**；若选择**双网口**，默认显示**主网口（eth0）**和**辅网口（eth1）**。
 
