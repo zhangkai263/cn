@@ -86,7 +86,7 @@ INSERT 0 200
 查询外部表
 pgbench=> select * from oss;
  id  |               name               |             password             
-...
+-----+----------------------------------+----------------------------------
    1 | 7263461406680f166631e2ef19ed9c52 | 9c42a9ba08e87144d62082cea78e9cb8
    2 | b2207a08ae9ead98988c90ac1fcf1efa | b7bb25d85cb609c84fedd57caee3dee4
    3 | 259c54a61310d60410bf4399512ffb8e | 754f7ad4a6cb766c127fe0db6d9de69b
@@ -108,7 +108,7 @@ pgbench=> select * from oss;
 
 pgbench=> explain select * from oss;
                                    QUERY PLAN                                   
-...
+--------------------------------------------------------------------------------
  Foreign Scan on oss  (cost=0.00..16.50 rows=145 width=68)
    OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
 (2 rows)
@@ -118,7 +118,7 @@ pgbench=> truncate table local;
 TRUNCATE TABLE
 pgbench=> select * from local;
  id | name | password 
-...
+----+------+----------
 (0 rows)
 
 测试将OSS上的数据导入本地表
@@ -126,7 +126,7 @@ pgbench=> insert into local select * from oss;
 INSERT 0 200
 pgbench=> select * from local;
  id  |               name               |             password             
-...
+-----+----------------------------------+----------------------------------
    1 | 7263461406680f166631e2ef19ed9c52 | 9c42a9ba08e87144d62082cea78e9cb8
    2 | b2207a08ae9ead98988c90ac1fcf1efa | b7bb25d85cb609c84fedd57caee3dee4
    3 | 259c54a61310d60410bf4399512ffb8e | 754f7ad4a6cb766c127fe0db6d9de69b
@@ -148,7 +148,7 @@ pgbench=> select * from local;
 
 pgbench=> explain insert into local select * from oss;
                                       QUERY PLAN                                      
-...
+--------------------------------------------------------------------------------------
  Insert on local  (cost=0.00..16.50 rows=145 width=68)
    ->  Foreign Scan on oss  (cost=0.00..16.50 rows=145 width=68)
          OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
@@ -158,7 +158,7 @@ pgbench=> analyze oss;
 ANALYZE
 pgbench=> explain insert into local select * from oss;
                                       QUERY PLAN                                      
-...
+--------------------------------------------------------------------------------------
  Insert on local  (cost=0.00..22.00 rows=200 width=70)
    ->  Foreign Scan on oss  (cost=0.00..22.00 rows=200 width=70)
          OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
