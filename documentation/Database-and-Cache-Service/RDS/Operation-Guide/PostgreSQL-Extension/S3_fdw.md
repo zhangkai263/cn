@@ -37,7 +37,8 @@ s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，�
 |s3_fdw_list_file(relname text, schema text DEFAULT ‘public’|用于获得某个外部表所匹配的OSS上的文件名和文件的大小|
 ### 示例
 
-select * from s3_fdw_list_file('oss');
+
+```select * from s3_fdw_list_file('oss');
 
 name | size
 
@@ -51,6 +52,7 @@ s3_fdw_dir/s3_put_xxxxx_18736 | 23
 s3_fdw_dir/s3_put_xxxxx_18796 | 20
 
 (6 rows)
+```
 
 ## 辅助参数
 |参数名|默认值|说明|
