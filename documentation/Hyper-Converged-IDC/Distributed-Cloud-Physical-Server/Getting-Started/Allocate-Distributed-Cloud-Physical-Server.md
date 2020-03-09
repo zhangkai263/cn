@@ -18,7 +18,7 @@
 
 - 存储
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取**系统盘**和**数据盘**的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详见[产品规格](../Introduction/Specifications.md)。）
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取**系统盘**和**数据盘**的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详见[产品规格](../Introduction/Specifications.md)。
 
 - 网络数量与名称
 
@@ -29,6 +29,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主网口** 的信息：</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **私有网络与子网**：用户需要先行规划并创建私有网络和子网。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **内部IP** ：为用户指定主网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **别名IP范围** ：为用户指定主网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。详见[别名IP范围](../../../Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md)。 </br>       
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。</br>
 
@@ -52,10 +53,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、自定义密码：即“立即设置密码”，实例创建后支持修改；</br>
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、自动生成密码登录：即暂不设置密码，系统会以短信和邮件方式发送默认密码； </br>
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、密钥登录：对于Linux系统，可以选择SSH密钥登录，若采用密钥登录方式须先创建或导入密钥，详见[SSH密钥](../../../Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md)。 </br>                                                                      
-- 高级设置：
+- 高级设置： </br>    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../../../Operation-Guide/Instance/User-Data.md)。
 
-- 购买量：
+- 购买量： </br>    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在完成全部配置选择后，确定购买实例的数量，购买数量受限该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
 
 - 点击**立即购买**按钮，跳转到订单确认页。按照京东云统一的订单计费流程支付成功后，跳转回控制台列表页面。
