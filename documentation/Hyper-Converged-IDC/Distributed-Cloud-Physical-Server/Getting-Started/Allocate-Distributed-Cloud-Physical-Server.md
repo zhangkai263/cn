@@ -44,7 +44,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 别名IP范围 ：如果您有多项服务在一台分布式云物理服务器上运行，并且希望为每项服务分配一个不同的 IP 地址，可以使用别名IP范围功能实现。单实例辅网口最多可添加50个，详见[别名IP范围](../../../Operation-Guide/Instance/Alisas-IP.md)。 </br>       
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公网带宽 ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。（创建后为辅网口的弹性公网IP）</br>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽计费模式 ：支持按固定带宽，选择“按固定带宽”计费，弹性公网IP计费类型与实例计费类型一致。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽上限 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
