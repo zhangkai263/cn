@@ -9,21 +9,20 @@
 
 ### 注册分布式云物理服务器产品
 
-- 登录京东智联云官网
-www.jdcloud.com
+- 登录京东智联云官网 www.jdcloud.com
 - 京东智联云可使用京东账号直接登录，如没有京东账号，请点击“免费注册”注册京东智联云及京东账号。
 - 注册后，将自动跳转到完善信息页面，请如实填写账号信息后点击提交。
 
 ### 选购须知
 
 **访问购买页** 
-请访问京东智联云-分布式云物理服务器产品页面。
+访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)
 
 **选择节点** 
-选择离您的用户最近的边缘节点，能获得更小的访问时延和较高的访问速度。分布式云物理服务器已开放售卖或正在建设的边缘节点所在节点及运营商，请参考[核心概念](../Introduction/Core-Concepts.md)章节。
+选择离您的用户最近的边缘节点，能获得更小的访问时延和较高的访问速度。分布式云物理服务器已开放售卖或正在建设的边缘节点，详见[核心概念](../Introduction/Core-Concepts.md)。
 
 **选择服务器配置** 
-服务器配置介绍，请参考[产品规格](../Introduction/Specifications.md)章节。
+分布式云物理服务器配置介绍，详见[产品规格](../Introduction/Specifications.md)。
 
 **计费** 
 支持包月包年、按配置两种计费方式。与计费有的详细信息，请参考[计费规则](../Pricing/Billing-Rules.md)章节。<br/>
