@@ -67,29 +67,21 @@
             href: Operation-Guide/Networking/Alisas-IP.md
           - name: 共享带宽
             href: Operation-Guide/Networking/Edge-Shared-Bandwidth.md
-      - name: 防火墙配置说明
+      - name: 防火墙
         items:
           - name: 功能描述
-            href: Operation-Guide/Network-And-Security/Description-Network-And-Security.md
-          - name: 操作步骤
             href: Operation-Guide/Network-And-Security/Steps-Network-And-Security.md
-      - name: 镜像使用说明
+      - name: 镜像
         items:
           - name: 功能描述
             href: Operation-Guide/Image/Description-Image.md
-          - name: 操作步骤
-            href: Operation-Guide/Image/Steps-Image.md
       - name: 设置RAID级别
         items:
           - name: 功能描述
-            href: Operation-Guide/Set-RAID-Level/Description-Set-RAID-Level.md      
-          - name: 操作步骤
             href: Operation-Guide/Set-RAID-Level/Steps-Set-RAID-Level.md
       - name: 远程登陆
         items:
           - name: 功能描述
-            href: Operation-Guide/Remote-Login/Description-Remote-Login.md
-          - name: 操作步骤
             href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
       - name: 实例生命周期
         items:
