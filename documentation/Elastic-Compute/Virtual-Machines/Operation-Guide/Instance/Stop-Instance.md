@@ -12,7 +12,7 @@
 
 
 ## 操作步骤
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要停止的实例，确认其状态为“运行”。如果需要同时操作多台实例，可通过多选实现。
 4. 单台操作：点击【操作】-【停止】按钮，或点击实例名称进入详情页后点击【操作】-【停止】按钮；

@@ -19,6 +19,14 @@ items:
         href: Pricing/Billing-Overview.md
       - name: 计费规则
         href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Procedure.md
+      - name: 续费流程
+        href: Pricing/Renewal-Procedure.md
+      - name: 升级配额
+        href: Pricing/Resize-Instance.md
   - name: 入门指南
     items:
       - name: 概览

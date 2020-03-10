@@ -25,9 +25,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/log/{lo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeLogDownloadURL#Result)| |
+|**result**|[Result](describelogdownloadurl#result)| |
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**publicURL**|String|公网下载链接|

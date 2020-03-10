@@ -37,9 +37,9 @@
 
 公网（无需配置）：默认函数开启公网访问。  
 
-**logSetId**（可选）：指定日志集。  
+**logSetId**（可选）：指定日志集（选择已在日志服务创建日志集、日志主题，且日志主题采集配置为函数服务的部分实例）。  
 
-**logTopicId**（可选）：指定日志主题。  
+**logTopicId**（可选）：指定日志主题（选择已在日志服务创建日志集、日志主题，且日志主题采集配置为函数服务的部分实例）。  
 
 **说明**：除函数名称外，其他属性均可后续修改。
 
@@ -53,5 +53,5 @@
 | Python 3.7   | Python 3.7 版本 | [python runtime](runtime/python.md) | 
 | NodeJS 6    | NodeJS 6.17 版本 | [nodejs runtime](runtime/nodejs.md) | 
 | NodeJS 8    | NodeJS 8.16 版本 | [nodejs runtime](runtime/nodejs.md) | 
-
+| Java 8    | Java 8 版本 | [java runtime](runtime/java.md) |
  

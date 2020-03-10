@@ -15,7 +15,7 @@
 
 数据库版本：
 
-- SQL Server 2018R2 企业版
+- SQL Server 2008R2 企业版
 - SQL Server 2012 企业版
 - SQL Server 2014 企业版
 - SQL Server 2016 企业版

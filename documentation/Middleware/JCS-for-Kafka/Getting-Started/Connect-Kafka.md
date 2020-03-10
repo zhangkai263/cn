@@ -7,8 +7,8 @@
 
 ### 通过京东云云主机访问
 1.	登录消息队列Kafka版控制台，创建消息队列Kafka版实例 。</br>
-2.	登录[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，创建和云搜索Elasticsearch集群具有相同私有网络和子网的云主机，并[获取公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
-3.	在本地通过SSH登录云主机，用curl命令访问云搜索Elasticsearch实例的9200端口。指令格式说明如下：</br>
+2.	登录[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，创建和消息队列 Kafka 版具有相同私有网络和子网的云主机，并[获取公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
+3.	在本地通过SSH登录云主机，用curl命令访问。指令格式说明如下：</br>
 
 ```
 ssh 用户名@公网IP

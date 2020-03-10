@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PUT
+```
+public void testModifyParameterGroupAttribute() {
+    ModifyParameterGroupAttributeRequest request = new ModifyParameterGroupAttributeRequest();
+    request.setDescription("modify describe");
+    request.setParameterGroupId("mysql-pg-rbywujyl6c");
+    request.setParameterGroupName("modify name");
+    request.setRegionId("cn-north-1");
+    ModifyParameterGroupAttributeResponse response = rdsClient.modifyParameterGroupAttribute(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpao6a3i8dsth9wqghkq5jsjci0ku5wf"
+}
+```

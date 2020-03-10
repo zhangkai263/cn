@@ -17,10 +17,10 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:setRefererRule
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**config**|RefererRuleConfigObject|True| |Referer防盗链规则配置对象|
+|**config**|[RefererRuleConfigObject](setrefererrule#refererruleconfigobject)|True| |Referer防盗链规则配置对象|
 |**enabled**|Boolean|True| |是否启用该规则|
 
-### RefererRuleConfigObject
+### <div id="refererruleconfigobject">RefererRuleConfigObject</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**strategy**|String|True| |启用策略。取值范围：<br>  denial - 拒绝<br>  allowance - 允许<br>|

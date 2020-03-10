@@ -10,7 +10,7 @@
 
 3.当前消息队列Kafka版基于开源哪个版本？</br>
 
-当前 CKafka 基于 Apache Kafka V1.0.2 版本，推荐生产消费端选取V1.0.2版本的 SDK。</br>
+当前消息队列Kafka版基于 Apache Kafka V1.0.2和V0.10.2 版本，推荐生产消费端选取对应版本的 SDK。</br>
 
 4.Kafka为什么使用消费者组？</br>
 

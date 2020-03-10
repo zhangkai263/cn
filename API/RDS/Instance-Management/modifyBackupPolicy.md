@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyB
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyBackupPolicy() {
+    ModifyBackupPolicyRequest request = new ModifyBackupPolicyRequest();
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    request.setStartWindow("04:00-05:00");
+    ModifyBackupPolicyResponse response = rdsClient.modifyBackupPolicy(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4sjw0gogedcpe9kh65w4rc24eof3b"
+}
+```

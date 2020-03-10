@@ -27,7 +27,7 @@ items:
   items:
     - name: 创建实例
       href: Getting-Started/Create-Kafka.md
-    - name: 访问集群
+    - name: 连接实例
       href: Getting-Started/Connect-Kafka.md
 - name: 操作指南
   items:
