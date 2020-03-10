@@ -109,5 +109,69 @@
     </tr>
 </table>
 
-请注意：弹性公网IP的价格依据节点和线路类型而不同，具体价格请以购买时选择的节点和线路为准。
+## 共享带宽价格
+
+**按固定带宽计费**
+
+<table>
+   <tr>
+       <td rowspan="2"><B>线路</B></td>
+       <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>计费项</B></td>
+       <td rowspan="2"><B>带宽</B></td>
+       <td ><B>包月价格</B></td>
+       <td ><B>按配置价格</B></td>
+   </tr>
+   <tr>
+       <td><B>元/月</B></td>
+       <td><B>元/小时</B></td>
+     
+   </tr>
+   <tr>
+      <td rowspan="12">电信</td>
+      <td rowspan="12">华东-台州<br/>
+      <td rowspan="6">带宽</td>
+      <td>1Mbps</td>
+      <td>24</td>
+      <td>0.081</td>
+      
+   </tr>
+   <tr>
+      <td>2Mbps</td>
+      <td>49</td>
+      <td>0.162</td>
+      
+   </tr>
+   <tr>
+     <td>3Mbps</td>
+     <td>73</td>
+     <td>0.243</td>
+	
+   </tr>
+   <tr>
+     <td>4Mbps</td>
+     <td>97</td>
+     <td>0.324</td>
+     
+   </tr>
+   <tr>
+     <td>5Mbps</td>
+     <td>121</td>
+     <td>0.405</td>
+     
+   </tr>
+   <tr>
+     <td>6Mbps及以上，n为带宽值(n>=6)，每Mbps费用</td>
+     <td>n*24.3</td>
+     <td>n*0.081</td>
+  </tr>
+  <tr>
+    <td rowspan="1">额外上行带宽</td>
+        <td>n为带宽值（n>=0），每Mbps费用</td>
+        <td>n*7.5</td>
+	 <td>n*0.025</td>
+    </tr>
+</table>
+
+请注意：弹性公网IP，共享带宽的价格依据节点和线路类型而不同，具体价格请以购买时选择的节点和线路为准。
 
