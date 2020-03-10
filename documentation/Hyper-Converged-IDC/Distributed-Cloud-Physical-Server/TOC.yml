@@ -37,16 +37,16 @@
         href: Getting-Started/Getting-Started.md
       - name: 确定配置项
         href: Getting-Started/Allocate-Distributed-Cloud-Physical-Server.md
-      - name: 创建实例
-        href: Getting-Started/Create-Distributed-Cloud-Physical-Server.md
-      - name: 查看实例
-        href: Getting-Started/Check-Distributed-Cloud-Physical-Server.md
-      - name: 删除实例
-        href: Getting-Started/Delete-Distributed-Cloud-Physical-Server.md
   - name: 操作指南
     items:
       - name: 实例
         items:
+          - name: 创建实例
+            href: Operation-Guide/Instance/Create-Instance.md
+          - name: 查看实例
+            href: Operation-Guide/Instance/Check-Instance.md
+          - name: 删除实例
+            href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
       - name: 网络
