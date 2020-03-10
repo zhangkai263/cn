@@ -49,7 +49,7 @@
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
-          - name: 重装操作系统
+          - name: 重装系统
             href: Operation-Guide/Instance/Reinstall.md
           - name: 绑定弹性公网IP
             href: Operation-Guide/Instance/Associate-The-EIP.md
@@ -89,18 +89,6 @@
         items:
           - name: 功能描述
             href: Operation-Guide/Distributed-Cloud-Physical-Server-Life-Cycle-Management/Description-Distributed-Cloud-Physical-Server-Life-Cycle-Management.md
-      - name: 重装操作系统
-        items:
-          - name: 功能描述
-            href: Operation-Guide/Reinstall/Description-Reinstall.md
-          - name: 操作步骤
-            href: Operation-Guide/Reinstall/Steps-Reinstall.md
-      - name: 修改公网带宽
-        items:
-          - name: 功能描述
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md
-          - name: 操作步骤
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps-Adjust-Public-Network-Bandwidth.md
       - name: SSH密钥
         items:
           - name: 概述
