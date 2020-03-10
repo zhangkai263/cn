@@ -45,8 +45,6 @@
         href: Getting-Started/Delete-Distributed-Cloud-Physical-Server.md
   - name: 操作指南
     items:
-      - name: 使用须知
-        href: Operation-Guide/Terms-and-Conditions.md
       - name: 实例
         items:
           - name: 重置密码
