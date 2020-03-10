@@ -53,6 +53,8 @@
             href: Operation-Guide/Instance/Associate-The-EIP.md
           - name: 解绑弹性公网IP
             href: Operation-Guide/Instance/Disassociate-The-EIP.md
+          - name: 添加别名IP范围
+            href: Operation-Guide/Instance/Alisas-IP.md
       - name: 网络
         items:
           - name: 私有网络
