@@ -49,6 +49,8 @@
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
+          - name: 重装操作系统
+            href: Operation-Guide/Instance/Reinstall.md
           - name: 绑定弹性公网IP
             href: Operation-Guide/Instance/Associate-The-EIP.md
           - name: 解绑弹性公网IP
