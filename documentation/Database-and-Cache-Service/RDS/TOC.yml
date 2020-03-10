@@ -355,9 +355,13 @@
           href: Operation-Guide/Log/ErrorLog.md  
       - name: 设置访问模式
         href: Operation-Guide/Set-Access-Mode.md     
+        
       - name: PostgreSQL 插件 
-        href: Operation-Guide/PostgreSQL-Extension.md   
-            
+        items:
+        -name: PostgreSQL支持扩展
+        href: Operation-Guide/PostgreSQL-Extension/PostgreSQL-Extension.md 
+        -name: 使用s3_fdw插件将数据流转到OSS
+        href: Operation-Guide/PostgreSQL-Extension/S3_fdw.md
   - name: 最佳实践
     items:
     - name: 数据迁移
