@@ -93,8 +93,6 @@
         items:
           - name: 功能描述
             href: Operation-Guide/Distributed-Cloud-Physical-Server-Life-Cycle-Management/Description-Distributed-Cloud-Physical-Server-Life-Cycle-Management.md
-          - name: 操作步骤
-            href: Operation-Guide/Distributed-Cloud-Physical-Server-Life-Cycle-Management/Steps-Distributed-Cloud-Physical-Server-Life-Cycle-Management.md
       - name: 重装操作系统
         items:
           - name: 功能描述
