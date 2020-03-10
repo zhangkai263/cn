@@ -68,75 +68,46 @@
       <td rowspan="12">华东-台州<br/>
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
-      <td>19</td>
-      <td>0.04</td>
+      <td>24</td>
+      <td>0.081</td>
       
    </tr>
    <tr>
       <td>2Mbps</td>
-      <td>38</td>
-      <td>0.08</td>
+      <td>49</td>
+      <td>0.162</td>
       
    </tr>
    <tr>
      <td>3Mbps</td>
-     <td>57</td>
-     <td>0.12</td>
+     <td>73</td>
+     <td>0.243</td>
 	
    </tr>
    <tr>
      <td>4Mbps</td>
-     <td>76</td>
-     <td>0.16</td>
+     <td>97</td>
+     <td>0.324</td>
      
    </tr>
    <tr>
      <td>5Mbps</td>
-     <td>95</td>
-     <td>0.2</td>
+     <td>121</td>
+     <td>0.405</td>
      
    </tr>
    <tr>
-     <td>6Mbps及以上，n为带宽值</td>
-     <td>n*19</td>
-     <td>n*0.04</td>
+     <td>6Mbps及以上，n为带宽值(n>=6)，每Mbps费用</td>
+     <td>n*24.3</td>
+     <td>n*0.081</td>
   </tr>
   <tr>
-    <td rowspan="6">额外上行带宽</td>
-        <td>1Mbps</td>
-        <td>4</td>
-	 <td>0.01</td>
-    </tr>
-    <tr>
-        <td>2Mbps</td>
-        <td>8</td>
-	<td>0.02</td>
-    </tr>
-    <tr>
-        <td>3Mbps</td>
-        <td>12</td>  
-	 <td>0.03</td>
-    </tr>
-    <tr>
-        <td>4Mbps</td>
-        <td>16</td>
-	 <td>0.04</td>
-    </tr>
-    <tr>
-        <td>5Mbps</td>
-        <td>20</td>
-	 <td>0.05</td>
-    </tr>
-    <tr>
-        <td>6Mbps及以上，n为带宽值</td>
-        <td>n*4</td>
-	 <td>n*0.01</td>
+    <td rowspan="1">额外上行带宽</td>
+        <td>n为带宽值（n>=0），每Mbps费用</td>
+        <td>n*7.5</td>
+	 <td>n*0.025</td>
     </tr>
 </table>
 
-
-
-请注意：
-
-弹性公网IP的价格依据节点和线路类型而不同，具体价格请以购买时选择的节点和线路为准。
+请注意：弹性公网IP的价格依据节点和线路类型而不同，具体价格请以购买时选择的节点和线路为准。
 
