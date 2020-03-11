@@ -111,6 +111,8 @@ items:
             href: Operation-Guide/Image/Image-Overview.md
           - name: 镜像类型
             href: Operation-Guide/Image/Image-Type.md
+          - name: 官方镜像系统组件
+            href: Operation-Guide/Image/Default-Agent-in-Public-Image.md            
           - name: 制作私有镜像
             href: Operation-Guide/Image/Create-Private-Image.md
           - name: 共享私有镜像
@@ -421,8 +423,8 @@ items:
             href: Windows-Troubleshooting/Configuration-Class/Windows2008-opens-kernel-dump-configuration.md
           - name: Windows2008设置虚拟内存
             href: Windows-Troubleshooting/Configuration-Class/Windows2008-set-virtual-memory.md
-          - name: Windows2012磁盘分区和格式化
-            href: Windows-Troubleshooting/Configuration-Class/Windows2012-disk-partitioning-and-formatting.md
+          - name: Windows2012&2016磁盘分区和格式化
+            href: Windows-Troubleshooting/Configuration-Class/Windows2012-2016-disk-partitioning-and-formatting.md
           - name: Windows2012安装配置ftp服务
             href: Windows-Troubleshooting/Configuration-Class/Windows2012-installation-and-configuration-ftp-service.md
           - name: Windows2012修改SID

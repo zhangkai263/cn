@@ -11,7 +11,7 @@
 ### 前提条件：
 
 * 您可预先[创建私有网络](../../Networking/Virtual-Private-Cloud/Operation-Guide/VPC-Configuration.md)、[创建子网](../../Networking/Virtual-Private-Cloud/Operation-Guide/Subnet-Configuration.md)或随云主机一起创建私有网络及子网。
-* 若您需要在Linux云主机上使用SSH密钥登录实例，您可预先[创建SSH密钥](../Virtual-Machine/Operation-Guide/Key-Pair/Create-Keypair.md)或随云主机一起创建SSH密钥。
+* 若您需要在Linux云主机上使用SSH密钥登录实例，您可预先[创建SSH密钥](../Virtual-Machines/Operation-Guide/Key-Pair/Create-Keypair.md)或随云主机一起创建SSH密钥。
 * 若您需要使用安全组进行云主机的安全访问控制，您可预先[创建安全组](../../Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration.md)、[配置安全组](../../Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration.md)或随云主机一起创建安全组。
 
 ### 创建步骤
@@ -174,6 +174,6 @@
 
 [创建子网](../../Networking/Virtual-Private-Cloud/Operation-Guide/Subnet-Configuration.md)
 
-[创建SSH密钥](../Virtual-Machine/Operation-Guide/Key-Pair/Create-Keypair.md)
+[创建SSH密钥](../Virtual-Machines/Operation-Guide/Key-Pair/Create-Keypair.md)
 
 [创建安全组](../../Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration.md)
