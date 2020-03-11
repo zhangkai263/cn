@@ -42,3 +42,4 @@ sudo ./jcs-image-tool
 | firewall      |iptables服务已关闭      | 在京东云环境下配置的访问策略失效，可能导致某些内部服务由于访问受限导致无法正常运行     |关闭防火墙
 | driver     | virtio驱动已编译进内核或编译成内核模块     |  无法正常启动实例    |  [安装virtio驱动](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver)
 
+

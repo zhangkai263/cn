@@ -24,14 +24,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describebackupsynchronicities#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**backupSynchronicities**|BackupSynchronicity[]| |
+|**backupSynchronicities**|[BackupSynchronicity[]](describebackupsynchronicities#backupsynchronicity)| |
 |**totalCount**|Integer| |
-### BackupSynchronicity
+### <div id="backupsynchronicity">BackupSynchronicity</div>
 |名称|类型|描述|
 |---|---|---|
 |**serviceId**|String|跨地域备份同步服务ID|
@@ -48,3 +48,40 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeBackupSynchronicities() {
+    DescribeBackupSynchronicitiesRequest request = new DescribeBackupSynchronicitiesRequest();
+    request.setPageNumber(1);
+    request.setPageSize(10);
+    request.setRegionId("cn-east-2");
+    DescribeBackupSynchronicitiesResponse response = rdsClient.describeBackupSynchronicities(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa34rjhhaak7vqv10dw79t2ok13c566", 
+    "result": {
+        "backupSynchronicities": [
+            {
+                "createTime": "2020-01-07 15:24:06", 
+                "destRegion": "cn-east-2", 
+                "engine": "mssjstack", 
+                "engineVersion": "5.7", 
+                "instanceId": "mysql-wp4e9ztap2", 
+                "newestDataTime": "", 
+                "serviceId": "dbs-r1q51ene3s5d", 
+                "serviceStatus": "RUNNING", 
+                "srcRegion": "cn-north-1"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

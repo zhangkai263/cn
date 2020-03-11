@@ -166,6 +166,35 @@ b）上报只读属性的property，将需要上报的属性封装成json对象�
 
 c）iot_subscribe_reply会收到hub收到属性上报的响应。
 
+### 注意：
+
+设备上报的数据经过规则引擎转发后会进行数据增强处理，增加设备名称，设备标识及设备产品的信息，示例如下：
+
+ 产品 iottest下的名为test-device的设备上报的数据格式：
+
+```
+{
+ "msgId": "123",
+ "version": "1.0",
+ "data": {
+ "message": "Hello World"
+ },
+ "ts": 1559805611390
+}
+```
+
+规则引擎转发出去的格式：
+
+```
+{
+  "identifier":"kKvX***kvx",
+  "message":"Hello World",
+  "productKey":"REwf***gdne",
+  "deviceName":"test-device",
+  "ts":"1577181657114"
+} 
+```
+
 ## 设备事件上报
 
 设备如果有事件需要通知hub，可以通过此方法发送

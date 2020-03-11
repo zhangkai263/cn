@@ -72,6 +72,9 @@
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-del.png)
 
 说明：
+
 - 删除后调用链数据会丢弃，请谨慎操作。
+
+- 如果您的资源处于无法删除状态，请先查看账户是否欠费，如若欠费需先补足欠款再进行资源删除；如若还有问题无法解决，您可联系客服或提交工单联系我们。
 
 

@@ -22,9 +22,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:describ
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describelatestrestoretime#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**latestRestoreTime**|String|实例按时间点恢复时,可恢复到的最后的一个时间点|
@@ -33,3 +33,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:describ
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeLatestRestoreTime() {
+    DescribeLatestRestoreTimeRequest request = new DescribeLatestRestoreTimeRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    DescribeLatestRestoreTimeResponse response = rdsClient.describeLatestRestoreTime(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4ra7kttub98404upawr11a9dnf1bb", 
+    "result": {
+        "latestRestoreTime": "2020-01-07 17:18:26"
+    }
+}
+```

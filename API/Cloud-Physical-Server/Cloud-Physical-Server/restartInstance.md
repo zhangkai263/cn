@@ -24,10 +24,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:restart
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](restartinstance#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|重启操作是否成功|

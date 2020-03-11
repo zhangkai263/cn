@@ -9,21 +9,21 @@
         "schemaName":"待迁移 Schema名1",
         "tableIncludes":[
             {
-                "tableName":"待迁移表名1",
+                "tableName":"待迁移表名1"
             },
             {
-                "tableName":"待迁移表名2",
+                "tableName":"待迁移表名2"
             }            
-        ],
-    }
+        ]
+    },
     {
         "dbName":"待迁移库名2",
         "schemaName":"待迁移 Schema名2",
         "tableIncludes":[
             {
-                "tableName":"待迁移表名",
+                "tableName":"待迁移表名"
             }
-        ],
+        ]
     }
 ]
 ```

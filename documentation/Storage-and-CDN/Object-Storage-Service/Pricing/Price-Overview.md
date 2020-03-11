@@ -22,42 +22,42 @@
  </tr>
  <tr>
   <td rowspan="6">访问流量</td>
-  <td>内网流入流量</td>
+  <td>内网上行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>内网流出流量</td>
+  <td>内网下行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>外网流入流量</td>
+  <td>外网上行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>外网流出流量</td>
+  <td>外网下行流量</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
  </tr>
  <tr>
-  <td>CDN回源流出流量</td>
+  <td>CDN回源下行流量</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
  </tr>
  <tr>
-  <td>跨区域复制流量</td>
+  <td>数据同步流量</td>
   <td>暂时免费</td>
   <td>暂时免费</td>
   <td>暂时免费</td>

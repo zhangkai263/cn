@@ -19,3 +19,8 @@ redis-cli -h [host] -p [port] -a [password]
 
 参考链接：https://redis.io/topics/rediscli
 
+# 使用Web-cli连接实例
+
+在实例详情页使用Web-cli连接实例，前提是该实例已设置密码，免密无法使用Web-cli，安全起见，请关闭免密，设置密码后再使用Redis Web Cli。
+![Webcli](https://github.com/jdcloudcom/cn/blob/master/image/Redis/webcli.png)
+

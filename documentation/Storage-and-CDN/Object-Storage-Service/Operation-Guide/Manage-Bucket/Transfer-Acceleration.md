@@ -16,7 +16,7 @@
 
 - 动态加速域名：\<BUCKET\>.s3-accelerate.\<REGION\>.jdcloud-oss.com
 
-- 回源加速域名：\<BUCKET\>.s3-accelerate-cache.\<REGION\>.jdcloud-oss.com
+- 回源加速域名：\<BUCKET\>.s3-cache-accelerate.\<REGION\>.jdcloud-oss.com
 
 **注意事项：**
 

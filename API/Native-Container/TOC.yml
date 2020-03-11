@@ -31,6 +31,8 @@
             href: Native-Container/stopContainer.md
           - name: 重置原生容器镜像
             href: Native-Container/rebuildContainer.md
+          - name: 调整原生容器实例类型配置
+            href: Native-Container/resizeContainer.md
           - name: 创建exec
             href: Native-Container/execCreate.md
           - name: 获取exec退出码
@@ -53,5 +55,5 @@
             href: Secrets/describeSecrets.md
       - name: 规格类型
         items:
-          - name: describeInstanceTypes
+          - name: 查询实例规格
             href: Instance-Type/describeInstanceTypes.md

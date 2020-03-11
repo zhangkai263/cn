@@ -17,19 +17,7 @@
 
 ### 如何升级到京东云新账号
 
-进入京东云 “账户管理-基本资料” 页面，点击 “升级到新版京东云账号”，可以打开升级窗口。
-![](../../../image/User/Account-Mgmt/Accout-Card.png)
-![](../../../image/User/Account-Mgmt/UC-Upgrade.png)
-![](../../../image/User/Account-Mgmt/Upgrade-Window.png)
-
-升级窗口中的 “账号名” 即为您的新账号。“账号名” 默认与您原来的京东账号相同，如果需要更换，请点击 “修改账号名”。
-设置并确认新账号的登录密码，然后点击 “立即升级” 按钮，即可完成升级。
-![](../../../image/User/Account-Mgmt/UC-Upgrade2.png)
-![](../../../image/User/Account-Mgmt/Upgrade-Success.PNG)
-
-升级成功后，您即可使用新设置的账号名和密码登录京东云。新账号的登录页如下。
-默认情况下，京东云将支持继续通过原京东账号登录您的账户。如需禁用京东账号访问，请联系京东云客服或提起工单进行申请。
-![](../../../image/User/Account-Mgmt/log1.PNG)
+联系京东云客服（提交工单、邮件 jdcloud@jd.com 或致电 400 615 1212）为您升级账户。升级成功后即可在京东云直接登录，无需走京东登录入口，首次登录请先通过 “忘记密码” 设置登录密码。
 
 ### 常见问题
 

@@ -57,7 +57,8 @@ cn-south-1 | 华南-广州
 华东-上海 | 可用区B | cn-east-2b 
 华东-上海 | 可用区C | cn-east-2c
 华南-广州 | 可用区A | cn-south-1a  
-   
+华南-广州 | 可用区B | cn-south-1b  
+华南-广州 | 可用区C | cn-south-1c  
 
 
 

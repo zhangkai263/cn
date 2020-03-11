@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建MySQL的只读实例<br>- 仅支持MySQL
+创建MySQL的只读实例<br> - 仅支持MySQL<br> - 创建的只读实例跟主实例在同一个VPC同一个子网中<br> * 只读实例只支持按配置计费
 
 ## 请求方式
 POST
@@ -33,9 +33,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createR
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createroinstance#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**roInstanceId**|String[]|新创建的只读实例ID的列表|
@@ -45,3 +45,36 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createR
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testCreateROInstance() {
+    CreateROInstanceRequest request = new CreateROInstanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setAzId("cn-north-1a");
+    request.setInstanceClass("db.mysql.s1.micro");
+    request.setInstanceStorageGB(40);
+    request.setCount(1);
+    request.setVpcId("vpc-yn4dblxgeb");
+    request.setSubnetId("subnet-820lwf1mlp");
+    request.setInstanceName("test");
+    CreateROInstanceResponse response = rdsClient.createROInstance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa5kgpsceej8ks7j8abs2tw163o1bgv", 
+    "result": {
+        "orderId": "124073346420319835", 
+        "roInstanceId": [
+            "mysqlro-57ge82b4le"
+        ]
+    }
+}
+```

@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改节点组的 名称 和 描述
+修改工作节点组的 名称 和 描述<br>name 和 description 必须要指定一个
 
 ## 请求方式
 PATCH
@@ -13,13 +13,13 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |节点组 ID|
+|**nodeGroupId**|String|True| |工作节点组 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|False| |节点组名称|
-|**description**|String|False| |集群 name 和 description 必须要指定一个|
+|**name**|String|False| |工作节点组名称|
+|**description**|String|False| |工作节点组描述|
 
 
 ## 返回参数

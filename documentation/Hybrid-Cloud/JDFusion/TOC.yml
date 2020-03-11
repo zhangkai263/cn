@@ -1,4 +1,4 @@
-name: JDFusion
+name: 云纳管
 href: 
 items:
 - name: 产品简介
@@ -16,17 +16,42 @@ items:
 
 - name: 入门指南
   items:
-    - name: 概述与环境部署
+    - name: 概述
       href: Getting-Started/Anti-JDFusion-Basic-Started.md
-      
+    - name: 登录
+      href: Getting-Started/Logging-In-JDFusion.md      
+    - name: 纳管云平台
+      href: Getting-Started/Create-Register.md
+    - name: 创建VPC和子网
+      href: Getting-Started/Create-Network.md
+    - name: 创建安全组
+      href: Getting-Started/Create-SecurityGroup.md      
+    - name: 创建EIP
+      href: Getting-Started/Create-EIP.md     
+    - name: 创建云主机
+      href: Getting-Started/Create-VM.md    
+    - name: 为云主机绑定EIP
+      href: Getting-Started/BoundEIP-VM.md        
+    
 - name: 操作指南
   items:
-    - name: 如何获取邀请码
+    - name: 资源概览
       href: Operation-Guide/jdfusion-cloud-InvitationCode.md
-    - name: 如何登录JDFuison控制台
-      href: Operation-Guide/jdfusion-cloud-uc.md
-    - name: Deployment操作指南
-      href: Operation-Guide/jdfusion-cloud-deployment.md 
+    - name: 云主机相关
+      href: Operation-Guide/Associated-With-Instance.md
+    - name: 云硬盘相关
+      href: Operation-Guide/Associated-With-Disk.md   
+    - name: 网络相关
+      href: Operation-Guide/Associated-With-Network.md
+    - name: 负载均衡相关
+      href: Operation-Guide/Associated-With-LB.md    
+    - name: 数据库相关
+      href: Operation-Guide/Associated-With-DB.md
+    - name: 对象存储相关
+      href: Operation-Guide/Associated-With-OSS.md 
+    - name: 云安全相关
+      href: Operation-Guide/Associated-With-KMS.md
+      
       
 - name: 历史发布
   items:

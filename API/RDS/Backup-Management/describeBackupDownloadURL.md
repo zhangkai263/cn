@@ -19,15 +19,15 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups/{backupId}:describeBac
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**fileName**|String|False| |文件名称<br>- MySQL：不支持该参数<br>- SQL Server：必须输入该参数，指定该备份中需要获取下载链接的文件名称。备份中的文件名（不包括后缀）即为备份的数据库名。例如文件名为my_test_db.bak，表示该文件是my_test_db数据库的备份|
-|**urlExpirationSecond**|String|False| |指定下载链接的过期时间，单位秒,缺省为86400秒，即24小时。<br>- MySQL：不支持该参数，只能是默认值<br>- SQL Server：支持|
+|**urlExpirationSecond**|String|False| |指定下载链接的过期时间，单位秒, 取值范围为 1 ~ 86400 秒；支持 SQL Server：缺省为 86400 秒。支持 MySQL, Percona, MariaDB：缺省为 300 秒。|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describebackupdownloadurl#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**publicURL**|String|公网下载链接，若当前不可下载，则为空串|
@@ -37,3 +37,27 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups/{backupId}:describeBac
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeBackupDownloadURL() {
+    DescribeBackupDownloadURLRequest describeBackupDownloadURLRequest = new DescribeBackupDownloadURLRequest();
+    describeBackupDownloadURLRequest.setBackupId("dcd25cd6-a787-4fea-8e89-1451ba600591");
+    describeBackupDownloadURLRequest.setRegionId("cn-north-1");
+    DescribeBackupDownloadURLResponse response = rdsClient.describeBackupDownloadURL(describeBackupDownloadURLRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa32pwe54627hpuqdmbvkaafiii38sf", 
+    "result": {
+        "internalURL": "http://oss-internal.cn-north-1.jcloudcs.com/trove-online-hb/233f1965-3a30-4d8c-a618-25c6f286a96e/backup/dcd25cd6-a787-4fea-8e89-1451ba600591.xbstream?Expires=1578381967&AccessKey=872DED479C1C41757FDCC3A7542BE694&Signature=UxVL6fP+x/WLFMQ/fpUugtQ2MSM=", 
+        "publicURL": "http://oss.cn-north-1.jcloudcs.com/trove-online-hb/233f1965-3a30-4d8c-a618-25c6f286a96e/backup/dcd25cd6-a787-4fea-8e89-1451ba600591.xbstream?Expires=1578381967&AccessKey=872DED479C1C41757FDCC3A7542BE694&Signature=UxVL6fP+x/WLFMQ/fpUugtQ2MSM="
+    }
+}
+```

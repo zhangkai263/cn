@@ -4,7 +4,7 @@
 
 专线服务整体架构图如下：
 
- ![](/image/Networking/Direct-Connect-Service/Infrastructure.png)
+ ![](../../../../image/Networking/Direct-Connect-Service/Introduction/Infrastructure.png)
 
 
 

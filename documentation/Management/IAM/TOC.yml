@@ -59,13 +59,13 @@ items:
                 href: Policy-Management/Policy_v3/Condition.md
       - name: 设置
         href: Setting.md        
-      - name: 虚拟 MFA 设备
+      - name: MFA 多因子认证
         items:
           - name: 概述
             href: Virtual-MFA-Device/MFA-Overview.md   
-          - name: MFA 设置
+          - name: MFA 开启流程
             href: Virtual-MFA-Device/MFA-Settings.md
-          - name: 登录验证
+          - name: 登录认证
             href: Virtual-MFA-Device/Sign-up-Verification.md
           - name: 第三方应用程序安装及使用指导
             href: Virtual-MFA-Device/Third-party-Apps.md

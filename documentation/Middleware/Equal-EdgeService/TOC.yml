@@ -1,0 +1,23 @@
+name: 对等边缘服务
+href: 
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 产品架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 核心功能
+        href: Introduction/Features.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+  - name: 快速开始
+    href: Quick-Start.md
+  - name: 下载专区
+    href: Download-Center.md
+  - name: 相关协议
+    href: User-Agreement.md

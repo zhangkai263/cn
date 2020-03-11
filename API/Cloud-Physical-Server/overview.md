@@ -29,6 +29,7 @@ v1
 |**deleteSubnet**|DELETE|删除子网|
 |**deleteVpc**|DELETE|删除私有网络<br>|
 |**describeBasicSubnet**|GET|查询基础网络子网|
+|**describeCPSLBRegions**|GET|查询负载均衡地域列表|
 |**describeDeviceRaids**|GET|查询某种实例类型的云物理服务器支持的RAID类型，可查询系统盘RAID类型和数据盘RAID类型|
 |**describeDeviceTypes**|GET|查询云物理服务器实例类型|
 |**describeElasticIp**|GET|查询弹性公网IP详情|
@@ -39,8 +40,19 @@ v1
 |**describeInstanceRaid**|GET|查询单个云物理服务器已安装的RAID信息，包括系统盘RAID信息和数据盘RAID信息|
 |**describeInstanceStatus**|GET|查询单个云物理服务器硬件监控信息|
 |**describeInstances**|GET|批量查询云物理服务器详细信息<br/><br>支持分页查询，默认每页20条<br/><br>|
+|**describeKeypair**|GET|查询密钥对详情|
+|**describeKeypairs**|GET|查询密钥对列表|
+|**describeListener**|GET|查询监听器详情|
+|**describeListeners**|GET|查询监听器|
+|**describeLoadBalancer**|GET|查询负载均衡实例详情|
+|**describeLoadBalancers**|GET|查询负载均衡实例列表|
 |**describeOS**|GET|查询云物理服务器支持的操作系统|
 |**describeRegiones**|GET|查询云物理服务器地域列表|
+|**describeRouteTable**|GET|查询路由表详情|
+|**describeRouteTables**|GET|查询路由表列表|
+|**describeServerGroup**|GET|查询虚拟服务器组|
+|**describeServerGroups**|GET|查询虚拟服务器组列表|
+|**describeServers**|GET|查询后端服务器列表|
 |**describeSubnet**|GET|查询子网详情|
 |**describeSubnets**|GET|查询子网列表|
 |**describeVpc**|GET|查询私有网络详情|
@@ -57,18 +69,6 @@ v1
 |**modifyServerGroup**|POST|修改虚拟服务器组|
 |**modifySubnet**|POST|修改子网|
 |**modifyVpc**|POST|修改私有网络<br>|
-|**queryCPSLBRegions**|GET|查询负载均衡地域列表|
-|**queryKeypair**|GET|查询密钥对详情|
-|**queryKeypairs**|GET|查询密钥对列表|
-|**queryListener**|GET|查询监听器详情|
-|**queryListeners**|GET|查询监听器|
-|**queryLoadBalancer**|GET|查询负载均衡实例详情|
-|**queryLoadBalancers**|GET|查询负载均衡实例列表|
-|**queryRouteTable**|GET|查询路由表详情|
-|**queryRouteTables**|GET|查询路由表列表|
-|**queryServerGroup**|GET|查询虚拟服务器组|
-|**queryServerGroups**|GET|查询虚拟服务器组列表|
-|**queryServers**|GET|查询后端服务器列表|
 |**reinstallInstance**|PUT|重装云物理服务器，只能重装stopped状态的服务器<br/><br>- 可调用接口（describeOS）获取云物理服务器支持的操作系统列表<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
 |**removeServer**|DELETE|移除后端服务器|
 |**resetPassword**|PUT|重置云物理服务器密码<br>|

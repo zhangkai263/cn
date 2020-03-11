@@ -35,7 +35,7 @@
 接下来，安装Agent，登录云主机后，以root用户执行：
 
 ```
-curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_deploy | bash
+curl -fsSL https://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install | bash -s zero-agent
 ```
 
 执行结果如下：

@@ -151,6 +151,30 @@ items:
         href: Live-Video/describeLiveStreamSnapshotNotifyConfig.md
       - name: 删除截图回调配置
         href: Live-Video/deleteLiveStreamSnapshotNotifyConfig.md
+  - name: 直播质量检测
+    items:
+      - name: 添加直播质量检测模板
+        href: Live-Video/addCustomLiveStreamQualityDetectionTemplate.md
+      - name: 删除直播质量检测模板
+        href: Live-Video/deleteCustomLiveStreamQualityDetectionTemplate.md
+      - name: 查询直播质量检测模板列表
+        href: Live-Video/describeCustomLiveStreamQualityDetectionTemplates.md
+      - name: 添加域名质量检测配置
+        href: Live-Video/addLiveStreamDomainQualityDetection.md
+      - name: 删除域名质量检测配置
+        href: Live-Video/deleteLiveStreamDomainQualityDetection.md
+      - name: 添加应用质量检测配置
+        href: Live-Video/addLiveStreamAppQualityDetection.md
+      - name: 删除应用级别质量检测模板配置
+        href: Live-Video/deleteLiveStreamAppQualityDetection.md
+      - name: 设置直播质量检测回调通知地址
+        href: Live-Video/setLiveStreamQualityDetectionNotifyConfig.md
+      - name: 删除质量检测回调配置
+        href: Live-Video/deleteLiveStreamQualityDetectionNotifyConfig.md
+      - name: 查询质量检测回调配置
+        href: Live-Video/describeLiveStreamQualityDetectionNotifyConfig.md
+      - name: 查询质量检测模板绑定
+        href: Live-Video/describeQualityDetectionBinding.md
   - name: 直播水印
     items:
       - name: 添加直播水印模板
@@ -213,7 +237,16 @@ items:
         href: Live-Video/describeLivePornData.md
       - name: 查询播放URL排行
         href: Live-Video/describeUrlRanking.md
-
+  - name: 证书管理
+    items:
+      - name: 查询直播证书
+        href: Live-Video/describeLiveDomainCertificate.md
+      - name: 设置直播证书
+        href: Live-Video/setLiveDomainCertificate.md
+      - name: 查询回看证书
+        href: Live-Video/describeLiveRestartDomainCertificate.md
+      - name: 设置回看证书
+        href: Live-Video/setLiveRestartDomainCertificate.md
   - name: 鉴权相关
     items:
       - name: 直播推流鉴权

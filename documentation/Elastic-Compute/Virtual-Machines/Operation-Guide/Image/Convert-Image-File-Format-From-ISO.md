@@ -53,3 +53,4 @@ virt-manager
 打开 virt-manager，并打开硬件配置页面，打开有灯泡显示的图标，然后选择左侧的磁盘选项，右侧“Source path”即为镜像文件路径。
 
 ![](../../../../../image/vm/Image-Import-convert-iso17.png)<br>
+

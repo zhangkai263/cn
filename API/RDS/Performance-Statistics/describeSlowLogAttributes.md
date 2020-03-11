@@ -28,14 +28,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeslowlogattributes#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**slowLogsAttributes**|SlowLogAttributes[]|慢日志信息|
+|**slowLogsAttributes**|[SlowLogAttributes[]](describeslowlogattributes#slowlogattributes)|慢日志信息|
 |**totalCount**|Integer|总记录条数|
-### SlowLogAttributes
+### <div id="slowlogattributes">SlowLogAttributes</div>
 |名称|类型|描述|
 |---|---|---|
 |**dbName**|String|数据库名，表示该SQL是在哪个数据库中执行的|
@@ -50,3 +50,29 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeSlowLogAttributes() {
+    DescribeSlowLogAttributesRequest request = new DescribeSlowLogAttributesRequest();
+    request.setRegionId("cn-north-1");
+    request.setStartTime("2020-01-08 00:00:00");
+    request.setEndTime("2020-01-08 14:00:00");
+    request.setInstanceId("mysql-k67q8n46si");
+    DescribeSlowLogAttributesResponse response = rdsClient.describeSlowLogAttributes(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaoj3ang7j73mwoach4h6qd8jetmchm", 
+    "result": {
+        "slowLogsAttributes": [], 
+        "totalCount": 0
+    }
+}
+```

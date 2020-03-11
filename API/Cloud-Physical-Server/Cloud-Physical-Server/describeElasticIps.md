@@ -22,9 +22,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
 |**status**|String|False| |弹性公网IP状态，取值范围：associate、disassociate|
-|**filters**|Filter[]|False| |elasticIpId - 弹性公网IPID，精确匹配，支持多个<br/><br>elasticIp - 弹性公网IP，精确匹配，支持多个<br>|
+|**includeLB**|String|False| |是否包含负载均衡|
+|**filters**|[Filter[]](describeelasticips#filter)|False| |elasticIpId - 弹性公网IPID，精确匹配，支持多个<br/><br>elasticIp - 弹性公网IP，精确匹配，支持多个<br>|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -34,17 +35,17 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeelasticips#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIps**|ElasticIp[]| |
+|**elasticIps**|[ElasticIp[]](describeelasticips#elasticip)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### ElasticIp
+### <div id="elasticip">ElasticIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-north-1|
@@ -56,8 +57,8 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |**instanceType**|String|实例类型|
 |**instanceId**|String|实例ID|
 |**createTime**|String|创建时间|
-|**charge**|Charge|计费信息|
-### Charge
+|**charge**|[Charge](describeelasticips#charge)|计费信息|
+### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

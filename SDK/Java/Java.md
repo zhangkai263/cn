@@ -2,7 +2,7 @@
 
   欢迎使用京东云开发者Java工具套件（Java SDK）。使用京东云Java SDK，您无需复杂编程就可以访问京东云提供的各种服务。 
 
-  为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[OpenAPI使用入门](http://www.jdcloud.com/help/detail/355/isCatalog/0)。要了解每个API的具体参数和含义，请参考程序注释或参考OpenAPI&SDK下具体产品线的API文档。
+  为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[OpenAPI使用入门](https://docs.jdcloud.com/cn/common-declaration/api/introduction)。要了解每个API的具体参数和含义，请参考程序注释或参考OpenAPI&SDK下具体产品线的API文档。
 
 # 环境准备 #
 1. 京东云Java SDK适用于jdk7及以上版本。

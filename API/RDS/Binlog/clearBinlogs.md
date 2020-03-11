@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/binlogs
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testClearBinlogs() {
+    ClearBinlogsRequest request = new ClearBinlogsRequest();
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    ClearBinlogsResponse response = rdsClient.clearBinlogs(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3bcofkik62ocnf5794sti5fnmnufj"
+}
+```
