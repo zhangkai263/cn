@@ -4,7 +4,7 @@
 
 1.Q:什么是VPN服务？</br>
 
-A:IPsec VPN是京东云提供给客户的一种网络服务，用于建立基于Internet、实现企业IDC和公有云间资源的内网加密通信。</br>
+A:IPsec VPN是京东智联云提供给客户的一种网络服务，用于建立基于Internet、实现企业IDC和公有云间资源的内网加密通信。</br>
 
 2.Q:IPsec VPN可以连接公有云哪些产品？</br>
 
