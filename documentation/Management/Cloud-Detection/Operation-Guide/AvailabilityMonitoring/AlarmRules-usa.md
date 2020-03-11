@@ -54,7 +54,7 @@
 2. 选中监控任务，点击操作列下“报警规则”，进入到“报警规则”页面，选择需要查看的报警规则，点击“报警历史”。   
 ![报警规则](../../../../../image/Cloud-Detection/alarmrule_usa-1.png)
 3. 可以查看到该条规则历史报警情况。默认展示最近3天的报警历史，支持自定义时间段查看对应告警历史。  
-![报警历史](https://raw.githubusercontent.com/luolei-laurel/cn/Cloud-Detection/image/Cloud-Detection/alarmhistory-2.png)
+![报警历史](../../../../../image/Cloud-Detection/alarmhistory-2.png)
 
 # 删除报警规则  
 1. 登录京东云云拨测控制台，点击“管理->云拨测->可用性监控”，进入监控任务列表页面。  
