@@ -1,5 +1,5 @@
 ## Juniper防火墙设备IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以Juniper SRX12.1X47-D20.7虚拟防火墙为例，讲述如何在Juniper设备上配置VPN，适用于Juniper 12.1X47的SRX software，其它版本设备请参考此示例进行配置。
 ```

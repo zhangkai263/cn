@@ -8,7 +8,7 @@
 ### 客户网关多公网IP说明
 
 客户网关支持指定多个公网地址，通常情况下，配置一个公网地址即可。基于业务高可用的考虑，建议客户端配置至少两个不同的公网地址。</br>
-为了满足一些客户京东云和Amazon AWS多云部署的需求，提供了客户网关四个公网地址的选项，用于兼容其VPN Connection，满足客户无缝互联的需求，详见[客户网关操作手册](../../Operation-Guide/Customer-Gateway-Management/Customer-Gateway-Configuration.md)。。
+若客户同时在京东智联云和Amazon AWS中部署了资源，当有两个云环境的VPC中资源进行内网通信的需求时，京东智联云提供了客户网关配置四个公网地址的选项，用于兼容Amazon AWS的VPN Connection，满足客户无缝互联的需求，详见[客户网关操作手册](../../Operation-Guide/Customer-Gateway-Management/Customer-Gateway-Configuration.md)。。
 
 ### 客户端兼容性
 客户端兼容性详见[限制说明](../Restrictions.md)
