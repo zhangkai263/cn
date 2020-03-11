@@ -92,8 +92,8 @@ spec:
             secretKeyRef:
               name: c-tokens-fresher-secret
               key: sk
-        imagePullPolicy: Always
-        image: jdcloudiaas/jcrtoken:cronjob # 1.16集群请换成 jdcloudiaas/jcrtoken:cronjob-14.6
+        imagePullPolicy: IfNotPresent
+        image: jdcloud-cn-north-1.jcr.service.jdcloud.com/jdcloudiaas/jcrtoken:cronjob-14.6
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -144,9 +144,11 @@ spec:
                 secretKeyRef:
                   name: c-tokens-fresher-secret
                   key: sk
-            imagePullPolicy: Always
-            image: jdcloudiaas/jcrtoken:cronjob  # 1.16集群请换成 jdcloudiaas/jcrtoken:cronjob-14.6
+            imagePullPolicy: IfNotPresent
+            image: jdcloud-cn-north-1.jcr.service.jdcloud.com/jdcloudiaas/jcrtoken:cronjob-14.6
 ```  
+注意：如果集群在不同地域，例如，华东或者华南，请将 image镜像地址相应换成 jdcloud-cn-east-2.jcr.service.jdcloud.com/jdcloudiaas/jcrtoken:cronjob-14.6 或者 jdcloud-cn-south-1.jcr.service.jdcloud.com/jdcloudiaas/jcrtoken:cronjob-14.6
+
 4、执行以下命令，运行：
 ```
 kubectl create -f secret.yaml
