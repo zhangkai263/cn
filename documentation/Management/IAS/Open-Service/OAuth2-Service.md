@@ -5,9 +5,9 @@
 
 ## 接入流程
 京东智联云OAuth2.0服务是一系列HTTPS接口。应用开发者需要先在 [应用管理控制台](https://ias-console.jdcloud.com/ias/apps) 获取Client_ID（请参考[《创建和管理应用》]()），然后按以下步骤开发实现授权登录：
-1. 调用授权端点，获取用户登录授权码
-2. 调用令牌端点，获取用户访问令牌，即登录态
-3. 使用访问令牌调用用户信息端点，获取登录用户信息
+1. 调用授权端点（Authorize），获取用户登录授权码（Code）
+2. 调用令牌端点（Token），获取用户访问令牌（Token）
+3. 使用访问令牌调用用户信息端点（Userinfo），获取登录用户信息（Username，Account）
 
 另外，京东智联云还提供令牌撤销和令牌状态查询端点，应用可以根据需要进行调用。
 
@@ -25,9 +25,12 @@
 | response_type |	是 | code/token | string | 应用为授权码模式时，此值应为code；应用为隐式授权模式时，此值应为token。授权码模式相对来说安全性更高，推荐使用授权码模式 |
 | state | 是 | 任意字符串 | string | 返回结果中会原样返回该值，用于避免CSRF |
 
-发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码Code。
 - 请求示例（Examples）
----
 ```HTTP 
-sdsdsds
+https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://example.myapp.com/oauth2&client_id=9891566283421234&state=eyJhcHBJZCI6Ijk2OTE1Nzc2NzY0MjgxNTYiLCJwcm92aWRlclR5cGUiOiJNaWNyb3NvZnQiLCJwcm92aWRlclVzZXJBbGlhc0lkRmllbGQiOiJ1c2VyUHJpbmNpcGFsTmFtZSIsInJlZGlyZWN0VXJsIjoiYUhSMGNDVXpRU1V5UmlVeVJtOWhkWFJvTWkxemRHRm5MbXBrWTJ4dmRXUXVZMjl0In0
 ```
+发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码Code。Code有效期为5分钟，且只能请求一次令牌端点，使用后当前Code会失效，如需再次请求令牌端点，需要重新调用Authorize
+
+
+
+
