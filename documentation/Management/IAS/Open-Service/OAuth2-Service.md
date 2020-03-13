@@ -26,11 +26,29 @@
 | state | 是 | 任意字符串 | string | 返回结果中会原样返回该值，用于避免CSRF |
 
 - 请求示例（Examples）
-```JAVA 
+```
 https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://example.myapp.com/oauth2&client_id=9891566283421234&state=eyJhcHBJZCI6Ijk2OTE1Nzc2NzY0MjgxNTYiLCJwcm92aWRlclR5cGUiOiJNaWNyb3NvZnQiLCJwcm92aWRlclVzZXJBbGlhc0lkRmllbGQiOiJ1c2VyUHJpbmNpcGFsTmFtZSIsInJlZGlyZWN0VXJsIjoiYUhSMGNDVXpRU1V5UmlVeVJtOWhkWFJvTWkxemRHRm5MbXBrWTJ4dmRXUXVZMjl0In0
 ```
-发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码Code。Code有效期为5分钟，且只能请求一次令牌端点，使用后当前Code会失效，如需再次请求令牌端点，需要重新调用Authorize
+发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码Code。Code有效期为5分钟，且请求一次令牌端点后就会失效。如需再次使用Code，请重新获取。
 
+### 令牌端点（Token Endpoint）
 
+- 地址（Path）：https://oauth2.jdcloud.com/token
+- 方法（Method）：GET/POST
+- 请求头（Header）
+```
+Authorization:Basic base64(client_id:client_secret)
+```
+参数说明（Parameters）
 
+| 参数名 | 是否必须 | 值 | 格式 | 备注 |
+| :--------- | :--------- | :--------- | :--------- | :--------- |
+| grant_type | 是 | authorization_code/refresh_token | string | 如果通过Code请求Token，此值为authorization_code；如果通过refresh_token更新Token，此值为refresh_token |
+| code | 否 | 授权端点返回Code | String | grant_type为authorization_code时必须 |
+| refresh_token | 否 | refresh_token的值 | String | grant_type为refresh_token时必须 |
+
+- 请求示例（Examples）
+```
+
+```
 
