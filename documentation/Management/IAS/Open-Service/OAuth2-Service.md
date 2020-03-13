@@ -13,9 +13,9 @@
 
 ### 授权端点（Authorize Endpoint）
 
-| 地址（Path）：https://oauth2.jdcloud.com/authorize |
-| 方法（Method）：GET/POST |
-| 参数说明（Parameters）： |
+- 地址（Path）：https://oauth2.jdcloud.com/authorize
+- 方法（Method）：GET/POST
+- 参数说明（Parameters）
 
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
