@@ -48,7 +48,23 @@ Authorization:Basic base64(client_id:client_secret)
 | refresh_token | 否 | refresh_token的值 | String | grant_type为refresh_token时必须 |
 
 - 请求示例（Examples）
+> grant_type为authorization_code
+```
+metadata:true
+content-type:text/plain;charset=UTF-8
+Authorization:Basic OTg5MTU2NjI4MzQyNzI1MDphYmNkMTIzNA==
+https://oauth2.jdcloud.com/token?grant_type=authorization_code&code=ROCxyxFL
+
+{"access_token": "6dgnMg9jAmvEmY7Fx8Boi3a7yuO3raNg","refresh_token": "blUmpd6ASyVieLEB","token_type": "Bearer","expires_in": 3599}
+```
+> grant_type为refresh_token
+```
+metadata:true
+content-type:text/plain;charset=UTF-8
+Authorization:Basic OTg5MTU2NjI4MzQyNzI1MDphYmNkMTIzNA==
+https://oauth2.jdcloud.com/token?grant_type=refresh_token&refresh_token=blUmpd6ASyVieLEB
+
+{"access_token": "HGKLyJiujF3o7WYxT3fNTNu5hmiOORoF","token_type": "Bearer","expires_in": 3599}
 ```
 
-```
-
+- 错误示例（Error Cases）
