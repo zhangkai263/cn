@@ -12,10 +12,9 @@
 另外，京东智联云还提供令牌撤销和令牌状态查询端点，应用可以根据需要进行调用。
 
 ### 授权端点（Authorize Endpoint）
-地址（Path）：https://oauth2.jdcloud.com/authorize
 
+> 地址（Path）：https://oauth2.jdcloud.com/authorize
 方法（Method）：GET/POST
-
 参数说明（Parameters）：
 
 | Fun                  | With                 | Tables          |
