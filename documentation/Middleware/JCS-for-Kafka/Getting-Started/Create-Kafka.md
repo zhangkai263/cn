@@ -10,7 +10,7 @@
 1. 登录消息队列Kafka版控制台。</br>
 2. 在实例列表页面单击“创建”，进入“创建”页面，选择付费方式、地域、基本信息、规格、网络、高级配置等信息。</br>
 
-![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/创建实例.png)
+![查询1](../../../../image/Internet-Middleware/JCS-for-Kafka/创建实例.png)
 
 * “地域”：目前工作区域只支持且默认选择“华北-北京”。</br>
 * “可用区”：可用区是使用独立电源和网络资源的物理区域。通过内部网络互联，再以物理方式进行隔离，提高了应用程序的可用性。</br> 
