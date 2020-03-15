@@ -60,23 +60,23 @@
        - name: 专线连接管理
          items:
           - name: 物理连接配置
-            href: Operation-Guide/Customer-Gateway-Management/Physical-Connection-Configuration.md
+            href: Operation-Guide/Direct-Connection-Management/Physical-Connection-Configuration.md
           - name: 物理连接监控
-            href: Operation-Guide/Customer-Gateway-Management/Physical-Connection-Monitoring.md
+            href: Operation-Guide/Direct-Connection-Management/Physical-Connection-Monitoring.md
           - name: 专线通道配置
-            href: Operation-Guide/Customer-Gateway-Management/Private-Virtual-Interface-Configuration.md
+            href: Operation-Guide/Direct-Connection-Management/Private-Virtual-Interface-Configuration.md
           - name: 专线通道监控
-            href: Operation-Guide/Customer-Gateway-Management/Private-Virtual-Interface-Monitoring.md
+            href: Operation-Guide/Direct-Connection-Management/Private-Virtual-Interface-Monitoring.md
        - name: 托管连接管理
          items:
           - name: 托管专线配置
-            href: Operation-Guide/VPN-Connection-Management/Hosted-Connection-Configuration.md
+            href: Operation-Guide/Hosted-Connection-Management/Hosted-Connection-Configuration.md
           - name: 托管专线监控
-            href: Operation-Guide/VPN-Connection-Management/Hosted-Connection-Monitoring.md
+            href: Operation-Guide/Hosted-Connection-Management/Hosted-Connection-Monitoring.md
           - name: 托管通道配置
-            href: Operation-Guide/VPN-Connection-Management/Hosted-Private-Virtual-Interface-Configuration.md
+            href: Operation-Guide/Hosted-Connection-Management/Hosted-Private-Virtual-Interface-Configuration.md
           - name: 托管通道监控
-            href: Operation-Guide/VPN-Connection-Management/Hosted-Private-Virtual-Interface-Monitoring.md
+            href: Operation-Guide/Hosted-Connection-Management/Hosted-Private-Virtual-Interface-Monitoring.md
        - name: 客户端管理
          items:
           - name: 思科客户端配置
@@ -106,11 +106,13 @@
     href:
     status: 0
   - name: 用户协议
+    status: 0
     items:
     - name: 服务条款
       href:
       status: 0
   - name: 相关资源
+    status: 0
     items:
     - name: 文档历史记录
       href:
