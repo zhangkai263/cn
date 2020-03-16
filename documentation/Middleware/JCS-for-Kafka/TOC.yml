@@ -31,16 +31,24 @@ items:
       href: Getting-Started/Connect-Kafka.md
 - name: 操作指南
   items:
-    - name: 查看实例
-      href: Operation-Guide/View-Kafka.md
-    - name: 规格变更
-      href: Operation-Guide/Change-Kafka.md
-    - name: 删除实例
-      href: Operation-Guide/Delete-Kafka.md
-    - name: Kafka Manager
-      href: Operation-Guide/Kafka-Manager.md
-    - name: 监控报警
-      href: Operation-Guide/Monitoring.md
+    - name: 实例管理
+      items:
+        - name: 查看实例
+          href: Operation-Guide/View-Kafka.md
+        - name: 规格变更
+          href: Operation-Guide/Change-Kafka.md
+        - name: 续费/转包年包月
+          href: Operation-Guide/Renew-Kafka.md
+        - name: 删除实例
+          href: Operation-Guide/Delete-Kafka.md
+    - name: Topic及ConsumerGroup管理
+      items:
+        - name: Kafka Manager
+          href: Operation-Guide/Kafka-Manager.md
+     - name: 监控报警
+       items:
+         - name: 查看监控信息
+           href: Operation-Guide/Monitoring.md
 - name: 常见问题
   items:
     - name: 产品概述
