@@ -114,7 +114,7 @@ Authorization:Basic base64(client_id:client_secret)
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
 | token_type_hint | 否 | access_token/refresh_token | string | 需要被撤销的token类型，默认值为access_token |
-| token | 是 | 指定token的值 | string |  |
+| token | 是 | 指定token的值 | string | 需要撤销的token |
 
 - 请求示例（Example）
 ```
@@ -128,3 +128,28 @@ HTTP 200 OK
 ```
 
 ### 令牌状态查询端点（Introspection Endpoint）
+
+- 地址（Path）：https://oauth2.jdcloud.com/introspect
+- 方法（Method）：GET/POST
+- 请求头（Header）
+```
+Authorization:Basic base64(client_id:client_secret)
+```
+- 请求参数（Parameters）
+
+| 参数名 | 是否必须 | 值 | 格式 | 备注 |
+| :--------- | :--------- | :--------- | :--------- | :--------- |
+| token_type_hint | 否 | access_token/refresh_token | string | 需要被撤销的token类型，默认值为access_token |
+| token | 是 | 指定token的值 | string | 需要查询的token |
+
+- 请求示例（Example）
+```
+metadata:true
+content-type:text/plain;charset=UTF-8
+Authorization:Basic OTg5MTU2NjI4MzQyNzI1MDphYmNkMTIzNA==
+https://oauth2.jdcloud.com/introspect?token_type_hint=access_token&token=HGKLyJiujF3o7WYxT3fNTNu5hmiOORoF
+
+{"active": false}
+
+{"active": true,"username": "myUser","client_id": "9891566283457220","token_type": "Bearer"}
+```
