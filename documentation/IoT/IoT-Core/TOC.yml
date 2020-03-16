@@ -46,11 +46,7 @@
       - name: 新增物模型
         href: Operation-Guide/Thing-Model/Create-Thing-Model.md    
       - name: 创建规则引擎
-        href: Operation-Guide/Rule-Engine/Create-Rule.md
-  - name: 开发服务
-    items:
-      - name: 固件升级
-        href: Development/OTA/OTA.md          
+        href: Operation-Guide/Rule-Engine/Create-Rule.md          
   - name: 设备开发指南
     items:
       - name: Device SDK 介绍
@@ -67,8 +63,6 @@
         href: Developer-Guide-Device/HeartBeat-Reconnection.md
       - name: 网关功能
         href: Developer-Guide-Device/Gateway_Connection.md   
-      - name: 设备端OTA支持
-        href: Developer-Guide-Device/Device-OTA.md  
       - name: 辅助API
         href: Developer-Guide-Device/API.md  
       - name: 术语表
