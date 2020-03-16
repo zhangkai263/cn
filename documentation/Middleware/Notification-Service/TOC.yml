@@ -59,24 +59,7 @@
           - name: 消息传输重试策略
             href: Operation-Guide/Message-Management/Reties-Policies.md     
       - name: 监控报警
-        items:
-          - name: 查看监控信息
-            href: Operation-Guide/Monitoring/Monitoring.md
-            status: 0
-          - name: 设置报警规则
-            href: Operation-Guide/Monitoring/Alarm-Rules.md
-            status: 0
-      - name: 授权管理
-        items:
-          - name: 权限控制概述
-            href: Operation-Guide/Authorization-Management/Authorization-Overview.md
-            status: 0
-          - name: 主账号对IAM子用户的授权
-            href: Operation-Guide/Authorization-Management/Main-Sub-Authorization.md
-            status: 0
-          - name: 跨主账号的授权
-            href: Operation-Guide/Authorization-Management/Main-Main-Authorization.md
-            status: 0
+        href: Operation-Guide/monitor.md
   - name: SDK参考
     items:
       - name: SDK概述
