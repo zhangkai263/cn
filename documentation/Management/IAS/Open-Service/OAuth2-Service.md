@@ -101,3 +101,30 @@ https://oauth2.jdcloud.com/userinfo
 2. "type":"sub"：登录用户为京东智联云子用户
 3. "type":"pool"：登录用户为京东智联云用户池用户
 
+### 令牌撤销端点（Revocation Endpoint）
+
+- 地址（Path）：https://oauth2.jdcloud.com/revoke
+- 方法（Method）：GET/POST
+- 请求头（Header）
+```
+Authorization:Basic base64(client_id:client_secret)
+```
+- 请求参数（Parameters）
+
+| 参数名 | 是否必须 | 值 | 格式 | 备注 |
+| :--------- | :--------- | :--------- | :--------- | :--------- |
+| token_type_hint | 否 | access_token/refresh_token | string | 需要被撤销的token类型，默认值为access_token |
+| token | 是 | 指定token的值 | string |  |
+
+- 请求示例（Example）
+```
+metadata:true
+content-type:text/plain;charset=UTF-8
+Authorization:Basic OTg5MTU2NjI4MzQyNzI1MDphYmNkMTIzNA==
+https://oauth2.jdcloud.com/revoke?token_type_hint=refresh_token&token=blUmpd6ASyVieLEB
+https://oauth2.jdcloud.com/revoke?token_type_hint=access_token&token=HGKLyJiujF3o7WYxT3fNTNu5hmiOORoF
+
+HTTP 200 OK
+```
+
+### 令牌状态查询端点（Introspection Endpoint）
