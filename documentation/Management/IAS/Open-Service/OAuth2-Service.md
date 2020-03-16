@@ -5,9 +5,9 @@
 
 ## 接入流程
 京东智联云OAuth2.0服务是一系列HTTPS接口。应用开发者需要先在 [应用管理控制台](https://ias-console.jdcloud.com/ias/apps) 获取Client_ID（请参考[《创建和管理应用》]()），然后按以下步骤开发实现授权登录：
-1. 调用授权端点（Authorize），获取用户登录授权码（Code）
-2. 调用令牌端点（Token），获取用户访问令牌（Token）
-3. 使用访问令牌调用用户信息端点（Userinfo），获取登录用户信息（Username，Account）
+1. 调用授权端点（Authorize Endpoint），获取用户登录授权码（code）
+2. 调用令牌端点（Token Endpoint），获取用户访问令牌（token）
+3. 使用访问令牌调用用户信息端点（Userinfo Endpoint），获取登录用户信息（username，account）
 
 另外，京东智联云还提供令牌撤销和令牌状态查询端点，应用可以根据需要进行调用。
 
@@ -15,7 +15,7 @@
 
 - 地址（Path）：https://oauth2.jdcloud.com/authorize
 - 方法（Method）：GET/POST
-- 参数说明（Parameters）
+- 请求参数（Parameters）
 
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
@@ -29,7 +29,7 @@
 ```
 https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://example.myapp.com/oauth2&client_id=9891566283421234&state=eyJhcHBJZCI6Ijk2OTE1Nzc2NzY0MjgxNTYiLCJwcm92aWRlclR5cGUiOiJNaWNyb3NvZnQiLCJwcm92aWRlclVzZXJBbGlhc0lkRmllbGQiOiJ1c2VyUHJpbmNpcGFsTmFtZSIsInJlZGlyZWN0VXJsIjoiYUhSMGNDVXpRU1V5UmlVeVJtOWhkWFJvTWkxemRHRm5MbXBrWTJ4dmRXUXVZMjl0In0
 ```
-发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码Code。Code有效期为5分钟，且请求一次令牌端点后就会失效。如需再次使用Code，请重新获取。
+发起授权请求后，浏览器会将用户302重定向到应用在京东智联云对应的登录页。用户完成登录后，浏览器会再次302重定向返回指定的回调地址，并返回用户授权码code。code有效期为5分钟，且请求一次令牌端点后就会失效。如需再次使用code，请重新获取。
 
 ### 令牌端点（Token Endpoint）
 
@@ -39,12 +39,12 @@ https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://exa
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
-参数说明（Parameters）
+- 请求参数（Parameters）
 
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
-| grant_type | 是 | authorization_code/refresh_token | string | 如果通过Code请求Token，此值为authorization_code；如果通过refresh_token更新Token，此值为refresh_token |
-| code | 否 | 授权端点返回Code | String | grant_type为authorization_code时必须 |
+| grant_type | 是 | authorization_code/refresh_token | string | 如果通过code请求Token，此值为authorization_code；如果通过refresh_token更新Token，此值为refresh_token |
+| code | 否 | 授权端点返回code | String | grant_type为authorization_code时必须 |
 | refresh_token | 否 | refresh_token的值 | String | grant_type为refresh_token时必须 |
 
 - 请求示例（Examples）
@@ -67,4 +67,33 @@ https://oauth2.jdcloud.com/token?grant_type=refresh_token&refresh_token=blUmpd6A
 {"access_token": "HGKLyJiujF3o7WYxT3fNTNu5hmiOORoF","token_type": "Bearer","expires_in": 3599}
 ```
 
-- 错误示例（Error Cases）
+- 错误示例（Examples of error）
+> Header格式不正确（如base64信息前缺少 “Basic空格” 关键字，请对照 “请求头” 说明和请求示例进行确认），或传值不正确（如base64信息中缺少冒号分隔符，或client_secret值错误 - 如果不能确认client_secret值，请登录控制台重置应用密码）
+```
+{"error": "unauthorized_client","error_description": "Basic authorization error, invalid authorization header"}
+```
+> code已过期（5分钟过期）或已失效（使用过一次后code自动失效），此时应重新请求authorize获取新的code
+```
+{"error": "invalid_request","error_description": "Invalid authorization_code"}
+```
+
+### 用户信息端点（UserInfo Endpoint）
+
+- 地址（Path）：https://oauth2.jdcloud.com/userinfo
+- 方法（Method）：GET/POST
+- 请求头（Header）
+```
+Authorization:Bearer access_token
+```
+- 请求参数（Parameters）
+无
+- 请求示例（Example）
+```
+metadata:true
+content-type:text/plain;charset=UTF-8
+Authorization:Bearer 6dgnMg9jAmvEmY7Fx8Boi3a7yuO3raNg
+https://oauth2.jdcloud.com/userinfo
+
+{"name": "poolName/myPool/userName/myUser","account": "myAccount","type": "pool"}
+```
+
