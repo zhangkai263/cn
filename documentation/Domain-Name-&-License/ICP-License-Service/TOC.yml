@@ -11,6 +11,8 @@ items:
             href: Getting-Started/Process/Addition-Filing.md
           - name: 新增网站（有主体）
             href: Getting-Started/Process/Addition-Website.md
+          - name: 主体变更
+            href: Getting-Started/Process/Subject-Change.md 
           - name: 网站变更
             href: Getting-Started/Process/Change-Website.md 
           - name: 变更接入
