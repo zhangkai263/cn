@@ -64,19 +64,12 @@
   <td>暂时免费</td>
  </tr>
  <tr>
-  <td rowspan="2">请求次数</td>
-  <td>GET请求</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
- </tr>
- <tr>
-  <td>PUT请求</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
+  <td>请求次数</td>
+  <td>HTTP请求</td>
+  <td>0.01元/万次</td>
+  <td>0.1元/万次</td>
+  <td>0.1元/万次</td>
+  <td>0.1元/万次</td>
  </tr>
  <tr>
   <td>数据取回费用</td>
