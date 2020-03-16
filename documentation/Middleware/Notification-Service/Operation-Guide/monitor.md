@@ -26,4 +26,4 @@
 
 **报警**
 
-您可以根据实际业务需求，通过云监控创建任意监控项的自定义告警，详细步骤请参考云监控[对资源设置监控报警](https://docs.jdcloud.com/cn/monitoring/set-alarm-rules-details)。
+您可以根据实际业务需求，通过云监控创建任意监控项的自定义告警，详细步骤请参考云监控[对资源设置监控报警](https://docs.jdcloud.com/cn/monitoring/add-rule)。
