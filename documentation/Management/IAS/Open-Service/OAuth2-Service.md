@@ -100,9 +100,9 @@ https://oauth2.jdcloud.com/userinfo
 {"name": "poolName/myPool/userName/myUser","account": "myAccount","type": "pool"}
 ```
 返回结果中，account参数为租户的唯一标识，name为租户下用户的唯一标识，type为name对应的用户类型，与应用设置的面向用户类型有关：
-1. "type":"root"：登录用户为京东智联云主账号
-2. "type":"sub"：登录用户为京东智联云子用户
-3. "type":"pool"：登录用户为京东智联云用户池用户
+1. "type":"root"：登录用户为京东智联云主账号，主账号的用户标识name与租户标识account相同
+2. "type":"sub"：登录用户为京东智联云子用户，子用户标识name为子用户名
+3. "type":"pool"：登录用户为京东智联云用户池用户，池用户标识name为 “poolName/myPool/userName/myUser” 格式
 
 ### 令牌撤销端点（Revocation Endpoint）
 
