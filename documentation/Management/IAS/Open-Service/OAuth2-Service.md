@@ -35,8 +35,7 @@ https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://exa
 
 - 地址（Path）：https://oauth2.jdcloud.com/token
 - 方法（Method）：GET/POST
-- 请求头（Header）
-客户端密码通过HTTP基础身份验证的应用适用
+- 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
@@ -109,8 +108,7 @@ https://oauth2.jdcloud.com/userinfo
 
 - 地址（Path）：https://oauth2.jdcloud.com/revoke
 - 方法（Method）：GET/POST
-- 请求头（Header）
-客户端密码通过HTTP基础身份验证的应用适用
+- 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
@@ -138,8 +136,7 @@ HTTP 200 OK
 
 - 地址（Path）：https://oauth2.jdcloud.com/introspect
 - 方法（Method）：GET/POST
-- 请求头（Header）
-客户端密码通过HTTP基础身份验证的应用适用
+- 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
