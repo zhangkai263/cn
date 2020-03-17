@@ -62,7 +62,9 @@
       - name: 虚拟服务器组管理
         href: Operation-Guide/TargetGroup-Management.md
       - name: 转发规则组管理
-        href: Operation-Guide/UrlMap-Management.md      
+        href: Operation-Guide/UrlMap-Management.md
+      - name: 证书管理
+        href: Operation-Guide/Certificates-Management.md
       - name: 配置访问日志
         href: Operation-Guide/Access-Log.md
       - name: 监控服务
