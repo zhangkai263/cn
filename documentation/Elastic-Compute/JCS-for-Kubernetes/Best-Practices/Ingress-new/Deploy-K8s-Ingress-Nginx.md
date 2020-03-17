@@ -54,80 +54,115 @@ Kubernetes ingress-nginx是社区提供的基于nginx开发的ingress controller
     NAME                      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
     nginx-ingress-controller   1         1         1            1           24d
     ```
-4. 在 Kubernetes集群中，每个Pod都具有唯一的内部 IP 地址，但是Deployment中的Pod随时可能被删除或创建，导致Pod IP地址不断变化。因此需要创建一个Service对外暴露Pod中的应用。Service具有唯一的固定IP地址且能够为后端添加的成员Pod提供负载均衡。在京东云Kubernetes集群中您可以使用LoadBalance类型的Service，为Service关联创建一个应用负载均衡，并通过负载均衡绑定的公网IP，将Service后端关联的nginx-ingress controller应用暴露到公网：
+4. 通过Service LoadBalancer的方式将ingress controller暴露到公网：
 
     ```
     
     apiVersion: v1
     kind: Service
     metadata:
-      name: nginx-ingress       #建议Service使用与nginx-ingress controller对应的Deployment名称相同的名称
-      namespace: nginx-ingress
+      labels:
+        app.kubernetes.io/name: ingress-nginx
+        app.kubernetes.io/part-of: ingress-nginx
+      name: nginx-ingress-controller
+      namespace: ingress-nginx
     spec:
-      type: LoadBalancer
+      externalTrafficPolicy: Cluster
       ports:
       - port: 80
-        targetPort: 80
         protocol: TCP
+        targetPort: 80
         name: http
       - port: 443
-        targetPort: 443
         protocol: TCP
+        targetPort: 443
         name: https
       selector:
-        app: nginx-ingress
+        app.kubernetes.io/name: ingress-nginx
+        app.kubernetes.io/part-of: ingress-nginx
+      type: LoadBalancer
     ```
-    **说明**：目前spec中暂不支持使用externalTrafficPolicy: Local，请先删除Service Yaml文件中对应字段后，再部署Service。
 
-    将上述Service定义到Yaml文件，执行如下命令创建对应的Service：
 
     ```
     
     kubectl create -f X.yaml        # 请使用对应的Yaml文件名称替换X.yaml
     ```
-    **说明**：目前提供的config map中的data为空，您可以按需添加自定义配置。
-8. 等待一段时间，确定Service已经配置完成，并获取Service上配置的External IP字段
+5. 等待一段时间，确定Service已经配置完成，并获取Service上配置的External IP字段
 
     ```
     
     kubectl get svc -n nginx-ingress
 
-    NAME            TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)                      AGE
-    nginx-ingress   LoadBalancer   10.X.XX.231   114.XX.XX.XX   80:30494/TCP,443:30467/TCP   24d
+    NAME                        TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)                      AGE
+    nginx-ingress-controller   LoadBalancer   10.X.XX.231   114.67.127.227   80:30494/TCP,443:30467/TCP   24d
 
-    说明：Service的External IP将作为nginx-ingress controller的VIP，为集群中使用nginx-ingress controller的Ingress提供公网访问入口
+    说明：Service的External IP将作为nginx-ingress controller的VIP，为集群中使用ingress controller的Ingress提供公网访问入口
     ```
-9. 最后，在Ingress controller的Deployment部署文件nginx-ingress.yaml中增加一对环境变量"-args -external-service=nginx-ingress",配置Ingress controller使用Service名称关联的External IP作为公网入口IP：
 
+二、通过ingress访问Kubernetes Dashboard
+1. 确认Kubernetes Dashboard已经安装,如果未安装参考[访问Dashboard](../Connect-Dashboard.md)
+   ```
+   kubectl get service -n kube-system
+   
+   NAME                   TYPE           CLUSTER-IP    EXTERNAL-IP                  PORT(S)         AGE
+   kubernetes-dashboard   ClusterIP      10.0.123.87    <none>                      443:31382/TCP   5d23h
+   ```
+   
+2. 在kube-system名字空间下配置Dashboard所需的ingress规则
     ```
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      annotations:
+        nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+      name: dashboard
+      namespace: kube-system
+    spec:
+      rules:
+      - host: kubernetes-dashboard.jdcloud
+        http:
+          paths:
+          - backend:
+              serviceName: kubernetes-dashboard
+              servicePort: 443
+            path: /
+    ```
+    **说明**：示例中的host kubernetes-dashboard.jdcloud 需要替换成用户自己host，此示例中host对应解析的IP为第一章节第5步中，service nginx-ingress-controller暴露出来的公网IP 114.67.127.227。
+
+3. 访问dashboard
+   在浏览器打开 https://kubernetes-dashboard.jdcloud 
+   
+三、通过ingress访问nginx
+1. 创建一个测试nginx pod
+   ```
+   kubectl create namespace test
+   kubectl run test-nginx --image=nginx --restart=Never --port=80 -n test
+   kubectl expose pod -n test test-nginx --port=80 --target-port=80 --type=ClusterIP
+   ```
+2. 创建对应的ingress规则
+   ```
+   apiVersion: networking.k8s.io/v1beta1
+   kind: Ingress
+   metadata:
+     name: ingress-test
+     namespace: test
+     annotations:
+       kubernetes.io/ingress.class: "nginx"
+   spec:
+     rules:
+     - host: k8s-ingress-nginx-controller-test.jdcloud
+       http:
+         paths:
+         - path: /
+           backend:
+             serviceName: test-nginx
+             servicePort: 80
+    ```
+    **说明**：示例中的host k8s-ingress-nginx-controller-test.jdcloud 需要替换成用户自己host，此示例中host对应解析的IP为第一章节第5步中，service nginx-ingress-controller暴露出来的公网IP 114.67.127.227。
     
-    args:
-      - -nginx-configmaps=$(POD_NAMESPACE)/nginx-config
-      - -default-server-tls-secret=$(POD_NAMESPACE)/default-server-secret
-      - -external-service=nginx-ingress       #新增内容
-
-    kubectl apply -f deployment/nginx-ingress.yaml        #重新部署nginx-ingress controller
-    ```
-10. 执行如下命令确定nginx-ingress controller相关的Pod运行正常，即可完成nginx ingress controller部署：
-
-    ```
-    
-    kubectl get pod -n nginx-ingress
-
-    输出结果：
-    NAME                            READY   STATUS    RESTARTS   AGE
-    nginx-ingress-6hz6b             1/1     Running   0          24d
-    nginx-ingress-kbgbk             1/1     Running   0          24d
-    nginx-ingress-nt68q             1/1     Running   0          24d
-    ```
-
-三、参考链接
-
-完成Nginx-ingress Controller部署后，您可以在Kubernetes集群中部署Ingress Resource，京东云提供了如下基于Nginx-ingress Controller的部署方案，详情参考如下文档。
-
-1. [部署http/https类型的Ingress Resource](https://docs.jdcloud.com/cn/jcs-for-kubernetes/Deploy-Ingress-Resource)；
-2. [基于京东云ALB实现客户端源IP透传](https://docs.jdcloud.com/cn/jcs-for-kubernetes/nginx-ingress-source-ip)。
-    
-    
+3. 测试验证
+在浏览器中打开 http://k8s-ingress-nginx-controller-test.jdcloud  或 https://k8s-ingress-nginx-controller-test.jdcloud
 
 
+ 
