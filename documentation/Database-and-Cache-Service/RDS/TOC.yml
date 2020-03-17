@@ -287,6 +287,8 @@
             href: Operation-Guide/Audit/SQL-Server-Audit/Dowload-Audit.md
           - name: 查看审计结果
             href: Operation-Guide/Audit/SQL-Server-Audit/View-Audit-Result.md    
+        - name: PostgreSQL 审计服务
+          href: Operation-Guide/Audit/PostgreSQL-Audit-Service.md
  
       - name: 性能统计分析
         items:
