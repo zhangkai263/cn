@@ -12,7 +12,7 @@
 	
 	- 后端协议：可选http、tcp；
 
-		注意：监听器只能与对应协议类型的后端服务绑定，后端协议为http时，只能绑定监听协议为http、https类型的监听器，后端协议为tcp时，只能绑定监听协议为tcp、tls类型的监听器；
+		  注意：监听器只能与对应协议类型的后端服务绑定，后端协议为http时，只能绑定监听协议为http、https类型的监听器，后端协议为tcp时，只能绑定监听协议为tcp、tls类型的监听器；
 
 	- 端口：输入范围1~65535，不同后端服务的端口可以重复；
 
@@ -24,7 +24,7 @@
 
 	- 获取真实IP：后端协议为http时，默认开启不可关闭，此时可通过X-Forwarded-For头字段获取客户端真实IP；后端协议为tcp时，支持proxy protocol协议方式透传客户端IP；
 	
-		注：当后端协议为tcp时，如开启获取真实IP，需在后端服务端完成proxy protocol的相关配置。
+		  注意：当后端协议为tcp时，如开启获取真实IP，需在后端服务端完成proxy protocol的相关配置。
 
 	- 获取HTTP头字段：用于透传客户端http请求的相关信息。支持通过X-Forwarded-Proto字段获取负载均衡监听协议、通过X-Forwarded-Port字段获取负载均衡监听端口、 通过X-Forwarded-LBIP字段获取负载均衡VIP地址 、通过X-Forwarded-Host字段获取负载均衡监听目的IP（域名）和端口；
 
