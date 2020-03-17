@@ -1,5 +1,5 @@
 
-# Kubernetes ingress-nginx部署
+# Kubernetes ingress-nginx部署及使用示例
 Ingress 是从Kubernetes集群外部访问集群内部服务的入口，概念示意可参考下方说明。你可以在Ingress配置中提供外部可访问的URL、负载均衡、SSL、基于名称的虚拟主机等。用户通过POST Ingress资源到API server的方式来请求ingress。 
 
   ```
