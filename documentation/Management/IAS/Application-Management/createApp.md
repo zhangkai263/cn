@@ -24,3 +24,5 @@
 在应用列表中，可以查看应用ID（client_id）。点击应用对应的 “管理” 操作，查看应用信息，可以进行修改、设置客户端密码和删除应用等操作。
 
 ![管理应用](../../../../image/IAS/Application-Management/4check-app.png)
+
+目前京东智联云支持的授权范围（scope）仅为openid，如果需要，开发者可以进行添加，并在后续OAuth2.0服务对接中增加scope请求。
