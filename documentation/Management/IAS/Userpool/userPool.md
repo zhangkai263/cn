@@ -9,3 +9,4 @@
 | OpenAPI | 功能描述 | 参数说明 |
 | ------- | ------- | -------- |
 | createUserPool | 创建用户池 |  | a | b ||---|---||AAA|BBB|   |
+| listUserPools | 京东智联云账户下用户池列表 ||
