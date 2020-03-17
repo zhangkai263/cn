@@ -1,6 +1,6 @@
 # 用户池概述
 
-用户池是一款账号托管产品，支持自定义用户信息、认证安全策略、用户登录方式设置、关联应用、自定义登录/忘记密码页面样式、关联第三方登录服务提供商等功能，为应用开发者提供了完备的账号体系服务。
+用户池是一款账号托管产品，支持自定义用户信息、认证安全策略、用户登录方式设置、关联应用、自定义登录/忘记密码页面样式、关联第三方登录服务提供商（Identity Provider，简称IdP）等功能，为应用开发者提供了完备的账号体系服务。
 
 目前京东智联云支持通过OpenAPI创建和管理用户池及池内的用户，也开放HTTPS接口支持用户访问令牌直接调用，以实现用户中心功能。
 
@@ -15,4 +15,22 @@
 | associateUserPoolClient | 应用关联管理 | 将应用关联到池 | 仅支持关联当前京东智联云账户下的应用 |
 | listUserPoolClients | 应用关联管理 | 列出指定池关联的所有应用 | 一个用户池支持关联多个应用 |
 | disassociateUserPoolClient | 应用关联管理 | 解除应用和池关联关系 | |
+| createIdentityProvider | IdP管理 | 创建第三方IdP | 需要提供IdP分配的client_id和client_secret，并指定IdP用户标识与池用户标识之间的映射关系。创建后，与池关联的应用登录页可以根据需要添加IdP登录入口 | |
+| listIdentityProviders | IdP管理 | 列出用户池关联的所有IdP | |
+| describeIdentityProvider | IdP管理 | 获取IdP详情 | |
+| updateIdentityProvider | IdP管理 | 更新IdP设置 | |
+| deleteIdentityProvider | IdP管理 | 删除IdP | |
+| adminCreateUser | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+|  | 用户管理 | 
+
 
