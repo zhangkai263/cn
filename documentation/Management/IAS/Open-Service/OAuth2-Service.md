@@ -36,6 +36,7 @@ https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://exa
 - 地址（Path）：https://oauth2.jdcloud.com/token
 - 方法（Method）：GET/POST
 - 请求头（Header）
+客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
@@ -43,6 +44,9 @@ Authorization:Basic base64(client_id:client_secret)
 
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
+| client_id | 否 | 16位ID | string | 客户端密码通过请求参数验证或不需要验证的应用适用 |
+| client_secret | 否 | 应用客户端密码 | string | 客户端密码通过请求参数验证的应用适用 |
+| refresh_token | 否 | refresh_token的值 | String | grant_type为refresh_token时必须 |
 | grant_type | 是 | authorization_code/refresh_token | string | 如果通过code请求Token，此值为authorization_code；如果通过refresh_token更新Token，此值为refresh_token |
 | code | 否 | 授权端点返回code | String | grant_type为authorization_code时必须 |
 | refresh_token | 否 | refresh_token的值 | String | grant_type为refresh_token时必须 |
@@ -106,6 +110,7 @@ https://oauth2.jdcloud.com/userinfo
 - 地址（Path）：https://oauth2.jdcloud.com/revoke
 - 方法（Method）：GET/POST
 - 请求头（Header）
+客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
@@ -113,6 +118,8 @@ Authorization:Basic base64(client_id:client_secret)
 
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
+| client_id | 否 | 16位ID | string | 客户端密码通过请求参数验证或不需要验证的应用适用 |
+| client_secret | 否 | 应用客户端密码 | string | 客户端密码通过请求参数验证的应用适用 |
 | token_type_hint | 否 | access_token/refresh_token | string | 需要被撤销的token类型，默认值为access_token |
 | token | 是 | 指定token的值 | string | 需要撤销的token |
 
@@ -132,6 +139,7 @@ HTTP 200 OK
 - 地址（Path）：https://oauth2.jdcloud.com/introspect
 - 方法（Method）：GET/POST
 - 请求头（Header）
+客户端密码通过HTTP基础身份验证的应用适用
 ```
 Authorization:Basic base64(client_id:client_secret)
 ```
@@ -139,6 +147,8 @@ Authorization:Basic base64(client_id:client_secret)
 
 | 参数名 | 是否必须 | 值 | 格式 | 备注 |
 | :--------- | :--------- | :--------- | :--------- | :--------- |
+| client_id | 否 | 16位ID | string | 客户端密码通过请求参数验证或不需要验证的应用适用 |
+| client_secret | 否 | 应用客户端密码 | string | 客户端密码通过请求参数验证的应用适用 |
 | token_type_hint | 否 | access_token/refresh_token | string | 需要被撤销的token类型，默认值为access_token |
 | token | 是 | 指定token的值 | string | 需要查询的token |
 
