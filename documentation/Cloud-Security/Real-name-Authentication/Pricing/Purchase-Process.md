@@ -1,6 +1,6 @@
 # 购买流程
 
-本文介绍实名认证服务资源包的购买入口。
+本文介绍实名认证资源包的购买入口。
 
 ## 前提条件
 
@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [实名认证控制台](https://cloudauth-console.jdcloud.com/auth)。
+1. 登录 [实名认证服务控制台](https://cloudauth-console.jdcloud.com/auth)。
 
 2. 在“概览页”页面，点击 **快速购买链接** ，进入“购买资源包”页面。 
    ![资源包快速购买](/image/Real-name-Authentication/资源包快速购买.png)

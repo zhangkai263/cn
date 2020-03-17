@@ -123,7 +123,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
 
-2、选择需要配置扩缩容的应用，点击应用名称，进入应用详情页。
+2、选择需要配置的应用，点击应用名称，进入应用详情页。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq.png)
 
