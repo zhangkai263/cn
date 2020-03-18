@@ -6,31 +6,36 @@
 
 ## 用户池OpenAPI概览
 
-| OpenAPI | 功能分类 | 功能描述 | 功能点说明 |
-| ------- | ------- | ------- | -------- |
-| createUserPool | 池管理 | 创建用户池 | 支持设置mobile/email是否为创建用户必填信息、是否为全局唯一的字段 |
-| listUserPools | 池管理 | 列出当前账户下的所有用户池 | |
-| getUserPool | 池管理 | 获取用户池详情 | |
-| updateUserPool | 池管理 | 设置池用户登录时是否开启图形验证码 | 开启验证码时，用户登录错误多次时将会触发图形滑块验证 |
-| associateUserPoolClient | 应用关联管理 | 将应用关联到池 | 仅支持关联当前京东智联云账户下的应用 |
-| listUserPoolClients | 应用关联管理 | 列出指定池关联的所有应用 | 一个用户池支持关联多个应用 |
-| disassociateUserPoolClient | 应用关联管理 | 解除应用和池关联关系 | |
-| createIdentityProvider | IdP管理 | 创建第三方IdP | 需要提供IdP分配的client_id和client_secret，并指定IdP用户标识与池用户标识之间的映射关系。创建后，与池关联的应用登录页可以根据需要添加IdP登录入口 | |
-| listIdentityProviders | IdP管理 | 列出用户池关联的所有IdP | |
-| describeIdentityProvider | IdP管理 | 获取IdP详情 | |
-| updateIdentityProvider | IdP管理 | 更新IdP设置 | |
-| deleteIdentityProvider | IdP管理 | 删除IdP | |
-| adminCreateUser | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
-|  | 用户管理 | 
+* 池管理相关OpenAPI
 
+| OpenAPI | 功能描述 | 功能点说明 |
+| ------- | ------- | -------- |
+| createUserPool | 创建用户池 | 支持设置mobile/email是否为创建用户必填信息、是否为全局唯一的字段 |
+| listUserPools | 列出当前账户下的所有用户池 | |
+| getUserPool | 获取用户池详情 | |
+| updateUserPool | 设置池用户登录时是否开启图形验证码 | 开启验证码时，用户登录错误多次时将会触发图形滑块验证 |
+
+* 池应用管理相关OpenAPI
+
+| OpenAPI | 功能描述 | 功能点说明 |
+| ------- | ------- | -------- |
+| associateUserPoolClient | 将应用关联到池 | 仅支持关联当前京东智联云账户下的应用 |
+| listUserPoolClients | 列出指定池关联的所有应用 | 一个用户池支持关联多个应用 |
+| disassociateUserPoolClient | 解除应用和池关联关系 | |
+
+* IdP管理相关OpenAPI
+
+| OpenAPI | 功能描述 | 功能点说明 |
+| ------- | ------- | -------- |
+| createIdentityProvider | 创建第三方IdP | 需要提供IdP分配的client_id和client_secret，并指定IdP用户标识与池用户标识之间的映射关系。创建后，与池关联的应用登录页可以根据需要添加IdP登录入口 | |
+| listIdentityProviders | 列出用户池关联的所有IdP | |
+| describeIdentityProvider | 获取IdP详情 | |
+| updateIdentityProvider | 更新IdP设置 | |
+| deleteIdentityProvider | 删除IdP | |
+
+* 用户管理相关OpenAPI
+
+| OpenAPI | 功能描述 | 功能点说明 |
+| ------- | ------- | -------- |
+| adminCreateUser | 
 
