@@ -24,13 +24,13 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:describeKeyDetail
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String|请求ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**keyDetail**|[KeyDetail](#keydetail)| |
+|**keyDetail**|KeyDetail| |
 ### <div id="KeyDetail">KeyDetail</div>
 |名称|类型|描述|
 |---|---|---|
@@ -38,7 +38,7 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:describeKeyDetail
 |**keyName**|String|Key名称|
 |**rotationCycle**|Integer|轮换周期|
 |**keyVersionCount**|Integer|Key版本的个数|
-|**keyVersionList**|[KeyVersionItem[]](#keyversionitem)|Key版本详情的列表|
+|**keyVersionList**|KeyVersionItem[]|Key版本详情的列表|
 ### <div id="KeyVersionItem">KeyVersionItem</div>
 |名称|类型|描述|
 |---|---|---|
