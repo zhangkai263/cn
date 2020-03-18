@@ -1,4 +1,4 @@
-### <div text-align:center>京东智联云推荐返利协议</div>
+## <div align=center>京东智联云推荐返利协议</div>
 
 欢迎您参与京东智联云推荐返利活动！
 
