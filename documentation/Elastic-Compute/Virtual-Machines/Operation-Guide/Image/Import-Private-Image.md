@@ -55,7 +55,7 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 
 ### 3、上传镜像文件
-操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件下载链接。<br>
+操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件内网下载链接（将下载地址域名中的"s3"改成"s3-internal"即可）。<br>
 如果存储空间访问权限为“公有读写”或者“公有读私有写”，可直接点击“复制”图标获取外链。<br>
 ![](../../../../../image/vm/Image-Import-Image-Step1.png)
 
@@ -71,7 +71,7 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
 * CLI指令示意：
 ```
-jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest
+jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.s3-internal.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest
 ```
 
 导入接口参数说明如下：
@@ -84,7 +84,7 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 | osVersion   |  string    |否  |具体的操作系统发行版本号，如7.4（CentOS）、18.04（Ubuntu），仅用于标识以作区分，可根据需要填写
 | diskFormat	 | string    |是   | 镜像文件格式，支持“vhd”、“vmdk”、“qcow2”、“raw”，请如实填写，否则校验阶段会报错影响导入
 | systemDiskSizeGB   |  int   |是  |  指定使用镜像创建系统盘的容量，范围[40,500]，请确保该参数不小于镜像的virtual size，否则校验阶段会报错影响导入
-| imageUrl   | string    |是   |和导入镜像同地区的镜像文件地址（OSS object外链地址），如文件所属地域与接口region不一致会影响导入
+| imageUrl   | string    |是   |和导入镜像同地区的镜像文件内网下载地址（OSS object外链地址，并将域名中的"s3"改成"s3-internal"后填写），如文件所属地域与接口region不一致或填写外网下载地址，会影响导入
 | imageName   |  string    |是  |自定义的镜像名称
 | description   |  string    |否  |自定义的镜像描述
 | forceImport | boolean |否  |  是否不做镜像检测强制导入镜像，为避免导入后镜像不可用建议保持默认默认值。默认值：false
