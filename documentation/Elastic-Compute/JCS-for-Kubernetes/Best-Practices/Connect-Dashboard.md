@@ -77,7 +77,8 @@ kubectl get services -n kube-system
 ## 二、dashboard身份认证  
 在dashboad中查看集群的资源信息，需要通过用户身份认证；  
 **以获取admin服务账户的令牌为例，具体操作方法如下：**  
-1. 创建一个新的token（可选步骤）    
+1. 创建一个新的token（可选步骤） 
+
 `
 kubectl create serviceaccount admin-user -n kube-system   
 `
