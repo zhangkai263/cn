@@ -79,10 +79,11 @@ kubectl get services -n kube-system
 **以获取admin服务账户的令牌为例，具体操作方法如下：**  
 1. 创建一个新的token（可选步骤）    
 `
-kubectl create serviceaccount admin-user -n kube-system
+kubectl create serviceaccount admin-user -n kube-system   
 `
+    
 `
-kubectl create clusterrolebinding admin-user --serviceaccount=kube-system:admin-user --clusterrole=cluster-admin
+kubectl create clusterrolebinding admin-user --serviceaccount=kube-system:admin-user --clusterrole=cluster-admin   
 ` 
   
 2、查看kube-system命名空间中的所有secret：  
