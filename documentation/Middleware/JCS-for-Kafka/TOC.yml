@@ -45,10 +45,10 @@ items:
       items:
         - name: Kafka Manager
           href: Operation-Guide/Kafka-Manager.md
-     - name: 监控报警
-       items:
-         - name: 查看监控信息
-           href: Operation-Guide/Monitoring.md
+    - name: 监控报警
+      items:
+        - name: 查看监控信息
+          href: Operation-Guide/Monitoring.md
 - name: 常见问题
   items:
     - name: 产品概述
