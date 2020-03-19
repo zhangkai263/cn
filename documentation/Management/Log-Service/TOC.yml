@@ -53,8 +53,10 @@ items:
           href: Operation-Guide/LogCollection/CloudResource.md
         - name: 业务应用日志采集
           href: Operation-Guide/LogCollection/CustomLog.md
-        - name: Agent安装教程
-          href: Operation-Guide/LogCollection/AgentInstall.md
+        - name: 业务应用日志投递至ES
+          href: Operation-Guide/LogCollection/logtoES.md
+        - name: 业务应用日志投递至Kafka
+          href: Operation-Guide/LogCollection/logtoKafka.md
     - name: 日志管理
       items:
         - name: 日志集管理
