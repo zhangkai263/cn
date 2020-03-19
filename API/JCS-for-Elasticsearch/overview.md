@@ -18,5 +18,3 @@ v1
 |**describeInstances**|GET|查询es实例列表|
 |**disableDicts**|DELETE|关闭自定义字典。同时清除用户已上传的字典|
 |**modifyInstanceSpec**|POST|变更es实例的配置，实例为running状态才可变更配置，每次只能变更一种且不可与原来的相同。<br>实例配置（cpu核数、内存、磁盘容量、节点数量）目前只允许变大<br>|
-|**modifyInstanceSpecPreCheck**|GET|水平缩容时，判断可以最小缩容到几个节点|
-|**restartInstance**|POST|重启实例接口，提供强制重启与滚动重启，两种重启方式|
