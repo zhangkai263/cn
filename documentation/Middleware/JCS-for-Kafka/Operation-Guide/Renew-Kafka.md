@@ -4,4 +4,4 @@
 
 在列表页中，选择要续费或者转包年包月的实例，单击“操作-更多-续费/转包年包月”进行实例计费形式的变更。</br>
 
-![续费](../..../../image/Internet-Middleware/JCS-for-Kafka/续费.png)
+![续费](../../../../image/Internet-Middleware/JCS-for-Kafka/续费.png)
