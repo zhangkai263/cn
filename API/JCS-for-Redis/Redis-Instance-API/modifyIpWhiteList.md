@@ -1,14 +1,14 @@
-# resetCacheInstancePassword
+# modifyIpWhiteList
 
 
 ## 描述
-修改缓存Redis实例的密码，可为空
+修改Redis实例的IP白名单
 
 ## 请求方式
-POST
+PATCH
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}:resetCacheInstancePassword
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/ipWhiteList
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,13 +18,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**password**|String|False| |密码，为空即为免密，不少于8字符不超过16字符|
+|**ipWhiteList**|String[]|True| |修改后的IP白名单列表，IP格式为CIDR表示法（x.x.x.x/x），0.0.0.0/0表示任何IP、网络都可以访问|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|本次请求ID|
+|**requestId**|String|本次请求的ID|
 
 
 ## 返回码

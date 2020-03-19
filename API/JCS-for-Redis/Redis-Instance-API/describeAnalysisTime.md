@@ -1,14 +1,14 @@
-# describeBackupPolicy
+# describeAnalysisTime
 
 
 ## 描述
-查询缓存Redis实例的自动备份策略
+获取自动缓存分析时间
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/backupPolicy
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/analysisTime
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -22,15 +22,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describebackuppolicy#result)|结果|
+|**result**|[Result](describeanalysistime#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**backupPeriod**|String|备份周期，包括：Monday，Tuesday，Wednesday，Thursday，Friday，Saturday，Sunday，多个用逗号分隔|
-|**backupTime**|String|备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
-|**nextBackupTime**|String|下次自动备份时间段，ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ~YYYY-MM-DDTHH:mm:ssZ|
+|**time**|String|-表示为关闭，HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
 
 ## 返回码
 |返回码|描述|
