@@ -86,7 +86,7 @@
 
 	根据业务需要配置相关参数：
 
-	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-077.png)
+	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-094.png)
 
 - 添加服务器组：
 
