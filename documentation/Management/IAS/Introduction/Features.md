@@ -6,7 +6,7 @@
 
 ## OAuth2.0服务
 
-提供符合OAuth2.0协议的一组接口，开发者可以依照 [OAuth2.0联合登录服务](../../../documentation/Management/IAS/Operation-Guide/OAuth2-Service.md) 文档完成登录对接
+提供符合OAuth2.0协议的一组接口，开发者可以依照 [OAuth2.0联合登录服务](../../../../documentation/Management/IAS/Operation-Guide/OAuth2-Service.md) 文档完成登录对接
 
 ### 管理池
 
