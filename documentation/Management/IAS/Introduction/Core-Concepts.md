@@ -6,7 +6,8 @@
 | 池用户（Pool User）| 池内的用户实体 |
 | 身份凭证（Credentials）| 能够代表用户身份的凭证，如用户名和密码、Access Keys/Secret Keys等 |
 | 身份凭证安全等级（Credentials Security Level）| 身份凭证防止被篡改、被伪造的能力等级，例如：12位复杂密码和短信验证码的组合，比简单6位数字密码的安全等级高 |
-| 身份认证（Authentication） | 使用身份凭证验证用户身份的过程，例如进行账号登录或对OpenAPI签名进行验证 |
+| 身份认证（Authentication） | 验证身份凭证以确认用户身份的过程，例如进行账号登录或对OpenAPI签名进行验证 |
+| 多因子认证（Multi-Factor Authentication）| 指需要验证两个或多个身份凭证才能确认用户身份的身份认证过程 |
 | 身份服务提供商（Identity Provider）| 简称IdP，指提供身份认证的服务模块 |
 | 访问令牌（Token）| 包含用户身份信息的字符串，用户身份认证完成后由IdP生成和颁发 |
 | 应用服务提供商（Service Provider）| 简称SP，指提供用户所需应用的服务模块 |
