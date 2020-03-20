@@ -25,8 +25,9 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 ### <div id="encryptionsettings">EncryptionSettings</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**hlsKey**|String|False| |加密Key。HLS AES128KEY，必须为 16 个 ASCII 可打印字符<br>|
-|**hlsKeyUrl**|String|False| |加密Key地址。必须为合法的HTTP地址。<br>若 hleKey 已设置，表示开启 HLS 加密，其时该参数必须<br>|
+|**hlsKey**|String|False| |HLS加密公钥，按指定编码方式编码<br>必须为 16 字节值，按照 hlsKeyEncodeType 所指定的编码方式进行编码后的字符串<br>|
+|**hlsKeyUrl**|String|False| |HLS加密公钥地址，仅支持HTTP(s)地址<br>若 hlsKey 已设置，则表示开启 HLS 加密，此时为必须参数<br>|
+|**hlsKeyEncodeType**|String|False| |HLS加密公钥编码方式。取值范围：base16, base32, base64<br>若 hlsKey 已设置，则表示开启 HLS 加密，此时为必须参数<br>|
 ### <div id="containersettings">ContainerSettings</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -46,7 +47,7 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 |**rcmode**|String|False| |码率控制模式。取值范围：<br>  crf - 恒定码率系数模式。设置此模式时，rateFactor 生效，bitrate 会被忽略<br>  abr - 平均码率模式。设置此模式时，bitrate 生效，rateFactor 会被忽略<br>默认值为 abr<br>|
 |**rateFactor**|String|False| |码率控制因子。取值范围：[0, 51]，支持2位小数的浮点数<br>当 codec 为 h264 时，默认值为 23；当 codec 为 h265 时，默认值为 28<br>|
 |**bitrate**|Integer|False| |视频码率。取值范围：[128, 10000]，单位为 Kbps<br>|
-|**frameRate**|Integer|False| |视频帧率。取值范围：[1, 60]，单位为 fps<br>未设置时，与源文件帧率保持一致<br>|
+|**frameRate**|Integer|False| |视频帧率。取值范围：[1, 60]，单位为 fps<br>未设置时，与源文件视频帧率保持一致<br>|
 |**width**|Integer|False| |视频输出宽度。取值范围：[128, 4096] 整数。单位为 px<br>未设置时，若 height 也未设置值，则 width 和 height 与原视频保持一致；若 height 设置值，则 width 按照原视频的分辨率等比缩放<br>|
 |**height**|Integer|False| |视频输出高度。取值范围：[128, 4096] 整数。单位为 px<br>未设置时，若 width 也未设置值，则 width 和 height 与原视频保持一致；若 width 设置值，则 height 按照原视频的分辨率等比缩放<br>|
 
@@ -72,8 +73,9 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 ### <div id="encryptionsettings">EncryptionSettings</div>
 |名称|类型|描述|
 |---|---|---|
-|**hlsKey**|String|加密Key。HLS AES128KEY，必须为 16 个 ASCII 可打印字符<br>|
-|**hlsKeyUrl**|String|加密Key地址。必须为合法的HTTP地址。<br>若 hleKey 已设置，表示开启 HLS 加密，其时该参数必须<br>|
+|**hlsKey**|String|HLS加密公钥，按指定编码方式编码<br>必须为 16 字节值，按照 hlsKeyEncodeType 所指定的编码方式进行编码后的字符串<br>|
+|**hlsKeyUrl**|String|HLS加密公钥地址，仅支持HTTP(s)地址<br>若 hlsKey 已设置，则表示开启 HLS 加密，此时为必须参数<br>|
+|**hlsKeyEncodeType**|String|HLS加密公钥编码方式。取值范围：base16, base32, base64<br>若 hlsKey 已设置，则表示开启 HLS 加密，此时为必须参数<br>|
 ### <div id="containersettings">ContainerSettings</div>
 |名称|类型|描述|
 |---|---|---|
@@ -93,7 +95,7 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 |**rcmode**|String|码率控制模式。取值范围：<br>  crf - 恒定码率系数模式。设置此模式时，rateFactor 生效，bitrate 会被忽略<br>  abr - 平均码率模式。设置此模式时，bitrate 生效，rateFactor 会被忽略<br>默认值为 abr<br>|
 |**rateFactor**|String|码率控制因子。取值范围：[0, 51]，支持2位小数的浮点数<br>当 codec 为 h264 时，默认值为 23；当 codec 为 h265 时，默认值为 28<br>|
 |**bitrate**|Integer|视频码率。取值范围：[128, 10000]，单位为 Kbps<br>|
-|**frameRate**|Integer|视频帧率。取值范围：[1, 60]，单位为 fps<br>未设置时，与源文件帧率保持一致<br>|
+|**frameRate**|Integer|视频帧率。取值范围：[1, 60]，单位为 fps<br>未设置时，与源文件视频帧率保持一致<br>|
 |**width**|Integer|视频输出宽度。取值范围：[128, 4096] 整数。单位为 px<br>未设置时，若 height 也未设置值，则 width 和 height 与原视频保持一致；若 height 设置值，则 width 按照原视频的分辨率等比缩放<br>|
 |**height**|Integer|视频输出高度。取值范围：[128, 4096] 整数。单位为 px<br>未设置时，若 width 也未设置值，则 width 和 height 与原视频保持一致；若 width 设置值，则 height 按照原视频的分辨率等比缩放<br>|
 
@@ -127,7 +129,8 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
     }, 
     "definition": "HD", 
     "encryption": {
-        "hlsKey": "H3ehRu89B2JXjWb0", 
+        "hlsKey": "5ZSv5pyJ5YyX6bG877yM5Q==", 
+        "hlsKeyEncodeType": "base64", 
         "hlsKeyUrl": "https://example.com/hlsenc.key"
     }, 
     "title": "我的转码模板", 
@@ -161,7 +164,8 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
         "createTime": "2019-04-16T15:51:32Z", 
         "definition": "HD", 
         "encryption": {
-            "hlsKey": "H3ehRu89B2JXjWb0", 
+            "hlsKey": "5ZSv5pyJ5YyX6bG877yM5Q==", 
+            "hlsKeyEncodeType": "base64", 
             "hlsKeyUrl": "https://example.com/hlsenc.key"
         }, 
         "templateId": 10001, 
