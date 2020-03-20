@@ -160,7 +160,7 @@ https://oauth2.jdcloud.com/introspect?token_type_hint=access_token&token=HGKLyJi
 
 {"active": true,"username": "myUser","client_id": "9891566283457220","token_type": "Bearer"}
 ```
-## {oauth2}环境变量
+### {oauth2}环境变量
 
 | 环境 | {oauth2}变量值 |
 | ---- | ------------- |
