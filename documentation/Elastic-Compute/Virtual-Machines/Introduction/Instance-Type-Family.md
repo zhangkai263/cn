@@ -16,7 +16,7 @@
 
 ### 通用共享型
 <div id="user-content-1"></div>
-通用共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，不同实例的vCPU可以互相争抢物理CPU资源。通用共享型实例拥有高性价比的优点，但是不提供性能SLA保证。
+通用共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，不同实例的vCPU可以互相争抢物理CPU资源。通用共享型实例拥有高性价比的优点，但由于需要对资源进行争抢，在性能上可能会受到不同程度的影响。
 
 
 **规格类型特点：**
@@ -62,7 +62,7 @@
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
@@ -126,7 +126,7 @@ g.n1.8xlarge|32|128|4 |	 |
 计算优化型当前提供计算优化共享型及计算优化标准型，其中计算优化标准型可满足每一个vCPU都对应一个Intel Xeon处理器的超线程核，为您提供高性能的计算资源。
 ### 计算优化共享型
 <div id="user-content-9"></div>
-计算优化共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，不同实例的可以vCPU互相争抢物理CPU资源。计算优化共享型实例拥有高性价比的优点，但是不提供性能SLA保证。
+计算优化共享型实例采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，不同实例的可以vCPU互相争抢物理CPU资源。计算优化共享型实例拥有高性价比的优点，但由于需要对资源进行争抢，在性能上可能会受到不同程度的影响。
 
 **规格类型特点：**
 
@@ -157,7 +157,7 @@ g.n1.8xlarge|32|128|4 |	 |
 * vCPU与内存比约为1:2
 * 处理器：
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
@@ -227,7 +227,7 @@ g.n1.8xlarge|32|128|4 |	 |
 * vCPU与内存比约为1:8
 * 处理器：
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
