@@ -10,7 +10,7 @@
 * 企业IDC内的网段与公有云VPC内的网段不能重叠。
 * 专线和VPN均运行BGP路由协议。
 
-专线连接对客户端设备的要求，详见[使用专线服务需具备的条件](https://docs.jdcloud.com/cn/direct-connection/direct-connect-service-overview)。
+专线连接对客户端设备的要求，详见[使用专线服务需具备的条件](https://docs.jdcloud.com/cn/direct-connection/product-overview)。
 VPN对客户端设备的要求，详见[使用限制](../Introduction/Restrictions.md)。
 
 ### 配置步骤
