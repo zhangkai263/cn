@@ -72,6 +72,6 @@ b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)点击“监控”Tab，可以查看该VPN连接下当前存在的所有VPN隧道的监控信息，监控指标包括：隧道原始流出流量速率、隧道原始流入流量速率、隧道加密后流出流量速率、隧道加密后流入流量速率、隧道流出数据包速率、隧道流入数据包速率；</br>
 ![](../../../../../image/Networking/VPN/Operation-Guide/watching-vpntunnel.png)
 
-有关VPN隧道监控的更多信息，详见[VPN监控](../../Operation-Guide/VPN-Connection-Management/VPN-Monitoring.md)。
+有关VPN隧道监控的更多信息，详见[VPN监控](../../Operation-Guide/VPN-Connection-Management/VPN-Connection-Monitoring.md)。
 
 有关配置隧道客户端VPN设备的方式，详见：[客户端配置](../../Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md)。
