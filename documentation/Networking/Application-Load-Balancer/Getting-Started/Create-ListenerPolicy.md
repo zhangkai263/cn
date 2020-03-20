@@ -58,7 +58,7 @@
 	
 	- 正常态码：输入范围2xx（等价于200-299）、3xx（等价于300-399）、4xx（等价于400-499）。仅健康检查方式为HTTP时支持填写。
 
-		![ALB健康检查设置](../../../../image/Networking/ALB/ALB-024.png)
+		![ALB健康检查设置](../../../../image/Networking/ALB/ALB-094.png)
 
 	**添加服务器组：**
 
@@ -72,4 +72,4 @@
 	
 	       注：可选高可用组中的后端服务器必须与应用负载均衡处于相同地域下的相同私有网络下。
 
-		![ALB添加服务器组](../../../../image/Networking/ALB/ALB-025.png)
+		![ALB添加服务器组](../../../../image/Networking/ALB/ALB-049.png)
