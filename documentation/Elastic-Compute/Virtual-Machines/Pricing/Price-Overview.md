@@ -1258,7 +1258,7 @@
       <td>13451.25</td>
       <td>62.27</td>
       <td>46.72</td>
-      <td>4*P40<br>4*5587GB SSD</td>
+      <td>4*P40<br>4*894GB SSD</td>
    </tr>
    <tr>
       <td>p.n1p40h.3xlarge</td>
@@ -1288,7 +1288,7 @@
       <td>12947.25</td>
       <td>59.94</td>
       <td>44.96</td>
-      <td>4*P40<br>4*9313GB HDD</td>
+      <td>4*P40<br>4*1117GB HDD</td>
    </tr>
    <tr>
       <td>p.n1v100.2xlarge</td>
@@ -1334,3 +1334,4 @@
 [云硬盘价格总览](http://docs.jdcloud.com/cn/cloud-disk-service/price-overview)
 
 [弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)
+
