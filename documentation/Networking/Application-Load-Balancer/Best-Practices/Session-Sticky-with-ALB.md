@@ -32,19 +32,19 @@
 
   ![ALB后端转发设置](../../../../image/Networking/ALB/ALB-102.png)
 
-- 配置健康检查：设置健康检查相关参数，这里使用HTTP方式。![NLB健康检查设置](../../../../image/Networking/ALB/ALB-103.png)
+- 配置健康检查：设置健康检查相关参数，这里使用HTTP方式。![NLB健康检查设置](../../../../image/Networking/ALB/ALB-094.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
   根据业务需要选择虚拟服务器组、高可用组。
 
-  ![NLB服务器组设置](../../../../image/Networking/ALB/ALB-105.png)
+  ![NLB服务器组设置](../../../../image/Networking/ALB/ALB-049.png)
 
 - 如没有可用的虚拟服务器组，点击 **新建虚拟服务器组** 创建一个新的虚拟服务器组，可选云主机、容器，定义实例的端口、权重。
 
   注：只能选择与应用负载均衡同私有网络下的云主机、容器资源。
 
-  ![NLB虚拟服务器组设置](../../../../image/Networking/ALB/ALB-106.png)
+  ![NLB虚拟服务器组设置](../../../../image/Networking/ALB/ALB-050.png)
 
 - 至此，已创建完成基于HTTP协议的监听器，可在监听器列表查看。
 
