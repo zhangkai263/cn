@@ -124,4 +124,4 @@
 <div id="user-content-5"></div>
 
 1. 通过监听器列表页-操作栏，点击**更多**弹出管理证书对话框。
-2. 在管理证书对话框中，可配置一个HTTPS/TLS监听绑定多个证书，操作详见[管理证书](../Operation-Guide/Certificates-Management.md)
+2. 在管理证书对话框中，可配置一个HTTPS/TLS监听绑定多个证书，操作详见[管理证书](../Operation-Guide/Certificates-Management.md)。
