@@ -21,7 +21,7 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:GetPublicKey
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String|请求ID|
 
 ### <div id="Result">Result</div>
