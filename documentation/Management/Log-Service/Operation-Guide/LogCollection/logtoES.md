@@ -1,6 +1,8 @@
 ## 日志数据投递至Elasticsearch
 
-支持将业务应用支持投递至云搜索Elasticsearch和用户自建Elasticsearch中
+支持将业务应用支持投递至云搜索Elasticsearch和用户自建Elasticsearch中.
+
+**用户选择的云ES需要与选择的采集日志的云主机在同一个VPC网络内。**
 
 ### 操作流程
 
