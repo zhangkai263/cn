@@ -25,8 +25,8 @@
         href: Introduction/Restrictions.md
       - name: 应用场景
         items:
-          - name: 混合云环境互联
-            href: Introduction/Application-Scenarios/Connection-Into-IDC-Office.md
+          - name: 连接IDC/办公室
+            href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
           - name: 专线VPN混合云解决方案
             href: Introduction/Application-Scenarios/Backup-For-DirectConnect.md
           - name: 多云环境互联
