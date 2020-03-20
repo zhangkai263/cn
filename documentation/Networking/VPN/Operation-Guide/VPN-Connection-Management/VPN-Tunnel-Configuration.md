@@ -3,7 +3,7 @@ VPN隧道(VPN Tunnel)，VPN隧道是一个云端公网地址和一个客户端�
 
 ### 操作步骤
 ##### 1.创建VPN隧道
-a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
+a)登录[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)点击“资源信息”Tab中的“添加隧道”，初次创建隧道时(VPN连接当前没有创建过隧道或已将隧道全部删除)，会根据您所选择客户网关的公网地址数量，基于高可用的配置而进行页面初始化，默认至少两条隧道(云端的两个公网地址各自一条隧道，适用于客户网关为单IP和双IP的情况)，当客户网关为四IP时，默认初始化四条隧道(云端的两个公网地址各自两条隧道)。非初次创建隧道时，每次只能创建一条隧道； </br>
 d)同一VPN连接下的所有VPN隧道使用相同的路由方式，即在VPN连接上设置的路由方式；</br>
@@ -36,12 +36,12 @@ e)为每个隧道分别配置两阶段协商所使用的参数，包括IKE版本
 |  | DPD | Dead Peer Detection，默认关闭，若开启，则在没有业务流量时，每10s发送探测消息，以保持隧道活性，更多信息请参考RFC 3706 |
 
 ```
-  京东云VPN隧道的参数很多都给出了默认值，这些默认值是我们在经过多次实际业务和安全测试后确定下来的推荐配置，不建议客户使用低于这些配置的选项。
+  VPN隧道的参数很多都给出了默认值，这些默认值是我们在经过多次实际业务和安全测试后确定下来的推荐配置，不建议客户使用低于这些配置的选项。
 ```
 
 ##### 2.修改VPN隧道
 您可对VPN隧道的隧道IP、预共享密钥、IKE版本等参数进行修改。</br>
-a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
+a)登录[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)支持修改VPN隧道的隧道IP、IKE、IPsec等参数，各配置项的限制同创建VPN隧道；</br>
 ```
@@ -62,12 +62,12 @@ c)支持修改VPN隧道的隧道IP、IKE、IPsec等参数，各配置项的限�
 
 ##### 4.删除VPN隧道
 若您不再需要VPN隧道，可将其删除。</br>
-a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
+a)登录[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，进入VPN连接详情页，选择“隧道信息”中响应的VPN隧道，点击操作列中的“删除”。避免意外删除运行中的VPN隧道，只有当该VPN隧道管理状态为“DOWN”时可以删除；</br>
 ![](../../../../../image/Networking/VPN/Operation-Guide/delete-vpntunnel.png)
 
 ##### 5.查看VPN隧道的监控信息
-a)登录[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
+a)登录[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)点击“监控”Tab，可以查看该VPN连接下当前存在的所有VPN隧道的监控信息，监控指标包括：隧道原始流出流量速率、隧道原始流入流量速率、隧道加密后流出流量速率、隧道加密后流入流量速率、隧道流出数据包速率、隧道流入数据包速率；</br>
 ![](../../../../../image/Networking/VPN/Operation-Guide/watching-vpntunnel.png)

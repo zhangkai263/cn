@@ -1,5 +1,5 @@
 ## strongSwan IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以strongSwan 5.3.5为例，讲述如何在Ubuntu 16.04 x86_64主机上配置strongSwan VPN，适用于开源软件客户端。
 

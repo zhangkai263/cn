@@ -1,5 +1,5 @@
 ## 华为防火墙设备IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以华为 USG6530为例，讲述如何在华为设备上配置VPN，适用于HUAWEI USG6500系列防火墙，其它系列设备请参考此示例进行配置。
 
