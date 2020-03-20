@@ -10,5 +10,5 @@
    
    - 当后端服务器类型为IP类型时：
         
-        ![修改虚拟服务器组IP类型](../../../../image/Networking/ALB/ALB-XXX.png)
+        ![修改虚拟服务器组IP类型](../../../../image/Networking/ALB/ALB-ip.png)
 		
