@@ -44,9 +44,11 @@ e)为每个隧道分别配置两阶段协商所使用的参数，包括IKE版本
 a)登录[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)；  </br>
 b)选择相应的VPN连接，进入VPN连接详情页面；</br>
 c)支持修改VPN隧道的隧道IP、IKE、IPsec等参数，各配置项的限制同创建VPN隧道；</br>
+
 ```
   修改隧道配置前，请先将路由切换到其它VPN隧道并在云端“禁用”VPN隧道，云端及客户端设备更新配置完成后，再次“启用”隧道并将路由切换回此隧道，避免由于路由问题及隧道断开并以新配置重建而造成业务断流。
 ```
+
 ![](../../../../../image/Networking/VPN/Operation-Guide/update-vpntunnel.png)
 
 ##### 3.维护VPN
@@ -56,7 +58,9 @@ c)支持修改VPN隧道的隧道IP、IKE、IPsec等参数，各配置项的限�
   云端VPN组件升级维护时，会自动将路由变更到其它隧道，并禁用待维护的隧道，待升级维护完成，会启用隧道并自动将路由切换回此隧道。
   客户端VPN设备升级维护时，建议和云端VPN组件升级维护使用相同的流程和操作步骤。
 ```
+
 ![](../../../../../image/Networking/VPN/Operation-Guide/disable-vpntunnel.png)
+
 ![](../../../../../image/Networking/VPN/Operation-Guide/enable-vpntunnel.png)
 
 
