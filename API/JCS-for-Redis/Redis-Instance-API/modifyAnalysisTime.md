@@ -1,14 +1,14 @@
-# createBackup
+# modifyAnalysisTime
 
 
 ## 描述
-创建并执行缓存Redis实例的备份任务，只能为手动备份，可设置备份文件名称
+设置自动缓存分析时间
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/backup
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/analysisTime
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,20 +18,14 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**fileName**|String|True| |备份文件名称，只支持英文数字和下划线的组合，长度不超过32个字符|
-|**backupType**|Integer|True| |备份类型：手动备份为1，只能为手动备份|
+|**analysisTime**|String|True| |自动缓存分析时间，设置为-表示关闭，否则为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createbackup#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <div id="result">Result</div>
-|名称|类型|描述|
-|---|---|---|
-|**baseId**|String|本次备份任务ID，可用于查询本次备份任务的结果|
 
 ## 返回码
 |返回码|描述|

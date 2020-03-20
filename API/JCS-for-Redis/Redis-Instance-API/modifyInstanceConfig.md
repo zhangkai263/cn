@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改缓存Redis实例的配置参数，支持部分参数修改
+修改缓存Redis实例的配置参数，支持部分配置参数修改
 
 ## 请求方式
 POST
@@ -18,9 +18,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceConfig**|[ConfigItem[]](#ConfigItem)|True| |要修改的配置参数名和参数值|
+|**instanceConfig**|[ConfigItem[]](modifyinstanceconfig#configitem)|True| |配置参数名和参数值|
 
-### <a name="ConfigItem">ConfigItem</a>
+### <div id="configitem">ConfigItem</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**configName**|String|True| |configName目前只支持以下参数：<br>maxmemory-policy（redis 2.8和redis 4.0都支持，但配置值不相同）：内存剔除策略的最大使用内存限制<br>hash-max-ziplist-entries（redis 2.8和redis 4.0都支持）：用ziplist编码实现的哈希对象，ziplist中最多能存放entry个数的阈值<br>hash-max-ziplist-value（redis 2.8和redis 4.0都支持）：用ziplist编码实现的哈希对象，ziplist中能存放的value长度的最大值<br>list-max-ziplist-entries（只有redis 2.8支持）：用ziplist编码实现的列表对象，ziplist中最多能存放entry个数的阈值<br>list-max-ziplist-value（只有redis 2.8支持）：用ziplist编码实现的列表对象，ziplist中能存放的value长度的最大值<br>list-max-ziplist-size（只有redis 4.0支持）：用ziplist编码实现的列表对象，按照数据项个数或占用的字节数，限定ziplist的长度<br>list-compress-depth（只有redis 4.0支持）：用ziplist编码实现的列表对象，quicklist两端不被压缩的节点个数<br>set-max-intset-entries（redis 2.8和redis 4.0都支持）：用intset编码实现的集合对象，intset中最多能存放entry个数的阈值<br>zset-max-ziplist-entries（redis 2.8和redis 4.0都支持）：用ziplist编码实现的有序集合对象，ziplist中最多能存放entry个数的阈值<br>zset-max-ziplist-value（redis 2.8和redis 4.0都支持）：用ziplist编码实现的有序集合对象，ziplist中能存放的value长度的最大值<br>slowlog-log-slower-than（redis 2.8和redis 4.0都支持）：慢查询日志超时时间，单位微秒（1000000表示1秒），0表示记录所有的命令<br>notify-keyspace-events（只有redis 4.0支持）：事件通知<br>|
