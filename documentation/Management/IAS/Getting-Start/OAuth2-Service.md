@@ -13,7 +13,7 @@
 
 ### 授权端点（Authorize Endpoint）
 
-- 地址（Path）：https://oauth2.jdcloud.com/authorize
+- 地址（Path）：{oauth2}/authorize
 - 方法（Method）：GET/POST
 - 请求参数（Parameters）
 
@@ -33,7 +33,7 @@ https://oauth2.jdcloud.com/authorize?response_type=code&redirect_uri=https://exa
 
 ### 令牌端点（Token Endpoint）
 
-- 地址（Path）：https://oauth2.jdcloud.com/token
+- 地址（Path）：{oauth2}/token
 - 方法（Method）：GET/POST
 - 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
@@ -82,7 +82,7 @@ https://oauth2.jdcloud.com/token?grant_type=refresh_token&refresh_token=blUmpd6A
 
 ### 用户信息端点（UserInfo Endpoint）
 
-- 地址（Path）：https://oauth2.jdcloud.com/userinfo
+- 地址（Path）：{oauth2}/userinfo
 - 方法（Method）：GET/POST
 - 请求头（Header）
 ```
@@ -106,7 +106,7 @@ https://oauth2.jdcloud.com/userinfo
 
 ### 令牌撤销端点（Revocation Endpoint）
 
-- 地址（Path）：https://oauth2.jdcloud.com/revoke
+- 地址（Path）：{oauth2}/revoke
 - 方法（Method）：GET/POST
 - 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
@@ -134,7 +134,7 @@ HTTP 200 OK
 
 ### 令牌状态查询端点（Introspection Endpoint）
 
-- 地址（Path）：https://oauth2.jdcloud.com/introspect
+- 地址（Path）：{oauth2}/introspect
 - 方法（Method）：GET/POST
 - 请求头（Header）：客户端密码通过HTTP基础身份验证的应用适用
 ```
@@ -160,3 +160,8 @@ https://oauth2.jdcloud.com/introspect?token_type_hint=access_token&token=HGKLyJi
 
 {"active": true,"username": "myUser","client_id": "9891566283457220","token_type": "Bearer"}
 ```
+## {oauth2}环境变量
+
+| 环境 | {oauth2}变量值 |
+| ---- | ------------- |
+| 京东智联云公有云 | https://oauth2.jdcloud.com |
