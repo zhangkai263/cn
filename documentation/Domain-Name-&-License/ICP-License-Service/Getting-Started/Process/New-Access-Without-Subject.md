@@ -40,7 +40,7 @@
 
 2、填写网站负责人信息，此负责人需完成后续备案拍照等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”，点“下一步”；如有多个网站提交申请，在填写完网站信息可单击“继续添加网站”页面。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-7.pngg)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-7.png)
 
 3、无其他网站备案接入，直接进入上传资料页，上传的备案资料要保持字迹清晰，且要注意需要上传域名证书，域名证书需要联系您的域名注册商获取。
 
