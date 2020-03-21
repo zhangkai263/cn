@@ -10,19 +10,19 @@
 
   登录控制台，选择左侧【资产管理】，点击添加外部IDC内网探针
 
-![image-20200319192325404](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319192325404.png)
+![](../../../../image/Website-Threat-Inspector/wts-idc-assets-01.png)
 
 - 下载外部IDC内网探针
 
   选择内网扫描探针，点击下载，每部署一个子网需重新下载，
 
-![image-20200319192541295](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319192541295.png)
+![](../../../../image/Website-Threat-Inspector/wts-idc-assets-02.png)
 
 - 安装外部IDC内网探针
 
   下载完成，解压缩下载文件（ScannerAgent.sh），手动在安装的资产设备上执行安装脚本。
 
-![image-20200319193021354](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319193021354.png)
+![](../../../../image/Website-Threat-Inspector/wts-idc-assets-03.png)
 
 - 查看外部IDC内网探针状态
 
