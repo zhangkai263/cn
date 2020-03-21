@@ -12,7 +12,7 @@
 
 1、登录控制台，选择左侧【资产管理】，点击添加京东云内网探针
 
-![image-20200319183601393](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319183601393.png)
+![](../../../../image/Website-Threat-Inspector/wts-vpc-assets-01.png)
 
 2、在部署内网探针页可以对VPC内网探针进行检索管理
 
@@ -26,7 +26,7 @@
 | 版本     | 全部版本、V1.0等                                       |
 | 状态     | 全部状态，在线、离线、部署中、部署失败、卸载中、未部署 |
 
-![image-20200319183858625](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319183858625.png)
+![](../../../../image/Website-Threat-Inspector/wts-vpc-assets-02.png)
 
 - 资产探测
 
@@ -38,7 +38,7 @@
 
   选择部署区域、子网名称，点击【部署】操作，进行探针部署。
 
-![image-20200319185430193](C:\Users\chentongle\AppData\Roaming\Typora\typora-user-images\image-20200319185430193.png)
+![](../../../../image/Website-Threat-Inspector/wts-vpc-assets-03.png)
 
 - 选择部署实例规格
 
