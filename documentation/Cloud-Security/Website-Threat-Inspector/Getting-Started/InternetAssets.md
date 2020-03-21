@@ -66,7 +66,7 @@
 >
 > 1、请先使用 Chrome 浏览器成功登录您的网站，访问一个登录后才能继续访问的页面，使用 F12按键或在页面右键选择 “检查”。
 >
-> <img src="![](../../../../image/Website-Threat-Inspector/wts-internet-assets-05.png)" alt="image-20200303184017139" style="zoom:50%;" />
+> ![](../../../../image/Website-Threat-Inspector/wts-internet-assets-05.png)
 >
 > 2、在出现的开发者工具中选择 “Network-All”，并刷新页面。
 >
