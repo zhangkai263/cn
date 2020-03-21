@@ -25,8 +25,6 @@ Web扫描配置：爬虫深度：默认为3（可以配置1-7），设置爬虫�
 
 ### 任务管理
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-task.png)
-
   ![](../../../../image/Website-Threat-Inspector/webscan-task2.png)
 
 
