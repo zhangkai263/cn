@@ -14,7 +14,12 @@
 3. 登录按钮色值
 4. 输入框内提示文案
 5. 注册页面URL
+提交后将于3-5个工作日进行处理。
 
 替换参考效果：
 
 ![自定义登录样式](../../../../image/IAS/Application-Management/7cust-login.png)
+
+手机端自适应页面样式：
+
+![自定义登录样式-手机端](../../../../image/IAS/Application-Management/8cust-login.png)
