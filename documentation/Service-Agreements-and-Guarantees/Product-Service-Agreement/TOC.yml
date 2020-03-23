@@ -22,6 +22,8 @@ items:
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
     href: Object-Storage-Service-Level-Agreement-SLA.md 
+  - name: OSS违规检测服务条款
+    href: OSS-Violate-Detection-Terms-Of-Service.md  
   - name: 云缓存Redis服务协议
     href: Caching-Redis-Service-Clause.md
   - name: 云缓存Redis服务等级协议（SLA）
@@ -214,3 +216,5 @@ items:
     href: Intelligent-Edge-Security-Terms-Of-Service.md   
   - name: 堡垒机服务服务条款
     href: Bastion-Terms-Of-Service.md      
+  - name: 内容安全服务条款
+    href: Content-Moderation-Terms-Of-Service.md
