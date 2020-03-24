@@ -33,7 +33,7 @@
 
 手机端自适应页面样式：
 
-![自定义登录-手机端](../../../../image/IAS/Application-Management/8-cust-signin.png)
+![自定义登录-手机端](../../../../image/IAS/Application-Management/8-cust-signin-s.png)
 
 ## 忘记密码
 
