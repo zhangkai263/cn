@@ -43,8 +43,10 @@ Kafka系统提供了测试工具kafka-producer-perf-test.sh和kafka-consumer-per
 
 ## 压测趋势图
 - 消息大小与生产TPS的关系
+
 ![TPS](../../../../image/Internet-Middleware/JCS-for-Kafka/压测TPS.png)
 
 
 - 消息大小与生产吞吐的关系
+
 ![吞吐](../../../../image/Internet-Middleware/JCS-for-Kafka/压测吞吐S.png)
