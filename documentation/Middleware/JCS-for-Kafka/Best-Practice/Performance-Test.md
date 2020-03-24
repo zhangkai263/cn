@@ -5,8 +5,8 @@
 Kafka系统提供了测试工具kafka-producer-perf-test.sh和kafka-consumer-perf-test.sh，通过该工具可以对生产者性能和消费者性能进行测试，获取一组最佳的参数值，进而提升生产者的发送效率和消费者的读取效率。
 
 ## 测试规格
-kafka版本：1.0.1
-节点个数：3
+- kafka版本：1.0.1
+- 节点个数：3
 
 ## 测试结果
 
