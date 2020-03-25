@@ -30,7 +30,7 @@ name: 京鱼座设备池开放
       - name: 开发联调
         href: Getting-Started/Code-And-Debug.md   
       - name: 购买套餐包
-        href: Getting-Started/Phurphase.md   
+        href: Getting-Started/Phurchase.md   
       - name: 发布上线
         href: Getting-Started/Release.md           
   - name: 操作指南
