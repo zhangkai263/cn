@@ -6,5 +6,5 @@
 
 可对报表任务进行下载查看，同时也可删除报表。
 
-![下载报表](/image/Database-Audit/下载.png)
+![下载报表](/image/Database-Audit/下载报表.png)
 

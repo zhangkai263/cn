@@ -1,51 +1,53 @@
-name: Êı¾İ¿âÉó¼Æ
+name: æ•°æ®åº“å®¡è®¡
 href:
 items:
-- name: ²úÆ·¼ò½é
+- name: äº§å“ç®€ä»‹
   items:
-    - name: ²úÆ·¸ÅÊö
+    - name: äº§å“æ¦‚è¿°
       href: Introduction/Product-Overview.md
-    - name: ²úÆ·ÓÅÊÆ
+    - name: äº§å“ä¼˜åŠ¿
       href: Introduction/Benefits.md
-    - name: ²úÆ·¹¦ÄÜ
+    - name: äº§å“åŠŸèƒ½
       href: Introduction/Features.md
-- name: ²úÆ·¶¨¼Û
+- name: äº§å“å®šä»·
   items:
-    - name: ¼Æ·Ñ¸ÅÊö
+    - name: è®¡è´¹æ¦‚è¿°
       href: Pricing/Billing-Overview.md
-    - name: ¼Æ·Ñ¹æÔò
+    - name: è®¡è´¹è§„åˆ™
       href: Pricing/Price-Overview.md
-    - name: ¹ºÂòÁ÷³Ì
+    - name: è´­ä¹°æµç¨‹
       href: Pricing/Purchase-Process.md
-    - name: Ğø·ÑÁ÷³Ì
+    - name: ç»­è´¹æµç¨‹
       href: Pricing/Renew-Process.md       
-- name: ²Ù×÷Ö¸ÄÏ
+- name: æ“ä½œæŒ‡å—
   items:
-    - name: ÊµÀı¹ÜÀí
+    - name: å®ä¾‹ç®¡ç†
       items:
-        - name: ÊµÀı»ù±¾ĞÅÏ¢
+        - name: åˆ›å»ºå®ä¾‹
+          href: Operation-Guide/Instance-Management/Creat-Instance.md        
+        - name: å®ä¾‹åŸºæœ¬ä¿¡æ¯
           href: Operation-Guide/Instance-Management/Instance-Details.md
-        - name: ¼à¿Ø
+        - name: ç›‘æ§
           href: Operation-Guide/Instance-Management/Monitor.md
-        - name: Êı¾İ¿â¹ÜÀí
+        - name: æ•°æ®åº“ç®¡ç†
           items:
-            - name: Êı¾İ¿â»ù±¾ĞÅÏ¢
+            - name: æ•°æ®åº“åŸºæœ¬ä¿¡æ¯
               href: Operation-Guide/Instance-Management/Database-Management/Database-Details.md
-            - name: Éó¼Æ¹æÔò
+            - name: å®¡è®¡è§„åˆ™
               href: Operation-Guide/Instance-Management/Database-Management/AuditRules-List.md            
-            - name: ÕÚ±Î¹æÔò
+            - name: é®è”½è§„åˆ™
               href: Operation-Guide/Instance-Management/Database-Management/HideRules-List.md           
-            - name: °²×°Agent
+            - name: å®‰è£…Agent
               href: Operation-Guide/Instance-Management/Database-Management/Agent.md
-        - name: ÈÕÖ¾¹ÜÀí
+        - name: æ—¥å¿—ç®¡ç†
           href: Operation-Guide/Instance-Management/Log-List.md.md
-        - name: ¹æÔò¹ÜÀí
-          href: Operation-Guide/Instance-Management/AuditRules-List.md       
-        - name: °²È«ÉèÖÃ
+        - name: è§„åˆ™ç®¡ç†
+          href: Operation-Guide/Instance-Management/Rules-List.md       
+        - name: å®‰å…¨è®¾ç½®
           href: Operation-Guide/Instance-Management/White-List.md             
-    - name: ±¨±í¹ÜÀí
+    - name: æŠ¥è¡¨ç®¡ç†
       items:
-        - name: ´´½¨±¨±íÈÎÎñ
+        - name: åˆ›å»ºæŠ¥è¡¨ä»»åŠ¡
           href: Operation-Guide/Report-management/Create-Task.md
-        - name: ²é¿´±¨±íÈÎÎñÏêÇé
+        - name: æŸ¥çœ‹æŠ¥è¡¨ä»»åŠ¡è¯¦æƒ…
           href: Operation-Guide/Report-management/View-Task.md
