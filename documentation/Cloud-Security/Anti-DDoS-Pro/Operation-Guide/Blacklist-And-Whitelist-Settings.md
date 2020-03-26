@@ -10,7 +10,7 @@
 ![](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-01.png)
 4. 实例黑白名单配置，对整个实例的规则生效。在”实例详情“页面，点击 **黑白名单配置**，将配置的IP黑/白名单应用到实例。
 ![](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-02.png)
-5. 转发规则上引用的IP黑/白名单规则，仅在该规则上生效。在”实例详情“页面，点击 **非网站类转发规则**，再点击已添加转发规则的**防护规则**，进入**非网站类防护规则**配置页面，即可在防护规则下引用配置的IP黑/白名单规则。
+5. 转发规则上引用的IP黑/白名单规则，仅在该规则上生效。在”实例详情“页面，点击 **非网站类转发规则**，再点击已添加转发规则的**防护规则**，进入**非网站类防护规则**配置页面，即可在非网站类防护规则下引用配置的IP黑/白名单规则。
 ![](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-03.png)
 ## 配置说明
 1. IP黑/白名单规则支持配置10条； 
