@@ -2,7 +2,7 @@
 
   本文介绍数据库审计实例的购买入口。
 
- ## 入口1：[产品介绍页](https://www.jdcloud.com/cn/products/database-audit)
+ ## 入口1：[产品介绍页](http://www.jdcloud.com/cn/products/database-audit)
 
  1. 登录[京东云官网](http://www.jdcloud.com/cn/)。
 
