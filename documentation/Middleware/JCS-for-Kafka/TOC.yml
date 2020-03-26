@@ -49,6 +49,10 @@ items:
       items:
         - name: 查看监控信息
           href: Operation-Guide/Monitoring.md
+- name: 最佳实践
+  items:
+    - name: 性能测试
+      href: Best-Practice/Performance-Test.md 
 - name: 常见问题
   items:
     - name: 产品概述
@@ -58,4 +62,4 @@ items:
 - name: 相关资源
   items:
     - name: 文档历史记录
-      href: Related-Resources/Document-History.md 
+      href: Related-Resources/Document-History.md
