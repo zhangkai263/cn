@@ -15,4 +15,4 @@
 
  1. 安装最新版的[京东云CLI](https://docs.jdcloud.com/cn/cli/introduction)
  2. 通过以下命令获取临时令牌  
-    `jdc cr get-authorization-token --region-id **** --registry-name ****`
+    `jdc containerregistry get-authorization-token --region-id **** --registry-name ****`
