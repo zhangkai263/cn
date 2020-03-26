@@ -9,13 +9,13 @@
 
 ### 操作步骤
 1. 单击 **防护规则** ，展开防护规则配置。
- ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2004.png)
+ ![网站转发规则](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/web-service-rule-01.png)
 2. 单击黑/白名单的 **去设置** 按钮，在如下弹窗中添加编辑黑/白名单
- ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2005.png)
+ ![网站转发规则](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/web-service-rule-02.png)
 3. 单击添加，添加黑/白名单规则，设置规则的匹配条件和相应的匹配动作</BR>
- ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
+ ![网站转发规则](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/web-service-rule-03.png)
 4. 编辑完成后开启黑/白名单的状态按钮，则规则生效。</BR>
- ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
+ ![网站转发规则](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/web-service-rule-04.png)
 
 配置说明
  -  黑/白名单分别可以配置10条。</BR>
