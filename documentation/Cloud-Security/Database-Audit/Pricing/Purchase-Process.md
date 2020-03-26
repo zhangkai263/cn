@@ -10,7 +10,7 @@
 
 ![数据库审计购买入口](/image/Database-Audit/数据库审计购买入口.png)
 
- 3.弹出数据库审计的产品介绍页，点击**立即购买**。
+ 3.弹出数据库审计的产品介绍页，点击**购买**。
 ![数据库审计购买](/image/Database-Audit/数据库审计购买.png)
 
   4.购买的具体操作，请参考[创建实例](/cn/Cloud-Security/database-audit/Create-Instance.md)。
