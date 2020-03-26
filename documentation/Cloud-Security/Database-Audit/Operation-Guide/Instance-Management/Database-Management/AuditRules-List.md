@@ -8,7 +8,7 @@
 
 ![数据库页面添加规则组及规则](/image/Database-Audit/数据库页面添加规则组及规则.png)
 
-详见[规则管理](/cn/database-audit/Rules-List.md)
+详见[规则管理](../Operation-Guide/Instance-Management/Rules-List.md)
 
 点击**删除**，可删除当前数据库启用的规则组。
 
