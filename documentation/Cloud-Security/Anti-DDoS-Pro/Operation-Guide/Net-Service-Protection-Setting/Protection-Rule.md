@@ -10,7 +10,7 @@
 
 ### 操作步骤
 
-单击**防护规则**，展开防护规则配置，配置防护规则。
+单击**防护规则**，配置防护规则。
     ![非网站防护规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/net-service-protection-rule-02.png)
 
 |防护配置项             |说明 |
