@@ -24,17 +24,17 @@ IP高防的报表分为三类，DDoS攻击防护、业务流量、CC防护和连
 
 2. 业务流量报表</BR>
 包括IN和OUT两个方向的流量，IN流量是经过清洗后，转发到源站服务器的流量，OUT流量是源站服务器的响应流量。
-![](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2007.png)
+![](../../../../image/Advanced%20Anti-DDoS/report%2007.png)
 
 3. CC防护报表</BR>
 IP高防防御的CC攻击，会生成CC防护报表，CC报表支持切换不同的域名。</BR>
 因为CC防护仅对网站类生效，所有CC防护报表中，只能展示网站类转发规则产生的CC防护流量。
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2005.png)
 
-3. 连接数报表</BR>
+4. 连接数报表</BR>
 包括并发连接数和新建连接数。</BR>
 并发连接数：系统在某个时间点存在的已建立的全连接数，包括活跃连接和非活跃连接，活跃连接指当前处于连接状态中的连接，非活跃连接指当前处于结束过程中的连接。</BR>
 新建连接数：系统在1秒内建立的连接数。</BR>
-![](https://github.com/lgt9/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2008.png)
+![](../../../../image/Advanced%20Anti-DDoS/report%2008.png)
 
 
