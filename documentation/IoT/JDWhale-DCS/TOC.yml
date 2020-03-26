@@ -34,6 +34,6 @@ name: 京鱼座设备池开放
       - name: 发布上线
         href: Getting-Started/Release.md           
   - name: 操作指南
-    items:
-      - name: 操作指南概述
-        href: Operation-Guide/Overview.md
+    href: Operation-Guide/Overview.md
+  - name: 常见问题
+    href: FAQ/FAQ.md        
