@@ -12,7 +12,7 @@
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2004.png)
 2. 单击黑/白名单的 **去设置** 按钮，在如下弹窗中添加编辑黑/白名单
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2005.png)
-3. 单击添加，添加黑/白名单规则。</BR>
+3. 单击添加，添加黑/白名单规则，设置规则的匹配条件和相应的匹配动作</BR>
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
 4. 编辑完成后开启黑/白名单的状态按钮，则规则生效。</BR>
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
