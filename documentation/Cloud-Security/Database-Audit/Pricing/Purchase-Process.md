@@ -8,9 +8,9 @@
 
  2. 选择“产品>云安全 数据库审计”，具体见下图。
 
-![数据库审计购买入口](/cn/image/Database-Audit/数据库审计购买入口.png)]
+![数据库审计购买入口](/cn/image/Database-Audit/数据库审计购买入口.png)
  3.弹出数据库审计的产品介绍页，点击**立即购买**。
-![数据库审计购买](/cn/image/Database-Audit/数据库审计购买.png)]
+![数据库审计购买](/cn/image/Database-Audit/数据库审计购买.png)
   4.购买的具体操作，请参考[创建实例](/cn/database-audit/Create-Instance.md)。
 
  ## 入口2：[数据库审计控制台](https://dbaudit.jdcloud.com/instance)
