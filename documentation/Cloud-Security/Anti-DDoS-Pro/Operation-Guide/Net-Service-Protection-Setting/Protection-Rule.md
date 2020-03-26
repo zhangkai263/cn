@@ -1,17 +1,17 @@
 # 非网站类防护规则配置
-高防非网站业务的防护规则（以下简称防护规则）是基于IP地址&端口级别的防护，对于接入高防IP的非网站业务的IP及端口的连接速度、包长度等参数进行限制，实现缓解小流量的连接型攻击的防护功能。
+高防非网站类业务的防护规则（以下简称防护规则）是基于IP地址&端口级别的防护，对于接入高防IP的非网站业务的IP及端口的连接速度、包长度等参数进行限制，实现缓解小流量的连接型攻击的防护功能。
 
 配置步骤如下：
 
 - 首先需要登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 - 找到需要配置的实例，单击实例名称，进入 **实例详情** 页面。
 - 切换到 **非网站转发配置** 
-    ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2002.png)
+    ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/net-service-protection-rule-01.png)
 
 ### 操作步骤
 
-单击##防护规则##，展开防护规则配置，配置防护规则。
-    ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2002.png)
+单击**防护规则**，展开防护规则配置，配置防护规则。
+    ![非网站防护规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/net-service-protection-rule-02.png)
 
 |防护配置项             |说明 |
 |----------------------|---------------|
@@ -21,4 +21,4 @@
 |目的新建连接限速        |目的IP及端口每秒最大新建连接数，超过限制的新建连接将被丢弃。由于防护设备为集群化部署，新建连接限速存在一定误差。|
 |目的并发连接限速        |目的IP及端口最大并发连接数，超过限制的连接将被丢弃。|
 |包长度过滤              |报文所含payload长度大小，单位为字节(byte)，小于最小长度或大于最大长度的包会被丢弃。|
-|Geo拦截                 |按IP来源进行拦截。默认不选，国家支持海外+中国，中国支持到省，支持多选。|
+|Geo拦截                 |按IP来源地进行拦截。默认不选，国家支持海外+中国，中国支持到省，支持多选。|
