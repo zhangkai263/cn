@@ -7,11 +7,11 @@
 1. 登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 2. 在“实例列表”页面，选择目标实例，点击 **实例名称**或 **转发配置**，进入“实例详情”页面。
 3. 在”实例详情“页面，点击 **IP黑/白名单**，即可配置IP黑/白名单规则。IP黑/白名单规则可应用到实例黑白名单配置或转发规则。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-01.png)
+![](../../../../image/Advanced%20Anti-DDoS/ip-white-black-list-01.png)
 4. 实例黑白名单配置，对整个实例的规则生效。在”实例详情“页面，点击 **黑白名单配置**，将配置的IP黑/白名单应用到实例。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-02.png)
+![](../../../../image/Advanced%20Anti-DDoS/ip-white-black-list-02.png)
 5. 非网站类转发规则引用IP黑/白名单规则，在”实例详情“页面，点击 **非网站类转发规则**，再点击已添加转发规则的**防护规则**，进入**非网站类防护规则**配置页面，可在非网站类防护规则白名单和黑名单配置中引用IP黑/白名单规则。转发规则上引用的IP黑/白名单规则，仅在该规则上生效。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-white-black-list-03.png)
+![](../../../../image/Advanced%20Anti-DDoS/ip-white-black-list-03.png)
 6. 网站类转发规则引用IP黑/白名单，参见网站类防护规则[黑白名单设置](Web-service-Protection-Settings/URL-Whitelist-Rules-Setting.md)
 
 ## 配置说明
