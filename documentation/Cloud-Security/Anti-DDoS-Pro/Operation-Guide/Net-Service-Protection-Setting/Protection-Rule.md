@@ -6,12 +6,12 @@
 - 首先需要登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 - 找到需要配置的实例，单击实例名称，进入 **实例详情** 页面。
 - 切换到 **非网站转发配置** 
-    ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/net-service-protection-rule-01.png)
+    ![非网站转发规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-01.png)
 
 ### 操作步骤
 
 单击**防护规则**，配置防护规则。
-    ![非网站防护规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/net-service-protection-rule-02.png)
+    ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-02.png)
 
 |防护配置项             |说明 |
 |----------------------|---------------|
