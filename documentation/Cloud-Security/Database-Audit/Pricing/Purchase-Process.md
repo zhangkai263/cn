@@ -20,5 +20,5 @@
 
 ![控制台](/image/Database-Audit/控制台.png)
 
-1. 登录控制台，具体操作请参考[创建实例](../Operation-Guide/Instance-Management/Create-Instance.md)。
+1. 登录控制台，具体操作请参考[创建实例](../Operation-Guide/Instance-Management/Creat-Instance.md)。
 
