@@ -29,7 +29,7 @@ IP高防的报表分为三类，DDoS攻击防护、业务流量、CC防护和连
 3. CC防护报表</BR>
 IP高防防御的CC攻击，会生成CC防护报表，CC报表支持切换不同的域名。</BR>
 因为CC防护仅对网站类生效，所有CC防护报表中，只能展示网站类转发规则产生的CC防护流量。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2006.png)
+![](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2005.png)
 
 3. 连接数报表</BR>
 包括并发连接数和新建连接数。</BR>
