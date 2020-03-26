@@ -1,6 +1,5 @@
-# URL白名单配置
-以下将介绍网站类防护规则的一些常见配置。</BR>
-规则配置前，需要定位到网站转发规则处，步骤如下：
+# 黑白名单配置
+配置前，需要定位到网站转发规则处，步骤如下：
 - 首先需要登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 - 找到需要配置的实例，单击实例名称，进入 **实例详情** 页面。
 - 切换到 **网站转发配置** 
@@ -11,14 +10,21 @@
 ### 操作步骤
 1. 单击 **防护规则** ，展开防护规则配置。
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2004.png)
-2. 单击URL白名单旁的 **编辑** 按钮，在如下弹窗中进行白名单编辑
+2. 单击黑/白名单的 **去设置** 按钮，在如下弹窗中添加编辑黑/白名单
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2005.png)
-3. 编辑完成后开启URL白名单的按钮，则规则生效。</BR>
+3. 单击添加，添加黑/白名单规则。</BR>
  ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
- 
- 配置说明：
--  网站类规则，支持配置50条URL白名单，策略默认关闭。
-- URL白名单，支持泛域名 * 的配置，不支持正则表达式和通配符配置。
+4. 编辑完成后开启黑/白名单的状态按钮，则规则生效。</BR>
+ ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2006.png)
+
+配置说明
+ -  黑/白名单分别可以配置10条。</BR>
+ -  匹配规则包括：URI、IP、Cookie、Geo、 headers。</BR>
+ -  匹配模式：完全匹配、前缀匹配、后缀匹配、正则匹配、包含。</BR>
+ -  当匹配规则为IP时，匹配值指定引用的IP黑白名单规则。</BR>
+ -  白名单匹配动作：包含放行和CC防护，默认放行，匹配白名单的流量不做过滤，全部放行，选择CC防护时，则对匹配白名单的流量进行CC防护。</BR>
+ -  黑名单匹配动作：包含阻断，跳转到其他页面，验证码。跳转到其他页面需指定页面的URI。</BR>
+ -  规则开关默认打开，关闭时该规则不生效。</BR>
 
 
 
