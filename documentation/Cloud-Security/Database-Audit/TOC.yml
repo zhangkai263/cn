@@ -33,6 +33,8 @@ items:
           items:
             - name: 数据库基本信息
               href: Operation-Guide/Instance-Management/Database-Management/Database-Details.md
+            - name: 添加数据库
+              href: Operation-Guide/Instance-Management/Database-Management/Add-Database.md
             - name: 审计规则
               href: Operation-Guide/Instance-Management/Database-Management/AuditRules-List.md            
             - name: 遮蔽规则
