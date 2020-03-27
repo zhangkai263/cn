@@ -27,7 +27,7 @@
         items:
           - name: 连接IDC/办公室
             href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
-          - name: 专线VPN混合云解决方案
+          - name: 作为专线的备份
             href: Introduction/Application-Scenarios/Backup-For-DirectConnect.md
           - name: 多云环境互联
             href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
@@ -88,7 +88,7 @@
        - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
-         href: Best-Practices/Connection-With-DirectConnect.md
+         href: Best-Practices/Connection-with-Directconnect.md
        - name: VPN连接到亚马逊AWS
          href: Best-Practices/Connection-Into-Amazon.md
   - name: 问题排查
