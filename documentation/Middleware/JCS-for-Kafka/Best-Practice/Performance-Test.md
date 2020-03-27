@@ -49,4 +49,4 @@ Kafka系统提供了测试工具kafka-producer-perf-test.sh和kafka-consumer-per
 
 - 消息大小与生产吞吐的关系
 
-![吞吐](../../../../image/Internet-Middleware/JCS-for-Kafka/压测吞吐S.png)
+![吞吐](../../../../image/Internet-Middleware/JCS-for-Kafka/压测吞吐.png)
