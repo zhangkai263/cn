@@ -27,8 +27,8 @@
         items:
           - name: 公有云连接IDC或办公室
             href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
-          - name: VPN作为专线的备份
-            href: Introduction/Application-Scenarios/Backup-For-DirectConnect.md
+          - name: VPN作为专线的备用线路
+            href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
           - name: 多公有云环境互联
             href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
   - name: 产品定价
@@ -88,7 +88,7 @@
        - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
-         href: Best-Practices/Connection-with-Directconnect.md
+         href: Best-Practices/Connection-With-Directconnect.md
        - name: VPN连接到亚马逊AWS
          href: Best-Practices/Connection-Into-Amazon.md
   - name: 问题排查
