@@ -30,7 +30,7 @@
           - name: VPN作为专线的备用线路
             href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
           - name: 多公有云环境互联
-            href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
+            href: Introduction/Application-Scenarios/Multi-Cloud-InterConnect.md
   - name: 产品定价
     items:
       - name: 计费概述
@@ -88,7 +88,7 @@
        - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
-         href: Best-Practices/Connection-With-Directconnect.md
+         href: Best-Practices/Connection-With-DirectConnect.md
        - name: VPN连接到亚马逊AWS
          href: Best-Practices/Connection-Into-Amazon.md
   - name: 问题排查
