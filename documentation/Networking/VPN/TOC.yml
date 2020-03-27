@@ -25,12 +25,12 @@
         href: Introduction/Restrictions.md
       - name: 应用场景
         items:
-          - name: 连接IDC/办公室
+          - name: 公有云连接IDC或办公室
             href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
-          - name: 专线VPN混合云解决方案
-            href: Introduction/Application-Scenarios/Backup-For-DirectConnect.md
-          - name: 多云环境互联
-            href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
+          - name: VPN作为专线的备用线路
+            href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
+          - name: 多公有云环境互联
+            href: Introduction/Application-Scenarios/Multi-Cloud-InterConnect.md
   - name: 产品定价
     items:
       - name: 计费概述

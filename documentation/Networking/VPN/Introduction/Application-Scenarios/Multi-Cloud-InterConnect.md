@@ -8,4 +8,4 @@
 
 多云互联案例，详见[连接到亚马逊AWS](../../Best-Practices/Connection-Into-Amazon.md)。
 
-和其它云厂商的互联比较简单，可参考京东智联云VPN连接企业IDC的案例。
+除和Amazon AWS的互联方式较特殊外，和其它云厂商的互联比较简单，可参考京东智联云VPN连接企业IDC的案例。
