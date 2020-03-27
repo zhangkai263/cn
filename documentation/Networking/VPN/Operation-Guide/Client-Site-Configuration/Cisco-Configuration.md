@@ -39,7 +39,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 1.登录防火墙设备的命令行配置界面；
 
 2.配置IKE策略：
-```shell
+```
   ! config ike algorithm
   crypto ikev2 proposal proposal_jdcloud
     encryption aes-cbc-128
@@ -55,7 +55,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 3.配置身份认证及预共享密钥：
-```shell
+```
   ! config authentication and psk
   crypto ikev2 profile ike_profile_jdcloud
     match identity remote address 116.xxx.xxx.10 255.255.255.255
@@ -68,7 +68,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 4.配置IPsec策略：
-```shell
+```
   ! config ipsec security protocol
   crypto ipsec transform-set transform-jdcloud esp-aes esp-sha256-hmac
     mode tunnel
@@ -83,7 +83,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 5.配置隧道：
-```shell
+```
   ! config logic interface
   interface Tunnel1
     ip address 169.254.1.1 255.255.255.252
@@ -105,12 +105,12 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 6.配置ACL，允许所需的网段通信：
-```shell
+```
   access-list 100 permit ip 10.0.0.0 0.0.255.255 192.168.0.0 0.0.0.255
 ```
 
 7.配置路由(以静态路由为例)：
-```shell
+```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
 
