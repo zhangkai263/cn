@@ -12,6 +12,7 @@
 ## 格式要求
 实例自定义数据需要完成Base64编码后传入，且编码前的数据不能超过16 KB（编码后不大于21848Byte），如果通过控制台创建实例，可以不对数据进行Base64编码，勾选对应提示框后由系统完成编码，如果通过API创建，您必须自行完成编码。<br>
 实例自定义数据当前支持多种脚本类型，Linux系统支持bash和python，编码前须分别以 `#!/bin/bash`和 `#!/usr/bin/env python` 作为首行内容；Windows系统支持Bat和PowerShell，编码前须分别以`<cmd>`、`</cmd>`和`<powershell>`、`</powershell>`作为内容首、尾行。以下为不同类型脚本的声明示例：
+
 ```
 #!/bin/bash 
 echo 'launch-1a' >> /root/text1.txt
@@ -28,11 +29,13 @@ f1.writelines([str(tempstr)])
 f1.close()
 ```
 
+
 ```
 <cmd>
 echo %random%>cmd-text1.txt
 </cmd>
 ```
+
 ```
 <powershell>
 "hello" | Out-File text1.txt -Encoding utf8
