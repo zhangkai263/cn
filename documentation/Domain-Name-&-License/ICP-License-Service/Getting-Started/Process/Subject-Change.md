@@ -4,7 +4,7 @@
 
 1、打开京东智联云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
 
-![img](Subject-change-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Subject-change-cn-1.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
