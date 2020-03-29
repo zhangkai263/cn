@@ -33,18 +33,20 @@ items:
             href: Operation-Guide/Content-Censor-API/Query-Detection-Result.md
       - name: OSS违规检测
         items:
-          - name: OSS违规检测简介
+          - name: 功能简介
             href: Operation-Guide/OSS-Violate-Detection/OSS-Voilate-Scan-Introduction.md
           - name: 扫描设置
             href: Operation-Guide/OSS-Violate-Detection/OSS-Scan-Setting.md
           - name: 扫描结果及自助审核
             href: Operation-Guide/OSS-Violate-Detection/Scan-Result-And-Self-Help-Audit.md
           - name: 回调通知
-            href: Operation-Guide/OSS-Violate-Detection/Callback Notification.md
+            href: Operation-Guide/OSS-Violate-Detection/Callback-Notification.md
       - name: 流量包管理
         href: Operation-Guide/Resource-package-management.md
   - name: API指南
     items:
+      - name: 请求结构
+        href: API-Document/Request-Structure.md
       - name: API概览
         href: API-Document/API-Overview.md
       - name: 文本检测
