@@ -26,5 +26,5 @@ curl -XGET 内网域名/_cat
 
 之后可根据需要选择下载不同版本的语言客户端sdk，部署程序，进行客户端消息收发。
 
-消息队列 RabbitMQ版完全兼容开源 RabbitMQ，支持所有开源client和插件，详细使用方式请下载官方客户端并参考[官方指南](https://www.rabbitmq.com/devtools.html）。
+消息队列 RabbitMQ版完全兼容开源 RabbitMQ，支持所有开源client和插件，详细使用方式请下载官方客户端并参考[官方指南](https://www.rabbitmq.com/devtools.html)。
 

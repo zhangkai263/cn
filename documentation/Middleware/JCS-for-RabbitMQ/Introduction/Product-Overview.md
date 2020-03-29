@@ -5,7 +5,7 @@
 	- [创建实例](../Getting-Started/Create-RabbitMQ.md)
 	- [访问实例](../Getting-Started/Connect-RabbitMQ.md)
 - 操作指南
-	- [使用WebUI管理工具](../Operation-Guide/RabbitMQ-WebUI.md)
+	- 使用WebUI管理工具
 	- [查看监控信息](../Operation-Guide/Monitoring.md)
 ### 计费
 消息队列 RabbitMQ版支持按配置后付费和包年包月预付费两种计费类型，公测期间仅开放按配置的计费方式，详细说明请参见：[价格总览](../Pricing/Price-Overview.md)。
