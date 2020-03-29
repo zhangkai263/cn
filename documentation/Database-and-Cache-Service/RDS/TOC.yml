@@ -104,7 +104,18 @@
           herf: Operation-Guide/Readonly-Instance-Management/Create-Readonly-Instance.md
         - name: 重启只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Restart-Readonly-Instance.md
-  
+
+      - name: 读写分离代理管理
+        items:
+        - name: 创建读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Create-ReadWriteProxy.md
+        - name: 删除读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Delete-ReadWriteProxy.md
+        - name: 重置读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Reset-ReadWriteProxy.md
+        - name: 读写分离代理外网访问
+          herf: Operation-Guide/ReadWriteProxy/Internet-Access.md
+
       - name: 账户管理
         items:
           - name: 创建账号
