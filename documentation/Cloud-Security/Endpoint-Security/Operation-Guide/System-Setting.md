@@ -10,8 +10,8 @@
 
 告警设置
 
-![](../../../../image/Endpoint-Security/System-Settings1.png)
+![](../../../../image/Endpoint-Security/System-Setting1.png)
 
 用户自主安装客户端
 
-![](../../../../image/Endpoint-Security/System-Settings2.png)
+![](../../../../image/Endpoint-Security/System-Setting2.png)
