@@ -25,10 +25,22 @@ items:
         href: Getting-Started/Getting-Started.md
   - name: 操作指南
     items:
-      - name: 统计数据查看
-        href: Operation-Guide/Statistics-View.md
-      - name: 检测结果查询
-        href: Operation-Guide/Query-Detection-Result.md
+      - name: 内容检测API
+        items: 
+          - name: 统计数据查看
+            href: Operation-Guide/Content-Censor-API/Statistics-View.md
+          - name: 检测结果查询
+            href: Operation-Guide/Content-Censor-API/Query-Detection-Result.md
+      - name: OSS违规检测
+        items:
+          - name: OSS违规检测简介
+            href: Operation-Guide/OSS-Violate-Detection/OSS-Voilate-Scan-Introduction.md
+          - name: 扫描设置
+            href: Operation-Guide/OSS-Violate-Detection/OSS-Scan-Setting.md
+          - name: 扫描结果及自助审核
+            href: Operation-Guide/OSS-Violate-Detection/Scan-Result-And-Self-Help-Audit.md
+          - name: 回调通知
+            href: Operation-Guide/OSS-Violate-Detection/Callback Notification.md
       - name: 流量包管理
         href: Operation-Guide/Resource-package-management.md
   - name: API指南

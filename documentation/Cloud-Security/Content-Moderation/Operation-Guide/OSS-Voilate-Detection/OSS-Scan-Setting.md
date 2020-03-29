@@ -59,7 +59,7 @@ OSS违规检测支持检测OSS Bucket中的增量内容和存量内容。
 
 4. 在**存量扫描设置**侧边页完成存量扫描配置。配置内容与增量扫描一致。
 
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Increment-Setting.JPG)
+   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Stock-Setting.jpg)
 
 5. 单击**开始扫描**，立即启动扫描任务。
 
