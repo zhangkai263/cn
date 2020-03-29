@@ -12,4 +12,10 @@
 
 ![](../../../../image/Endpoint-Security/rootkit.png)
 
+点击【立刻扫描】，启动对所有主机后门检测扫描。
 
+![](../../../../image/Endpoint-Security/rootkit1.png)
+
+点击详情与建议，可看到针对该威胁类型具体的安全事件描述，目前支持已知rootkit检测和隐藏进程两种类型。
+
+![](../../../../image/Endpoint-Security/rootkit2.png)
