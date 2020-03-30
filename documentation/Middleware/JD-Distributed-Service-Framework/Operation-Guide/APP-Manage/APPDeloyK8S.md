@@ -156,6 +156,15 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-yyjk.png)
 
+注意：
+
+- 应用日志通过云日志进行采集，请提前准备日志集。创建日志集请参考： [日志集管理](../../../../Management/Log-Service/Operation-Guide/LogSet/LogSetManagement.md)
+
+- 日志路径，请填写绝对路径。
+
+- AK/SK， 需要填写当前用户名下可用的 AK/SK。维护AK/SK请参考： [Accesskey管理](../../../../User-Service/Account-Management/AccessKey-Management.md)
+
+
 
 ### <a id="配置应用监控">配置应用监控</a>
 
