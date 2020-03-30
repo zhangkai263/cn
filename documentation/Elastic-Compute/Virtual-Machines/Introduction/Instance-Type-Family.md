@@ -9,7 +9,7 @@
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
-* GPU型：[GPU标准型](instance-type-family#user-content-6)
+* GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-7)
 
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个Intel Xeon处理器的超线程核，其vCPU与内存比为1:4。
@@ -493,7 +493,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 :---|:---|:---|:---|:---|:---|
 |p.c1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
 |p.c1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
-|p.c1p40g.large|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.c1p40g.xlarge|4|14|1 x 1/4 Nvidia Tesla P40|6|4
 |p.c1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
 
 第一代-Q模式：
@@ -502,7 +502,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 :---|:---|:---|:---|:---|:---|
 |p.q1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
 |p.q1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
-|p.q1p40g.large|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.q1p40g.xlarge|4|14|1 x 1/4 Nvidia Tesla P40|6|4
 |p.q1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
 
 
