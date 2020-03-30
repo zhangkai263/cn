@@ -1,9 +1,9 @@
 ## 创建实例
 
-您可以登录京东云消息队列 RabbitMQ版控制台新建实例，关于实例的计费说明请参见“[价格总览](../Pricing/Price-Overview.md)”、“[计费规则](../Pricing/Billing-Rules.md)”。
+您可以登录京东智联云消息队列 RabbitMQ版控制台新建实例，关于实例的计费说明请参见“[价格总览](../Pricing/Price-Overview.md)”、“[计费规则](../Pricing/Billing-Rules.md)”。
 
 ### 前提条件
-- 已注册京东云账号，并完成实名认证。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud&ReturnUrl=https%3a%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttps%3a%2f%2fwww.jdcloud.com)，或 [实名认证](https://uc.jdcloud.com/account/certify)。
+- 已注册京东智联云账号，并完成实名认证。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud&ReturnUrl=https%3a%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttps%3a%2f%2fwww.jdcloud.com)，或 [实名认证](https://uc.jdcloud.com/account/certify)。
 - 如计费类型选择按配置计费，请确认您的账户余额（包括代金券）能满足您的使用。
 
 ### 操作步骤
@@ -20,7 +20,7 @@
 * “节点数量”：一个节点为一个Broker。</br> 
 * “存储类型”：支持性能型SSD云硬盘、通用型SSD云硬盘、容量性HDD云硬盘，建议选择性能型SSD云硬盘。</br>
 * “存储规格”：可以根据具体业务情况选择不同存储规格，单点存储规格范围20-16000GB，步长为10GB，可输入整数。</br>
-* “私有网络”： 京东公有云上自定义的逻辑隔离的网络空间，更多说明请参见[私有网络功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-features)。</br>
+* “私有网络”： 京东智联云上自定义的逻辑隔离的网络空间，更多说明请参见[私有网络功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-features)。</br>
 * “子网”： 子网是所属VPC IP地址范围内的 IP 地址块，更多说明请参见[子网功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。</br>
 * “用户名”：只支持数字、大小写字母、英文下划线“_”及中划线“-”，且不能超过32字符。
 * “密码”：应至少包含以下字符中的三种：大写字母、小写字母、数字及特殊字符`~!@#$%^&*()-_=+\|[{}]:'",<.>/?，并且8-32字符，不能和用户名及用户名的倒序相同。

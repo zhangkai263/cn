@@ -1,5 +1,5 @@
 ## 连接实例
-消息队列 RabbitMQ版支持通过集群管理工具WebUI和京东云云主机部署客户端方式连接实例。</br>
+消息队列 RabbitMQ版支持通过集群管理工具WebUI和京东智联云云主机部署客户端方式连接实例。</br>
 
 ### 通过集群管理工具WebUI连接实例
 1.	登录消息队列 RabbitMQ版控制台，创建消息队列 RabbitMQ版实例 。</br>
@@ -9,7 +9,7 @@
 
 
 
-### 通过京东云云主机部署客户端访问
+### 通过京东智联云云主机部署客户端访问
 
 1.	登录消息队列 RabbitMQ版控制台，创建消息队列 RabbitMQ版实例 。</br>
 2.	登录[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，创建和消息队列 Kafka 版具有相同私有网络和子网的云主机，并[获取公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
