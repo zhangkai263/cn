@@ -101,7 +101,7 @@ Scrum负责人验证迭代中的所有事项是否已是完成态，即迭代的
 
 ![评审](/image/DevAgile/image-agile/8.png)
 
-![图表](/image/DevAgile/image-function/迭代图表.png)
+![图表](/image/DevAgile/image-fuction/迭代图表.png)
 
 ### 完成第一个迭代
 当迭代已经到预设的结束时间时，意味着本周期的迭代已经结束，即便是迭代中的事项暂未完成。为了保证项目的交付成果质量，未完成的迭代工作项需要规划到下一个迭代。
