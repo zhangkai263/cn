@@ -190,10 +190,12 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 3、部署成功后，在应用详情中的应用运行信息中，可查看不同资源池中的应用运行信息。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyxq.png)
 
-4、点击操作中的“监控”，即可跳转至应用监控信息页。通过自定义指标方式，
+4、点击操作中的“监控”，即可跳转至应用监控信息页。通过自定义指标方式，即可查看监控图表。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-zdyjk.png)
 
-举例：如图，假设已自定义了监控指标：随机数统计custom_metrics_random_num_gauge。那么查看方式为：
+自定义监控使用方式，可参考： [自定义监控使用说明](../../../../Management/Monitoring/Operation-Guide/custom-monitoring/custom-monitoring-overview.md) 
+
+在自定义监控中查看应用监控举例：如图，假设已自定义了监控指标：随机数统计custom_metrics_random_num_gauge。那么在自定义监控中查看方式为：
 
 STEP1:先在“命名空间”项中选择“kubernetes集群(系统)”，
 
