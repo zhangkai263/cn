@@ -422,7 +422,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 ## GPU型
 
-GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前在华北部分可用区邀测中，如有购买需求请提交工单。
 
 <div id="user-content-6"></div>
 
@@ -462,6 +462,48 @@ GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。�
 |p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 5587 HDD|4
 |p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 5587 HDD|4
 |p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 5587 HDD|4
+
+<div id="user-content-7"></div>
+
+### GPU虚拟化型
+
+**规格类型特点：**
+
+* 异构计算
+* GPU类型及规格：
+	* 1* 1/6 Nvidia Tesla P40 （显存4GB）
+	* 1* 1/4 Nvidia Tesla P40 （显存6GB）
+	* 1* 1/2 Nvidia Tesla P40 （显存12GB）
+* 处理器：
+	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器
+	* 2.4 GHz主频的Intel Xeon E5-2680 v4（Broadwell）处理器
+* 虚拟化类型：
+	* C模式
+	* Q模式
+* 适用场景：
+	* 科学计算、机器学习（C模式）
+	* 图形渲染、游戏（Q模式） 
+
+**实例规格**
+
+第一代-C模式：
+
+实例规格|vCPU（核）|内存（GB）|GPU|显存（GB）|网卡多队列
+:---|:---|:---|:---|:---|:---|
+|p.c1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
+|p.c1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
+|p.c1p40g.large|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.c1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
+
+第一代-Q模式：
+
+实例规格|vCPU（核）|内存（GB）|GPU|显存（GB）|网卡多队列
+:---|:---|:---|:---|:---|:---|
+|p.q1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
+|p.q1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
+|p.q1p40g.large|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.q1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
 
 
 请注意：
