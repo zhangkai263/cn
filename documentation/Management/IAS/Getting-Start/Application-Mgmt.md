@@ -1,6 +1,6 @@
 # 创建和管理应用
 
-应用开发者使用京东智联云的身份服务，如用户池托管或京东智联云账号联合登录，首先需要在 [应用管理控制台](https://ias-console.jdcloud.com/ias/apps) 创建应用。
+应用开发者使用京东智联云的身份服务，如用户池托管或京东智联云账号联合登录，首先需要创建应用。
 
 ![应用管理控制台](../../../../image/IAS/Application-Management/1ias-console.png)
 
