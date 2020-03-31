@@ -185,7 +185,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yylb.png)
 
-3、在高级配置中，找到“应用监控”的配置。打开配置开关，填写日志信息。部署成功后，日志将被上报到该日志主题下。
+3、在高级配置中，找到“应用监控”的配置。打开配置开关，填写配置信息。部署成功后，即开始采集监控信息。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-yyjk.png)
 | 信息项	| 说明	| 
