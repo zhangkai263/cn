@@ -2,7 +2,7 @@
 
 ## 松耦合设计理念
 
-![](../../../../image/Website-Threat-Inspector/webscan1.png)
+![](../../../../image/Website-Threat-Inspector/wts-jiagou-04.png)
 
 网站威胁扫描产品采用松耦合的设计理念，主要分为API模块、调度模块、Worker模块三大模块，数据存储采用Redis与MySQL两类存储方式。各个组件的功能如下：
 
