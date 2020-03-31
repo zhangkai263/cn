@@ -23,7 +23,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 2、已经开通所需资源如：微服务平台等。
 
-3、已经将需要部署的信息上传到镜像中。
+3、已经将需要部署的镜像，上传到京东智联云容器镜像仓库中。
 
 4、如需使用应用监控功能，需要提前在Kubernetes集群中打开集群监控开关。
 
@@ -179,7 +179,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 1、在 Kubernetes 中打开 集群监控
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yypz-k8syyjk.jpg)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-k8s.png)
 
 2、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。点击操作“发起部署”。
 
