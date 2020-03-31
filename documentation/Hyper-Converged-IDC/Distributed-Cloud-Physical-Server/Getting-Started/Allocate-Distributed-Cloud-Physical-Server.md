@@ -38,7 +38,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 额外上行带宽 ：用户可选择额外上行带宽范围为0Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限，详见[修改公网带宽](../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **辅网口** 信息（若选择“双网口”，才会出现“辅网口”的填写信息）：</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **辅网口** 信息：</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 私有网络与子网 ：用户需要先行规划并创建私有网络和子网。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 内部IP ：为用户指定辅网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 别名IP范围 ：如果您有多项服务在一台分布式云物理服务器上运行，并且希望为每项服务分配一个不同的 IP 地址，可以使用别名IP范围功能实现。单实例辅网口最多可添加50个，详见[别名IP范围](../../../Operation-Guide/Instance/Alisas-IP.md)。 </br>       
