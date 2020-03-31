@@ -19,13 +19,15 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ## 环境准备
 
-1、已经购买开通了京东云Kubernetes集群。
+1、已经购买开通了京东智联云 Kubernetes集群。
 
 2、已经开通所需资源如：微服务平台等。
 
 3、已经将需要部署的信息上传到镜像中。
 
-4、**注意：** 
+4、如需使用应用监控功能，需要提前在Kubernetes集群中打开集群监控开关。
+
+5、**注意：** 
 
 -  使用Kubernetes部署需要在拉取镜像过程中获取授权，因此请提前在Kubernetes中开通授权。授权详情请参考：[集成容器镜像仓库](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Deploy-Container-Registry.md) 。
 
@@ -175,11 +177,15 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 ### <a id="配置应用监控">配置应用监控</a>
 配置应用监控的过程，需要在发起应用部署的过程中进行配置。
 
-1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。点击操作“发起部署”。
+1、在 Kubernetes 中打开 集群监控
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yypz-k8syyjk.jpg)
+
+2、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。点击操作“发起部署”。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yylb.png)
 
-2、在高级配置中，找到“应用监控”的配置。打开配置开关，填写日志信息。部署成功后，日志将被上报到该日志主题下。
+3、在高级配置中，找到“应用监控”的配置。打开配置开关，填写日志信息。部署成功后，日志将被上报到该日志主题下。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-yyjk.png)
 | 信息项	| 说明	| 
@@ -187,13 +193,14 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 | 采集端口 | 采集端口 | 
 | 采集路径 | Prometheus 将使用该路径进行采集，并将采集结果上报至云监控。 | 
 
-3、部署成功后，在应用详情中的应用运行信息中，可查看不同资源池中的应用运行信息。
+4、部署成功后，在应用详情中的应用运行信息中，可查看不同资源池中的应用运行信息。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyxq.png)
 
-4、点击操作中的“监控”，即可跳转至应用监控信息页。通过自定义指标方式，即可查看监控图表。
+5、点击操作中的“监控”，即可跳转至应用监控信息页。通过自定义指标方式，即可查看监控图表。
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-zdyjk.png)
 
 自定义监控使用方式，可参考： [自定义监控使用说明](../../../../Management/Monitoring/Operation-Guide/custom-monitoring/custom-monitoring-overview.md) 
+
 
 【举例】在自定义监控中查看应用监控
 
