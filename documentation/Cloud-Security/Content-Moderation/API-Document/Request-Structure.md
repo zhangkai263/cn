@@ -25,7 +25,7 @@ HTTP请求头中需要包含公共请求头，请参考公共请求头。POST的
 
 支持的 HTTP 请求方法:
 
-- POST（推荐）
+- POST
 
 POST 请求支持的 Content-Type 类型：
 
