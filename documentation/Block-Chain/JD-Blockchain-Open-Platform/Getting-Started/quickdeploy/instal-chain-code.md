@@ -3,7 +3,7 @@
 
 通过“网络详情”界面->“链码管理”界面->“已上传的链码”区域->“安装”按钮进入“安装”窗口，安装链码示例参数如安装链码参数设置示例图所示，参数说明参见安装链码参数说明表。
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image008.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image008.jpg)
 
 图-安装链码参数设置示例图
 

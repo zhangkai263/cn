@@ -94,23 +94,23 @@ BaaS平台在启动超级账本网络时，自动生成身份许可相关的证�
 
 表-超级账本连接参数来源表
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image010.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image010.jpg)
 
 图-超级账本网络列表示例图
  
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image012.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image012.jpg)
 
 图-超级账本共识信息示例图
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image014.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image014.jpg)
  
 图-超级账本通道信息示例图
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image016.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image016.jpg)
  
 图-下载MSP证书示例图
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image017.png)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image017.png)
  
 图-MSP证书下载内容
 
@@ -125,7 +125,7 @@ BaaS平台在启动超级账本网络时，自动生成身份许可相关的证�
 ## API说明
 Java Fabric SDK中链码调用相关的主要API类关系下图所示。
  
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image019.png) 
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image019.png) 
 
 HFClient提供客户端环境，通过该类实例初始化超级账本交互的对象。需要注意的是，HFClient中参数初始化有依赖关系，具体细节可参见示例代码。
 
