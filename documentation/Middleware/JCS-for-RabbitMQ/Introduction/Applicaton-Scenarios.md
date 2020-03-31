@@ -1,7 +1,7 @@
 ## 应用场景
 
 ### 异步解耦
-消息队列 RabbitMQ版可以作为企业级消息系统，异步解耦应用系统，适用于例如金融交易账单，电商订单分发等场景。
+消息队列 RabbitMQ 版可以作为企业级消息系统，异步解耦应用系统，适用于例如金融交易账单，电商订单分发等场景。
 
 ![rabbitmq应用场景-01](../../../../image/Internet-Middleware/JCS-for-RabbitMQ/rabbitmq应用场景-01.png)
 
