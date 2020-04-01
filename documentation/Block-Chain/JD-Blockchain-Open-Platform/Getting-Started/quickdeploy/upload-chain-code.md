@@ -3,7 +3,7 @@
 
 通过“网络详情”界面->“链码管理”界面->“已上传的链码”区域->“上传”按钮进入“上传链码”窗口，上传链码示例参数如上传链码参数设置示例图所示，参数说明参见上传链码参数说明表。
 
-![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image006.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image006.jpg)
 
 图-上传链码参数设置示例图
 
