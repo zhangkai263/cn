@@ -15,7 +15,7 @@ MCU 有触摸事件。主机可以通过中断回调函数去读取触摸点信�
 
 Touch 设备与主机通讯连接如下图所示：
 
-![touch设备读取数据流程](media/e9eab5fdb4acedc0547448889ff27d10.png)
+![touch设备读取数据流程](../../../../image/IoT/RT-Thread-for-JD/e9eab5fdb4acedc0547448889ff27d10.png)
 
 touch设备读取数据流程
 
