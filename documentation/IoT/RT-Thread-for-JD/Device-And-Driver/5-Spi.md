@@ -9,7 +9,7 @@ Interface，串行外设接口）是一种高速、全双工、同步通信总�
 EEPROM、FLASH、实时时钟、AD 转换器、还有数字信号处理器和数字信号解码器之间。SPI
 一般使用 4 根线通信，如下图所示：
 
-![SPI 主设备和从设备的连接方式](media/ca6d2c86286c4173db4fa94a48125c32.png)
+![SPI 主设备和从设备的连接方式](../../../../image/IoT/RT-Thread-for-JD/ca6d2c86286c4173db4fa94a48125c32.png)
 
 SPI 主设备和从设备的连接方式
 
@@ -31,7 +31,7 @@ CS 选择要通信的从设备，然后通过 SCLK 给从设备提供时钟信�
 控制器可以连接多个 SPI 从设备。挂载在同一个 SPI 控制器上的从设备共享 3
 个信号引脚：SCK、MISO、MOSI，但每个从设备的 CS 引脚是独立的。
 
-![一个 SPI 主设备与多个从设备连接](media/c5d13097914a7f66730bf4667965e4ac.png)
+![一个 SPI 主设备与多个从设备连接](../../../../image/IoT/RT-Thread-for-JD/c5d13097914a7f66730bf4667965e4ac.png)
 
 一个 SPI 主设备与多个从设备连接
 
@@ -47,7 +47,7 @@ Phase，时钟相位）之间的相位关系决定，CPOL 表示时钟信号的�
 则表示在第二个时钟变化沿采样数据。根据 CPOL 和 CPHA 的不同组合共有 4
 种工作时序模式：①CPOL=0，CPHA=0、②CPOL=0，CPHA=1、③CPOL=1，CPHA=0、④CPOL=1，CPHA=1。如下图所示：
 
-![SPI 4 种工作模式时序图](media/3a74ae436c84a6b952c4e71b2924ecbb.png)
+![SPI 4 种工作模式时序图](../../../../image/IoT/RT-Thread-for-JD/3a74ae436c84a6b952c4e71b2924ecbb.png)
 
 SPI 4 种工作模式时序图
 
