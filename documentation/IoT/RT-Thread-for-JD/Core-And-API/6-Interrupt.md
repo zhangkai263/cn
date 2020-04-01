@@ -14,7 +14,7 @@
 CPU 中断的请求源称为
 [中断源](https://baike.baidu.com/item/%E4%B8%AD%E6%96%AD%E6%BA%90)。中断是一种异常，异常是导致处理器脱离正常运行转向执行特殊代码的任何事件，如果不及时进行处理，轻则系统出错，重则会导致系统毁灭性地瘫痪。所以正确地处理异常，避免错误的发生是提高软件鲁棒性（稳定性）非常重要的一环。如下图是一个简单的中断示意图。
 
-![中断示意图](media/d69f2e7e1eeec4b1640dec4f74e33f31.png)
+![中断示意图](../../../../image/IoT/RT-Thread-for-JD/d69f2e7e1eeec4b1640dec4f74e33f31.png)
 
 中断示意图
 
@@ -43,7 +43,7 @@ Cortex-M 系列 CPU 的寄存器组里有 R0\~R15 共 16
 (Program
 Counter，PC)，其中堆栈指针寄存器可以是主堆栈指针（MSP），也可以是进程堆栈指针（PSP）。
 
-![Cortex-M 寄存器示意图](media/2a28535f6c02e48814d22af379582652.png)
+![Cortex-M 寄存器示意图](../../../../image/IoT/RT-Thread-for-JD/2a28535f6c02e48814d22af379582652.png)
 
 Cortex-M 寄存器示意图
 
@@ -69,7 +69,7 @@ register）。
 Cortex-M
 引入了操作模式和特权级别的概念，分别为线程模式和处理模式，如果进入异常或中断处理则进入处理模式，其他情况则为线程模式。
 
-![Cortex-M 工作模式状态图](media/9b97dddf29ac9786d2d0e2cfa7269d3f.png)
+![Cortex-M 工作模式状态图](../../../../image/IoT/RT-Thread-for-JD/9b97dddf29ac9786d2d0e2cfa7269d3f.png)
 
 Cortex-M 工作模式状态图
 
@@ -88,7 +88,7 @@ Cortex-M 中断控制器名为
 NVIC（嵌套向量中断控制器），支持中断嵌套功能。当一个中断触发并且系统进行响应时，处理器硬件会将当前运行位置的上下文寄存器自动压入中断栈中，这部分的寄存器包括
 PSR、PC、LR、R12、R3-R0 寄存器。
 
-![Cortex-M 内核和 NVIC 关系示意图](media/26b605c42c601a40d4afbf05587d37a0.png)
+![Cortex-M 内核和 NVIC 关系示意图](../../../../image/IoT/RT-Thread-for-JD/26b605c42c601a40d4afbf05587d37a0.png)
 
 Cortex-M 内核和 NVIC 关系示意图
 
@@ -112,7 +112,7 @@ RT-Thread 中断工作机制
 中断向量表是所有中断处理程序的入口，如下图所示是 Cortex-M
 系列的中断处理过程：把一个函数（用户中断服务程序）同一个虚拟中断向量表中的中断向量联系在一起。当中断向量对应中断发生的时候，被挂接的用户中断服务程序就会被调用执行。
 
-![中断处理过程](media/7fff59bab67c95ff26a209826b29c1fc.png)
+![中断处理过程](../../../../image/IoT/RT-Thread-for-JD/7fff59bab67c95ff26a209826b29c1fc.png)
 
 中断处理过程
 
@@ -179,7 +179,7 @@ void SysTick_Handler(void)
 RT-Thread
 中断管理中，将中断处理程序分为中断前导程序、用户中断服务程序、中断后续程序三部分，如下图：
 
-![中断处理程序的 3 部分](media/c55d8e5119d51de1189b2fce0ed97116.png)
+![中断处理程序的 3 部分](../../../../image/IoT/RT-Thread-for-JD/c55d8e5119d51de1189b2fce0ed97116.png)
 
 中断处理程序的 3 部分
 
@@ -223,7 +223,7 @@ CPU 架构的实现方式有差异。
 异常中断处理程序，因为此时还在中断处理中，只有当中断后续程序运行完毕，真正退出中断处理后，才进入
 PendSV 异常中断处理程序。
 
-![rt_hw_context_switch_interrupt() 函数实现流程](media/226d9550fe7c7e5ecf36fa3c5cf1acfe.png)
+![rt_hw_context_switch_interrupt() 函数实现流程](../../../../image/IoT/RT-Thread-for-JD/226d9550fe7c7e5ecf36fa3c5cf1acfe.png)
 
 rt_hw_context_switch_interrupt() 函数实现流程
 
@@ -250,7 +250,7 @@ void rt_interrupt_leave(void)
 上下文。这部分实现跟 CPU 架构相关，不同 CPU 架构的实现方式有差异，在 Cortex-M
 架构中实现流程如下图所示。
 
-![rt_hw_context_switch_interrupt() 函数实现流程](media/554c345616788d94a9591f975e4a718e.png)
+![rt_hw_context_switch_interrupt() 函数实现流程](../../../../image/IoT/RT-Thread-for-JD/554c345616788d94a9591f975e4a718e.png)
 
 rt_hw_context_switch_interrupt() 函数实现流程
 
@@ -258,7 +258,7 @@ rt_hw_context_switch_interrupt() 函数实现流程
 
 在允许中断嵌套的情况下，在执行中断服务程序的过程中，如果出现高优先级的中断，当前中断服务程序的执行将被打断，以执行高优先级中断的中断服务程序，当高优先级中断的处理完成后，被打断的中断服务程序才又得到继续执行，如果需要进行线程调度，线程的上下文切换将在所有中断处理程序都运行结束时才发生，如下图所示。
 
-![中断中的线程切换](media/6c5fc554ed61a7bf379085e9441b911f.png)
+![中断中的线程切换](../../../../image/IoT/RT-Thread-for-JD/6c5fc554ed61a7bf379085e9441b911f.png)
 
 中断中的线程切换
 
@@ -367,7 +367,7 @@ RT-Thread 中断管理接口
 为了把操作系统和系统底层的异常、中断硬件隔离开来，RT-Thread
 把中断和异常封装为一组抽象接口，如下图所示：
 
-![中断相关接口](media/ff8d2251de00628dd2b32e9a01135ba4.png)
+![中断相关接口](../../../../image/IoT/RT-Thread-for-JD/ff8d2251de00628dd2b32e9a01135ba4.png)
 
 中断相关接口
 
@@ -601,7 +601,7 @@ rt_uint8_t rt_interrupt_get_nest(void);
 所以通常情况下，实时系统中更多采用的是中断模式来驱动外设。当数据达到时，由中断唤醒相关的处理线程，再继续进行后续的动作。例如一些携带
 FIFO（包含一定数据量的先进先出队列）的串口外设，其写入过程可以是这样的，如下图所示：
 
-![中断模式驱动外设](media/3a9c3af156a72f3fa09a22ad81e50fe8.png)
+![中断模式驱动外设](../../../../image/IoT/RT-Thread-for-JD/3a9c3af156a72f3fa09a22ad81e50fe8.png)
 
 中断模式驱动外设
 
