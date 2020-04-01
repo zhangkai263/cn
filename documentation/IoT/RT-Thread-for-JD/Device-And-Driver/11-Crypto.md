@@ -19,7 +19,7 @@ API
 接口两部分构成。对于上层应用，可对接安全套件或直接使用，使用方式十分灵活。对于驱动，需要对接的接口少，功能单一，驱动开发简单快捷。下图是
 Crypto 框架层次图:
 
-![Crypto](media/1658a1dfe0014fbfc547727a045feeb8.png)
+![Crypto](../../../../image/IoT/RT-Thread-for-JD/1658a1dfe0014fbfc547727a045feeb8.png)
 
 Crypto
 
