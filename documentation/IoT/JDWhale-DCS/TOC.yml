@@ -24,7 +24,7 @@ items:
   - name: 入门指南
     items:
       - name: 入门指南概述
-        href: Getting-Started/Overview.md
+        href: Getting-Started/Start-Overview.md
       - name: 创建应用
         href: Getting-Started/Create-App.md
       - name: 开发联调
