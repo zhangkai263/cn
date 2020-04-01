@@ -18,7 +18,7 @@ WLAN 框架是 RT-Thread 开发的一套用于管理 WIFI 的中间件。对下�
 
 下图是 WIFI 框架层次图:
 
-![WIFI 框架](media/3afc64a63101d8afaf0c654367767661.png)
+![WIFI 框架](../../../../image/IoT/RT-Thread-for-JD/3afc64a63101d8afaf0c654367767661.png)
 
 WIFI 框架
 
@@ -810,7 +810,7 @@ MSH_CMD_EXPORT(scan, scan test.);
 
 运行结果如下：
 
-![扫描](media/b758bff799f9a334c7fe063d3cdc3484.png)
+![扫描](../../../../image/IoT/RT-Thread-for-JD/b758bff799f9a334c7fe063d3cdc3484.png)
 
 扫描
 
@@ -940,7 +940,7 @@ MSH_CMD_EXPORT(connect, connect test.);
 
 运行结果如下
 
-![连接断开](media/29980b381ef757776c64bbb37f962475.png)
+![连接断开](../../../../image/IoT/RT-Thread-for-JD/29980b381ef757776c64bbb37f962475.png)
 
 连接断开
 
@@ -1022,6 +1022,6 @@ MSH_CMD_EXPORT(auto_connect, auto connect test.);
 
 运行结果如下:
 
-![自动连接](media/1e64231f3b096d74f1ef911bb33ad27e.png)
+![自动连接](../../../../image/IoT/RT-Thread-for-JD/1e64231f3b096d74f1ef911bb33ad27e.png)
 
 自动连接
