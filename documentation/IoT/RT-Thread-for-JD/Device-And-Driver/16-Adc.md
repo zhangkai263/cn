@@ -13,7 +13,7 @@ DAC(Digital-to-Analog Converter)，它是 ADC 模数转换的逆向过程。ADC
 
 如下图所示模数转换一般要经过采样、保持和量化、编码这几个步骤。在实际电路中，有些过程是合并进行的，如采样和保持，量化和编码在转换过程中是同时实现的。
 
-![ADC 转换过程](media/994604248ec9c34ec088018c22a923bc.png)
+![ADC 转换过程](../../../../image/IoT/RT-Thread-for-JD/994604248ec9c34ec088018c22a923bc.png)
 
 ADC 转换过程
 
