@@ -1,13 +1,13 @@
 ## 创建实例
 
-您可以登录京东智联云消息队列 RabbitMQ版控制台新建实例，关于实例的计费说明请参见“[价格总览](../Pricing/Price-Overview.md)”、“[计费规则](../Pricing/Billing-Rules.md)”。
+您可以登录京东智联云消息队列 RabbitMQ 版控制台新建实例，关于实例的计费说明请参见“[价格总览](../Pricing/Price-Overview.md)”、“[计费规则](../Pricing/Billing-Rules.md)”。
 
 ### 前提条件
 - 已注册京东智联云账号，并完成实名认证。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud&ReturnUrl=https%3a%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttps%3a%2f%2fwww.jdcloud.com)，或 [实名认证](https://uc.jdcloud.com/account/certify)。
 - 如计费类型选择按配置计费，请确认您的账户余额（包括代金券）能满足您的使用。
 
 ### 操作步骤
-1. 登录消息队列 RabbitMQ版控制台。</br>
+1. 登录消息队列 RabbitMQ 版控制台。</br>
 2. 在实例列表页面单击“创建”，进入“创建”页面，选择付费方式、地域、基本信息、规格、网络、登录信息、高级配置等信息。</br>
 
 ![查询1](../../../../image/Internet-Middleware/JCS-for-RabbitMQ/创建实例.png)
