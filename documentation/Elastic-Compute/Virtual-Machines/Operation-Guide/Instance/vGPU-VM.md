@@ -62,7 +62,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 #### 1、为云主机安装图形界面
 
-License Server可以通过远程web管理也可以在本地进行管理。如想要在本地管理，需要为云主机安装图形界面（如仅需远程web管理，可跳过此步骤），指令如下：            
+License Server可以通过远程web管理也可以在本地进行管理。如想要在本地管理（在安装License Server的云主机上访问管理），需要为云主机安装图形界面（如仅需远程web管理，可跳过此步骤），指令如下：            
 
 ```
 yum groupinstall "GNOME Desktop" "Graphical Administration Tools" -y
@@ -106,7 +106,7 @@ systemctl start flexnetls-nvidia.service
 ```
 
 ##### 3.3 配置License Server
-* 打开license server配置页面（非本机访问请将localhost替换成本机的IP） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>
+* 在安装License Server的云主机上打开配置页面（内网/外网远程访问请将localhost替换成/公网IP地址） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>
 ![](../../../../../image/vm/vgpu-licenseserver2.png)
 
 * 登录NVIDIA官网”NVIDIA SOFTWARE LICENSING CENTER”页面，进入Register License Server页面,将获取到的MAC地址，输入“MAC address”中，并点击“Create”。
