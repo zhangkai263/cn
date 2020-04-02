@@ -27,7 +27,7 @@ reboot
 #### 3、安装驱动
 
 * [下载Linux系统驱动（内网下载）]( https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/NVIDIA-Linux-x86_64-430.46-grid.run)<br>
-* 执行如下命令：
+* 在下载目录执行如下命令：
 
 ```
 sh ./NVIDIA-Linux-x86_64-430.46-grid.run
@@ -40,7 +40,7 @@ reboot
 
 #### 驱动下载及安装
 
-* 请跟据安装的windows的具体版本下载对应的驱动程序：<br>
+* 请跟据windows系统的版本下载对应的驱动程序：<br>
   * [适用于Win10、Windows Server2016的驱动版本 (内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win10_server2016_server2019_64bit_international.exe) <br>
   * [适用于Win7、Win8、Windows Server2008、Windows Server2012的驱动版本(内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win7_win8_server2008R2_server2012R2_64bit_international.exe) <br>
   
@@ -58,7 +58,7 @@ vGPU的计算和图显功能均依赖GRID驱动和相应的License，每台vGPU�
 
 ### 搭建license server服务器  
 
-License Server必须确保vGPU虚机能够通过内网或者外网访问，建议搭建在您VPC内的云主机上。一台License Server可以提供最多15万的license请求(此数量请求下配置至少满足4C16G，可根据处理请求数调整服务器的配置)且支持HA, 下文以部署在京东云上的Linux云主机为例，使用一台8G16G的CentOS 7.6 云主机搭建License Server。
+License Server必须确保vGPU虚机能够通过内网或者外网访问，建议搭建在您VPC内的云主机上。一台License Server可以提供最多15万的license请求(此数量请求下配置至少满足4C16G，可根据处理请求数调整服务器的配置), 下文以部署在京东云上的Linux云主机为例，使用一台8G16G的CentOS 7.6 云主机搭建License Server。
 
 #### 1、为云主机安装图形界面
 
@@ -98,14 +98,19 @@ systemctl start tomcat.service
 参照下图进行安装：
 ![](../../../../../image/vm/vgpu-licenseserver1.png)
 
-安装完成后，请在VNC登录状态下执行以下指令（）：
+安装完成后，执行以下指令：
+
 ```
-ifconfig eth0 0  
-systemctl restart network.service 
+wget https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/producer-settings.xml
+cp producer-settings.xml /opt/flexnetls/nvidia/producer-settings.xml
+systemctl stop flexnetls-nvidia.service
+systemctl start flexnetls-nvidia.service
 ```
 
 ##### 3.4 配置License Server
 * 打开license server配置页面（非本机访问请将localhost替换成本机的IP） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>
+![](../../../../../image/vm/vgpu-licenseserver2.png)
+
 * 登录NVIDIA官网”NVIDIA SOFTWARE LICENSING CENTER”页面，进入Register License Server页面,将获取到的MAC地址，输入“MAC address”中，并点击“Create”。
 * 创建完成后，进入分配license页面，在View Server页面单击“Map Add-Ons”，会显示您当前账号可以分配的License数量。
 * 在Qty to Add框中填入数量，然后点击Map Add-Ons即可完成对Server的License分配。
