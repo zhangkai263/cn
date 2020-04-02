@@ -78,20 +78,18 @@ wget https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/setup.bin
 
 #### 3、安装License Server软件
 
-##### 3.1 安装Java
+##### 3.1 安装Java和tomcat
 
-Linux默认已安装，无须单独安装。
+Linux默认已安装java，无须单独安装。
+依次执行如下指令安装tomcat：  
 
-##### 3.2 安装tomcat
-
-依次执行如下指令：                            
 ```
 yum install tomcat tomcat-webapps
 systemctl enable tomcat.service
 systemctl start tomcat.service
 ```
 
-##### 3.3 安装License Server
+##### 3.2 安装License Server
 
 运行 ` sh setup.bin -i console `
 
@@ -107,7 +105,7 @@ systemctl stop flexnetls-nvidia.service
 systemctl start flexnetls-nvidia.service
 ```
 
-##### 3.4 配置License Server
+##### 3.3 配置License Server
 * 打开license server配置页面（非本机访问请将localhost替换成本机的IP） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>
 ![](../../../../../image/vm/vgpu-licenseserver2.png)
 
@@ -143,4 +141,10 @@ BackupServerPort=7070
 * 确认license是否认证成功<br>
 `grep gridd /var/log/messages`
 
-* 如下图显示即表示vGPU云主机已认证成功
+* 如下图显示即表示vGPU云主机已认证成功 <br>
+![](../../../../../image/vm/vgpu-licenseserver3.png)
+
+#### Windows系统
+* 桌面下点击右键，选择“NVIDIA控制面板”。<br>
+* 在弹出页面的左侧菜单中选择“管理许可证”，填写License Server的IP地址（填写同VPC内，License Server主机的内网IP地址）和端口号7070。<br>
+![](../../../../../image/vm/vgpu-licenseserver4.png)
