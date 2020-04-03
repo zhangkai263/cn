@@ -9,7 +9,7 @@
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
-* GPU型：[GPU标准型](instance-type-family#user-content-6)
+* GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-7)
 
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个Intel Xeon处理器的超线程核，其vCPU与内存比为1:4。
@@ -422,7 +422,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 ## GPU型
 
-GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前在华北部分可用区邀测中，如有购买需求请提交工单。
 
 <div id="user-content-6"></div>
 
@@ -463,12 +463,53 @@ GPU型当前提供GPU标准型，为您提供高性能的异构计算资源。�
 |p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 5587 HDD|4
 |p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 5587 HDD|4
 
+<div id="user-content-7"></div>
+
+### GPU虚拟化型
+
+**规格类型特点：**
+
+* 异构计算
+* GPU类型及规格：
+	* 1* 1/6 Nvidia Tesla P40 （显存4GB）
+	* 1* 1/4 Nvidia Tesla P40 （显存6GB）
+	* 1* 1/2 Nvidia Tesla P40 （显存12GB）
+* 处理器：
+	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器
+	* 2.4 GHz主频的Intel Xeon E5-2680 v4（Broadwell）处理器
+* 虚拟化类型：
+	* C模式
+	* Q模式
+* 适用场景：
+	* 科学计算、机器学习（C模式）
+	* 图形渲染、游戏（Q模式） 
+
+**实例规格**
+
+第一代-C模式：
+
+实例规格|vCPU（核）|内存（GB）|GPU|显存（GB）|网卡多队列
+:---|:---|:---|:---|:---|:---|
+|p.c1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
+|p.c1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
+|p.c1p40g.xlarge|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.c1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
+
+第一代-Q模式：
+
+实例规格|vCPU（核）|内存（GB）|GPU|显存（GB）|网卡多队列
+:---|:---|:---|:---|:---|:---|
+|p.q1p40g.large|2|8|1 x 1/6 Nvidia Tesla P40|4|2
+|p.q1p40m.large|2|14|1 x 1/4 Nvidia Tesla P40|6|2
+|p.q1p40g.xlarge|4|14|1 x 1/4 Nvidia Tesla P40|6|4
+|p.q1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4
+
 
 请注意：
 
-* 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供；
-* GPU型当前仅在华北-北京单可用区公测提供；
-* 华北-北京及华东-上海地域的第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；
+* GPU虚拟化型当前在华北-北京、华东-上海部分可用区邀测中；
+* 第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；
 * 在购买实例后，您可根据业务规模变更情况对实例进行配置修改，详细请参见[调整配置](../Operation-Guide/Instance/Resize-Instance.md)。
 
 ## 相关参考

@@ -97,6 +97,8 @@ items:
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU云主机
             href: Operation-Guide/Instance/GPU-VM.md
+          - name: vGPU云主机
+            href: Operation-Guide/Instance/vGPU-VM.md            
           - name: 裸金属云主机
             items: 
               - name: 裸金属云主机概述
