@@ -17,7 +17,7 @@ OSS内容检测任务执行完成后，您可以在控制台查询检测结果�
    - Bucket：筛选扫描的Bucket。
    - Key：Bucket中文件（或文件夹）的完整路径。
 
-![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Self-Help-Audit.png)
+![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Self-Help-Audit.PNG)
 
 
 

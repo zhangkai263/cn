@@ -30,7 +30,7 @@
 
 2. 前往 **设置**  > **OSS违规检测** 页面，并打开**回调通知**页签。
 
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Callback-None.PNG)
+   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Callback-None.png)
 
    
 
@@ -44,7 +44,7 @@
 
    设置完成后，系统自动生成Seed。Seed值用于校验您的回调接口收到的请求来自京东云。请保存自动生成的Seed，根据需要应用于您的业务。	
 
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Callback.PNG)
+   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Callback.png)
 
 ## Content说明
 

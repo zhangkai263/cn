@@ -21,7 +21,7 @@ OSS违规检测支持检测OSS Bucket中的增量内容和存量内容。
    
    单击已选择bucket旁边的漏斗，可以设置规则。仅扫描指定前缀或者目录的文件，例如，如果填写img/，则表示在该Bucket里仅扫描img/开头的文件；如果您要扫描的文件在一个名叫 document/2019/文件夹下且前缀为img，可以添加ducument/2019/img。一个Bucket最多填写10条规则，填写如下图。
    
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Bucket-Filter.PNG)
+   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Bucket-filter.PNG)
 
 
 
@@ -35,7 +35,7 @@ OSS违规检测支持检测OSS Bucket中的增量内容和存量内容。
 
 ​	 步骤四、配置图片和视频。图片可以选择鉴黄和涉政暴恐场景的检测。图片自动冻结功能可以选择开关打开或者关闭。当开启图片自动冻结时，默认涉黄、涉政暴恐违规阈值是90，您可以自行调整阈值范围。
 
-![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Picture.PNG)
+![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Picture.png)
 
 
 
@@ -71,6 +71,6 @@ OSS违规检测支持检测OSS Bucket中的增量内容和存量内容。
 
    在存量扫描过程中，您可以随时**中止扫描**。
 
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Stock-Scan-stop.PNG)
+   ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Stock-Scan-Stop.PNG)
 
    

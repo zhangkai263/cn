@@ -49,4 +49,4 @@ OSS违规检测只向开通了京东云OSS的用户提供服务，在使用OSS�
 4. 在**云资源访问授权**页面，单击**同意授权**，完成访问授权。
 
 
-​		![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Authorization.PNG)
+​		![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Authorization.png)
