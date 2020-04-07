@@ -39,8 +39,8 @@ items:
       href: Operation-Guide/Monitoring.md
 - name: 常见问题
   items:
-    - name: 功能问题
-      href: FAQ/Configuration-FAQ.md
+    - name: 常见问题
+      href: FAQ/FAQ.md
 - name: 相关资源
   items:
     - name: 文档历史记录
