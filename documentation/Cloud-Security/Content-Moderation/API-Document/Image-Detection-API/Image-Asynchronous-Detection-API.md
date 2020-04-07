@@ -1,6 +1,6 @@
 ## 		图片异步检测接口
 
-本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见OpenAPI内的请求结构。
+本文提供了调用图片风险违规内容审核的接口和参数说明，旨在帮助您编写程序构建HTTP调用请求，有效地检测图片中的多维度风险内容。关于如何构造HTTP请求，请参见请求结构。
 
 ### 描述
 
@@ -44,7 +44,7 @@ POST
 
 ### 请求地址
 
-/v1/image:asyncscan
+ https://censor.jdcloud-api.com/v1/image:asyncscan 
 
 
 ### 请求参数
@@ -179,7 +179,7 @@ POST
 
 ### 请求地址
 
-/v1/image:results
+ https://censor.jdcloud-api.com/v1/image:results 
 
 
 ### 请求参数

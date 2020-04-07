@@ -15,8 +15,8 @@
 **语音文件限制说明**
 
 - 支持的语音文件大小 < 100 M
-- 支持的音频文件格式：.mp3、.wav、.aac、.wma、.ogg、.m4a、.amr、.audio
-- 支持的视频文件格式：.avi、.flv、.mp4、.mpg、.asf、.wmv、.mov、.rmvb、.rm
+- 支持的音频文件格式：.mp1、.mp2、.mp3、.aac、.wma、.m4a、
+- 支持的视频文件格式：.avi、.flv、.mp4、.mpg、.wmv、.webm、.mpg、.3gp、.mkv。
 
 关于scene与label参数
 
@@ -34,7 +34,7 @@ POST
 
 ### 请求地址
 
- /v1/audio:asyncscan 
+https://censor.jdcloud-api.com/v1/audio:asyncscan  
 
 ### 请求参数
 
@@ -95,6 +95,12 @@ callback表
 | :------- | :----- | :----------------------------------------------------------- |
 | checksum | 字符串 | 由用户uid + seed + content拼成字符串，通过SHA256算法生产。用户UID即账号ID，您可在京东智联云控制台上查询。为防篡改，您可以在获取到推送结果时，按此算法生成字符串，与checksum做一次校验。 |
 | content  | String | JSON字符串格式，请自行解析反转成JSON对象。content结果格式参见下文 |
+
+##### content格式说明
+
+| 参数名称 | 类型     | 描述                   |
+| :------: | :------- | :--------------------- |
+|  result  | JSON对象 | 音频异步检测机审结果。 |
 
 ### 返回参数
 
@@ -158,7 +164,7 @@ POST
 
 ###  请求地址
 
-/v1/audio:results
+https://censor.jdcloud-api.com/v1/audio:results 
 
 ###  请求参数
 

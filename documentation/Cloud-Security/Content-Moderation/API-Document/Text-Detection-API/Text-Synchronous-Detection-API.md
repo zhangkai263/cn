@@ -26,7 +26,7 @@ POST
 
 ### 请求地址
 
-/v1/text:scan
+https://censor.jdcloud-api.com/v1/text:scan 
 
 
 ### 请求参数
