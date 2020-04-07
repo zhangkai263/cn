@@ -1,14 +1,14 @@
-# deleteInstance
+# restartInstance
 
 
 ## 描述
-删除实例
+重启实例
 
 ## 请求方式
-DELETE
+POST
 
 ## 请求地址
-https://mongodb.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
+https://mongodb.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:restartInstance
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -22,8 +22,13 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](restartinstance#result)| |
 |**requestId**|String| |
 
+### <div id="result">Result</div>
+|名称|类型|描述|
+|---|---|---|
+|**instanceId**|String| |
 
 ## 返回码
 |返回码|描述|
