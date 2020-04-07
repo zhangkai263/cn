@@ -18,6 +18,6 @@
 
   [1]: https://bastion-console.jdcloud.com/list
   [2]: https://console.jdcloud.com/
-  [3]: https://cms-console.jdcloud.com/serverMonitor
+  [3]: https://cms-console.jdcloud.com/monitor/resource/auto/bastion
   [4]: https://console.jdcloud.com/
   
