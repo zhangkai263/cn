@@ -47,18 +47,33 @@ items:
     items:
       - name: 请求结构
         href: API-Document/Request-Structure.md
+      - name: 公共参数
+        href: API-Document/Common-Parameters.md
+      - name: 签名机制
+        href: API-Document/Signature-Algorithm.md
+      - name: 返回结果
+        href: API-Document/Return-Result.md
       - name: API概览
         href: API-Document/API-Overview.md
       - name: 文本检测
         items:
-          - name: 文本同步检测接口
+          - name: 同步检测
             href:  API-Document/Text-Detection-API/Text-Synchronous-Detection-API.md
       - name: 图片检测
         items:
-          - name: 图片同步检测接口
+          - name: 同步检测
             href: API-Document/Image-Detection-API/Image-Synchronous-Detection-API.md
-          - name: 图片异步检测接口
+          - name: 异步检测
             href: API-Document/Image-Detection-API/Image-Asynchronous-Detection-API.md
+      - name: 视频检测
+        items:
+          - name: 异步检测
+            href: API-Document/Video-Detection-API/Video-Asynchronous-Detection-API.md
+      - name: 音频检测
+        items:
+          - name: 异步检测
+            href: API-Document/Audio-Detection-API/Audio-Asynchronous-Detection-API.md
+
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新

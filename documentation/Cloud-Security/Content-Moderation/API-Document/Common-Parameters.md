@@ -12,7 +12,7 @@
 | x-jdcloud-date           | String | 是   | 签名请求的日期和时间，遵循ISO8601标准，使用UTC时间，格式为YYYYMMDDTHHmmssZ。日期必须与`authorization`请求头中使用的日期相匹配。例如： `20180707T150456Z` |
 | x-jdcloud-nonce          | String | 是   | 随机生成的字符串，需要保证一段时间内的唯一性                 |
 | x-jdcloud-security-token | String | 否   | 如果用户开启了mfa操作保护，该API接口又是需要保护的接口，调用时需要传此参数 |
-| authorization            | String | 是   | 鉴权信息，由签名算法生成，生成的数据格式例如：JDCLOUD2-HMAC-SHA256 Credential=accessKey/20180226/cn-north-1/nc/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=4432ad80f84a41d56f3d41b59918a0844b468d8c131fa7d7c993693f62cf43ef` |
+| authorization            | String | 是   | 鉴权信息，由签名算法生成，生成的数据格式例如：JDCLOUD2-HMAC-SHA256 Credential=accessKey/20180226/cn-north-1/censor/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=4432ad80f84a41d56f3d41b59918a0844b468d8c131fa7d7c993693f62cf43ef` |
 
 
 
@@ -26,71 +26,40 @@
 
 ```
 POST
-https://censor.jdcloud-api.com/v1/image:asyncscan
+http://censor.jdcloud-api.com/v1/image:asyncscan
 ```
 
-请求头:（**需要替换一下**）
+请求头:
 
 ```
 x-jdcloud-algorithm: JDCLOUD2-HMAC-SHA256
-x-jdcloud-date: 20140707T150456Z
-x-jdcloud-nonce: ed558a3b-9808-4edb-8597-187bda63a4f2
-authorization: JDCLOUD2-HMAC-SHA256 accessKey/20180226/cn-north-1/nc/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=4432ad80f84a41d56f3d41b59918a0844b468d8c131fa7d7c993693f62cf43ef
+x-jdcloud-date: 20200407T031912Z
+x-jdcloud-nonce: 0b34c307-99fb-493e-ae4d-651ddf81cfc8
+authorization: JDCLOUD2-HMAC-SHA256 Credential=accessKey/20200407/jdcloud-api/censor/jdcloud2_request, SignedHeaders=content-type;host;x-jdcloud-date;x-jdcloud-nonce, Signature=da90775ac5bccc8301b287531aaa392a027b05d82d70a0b4fea780c175b39fcd
 ```
 
-请求体：（**请求体需要替换一下**）
+请求体：
 
 ```
 {
-     "instanceSpec": {
-              "az": "cn-north-1a",
-              "instanceType": "g.s1.micro",
-              "imageId": "98d4a0f-88c1-451a-8971-f1f76903b6c",
-              "name": "sdk-test",
-              "elasticIp": {
-                      "bandwidthMbps": 2,
-                      "provider": "NO_BGP"
-              },
-              "primaryNetworkInterface": {
-                      "networkInterface": {
-                               "subnetId": "subnet-0rtcw9jl0",
-                               "az": "cn-north-1a"
-                      }
-              },
-              "systemDisk": {
-                      "diskCategory": "local"
-              },
-              "dataDisks": [{
-                      "diskCategory": "cloud",
-                      "autoDelete": true,
-                      "cloudDiskSpec": {
-                               "name": "sdk-test-disk1",
-                               "diskType": "premium-hdd",
-                               "diskSizeGB": 50
-                      }
-              },
-              {
-                      "diskCategory": "cloud",
-                      "autoDelete": true,
-                      "cloudDiskSpec": {
-                               "name": "sdk-test-disk2",
-                               "diskType": "ssd",
-                               "diskSizeGB": 40
-                      }
-              }],
-              "description": "sdk测试"
-     },
-     "maxCount": 2,
-     "regionId": "cn-north-1"
+	"scenes": [
+		"porn"
+	],
+	"tasks": [
+		{
+			"dataId": "81",
+			"url": "http://xxx.xxx.xxx/img1.jpg"
+		}
+	],
+	"callback": "http://xxx.xxx.xxx/callback",
+	"seed": "seed"
 }
+
 ```
 
-其中，（**解释需要替换一下**）
+其中，
 
 - `POST`指定了请求方法。
-- `v1/image:asyncscan`是请求路径。
-- `clientInfo=%7b%22userId%22%3a%22120234234%22%2c%22userNick%22%3a%22Mike%22%2c%22userType%22%3a%22others%22%7d`为编码后的公共查询参数。
-- 此后是http头，其中`Accept`到`Authorization`是签名时要用到的公共请求头。
-- `{}`内的内容是JSON格式的请求body。
-
+- `/v1/image:asyncscan`是请求路径。
+- 此后是http头，其中`x-jdcloud-algorithm`到`authorization`是签名时要用到的公共请求头。生成方法详见[签名算法](https://docs.jdcloud.com/cn/common-declaration/api/authorization-rules)
 
