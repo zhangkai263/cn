@@ -9,7 +9,7 @@
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
 * 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
-* GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-7)
+* GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个Intel Xeon处理器的超线程核，其vCPU与内存比为1:4。
@@ -463,7 +463,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 |p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 5587 HDD|4
 |p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 5587 HDD|4
 
-<div id="user-content-7"></div>
+<div id="user-content-10"></div>
 
 ### GPU虚拟化型
 
