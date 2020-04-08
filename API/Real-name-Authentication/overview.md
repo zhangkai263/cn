@@ -17,7 +17,7 @@ v1
 |**checkCompanyLegalPersonAndAgent**|POST|企业所有信息核验|
 |**checkCompanyTransfer**|POST|企业打款以及验证接口|
 |**checkLegalPerson**|POST|法人信息校验|
-|**queryBankBranchList**|POST|查询城市下银行分行列表|
+|**queryBankBranchList**|GET|查询城市下银行分行列表|
 |**queryBankList**|GET|查询所有支持的银行|
 |**queryCityList**|GET|查询省份下城市编码|
 |**queryProvinceList**|GET|查询所有省份列表|
