@@ -8,6 +8,8 @@
 
 ![](/image/Bastion/security.png) 
 
+   Access Key ID：提供用户的Access Key ID 和 Access Key Secret,否则“会话审计”和“操作审计”功能将无法正常使用。Access Key ID和Access Key Secret是您访问京东云API的密钥，可操作您名下的所有资源，为了您的财产和服务安全，请妥善保存和定期更换密钥。
+   
    登录超时：编辑登录超时时间，完成后单击确定完成更改。
    
    密码尝试次数：编辑尝试密码次数，完成后单击确定完成更改。
