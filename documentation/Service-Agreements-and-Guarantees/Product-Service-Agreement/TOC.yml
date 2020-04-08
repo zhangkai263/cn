@@ -72,6 +72,8 @@ items:
     href: Flexible-Telescopic-Service-Clause.md
   - name: 视频直播服务条款
     href: Video-Live-Service-Clause.md
+  - name: 视频点播服务协议
+    href: Video-on-demand-service-protocol.md
   - name: SSL数字证书服务协议
     href: SSL-Digital-Certificate-Service-Clause.md
   - name: 云解析服务协议
@@ -146,8 +148,6 @@ items:
     href: Cloud-Desktop-Service-Protocol.md   
   - name: 云桌面服务等级协议（SLA）
     href: Cloud-Desktop-Service-Protocol-SLA.md
-  - name: 视频点播服务协议 
-    href: Video-on-demand-service-protocol.md
   - name: 队列服务服务条款
     href: Queue-Service-Terms-Of-Service.md   
   - name: 队列服务等级协议（SLA）
