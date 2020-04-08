@@ -78,7 +78,18 @@ items:
                   href: Operation-Guide/Administrator/Audit/Session-Audit.md
                 - name: 操作审计
                   href: Operation-Guide/Administrator/Audit/Operational-Audit.md
-
+          - name: 系统设置
+            href: Operation-Guide/Administrator/System-settings.md
+          - name: 监控
+            items:
+                - name: 监控概述
+                  href: Operation-Guide/Administrator/Monitoring/Overview.md
+                - name: 获取监控数据
+                  href: Operation-Guide/Administrator/Monitoring/Retrieve-Data.md
+                - name: 设置报警
+                  href: Operation-Guide/Administrator/Monitoring/Set-Alarm.md
+            
+                  
                     
       - name: 运维手册
         items:
