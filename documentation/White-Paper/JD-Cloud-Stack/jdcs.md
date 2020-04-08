@@ -82,7 +82,7 @@ JD Cloud Stack中的云计算资源产品采用“1+N”模式来实现灵活部
 
 # 下载地址
 
-《京东智联云专有云JD Cloud Stack白皮书》下载地址：http://suo.im/5W58J1
+更多详细内容请查看《京东智联云专有云JD Cloud Stack白皮书》。下载地址：http://suo.im/5W58J1
 
 
 
