@@ -34,13 +34,13 @@ items:
       - name: OSS违规检测
         items:
           - name: 功能简介
-            href: Operation-Guide/OSS-Violate-Detection/OSS-Voilate-Scan-Introduction.md
+            href: Operation-Guide/OSS-Voilate-Detection/OSS-Voilate-Scan-Introduction.md
           - name: 扫描设置
-            href: Operation-Guide/OSS-Violate-Detection/OSS-Scan-Setting.md
+            href: Operation-Guide/OSS-Voilate-Detection/OSS-Scan-Setting.md
           - name: 扫描结果及自助审核
-            href: Operation-Guide/OSS-Violate-Detection/Scan-Result-And-Self-Help-Audit.md
+            href: Operation-Guide/OSS-Voilate-Detection/Scan-Result-And-Self-Help-Audit.md
           - name: 回调通知
-            href: Operation-Guide/OSS-Violate-Detection/Callback-Notification.md
+            href: Operation-Guide/OSS-Voilate-Detection/Callback-Notification.md
       - name: 流量包管理
         href: Operation-Guide/Resource-package-management.md
   - name: API指南
