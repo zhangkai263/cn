@@ -21,7 +21,7 @@ OSS违规检测使用人工智能技术帮助您检测京东智联云对象存�
 - OSS违规检测支持检测特定格式后缀的文件。
 
   - 支持检测的图片格式如下：jpg、png、jpeg、gif、bmp
-  - 支持检测的视频格式如下：avi、mp4、3gp、mkv、mpg、mpeg、ts、rmvb、wmv、flv、mov
+  - 支持检测的视频格式如下：.mp4、.m4v、.mkv、.webm、.mov、.avi、.wmv、.mpg、.flv、.3gp
 
 - OSS违规检测目前支持扫描以下endpoint中的OSS Bucket：
 
