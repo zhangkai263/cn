@@ -1,6 +1,6 @@
 # 重启实例
 
-如果您的 Greenplum 实例运行异常，但不确认原因时，您可以考虑重启实例。
+如果您的 JDW 实例运行异常，但不确认原因时，您可以考虑重启实例。
 
 ## 注意事项
 
@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](https://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](https://jdw-console.jdcloud.com/list)。
 
 2. 在实例列表页，选择要重启的实例，点击右侧操作项中的**重启**。
 
