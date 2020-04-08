@@ -1,6 +1,6 @@
 # 删除实例
 
-如您不再需要使用某个 Greenplum 实例，您可以删除该实例。
+如您不再需要使用某个 JDW 实例，您可以删除该实例。
 
 ## 注意事项
 
@@ -10,7 +10,7 @@
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](https://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](https://jdw-console.jdcloud.com/list)。
 
 2. 在实例列表页，选择要删除的实例，点击右侧操作项中的**删除**。
 
