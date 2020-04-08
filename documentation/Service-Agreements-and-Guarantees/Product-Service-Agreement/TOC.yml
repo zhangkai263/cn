@@ -118,6 +118,8 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
   - name: 边缘云公网IP服务等级协议（SLA）
     href: Elastic-IP-For-Edge-Cloud-Level-Agreement-SLA.md
+  - name: 边缘共享带宽服务协议
+    href: Edge-Shared-Bandwidth-Terms-Of-Service.md    
   - name: 边缘网络隧道(ENT)服务协议
     href: Edge-Network-Tunnel-Terms-Of-Service.md
   - name: 对等边缘服务(JEES)服务条款
@@ -219,7 +221,9 @@ items:
   - name: 智能边缘安全服务条款
     href: Intelligent-Edge-Security-Terms-Of-Service.md   
   - name: 堡垒机服务服务条款
-    href: Bastion-Terms-Of-Service.md      
+    href: Bastion-Terms-Of-Service.md
+  - name: 堡垒机服务等级协议（SLA）
+    href: Bastion-Level-Agreements-SLA.md 
   - name: 内容安全服务条款
     href: Content-Moderation-Terms-Of-Service.md
   - name: 京鱼座设备池开放服务条款
@@ -242,5 +246,7 @@ items:
     href: General-Commodity-Identification-Terms-Of-Service.md		
   - name: 商品图片搜索服务条款
     href: Product-Image-Search-Engine-Terms-Of-Service.md  
-    
-    
+  - name: 短网址服务条款
+    href: Short-URL-Terms-Of-Service.md   
+  - name: 短网址服务等级协议（SLA）
+    href: Short-URL-Level-Agreements-SLA.md   
