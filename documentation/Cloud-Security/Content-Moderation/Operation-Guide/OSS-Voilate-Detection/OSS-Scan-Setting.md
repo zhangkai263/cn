@@ -33,7 +33,7 @@ OSS违规检测支持检测OSS Bucket中的增量内容和存量内容。
 
 ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Frozen.PNG)
 
-​	 步骤四、配置图片和视频。图片可以选择鉴黄和涉政暴恐场景的检测。图片自动冻结功能可以选择开关打开或者关闭。当开启图片自动冻结时，默认涉黄、涉政暴恐违规阈值是90，您可以自行调整阈值范围。
+​	 步骤四、配置图片和视频。图片可以选择鉴黄和涉政暴恐场景的检测。图片自动冻结功能可以选择开关打开或者关闭。当开启图片自动冻结时，默认涉黄、涉政暴恐违规阈值是99，您可以自行调整阈值范围。
 
 ![image](../../../../../image/Content-Moderation/Operation-Guide/OSS-Violate-Detection/OSS-Setting-Picture.png)
 
