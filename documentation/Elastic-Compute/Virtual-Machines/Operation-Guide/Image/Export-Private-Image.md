@@ -68,7 +68,7 @@
         "oss:ListMultipartUploadParts"
       ],
       "Resource": [
-        "jrn:oss:*:324167480385:test-export/*"
+        "jrn:oss:*:3241xxxx0385:image-export-bucket/*"
       ]
     }
   ]
