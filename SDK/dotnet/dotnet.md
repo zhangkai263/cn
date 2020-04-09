@@ -37,7 +37,7 @@ Install-Package JDCloudSDK.Vm -Version 1.2.0.1
 dotnet add package JDCloudSDK.Vm --version 1.2.0.1
 ```  
 
-您还可以下载SDK的源码直接添加到项目中或者编译为DLL再引用到项目中。  
+您还可以下载[SDK源码](https://github.com/jdcloud-api/jdcloud-sdk-net)直接添加到项目中或者编译为DLL再引用到项目中。  
 
 SDK使用中的任何问题，欢迎您在[SDK使用问题反馈页面](https://github.com/jdcloud-api/jdcloud-sdk-net/issues)交流
 
