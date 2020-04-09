@@ -1,6 +1,6 @@
 # 创建账号
 
-每个 Greenplum 实例可以通过控制台创建一个高权限账号，可以通过此账号创建其他账号。
+每个 JDW 实例可以通过控制台创建一个高权限账号，可以通过此账号创建其他账号。
 
 ## 前提条件
 
@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](http://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](http://jdw-console.jdcloud.com/list)。
 
 2. 在“实例列表”页面选择目标实例，点击实例名称进入实例详情页。
 

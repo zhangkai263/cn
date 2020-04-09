@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](https://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](https://jdw-console.jdcloud.com/list)。
 
 2. 在实例列表页，选择要续费的实例，点击右侧操作项中的**续费**。
 
