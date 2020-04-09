@@ -30,13 +30,13 @@ items:
   - name: 最佳实践
     items:
         - name: 最佳敏捷实践
-          href: Best-Practices/Agile.md   
+          href: Best-Practices/Agile.md
   - name: FAQ
     items:
         - name: FAQ
-          href: FAQ/Faq.md 
- - name: 相关资源
+          href: FAQ/Faq.md
+  - name: 相关资源
     items:
         - name: 产品上线记录
-          href: Release-Resoure/Road-Map.md 
+          href: Release-Resoure/Road-Map.md
 
