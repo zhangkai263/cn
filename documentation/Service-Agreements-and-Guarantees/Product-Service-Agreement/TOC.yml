@@ -135,7 +135,11 @@ items:
   - name: 消息队列Kafka服务条款
     href: Jcs-For-Kafka-Terms-Of-Service.md
   - name: 消息队列Kafka服务等级协议（SLA）
-    href: jcs-for-kafka-Level-Agreement-SLA.md    
+    href: jcs-for-kafka-Level-Agreement-SLA.md
+  - name: 分布式协调服务Zookeeper版服务条款
+    href: Jcs-For-Zookeeper-Terms-Of-Service.md
+  - name: 分布式协调服务Zookeeper版服务等级协议（SLA）
+    href: Jcs-for-Zookeeper-Level-Agreements-SLA.md 
   - name: DDoS防护包服务条款
     href: DDoS-Protection-Package-Terms-Of-Service.md
   - name: DDoS防护包服务等级协议(SLA)
