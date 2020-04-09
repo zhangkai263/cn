@@ -14,6 +14,6 @@ bastion.disk.bytes.read|磁盘读字节数|Disk Read Bytes|MB|
 bastion.disk.bytes.write|磁盘写字节数|Disk Write Bytes|MB|
 bastion.network.bytes.incoming|网络接收字节数|Nework Incoming Bytes|MB|
 bastion.network.bytes.outgoing|网络发送字节数|Network Outgoing Bytes|MB|
-bastion.disk.iops.read|磁盘读IOPS|Disk Read iops|个/s|
-bastion.disk.iops.write|磁盘写IOPS|Disk Write iops|个/s|
+bastion.disk.iops.read|磁盘读IOPS|Disk Read Iops|个/s|
+bastion.disk.iops.write|磁盘写IOPS|Disk Write Iops|个/s|
 bastion.disk.usage|磁盘使用率|Disk use percent|%| 仅节点维度提供该指标
