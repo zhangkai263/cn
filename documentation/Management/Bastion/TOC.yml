@@ -46,6 +46,8 @@ items:
     items:
       - name: 管理员手册
         items:
+          - name: 堡垒机实例
+            href: Operation-Guide/Administrator/Instance-Info.md
           - name: 登录堡垒机系统
             href: Operation-Guide/Administrator/Login-Bastion.md
           - name: 用户
