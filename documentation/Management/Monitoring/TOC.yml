@@ -121,7 +121,7 @@ items:
       href: Metrics/Memcached.md
     - name: 云数据库 InfluxDB
       href: Metrics/tsds.md
-    - name: 云数据库 Greenplum
+    - name: 数据仓库 JDW
       href: Metrics/jdw.md
     - name: 数据传输 DTS
       href: Metrics/dts.md
