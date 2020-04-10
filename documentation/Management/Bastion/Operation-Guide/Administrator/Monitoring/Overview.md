@@ -7,24 +7,20 @@
 
 京东智联云为堡垒机实例提供以下监控项：
 
-|   监控项  |定义     | 说明     |
-| --- | --- | --- |
-|   CPU利用率  | 当前非空闲CPU所占的百分比      |若该值越高则表明当前实例负载越高     |
-|  内存利用率     |	当前内存使用量占内存总量百分比     | 若该值越高则表明当前实例内存使用越多，为当前已用内存量/所购买实例的内存总量。         |
-|  网络进/出流量      | 网卡平均每秒进/出流量，单位为bps        |  表示流出实例和流入实例流量平均速率，监控的是实例网卡的流量，包括内网及公网。若您需要单独看公网进出流量，可查看您当前实例绑定公网IP的监控信息。               |
-| 磁盘读写流量        | 磁盘平均每秒读/写流量，单位为Kbps      | 当前实例系统盘的每秒写入/读取数据量。                |
+| 监控项         | 说明                       | 监控频率 |
+| -------------- | -------------------------- | -------- |
+| CPU 使用率     | 实例的 CPU 使用率          | %        |
+| 内存使用率     | 实例的内存使用率           | %        |
+| 磁盘读字节数   |                            | MB       |
+| 磁盘写字节数   |                            | MB       |
+| 网络接收字节数 | 实例每秒钟接收的流量字节数 | MB       |
+| 网络发送字节数 | 实例每秒钟发送的流量字节数 | MB       |
+| 磁盘读IOPS     | 每秒的 读IO 次数           | 个/s     |
+| 磁盘写IOPS     | 每秒的 写IO 次数           | 个/s     |
+| 磁盘使用率     | 仅节点维度提供该指标       | %        |
 
-metric | 中文名称  | 英文名称 |单位 | 说明
----|--- |--- |--- |--- 
-bastion.cpu.util|CPU使用率|CPU Usage|%|
-bastion.memory.usage|内存使用率|Memory Usage|%|
-bastion.disk.bytes.read|磁盘读字节数|Disk Read Bytes|MB|
-bastion.disk.bytes.write|磁盘写字节数|Disk Write Bytes|MB|
-bastion.network.bytes.incoming|网络接收字节数|Nework Incoming Bytes|MB|
-bastion.network.bytes.outgoing|网络发送字节数|Network Outgoing Bytes|MB|
-bastion.disk.iops.read|磁盘读IOPS|Disk Read Iops|个/s|
-bastion.disk.iops.write|磁盘写IOPS|Disk Write Iops|个/s|
-bastion.disk.usage|磁盘使用率|Disk use percent|%| 仅节点维度提供该指标
+
+
 
 
 **监控数据说明**
