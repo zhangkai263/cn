@@ -5,7 +5,7 @@
 ## 入口1：产品介绍页
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“产品>云通信>物联网卡服务”。
-3. 弹出的产品介绍页，点击**立即购买**。
+3. 弹出的产品介绍页，点击**立即使用**。
 
 ![物联网卡服务](../../../../image/Query-Card-Service/productpage.png)
 
