@@ -19,9 +19,10 @@
 ## 入口二：控制台
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
-2. 选择“控制台”，具体见下图。
+2. 点击“控制台“>“云服务“，在弹出的产品列表左上角的搜索框中输入“物联网卡服务”，在下方的搜索结果中再点击“云通信”下的“物联网卡服务”便可进入物联网卡服务平台。
 
-![控制台](../../../../image/Query-Card-Service/console-buy.png)
+![物联网卡服务 控制台](../../../../image/Query-Card-Service/console-renewal-1.png)
+![物联网卡服务 控制台](../../../../image/Query-Card-Service/console-renewal-2.png)
 
-3. [物联网卡购买](../Operation-Guide/Purchase.md)。
+3. 进入物联网卡服务平台，在左侧的菜单栏点击“物联网卡购买”，进入物联网卡购买页面，参见：[物联网卡购买](../Operation-Guide/Purchase.md)。
 
