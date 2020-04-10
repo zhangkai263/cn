@@ -3,7 +3,7 @@
 
 本文介绍物联网卡续费入口。
 
-1. 进入[京东云控制台](https://console.jdcloud.com/overview)。
+1. 进入[京东智联云](https://console.jdcloud.com/overview)并登录。
 2. 通过页头导航，依次点击 **产品** > **物联网卡服务**，进入物联网卡服务平台。
 
 ![物联网卡服务 控制台](../../../../image/Query-Card-Service/wlw-kzt.png)
