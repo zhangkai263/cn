@@ -13,7 +13,7 @@
 
 ![物联网卡服务](../../../../image/Query-Card-Service/productpage.png)
 
-4. [物联网卡购买](../Operation-Guide/Purchase.md)。
+4. 进入物联网卡服务平台，在左侧的菜单栏点击“物联网卡购买”，进入物联网卡购买页面，参见：[物联网卡购买](../Operation-Guide/Purchase.md)。
 
 
 ## 入口二：控制台
