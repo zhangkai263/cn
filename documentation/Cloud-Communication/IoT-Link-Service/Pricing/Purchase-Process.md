@@ -10,9 +10,10 @@
 ![物联网卡服务 控制台](../../../../image/Query-Card-Service/console-renewal-0.png)
 
 3. 在产品介绍页，点击**立即使用**，进入物联网卡服务平台。
-4. [物联网卡购买](../Operation-Guide/Purchase.md)。
 
 ![物联网卡服务](../../../../image/Query-Card-Service/productpage.png)
+
+4. [物联网卡购买](../Operation-Guide/Purchase.md)。
 
 
 ## 入口二：控制台
