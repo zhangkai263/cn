@@ -6,8 +6,8 @@
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“产品>云通信>物联网卡服务”。
-3. 弹出的产品介绍页，点击**立即使用**。
-4. 物联网卡购买 [物联网卡购买](../Operation-Guide/Purchase.md)。
+3. 弹出的产品介绍页，点击**立即使用**，进入物联网卡服务平台。
+4. [物联网卡购买](../Operation-Guide/Purchase.md)。
 
 ![物联网卡服务](../../../../image/Query-Card-Service/productpage.png)
 
@@ -19,5 +19,5 @@
 
 ![控制台](../../../../image/Query-Card-Service/console-buy.png)
 
-3. 物联网卡购买 [物联网卡购买](../Operation-Guide/Purchase.md)。
+3. [物联网卡购买](../Operation-Guide/Purchase.md)。
 
