@@ -105,6 +105,17 @@
         - name: 重启只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Restart-Readonly-Instance.md
 
+      - name: 只读代理管理
+        items:
+        - name: 创建只读代理
+          herf: Operation-Guide/Readonly-Group/Create-ReadonlyGroup.md
+        - name: 删除只读代理
+          herf: Operation-Guide/Readonly-Group/Delete-ReadonlyGroup.md
+        - name: 只读代理外网访问
+          herf: Operation-Guide/Readonly-Group/Internet-Access.md
+        - name: 修改只读代理
+          herf: Operation-Guide/Readonly-Group/Modify-ReadonlyGroup.md          
+
       - name: 读写分离代理管理
         items:
         - name: 创建读写分离代理

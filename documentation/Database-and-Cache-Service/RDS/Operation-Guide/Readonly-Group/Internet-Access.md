@@ -13,10 +13,10 @@
 2. 选择需要开启只读代理外网访问的目标实例，点击目标实例的名称，进入到实例详情页。
 3. 选择 ***只读代理** 标签，打开只读代理管理页面。
 4. 点击 开启读写代理外网访问 按钮，会出现一个二次确认弹窗。
-![外网访问1](../../../../../image/RDS/Internet-Access-ReadWriteProxy-default.png)
+![外网访问1](../../../../../image/RDS/Internet-Access-ReadOnlyProxy-default.png)
 
 5. 在二次确认弹窗中，点击 确定 按钮。
-![外网访问2](../../../../../image/RDS/Internet-Access-ReadWriteProxy-open.png)
+![外网访问2](../../../../../image/RDS/Internet-Access-ReadOnlyProxy-open.png)
 
 6. 外网访问开启后，系统会自动分配一个外网域名地址。
 
