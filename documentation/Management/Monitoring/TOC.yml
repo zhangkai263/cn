@@ -115,24 +115,36 @@ items:
       href: Metrics/lb.md
     - name: 云数据库RDS
       href: Metrics/rds.md
+    - name: 云数据库 MongoDB
+      href: Metrics/mongodb.md
     - name: DRDS
       href: Metrics/drds.md
     - name: 云缓存 Memcached
       href: Metrics/Memcached.md
     - name: 云数据库 InfluxDB
       href: Metrics/tsds.md
-    - name: 云数据库 Greenplum
+    - name: 数据仓库 JDW
       href: Metrics/jdw.md
     - name: 数据传输 DTS
       href: Metrics/dts.md
     - name: 对象存储
       href: Metrics/oss.md
+    - name: 云文件服务
+      href: Metrics/zfs.md
     - name: CDN
       href: Metrics/CDN.md
     - name: 消息队列JCQ
       href: Metrics/jcq.md
+    - name: 消息队列RabbitMQ版
+      href: Metrics/RabbitMQ.md
+    - name: Zookeeper
+      href: Metrics/zk.md
     - name: 云搜索 ElasticSearch
-      href: Metrics/es.md  
+      href: Metrics/es.md
+    - name: 分布式事务
+      href: Metrics/jdts.md
+    - name: 堡垒机
+      href: Metrics/bastion.md 
 - name: 教程
   items:
   status: 0
