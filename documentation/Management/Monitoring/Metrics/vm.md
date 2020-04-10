@@ -16,8 +16,8 @@
 ### 实例
 metric | 中文名称 | 英文名称 | 单位 | 说明
 ---|--- |--- |---|---
-vm.cpu.util | CPU使用率 | CPU Usage | % | 
-vm.memory.usage | 内存使用率| Memory Usage | % | 
+cpu.util | CPU使用率 | CPU Usage | % | 
+memory.usage | 内存使用率| Memory Usage | % | 
 vm.memory.used.bytes | 内存使用量 | Memory Used |  Bytes | 
 vm.avg.load1 | 平均负载1min | CPU Average Load 1min | - | 
 vm.avg.load5 | 平均负载5min | CPU Average Load 5min |  - | 
