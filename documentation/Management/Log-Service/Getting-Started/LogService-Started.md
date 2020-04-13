@@ -32,11 +32,10 @@
 3.	业务应用日志需要选择需采集状态，填写日志文件路径，采集实例信息以及根据需求设置高级配置。
 
 ![业务应用日志源设置](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/logsource-custom.png)
-4.	点击“保存”，进入完成页。
 
-![采集配置详情-全部](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/cjpz-qb.png)
-3.	返回至日志主题列表页面，选中上边添加的日志主题，点击“预览”按钮，即可查看到该日志主题下最新的日志数据。若需要查询日志数据，可到日志检索模块查询。  
-![预览](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/yl.png)
+4.	点击“保存”，进入完成页。5秒后自动跳转至日志检索页面。也可以点击“日志转储”或“日志监控”，创建转储任务和监控任务。
+
+![完成页面](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/completed.png)
 
 **检索日志**
 1.	在日志主题列表选中要查看的日志主题，点击“检索”按钮，或者在左侧菜单切换至“日志检索”模块，选中需要查询的日志集和日志主题。
