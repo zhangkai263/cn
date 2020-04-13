@@ -1,16 +1,19 @@
 日志服务使用流程如下：  
-![使用流程](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/sylc.png)
+- 创建日志配置，包括日志集、日志主题、日志源设置
+- 使用日志检索、日志转储、日志监控等功能
 
 **创建日志集**
 
 1.	登录京东云控制台。
 
-2.	点击左侧导航栏选择“管理->日志服务”，进入日志集管理页面。
+2.	点击导航栏选择“云服务->监控与运维->日志服务”，进入日志服务概览页面。
 
-![日志集列表](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/rzjlb.png)
-3.	点击列表上方的“创建日志集”按钮，打开创建日志集页面。
+![进入日志服务概览](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/logservice.png)
 
-![创建日志集](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/cjrzj.png)
+3.	点击列表上方的“创建日志配置”按钮，进入创建流程页面。
+
+![创建日志配置](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/crtlogconfig.png)
+
 4.	设置日志集名称、描述及保存时间。点击“确定”按钮后，弹出提示“日志集创建成功，立即去添加日志主题？”
 
 ![日志主题-创建引导](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/zt-cjyd.png)
