@@ -24,4 +24,6 @@
 实例将进入“停止中”状态，实例将无法进行其他操作。当停止完成后，实例将进入“停止”状态。
 
 
-* [实例停机不计费](uncharged_for_stopped_vm.md)
+## 相关参考
+
+[实例停机不计费](uncharged_for_stopped_vm.md)
