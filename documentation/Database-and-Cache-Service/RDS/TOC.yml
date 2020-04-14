@@ -142,7 +142,7 @@
             - name: PostgreSQL 创建账号
               herf: Operation-Guide/Account/Create-Account/PostgreSQL-Create-Account.md
           - name: 运维账号
-            herf: Operation-Guide/Account/OPS-Account.md
+            herf: Operation-Guide/Account/Ops-Account.md
           - name: 修改权限
             herf: Operation-Guide/Account/Modify-Privilege.md
           - name: 重置密码
