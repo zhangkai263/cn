@@ -4,12 +4,15 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 本章节将向您介绍如下内容：
 
-- [部署应用](instance-type-family#bsyy)
-- [删除应用](instance-type-family#scyy)
-- [扩缩容](instance-type-family#ksr)
-- [配置负载均衡](instance-type-family#pzfzjh)
-- [配置应用日志](instance-type-family#pzyyrz)
-- [配置应用监控](instance-type-family#pzyyjk)
+
+
+
+- [部署应用](instance-type-family#user-content-1)
+- [删除应用](instance-type-family#user-content-2)
+- [扩缩容](instance-type-family#user-content-3)
+- [配置负载均衡](instance-type-family#user-content-4)
+- [配置应用日志](instance-type-family#user-content-5)
+- [配置应用监控](instance-type-family#user-content-6)
 
 
 ## 操作场景
@@ -36,7 +39,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ## 操作步骤
 
-<div id="bsyy"></div>
+<div id="user-content-1"></div>
 
 ### 部署应用
 
@@ -86,7 +89,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-bsxq.png)
 
-<div id="scyy"></div>
+
+
+<div id="user-content-2"></div>
 
 ### 删除应用
 
@@ -97,7 +102,7 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 3、用户需在删除数据前，自行做好数据备份工作。
 
 
-<div id="ksr"></div>
+<div id="user-content-3"></div>
 
 ### 扩缩容
 
@@ -132,7 +137,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-step3.png)
 
-<div id="pzfzjh"></div>
+
+
+<div id="user-content-4"></div>
 
 ### 配置负载均衡
 
@@ -149,7 +156,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 可参考： [Nginx-ingress controller部署](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Ingress/Deploy-Ingress-NGINX-Controller.md)
 
-<div id="pzyyrz"></div>
+
+
+<div id="user-content-5"></div>
 
 ###  配置应用日志 
 
@@ -177,7 +186,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-rzfw.png)
 
 
-<div id="pzyyjk"></div>
+
+
+<div id="user-content-6"></div>
 
 ###  配置应用监控 
 
