@@ -92,17 +92,17 @@
 * CLI指令示意：
 
 ```
-jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name image-export --oss-url https://test-export.s3.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
+jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name image-export --oss-url https://test-export.s3-internal.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
 ```
 
 #### 接口参数说明：
-参数中，ossUrl须填写OSS Bucket的完整域名(包含‘https://’)，内网/外网域名皆可，如下图中的bucket，ossUrl可填写'https://test-export.s3.cn-east-2.jdcloud-oss.com' 或 'https://test-export.s3-internal.cn-east-2.jdcloud-oss.com' 。
+参数中，ossUrl须填写OSS Bucket的完整**内网域名**(包含‘https://’)，如下图中的bucket，ossUrl请填写 'https://test-export.s3-internal.cn-east-2.jdcloud-oss.com' 。
 ![](../../../../../image/vm/image-export-image9.png)  
 
 | 参数                  | 类型      |是否必填     | 说明 |
 | :------------------- |  :------------------- | :------------------- |:------------------- |
 | roleName   | string    |是   |为导出镜像所创建的服务角色名称
-| ossUrl   | string    |是   |用于存储镜像文件的，与镜像同地域的OSS Bucket的域名，请提供添加'https://' 后的完整URL
+| ossUrl   | string    |是   |用于存储镜像文件的，与镜像同地域的OSS Bucket的内网域名，请提供添加'https://' 后的完整URL
 | ossPrefix   |  string    |否  |导出镜像文件的自定义前缀，如填写'123'，则导出镜像的Object名称为'123_exportImage_*img-xxxxxx*'。支持大小写英文和数字，不超过32个字符。
 | clientToken	 | string    | 否   | 用户导出镜像的幂等性保证。如传参值与某次的clientToken相同，则认为是同一个请求，将返回相同的请求结果。长度不能超过64个字符
 
