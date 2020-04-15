@@ -55,7 +55,7 @@
        <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
        <td rowspan="2"><B>计费项</B></td>
-       <td rowspan="2"><B>带宽</B></td>
+       <td rowspan="2"><B>带宽值</B></td>
        <td ><B>包月价格</B></td>
        <td ><B>按配置价格</B></td>
    </tr>
