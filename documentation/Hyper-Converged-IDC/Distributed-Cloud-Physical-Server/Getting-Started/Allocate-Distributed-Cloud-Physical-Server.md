@@ -36,7 +36,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽上限 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 额外上行带宽 ：用户可选择额外上行带宽范围为0Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限，详见[修改公网带宽](../../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **辅网口** 信息：</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 私有网络与子网 ：用户需要先行规划并创建私有网络和子网。</br>
@@ -48,7 +48,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽上限 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 额外上行带宽 ：用户可选择额外上行带宽范围为0Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限，详见[修改公网带宽](../../../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按固定带宽计费的EIP会根据您设定的“带宽”、“额外上行带宽”上限进行收费和限速，您可以根据业务需求随时调整带宽上限。
 
 
 - 安全设置
