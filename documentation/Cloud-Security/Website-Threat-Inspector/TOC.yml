@@ -39,3 +39,13 @@ items:
         href: Operation-Guide/Task-Management.md
       - name: 风险管理
         href: Operation-Guide/Risk-Management.md
+  - name: 常见问题
+    items:
+      - name: 资产认证问题
+        href: FAQ/AssetsCertification.md
+      - name: Cookie认证问题
+        href: FAQ/CookieCertification.md
+      - name: 业务影响问题
+        href: FAQ/ApplicationEffect.md
+      - name: 探针部署问题
+        href: FAQ/AgentDown.md 
