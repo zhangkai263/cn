@@ -9,7 +9,7 @@
 <tr>
     <td rowspan="3"> 格式支持<br/>
     <td>源文件视频格式</td>
-    <td>支持市面几乎所有常见文件格式上传作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式 , 音频支持aac, ac3, acm, amr, ape, caf, mp3, ra, wav, wma）</td>
+    <td>支持市面几乎所有常见文件格式作为媒体处理源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式 , 音频支持aac, ac3, acm, amr, ape, caf, mp3, ra, wav, wma）</td>
 </tr>
 
 <tr>
@@ -54,6 +54,6 @@
 <tr>
     <td rowspan="1">使用方式<br/>
     <td>控制台</td>
-    <td>支持控制台直处理视频文件和回调配置</td>
+    <td>支持控制台处理视频文件和回调配置</td>
 </tr>
 </table>
