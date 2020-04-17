@@ -42,7 +42,7 @@ items:
             - name: 安装Agent
               href: Operation-Guide/Instance-Management/Database-Management/Agent.md
         - name: 日志管理
-          href: Operation-Guide/Instance-Management/Log-List.md.md
+          href: Operation-Guide/Instance-Management/Log-List.md
         - name: 规则管理
           href: Operation-Guide/Instance-Management/Rules-List.md       
         - name: 安全设置
