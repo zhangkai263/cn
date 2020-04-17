@@ -30,6 +30,10 @@
 
 - 具有sysadmin角色
 
+数据要求：
+
+- 以下字段类型不支持增量： varchar(max)、nvarchar(max)、varbinary(max)、image、text、ntext 、xml 。（可迁移，但不支持增量更新）
+
 ### 目标数据库配置要求
 
 数据库类型：
