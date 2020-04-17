@@ -14,13 +14,13 @@ https://kms.jdcloud-api.com/v1/key:create
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**keyCfg**|[KeyCfg](#keycfg)|True| | |
+|**keyCfg**|KeyCfg|True| | |
 
 ### <div id="KeyCfg">KeyCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**keyDescCfg**|[KeyDescCfg](#keydesccfg)|True| |密钥描述配置|
-|**keyRotateCfg**|[KeyRotateCfg](#keyrotatecfg)|True| |对称密钥的轮换配置；非对称密钥的操作，不支持该配置|
+|**keyDescCfg**|KeyDescCfg|True| |密钥描述配置|
+|**keyRotateCfg**|KeyRotateCfg|True| |对称密钥的轮换配置；非对称密钥的操作，不支持该配置|
 ### <div id="KeyRotateCfg">KeyRotateCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ https://kms.jdcloud-api.com/v1/key:create
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String|请求ID|
 
 ### <div id="Result">Result</div>

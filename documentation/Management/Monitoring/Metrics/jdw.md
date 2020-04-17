@@ -1,4 +1,4 @@
-## 云数据库 Greenplum
+## 数据仓库 JDW
 
 该产品的servicecode为jdw，支持查看Master节点和Segment节点的监控数据。
 

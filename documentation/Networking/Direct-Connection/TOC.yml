@@ -44,9 +44,9 @@
   - name: 入门指南
     items:
        - name: 同地域专线连接
-         href: Getting-Started/Connect-To-The-Same-Account-Or-Region-Direct-Connetct.md
+         href: Getting-Started/Connection-Into-On-Premise.md
        - name: 同地域托管连接
-         href: Getting-Started/Connect-To-The-Same-Account-Or-Region-Hosted-Connetct.md
+         href: Getting-Started/Connect-To-HostedZone.md
        - name: 同地域多VPC互联
          href: Getting-Started/Multiple-VPC-Interconnection.md
   - name: 操作指南

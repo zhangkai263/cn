@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询缓存Redis实例的备份结果（备份文件列表），可分页、可指定起止时间或备份任务ID
+查询缓存Redis实例的备份任务（文件）列表，可分页、可指定起止时间或备份任务ID
 
 ## 请求方式
 GET
@@ -28,15 +28,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)|结果|
+|**result**|[Result](describebackups#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**backups**|[Backup[]](#Backup)|备份结果（备份文件）列表|
-|**totalCount**|Integer|备份结果总数|
-### <a name="Backup">Backup</a>
+|**backups**|[Backup[]](describebackups#backup)|备份任务（文件）列表|
+|**totalCount**|Integer|备份任务（文件）总数|
+### <div id="backup">Backup</div>
 |名称|类型|描述|
 |---|---|---|
 |**baseId**|String|备份操作ID|

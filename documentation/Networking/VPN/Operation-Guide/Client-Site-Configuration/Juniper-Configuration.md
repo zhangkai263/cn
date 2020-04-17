@@ -1,5 +1,5 @@
 ## Juniper防火墙设备IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以Juniper SRX12.1X47-D20.7虚拟防火墙为例，讲述如何在Juniper设备上配置VPN，适用于Juniper 12.1X47的SRX software，其它版本设备请参考此示例进行配置。
 ```
@@ -42,13 +42,13 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 1.登录防火墙设备的命令行配置界面；
 
 2.配置网络、安全域和地址簿等基本信息：
-```shell
+```
   set security zones security-zone trust address-book address addr_10_0_0_0_16 10.0.0.0/16
   set security zones security-zone untrust address-book address addr_192_168_0_0_24 192.168.0.0/24
 ```
 
 2.配置IKE策略：
-```shell
+```
   set security ike proposal jdcloud-ike-proposal-test authentication-method pre-shared-keys
   set security ike proposal jdcloud-ike-proposal-test authentication-algorithm sha1
   set security ike proposal jdcloud-ike-proposal-test encryption-algorithm aes-128-cbc
@@ -61,7 +61,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 3.配置网关、出接口和协议版本：
-```shell
+```
   set security ike gateway jdcloud-ikegw-test ike-policy jdcloud-ike-policy-test
   set security ike gateway jdcloud-ikegw-test external-interface ge-0/0/0.0
   set security ike gateway jdcloud-ikegw-test address 116.xxx.xxx.10
@@ -70,7 +70,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 4.配置IPsec策略：
-```shell
+```
   set security ipsec proposal jdcloud-ipsec-proposal-test protocol esp
   set security ipsec proposal jdcloud-ipsec-proposal-test authentication-algorithm hmac-sha1-96
   set security ipsec proposal jdcloud-ipsec-proposal-test encryption-algorithm aes-128-cbc
@@ -87,7 +87,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 5.配置隧道
-```shell
+```
   set interfaces st0.1 family inet address 169.254.1.1/30
   set interfaces st0.1 family inet mtu 1436
   set security zones security-zone trust interfaces st0.1
@@ -100,7 +100,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 6.配置ACL，允许所需的网段通信：
-```shell
+```
   # 配置出站策略
   set security policies from-zone trust to-zone untrust policy jdcloud-security-policy-outbound match source-address addr_10_0_0_0_16
   set security policies from-zone trust to-zone untrust policy jdcloud-security-policy-outbound match destination-address addr_192_168_0_0_24
@@ -115,7 +115,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 7.配置路由(以静态路由为例)：
-```shell
+```
   ip route 192.168.0.0 255.255.255.0 116.xxx.xxx.10
   set routing-options static route 192.168.0.0/24 qualified-next-hop 10.10.10.1
 ```

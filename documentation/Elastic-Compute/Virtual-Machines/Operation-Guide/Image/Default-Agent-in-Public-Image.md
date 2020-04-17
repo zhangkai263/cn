@@ -158,19 +158,19 @@ curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_jcs | bash
 
 ## Jcloudhids
 ### 组件介绍
-Jcloudhids是京东智联云提供的主机安全核心组件，是“主机安全”产品所实现的安全监控及防范功能的核心，可提供防暴力破解、异常登陆检测、高危漏洞检测等安全功能。主机安全产品介绍请参考：https://www.jdcloud.com/cn/products/endpoint-security
+Jcloudhids是京东智联云提供的早期主机安全核心组件，可提供防暴力破解、异常登陆检测、高危漏洞检测等安全功能。
 
-官方镜像均默认安装了Jcloudhids。云市场镜像安装情况视服务商制作镜像情况，如镜像功能与Jcloudhids功能重复或冲突，不强制要求其安装Jcloudhids，具体请咨询云市场。
+目前官方镜像均默认安装了Jcloudhids。云市场镜像安装情况视服务商制作镜像情况，如镜像功能与Jcloudhids功能重复或冲突，不强制要求其安装Jcloudhids，具体请咨询云市场。
 
-### 安装方式
-请参考：https://docs.jdcloud.com/cn/endpoint-security/getting-started
+由于该组件即将下线，后续安全防护功能主要有下方的Jdog-Monitor组件承担，因此不再提供相关安装方式。如须自行安装请直接参考下方Jdog-Monitor组件介绍。
+
 
 
 <div id="user-content-4"></div>
 
 ## Jdog-Monitor
 ### 组件介绍
-Jdog-Monitor是京东智联云提供的针对核心安全组件的升级插件，可实现安全相关组件的维护和升级。
+Jdog-Monitor是京东智联云自研的安全核心组件，是“主机安全”产品所实现的安全监控及防范功能的核心，可提供防暴力破解、异常登陆检测、高危漏洞检测等安全功能。
 
 ### 安装方式
 **Linux：**<br>

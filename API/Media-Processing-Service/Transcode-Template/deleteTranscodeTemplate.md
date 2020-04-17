@@ -39,4 +39,3 @@ DELETE
 https://mps.jdcloud-api.com/v1/transcodeTemplates/10001
 
 ```
-
