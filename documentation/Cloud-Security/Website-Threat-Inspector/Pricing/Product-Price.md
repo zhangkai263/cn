@@ -1,6 +1,7 @@
 # 产品价格
 
 网站威胁扫描产品分为**基础版**和**付费版**两类，付费版包含**包年包月（企业版）**和**按量付费**两大版本。
+付费版本的具体价格折扣，详见：https://threatscanner-console.jdcloud.com/jsecscanner/create?version=basic
 
 您可根据您的域名资产数量选择合适的服务版本进行使用。
 
