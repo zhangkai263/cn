@@ -72,6 +72,17 @@ Content-MD5: MD5
       <Days>365</Days>
     </Expiration>
   </Rule>
+  <Rule>
+    <ID>id2</ID>
+    <Filter>
+       <Prefix>documents/</Prefix>
+    </Filter>
+    <Status>Enabled</Status>
+    <Transition>
+      <Days>30</Days>
+      <StorageClass>GLACIER</StorageClass>
+    </Transition>
+  </Rule>
 </LifecycleConfiguration>
 ```
 ### 响应示例
