@@ -16,7 +16,7 @@
 ### 2、扫描前怎么设置cookie值？
 
 - 网站威胁扫描云服务-> 资产管理-> 点击要添加cookie资产的“管理”按钮 -> 登录状态cookies 输入框内，输入要添加的cookie
-![](../../../../image/Website-Threat-Inspector/wts-cookie-03.png)
+![](../../../../image/Website-Threat-Inspector/wts-cookie-03a.png)
 
 ### 3、网站cookie值发生变化时，如何进行网站漏洞扫描？
 
