@@ -6,11 +6,11 @@
 
 3.或者进入详情页，点击右上角【操作】下拉变更配置
 
-![变更配置2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/change-conf2.png)
+![变更配置2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/c4.png)
 
 4.下拉框选择扩容到的容量，点击【立即支付】按钮，进行扩容
 
- - 升降配支持主从跨集群、集群跨主从
+ - 升降配支持标准版变集群版、集群版变标准版
  
  - 变配后的规格内存必须大于目前已用大小
 
