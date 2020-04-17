@@ -32,7 +32,7 @@
 
 数据要求：
 
-- 以下字段类型不支持增量： varchar(max)、nvarchar(max)、varbinary(max)、image、text、ntext 、xml 。（可迁移，但不支持增量更新）
+- 以下字段类型不支持增量： varchar(max)、nvarchar(max)、varbinary(max)、image、text、ntext 、xml （支持全量迁移，如增量迁移则不能获取更新的数据）。
 
 ### 目标数据库配置要求
 
