@@ -30,6 +30,10 @@
 
 - 具有sysadmin角色
 
+数据要求：
+
+- 数据中包含以下字段类型时，请勿使用增量迁移： varchar(max)、nvarchar(max)、varbinary(max)、image、text、ntext 、xml ，（这些类型可全量迁移，但增量迁移时不能获取更新的数据）。
+
 ### 目标数据库配置要求
 
 数据库类型：

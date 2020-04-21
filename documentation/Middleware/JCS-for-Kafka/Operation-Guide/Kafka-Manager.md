@@ -34,11 +34,11 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 点击上方Topic下拉菜单，点击Create填写相应参数创建topic，主要参数说明如下：</br>
 
-|参数|说明 
-:--|:---
-|Topic |Topic名称，用户自定义即可
-|Patitions |Topic的分区数，≥1，适当的分区数可以提高吞吐量
-|Replication Factor |副本数，用于保障kafka的高可用
+| 参数| 说明  |
+| :--| :---|
+| Topic | Topic名称，用户自定义即可 |
+| Patitions | Topic的分区数，≥1，适当的分区数可以提高吞吐量 |
+| Replication Factor | 副本数，用于保障kafka的高可用</br>**风险提示：当选择单一副本数时，存在丢失数据的风险，为了保证数据可靠性建议选择至少3副本** |
 
 2). 查看Topic</br>
 
