@@ -45,7 +45,7 @@
 
 4. 填写完成，点击**下一步**，进入下一页，填写迁移类型、数据校验、迁移对象等信息。
 
-   ![image-20200421182534224](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-024.png)
+   ![image-20200421182534224](../../../../image/Data-Transmission-Service/dts-024.png)
 
    迁移类型：可选择结构迁移、全量迁移、增量迁移。
 
@@ -57,7 +57,7 @@
 
      可视化选择支持选择库后编辑筛选表的规则，支持定义迁移的表或排除不迁移的表，表名称支持“*”通配符。
 
-     ![image-20200421185942156](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-025.png)
+     ![image-20200421185942156](../../../../image/Data-Transmission-Service/dts-025.png)
 
    - 源库类型为“通过专线连接的自建数据库”时，只支持通过**JSON**定义要迁移的库表，格式请参考：[JSON方式定义迁移对象](Define-The-Migration-Object-in-JSON.md)。
 
