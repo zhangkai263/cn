@@ -3,11 +3,11 @@
 
 ## 截图设置
 截图模板页面主要信息如下：
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%805.png)    
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-1.png)    
 1.【截图模板列表】，展示截图模板中的关键信息，可编辑和删除已有转码模板；     
 2.【新建截图模板】新建截图模板入口，点击可进入新建模板页面：   
 多张截图模板设置：        
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%806.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-2.png)
 1）【模板名称】，用户自定义截图模板名称，不能含有 " ' < >，限长25个字符；
 2）【截图方式】，选择多张截图；   
 3）【截图文件格式】，支持jpg和png，可根据需求选择；     
@@ -29,7 +29,7 @@
 
 雪碧图模板设置：     
 应用场景：多张截图的图像以雪碧图的方式拼成一张大图输出，可以一次请求获取多张图像，降低图片请求次数，提高客户端性能。        
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%806.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-3.png)
 1）【模板名称】，用户自定义截图模板名称，不能含有 " ' < >，限长25个字符；
 2）【截图方式】，选择雪碧图；   
 3）【截图文件格式】，支持jpg和png，可根据需求选择；     
@@ -50,5 +50,7 @@
 8）【是否关键帧】，用户自定义是否是关键帧截图，默认为关键帧截图。 
 
 ## 回调配置
-媒体处理服务支持任务完成的消息订阅，用户如需获取任务执行结果的消息通知，可在回调设置中设置回调URL，任务执行结果会通过用户填写的URL及时通知到用户。
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%807.png)
+媒体处理服务支持任务完成的消息订阅，用户如需获取任务执行结果的消息通知，可在回调设置中设置回调URL，任务执行结果会通过用户填写的URL及时通知到用户。    
+注意：无论开启/关闭回调，都需要保存设置才能生效。  
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E5%9B%9E%E8%B0%83%E9%85%8D%E7%BD%AE-1.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E5%9B%9E%E8%B0%83%E9%85%8D%E7%BD%AE-1.png)
