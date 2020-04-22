@@ -6,7 +6,7 @@
 ![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-1.png)      
 1.【截图模板列表】，展示截图模板中的关键信息，可编辑和删除已有转码模板；     
 2.【新建截图模板】新建截图模板入口，点击可进入新建模板页面：   
-多张截图模板设置：        
+**多张截图模板设置：**        
 ![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-2.png)    
 1）【模板名称】，用户自定义截图模板名称，不能含有 " ' < >，限长25个字符；    
 2）【截图方式】，选择多张截图；    
@@ -27,7 +27,7 @@
    d.高斯模糊，保持视频宽高比不变，边缘剩余部分使用高斯模糊。    
 8）【是否关键帧】，用户自定义是否是关键帧截图，默认为关键帧截图。     
 
-雪碧图模板设置：     
+**雪碧图模板设置：**     
 应用场景：多张截图的图像以雪碧图的方式拼成一张大图输出，可以一次请求获取多张图像，降低图片请求次数，提高客户端性能。          
 ![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-%E6%88%AA%E5%9B%BE%E6%A8%A1%E6%9D%BF-3.png)     
 1）【模板名称】，用户自定义截图模板名称，不能含有 " ' < >，限长25个字符；     
