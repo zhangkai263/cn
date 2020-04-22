@@ -4,7 +4,7 @@
 ![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-1.png)
 
 1.【新建任务】，创建截图任务入口；  
-2.【任务查询】，支持按照任务id查询截图任务；
+2.【任务查询】，支持按照任务id查询截图任务；    
 3.【任务状态筛选】，查询任务时，可根据任务状态筛选，任务状态包括等待中、截图中、完成、失败；创建完成的任务自动进入等待中状态，执行中的任务状态为截图中，完成和失败表示任务执行完毕。    
 4.【任务操作】，可查看任务详情。   
 
