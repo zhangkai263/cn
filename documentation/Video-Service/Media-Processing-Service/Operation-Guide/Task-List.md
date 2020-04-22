@@ -9,8 +9,8 @@
 4.【任务操作】，可查看任务详情。   
 
 ## 新建任务
-点击【新建任务】，可打开新建任务页面，新建任务需要填写如下信息：     
-![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-2.png)
+点击【新建任务】，可打开新建任务页面，新建任务需要填写如下信息：       
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-2.png)     
 1.【选择地区】，选择源文件和输出文件所在存储区域（媒体处理源文件和输出文件必须在同一个存储区域）；      
 2.【输入bucket】，填写源文件所在bucket，bucket名称由小写字母、数字、中划线（-）组成，以小写字母或数字开头和结尾，长度3-63个字符；     
 3.【输入路径】，填写源文件所在路径，注意要填写完整路径，如test/video.mp4，路径不能以斜杠（/）开头，不能包含反斜杠（\）或双斜杠（//）。         
@@ -22,5 +22,5 @@
 6.【截图模板】，从模板库中选择需要的截图模板，支持多张截图和雪碧图，单个任务仅可选择一个截图模板。       
 
 ## 任务查看
-点击任务列表-操作中的查看，可查看任务详情，包括选择地区、输入bucket、输入路径、输出bucket、输出路径、截图模板等信息。
+点击任务列表-操作中的查看，可查看任务详情，包括选择地区、输入bucket、输入路径、输出bucket、输出路径、截图模板等信息。    
 ![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-3.png)
