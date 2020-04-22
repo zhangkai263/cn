@@ -59,10 +59,6 @@ items:
           href: Operation-Guide/LogCollection/logtoKafka.md
     - name: 日志管理
       items:
-        - name: 日志集管理
-          href: Operation-Guide/LogSet/LogSetManagement.md
-        - name: 日志主题管理
-          href: Operation-Guide/LogSet/LogTopicManagement.md
         - name: 日志配置管理
           href: Operation-Guide/LogSet/collectionConfigManagement.md
     - name: 日志检索
