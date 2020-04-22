@@ -1,7 +1,7 @@
 # 任务管理
 进入媒体处理服务控制台，默认进入“任务管理”页面，目前控制台仅支持截图任务管理，转码任务可通过OpenAPI来实现。   
 在任务管理中可查看已经创建完成的截图任务，此页面信息及主要功能如下：
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%80%E6%96%B01.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-1.png)
 
 1.【新建任务】，创建截图任务入口；  
 2.【任务查询】，支持按照任务id查询截图任务；
@@ -9,7 +9,8 @@
 4.【任务操作】，可查看任务详情。   
 
 ## 新建任务
-点击【新建任务】，可打开新建任务页面，新建任务需要填写如下信息：      
+点击【新建任务】，可打开新建任务页面，新建任务需要填写如下信息：     
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-2.png)
 1.【选择地区】，选择源文件和输出文件所在存储区域（媒体处理源文件和输出文件必须在同一个存储区域）；      
 2.【输入bucket】，填写源文件所在bucket，bucket名称由小写字母、数字、中划线（-）组成，以小写字母或数字开头和结尾，长度3-63个字符；     
 3.【输入路径】，填写源文件所在路径，注意要填写完整路径，如test/video.mp4，路径不能以斜杠（/）开头，不能包含反斜杠（\）或双斜杠（//）。         
@@ -19,8 +20,7 @@
    雪碧图：mps/年/月/日/源文件名/任务id-sprite.后缀名；     
    其中其中“mps/年/月/日/源文件名/”可自定义，如不填写，则按照默认规则指定输出路径。     
 6.【截图模板】，从模板库中选择需要的截图模板，支持多张截图和雪碧图，单个任务仅可选择一个截图模板。       
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%80%E6%96%B02.png)
 
 ## 任务查看
 点击任务列表-操作中的查看，可查看任务详情，包括选择地区、输入bucket、输入路径、输出bucket、输出路径、截图模板等信息。
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-Quality-Detection/image/video-quality-detection/%E8%B4%A8%E6%A3%803.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Media-Processing-Service/image/Media-Processing-Service/mps-3.png)
