@@ -6,7 +6,7 @@
 ![](../../../../image/Networking/VPN/Getting-Started/connection-into-idc.png)
 
 ### 前置条件
-使用专线连接前，请先阅读相关[使用限制](../Introduction/Restrictions.md)
+使用专线连接前，请先阅读相关[使用限制](../Introduction/Restrictions.md)。
 
 ### 配置步骤
 ![](../../../../image/Networking/VPN/Getting-Started/connection-into-idc-step.png)
@@ -20,9 +20,6 @@ d)物理连接创建后进入待审核状态，京东云收到您提交的物理
 e)审核通过并支付完成后，京东云将配合您的线路提供商完成物理线路铺设，并
 
 ![](../../../../../image/Networking/VPN/Operation-Guide/create-vpnconnection.png)
-
-
-
 
 ###### 步骤2.创建边界网关
 
