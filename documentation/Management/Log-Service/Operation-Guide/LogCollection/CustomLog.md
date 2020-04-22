@@ -16,7 +16,7 @@
 
 3.新建日志集与日志主题，进入日志源设置页面。
 
-![业务应用日志](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogCollection/cloudLog01.png)
+![业务应用日志](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogCollection/customLog01.png)
 
 - 日志来源选择“业务应用”，
 - 根据需求选择是否开启采集，如果关闭，则可在需要开启的时候进入采集配置页面编辑采集状态，如果开启，则采集配置创建成功后立即采集。
