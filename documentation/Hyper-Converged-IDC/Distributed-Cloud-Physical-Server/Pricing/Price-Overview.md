@@ -16,10 +16,10 @@
 	<td ><B>按配置价格（元/小时）</B></td>
     </tr>
     <tr>   
-        <td >计算型</td>
-	<td  rowspan="2">华东-台州</td>	  
+        <td >计算型</td>	  
 	<td >边缘计算效能型Ⅰ(二代)</td>
 	<td >edcps.c2.perf1</td>
+	<td  rowspan="2">华东-台州</td>
 	<td >6000</td>
 	<td >21</td>
        </tr>
