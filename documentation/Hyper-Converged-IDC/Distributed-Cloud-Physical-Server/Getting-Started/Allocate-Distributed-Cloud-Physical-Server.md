@@ -87,12 +87,12 @@
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、密钥登录：对于Linux系统，可以选择SSH密钥登录，若采用密钥登录方式须先创建或导入密钥，详见[SSH密钥](../Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md)。 </br>                                                                      
 - 高级设置 </br>   
 
-**自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../Operation-Guide/User-Data/User-Data-Overview.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../Operation-Guide/User-Data/User-Data-Overview.md)。
 
 - 购买量</br>     
 
-**自动续费** ：包年包月资源开通自动续费功能。勾选自动续费待资源创建后，自动续费属性和时长均修改。按月购买，则自动续费周期为1个月；按年购买，则自动续费周期为1年，按年自动续费享受自动续费折扣。</br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **自动续费** ：包年包月资源开通自动续费功能。勾选自动续费待资源创建后，自动续费属性和时长均修改。按月购买，则自动续费周期为1个月；按年购买，则自动续费周期为1年，按年自动续费享受自动续费折扣。</br>  
 
-在完成全部配置后，确定购买实例数量，购买数量受限与该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  在完成全部配置后，确定购买实例数量，购买数量受限与该节点您分布式云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。
 
 
