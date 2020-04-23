@@ -59,7 +59,7 @@
       items:
         - name: 防护规则配置
           herf: Operation-Guide/Net-Service-Protection-Setting/Protection-Rule.md        
-    - name: 非网站类规则设置
+    - name: 防护调度规则设置
       herf: Operation-Guide/Dispatch-Rule-Settings.md        
     - name: 攻击告警设置
       herf: Operation-Guide/Attack-Alarm-Notification-Settings.md
