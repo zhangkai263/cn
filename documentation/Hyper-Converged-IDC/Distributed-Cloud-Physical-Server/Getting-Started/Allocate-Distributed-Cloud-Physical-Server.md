@@ -85,7 +85,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、自定义密码：即“立即设置密码”，实例创建后支持修改；</br>
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、自动生成密码登录：即暂不设置密码，系统会以短信和邮件方式发送默认密码； </br>
                                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、密钥登录：对于Linux系统，可以选择SSH密钥登录，若采用密钥登录方式须先创建或导入密钥，详见[SSH密钥](../Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md)。 </br>                                                                      
-- 高级设置    
+- 高级设置 </br>    
 **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../Operation-Guide/User-Data/User-Data-Overview.md)。
 
 - 购买量    
