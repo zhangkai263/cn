@@ -16,31 +16,19 @@
 	<td ><B>按配置价格（元/小时）</B></td>
     </tr>
     <tr>   
-        <td rowspan="3">计算型</td>
-		<td >边缘标准计算型Ⅰ</td>
-		<td >edcps.c.normal1</td>
-	        <td  rowspan="4">华东-台州</td>
-		<td >4400</td>
-	        <td >15</td>
-    </tr>
-	<tr>   
-		<td >边缘标准计算型Ⅱ</td>
-		<td >edcps.c.normal2</td>
-		<td >5800</td>
-		<td >20</td>
-    </tr>
-	<tr>   
-		<td >边缘计算效能型Ⅰ(二代)</td>
-		<td >edcps.c2.perf1</td>
-		<td >6000</td>
-		<td >21</td>
-    </tr>
-	<tr>   
-		<td >存储型</td>
-		<td >边缘标准存储型(二代)</td>
-		<td >edcps.s2.normal</td>
-		<td >5300</td>
-		<td >18</td>
+        <td >计算型</td>
+	<td  rowspan="2">华东-台州</td>	  
+	<td >边缘计算效能型Ⅰ(二代)</td>
+	<td >edcps.c2.perf1</td>
+	<td >6000</td>
+	<td >21</td>
+       </tr>
+    <tr>   
+	<td >存储型</td>
+	<td >边缘标准存储型(二代)</td>
+	<td >edcps.s2.normal</td>
+	<td >5300</td>
+	<td >18</td>
     </tr>
 </table>
 
