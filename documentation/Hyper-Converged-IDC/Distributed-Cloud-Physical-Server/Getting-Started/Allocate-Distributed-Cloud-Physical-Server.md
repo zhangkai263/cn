@@ -22,9 +22,7 @@
 
 - 网口数量与名称
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支持 **单网口** 和 **双网口** 模式。<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **单网口** 对应 **主网口（bond0）** 。<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **双网口** 对应 **主网口（eth0）** 和 **辅网口（eth1）** 。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支持 **单网口** 和 **双网口** 模式。单网口对应主网口（bond0）；双网口对应主网口（eth0）和辅网口（eth1）。<br/>
 
 - 网口与带宽设置
 
