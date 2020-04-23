@@ -7,7 +7,7 @@
 ### 操作步骤
 1、访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)点击左侧导航栏“智能IDC”-"分布式云物理服务器"进入实例列表页。</br>
 
-2、选择节点。</br>
+2、选择实例所在节点。</br>
 
 3、在实例列表中选择需要删除的实例，确认其状态为“已停止”。</br>
 
