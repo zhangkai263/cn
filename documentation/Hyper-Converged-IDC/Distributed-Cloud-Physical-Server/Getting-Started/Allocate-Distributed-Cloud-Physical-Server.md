@@ -40,7 +40,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽上限 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 额外上行带宽 ：用户可选择额外上行带宽范围为0Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 
