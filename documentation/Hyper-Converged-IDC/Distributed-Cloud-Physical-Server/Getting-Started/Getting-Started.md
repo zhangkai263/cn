@@ -12,7 +12,7 @@
 
 ### 选购须知
 
-**访问购买页** 
+**访问购买页** <br/>
 访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)。
 
 **选择节点** 
