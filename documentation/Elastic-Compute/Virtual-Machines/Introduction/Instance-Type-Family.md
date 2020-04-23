@@ -38,21 +38,21 @@
 
 第二代
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|g.s2.micro|1|1
-|g.s2.small|1|2
-|g.s2.medium|1|4
-|g.s2.large|2|8
-|g.s2.xlarge|4|16
-|g.s2.2xlarge|8|32
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.s2.micro|1|1|1
+|g.s2.small|1|2|1
+|g.s2.medium|1|4|1
+|g.s2.large|2|8|2
+|g.s2.xlarge|4|16|4
+|g.s2.2xlarge|8|32|8
 
 第一代
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|g.s1.micro|1|1
-|g.s1.small|1|2
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.s1.micro|1|1|1
+|g.s1.small|1|2|1
 
 ### 通用标准型
 <div id="user-content-2"></div>
