@@ -17,7 +17,7 @@
 
 * 若实例源镜像支持网卡多队列，则基于此事例创建的私有镜像同样支持网卡多队列；
 * 若实例源镜像不支持网卡多队列，则基于此事例创建的私有镜像同样不支持网卡多队列。
-* 若为[导入镜像](../Image/Export-Private-Image.md)需要使用网卡多队列，请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请。
+* 若为[导入镜像](../Image/Import-Private-Image.md)需要使用网卡多队列，请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请。
 
 #### 共享镜像：
 
