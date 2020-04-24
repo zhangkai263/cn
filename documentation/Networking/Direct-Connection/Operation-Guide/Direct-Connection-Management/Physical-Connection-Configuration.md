@@ -4,11 +4,11 @@
 ### 操作步骤
 ##### 1.创建物理连接
 已完成企业实名认证的客户可以使用物理连接。
-a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  </br>
-b)选择地域，点击“创建”；</br>
-c)输入物理连接的名称、接入地域、接入方式、客户IDC地址、合作伙伴/接入点、联系人、联系方式、描述，创建物理连接；</br>
-d)接入方式支持自助接入和合作伙伴接入两种方式，当选择自助接入时，需选择接入点，当选择合作伙伴接入时，需选择使用的合作伙伴及服务开通时长，或联系合作伙伴获取更多信息(合作伙伴已入驻京东云市场，可在京东云市场查看合作伙伴的详细信息)；</br>
-e)新建的物理连接进入待审核状态，审核过程一般需要1~2个工作日；</br>
+a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  <br />
+b)选择地域，点击“创建”；<br />
+c)输入物理连接的名称、接入地域、接入方式、客户IDC地址、合作伙伴/接入点、联系人、联系方式、描述，创建物理连接；<br />
+d)接入方式支持自助接入和合作伙伴接入两种方式，当选择自助接入时，需选择接入点，当选择合作伙伴接入时，需选择使用的合作伙伴及服务开通时长，或联系合作伙伴获取更多信息(合作伙伴已入驻京东云市场，可在京东云市场查看合作伙伴的详细信息)；<br />
+e)新建的物理连接进入待审核状态，审核过程一般需要1~2个工作日；<br />
 
 ```
   接入方式支持自助接入及合作伙伴接入两种方式，自助接入是指客户以独享端口的方式接入公有云，合作伙伴接入是指京东云已经与一些专线业务服务商完成了预连接，客户可选择与这些专线业务服务商的设备进行对接，通过与其他客户共享该合作伙伴与京东云预连接的设备端口的方式接入公有云。
@@ -35,14 +35,16 @@ e)新建的物理连接进入待审核状态，审核过程一般需要1~2个工
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/create-physical-connection.png)
 
 ##### 2.修改物理连接
-您可对物理连接的名称、描述进行修改。</br>
-a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  </br>
-b)选择相应的物理连接，进入物理连接详情页面；</br>
-c)支持修改物理连接名称、描述，各配置项的限制同创建物理连接；</br>
+您可对物理连接的名称、描述进行修改。<br />
+a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  <br />
+b)选择相应的物理连接，进入物理连接详情页面；<br />
+c)支持修改物理连接名称、描述，各配置项的限制同创建物理连接；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/update-physical-connection.png)
 
 ##### 3.删除物理连接
-若您不再需要物理连接，可将其删除。</br>
-a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  </br>
-b)选择相应的物理连接，点击操作列中的“删除”，当该物理连接未创建专线通道时可以删除；</br>
+若您不再需要物理连接，可将其删除。<br />
+a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  <br />
+b)选择相应的物理连接，点击操作列中的“删除”，当该物理连接未创建专线通道时可以删除；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/delete-physical-connection.png)
