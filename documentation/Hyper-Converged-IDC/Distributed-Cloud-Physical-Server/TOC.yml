@@ -71,39 +71,39 @@
             href: Operation-Guide/Networking/Edge-Shared-Bandwidth.md
       - name: 防火墙
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Network-And-Security/Steps-Network-And-Security.md
       - name: 镜像
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Image/Description-Image.md
       - name: 设置RAID级别
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Set-RAID-Level/Steps-Set-RAID-Level.md
       - name: 远程登陆
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
       - name: 实例生命周期
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Distributed-Cloud-Physical-Server-Life-Cycle-Management/Description-Distributed-Cloud-Physical-Server-Life-Cycle-Management.md
       - name: SSH密钥
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md
       - name: 操作审计
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Audit-Trail/Audit-Trail-Overview.md
       - name: 标签
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/Tag/Tag-Overview.md
       - name: 自定义数据
         items:
-          - name: 功能描述
+          - name: 概述
             href: Operation-Guide/User-Data/User-Data-Overview.md
   - name: 最佳实践
     items:
