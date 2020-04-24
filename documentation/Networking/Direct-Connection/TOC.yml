@@ -93,7 +93,10 @@
             href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
-    status: 0
+       - name: 高可用的专线连接
+         href: Best-Practices/Direct-Connect-High-Available.md
+       - name: 专线VPN混合云解决方案
+         href: Best-Practices/Connection-With-VPN.md
   - name: 问题排查
     items:
     status: 0

@@ -59,7 +59,7 @@ e)指定云端与客户端三层设备之间互联的参数，包括Vlan Tag、�
 
 ###### 步骤6.配置专线客户端
 a)当前[京东云专线通道控制台](https://cns-console.jdcloud.com/host/dedicatedVif/list)尚不提供专线通道客户端配置下载功能，配置客户端设备时请参考客户端配置示例，如[思科客户端配置](../Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md)；<br />
-b)``完成客户端专线设备配置后，BGP会自动建立``，此时可在客户端设备中查看BGP Peer的建立状态及路由，若BGP Peer未能正常建立，请参考[FAQ](../FAQ/FAQ.md)进行故障处理；<br />
+b)``完成客户端专线设备配置后，BGP会自动协商建立``，此时可在客户端设备中查看BGP Peer的建立状态及路由，若BGP Peer未能正常建立，请参考[FAQ](../FAQ/FAQ.md)进行故障处理；<br />
 
 ###### 步骤7.配置路由
 a)京东云专线连接支持在云端和客户端之间使用静态路由/BGP动态路由，建议使用BGP动态路由实现路由自动更新；<br />
