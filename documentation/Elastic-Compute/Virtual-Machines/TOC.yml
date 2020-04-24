@@ -87,7 +87,7 @@ items:
             href: Operation-Guide/Instance/Search-Instance.md
           - name: 重启动到期/欠费实例
             href: Operation-Guide/Instance/Restart-Overdue-or-Arrear-Instance.md
-          - name: 开启/关闭停机不计费
+          - name: 实例停机不计费
             href: Operation-Guide/Instance/uncharged_for_stopped_vm.md    
           - name: 导出实例信息
             href: Operation-Guide/Instance/Export-Instance.md

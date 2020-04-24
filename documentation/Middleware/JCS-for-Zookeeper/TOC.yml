@@ -31,16 +31,18 @@ items:
       href: Getting-Started/Connect-ZK.md
 - name: 操作指南
   items:
-    - name: 规格变更
+    - name: 变更配置
       href: Operation-Guide/Change-ZK.md
     - name: 删除实例
       href: Operation-Guide/Delete-ZK.md
     - name: 监控报警
       href: Operation-Guide/Monitoring.md
+    - name: 访问控制
+      href: Operation-Guide/control.md
 - name: 常见问题
   items:
-    - name: 功能问题
-      href: FAQ/Configuration-FAQ.md
+    - name: 常见问题
+      href: FAQ/FAQ.md
 - name: 相关资源
   items:
     - name: 文档历史记录
