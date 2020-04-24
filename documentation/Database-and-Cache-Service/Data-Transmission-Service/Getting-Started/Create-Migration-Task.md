@@ -27,8 +27,7 @@
    源库信息：
 
    - 实例类型，可选“有公网IP的自建数据库”、“通过专线连接的自建数据库”。
-
-   - 数据库类型，源数据库类型，支持MySQL、Percona、MariaDB、SQL Server、MongoDB。
+   - 数据库类型，源数据库类型，支持MySQL、Percona、MariaDB、SQL Server、PostgreSQL、MongoDB。
    - 数据库地址，可填写域名或IP。
    - 端口，数据库端口。
    - 数据库账号
