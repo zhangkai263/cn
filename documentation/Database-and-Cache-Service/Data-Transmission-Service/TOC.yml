@@ -41,6 +41,8 @@
         href: Operation-Guide/MySQL-Migrate-to-JCS-for-MySQL.md
       - name: 自建SQL Server迁移至云数据库SQL Server
         href: Operation-Guide/SQLServer-Migrate-to-JCS-for-SQLServer.md
+      - name: 自建PostgreSQL迁移至云数据库PostgreSQL
+        href: Operation-Guide/PostgreSQL-Migrate-to-JCS-for-PostgreSQL.md
       - name: 自建MongoDB迁移至云数据库MongoDB
         href: Operation-Guide/MongoDB-Migrate-to-JCS-for-MongoDB.md 
   - name: 常见问题

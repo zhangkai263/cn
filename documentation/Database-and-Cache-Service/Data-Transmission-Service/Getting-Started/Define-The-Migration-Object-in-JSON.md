@@ -49,6 +49,6 @@
 - SQL Server 填写 dbName、schemaName、tableName。
 - MySQL 填写 schemaName、tableName，不需要填写dbName。
 - MongoDB 填写 dbName、tableName，不需要填写schemaName。
-- dbName、schemaName、tableName支持“*”通配，如： * hello，he * o，hello *。 
+- dbName、schemaName、tableName支持“*”通配，如： * hello，he * o，hello * （数据库类型为PostgreSQL时暂仅支持 *）。 
 - 支持使用TableExcludes指定不迁移的表，如使用TableExcludes，则TableIncludes需定义表名为 * 。
 - 如dbName使用通配符则schemaName、tableName均需为 *；如schemaName使用通配符则tableName需为 *。

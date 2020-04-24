@@ -1,6 +1,6 @@
-# 自建MySQL迁移至云数据库MySQL
+# 自建PostgreSQL迁移至云数据库PostgreSQL
 
-本文介绍如何使用数据传输 DTS 将自建MySQL数据库迁移至云数据库 MySQL。
+本文介绍如何使用数据传输 DTS 将自建PostgreSQL数据库迁移至云数据库 PostgreSQL。
 
 数据传输 DTS 支持结构迁移、全量迁移、增量迁移，您可以根据实际情况选择。
 
@@ -15,35 +15,42 @@
 
 数据库版本：
 
-- MySQL 5.5
-- MySQL 5.6
-- MySQL 5.7
-- MySQL 8.0
+- 9.4、9.6
+- 10.5、10.6、10.7、10.8、10.9
+- 11.2、11.3、11.4
 
 数据库配置：
 
-- server_id大于1
-- binlog开启
-- binlog_format为ROW
-- binlog_row_image为FULL
-- 如选择校验数据一致性，则不能存在数据库`_jdts_check__xxxx`
-- 表类型为'BASE TABLE'，需要有主键且没有外键
+- 待迁移库表需具备唯一键。
+
+- DTS的IP未受PostgreSQL的配置文件（pg_hba.conf）的限制。
+
+- 增量迁移时
+
+  - 安装logical_decoding插件。
+
+    ```
+    tar -xvf logical_dedoing.tar 
+    cp logical_decoding.so /usr/lib/postgresql/9.6/lib/ 
+    cp logical_decoding.control /usr/share/postgresql/9.6/extension/
+    ```
+    
+  - 设置max_replication_slots大于等于5。
+    
+  - 设置max_wal_senders大于等于5。
+    
+  - 设置wal_level为logical。
 
 账号权限：
 
-- GRANT RELOAD, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
-- GRANT SELECT ON `schemas`.* TO 'user'@'%';
-- 开启数据校验时，需要GRANT ALL PRIVILEGES ON `_jdts_check__xxxx`.* TO 'user'@'%';
-
-数据库引擎：
-
-- 建议为InnoDB类型，全量迁移过程中，只有InnoDB等事务引擎可以保证一致性状态，MyISAM或者MEMORY等非事务引擎的状态可能不一致。
-
+- 结构迁移：select
+- 全量迁移：select
+- 增量迁移：super
 ### 目标数据库配置要求
 
 数据库类型：
 
-- 云数据库 MySQL，需提前创建云数据库 MySQL实例。
+- 云数据库 PostgreSQL，需提前创建云数据库 PostgreSQL 实例。
 
 数据库版本：
 
@@ -51,14 +58,13 @@
 
 账号权限：
 
-- GRANT ALL PRIVILEGES ON `schemas`.* TO 'user'@'%';
+- schema create /  schema owner。
 
 数据要求：
 
-- 不能存在与待迁移数据库重名的库。
-- 不能存在数据校验库`_jdts_check__xxxx`。
-
-
+- 如果源库表使用了自定义数据类型或插件自定义数据类型，需要在目标库中创建相应数据类型或安装相应插件，并保证目标库用户对应数据类型有使用权限。
+- 如果源库表中使用了sequence，需在目标库中预先创建相应的sequence。
+- 不能存在与源库相同schema下相同的table。
 
 ## 操作步骤
 
@@ -69,14 +75,14 @@
    - 源库信息：
 
      - 数据库类型，选择“有公网IP的自建数据库”或“通过专线/内网连接的自建数据库”。
-     - 数据库类型，选择MySQL。
+     - 数据库类型，选择PostgreSQL。
      - 数据库地址，填写数据库的域名或IP，如通过专线/内网连接请填写内网IP。
      - 端口，数据库端口。
      - 账号和密码，请提前确认账号具备相应的权限。
 
    - 目标库信息：
 
-     - 数据库类型，请选择“云数据库 MySQL”
+     - 数据库类型，请选择“云数据库 PostgreSQL”
      - 地域，选择目标实例所在地域。
      - 实例ID，请选择目标实例。
      - 账号和密码，请提前确认账号具备相应的权限。
@@ -91,9 +97,9 @@
 
      - 说明：
 
-       MySQL的全量校验为动态校验，即部分数据如已完成校验，之后该部分数据的变更将不再校验。
+       PostgreSQL的全量校验为动态校验，即部分数据如已完成校验，之后该部分数据的变更将不再校验。
 
-       MySQL数据一致性校验过程中将持续同步增量数据，但性能会降低，建议源端停止写入后再执行数据一致性校验。
+       PostgreSQL数据一致性校验过程中将持续同步增量数据，但性能会降低，建议源端停止写入后再执行数据一致性校验。
 
    - 选择迁移对象
 
@@ -104,8 +110,6 @@
      - 源库类型为“通过专线/内网连接的自建数据库”时，只支持通过**JSON**定义要迁移的库表。
 
      - 说明
-
-       MySQL系统库不会迁移。
 
        当一个库内包含超过100个表时，不支持按表选择，只可选择当前库或通过JSON方式指定表。
 
@@ -128,5 +132,3 @@
    - 注意：迁移任务结束后，将不能再次开启。
 
      
-
-   
