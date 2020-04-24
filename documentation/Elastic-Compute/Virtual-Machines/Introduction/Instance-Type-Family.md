@@ -45,7 +45,7 @@
 |g.s2.medium|1|4|1
 |g.s2.large|2|8|2
 |g.s2.xlarge|4|16|4
-|g.s2.2xlarge|8|32|8
+|g.s2.2xlarge|8|32|4
 
 第一代
 
