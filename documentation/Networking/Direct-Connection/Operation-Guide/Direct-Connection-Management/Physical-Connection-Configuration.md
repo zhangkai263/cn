@@ -42,7 +42,12 @@ c)支持修改物理连接名称、描述，各配置项的限制同创建物理
 
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/update-physical-connection.png)
 
-##### 3.删除物理连接
+##### 3.物理连接调整配置
+若您因业务变化需要调整物理端口规格，请线下与京东云协商具体的变更时间，并自行准备新规格所需的单模光模块，待该物理连接断开流量后由机房人员进行端口变更。待端口变更完成且确认流量已恢复后(此时物理端口限速仍为原规格)，请在控制台中操作调整端口配置，以按新的端口规格进行计费，待支付成功后将自动调整端口限速为新的速率。<br />
+a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  <br />
+b)选择相应的物理连接，点击操作列中的“调整配置”，请按您的实际需求进行升降配操作；<br />
+
+##### 4.删除物理连接
 若您不再需要物理连接，可将其删除。<br />
 a)登录[京东云物理连接控制台](https://cns-console.jdcloud.com/host/physicalConnection/list)；  <br />
 b)选择相应的物理连接，点击操作列中的“删除”，当该物理连接未创建专线通道时可以删除；<br />
