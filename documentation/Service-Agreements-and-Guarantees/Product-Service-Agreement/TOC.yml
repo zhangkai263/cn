@@ -289,7 +289,7 @@ items:
   - name: 细分市场划分服务等级协议（SLA）
     href: Segmented-Market-Analysis-Level-Agreements-SLA.md
   - name: 车辆检测服务服务条款
-    href: Vehicle-Detection-AnalysisTerms-Of-Service.md
+    href: Vehicle-Detection-Terms-Of-Service.md
   - name: 车辆检测服务等级协议（SLA）
     href: Vehicle-Detection-Level-Agreements-SLA.md
   - name: 银行卡识别服务条款
@@ -417,7 +417,7 @@ items:
   - name: 词向量服务等级协议（SLA）
     href: Word-Embedding-Level-Agreements-SLA.md
   - name: 词义相似度服务条款
-    href: IWord-Embedding-SimilarityLevel-Terms-Of-Service.md
+    href: Word-Embedding-Similarity-Terms-Of-Service.md
   - name: 词义相似度服务等级协议（SLA）
     href: Word-Embedding-SimilarityLevel-Agreements-SLA.md
   - name: 智能分诊服务条款
