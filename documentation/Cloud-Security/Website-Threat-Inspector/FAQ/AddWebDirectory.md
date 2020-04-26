@@ -37,6 +37,6 @@
 >
 > - 在浏览器中输入您的网站资产
 >
->   “http://test.example.com//e930ba264c664fd98ebdd4531d0a5e9d.txt”
+>   “http://test.example.com/e930ba264c664fd98ebdd4531d0a5e9d.txt”
 >
 >   访问验证认证文件是否上传成功，如果能成功访问，则表示上传成功。
