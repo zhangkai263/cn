@@ -53,7 +53,7 @@
           href: Getting-Started/clusteranaly.md
         - name: 删除数据
           href: Getting-Started/deleteindex.md
-      - name: 配置集群
+      - name: 管理集群
         items:
         - name: 查看集群
           href: Getting-Started/View-ES.md
