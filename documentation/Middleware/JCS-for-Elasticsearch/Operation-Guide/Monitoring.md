@@ -33,6 +33,20 @@
 | 集群主分片数 |当前集群主分片总数 | 
 | 集群初始化中的分片数 |当前集群初始化中的分片数 | 
 | 集群未分配的分片数 |当前集群未分配的分片数 | 
+| 节点搜索查询延迟 (ms) |单次节点搜索查询请求耗时 | 
+| 节点index延迟 (ms) |单次 index 请求耗时 | 
+| index线程池active线程数 (个) |index线程池active线程数 | 
+| index线程池线程队列大小 (个) |index线程池线程队列大小 | 
+| index线程池reject任务数 (个) |index线程池reject任务数 | 
+| search线程池active线程数 (个) |search线程池active线程数 | 
+| search线程池线程队列大小 (个) |search线程池线程队列大小 | 
+| search线程池reject任务数 (个) |search线程池reject任务数 | 
+| write线程池active线程数 (个) |write线程池active线程数 | 
+| write线程池线程队列大小 (个) |write线程池线程队列大小 | 
+| write线程池reject任务数 (个) |write线程池reject任务数 | 
+
+
+
 
 
 其中健康状态是云搜索Elasticsearch集群非常重要的监控项，用来表征集群总体上是否工作正常。健康状态种类如下：</br>
