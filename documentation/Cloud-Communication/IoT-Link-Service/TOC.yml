@@ -35,9 +35,9 @@ items:
       href: Operation-Guide/Overview.md
     - name: 物联网连接服务管理
       href: Operation-Guide/QueryCardManagement.md
-    - name: 物联网连接服务订单管理
+    - name: 物联网连接服务订单
       href: Operation-Guide/OrderManagement.md
-   - name: 物联网连接服务购买
+    - name: 物联网连接服务购买
       href: Operation-Guide/Purchase.md
 - name: 常见问题
   href: FAQ/FAQ.md
