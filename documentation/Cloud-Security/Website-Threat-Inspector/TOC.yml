@@ -48,4 +48,6 @@ items:
       - name: 业务影响问题
         href: FAQ/ApplicationEffect.md
       - name: 探针部署问题
-        href: FAQ/AgentDown.md 
+        href: FAQ/AgentDown.md
+      - name: 认证文件加入web目录问题
+        href: FAQ/AddWebDirectory.md
