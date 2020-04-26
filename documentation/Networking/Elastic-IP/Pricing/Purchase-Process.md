@@ -1,9 +1,9 @@
-# è´­ä¹°æµç¨‹
+# ¹ºÂòÁ÷³Ì
 
-æœ¬æ–‡æ¡£ä»‹ç»äº†è´­ä¹°å¼¹æ€§å…¬ç½‘IPçš„å…¥å£ã€‚
+±¾ÎÄµµ½éÉÜÁË¹ºÂòµ¯ĞÔ¹«ÍøIPµÄÈë¿Ú¡£
 
-## é€šè¿‡æ§åˆ¶å°çš„å…¥å£
+## Í¨¹ı¿ØÖÆÌ¨µÄÈë¿Ú
 
-1.ç™»å½•äº¬ä¸œäº‘å®˜ç½‘[https://www.jdcloud.com/](https://www.jdcloud.com/)ã€‚
+1.µÇÂ¼¾©¶«ÖÇÁªÔÆ¹ÙÍø[https://www.jdcloud.com/](https://www.jdcloud.com/)¡£
 
-2.ç™»å½•æ§åˆ¶å°ï¼Œå…·ä½“æ“ä½œè¯·å‚è€ƒ[åˆ›å»ºå¼¹æ€§å…¬ç½‘IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)ã€‚
+2.µÇÂ¼¿ØÖÆÌ¨£¬¾ßÌå²Ù×÷Çë²Î¿¼[´´½¨µ¯ĞÔ¹«ÍøIP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)¡£
