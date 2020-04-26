@@ -143,11 +143,11 @@ g.n1.8xlarge|32|128|4 |	 |
 
 **实例规格**
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|c.s2.large|2|4
-|c.s2.xlarge|4|8
-|c.s2.2xlarge|8|16
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|c.s2.large|2|4|2
+|c.s2.xlarge|4|8|4
+|c.s2.2xlarge|8|16|4
 
 ### 计算优化标准型
 <div id="user-content-3"></div>
