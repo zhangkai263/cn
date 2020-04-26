@@ -35,15 +35,15 @@
 | 集群未分配的分片数 |当前集群未分配的分片数 | 
 | 节点搜索查询延迟 (ms) |单次节点搜索查询请求耗时 | 
 | 节点index延迟 (ms) |单次 index 请求耗时 | 
-| index线程池active线程数 (个) |index线程池active线程数 | 
+| index线程池active线程数 (个) |单位统计周期（1min）内index线程池active线程数 | 
 | index线程池线程队列大小 (个) |如果队列大小一直很大，请考虑扩展您的集群 | 
-| index线程池reject任务数 (个) |index线程池reject任务数 | 
-| search线程池active线程数 (个) |search线程池active线程数 | 
+| index线程池reject任务数 (个) |单位统计周期（1min）内index线程池reject任务数 | 
+| search线程池active线程数 (个) |单位统计周期（1min）内search线程池active线程数 | 
 | search线程池线程队列大小 (个) |如果队列大小一直很大，请考虑扩展您的集群 | 
-| search线程池reject任务数 (个) |search线程池reject任务数 | 
-| write线程池active线程数 (个) |write线程池active线程数 | 
+| search线程池reject任务数 (个) |单位统计周期（1min）内search线程池reject任务数 | 
+| write线程池active线程数 (个) |单位统计周期（1min）内write线程池active线程数 | 
 | write线程池线程队列大小 (个) |如果队列大小一直很大，请考虑扩展您的集群 | 
-| write线程池reject任务数 (个) |write线程池reject任务数 | 
+| write线程池reject任务数 (个) |单位统计周期（1min）内write线程池reject任务数 | 
 
 
 
