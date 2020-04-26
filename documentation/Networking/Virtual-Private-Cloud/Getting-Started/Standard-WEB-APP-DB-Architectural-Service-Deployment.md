@@ -1,29 +1,29 @@
-## **±ê×¼WEB+APP+DB¼Ü¹¹·þÎñ²¿Êð**
+## **æ ‡å‡†WEB+APP+DBæž¶æž„æœåŠ¡éƒ¨ç½²**
 
-### **¸ÅÊö**
+### **æ¦‚è¿°**
 
-Í¨¹ý´Ë½ÌÑ§Äú¿ÉÒÔÔÚ¾©¶«ÖÇÁªÔÆÍê³É»ù´¡µÄÍøÂçÄ£ÐÍ²¿Êð£¬Ò»¸ö¸ºÔð¶ÔÍâµÄWEB²ãÒ»¸ö¸ºÔðÂß¼­µÄAPP²ãÒ»¸ö¸ºÔðÊý¾ÝµÄÊý¾Ý¿â²ã£¬²¢»ñµÃÒÔÏÂ×ÊÔ´£º
+é€šè¿‡æ­¤æ•™å­¦æ‚¨å¯ä»¥åœ¨äº¬ä¸œæ™ºè”äº‘å®ŒæˆåŸºç¡€çš„ç½‘ç»œæ¨¡åž‹éƒ¨ç½²ï¼Œä¸€ä¸ªè´Ÿè´£å¯¹å¤–çš„WEBå±‚ä¸€ä¸ªè´Ÿè´£é€»è¾‘çš„APPå±‚ä¸€ä¸ªè´Ÿè´£æ•°æ®çš„æ•°æ®åº“å±‚ï¼Œå¹¶èŽ·å¾—ä»¥ä¸‹èµ„æºï¼š
 
-- 1¸öË½ÓÐÍøÂç
-- 3¸ö×ÓÍø
+- 1ä¸ªç§æœ‰ç½‘ç»œ
+- 3ä¸ªå­ç½‘
 
 
 
-### **²Ù×÷²½Öè**
+### **æ“ä½œæ­¥éª¤**
 
-#### **µÚÒ»²½£º´´½¨Ë½ÓÐÍøÂç**
+#### **ç¬¬ä¸€æ­¥ï¼šåˆ›å»ºç§æœ‰ç½‘ç»œ**
 
-- ÔÚ×ó±ßÀ¸²Íµ¥ÖÐÒÀ´Îµã»÷ÍøÂç->Ë½ÓÐÍøÂç->Ë½ÓÐÍøÂç£¬½øÈëË½ÓÐÍøÂçÁÐ±íÒ³£¬µã»÷´´½¨£¬µ¯³ö´´½¨ÅäÖÃ´°¿Ú¡£
-- ¸ù¾ÝÐèÇóÑ¡ÔñµÄµØÓò£¬ÌîÐ´Ãû³Æ£¬ÌîÐ´CIDR£¬µã»÷´´½¨¼´¿É»ñµÃ1¸öË½ÓÐÍøÂç¡£
+- åœ¨å·¦è¾¹æ é¤å•ä¸­ä¾æ¬¡ç‚¹å‡»ç½‘ç»œ->ç§æœ‰ç½‘ç»œ->ç§æœ‰ç½‘ç»œï¼Œè¿›å…¥ç§æœ‰ç½‘ç»œåˆ—è¡¨é¡µï¼Œç‚¹å‡»åˆ›å»ºï¼Œå¼¹å‡ºåˆ›å»ºé…ç½®çª—å£ã€‚
+- æ ¹æ®éœ€æ±‚é€‰æ‹©çš„åœ°åŸŸï¼Œå¡«å†™åç§°ï¼Œå¡«å†™CIDRï¼Œç‚¹å‡»åˆ›å»ºå³å¯èŽ·å¾—1ä¸ªç§æœ‰ç½‘ç»œã€‚
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Standard-WEB-APP-DB-Architectural-Service-Deployment/Step1.png)
 
 
 
-#### **µÚ¶þ²½£º´´½¨×ÓÍøWEB²ã¡¢APP²ã¡¢DB²ã×ÓÍø**
+#### **ç¬¬äºŒæ­¥ï¼šåˆ›å»ºå­ç½‘WEBå±‚ã€APPå±‚ã€DBå±‚å­ç½‘**
 
-- ÔÚ×ó±ßÀ¸²Íµ¥ÖÐÒÀ´Îµã»÷ÍøÂç->Ë½ÓÐÍøÂç->×ÓÍø£¬½øÈë×ÓÍøÁÐ±íÒ³£¬µã»÷´´½¨£¬µ¯³ö´´½¨ÅäÖÃ´°¿Ú¡£
-- ¸ù¾ÝÐèÇóÑ¡ÔñµÄµØÓò£¬Ñ¡Ôñ¸Õ¸Õ´´½¨µÄË½ÓÐÍøÂç£¬ÌîÐ´×ÓÍøÃû³Æ£¬ÌîÐ´×ÓÍøCIDR£¬Ñ¡Ôñ¹ØÁªÂ·ÓÉ±í£¬µã»÷´´½¨¼´¿É¡£ÖØ¸´Èý±é¼´¿É»ñµÃ3¸ö×ÓÍø¡£
+- åœ¨å·¦è¾¹æ é¤å•ä¸­ä¾æ¬¡ç‚¹å‡»ç½‘ç»œ->ç§æœ‰ç½‘ç»œ->å­ç½‘ï¼Œè¿›å…¥å­ç½‘åˆ—è¡¨é¡µï¼Œç‚¹å‡»åˆ›å»ºï¼Œå¼¹å‡ºåˆ›å»ºé…ç½®çª—å£ã€‚
+- æ ¹æ®éœ€æ±‚é€‰æ‹©çš„åœ°åŸŸï¼Œé€‰æ‹©åˆšåˆšåˆ›å»ºçš„ç§æœ‰ç½‘ç»œï¼Œå¡«å†™å­ç½‘åç§°ï¼Œå¡«å†™å­ç½‘CIDRï¼Œé€‰æ‹©å…³è”è·¯ç”±è¡¨ï¼Œç‚¹å‡»åˆ›å»ºå³å¯ã€‚é‡å¤ä¸‰éå³å¯èŽ·å¾—3ä¸ªå­ç½‘ã€‚
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Standard-WEB-APP-DB-Architectural-Service-Deployment/Step2-1.png)
 
