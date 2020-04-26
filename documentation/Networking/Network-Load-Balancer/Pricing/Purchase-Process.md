@@ -1,25 +1,25 @@
-# ¹ºÂòÁ÷³Ì
+# è´­ä¹°æµç¨‹
 
-±¾ÎÄ½éÉÜÍøÂç¸ºÔØ¾ùºâµÄ¹ºÂòÈë¿Ú¡£
+æœ¬æ–‡ä»‹ç»ç½‘ç»œè´Ÿè½½å‡è¡¡çš„è´­ä¹°å…¥å£ã€‚
 
-## Èë¿Ú1£º[²úÆ·½éÉÜÒ³](https://www.jdcloud.com/cn/products/load-balancer)
-1. µÇÂ¼¾©¶«ÖÇÁªÔÆ¹ÙÍø[https://www.jdcloud.com/](https://www.jdcloud.com/)¡£
-2. Ñ¡Ôñ¡°²úÆ·>ÍøÂç>ÍøÂç¸ºÔØ¾ùºâ¡±£¬¾ßÌå¼ûÏÂÍ¼¡£
+## å…¥å£1ï¼š[äº§å“ä»‹ç»é¡µ](https://www.jdcloud.com/cn/products/load-balancer)
+1. ç™»å½•äº¬ä¸œæ™ºè”äº‘å®˜ç½‘[https://www.jdcloud.com/](https://www.jdcloud.com/)ã€‚
+2. é€‰æ‹©â€œäº§å“>ç½‘ç»œ>ç½‘ç»œè´Ÿè½½å‡è¡¡â€ï¼Œå…·ä½“è§ä¸‹å›¾ã€‚
 
- ![NLB²úÆ·Èë¿Ú](../../../../image/Networking/NLB/NLB-Menu.png)
+ ![NLBäº§å“å…¥å£](../../../../image/Networking/NLB/NLB-Menu.png)
 
-3.µ¯³ö¸ºÔØ¾ùºâµÄ²úÆ·½éÉÜÒ³£¬µã»÷**Á¢¼´¹ºÂò**¡£
+3.å¼¹å‡ºè´Ÿè½½å‡è¡¡çš„äº§å“ä»‹ç»é¡µï¼Œç‚¹å‡»**ç«‹å³è´­ä¹°**ã€‚
 
-![NLB²úÆ·Ò³](../../../../image/Networking/NLB/NLB-ProductEntrance.png)
+![NLBäº§å“é¡µ](../../../../image/Networking/NLB/NLB-ProductEntrance.png)
 
-4.¹ºÂòµÄ¾ßÌå²Ù×÷£¬Çë²Î¿¼[´´½¨ÊµÀı](../Getting-Started/Create-Instance.md)¡£
+4.è´­ä¹°çš„å…·ä½“æ“ä½œï¼Œè¯·å‚è€ƒ[åˆ›å»ºå®ä¾‹](../Getting-Started/Create-Instance.md)ã€‚
 
-## Èë¿Ú2£º[¸ºÔØ¾ùºâ¿ØÖÆÌ¨](https://cns-console.jdcloud.com/host/loadBalance/list)
+## å…¥å£2ï¼š[è´Ÿè½½å‡è¡¡æ§åˆ¶å°](https://cns-console.jdcloud.com/host/loadBalance/list)
 
-1. µÇÂ¼¾©¶«ÖÇÁªÔÆ¹ÙÍø[https://www.jdcloud.com/](https://www.jdcloud.com/)¡£
-2. Ñ¡Ôñ¡°¿ØÖÆÌ¨¡±£¬¾ßÌå¼ûÏÂÍ¼¡£
+1. ç™»å½•äº¬ä¸œæ™ºè”äº‘å®˜ç½‘[https://www.jdcloud.com/](https://www.jdcloud.com/)ã€‚
+2. é€‰æ‹©â€œæ§åˆ¶å°â€ï¼Œå…·ä½“è§ä¸‹å›¾ã€‚
 
-![¿ØÖÆÌ¨](../../../../image/Networking/NLB/console-buy.png)
+![æ§åˆ¶å°](../../../../image/Networking/NLB/console-buy.png)
 
-3.µÇÂ¼¿ØÖÆÌ¨£¬¾ßÌå²Ù×÷Çë²Î¿¼
-[´´½¨ÊµÀı](../Getting-Started/Create-Instance.md)¡£
+3.ç™»å½•æ§åˆ¶å°ï¼Œå…·ä½“æ“ä½œè¯·å‚è€ƒ
+[åˆ›å»ºå®ä¾‹](../Getting-Started/Create-Instance.md)ã€‚

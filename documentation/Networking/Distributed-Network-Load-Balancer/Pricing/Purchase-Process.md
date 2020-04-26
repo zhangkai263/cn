@@ -1,21 +1,21 @@
-# ¹ºÂòÁ÷³Ì
+# è´­ä¹°æµç¨‹
 
-±¾ÎÄ½éÉÜ·Ö²¼Ê½ÍøÂç¸ºÔØ¾ùºâµÄ¹ºÂòÈë¿Ú¡£
+æœ¬æ–‡ä»‹ç»åˆ†å¸ƒå¼ç½‘ç»œè´Ÿè½½å‡è¡¡çš„è´­ä¹°å…¥å£ã€‚
 
-## Èë¿Ú1£º[²úÆ·½éÉÜÒ³](https://www.jdcloud.com/products/load-balancer )
-1. µÇÂ¼¾©¶«ÖÇÁªÔÆ¹ÙÍø[https://www.jdcloud.com/](https://www.jdcloud.com/)¡£
-2. Ñ¡Ôñ **²úÆ·>ÍøÂç>¸ºÔØ¾ùºâ**£¬¾ßÌå¼ûÏÂÍ¼¡£
-![DNLB²úÆ·Èë¿Ú](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-007.png)
+## å…¥å£1ï¼š[äº§å“ä»‹ç»é¡µ](https://www.jdcloud.com/products/load-balancer )
+1. ç™»å½•äº¬ä¸œæ™ºè”äº‘å®˜ç½‘[https://www.jdcloud.com/](https://www.jdcloud.com/)ã€‚
+2. é€‰æ‹© **äº§å“>ç½‘ç»œ>è´Ÿè½½å‡è¡¡**ï¼Œå…·ä½“è§ä¸‹å›¾ã€‚
+![DNLBäº§å“å…¥å£](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-007.png)
 
-3. µ¯³ö¸ºÔØ¾ùºâµÄ²úÆ·½éÉÜÒ³£¬µã»÷**Á¢¼´¹ºÂò**¡£
-![DNLB²úÆ·Ò³](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-008.png)
+3. å¼¹å‡ºè´Ÿè½½å‡è¡¡çš„äº§å“ä»‹ç»é¡µï¼Œç‚¹å‡»**ç«‹å³è´­ä¹°**ã€‚
+![DNLBäº§å“é¡µ](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-008.png)
 
-4. ¹ºÂòµÄ¾ßÌå²Ù×÷£¬Çë²Î¿¼[´´½¨DNLBÊµÀı](../Operation-Guide/Create-DNLB-Instance.md)¡£
+4. è´­ä¹°çš„å…·ä½“æ“ä½œï¼Œè¯·å‚è€ƒ[åˆ›å»ºDNLBå®ä¾‹](../Operation-Guide/Create-DNLB-Instance.md)ã€‚
 
-## Èë¿Ú2£º[¸ºÔØ¾ùºâ¿ØÖÆÌ¨](https://cns-console.jdcloud.com/host/loadBalance/list)
+## å…¥å£2ï¼š[è´Ÿè½½å‡è¡¡æ§åˆ¶å°](https://cns-console.jdcloud.com/host/loadBalance/list)
 
-1. µÇÂ¼¾©¶«ÖÇÁªÔÆ¹ÙÍø[https://www.jdcloud.com/](https://www.jdcloud.com/)¡£
-2. Ñ¡Ôñ **¿ØÖÆÌ¨**£¬¾ßÌå¼ûÏÂÍ¼¡£
-![¿ØÖÆÌ¨](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-009.png)
-3. µÇÂ¼¿ØÖÆÌ¨£¬¾ßÌå²Ù×÷Çë²Î¿¼[´´½¨DNLBÊµÀı](../Operation-Guide/Create-DNLB-Instance.md)¡£
+1. ç™»å½•äº¬ä¸œæ™ºè”äº‘å®˜ç½‘[https://www.jdcloud.com/](https://www.jdcloud.com/)ã€‚
+2. é€‰æ‹© **æ§åˆ¶å°**ï¼Œå…·ä½“è§ä¸‹å›¾ã€‚
+![æ§åˆ¶å°](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-009.png)
+3. ç™»å½•æ§åˆ¶å°ï¼Œå…·ä½“æ“ä½œè¯·å‚è€ƒ[åˆ›å»ºDNLBå®ä¾‹](../Operation-Guide/Create-DNLB-Instance.md)ã€‚
 
