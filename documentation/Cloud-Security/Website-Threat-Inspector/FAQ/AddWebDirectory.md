@@ -33,7 +33,7 @@
 > - 保存并退出编辑模式：按“Esc”退出编辑，输入:wq保存并退出。
 > - 查看认证文件是否上传成功：ll
 >
-> ![wts-addweb-02](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\05常见问题\wts-addweb-02.png)
+> ![](../../../../image/Website-Threat-Inspector/wts-addweb-02.png)
 >
 > - 在浏览器中输入您的网站资产
 >
