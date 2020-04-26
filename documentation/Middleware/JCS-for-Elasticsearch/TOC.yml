@@ -61,6 +61,8 @@
           href: Getting-Started/Change-ES.md
         - name: 删除集群
           href: Getting-Started/Delete-ES.md
+        - name: 重启集群
+          href: Getting-Started/reboot.md
   - name: 操作指南
     items:
       - name: 专用主节点
