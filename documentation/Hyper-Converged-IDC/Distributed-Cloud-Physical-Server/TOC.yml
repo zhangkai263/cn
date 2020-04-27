@@ -66,7 +66,7 @@
           - name: 弹性公网IP
             href: Operation-Guide/Networking/Elastic-IP-For-Edge-Cloud.md
           - name: 别名IP范围
-            href: Operation-Guide/Networking/Alisas-IP.md
+            href: Operation-Guide/Networking/Alias-IP.md
           - name: 共享带宽
             href: Operation-Guide/Networking/Edge-Shared-Bandwidth.md
       - name: 防火墙
