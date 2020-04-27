@@ -174,9 +174,9 @@ items:
     href: IoT-Hub-Terms-Of-Service.md
   - name: 物联网中心服务等级协议(SLA)  
     href: IoT-Hub-Level-Agreements-SLA.md
-  - name: 物联网卡服务服务条款
+  - name: 物联网连接服务服务条款
     href: IoT-Link-Service-Terms-Of-Service.md
-  - name: 物联网卡服务等级协议（SLA）
+  - name: 物联网连接服务等级协议（SLA）
     href: IoT-Link-Service-Level-Agreements-SLA.md
   - name: 物联网智能边缘计算服务条款
     href: IoT-Edge-Terms-Of-Service.md    
