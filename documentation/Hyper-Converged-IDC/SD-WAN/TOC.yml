@@ -15,7 +15,6 @@ items:
   items:
       - name: 产品定价
         href: Pricing/Price-Overview.md
-        status: 0
 - name: 常见问题
   items:
       - name: 入门指南概述
