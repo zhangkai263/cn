@@ -22,11 +22,11 @@ MongoDB实例默认不开启外网访问，如您的业务需要，可手动开�
 
    - 副本集：
 
-     ![image-20200428165731668](../../../../../image/JCS-for-MongoDB/mongo-101.png)
+     ![image-20200428165731668](../../../../../image/mongodb/mongo-101.png)
 
    - 分片集群：
 
-     ![image-20200428172120757](../../../../../image/JCS-for-MongoDB/mongo-102.png)
+     ![image-20200428172120757](../../../../../image/mongodb/mongo-102.png)
 
 4. 在确认弹窗中，点击**确定**，开启外网访问。
 
@@ -34,11 +34,11 @@ MongoDB实例默认不开启外网访问，如您的业务需要，可手动开�
 
    - 副本集
 
-     ![image-20200428171925903](../../../../../image/JCS-for-MongoDB/mongo-103.png)
+     ![image-20200428171925903](../../../../../image/mongodb/mongo-103.png)
 
    - 分片集群
 
-     ![image-20200428172301220](../../../../../image/JCS-for-MongoDB/mongo-104.png)
+     ![image-20200428172301220](../../../../../image/mongodb/mongo-104.png)
 
 6. 创建的外网域名将展示在连接信息模块，如不再需要，可点击**关闭外网域名**。
 
