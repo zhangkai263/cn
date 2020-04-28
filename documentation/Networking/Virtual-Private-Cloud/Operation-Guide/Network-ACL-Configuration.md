@@ -1,14 +1,14 @@
-## **ÍøÂçACLÅäÖÃ**
+## **ç½‘ç»œACLé…ç½®**
 
-#### **²½ÖèÒ»¡¢´´½¨/É¾³ýÍøÂçACL**
+#### **æ­¥éª¤ä¸€ã€åˆ›å»º/åˆ é™¤ç½‘ç»œACL**
 
-½øÈë¾©¶«ÖÇÁªÔÆ¿ØÖÆÌ¨£¬µã»÷×ó²àµ¼º½Ìõ ¡¾Ë½ÓÐÍøÂç ¡¿¡ª ¡¾ÍøÂçACL¡¿£¬½øÈëÍøÂçACL Ò³Ãæ
+è¿›å…¥äº¬ä¸œæ™ºè”äº‘æŽ§åˆ¶å°ï¼Œç‚¹å‡»å·¦ä¾§å¯¼èˆªæ¡ ã€ç§æœ‰ç½‘ç»œ ã€‘â€” ã€ç½‘ç»œACLã€‘ï¼Œè¿›å…¥ç½‘ç»œACL é¡µé¢
 
-1¡¢µã»÷¡°´´½¨¡±£¬µ¯³öÍøÂçACL´´½¨µ¯¿ò£»
+1ã€ç‚¹å‡»â€œåˆ›å»ºâ€ï¼Œå¼¹å‡ºç½‘ç»œACLåˆ›å»ºå¼¹æ¡†ï¼›
 
-2¡¢Ñ¡ÔñVPC£¬²¢ÊäÈëÍøÂçACLÃû³Æ¡¢ÃèÊö£¬µã»÷¡°È·¶¨¡±£¬¼´´´½¨Íê³É¡£ÇëÄú×¢ÒâÔÚÒ»¸öVPC´´½¨µÄÍøÂçACLÖ»ÄÜÊÊÓÃÓÚµ±Ç°VPC£¬ÔÚÆäËûVPCÄÚ²»¿ÉÊ¹ÓÃ£»
+2ã€é€‰æ‹©VPCï¼Œå¹¶è¾“å…¥ç½‘ç»œACLåç§°ã€æè¿°ï¼Œç‚¹å‡»â€œç¡®å®šâ€ï¼Œå³åˆ›å»ºå®Œæˆã€‚è¯·æ‚¨æ³¨æ„åœ¨ä¸€ä¸ªVPCåˆ›å»ºçš„ç½‘ç»œACLåªèƒ½é€‚ç”¨äºŽå½“å‰VPCï¼Œåœ¨å…¶ä»–VPCå†…ä¸å¯ä½¿ç”¨ï¼›
 
-3¡¢É¾³ýÍøÂçACL£¬µã»÷ÒªÉ¾³ýÍøÂçACL¶ÔÓ¦²Ù×÷¿òÖÐµÄÉ¾³ý°´Å¥£¬¼´¿ÉÍê³É²Ù×÷£»
+3ã€åˆ é™¤ç½‘ç»œACLï¼Œç‚¹å‡»è¦åˆ é™¤ç½‘ç»œACLå¯¹åº”æ“ä½œæ¡†ä¸­çš„åˆ é™¤æŒ‰é’®ï¼Œå³å¯å®Œæˆæ“ä½œï¼›
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step1.png)
 
@@ -16,36 +16,36 @@
 
 
 
-#### **²½Öè¶þ¡¢±à¼­ÍøÂçACL¹æÔò**
+#### **æ­¥éª¤äºŒã€ç¼–è¾‘ç½‘ç»œACLè§„åˆ™**
 
-1¡¢ÔÚÍøÂçACLÁÐ±íÒ³Ãæ£¬µã»÷ÒªÌí¼Ó¹æÔòµÄÍøÂçACLÃû³Æ£¬½øÈëµ½ÍøÂçACLÏêÇéÒ³Ãæ£»
+1ã€åœ¨ç½‘ç»œACLåˆ—è¡¨é¡µé¢ï¼Œç‚¹å‡»è¦æ·»åŠ è§„åˆ™çš„ç½‘ç»œACLåç§°ï¼Œè¿›å…¥åˆ°ç½‘ç»œACLè¯¦æƒ…é¡µé¢ï¼›
 
-2¡¢¸ù¾ÝÐèÒªÌí¼ÓµÄ¹æÔòµÄÀàÐÍ£¬Ñ¡ÔñÈëÕ¾¹æÔò»ò³öÕ¾¹æÔòÑ¡Ïî¿¨£»
+2ã€æ ¹æ®éœ€è¦æ·»åŠ çš„è§„åˆ™çš„ç±»åž‹ï¼Œé€‰æ‹©å…¥ç«™è§„åˆ™æˆ–å‡ºç«™è§„åˆ™é€‰é¡¹å¡ï¼›
 
-3¡¢µã»÷¡°±à¼­¹æÔò¡±£¬ÉèÖÃÐ­ÒéÀàÐÍ¡¢IP¡¢¶Ë¿ÚÒÔ¼°²ßÂÔºóµã»÷¡°È·¶¨¡±£¬¼´Ìí¼ÓÍê³É¹æÔòµÄÐÞ¸Ä¡£¹æÔòÐÞ¸ÄÍê³Éºó¼°Ê±ÉúÐ§ £»
+3ã€ç‚¹å‡»â€œç¼–è¾‘è§„åˆ™â€ï¼Œè®¾ç½®åè®®ç±»åž‹ã€IPã€ç«¯å£ä»¥åŠç­–ç•¥åŽç‚¹å‡»â€œç¡®å®šâ€ï¼Œå³æ·»åŠ å®Œæˆè§„åˆ™çš„ä¿®æ”¹ã€‚è§„åˆ™ä¿®æ”¹å®ŒæˆåŽåŠæ—¶ç”Ÿæ•ˆ ï¼›
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step3.png)
 
 
 
-#### **²½ÖèÈý¡¢ACL¹ØÁª×ÓÍø**
+#### **æ­¥éª¤ä¸‰ã€ACLå…³è”å­ç½‘**
 
-1¡¢ÔÚÍøÂçACLÁÐ±íÒ³Ãæ£¬µã»÷¡¾¹ØÁª×ÓÍø¡¿°´Å¥£»
+1ã€åœ¨ç½‘ç»œACLåˆ—è¡¨é¡µé¢ï¼Œç‚¹å‡»ã€å…³è”å­ç½‘ã€‘æŒ‰é’®ï¼›
 
-2¡¢ÔÚµ¯´°ÖÐÑ¡ÔñÐèÒª°ó¶¨µÄ×ÓÍø£¬µã»÷¡°È·¶¨¡±£¬¼´¿É½«ÍøÂçACL¹æÔò°ó¶¨µ½×ÓÍø£¬°ó¶¨Íê³Éºó¼°Ê±ÉúÐ§ £»
+2ã€åœ¨å¼¹çª—ä¸­é€‰æ‹©éœ€è¦ç»‘å®šçš„å­ç½‘ï¼Œç‚¹å‡»â€œç¡®å®šâ€ï¼Œå³å¯å°†ç½‘ç»œACLè§„åˆ™ç»‘å®šåˆ°å­ç½‘ï¼Œç»‘å®šå®ŒæˆåŽåŠæ—¶ç”Ÿæ•ˆ ï¼›
 
-×¢Òâ£ºÒ»¸öÍøÂçACL¿ÉÒÔ°ó¶¨¶à¸ö×ÓÍø¡¢Ò»¸ö×ÓÍøÖ»ÄÜ°ó¶¨Ò»¸öÍøÂçACL
+æ³¨æ„ï¼šä¸€ä¸ªç½‘ç»œACLå¯ä»¥ç»‘å®šå¤šä¸ªå­ç½‘ã€ä¸€ä¸ªå­ç½‘åªèƒ½ç»‘å®šä¸€ä¸ªç½‘ç»œACL
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step4.png)
 
 
 
-#### **²½ÖèËÄ¡¢ACL½â¹ØÁª×ÓÍø**
+#### **æ­¥éª¤å››ã€ACLè§£å…³è”å­ç½‘**
 
-1¡¢ÔÚÍøÂçACLÁÐ±íÒ³Ãæ£¬µã»÷ÒªÌí¼Ó¹æÔòµÄÍøÂçACLÃû³Æ£¬½øÈëµ½ÍøÂçACLÏêÇéÒ³Ãæ£»
+1ã€åœ¨ç½‘ç»œACLåˆ—è¡¨é¡µé¢ï¼Œç‚¹å‡»è¦æ·»åŠ è§„åˆ™çš„ç½‘ç»œACLåç§°ï¼Œè¿›å…¥åˆ°ç½‘ç»œACLè¯¦æƒ…é¡µé¢ï¼›
 
-2¡¢µã»÷¡¾¹ØÁª×ÓÍø¡¿Ñ¡Ïî¿¨£»
+2ã€ç‚¹å‡»ã€å…³è”å­ç½‘ã€‘é€‰é¡¹å¡ï¼›
 
-3¡¢ÔÚ¹ØÁª×ÓÍøÁÐ±íÖÐÐèÒª½â¹ØÁªµÄ×ÓÍøÏîºóµã»÷¡¾½â¹ØÁª¡¿°´Å¥£»
+3ã€åœ¨å…³è”å­ç½‘åˆ—è¡¨ä¸­éœ€è¦è§£å…³è”çš„å­ç½‘é¡¹åŽç‚¹å‡»ã€è§£å…³è”ã€‘æŒ‰é’®ï¼›
 
-4¡¢ÔÚµ¯´°ÖÐµã»÷"È·¶¨"£»
+4ã€åœ¨å¼¹çª—ä¸­ç‚¹å‡»"ç¡®å®š"ï¼›
