@@ -30,8 +30,8 @@
 
 5、 京东智联云会在1个工作日内审核您提交的申请，审核通过提交管局页面如下：
 
-![img](fhttps://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-7.png)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-7.png)
 
 6、 待管局审核通过后，即网站注销成功，此网站在备案系统清除，请知悉。
 
-![img](fhttps://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-8.png)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-8.png)
