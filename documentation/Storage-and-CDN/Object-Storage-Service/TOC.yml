@@ -197,10 +197,10 @@ items:
                  href: Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Query-Video-Task.md
                - name: 删除视频任务
                  href: Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Delete-Video-Task.md   
-        - name: SDK参考
-          items:
-            - name: 视频截图
-              href: Old-Media-Processing-Service/SDK-Reference/Thumbnail.md
+          - name: SDK参考
+            items:
+               - name: 视频截图
+                 href: Old-Media-Processing-Service/SDK-Reference/Thumbnail.md
  - name:  API文档
    items:
       - name: 强一致性
