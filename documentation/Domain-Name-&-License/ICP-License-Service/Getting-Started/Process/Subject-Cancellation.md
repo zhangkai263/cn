@@ -2,7 +2,7 @@
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[https://www.jdcloud.com] 打开后点击右上方“备案”
+1、打开京东智联云官网[www.jdcloud.com](https://www.jdcloud.com)打开后点击右上方“备案”
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Subject-Cancellation-cn-1.png)
 
