@@ -3,7 +3,7 @@
 
 ## 操作步骤
 
-1.登录[媒体处理服务控制台](https://mps-console.jdcloud.com/)。
+1.登录[媒体处理服务控制台](https://mps-v1-console.jdcloud.com/)。
 
 2.进入【媒体处理服务】 >> 【全局设置】。
 
