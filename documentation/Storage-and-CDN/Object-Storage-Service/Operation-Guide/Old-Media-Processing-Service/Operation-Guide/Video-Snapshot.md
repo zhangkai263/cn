@@ -3,7 +3,7 @@
 
 ## 操作步骤
 
-1.登录[媒体处理服务控制台](https://mps-console.jdcloud.com/)。
+1.登录[媒体处理服务控制台](https://mps-v1-console.jdcloud.com/)。
 
 2.单击【视频截图工作流】按钮。
 
