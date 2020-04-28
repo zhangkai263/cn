@@ -23,6 +23,12 @@ items:
             href: Getting-Started/Process/New-Access-Subject.md
           - name: 新增接入（无主体）
             href: Getting-Started/Process/New-Access-Without-Subject.md
+          - name: 主体注销
+            href: Getting-Started/Process/Subject-Cancellation.md
+          - name: 网站注销
+            href: Getting-Started/Process/Website-Cancellation.md
+          - name: 取消接入
+            href: Getting-Started/Process/Cancel-Access.md    
       - name: 管局规则
         items:
           - name: 安徽
