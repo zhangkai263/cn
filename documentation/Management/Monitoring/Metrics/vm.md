@@ -1,4 +1,4 @@
-# 监控指标说明
+# 云主机监控指标说明
 京东云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
 * 由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
   * 磁盘读吞吐量（Host）：vm.disk.bytes.read
@@ -16,8 +16,8 @@
 ### 实例
 metric | 中文名称 | 英文名称 | 单位 | 说明
 ---|--- |--- |---|---
-vm.cpu.util | CPU使用率 | CPU Usage | % | 
-vm.memory.usage | 内存使用率| Memory Usage | % | 
+cpu.util | CPU使用率 | CPU Usage | % | 
+memory.usage | 内存使用率| Memory Usage | % | 
 vm.memory.used.bytes | 内存使用量 | Memory Used |  Bytes | 
 vm.avg.load1 | 平均负载1min | CPU Average Load 1min | - | 
 vm.avg.load5 | 平均负载5min | CPU Average Load 5min |  - | 

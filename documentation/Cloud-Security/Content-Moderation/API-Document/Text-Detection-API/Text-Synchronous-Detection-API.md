@@ -10,7 +10,7 @@
 
 关于scene与label参数
 
-在提交检测任务时，您需要指定**scenes**场景参数；而在检测返回结果中，则包含了您指定的场景对应的**label**分类参数。
+在提交检测任务时，您需要指定scenes场景参数；而在检测返回结果中，则包含了您指定的场景对应的label分类参数。
 
 在文本反垃圾中，scene与label的对应关系如下：
 
@@ -26,7 +26,7 @@ POST
 
 ### 请求地址
 
-/v1/text:scan
+https://censor.jdcloud-api.com/v1/text:scan 
 
 
 ### 请求参数

@@ -1,12 +1,12 @@
 # 连接实例
 
-云数据库 Greenplum 基于Greenplum 5.19提供服务，完全兼容 PostgreSQL 8.3 的消息协议，可以直接使用支持 PostgreSQL 8.3 消息协议的工具，例如 libpq、JDBC、ODBC、psycopg2、pgadmin III 等。
+数据仓库JDW 基于开源的数据仓库Greenplum提供服务，完全兼容 PostgreSQL 的消息协议，可以直接使用支持 PostgreSQL消息协议的工具，例如 libpq、JDBC、ODBC、psycopg2、pgadmin III 等。
 
-Greenplum 官网包含 JDBC、ODBC 和 libpq的安装包，用户可方便地安装和使用，详情参见[Greenplum 官方文档](http://gpdb.docs.pivotal.io/4380/client_tool_guides/drivers/unix/unix_connect.html)。
+JDW支持 Greenplum 官网 JDBC、ODBC 和 libpq的安装包，用户可方便地安装和使用，详情参见[Greenplum 官方文档](http://gpdb.docs.pivotal.io/4380/client_tool_guides/drivers/unix/unix_connect.html)。
 
-psql 是 比较常用的Greenplum工具，提供了丰富的命令，其二进制文件在 Greenplum 安装后的 BIN 目录下。
+psql 是 比较常用的JDW 连接工具，提供了丰富的命令，其二进制文件在JDW 安装后的 BIN 目录下。
 
-以下说明如何使用psql连接Greenplum：
+以下说明如何使用psql连接 数据仓库JDW ：
 
 1. 连接串的方式
 
@@ -29,6 +29,6 @@ psql 是 比较常用的Greenplum工具，提供了丰富的命令，其二进�
 
 说明：
 
-- 关于 Greenplum 的 psql 的更多使用方法，请参见文档“[psql](http://gpdb.docs.pivotal.io/4340/client_tool_guides/client/unix/psql.html)”。
+- 关于 JDW 的 psql 的更多使用方法，请参见文档“[psql](http://gpdb.docs.pivotal.io/4340/client_tool_guides/client/unix/psql.html)”。
 - 数据仓库 JDW 也支持 PostgreSQL 的 psql 命令，详情参见“[PostgreSQL 8.3.23 Documentation — psql](https://www.postgresql.org/docs/8.3/static/app-psql.html)”。
 

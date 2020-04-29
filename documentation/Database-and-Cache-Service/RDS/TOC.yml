@@ -104,7 +104,29 @@
           herf: Operation-Guide/Readonly-Instance-Management/Create-Readonly-Instance.md
         - name: 重启只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Restart-Readonly-Instance.md
-  
+
+      - name: 只读代理管理
+        items:
+        - name: 创建只读代理
+          herf: Operation-Guide/Readonly-Group/Create-ReadonlyGroup.md
+        - name: 删除只读代理
+          herf: Operation-Guide/Readonly-Group/Delete-ReadonlyGroup.md
+        - name: 只读代理外网访问
+          herf: Operation-Guide/Readonly-Group/Internet-Access-RO.md
+        - name: 修改只读代理
+          herf: Operation-Guide/Readonly-Group/Modify-ReadonlyGroup.md          
+
+      - name: 读写分离代理管理
+        items:
+        - name: 创建读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Create-ReadWriteProxy.md
+        - name: 删除读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Delete-ReadWriteProxy.md
+        - name: 重置读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Reset-ReadWriteProxy.md
+        - name: 读写分离代理外网访问
+          herf: Operation-Guide/ReadWriteProxy/Internet-Access-RW.md
+
       - name: 账户管理
         items:
           - name: 创建账号
@@ -119,6 +141,8 @@
               herf: Operation-Guide/Account/Create-Account/SQLServer-Create-Account.md
             - name: PostgreSQL 创建账号
               herf: Operation-Guide/Account/Create-Account/PostgreSQL-Create-Account.md
+          - name: 运维账号
+            herf: Operation-Guide/Account/Ops-Account.md
           - name: 修改权限
             herf: Operation-Guide/Account/Modify-Privilege.md
           - name: 重置密码

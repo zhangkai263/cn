@@ -2,7 +2,7 @@
 
 
 ## 描述
-设置工作节点组自动伸缩
+设置工作节点组自动扩容
 
 ## 请求方式
 POST
@@ -24,8 +24,8 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**enable**|Boolean|False| |是否启用自动伸缩，默认为 false<br>|
-|**maxNode**|Integer|False| |自动伸缩最大工作节点数, 取值范围[1, min(2000, 子网剩余ip)]|
-|**minNode**|Integer|False| |自动伸缩最小工作节点数, 取值范围[0, min(2000, maxNode)]|
+|**maxNode**|Integer|False| |自动扩容最大工作节点数, 取值范围[1, min(2000, 子网剩余ip)]|
+|**minNode**|Integer|False| |自动扩容最小工作节点数, 取值范围[0, min(2000, maxNode)]|
 
 ## 返回参数
 |名称|类型|描述|

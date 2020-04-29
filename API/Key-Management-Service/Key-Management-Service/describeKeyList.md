@@ -21,13 +21,13 @@ https://kms.jdcloud-api.com/v1/key
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String|请求ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**keyList**|[KeyInfo[]](#keyinfo)|Key列表|
+|**keyList**|KeyInfo[]|Key列表|
 |**totalCount**|Integer|Key的数量|
 ### <div id="KeyInfo">KeyInfo</div>
 |名称|类型|描述|

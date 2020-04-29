@@ -19,6 +19,6 @@
 </tr>
 <tr>
     <td>Web/H5端</td>
-    <td><a href="https://j.jdcloud.com/video/player/1.0.0/index.html">点击体验</a><br/> </td>
+    <td><a href="https://j.jdcloud.com/video/player/index.html">点击体验</a><br/> </td>
 </tr>                
 </table>
