@@ -1,4 +1,5 @@
 # 获取视频任务列表
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
 
 描述:通过条件查询视频列表
 
@@ -11,21 +12,21 @@ Authorization: signatureValue#请参照《安全认证》
 ```
 说明：
 
-* videoTaskQuery：查询任务列表，JSON格式，相关说明参数如下：
+videoTaskQuery：查询任务列表，JSON格式，相关说明参数如下：
 
-* bucket：源bucket
+bucket：源bucket
 
-* objectKey：源Key
+objectKey：源Key
 
-* taskId：任务uuid
+taskId：任务uuid
 
-* status：任务的状态，1是未处理，2是开始处理，3是处理成功
+status：任务的状态，1是未处理，2是开始处理，3是处理成功
 
-* page：显示页数
+page：显示页数
 
-* pagesize：每页显示数量
+pagesize：每页显示数量
 
-* flag：1代表有效
+flag：1代表有效
 
 请求示例：
 ```

@@ -1,4 +1,5 @@
 # 创建视频转码工作流
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
 
 ## 操作步骤
 
@@ -12,7 +13,7 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Media-Processing-Service/MPS-003.png)
 
-注：目前支持的视频转码处理规则，参见 [视频处理服务帮助中心 >> 视频转码  >> 视频处理规则](../Operation-Guide/Video-Transcoding/Transcoding-Rules.md)
+注：目前支持的视频转码处理规则，参见 [视频处理服务帮助中心 >> 视频转码  >> 视频处理规则](../Video-Transcoding/Transcoding-Rules.md)
 
 4.查看转码任务及状态
 
@@ -23,6 +24,5 @@ i.查看转码任务及状态
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Media-Processing-Service/MPS-004.png)
 
 ii.单击所属bucket即可进入源bucket详情页
-
 
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Media-Processing-Service/MPS-005.png)
