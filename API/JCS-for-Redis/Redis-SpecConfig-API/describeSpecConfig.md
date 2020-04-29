@@ -24,27 +24,27 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/specConfig
 |**result**|[Result](user-content-describespecconfig#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**shardSpec**|Map|单分片规格，自定义分片规格实例才有|
 |**instanceSpec**|[InstanceSpec](user-content-describespecconfig#instancespec)|实例规格|
-### <div id="InstanceSpec">InstanceSpec</div>
+### <div id="instancespec">InstanceSpec</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|region id|
 |**instanceVersions**|[VersionInfo[]](user-content-describespecconfig#versioninfo)|版本信息列表|
-### <div id="VersionInfo">VersionInfo</div>
+### <div id="versioninfo">VersionInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**redisVersion**|String|redis引擎版本：目前支持2.8、4.0|
 |**instanceTypes**|[TypeInfo[]](user-content-describespecconfig#typeinfo)|类型信息列表|
-### <div id="TypeInfo">TypeInfo</div>
+### <div id="typeinfo">TypeInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceType**|String|实例类型：目前支持主从版（master-slave）、集群版（cluster）|
 |**specs**|[SpecInfo[]](user-content-describespecconfig#specinfo)|规格列表|
-### <div id="SpecInfo">SpecInfo</div>
+### <div id="specinfo">SpecInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**memoryGB**|Integer|内存大小（GB）|
@@ -56,7 +56,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/specConfig
 |**ipNumber**|Integer|需要的IP数，0表示自定义分片集群，IP数由分片数变化|
 |**shard**|[ShardInfo](user-content-describespecconfig#shardinfo)|该内存对应的分片列表信息，redis 2.8以及redis 4.0主从版没有分片列表信息|
 |**azs**|String[]|az列表|
-### <div id="ShardInfo">ShardInfo</div>
+### <div id="shardinfo">ShardInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**defaultShardNumber**|Integer|默认分片数|

@@ -27,11 +27,11 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**result**|[Result](user-content-describedownloadurl#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**downloadUrls**|[DownloadUrl[]](user-content-describedownloadurl#downloadurl)|备份文件下载信息列表|
-### <div id="DownloadUrl">DownloadUrl</div>
+### <div id="downloadurl">DownloadUrl</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|名称|

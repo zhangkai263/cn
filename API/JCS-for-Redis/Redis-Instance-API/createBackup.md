@@ -28,7 +28,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**result**|[Result](user-content-createbackup#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**baseId**|String|本次备份任务ID，可用于查询本次备份任务的结果|

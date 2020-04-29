@@ -25,20 +25,20 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**result**|[Result](user-content-describeclusterinfo#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**info**|[ClusterInfo](user-content-describeclusterinfo#clusterinfo)|集群内部信息|
-### <div id="ClusterInfo">ClusterInfo</div>
+### <div id="clusterinfo">ClusterInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**proxies**|[Proxy](user-content-describeclusterinfo#proxy)|proxy列表|
 |**shards**|[Shard](user-content-describeclusterinfo#shard)|shard列表|
-### <div id="Shard">Shard</div>
+### <div id="shard">Shard</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |
-### <div id="Proxy">Proxy</div>
+### <div id="proxy">Proxy</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |

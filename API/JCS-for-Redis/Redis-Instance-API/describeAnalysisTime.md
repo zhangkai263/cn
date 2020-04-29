@@ -25,7 +25,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**result**|[Result](user-content-describeanalysistime#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**time**|String|-表示为关闭，HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|

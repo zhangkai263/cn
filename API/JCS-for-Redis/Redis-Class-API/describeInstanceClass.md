@@ -26,12 +26,12 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/instanceClass
 |**result**|[Result](user-content-describeinstanceclass#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceClasses**|[InstanceClass[]](user-content-describeinstanceclass#instanceclass)| |
 |**totalCount**|Integer| |
-### <div id="InstanceClass">InstanceClass</div>
+### <div id="instanceclass">InstanceClass</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceClass**|String|规格代码：redis 2.8与redis 4.0的规格码不同，具体参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications|
