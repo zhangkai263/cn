@@ -24,13 +24,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|结果|
+|**result**|[Result](describecacheanalysislist#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**analyses**|[CacheAnalysis[]](#cacheanalysis)|缓存分析列表，最多返回12条数据|
+|**analyses**|[CacheAnalysis[]](describecacheanalysislist#cacheanalysis)|缓存分析列表，最多返回12条数据|
 ### <div id="cacheanalysis">CacheAnalysis</div>
 |名称|类型|描述|
 |---|---|---|

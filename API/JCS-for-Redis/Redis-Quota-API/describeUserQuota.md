@@ -21,13 +21,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/quota
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeuserquota#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**quota**|[Quota](#quota)| |
+|**quota**|[Quota](describeuserquota#quota)| |
 ### <div id="quota">Quota</div>
 |名称|类型|描述|
 |---|---|---|
