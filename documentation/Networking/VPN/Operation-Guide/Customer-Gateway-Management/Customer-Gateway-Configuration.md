@@ -4,9 +4,9 @@
 
 ### 操作步骤
 ##### 1.创建客户网关
-a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
-b)选择地域，点击“创建”；</br>
-c)输入客户网关的名称、BGP ASN、公网地址个数、公网地址、描述，创建客户网关；</br>
+a)登录[客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  <br />
+b)选择地域，点击“创建”；<br />
+c)输入客户网关的名称、BGP ASN、公网地址个数、公网地址、描述，创建客户网关；<br />
 * BGP ASN用于VPN云端和客户端之间运行BGP路由协议时建立BGP会话使用，云端和客户端之间运行EBGP。
 * 客户网关支持多个公网地址，基于业务高可用的考虑，请客户端至少使用两个公网地址与云端建立VPN隧道；
 
@@ -18,16 +18,16 @@ c)输入客户网关的名称、BGP ASN、公网地址个数、公网地址、�
 ![](../../../../../image/Networking/VPN/Operation-Guide/create-cgw.png)
 
 ##### 2.修改客户网关
-您可对客户网关的名称、描述及公网地址进行修改。</br>
-a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
-b)选择相应的客户网关，进入客户网关详情页面；</br>
-c)支持修改客户网关名称、描述及公网地址，各配置项的限制同创建客户网关，当该客户网关未创建VPN隧道时可以修改公网地址；</br>
+您可对客户网关的名称、描述及公网地址进行修改。<br />
+a)登录[客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  <br />
+b)选择相应的客户网关，进入客户网关详情页面；<br />
+c)支持修改客户网关名称、描述及公网地址，各配置项的限制同创建客户网关，当该客户网关未创建VPN隧道时可以修改公网地址；<br />
 ![](../../../../../image/Networking/VPN/Operation-Guide/update-cgw.png)
 
 ##### 3.删除客户网关
-若您不再需要客户网关，可将其删除。</br>
-a)登录[京东云客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  </br>
-b)选择相应的客户网关，点击操作列中的“删除”，当该客户网关未创建VPN连接时可以删除；</br>
+若您不再需要客户网关，可将其删除。<br />
+a)登录[客户网关控制台](https://cns-console.jdcloud.com/host/customerGateway/list)；  <br />
+b)选择相应的客户网关，点击操作列中的“删除”，当该客户网关未创建VPN连接时可以删除；<br />
 ![](../../../../../image/Networking/VPN/Operation-Guide/delete-cgw.png)
 
 

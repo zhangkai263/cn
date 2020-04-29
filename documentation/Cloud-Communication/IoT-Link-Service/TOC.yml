@@ -1,4 +1,4 @@
-name: 物联网卡服务
+name: 物联网连接服务
 href: 
 items:
 - name: 产品简介
@@ -31,13 +31,19 @@ items:
       href: Pricing/Renew-Process.md
 - name: 操作指南
   items:
-    - name: 物联网卡购买
-      href: Operation-Guide/Purchase.md
-    - name: 订单管理
-      href: Operation-Guide/OrderManagement.md
-    - name: 概览
+    - name: 物联网连接服务概览
       href: Operation-Guide/Overview.md
-    - name: 物联网卡管理
+    - name: 物联网连接服务管理
       href: Operation-Guide/QueryCardManagement.md
+    - name: 物联网连接服务订单
+      href: Operation-Guide/OrderManagement.md
+    - name: 物联网连接服务购买
+      href: Operation-Guide/Purchase.md
+- name: 相关协议
+  items:
+    - name: 服务协议
+      href: Service-Agreements-and-Guarantees/IoT-Link-Service-Term.md
+    - name: SLA服务等级协议
+      href: Service-Agreements-and-Guarantees/IoT-Link-Service-SLA.md
 - name: 常见问题
   href: FAQ/FAQ.md

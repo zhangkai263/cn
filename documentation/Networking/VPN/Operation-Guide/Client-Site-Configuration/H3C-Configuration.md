@@ -1,5 +1,5 @@
-jdcloud_ike_peer_test## 华三防火墙设备IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+## 华三防火墙设备IPsec VPN配置
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以华三 MSR800为例，讲述如何在华三设备上配置VPN，适用于H3C MSR系列防火墙，其它系列设备请参考此示例进行配置。
 
@@ -39,7 +39,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 1.登录防火墙设备的命令行配置界面；
 
 2.配置IKE策略：
-```shell
+```
   # config dpd
   ike dpd jdvpndpd
     interval-time 10
@@ -57,7 +57,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 3.配置身份认证及预共享密钥：
-```shell
+```
   # config authentication and psk
   ike peer jdcloud_ike_peer_test
     remote-address 116.xxx.xxx.10
@@ -69,7 +69,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 4.配置IPsec策略及隧道：
-```shell
+```
   ipsec sha2 compatible enable
 
   # config ipsec security protocol
@@ -92,7 +92,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 5.配置隧道：
-```shell
+```
   # use ipsec with physical interface
   interface jdcloud_tunnel1
     ip address 169.254.1.1 255.255.255.252
@@ -107,13 +107,13 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 ```
 
 6.配置ACL，允许所需的网段通信：
-```shell
+```
   acl number 3002
     rule 5 permit ip source 10.0.0.0 0.0.255.255 destination 192.168.0.0 0.0.0.255
 ```
 
 7.配置路由(以静态路由为例)：
-```shell
+```
   ip route-static 192.168.0.0 255.255.255.0 116.xxx.xxx.10
 ```
 

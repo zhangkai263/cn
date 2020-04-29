@@ -35,7 +35,7 @@ v1
 |**setAddons**|POST|设置集群组件|
 |**setAutoRepair**|POST|设置工作节点组的自动修复|
 |**setAutoUpgrade**|POST|设置自动升级|
-|**setNodeGroupCA**|POST|设置工作节点组自动伸缩|
+|**setNodeGroupCA**|POST|设置工作节点组自动扩容|
 |**setNodeGroupSize**|POST|调整工作节点组实例数量|
 |**setUserMetrics**|POST|Deprecated 建议使用 setAddons 接口 <br>设置用户自定义监控状态|
 |**upgradeCluster**|POST|触发升级|

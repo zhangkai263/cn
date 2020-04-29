@@ -1,31 +1,31 @@
-# Linuxç³»ç»Ÿæ°¸ä¹…é…ç½®
+# LinuxÏµÍ³ÓÀ¾ÃÅäÖÃ
 
-æœ¬æ•™ç¨‹ä»¥CentOS 6.8æ“ä½œç³»ç»Ÿä¸ºä¾‹ï¼Œä»‹ç»å¦‚ä½•åœ¨äº‘ä¸»æœºå†…é…ç½®å¼¹æ€§ç½‘å¡ï¼ˆè¯¥æ–¹æ³•æ°¸ä¹…ä¿å­˜å¼¹æ€§ç½‘å¡é…ç½®ï¼Œäº‘ä¸»æœºé‡å¯åŽä¾ç„¶ç”Ÿæ•ˆï¼‰ã€‚
+±¾½Ì³ÌÒÔCentOS 6.8²Ù×÷ÏµÍ³ÎªÀý£¬½éÉÜÈçºÎÔÚÔÆÖ÷»úÄÚÅäÖÃµ¯ÐÔÍø¿¨£¨¸Ã·½·¨ÓÀ¾Ã±£´æµ¯ÐÔÍø¿¨ÅäÖÃ£¬ÔÆÖ÷»úÖØÆôºóÒÀÈ»ÉúÐ§£©¡£
 
-**æ³¨æ„ï¼šä¸­æ‹¬å·ä¸­çš„å†…å®¹ä¸ºç”¨æˆ·è‡ªè¡Œå¡«å†™å†…å®¹ã€‚**
+**×¢Òâ£ºÖÐÀ¨ºÅÖÐµÄÄÚÈÝÎªÓÃ»§×ÔÐÐÌîÐ´ÄÚÈÝ¡£**
 
-## æ“ä½œæ­¥éª¤
-æ­¥éª¤1ï¼šåœ¨äº¬ä¸œäº‘æŽ§åˆ¶å°å°†å¼¹æ€§ç½‘å¡ç»‘å®šè‡³ç›®æ ‡äº‘ä¸»æœºã€‚
+## ²Ù×÷²½Öè
+²½Öè1£ºÔÚ¾©¶«ÖÇÁªÔÆ¿ØÖÆÌ¨½«µ¯ÐÔÍø¿¨°ó¶¨ÖÁÄ¿±êÔÆÖ÷»ú¡£
 
-æ­¥éª¤2ï¼šé€šè¿‡SSHæ–¹å¼è¿œç¨‹ç™»å½•è‡³ç›®æ ‡äº‘ä¸»æœºã€‚
+²½Öè2£ºÍ¨¹ýSSH·½Ê½Ô¶³ÌµÇÂ¼ÖÁÄ¿±êÔÆÖ÷»ú¡£
 
-æ­¥éª¤3ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤æŸ¥è¯¢å·²æŒ‚è½½çš„å¼¹æ€§ç½‘å¡åç§°ã€‚
+²½Öè3£ºÖ´ÐÐÒÔÏÂÃüÁî²éÑ¯ÒÑ¹ÒÔØµÄµ¯ÐÔÍø¿¨Ãû³Æ¡£
 
 	# ifconfig -a
 
-æ­¥éª¤4ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤è¿›å…¥ç½‘å¡é…ç½®æ–‡ä»¶ç›®å½•ã€‚
+²½Öè4£ºÖ´ÐÐÒÔÏÂÃüÁî½øÈëÍø¿¨ÅäÖÃÎÄ¼þÄ¿Â¼¡£
 
 	# cd /etc/sysconfig/network-scripts
 
-æ­¥éª¤5ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤åˆ›å»ºå¼¹æ€§ç½‘å¡é…ç½®æ–‡ä»¶ã€‚
+²½Öè5£ºÖ´ÐÐÒÔÏÂÃüÁî´´½¨µ¯ÐÔÍø¿¨ÅäÖÃÎÄ¼þ¡£
 
 	# touch ifcfg-[device name]
 
-æ­¥éª¤6ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤å¯ç”¨å¼¹æ€§ç½‘å¡é…ç½®æ–‡ä»¶ç¼–è¾‘ã€‚
+²½Öè6£ºÖ´ÐÐÒÔÏÂÃüÁîÆôÓÃµ¯ÐÔÍø¿¨ÅäÖÃÎÄ¼þ±à¼­¡£
 
 	# vi ifcfg-[device name]
 
-æ­¥éª¤7ï¼šåœ¨å¼¹æ€§ç½‘å¡é…ç½®æ–‡ä»¶ä¸­è¦†ç›–å¡«å†™ä¸€ä¸‹å†…å®¹ã€‚
+²½Öè7£ºÔÚµ¯ÐÔÍø¿¨ÅäÖÃÎÄ¼þÖÐ¸²¸ÇÌîÐ´Ò»ÏÂÄÚÈÝ¡£
 
 	DEVICE=[device name]
 	NM_CONTROLLED=yes
@@ -33,7 +33,7 @@
 	IPADDR=[primary ip]
 	NETMASK=[netmask]
 
-æ­¥éª¤8ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤é‡å¯ç½‘ç»œæœåŠ¡ä»¥ä½¿é…ç½®ç”Ÿæ•ˆã€‚
+²½Öè8£ºÖ´ÐÐÒÔÏÂÃüÁîÖØÆôÍøÂç·þÎñÒÔÊ¹ÅäÖÃÉúÐ§¡£
 
 	# service network restart
 

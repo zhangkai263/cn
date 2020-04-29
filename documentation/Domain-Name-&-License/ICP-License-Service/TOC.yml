@@ -11,10 +11,24 @@ items:
             href: Getting-Started/Process/Addition-Filing.md
           - name: 新增网站（有主体）
             href: Getting-Started/Process/Addition-Website.md
+          - name: 新增网站（无主体）
+            href: Getting-Started/Process/Addition-Website-Without-Subject.md
+          - name: 主体变更
+            href: Getting-Started/Process/Subject-Change.md 
           - name: 网站变更
             href: Getting-Started/Process/Change-Website.md 
           - name: 变更接入
-            href: Getting-Started/Process/Change-Access.md     
+            href: Getting-Started/Process/Change-Access.md  
+          - name: 新增接入（有主体）
+            href: Getting-Started/Process/New-Access-Subject.md
+          - name: 新增接入（无主体）
+            href: Getting-Started/Process/New-Access-Without-Subject.md
+          - name: 主体注销
+            href: Getting-Started/Process/Subject-Cancellation.md
+          - name: 网站注销
+            href: Getting-Started/Process/Website-Cancellation.md
+          - name: 取消接入
+            href: Getting-Started/Process/Cancel-Access.md    
       - name: 管局规则
         items:
           - name: 安徽
@@ -85,10 +99,10 @@ items:
         href: FAQ/Public-Security-Bureau-Filing-Common-Problems.md
       - name: 经营性ICP备案
         href: FAQ/Operational-ICP-Filing.md
-      - name: 取消接入说明
-        href: FAQ/Cancel-Access.md
       - name: 接入备案说明
         href: FAQ/Access-Filing-Notes.md
+      - name: 网站备案号超链接设置
+        href: FAQ/About-Adding-Hyperlink-Of-Record-Number-To-Website.md
   - name: 用户协议
     items:
        - name: 协助更改备案信息服务在线服务条款
@@ -123,9 +137,9 @@ items:
          href: Process/Provincial-supplementary-materials.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
-       - name: 京东云“备案用时多久送多久”说明
+       - name: 京东智联云“备案用时多久送多久”说明
          href: Process/How-long-does-it-take-to-file-for-a-long-time.md
        - name: 线下备案注销汇总
          href: Process/Offline-cancel-cancellation-summary.md
-       - name: 京东云备案注销申请方式
+       - name: 京东智联云备案注销申请方式
          href: Process/Cancel-Filing-application-method.md

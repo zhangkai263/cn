@@ -21,7 +21,7 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/
 |**subnetId**|String|True| |LoadBalancer所属子网的Id|
 |**type**|String|False| |LoadBalancer的类型，取值：alb、nlb、dnlb，默认为alb|
 |**azs**|String[]|True| |【alb，nlb】LoadBalancer所属availability Zone列表,对于alb,nlb是必选参数 <br>【dnlb】全可用区可用，不必传该参数|
-|**chargeSpec**|[ChargeSpec](createloadbalancer#chargespec)|False| |【alb】支持按用量和按配置(按配置即将下线，请勿使用，已使用该计费方式的服务后续请使用按用量方式创建alb)计费，默认为按用量，目前免费。【nlb】支持按用量计费，目前免费。【dnlb】支持按配置计费，目前免费|
+|**chargeSpec**|[ChargeSpec](createloadbalancer#chargespec)|False| |【alb】支持按用量计费。【nlb】支持按用量计费。【dnlb】支持按配置计费|
 |**elasticIp**|[ElasticIpSpec](createloadbalancer#elasticipspec)|False| |负载均衡关联的弹性IP规格|
 |**securityGroupIds**|String[]|False| |【alb】 安全组 ID列表|
 |**description**|String|False| |LoadBalancer的描述信息,允许输入UTF-8编码下的全部字符，不超过256字符|

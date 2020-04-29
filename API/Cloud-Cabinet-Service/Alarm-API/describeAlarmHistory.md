@@ -17,6 +17,8 @@ https://jdccs.jdcloud-api.com/v1/alarmHistory
 |**pageNumber**|Integer|False|1|页码, 默认为1|
 |**pageSize**|Integer|False|20|分页大小，默认为20|
 |**alarmId**|String|False| |报警规则ID|
+|**startTime**|Integer|False| |查询时间范围的开始时间， UNIX时间戳|
+|**endTime**|Integer|False| |查询时间范围的结束时间， UNIX时间戳|
 
 
 ## 返回参数
@@ -56,6 +58,7 @@ https://jdccs.jdcloud-api.com/v1/alarmHistory
 |**alarmStatus**|String|报警状态 normal:正常 alarm:报警|
 |**value**|Double|报警值|
 |**noticeTime**|String|报警时间 遵循ISO8601标准，使用UTC时间，格式为：yyyy-MM-ddTHH:mm:ssZ|
+|**condition**|String|报警条件|
 
 ## 返回码
 |返回码|描述|
