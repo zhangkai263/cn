@@ -4,7 +4,7 @@
 
 云主机和原生容器/POD支持购买的规格族及可用规格详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
 
-无资源预留型实例抵扣券价格：
+无资源预留型实例抵扣券价格（暂不支持华东-宿迁地域购买）：
 
 <table>
    <tr>
