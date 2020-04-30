@@ -30,6 +30,7 @@
 ## 支持购买的规格类型
 无资源预留型实例抵扣券，指定地域、实例类型和规格族后，按计算力<sup>1</sup>购买，目前支持售卖的规格族及如下：<br>
 实例规格详见：[主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [原生容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)
+实例抵扣券定价及计费规则详见：[价格总览](https://docs.jdcloud.com/price-and-billing-rules-of-instancevoucher)
 
     请注意：
      1、通用共享型、计算优化共享型及GPU虚拟化型规格暂不支持购买实例抵扣券；
@@ -175,23 +176,9 @@
 ## 抵扣规则
 * 在您成功购买实例抵扣券后，系统会根据实例规格族、计算力，将抵扣券按照按配置计费实例的结算周期（一小时）折合成可量化的计算量<sup>[3](instancevoucher-overview#user-content-1)</sup>（每小时可用计算量：规格尺寸* 实例数量* 3600s），供按配置实例结算时抵扣；<br>
 * 每有按配置计费实例结算时（整点结算或删除结算），会判断该规格是否有可用的实例抵扣券（地域、规格族、有效期），如有则计算实例消耗的计算量，扣减本结算周期内可用计算量，若无可用实例抵扣券则正常扣款结算；<br>
-* 若当前结算周期内可用计算量仅可抵扣部分实例消耗，则剩余未抵扣计算量按比例依据规格定价进行扣款结算：规格单价/（规格尺寸* 3600s）* （实例计算量-已抵扣计算量），详细抵扣记录可前往[费用管理-实例券管理-抵扣明细](https://ri.jdcloud.com/instances/useList)查看；<br>
+* 若当前结算周期内可用计算量仅可抵扣部分实例消耗，则剩余未抵扣计算量按比例依据规格定价进行扣款结算：规格单价/（规格尺寸* 3600s）* （实例计算量-已抵扣计算量），抵扣记录查看方式请参考文档[查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-instancevoucher)；<br>
 * 实例抵扣券每小时可用计算量无论是否被实例全部抵扣，都不会进行累计或退款；
 
-## 计费规则
-### 计费说明
-* 实例抵扣券仅支持预付费，购买时长支持1个月~9个月、1年、2年及3年；
-* 有效时间：（无论您在一个自然小时内的何时下单成功购买抵扣券，在第一个自然小时结算周期内均具有相当于1个小时的计算量，因此购买成功后抵扣券的生效时间会早于创建时间）
-  * 起始时间：购买成功时刻的上一个整点时刻，如购买时刻为"2020-04-25 9:50:00"，则生效起始时间为"2020-04-25 9:00:00"
-  * 终止时间：到期日期当前的23:59:59，如购买日期为"2020-04-25"，时长为1个月，则生效终止时间为"2020-05-25 23:59:59"
-      
-        Tips：
-        如您计划购买实例抵扣券用于新购资源，建议您先完成按配置计费实例的购买，然后在第一次整点结算前完成实例抵扣券的购买。
-
-### 到期停服说明
-* 当您购买的实例抵扣券到期时间早于或等于当前时间，其计费状态会变更为已到期。到期后抵扣券即刻失效无法再用于实例抵扣；<br>
-* 由于实例抵扣券**到期后不支持续费**，请您务必留意资源到期情况，在到期前完成续费或提前设置[自动续费](https://docs.jdcloud.com/online-buying/renew-management)<br>
-* 实例抵扣券到期后不会自动删除，以便您查看既往购买记录，您可在控制台随时删除此类实例抵扣券。抵扣券到期后配额会自动释放，不会影响您新购资源。
 
 <div id="user-content-1"></div>
 
@@ -204,6 +191,8 @@
 ## 相关参考
 [购买实例抵扣券](https://docs.jdcloud.com/virtual-machines/purchase-instancevoucher)
 
-[查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-voucher)
+[价格及计费规则](https://docs.jdcloud.com/virtual-machines/price-and-billing-rules-of-instancevoucher)
 
-[续费及删除](https://docs.jdcloud.com/virtual-machines/renew-and-delete)
+[查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-instancevoucher)
+
+[续费及删除抵扣券](https://docs.jdcloud.com/virtual-machines/renew-and-delete-instancevoucher)
