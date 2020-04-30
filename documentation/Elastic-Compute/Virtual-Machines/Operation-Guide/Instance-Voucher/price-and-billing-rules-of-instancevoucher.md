@@ -134,4 +134,4 @@
 
 [云主机价格总览](https://docs.jdcloud.com/virtual-machines/price-overview)
 
-[原生容器/POD规格及定价](https://docs.jdcloud.com/native-container/price-overview)<br>
+[原生容器/POD规格及价格](https://docs.jdcloud.com/native-container/price-overview)<br>
