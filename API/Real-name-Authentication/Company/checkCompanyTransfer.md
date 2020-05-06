@@ -2,7 +2,7 @@
 
 ## 描述
 
-对公打款查询
+小额打款验证
 
 ## 请求方式
 
@@ -27,10 +27,10 @@ https://cloudauth.jdcloud-api.com/v1/company:check
 
 ## 返回参数
 
-| 名称       | 类型   | 描述   |
-| ---------- | ------ | ------ |
-| **result** | Result |        |
-|            | String | 请求ID |
+| 名称          | 类型   | 描述   |
+| ------------- | ------ | ------ |
+| **result**    | Result |        |
+| **requestId** | String | 请求ID |
 
 ### <div id="Result">Result</div>
 

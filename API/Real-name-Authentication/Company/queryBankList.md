@@ -19,7 +19,7 @@ https://cloudauth.jdcloud-api.com/v1/query:bankList
 |名称|类型|描述|
 |---|---|---|
 |**result**| Result |        |
-|            |String|请求ID|
+| **requestId** |String|请求ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
