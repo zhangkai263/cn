@@ -18,7 +18,7 @@ v1
 |**companyTransfer**|POST|对公银行账户打款(随机小额)|
 |**checkCompanyTransfer**|POST|小额打款验证|
 |**checkLegalPerson**|POST|法人信息校验|
-|**queryBankBranchList**|POST|查询城市下银行分行列表|
+|**queryBankBranchList**|GET|查询城市下银行分行列表|
 |**queryBankList**|GET|查询所有支持的银行|
 |**queryCityList**|GET|查询省份下城市编码|
 |**queryProvinceList**|GET|查询所有省份列表|
