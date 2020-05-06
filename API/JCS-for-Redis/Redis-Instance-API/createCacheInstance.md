@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），不同规格价格也不同，具体可参考产品规格代码，https://docs.jdcloud.com/cn/jcs-for-redis/specifications。自定义分片规格可通过describeSpecConfig接口获取
+创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），自定义分片规格可通过describeSpecConfig接口获取，老规格代码请参考，https://docs.jdcloud.com/cn/jcs-for-redis/specifications
 
 
 ## 请求方式
@@ -18,8 +18,8 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cacheInstance**|[CacheInstanceSpec](createcacheinstance#cacheinstancespec)|True| |实例的创建参数|
-|**charge**|[ChargeSpec](createcacheinstance#chargespec)|False| |实例的计费类型|
+|**cacheInstance**|[CacheInstanceSpec](user-content-createcacheinstance#cacheinstancespec)|True| |实例的创建参数|
+|**charge**|[ChargeSpec](user-content-createcacheinstance#chargespec)|False| |实例的计费类型|
 
 ### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -37,11 +37,11 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**cacheInstanceName**|String|True| |缓存Redis实例名称，只支持数字、字母、英文下划线、中文，且不少于2字符不超过32字符|
 |**cacheInstanceClass**|String|True| |缓存Redis实例的规格代码（可调用describeInstanceClass接口获取），或者自定义分片实例的单分片规格代码（可调用describeSpecConfig接口获取）|
 |**password**|String|False| |缓存Redis实例的连接密码，为空即为免密，包含且只支持字母及数字，不少于8字符不超过16字符|
-|**azId**|[AzIdSpec](createcacheinstance#azidspec)|True| |缓存Redis实例所在区域的可用区ID|
+|**azId**|[AzIdSpec](user-content-createcacheinstance#azidspec)|True| |缓存Redis实例所在区域的可用区ID|
 |**cacheInstanceDescription**|String|False| |缓存Redis实例的描述，不能超过256个字符|
 |**redisVersion**|String|False| |缓存Redis引擎主次版本号：目前支持2.8和4.0，默认为2.8|
 |**ipv6On**|Integer|False| |是否支持IPv6，0或空表示不支持，1表示支持IPv6，注意不是所有区域都支持IPv6，且必须保证VPC支持IPv6|
-|**shardNumber**|Integer|False| |自定义分片数，只对自定义规格实例有效|
+|**shardNumber**|Integer|False| |分片数，只对自定义分片规格实例有效，主从版固定为1，集群版大于1。每种分片规格支持的分片数可调用describeSpecConfig接口获取|
 ### <div id="azidspec">AzIdSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -51,7 +51,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createcacheinstance#result)|结果|
+|**result**|[Result](user-content-createcacheinstance#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>

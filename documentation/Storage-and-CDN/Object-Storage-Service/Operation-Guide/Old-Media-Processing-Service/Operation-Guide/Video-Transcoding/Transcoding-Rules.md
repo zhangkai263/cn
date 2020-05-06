@@ -1,8 +1,5 @@
-# 概述
-
-视频处理是京东云对象存储提供的在云端完成对视频资源进行编码格式转换的服务。
-
-视频处理规则：
+# 转码基本规则
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
 
 输入格式支持目前绝大部分主流的音视频格式，如mp4、flv、avi、rmvb、wmv、hls等；
 

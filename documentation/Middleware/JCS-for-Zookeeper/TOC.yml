@@ -35,6 +35,8 @@ items:
       href: Operation-Guide/Change-ZK.md
     - name: 删除实例
       href: Operation-Guide/Delete-ZK.md
+    - name: Observer节点
+      href: Operation-Guide/Observer.md
     - name: 监控报警
       href: Operation-Guide/Monitoring.md
     - name: 访问控制

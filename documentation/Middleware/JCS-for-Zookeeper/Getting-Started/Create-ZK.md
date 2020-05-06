@@ -15,6 +15,10 @@
 * “节点规格”：可以根据具体业务情况选择不同云主机规格。</br>
 * “存储规格”：可以根据具体业务情况选择不同存储规格。</br>
 * “节点数量”：支持工单方式提升节点配额。</br> 
+* “Observer节点开关”：开启Observer节点能够在不伤害写性能的情况下扩展Zookeeper，建议开启。</br>
+* “Observer节点规格”：与数据节点规格一致，无需选择。</br>
+* “Observer节点数量”：支持工单方式提升节点配额。。</br>
+* “Observer节点存储”：与数据节点存储一致，无需选择。</br>
 * “私有网络”： 京东公有云上自定义的逻辑隔离的网络空间，更多说明请参见[私有网络功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-features)。</br>
 * “子网”： 子网是所属VPC IP地址范围内的 IP 地址块，更多说明请参见[子网功能]( https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。</br>
 3. 规格确认完成后，单击“立即购买”跳转至付费页面。</br>

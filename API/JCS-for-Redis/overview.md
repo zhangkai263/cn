@@ -14,7 +14,7 @@ v1
 |---|---|---|
 |**createBackup**|POST|创建并执行缓存Redis实例的备份任务，只能为手动备份，可设置备份文件名称|
 |**createCacheAnalysis**|POST|创建缓存分析任务，一天最多创建12次分析任务|
-|**createCacheInstance**|POST|创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），不同规格价格也不同，具体可参考产品规格代码，https://docs.jdcloud.com/cn/jcs-for-redis/specifications。自定义分片规格可通过describeSpecConfig接口获取<br>|
+|**createCacheInstance**|POST|创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），自定义分片规格可通过describeSpecConfig接口获取，老规格代码请参考，https://docs.jdcloud.com/cn/jcs-for-redis/specifications<br>|
 |**deleteCacheInstance**|DELETE|删除按配置计费、或包年包月已到期的缓存Redis实例，包年包月未到期不可删除。<br>只有处于运行running或者错误error状态才可以删除，其余状态不可以删除。<br>白名单用户不能删除包年包月已到期的缓存Redis实例。<br>|
 |**describeAnalysisTime**|GET|获取自动缓存分析时间|
 |**describeBackupPolicy**|GET|查询缓存Redis实例的自动备份策略|

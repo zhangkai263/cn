@@ -19,9 +19,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码：取值范围[1,∞)，默认为1|
 |**pageSize**|Integer|False| |分页大小：取值范围[10, 100]，默认为10|
-|**filters**|[Filter[]](describecacheinstances#filter)|False| |过滤属性：<br>cacheInstanceId - 实例Id，精确匹配，可选择多个<br>cacheInstanceName - 实例名称，模糊匹配<br>cacheInstanceStatus - 实例状态，精确匹配，可选择多个(running：运行中，error：错误，creating：创建中，changing：变配中，configuring：参数修改中，restoring：备份恢复中，deleting：删除中)<br>redisVersion - redis引擎版本，精确匹配，可选择2.8和4.0<br>instanceType - 实例类型，精确匹配（redis表示主从版，redis_cluster表示集群版）<br>chargeMode - 计费类型，精确匹配（prepaid_by_duration表示包年包月预付费，postpaid_by_duration表示按配置后付费）<br>|
-|**sorts**|[Sort[]](describecacheinstances#sort)|False| |排序属性：<br>createTime - 按创建时间排序(asc表示按时间正序，desc表示按时间倒序)<br>|
-|**tagFilters**|[TagFilter[]](describecacheinstances#tagfilter)|False| |标签的过滤条件|
+|**filters**|[Filter[]](user-content-describecacheinstances#filter)|False| |过滤属性：<br>cacheInstanceId - 实例Id，精确匹配，可选择多个<br>cacheInstanceName - 实例名称，模糊匹配<br>cacheInstanceStatus - 实例状态，精确匹配，可选择多个(running：运行中，error：错误，creating：创建中，changing：变配中，configuring：参数修改中，restoring：备份恢复中，deleting：删除中)<br>redisVersion - redis引擎版本，精确匹配，可选择2.8和4.0<br>instanceType - 实例类型，精确匹配（redis表示主从版，redis_cluster表示集群版）<br>chargeMode - 计费类型，精确匹配（prepaid_by_duration表示包年包月预付费，postpaid_by_duration表示按配置后付费）<br>|
+|**sorts**|[Sort[]](user-content-describecacheinstances#sort)|False| |排序属性：<br>createTime - 按创建时间排序(asc表示按时间正序，desc表示按时间倒序)<br>|
+|**tagFilters**|[TagFilter[]](user-content-describecacheinstances#tagfilter)|False| |标签的过滤条件|
 
 ### <div id="tagfilter">TagFilter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -43,36 +43,36 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describecacheinstances#result)|结果|
+|**result**|[Result](user-content-describecacheinstances#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**cacheInstances**|[CacheInstance[]](describecacheinstances#cacheinstance)|分页后的实例列表|
+|**cacheInstances**|[CacheInstance[]](user-content-describecacheinstances#cacheinstance)|分页后的实例列表|
 |**totalCount**|Integer|实例总数|
 ### <div id="cacheinstance">CacheInstance</div>
 |名称|类型|描述|
 |---|---|---|
 |**cacheInstanceId**|String|实例ID|
 |**cacheInstanceName**|String|实例名称|
-|**cacheInstanceClass**|String|规格代码，或者自定义分片实例的单分片规格代码，参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications|
+|**cacheInstanceClass**|String|规格代码，或者自定义分片实例的单分片规格代码|
 |**cacheInstanceMemoryMB**|Integer|实例的总内存（MB）|
 |**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中|
 |**cacheInstanceDescription**|String|实例描述|
 |**createTime**|String|创建时间（ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ）|
-|**azId**|[AzId](describecacheinstances#azid)|az信息|
+|**azId**|[AzId](user-content-describecacheinstances#azid)|az信息|
 |**vpcId**|String|实例所属VPC ID|
 |**subnetId**|String|实例所属子网ID|
 |**connectionDomain**|String|实例的访问域名|
 |**port**|Integer|实例的访问端口|
-|**charge**|[Charge](describecacheinstances#charge)|实例的计费信息|
+|**charge**|[Charge](user-content-describecacheinstances#charge)|实例的计费信息|
 |**instanceVersion**|String|实例的详细版本号，形如x.x-x.x|
 |**auth**|Boolean|连接redis实例时，是否需要密码认证，false表示无密码|
 |**redisVersion**|String|创建实例时选择的redis引擎版本：目前支持2.8和4.0|
 |**cacheInstanceType**|String|实例类型：master-slave表示主从版，cluster表示集群版|
 |**ipv6On**|Integer|是否支持IPv6，0表示不支持（只能用IPv4），1表示支持|
-|**tags**|[Tag[]](describecacheinstances#tag)|标签信息|
+|**tags**|[Tag[]](user-content-describecacheinstances#tag)|标签信息|
 |**shardNumber**|Integer|实例分片数，自定义分片规格的实例分片数由用户创建时选择，其他实例为固定分片数|
 |**memoryMBPerShard**|Integer|单分片内存大小（MB）|
 ### <div id="tag">Tag</div>

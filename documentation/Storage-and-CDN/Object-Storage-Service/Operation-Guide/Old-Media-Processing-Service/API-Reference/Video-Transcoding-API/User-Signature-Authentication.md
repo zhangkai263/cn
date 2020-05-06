@@ -1,4 +1,5 @@
 # 视频处理签名认证
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
 
 用户可以在HTTP请求中增加 Authorization 的Header来包含签名（Signature）信息，表明这个消息已被授权。
 
@@ -45,9 +46,9 @@ StringToSign =HTTP-Verb + "\n"
 
 如x-jss-server-side-encryption:  false转换成：x-jss-server-side-encryption:false
 
-4.将每一个头和内容用\n分隔符分隔拼成最后的CanonicalizedHeaders。
+1.将每一个头和内容用\n分隔符分隔拼成最后的CanonicalizedHeaders。
 
-5.如果没有以x-jss-为前缀的HTTP请求头，则CanonicalizedHeaders为空字符串""。
+2.如果没有以x-jss-为前缀的HTTP请求头，则CanonicalizedHeaders为空字符串""。
 
 注意:
 
@@ -127,7 +128,7 @@ String signature =  new String(Base64.encodeBase64(rawHmac), "UTF-8");
 ```
 
 签名(Signature)计算结果应该为xvj2Iv7WcSwnN26XYnTq/c2YBQs=，因为
-Authorization = “jingdong ” + AccessKey + “:” + Signature所以最后Authorization为 “jingdong qbS5QXpLORrvdrmb: xvj2Iv7WcSwnN26XYnTq/c2YBQs=”然后加上Authorization头来组成最后需要发送的消息：
+Authorization = “jingdong “ + AccessKey + “:” + Signature所以最后Authorization为 “jingdong qbS5QXpLORrvdrmb: xvj2Iv7WcSwnN26XYnTq/c2YBQs=”然后加上Authorization头来组成最后需要发送的消息：
 ```
 PUT /sign.txt   HTTP/1.1
   Content-Type: text/plain
@@ -136,14 +137,14 @@ PUT /sign.txt   HTTP/1.1
   Date: Thu, 13 Jul 2017 02:37:31 GMT
   Authorization: jingdong qbS5QXpLORrvdrmb: xvj2Iv7WcSwnN26XYnTq/c2YBQs=
   Content-Length: 20
-  Host: oss.cn-north-1.jcloudcs.com
+  Host: s-bj.jcloud.com
 ```
 细节分析:
 
 1.如果传入的AccessKey不存在或inactive，返回403 Forbidden。错误码：InvalidAccessKey。
 
-2.传入请求的时间必须在京东云存储服务器当前时间之后的15分钟以内，否则返回403 Forbidden。错误码：RequestTimeTooSkewed。
+2.传入请求的时间必须在京东云对象存储服务器当前时间之后的15分钟以内，否则返回403 Forbidden。错误码：RequestTimeTooSkewed。
 
 3.若用户请求头中Authorization值的格式不对，返回400 Bad Request。错误码：InvalidToken。
 
-京东云存储所有的请求都必须使用HTTP 1.1协议规定的GMT时间格式。其中，日期的格式为：Wed, 22 May 2017 05:29:49 GMT
+京东云对象存储所有的请求都必须使用HTTP 1.1协议规定的GMT时间格式。其中，日期的格式为：Wed, 22 May 2017 05:29:49 GMT
