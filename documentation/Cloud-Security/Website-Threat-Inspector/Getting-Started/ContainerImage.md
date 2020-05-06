@@ -13,11 +13,11 @@
 
 点击左侧菜单栏中“镜像安全扫描”，选择镜像仓库中某一个镜像，点击右侧“操作”按钮，进行安全扫描任务创建。
 
-![wts-Container-01](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-01.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-01.png)
 
 根据镜像种类的不同，在创建的扫描任务中，灵活配置“镜像扫描模块”与“关注漏洞等级”，点击确认。
 
-<img src="D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-02.png" alt="wts-Container-02" style="zoom:67%;" />
+![](../../../../image/Website-Threat-Inspector/wts-Container-02.png)
 
 | 扫描任务配置 | 配置内容                             |
 | ------------ | ------------------------------------ |
@@ -28,7 +28,7 @@
 
 点击镜像Digest，进行该镜像扫描任务管理，可以进行配置查看、任务删除、查看安全报表等操作。
 
-![wts-Container-03](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-03.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-03.png)
 
 ### （3）查看镜像安全报表
 
@@ -38,7 +38,7 @@
 
 可以查看已扫描的镜像资产，当前存在的各类安全风险（安全漏洞、恶意软件、敏感信息泄露）
 
-![wts-Container-04](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-04.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-04.png)
 
 | 安全风险总览     | 分类风险内容分类               |
 | ---------------- | ------------------------------ |
@@ -60,12 +60,12 @@
 
 - - 漏洞详情
 
-![wts-Container-05](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-05.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-05.png)
 
 - - 恶意软件详情
 
-![wts-Container-06](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-06.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-06.png)
 
 - - 敏感信息泄露详情
 
-![wts-Container-07](D:\chentongle\Desktop\JD-2020\02-产品文档及官网资料更新\wts-Container-07.png)
+![](../../../../image/Website-Threat-Inspector/wts-Container-07.png)
