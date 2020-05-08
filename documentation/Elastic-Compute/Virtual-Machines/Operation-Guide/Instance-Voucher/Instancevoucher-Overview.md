@@ -42,11 +42,11 @@
 <table>
 	<thead>
    <tr>
-      <td colspan="2"> 在售规格族</td>
-      <td>不支持抵扣的规格</td>
-      <td>主机可购</td>
-      <td>原生容器/POD可购</td>
-      <td>购买单位换算</td>
+      <th colspan="2"> 在售规格族</td>
+      <th>不支持抵扣的规格</td>
+      <th>主机可购</td>
+      <th>原生容器/POD可购</td>
+      <th>购买单位换算</td>
    </tr>
   	</thead>
    <tbody>   
