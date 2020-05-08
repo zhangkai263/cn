@@ -27,8 +27,6 @@
 
 [图片处理](../Operation-Guide/Image-Service-Guide/Introduction-1.md)
 
-[视频处理](../Operation-Guide/Video-Service-Guide/Video-Service-Guide-Overview.md)
-
 [兼容S3 API](../API-Reference-S3-Compatible/Introduction-2.md)
 
 [JAVA SDK](https://docs.jdcloud.com/cn/object-storage-service/installation-s3)
