@@ -9,12 +9,12 @@
 <table>
 	<thead>
    <tr>
-      <td colspan="2" rowspan="2" align="center"> 规格族</td>
-      <td colspan="2" align="center">包月价格（元/计算力*月）</td>
+      <th colspan="2" rowspan="2" align="center"> 规格族</td>
+      <th colspan="2" align="center">包月价格（元/计算力*月）</td>
    </tr>
    <tr>
-      <td align="center">华北-北京/华东-上海/华南-广州</td>         
-      <td>华东-宿迁</td>
+      <th align="center">华北-北京/华东-上海/华南-广州</td>         
+      <th>华东-宿迁</td>
    </tr>
    </thead>
    <tbody>  
