@@ -1,14 +1,15 @@
 # 实例抵扣券概述（产品邀测中）
 
 实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、原生容器/POD实例）费用抵扣。<br>
+
 实例抵扣券将付费和资源创建解耦，其属性决定了可抵扣的实例特征而不限于具体某个或某些实例，因此既可满足有长期资源使用计划时的经济性考量，又可满足保持资源创删灵活的需求。
 
 ## 实例抵扣券分类
-从适用实例类型的角度划分，可分为**云主机实例抵扣券**和**原生容器/POD实例抵扣券**：
+从适用实例类型的角度划分，可分为 **云主机实例抵扣券** 和 **原生容器/POD实例抵扣券**：
 * 云主机实例抵扣券：适用于按配置计费云主机实例的抵扣
 * 原生容器实例抵扣券：适用于按配置计费原生容器/POD实例的抵扣
 
-从资源是否预留的角度划分，可分为**无资源预留型**和**资源预留型**两类（目前仅支持无资源预留型实例抵扣券的购买）
+从资源是否预留的角度划分，可分为 **无资源预留型** 和 **资源预留型** 两类（目前仅支持无资源预留型实例抵扣券的购买）
 
 |                   | 无资源预留型                 | 资源预留型     |
 | ------------------- | ------------------- |---------------|
@@ -29,9 +30,9 @@
 <div id="user-content-2"></div>
 
 ## 支持购买的规格类型
-无资源预留型实例抵扣券，指定地域、适用产品和规格族后，按计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>]购买，目前支持售卖的规格族及不支持使用实例券抵扣的规格如下表：<br>
+无资源预留型实例抵扣券，指定地域、适用产品和规格族后，按计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>购买，目前支持售卖的规格族及不支持使用实例券抵扣的规格如下表：<br>
 实例规格详见：[主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [原生容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)<br>
-实例抵扣券定价及计费规则详见：[价格及计费规则](https://docs.jdcloud.com/price-and-billing-rules-of-instancevoucher)
+实例抵扣券定价及计费规则详见：[价格及计费规则](https://docs.jdcloud.com/virtual-machines/price-and-billing-rules-of-instancevoucher)
 
     请注意：
      1、通用共享型、计算优化共享型及GPU虚拟化型规格暂不支持购买实例抵扣券；
@@ -39,6 +40,7 @@
      3、个别实例规格不在抵扣券可抵扣范围内，同时各地域不同可用区下资源售卖情况不同，请在购买抵扣券前务必对已建实例的规格进行确认，并关注计划购买实例规格的售罄情况。
 
 <table>
+	<thead>
    <tr>
       <td colspan="2"> 在售规格族</td>
       <td>不支持抵扣的规格</td>
@@ -46,6 +48,8 @@
       <td>原生容器/POD可购</td>
       <td>购买单位换算</td>
    </tr>
+  	</thead>
+   <tbody>   
    <tr>
       <td rowspan="3">通用-标准</td>
       <td>g.n3</td>
@@ -164,6 +168,7 @@
       <td>√</td>
       <td>× </td>
    </tr>
+ </tbody>
  </table>     
 
 <div id="user-content-3"></div>
@@ -176,7 +181,7 @@
 如需提升配额请[提交工单](https://ticket.jdcloud.com/applyorder/submit)。
 
 ## 抵扣规则
-* 在您成功购买实例抵扣券后，系统会根据实例规格族、计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>，将抵扣券按照按配置计费实例的结算周期（1小时）折合成可量化的计算量<sup>[3](instancevoucher-overview#user-content-1)</sup>（每小时可用计算量：计算力* 3600s），供按配置实例结算时抵扣；<br>
+* 在您成功购买实例抵扣券后，系统会根据实例规格族、计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>，将抵扣券按照按配置计费实例的计费周期（1小时）折合成可量化的计算量<sup>[3](instancevoucher-overview#user-content-1)</sup>（每小时可用计算量：计算力* 3600s），供按配置实例结算时抵扣；<br>
 * 每有按配置计费实例结算时（整点结算或删除结算），会判断该规格是否有可用的实例抵扣券（地域、规格族、有效期），如有则计算实例消耗的计算量，扣减本结算周期内可用计算量，若无可用实例抵扣券则正常扣款结算；<br>
 * 若当前结算周期内可用计算量仅可抵扣部分实例消耗，则剩余未抵扣计算量按比例依据规格定价进行扣款结算：规格单价/（规格尺寸* 3600s）* （实例消耗计算量-已抵扣计算量），抵扣记录查看方式请参考文档[查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-instancevoucher)；<br>
 * 实例抵扣券每小时可用计算量无论是否被实例全部抵扣，都不会进行累计或退款；
@@ -185,9 +190,9 @@
 <div id="user-content-1"></div>
 
 **注释：**<br>
-1、计算力：同一规格族内，反映单实例或多实例集群计算能力的指标。计算力= ∑规格尺寸* 数量（规格尺寸是在同一规格族内衡量规格计算能力的依据，CPU规格通常等于核数，GPU规格通常等于GPU卡数），如您通用标准二代规格族g.n2下有2个2C8G实例和2个4C16G实例，则在该规格族下，4个实例的计算力为2×2 + 4×2=12；<br>
-2、无资源预留型实例抵扣券中，有个别规格不在可抵扣范围内，详见上方：[支持购买的规格类型](instancevoucher-overview#user-content-2)；<br>
-3、计算量：一定计算力在一定时间段内可以完成的计算任务情况，=计算力* 时长（秒）。如，1台g.n2.large实例运行一小时，则其计算量为 1*2*3600。
+1.计算力：同一规格族内，反映单实例或多实例集群计算能力的指标。计算力= ∑规格尺寸×数量（规格尺寸是在同一规格族内衡量规格计算能力的依据，CPU规格通常等于核数，GPU规格通常等于GPU卡数），如您通用标准二代规格族g.n2下有2个2C8G实例和2个4C16G实例，则在该规格族下，4个实例的计算力为2×2 + 4×2=12；<br>
+2.无资源预留型实例抵扣券中，有个别规格不在可抵扣范围内，详见上方：[支持购买的规格类型](instancevoucher-overview#user-content-2)；<br>
+3.计算量：一定计算力在一定时间段内可以完成的计算任务情况，=计算力* 时长（秒）。如，1台g.n2.large实例运行一小时，则其计算量为 1×2×3600。
 
 ## 相关参考
 [购买实例抵扣券](https://docs.jdcloud.com/virtual-machines/purchase-instancevoucher)
@@ -196,4 +201,4 @@
 
 [查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-instancevoucher)
 
-[续费及删除抵扣券](https://docs.jdcloud.com/virtual-machines/renew-and-delete-instancevoucher)
+[管理实例抵扣券](https://docs.jdcloud.com/virtual-machines/manage-instancevoucher)
