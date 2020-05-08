@@ -46,4 +46,28 @@ items:
             href: Transcode-Template/listTranscodeTemplates.md
           - name: 删除转码模板
             href: Transcode-Template/deleteTranscodeTemplate.md
+      - name: 视频截图
+        items:
+          - name: 提交截图任务
+            href: Snapshot/submitSnapshotTask.md
+          - name: 查询截图任务列表
+            href: Snapshot/listSnapshotTasks.md
+          - name: 查询截图任务详情
+            href: Snapshot/getSnapshotTask.md
+      - name: 截图模板管理
+        items:
+          - name: 创建截图模板
+            href: Snapshot-Template/createSnapshotTemplate.md
+          - name: 查询截图模板详情
+            href: Snapshot-Template/getSnapshotTemplate.md
+          - name: 修改截图模板
+            href: Snapshot-Template/modifySnapshotTemplate.md
+          - name: 查询截图模板列表
+            href: Snapshot-Template/listSnapshotTemplates.md
+      - name: 回调配置
+        items:
+          - name: 设置回调配置
+            href: Callback/setCallbackSettings.md
+          - name: 查询回调配置
+            href: Callback/queryCallbackSettings.md
 
