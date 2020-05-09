@@ -18,12 +18,12 @@
 
 规格|规格代码|说明
 :---|:--|:---
-1G标准版|redis.s.micro.basic|标准实例，可选
-2G标准版|redis.s.small.basic	|标准实例，可选
-4G标准版|redis.s.medium.basic|	标准实例，可选
-8G标准版|redis.s.large.basic	|标准实例，可选
-16G标准版|redis.s.xlarge.basic|	标准实例，可选
-32G标准版|redis.s.2xlarge.basic|	标准实例，可选
+1G标准版|redis.m.micro.basic|标准实例，可选
+2G标准版|redis.m.small.basic	|标准实例，可选
+4G标准版|redis.m.medium.basic|	标准实例，可选
+8G标准版|redis.m.large.basic	|标准实例，可选
+16G标准版|redis.m.xlarge.basic|	标准实例，可选
+32G标准版|redis.m.2xlarge.basic|	标准实例，可选
 
 
 ## 集群版
