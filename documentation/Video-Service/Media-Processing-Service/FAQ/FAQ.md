@@ -2,7 +2,7 @@
 
 **Q：媒体处理服务都支持哪些视频文件格式？**
 
-A：支持所有常见文件格式作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式 , 音频支持aac, ac3, acm, amr, ape, caf, mp3, ra, wav, wma）
+A：支持所有常见文件格式作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式 , 音频支持aac, ac3, acm, amr, ape, caf, mp3, ra, wav, wma）。
 
 
 **Q：一个媒体处理任务是否支持创建多个输出？**
