@@ -7,14 +7,17 @@
 无资源预留型实例抵扣券价格（暂不支持华东-宿迁地域购买）：
 
 <table>
+	<thead>
    <tr>
-      <td colspan="2" rowspan="2" align="center"> 规格族</td>
-      <td colspan="2" align="center">包月价格（元/计算力*月）</td>
+      <th colspan="2" rowspan="2" align="center"> 规格族</td>
+      <th colspan="2" align="center">包月价格（元/计算力*月）</td>
    </tr>
    <tr>
-      <td align="center">华北-北京/华东-上海/华南-广州</td>         
-      <td>华东-宿迁</td>
+      <th align="center">华北-北京/华东-上海/华南-广州</td>         
+      <th>华东-宿迁</td>
    </tr>
+   </thead>
+   <tbody>  
    <tr>
       <td rowspan="3">通用-标准</td>
       <td>g.n3</td>
@@ -113,7 +116,8 @@
       <td align="right">6211.25</td>         
       <td align="right">--</td>
    </tr>
- </table>     
+</tbody>  
+</table>     
 
 ## 计费规则
 ### 计费说明
