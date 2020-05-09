@@ -45,6 +45,8 @@ items:
       href: Operation-Guide/File-Monitoring.md     
     - name: 安全报表
       href: Operation-Guide/Security-Report.md    
+    - name: 多云安装
+      href: Operation-Guide/MultiCloud-Install.md  
     - name: 系统设置
       href: Operation-Guide/System-Setting.md        
   - name: 常见问题
