@@ -52,7 +52,7 @@
           "Effect": "Allow",
           "Principal": "jrn:iam::859150329790:root",
           "Action":"sts:assumeRole""
-          "Resource":"*"
+          "Resource":"\*"
          }]
 }
 
