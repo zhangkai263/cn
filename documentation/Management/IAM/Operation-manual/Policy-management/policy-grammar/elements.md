@@ -24,9 +24,8 @@
 
 ### Resource
 必填项，描述京东智联云的一个或多个资源。京东智联云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
-jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
+jrn:<service_code>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
 
-JDCloud资源名称（JDCloud Resource Name，JRN）是用来唯一标识一个JDCloud资源的，我们可以用JRN在JDCLOUD的全局环境中来明确指定一个资源。 详情
 
 角色扮演者(principal)
 选填项，京东云中可以扮演角色的实体用户或者服务。
