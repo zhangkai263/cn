@@ -45,21 +45,14 @@
 选填项，指定允许或拒绝访问资源的委托人。基于身份的策略（系统策略和自定义策略）中不可使用 principal 元素，但在角色的信任策略中，可使用 principal 元素来指定角色的信任实体。示例：
 ```json
 {
-    "app_id":"", // app id 必填
-    "app_key":"", // app key 必填
-    "trial":0, // 是否是正式版。0:试用版， 1:正式版 
-    "extra":"" // 附加字段
-}
-
-{
       "Version": "3",
       "Statement":
-        \[
+        [
         {
           "Effect": "Allow",
           "Principal": "jrn:iam::859150329790:root",
           "Action":"sts:assumeRole""
-          "Resource":"\*"
+          "Resource":"*"
          }]
 }
 
