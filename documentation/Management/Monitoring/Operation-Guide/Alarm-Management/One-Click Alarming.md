@@ -25,7 +25,8 @@
 若内置默认策略无法满足需求，则可以根据需要修改和添加触发条件、通知策略等信息。以云搜索Elasticsearch 为例。具体操作步骤如下：  
 1. 选中云搜索Elasticsearch云服务，点击展开按钮打开一键报警策略列表。点击操作了下的“修改”按钮。打开修改报警规则页面。  
 
-![一键报警2](../../../../../image/Cloud-Monitor/Alarm-Management/2-Oneclick.png) 
+![一键报警2](../../../../../image/Cloud-Monitor/Alarm-Management/2-oneclick.png) 
+
 ![一键报警3](../../../../../image/Cloud-Monitor/Alarm-Management/3-Oneclick.png)
 
 2. 可以根据需要修改触发条件，比如默认的监控周期、报警阈值、持续周期等等，同时也可以增加或删除触发条件；通知策略中通知周期、有效时间、通知条件等信息是内置了常用选项，通知联系人默认为账号联系人，您可以根据需要进行修改。
