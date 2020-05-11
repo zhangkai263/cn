@@ -55,22 +55,6 @@
           "Resource":"*"
          }]
 }
+```
 
-
-{
-      "Version": "3",
-      "Statement":
-        [
-        {
-          "Effect": "Allow",
-          "Action": ["iam:describe*","iam:create*"],
-          "Resource": ["jrn:iam:*:*:subuser/*","jrn:iam:*:*:group/*"],
-          "Condition":
-             {
-                "IpAddress":
-                 {
-                 "Jdcloud:SourceIp":"203.0.113.0/24"
-                  }
-              }
-         }]
-}
+### 策略示例
