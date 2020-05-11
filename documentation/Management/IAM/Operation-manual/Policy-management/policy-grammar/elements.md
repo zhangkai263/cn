@@ -4,8 +4,8 @@
 - Effect 效力
 - Action 操作
 - Resource 资源
-- Principal 委托人
 - Condition 生效条件
+- Principal 委托人
 
 ## 元素详解
 
@@ -13,8 +13,11 @@
 必填项，描述策略语法版本。京东智联云当前的策略版本为 v3。示例：
 > "version": "3"
 
+### Statement
+必填项，描述一条或多条权限的Json信息。该元素包含下述的 effect、action、resource、condition等多个其他元素的权限或权限集合。一条策略有且仅有一个statement 元素。
+
 ### Effect
-必填项，包括 allow(允许)和deny(显式拒绝)两种情况。
+必填项，包括 allow（允许）和deny（显式拒绝）两种情况。
 当同一操作在策略中既有允许（Allow）又有拒绝（Deny）的时，遵循 Deny 优先的原则，操作将被拒绝。示例：
 > "effect":"Allow"
 
@@ -33,20 +36,25 @@
 如指定某产品线的全部资源，其jrn为：
 > "resource":"jrn:rds:\*:859150329790:\*"
 
-### 生效条件(condition)
+### Condition
 选填项，描述策略生效的约束条件。条件包括条件运算符、条件键和条件值组成。京东智联云目前支持指定资源标签作为策略生效条件。
 如指定带有 department = finance 标签的资源，其 condition 为：
 > "Condition": {"ForAnyValue:StringEquals": {"JDCloud:ResourceTag/department":\["finance"\]}}
 
+### Principal
+选填项，指定允许或拒绝访问资源的委托人。基于身份的策略（系统策略和自定义策略）中不可使用 principal 元素，但在角色的信任策略中，可使用 principal 元素来指定角色的信任实体。示例：
+{
+      "Version": "3",
+      "Statement":
+        \[
+        {
+          "Effect": "Allow",
+          "Principal": "jrn:iam::859150329790:root",
+          "Action":"sts:assumeRole""
+          "Resource":"\*"
+         }]
+}
 
-
-策略样例
-该样例描述为：允许属于主账号 876393467912下的子账号，在从IP地址 “203.0.113.0/24”的时候，能够查看和创建IAM的子用户和群组。
-角色扮演者(principal)
-选填项，京东云中可以扮演角色的实体用户或者服务。
-
-语句(statement)
-必填项，描述一条或多条权限的Json信息。该元素包括 action、resource、condition、effect 等多个其他元素的权限或权限集合。一条策略有且仅有一个statement 元素。
 
 {
       "Version": "3",
