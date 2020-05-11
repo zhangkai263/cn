@@ -30,9 +30,7 @@ jrn:<service_code>:<region>:<accountId>:<resourceType>/<resourceId><subresouceTy
 
 即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。
 
-    <?php
-        echo "Hello world!";
-    ?>
+    jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
     
 预格式化文本：
 角色扮演者(principal)
