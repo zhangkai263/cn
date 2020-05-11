@@ -19,9 +19,14 @@
 > "Effect":"Allow"
 
 ### Action
-必填项，定义京东智联云的一个或一组api
+必填项，定义京东智联云的一个或一组api。示例：
 > "Action":"vm:v=createInstance"
 
+### Resource
+必填项，描述京东智联云的一个或多个资源。京东智联云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
+jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
+
+JDCloud资源名称（JDCloud Resource Name，JRN）是用来唯一标识一个JDCloud资源的，我们可以用JRN在JDCLOUD的全局环境中来明确指定一个资源。 详情
 
 角色扮演者(principal)
 选填项，京东云中可以扮演角色的实体用户或者服务。
@@ -29,16 +34,11 @@
 语句(statement)
 必填项，描述一条或多条权限的Json信息。该元素包括 action、resource、condition、effect 等多个其他元素的权限或权限集合。一条策略有且仅有一个statement 元素。
 
-权限(effect)
 
-
-操作(action)
-详情
 
 不能指定资源的操作：如IAM子用户列表（iam:descirbeSubusers），群组列表(iam:describeGroups)，子用户创建(iam:createSubuser)等接口，这些接口在定义上就不允许指定资源进行操作，当您在IAM中创建自定义策略的时候，这些接口不支持对指定资源进行操作。一般列表接口，创建接口，报表接口都不支持对指定资源进行操作授权。
 可以指定资源的操作：如IAM子用户详情（iam:describeSubuser），IAM子用户编辑（iam:modifySubuser）等接口，这些接口在定义上支持对指定资源进行操作，当您在IAM中创建自定义策略时，这些接口允许对指定资源进行授权和操作。一般详情，编辑，删除，解绑，绑定等接口都支持对指定资源进行操作授权。
-资源(resource)
-必填项，JDCloud资源名称（JDCloud Resource Name，JRN）是用来唯一标识一个JDCloud资源的，我们可以用JRN在JDCLOUD的全局环境中来明确指定一个资源。 详情
+
 
 生效条件(condition)
 选填项，描述策略生效的约束条件。条件包括条件运算符、条件键和条件值组成。详情
