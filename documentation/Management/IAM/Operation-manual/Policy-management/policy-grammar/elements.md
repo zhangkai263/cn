@@ -39,7 +39,7 @@
 ### Condition
 选填项，描述策略生效的约束条件。条件包括条件运算符、条件键和条件值组成。京东智联云目前支持指定资源标签作为策略生效条件。
 如指定带有 department = finance 标签的资源，其 condition 为：
-> "Condition": {"ForAnyValue:StringEquals": {"JDCloud:ResourceTag/department":\["finance"\]}}
+> "Condition": {"StringEquals": {"JDCloud:ResourceTag/department":\["finance"\]}}
 
 ### Principal
 选填项，指定允许或拒绝访问资源的委托人。基于身份的策略（系统策略和自定义策略）中不可使用 principal 元素，但在角色的信任策略中，可使用 principal 元素来指定角色的信任实体。示例：
@@ -57,4 +57,29 @@
 }
 ```
 
-### 策略示例
+## 策略示例
+定义一条策略，允许查询账号下所有带有标签 department = finance 的云主机：
+```json
+{
+	"Version": "3",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"vm:describeInstance",
+				"vm:describeInstances"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+				"StringEquals": {
+					"JDCloud:ResourceTag/department": [
+						"finance"
+					]
+				}
+			}
+		}
+	]
+}
+```
