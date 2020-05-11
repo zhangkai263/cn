@@ -31,3 +31,8 @@ A：请参考[数据迁移](https://docs.jdcloud.com/cn/jcs-for-redis/data-migra
 **Q：使用jedis，发现存储在redis中的key多出了类似\xac\xed\x00\x05t\x00的字符串？**
 
 A：jedis序列化问题，请修改redisTemplate的序列化方式，仍未解决请联系客服。
+
+
+**Q：使用Redis SDK，应用初始化后，监控为何没有连接数？**
+
+A：引用Redis SDK使用了连接池，应用启动初始化后，如果没有真正的读写操作，服务端未建立连接，连接数可能为0，属于正常现象。。
