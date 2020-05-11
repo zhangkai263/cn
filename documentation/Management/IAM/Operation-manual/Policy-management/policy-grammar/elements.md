@@ -20,7 +20,7 @@
 
 ### Action
 必填项，定义京东智联云的一个或一组api。示例：
-> "Action":"vm:v=createInstance"
+> "Action":"vm:createInstance"
 
 ### Resource
 必填项，描述京东智联云的一个或多个资源。京东智联云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
@@ -31,7 +31,7 @@
 > "Resource":"jrn:rds:cn-north-1:859150329790:database/mysql-ow3z4pnmm2/table/billing"
 
 如指定某产品线的全部资源，其jrn为：
-> "Resource":"jrn:rds:*:859150329790:*"
+> "Resource":"jrn:rds:\*:859150329790:\*"
 
 角色扮演者(principal)
 选填项，京东云中可以扮演角色的实体用户或者服务。
