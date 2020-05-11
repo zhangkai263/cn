@@ -24,15 +24,10 @@
 
 ### Resource
 必填项，描述京东智联云的一个或多个资源。京东智联云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
-jrn:<service_code>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
-
-#### 缩进风格
-
-即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。
 
     jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
     
-预格式化文本：
+
 角色扮演者(principal)
 选填项，京东云中可以扮演角色的实体用户或者服务。
 
