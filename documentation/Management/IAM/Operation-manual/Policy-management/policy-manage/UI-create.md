@@ -16,4 +16,4 @@
 
 #### 2. 选择可视化策略生成器
 选择可视化策略生成器。
-![](../../../../../../image/IAM/PolicyNew/UI-create.png)
+![](../../../../../../image/IAM/PolicyNew/UIcreate.png)
