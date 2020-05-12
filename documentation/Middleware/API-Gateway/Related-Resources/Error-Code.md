@@ -23,7 +23,7 @@ Http 状态码|错误代码|错误信息|语义|解决方案
 429|HTTP_RATE_LIMIT_EXCEEDED|minute rate limit exceeded, role:api|因 API 分组流控被限制|调用频率过高导致被流控，可以联系 API 服务商协商放宽限制
 
 
-#### （2）服务器端错误（调用 API）
+#### （2）服务器端错误
 以下为API服务端错误，如果频繁错误，可联系服务商。
 
 Http 状态码|错误代码|错误信息|语义|解决方案
