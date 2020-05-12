@@ -12,4 +12,7 @@
 ![image](../../../../../image/IAM/RoleNew/modifyservicerole.png)
 
 
-### 修改服务角色
+### 修改角色信任关系
+在角色详情页，点击“编辑信任关系”，可管理当前角色的信任实体。
+
+![image](../../../../../image/IAM/RoleNew/modifytrust.png)
