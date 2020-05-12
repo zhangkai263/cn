@@ -49,4 +49,9 @@
 
 #### 8. 指定生效条件
 
+京东智联云支持设置策略的生效条件 Condition，目前的 Condition 元素支持指定资源标签作为判断条件。
+
+![](../../../../../../image/IAM/PolicyNew/UIcreate5.png)
+
+
 
