@@ -9,7 +9,7 @@
 ### 修改角色描述
 在角色列表里点击“编辑”或在角色详情页里点击“编辑”，可快捷修改角色的描述信息。
 
-![image](../../../../../../image/IAM/RoleNew/modifyservicerole.png)
+![image](../../../../../image/IAM/RoleNew/modifyservicerole.png)
 
 
 ### 修改服务角色
