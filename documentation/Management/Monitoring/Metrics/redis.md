@@ -165,7 +165,7 @@ jmiss.redis.cluster.lpop_used_times|实例lpop命令使用次数|Instance lpop C
 jmiss.redis.cluster.lpush_used_times|实例lpush命令使用次数|Instance lpush Command Used Times|count/s|
 jmiss.redis.cluster.lpushx_used_times|实例lpushx命令使用次数|Instance lpushx Command Used Times|count/s|
 jmiss.redis.cluster.lrange_used_times|实例lrange命令使用次数|Instance lrange Command Used Times|count/s|
-jmiss.redis.cluster.lrem_used_times|实例lrem命令使用次数|Instance lrem Command Used Times|count/s|实例lset命令使用次数|Instance lset Command Used Times|count/s|
+jmiss.redis.cluster.lrem_used_times|实例lrem命令使用次数|Instance lrem Command Used Times|count/s|
 jmiss.redis.cluster.lset_used_times|实例lset命令使用次数|Instance lset Command Used Times|count/s|
 jmiss.redis.cluster.ltrim_used_times|实例ltrim命令使用次数|Instance ltrim Command Used Times|count/s|
 jmiss.redis.cluster.rpop_used_times|实例rpop命令使用次数|Instance rpop Command Used Times|count/s|
