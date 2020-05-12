@@ -2,4 +2,4 @@
 
 ## 创建用户角色
 
-![image](../../../../image/IAM/RoleNew/list.png)
+![image](../../../../../image/IAM/RoleNew/list.png)
