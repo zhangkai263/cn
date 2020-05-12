@@ -15,7 +15,7 @@
 ![](../../../../../../image/IAM/PolicyNew/policylist.png)
 
 #### 2. 选择策略编辑器
-选择策略编辑器，直接撰写 Json 文档来创建策略。
+选择按标签创建策略。
 
 ![](../../../../../../image/IAM/PolicyNew/UIcreate.png)
 
@@ -23,3 +23,7 @@
 > 策略名称与描述需符合字符长度与格式规则。
 
 ![](../../../../../../image/IAM/PolicyNew/UIcreate1.png)
+
+
+
+#### 4. 
