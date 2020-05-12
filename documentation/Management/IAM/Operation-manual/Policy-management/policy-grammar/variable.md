@@ -17,3 +17,26 @@
 
 策略变量与京东智联云资源标签协同，主要实现根据创建人标签（jdc-createdby）授权的功能。应用场景示例：
 > 创建一条策略，允许主账号 859150329790 下的所有子用户可以管理其自己创建的云主机。策略详情如下：
+```json
+{
+	"Version": "3",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"vm:*"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+				"StringEquals": {
+					"JDCloud:ResourceTag/jdc-createdby": [
+						"${name}"
+					]
+				}
+			}
+		}
+	]
+}
+```
