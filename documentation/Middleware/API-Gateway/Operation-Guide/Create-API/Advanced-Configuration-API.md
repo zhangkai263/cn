@@ -39,15 +39,10 @@
 
 ###  第2步：进入高级配置页进行操作
 ####  第1种： 默认情况：使用API分组上配置的后端
-当选择此类型配置时，该API在实际调用时，将使用发布分组时配置的地址内容。
+当选择此类型配置时，该API在实际调用时，将使用配置的分组默认地址内容。
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mr.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-2.png)
  
- 
-当选择此配置时，该API在实际调用时所使用的后端地址，将是发布API分组时，配置的统一地址。即下图中配置的后端服务地址。
-
-![发布](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-3.png)
-
 
 
 ####   第2种：自定义独立后端。
