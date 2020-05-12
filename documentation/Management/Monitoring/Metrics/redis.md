@@ -202,7 +202,7 @@ jmiss.redis.cluster.scard_avg_rt|实例scard命令平均响应时间|Instance  s
 jmiss.redis.cluster.sismember_avg_rt|实例sismember命令平均响应时间|Instance  sismember Command Average Response Time|us|
 jmiss.redis.cluster.smembers_avg_rt|实例smembers命令平均响应时间|Instance  smembers Command Average Response Time|us|
 jmiss.redis.cluster.spop_avg_rt|实例spop命令平均响应时间|Instance  spop Command Average Response Time|us|
-jmiss.redis.cluster.srandmember_avg_rt|实例srandmember命令平均响应时间|Instance  srandmember Command Average Response Time|
+jmiss.redis.cluster.srandmember_avg_rt|实例srandmember命令平均响应时间|Instance  srandmember Command Average Response Time|us|
 jmiss.redis.cluster.srem_avg_rt|实例srem命令平均响应时间|Instance  srem Command Average Response Time|us|
 jmiss.redis.cluster.sscan_avg_rt|实例sscan命令平均响应时间|Instance  sscan Command Average Response Time|us|
 
@@ -369,7 +369,7 @@ jmiss.redis.instance.lpop_used_times|分片lpop命令使用次数|Instance lpop 
 jmiss.redis.instance.lpush_used_times|分片lpush命令使用次数|Instance lpush Command Used Times|count/s|
 jmiss.redis.instance.lpushx_used_times|分片lpushx命令使用次数|Instance lpushx Command Used Times|count/s|
 jmiss.redis.instance.lrange_used_times|分片lrange命令使用次数|Instance lrange Command Used Times|count/s|
-jmiss.redis.instance.lrem_used_times|分片lrem命令使用次数|Instance lrem Command Used Times|count/s|分片lset命令使用次数|Instance lset Command Used Times|count/s|
+jmiss.redis.instance.lrem_used_times|分片lrem命令使用次数|Instance lrem Command Used Times|count/s|
 jmiss.redis.instance.lset_used_times|分片lset命令使用次数|Instance lset Command Used Times|count/s|
 jmiss.redis.instance.ltrim_used_times|分片ltrim命令使用次数|Instance ltrim Command Used Times|count/s|
 jmiss.redis.instance.rpop_used_times|分片rpop命令使用次数|Instance rpop Command Used Times|count/s|
@@ -406,6 +406,6 @@ jmiss.redis.instance.scard_avg_rt|分片scard命令平均响应时间|Instance  
 jmiss.redis.instance.sismember_avg_rt|分片sismember命令平均响应时间|Instance  sismember Command Average Response Time|us|
 jmiss.redis.instance.smembers_avg_rt|分片smembers命令平均响应时间|Instance  smembers Command Average Response Time|us|
 jmiss.redis.instance.spop_avg_rt|分片spop命令平均响应时间|Instance  spop Command Average Response Time|us|
-jmiss.redis.instance.srandmember_avg_rt|分片srandmember命令平均响应时间|Instance  srandmember Command Average Response Time|
+jmiss.redis.instance.srandmember_avg_rt|分片srandmember命令平均响应时间|Instance  srandmember Command Average Response Time|us|
 jmiss.redis.instance.srem_avg_rt|分片srem命令平均响应时间|Instance  srem Command Average Response Time|us|
 jmiss.redis.instance.sscan_avg_rt|分片sscan命令平均响应时间|Instance  sscan Command Average Response Time|us|
