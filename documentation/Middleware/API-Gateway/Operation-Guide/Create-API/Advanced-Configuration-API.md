@@ -39,7 +39,7 @@
 
 ###  第2步：进入高级配置页进行操作
 ####  第1种： 默认情况：使用API分组上配置的后端
-当选择此类型配置时，该API在实际调用时，将使用配置的分组默认地址内容。
+当选择此类型配置时，该API在实际调用时，将使用配置的分组默认后端地址内容。
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-2.png)
  
