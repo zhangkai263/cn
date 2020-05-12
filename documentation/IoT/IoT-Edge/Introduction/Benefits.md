@@ -2,11 +2,11 @@
 
 ## 智能
 
-提供本地数据处理，AI学习、推断、识别等能力，让边缘具备一定的AI计算和推断能力。
+提供本地数据处理，AI学习、推断、识别等能力，将云端的计算能力下沉至边缘。
 
 ## 便捷
 
- 多种协议支持，可将各类终端设备，传感器快速便捷的接入物联网中心服务（Iot Hub）。
+ 多种协议支持，可将各类终端设备，传感器快速便捷的接入物联网引擎服务（Iot Core）。
 
 ## 实时
 
@@ -30,5 +30,5 @@
 - [产品规格](../Introduction/Specifications.md)
 - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
-- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+- [边缘应用管理](../Operation-Guide/Edge-App.md)
 

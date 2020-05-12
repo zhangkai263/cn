@@ -13,5 +13,5 @@
 
 注意：使用在线工具需要目标密钥处于“启用”状态。
 
-![操作指南-在线加解密工具](/image/Key-Management-Service/Key-Management/操作指南-在线加解密工具2.png)
+![操作指南-在线加解密工具](/image/Key-Management-Service/Key-Management/在线加解密工具2.png)
 

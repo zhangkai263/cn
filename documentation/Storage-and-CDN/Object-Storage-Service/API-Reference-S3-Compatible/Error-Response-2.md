@@ -22,7 +22,7 @@
 | code | 错误码是唯一标识错误的，用来确定错误场景 | 字符串|
 | Message | OSS给出的详细错误信息 |字符串|
 | Resource | 资源地址：Bucket地址或者Object地址。 |字符串|
-| RequestId | 当请求发送时，服务端将会自动为请求生成一个唯一的 ID。使用遇到问题时，request-id能更快地协助 OSS 定位问题。 |字符串|
+| RequestId | 当请求发送时，服务端将会自动为请求生成一个唯一的ID。使用遇到问题时，request-id能更快地协助OSS定位问题。 |字符串|
 
 
 ## 错误码列表
@@ -198,12 +198,12 @@
 </tr>
 <tr>
 <td>InvalidContentLengthError</td>
-<td>http header content-length 错误</td>
+<td>http header content-length错误</td>
 <td>400</td>
 </tr>
 <tr>
 <td>InvalidContentMD5Error</td>
-<td>http header content-md5 错误</td>
+<td>http header content-md5错误</td>
 <td>400</td>
 </tr>
 <tr>
@@ -283,7 +283,7 @@
 </tr>
 <tr>
 <td>MalformedPolicy</td>
-<td>policy 格式错误</td>
+<td>policy格式错误</td>
 <td>400</td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@
 </tr>
 <tr>
 <td>IncompleteBody</td>
-<td>Content-Length 请求头未指定的数值</td>
+<td>Content-Length请求头未指定的数值</td>
 <td>400</td>
 </tr>
 <tr>

@@ -32,6 +32,8 @@ https://monitor.jdcloud-api.com/v2/groupAlarms/{alarmId}
 ## 返回码
 |返回码|描述|
 |---|---|
-|**200**|删除规则返回结果|
+|**200**|删除规则返回结果  |   
+
+
 
 

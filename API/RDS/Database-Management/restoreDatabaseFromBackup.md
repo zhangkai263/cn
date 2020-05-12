@@ -31,3 +31,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testRestoreDatabaseFromBackup() {
+    RestoreDatabaseFromBackupRequest restoreDatabaseFromBackupRequest = new RestoreDatabaseFromBackupRequest();
+    restoreDatabaseFromBackupRequest.setBackupFileName("test_db.bak");
+    restoreDatabaseFromBackupRequest.setBackupId("sqlserver-4eac4982-d54b-4f97-80f9-ce404209b446");
+    restoreDatabaseFromBackupRequest.setDbName("test_db");
+    restoreDatabaseFromBackupRequest.setInstanceId("sqlserver-83uqv7avy4");
+    restoreDatabaseFromBackupRequest.setRegionId("cn-north-1");
+    RestoreDatabaseFromBackupResponse response = rdsClient.restoreDatabaseFromBackup(restoreDatabaseFromBackupRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3sm7ujvspre1rkfbhbr50g5se8g9e"
+}
+```

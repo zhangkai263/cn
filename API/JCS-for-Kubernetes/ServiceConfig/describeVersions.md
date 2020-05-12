@@ -23,22 +23,23 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/versions
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeversions#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**masterVersions**|MasterVersion[]| |
-### MasterVersion
+|**masterVersions**|[MasterVersion[]](describeversions#masterversion)| |
+### <div id="masterversion">MasterVersion</div>
 |名称|类型|描述|
 |---|---|---|
 |**version**|String|集群版本号|
 |**isDefault**|Boolean|是否默认版本|
-|**defaultNodeVersion**|String|默认ndoe版本号|
+|**defaultNodeVersion**|String|默认工作节点版本号|
 |**versionStatus**|String|版本状态|
-|**nodeVersions**|NodeVersion[]|node 节点的配置|
-### NodeVersion
+|**nodeVersions**|[NodeVersion[]](describeversions#nodeversion)|node 节点的配置|
+|**nodeOsTypes**|String|node节点操作系统类型列表，以 "," 分割，目前支持 CentOS|Windows|
+### <div id="nodeversion">NodeVersion</div>
 |名称|类型|描述|
 |---|---|---|
 |**version**|String|节点版本号|

@@ -10,7 +10,7 @@
 
 以1.0.3版本为例，步骤如下：
 
-1. 下载Java SDK开发包[Java SDK](http://downloads.oss.cn-north-1.jcloudcs.com/jfs-jcloud-sdk-java-1.0.13.jar)
+1. 下载Java SDK开发包[Java SDK](http://downloads.oss.cn-north-1.jcloudcs.com/jfs-jcloud-sdk-java-1.0.16.jar)
 
 2. 解压该开发包。
 

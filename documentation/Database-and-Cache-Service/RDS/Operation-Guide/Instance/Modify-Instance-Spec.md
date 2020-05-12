@@ -4,7 +4,6 @@ RDS 实例可根据用户的需求，动态调整实例的CPU，内存及磁盘�
 
 - MySQL、Percona、MariaDB
   - 同时支持扩容和缩容
-  - 仅支持主备实例，暂不支持只读实例
   
 - SQL Server
   - 同时支持扩容和缩容

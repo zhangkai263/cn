@@ -22,14 +22,14 @@ https://mps.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/styleDeli
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](user-content-getstyledelimiter#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**styleDelimiterConf**|StyleDelimiterConf| |
-### StyleDelimiterConf
+|**styleDelimiterConf**|[StyleDelimiterConf](user-content-getstyledelimiter#styledelimiterconf)| |
+### <div id="styledelimiterconf">StyleDelimiterConf</div>
 |名称|类型|描述|
 |---|---|---|
 |**delimiters**|String[]|图片样式分隔符配置（JSON数组）；支持的分隔符包含：["-", "_", "/", "!"]|

@@ -12,7 +12,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:stopLis
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID，可调用接口（queryCPSLBRegions）获取云物理服务器支持的地域|
+|**regionId**|String|True| |地域ID，可调用接口（describeCPSLBRegions）获取云物理服务器支持的地域|
 |**listenerId**|String|True| |监听器ID|
 
 ## 请求参数
@@ -24,10 +24,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:stopLis
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](stoplistener#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|关闭监听器是否成功|

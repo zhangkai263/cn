@@ -20,9 +20,9 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/secrets
 |---|---|---|---|---|
 |**name**|String|True| |机密数据名称，不能重复<br>|
 |**secretType**|String|True| |机密数据的类型，目前仅支持：docker-registry 类型，用来和docker registry认证的类型。<br>|
-|**data**|DockerRegistryData|True| |机密的数据。<br><br>key 的有效字符包括字母、数字、-、_和.； <br><br>value 是 Base64 编码的字符串，不能包含换行符（在 linux 下使用 base64 -w 0选项），每个value长度上限为4KB，整个data的长度不能超过256KB; <br><br>必须包含server、username、password 字段，email 字段是可选的。<br><br>|
+|**data**|[DockerRegistryData](createsecret#dockerregistrydata)|True| |机密的数据。<br><br>key 的有效字符包括字母、数字、-、_和.； <br><br>value 是 Base64 编码的字符串，不能包含换行符（在 linux 下使用 base64 -w 0选项），每个value长度上限为4KB，整个data的长度不能超过256KB; <br><br>必须包含server、username、password 字段，email 字段是可选的。<br><br>|
 
-### DockerRegistryData
+### <div id="dockerregistrydata">DockerRegistryData</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**server**|String|True| |registry服务器地址|
@@ -33,10 +33,10 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/secrets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createsecret#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**secretName**|String| |

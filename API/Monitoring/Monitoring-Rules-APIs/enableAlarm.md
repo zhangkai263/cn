@@ -32,6 +32,6 @@ https://monitor.jdcloud-api.com/v2/groupAlarms:switch
 ## 返回码
 |返回码|描述|
 |---|---|
-|**200**|启用、禁用规则|
+|**200**|启用、禁用规则  | 
 
 

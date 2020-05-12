@@ -8,11 +8,11 @@
 POST
 
 ## 请求地址
-https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:modifylistenerAttributes
+https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:modifyListenerAttributes
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID，可调用接口（queryCPSLBRegions）获取云物理服务器支持的地域|
+|**regionId**|String|True| |地域ID，可调用接口（describeCPSLBRegions）获取云物理服务器支持的地域|
 |**listenerId**|String|True| |监听器ID|
 
 ## 请求参数
@@ -34,14 +34,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:modifyl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifylistener#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**loadBalancer**|Listener|监听器详细信息|
-### Listener
+|**listener**|[Listener](modifylistener#listener)|监听器详细信息|
+### <div id="listener">Listener</div>
 |名称|类型|描述|
 |---|---|---|
 |**listenerId**|String|监听器ID|

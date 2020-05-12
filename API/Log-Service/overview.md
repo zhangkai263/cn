@@ -27,3 +27,6 @@ v1
 |**updateCollectResources**|POST|增量更新采集实例列表。更新的动作支持 add 、 remove|
 |**updateLogset**|PUT|更新日志集。日志集名称不可更新。|
 |**updateLogtopic**|PUT|更新日志主题。日志主题名称不可更新。|
+|**search**|GET|搜索日志|
+|**searchLogContext**|POST|搜索日志上下文|
+

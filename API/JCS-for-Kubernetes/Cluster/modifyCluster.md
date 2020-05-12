@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改集群的 名称 和 描述。
+修改集群的 名称 和 描述。<br>集群 name 和 description 必须要指定一个
 
 ## 请求方式
 PATCH
@@ -19,7 +19,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |集群名称|
-|**description**|String|False| |集群 name 和 description 必须要指定一个|
+|**description**|String|False| |集群描述|
 
 
 ## 返回参数

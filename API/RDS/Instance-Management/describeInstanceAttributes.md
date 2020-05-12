@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询RDS实例（MySQL、SQL Server等）的详细信息以及MySQL只读实例详细信息
+查询RDS实例（MySQL、SQL Server等）的详细信息以及MySQL/PostgreSQL只读实例详细信息
 
 ## 请求方式
 GET
@@ -22,13 +22,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeinstanceattributes#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dbInstanceAttributes**|DBInstanceAttribute| |
-### DBInstanceAttribute
+|**dbInstanceAttributes**|[DBInstanceAttribute](describeinstanceattributes#dbinstanceattribute)| |
+### <div id="dbinstanceattribute">DBInstanceAttribute</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|
@@ -56,24 +56,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**auditStatus**|String|审计状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)<br>- 仅支持MySQL|
 |**instanceStatus**|String|实例状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**createTime**|String|实例创建时间|
-|**charge**|Charge|计费配置|
+|**charge**|[Charge](describeinstanceattributes#charge)|计费配置|
 |**sourceInstanceId**|String|MySQL只读实例对应的主实例ID<br>- 仅支持MySQL|
 |**roInstanceIds**|String[]|只读实例ID列表<br>- 仅支持MySQL|
-|**primaryNode**|DBInstanceNode|高可用集群中主节点的信息<br>- 仅支持SQL Server|
-|**secondaryNode**|DBInstanceNode|高可用集群中从节点的信息<br>- 仅支持SQL Server|
-|**tags**|Tag[]|标签信息|
-### Tag
+|**primaryNode**|[DBInstanceNode](describeinstanceattributes#dbinstancenode)|高可用集群中主节点的信息<br>- 仅支持SQL Server|
+|**secondaryNode**|[DBInstanceNode](describeinstanceattributes#dbinstancenode)|高可用集群中从节点的信息<br>- 仅支持SQL Server|
+|**tags**|[Tag[]](describeinstanceattributes#tag)|标签信息|
+### <div id="tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String|标签键|
 |**value**|String|标签值|
-### DBInstanceNode
+### <div id="dbinstancenode">DBInstanceNode</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|节点id|
 |**name**|String|节点名称|
 |**status**|String|节点状态|
-### Charge
+### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -86,3 +86,62 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeInstanceAttributes() {
+    DescribeInstanceAttributesRequest request = new DescribeInstanceAttributesRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    DescribeInstanceAttributesResponse response = rdsClient.describeInstanceAttributes(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4ph6u278ofownjgc0ittjvh3se4p1", 
+    "result": {
+        "dbInstanceAttributes": {
+            "auditStatus": "on", 
+            "azId": [
+                "cn-north-1a", 
+                "cn-north-1b"
+            ], 
+            "charge": {
+                "chargeExpiredTime": "2020-01-31T15:59:59Z", 
+                "chargeMode": "prepaid_by_duration", 
+                "chargeStartTime": "2019-12-31T06:18:52Z", 
+                "chargeStatus": "normal"
+            }, 
+            "connectionMode": "standard", 
+            "createTime": "2019-12-31T14:18:52", 
+            "engine": "MySQL", 
+            "engineVersion": "5.7", 
+            "instanceCPU": 1, 
+            "instanceClass": "db.mysql.s1.micro", 
+            "instanceId": "mysql-wp4e9ztap2", 
+            "instanceMemoryMB": 1024, 
+            "instanceName": "hdj_test", 
+            "instancePort": "3306", 
+            "instanceStatus": "RUNNING", 
+            "instanceStorageGB": 20, 
+            "instanceStorageType": "LOCAL_SSD", 
+            "instanceType": "cluster", 
+            "internalDomainName": "mysql-cn-north-1-c1ce20704a60487d.rds.jdcloud.com", 
+            "parameterGroupId": "mysql-pg-3udygiyups", 
+            "parameterGroupName": "lh_pg", 
+            "parameterStatus": "VALID", 
+            "publicDomainName": "", 
+            "regionId": "cn-north-1", 
+            "storageEncrypted": false, 
+            "subnetId": "subnet-820lwf1mlp", 
+            "tags": [], 
+            "vpcId": "vpc-yn4dblxgeb"
+        }
+    }
+}
+```

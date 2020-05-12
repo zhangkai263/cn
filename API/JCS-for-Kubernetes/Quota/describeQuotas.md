@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询(k8s 集群)配额
+查询 kubernetes 集群配额
 
 ## 请求方式
 GET
@@ -17,9 +17,9 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**filters**|Filter[]|False| |resourceTypes - 资源类型，暂时只支持[kubernetes]<br>|
+|**filters**|[Filter[]](describequotas#filter)|False| |resourceTypes - 资源类型，暂时只支持[kubernetes]<br>|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -29,14 +29,14 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describequotas#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**quotas**|Quota[]|配额列表|
-### Quota
+|**quotas**|[Quota[]](describequotas#quota)|配额列表|
+### <div id="quota">Quota</div>
 |名称|类型|描述|
 |---|---|---|
 |**resourceType**|String|资源类型[kubernetes]|

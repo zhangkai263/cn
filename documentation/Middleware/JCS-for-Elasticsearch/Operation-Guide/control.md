@@ -16,6 +16,15 @@ ES已经预置2种系统策略，用户可以按需授权给子账户。系统�
 JDCloudElasticSearchAdmin  | 云搜索Elasticsearch读权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有创建和管理 es所有集群实例的权限，包括访问Kibana的权限 |
 JDCloudElasticSearchRead  | 云搜索Elasticsearch管理员权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有查看 ES 集群实例的权限，包括访问kibana的权限，但是不具有创建、删除等操作的权限。 |
 
+#### 依赖策略
+子账户依赖的资源策略如下，可在系统策略不能满足使用需求时添加：</br>
+
+接口名称 | 权限描述 | 权限类型 | 备注 |  
+:---: | :--- | :--- | :--- | 
+JDCloudRenewalAdmin  | 续费管理员权限 | 系统策略| 子用户可执行续费操作时添加即可 |
+JDCloudOrderPayment  | 收银台支付权限 | 系统策略 | 子用户可执行创建资源和续费操作时添加即可 |
+
+
 #### 自定义策略
 
 如果系统策略不能满足您的使用需求，可以参考访问控制的[操作指南]( https://docs.jdcloud.com/cn/iam/policy-management)，通过[自定义策略]( https://iam-console.jdcloud.com/policy/generator)授权给子账号对应的操作权限，目前ES支持的操作级别的权限如下：</br>
@@ -40,3 +49,4 @@ uploadDict  | 上传本地字典文件并加载到es | 写入 | 可选择主账�
 deleteDict  | 删除单个字典文件 | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
 createSnapshot  | 创建一个snapshot | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
 modifyAutoSnapshot | auto snapshot 设置 | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
+describeKibana | 访问Kibana | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |

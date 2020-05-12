@@ -1,6 +1,6 @@
 # 创建云硬盘
 
-京东云为您提供多种创建云硬盘方法：
+京东智联云为您提供多种创建云硬盘方法：
 
 * 实例创建时一起创建云硬盘，详细请参考[创建实例](../Instance/Create-Instance.md)；
 * 单独[创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-cloud-disk)；

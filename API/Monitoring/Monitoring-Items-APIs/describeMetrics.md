@@ -42,6 +42,6 @@ https://monitor.jdcloud-api.com/v2/metrics
 ## 返回码
 |返回码|描述|
 |---|---|
-|**200**|get Metric list of serviceCode|
+|**200**|get Metric list of serviceCode |
 
 

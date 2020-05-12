@@ -22,68 +22,61 @@
  </tr>
  <tr>
   <td rowspan="6">访问流量</td>
-  <td>内网流入流量</td>
+  <td>内网上行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>内网流出流量</td>
+  <td>内网下行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>外网流入流量</td>
+  <td>外网上行流量</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
   <td>免费</td>
  </tr>
  <tr>
-  <td>外网流出流量</td>
+  <td>外网下行流量</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
   <td>0.50元/GB</td>
  </tr>
  <tr>
-  <td>CDN回源流出流量</td>
+  <td>CDN回源下行流量</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
   <td>0.14元/GB</td>
  </tr>
  <tr>
-  <td>跨区域复制流量</td>
+  <td>数据同步流量</td>
   <td>暂时免费</td>
   <td>暂时免费</td>
   <td>暂时免费</td>
   <td>暂时免费</td>
  </tr>
  <tr>
-  <td rowspan="2">请求次数</td>
-  <td>GET请求</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
- </tr>
- <tr>
-  <td>PUT请求</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
-  <td>暂时免费</td>
+  <td>请求次数</td>
+  <td>所有请求类型</td>
+  <td>0.01元/万次</td>
+  <td>0.10元/万次</td>
+  <td>0.10元/万次</td>
+  <td>0.10元/万次</td>
  </tr>
  <tr>
   <td>数据取回费用</td>
   <td>数据取回</td>
   <td>-</td>
   <td>0.03元/GB</td>
-  <td>快速模式：0.2元/GB<br>标准模式：0.06元/GB<br>批量模式：0.016元/GB</td>
+  <td>快速模式：0.20元/GB<br>标准模式：0.06元/GB<br>批量模式：0.016元/GB</td>
   <td>-</td>
  </tr>
 </table>
@@ -104,33 +97,53 @@
   <td rowspan="2" align="center">单价</td>
  </tr>
  <tr>
-  <td rowspan="6">视频转码</td>
+  <td rowspan="11">视频转码</td>
   <td>编码方式</td>
   <td>输出规格</td>  
  </tr>
  <tr>
   <td rowspan="5">视频H.264</td>
-  <td>4K（3840×2160）及以下（即将上线）</td>
-  <td>0.2800 元/分钟</td>
+  <td>4K（3840×2160）及以下</td>
+  <td>0.28 元/分钟</td>
  </tr>
  <tr>
   <td>2K（2560×1440）及以下</td>
-  <td>0.1400 元/分钟</td>
+  <td>0.14 元/分钟</td>
  </tr>
  <tr>
   <td>FHD（1920×1080）及以下</td>
-  <td>0.0650 元/分钟</td>
+  <td>0.065 元/分钟</td>
  </tr>
  <tr>
   <td>HD（1280×720）及以下</td>
-  <td>0.0330 元/分钟</td>
+  <td>0.033 元/分钟</td>
  <tr>
   <td>SD（640×480）及以下</td>
-  <td>0.0220 元/分钟</td>
+  <td>0.022 元/分钟</td>
+ </tr>
+ <tr>
+  <td rowspan="5">视频H.265</td>
+  <td>4K（3840×2160）及以下</td>
+  <td>1.20 元/分钟</td>
+ </tr>
+ <tr>
+  <td>2K（2560×1440）及以下</td>
+  <td>0.60 元/分钟</td>
+ </tr>
+ <tr>
+  <td>FHD（1920×1080）及以下</td>
+  <td>0.30 元/分钟</td>
+ </tr>
+ <tr>
+  <td>HD（1280×720）及以下</td>
+  <td>0.15 元/分钟</td>
+ <tr>
+  <td>SD（640×480）及以下</td>
+  <td>0.10 元/分钟</td>
  </tr>
  <tr>
   <td colspan="3">视频截图</td>
-  <td>0.1 元/千张</td>
+  <td>0.10 元/千张</td>
  </tr>
 <table>
 

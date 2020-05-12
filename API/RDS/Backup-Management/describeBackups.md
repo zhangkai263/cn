@@ -30,14 +30,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describebackups#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**backup**|Backup[]|备份集合|
+|**backup**|[Backup[]](describebackups#backup)|备份集合|
 |**totalCount**|Integer|总记录数|
-### Backup
+### <div id="backup">Backup</div>
 |名称|类型|描述|
 |---|---|---|
 |**backupId**|String|备份ID|
@@ -56,3 +56,48 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeBackups() {
+    DescribeBackupsRequest describeBackupsRequest = new DescribeBackupsRequest();
+    describeBackupsRequest.setInstanceId("mysql-wp4e9ztap2");
+    describeBackupsRequest.setRegionId("cn-north-1");
+    describeBackupsRequest.setPageNumber(1);
+    describeBackupsRequest.setPageSize(10);
+    DescribeBackupsResponse response = rdsClient.describeBackups(describeBackupsRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa30g4fdrqkkoe010om8t9rafn4qm43", 
+    "result": {
+        "backup": [
+            {
+                "backupId": "0313e588-44d0-4b20-b532-6eebb9d83352", 
+                "backupMode": "manual", 
+                "backupName": "dj_backup", 
+                "backupSizeByte": 15167776, 
+                "backupStartTime": "2020-01-07T15:14:07", 
+                "backupStatus": "COMPLETED", 
+                "instanceId": "mysql-wp4e9ztap2"
+            }, 
+            {
+                "backupId": "dcd25cd6-a787-4fea-8e89-1451ba600591", 
+                "backupMode": "auto", 
+                "backupName": "916450a3", 
+                "backupSizeByte": 15133149, 
+                "backupStartTime": "2020-01-07T02:13:03", 
+                "backupStatus": "COMPLETED", 
+                "instanceId": "mysql-wp4e9ztap2"
+            }
+        ], 
+        "totalCount": 2
+    }
+}
+```

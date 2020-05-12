@@ -98,6 +98,10 @@ items:
           herf: Operation-Guide/Code/TestAPI.md        
         - name:  错误码
           herf: Operation-Guide/Code/API_Errorcode.md
+    - name: SDK及相关文档
+      items:
+        - name:  SDK及相关文档
+          herf: Operation-Guide/SDK-and-Document.md  
 - name: 最佳实践
   items:
   - name: 最佳实践
