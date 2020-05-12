@@ -17,3 +17,7 @@
 #### 2. 选择可视化策略生成器
 选择可视化策略生成器。
 ![](../../../../../../image/IAM/PolicyNew/UIcreate.png)
+
+#### 3. 自定义策略名称与描述
+> 
+![](../../../../../../image/IAM/PolicyNew/UIcreate1.png)
