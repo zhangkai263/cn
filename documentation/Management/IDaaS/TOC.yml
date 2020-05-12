@@ -15,3 +15,7 @@ items:
     items:
       - name: 开通和使用身份通
         href: Getting-Start/Initiate-Tenant-Account.md
+      - name: 管理用户
+        href: Getting-Start/Manage-Users.md
+      - name: 添加应用并授权
+        href: Getting-Start/Add-Applications.md
