@@ -29,11 +29,11 @@
 
 您可以在策略编辑框内直接撰写符合京东智联云策略语法的 Json 文档，也可以通过选择策略模板直接导入现有策略，并按需在现有策略的基础上修改效力类型、操作接口、指定资源、指定条件等。
 
-![](../../../../../../image/IAM/PolicyNew/Jsoncreate1.png)
+![](../../../../../../image/IAM/PolicyNew/Json1.png)
 
-![](../../../../../../image/IAM/PolicyNew/Jsoncreate2.png)
+![](../../../../../../image/IAM/PolicyNew/Json2.png)
 
-![](../../../../../../image/IAM/PolicyNew/Jsoncreate3.png)
+![](../../../../../../image/IAM/PolicyNew/Json3.png)
 
 
 
