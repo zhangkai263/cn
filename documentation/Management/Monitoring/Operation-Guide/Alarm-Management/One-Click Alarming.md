@@ -19,7 +19,7 @@
 【开启一键报警】
 1.  访问[云监控控制台](http://cms-console-stag.jdcloud.com/alarm/oneclick/)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击顶部导航“云服务” 搜索“云监控” ，根据搜索结果，点击进入云监控控制台。
 2. 选中要启用一键报警的云服务，打开启用开关即可。
-![一键报警1](../../../../../image/Cloud-Monitor/Alarm-Management/1-Oneclick.png)
+![一键报警1](../../../../../image/Cloud-Monitor/Alarm-Management/1-oneclick.png)
 
 【修改策略】  
 若内置默认策略无法满足需求，则可以根据需要修改和添加触发条件、通知策略等信息。以云搜索Elasticsearch 为例。具体操作步骤如下：  
