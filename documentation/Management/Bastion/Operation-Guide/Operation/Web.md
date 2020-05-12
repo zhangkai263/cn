@@ -30,13 +30,19 @@
 ![](/image/Bastion/operate4.png) 
 
 5、默认左侧展示可操作的文件树，对云主机或windows临时网盘中的文件或文件夹进行管理
+
+  ![](/image/Bastion/operate5.png) 
+
   5.1 Windows服务器临时存储盘是Guacamole RDP 上的BastionSpace目录，当前会话结束时会同步清空临时存储盘。
       Linux服务器文件存放的默认路径在根目录。
+      
   5.2 单击上传图标，上传文件。
   
+  ![](/image/Bastion/operate6.png) 
   
   5.3 选择文件，单击下载图标，进行文件的下载。
   
+  ![](/image/Bastion/operate7.png) 
 
 ## 修改用户密码
 
