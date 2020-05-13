@@ -33,21 +33,16 @@
 ##  操作步骤：
 ###  第1步：进入API管理页
 首先选择API分组，点击管理API菜单，进入API列表页。
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-1.png)
 说明：
 如果当前API分组是部署中的版本，不能直接操作。如需操作请先下线，或新增版本进行修订。
 
 ###  第2步：进入高级配置页进行操作
 ####  第1种： 默认情况：使用API分组上配置的后端
-当选择此类型配置时，该API在实际调用时，将使用发布分组时配置的地址内容。
+当选择此类型配置时，该API在实际调用时，将使用配置的分组默认后端地址内容。
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mr.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-2.png)
  
- 
-当选择此配置时，该API在实际调用时所使用的后端地址，将是发布API分组时，配置的统一地址。即下图中配置的后端服务地址。
-
-![发布](../../../../../image/Internet-Middleware/API-Gateway/apigroup-fb.png)
-
 
 
 ####   第2种：自定义独立后端。
@@ -55,20 +50,20 @@
 
 ##### 1、HTTP/HTTPS
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-http.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-4.png)
  
  使用该类型做后端时，需要填入API调用的真实后端服务地址。
  
 
 ##### 2、Mock
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mock.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-5.png)
  
 使用Mock做为后端时，实际请求则不会调用到真实后端服务。
 
 ##### 3、Function
 
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-fun.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/advanced-configuration-6.png)
  
 使用该类型做后端时，需先在函数中创建函数，然后在下拉框中找到并选择函数。
 ######  特殊说明：目前仅支持对单个API配置函数类型后端，不支持对API分组配置函数类型后端。
