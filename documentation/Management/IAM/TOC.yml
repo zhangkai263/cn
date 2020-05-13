@@ -26,13 +26,13 @@ items:
       - name: 角色管理
         items:
           - name: 角色概览
-            href: 
+            href: Operation-manual/Role-management/role-overview.md
           - name: 创建角色
             items:
               - name: 创建用户角色
-                href: 
+                href: Operation-manual/Role-management/create-role/createuserrole.md
               - name: 创建服务角色
-                href:
+                href: Operation-manual/Role-management/create-role/createservicerole.md
               - name: 创建联合身份角色
                 href:
           - name: 编辑角色
