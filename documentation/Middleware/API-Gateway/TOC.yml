@@ -114,4 +114,4 @@ items:
   - name: 文档历史记录
     herf: Related-Resources/Document-History.md 
   - name: 调用过程中公共错误码参考
-    herf: Error-Code.md   
+    herf: Related-Resources/Error-Code.md   
