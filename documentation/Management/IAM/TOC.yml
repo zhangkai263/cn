@@ -35,6 +35,8 @@ items:
                 href: Operation-manual/Role-management/create-role/createservicerole.md
               - name: 创建联合身份角色
                 href: Operation-manual/Role-management/create-role/createfederatedrole.md
+          - name: 为角色授权策略
+            href: Operation-manual/Role-management/attach-policy.md
           - name: 编辑角色
             href: Operation-manual/Role-management/modify-role.md
           - name: 删除角色
