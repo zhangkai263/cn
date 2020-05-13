@@ -34,35 +34,35 @@ items:
               - name: 创建服务角色
                 href: Operation-manual/Role-management/create-role/createservicerole.md
               - name: 创建联合身份角色
-                href:
+                href: Operation-manual/Role-management/create-role/createfederatedrole.md
           - name: 编辑角色
-            href:
+            href: Operation-manual/Role-management/modify-role.md
           - name: 删除角色
-            href:
+            href: Operation-manual/Role-management/delete-role.md
           - name: 代入角色
-            href:
+            href: Operation-manual/Role-management/switch-role.md
       - name: 策略管理
         items:
           - name: 策略概览
-            href: 
+            href: Operation-manual/Policy-management/policy-overview.md
           - name: 策略语法
             items:
               - name: 策略元素
-                href:
+                href: Operation-manual/Policy-management/policy-grammar/elements.md
               - name: 策略变量
-                href:
+                href: Operation-manual/Policy-management/policy-grammar/variable.md
           - name: 策略管理
             items:
               - name: 可视化创建策略
-                href:
+                href: Operation-manual/Policy-management/policy-manage/UI-create.md
               - name: Json 方式创建策略
-                href:
+                href: Operation-manual/Policy-management/policy-manage/Json-create.md
               - name: 按标签创建策略
-                href:
+                href: Operation-manual/Policy-management/policy-manage/Tag-create.md
               - name: 编辑策略
-                href:
+                href: Operation-manual/Policy-management/policy-manage/edit.md
               - name: 删除策略
-                href:
+                href: Operation-manual/Policy-management/policy-manage/delete.md
               
                
             
