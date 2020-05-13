@@ -18,7 +18,7 @@ items:
   - name: 操作指南
     items:
       - name: 概览
-        href: Operation-manual/Overview.md
+        href: Operation-manual/overview.md
       - name: 子用户管理
         href: Operation-manual/subuser-management.md
       - name: 群组管理
