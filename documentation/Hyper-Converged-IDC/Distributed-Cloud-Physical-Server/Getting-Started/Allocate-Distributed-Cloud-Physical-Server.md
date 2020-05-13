@@ -52,7 +52,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 内部IP ：为用户指定辅网口的内网IP地址，可在所选子网可用IP地址内任意指定，也可以选择由系统自动分配。内网IP一旦分配至分布式云物理服务器将不可更改。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 别名IP范围 ：如果您有多项服务在一台分布式云物理服务器上运行，并且希望为每项服务分配一个不同的 IP 地址，可以使用别名IP范围功能实现。单实例辅网口最多可添加50个，详见[别名IP范围](../Operation-Guide/Instance/Alisas-IP.md)。 </br>       
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 别名IP范围 ：如果您有多项服务在一台分布式云物理服务器上运行，并且希望为每项服务分配一个不同的 IP 地址，可以使用别名IP范围功能实现。单实例辅网口最多可添加50个，详见[别名IP范围](../Operation-Guide/Networking/Alias-IP.md)。 </br>       
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公网带宽 ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。（创建后为辅网口的弹性公网IP）</br>
 
