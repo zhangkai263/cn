@@ -1,4 +1,4 @@
-# SQL Server SSL 配置方法
+# SQL Server SSL 配置
 
 云数据库 SQL Server 连接支持SSL加密。 SSL是为网络通信提供安全及数据完整性的一种安全协议，使用SSL能提升通信数据的安全性和完整性，但对性能有一定的影响。
 

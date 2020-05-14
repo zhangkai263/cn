@@ -17,9 +17,6 @@ items:
     - name: 产品规格
       href: 
       status: 0
-    - name: 限制说明
-      href: 
-      status: 0
     - name: 应用场景
       href: Introduction/Application-Scenarios.md
 - name: 产品定价

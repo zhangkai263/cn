@@ -21,7 +21,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs/{jobId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](gettranscodejob#result)|查询转码作业列表结果|
+|**result**|[Result](user-content-gettranscodejob#result)|查询转码作业列表结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
@@ -29,7 +29,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs/{jobId}
 |---|---|---|
 |**jobId**|String|作业ID|
 |**title**|String|输入文件标题|
-|**tasks**|[TranscodeTaskInfo[]](gettranscodejob#transcodetaskinfo)|转码任务集合|
+|**tasks**|[TranscodeTaskInfo[]](user-content-gettranscodejob#transcodetaskinfo)|转码任务集合|
 ### <div id="transcodetaskinfo">TranscodeTaskInfo</div>
 |名称|类型|描述|
 |---|---|---|

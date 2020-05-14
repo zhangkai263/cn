@@ -20,7 +20,9 @@ items:
             href: Company/checkCompanyInfo.md
           - name: 企业所有信息核验
             href: Company/checkCompanyLegalPersonAndAgent.md
-          - name: 企业打款以及验证
+          - name: 对公银行账户打款(随机小额)
+            href: Company/companyTransfer.md
+          - name: 小额打款验证
             href: Company/checkCompanyTransfer.md
           - name: 企业法人信息核验
             href: Company/checkLegalPerson.md

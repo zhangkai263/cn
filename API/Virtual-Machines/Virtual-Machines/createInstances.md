@@ -90,6 +90,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**noKeyNames**|Boolean|False| |不使用模板中的密钥。<br>仅当不使用Ag，并且使用了模板，并且keynames参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了keynames参数时，此参数无效，以新指定的为准。<br>|
 |**noElasticIp**|Boolean|False| |不使用模板中的弹性公网IP。<br>仅当不使用Ag，并且使用了模板，并且elasticIp参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了elasticIp参数时，此参数无效，以新指定的为准。<br>|
 |**userTags**|[Tag[]](createinstances#tag)|False| |用户普通标签集合|
+|**chargeOnStopped**|String|False| |关机模式，只支持云盘做系统盘的按配置计费云主机。keepCharging：关机后继续计费；stopCharging：关机后停止计费。|
 ### <div id="tag">Tag</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

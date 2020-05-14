@@ -16,10 +16,10 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 |---|---|---|---|---|
 |**templateId**|Long|True| |模板ID|
 |**title**|String|False| |模板标题。长度不超过 128 个字符，最少 2 个字符。UTF-8 编码。<br>|
-|**video**|[VideoStreamSettings](modifytranscodetemplate#videostreamsettings)|False| |视频参数配置|
-|**audio**|[AudioStreamSettings](modifytranscodetemplate#audiostreamsettings)|False| |音频参数配置|
-|**container**|[ContainerSettings](modifytranscodetemplate#containersettings)|False| |封装容器配置|
-|**encryption**|[EncryptionSettings](modifytranscodetemplate#encryptionsettings)|False| |加密配置|
+|**video**|[VideoStreamSettings](user-content-modifytranscodetemplate#videostreamsettings)|False| |视频参数配置|
+|**audio**|[AudioStreamSettings](user-content-modifytranscodetemplate#audiostreamsettings)|False| |音频参数配置|
+|**container**|[ContainerSettings](user-content-modifytranscodetemplate#containersettings)|False| |封装容器配置|
+|**encryption**|[EncryptionSettings](user-content-modifytranscodetemplate#encryptionsettings)|False| |加密配置|
 |**definition**|String|False| |清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**transcodeType**|String|False| |转码方式。取值范围：<br>  normal - 普通转码<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 
@@ -55,7 +55,7 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](modifytranscodetemplate#result)|修改转码模板结果|
+|**result**|[Result](user-content-modifytranscodetemplate#result)|修改转码模板结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
@@ -63,10 +63,10 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 |---|---|---|
 |**templateId**|String|模板ID|
 |**title**|String|模板标题。长度不超过 128 个字符，最少 2 个字符。UTF-8 编码。<br>|
-|**video**|[VideoStreamSettings](modifytranscodetemplate#videostreamsettings)|视频参数配置|
-|**audio**|[AudioStreamSettings](modifytranscodetemplate#audiostreamsettings)|音频参数配置|
-|**container**|[ContainerSettings](modifytranscodetemplate#containersettings)|容器设置|
-|**encryption**|[EncryptionSettings](modifytranscodetemplate#encryptionsettings)|加密配置|
+|**video**|[VideoStreamSettings](user-content-modifytranscodetemplate#videostreamsettings)|视频参数配置|
+|**audio**|[AudioStreamSettings](user-content-modifytranscodetemplate#audiostreamsettings)|音频参数配置|
+|**container**|[ContainerSettings](user-content-modifytranscodetemplate#containersettings)|容器设置|
+|**encryption**|[EncryptionSettings](user-content-modifytranscodetemplate#encryptionsettings)|加密配置|
 |**definition**|String|清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**transcodeType**|String|转码方式。取值范围：<br>  normal - 普通转码<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 |**createTime**|String|创建时间|

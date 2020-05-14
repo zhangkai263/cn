@@ -1,0 +1,5 @@
+# 限制说明
+
+因媒体处理服务的源文件和输出文件均存储在对象存储上，所以在使用媒体处理服务时，需要先开通京东智联云对象存储服务。
+
+对象存储的开通条件包括完成实名认证、同意对象存储服务条款并开通、创建AccessKey和AccessKeySecret等。具体参见[对象存储开通服务](../../../Storage-and-CDN/Object-Storage-Service/Getting-Started/Sign-Up-Service-1.md)
