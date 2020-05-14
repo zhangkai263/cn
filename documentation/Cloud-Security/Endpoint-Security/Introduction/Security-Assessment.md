@@ -13,7 +13,7 @@
 
 ### 业务流程 
 
-1、首先安装多云客户端，[安装指导](../../Operation-Guide/MultiCloud-Install.md)
+1、首先安装多云客户端，[安装指导](../Operation-Guide/MultiCloud-Install.md)
 
 2、观察一周后，在工单系统中提交获取企业版安全报告，并且留下联系方式：微信、手机号。
 
