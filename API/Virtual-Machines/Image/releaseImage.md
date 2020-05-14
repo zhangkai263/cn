@@ -1,21 +1,20 @@
-# startInstance
+# releaseImage
 
 
 ## 描述
-启动单个云主机，只能启动<b>stopped</b>状态的云主机，云主机没有正在进行中的任务才可启动。<br>
-只能启动正常计费状态的云主机，若已欠费停服或到期停服则不支持启动。
+发布社区镜像，只允许操作您的个人私有镜像。发布为社区镜像后会撤销共享关系。<br>
 
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:startInstance
+https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:release
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域ID|
-|**instanceId**|String|True| |云主机ID|
+|**imageId**|String|True| |镜像ID|
 
 ## 请求参数
 无

@@ -24,19 +24,19 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeimageconstraints#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**imageConstraints**|ImageConstraint|镜像限制|
-### ImageConstraint
+|**imageConstraints**|[ImageConstraint](describeimageconstraints#imageconstraint)|镜像限制|
+### <div id="imageconstraint">ImageConstraint</div>
 |名称|类型|描述|
 |---|---|---|
 |**imageId**|String|镜像ID|
-|**imageInstanceTypeConstraint**|ImageInstanceTypeConstraint|使用镜像创建实例的规格限制|
-### ImageInstanceTypeConstraint
+|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](describeimageconstraints#imageinstancetypeconstraint)|使用镜像创建实例的规格限制|
+### <div id="imageinstancetypeconstraint">ImageInstanceTypeConstraint</div>
 |名称|类型|描述|
 |---|---|---|
 |**constraintsType**|String|限制类型。取值：excludes：不支持的实例类型；includes：支持的实例类型。|
