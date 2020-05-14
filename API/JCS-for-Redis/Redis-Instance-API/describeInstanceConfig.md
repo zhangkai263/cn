@@ -22,13 +22,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](user-content-describeinstanceconfig#result)|结果|
+|**result**|[Result](describeinstanceconfig#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instanceConfig**|[ConfigItem[]](user-content-describeinstanceconfig#configitem)| |
+|**instanceConfig**|[ConfigItem[]](describeinstanceconfig#configitem)| |
 ### <div id="configitem">ConfigItem</div>
 |名称|类型|描述|
 |---|---|---|

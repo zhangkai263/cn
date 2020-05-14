@@ -24,13 +24,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](user-content-describedownloadurl#result)|结果|
+|**result**|[Result](describedownloadurl#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**downloadUrls**|[DownloadUrl[]](user-content-describedownloadurl#downloadurl)|备份文件下载信息列表|
+|**downloadUrls**|[DownloadUrl[]](describedownloadurl#downloadurl)|备份文件下载信息列表|
 ### <div id="downloadurl">DownloadUrl</div>
 |名称|类型|描述|
 |---|---|---|

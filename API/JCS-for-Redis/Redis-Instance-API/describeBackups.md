@@ -28,13 +28,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](user-content-describebackups#result)|结果|
+|**result**|[Result](describebackups#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**backups**|[Backup[]](user-content-describebackups#backup)|备份任务（文件）列表|
+|**backups**|[Backup[]](describebackups#backup)|备份任务（文件）列表|
 |**totalCount**|Integer|备份任务（文件）总数|
 ### <div id="backup">Backup</div>
 |名称|类型|描述|

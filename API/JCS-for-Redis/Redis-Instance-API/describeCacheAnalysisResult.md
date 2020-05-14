@@ -23,7 +23,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](user-content-describecacheanalysisresult#result)|结果|
+|**result**|[Result](describecacheanalysisresult#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
@@ -32,11 +32,11 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**startTime**|String|任务开始时间, rfc3339格式|
 |**finishTime**|String|任务结束时间, rfc3339格式|
 |**analysisType**|Integer|任务类型，0:手动分析，1自动分析|
-|**stringBigKeys**|[RedisKey[]](user-content-describecacheanalysisresult#rediskey)|string类型的大key的降序数组|
-|**otherBigKeys**|[RedisKey[]](user-content-describecacheanalysisresult#rediskey)|除了string的其他类型的大key的降序数组|
-|**hotKeys**|[RedisKey[]](user-content-describecacheanalysisresult#rediskey)|热key的降序数组|
-|**cmdCallTimesTop**|[RedisCmd[]](user-content-describecacheanalysisresult#rediscmd)|命令执行次数的降序数组|
-|**cmdUseCpuTop**|[RedisCmd[]](user-content-describecacheanalysisresult#rediscmd)|命令使用cup时间的降序数组|
+|**stringBigKeys**|[RedisKey[]](describecacheanalysisresult#rediskey)|string类型的大key的降序数组|
+|**otherBigKeys**|[RedisKey[]](describecacheanalysisresult#rediskey)|除了string的其他类型的大key的降序数组|
+|**hotKeys**|[RedisKey[]](describecacheanalysisresult#rediskey)|热key的降序数组|
+|**cmdCallTimesTop**|[RedisCmd[]](describecacheanalysisresult#rediscmd)|命令执行次数的降序数组|
+|**cmdUseCpuTop**|[RedisCmd[]](describecacheanalysisresult#rediscmd)|命令使用cup时间的降序数组|
 |**keyTypeDistribution**|Map|key的类型分布|
 |**keySizeDistribution**|Map|key的大小分布|
 ### <div id="rediscmd">RedisCmd</div>

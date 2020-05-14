@@ -32,7 +32,7 @@ v1
 |**describeSpecConfig**|GET|查询缓存Redis实例的规格配置信息|
 |**describeUserQuota**|GET|查询账户的缓存Redis配额信息|
 |**modifyAnalysisTime**|POST|设置自动缓存分析时间|
-|**modifyBackupPolicy**|PATCH|修改缓存Redis实例的自动备份策略，可修改备份周期和备份时间|
+|**modifyBackupPolicy**|PATCH|开启或更新缓存Redis实例的自动备份策略，可修改备份周期和备份时间|
 |**modifyCacheInstanceAttribute**|PATCH|修改缓存Redis实例的资源名称或描述，二者至少选一|
 |**modifyCacheInstanceClass**|POST|变更缓存Redis实例规格（变配），实例运行时可以变配，新规格不能与之前的老规格相同，新规格内存大小不能小于实例的已使用内存<br>|
 |**modifyInstanceConfig**|POST|修改缓存Redis实例的配置参数，支持部分配置参数修改|
