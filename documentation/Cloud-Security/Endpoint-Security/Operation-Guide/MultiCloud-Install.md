@@ -16,7 +16,7 @@
 
 如图所示，点击复制命令，在linux服务器上命令行中粘贴。
 
-![](../../../../image/Endpoint-Security/mcloudinstallAgent-linux1.png)
+![](https://github.com/jdcloudcom/cn/blob/edit/image/Endpoint-Security/mcloudinstallAgent-liunx1.png)
 
 ##### 安装验证
 
