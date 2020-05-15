@@ -18,7 +18,6 @@
 
 ![](../../../../image/Endpoint-Security/mcloudinstallAgent-linux1.png)
 
-
 ##### 安装验证
 
 进入控制台->【主机安全】->【资产管理】->【主机】 
