@@ -17,7 +17,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:stopInst
 |**instanceId**|String|True| |云主机ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**chargeOnStopped**|String|False| |关机模式，只支持云盘做系统盘的按配置计费云主机keepCharging：关机后继续计费；stopCharging：关机后停止计费。|
 
 
 ## 返回参数
