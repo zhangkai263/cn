@@ -1,7 +1,7 @@
 
 # 产品概述
 
-DDoS定制防护服务（Anti-DDoS Premium Service）为京东云用户提供专业的DDOS攻击防护解决方案，根据用户应用场景提供定制化的近源清洗、流量压制、DNS刷新等服务。
+DDoS定制防护服务（Anti-DDoS Premium Service）为用户提供专业的DDOS攻击防护解决方案，根据用户应用场景提供定制化的近源清洗、流量压制、DNS刷新等服务。
 
 ## 使用场景：
 
