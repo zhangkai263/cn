@@ -1,14 +1,14 @@
 # 文件（object）管理
 
-[如何修改object存储类型？](Data-Management#user-content-1)
+[如何修改object存储类型？](Object-Management#user-content-1)
 
-[如何修改文件的Content-Type？](Data-Management#user-content-2)
+[如何修改文件的Content-Type？](Object-Management#user-content-2)
 
-[上传到OSS的图片在浏览器打开链接后就直接下载了，如何做到可以通过浏览器打开这种图片？](Data-Management#user-content-3)
+[上传到OSS的图片在浏览器打开链接后就直接下载了，如何做到可以通过浏览器打开这种图片？](Object-Management#user-content-3)
 
-[如何使文件直接在浏览器中下载，而不是预览？](Data-Management#user-content-4)
+[如何使文件直接在浏览器中下载，而不是预览？](Object-Management#user-content-4)
 
-[如何（定期）清理过期文件、过期分片？](Data-Management#user-content-5)
+[如何（定期）清理过期文件、过期分片？](Object-Management#user-content-5)
 
 ------
 
