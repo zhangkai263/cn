@@ -45,7 +45,6 @@
 若存在数据同步规则，源Bucket与目标Bucket均不可删除，必须先关闭增量数据同步。详情参见[数据同步设置](https://docs.jdcloud.com/object-storage-service/set-bucket-cross-region-replication-2)。
 
 <div id="user-content-6"></div>
-#### 如何查询Bucket存储量、流量？
+#### 如何查询Bucket用量数据？
 
-- 通过控制台进行查询：用户可以登录[OSS控制台](https://oss-console.jdcloud.com/overview)，点击【对象存储】--【用量监控】，可以选择Bucket，选择时间范围，查看对应Bucket的存储容量。可参考文档[用量监控](https://docs.jdcloud.com/object-storage-service/usage-monitoring)。
-- 通过API接口：参考文档[根据type获取指定bucket用量数据](https://docs.jdcloud.com/object-storage-service/api/getsinglebucketcapacity?content=API)。
+通过API接口：参考文档[根据type获取指定bucket用量数据](https://docs.jdcloud.com/object-storage-service/api/getsinglebucketcapacity?content=API)。

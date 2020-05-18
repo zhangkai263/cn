@@ -31,7 +31,7 @@
 <div id="user-content-3"></div>
 #### OSS是否支持 HTTPS 访问？
 
-支持。OSS在所有地域的访问节点都提供了 SSL 传输的支持，且在 SDK 和控制台都默认启用HTTPS。用户登录控制台后可看到object生成对应的外链url，url默认采用https协议，拷贝到浏览器中直接进行HTTPS访问即可，无其他特殊配置。
+支持。OSS在所有地域的访问节点都提供了SSL传输的支持，且在SDK和控制台都默认启用HTTPS。用户登录控制台后可看到object生成对应的外链url，url默认采用https协议，拷贝到浏览器中直接进行HTTPS访问即可，无其他特殊配置。
 
 <div id="user-content-4"></div>
 #### OSS自定义域名如何实现HTTPS访问？
