@@ -10,6 +10,8 @@
 | jdw.dx2.xlarge  | 8    | 32     | 256            | 512                | 8                   | 2-16      |
 | jdw.dx2.2xlarge | 16   | 64     | 512            | 1024               | 16                  | 2-16      |
 | jdw.dx2.4xlarge | 32   | 128    | 1024           | 2048               | 32                  | 2-16      |
+
+
 **说明：**
 
 - 每个Segment节点会包含数个 Primary Segment 和 Mirror Segment 。
