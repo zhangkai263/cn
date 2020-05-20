@@ -1,37 +1,37 @@
-# ²úÆ·¸ÅÊö
+# äº§å“æ¦‚è¿°
 
-µ¯ĞÔÍø¿¨ÊÇÒ»ÖÖĞéÄâÍøÂç½Ó¿Ú£¬Äú¿ÉÒÔÔÚÔÆÖ÷»úÉÏ°ó¶¨µ¯ĞÔÍø¿¨ÒÔÊ¹ÔÆÖ÷»ú½ÓÈë²»Í¬ÍøÂç¡£µ¯ĞÔÍø¿¨¿ÉÒÔÔÚ¹¹½¨ÒµÎñÁ÷Á¿·ÖÀë¡¢¶àÒµÎñ³ĞÔØÒÔ¼°ÍøÂç¸ß¿ÉÓÃµÈÓ¦ÓÃ³¡¾°Ê±Ìá¹©Ö§³Ö¡£¾©¶«ÖÇÁªÔÆµ¯ĞÔÍø¿¨ÎªµØÓò¼¶ÊôĞÔµ¯ĞÔÍø¿¨£¬µ¯ĞÔÍø¿¨¿ÉÒÔ°ó¶¨Ë½ÓĞÍøÂçÄÚÈÎÒâ¿ÉÓÃÇøÔÆÖ÷»ú¡£Ã¿Ì¨ÔÆÖ÷»ú¿ÉÒÔ°ó¶¨¶à¿éµ¯ĞÔÍø¿¨£¬°ó¶¨ÊıÁ¿ÒÀ¾İÔÆÖ÷»úÊµÀı¹æ¸ñ¶ø¶¨¡£
+å¼¹æ€§ç½‘å¡æ˜¯ä¸€ç§è™šæ‹Ÿç½‘ç»œæ¥å£ï¼Œæ‚¨å¯ä»¥åœ¨äº‘ä¸»æœºä¸Šç»‘å®šå¼¹æ€§ç½‘å¡ä»¥ä½¿äº‘ä¸»æœºæ¥å…¥ä¸åŒç½‘ç»œã€‚å¼¹æ€§ç½‘å¡å¯ä»¥åœ¨æ„å»ºä¸šåŠ¡æµé‡åˆ†ç¦»ã€å¤šä¸šåŠ¡æ‰¿è½½ä»¥åŠç½‘ç»œé«˜å¯ç”¨ç­‰åº”ç”¨åœºæ™¯æ—¶æä¾›æ”¯æŒã€‚äº¬ä¸œæ™ºè”äº‘å¼¹æ€§ç½‘å¡ä¸ºåœ°åŸŸçº§å±æ€§å¼¹æ€§ç½‘å¡ï¼Œå¼¹æ€§ç½‘å¡å¯ä»¥ç»‘å®šç§æœ‰ç½‘ç»œå†…ä»»æ„å¯ç”¨åŒºäº‘ä¸»æœºã€‚æ¯å°äº‘ä¸»æœºå¯ä»¥ç»‘å®šå¤šå—å¼¹æ€§ç½‘å¡ï¼Œç»‘å®šæ•°é‡ä¾æ®äº‘ä¸»æœºå®ä¾‹è§„æ ¼è€Œå®šã€‚
 
-µ¯ĞÔÍø¿¨Ö÷Òª¾ß±¸ÒÔÏÂÌØĞÔ£º
+å¼¹æ€§ç½‘å¡ä¸»è¦å…·å¤‡ä»¥ä¸‹ç‰¹æ€§ï¼š
 
-* ¶àÍø¿¨¶àIP£ºÒÀ¾İÔÆÖ÷»úÊµÀı¹æ¸ñ£¬¾©¶«ÖÇÁªÔÆÃ¿Ì¨ÔÆÖ÷»ú¿ÉÒÔ°ó¶¨¶à¿éµ¯ĞÔÍø¿¨£¬Ã¿¿éµ¯ĞÔÍø¿¨¿ÉÒÔ·ÖÅä¶à¸öÄÚÍøIPµØÖ·£¬Í¬Ê±£¬Ã¿¸öÄÚÍøIPµØÖ·¿ÉÒÔ¹ØÁªÒ»¸öµ¯ĞÔ¹«ÍøIPµØÖ·¡£
+* å¤šç½‘å¡å¤šIPï¼šä¾æ®äº‘ä¸»æœºå®ä¾‹è§„æ ¼ï¼Œäº¬ä¸œæ™ºè”äº‘æ¯å°äº‘ä¸»æœºå¯ä»¥ç»‘å®šå¤šå—å¼¹æ€§ç½‘å¡ï¼Œæ¯å—å¼¹æ€§ç½‘å¡å¯ä»¥åˆ†é…å¤šä¸ªå†…ç½‘IPåœ°å€ï¼ŒåŒæ—¶ï¼Œæ¯ä¸ªå†…ç½‘IPåœ°å€å¯ä»¥å…³è”ä¸€ä¸ªå¼¹æ€§å…¬ç½‘IPåœ°å€ã€‚
 
-* µ¯ĞÔ²å°Î£º¾©¶«ÖÇÁªÔÆµ¯ĞÔÍø¿¨ÎªµØÓò¼¶ÊôĞÔµ¯ĞÔÍø¿¨£¬¿ÉÒÔ°ó¶¨Ë½ÓĞÍøÂçÄÚÈÎÒâ¿ÉÓÃÇøÔÆÖ÷»ú¡£ÔÚ·¢Éú¹ÊÕÏÊ±£¬µ¯ĞÔÍø¿¨¿ÉÒÔ´Ó¹ÊÕÏÔÆÖ÷»úÉÏ½â°ó£¬²¢Ç¨ÒÆÖÁÁíÒ»Ì¨±¸ÓÃÔÆÖ÷»ú¡£
+* å¼¹æ€§æ’æ‹”ï¼šäº¬ä¸œæ™ºè”äº‘å¼¹æ€§ç½‘å¡ä¸ºåœ°åŸŸçº§å±æ€§å¼¹æ€§ç½‘å¡ï¼Œå¯ä»¥ç»‘å®šç§æœ‰ç½‘ç»œå†…ä»»æ„å¯ç”¨åŒºäº‘ä¸»æœºã€‚åœ¨å‘ç”Ÿæ•…éšœæ—¶ï¼Œå¼¹æ€§ç½‘å¡å¯ä»¥ä»æ•…éšœäº‘ä¸»æœºä¸Šè§£ç»‘ï¼Œå¹¶è¿ç§»è‡³å¦ä¸€å°å¤‡ç”¨äº‘ä¸»æœºã€‚
 
-* ÒµÎñ°²È«£º¾©¶«ÖÇÁªÔÆÃ¿Ì¨ÔÆÖ÷»ú¿É¹ÒÔØ¶à¿éµ¯ĞÔÍø¿¨£¬ÌØ¶¨ÒµÎñÁ÷Á¿¿ÉÓÉÌØ¶¨µ¯ĞÔÍø¿¨³ĞÔØ¡£²»Í¬µ¯ĞÔÍø¿¨¿É¶ÀÁ¢¹ØÁª°²È«×é£¬·Ö±ğÓ¦ÓÃ²»Í¬µÄ°²È«×é²ßÂÔ£¬´Ó¶øÌáÉıÒµÎñÁ÷Á¿°²È«ĞÔ¡£
+* ä¸šåŠ¡å®‰å…¨ï¼šäº¬ä¸œæ™ºè”äº‘æ¯å°äº‘ä¸»æœºå¯æŒ‚è½½å¤šå—å¼¹æ€§ç½‘å¡ï¼Œç‰¹å®šä¸šåŠ¡æµé‡å¯ç”±ç‰¹å®šå¼¹æ€§ç½‘å¡æ‰¿è½½ã€‚ä¸åŒå¼¹æ€§ç½‘å¡å¯ç‹¬ç«‹å…³è”å®‰å…¨ç»„ï¼Œåˆ†åˆ«åº”ç”¨ä¸åŒçš„å®‰å…¨ç»„ç­–ç•¥ï¼Œä»è€Œæå‡ä¸šåŠ¡æµé‡å®‰å…¨æ€§ã€‚
 
-* Â·ÓÉ¿ØÖÆ£º¾©¶«ÖÇÁªÔÆÃ¿Ì¨ÔÆÖ÷»ú¿É¹ÒÔØÍ¬Ò»Ë½ÓĞÍøÂçÄÚ²»Í¬×ÓÍøµÄµ¯ĞÔÍø¿¨£¬Ã¿¸ö×ÓÍø¿ÉÒÔ·Ö±ğÉèÖÃ·ÃÎÊ¿ØÖÆ²ßÂÔÒÔ¼°Â·ÓÉ×ª·¢²ßÂÔ£¬ÅäºÏÔÆÖ÷»úÄÚ²¿Â·ÓÉÅäÖÃ¹¤¾ß£¬¿ÉÊµÏÖ¶ÔÓÚÍøÂçÁ÷Á¿µÄ¾«È·¿ØÖÆ¡£
+* è·¯ç”±æ§åˆ¶ï¼šäº¬ä¸œæ™ºè”äº‘æ¯å°äº‘ä¸»æœºå¯æŒ‚è½½åŒä¸€ç§æœ‰ç½‘ç»œå†…ä¸åŒå­ç½‘çš„å¼¹æ€§ç½‘å¡ï¼Œæ¯ä¸ªå­ç½‘å¯ä»¥åˆ†åˆ«è®¾ç½®è®¿é—®æ§åˆ¶ç­–ç•¥ä»¥åŠè·¯ç”±è½¬å‘ç­–ç•¥ï¼Œé…åˆäº‘ä¸»æœºå†…éƒ¨è·¯ç”±é…ç½®å·¥å…·ï¼Œå¯å®ç°å¯¹äºç½‘ç»œæµé‡çš„ç²¾ç¡®æ§åˆ¶ã€‚
 
-## ³£ÓÃ²Ù×÷
+## å¸¸ç”¨æ“ä½œ
 
-- µ¯ĞÔÍø¿¨¹ÜÀí
-	- [´´½¨µ¯ĞÔÍø¿¨](../Operation-Guide/Elastic-Network-Interface-Management/Create-Elastic-Network-Interface.md)
-	- [É¾³ıµ¯ĞÔÍø¿¨](../Operation-Guide/Elastic-Network-Interface-Management/Delete-Elastic-Network-Interface.md)
-	- [°ó¶¨µ¯ĞÔÍø¿¨](../Operation-Guide/Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)
-	- [½â°óµ¯ĞÔÍø¿¨](../Operation-Guide/Elastic-Network-Interface-Management/Disassociate-Elastic-Network-Interface.md)
-	- [ÆôÓÃËæÊµÀıÉ¾³ı](../Operation-Guide/Elastic-Network-Interface-Management/Enable-Delete-with-VM.md)
-	- [È¡ÏûËæÊµÀıÉ¾³ı](../Operation-Guide/Elastic-Network-Interface-Management/Disable-Delete-with-VM.md)
-- ÄÚÍøIP¹ÜÀí
-	- [·ÖÅäÄÚÍøIP](../Operation-Guide/Private-IP-Management/Assign-Secondary-IP.md)
-	- [ÊÍ·ÅÄÚÍøIP](../Operation-Guide/Private-IP-Management/Unassign-Secondary-IP.md)
-	- [°ó¶¨¹«ÍøIP](../Operation-Guide/Private-IP-Management/Associate-Elastic-IP.md)
-	- [½â°ó¹«ÍøIP](../Operation-Guide/Private-IP-Management/Disassociate-Elastic-IP.md)
-- °²È«×é¹ÜÀí
-	- [Ìí¼Ó°²È«×é](../Operation-Guide/Security-Group-Management/Associate-Security-Group.md)
-	- [ÒÆ³ı°²È«×é](../Operation-Guide/Security-Group-Management/Disassociate-Security-Group.md)
-- ÔÆÖ÷»úÅäÖÃ
-	- [LinuxÏµÍ³ÁÙÊ±ÅäÖÃ](../Operation-Guide/VM-Configuration/Linux-Temporary-Configuration.md)
-	- [LinuxÏµÍ³ÓÀ¾ÃÅäÖÃ](../Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md)
+- å¼¹æ€§ç½‘å¡ç®¡ç†
+	- [åˆ›å»ºå¼¹æ€§ç½‘å¡](../Operation-Guide/Elastic-Network-Interface-Management/Create-Elastic-Network-Interface.md)
+	- [åˆ é™¤å¼¹æ€§ç½‘å¡](../Operation-Guide/Elastic-Network-Interface-Management/Delete-Elastic-Network-Interface.md)
+	- [ç»‘å®šå¼¹æ€§ç½‘å¡](../Operation-Guide/Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)
+	- [è§£ç»‘å¼¹æ€§ç½‘å¡](../Operation-Guide/Elastic-Network-Interface-Management/Disassociate-Elastic-Network-Interface.md)
+	- [å¯ç”¨éšå®ä¾‹åˆ é™¤](../Operation-Guide/Elastic-Network-Interface-Management/Enable-Delete-with-VM.md)
+	- [å–æ¶ˆéšå®ä¾‹åˆ é™¤](../Operation-Guide/Elastic-Network-Interface-Management/Disable-Delete-with-VM.md)
+- å†…ç½‘IPç®¡ç†
+	- [åˆ†é…å†…ç½‘IP](../Operation-Guide/Private-IP-Management/Assign-Secondary-IP.md)
+	- [é‡Šæ”¾å†…ç½‘IP](../Operation-Guide/Private-IP-Management/Unassign-Secondary-IP.md)
+	- [ç»‘å®šå…¬ç½‘IP](../Operation-Guide/Private-IP-Management/Associate-Elastic-IP.md)
+	- [è§£ç»‘å…¬ç½‘IP](../Operation-Guide/Private-IP-Management/Disassociate-Elastic-IP.md)
+- å®‰å…¨ç»„ç®¡ç†
+	- [æ·»åŠ å®‰å…¨ç»„](../Operation-Guide/Security-Group-Management/Associate-Security-Group.md)
+	- [ç§»é™¤å®‰å…¨ç»„](../Operation-Guide/Security-Group-Management/Disassociate-Security-Group.md)
+- äº‘ä¸»æœºé…ç½®
+	- [Linuxç³»ç»Ÿä¸´æ—¶é…ç½®](../Operation-Guide/VM-Configuration/Linux-Temporary-Configuration.md)
+	- [Linuxç³»ç»Ÿæ°¸ä¹…é…ç½®](../Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md)
 
-## ¼Æ·Ñ
-µ¯ĞÔÍø¿¨·şÎñÃâ·Ñ£¬µ¯ĞÔÍø¿¨¹ØÁªµÄµ¯ĞÔ¹«ÍøIP¶ÀÁ¢¼Æ·Ñ¡£ÏêÏ¸ËµÃ÷Çë²Î¼û£º[¼Æ·ÑËµÃ÷](../Pricing/Billing-Overview.md)¡£
+## è®¡è´¹
+å¼¹æ€§ç½‘å¡æœåŠ¡å…è´¹ï¼Œå¼¹æ€§ç½‘å¡å…³è”çš„å¼¹æ€§å…¬ç½‘IPç‹¬ç«‹è®¡è´¹ã€‚è¯¦ç»†è¯´æ˜è¯·å‚è§ï¼š[è®¡è´¹è¯´æ˜](../Pricing/Billing-Overview.md)ã€‚
