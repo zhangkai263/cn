@@ -13,7 +13,7 @@
 
 2. 在实例列表页面，点击**创建**，进入“创建实例”页面。
 
-   ![11](../../../../image/createInstance.png)
+   ![11](../../image/createInstance.png)
 
    
 
