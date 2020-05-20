@@ -10,7 +10,8 @@
 
 （1）注册域名
 
-如果您需要在京东智联云进行域名注册，可参考[域名服务](../../../../Domain-Name-Service/Getting-Started/Register-Domain-Name.md)进行操作。
+如果您需要在京东智联云进行域名注册，可参考域名服务文档进行操作。
+帮助文档：https://docs.jdcloud.com/cn/domain-name-service/register-domain-name
 
 （2）如何进行主域名认证？
 
