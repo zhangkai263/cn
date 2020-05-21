@@ -13,4 +13,31 @@
 
 ## 操作步骤
 
-### 第1步： 
+### 配置内部负载均衡
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-1.jpg)
+
+创建完成后，进入应用详情，可在“负载均衡”tab签中，对该应用进行负载均衡配置.比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-4.jpg)
+
+首先配置内部负载均衡。点击新建，配置端口信息.比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-5.jpg)
+
+新建完成后，可在列表中看见新增的信息。比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-6.jpg)
+
+
+### 配置外部负载均衡
+
+如需配置外部负载均衡，则需先配置一条内部负载均衡信息。然后进入“外部”tab页，点击新建，进行信息配置。比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-7.jpg)
+
+创建成功后，将在列表中看见新增的信息。比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-9.jpg)
+
+接下来，在host文件中进行域名配置。比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-8.jpg)
+
+最后进行测试，坎是否配置成功。比如：
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-10.jpg)
+
