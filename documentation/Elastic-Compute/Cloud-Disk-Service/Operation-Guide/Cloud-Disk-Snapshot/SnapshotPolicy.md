@@ -6,11 +6,11 @@
 
 在自定义快照列表页面，可以看到当前登录账号下已有的策略。策略按照“最后修改时间”由近至远排列。
 
-![policylist](D:\02 云硬盘\帮助文档\快照策略\policylist.png)
+![policylist](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/policylist.png)
 
 点击列表左上方的“创建”按钮，可以创建新的快照策略。
 
-![createpolicy](D:\02 云硬盘\帮助文档\快照策略\createpolicy.png)
+![createpolicy](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/createpolicy.png)
 
 其中：
 
@@ -32,7 +32,7 @@
 
 对快照策略的修改将在快照策略**下次执行**时生效。
 
-![editpolicy](D:\02 云硬盘\帮助文档\快照策略\editpolicy.png)
+![editpolicy](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/editpolicy.png)
 
 
 
@@ -50,7 +50,7 @@
 
 切换至“已关联”页签，可以查看该策略已经关联的云硬盘。勾选其中的云硬盘，点击“解除关联”，将停止该策略下对选中云硬盘的自动备份。
 
-![applied](D:\02 云硬盘\帮助文档\快照策略\applied.png)
+![applied](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/applied.png)
 
 
 
