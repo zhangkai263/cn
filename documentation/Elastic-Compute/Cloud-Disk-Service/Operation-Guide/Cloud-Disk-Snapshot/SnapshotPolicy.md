@@ -46,7 +46,7 @@
 
 一次可对多块云硬盘进行关联操作。可以通过列表上方的“当前地域”切换不同地域的云硬盘。也可以通过“云硬盘ID”、“云硬盘名称”或者“实例ID”搜索对应的云硬盘。
 
-![applypolicy](D:\02 云硬盘\帮助文档\快照策略\applypolicy.png)
+![applypolicy](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/applypolicy.png)
 
 切换至“已关联”页签，可以查看该策略已经关联的云硬盘。勾选其中的云硬盘，点击“解除关联”，将停止该策略下对选中云硬盘的自动备份。
 
