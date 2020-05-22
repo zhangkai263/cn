@@ -1,6 +1,6 @@
 #  负载均衡
 
-在微服务平台上，对于Kubernetes应用，用户可以给它配置负载均衡，来实现应用从内网或者公网能够被访问。
+在微服务平台上，对于Kubernetes应用，用户可以给它配置负载均衡，来实现应用从内网或者公网能够被访问到所有实例上。
 
 ## 操作场景
 
@@ -46,7 +46,7 @@
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-8.jpg)
 
-最后进行测试，坎是否配置成功。比如：
+最后进行测试，确认是否配置成功。比如：
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fzjh-10.jpg)
 
