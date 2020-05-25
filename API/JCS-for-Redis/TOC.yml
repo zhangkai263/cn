@@ -65,7 +65,7 @@ items:
         items:
           - name: describeUserQuota
             href: Redis-Quota-API/describeUserQuota.md
-      - name: Redis规格配置API（可替换describeInstanceClass接口）
+      - name: Redis规格配置API（可替换Redis规格API）
         items:
           - name: describeSpecConfig
             href: Redis-SpecConfig-API/describeSpecConfig.md

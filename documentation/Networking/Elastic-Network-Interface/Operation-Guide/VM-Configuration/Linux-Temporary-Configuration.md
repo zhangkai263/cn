@@ -1,27 +1,27 @@
-# LinuxÏµÍ³ÁÙÊ±ÅäÖÃ
+# Linuxç³»ç»Ÿä¸´æ—¶é…ç½®
 
-±¾½Ì³ÌÒÔCentOS 6.8²Ù×÷ÏµÍ³ÎªÀý£¬½éÉÜÈçºÎÔÚÔÆÖ÷»úÄÚÅäÖÃµ¯ÐÔÍø¿¨£¨¸Ã·½·¨²¢²»ÓÀ¾Ã±£´æµ¯ÐÔÍø¿¨ÅäÖÃ£¬ÔÆÖ÷»úÖØÆôºóÊ§Ð§£©¡£
+æœ¬æ•™ç¨‹ä»¥CentOS 6.8æ“ä½œç³»ç»Ÿä¸ºä¾‹ï¼Œä»‹ç»å¦‚ä½•åœ¨äº‘ä¸»æœºå†…é…ç½®å¼¹æ€§ç½‘å¡ï¼ˆè¯¥æ–¹æ³•å¹¶ä¸æ°¸ä¹…ä¿å­˜å¼¹æ€§ç½‘å¡é…ç½®ï¼Œäº‘ä¸»æœºé‡å¯åŽå¤±æ•ˆï¼‰ã€‚
 
-**×¢Òâ£ºÖÐÀ¨ºÅÖÐµÄÄÚÈÝÎªÓÃ»§×ÔÐÐÌîÐ´ÄÚÈÝ¡£**
+**æ³¨æ„ï¼šä¸­æ‹¬å·ä¸­çš„å†…å®¹ä¸ºç”¨æˆ·è‡ªè¡Œå¡«å†™å†…å®¹ã€‚**
 
-## ²Ù×÷²½Öè
-²½Öè1£ºÔÚ¾©¶«ÖÇÁªÔÆ¿ØÖÆÌ¨½«µ¯ÐÔÍø¿¨°ó¶¨ÖÁÄ¿±êÔÆÖ÷»ú¡£
+## æ“ä½œæ­¥éª¤
+æ­¥éª¤1ï¼šåœ¨äº¬ä¸œæ™ºè”äº‘æŽ§åˆ¶å°å°†å¼¹æ€§ç½‘å¡ç»‘å®šè‡³ç›®æ ‡äº‘ä¸»æœºã€‚
 
-²½Öè2£ºÍ¨¹ýSSH·½Ê½Ô¶³ÌµÇÂ¼ÖÁÄ¿±êÔÆÖ÷»ú¡£
+æ­¥éª¤2ï¼šé€šè¿‡SSHæ–¹å¼è¿œç¨‹ç™»å½•è‡³ç›®æ ‡äº‘ä¸»æœºã€‚
 
-²½Öè3£ºÖ´ÐÐÒÔÏÂÃüÁî²éÑ¯ÒÑ¹ÒÔØµÄµ¯ÐÔÍø¿¨Ãû³Æ¡£
+æ­¥éª¤3ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤æŸ¥è¯¢å·²æŒ‚è½½çš„å¼¹æ€§ç½‘å¡åç§°ã€‚
 
 	# ifconfig -a
 
-²½Öè4£ºÖ´ÐÐÒÔÏÂÃüÁîÆôÓÃµ¯ÐÔÍø¿¨¡£
+æ­¥éª¤4ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤å¯ç”¨å¼¹æ€§ç½‘å¡ã€‚
 
 	# ifconfig [device name] up
 
-²½Öè5£ºÖ´ÐÐÒÔÏÂÃüÁîÅäÖÃµ¯ÐÔÍø¿¨Ö÷IP¡£
+æ­¥éª¤5ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤é…ç½®å¼¹æ€§ç½‘å¡ä¸»IPã€‚
 
 	# ifconfig [device name] [primary ip] netmask [netmask] broadcast [broadcast ip]
 
-²½Öè6£ºÖ´ÐÐÒÔÏÂÃüÁîÅäÖÃµ¯ÐÔÍø¿¨¸¨ÖúIP¡£
+æ­¥éª¤6ï¼šæ‰§è¡Œä»¥ä¸‹å‘½ä»¤é…ç½®å¼¹æ€§ç½‘å¡è¾…åŠ©IPã€‚
 
 	# ifconfig [device name]:[secondary ip sequence number] [secondary ip] netmask [netmask] broadcast [broadcast ip]
 

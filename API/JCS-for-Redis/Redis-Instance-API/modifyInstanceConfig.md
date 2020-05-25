@@ -18,7 +18,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceConfig**|[ConfigItem[]](user-content-modifyinstanceconfig#configitem)|True| |配置参数名和参数值|
+|**instanceConfig**|[ConfigItem[]](modifyinstanceconfig#configitem)|True| |配置参数名和参数值|
 
 ### <div id="configitem">ConfigItem</div>
 |名称|类型|是否必需|默认值|描述|

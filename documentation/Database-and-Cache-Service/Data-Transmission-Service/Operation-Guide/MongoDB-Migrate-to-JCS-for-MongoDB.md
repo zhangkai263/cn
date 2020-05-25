@@ -17,6 +17,7 @@
 - MongoDB 3.2 版
 - MongoDB 3.4 版
 - MongoDB 3.6 版
+- MongoDB 4.0 版
 
 数据库配置：
 

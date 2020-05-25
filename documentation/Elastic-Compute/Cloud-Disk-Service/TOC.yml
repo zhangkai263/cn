@@ -91,5 +91,7 @@
       href: Operation-Guide/Cloud-Disk-Snapshot/Recover-CloudDisk.md
     - name: 删除快照
       href: Operation-Guide/Cloud-Disk-Snapshot/Deletion-Snapshot.md
+    - name: 自定义快照策略
+      href: Operation-Guide/Cloud-Disk-Snapshot/SnapshotPolicy.md
   - name: 常见问题
     href: FAQ/FAQ.md
