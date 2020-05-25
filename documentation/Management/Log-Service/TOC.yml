@@ -70,7 +70,7 @@ items:
         - name: 键值检索
           href: Operation-Guide/LogSearch/KVSearch.md
     - name: 日志转储
-      href: Operation-Guide/LogTransfer.md
+      href: Operation-Guide/LogTransfer/TransferConfig.md
     - name: 日志监控
       items:
         - name: 日志监控配置
