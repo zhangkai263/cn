@@ -38,13 +38,13 @@
 ![完成页面](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/completed.png)
 
 **检索日志**
-1.	在日志主题列表选中要查看的日志主题，点击“检索”按钮，或者在左侧菜单切换至“日志检索”模块，选中需要查询的日志集和日志主题。
+1.	在日志主题列表选中要查看的日志主题，点击子菜单中的“日志检索”。
 
-![检索-1](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/js-1.png)
-2.	在全文索输入框中输入查询内容，点击检索按钮，即可查询到满足条件的日志信息。 
+2.	在全文检索输入框中输入检索的关键词，点击检索按钮，即可查询到满足条件的日志信息。 
 
-![检索-2](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/js-2.jpg)
-3.	切换至键值索引，设置日志类型Key、检索条件及检索值，点击检索按钮，即可查询到满足条件的日志信息。  
+![全文检索](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogSearch/logsearch01.jpg)
 
-![检索-3](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/js-3.png)
+3.	切换至键值检索，设置日志类型Key、检索条件及检索值，点击检索按钮，即可查询到满足条件的日志信息。  
+
+![键值检索](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogSearch/logsearch02.jpg)
 
