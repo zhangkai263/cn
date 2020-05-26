@@ -37,7 +37,7 @@
 
 ![完成页面](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/completed.png)
 
-**检索日志**
+**日志检索**
 1.	在日志主题列表选中要查看的日志主题，点击子菜单中的“日志检索”。
 
 2.	在全文检索输入框中输入检索的关键词，点击检索按钮，即可查询到满足条件的日志信息。 
@@ -47,4 +47,25 @@
 3.	切换至键值检索，设置日志类型Key、检索条件及检索值，点击检索按钮，即可查询到满足条件的日志信息。  
 
 ![键值检索](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogSearch/logsearch02.jpg)
+
+**日志转储**
+1. 在日志主题列表选中要转储的日志主题，点击子菜单中的“日志转储”，点击“添加”或者在“转储任务列表”页面内点击“新建转储任务”。
+
+![日志转储](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer01.jpg)
+
+2. 根据业务需求填写转储任务的配置项即可。
+
+![创建转储任务](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer02.jpg)
+
+**日志监控**
+1. 在日志主题列表选中要设置监控的日志主题，点击子菜单中的“日志监控”，点击“添加”或者在“监控任务列表”页面内点击“新建监控任务”。
+
+![日志监控](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/logmonitor-1.jpg)
+
+2. 根据业务需求填写监控配置项即可。
+
+![创建监控任务](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/logmonitor-2.jpg)
+
+
+
 
