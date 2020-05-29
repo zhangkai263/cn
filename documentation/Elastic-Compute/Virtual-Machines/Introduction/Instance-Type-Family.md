@@ -7,7 +7,7 @@
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
 * 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
-* 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
+* 高频计算型：[高频计算通用型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 
