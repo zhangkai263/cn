@@ -41,7 +41,6 @@ Web terminal方式登录目标资源之后，默认左侧展示可操作的文�
 1、  Windows服务器临时存储盘名称：Bastion 上的 TempDisk，默认目录是Download.当前会话结束时会同步清空临时存储盘。
      Linux服务器文件存放的默认路径在根目录。
       
-  ![](/image/Bastion/operate8.png) 
     
 2、 单击上传图标，上传文件。
   
@@ -52,6 +51,8 @@ Web terminal方式登录目标资源之后，默认左侧展示可操作的文�
  当前会话结束时将同步清空临时存储盘，请及时操作临时盘中的文件
 ```
   
+   ![](/image/Bastion/operate8.png) 
+   
   
 3、选择文件，单击下载图标，进行文件的下载。
   
