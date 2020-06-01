@@ -32,14 +32,14 @@
 ## 文件传输
 
 
-web terminal方式登录目标之后，默认左侧展示可操作的文件树，对linux目录/windows临时网盘中的文件或文件夹进行管理
+Web terminal方式登录目标资源之后，默认左侧展示可操作的文件树，对Linux目录/Windows临时网盘中的文件或文件夹进行管理
 
   ![](/image/Bastion/operate5.png) 
   
 **操作说明** 
 
 1、  Windows服务器临时存储盘名称：Bastion 上的 TempDisk，默认目录是Download.当前会话结束时会同步清空临时存储盘。
-      Linux服务器文件存放的默认路径在根目录。
+     Linux服务器文件存放的默认路径在根目录。
       
   ![](/image/Bastion/operate8.png) 
     
