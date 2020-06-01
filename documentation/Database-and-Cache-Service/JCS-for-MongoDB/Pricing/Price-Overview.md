@@ -28,7 +28,7 @@
 | mongos.m1.xlarge  | 8核16G  |       8000 |             666.67 |            1.39 |
 | mongos.m1.2xlarge | 8核32G  |      16000 |           1266.67 |            2.64 |
 | mongos.m1.4xlarge | 16核64G |      32000 |         2533.33 |            5.28 |
-| mongos.m1.8xlarge | 32核128G |     64000|           2533.33 |            5.28 |
+| mongos.m1.8xlarge | 32核128G |     64000|           5066.67 |            10.56|
 
 #### configserver/shard
 
