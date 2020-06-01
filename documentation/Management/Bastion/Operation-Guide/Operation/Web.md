@@ -45,10 +45,7 @@
   ![](/image/Bastion/operate6.png) 
  
 ```
-上传文件至Windows主机，文件将临时存储在 Bastion 上的 TempDisk 盘上，当前会话结束时会清空临时存储盘。完成上传操作之后，请及时从临时盘剪切走。
-
-  ![](/image/Bastion/operate8.png) 
-
+ Windows服务器上传下载文件，需打开服务器的磁盘目录，对Bastion 上的 TempDisk 盘上文件复制/粘贴，实现对文件的上传/下载。
 ```
   
   
