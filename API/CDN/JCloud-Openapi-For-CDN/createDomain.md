@@ -28,7 +28,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**sumFileSize**|Long|False| | |
 |**avgFileSize**|Long|False| | |
 |**defaultSourceHost**|String|False| | |
-|**httpType**|String|False| | |
+|**httpType**|String|True| | |
 |**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 |**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
