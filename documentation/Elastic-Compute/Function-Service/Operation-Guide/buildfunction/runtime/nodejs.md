@@ -34,14 +34,9 @@ callback：此参数用于将您所希望的信息返回给调用方。如果没
 
 ## 日志
 
-您可以使用如下语句来打印日志输出，并在函数日志中查看输出：
+您可以使用print语句来打印日志输出，并在函数日志中查看输出。
 
-```JavaScript
-console.log()
-console.error()
-console.warn()
-console.info()
-```
+
 
 
 ## 使用内置模块

@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询配额，支持：云主机、镜像、密钥、模板、镜像共享
+查询配额，支持的类型：云主机、镜像、密钥、模板、镜像共享。
 
 
 ## 请求方式
@@ -18,10 +18,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**filters**|Filter[]|False| |resourceTypes - 资源类型，支持多个[instance，keypair，image，instanceTemplate，imageShare]<br>|
+|**filters**|[Filter[]](describequotas#filter)|False| |resourceTypes - 资源类型，支持多个[instance，keypair，image，instanceTemplate，imageShare]<br>|
 |**imageId**|String|False| |私有镜像Id，查询镜像共享(imageShare)配额时，此参数必传|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,14 +31,14 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describequotas#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**quotas**|Quota[]|配额列表|
-### Quota
+|**quotas**|[Quota[]](describequotas#quota)|配额列表|
+### <div id="quota">Quota</div>
 |名称|类型|描述|
 |---|---|---|
 |**resourceType**|String|资源类型[instance，keypair，image，instanceTemplate]|

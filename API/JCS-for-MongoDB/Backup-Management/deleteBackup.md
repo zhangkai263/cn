@@ -12,8 +12,8 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/backups/{backupId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backupId**|String|True| |backup ID|
 |**regionId**|String|True| |Region ID|
+|**backupId**|String|True| |backup ID|
 
 ## 请求参数
 无

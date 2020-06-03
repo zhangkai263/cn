@@ -55,6 +55,8 @@ items:
           herf: Operation-Guide/APP-Manage/Deploy-Group.md
         - name: Agent安装
           href: Operation-Guide/APP-Manage/Install-Agent.md
+        - name: 负载均衡
+          href: Operation-Guide/APP-Manage/LoadBalance.md
     - name: 配置管理
       herf: Operation-Guide/APP-Manage/Config-Manage.md
     - name: 服务治理
