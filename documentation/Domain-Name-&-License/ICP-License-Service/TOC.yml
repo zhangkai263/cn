@@ -9,9 +9,9 @@ items:
         items:
           - name: 新增备案
             href: Getting-Started/Process/Addition-Filing.md
-          - name: 新增网站（有主体）
+          - name: 新增网站（京东有主体）
             href: Getting-Started/Process/Addition-Website.md
-          - name: 新增网站（无主体）
+          - name: 新增网站（京东无主体）
             href: Getting-Started/Process/Addition-Website-Without-Subject.md
           - name: 主体变更
             href: Getting-Started/Process/Subject-Change.md 
@@ -19,9 +19,9 @@ items:
             href: Getting-Started/Process/Change-Website.md 
           - name: 变更接入
             href: Getting-Started/Process/Change-Access.md  
-          - name: 新增接入（有主体）
+          - name: 新增接入（京东有主体）
             href: Getting-Started/Process/New-Access-Subject.md
-          - name: 新增接入（无主体）
+          - name: 新增接入（京东无主体）
             href: Getting-Started/Process/New-Access-Without-Subject.md
           - name: 主体注销
             href: Getting-Started/Process/Subject-Cancellation.md
