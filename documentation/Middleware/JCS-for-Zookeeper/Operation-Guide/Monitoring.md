@@ -11,3 +11,7 @@
 4. 监控时段可选择据当前时间“1小时”、“6小时”、“12小时”进行选择，也可由日历时间段自主选择。</br>
 
 5. 单击右上方“设置报警规则”，可跳转至云监控页面进行报警规则的设置。
+
+![查询1](https://github.com/jdcloudcom/cn/blob/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/monitor2.png)
+
+![查询1](https://github.com/jdcloudcom/cn/blob/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/monitor1.png)
