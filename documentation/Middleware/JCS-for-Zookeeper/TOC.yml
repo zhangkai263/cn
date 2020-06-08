@@ -39,6 +39,8 @@ items:
       href: Operation-Guide/Observer.md
     - name: 访问控制
       href: Operation-Guide/control.md
+    - name: 标签
+      href: Operation-Guide/Tag.md
     - name: 监控报警
         items: 
         - name: 查看监控信息
