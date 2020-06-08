@@ -1,22 +1,22 @@
 ## 性能测试步骤
-针对不同的云搜索Elasticsearch规格，集群性能不同，参见[产品规格](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/specifications)。
+通过Elasticsearch官方提供的geonames（大小为3.3G, 总计11396505 个doc），以及benchmark rally脚本，我们对华北-北京区域的京东云搜索Elasticsearch（V6.7.0）进行了压测，针对不同的云搜索Elasticsearch规格，集群性能不同，参见[产品规格](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/specifications)。
 
 
 ## 测试环境
 - 所有测试均在华北-北京，可用区A完成
 - 测试用的云主机规格：8C 32GB
 - 测试用的云主机镜像：CentOS 7.4 64位
-- 测试用的Elasticsearch版本：6.7.0
+- 测试用的Elasticsearch版本：V6.7.0
 
 ## 测试工具
-### esrally
-[esrally](https://github.com/elastic/rally) 是 elastic 官方开源的一款基于 python3 实现的针对 es 的压测工具。esrally主要功能如下：</br>
-- 自动创建、压测和销毁 es 集群</br>
-- 可分 es 版本管理压测数据和方案</br>
-- 完善的压测数据展示，支持不同压测之间的数据对比分析，也可以将数据存储到指定的es中进行二次分析</br>
+### rally
+[rally](https://github.com/elastic/rally) 是 elastic 官方开源的一款基于 python3 实现的针对 es 的压测工具。rally主要功能如下：</br>
+- 自动创建、压测和销毁 ES 集群</br>
+- 可分ES版本管理压测数据和方案</br>
+- 完善的压测数据展示，支持不同压测之间的数据对比分析，也可以将数据存储到指定的ES中进行二次分析</br>
 - 支持收集 JVM 详细信息，比如内存、GC等数据来定位性能问题</br>
 
-## esrally安装
+## es rally安装
 
 ### 前提条件
 - Python3.5及以上版本
