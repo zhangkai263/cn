@@ -4,7 +4,7 @@
 
 操作步骤：</br>
 
-1.登录Zookeeper控制台。</br>
+1.登录[分布式协调服务 Zookeeper 版控制台](https://zk-console.jdcloud.com/list)。</br>
 
 2.在列表页单击【实例名称】，进入管理页面。</br>
 
