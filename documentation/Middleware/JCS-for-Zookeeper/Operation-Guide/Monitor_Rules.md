@@ -12,5 +12,5 @@
 
 4.在监控页面点击页面右上角的【设置报警规则】，进入报警规则页面。</br>
 
-![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS-for-ZK/monitorrules.png)
+![查询1](https://github.com/jdcloudcom/cn//blog/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/monitorrules.png)
 
