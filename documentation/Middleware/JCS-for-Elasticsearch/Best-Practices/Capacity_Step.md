@@ -1,5 +1,5 @@
 ## 性能测试步骤
-通过Elasticsearch官方提供的geonames（大小为3.3G, 总计11396505 个doc），以及benchmark rally脚本，我们对华北-北京区域的京东云搜索Elasticsearch（V6.7.0）进行了压测，针对不同的云搜索Elasticsearch规格，集群性能不同，参见[产品规格](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/specifications)。
+通过Elasticsearch官方提供的geonames（大小为3.3G, 总计11396505 个doc），以及benchmark rally脚本，我们对华北-北京区域的京东云搜索Elasticsearch（V6.7.0）进行了压测，针对不同的[云搜索Elasticsearch规格](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/specifications)，集群性能不同。
 
 
 ## 测试环境
