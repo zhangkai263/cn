@@ -80,8 +80,8 @@ items:
     href: Cloud-Parsing-Service-Clause.md
   - name: 分布式数据库TiDB试用服务条款
     href: Distributed-Database-TiDB-Trial-Service-Clause.md
-  - name: 分布式关系数据库DRDS试用服务协议
-    href: Distributed-Relational-Database-DRDS-Trial-Service-Clause.md
+  - name: 分析型云数据库 JCHDB 试用服务条款
+    href: Analytical-Database-JCHDB-Trial-Service-Clause.md
   - name: 分布式关系数据库DRDS服务协议
     href: Distributed-Relational-Database-DRDS-Service-Clause.md
   - name: 分布式关系数据库DRDS服务等级协议（SLA）
