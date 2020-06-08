@@ -4,10 +4,10 @@
 ## 常用操作
 
 - 快速上手
-	- [创建集群](../Getting-Started/Create-ES.md)
-	- [访问集群](../Best-Practices/connect-ES.md)
+	- [创建实例](../Getting-Started/Create-ZK.md)
+	- [连接实例](../Best-Practices/Connect-ZK.md)
 - 操作指南
-	- [使用kibana](../Best-Practices/using_kibana.md)
+	- [Observer节点](../Operation-Guide/using_kibana.md)
 	- [查看监控信息](../Operation-Guide/Monitoring.md)
 	
 
