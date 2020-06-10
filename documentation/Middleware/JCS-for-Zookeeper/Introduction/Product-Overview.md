@@ -5,7 +5,7 @@
 
 - 快速上手
 	- [创建实例](../Getting-Started/Create-ZK.md)
-	- [连接实例](../Best-Practices/Connect-ZK.md)
+	- [连接实例](../Getting-Started/Connect-ZK.md)
 - 操作指南
 	- [Observer节点](../Operation-Guide/Observer.md)
 	- [查看监控信息](../Operation-Guide/Monitoring.md)
