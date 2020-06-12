@@ -10,11 +10,11 @@
 
 3、确认应付金额以及续签信息后，勾选 **已阅读并同意《SSL数字证书服务条款》**，点击 **立即支付**
 
-![支付页面](/image/SSL-Certification/支付页面.png)
+![支付页面2](/image/SSL-Certification/支付页面2.png)
 
 4、进入支付确认页面
 
-![支付确认](/image/SSL-Certification/支付确认.png)
+![支付确认2](/image/SSL-Certification/支付确认2.png)
 
 5、选择对应的支付方式，点击**立即支付**，进入支付完成页面
 
