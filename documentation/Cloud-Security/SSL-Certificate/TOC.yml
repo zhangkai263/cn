@@ -59,6 +59,8 @@ items:
       herf: Operation-Guide/Reissue-SSL-Sertificate.md
     - name: 更新证书
       herf: Operation-Guide/Update-SSL-Certificate.md
+    - name: 续签证书
+      herf: Operation-Guide/Renew-SSL-Certificate.md
     - name: 提交资料-Symantec免费DV证书
       herf: Operation-Guide/Symantec-DV-Complete.md  
     - name: 提交资料-GeoTrust付费OV/EV证书
@@ -68,10 +70,10 @@ items:
     - name: Apache服务器安装证书
       herf: SSL-Setting/SSL-Apache.md
     - name: IIS服务器安装证书
-      herf: Operation-Guide/SSL-IIS.md
+      herf: SSL-Setting/SSL-IIS.md
     - name: Nginx服务器安装证书
-      herf: Operation-Guide/SSL-Nginx.md 
+      herf: SSL-Setting/SSL-Nginx.md 
     - name: Tomcat服务器安装证书
-      herf: Operation-Guide/SSL-Tomcat.md
+      herf: SSL-Setting/SSL-Tomcat.md
 - name: 常见问题
   herf: FAQ/FAQ.md  
