@@ -16,6 +16,6 @@ items:
   - name: 入门指南
     items:
     - name: 产品概述
-      herf: Getting-Started/Overview.md  
+      herf: Getting-Started/Getting-Started.md  
   - name: 常见问题
     herf: FAQ/FAQ.md
