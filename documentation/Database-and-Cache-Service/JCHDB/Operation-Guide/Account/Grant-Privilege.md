@@ -4,11 +4,11 @@
 
 点击实例名，进入实例页面，选择 **【账号管理】** 页面，点击“**修改权限”**
 
-![账号列表](../../../../../image/DRDS/account-list.png)
+![账号列表](../../../../../image/JCHDB/account-list.png)
 
 
 #### 2. 设置权限
 
 选择账号的权限：“读写”或者“只读”，点击 **【确认】**
 
-![修改权限](../../../../../image/DRDS/grant-privilege.png)
+![修改权限](../../../../../image/JCHDB/set-privilege.png)
