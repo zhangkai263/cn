@@ -15,7 +15,7 @@ items:
       herf: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
-    - name: 产品概述
+    - name: 入门指南概述
       herf: Getting-Started/Getting-Started.md  
   - name: 常见问题
     herf: FAQ/FAQ.md
