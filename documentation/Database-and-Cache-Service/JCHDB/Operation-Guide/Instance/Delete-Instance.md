@@ -11,4 +11,4 @@
 
 为避免误操作，点击 **【删除】** 的实例ID必须等于输入的实例ID一致，方可删除。
 
-![确认删除](../../../../../image/DRDS/delete-instance.png)
+![确认删除](../../../../../image/JCHDB/delete-instance.png)
