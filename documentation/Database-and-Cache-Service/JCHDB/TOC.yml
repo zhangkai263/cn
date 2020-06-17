@@ -1,4 +1,4 @@
-  name: 型云数据库 JCHDB
+  name: 分析型云数据库 JCHDB
   href: 
   items:
   - name: 产品简介
@@ -21,6 +21,8 @@
         href: Pricing/Billing-Overview.md
       - name: 计费规则
         href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md     
   - name: 操作指南
     items:
       - name: 实例管理
@@ -41,7 +43,3 @@
             href: Operation-Guide/Account/Grant-Privilege.md
           - name: 重置密码
             href: Operation-Guide/Account/Reset-Password.md              
-  - name: 常见问题
-    items:
-    - name: FAQ
-      href: FAQ/FAQ.md
