@@ -1,5 +1,8 @@
 # 限制说明
-TiDB 目前还不支持触发器、存储过程、自定义函数、外键，除此之外，TiDB 支持绝大部分 MySQL 5.7 的语法。
+- TiDB 100% 兼容 MySQL5.7 协议、MySQL5.7 常用的功能及语法，MySQL5.7 生态中系统的工具（PHPMyAdmin, Navicat, MySQL Workbench、mysqldump、Mydumper/myloader）、客户端等均用于 TiDB。
+- TiDB 是一款分布式数据库， MySQL5.7 中的部分特性由于工程实现难较大，投入产出比较低等多种原因在 TiDB 未能实现或者仅兼容语法但功能并没有实现，因此使用过程中请特别注意。例如：CREATE TABLE 语句中 ENGINE，仅兼容语法功能并没有实现，因此 TiDB 中没有 ENGINE 这类的概念。
+
+详细的兼容性说明可参考TiDB官方文档：https://docs.pingcap.com/zh/tidb/v4.0/mysql-compatibility
 
 ## 不支持的特性
 - 存储过程与函数
@@ -109,5 +112,3 @@ TiDB 支持常用的 MySQL 内建函数，但是不是所有的函数都已经�
 - 不支持 FIXED (alias for DECIMAL)。
 - 不支持 SERIAL (alias for BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE)。
 - 不支持 SQLTSI* （包括 SQL_TSI_YEAR、SQL_TSI_MONTH、SQL_TSI_WEEK、SQL_TSI_DAY、SQL_TSI_HOUR、SQL_TSI_MINUTE 和 SQL_TSI_SECOND）。
-
-#### DDL
