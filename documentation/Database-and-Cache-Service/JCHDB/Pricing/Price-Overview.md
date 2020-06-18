@@ -15,8 +15,8 @@ JCHDB的价格由以下两部分组成：
 |clickhouse.s1.xlarge|4|16|672|1.4|
 |clickhouse.s1.2xlarge|8|32|1744|3.64|
 |clickhouse.s1.4xlarge|16|64|3488|7.27|
-|clickhouse.s1.6xlarge|24|64|5232|10.90|
-|clickhouse.s1.8xlarge|32|64|6976|14.54|
+|clickhouse.s1.6xlarge|24|96|5232|10.90|
+|clickhouse.s1.8xlarge|32|128|6976|14.54|
 
 ## 2. 存储空间
 JCHDB使用性能型云硬盘作为存储
