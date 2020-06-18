@@ -1,3 +1,6 @@
+# 部署Windows Deployment和Service
+
+下面是一个 Windows应用示例，它创建了一个 Service和一个Deployment，暴露80端口对外提供web访问。
 
 ```
 apiVersion: v1
@@ -47,3 +50,14 @@ spec:
         effect: "NoSchedule"
 
 ```
+
+1. 创建yaml文件
+创建一个名为win.yaml的文件，将上面文件中的内容拷贝到win.yaml中
+
+2. 创建应用
+```
+kubectl create -f win.yaml
+```
+
+3. 验证应用
+
