@@ -31,6 +31,8 @@
         href: Getting-Started/Version-Notes.md
       - name: 创建集群
         href: Getting-Started/Create-to-Cluster.md
+      - name: 创建Windows集群
+        href: Getting-Started/Create-Win-Cluster.md
       - name: 连接集群
         href: Getting-Started/Connect-to-Cluster.md
   - name: 操作指南
@@ -89,6 +91,8 @@
             href: Best-Practices/Deploy-Applications/Deploy-Service.md
          -  name: 部署Service（新版）
             href: Best-Practices/Deploy-Applications/Deploy-Service-New.md
+         -  name: 部署Windows应用
+            href: Best-Practices/Deploy-Applications/Deploy-Windows-Deployment.md
      - name: 使用云硬盘作为Volume
        items:
         -  name: 部署StorageClass
