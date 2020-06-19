@@ -1,10 +1,6 @@
----
-title: 如何用 Sysbench 测试 TiDB
-category: benchmark
-aliases: ['/docs-cn/dev/benchmark/how-to-run-sysbench/']
----
 
 # 如何用 Sysbench 测试 TiDB
+> 本文档中的测试方法和测试数据来自PingCap的官方文档，用户可以参考该文档测试方案在规划部署时候进行自身的性能测试。
 
 本次测试使用的是 TiDB 3.0 Beta 和 Sysbench 1.0.14。建议使用 Sysbench 1.0 或之后的更新版本，可在 [Sysbench Release 1.0.14 页面](https://github.com/akopytov/sysbench/releases/tag/1.0.14)下载。
 
