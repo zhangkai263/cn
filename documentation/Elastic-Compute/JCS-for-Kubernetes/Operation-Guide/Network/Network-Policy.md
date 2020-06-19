@@ -1,4 +1,4 @@
-# 集群日志
+# 网络策略
 
 ## 概述
 
@@ -175,6 +175,37 @@ spec:
 
 ## 通过Network Policy限制集群服务访问外网
 
+1. 首先创建一个测试用的busybox
+```
+kubectl run busybox --image=busybox --restart=Never --command -- sleep 36000
+kubectl exec -it busybox /bin/sh
+
+```
+
+2. 创建网络策略，默认禁止访问公网
+egress-test.yaml
+```
+apiVersion: extensions/v1beta1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: "2020-06-19T09:34:08Z"
+  generation: 2
+  name: egress-test
+  namespace: default
+  resourceVersion: "33225"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/networkpolicies/access-test
+  uid: 06a8a537-b210-11ea-8cbc-fa163ecd2a79
+spec:
+  podSelector:
+    matchLabels:
+      run: busybox
+  policyTypes:
+  - Egress
+  ```
+  
+  ```
+  kubectl create -f egress-test.yaml
+  ```
 
 
 
