@@ -14,7 +14,7 @@ Network Policy用于定义集群内部Pod之间的网络隔离策略以及Pod与
 
 集群中开启Network Policy后，您可以在集群中定义Network Policy资源，为集群中不同类型的应用定义精确的网络隔离策略，实现集群内部应用之间或集群应用与外部网络端点之间的网络控制。
 
-## 通过Network Policy限制服务
+## 通过Network Policy限制集群内服务访问
 
 1. 创建一个nginx的应用，并通过名称为ngnix的Service将其暴露。
 
@@ -46,7 +46,7 @@ index.html           100% |*****************************************************
 'index.html' saved
 ```
 
-3. 集群内限制服务访问
+3. 创建网络策略限制集群内访问
 
 networkpolicy.yaml
 ```
@@ -95,6 +95,85 @@ index.html           100% |*****************************************************
 ```
 用新的busybox测试，可以正常访问nginx
 
+## 通过Network Policy限制公网访问集群服务
+
+1. 将上面步骤中创建的nginx service从ClusterIP变更为LoadBalancer
+
+```
+kubectl edit service nginx
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-06-19T07:05:39Z"
+  labels:
+    run: nginx
+  name: nginx
+  namespace: default
+  resourceVersion: "7080"
+  selfLink: /api/v1/namespaces/default/services/nginx
+  uid: 48080c2a-b1fb-11ea-8cbc-fa163ecd2a79
+spec:
+  clusterIP: 10.0.122.240
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+```
+将type从ClusterIP变更为LoadBalancer，获取公网IP地址
+
+```
+kubectl get service nginx
+NAME    TYPE           CLUSTER-IP     EXTERNAL-IP               PORT(S)        AGE
+nginx   LoadBalancer   10.0.122.240   10.0.112.4,114.67.122.3   80:31535/TCP   119m
+```
+
+2. 通过公网访问nginx服务
+
+登录到一台京东云虚机，然后通过wget访问nginx服务失败
+```
+wget 114.67.122.3
+Connecting to 114.67.122.3:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+```
+
+3. 更新网络策略，将测试机IP加入ipBlock网段
+```
+apiVersion: extensions/v1beta1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: "2020-06-19T09:21:15Z"
+  generation: 1
+  name: access-nginx
+  namespace: default
+  resourceVersion: "27276"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/networkpolicies/access-nginx
+  uid: 39d80783-b20e-11ea-8cbc-fa163ecd2a79
+spec:
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          access: "true"
+    - ipBlock:
+        cidr: 114.67.0.0/16
+  podSelector:
+    matchLabels:
+      run: nginx
+  policyTypes:
+  - Ingress
+```
+
+4. 再次验证通过公网可以访问nginx服务
+
+## 通过Network Policy限制集群服务访问外网
 
 
 
