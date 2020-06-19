@@ -17,6 +17,7 @@ Network Policy用于定义集群内部Pod之间的网络隔离策略以及Pod与
 ## 通过Network Policy限制服务
 
 1. 创建一个nginx的应用，并通过名称为ngnix的Service将其暴露。
+
 ```
 kubectl run nginx --image=nginx
 
@@ -31,5 +32,70 @@ NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
 kubernetes   ClusterIP   10.0.120.1     <none>        443/TCP   130m
 nginx        ClusterIP   10.0.122.240   <none>        80/TCP    89m
 ```
+
+2. 创建名称为busybox的Pod，访问步骤1创建的nginx服务。
+
+```
+kubectl run busybox --image=busybox --restart=Never --command -- sleep 3600
+
+kubectl exec -it busybox /bin/sh
+/ # wget nginx
+Connecting to nginx (10.0.122.240:80)
+saving to 'index.html'
+index.html           100% |***************************************************************************************************************************|   612  0:00:00 ETA
+'index.html' saved
+```
+
+3. 集群内限制服务访问
+
+networkpolicy.yaml
+```
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-nginx
+spec:
+  podSelector:
+    matchLabels:
+      run: nginx
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          access: "true"
+```
+
+用上述的yaml文件创建network policy
+
+```
+kubectl create -f networkpolicy.yaml
+```
+
+4. 用刚刚创建的busybox测试nginx联通性
+
+```
+kubectl exec -it busybox /bin/sh
+/ # wget nginx
+Connecting to nginx (10.0.122.240:80)
+wget: can't connect to remote host (10.0.122.240): Connection timed out
+```
+因为networkpolicy已经生效，busybox访问nginx失败
+
+5. 删除刚刚创建的busybox，重新创建新的busybox并打上label
+
+```
+kubectl run busybox --image=busybox --restart=Never --labels="access=true" --command -- sleep 3600
+
+kubectl exec -it busybox /bin/sh
+/ # wget nginx
+Connecting to nginx (10.0.122.240:80)
+saving to 'index.html'
+index.html           100% |***************************************************************************************************************************|   612  0:00:00 ETA
+'index.html' saved
+```
+用新的busybox测试，可以正常访问nginx
+
+
+
 
 
