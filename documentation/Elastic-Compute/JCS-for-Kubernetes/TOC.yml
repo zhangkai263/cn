@@ -109,8 +109,6 @@
             href: Best-Practices/Volumes/Cloud-File-Service/CFS-Volume.md
          -  name: 通过静态PV的方式使用京东云文件服务
             href: Best-Practices/Volumes/Cloud-File-Service/CFS-PVC.md
-         -  name: 通过CSI插件和静态PV的方式使用京东云文件服务
-            href: Best-Practices/Volumes/Cloud-File-Service/CFS-CSI.md
          -  name: 部署nfs-client-provisioner
             href: Best-Practices/Volumes/Cloud-File-Service/nfs-client-provisioner.md
          -  name: 使用nfs-client-provisioner动态创建PV
