@@ -60,4 +60,18 @@ kubectl create -f win.yaml
 ```
 
 3. 验证应用
+```
+kubectl get pods
+NAME                  READY   STATUS    RESTARTS   AGE
+win-webserver-fnvpw   1/1     Running   0          62m
+win-webserver-z8hms   1/1     Running   0          62m
+```
+```
+kubectl get service
+NAME            TYPE           CLUSTER-IP     EXTERNAL-IP                PORT(S)        AGE
+kubernetes      ClusterIP      10.96.0.1      <none>                     443/TCP        21h
+win-webserver   LoadBalancer   10.96.57.246   10.0.48.4,114.67.125.233   80:32094/TCP   62m
+```
+
+在浏览器访问 http://114.67.125.233 看到"Windows Container Web Server"页面。
 
