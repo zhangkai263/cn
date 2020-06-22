@@ -27,23 +27,17 @@ TPC-C 使用 tpmC 值（Transactions per Minute）来衡量系统最大有效吞
 
 本文使用开源的 BenchmarkSQL 5.0 作为 TPC-C 测试实现并添加了对 MySQL 协议的支持，可以通过以下命令下载测试程序:
 
-{{< copyable "shell-regular" >}}
-
 ```shell
 git clone -b 5.0-mysql-support-opt-2.1 https://github.com/pingcap/benchmarksql.git
 ```
 
 安装 java 和 ant，以 CentOS 为例，可以执行以下命令进行安装
 
-{{< copyable "shell-regular" >}}
-
 ```shell
 sudo yum install -y java ant
 ```
 
 进入 benchmarksql 目录并执行 ant 构建
-
-{{< copyable "shell-regular" >}}
 
 ```shell
 cd benchmarksql
@@ -147,15 +141,11 @@ loadWorkers=32  # 导入数据的并发数
 
 首先用 MySQL 客户端连接到 TiDB-Server 并执行：
 
-{{< copyable "sql" >}}
-
 ```sql
 create database tpcc
 ```
 
 之后在 shell 中运行 BenchmarkSQL 建表脚本：
-
-{{< copyable "shell-regular" >}}
 
 ```shell
 cd run && \
@@ -166,8 +156,6 @@ cd run && \
 ### 直接使用 BenchmarkSQL 导入
 
 运行导入数据脚本：
-
-{{< copyable "shell-regular" >}}
 
 ```shell
 ./runLoader.sh props.mysql
@@ -196,8 +184,6 @@ fileLocation=/home/user/csv/tpcc.  # 存储 csv 文件的目录绝对路径 + �
 这样生成的 csv 文件名将会是类似 `tpcc.bmsql_warehouse.csv` 的样式，符合 Lightning 的要求。
 
 #### 生成 csv 文件
-
-{{< copyable "shell-regular" >}}
 
 ```shell
 ./runLoader.sh props.mysql
@@ -236,8 +222,6 @@ mydumper:
 
 ##### 部署 Lightning 和 Importer
 
-{{< copyable "shell-regular" >}}
-
 ```shell
 ansible-playbook deploy.yml --tags=lightning
 ```
@@ -258,8 +242,6 @@ ansible-playbook deploy.yml --tags=lightning
 ## 运行测试
 
 执行 BenchmarkSQL 测试脚本：
-
-{{< copyable "shell-regular" >}}
 
 ```shell
 nohup ./runBenchmark.sh props.mysql &> test.log &
