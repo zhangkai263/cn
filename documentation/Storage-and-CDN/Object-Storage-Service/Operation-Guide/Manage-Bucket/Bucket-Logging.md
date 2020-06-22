@@ -6,11 +6,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->访问日志
 
-![访问日志](../../../../image/Object-Storage-Service/OSS-176.png)
+![访问日志](../../../../../image/Object-Storage-Service/OSS-176.png)
 
 2.单击**编辑**按钮，打开访问日志配置对话框。
 
-![日志配置](../../../../image/Object-Storage-Service/OSS-177.png)
+![日志配置](../../../../../image/Object-Storage-Service/OSS-177.png)
 
 3.点击**启用**，输入目标空间和目标前缀，再点击**确认**后即开启访问日志。
 
