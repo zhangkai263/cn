@@ -36,7 +36,7 @@ YYYY、mm、DD、HH、MM和SS分别对应产生日志的年份、月份、日期
 
 UniqueString字段是为了防止重复，本身没有意义。
 
-以下是一个日志示例：
+下面是一个日志示例：
 
 ```
 916189066405 test-logging [05/Jun/2020:10:40:43 +0000] 103.226.192.8 916189066405 9E44C68D401D740D REST.POST.BUCKET testObject "POST / HTTP/1.0" 204 - - 1025 23 23 "-" "Apache-HttpClient/4.5 (Java/1.8.0_181)" - c3RhZzItcjItYXoxOjoxMC4yMjYuMjAxLjE4MA== - - - test-logging.s3.cn-north-1.jdcloud-oss.com -
