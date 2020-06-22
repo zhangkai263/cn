@@ -1,11 +1,10 @@
 # SFTP客户端运维
 
-
-运维人员需要在本地主机安装支持 SSH 协议的工具，如 Xshell、SecureCRT、PuTTY 等。以Xshell为例，介绍SSH协议的运维登录流程。
+运维人员需要在本地安装支持 SFTP 协议的工具，如 Xftp、WinSCP、FlashFXP、FileZilla 等。以FileZilla为例，介绍SFTP协议的运维登录流程。
 
 ## 操作步骤
 
-1、 打开Xshell，在连接设置中输入运维堡垒机的ip和端口号（默认22）
+1、 打开 FileZilla 工具，点击站点管理器页面，添加新建你登录窗口中输入云盾系统的IP、端口号60022、用户名、密码
 
 ![](/image/Bastion/ssh1.png) 
 
