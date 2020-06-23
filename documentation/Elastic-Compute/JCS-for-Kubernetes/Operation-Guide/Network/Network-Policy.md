@@ -10,9 +10,9 @@ Network Policy用于定义集群内部Pod之间的网络隔离策略以及Pod与
 
 京东云的Network Policy控制器通过集成Calico的Felix组件实现.支持基于Kubernetes标准API的NetworkPolicy来定义容器间的访问策略，并且兼容[Calico](https://docs.projectcalico.org/v3.8/security/calico-network-policy)的Network Policy。 
 
-您可以在创建集群时选择[开启Network Policy]()；也可以为已有集群[开启Network Policy]()。
+您可以在创建集群时选择开启“网络策略”；也可以为已有集群开启“网络策略”。
 
-集群中开启Network Policy后，您可以在集群中定义Network Policy资源，为集群中不同类型的应用定义精确的网络隔离策略，实现集群内部应用之间或集群应用与外部网络端点之间的网络控制。
+集群中开启网络策略后，您可以在集群中定义Network Policy资源，为集群中不同类型的应用定义精确的网络隔离策略，实现集群内部应用之间或集群应用与外部网络端点之间的网络控制。
 
 ## 通过Network Policy限制集群内服务访问
 
