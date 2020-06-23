@@ -509,8 +509,6 @@ items:
         href: Best-Practices/Manage-OSS-With-s3browser.md        
       - name: 回调服务器设置签名认证
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
-      - name: OSS线上服务快速验证工具
-        href: Best-Practices/OSS-Verification-Tool.md
       - name: 移动应用直传OSS
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务

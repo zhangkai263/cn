@@ -9,9 +9,9 @@ items:
         items:
           - name: 新增备案
             href: Getting-Started/Process/Addition-Filing.md
-          - name: 新增网站（有主体）
+          - name: 新增网站（京东有主体）
             href: Getting-Started/Process/Addition-Website.md
-          - name: 新增网站（无主体）
+          - name: 新增网站（京东无主体）
             href: Getting-Started/Process/Addition-Website-Without-Subject.md
           - name: 主体变更
             href: Getting-Started/Process/Subject-Change.md 
@@ -19,9 +19,9 @@ items:
             href: Getting-Started/Process/Change-Website.md 
           - name: 变更接入
             href: Getting-Started/Process/Change-Access.md  
-          - name: 新增接入（有主体）
+          - name: 新增接入（京东有主体）
             href: Getting-Started/Process/New-Access-Subject.md
-          - name: 新增接入（无主体）
+          - name: 新增接入（京东无主体）
             href: Getting-Started/Process/New-Access-Without-Subject.md
           - name: 主体注销
             href: Getting-Started/Process/Subject-Cancellation.md
@@ -113,10 +113,10 @@ items:
     items:
       - name: 网站核验单信息
         href: Loading/Website-verification-information.md
+      - name: 上海互联网信息服务备案承诺书
+        href: Loading/Website-shanghai-internet-service-commitment.md     
       - name: 核验单样例
         href: Loading/Verification-sample.md
-      - name: 互联网信息服务备案承诺书
-        href: Loading/Internet-Information-Service-Filing-Commitment.md
       - name: 常用资料下载
         items:
           - name: 各省备案授权书

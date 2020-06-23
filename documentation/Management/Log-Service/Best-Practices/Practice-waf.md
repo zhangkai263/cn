@@ -7,7 +7,7 @@
 #### 配置流程
 1.登录控制台，点击“云服务->监控与运维->日志服务”，进入日志服务概览页。点击“创建日志配置”。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/bestpractice/BPwaf.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/bestpractice/bestcollect01.jpg)
 
 2.根据需求选择已有日志集日志主题，或创建新的日志集日志主题。
 

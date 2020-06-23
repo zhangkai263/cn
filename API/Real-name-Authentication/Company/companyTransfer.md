@@ -23,7 +23,6 @@ https://cloudauth.jdcloud-api.com/v1/company:transfer
 | 名称               | 类型   | 是否必需 | 默认值 | 描述       |
 | ------------------ | ------ | -------- | ------ | ---------- |
 | **orgName**        | String | True     |        | 组织名称   |
-| **idCard**         | String | False    |        | 身份证号码 |
 | **bankCardNum**    | String | True     |        | 银行卡号   |
 | **bankName**       | String | True     |        | 银行名称   |
 | **branchBankName** | String | True     |        | 支行名称   |
@@ -98,7 +97,7 @@ func main() {
 
 	client := client.NewCloudauthClient(credentials)
 	client.SetConfig(config)
-// CompanyTransfer，返回订单号以及打款金额，供CheckCompanyTransfer使用
+// CompanyTransfer，返回订单号，供CheckCompanyTransfer使用
  {
   accountInfo := &models.AccountInfo{
    /* 组织名称 */
