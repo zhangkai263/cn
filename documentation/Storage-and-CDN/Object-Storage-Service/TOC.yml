@@ -89,6 +89,8 @@ items:
              href: Operation-Guide/Manage-Bucket/edgeStorage.md
            - name: 生命周期管理
              href: Operation-Guide/Manage-Bucket/Lifecycle.md
+           - name: 访问日志
+             href: Operation-Guide/Manage-Bucket/Bucket-Logging.md
            - name: 标签管理
              href: Operation-Guide/Manage-Bucket/Bucket-Tagging.md
            - name: 传输加速
