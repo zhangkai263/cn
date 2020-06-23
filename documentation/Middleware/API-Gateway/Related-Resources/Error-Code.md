@@ -14,8 +14,8 @@ Http 状态码|错误代码|错误信息|语义|解决方案
 401|ACCESS_ERROR|lack of header x-jdcloud-date|header中缺少x-jdcloud-date信息|使用服务商提供的sdk访问服务
 401|ACCESS_ERROR|lack of header signedHeaders|header中缺少signedHeaders信息|使用服务商提供的sdk访问服务
 401|ACCESS_ERROR|sign result is not same|客户端和网关的签名不一致|检查调用数据有没有被修改，和确认ak,sk填写是否正确
-403|HTTP_FORBIDDEN|Your IP address is not allowed|当前客户端ip不允许访问服务|联系服务商进行ip权限配置
-403|HTTP_FORBIDDEN|api is disabled|api不可用|该api分组已删除，如果需要恢复，联系服务商
+403|HTTP_FORBIDDEN|Your IP address is not allowed|当前客户端IP不允许访问服务|联系服务商进行ip权限配置
+403|HTTP_FORBIDDEN|api is disabled|API不可用|该API分组已下线
 404|NOT_FOUND|no route and no API found with those values|找不到api和路由|该分组没有发布，请确认域名是否使用正确，或联系服务商
 413|HTTP_REQUEST_ENTITY_TOO_LARGE|Payload too large|请求体太大|请求body超时限制，目前请求body大小限制为100m
 414|HTTP_URI_TOO_LONG|URI too long|请求url太长|请求url超出限制，目前限制为8k
