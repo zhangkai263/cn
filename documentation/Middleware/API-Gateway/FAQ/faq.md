@@ -22,9 +22,9 @@
 没有parameters的话，需要默认是dict（）。
 
 
-**5.是否能在body里面串二进制流？**
+**5.是否能在body里面传二进制流？**
 
-答：不能。有一个java公共的SDK可以支持文件上传，在控制台生成的SDK目前不支持在body里面串二进制流。使用公共的sdk也会帮用户生成签名，支持需要用户指定 host，path，参数需要用户构建，不支持set***
+答：目前支持。可在SDK中设置contentType为APPLICATION_OCTET_STREAM的类型。
 
 
 **6.当body里面为字节流时，没办法转成utf-8的字符串，API网关是怎么验签的？**
