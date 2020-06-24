@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testResetPassword() {
+    ResetPasswordRequest resetPasswordRequest = new ResetPasswordRequest();
+    resetPasswordRequest.setAccountName("dj_ac");
+    resetPasswordRequest.setAccountPassword("123456aA");
+    resetPasswordRequest.setInstanceId("mysql-wp4e9ztap2");
+    resetPasswordRequest.setRegionId("cn-north-1");
+    ResetPasswordResponse resetPasswordResponse = rdsClient.resetPassword(resetPasswordRequest);
+    System.out.println(new Gson().toJson(resetPasswordResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa0adwouffbe0k4i5h82dom3ks4opnb"
+}
+```

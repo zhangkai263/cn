@@ -27,9 +27,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyI
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](modifyInstanceSpec#Result)| |
+|**result**|[Result](modifyinstancespec#result)| |
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**orderId**|String|生成的订单号|
@@ -38,3 +38,28 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyI
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyInstanceSpec() {
+    ModifyInstanceSpecRequest modifyInstanceSpecRequest = new ModifyInstanceSpecRequest();
+    modifyInstanceSpecRequest.setRegionId("cn-north-1");
+    modifyInstanceSpecRequest.setInstanceId("mysql-wp4e9ztap2");
+    modifyInstanceSpecRequest.setNewInstanceClass("db.mysql.s1.micro");
+    modifyInstanceSpecRequest.setNewInstanceStorageGB(40);
+    ModifyInstanceSpecResponse response = rdsClient.modifyInstanceSpec(modifyInstanceSpecRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa57oaqq1hdr0hsf3uoeuim9b22awg8", 
+    "result": {
+        "orderId": "188341099108437755"
+    }
+}
+```

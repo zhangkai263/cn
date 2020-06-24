@@ -25,12 +25,12 @@
         href: Introduction/Restrictions.md
       - name: 应用场景
         items:
-          - name: 混合云环境互联
-            href: Introduction/Application-Scenarios/Connection-Into-IDC&Office.md
-          - name: VPN作为专线的备份，共同构建混合云
-            href: Introduction/Application-Scenarios/Connection-With-DirectConnect.md
-          - name: 多云环境互联
-            href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
+          - name: 公有云连接IDC或办公室
+            href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
+          - name: VPN作为专线的备用线路
+            href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
+          - name: 多公有云环境互联
+            href: Introduction/Application-Scenarios/Multi-Cloud-InterConnect.md
   - name: 产品定价
     items:
       - name: 计费概述
@@ -63,12 +63,18 @@
             href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md
           - name: VPN隧道配置
             href: Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md
+          - name: VPN连接监控
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Monitoring.md
        - name: 客户端管理
          items:
           - name: 思科客户端配置
             href: Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md
           - name: 华为客户端配置
             href: Operation-Guide/Client-Site-Configuration/Huawei-Configuration.md
+          - name: 华三客户端配置
+            href: Operation-Guide/Client-Site-Configuration/H3C-Configuration.md
+          - name: 瞻博客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Juniper-Configuration.md
           - name: strongSwan客户端配置
             href: Operation-Guide/Client-Site-Configuration/StrongSwan-Configuration.md
        - name: 路由管理
@@ -79,7 +85,7 @@
             href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
   - name: 最佳实践
     items:
-       - name: VPN高可用
+       - name: 高可用的VPN
          href: Best-Practices/VPN-High-Available.md
        - name: 专线VPN混合云解决方案
          href: Best-Practices/Connection-With-DirectConnect.md
@@ -108,4 +114,3 @@
     - name: 文档历史记录
       href:
       status: 0
-

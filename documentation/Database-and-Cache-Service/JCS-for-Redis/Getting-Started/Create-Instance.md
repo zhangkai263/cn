@@ -12,7 +12,8 @@
 1. 登录 [Redis 控制台](https://redis-console.jdcloud.com/redis)。
 
 2. 在“实例列表”页面，点击“创建”按钮，跳转到新建实例页。
-   ![创建实例](https://github.com/jdcloudcom/cn/blob/master/image/Redis/create-redis-instance.PNG)
+   ![创建实例](https://github.com/jdcloudcom/cn/blob/master/image/Redis/c1.png)
+   ![创建实例](https://github.com/jdcloudcom/cn/blob/master/image/Redis/c2.png)
 
 3. 在新建实例页选择付费方式、地域、规格、网络、部署方案、基本信息、购买量等信息
 

@@ -1,10 +1,10 @@
 # 查看监控信息
 
-Greenplum 控制台提供了丰富的性能监控数据，您可以随时查看实例的运行状态。
+JDW 控制台提供了丰富的性能监控数据，您可以随时查看实例的运行状态。
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](https://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](https://jdw-console.jdcloud.com/list)。
 
 2. 在实例列表页，选择目标实例，点击**实例名称**，进入实例详情页。
 

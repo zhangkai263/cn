@@ -16,9 +16,9 @@ https://vod.jdcloud-api.com/v1/categories
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**sorts**|Sort[]|False| | |
+|**sorts**|[Sort[]](listcategories#sort)|False| | |
 
-### Sort
+### <div id="sort">Sort</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |排序属性名|
@@ -27,18 +27,18 @@ https://vod.jdcloud-api.com/v1/categories
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询分类列表信息结果.....|
+|**result**|[Result](listcategories#result)|查询分类列表信息结果.....|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|CategoryObject[]|分页内容|
-### CategoryObject
+|**content**|[CategoryObject[]](listcategories#categoryobject)|分页内容|
+### <div id="categoryobject">CategoryObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|分类ID|

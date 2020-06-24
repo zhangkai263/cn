@@ -70,7 +70,7 @@
 | `maxReceivesPerSecond`         | 每个订阅每秒的最大传输次数。                                 | 1 或更多， **默认：** 无限制                           |
 | `disableSubscriptionOverrides` | 是否覆盖订阅的传输重试策略                                   | true或false， **默认：** false                         |
 
-退避策略阶段的重试次数：
+退避策略阶段的重试次数 =
 
 ```
 numRetries - numNoDelayRetries - numMinDelayRetries - numMaxDelayRetries

@@ -1,39 +1,39 @@
 ## strongSwan IPsec VPN配置
-在[京东云VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
+在[VPN连接控制台](https://cns-console.jdcloud.com/host/vpnConnection/list)创建VPN隧道后，还需要在客户本地设备上进行相应配置才可以协商建立VPN隧道。
 
 本文以strongSwan 5.3.5为例，讲述如何在Ubuntu 16.04 x86_64主机上配置strongSwan VPN，适用于开源软件客户端。
 
-网络拓扑示例如下：
+网络拓扑示例如下(``以下拓扑及操作步骤的配置仅为示例，实际配置时，请将示例配置项中的值替换为您使用的实际参数值``)：
 
-|         |   VPN公网地址   |    内网网段    |
-|:-------:|:---------------:|:--------------:|
-|  云端   | 116.xxx.xxx.10  | 192.168.0.0/24 |
-| 企业IDC | 220.xxx.xxx.150 |  10.0.0.0/16   |
+|  | VPN公网地址 | 互通内网网段 |
+|:---:|:---:|:---:|
+| 云端 | 116.xxx.xxx.10 | 192.168.0.0/24 |
+| 企业IDC | 220.xxx.xxx.150 | 10.0.0.0/16 |
 
 VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可用，请使用VPN云端的两个公网地址分别于客户端创建隧道``)：
 
-| 参数类型  |           参数            |      取值       |
-|:---------:|:-------------------------:|:---------------:|
-|   通用    |       云端公网地址        | 116.xxx.xxx.10  |
-|           |     客户网关公网地址      | 220.xxx.xxx.150 |
-|           |         Local ID          | 116.xxx.xxx.10  |
-|           |         Remote ID         | 220.xxx.xxx.150 |
-|           |          隧道IP           | 169.254.1.1/30  |
-|  IKE配置  |        预共享密钥         |     secret      |
-|           |          IKE版本          |       v2        |
-|           |         DH Group          |     Group2      |
-|           |         认证算法          |      SHA1       |
-|           |         加密算法          |     aes128      |
-|           |    IKE SA Lifetime(s)     |      14400      |
-| IPsec配置 |       报文封装模式        |    隧道模式     |
-|           |         安全协议          |       ESP       |
-|           |         DH Group          |     Group2      |
-|           |         认证算法          |      SHA1       |
-|           |         加密算法          |     aes128      |
-|           |   IPsec SA Lifetime(s)    |      3600       |
-|           |  IPsec SA Lifetime(Byte)  |        0        |
-|           | IPsec SA Lifetime(Packet) |        0        |
-|           |            DPD            |      开启       |
+| 参数类型 | 参数 | 取值 |
+|:---:|:---:|:---:|
+| 通用 | 云端公网地址 | 116.xxx.xxx.10 |
+|  | 客户网关公网地址 | 220.xxx.xxx.150 |
+|  | Local ID | 116.xxx.xxx.10 |
+|  | Remote ID | 220.xxx.xxx.150 |
+|  | 隧道IP | 169.254.1.1/30 |
+| IKE配置 | 预共享密钥 | secret |
+|  | IKE版本 | v2 |
+|  | DH Group | Group2 |
+|  | 认证算法 | SHA1 |
+|  | 加密算法 | aes128 |
+|  | IKE SA Lifetime(s) | 14400 |
+| IPsec配置 | 报文封装模式 | 隧道模式 |
+|  | 安全协议 | ESP |
+|  | DH Group | Group2 |
+|  | 认证算法 | SHA1 |
+|  | 加密算法 | aes128 |
+|  | IPsec SA Lifetime(s) | 3600 |
+|  | IPsec SA Lifetime(Byte) | 0 |
+|  | IPsec SA Lifetime(Packet) | 0 |
+|  | DPD | 开启 |
 
 #### 主要配置步骤
 1.Ubuntu安装strongSwan：
@@ -58,8 +58,8 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
       left=%defaultroute    # 若客户端VPN网关位于NAT设备之后，则此处填写客户端VPN网关的内网地址
       leftid=220.xxx.xxx.150
       right=116.xxx.xxx.10
-      leftsubnet=0.0.0.0/0
-      rightsubnet=0.0.0.0/0
+      leftsubnet=0.0.0.0/0    #开放全部网段互通
+      rightsubnet=0.0.0.0/0   #开放全部网段互通
       type=tunnel
       leftauth=psk
       rightauth=psk
@@ -81,7 +81,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
   220.xxx.xxx.150 116.xxx.xxx.10 : PSK "secret"
 ```
 
-4.配置隧道，使用虚拟隧道接口VTI：
+4.配置隧道，使用虚拟隧道接口VTI(Virtual Tunnel Interface)：
 ```
   sudo ip link add jdcloud_tunnel1 type vti local 10.0.0.x remote 116.xxx.xxx.10 key 100
   sudo ip addr add 169.254.1.1/30 remote 169.254.1.2/30 dev jdcloud_tunnel1
@@ -96,7 +96,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 6.设置strongSwan使用系统默认的路由表，编辑/etc/strongswan.d/charon.conf文件：
 ```
-  install_routes=no    #默认为yes，此处将注释去掉，并改为no
+  install_routes=no    #默认为yes，此处将注释去掉，并改为no，防止创建新的路由表
 ```
 
 7.开启系统IP转发，编辑/etc/sysctl.conf文件，之后执行“sudo sysctl -p”：
@@ -114,7 +114,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 9.配置路由(以静态路由为例)：
 ```
-  sudo ip route add 192.168.0.0/16 dev jdcloud_tunnel1 metric 100
+  ip route add 192.168.0.0/16 dev jdcloud_tunnel1 metric 100
 ```
 
 10.启动strongSwan：

@@ -54,8 +54,8 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers/{contai
 |**privateIpAddress**|String|主网卡主IP地址|
 |**elasticIpId**|String|主网卡主IP绑定弹性IP的ID|
 |**elasticIpAddress**|String|主网卡主IP绑定弹性IP的地址|
-|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](describecontainer#instancenetworkinterfaceattachment)|主网卡信息|
-|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](describecontainer#instancenetworkinterfaceattachment)|弹性网卡信息|
+|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](describecontainer#instancenetworkinterfaceattachment)|主网卡配置信息|
+|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](describecontainer#instancenetworkinterfaceattachment)|辅助网卡配置信息|
 |**logConfiguration**|[LogConfiguration](describecontainer#logconfiguration)|容器日志配置信息|
 |**tags**|[Tag[]](describecontainer#tag)| |
 |**charge**|[Charge](describecontainer#charge)|计费配置信息|
@@ -118,7 +118,12 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers/{contai
 |**mountPath**|String|容器内的挂载目录|
 |**readOnly**|Boolean|只读，默认false；只针对data volume有效，root volume为false|
 |**cloudDisk**|[InstanceCloudDisk](describecontainer#instanceclouddisk)|云硬盘规格|
+|**localDisk**|[InstanceLocalDisk](describecontainer#instancelocaldisk)|云硬盘规格|
 |**fsType**|String|指定volume文件系统类型，目前支持[xfs, ext4]|
+### <div id="instancelocaldisk">InstanceLocalDisk</div>
+|名称|类型|描述|
+|---|---|---|
+|**diskSize**|Integer|本地盘大小(GB)|
 ### <div id="instanceclouddisk">InstanceCloudDisk</div>
 |名称|类型|描述|
 |---|---|---|

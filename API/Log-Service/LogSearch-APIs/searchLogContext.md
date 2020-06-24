@@ -21,10 +21,17 @@ https://logs.jcloud.com/v1/regions/{regionId}/logsets/{logsetUID}/logtopics/{log
 |---|---|---|---|---|
 |**anchor**|Object[]|True| |查询anchor,基于该值偏移进行上下文检索|
 |**direction**|String|False| |搜索方向,默认both,可取值:up,down,both|
+|**filters**|[Filter[]](searchlogcontext#filter)|False| |指定返回字段，只对系统日志生效，不填默认按照产品线配置返回字段，Name支持：key，Values填入返回字段|
 |**id**|String|True| |日志记录ID|
 |**lineSize**|Long|True| |查看上下文行数大小，最大支持200|
 |**time**|Long|True| |查询日志时返回的时间戳|
 
+### <div id="filter">Filter</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|False| |过滤条件的名称|
+|**operator**|String|False| |过滤条件的操作符，默认eq (Optional)|
+|**values**|String[]|False| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|

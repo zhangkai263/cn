@@ -26,19 +26,19 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 |**sumFileSize**|Long|False| | |
 |**avgFileSize**|Long|False| | |
 |**defaultSourceHost**|String|False| | |
-|**httpType**|String|False| | |
-|**ipSource**|[IpSourceInfo[]](batchcreate#ipsourceinfo)|False| | |
-|**domainSource**|[DomainSourceInfo[]](batchcreate#domainsourceinfo)|False| | |
+|**httpType**|String|True| |只能为http,设置为https的话需再次调用sethttptype接口 |
+|**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
+|**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
 |**accelerateRegion**|String|False| |加速区域 (mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
 
-### <div id="domainsourceinfo">DomainSourceInfo</div>
+### <div id="DomainSourceInfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**priority**|Integer|True| |优先级（1-10）|
 |**sourceHost**|String|False| |回源host|
 |**domain**|String|True| |回源域名|
-### <div id="ipsourceinfo">IpSourceInfo</div>
+### <div id="IpSourceInfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**master**|Integer|True| |1：主；2：备|

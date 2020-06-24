@@ -1,5 +1,5 @@
-# 从本地 PostgreSQL 迁移到云数据库 PostgreSQL
-这里主要讲下如何从本地自建 PostgreSQL 迁移到京东云云数据库 PostgreSQL，自建 PostgreSQL 需要您自己做 PostgreSQL 服务日常的运维，监控，备份等等其他操作，使用京东云云数据库 PostgreSQL 就省去了这些烦恼，只需要关注使用即可。
+# 从云主机 PostgreSQL 迁移到云数据库 PostgreSQL
+这里主要讲下如何从云主机自建 PostgreSQL 迁移到京东云云数据库 PostgreSQL，自建 PostgreSQL 需要您自己做 PostgreSQL 服务日常的运维，监控，备份等等其他操作，使用京东云云数据库 PostgreSQL 就省去了这些烦恼，只需要关注使用即可。
 
 ## 注意事项
 * 新建的 PostgreSQL 实例需要和云主机在同一个 ***私有网络*** 内。
