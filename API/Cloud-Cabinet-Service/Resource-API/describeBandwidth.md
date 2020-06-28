@@ -22,14 +22,14 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths/{bandwidthId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describebandwidth#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidth**|[Bandwidth](#bandwidth)| |
-### <div id="Bandwidth">Bandwidth</div>
+|**bandwidth**|[Bandwidth](describebandwidth#bandwidth)| |
+### <div id="bandwidth">Bandwidth</div>
 |名称|类型|描述|
 |---|---|---|
 |**idc**|String|机房英文标识|
@@ -40,14 +40,14 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths/{bandwidthId}
 |**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 |**chargeType**|String|计费方式 fixedBandwidth:固定带宽 95thPercentile:95峰值 merge95thPercentile:合并95峰值|
 |**bandwidth**|Integer|合同带宽（Mbps）|
-|**relatedIp**|[RelatedIp[]](#relatedip)|关联的公网IP|
-|**switchboard**|[Switchboard[]](#switchboard)|交换机信息|
-### <div id="Switchboard">Switchboard</div>
+|**relatedIp**|[RelatedIp[]](describebandwidth#relatedip)|关联的公网IP|
+|**switchboard**|[Switchboard[]](describebandwidth#switchboard)|交换机信息|
+### <div id="switchboard">Switchboard</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|IP|
 |**port**|String|端口|
-### <div id="RelatedIp">RelatedIp</div>
+### <div id="relatedip">RelatedIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**cidrAddr**|String|IP地址段|
