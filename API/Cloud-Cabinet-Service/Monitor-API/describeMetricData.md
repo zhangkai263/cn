@@ -29,31 +29,31 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/metrics/{metric}/metricData
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describemetricdata#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**metricData**|[MetricData](#metricdata)| |
-### <div id="MetricData">MetricData</div>
+|**metricData**|[MetricData](describemetricdata#metricdata)| |
+### <div id="metricdata">MetricData</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DataPoint[]](#datapoint)| |
-|**statistic**|[Statistic](#statistic)| |
-|**metric**|[Metric](#metric)| |
-### <div id="Metric">Metric</div>
+|**data**|[DataPoint[]](describemetricdata#datapoint)| |
+|**statistic**|[Statistic](describemetricdata#statistic)| |
+|**metric**|[Metric](describemetricdata#metric)| |
+### <div id="metric">Metric</div>
 |名称|类型|描述|
 |---|---|---|
 |**metric**|String|监控项英文标识|
 |**metricName**|String|监控项名称|
-### <div id="Statistic">Statistic</div>
+### <div id="statistic">Statistic</div>
 |名称|类型|描述|
 |---|---|---|
 |**max**|Double|最大值|
 |**min**|Double|最小值|
 |**avg**|Double|平均值|
-### <div id="DataPoint">DataPoint</div>
+### <div id="datapoint">DataPoint</div>
 |名称|类型|描述|
 |---|---|---|
 |**timestamp**|Integer|UNIX时间戳|

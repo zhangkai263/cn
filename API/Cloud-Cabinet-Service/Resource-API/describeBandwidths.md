@@ -19,9 +19,9 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1|
 |**pageSize**|Integer|False|20|分页大小，默认为20|
-|**filters**|[Filter[]](#filter)|False| |bandwidthId - 带宽实例IID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describebandwidths#filter)|False| |bandwidthId - 带宽实例IID，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,17 +31,17 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describebandwidths#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidths**|[DescribeBandwidth[]](#describebandwidth)|带宽（出口）列表|
+|**bandwidths**|[DescribeBandwidth[]](describebandwidths#describebandwidth)|带宽（出口）列表|
 |**pageNumber**|Integer|页码|
 |**pageSize**|Integer|分页大小|
 |**totalCount**|Integer|总数量|
-### <div id="DescribeBandwidth">DescribeBandwidth</div>
+### <div id="describebandwidth">DescribeBandwidth</div>
 |名称|类型|描述|
 |---|---|---|
 |**idc**|String|机房英文标识|
@@ -52,8 +52,8 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 |**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 |**chargeType**|String|计费方式 fixedBandwidth:固定带宽 95thPercentile:95峰值 merge95thPercentile:合并95峰值|
 |**bandwidth**|Integer|合同带宽（Mbps）|
-|**relatedIp**|[RelatedIp[]](#relatedip)|关联的公网IP|
-### <div id="RelatedIp">RelatedIp</div>
+|**relatedIp**|[RelatedIp[]](describebandwidths#relatedip)|关联的公网IP|
+### <div id="relatedip">RelatedIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**cidrAddr**|String|IP地址段|
