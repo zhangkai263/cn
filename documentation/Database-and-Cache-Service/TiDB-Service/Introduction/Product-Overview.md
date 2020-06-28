@@ -13,8 +13,8 @@
 ## 常用操作
 - [创建实例](../Operation-Guide/Instance/Create-Instance.md)
 - [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
-- [重置密码](../Operation-Guide/Reset-Password.md)
-- [监控](../Operation-Guide/Monitor.md)
+- [创建账号](../Operation-Guide/Account/Create-Account.md)
+- [创建备份](../Operation-Guide/Backup/Create-Backup.md)
   
 ## 计费
 TiDB 目前处于公测阶段，暂时对通过申请的用户免费。
