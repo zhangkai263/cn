@@ -42,16 +42,14 @@
       - name: 连接实例
         herf: Operation-Guide/Instance/Connect-Instance.md
 
-    - name:账号管理
+    - name: 账号管理
       items:
       - name: 创建账号
       herf: Operation-Guide/Account/Create-Account.md
       - name: 重置密码
       herf: Operation-Guide/Account/Reset-Password.md
-      - name: 监控实例
-      herf: Operation-Guide/Account/Monitor.md
 
-    - name:备份管理
+    - name: 备份管理
       items:
       - name: 创建备份
         herf: Operation-Guide/Backup/Create-Backup.md
@@ -61,7 +59,10 @@
         herf: Operation-Guide/Backup/Delete-Backup.md
       - name: 修改策略
         herf: Operation-Guide/Backup/Modify-Backup-Strategy.md
-
+        
+    - name: 监控实例
+      herf: Operation-Guide/Monitor.md
+      
   - name: SQL 语法
     items:
     - name: 数据处理相关SQL
