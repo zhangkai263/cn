@@ -76,12 +76,11 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 
 <div id="user-content-1"></div>
 
-由于目前导入镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
+完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。（**目前导入镜像控制台操作入口为灰度开放，如需使用请提交工单申请**）
+![](../../../../../image/vm/Image-Import-Image-Step3.png)
 
 * OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
-
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
-
 * CLI指令示意：
 ```
 jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.s3-internal.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest
