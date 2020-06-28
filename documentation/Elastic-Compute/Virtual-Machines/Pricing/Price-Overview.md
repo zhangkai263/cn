@@ -380,7 +380,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="30">计算优化</td>
+      <td rowspan="35">计算优化</td>
       <td rowspan="3">共享</td>
       <td>c.s2.large</td>
       <td>2</td>
@@ -410,7 +410,58 @@
       <td>1.65</td>
       <td>--</td>
       <td></td>
+  <tr>
+      <td rowspan="5">密集</td>
+      <td>c.c2.large</td>
+      <td>2</td>
+      <td>2</td>
+      <td>170</td>
+      <td>127.5</td>
+      <td>0.59</td>
+      <td>0.44</td>
+      <td></td>
    </tr>
+   <tr>
+      <td>c.c2.xlarge</td>
+      <td>4</td>
+      <td>4</td>
+      <td>340</td>
+      <td>255</td>
+      <td>1.18</td>
+      <td>0.89</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.c2.2xlarge</td>
+      <td>8</td>
+      <td>8</td>
+      <td>680</td>
+      <td>510</td>
+      <td>2.36</td>
+      <td>1.77</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.3xlarge</td>
+      <td>12</td>
+      <td>12</td>
+      <td>1020</td>
+      <td>765</td>
+      <td>3.54</td>
+      <td>2.66</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.4xlarge</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1360</td>
+      <td>1020</td>
+      <td>4.72</td>
+      <td>3.54</td>
+      <td></td>
+   </tr>
+</tr>
       <td rowspan="27">标准</td>
       <td>c.n3.large</td>
       <td>2</td>
@@ -1329,7 +1380,7 @@
       <td>553.49</td>
       <td>2.56</td>
       <td>1.92</td>
-      <td> </td>   
+      <td>1*1/6 P40 </td>   
     </tr>
    <tr>
       <td>p.c1p40m.large</td>
@@ -1339,7 +1390,7 @@
       <td>788.45</td>
       <td>3.65</td>
       <td>2.74</td>
-      <td> </td>   
+      <td> 1*1/4 P40</td>   
     </tr>
    <tr>
       <td>p.c1p40g.xlarge</td>
@@ -1349,7 +1400,7 @@
       <td>919.55</td>
       <td>4.26</td>
       <td>3.19</td>
-      <td> </td>   
+      <td>1*1/4 P40 </td>   
     </tr>    
    <tr>
       <td>p.c1p40g.3large</td>
@@ -1359,7 +1410,7 @@
       <td>1654.37</td>
       <td>7.66</td>
       <td>5.74</td>
-      <td> </td>   
+      <td>1*1/2 P40 </td>   
     </tr>      
    <tr>
       <td>p.q1p40g.large</td>
@@ -1369,7 +1420,7 @@
       <td>672.63</td>
       <td>3.11</td>
       <td>2.34</td>
-      <td> </td>   
+      <td>1*1/6 P40 </td>   
     </tr>
    <tr>
       <td>p.q1p40m.large</td>
@@ -1379,7 +1430,7 @@
       <td>907.59</td>
       <td>4.20</td>
       <td>3.15</td>
-      <td> </td>   
+      <td> 1*1/4 P40</td>   
     </tr>
    <tr>
       <td>p.q1p40g.xlarge</td>
@@ -1389,7 +1440,7 @@
       <td>1038.69</td>
       <td>4.81</td>
       <td>3.61</td>
-      <td> </td>   
+      <td> 1*1/4 P40</td>   
     </tr>    
    <tr>
       <td>p.q1p40g.3large</td>
@@ -1399,7 +1450,7 @@
       <td>1773.50</td>
       <td>8.21</td>
       <td>6.16</td>
-      <td> </td>   
+      <td>1*1/2 P40 </td>   
     </tr>  
 </table>
 
@@ -1407,6 +1458,7 @@
 
 * 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
 * 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供。
+* 计算优化密集型当前仅在华东-上海地域提供。
 * GPU虚拟化型当前仅在华北-北京开放邀测。
 
 ## 相关参考

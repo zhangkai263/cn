@@ -49,3 +49,4 @@ uploadDict  | 上传本地字典文件并加载到es | 写入 | 可选择主账�
 deleteDict  | 删除单个字典文件 | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
 createSnapshot  | 创建一个snapshot | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
 modifyAutoSnapshot | auto snapshot 设置 | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |
+describeKibana | 访问Kibana | 写入 | 可选择主账号下云搜索Elasticsearch的部分资源 |

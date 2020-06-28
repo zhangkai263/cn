@@ -7,11 +7,11 @@
 
 ### 操作步骤
 ##### 1.创建托管通道
-已存在“可用”状态的托管专线的客户可以使用托管通道。
-a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  </br>
-b)选择地域，点击“创建”；</br>
-c)输入托管通道的名称，选择托管专线、边界网关，指定vlanId、路由方式、客户端设备的BGP ASN、BGP密钥、BGP互联地址，描述，创建托管通道；</br>
-d)创建托管通道后，经过一段时间的配置下发后，托管通道进入“可用”状态，配置下发过程涉及云端配置下发，以及和客户端的vlan打通、BGP Session建立、BGP路由学习等，请提前在客户端设备中完成相关配置；</br>
+已存在“可用”状态的托管专线的客户可以使用托管通道。<br />
+a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  <br />
+b)选择地域，点击“创建”；<br />
+c)输入托管通道的名称，选择托管专线、边界网关，指定vlanId、路由方式、客户端设备的BGP ASN、BGP密钥、BGP互联地址，描述，创建托管通道；<br />
+d)创建托管通道后，经过一段时间的配置下发后，托管通道进入“可用”状态，配置下发过程涉及云端配置下发，以及和客户端的vlan打通、BGP Session建立、BGP路由学习等，请提前在客户端设备中完成相关配置；<br />
 
 ```
   仅可用状态的托管专线支持创建托管通道。
@@ -35,14 +35,16 @@ d)创建托管通道后，经过一段时间的配置下发后，托管通道进
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/create-hosted-private-vif.png)
 
 ##### 2.修改托管通道
-您可对托管通道的名称、描述进行修改。</br>
-a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  </br>
-b)选择相应的托管通道，进入托管通道详情页面；</br>
-c)支持修改托管通道名称、描述，各配置项的限制同创建托管通道；</br>
+您可对托管通道的名称、描述进行修改。<br />
+a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  <br />
+b)选择相应的托管通道，进入托管通道详情页面；<br />
+c)支持修改托管通道名称、描述，各配置项的限制同创建托管通道；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/update-hosted-private-vif.png)
 
 ##### 3.删除托管通道
-若您不再需要托管通道，可将其删除。</br>
-a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  </br>
-b)选择相应的托管通道，点击操作列中的“删除”；</br>
+若您不再需要托管通道，可将其删除。<br />
+a)登录[京东云托管通道控制台](https://cns-console.jdcloud.com/host/hVif/list)；  <br />
+b)选择相应的托管通道，点击操作列中的“删除”；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/delete-hosted-private-vif.png)

@@ -5,9 +5,9 @@
 以下为当前京东智联云在售的实例规格类型信息，不同地域可售卖实例类型及规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
-* 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化标准型](instance-type-family#user-content-3)
+* 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
-* 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
+* 高频计算型：[高频计算通用型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 
@@ -38,21 +38,21 @@
 
 第二代
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|g.s2.micro|1|1
-|g.s2.small|1|2
-|g.s2.medium|1|4
-|g.s2.large|2|8
-|g.s2.xlarge|4|16
-|g.s2.2xlarge|8|32
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.s2.micro|1|1|1
+|g.s2.small|1|2|1
+|g.s2.medium|1|4|1
+|g.s2.large|2|8|2
+|g.s2.xlarge|4|16|4
+|g.s2.2xlarge|8|32|4
 
 第一代
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|g.s1.micro|1|1
-|g.s1.small|1|2
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.s1.micro|1|1|1
+|g.s1.small|1|2|1
 
 ### 通用标准型
 <div id="user-content-2"></div>
@@ -143,11 +143,44 @@ g.n1.8xlarge|32|128|4 |	 |
 
 **实例规格**
 
-实例规格|vCPU（核）|内存（GB）
-:---|:---|:---
-|c.s2.large|2|4
-|c.s2.xlarge|4|8
-|c.s2.2xlarge|8|16
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|c.s2.large|2|4|2
+|c.s2.xlarge|4|8|4
+|c.s2.2xlarge|8|16|4
+
+### 计算优化密集型
+<div id="user-content-11"></div>
+
+**规格类型特点：**
+
+* vCPU与内存比约为1:1
+* 处理器：
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 适用场景：
+	* 批处理工作负载
+	* Web前端服务器
+	* 大型多人在线游戏（MMO）前端
+	* 数据分析、批量计算、视频编码
+	* 高性能科学和工程应用
+
+**实例规格**
+
+第二代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|c.c2.large|2|2|2
+|c.c2.xlarge|4|4|4
+|c.c2.2xlarge|8|8|4
+|c.c2.3xlarge|12|12|4
+|c.c2.4xlarge|16|16|4
 
 ### 计算优化标准型
 <div id="user-content-3"></div>
@@ -508,6 +541,9 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 请注意：
 
+* 标 * 规格表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
+* 计算优化密集型当前仅在华东-上海地域提供；
+* 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供；
 * GPU虚拟化型当前在华北-北京、华东-上海部分可用区邀测中；
 * 第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；
 * 在购买实例后，您可根据业务规模变更情况对实例进行配置修改，详细请参见[调整配置](../Operation-Guide/Instance/Resize-Instance.md)。

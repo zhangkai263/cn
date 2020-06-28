@@ -5,3 +5,5 @@
 ```
 请注意：实例删除后，数据无法恢复，请您谨慎操作。 
 ```
+
+![查询1](https://github.com/jdcloudcom/cn/blob/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/删除ZK.png)

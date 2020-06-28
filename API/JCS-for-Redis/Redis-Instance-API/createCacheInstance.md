@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），不同规格价格也不同，具体可参考产品规格代码，https://docs.jdcloud.com/cn/jcs-for-redis/specifications。自定义分片规格可通过describeSpecConfig接口获取
+创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），自定义分片规格可通过describeSpecConfig接口获取，老规格代码请参考，https://docs.jdcloud.com/cn/jcs-for-redis/specifications
 
 
 ## 请求方式
@@ -41,7 +41,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**cacheInstanceDescription**|String|False| |缓存Redis实例的描述，不能超过256个字符|
 |**redisVersion**|String|False| |缓存Redis引擎主次版本号：目前支持2.8和4.0，默认为2.8|
 |**ipv6On**|Integer|False| |是否支持IPv6，0或空表示不支持，1表示支持IPv6，注意不是所有区域都支持IPv6，且必须保证VPC支持IPv6|
-|**shardNumber**|Integer|False| |自定义分片数，只对自定义规格实例有效|
+|**shardNumber**|Integer|False| |分片数，自定义分片规格集群版实例必须有，且大于1。每种分片规格支持的分片数可调用describeSpecConfig接口获取|
 ### <div id="azidspec">AzIdSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

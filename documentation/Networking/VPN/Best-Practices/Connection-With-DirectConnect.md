@@ -29,13 +29,13 @@ c)选择步骤1中创建的边界网关，选择要通过该边界网关路由�
 更多内容，详见[VPC接口管理](../Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md)。
 
 ###### 步骤3.创建专线连接
-详见[创建同账号同地域专线连接](https://docs.jdcloud.com/cn/direct-connection/connect-to-the-same-account-or-region-direct-connetct)。
+详见[专线连接公有云](https://docs.jdcloud.com/cn/direct-connection/connect-to-the-same-account-or-region-direct-connetct)。
 
 ###### 步骤4.创建VPN连接、隧道、客户端设备、BGP
-详见[企业IDC连接公有云](../Getting-Started/Connection-Into-On-Premise.md)。
+详见[VPN连接公有云](../Getting-Started/Connection-Into-On-Premise.md)。
 
 ###### 步骤5.配置路由
-在客户端路由器设备上，通过BGP路由协议发布到云内VPC的路由，下一跳分别指向专线连接和VPN连接的接口，指定专线路由的BGP AS_PATH较VPN路由的BGP AS_PATH短，实现专线路由承载流量，当专线路由无效时使用VPN路由承载流量。
+在客户端路由器设备上，通过BGP路由协议发布到云内VPC的路由，下一跳分别指向专线连接和VPN连接的接口，指定专线通道使用更精细的路由网段，VPN连接使用聚合后的路由网段，或指定专线路由的BGP AS_PATH较VPN路由的BGP AS_PATH短，实现专线路由承载流量，当专线路由无效时使用VPN路由承载流量。
 
 ###### 步骤6.测试连通性并验证路由切换
 a)登录[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，在创建了服务的地域下，要和企业IDC内网网段互通的VPC中创建一台云主机，确认该云主机所在子网的路由表中存在正确去往企业IDC内网网段的路由；  <br />

@@ -34,7 +34,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/instanceClass
 ### <div id="instanceclass">InstanceClass</div>
 |名称|类型|描述|
 |---|---|---|
-|**instanceClass**|String|规格代码：redis 2.8与redis 4.0的规格码不同，具体参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications，自定义分片规格请调用describeSpecConfig获取|
+|**instanceClass**|String|规格代码：redis 2.8与redis 4.0的规格码不同，具体参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications|
 |**instanceType**|String|规格类型：master-slave表示主从版，cluster表示集群版|
 |**cpu**|Integer|cpu核数|
 |**memoryMB**|Integer|内存总容量（MB）|

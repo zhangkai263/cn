@@ -26,7 +26,6 @@
 - 存储
     - volume分为container system disk和pod data volume，container system disk的挂载目录是/，data volume的挂载目录可以随意指定
     - container system disk
-        - 只能是cloud类别
         - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
         - 磁盘大小
             - 所有类型：范围[20,100]GB，步长为10G
@@ -37,7 +36,7 @@
         - 当前只能选择cloud类别
         - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
         - 磁盘大小
-            - 所有类型：范围[20,4000]GB，步长为10G
+            - 所有类型：范围[20,2000]GB，步长为10G
         - 自动删除
             - 默认自动删除
         - 可以选择已存在的云硬盘
@@ -45,12 +44,10 @@
 - pod 容器日志
     - default：默认在本地分配10MB的存储空间，自动rotate
 - DNS-1123 label规范
-    - 长度范围: [1-63]
-    - 正则表达式: ^[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?$
+    - 支持数字、小写字母、英文中划线“-”，但不支持以“-”作为开始字符和结束字符，1~63字符。
     - 例子: my-name, 123-abc
 - DNS-1123 subdomain规范
-    - 长度范围: [1-253]
-    - 正则表达式: ^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$
+    - 由一或多个标签组成，标签之间用'.'分隔；标签可由小写字母、数字、英文中划线'-'构成，标签首尾不可为'-'；所有字符总长度为1~253。
     - 例子: example.com, registry.docker-cn.com
 - 其他
     - 创建完成后，pod 状态为running
@@ -77,9 +74,9 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 ### <div id="podspec">PodSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|True| |Pod名称|
+|**name**|String|True| |Pod名称，符合DNS-1123 subdomain规范；名称不可重复、不支持修改|
 |**description**|String|False| |描述信息，默认为空；允许输入UTF-8编码下的全部字符，不超过256字符。|
-|**hostname**|String|False| |主机名；范围：[1-63]个ASCII字符，默认值为 podId|
+|**hostname**|String|False| |主机名；符合hostname规范，默认值为 podId|
 |**restartPolicy**|String|False| |pod中容器重启策略；Always, OnFailure, Never；默认：Always|
 |**terminationGracePeriodSeconds**|Integer|False| |优雅关机宽限时长，如果超时，则触发强制关机。默认：30s，值不能是负数，范围：[0-300]|
 |**instanceType**|String|True| |实例类型；参考[文档](https://www.jdcloud.com/help/detail/1992/isCatalog/1)|
@@ -127,7 +124,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 ### <div id="containerspec">ContainerSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|True| |容器名称，符合DNS-1123 label规范，在一个Pod内不能重复。|
+|**name**|String|True| |容器名称，符合DNS-1123 label规范，在一个Pod内不可重复、不支持修改|
 |**command**|String[]|False| |容器执行命令，如果不指定默认是docker镜像的ENTRYPOINT。总长度256个字符。|
 |**args**|String[]|False| |容器执行命令的参数，如果不指定默认是docker镜像的CMD。总长度2048个字符。|
 |**env**|[EnvSpec[]](createpods#envspec)|False| |容器执行的环境变量；如果和镜像中的环境变量Key相同，会覆盖镜像中的值。数组范围：[0-100]|
@@ -149,6 +146,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 ### <div id="clouddiskspec">CloudDiskSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**category**|String|False| |磁盘类型，支持云盘： cloud|
 |**volumeId**|String|False| |云盘ID，指定使用已有云盘|
 |**name**|String|False| |云盘名称|
 |**snapshotId**|String|False| |云盘快照ID，根据云盘快照创建云盘。|

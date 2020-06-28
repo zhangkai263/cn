@@ -3,11 +3,11 @@
 
 ### 操作步骤
 ##### 1.创建托管专线
-已完成企业实名认证的客户可以使用托管专线。
-a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  </br>
-b)选择地域，点击“创建”；</br>
-c)输入托管专线的名称、托管地域、联系人、联系方式、描述，创建托管专线；</br>
-d)新建的托管专线进入待审核状态，审核过程一般需要1~2个工作日；</br>
+已完成企业实名认证的客户可以使用托管专线。<br />
+a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  <br />
+b)选择地域，点击“创建”；<br />
+c)输入托管专线的名称、托管地域、联系人、联系方式、描述，创建托管专线；<br />
+d)新建的托管专线进入待审核状态，审核过程一般需要1~2个工作日；<br />
 
 ```
   托管专线各状态说明：
@@ -24,14 +24,21 @@ d)新建的托管专线进入待审核状态，审核过程一般需要1~2个工
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/create-hosted-connection.png)
 
 ##### 2.修改托管专线
-您可对托管专线的名称、描述进行修改。</br>
-a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  </br>
-b)选择相应的托管专线，进入托管专线详情页面；</br>
-c)支持修改托管专线名称、描述，各配置项的限制同创建托管专线；</br>
+您可对托管专线的名称、描述进行修改。<br />
+a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  <br />
+b)选择相应的托管专线，进入托管专线详情页面；<br />
+c)支持修改托管专线名称、描述，各配置项的限制同创建托管专线；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/update-hosted-connection.png)
 
-##### 3.删除托管专线
-若您不再需要托管专线，可将其删除。</br>
-a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  </br>
-b)选择相应的托管专线，点击操作列中的“删除”，当该托管专线未创建专线通道时可以删除；</br>
+##### 3.托管专线调整配置
+若您因业务变化需要调整物理端口规格，请线下与京东云协商具体的变更时间，并自行准备新规格所需的单模光模块，待该托管专线断开流量后由机房人员进行端口变更。待端口变更完成且确认流量已恢复后(此时物理端口限速仍为原规格)，请在控制台中操作调整端口配置，以按新的端口规格进行计费，待支付成功后将自动调整端口限速为新的速率。<br />
+a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  <br />
+b)选择相应的托管专线，点击操作列中的“调整配置”，请按您的实际需求进行升降配操作；<br />
+
+##### 4.删除托管专线
+若您不再需要托管专线，可将其删除。<br />
+a)登录[京东云托管专线控制台](https://cns-console.jdcloud.com/host/hConnection/list)；  <br />
+b)选择相应的托管专线，点击操作列中的“删除”，当该托管专线未创建专线通道时可以删除；<br />
+
 ![](../../../../../image/Networking/Direct-Connect-Service/Operation-Guide/delete-hosted-connection.png)

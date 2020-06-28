@@ -19,7 +19,7 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**filters**|[Filter[]](listtranscodetemplates#filter)|False| | |
+|**filters**|[Filter[]](user-content-listtranscodetemplates#filter)|False| | |
 
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -31,7 +31,7 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](listtranscodetemplates#result)|查询转码模板列表信息结果|
+|**result**|[Result](user-content-listtranscodetemplates#result)|查询转码模板列表信息结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
@@ -41,16 +41,16 @@ https://mps.jdcloud-api.com/v1/transcodeTemplates
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|[TranscodeTemplateInfo[]](listtranscodetemplates#transcodetemplateinfo)|分页内容|
+|**content**|[TranscodeTemplateInfo[]](user-content-listtranscodetemplates#transcodetemplateinfo)|分页内容|
 ### <div id="transcodetemplateinfo">TranscodeTemplateInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**templateId**|String|模板ID|
 |**title**|String|模板标题。长度不超过 128 个字符，最少 2 个字符。UTF-8 编码。<br>|
-|**video**|[VideoStreamSettings](listtranscodetemplates#videostreamsettings)|视频参数配置|
-|**audio**|[AudioStreamSettings](listtranscodetemplates#audiostreamsettings)|音频参数配置|
-|**container**|[ContainerSettings](listtranscodetemplates#containersettings)|容器设置|
-|**encryption**|[EncryptionSettings](listtranscodetemplates#encryptionsettings)|加密配置|
+|**video**|[VideoStreamSettings](user-content-listtranscodetemplates#videostreamsettings)|视频参数配置|
+|**audio**|[AudioStreamSettings](user-content-listtranscodetemplates#audiostreamsettings)|音频参数配置|
+|**container**|[ContainerSettings](user-content-listtranscodetemplates#containersettings)|容器设置|
+|**encryption**|[EncryptionSettings](user-content-listtranscodetemplates#encryptionsettings)|加密配置|
 |**definition**|String|清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**transcodeType**|String|转码方式。取值范围：<br>  normal - 普通转码<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 |**createTime**|String|创建时间|

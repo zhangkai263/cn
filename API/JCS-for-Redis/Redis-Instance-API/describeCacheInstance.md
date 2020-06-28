@@ -34,7 +34,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|---|
 |**cacheInstanceId**|String|实例ID|
 |**cacheInstanceName**|String|实例名称|
-|**cacheInstanceClass**|String|规格代码，或者自定义分片实例的单分片规格代码，参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications|
+|**cacheInstanceClass**|String|规格代码，2.8、4.0标准版是实例规格，4.0自定义分片集群版实例表示单分片规格|
 |**cacheInstanceMemoryMB**|Integer|实例的总内存（MB）|
 |**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中|
 |**cacheInstanceDescription**|String|实例描述|
@@ -46,12 +46,12 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**port**|Integer|实例的访问端口|
 |**charge**|[Charge](describecacheinstance#charge)|实例的计费信息|
 |**instanceVersion**|String|实例的详细版本号，形如x.x-x.x|
-|**auth**|Boolean|连接redis实例时，是否需要密码认证，false表示无密码|
-|**redisVersion**|String|创建实例时选择的redis引擎版本：目前支持2.8和4.0|
+|**auth**|Boolean|连接实例时，是否需要密码认证，false表示无密码|
+|**redisVersion**|String|创建实例时选择的引擎版本：目前支持2.8和4.0|
 |**cacheInstanceType**|String|实例类型：master-slave表示主从版，cluster表示集群版|
 |**ipv6On**|Integer|是否支持IPv6，0表示不支持（只能用IPv4），1表示支持|
 |**tags**|[Tag[]](describecacheinstance#tag)|标签信息|
-|**shardNumber**|Integer|实例分片数，自定义分片规格的实例分片数由用户创建时选择，其他实例为固定分片数|
+|**shardNumber**|Integer|实例分片数，标准版固定为1，自定义分片集群版实例分片数由用户创建时选择，其他实例为固定分片数|
 |**memoryMBPerShard**|Integer|单分片内存大小（MB）|
 ### <div id="tag">Tag</div>
 |名称|类型|描述|

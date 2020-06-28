@@ -57,7 +57,7 @@ items:
       href: Best-Practice/Performance-Test.md 
 - name: 常见问题
   items:
-    - name: 产品概述
+    - name: 功能问题
       href: FAQ/Function-FAQ.md
     - name: 配置问题
       href: FAQ/Configuration-FAQ.md

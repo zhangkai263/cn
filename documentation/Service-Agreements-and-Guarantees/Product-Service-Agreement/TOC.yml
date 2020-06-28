@@ -160,6 +160,8 @@ items:
     href: Queue-Service-Terms-Of-Service-SLA.md
   - name: 智臻链BaaS平台服务条款
     href: JD-Blockchain-Open-Platform.md
+  - name: 智臻链BaaS平台服务等级协议
+    href: JD-Blockchain-Open-Platform-Level-Agreements-SLA.md 
   - name: 物联网协议适配服务条款
     href: IoT-Protocol-Adaptor-Terms-Of-Service.md   
   - name: 物联网协议适配服务等级协议(SLA)
@@ -172,9 +174,9 @@ items:
     href: IoT-Hub-Terms-Of-Service.md
   - name: 物联网中心服务等级协议(SLA)  
     href: IoT-Hub-Level-Agreements-SLA.md
-  - name: 物联网卡服务服务条款
+  - name: 物联网连接服务服务条款
     href: IoT-Link-Service-Terms-Of-Service.md
-  - name: 物联网卡服务等级协议（SLA）
+  - name: 物联网连接服务等级协议（SLA）
     href: IoT-Link-Service-Level-Agreements-SLA.md
   - name: 物联网智能边缘计算服务条款
     href: IoT-Edge-Terms-Of-Service.md    
@@ -206,9 +208,9 @@ items:
     href: Recommended-Rebate-User-Agreement.md
   - name: 授权委托书
     href: Power-Of-Attorney.md
-  - name: 我的世界教育版-演示版服务协议
+  - name: Minecraft我的世界教育版-演示版服务协议
     href: MEE-Demo-Service-Terms-Of-Service.md
-  - name: 我的世界教育版-软件使用许可及服务协议
+  - name: Minecraft我的世界教育版-软件使用许可及服务协议
     href: MEE-China-Related-Agreement.md  
   - name: 云托管机柜租赁服务条款
     href: Cloud-Cabinet-Service-Terms-Of-Service.md
@@ -236,20 +238,192 @@ items:
     href: JDWhale-DCS-Level-Agreement-SLA.md
   - name: 细粒度人像分割服务条款
     href: Fine-grained-Portrait-Segmentation-Terms-Of-Service.md
+  - name: 细粒度人像分割服务等级协议（SLA）
+    href: Fine-Grained-Portrait-Segmentation-Level-Agreements-SLA.md    
   - name: 行人重识别服务条款
-    href: Pedestrian-Recognition-Terms-Of-Service.md	
+    href: Pedestrian-Recognition-Terms-Of-Service.md
+  - name: 行人重识别服务等级协议（SLA）
+    href: Pedestrian-Recognition-Level-Agreements-SLA.md    
   - name: 人脸口罩识别服务条款
-    href: Face-mask-Recognition-Terms-Of-Service.md	
-  - name: 垃圾分类服务条款
-    href: Garbage-Classification-Terms-Of-Service.md		
+    href: Face-mask-Recognition-Terms-Of-Service.md
+  - name: 人脸口罩识别服务等级协议（SLA）
+    href: Face-Mask-Recognition-Level-Agreements-SLA.md    
+  - name: 垃圾分类服务条款  
+    href: Garbage-Classification-Terms-Of-Service.md
+  - name: 垃圾分类服务等级协议（SLA）
+    href: Garbage-Classification-Level-Agreements-SLA.md    
   - name: 通用图片搜索服务条款
-    href: Image-Search-Engine-Terms-Of-Service.md		
+    href: Image-Search-Engine-Terms-Of-Service.md
+  - name: 通用图片搜索服务等级协议（SLA）
+    href: Image-Search-Engine-Level-Agreements-SLA.md  
   - name: 疫情物资识别服务条款
-    href: Identification-Of-Epidemic-Materials-Terms-Of-Service.md		
+    href: Identification-Of-Epidemic-Materials-Terms-Of-Service.md
+  - name: 疫情物资识别服务等级协议（SLA）
+    href: Identification-Of-Epidemic-Materials-Level-Agreements-SLA.md    
   - name: 通用商品识别服务条款
-    href: General-Commodity-Identification-Terms-Of-Service.md		
+    href: General-Commodity-Identification-Terms-Of-Service.md
+  - name: 通用商品识别服务等级协议（SLA）
+    href: General-Commodity-Identification-Level-Agreements-SLA.md    
   - name: 商品图片搜索服务条款
-    href: Product-Image-Search-Engine-Terms-Of-Service.md  
+    href: Product-Image-Search-Engine-Terms-Of-Service.md
+  - name: 商品图片搜索服务等级协议（SLA）
+    href: Product-Image-Search-Engine-Level-Agreements-SLA.md
+  - name: NeuFoundry一站式AI开发平台服务条款
+    href: NeuFoundry-Terms-Of-Service.md
+  - name: NeuFoundry一站式AI开发平台服务等级协议（SLA）
+    href: NeuFoundry-Level-Agreements-SLA.md
+  - name: 品牌竞争力分析服务条款
+    href: Brand-Compete-Analyse-Terms-Of-Service.md
+  - name: 品牌竞争力分析服务等级协议（SLA）
+    href: Brand-Compete-Analyse-Level-Agreements-SLA.md
+  - name: 新品定制服务条款
+    href: New-Product-Customization-Terms-Of-Service.md
+  - name: 新品定制服务等级协议（SLA）
+    href: New-Product-Customization-Level-Agreements-SLA.md
+  - name: 老品升级服务条款
+    href: Old-Product-Upgrade-Terms-Of-Service.md
+  - name: 老品升级服务等级协议（SLA）
+    href: Old-Product-Upgrade-Level-Agreements-SLA.md
+  - name: 细分市场划分服务条款
+    href: Segmented-Market-AnalysisTerms-Of-Service.md
+  - name: 细分市场划分服务等级协议（SLA）
+    href: Segmented-Market-Analysis-Level-Agreements-SLA.md
+  - name: 车辆检测服务服务条款
+    href: Vehicle-Detection-Terms-Of-Service.md
+  - name: 车辆检测服务等级协议（SLA）
+    href: Vehicle-Detection-Level-Agreements-SLA.md
+  - name: 银行卡识别服务条款
+    href: Ocr-For-Bank-Card-Terms-Of-Service.md
+  - name: 银行卡识别服务等级协议（SLA）
+    href: Ocr-For-Bank-Card-Level-Agreements-SLA.md
+  - name: 营业执照识别服务条款
+    href: Ocr-For-Business-License-Terms-Of-Service.md
+  - name: 营业执照识别服务等级协议（SLA）
+    href: Ocr-For-Business-License-Level-Agreements-SLA.md
+  - name: 声纹识别服务条款
+    href: Voiceprint-Recognition-Terms-Of-Service.md
+  - name: 声纹识别服务等级协议（SLA）
+    href: Voiceprint-Recognition-Level-Agreements-SLA.md
+  - name: 商品竞争力分析服务条款
+    href: Commodity-Competitiveness-Analysis-Terms-Of-Service.md
+  - name: 商品竞争力分析服务等级协议（SLA）
+    href: Commodity-Competitiveness-Analysis-Level-Agreements-SLA.md
+  - name: 人体检测服务条款
+    href: Human-Detection-Terms-Of-Service.md
+  - name: 人体检测服务等级协议（SLA）
+    href: Human-Detection-Level-Agreements-SLA.md
+  - name: 人脸对比服务条款
+    href: Face-Compare-Terms-Of-Service.md
+  - name: 人脸对比服务等级协议（SLA）
+    href: Face-Compare-Level-Agreements-SLA.md
+  - name: 人脸搜索服务条款
+    href: Face-Search-Terms-Of-Service.md
+  - name: 人脸搜索服务等级协议（SLA）
+    href: Face-Search-Level-Agreements-SLA.md
+  - name: 人脸检测与属性分析服务条款
+    href: Face-Detect-And-Analysis-Terms-Of-Service.md
+  - name: 人脸检测与属性分析服务等级协议（SLA）
+    href: Face-Detect-And-Analysis-Level-Agreements-SLA.md
+  - name: 人脸活体检测服务条款
+    href: Face-Anti-Spoofing-Terms-Of-Service.md
+  - name: 人脸活体检测服务等级协议（SLA）
+    href: Face-Anti-Spoofing-Level-Agreements-SLA.md
+  - name: 人体关键点检测服务条款
+    href: Pose-Estimation-Terms-Of-Service.md
+  - name: 人体关键点检测服务等级协议（SLA）
+    href: Pose-Estimation-Level-Agreements-SLA.md
+  - name: 拍照购服务条款
+    href: Snap-Shop-Terms-Of-Service.md
+  - name: 拍照购服务等级协议（SLA）
+    href: Snap-Shop-Level-Agreements-SLA.md
+  - name: 通用文字识别服务条款
+    href: General-Image-Ocr-Terms-Of-Service.md
+  - name: 通用文字识别服务等级协议（SLA）
+    href: General-Image-Ocr-Level-Agreements-SLA.md
+  - name: 身份证识别服务条款
+    href: Identity-Card-Recognize-Terms-Of-Service.md
+  - name: 身份证识别服务等级协议（SLA）
+    href: Identity-Card-Recognize-Level-Agreements-SLA.md
+  - name: 行驶证识别服务条款
+    href: Vehicle-License-Recognize-Terms-Of-Service.md
+  - name: 行驶证识别服务等级协议（SLA）
+    href: Vehicle-License-Recognize-Level-Agreements-SLA.md
+  - name: 增值税发票识别服务条款
+    href: Value-Added-Tax-Invoice-Recognize-Terms-Of-Service.md
+  - name: 增值税发票识别服务等级协议（SLA）
+    href: Value-Added-Tax-Invoice-Recognize-Level-Agreements-SLA.md
+  - name: 语音识别服务条款
+    href: Automatic-Speech-Recognition-Terms-Of-Service.md
+  - name: 语音识别服务等级协议（SLA）
+    href: Automatic-Speech-Recognition-Level-Agreements-SLA.md
+  - name: 语音合成-基础音库服务条款
+    href: Text-To-Speech-Terms-Of-Service.md
+  - name: 语音合成-基础音库服务等级协议（SLA）
+    href: Text-To-Speech-Level-Agreements-SLA.md
+  - name: 词法分析服务条款
+    href: Lexical-Analysis-Terms-Of-Service.md
+  - name: 词法分析服务等级协议（SLA）
+    href: Lexical-Analysis-Level-Agreements-SLA.md
+  - name: 句法分析服务条款
+    href: Syntactic-Parsing-Terms-Of-Service.md
+  - name: 句法分析服务等级协议（SLA）
+    href: Syntactic-Parsing-Level-Agreements-SLA.md
+  - name: 情感分析服务条款
+    href: Sentiment-Classifier-Terms-Of-Service.md
+  - name: 情感分析服务等级协议（SLA）
+    href: Sentiment-Classifier-Level-Agreements-SLA.md
+  - name: 文本分类服务条款
+    href: Text-Categorization-Terms-Of-Service.md
+  - name: 文本分类服务等级协议（SLA）
+    href: Text-Categorization-Level-Agreements-SLA.md
+  - name: 评论观点抽取服务条款
+    href: Commentary-Extraction-Terms-Of-Service.md
+  - name: 评论观点抽取等级协议（SLA）
+    href: Commentary-Extraction-Level-Agreements-SLA.md
+  - name: 短文本相似度服务条款
+    href: Short-Text-Similarity-Terms-Of-Service.md
+  - name: 短文本相似度服务等级协议（SLA）
+    href: Short-Text-Similarity-Level-Agreements-SLA.md
+  - name: 智能鉴黄服务条款
+    href: Image-Antiporn-Recognize-Terms-Of-Service.md
+  - name: 智能鉴黄服务等级协议（SLA）
+    href: Image-Antiporn-Recognize-Level-Agreements-SLA.md
+  - name: 特定人物识别服务条款
+    href: Specific-Subject-Face-Recognition-Terms-Of-Service.md
+  - name: 特定人物识别服务等级协议（SLA）
+    href: Specific-Subject-Face-Recognition-Level-Agreements-SLA.md
+  - name: 菜品识别服务条款
+    href: Food-Recognition-Terms-Of-Service.md
+  - name: 菜品识别服务等级协议（SLA）
+    href: Food-Recognition-Level-Agreements-SLA.md
+  - name: 语音合成-精品音库服务条款
+    href: Text-To-Speech-High-Quality-Terms-Of-Service.md
+  - name: 语音合成-精品音库服务等级协议（SLA）
+    href: Text-To-Speech-High-Quality-Level-Agreements-SLA.md
+  - name: 智能写作服务条款
+    href: Intelligent-Creation-Terms-Of-Service.md
+  - name: 智能写作服务等级协议（SLA）
+    href: Intelligent-Creation-Level-Agreements-SLA.md
+  - name: 驾驶证识别服务条款
+    href: Ocr-For-Driving-License-Terms-Of-Service.md
+  - name: 驾驶证识别等级协议（SLA）
+    href: Ocr-For-Driving-License-Level-Agreements-SLA.md
+  - name: 车牌识别服务条款
+    href: Ocr-For-Vehicle-License-Plate-Terms-Of-Service.md
+  - name: 车牌识别服务等级协议（SLA）
+    href: Ocr-For-Vehicle-License-Plate-Level-Agreements-SLA.md
+  - name: 词向量服务条款
+    href: Word-Embedding-Terms-Of-Service.md
+  - name: 词向量服务等级协议（SLA）
+    href: Word-Embedding-Level-Agreements-SLA.md
+  - name: 词义相似度服务条款
+    href: Word-Embedding-Similarity-Terms-Of-Service.md
+  - name: 词义相似度服务等级协议（SLA）
+    href: Word-Embedding-SimilarityLevel-Agreements-SLA.md
+  - name: 智能分诊服务条款
+    href: Intelligent-Triage-Terms-Of-Service.md
+  - name: 智能分诊等级协议（SLA）
+    href: Intelligent-Triage-Level-Agreements-SLA.md  
   - name: 短网址服务条款
     href: Short-URL-Terms-Of-Service.md   
   - name: 短网址服务等级协议（SLA）

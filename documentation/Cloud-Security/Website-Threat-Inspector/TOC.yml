@@ -29,6 +29,8 @@ items:
         href: Getting-Started/VPC-Assets.md
       - name: 添加扫描外部IDC资产
         href: Getting-Started/IDC-Assets.md   
+      - name: 添加扫描容器镜像资产
+        href: Getting-Started/ContainerImage.md
   - name: 用户指南
     items:
       - name: 威胁概览
@@ -48,4 +50,6 @@ items:
       - name: 业务影响问题
         href: FAQ/ApplicationEffect.md
       - name: 探针部署问题
-        href: FAQ/AgentDown.md 
+        href: FAQ/AgentDown.md
+      - name: 认证文件加入web目录问题
+        href: FAQ/AddWebDirectory.md

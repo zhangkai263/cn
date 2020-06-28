@@ -19,7 +19,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**filters**|[Filter[]](listtranscodejobs#filter)|False| | |
+|**filters**|[Filter[]](user-content-listtranscodejobs#filter)|False| | |
 
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -31,7 +31,7 @@ https://mps.jdcloud-api.com/v1/transcodeJobs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](listtranscodejobs#result)|查询转码作业列表结果|
+|**result**|[Result](user-content-listtranscodejobs#result)|查询转码作业列表结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
@@ -41,13 +41,13 @@ https://mps.jdcloud-api.com/v1/transcodeJobs
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|[TranscodeJobInfo[]](listtranscodejobs#transcodejobinfo)|分页内容|
+|**content**|[TranscodeJobInfo[]](user-content-listtranscodejobs#transcodejobinfo)|分页内容|
 ### <div id="transcodejobinfo">TranscodeJobInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**jobId**|String|作业ID|
 |**title**|String|输入文件标题|
-|**tasks**|[TranscodeTaskInfo[]](listtranscodejobs#transcodetaskinfo)|转码任务集合|
+|**tasks**|[TranscodeTaskInfo[]](user-content-listtranscodejobs#transcodetaskinfo)|转码任务集合|
 ### <div id="transcodetaskinfo">TranscodeTaskInfo</div>
 |名称|类型|描述|
 |---|---|---|

@@ -6,13 +6,11 @@
 
 创建转储任务需要确认已添加采集配置，否则无法创建转储任务。
 
-1）进入对应的日志集，在需要转储的日志主题后方的“管理”中点击“转储配置”，进入转储配置页面。
+1）进入对应的日志集，选择需要创建转储任务的日志主题，直接点击日志转储后方的“添加”按钮，或点击“日志转储”，在子菜单中选择“转储任务列表”，点击“新建转储任务”。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer1.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer01.jpg)
 
 2）转储信息配置
-
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer2.png)
 
 点击“新建转储任务”，填写转储任务名称，不为空，且只允许中文，数字，大小写字母，英文下划线“_”及中划线“-”，不超过32字符。
 
@@ -30,19 +28,16 @@
 
 转储任务创建完成后延迟约15分钟后开始进行转储。
 
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer02.jpg)
 
 ### 2.停止转储任务
 
-进入转储配置页面，选择需要停止的转储任务，点击后方的停止转储，即可停止转储日志数据。
-
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer3.png)
-
-点击日志服务左侧菜单的“日志转储专利”，选择需要转储的日志集，日志主题，以及转储任务，点击“停止转储”，即可停止转储日志数据。
-
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer4.png)
+进入转储历史页面，选择需要停止的转储任务，点击“停止转储”，即可停止转储日志数据。
 
 ## 二、转储任务历史
 
-点击转储配置中转储任务后面的“查看”或者点击日志服务左侧菜单中的“转储历史”，即可进入该页面。
+点击日志转储下方的子菜单“转储历史”，即可进入该页面。查看转储任务的转储历史。
 
-日志转储管理中可以进行停止转储任务、修改转储配置的操作，同时可查看转储任务中的文件转储状态，如果有转储失败则可在一小时内进行重试操作，超过一小时后，不可重试。
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/transferHistory03.jpg)
+
+

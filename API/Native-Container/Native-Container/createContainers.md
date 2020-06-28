@@ -19,8 +19,6 @@
     - 标签与标签之间使用“.”(点)进行连接
     - 不能以“.”(点)开始，也不能以“.”(点)结尾
     - 整个主机名（包括标签以及分隔点“.”）最多有63个ASCII字符
-  - 正则表达式
-    - ^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9])(\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]))*$
 - 网络配置
   - 指定主网卡配置信息
     - 必须指定vpcId、subnetId、securityGroupIds
@@ -39,7 +37,6 @@
     - 范围 [200，min(32000，size*50)]
     - 默认值 size*30
   - root volume
-  - root volume只能是cloud类别
     - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
     - 磁盘大小
       - 所有类型：范围[10,100]GB，步长为10G
@@ -50,7 +47,7 @@
     - data volume当前只能选择cloud类别
     - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
     - 磁盘大小
-      - 所有类型：范围[20,4000]GB，步长为10G
+      - 所有类型：范围[20,2000]GB，步长为10G
     - 自动删除
       - 默认自动删除
     - 可以选择已存在的云硬盘
@@ -85,7 +82,7 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |---|---|---|---|---|
 |**instanceType**|String|True| |实例类型；参考[文档](https://www.jdcloud.com/help/detail/1992/isCatalog/1)|
 |**az**|String|True| |容器所属可用区|
-|**name**|String|True| |容器名称|
+|**name**|String|True| |容器名称，不可为空，只支持中文、数字、大小写字母、英文下划线“_”及中划线“-”，且不能超过32字符|
 |**hostAliases**|[HostAliasSpec[]](createcontainers#hostaliasspec)|False| |域名和IP映射的信息；</br> 最大10个alias|
 |**hostname**|String|False| |主机名，规范请参考说明文档；默认容器ID|
 |**command**|String[]|False| |容器执行命令，如果不指定默认是docker镜像的ENTRYPOINT|
@@ -118,7 +115,7 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**autoDelete**|Boolean|False| |指明删除容器时是否删除网卡，默认True；当前只能是True|
-|**deviceIndex**|Integer|False| |设备Index|
+|**deviceIndex**|Integer|False| |设备Index，主网卡为1|
 |**networkInterface**|[NetworkInterfaceSpec](createcontainers#networkinterfacespec)|True| |网卡接口规范|
 ### <div id="networkinterfacespec">NetworkInterfaceSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -126,11 +123,11 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**subnetId**|String|True| |子网ID|
 |**az**|String|True| |可用区，用户的默认可用区，暂不支持|
 |**primaryIpAddress**|String|False| |网卡主IP|
-|**secondaryIpAddresses**|String[]|False| |SecondaryIp列表|
-|**secondaryIpCount**|Integer|False| |自动分配的SecondaryIp数量|
+|**secondaryIpAddresses**|String[]|False| |网卡辅助IP，暂不支持|
+|**secondaryIpCount**|Integer|False| |自动分配的辅助Ip数量，暂不支持|
 |**securityGroups**|String[]|False| |要绑定的安全组ID列表，最多指定5个安全组|
 |**sanityCheck**|Boolean|False| |源和目标IP地址校验，取值为0或者1，默认为1，暂不支持此功能|
-|**description**|String|False| |描述|
+|**description**|String|False| |描述，最大长度256字符|
 ### <div id="elasticipspec">ElasticIpSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -140,11 +137,11 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 ### <div id="volumemountspec">VolumeMountSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**category**|String|True| |磁盘分类 cloud：基于云硬盘的卷 仅支持cloud类型|
+|**category**|String|True| |磁盘类型，支持云盘： cloud|
 |**autoDelete**|Boolean|False| |自动删除，删除容器时自动删除此volume，默认为True；只支持磁盘是云硬盘的场景|
 |**mountPath**|String|False| |容器内的挂载目录；root volume不需要指定，挂载目录是（/）；data volume必须指定；必须是绝对路径，不能包含(:)|
 |**readOnly**|Boolean|False| |只读，默认false；只针对data volume有效；root volume为false，也就是可读可写|
-|**cloudDiskSpec**|[DiskSpec](createcontainers#diskspec)|False| |云硬盘规格；随容器自动创建的云硬盘，不会对磁盘分区，只会格式化文件系统|
+|**cloudDiskSpec**|[DiskSpec](createcontainers#diskspec)|False| |云硬盘规格；随容器自动创建的云硬盘，不会对磁盘分区，只会格式化文件系统 <br>注：其中az、chargeSpec、multiAttachable、encrypt字段无效|
 |**cloudDiskId**|String|False| |云硬盘ID，使用已有的云硬盘，必须同时指定fsType|
 |**fsType**|String|False| |指定volume文件系统类型，目前支持[xfs, ext4]；如果新创建的盘，不指定文件系统类型默认格式化成xfs|
 |**formatVolume**|Boolean|False| |随容器自动创建的新盘，会自动格式化成指定的文件系统类型；挂载已有的盘，默认不会格式化，只会按照指定的fsType去挂载；如果希望格式化，必须设置此字段为true|
@@ -158,6 +155,7 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G, ssd.gp1, ssd.io1, hdd.std1 类型取值均是范围[20,16000]GB，步长为10G|
 |**iops**|Integer|False| |云硬盘IOPS的大小，当且仅当云盘类型是ssd.io1型的云盘有效，步长是10.|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
+|**policyId**|String|False| |策略ID|
 |**charge**|[ChargeSpec](createcontainers#chargespec)|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**encrypt**|Boolean|False| |云硬盘是否加密，默认为false（不加密）|
