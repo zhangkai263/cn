@@ -10,7 +10,6 @@ JCHDB分为计算节点和ZooKeeper节点，相同规格的计算节点和ZooKee
 |clickhouse.s1.xlarge|4|16|200-8000|100|
 |clickhouse.s1.2xlarge|8|32|200-8000|100|
 |clickhouse.s1.4xlarge|16|64|200-8000|100|
-|clickhouse.s1.6xlarge|24|64|200-8000|100|
 |clickhouse.s1.8xlarge|32|64|200-8000|100|
 
 
@@ -20,5 +19,4 @@ JCHDB分为计算节点和ZooKeeper节点，相同规格的计算节点和ZooKee
 |clickhouse.s1.xlarge|4|16|
 |clickhouse.s1.2xlarge|8|32|
 |clickhouse.s1.4xlarge|16|64|
-|clickhouse.s1.6xlarge|24|64|
-|clickhouse.s1.8xlarge|32|64|
+|clickhouse.s1.8xlarge|32|128|
