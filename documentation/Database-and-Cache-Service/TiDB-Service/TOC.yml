@@ -92,12 +92,13 @@
 
   - name: 性能测试
     items:
+    - name: 性能测试概览
+      herf: Performance-Test/Performance-Test-Overview.md    
     - name: 如何用Sysbench进行测试
       herf: Performance-Test/benchmark-tidb-using-sysbench.md
     - name: 如何进行TPC-C测试
       herf: Performance-Test/benchmark-tidb-using-tpcc.md
-    - name: 性能测试结果概览
-      herf: Performance-Test/Performance-Test-Overview.md
+
       
   - name: 常见问题 
     herf: FAQ/FAQ.md
