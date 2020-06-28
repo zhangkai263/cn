@@ -25,6 +25,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**protocol**|String|True| |协议: TCP 或者 UDP|
+|**serviceIp**|String|False| |高防 IP|
 |**port**|Integer|True| |端口号, 取值范围[1, 65535]|
 |**algorithm**|String|True| |转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originType**|String|True| |回源类型: A 或者 CNAME|
