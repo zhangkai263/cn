@@ -87,8 +87,6 @@
         herf: Best-Practices/Data-Migration/Incremental-Import.md
     - name: 大数据量处理
       herf: Best-Practices/Data-Operation.md
-    - name: 参数优化
-      herf: Best-Practices/Parameters-Optimization.md
     - name: 高效使用 Secondary Index
       herf: Best-Practices/Secondary-Index.md
 
