@@ -10,11 +10,11 @@
 #### 1. 进入"备份管理"页面
 点击实例名，进入实例页面，选择 【备份管理】--> 【备份策略】 页面，点击【修改策略】
 
-![备份策略](../../../../../image/JCHDB/modify-backup-strategy-1.png)
+![备份策略](../../../../../image/TiDB/modify-backup-strategy-1.png)
 
 #### 2. 设置备份策略
 1. 选择要进行自动备份的周期
 2. 选择自动备份的开始时间
 3. 点击“确认”
 
-![备份策略](../../../../../image/JCHDB/modify-backup-strategy-2.png)
+![备份策略](../../../../../image/TiDB/modify-backup-strategy-2.png)
