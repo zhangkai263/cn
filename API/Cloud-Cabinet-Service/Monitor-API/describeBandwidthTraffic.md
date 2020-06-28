@@ -22,14 +22,14 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidthTraffics/{bandwidthId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describebandwidthtraffic#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidthTraffic**|[BandwidthTraffic](describebandwidthtraffic#bandwidthtraffic)|带宽（出口）流量（资源）详情|
-### <div id="bandwidthtraffic">BandwidthTraffic</div>
+|**bandwidthTraffic**|[BandwidthTraffic](#bandwidthtraffic)|带宽（出口）流量（资源）详情|
+### <div id="BandwidthTraffic">BandwidthTraffic</div>
 |名称|类型|描述|
 |---|---|---|
 |**idc**|String|机房英文标识|
@@ -39,10 +39,10 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidthTraffics/{bandwidthId}
 |**totalTrafficIn**|Double|总上行实时流量|
 |**totalTrafficOut**|Double|总下行实时流量|
 |**bandwidth**|Integer|总带宽|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
-|**relatedIp**|[RelatedIp[]](describebandwidthtraffic#relatedip)|关联的公网IP|
-|**switchboard**|[DescribeSwitchboard[]](describebandwidthtraffic#describeswitchboard)|交换机信息|
-### <div id="describeswitchboard">DescribeSwitchboard</div>
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**relatedIp**|[RelatedIp[]](#relatedip)|关联的公网IP|
+|**switchboard**|[DescribeSwitchboard[]](#describeswitchboard)|交换机信息|
+### <div id="DescribeSwitchboard">DescribeSwitchboard</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|IP|
@@ -50,11 +50,11 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidthTraffics/{bandwidthId}
 |**trafficIn**|Double|上行实时流量|
 |**trafficOut**|Double|下行实时流量|
 |**alarmStatus**|String|报警状态 normal:正常 alarm:报警|
-### <div id="relatedip">RelatedIp</div>
+### <div id="RelatedIp">RelatedIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**cidrAddr**|String|IP地址段|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 
 ## 返回码
 |返回码|描述|

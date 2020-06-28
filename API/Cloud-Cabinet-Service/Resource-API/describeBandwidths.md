@@ -19,9 +19,9 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1|
 |**pageSize**|Integer|False|20|分页大小，默认为20|
-|**filters**|[Filter[]](describebandwidths#filter)|False| |bandwidthId - 带宽实例IID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](#filter)|False| |bandwidthId - 带宽实例IID，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,17 +31,17 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describebandwidths#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidths**|[DescribeBandwidth[]](describebandwidths#describebandwidth)|带宽（出口）列表|
+|**bandwidths**|[DescribeBandwidth[]](#describebandwidth)|带宽（出口）列表|
 |**pageNumber**|Integer|页码|
 |**pageSize**|Integer|分页大小|
 |**totalCount**|Integer|总数量|
-### <div id="describebandwidth">DescribeBandwidth</div>
+### <div id="DescribeBandwidth">DescribeBandwidth</div>
 |名称|类型|描述|
 |---|---|---|
 |**idc**|String|机房英文标识|
@@ -49,14 +49,15 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths
 |**bandwidthId**|String|带宽实例ID|
 |**bandwidthName**|String|带宽名称|
 |**status**|String|状态 normal:正常 abnormal:异常|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**chargeType**|String|计费方式 fixedBandwidth:固定带宽 95thPercentile:95峰值 merge95thPercentile:合并95峰值|
 |**bandwidth**|Integer|合同带宽（Mbps）|
-|**relatedIp**|[RelatedIp[]](describebandwidths#relatedip)|关联的公网IP|
-### <div id="relatedip">RelatedIp</div>
+|**relatedIp**|[RelatedIp[]](#relatedip)|关联的公网IP|
+### <div id="RelatedIp">RelatedIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**cidrAddr**|String|IP地址段|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 
 ## 返回码
 |返回码|描述|
