@@ -10,6 +10,6 @@
 #### 2. 输入新实例的相关信息
 在弹出的页面中可看到选择的备份名称，备份创建时间及地域信息。
 
-![根据备份创建1](../../../../../image/RDS/Create-Instance-From-Backup-1.png)
+![根据备份创建1](../../../../../image/TiDB/Create-Instance-From-Backup-1.png)
 
 选择新创建实例的规格，VPC可用区及实例名称等信息，具体步骤可参考[创建实例](../Instance/Create-Instance.md)
