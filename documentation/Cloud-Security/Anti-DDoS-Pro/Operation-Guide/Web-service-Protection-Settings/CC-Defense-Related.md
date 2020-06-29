@@ -41,5 +41,14 @@ CC防护规则属于网站类防护的规则，需要先切换网站类转发配
     * 点击 **去设置** ，进入CC防护自定义规则页面。</br>
     ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/CC%20rules%2005.png) </br>  
     ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/CC%20rules%2004.png) </br>  
-    * 点击 **添加规则** ，
- 
+    * 点击 **添加规则** ，设置自定义防护规则。</br>
+    ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/CC%20rules%2006.png) </br>  
+    规则配置字段解释如下：
+         - 规则名称：用户自定义规则名称。
+         - URI：自定义规则匹配的访问路径。
+         - 匹配规则：支持访问路径完全匹配或前缀匹配。
+         - 检测时长：设置CC自定义规则检测时长。
+         - 单一IP访问次数：设置访问IP触发规则的次数。
+         - 阻断类型：支持封禁和人机识别，封禁会阻断访问并返回封禁页面，人机识别则触发js挑战和验证码挑战。
+         - 封禁并返回自定义页面：阻断类型选择封禁时可见，封禁的返回页面支持使用默认页面或自定义页面。
+         - 阻断时长：设置触发封禁或人机识别持续时间。
