@@ -8,6 +8,12 @@
 
 日志集是日志主题管理的单位，用于保存某服务下不同应用程序产生的各类日志主题。  
 
+**举例说明**
+
+用户有一个服务A，需要用到两个应用，APP1和APP2，APP1部署在VM1和VM2上，APP2部署在VM3和VM4上，APP1会产生两类日志LogA和LogB，APP2会产生两类日志Log1和Log2。
+
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/logset%26logtopic.jpg)
+
 **日志源设置** 
 
 日志源设置是指采集日志相关的配置信息，需指定日志来源，支持云产品日志和用户的业务应用日志作为日志源。  
