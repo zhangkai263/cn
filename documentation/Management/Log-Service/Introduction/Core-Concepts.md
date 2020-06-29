@@ -12,6 +12,8 @@
 
 用户有一个服务A，需要用到两个应用，APP1和APP2，APP1部署在VM1和VM2上，APP2部署在VM3和VM4上，APP1会产生两类日志LogA和LogB，APP2会产生两类日志Log1和Log2。
 
+用户可创建服务A日志集，并在该日志集下分别创建日志主题Topic_1、Topic_2、Topic_3、Topic_4，分别用于采集LogA、LogB、Log1、Log2四种不同类型的日志。从而对对特定类型的日志设置转储和监控。
+
 ![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/logset%26logtopic.jpg)
 
 **日志源设置** 
