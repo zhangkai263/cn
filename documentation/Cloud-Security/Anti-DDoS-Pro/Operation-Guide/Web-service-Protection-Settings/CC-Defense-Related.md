@@ -38,7 +38,7 @@ CC防护规则属于网站类防护的规则，需要先切换网站类转发配
 
 4. CC防护自定义规则
 
-    * 点击 **去设置** ，进入CC防护自定义规则页面。</br>
+    * 点击 **去设置** ，进入CC防护自定义规则页面。支持开启或关闭单条规则。</br>
     ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/CC%20rules%2005.png) </br>  
     ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/CC%20rules%2004.png) </br>  
     * 点击 **添加规则** ，设置自定义防护规则。</br>
