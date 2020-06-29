@@ -19,7 +19,9 @@ curl -x cname:port DomainName
 ![验证配置生效](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/Verify-Local-Settings01.png)
 <Br/>若返回访问域名的页面内容，则表示配置成功。
 
-方法2.修改本地计算机hosts文件，使用记事本打开C:\Windows\System32\drivers\etc目录下的hosts文件，在文件中添加IP高防的IP地址和防护域名。保存hosts文件，在本地计算机使用PING命令测试防护域名，如果解析到高防CNAME和IP地址，证明本地hosts配置生效。使用浏览器访问域名，若返回访问域名的页面内容，则表示配置成功。<Br/>
+方法2.修改本地计算机hosts文件，使用记事本打开C:\Windows\System32\drivers\etc目录下的hosts文件，在文件中添加IP高防的IP地址和防护域名。</br>
+保存hosts文件，在本地计算机使用PING命令测试防护域名，如果解析到高防CNAME和IP地址，证明本地hosts配置生效。</br>
+使用浏览器访问域名，若返回访问域名的页面内容，则表示配置成功。<Br/>
 ![验证配置生效](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/Verify-Local-Settings02.png)
 
 ## 相关参考
