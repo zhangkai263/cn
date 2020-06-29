@@ -130,7 +130,13 @@
      - name: 监控告警配置建议
        href: Best-Practices/automonitor.md
   - name: 常见问题
-    href: FAQ/FAQ.md
+    items:
+    - name: 产品相关
+       href: FAQ/FAQ.md
+    - name: 访问相关
+       href: FAQ/Access.md
+    - name: 功能相关
+       href: FAQ/Function.md   
   - name: 相关资源
     items:
     - name: 文档历史记录
