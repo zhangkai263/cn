@@ -22,4 +22,4 @@
 
 http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/wmt/wt/5Lqs5Lic5LqR
 
-![文字水印](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-063.jpg)
+![文字水印](../../../../../image/Object-Storage-Service/OSS-063.jpg)

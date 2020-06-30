@@ -5,11 +5,11 @@
 
 1.登录京东云控制台，选择对象存储->空间管理，进入空间管理页面后，点击新建空间：
 
-![新建空间](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-010.png)
+![新建空间](../../../../../image/Object-Storage-Service/OSS-010.png)
 
 2.点击新建空间后出现如下弹窗，
 
-![弹窗](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-011.png)
+![弹窗](../../../../../image/Object-Storage-Service/OSS-011.png)
 
 3.可以选择和切换不同地域创建存储空间，目前京东云支持华北-北京、华南-广州、华东-宿迁和华东-上海四个区域。不同地域资源内网不互通，创建后地域不可更改。如需要通过云主机内网访问对象存储，需要选择与您云主机相同的地域。
 
