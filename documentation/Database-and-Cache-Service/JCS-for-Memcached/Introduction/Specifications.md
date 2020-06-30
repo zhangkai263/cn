@@ -16,7 +16,7 @@ Memcached单节点规格|	最大连接数
 - 测试工具：mcperf
 - 测试命令（例）：
 
-'''src/mcperf -s 10.0.8.42 -p 11211 --linger=0 --timeout=10 --conn-rate=2000 --call-rate=2000 --num-calls=500 --num-conns=1000 --sizes=d256'''
+<code>src/mcperf -s 10.0.8.42 -p 11211 --linger=0 --timeout=10 --conn-rate=2000 --call-rate=2000 --num-calls=500 --num-conns=1000 --sizes=d256</code>
 
 - 测试结果：
 
