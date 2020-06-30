@@ -8,11 +8,11 @@
 
 1. 在迁移任务列表页或详情页，点击**启动**。
 
-   ![image-20200113175505316](../../../../image/Data-Transmission-Service/dts-009.png)
+   ![image-20200113175505316](../../../../../image/Data-Transmission-Service/dts-009.png)
 
 2. 等待预检查完成，可在预检查弹窗查看进度与检查结果。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-012.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-012.png)
 
 3. 预检查完成，点击下一步，执行数据迁移。
 
