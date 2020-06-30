@@ -1,4 +1,4 @@
-  name: 分布式数据库 TiDB
+﻿  name: 分布式数据库 TiDB
   href:
   items:
   - name: 产品简介
@@ -42,13 +42,28 @@
       - name: 连接实例
         herf: Operation-Guide/Instance/Connect-Instance.md
 
-    - name: 节点管理
-      herf: Operation-Guide/Node-Management.md
-    - name: 重置密码
-      herf: Operation-Guide/Reset-Password.md
-    - name: 监控实例
-      herf: Operation-Guide/Monitor.md
+    - name: 账号管理
+      items:
+      - name: 创建账号
+      herf: Operation-Guide/Account/Create-Account.md
+      - name: 重置密码
+      herf: Operation-Guide/Account/Reset-Password.md
 
+    - name: 备份管理
+      items:
+      - name: 创建备份
+        herf: Operation-Guide/Backup/Create-Backup.md
+      - name: 根据备份创建
+        herf: Operation-Guide/Backup/Create-Instance-From-Backup.md
+      - name: 删除备份
+        herf: Operation-Guide/Backup/Delete-Backup.md
+      - name: 修改策略
+        herf: Operation-Guide/Backup/Modify-Backup-Strategy.md
+        
+    - name: 监控实例
+      items: 
+      herf: Operation-Guide/Monitor.md
+      
   - name: SQL 语法
     items:
     - name: 数据处理相关SQL
@@ -74,19 +89,20 @@
         herf: Best-Practices/Data-Migration/Incremental-Import.md
     - name: 大数据量处理
       herf: Best-Practices/Data-Operation.md
-    - name: 参数优化
-      herf: Best-Practices/Parameters-Optimization.md
     - name: 高效使用 Secondary Index
       herf: Best-Practices/Secondary-Index.md
 
   - name: 性能测试
     items:
-    - name: sysbench 性能测试
-      herf: Performance-Test/sysbench-Test.md
-    - name: TPC-H 50G 性能测试
-      herf: Performance-Test/tpch-Test.md
+    - name: 性能测试概览
+      herf: Performance-Test/Performance-Test-Overview.md    
+    - name: 如何用Sysbench进行测试
+      herf: Performance-Test/benchmark-tidb-using-sysbench.md
+    - name: 如何进行TPC-C测试
+      herf: Performance-Test/benchmark-tidb-using-tpcc.md
 
-  - name: 常见问题
+      
+  - name: 常见问题 
     herf: FAQ/FAQ.md
 
 
