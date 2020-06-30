@@ -12,11 +12,11 @@
 
 2. 在数据订阅列表页，选择目标任务，在操作项中点击**修改订阅任务**。
 
-   ![image-20200629121033812](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-030.png)
+   ![image-20200629121033812](../../../../../image/Data-Transmission-Service/dts-030.png)
 
    或者进入任务详情页，点击**操作-修改订阅任务**。
 
-   ![image-20200629144329976](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-034.png)
+   ![image-20200629144329976](../../../../../image/Data-Transmission-Service/dts-034.png)
 
 3. 在“修改订阅任务”页面填写相应信息，请参考“[配置订阅任务](Config-Subscription-Task.md)”。
 
