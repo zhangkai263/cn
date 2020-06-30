@@ -10,8 +10,14 @@
 
 ### 操作步骤
 
-单击**防护规则**，进入网站类防护规则配置页面。
+1.单击 **防护规则** ，进入网站类防护规则配置页面。
     ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-02.png)
+    
+2.单击编辑图标，进入编辑防护规则页面。
+    ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-04.png)    
+    
+3.根据业务特点开启各规则开关，并设置阈值，各配置项说明如下。
+    ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-05.png)    
 
 |配置项             |说明 |
 |----------------------|---------------|
