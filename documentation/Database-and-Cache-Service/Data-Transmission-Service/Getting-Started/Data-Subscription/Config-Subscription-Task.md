@@ -13,11 +13,11 @@
 
 2. 在数据订阅列表页，选择目标任务，点击**配置订阅任务**，进入创建订阅任务配置页面。
 
-   ![image-20200628185220129](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-028.png)
+   ![image-20200628185220129](../../../../../image/Data-Transmission-Service/dts-028.png)
 
 3. 在配置订阅任务页，填写相关信息。
 
-   ![image-20200628185220129](D:\MD\DTS\帮助文档\image\Data-Transmission-Service\dts-029.png)
+   ![image-20200628185220129](../../../../../image/Data-Transmission-Service/dts-029.png)
 
    - 任务名称
    - 源库信息
@@ -39,5 +39,4 @@
    
 
    
-
 
