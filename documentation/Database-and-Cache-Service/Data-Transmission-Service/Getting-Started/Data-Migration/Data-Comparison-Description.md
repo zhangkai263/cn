@@ -16,8 +16,8 @@
 
 2. 选择迁移任务，点击**校验数据**，等待数据校验完成。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-022.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-022.png)
 
 3. 可在任务详情中查看数据校验结果。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-023.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-023.png)
