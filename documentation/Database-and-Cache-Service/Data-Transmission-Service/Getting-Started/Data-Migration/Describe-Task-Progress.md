@@ -8,7 +8,7 @@
 
 1. 进入数据迁移任务列表，查看迁移任务当前进度。  
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-015.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-015.png)
 
    - 结构迁移：已迁移表结构数量与进度。
 
