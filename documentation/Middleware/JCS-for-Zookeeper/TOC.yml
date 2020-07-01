@@ -37,10 +37,16 @@ items:
       href: Operation-Guide/Delete-ZK.md
     - name: Observer节点
       href: Operation-Guide/Observer.md
-    - name: 监控报警
-      href: Operation-Guide/Monitoring.md
     - name: 访问控制
       href: Operation-Guide/control.md
+    - name: 标签
+      href: Operation-Guide/Tag.md
+    - name: 监控报警
+      items: 
+        - name: 查看监控信息
+          href: Operation-Guide/Monitoring.md 
+        - name: 创建告警规则
+          href: Operation-Guide/Monitor_Rules.md
 - name: 常见问题
   items:
     - name: 常见问题

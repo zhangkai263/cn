@@ -1,4 +1,4 @@
-# SSH协议运维
+# SSH客户端运维
 
 
 运维人员需要在本地主机安装支持 SSH 协议的工具，如 Xshell、SecureCRT、PuTTY 等。以Xshell为例，介绍SSH协议的运维登录流程。

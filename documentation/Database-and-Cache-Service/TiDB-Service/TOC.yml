@@ -20,7 +20,8 @@ items:
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
       - name: 公测说明
-        href: Introduction/Public-Beta-Introduction.md        
+        href: Introduction/Public-Beta-Introduction.md    
+
   - name: 入门指南
     items:
       - name: 创建实例
