@@ -61,7 +61,7 @@ ant
 
 因为该型号 CPU 是 NUMA 架构，建议用 `numactl` 进行绑核。
 
-1. [安装 numactl 工具](/check-before-deployment.md#安装-numactl-工具) 。
+1. [安装 numactl 工具](https://docs.pingcap.com/zh/tidb/v4.0/check-before-deployment#安装-numactl-工具) 。
 
 2. 用 `lscpu` 查看 NUMA node，比如：
 
@@ -122,7 +122,7 @@ enabled = true
 
 ### TiKV 配置
 
-开始可以使用基本的配置，压测运行后可以通过观察 Grafana 并参考 [TiKV 线程池调优说明](/tune-tikv-thread-performance.md)进行调整。
+开始可以使用基本的配置，压测运行后可以通过观察 Grafana 并参考 [TiKV 线程池调优说明](https://docs.pingcap.com/zh/tidb/v4.0/tune-tikv-thread-performance)进行调整。
 
 ### BenchmarkSQL 配置
 
@@ -191,11 +191,11 @@ fileLocation=/home/user/csv/tpcc.  # 存储 csv 文件的目录绝对路径 + �
 
 #### 通过 Lightning 导入
 
-通过 Lightning 导入数据请参考 [Lightning 部署执行](/tidb-lightning/deploy-tidb-lightning.md)章节。这里我们介绍下通过 TiDB Ansible 部署 Lightning 导入数据的方法。
+通过 Lightning 导入数据请参考 [Lightning 部署执行](https://docs.pingcap.com/zh/tidb/v4.0/deploy-tidb-lightning)章节。这里我们介绍下通过 TiDB Ansible 部署 Lightning 导入数据的方法。
 
 ##### 修改 inventory.ini
 
-这里最好手动指定清楚部署的 IP、端口、目录，避免各种冲突问题带来的异常，其中 import_dir 的磁盘空间参考 [Lightning 部署执行](/tidb-lightning/deploy-tidb-lightning.md)，data_source_dir 就是存储上一节 csv 数据的目录。
+这里最好手动指定清楚部署的 IP、端口、目录，避免各种冲突问题带来的异常，其中 import_dir 的磁盘空间参考 [Lightning 部署执行](https://docs.pingcap.com/zh/tidb/v4.0/deploy-tidb-lightning)，data_source_dir 就是存储上一节 csv 数据的目录。
 
 ```ini
 [importer_server]
