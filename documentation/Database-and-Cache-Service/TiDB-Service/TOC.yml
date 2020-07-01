@@ -1,5 +1,5 @@
-﻿  name: 分布式数据库 TiDB
-  href:
+ name: 分布式数据库 TiDB
+ href:
   items:
   - name: 产品简介
     items:
@@ -45,9 +45,9 @@
     - name: 账号管理
       items:
       - name: 创建账号
-      herf: Operation-Guide/Account/Create-Account.md
+        herf: Operation-Guide/Account/Create-Account.md
       - name: 重置密码
-      herf: Operation-Guide/Account/Reset-Password.md
+        herf: Operation-Guide/Account/Reset-Password.md
 
     - name: 备份管理
       items:
@@ -104,5 +104,3 @@
       
   - name: 常见问题 
     herf: FAQ/FAQ.md
-
-
