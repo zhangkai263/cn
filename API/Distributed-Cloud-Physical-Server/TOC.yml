@@ -113,7 +113,7 @@
         items:
           - name: createAliasIp
             href: Distributed-Cloud-Physical-Server/createAliasIp.md
-          - name: describeAliasIps
-            href: Distributed-Cloud-Physical-Server/describeAliasIps.md
           - name: deleteAliasIp
             href: Distributed-Cloud-Physical-Server/deleteAliasIp.md
+          - name: describeAliasIps
+            href: Distributed-Cloud-Physical-Server/describeAliasIps.md
