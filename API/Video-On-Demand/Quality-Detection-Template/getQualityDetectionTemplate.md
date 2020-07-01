@@ -21,10 +21,10 @@ https://vod.jdcloud-api.com/v1/qualityDetectionTemplates/{templateId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询质检模板信息结果|
+|**result**|[Result](getqualitydetectiontemplate#result)|查询质检模板信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|模板ID|

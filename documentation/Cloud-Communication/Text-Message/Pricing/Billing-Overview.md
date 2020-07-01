@@ -5,9 +5,6 @@
 **短信套餐包**<br>
 ![套餐包](../../../../image/Text-Message/dx-000tp-tcb2.gif)<br><br>
 
-**自定义价格**<br>
-![自定义](../../../../image/Text-Message/dx-000tp-zdy.png)<br><br>
-
 **有效期: 24个月**<br><br>
 
 余量预警设置:<br>

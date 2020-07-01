@@ -17,7 +17,7 @@
 ![VPC代理](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/createVPC.png)
 
 
-更多创建微服务网关的资料参考 [微服务网关](../Operation-Guide/JDSFGW/overview.md) 产品
+更多创建微服务网关的资料参考 [微服务网关](../Operation-Guide/Resource-Manage/JDSFGW.md) 产品
 
 
 ## 配置API网关分组

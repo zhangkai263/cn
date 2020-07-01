@@ -11,14 +11,14 @@
 </tr>
 <tr>
     <td>移动端播放器Android端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/android-sdk-v1.0.0-2019-11-19.zip">点击下载</a><br/> </td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/jdcloud_live_android_demo.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
     <td>移动端播放器iOS端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/iOS-sdk-v1.0.0-2019-11-19.zip">点击下载</a><br/> </td>
+    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/SDK/live/jdcloud_live_ios_demo.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
     <td>Web/H5端</td>
-    <td><a href="https://j.jdcloud.com/video/player/1.0.0/index.html">点击体验</a><br/> </td>
+    <td><a href="https://j.jdcloud.com/video/player/index.html">点击体验</a><br/> </td>
 </tr>                
 </table>

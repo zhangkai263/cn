@@ -21,16 +21,16 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:getURLRule
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询CDN域名URL鉴权规则配置结果|
+|**result**|[Result](geturlrule#result)|查询CDN域名URL鉴权规则配置结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleType**|String|规则类型，取值 'url'|
-|**config**|URLRuleConfigObject|URL鉴权规则配置对象|
+|**config**|[URLRuleConfigObject](geturlrule#urlruleconfigobject)|URL鉴权规则配置对象|
 |**enabled**|Boolean|是否启用该规则|
-### URLRuleConfigObject
+### <div id="urlruleconfigobject">URLRuleConfigObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**authType**|String|鉴权类型。取值范围：<br>  by_params - 参数鉴权<br>  by_path - 路径鉴权<br>|

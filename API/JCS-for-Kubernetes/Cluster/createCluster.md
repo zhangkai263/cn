@@ -62,6 +62,13 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters
 |**vpcId**|String|True| |工作节点组运行的vpc|
 |**nodeCidr**|String|False| |工作节点组的cidr|
 |**autoRepair**|Boolean|False| |是否开启自动修复，默认不开启。|
+|**caConfig**|[CAConfigSpec](createcluster#caconfigspec)|False| |自动伸缩配置|
+### <div id="caconfigspec">CAConfigSpec</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**enable**|Boolean|False| |是否启用自动伸缩，默认为 false<br>|
+|**maxNode**|Integer|False| |自动扩容最大工作节点数, 取值范围[1, min(2000, 子网剩余ip)]|
+|**minNode**|Integer|False| |自动扩容最小工作节点数, 取值范围[0, min(2000, maxNode)]|
 ### <div id="nodeconfigspec">NodeConfigSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

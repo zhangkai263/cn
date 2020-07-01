@@ -62,6 +62,35 @@ function Filter(msg, metadata, msgType) {
 
 ![scrpit](../../../../../image/IoT/IoT-Engine/Add-Action.png)
 
+### 注意：
+
+设备上报的数据经过规则引擎转发后会进行数据增强处理，增加设备名称，设备标识及设备产品的信息，示例如下：
+
+ 产品 iottest下的名为test-device的设备上报的数据格式：
+
+```
+{
+ "msgId": "123",
+ "version": "1.0",
+ "data": {
+ "message": "Hello World"
+ },
+ "ts": 1559805611390
+}
+```
+
+规则引擎转发出去的格式：
+
+```
+{
+  "identifier":"kKvX***kvx",
+  "message":"Hello World",
+  "productKey":"REwf***gdne",
+  "deviceName":"test-device",
+  "ts":"1577181657114"
+} 
+```
+
 ### 2.2.1 转发到另一个Topic
 
 - 选择必选项产品、设备和输入自定义topic名称。若产品没有可选项，请先到产品页创建产品，然后去设备页为所属产品添加设备；若设备没有可选项，请到设备页为所属产品添加设备。

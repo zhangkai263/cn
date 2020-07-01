@@ -20,7 +20,7 @@
 ### 2.填写完Topic信息，点击“创建”按钮
 
 页面刷新，完成新topic的创建
- ![创建topic步骤2](../../../../../image/Internet-Middleware/Message-Queue/创建topic-02.png)  
+ ![创建topic步骤2](../../../../../image/Internet-Middleware/Message-Queue/创建topic-03.png)  
 I. topic名称可以按照提示信息输入，不可修改。  
 II. 消息类型分为普通消息和全局顺序消息:  
 

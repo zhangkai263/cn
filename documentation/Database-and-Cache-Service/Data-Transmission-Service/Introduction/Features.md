@@ -4,11 +4,11 @@
 
 ### 数据库类型
 
-支持多种关系型数据库和非关系型数据库的同构数据迁移，目前支持MySQL、Percona、MariaDB、SQLserver、MongoDB等数据库。
+支持多种关系型数据库和非关系型数据库的同构数据迁移，目前支持MySQL、Percona、MariaDB、SQLserver、 PostgreSQL、MongoDB等数据库。
 
 ### 源库与目标库
 
-源库支持绑定公网IP或通过专线的自建数据库，目标库支持云数据库。
+源库支持绑定公网IP或通过专线/内网连接的自建数据库，目标库支持云数据库。
 
 ### 迁移数据粒度
 

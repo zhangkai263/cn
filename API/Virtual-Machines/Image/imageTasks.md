@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询镜像导入任务详情
+查询镜像导入导出任务详情
 
 
 ## 请求方式
@@ -18,7 +18,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**taskAction**|String|True| |任务种类。可选值：ImportImage|
+|**taskAction**|String|True| |任务种类。可选值：ImportImage， ExportImage|
 |**taskIds**|Integer[]|False| |任务id|
 |**taskStatus**|String|False| |任务状态。可选值：pending,running,failed,finished|
 |**startTime**|String|False| |任务开始时间|
@@ -30,15 +30,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](imagetasks#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**taskSet**|TaskInfo[]|任务详情|
+|**taskSet**|[TaskInfo[]](imagetasks#taskinfo)|任务详情|
 |**totalCount**|Integer|总数量|
-### TaskInfo
+### <div id="taskinfo">TaskInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskId**|Integer|任务id|

@@ -37,6 +37,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}/up
 |**defaultNodeVersion**|String|默认工作节点版本号|
 |**versionStatus**|String|版本状态|
 |**nodeVersions**|[NodeVersion[]](describeupgradablemasterversions#nodeversion)|node 节点的配置|
+|**nodeOsTypes**|String|node节点操作系统类型列表，以 "," 分割，目前支持 CentOS|Windows|
 ### <div id="nodeversion">NodeVersion</div>
 |名称|类型|描述|
 |---|---|---|

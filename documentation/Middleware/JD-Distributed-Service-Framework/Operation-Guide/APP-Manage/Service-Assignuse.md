@@ -1,12 +1,16 @@
 #  服务治理
-服务是微服务治理的基本单元。在微服务平台中，当应用被部署完成，注册中心完成服务的注册和发现后，该服务将出现在服务治理的列表中。用户可进行的操作包括：服务鉴权和路由策略两部分。
-
-**说明：**
-
--  请提前参考： [微服务平台 spring cloud 插件说明](../../Getting-Started/JDSF-Plugin.md)
+服务是微服务治理的基本单元。在微服务平台中，当应用被部署完成，注册中心完成服务的注册和发现后，该服务将出现在服务治理的列表中。用户可进行的操作包括：服务鉴权和路由策略两部分。下文将主要介绍服务鉴权。
 
 ## 鉴权规则
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/table-jq.png)
+
+
+## 环境准备
+
+如需使用本功能，必须引用JDSF提供的插件。目前我们已提供Spring Cloud 插件，dubbo插件即将提供。
+
+配置环境依赖项请参考： [微服务平台 Spring Cloud 插件说明](../../Getting-Started/JDSF-Plugin.md)
+
 
 
 ## 操作步骤
@@ -17,7 +21,7 @@
 
 2、在列表中的应用，即用户可进行服务治理的应用。
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/ser-list.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/ser-list-20191211.png)
 
 ### 查看服务鉴权信息
 

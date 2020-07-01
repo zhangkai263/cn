@@ -16,7 +16,9 @@
   - name: 辅助API
     href: Developer-Guide-Device/API.md  
   - name: 网关功能
-    href: Developer-Guide-Device/Gateway_Connection.md         
+    href: Developer-Guide-Device/Gateway_Connection.md     
+  - name: 设备端OTA支持
+    href: Developer-Guide-Device/Device-OTA.md      
   - name: 术语表
     href: Developer-Guide-Device/Glossary.md 
   - name: Device SDK 下载

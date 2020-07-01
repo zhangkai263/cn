@@ -1,12 +1,21 @@
-SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
+SDK请在‘*[下载专区](../Download-Center.md)*’进行下载，本文档主要通过 Go Plugins 的方式使用 ENT；代码请参照SDK中ENT-Go/Example/下的两个example文件
 
-1. 将Go SDK作为plugin来构建项目
+1. 准备工作<br>
+   将 entplugin 文件夹及其中的 entplugin.go 移至自己项目的根目录，同时在 Plugins 中选择合适的系统和CPU架构下的 entplugin.so 文件，将其移动的项目的 entplugin 目录下。
+   
+2. 以example.go的样式编写自己的应用<br>
+   调用 entplugin 这个 package 的 GetEntService 获取它的返回值 EntService ，用 EntService.func 的方式调用方法。请参见 example_a.go 和  example_b.go 的写法。
+   
+3. 运行 example
+   在 Plugins 中选择合适版本的 ent-plugin.so ,置于 example_a 和 example_b 的 entplugin 文件夹下。依次 go build 命令编译，分别在两个终端中先运行 example_b ,再运行 example_a :
+   ```
+   go build -o example_a example_a.go 
+   go build -o example_b example_b.go 
+   ./example_b
+   ./example_a
+   ```
 
-   a) 在项目根目录下新建entplugin文件下，选择合适的.so库的版本置于其中，并将entplugin.go置于其中。
-
-   b) 项目代码中通过import entplugin，entplugin.GetEntService()来使用我们的SDK，具体可见文档末尾的实例代码。
-
-2. API文档
+4. API文档
 
    <table>
      <tr valign="top">
@@ -163,46 +172,3 @@ SDK请在‘*[下载专区](../Download-Center.md)*’进行下载。
    	</td>
      </tr>
    </table>
-
-3. 实例代码
-
-   ```
-   1.	package main
-   2.	 
-   3.	import (
-   4.	    "fmt"
-   5.	    "time"
-   6.	 
-   7.	    "git.jd.com/jdcloud-epn/example-b/entplugin"
-   8.	)
-   9.	 
-   10.	/*
-   11.	    详见资源下载中的工程结构和README文档
-   12.	*/
-   13.	 
-   14.	func main() {
-   15.	    entService := entplugin.GetEntService()
-   16.	 
-   17.	    signalServer := "ent.jdcloud.com"
-   18.	    bPeerID := "api_test_with_id_b"
-   19.	 
-   20.	    _ = entService.Register("api_test", bPeerID, signalServer)
-   21.	    _ = entService.SetConnectHandler(func(connectID string) {
-   22.	        data := make([]byte, 50)
-   23.	        for {
-   24.	            n, err := entService.Read(connectID, data)
-   25.	            if err != nil {
-   26.	                return
-   27.	            }
-   28.	            fmt.Println("Read data is ", string(data[:n]))
-   29.	            err = entService.Write(connectID, data[:n])
-   30.	            if err != nil {
-   31.	                return
-   32.	            }
-   33.	            fmt.Println("Write data is ", string(data[:n]))
-   34.	        }
-   35.	    })
-   36.	    time.Sleep(1 * time.Minute)
-   37.	}
-   ```
-

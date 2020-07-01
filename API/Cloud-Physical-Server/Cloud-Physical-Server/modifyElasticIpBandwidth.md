@@ -26,10 +26,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}:modif
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyelasticipbandwidth#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|修改带宽是否成功|
