@@ -6,6 +6,8 @@
 
 ### 操作流程
 
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogCollection/toKafka.png)
+
 1.在创建业务应用日志配置时，打开高级配置，打开投递至指定目的地，投递目的地类型选择Kafka。
 
 2.用户根据自身需求选择某个地域下的云Kafka实例或选择自建Kafka。若用户选择自建Kafka，则需要填写对应自建Kafka的brokers。
