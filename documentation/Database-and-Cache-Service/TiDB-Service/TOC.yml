@@ -20,13 +20,14 @@ items:
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
       - name: 公测说明
-        href: Introduction/Public-Beta-Introduction.md      
+        href: Introduction/Public-Beta-Introduction.md    
+
   - name: 入门指南
     items:
       - name: 创建实例
-        href: Getting-Started/Create-TiDB-Instance.md
+        href: Getting-Started/Create-Instance.md
       - name: 连接实例
-        href: Getting-Started/Connect-TiDB-Instance.md
+        href: Getting-Started/Connect-Instance.md
       - name: 监控实例
         href: Getting-Started/TiDB-Monitor.md
 
@@ -47,8 +48,6 @@ items:
             href: Operation-Guide/Account/Create-Account.md
           - name: 重置密码
             href: Operation-Guide/Account/Reset-Password.md
-          - name: 监控实例
-            href: Operation-Guide/Account/TiDB-Monitor.md
 
       - name: 备份管理
         items:
@@ -86,8 +85,6 @@ items:
             href: Best-Practices/Data-Migration/Incremental-Import.md
       - name: 大数据量处理
         href: Best-Practices/Data-Operation.md
-      - name: 参数优化
-        href: Best-Practices/Parameters-Optimization.md
       - name: 高效使用 Secondary Index
         href: Best-Practices/Secondary-Index.md
 
@@ -104,4 +101,3 @@ items:
     items:
       - name: FAQ
         href: FAQ/FAQ.md
-
