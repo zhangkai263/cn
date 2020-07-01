@@ -48,8 +48,6 @@ items:
             href: Operation-Guide/Account/Create-Account.md
           - name: 重置密码
             href: Operation-Guide/Account/Reset-Password.md
-          - name: 监控实例
-            href: Operation-Guide/Account/TiDB-Monitor.md
 
       - name: 备份管理
         items:
