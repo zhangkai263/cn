@@ -6,8 +6,8 @@
   * 网络入带宽（Host）：vm.network.bytes.incoming
   * 网络出带宽（Host）：vm.network.bytes.outgoing
 * 由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据，此类指标共有2个，包括：
-  * CPU使用率：vm.cpu.util
-  * 内存使用率：vm.memory.usage
+  * CPU使用率：cpu_util
+  * 内存使用率：memory.usage
 * 其余指标由云主机内官方系统组件采集，仅不低于'3.0.989'版本的JCS-Agent组件支持采集。
 如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照本文底部 **监控插件安装说明** 进行安装。
 
