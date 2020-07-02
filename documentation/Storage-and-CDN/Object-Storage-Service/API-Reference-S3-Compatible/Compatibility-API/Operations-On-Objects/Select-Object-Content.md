@@ -114,7 +114,19 @@ Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标
 ### 响应Header
 无特殊Header
 
-### 响应元素和响应body
+### 响应body
+由于响应体的大小无法预知，OSS会将响应体切分成多个消息块（message）返回。从整体看响应体的结构如下：
+```
+<Message 1>
+<Message 2>
+......
+<Message n>
+```
+
+### 预响应(prelude)和响应结果(data)
+响应体中的每一个消息块（message）由预响应(prelude)、响应结果(data)及其CRC校验码组成。其中，预响应包括message块的总长度、所有头部的总长度两部分；响应结果包括响应头（Headers）、响应正文（Payload）两部分；预响应和响应结果的CRC校验码都使用大端编码，用CRC32计算，占4字节。
+消息块（Message）结构如图所示：
+
 
 
 ## 示例
