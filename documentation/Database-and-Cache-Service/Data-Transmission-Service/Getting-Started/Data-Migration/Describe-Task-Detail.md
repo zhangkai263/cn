@@ -12,26 +12,26 @@
 
    - 任务信息：迁移任务的基本信息，包括任务ID、迁移类型、源库和目标库信息。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-016.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-016.png)
 
    - 结构迁移：查看结构迁移的详情。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-017.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-017.png)
    
    - 全量数据迁移：全量数据迁移详情。
    
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-018.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-018.png)
    
    - 增量数据迁移：增量数据迁移详情。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-019.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-019.png)
    
    - 数据校验：查看数据一致性校验情况，包含总迁移数据库概览、不一致数据信息。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-020.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-020.png)
    
    -  性能监控：迁移性能监控信息。
 
-   ![image-20200113180223366](../../../../image/Data-Transmission-Service/dts-021.png)
+   ![image-20200113180223366](../../../../../image/Data-Transmission-Service/dts-021.png)
 
 

@@ -13,7 +13,7 @@
 
 2、选择迁移任务，点击**结束。**
 
-![1571223249585](../../../../image/Data-Transmission-Service/dts-007.png)
+![1571223249585](../../../../../image/Data-Transmission-Service/dts-007.png)
 
 
 
