@@ -140,7 +140,26 @@ Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标
 Records message|检索信息，根据结果长度，可能包含单条记录、部分记录或者多条记录。一个响应体可能包含多个 Records message。
 Continuation message|连接信息，会周期性地返回，以保持TCP链接。建议客户端能够识别和过滤这些信息，避免脏数据影响检索结果。
 Progress message|进度信息，会周期性地返回以反馈当前查询进度
-Stats message|统计信息
+Stats message|统计信息，会周期性地返回本次查询的相关统计信息
+End message|结束信息，出现时代表本次查询结束
+RequestLevelError message|报错信息，出现错误时返回。如果返回了该信息，将不会返回End message
+
+### Records message
+
+Records message 包括":message-type"， ":event-type"， ":content-type"3种报头。如图：
+
+![Records message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+
+Records message 的正文，根据结果长度，可能包含单条记录、部分记录或者多条记录。
+
+### Continuation message
+
+Continuation message包括":message-type"， ":event-type"2种报头。如图
+
+![Continuation message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+
+Continuation message只有报头，没有正文信息。
+
 
 
 ## 示例
