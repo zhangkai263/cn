@@ -154,11 +154,65 @@ Records message 的正文，根据结果长度，可能包含单条记录、部�
 
 ### Continuation message
 
-Continuation message包括":message-type"， ":event-type"2种报头。如图
+Continuation message包括":message-type"， ":event-type"2种报头。如图：
 
 ![Continuation message](../../../../../../image/Object-Storage-Service/OSS-180.png)
 
 Continuation message只有报头，没有正文信息。
+
+### Progress Message
+
+Progress Message包括":message-type"， ":event-type"， ":content-type"3种报头。如图：
+
+![Progress Message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+
+Progress Message正文是一个XML文本，包含以下信息：
+* BytesScanned：表示文件被压缩前，已经扫描过的字节数。
+* BytesProcessed：文件压缩后，已经扫描过的字节数。如果文件没有被压缩，该字段与BytesScanned相同。
+* BytesReturned：目前返回结果的大小。
+
+示例如下：
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Progress>
+     <BytesScanned>512</BytesScanned>
+     <BytesProcessed>1024</BytesProcessed>
+     <BytesReturned>1024</BytesReturned>
+</Progress>
+```
+
+### Stats Message
+
+Stats Message包含":message-type"， ":event-type"， ":content-type"3种报头。如图：
+
+![Stats Message](../../../../../../image/Object-Storage-Service/OSS-181.png)
+
+Stats Message正文是一个XML文本，包含以下信息：
+* BytesScanned：表示文件被压缩前，已经扫描过的字节数。
+* BytesProcessed：文件压缩后，已经扫描过的字节数。如果文件没有被压缩，该字段与BytesScanned相同。
+* BytesReturned：目前返回结果的大小。
+
+示例如下：
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Progress>
+     <BytesScanned>512</BytesScanned>
+     <BytesProcessed>1024</BytesProcessed>
+     <BytesReturned>1024</BytesReturned>
+</Progress>
+```
+
+### End Message
+
+End Message包含":message-type"，":event-type"2种报头。如图：
+
+![End Message](../../../../../../image/Object-Storage-Service/OSS-182.png)
+
+End Message只有报头，没有正文信息。
+
+### Request Level Error Message
+
+Request Level Error Message
 
 
 
