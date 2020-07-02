@@ -224,7 +224,7 @@ sysbench --config-file=config oltp_read_only --tables=32 --table-size=10000000 r
 | point_select | 3\*64 | 195218.54 | 195218.54 | 0.98 | 2.14 | 21.82 |
 | point_select | 3\*128 | 208189.53 | 208189.53 | 1.84 | 4.33 | 31.02 |
 
-![oltp_point_select](../../../../image/TiDB//oltp_point_select.png)
+![oltp_point_select](../../../../image/TiDB/oltp_point_select.png)
 
 ### oltp_update_index
 
