@@ -212,8 +212,11 @@ End Message只有报头，没有正文信息。
 
 ### Request Level Error Message
 
-Request Level Error Message
+Request Level Error Message包含“:error-code”，“:error-message”，“:message-type”3种报头。如图：
 
+![Request Level Error Message Message](../../../../../../image/Object-Storage-Service/OSS-183.png)
+
+Request Level Error Message只有报头，没有正文信息。
 
 
 ## 示例
