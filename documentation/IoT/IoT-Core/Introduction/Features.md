@@ -45,7 +45,6 @@
 
 - [产品概述](../Introduction/Product-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
-- [设备鉴权](../Developer-Guide-Device/AuthenticateDevices.md)
 
 
 
