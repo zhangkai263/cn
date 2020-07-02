@@ -10,12 +10,13 @@ OSS Select可以让OSS对数据做一定的分析处理，接口直接返回处�
 SQL语句的最大长度为256KB。
 输入或结果中记录的最大长度为1MB。
 OSS Select支持的文件格式：
-* 支持UTF-8编码的CSV文件。
+* 支持UTF-8编码的CSV文件。 
+
 支持的SQL语法：
 * SQL子句：SELECT、FROM、WHERE
 * 数据类型：
 * 函数：
-* 操作：逻辑运算符（），比较运算符（）
+* 操作：逻辑运算符（AND,NOT,OR），比较运算符（）
 
 ## 保留关键字
 
@@ -24,4 +25,3 @@ OSS Select支持的文件格式：
 
 ## 使用方法
 通过(Select Content Object)[]接口调用
-
