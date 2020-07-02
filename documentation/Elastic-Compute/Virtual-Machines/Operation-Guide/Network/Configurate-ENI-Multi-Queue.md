@@ -97,7 +97,7 @@ bash install.sh <image-type> <version-num>
        * centos vserion-num: 6|7|8
        * ubuntu version-num: 14|16|18
 
-  安装信息中出现"Starting multi-queue-jd: OK"即表明网卡多队列配置成功，完成配置后可将安装脚本删除。
+  安装信息中出现`Starting multi-queue-jd: OK`即表明网卡多队列配置成功，完成配置后可将安装脚本删除。
   
 ## 相关参考
 
