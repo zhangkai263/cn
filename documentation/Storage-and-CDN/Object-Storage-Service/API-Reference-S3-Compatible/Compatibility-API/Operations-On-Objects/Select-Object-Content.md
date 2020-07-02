@@ -124,12 +124,23 @@ Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标
 ```
 
 ### 预响应(prelude)和响应结果(data)
+
 响应体中的每一个消息块（message）由预响应(prelude)、响应结果(data)及其CRC校验码组成。其中，预响应包括message块的总长度、所有头部的总长度两部分；响应结果包括响应头（Headers）、响应正文（Payload）两部分；预响应和响应结果的CRC校验码都使用大端编码，用CRC32计算，占4字节。 
 
 消息块（Message）结构如图所示，每个消息块可能包含多个 header：
-![Message](../../../../../../image/Object-Storage-Service/OSS-178.png)
-![Header](../../../../../../image/Object-Storage-Service/OSS-179.png)
 
+![Message](../../../../../../image/Object-Storage-Service/OSS-178.png)
+
+
+### 消息块（Message）类型
+
+消息块（Message）分为以下几类：
+消息类型|描述
+---|---
+Records message|检索信息，根据结果长度，可能包含单条记录、部分记录或者多条记录。一个响应体可能包含多个 Records message。
+Continuation message|连接信息，会周期性地返回，以保持TCP链接。建议客户端能够识别和过滤这些信息，避免脏数据影响检索结果。
+Progress message|进度信息，会周期性地返回以反馈当前查询进度
+Stats message|统计信息
 
 
 ## 示例
