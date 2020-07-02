@@ -124,8 +124,11 @@ Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标
 ```
 
 ### 预响应(prelude)和响应结果(data)
-响应体中的每一个消息块（message）由预响应(prelude)、响应结果(data)及其CRC校验码组成。其中，预响应包括message块的总长度、所有头部的总长度两部分；响应结果包括响应头（Headers）、响应正文（Payload）两部分；预响应和响应结果的CRC校验码都使用大端编码，用CRC32计算，占4字节。
-消息块（Message）结构如图所示：
+响应体中的每一个消息块（message）由预响应(prelude)、响应结果(data)及其CRC校验码组成。其中，预响应包括message块的总长度、所有头部的总长度两部分；响应结果包括响应头（Headers）、响应正文（Payload）两部分；预响应和响应结果的CRC校验码都使用大端编码，用CRC32计算，占4字节。 
+
+消息块（Message）结构如图所示，每个消息块可能包含多个 header：
+![Message](../../../../../../image/Object-Storage-Service/OSS-178.png)
+![Header](../../../../../../image/Object-Storage-Service/OSS-179.png)
 
 
 
