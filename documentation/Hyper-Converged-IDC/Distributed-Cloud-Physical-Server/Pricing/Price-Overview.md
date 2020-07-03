@@ -22,18 +22,18 @@
 	<td >21</td>
        </tr>
     <tr>   
-	<td >存储型</td>
-	<td >边缘标准存储型(二代)</td>
-	<td >edcps.s2.normal</td>
-	<td >5300</td>
-	<td >18</td>
-    </tr>
-    <tr>   
 	<td >计算型</td>
 	<td >边缘计算效能型 Ⅱ（二代）</td>
 	<td >edcps.c2.perf2</td>
 	<td >8600</td>
 	<td >30</td>
+    </tr>
+    <tr>   
+	<td >存储型</td>
+	<td >边缘标准存储型(二代)</td>
+	<td >edcps.s2.normal</td>
+	<td >5300</td>
+	<td >18</td>
     </tr>
 </table>
 
