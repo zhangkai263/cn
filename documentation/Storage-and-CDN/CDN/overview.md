@@ -97,4 +97,6 @@ v1
 |**updateCacheRule**|PUT|修改缓存规则|
 |**setExtraCacheTime**|POST|设置状态码缓存|
 |**updateDomainGroup**|POST|更新域名组|
+|**queryDailyRefreshTaskCount**|GET|查询刷新预热任务限额|
+|**queryCdnUserQuota**|GET|查询用户刷新预热封禁限额|
 |**uploadCert**|POST|上传证书|
