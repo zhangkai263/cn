@@ -50,6 +50,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**domain**|String|子域名|
 |**cname**|String|规则的 CNAME|
 |**cnameStatus**|Integer|CNAME 解析状态, 0: 解析异常, 1: 解析正常|
+|**serviceIp**|String|高防 IP|
 |**protocol**|[WebRuleProtocol](describewebrule#webruleprotocol)| |
 |**customPortStatus**|Integer|是否为自定义端口号, 0: 为默认, 1: 为自定义|
 |**port**|Integer[]|HTTP 协议的端口号, 如 80,81|

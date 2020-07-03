@@ -50,6 +50,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**protocol**|String|TCP 或 UDP|
 |**cname**|String|规则的 CNAME|
 |**originType**|String|回源类型: ip 或者 domain|
+|**serviceIp**|String|高防 IP|
 |**port**|Integer|端口号|
 |**algorithm**|String|转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originAddr**|[OriginAddrItem[]](describeforwardrule#originaddritem)| |
