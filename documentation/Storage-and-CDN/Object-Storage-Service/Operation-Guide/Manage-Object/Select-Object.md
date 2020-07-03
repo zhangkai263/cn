@@ -1,4 +1,4 @@
-# OSS Select
+# OSS Select（公测）
 OSS Select用于对文件执行SQL语句，返回执行结果。
 
 ## 使用场景
