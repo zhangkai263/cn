@@ -43,6 +43,6 @@
 
 **功能定义**
 
-物类型创建成功后自动跳转编辑物类型页面，可为该物类型添加功能定义即物模型，功能定义添加详情请见[创建物模型](../Create-Thing-Model.md)
+物类型创建成功后自动跳转编辑物类型页面，可为该物类型添加功能定义即物模型，功能定义添加详情请见[创建物模型](../Device-Manager/Create-Thing-Model.md)
 
 ![创建物模型](../../../../../image/IoT/IoT-Core/Device-Manager/Create-Thing-Model/Create-Thing-Model.png)

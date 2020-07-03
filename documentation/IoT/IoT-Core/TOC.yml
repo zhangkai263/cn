@@ -1,6 +1,6 @@
-  name: 物联网引擎
-  href: 
-  items:
+name: 物联网引擎
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -25,8 +25,6 @@
         href: Pricing/Price-Overview.md
       - name: 购买流程
         href: Pricing/Purchase-Process.md 
-      - name: 续费流程
-        href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
       - name: 入门指南概述
@@ -39,45 +37,41 @@
     items:
       - name: 设备管理
         items:
-        - name: 创建物类型
-          href: Operation-Guide/Device-Manager/Create-Thing-Type.md
-        - name: 物模型介绍
-          href: Operation-Guide/Device-Manager/Introduce-Thing-Model.md
-        - name: 创建物模型
-          href: Operation-Guide/Device-Manager/Create-Thing-Model.md
-        - name: 注册设备
-          href: Operation-Guide/Device-Manager/Create-Device.md     
-        - name: 设备分组
-          href: Operation-Guide/Device-Manager/Device-Grouping.md    
+          - name: 创建物类型
+            href: Operation-Guide/Device-Manager/Create-Thing-Type.md
+          - name: 物模型介绍
+            href: Operation-Guide/Device-Manager/Introduce-Thing-Model.md
+          - name: 创建物模型
+            href: Operation-Guide/Device-Manager/Create-Thing-Model.md
+          - name: 注册设备
+            href: Operation-Guide/Device-Manager/Create-Device.md 
+          - name: 设备信息
+            href: Operation-Guide/Device-Manager/Device-Info.md    
+          - name: 设备分组
+            href: Operation-Guide/Device-Manager/Device-Grouping.md    
       - name: 创建规则引擎
         href: Operation-Guide/Rule-Engine/Create-Rule.md  
       - name: 档案管理
         href: Operation-Guide/Archive-Manager/Create-Archive.md
   - name: 设备开发指南
     items:
-    - name: Device SDK 介绍
-      href: Developer-Guide-Device/Device-SDK-Introduction.md
-    - name: 术语表
-      href: Developer-Guide-Device/Terminology-Table.md
-    - name: 硬件平台适配
-      href: Developer-Guide-Device/Platform-Abstract-Layer.md
-    - name: SDK API 简介
-      href: Developer-Guide-Device/Device-SDK-API.md
+      - name: Device SDK 介绍
+        href: Developer-Guide-Device/Device-SDK-Introduction.md
+      - name: 术语表
+        href: Developer-Guide-Device/Terminology-Table.md
+      - name: 硬件平台适配
+        href: Developer-Guide-Device/Platform-Abstract-Layer.md
+      - name: SDK API 简介
+        href: Developer-Guide-Device/Device-SDK-API.md
   - name: 最佳实践
     items:
-    - name: 设备接入
-      href: Best-Practices/Device-Access.md
-    - name: JCQ规则引擎转发 
-      href: Best-Practices/Forward-To-JCQ.md 
-    - name: 网关设备的拓扑关系维护 
-      href: Best-Practices/Device-Gateway-Topo.md 
+      - name: 设备接入
+        href: Best-Practices/Device-Access.md
+      - name: 网关设备的拓扑关系维护 
+        href: Best-Practices/Device-Gateway-Topo.md 
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: API参考
-    href: API-Reference/API-Reference.md
   - name: 相关资源
     items:
-    - name: 文档历史记录
-      href: Related-Resources/Document-History.md  
-  - name: 常见问题
-    href: FAQ/FAQ.md
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md
