@@ -5,7 +5,7 @@
 ### 语法
 ```HTTP
 POST /ObjectName?select&select-type=2 HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloud-oss.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: date
 Authorization: authorization string (See Authenticating Requests (AWS Signature Version4))
 
@@ -223,7 +223,7 @@ Request Level Error Message只有报头，没有正文信息。
 ### 请求示例
 
 ```POST /exampleobject.csv?select&select-type=2 HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloud-oss.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 17 Oct 2020 01:49:52 GMT
 Authorization: authorization string
 Content-Length: content length
