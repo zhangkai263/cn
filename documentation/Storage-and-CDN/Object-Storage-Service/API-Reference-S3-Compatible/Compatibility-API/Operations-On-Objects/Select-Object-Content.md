@@ -26,9 +26,6 @@ Authorization: authorization string (See Authenticating Requests (AWS Signature 
          <QuoteEscapeCharacter>string</QuoteEscapeCharacter>
          <RecordDelimiter>string</RecordDelimiter>
       </CSV>
-      <JSON>
-         <Type>string</Type>
-      </JSON>
    </InputSerialization>
    <OutputSerialization>
       <CSV>
@@ -67,8 +64,6 @@ QuoteEscapeCharacter|指定引用转义符，不能为空。如"""a,b"""将解�
 FileHeaderInfo|描述首行定义<br>类型：String<br>有效值：NONE（非列名称）<br>USE（是列名称，且可使用列名称过滤，如 SELECT "name" FROM S3Object）<br>IGNORE（是列名称，但不可使用列名称过滤，可使用_1 , _2，如SELECT _1 FROM S3Object）<br>父标签：CSV|否
 Comments|指定描述字符，不能为空<br>类型：String<br>默认值：#<br>父标签：CSV|否
 AllowQuotedRecordDelimiter|指定是否允许数据包含换行符。设置为TURE可能导致性能变慢<br>类型：Boolean<br>默认值：FALSE<br>父标签：CSV|否
-JSON|描述请求Object的JSON格式<br>类型：容器<br>父标签：InputSerialization|否
-Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标签：JSON|否
 
 
 OutputSerialization 容器：
@@ -80,8 +75,6 @@ RecordDelimiter|指定行分隔符，不能为空<br>类型：String<br>默认�
 FieldDelimiter|指定列分隔符，不能为空<br>类型：String<br>默认值：,<br>父标签：CSV|否
 QuoteCharacter|指定引用符号，不能为空。如"a,b"，将解析为a,b<br>类型：String<br>默认值："<br>父标签：CSV|否
 QuoteEscapeCharacter|指定引用转义符，不能为空。如"""a,b"""将解析为" a,b "<br>类型：String<br>默认值："<br>父标签：CSV|否
-JSON|描述请求Object的JSON格式<br>类型：容器<br>父标签：OutputSerialization|否
-Contents|JSON类型<br>类型：String<br>有效值：DOCUMENT、LINES<br>父标签：JSON|否
 
 ## 响应
 ### 语法
