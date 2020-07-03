@@ -29,7 +29,7 @@
 	<td align="center">NO RAID/RAID0/RAID1/RAID10</td>
     </tr>
     <tr>   
-        <td align="center"><B>边缘计算效能型 Ⅱ（二代）<br/>（edcps.s2.normal）<B></td>
+        <td align="center"><B>边缘计算效能型 Ⅱ（二代）<br/>（edcps.c2.perf2）<B></td>
 	<td align="center">2*Gold-6267<br/>（24核 2.6G）</td>
 	<td align="center">384G（12*32G）DDR4</td>
 	<td >2*240GB（SSD）+<br/>16*960GB（SSD）</td>
