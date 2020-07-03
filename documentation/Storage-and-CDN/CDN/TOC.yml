@@ -278,6 +278,8 @@
                  href: JCloud-Openapi-For-CDN/queryLiveDomainApps.md
                - name: queryPushDomainORAppOrStream
                  href: JCloud-Openapi-For-CDN/queryPushDomainORAppOrStream.md
+               - name: queryDailyRefreshTaskCount
+                 href: JCloud-Openapi-For-CDN/queryDailyRefreshTaskCount.md                 
                - name: getSslCertDetail
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
