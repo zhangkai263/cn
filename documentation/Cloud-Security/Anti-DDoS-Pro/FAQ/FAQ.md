@@ -6,7 +6,7 @@ A：IP高防支持任何地域的IP接入，包括京东云内和云外的用户
 
 **Q：IP高防支持哪些转发协议？**
 
-A：IP高防支持TCP、UDP、HTTP、HTTPS协议的转发配置，并支持websocket协议接入，覆盖所有的业务场景。。
+A：IP高防支持TCP、UDP、HTTP、HTTPS协议的转发配置，并支持websocket协议接入，覆盖所有的业务场景。
 
 **Q：非网站类转发和网站类转发的区别？**
 
