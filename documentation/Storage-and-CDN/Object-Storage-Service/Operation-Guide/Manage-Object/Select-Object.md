@@ -14,7 +14,7 @@ OSS Select支持的文件格式：
 
 支持的SQL语法：
 * SQL子句：SELECT,FROM,WHERE,LIMIT
-* 数据类型：
+* 数据类型：String,int(64bit)
 * 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST
 * MAX,MIN,SUM,AVG函数需要嵌套CAST函数使用，CAST不支持STRING，仅支持INT（64bit）
 * 操作：逻辑运算符（AND,NOT,OR）、比较运算符（<,>,<=,>=,=,<>,BETWEEN,IN）、模式匹配运算符（LIKE）、数学运算符（+,-,*）
