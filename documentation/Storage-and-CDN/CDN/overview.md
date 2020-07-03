@@ -100,3 +100,5 @@ v1
 |**queryDailyRefreshTaskCount**|GET|查询刷新预热任务限额|
 |**queryCdnUserQuota**|GET|查询用户刷新预热封禁限额|
 |**uploadCert**|POST|上传证书|
+|**setAuthConfig**|POST|dash鉴权参数设置|
+|**setSourceAuthConfig**|POST|回源鉴权参数设置|
