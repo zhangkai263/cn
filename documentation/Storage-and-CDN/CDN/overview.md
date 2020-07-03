@@ -95,5 +95,6 @@ v1
 |**stopDomain**|POST|停止加速域名|
 |**stopMonitor**|POST|停止源站监控|
 |**updateCacheRule**|PUT|修改缓存规则|
+|**setExtraCacheTime**|POST|设置状态码缓存|
 |**updateDomainGroup**|POST|更新域名组|
 |**uploadCert**|POST|上传证书|
