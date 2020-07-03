@@ -23,17 +23,22 @@ OSS Select支持的文件格式：
 
 * SQL子句：SELECT,FROM,WHERE,LIMIT
 
-* 数据类型：string,int(64bit),bool,float,decimal
+* 数据类型：string,int(64bit),bool,float,decimal,numeric
 
 * 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST,COUNT
 
-* MAX,MIN,SUM,AVG函数需要嵌套CAST函数使用，CAST不支持STRING，仅支持INT（64bit）
+* MAX,MIN,SUM,AVG函数需要嵌套CAST函数使用，CAST不支持decimal,numeric数据类型
 
 * 操作：逻辑运算符（AND,NOT,OR）、比较运算符（<,>,<=,>=,=,<>,BETWEEN,IN）、模式匹配运算符（LIKE）、数学运算符（+,-,*）
 
 ## 使用方法
 
 通过[Select Content Object](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md)接口调用
+
+## SQL示例
+含义|SQL语句
+--|--
+返回前6行数据|select * from csvobject limit 10
 
 ## 保留关键字
 
