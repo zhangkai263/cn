@@ -28,7 +28,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |**sumFileSize**|Long|False| | |
 |**avgFileSize**|Long|False| | |
 |**defaultSourceHost**|String|False| | |
-|**httpType**|String|False| | |
+|**httpType**|String|True| |只能为http,如设置https,需二次调用sethttptype接口 |
 |**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 |**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
