@@ -25,7 +25,7 @@ OSS Select支持的文件格式：
 
 * 数据类型：string,int(64bit),bool,float,decimal
 
-* 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST
+* 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST,COUNT
 
 * MAX,MIN,SUM,AVG函数需要嵌套CAST函数使用，CAST不支持STRING，仅支持INT（64bit）
 
