@@ -1,25 +1,38 @@
 # OSS Select（公测）
+
 OSS Select用于对文件执行SQL语句，返回执行结果。
 
 ## 使用场景
+
 在使用OSS进行数据处理的场景下，需要将数据仓库的海量数据文件存放在OSS。如果大数据平台使用OSS的Get Object接口，只能把文件全部下载到本地才能进行分析过滤，浪费了大量带宽和客户端资源。
 OSS Select可以让OSS对数据做一定的分析处理，接口直接返回处理后的结果，既减少了客户端的网络带宽，又减少了客户端的数据处理量，节省了客户端的CPU、内存等计算资源。
 
 ## 规则限制
+
 使用者需要拥有GetObject权限。
+
 SQL语句的最大长度为256KB。
+
 输入或结果中记录的最大长度为1MB。
+
 OSS Select支持的文件格式：
+
 * 支持UTF-8编码的CSV文件。 
 
 支持的SQL语法：
+
 * SQL子句：SELECT,FROM,WHERE,LIMIT
+
 * 数据类型：String,int(64bit)
+
 * 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST
+
 * MAX,MIN,SUM,AVG函数需要嵌套CAST函数使用，CAST不支持STRING，仅支持INT（64bit）
+
 * 操作：逻辑运算符（AND,NOT,OR）、比较运算符（<,>,<=,>=,=,<>,BETWEEN,IN）、模式匹配运算符（LIKE）、数学运算符（+,-,*）
 
 ## 使用方法
+
 通过[Select Content Object](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md)接口调用
 
 ## 保留关键字
