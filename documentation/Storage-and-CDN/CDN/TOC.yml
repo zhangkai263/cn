@@ -347,11 +347,11 @@
                - name: queryDomainConfig
                  href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: setExtraCacheTime 
-                 href: JCloud-Openapi-For-CDN/setExtraCacheTime.md     
+                 href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
                - name: setAuthConfig 
-                 href: JCloud-Openapi-For-CDN/setAuthConfig.md  
+                 href: JCloud-Openapi-For-CDN/setAuthConfig.md
                - name: setSourceAuthConfig 
-                 href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md                 
+                 href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
           - name: 停止删除域名
             items:
                - name: startDomain
