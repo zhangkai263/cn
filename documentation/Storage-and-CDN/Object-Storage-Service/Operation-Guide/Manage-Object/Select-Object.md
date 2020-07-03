@@ -23,7 +23,7 @@ OSS Select支持的文件格式：
 
 * SQL子句：SELECT,FROM,WHERE,LIMIT
 
-* 数据类型：String,int(64bit)
+* 数据类型：string,int(64bit),bool,float,decimal
 
 * 函数：MAX,MIN,SUM,AVG,LOWER,UPPER,TRIM,CAST
 
