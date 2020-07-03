@@ -20,7 +20,7 @@ OSS Select支持的文件格式：
 * 操作：逻辑运算符（AND,NOT,OR）、比较运算符（<,>,<=,>=,=,<>,BETWEEN,IN）、模式匹配运算符（LIKE）、数学运算符（+,-,*）
 
 ## 使用方法
-通过(Select Content Object)[../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md]接口调用
+通过[Select Content Object](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md)接口调用
 
 ## 保留关键字
 
