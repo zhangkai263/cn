@@ -13,7 +13,7 @@
 
 * “云硬盘系统盘”镜像可用来创建系统盘是云硬盘的主机，无法将镜像转换为“本地盘系统盘”镜像。关于“本地盘系统盘”镜像和“云硬盘系统盘”镜像的区别请参见 [镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)。
 
-* 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认是否正确配置，并请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请。。
+* 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能。
 
 ## 镜像基本要求<br>
 ### Linux系统基本要求<br>
