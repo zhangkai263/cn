@@ -346,11 +346,11 @@
                  href: SSL-Certificate/uploadCert.md
                - name: queryDomainConfig
                  href: JCloud-Openapi-For-CDN/queryDomainConfig.md
-               - name: setExtraCacheTime 
+               - name: setExtraCacheTime
                  href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
-               - name: setAuthConfig 
+               - name: setAuthConfig
                  href: JCloud-Openapi-For-CDN/setAuthConfig.md
-               - name: setSourceAuthConfig 
+               - name: setSourceAuthConfig
                  href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
           - name: 停止删除域名
             items:
