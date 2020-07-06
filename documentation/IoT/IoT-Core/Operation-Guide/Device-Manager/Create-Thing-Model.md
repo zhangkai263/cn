@@ -73,7 +73,7 @@
 
 功能定义对应的Json数据格式可在 **JSON数据** 中进行查看，提供json格式化，一键复制的功能。
 
-![JSON数据](../../../../../image/IoT/IoT-Core/Device-Manager/Create-Thing-Model/Model-JSON.png)
+![JSON数据](../../../../../image/IoT/IoT-Core/Device-Manager/Create-Thing-Model/Model-Json-Edit.png)
 
 
 ## 发布物模型
