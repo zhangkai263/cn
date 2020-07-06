@@ -350,6 +350,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: setExtraCacheTime
                  href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
+               - name: deleteExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/deleteExtraCacheTime.md                 
                - name: setAuthConfig
                  href: JCloud-Openapi-For-CDN/setAuthConfig.md
                - name: setSourceAuthConfig
