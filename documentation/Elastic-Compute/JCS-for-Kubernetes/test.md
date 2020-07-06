@@ -8,13 +8,13 @@ K8s部署在jdstack私有化环境中，jdstack部署在某个边缘节点机房
 2. 安装完客户端之后，选择“（左上角）连接“新建VPN设置”,会出现下边的弹窗，选择“是”  
 3. 创建完虚拟网络适配器之后，选择添加新的VPN连接  
 4. 按照文档中给出的“Windows信息”或“Mac信息填”写VPN IP，用户名密码等相关配置 https://cf.jd.com/pages/viewpage.action?pageId=286701433  
-5. 配置完成后，登录 http://console.jdcloud.local/   用户名：IAAS 密码：xxxx
+5. 配置完成后，登录 http://console.jdcloud.local/   用户名：IAAS 密码：YM8kU2tvU6Nd   注：此账户为临时账户
 
 参考资料  https://cf.jd.com/pages/viewpage.action?pageId=180384952  
 
 
 ## JDstack跳板机 （内部使用）
-jdstack VPN配置完成并连通后，登录JDstack跳板机，可以进行镜像上传，kubectl配置等操作。
+jdstack VPN配置完成并连通后，登录JDstack跳板机，可以进行镜像上传，kubectl命令等操作。
 跳板机主机IP，用户名密码请参见“linux跳板机登陆”章节： https://cf.jd.com/pages/viewpage.action?pageId=286701433
 
 
