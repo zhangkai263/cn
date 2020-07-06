@@ -283,7 +283,9 @@ items:
                - name: queryCdnUserQuota
                  href: JCloud-Openapi-For-CDN/queryCdnUserQuota.md
                - name: queryExtraCacheTime
-                 href: JCloud-Openapi-For-CDN/queryExtraCacheTime.md                 
+                 href: JCloud-Openapi-For-CDN/queryExtraCacheTime.md  
+               - name: queryForbiddenInfoList
+                 href: JCloud-Openapi-For-CDN/queryForbiddenInfoList.md                 
                - name: getSslCertDetail
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
