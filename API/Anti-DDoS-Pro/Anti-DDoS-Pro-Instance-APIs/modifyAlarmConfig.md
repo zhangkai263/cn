@@ -18,9 +18,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modi
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**alarmConfigSpec**|AlarmConfigSpec|True| |更新告警配置请求参数|
+|**alarmConfigSpec**|[AlarmConfigSpec](modifyalarmconfig#alarmconfigspec)|True| |更新告警配置请求参数|
 
-### AlarmConfigSpec
+### <div id="alarmconfigspec">AlarmConfigSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**blackHoleAlarmEmailStatus**|Integer|False| |黑洞告警邮件开关 0 关闭 1 开启|
@@ -31,26 +31,29 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modi
 |**ddosAlarmStatus**|Integer|False| |DDos 告警总开关 0 关闭 1 开启|
 |**errorCodeAlarmStatus**|Integer|False| |错误码告警总开关|
 |**errorCodeDomain**|String[]|False| |错误码告警域名列表|
+|**errorCode**|Integer[]|False| |错误码列表|
+|**errorCodePercent**|Integer|False| |错误码触发告警比例|
+|**errorCodeCount**|Integer|False| |错误码触发告警次数|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyalarmconfig#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](modifyalarmconfig#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](modifyalarmconfig#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 修改失败, 1: 修改成功|

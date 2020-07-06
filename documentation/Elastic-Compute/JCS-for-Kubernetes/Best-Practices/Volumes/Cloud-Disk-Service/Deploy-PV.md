@@ -1,5 +1,5 @@
 
-# 部署持久化存储
+# 部署持久化存储(适配Kubernetes 1.12版本)
 
 京东云Kubernetes集群服务集成了京东云云硬盘，您可以在集群中使用京东云云硬盘作为持久化存储；  
 
@@ -142,8 +142,6 @@ spec:
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
-|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
 |hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
 |ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
 |ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB| 

@@ -1,0 +1,22 @@
+  name: 消息队列 Kafka 版
+  href:
+  items:
+
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name:  实例管理相关接口
+        items:
+          - name: createInstance
+            href: Kafka-Instance-Managemant/createInstance.md
+          - name: deleteInstance
+            href: Kafka-Instance-Managemant/deleteInstance.md
+          - name: describeInstance
+            href: Kafka-Instance-Managemant/describeInstance.md
+          - name: describeInstances
+            href: Kafka-Instance-Managemant/describeInstances.md
+          - name: modifyInstanceSpec
+            href: Kafka-Instance-Managemant/modifyInstanceSpec.md

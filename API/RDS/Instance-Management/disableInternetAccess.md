@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:disable
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testDisableInternetAccess() {
+    DisableInternetAccessRequest request = new DisableInternetAccessRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    DisableInternetAccessResponse response = rdsClient.disableInternetAccess(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa51bee41j6djud8ucu3kehnipmsof0"
+}
+```

@@ -6,11 +6,9 @@
 
 创建日志监控任务需要确认该日志主题下已添加对应的采集配置。
 
-1.进入对应的日志集，选择需要创建日志监控任务的日志主题，在后方的管理中选择监控配置，进入日志监控任务列表页。点击“新建监控任务”。
+1.进入对应的日志集，选择需要创建日志监控任务的日志主题，直接点击日志监控后方的“添加”按钮，或点击日志监控，在下拉框中选择“监控任务列表”，点击“新建监控任务”。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/logmonitor01.jpg)
-
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/logmonitor02.jpg)
+![](https://github.com/jdcloudcom/cn/blob/zhangwenjie-only/image/LogService/LogMonitor/logmonitor-1.jpg)
 
 2.填写监控任务配置信息
 
@@ -28,15 +26,17 @@
 
 **日志测试** 日志测试是便于用户快速对所设置的日志筛选条件及监控指标进行查看，已确保设置的监控任务符合自身预期。用户可直接使用当前日志主题下的日志进行测试，也可以自定义粘贴日志数据进行测试。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogMonitor/logmonitor03.jpg)
+![](https://github.com/jdcloudcom/cn/blob/zhangwenjie-only/image/LogService/LogMonitor/logmonitor-2.jpg)
 
 ## 二、查看监控图及设置报警规则
 
 ### 查看监控图
 
-1.进入对应的日志集，选择需要查看的日志主题，在管理中选择日志监控，在监控任务列表中选择需要查看的监控任务，点击操作栏中的监控图，即可查看该监控任务的监控统计图。
+1.点击“日志监控”下的子菜单“监控图”，进入监控图查看页面。
 
-2.进入日志服务，选择左侧菜单栏中的监控图，选择需要查看的日志集、日志主题及监控任务，即可查看日志字段监控图。
+2.选择需要查看的监控任务及查询的时间范围，即可查看日志监控图。
+
+![](https://github.com/jdcloudcom/cn/blob/zhangwenjie-only/image/LogService/LogMonitor/logmonitor-3.jpg)
 
 ### 设置报警规则
 

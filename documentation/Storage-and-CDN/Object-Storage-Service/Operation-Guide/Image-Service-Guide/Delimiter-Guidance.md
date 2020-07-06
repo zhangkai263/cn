@@ -29,16 +29,16 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 ```
 
 示例：
-   
+
  ```
  bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
  
  ```
- 
+
  **当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。** 分隔符只有在控制台配置成功后才能生效，支持
   `  -、_、/、!` 样式分隔符。分隔符方式访问为图片处理可选的使用方式。
 
-       
+
 **说明**
 
 *  StyleName是图片样式的名称。
@@ -66,9 +66,7 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 1.  在[OSS控制台](https://oss-console.jdcloud.com/space)左侧存储空间列表中，单击您要向其设置分隔符的存储空间名称。
 
-2.  单击**图片处理**页签，找到**图片访问设置**按钮。
-
-    ![](../../../../../image/Object-Storage-Service/OSS-152.png)
+2.  单击【数据处理】Tab页，导航至**图片处理**功能域，找到**图片访问设置**按钮。
 
 3.  单击**图片访问设置**，打开设置窗口。
 
@@ -80,12 +78,12 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
     
         开启原图保护后，您需要了解的信息请参见[图片原图保护-原图保护规则](https://docs.jdcloud.com/cn/object-storage-service/source-image-protection)。
 
-        
     -   自定义分隔符。
         * 你可以选择一个或者多个分隔符;
         * 分隔符与原图保护设置可分别设置。
         
         
+
 4.设置好您需要的选项之后单击**确定**完成分隔符的设置。
 
 **你也可以通过[OPENAPI](http://docs.jdcloud.com/cn/media-processing-service/api/setstyledelimiter)完成对自定义分隔符的设置。**

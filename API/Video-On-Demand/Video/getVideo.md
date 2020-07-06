@@ -21,10 +21,10 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询单个视频信息结果|
+|**result**|[Result](getvideo#result)|查询单个视频信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|视频ID|
@@ -38,10 +38,10 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}
 |**tags**|String[]|标签集合|
 |**categoryId**|Long|分类ID|
 |**categoryName**|String|分类名称|
-|**snapshots**|Snapshot[]|转码截图|
+|**snapshots**|[Snapshot[]](getvideo#snapshot)|转码截图|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
-### Snapshot
+### <div id="snapshot">Snapshot</div>
 |名称|类型|描述|
 |---|---|---|
 |**imgId**|Long|截图ID|

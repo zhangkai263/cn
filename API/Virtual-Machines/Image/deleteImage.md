@@ -18,7 +18,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |**imageId**|String|True| |镜像ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**deleteSnapshot**|Boolean|False| false |删除镜像是否删除关联的快照。<br>默认为false，即仅删除镜像不删除关联快照；如果指定为true, 将会在删除镜像后删除关联的快照。|
 
 
 ## 返回参数

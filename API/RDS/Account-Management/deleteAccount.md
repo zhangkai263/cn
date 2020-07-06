@@ -28,3 +28,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteAccount() {
+    DeleteAccountRequest deleteAccountRequest = new DeleteAccountRequest();
+    deleteAccountRequest.setAccountName("dj_ac");
+    deleteAccountRequest.setInstanceId("mysql-wp4e9ztap2");
+    deleteAccountRequest.setRegionId("cn-north-1");
+    DeleteAccountResponse deleteAccountResponse = rdsClient.deleteAccount(deleteAccountRequest);
+    System.out.println(new Gson().toJson(deleteAccountResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa0670tan56mcbetqsimbk8a5ijr116"
+}
+```

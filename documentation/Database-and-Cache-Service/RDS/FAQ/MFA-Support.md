@@ -8,7 +8,7 @@ MFA (Multi-Factor Authentication) 是一种简单有效的最佳安全实践，�
 
 - 手机短信
 - 电子邮箱
-- 微信小程序 （京东云助手）
+- 京东智联云APP
 
 ### RDS 支持的敏感操作
 - MySQL、Percona、MariaDB
