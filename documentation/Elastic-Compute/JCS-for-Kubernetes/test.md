@@ -1,8 +1,25 @@
 # 环境准备  
 
 K8s部署在jdstack私有化环境中，jdstack部署在某个边缘节点机房中  
-Demo会在环境中创建Kubernetes集群和容器镜像仓库，并在集群中创建一个nginx应用  
 
+## JDstack VPN配置 （内部使用）
+1. 下载VPN client端并安装  https://www.softether-download.com/cn.aspx?product=softether
+   组件选择SoftEther Client，操作系统根据用户环境选择
+2. 安装完客户端之后，选择“（左上角）连接“新建VPN设置”,会出现下边的弹窗，选择“是”  
+3. 创建完虚拟网络适配器之后，选择添加新的VPN连接。按照文档中给出的Windows信息或Mac信息填写VPN相关配置 https://cf.jd.com/pages/viewpage.action?pageId=286701433
+
+参考资料  https://cf.jd.com/pages/viewpage.action?pageId=180384952
+
+
+
+VPN client端主机IP，用户名密码请参见“Windows所需信息”章节 https://cf.jd.com/pages/viewpage.action?pageId=286701433
+
+## JDstack跳板机 （内部使用）
+jdstack VPN配置完成并连通后，登录JDstack跳板机，可以进行镜像上传，kubectl配置等操作。
+跳板机主机IP，用户名密码请参见“linux跳板机登陆”章节： https://cf.jd.com/pages/viewpage.action?pageId=286701433
+
+
+## Kubernetes集群及容器镜像仓库配置
 1. 进入控制台 弹性计算-Kubernetes集群  点击创建  
 
 2. 创建集群  
