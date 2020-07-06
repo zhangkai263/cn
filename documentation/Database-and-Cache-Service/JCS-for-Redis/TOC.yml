@@ -91,6 +91,16 @@
         href: Best-Practices/Python-Connect-to-Redis-Instance.md
       - name: 公网连接Redis实例
         href: Best-Practices/Public-Network-Connect-to-Redis-Instance.md    
+   - name: 性能测试
+    items:
+      - name: 测试环境
+        href: Best-Practices/CorCplusplus-Connect-to-Redis-Instance.md
+      - name: 测试工具
+        href: Best-Practices/Golang-Connect-to-Redis-Instance.md
+      - name: 测试命令
+        href: Best-Practices/Java-Connect-to-Redis-Instance.md
+      - name: 测试结果
+        href: Best-Practices/Node.js-Connect-to-Redis-Instance.md
   - name: 常见问题
     href: FAQ/FAQ.md     
   - name: 相关资源      
