@@ -41,7 +41,7 @@ items:
   items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-- name: 操作指南
+- name: 控制台操作指南
   items:
       - name: 使用须知
         href: Operation-Guide/Operation-Instruction/Operation-Instruction.md
