@@ -94,13 +94,13 @@
    - name: 性能测试
     items:
       - name: 测试环境
-        href: Best-Practices/CorCplusplus-Connect-to-Redis-Instance.md
+        href: Performance-Test/Test-environment.md
       - name: 测试工具
-        href: Best-Practices/Golang-Connect-to-Redis-Instance.md
+        href: Performance-Test/Test-tool.md
       - name: 测试命令
-        href: Best-Practices/Java-Connect-to-Redis-Instance.md
+        href: Performance-Test/Test-commands.md
       - name: 测试结果
-        href: Best-Practices/Node.js-Connect-to-Redis-Instance.md
+        href: Performance-Test/Test-result.md
   - name: 常见问题
     href: FAQ/FAQ.md     
   - name: 相关资源      
