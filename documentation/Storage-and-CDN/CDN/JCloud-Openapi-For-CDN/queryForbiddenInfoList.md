@@ -1,73 +1,53 @@
-### 描述
-
-查询封禁列表 (queryForbiddenInfoList)
-
-### 请求参数
-
-| **名称**      | **类型** | **是否必填** | **描述**                          |
-| ----------- | ------ | -------- | ------------------------------- |
-| username      | String | 是        | 京东用户名pin                          |
-| signature  | String | 是        | 用户签名    Signature签名：用于认证的签名信息,签名算法: 日期(格式为 yyyymmdd)，username和用户名秘钥相加的字符串的md5值。签名示例：比如当前日期2016-10-23，用户pin: jcloud_00 ,用户秘钥SecretKey ：e7a31b1c5ea0efa9aa2f29c6559f7d61那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61)                    |
-| domain      | String | 否        | 封禁域名 |
-| url      | String | 否        | 封禁url |
-| pageNumber   | int | 否        | 查询分页页码，不传默认为1 |
-| pageSize   | int | 否        | 查询分页条数，不传默认10条 |
-### 返回参数
-
-| **名称**         | **描述**               |
-| -------------- | -------------------- |
-| status      | 结果状态                 |
-| msg | 提示信息                   |
-| data | 返回数据                   |
+# queryForbiddenInfoList
 
 
-### 调用示例
+## 描述
+查询封禁信息
 
-##### 请求示例
+## 请求方式
+POST
+
+## 请求地址
+https://cdn.jdcloud-api.com/v1/forbiddenInfo:query
 
 
-```html
-http://opencdn.jcloud.com/api/queryForbiddenInfoList
+## 请求参数
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**queryDomain**|String|False| |封禁域名,模糊查询|
+|**forbiddenUrl**|String|False| |封禁url,精确查询|
+|**pageNumber**|Integer|True| |页码数|
+|**pageSize**|Integer|True| |每页size|
 
-* json格式
-```json
-{
-    "username" :"test_user",
-    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
-    "domain" :""//非必填项
- }
- ```
 
-##### 返回示例
+## 返回参数
+|名称|类型|描述|
+|---|---|---|
+|**result**|[Result](queryforbiddeninfolist#result)| |
+|**requestId**|String| |
 
-* json格式
+### <div id="Result">Result</div>
+|名称|类型|描述|
+|---|---|---|
+|**total**|Integer|总的数量|
+|**list**|[ForbiddenInfo[]](queryforbiddeninfolist#forbiddeninfo)| |
+### <div id="ForbiddenInfo">ForbiddenInfo</div>
+|名称|类型|描述|
+|---|---|---|
+|**id**|String|封禁类型|
+|**forbiddenType**|long|封禁id|
+|**forbiddenDomain**|String|封禁域名|
+|**forbiddenUrl**|String|封禁url|
+|**reason**|String|封禁原因|
+|**forbiddenPreson**|String|封禁人|
+|**linkOther**|String|y或n|
+|**createTime**|Date|创建时间|
+|**updateTime**|Date|更新时间|
+|**updateBy**|long|修改人id|
+|**token**|String|用于封禁前缀识别的URL，应为单个特殊字符，如：~|
 
-```json
-{
-    "status": 0,
-    "msg": "成功",
-    "data": {
-        "total": 2,
-        "forbiddenList": [
-            {
-                "forbiddenDomain": "www.a.com",
-                "forbiddenInfoId": 84,
-                "forbiddenPreson": "test_user",
-                "forbiddenType": "url",
-                "forbiddenUrl": "/login.html",
-                "reason": "test url forbidden",
-		        "linkOther":"n"
-            },
-            {
-                "forbiddenDomain": "www.b.com",
-                "forbiddenInfoId": 80,
-                "forbiddenPreson": "test_user",
-                "forbiddenType": "domain",
-                "reason": "test domain forbidden",
-		        "linkOther":"n"
-            }
-        ]
-    }
-}
-
-```
+## 返回码
+|返回码|描述|
+|---|---|
+|**200**|OK|
+|**404**|NOT_FOUND|
