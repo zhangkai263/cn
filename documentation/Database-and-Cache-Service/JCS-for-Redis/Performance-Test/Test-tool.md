@@ -6,5 +6,7 @@
 Redis_benchmark 6.0版是Redis Labs近期推出的命令行工具，可用于在键值存储数据库中生成数据负载并进行压力测试。
 
 ## 下载与安装
-点击此处下载（）
-用法请参见Redis-benchmark(https://redis.io/topics/benchmarks)。
+
+ [点击此处下载Redis_benchmark6.0](https://redis-benchmark6-0.s3.cn-east-2.jdcloud-oss.com/redis-benchmark6-0/redis-benchmark6-0/redis-benchmark)
+ 
+用法请参见 [Redis_benchmark](https://redis.io/topics/benchmarks)。
