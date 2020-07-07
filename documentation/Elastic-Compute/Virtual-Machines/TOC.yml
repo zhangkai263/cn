@@ -262,9 +262,7 @@ items:
           - name: 设置报警
             href: Operation-Guide/Monitoring/Set-Alarm.md
        - name: 自动任务策略
-         items:
-          - name: 自动任务策略概述
-            href: Operation-Guide/autoTaskPolicy/autoTaskPolicy-Overview.md         
+         items:       
           - name: 自动镜像策略
             href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md           
             
