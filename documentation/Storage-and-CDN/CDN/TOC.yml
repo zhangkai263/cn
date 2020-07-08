@@ -357,6 +357,8 @@ items:
                  href: JCloud-Openapi-For-CDN/setAuthConfig.md
                - name: setSourceAuthConfig
                  href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
+               - name: setIpBlackList
+                 href: JCloud-Openapi-For-CDN/setIpBlackList.md                 
           - name: 停止删除域名
             items:
                - name: startDomain
