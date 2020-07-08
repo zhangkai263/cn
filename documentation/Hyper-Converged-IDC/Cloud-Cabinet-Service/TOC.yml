@@ -1,4 +1,4 @@
-name: 云托管服务
+name: 云托管
 href: 
 items:
 - name: 产品简介
@@ -41,7 +41,7 @@ items:
   items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-- name: 操作指南
+- name: 控制台操作指南
   items:
       - name: 使用须知
         href: Operation-Guide/Operation-Instruction/Operation-Instruction.md
