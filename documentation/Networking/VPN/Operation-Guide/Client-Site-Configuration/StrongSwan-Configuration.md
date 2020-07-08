@@ -39,7 +39,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 1.Ubuntu安装strongSwan：
 ```
   apt-get install -y strongswan
-  ipsec version
+  ipsec version   #查看已安装的strongswan版本
 ```
 
 2.配置IKE和IPsec策略，编辑/etc/ipsec.conf文件：
@@ -65,7 +65,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
       rightauth=psk
       keyexchange=ikev2
       ikelifetime=4h
-      ike=aes128-sha1-modp1024
+      ike=aes128-sha1-modp1024    #根据配置隧道时指定的加密算法、认证算法、DH组进行组装
       esp=aes128-sha1-modp1024
       lifetime=1h
       keyingtries=%forever
@@ -73,7 +73,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
       dpddelay=10s
       dpdtimeout=30s
       dpdaction=restart
-      mark=%unique
+      mark=100  #每个隧道使用不同的标记值，以确保唯一性
 ```
 
 3.配置预共享密钥，编辑/etc/ipsec.secrets文件：
@@ -83,7 +83,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 4.配置隧道，使用虚拟隧道接口VTI(Virtual Tunnel Interface)：
 ```
-  sudo ip link add jdcloud_tunnel1 type vti local 10.0.0.x remote 116.xxx.xxx.10 key 100
+  sudo ip link add jdcloud_tunnel1 type vti local 10.0.0.x remote 116.xxx.xxx.10 key 100    #其中local推荐使用网关的内网地址
   sudo ip addr add 169.254.1.1/30 remote 169.254.1.2/30 dev jdcloud_tunnel1
   sudo ip link set jdcloud_tunnel1 up mtu 1450
 ```
@@ -96,7 +96,7 @@ VPN隧道配置示例如下(``以一条隧道为例，为保证业务的高可�
 
 6.设置strongSwan使用系统默认的路由表，编辑/etc/strongswan.d/charon.conf文件：
 ```
-  install_routes=no    #默认为yes，此处将注释去掉，并改为no，防止创建新的路由表
+  install_routes=no    #默认为yes，此处将注释去掉，并改为no，目的是防止隧道创建新的路由表，以使不同的隧道使用相同的路由表，即main路由表
 ```
 
 7.开启系统IP转发，编辑/etc/sysctl.conf文件，之后执行“sudo sysctl -p”：
