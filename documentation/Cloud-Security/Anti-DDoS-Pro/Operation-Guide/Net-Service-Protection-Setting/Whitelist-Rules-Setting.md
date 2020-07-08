@@ -1,5 +1,5 @@
 # 黑白名单配置
-非网站类防护规则中如需针对每条四层转发规则配置黑白名单，需引入转发配置中的[IP黑/白名单库](Blacklist-And-Whitelist-Settings.md)。</BR>
+非网站类防护规则中如需针对每条四层转发规则配置黑白名单，需引入转发配置中的[IP黑/白名单库](../../../../../documentation/Cloud-Security/Anti-DDoS-Pro/Operation-Guide/Blacklist-And-Whitelist-Settings.md)。</BR>
 配置前，需要定位到非网站转发规则处，步骤如下：
 - 首先需要登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 - 找到需要配置的实例，单击实例名称，进入 **实例详情** 页面。
