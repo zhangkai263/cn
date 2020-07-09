@@ -3,7 +3,7 @@
 1. 在实例列表页，点击要连接的实例名称，进入实例详情页
 2. 在实例详情页面中，查看实例的域名及端口信息. JCHDB集群有两个端口，TCP端口和HTTP端口，可按需使用
 
-![域名信息](../../../../../image/JCHDB/instance-dns.png)
+![域名信息](../../../../image/JCHDB/connect-instance.png)
 
 3. 登录到与该实例在同一VPC中的云主机，安装下载客户端. JCHDB使用clickhouse的客户端。
 - Ubuntu 或 Debian
