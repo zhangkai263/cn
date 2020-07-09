@@ -30,21 +30,21 @@
 
 4. 计费举例：以调用次数在0~10亿次范围内为例，单价为0.000002元/次，目前，京东云的计费金额保留两位小数，单位到分，例如：一天内调用API次数为2500次，则计费金额为：2500 * 0.000002 =0.005，计费四舍五入为0.01元。
 
-5.计费API参考列表
-•	ChangeMessageVisibility
-•	ChangeMessageVisibilityBatch
-•	CreateQueue
-•	DeleteMessage
-•	DeleteMessageBatch
-•	DeleteQueue
-•	GetQueueAttributes
-•	GetQueueUrl
-•	ListDeadLetterSourceQueues
-•	ListQueues
-•	PurgeQueue
-•	ReceiveMessage
-•	SendMessage
-•	SendMessageBatch
-•	SetQueueAttributes
+5.计费API参考列表     
+•	ChangeMessageVisibility   
+•	ChangeMessageVisibilityBatch   
+•	CreateQueue   
+•	DeleteMessage   
+•	DeleteMessageBatch   
+•	DeleteQueue   
+•	GetQueueAttributes   
+•	GetQueueUrl   
+•	ListDeadLetterSourceQueues   
+•	ListQueues   
+•	PurgeQueue  
+•	ReceiveMessage  
+•	SendMessage  
+•	SendMessageBatch  
+•	SetQueueAttributes  
 
 
