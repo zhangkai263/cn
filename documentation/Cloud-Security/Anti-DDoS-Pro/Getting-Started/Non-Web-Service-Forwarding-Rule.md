@@ -9,12 +9,10 @@
 1. 选中某个已购买的实例。单击“实例名称”或操作栏的“转发配置”，进入转发配置页面。
 ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/non-web%2004.png)
 
-2. 配置转发规则
-在转发配置页面，可根据业务情况，配置转发规则。在这里可配置最多60条转发规则。
+2. 在转发配置页面，可根据业务情况，配置转发规则。在这里可配置最多60条转发规则。
 ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/non-web%2005.png)
 
-3. 点击“添加单条规则”按钮。
-根据如下的弹窗提示，即可配置转发规则。我们支持TCP和UDP协议的配置。
+3. 点击“添加”按钮，根据如下的弹窗提示，即可配置转发规则。我们支持TCP和UDP协议的配置。
 ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/non-web%2006.png)
 
 规则配置字段解释如下：
@@ -27,7 +25,7 @@
 
 - 转发规则：支持轮询、加权轮询、源IP hash。
 
-- 回源方式：支持选择回源IP或回源域名。其中回源IP（云内+云外）支持20个IP地址，回源域名支持1个。源站IP不允许为内网地址。
+- 回源方式：支持选择回源IP或回源域名。其中回源IP（云内+云外）支持20个IP地址，回源域名支持1个。源站IP不允许填写内网地址。
 
 - 源站端口：用户源站业务端口。
 
