@@ -10,7 +10,7 @@
 
 ### API调用费：
 
-队列服务 API调用次数，以百万次为单位，精确到小数点后三位。
+队列服务 API调用次数（包括SDK中所有API的调用），以百万次为单位，精确到小数点后三位。
 
 | 按阶梯计费 | 调用次数/月累计 | 每百万次费用 | 单价 |
 | ---------- | --------------- | ------------ |-----|
@@ -29,3 +29,22 @@
 3. FIFO队列：发送、接收和删除 FIFO 队列中的消息以及更改其可见性的 API 操作按2倍请求次数计费，所有其他 API 请求按标准费率收费。例如，发送顺序消息一次，接收该消息一次，按照 2+2=4次 API 调用计费。
 
 4. 计费举例：以调用次数在0~10亿次范围内为例，单价为0.000002元/次，目前，京东云的计费金额保留两位小数，单位到分，例如：一天内调用API次数为2500次，则计费金额为：2500 * 0.000002 =0.005，计费四舍五入为0.01元。
+
+5.计费API参考列表
+•	ChangeMessageVisibility
+•	ChangeMessageVisibilityBatch
+•	CreateQueue
+•	DeleteMessage
+•	DeleteMessageBatch
+•	DeleteQueue
+•	GetQueueAttributes
+•	GetQueueUrl
+•	ListDeadLetterSourceQueues
+•	ListQueues
+•	PurgeQueue
+•	ReceiveMessage
+•	SendMessage
+•	SendMessageBatch
+•	SetQueueAttributes
+
+
