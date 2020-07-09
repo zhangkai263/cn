@@ -1,12 +1,14 @@
-## 设置Ip黑白名单(setIpBlackList)
+# setIpBlackList
 
-**接口说明**
 
-### 请求地址
+## 描述
+设置Ip黑白名单
 
-```reStructuredText
-POST /v1/domain/{domain}/ipBlackList
-```
+## 请求方式
+POST
+
+## 请求地址
+https://cdn.jdcloud-api.com/v1/domain/{domain}/ipBlackList
 
 ### 请求参数
 
