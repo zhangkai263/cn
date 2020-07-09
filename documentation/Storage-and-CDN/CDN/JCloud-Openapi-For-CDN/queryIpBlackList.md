@@ -12,7 +12,7 @@ GET /v1/domain/{domain}/ipBlackList
 
 | 参数名 | 类型   | 是否必须 | 示例              | 描述     |
 | ------ | ------ | -------- | ----------------- | -------- |
-| domain | String | 是       | <www.example.com> | 域名名称 |
+| domain | String | 是       |  | 域名名称 |
 
 ### 返回参数
 
