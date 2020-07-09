@@ -29,7 +29,7 @@
 
 - 源站端口：用户源站业务端口。
 
-- 备用IP：备用IP不是必填项。配置了备用IP，则常态时，cname将指向该IP。建议备用IP为日常对外展示的IP，回源IP为不对外的IP。配置备用IP能保证源站的隐蔽性和高可用性，可参考下面 **产品设计说明** 中的流程图。
+- 备用IP：备用IP不是必填项。配置了备用IP，则非DDoS攻击时，开启回源模式，高防cname将指向该IP。建议备用IP为日常对外展示的IP，回源IP为不对外的IP。配置备用IP能保证源站的隐蔽性和高可用性，可参考下面 **产品设计说明** 中的流程图。
 
 ![产品设计说明](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-anti-design-cn.png)
 
@@ -37,3 +37,4 @@
 
 - [创建实例](Create-Instance.md)
 - [计费规则](../Pricing/Billing-Rules.md)
+- [常见问题](../FAQ/FAQ.md)
