@@ -12,7 +12,7 @@ POST /v1/domain/{domain}/ipBlackList
 
 | 参数名 | 类型         | 是否必须 | 示例              | 描述              |
 | ------ | ------------ | -------- | ----------------- | ----------------- |
-| domain | String       | 是       | <www.example.com> | 域名名称          |
+| domain | String       | 是       | | 域名名称          |
 | ips    | List\<String> | 否       |                   | IP列表,传空为删除 |
 | ipListType    | String | 否       |   black                | IP列表类型(i.e.黑名单或者白名单)，默认为black,取值范围[black,white]|
 
