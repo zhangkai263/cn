@@ -1,18 +1,20 @@
-## 设置Ip黑白名单(setIpBlackList)
+# setIpBlackList
 
-**接口说明**
 
-### 请求地址
+## 描述
+设置Ip黑白名单
 
-```reStructuredText
-POST /v1/domain/{domain}/ipBlackList
-```
+## 请求方式
+POST
+
+## 请求地址
+https://cdn.jdcloud-api.com/v1/domain/{domain}/ipBlackList
 
 ### 请求参数
 
 | 参数名 | 类型         | 是否必须 | 示例              | 描述              |
 | ------ | ------------ | -------- | ----------------- | ----------------- |
-| domain | String       | 是       | <www.example.com> | 域名名称          |
+| domain | String       | 是       | | 域名名称          |
 | ips    | List\<String> | 否       |                   | IP列表,传空为删除 |
 | ipListType    | String | 否       |   black                | IP列表类型(i.e.黑名单或者白名单)，默认为black,取值范围[black,white]|
 

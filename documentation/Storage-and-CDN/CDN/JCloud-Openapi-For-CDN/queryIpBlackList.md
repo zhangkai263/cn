@@ -1,18 +1,20 @@
-## 查询IP黑白名单(queryIpBlackList)
+# queryIpBlackList
 
-**接口说明**
 
-### 请求地址
+## 描述
+查询IP黑白名单
 
-```re
-GET /v1/domain/{domain}/ipBlackList
-```
+## 请求方式
+GET
+
+## 请求地址
+https://cdn.jdcloud-api.com/v1/domain/{domain}/ipBlackList
 
 ### 请求参数
 
 | 参数名 | 类型   | 是否必须 | 示例              | 描述     |
 | ------ | ------ | -------- | ----------------- | -------- |
-| domain | String | 是       | <www.example.com> | 域名名称 |
+| domain | String | 是       |  | 域名名称 |
 
 ### 返回参数
 
@@ -29,7 +31,6 @@ GET /v1/domain/{domain}/ipBlackList
 | ips    | List\<String> | 黑名单ip列表 |
 | status | String       | 黑名单状态   |
 | whiteIps    | List\<String> | 白名单ip列表 |
-
 
 
 ### 示例
