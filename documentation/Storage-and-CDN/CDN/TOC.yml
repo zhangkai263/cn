@@ -352,13 +352,13 @@ items:
                - name: setExtraCacheTime
                  href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
                - name: deleteExtraCacheTime
-                 href: JCloud-Openapi-For-CDN/deleteExtraCacheTime.md                 
+                 href: JCloud-Openapi-For-CDN/deleteExtraCacheTime.md
                - name: setAuthConfig
                  href: JCloud-Openapi-For-CDN/setAuthConfig.md
                - name: setSourceAuthConfig
                  href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
                - name: setIpBlackList
-                 href: JCloud-Openapi-For-CDN/setIpBlackList.md                 
+                 href: JCloud-Openapi-For-CDN/setIpBlackList.md
           - name: 停止删除域名
             items:
                - name: startDomain
