@@ -1,12 +1,14 @@
-## 查询IP黑白名单(queryIpBlackList)
+# queryIpBlackList
 
-**接口说明**
 
-### 请求地址
+## 描述
+查询IP黑白名单
 
-```re
-GET /v1/domain/{domain}/ipBlackList
-```
+## 请求方式
+GET
+
+## 请求地址
+https://cdn.jdcloud-api.com/v1/domain/{domain}/ipBlackList
 
 ### 请求参数
 
