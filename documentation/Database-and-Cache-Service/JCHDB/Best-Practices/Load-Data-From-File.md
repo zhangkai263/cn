@@ -1,13 +1,12 @@
 # 数据导入
 
-本文档描述如果将数据从文件导入到 JCHDB 实例中。
+本文档描述如何将数据从文件导入到 JCHDB 实例中。
 
 ## 前提条件
 1. 由于JCHDB 实例所在的主机不允许登录，因此需要一台云主机用于存储数据文件。 该云主机需要和JCHDB实例在同一VPC中, 并且开通了公网IP。
-2. 在云主机中安装 官方ClickHouse的客户端
 
 ## 操作步骤
-1. 登录到与该实例在同一VPC中的云主机，安装下载客户端。 
+1. 登录到云主机中，安装下载客户端。 
 - Ubuntu 或 Debian
 ```
 sudo apt-get install apt-transport-https ca-certificates dirmngr
