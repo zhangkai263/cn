@@ -31,7 +31,6 @@ GET /v1/domain/{domain}/ipBlackList
 | whiteIps    | List\<String> | 白名单ip列表 |
 
 
-
 ### 示例
 
 ```json
