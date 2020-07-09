@@ -19,3 +19,9 @@
 ## 网络要求
 - 剩余IP数： 创建实例时，要求子网内的可用IP数目 >= 所有节点数+8，例如 选择了4个分片，2个副本，3个ZK，那么需要的 4*2+3+8=19 个可用IP
 
+## SQL限制
+由于网络的原因，暂不支持下面的SQL
+```SQL
+INSERT INTO table_name SELECT *
+FROM mysql('host:port', 'db', 'tb', 'user', 'password') 
+```
