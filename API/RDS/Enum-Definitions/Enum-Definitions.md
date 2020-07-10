@@ -1,31 +1,28 @@
 # 枚举类型定义
 
-- [engine RDS引擎类型](#engine-rds引擎类型)
-- [engineVersion RDS引擎版本](#engineversion-rds引擎版本)
-- [instanceStatus 实例状态](#instancestatus-实例状态)
-- [dbStatus 数据库状态](#dbstatus-数据库状态)
-- [accountStatus 账号状态](#accountstatus-账号状态)
-- [privilege 数据库访问权限](#privilege-数据库访问权限)
-- [mysql 数据库全局权限信息](#mysql-数据库全局权限信息)
-- [mysql 数据库权限信息](#mysql-数据库权限信息)
-- [mysql 数据库表权限信息](#mysql-数据库表权限信息)
-- [characterSetName 数据库字符集](#charactersetname-数据库字符集)
-- [sqlAuditStatus 数据审计状态](#sqlauditstatus-数据审计状态)
-- [connectionMode 访问模式](#connectionmode-访问模式)
-- [backupStatus 备份状态](#backupstatus-备份状态)
-- [backupType 备份类型](#backuptype-备份类型)
-- [backupMode 备份模式](#backupmode-备份模式)
-- [backupUnit 备份粒度](#backupunit-备份粒度)
-- [instanceClass 实例规格](#instanceclass-实例规格)
-- [parameterGroupStatus 参数组状态](#parametergroupstatus-参数组状态)
-- [parameterStatus 参数状态](#parameterstatus-参数状态)
-- [instanceType 实例类型](#instancetype-实例类型)
-- [instanceStorageType 存储类型](#instancestorageType-存储类型)
-- [Audit 操作类型](#audit-操作类型)
-- [logType 日志文件类型](#logtype-日志文件类型)
-- [loadBalancerPolicy 读写分离代理后端实例负载均衡策略](#loadbalancerpolicy-读写分离代理后端实例负载均衡策略)
-- [backendType 读写分离代理后端实例的配置方式](#backendtype-读写分离代理后端实例的配置方式)
-- [readWriteProxyStatus 读写分离代理状态](#readwriteproxystatus-读写分离代理后端状态)
+- engine RDS引擎类型
+- engineVersion RDS引擎版本
+- instanceStatus 实例状态
+- dbStatus 数据库状态
+- accountStatus 账号状态
+- privilege 数据库访问权限
+- characterSetName 数据库字符集
+- sqlAuditStatus 数据审计状态
+- connectionMode 访问模式
+- backupStatus 备份状态
+- backupType 备份类型
+- backupMode 备份模式
+- backupUnit 备份粒度
+- instanceClass 实例规格
+- parameterGroupStatus 参数组状态
+- parameterStatus 参数状态
+- instanceType 实例类型
+- instanceStorageType 存储类型
+- Audit 操作类型
+- logType 日志文件类型
+- loadBalancerPolicy 读写分离代理后端实例负载均衡策略
+- backendType 读写分离代理后端实例的配置方式
+- readWriteProxyStatus 读写分离代理状态
 
 ## engine RDS引擎类型
 
