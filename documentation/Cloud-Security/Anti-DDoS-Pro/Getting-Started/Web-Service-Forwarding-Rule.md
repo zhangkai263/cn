@@ -41,6 +41,16 @@
 
 ![产品设计说明](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-anti-design-cn.png)
 
+4. 网站转发规则创建成功后，在规则列表中，点击复制CNAME，可在DNS中修改解析将流量切到IP高防上，详情参考[更新DNS解析](Update-DNS-Settings.md)
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2011.png)
+
+5. 网站转发规则配置完成后，防护开关默认开启，可点击切换到回源模式，回源模式下，流量不经过IP高防清洗，直接回源源站IP。
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2012.png)
+
+6. 网站转发规则配置中如勾选HTTPS，在规则列表中，需要点击关联SSL数字证书。点击上传按钮，在证书管理界面可选择已上传的证书。如首次上传证书，点击 **管理证书** 按钮跳转SSL数字证书控制台界面上传证书，详情参考[上传SSL证书](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/SSL-Certificate/Operation-Guide/Upload-SSL-Certificate.md)
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2013.png)
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2014.png)
+
 ## 相关参考
 
 - [创建实例](Create-Instance.md)
