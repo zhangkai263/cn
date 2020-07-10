@@ -1,8 +1,9 @@
 # 日志转储
+## 1.概述
 
-## 一、转储配置
+## 2.操作步骤
 
-### 1.创建转储任务
+### 创建转储任务
 
 创建转储任务需要确认已添加采集配置，否则无法创建转储任务。
 
@@ -30,7 +31,7 @@
 
 ![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer02.jpg)
 
-### 2.停止转储任务
+### 停止转储任务
 
 进入转储历史页面，选择需要停止的转储任务，点击“停止转储”，即可停止转储日志数据。
 
