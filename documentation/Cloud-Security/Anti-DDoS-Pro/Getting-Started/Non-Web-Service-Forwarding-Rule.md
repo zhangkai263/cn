@@ -33,6 +33,9 @@
 
 ![产品设计说明](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/ip-anti-design-cn.png)
 
+4. 非网站转发规则创建成功后，在规则列表中，点击复制CNAME，可在DNS中修改解析将流量切到IP高防上，详情参考[更新DNS解析](Update-DNS-Settings.md)
+![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/non-web%2007.png)
+
 ## 相关参考
 
 - [创建实例](Create-Instance.md)
