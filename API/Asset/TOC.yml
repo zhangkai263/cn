@@ -7,7 +7,7 @@ items:
   href: ChangeLog.md
 - name: 接口信息
   items:
-    - name:  资金账户相关接口
+    - name: 资金账户相关接口
       items:
         - name: describeAccountAmount
           href: Asset-Management-API/describeAccountAmount.md 
