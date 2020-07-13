@@ -21,10 +21,10 @@ https://asset.jcloud.com/v1/regions/{regionId}/assets:describeAccountAmount
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### Result
 |名称|类型|描述|
 |---|---|---|
 |**totalAmount**|String|总金额：可用金额+冻结金额|
