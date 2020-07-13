@@ -8,7 +8,7 @@
 GET
 
 ## 请求地址
-https://asset.jcloud.com/v1/regions/{regionId}/assets:describeAccountAmount
+https://asset.jdcloud-api.com/v1/regions/{regionId}/assets:describeAccountAmount
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
