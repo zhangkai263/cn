@@ -4,4 +4,4 @@
 
 # 产品功能架构
 
-<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/structure.jpg" width = "600" height = "400" alt="功能架构图" align=center />
+![功能架构图](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/structure.jpg)
