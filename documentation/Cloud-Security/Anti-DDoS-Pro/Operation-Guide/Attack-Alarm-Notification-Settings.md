@@ -17,23 +17,23 @@
 
 IP高防支持对单个实例进行DDoS攻击告警、状态码告警、黑洞告警三种类型进行配置。请在实例详情下，如图所示位置点击展开图标，展开告警设置进行配置：
 
-![告警通知](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Advanced%20Anti-DDoS/alarm1.png)
+![告警通知](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/alarm1.png)
 
 告警类型如下：
 
 - DDoS攻击告警通知：即攻击产生的告警、攻击结束的告警、未备案告警、带宽受限告警等信息的推送。
-- 错误码状态告警：即针对已添加的域名，当常见的异常状态码到达设置阈值时触发的告警通知。如500/502/504等。
+- 状态告警：即针对已添加的域名，当常见的异常状态码到达设置阈值时触发的告警通知。如500/502/504等。
 - 黑洞告警通知：即黑洞开始和解封的告警通知。
 
 ##  状态码告警设置
 
 1.开启开关，点击编辑图标，进入状态码告警设置页面。
 
-![告警通知](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Advanced%20Anti-DDoS/alarm2.png)
+![告警通知](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/alarm2.png)
 
 2.选择域名，勾选状态码，设置阈值，点击确定。
 
-![告警通知](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Advanced%20Anti-DDoS/alarm3.png)
+![告警通知](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/alarm3.png)
 
 状态码告警设置字段解释如下：
 

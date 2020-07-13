@@ -10,9 +10,9 @@
 ### 操作步骤
 1. 单击 **防护规则** ，进入非网站类防护规则界面，开启黑/白名单开关。</BR>
  ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-06.png)
-2. 选择IP黑/白名单库中创建的黑白名单规则，点击确定。</BR>
+2. 选择IP黑/白名单库中创建的黑/白名单规则，点击确定。</BR>
  ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-07.png)
-3. 单击编辑图标可修改引用的黑边名单规则。</BR>
+3. 单击编辑图标可修改引用的黑/白名单规则。</BR>
  ![非网站防护规则](../../../../../image/Advanced%20Anti-DDoS/net-service-protection-rule-08.png)
 
  
