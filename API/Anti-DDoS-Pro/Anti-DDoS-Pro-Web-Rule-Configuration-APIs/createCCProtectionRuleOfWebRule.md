@@ -31,6 +31,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**singleIpLimit**|Long|True| |ip 访问次数, 取值范围[2, 2000]|
 |**blockType**|Integer|True| |阻断类型, 1: 封禁, 2: 人机交互|
 |**blockTime**|Long|True| |阻断持续时间, 单位为秒, 取值范围[10, 86400]|
+|**pageId**|String|False| |关联的自定义页面id|
 
 ## 返回参数
 |名称|类型|描述|

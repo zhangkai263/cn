@@ -63,16 +63,13 @@
       items:
         - name: 云硬盘扩容概述
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Cloud-Disk-Expansion-Overview.md
-        - name: 云硬盘升级容量
+        - name: 控制台扩容操作
           href: Getting-Started/Cloud-Disk/Disk-Expand.md
-        - name: 扩容文件系统（Windows）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Windows.md
-        - name: 扩容文件系统（Linux）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Linux.md
-        - name: 扩容裸盘文件系统（Linux）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-Raw-Disk-File-System.md
-        - name: 扩容文件系统（多分区）
+        - name: 扩容文件系统（有分区）
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Multi-Partition.md
+        - name: 扩容文件系统（Linux无分区）
+          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Linux.md
+
     - name: 卸载云硬盘
       href: Getting-Started/Cloud-Disk/Detach-Cloud-Disk.md
     - name: 删除云硬盘

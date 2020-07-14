@@ -15,4 +15,4 @@
 
 http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/fmt/png
 
-![格式转换](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-061.png)
+![格式转换](../../../../../image/Object-Storage-Service/OSS-061.png)

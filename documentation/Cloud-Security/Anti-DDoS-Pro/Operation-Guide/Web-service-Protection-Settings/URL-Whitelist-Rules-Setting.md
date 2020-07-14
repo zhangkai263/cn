@@ -1,19 +1,19 @@
 # 黑白名单配置
-黑白名单允许您设置访问控制规则，对常见的HTTP字段（如IP、URI、Header等）进行条件组合，用来筛选访问请求，并对命中条件的请求设置放行、阻断等匹配动作。</BR>
+黑白名单允许您设置访问控制规则，对常见的HTTP字段（如IP、URI、Headers、Cookie）进行条件组合，用来筛选访问请求，并对命中条件的请求设置放行、阻断等匹配动作。</BR>
 配置前，需要定位到网站转发规则处，步骤如下：
 - 首先需要登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 - 找到需要配置的实例，单击实例名称，进入 **实例详情** 页面。
 - 切换到 **网站转发配置** 
-   ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2002.png)
+   ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2009.png)
 
 
 
 ### 操作步骤
-1. 单击 **防护规则** ，展开防护规则配置。
+1. 单击 **防护规则** ，进入网站类防护规则界面。
  ![网站防护规则](../../../../../image/Advanced%20Anti-DDoS/web-service-rule-01.png)
-2. 单击黑/白名单的 **去设置** 按钮，在如下弹窗中添加编辑黑/白名单
+2. 单击黑/白名单的 **去设置** 按钮，在如下页面中添加编辑黑/白名单。
  ![网站黑白名单](../../../../../image/Advanced%20Anti-DDoS/web-service-rule-02.png)
-3. 单击添加，添加黑/白名单规则，设置规则的匹配条件和相应的匹配动作</BR>
+3. 单击 **添加** ，添加黑/白名单规则，设置规则的匹配条件和相应的匹配动作。</BR>
  ![网站黑白名单](../../../../../image/Advanced%20Anti-DDoS/web-service-rule-03.png)
 4. 编辑完成后开启黑/白名单的状态按钮，则规则生效。</BR>
  ![网站黑白名单](../../../../../image/Advanced%20Anti-DDoS/web-service-rule-04.png)

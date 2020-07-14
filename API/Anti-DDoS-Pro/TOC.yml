@@ -53,6 +53,8 @@
             href: Anti-DDoS-Pro-Instance-APIs/modifyEPB.md
           - name: modifyInstanceName
             href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceName.md
+          - name: describeServiceIpList
+            href: Anti-DDoS-Pro-Instance-APIs/describeServiceIpList.md
       - name: IP高防网站转发配置相关接口
         items:
           - name: bindCert

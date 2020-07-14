@@ -53,7 +53,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSAttac
 |名称|类型|描述|
 |---|---|---|
 |**attackTraffic**|Double|攻击流量大小|
-|**blackHole**|Integer|是否触发黑洞, 0否 1是|
+|**blackHole**|Integer|封禁状态,0:未封禁,1:封禁中,2:封禁结束|
 |**startTime**|String|攻击开始时间|
 |**endTime**|String|攻击结束时间|
 |**unit**|String|流量单位, bps、Kbps、Mbps、Gbps|

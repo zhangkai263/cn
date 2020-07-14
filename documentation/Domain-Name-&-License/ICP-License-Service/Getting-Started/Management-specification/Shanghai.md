@@ -20,7 +20,7 @@
 
    ⑤法人授权书（**如果网站负责人不是法人时提供**[上海授权书.docx](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/beianrumen/guanjuguize/shanghai/shanghaishouquanshu.docx)）
   
-   ⑥上海市互联网信息服务备案承诺书（[上海市互联网信息服务备案承诺书（2020版）.docx](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/wendangxiazhai/shanghaifuwuchengnuoshu/fuwuchengnuoshu.docx)）
+   ⑥上海市互联网信息服务备案承诺书（[上海市互联网信息服务备案承诺书（2020版）.docx](https://beianwendang.s3.cn-north-1.jdcloud-oss.com/wendangxiazhai/shanghaifuwuchengnuoshu/fuwuchengnuo.docx)）
 
 **上海个人备案规则**
 
