@@ -68,24 +68,28 @@
   <tr>
 	    <td>Kubernetes集群</td>
 	    <td>系统日志</td>
-	</tr>
+  </tr>
   <tr>
 	    <td>云缓存redis</td>
 	    <td>慢日志</td>
-	</tr>
+  </tr>
   <tr >
 	    <td rowspan="3">MySQL</td>
 	    <td>审计日志</td>
-	</tr>
+  </tr>
   <tr>
 	    <td>错误日志</td>
-	</tr>
+  </tr>
   <tr>
 	    <td>慢查询日志</td>
-	</tr>
+  </tr>
   <tr>
 	    <td>JDW数据仓库</td>
 	    <td>审计日志</td>
-	</tr>
+  </tr>
+  <tr>
+	    <td>自动任务策略</td>
+	    <td>自动镜像执行日志</td>
+  </tr>
 </table>
 
