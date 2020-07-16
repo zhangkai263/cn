@@ -8,12 +8,12 @@ SQL 审计不会解析实际的参数值，并且在 SQL 查询量较大的时�
 
 
 ## 操作步骤
-1. 登录[云数据库 RDS 管理控制台](https://rds-console.jdcloud.com/database)。  
+1. 登录[JDW 控制台](https://jdw-console.jdcloud.com/list)。  
 2. 选择需要查询 SQL 审计的目标实例，点击目标实例， 进入实例详情页，切换至 ***SQL 审计*** Tab 页，SQL 审计查询功能说明如下。  
     * 审计开始时间：可以选择从当前时间往前推 7 天的时间区间，作为 SQL 审计开始查询的时间。
     * 数据库：可以查看指定数据库的 SQL 语句。
     * 账号：可以查看指定账号的 SQL 语句。
 
-    ![截图](../../../../image/RDS/JDW SQL审计.png)
+    ![9](../../../image/RDS/JDW SQL审计.png)
 
 3. 点击 ***查询*** 按钮，查看符合要求的 SQL 列表。
