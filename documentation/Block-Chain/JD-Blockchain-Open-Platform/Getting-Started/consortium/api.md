@@ -394,10 +394,10 @@ multipart/form-data
 
 ```json
 curl -i -X POST \
->    -H "Content-Type:multipart/form-data" \
->    -H "Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA2NTUzNDYsImlkIjoiMTIzIiwib3JpZ19pYXQiOjE1OTA2NTE3NDZ9.sliHlgQkKMywB1VYxM_G1nwG0ZxzDJLGrc8iKgLw8w0" \
->    -F "file=@\"./file.txt\";type=application/gzip;filename=\"file.txt\"" \
->  'http://bc-6oebaqruiz-peerft-0-FI.jvessel-public-stag2.jdcloud.com/external/v1/files/upload'
+    -H "Content-Type:multipart/form-data" \
+    -H "Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA2NTUzNDYsImlkIjoiMTIzIiwib3JpZ19pYXQiOjE1OTA2NTE3NDZ9.sliHlgQkKMywB1VYxM_G1nwG0ZxzDJLGrc8iKgLw8w0" \
+    -F "file=@\"./file.txt\";type=application/gzip;filename=\"file.txt\"" \
+   'http://bc-6oebaqruiz-peerft-0-FI.jvessel-public-stag2.jdcloud.com/external/v1/files/upload'
 ```
 
 ### 相应示例
