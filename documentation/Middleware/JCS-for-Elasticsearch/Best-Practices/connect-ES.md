@@ -6,7 +6,7 @@
 2. 通过Linux环境下的curl命令访问云搜索Elasticsearch实例的9200端口。指定账号密码访问示例格式为curl –XGET [实例内网访问域名]/_cat，内网访问域名为ES实例基本信息界面的 **内网访问域名** ，指令示例如下：
 
 ```
-curl -XGET es-nlb-es-kgqo8zmgcv.jvessel-open-hb.jdcloud.com:9200/_cat
+curl -XGET es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/_cat
 ```
 响应如下代表访问成功：
 ```
