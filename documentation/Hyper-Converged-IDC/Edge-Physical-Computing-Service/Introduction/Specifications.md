@@ -14,7 +14,11 @@
 	        <td >9900</td>
 	    
     </tr>
-	
+	    <tr>   
+		<td >EPCS-C119</td>
+		<td >E5-2683 V4*2/32G*24/960GB*2（SSD）+ 960 G*14（SATA）</td>
+	        <td >9900</td>
+	    
     
 </table>
 
