@@ -10,11 +10,11 @@
     </tr>
     <tr>   
 		<td >EPCS-C119</td>
-		<td >E5-2683 V4*2/32G*24/960GB*2（SSD）+ 960 G*14（SATA）</td>
+		<td >E5-2683V4 *2/32G* 8/ 240GB SSD * 1 + 960GB SSD *16</td>
 	        <td >9900</td>
      </tr>    
 		<td >EPCS-E13U</td>
-		<td >E5-2620 v4 * 2/32 GB*4/960 GB*4(SSD)</td>
+		<td >E5-2620 v4 * 2/32 GB*4/960 GB SSD *4</td>
 	        <td >4900</td>
      </tr>    
 		<td >EPCS-TS3040</td>
@@ -26,7 +26,7 @@
 	        <td >9900</td>   
      </tr>    
 		<td >EPCS-GPU-A12</td>
-		<td >E5-2683 V4*2/32 GB*8/2*300GB（SAS）+ 6*960GB（SSD）/4*NVIDIA P40</td>
+		<td >E5-2683 V4*2/32 GB*8/300GB  SAS HDD*2 + 960GB SSD * 6 /4*NVIDIA P40</td>
 	        <td >23000</td>   
 </table>
 
