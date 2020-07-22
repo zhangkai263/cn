@@ -4,7 +4,7 @@
 
 <table>
     <tr>
-        <td colspan="2"><B>套餐规格类型</B></td> 
+        <td colspan="1"><B>套餐规格类型</B></td> 
         <td ><B>产品规格</B></td> 	
         <td ><B>包月价格（元）</B></td> 
     </tr>
@@ -14,10 +14,7 @@
 	        <td >9900</td>
 	    
     </tr>
-	<tr>   
-		<td >标准存储型(x86)</td>
-		<td >Inter Silver-4116 * 2+32G*8+300GB*2(HDD)+10TB * 12(HDD)</td>
-     </tr>
+	
     
 </table>
 
