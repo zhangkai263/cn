@@ -9,9 +9,10 @@
         <td ><B>包月价格（元）</B></td> 
     </tr>
     <tr>   
-        <td rowspan="2">标准套餐</td>
-		<td >标准计算型(x86)</td>
-		<td >Inter Gold-6148 * 2 +32GB*12+240GB(SSD)+2TB(SSD)</td>
+		<td >EPCS-C119</td>
+		<td >E5-2683 V4*2/32G*24/960GB*2（SSD）+ 960 G*14（SATA）</td>
+	        <td >9900</td>
+	    
     </tr>
 	<tr>   
 		<td >标准存储型(x86)</td>
