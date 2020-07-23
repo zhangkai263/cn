@@ -74,7 +74,7 @@ items:
           - name: 报警历史
             href: Operation-Guide/Alarm-Management/View-Alarm-History.md
       - name: 消费管理
-         items:
+        items:
           - name: 资源账单
             href: Operation-Guide/Consumption-Management/Resource-Bill.md  
 - name: 最佳实践
