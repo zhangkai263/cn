@@ -13,12 +13,7 @@
 3. 输入或粘贴正则表达式。
 4. 点击“提取字段”，将会按照刚才输入的正则表达式对日志样例中的日志进行键值提取。提取结果展示在下方的日志提取字段列表中。如果提取失败，则需要检查输入的日志样例是否正确或填写的正则表达式是否正确。
 
-<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/Onelinefulltextregular.jpg" width=60% height=60% align="middle" />
-
-作者：Fsn_soul
-链接：https://www.jianshu.com/p/5c1805c6f0ff
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/Onelinefulltextregular.jpg" width=60% height=60% />
 
 ## 注意事项
 1. 单行正则的日志样例大小不能超过1K
