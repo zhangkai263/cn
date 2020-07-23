@@ -34,7 +34,7 @@ items:
 - name: 常见问题
   items:
     - name: FAQ
-      href: FAQ/FAQ.md   
+      href: FAQ/FAQ.md
 - name: SDK参考
   items:
     - name: AccessKey
