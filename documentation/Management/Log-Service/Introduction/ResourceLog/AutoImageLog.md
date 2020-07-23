@@ -12,3 +12,4 @@
 | 4 | startTime | 开始执行时间 | string |
 | 5 | execVmNum | 执行虚机数量 | int |
 | 6 | taskState | 任务状态 | string |
+| 7 | endTime | 执行结束时间 | string |
