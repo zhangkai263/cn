@@ -10,3 +10,5 @@
 
 ### 操作步骤
 默认选择单行文本日志，无需配置，点击“下一步”即可完成。
+
+<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/singleline.jpg" width=60% height=60% />
