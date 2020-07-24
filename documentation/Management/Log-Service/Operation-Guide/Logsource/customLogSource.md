@@ -18,11 +18,16 @@
 7. 【采集实例】根据用户自身需求选择实例，或者对应的高可用组和标签。
 8. 如果用户的业务应用日志是多行日志，则需要设置首行正则匹配的规则；如果不是怎么无需设置。默认不是多行日志。
 
+
+<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/multi-line.jpg" width=80% height=80% />
+
 ### 业务应用高级配置
 1. 【高级配置】默认关闭。打开高级配置后，可将日志直接从agent端投递至指定ES或Kafka中。
 2. 若用户只有投递至ES或Kafka的需求，可以关闭【投递至日志主题中】，就不会在日志服务中存储对应的日志数据。也无法使用日志监控等功能。
 3. 若业务应用日志的目的地是Kafka，则需要设定brokers，topic，以及是否压缩投递。压缩投递支持snappy和gzip格式。云Kafka会自动获取brokers。
 4. 若业务应用日志的目的地是ES，则需要设定ES访问域名和索引前缀。云ES会自动获取访问域名。
+
+<img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/advanceconfig.jpg" width=80% height=80% />
 
 ## 3.注意事项
 - 当前版本仅支持采集Linux云主机的日志。
