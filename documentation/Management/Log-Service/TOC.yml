@@ -71,7 +71,6 @@ items:
           href: Operation-Guide/Logpreprocessing/Jsonlog.md
         - name: 分隔符提取模式
           href: Operation-Guide/Logpreprocessing/Separatorlog.md
-
     - name: 日志检索
       items:
         - name: 日志检索语法
