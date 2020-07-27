@@ -12,7 +12,7 @@
 
 4. 可以看到，如果设备类型是连接代理设备，编辑页面会有拓扑关系按钮，点击拓扑关系按钮，进入编辑拓扑关系页面。
 
-![编辑拓扑关系](../../../../image/IoT/IoT-Core/Best-Practices/Device-Gateway-Topo/Topo-Relation-Button.png)
+![编辑拓扑关系](../../../../image/IoT/IoT-Core/Best-Practices/Device-Gateway-Topo/Edit-Gateway-Topo.png)
 
 ### 添加代理关系
 

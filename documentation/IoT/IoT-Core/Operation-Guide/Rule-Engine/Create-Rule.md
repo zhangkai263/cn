@@ -39,8 +39,11 @@
 
 ![新建规则](../../../../../image/IoT/IoT-Core/Rule-Engine/User-Setting.png)
 
-扩展列：增加扩展属性到转发数据中，比如：设备ID，设备名称，产品ID等。
+扩展列：增加扩展属性到转发数据中，现支持设备ID，物类型code,设备名称，设备物理id四种属性的扩展。
+
+![扩展字段](../../../../../image/IoT/IoT-Core/Rule-Engine/extend-column.png)
 截取列：针对字符型列，可以指定截取该列的某些字符，比如：‘device.profile.name, 0, 4’,代表要截取device.profile.name列，从0开始，截取长度为4，如果不输入长度，默认截取到末尾。
+
 合并列：连接组合列（支持多列），支持字符与数值型多组合形式连接组合，比如：连接字符列(person.name:xiaoli)与数值列(person.age:23)，请输入'person.name, person.age'，最终输出结果为：'xiaoli23'
 
 
