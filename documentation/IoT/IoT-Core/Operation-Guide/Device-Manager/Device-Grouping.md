@@ -6,7 +6,7 @@
 
 1. 登录物联管理平台
 2. 选择左侧导航栏中 **设备管理中心** -> **设备分组**
-3. 点击**添加分组**
+3. 默认显示 **新建分组页面** ，也可点击 **添加分组** 进入该页面
 
 ![新建分组](../../../../../image/IoT/IoT-Core/Device-Manager/Device-Grouping/Create-Device-Group.png)
 
