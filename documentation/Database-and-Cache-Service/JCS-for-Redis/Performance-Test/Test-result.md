@@ -11,6 +11,6 @@
 16G集群版| redis.c1.small.basic|  8|28~52w
 32G集群版| redis.c1.small.basic|  8|28~54w
 64G集群版|  redis.c1.large.basic | 8|28~54w
-128G集群版|  redis.c1.xlarge.basic | 16|32~78w
-512G集群版|  redis.c1.4xlarge.basic   |32|28~82w
+128G集群版|  redis.c1.xlarge.basic | 16|32~99w
+512G集群版|  redis.c1.4xlarge.basic   |32|37~176w
 
