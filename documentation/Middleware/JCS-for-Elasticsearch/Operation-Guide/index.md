@@ -6,7 +6,9 @@
 
 ### 创建索引任务
 在列表页面，点击“操作-更多-周期创建索引”可进入周期创建索引页面，点击“添加”可进入索引任务创建页面。
-- 索引模板：可通过命令行工具或kibana-Dev Tools创建。其中，命令行工具创建的示例模板如下：</br>
+- 索引模板：可通过命令行工具或kibana-Dev Tools创建。</br>
+
+命令行工具创建的示例索引模板：</br>
 ```
 curl -XPUT localhost:9200/_template/template05 \
 -H"Content-Type:application/json" \
@@ -33,6 +35,29 @@ curl -XPUT localhost:9200/_template/template05 \
   }
 }'
 ```
+Kibana - Dev Tools创建的示例索引模板：</br>
+
+```
+PUT /_template/my_logs 
+{
+  "index_patterns": ["template05*"],    //适用于6.X以上版本，6.X以下版本此处应替换为 "template": "template05*",  
+  "order": 1, 
+  "settings": {
+    "number_of_shards": 1 
+  },
+  "mappings": {
+    "_default_": { 
+      "_all": {
+        "enabled": false
+      }
+    }
+  },
+  "aliases": {
+    "last_3_months": {} 
+  }
+}
+```
+
 
 - 索引前缀：对应模版匹配索引的结果，即与index_patterns字段的值保持一致。示例中，对应索引前缀为template05。</br>
 - 开始执行时间：每次执行周期创建索引任务的时间。</br>
