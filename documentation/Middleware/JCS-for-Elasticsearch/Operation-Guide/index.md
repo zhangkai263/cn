@@ -11,7 +11,7 @@
 curl -XPUT localhost:9200/_template/template05 \
 -H"Content-Type:application/json" \
 -d '{
-  "index_patterns": ["template05*"],
+  "index_patterns": ["template05*"],    //适用于6.X以上版本，6.X以下版本此处应替换为 "template": "xie-", 
   "settings": {
     "number_of_shards": 2
   },
@@ -35,7 +35,7 @@ curl -XPUT localhost:9200/_template/template05 \
 ```
 
 - 索引前缀：对应模版匹配索引的结果，即与index_patterns字段的值保持一致。示例中，对应索引前缀为template05。</br>
-- 开始执行时间：首次执行周期创建索引任务的时间。</br>
+- 开始执行时间：每次执行周期创建索引任务的时间。</br>
 - 执行周期：支持按天、按月2种。</br>
 - 索引后缀：时间格式的定义。示例："2018-10-10"对应"yyyy-MM-dd"。</br>
 - 定期删除索引：开关打开时可设置索引保存的时间，超过该保存时间的索引自动删除。</br>
