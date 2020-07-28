@@ -347,4 +347,5 @@ IOS版本京东智联云APP涉及嵌入第三方SDK的情形如下：
 
 6. **注销本京东智联云账户并不代表本京东智联云账户注销前的账户行为和相关责任得到豁免或减轻。**
 
+
 [京东智联云隐私政策-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/Privacy-Policy-zx.pdf)
