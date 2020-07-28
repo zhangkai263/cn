@@ -14,7 +14,7 @@ https://vod.jdcloud-api.com/v1/imageUploadTask
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**httpMethod**|String|False| |HTTP 请求方法，取值范围：GET、POST、PUT、DELETE、HEAD、PATCH，默认值为 PUT|
+|**httpMethod**|String|False| |HTTP 请求方法，上传支持 PUT 和 POST 方法，默认值为 PUT ，推荐使用 PUT 方法。当通过该接口获取到上传地址和凭证之后，后续的上传动作，必须使用和该值一致的方法进行文件上传。|
 |**fileName**|String|True| |文件名称|
 |**fileSize**|Long|False| |文件大小|
 
