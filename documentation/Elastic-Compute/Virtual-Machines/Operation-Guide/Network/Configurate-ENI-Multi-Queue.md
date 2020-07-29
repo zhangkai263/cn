@@ -94,7 +94,7 @@ bash install.sh <image-type> <version-num>
    系统类型和主版本号填写参考如下，如当前镜像为CentOS 6.9，则安装指令为`bash install.sh centos 6`。
 
        * image-type: centos|ubuntu 
-       * centos vserion-num: 6|7|8
+       * centos version-num: 6|7|8
        * ubuntu version-num: 14|16|18
 
   安装信息中出现`Starting multi-queue-jd: OK`即表明网卡多队列配置成功，完成配置后可将安装脚本删除。
