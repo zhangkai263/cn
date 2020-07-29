@@ -31,7 +31,7 @@ DRDS 支持 按数值、字符串以及日期时间进行拆分。
 
 例如对于表timetb,在所有的新增分库上扩展分表，SQL为
 ```SQL
-alter table timetb add partitions on all dbpartition;
+alter table timetb add partitions on all dbpartitions;
 ```
 
 具体的SQL语法及说明可参考文档[DRDS DDL SQL 语法](../../SQL-Doc/DRDS-DDL.md) （“扩展拆分表”部分）
