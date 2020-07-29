@@ -2,7 +2,7 @@
 
 ## 价格总览
 
-云主机和原生容器/POD支持购买的规格族详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
+云主机和容器/POD支持购买的规格族详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
 
 无资源预留型实例抵扣券价格（暂不支持华东-宿迁地域购买）：
 
@@ -119,4 +119,4 @@
 
 [云主机价格总览](https://docs.jdcloud.com/virtual-machines/price-overview)
 
-[原生容器/POD规格及价格](https://docs.jdcloud.com/native-container/price-overview)<br>
+[容器/POD规格及价格](https://docs.jdcloud.com/native-container/price-overview)<br>
