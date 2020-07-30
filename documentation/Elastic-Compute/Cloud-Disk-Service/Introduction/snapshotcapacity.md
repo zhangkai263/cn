@@ -6,7 +6,7 @@
 
 云硬盘快照用于对云硬盘上的数据进行备份，以便恢复云硬盘上的数据或者批量复制云硬盘。云硬盘快照上的数据记录了开始制作云硬盘的时刻云硬盘上的所有数据，如下图所示：
 
-![createsnapshot](C:\Users\wangguanyang\Desktop\快照原理文档\createsnapshot.png)
+![createsnapshot](../../../image/Elastic-Compute/CloudDisk/cloud-disk/createsnapshot.png)
 
 
 
