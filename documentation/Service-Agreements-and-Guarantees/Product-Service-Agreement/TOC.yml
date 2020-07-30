@@ -21,7 +21,7 @@ items:
   - name: 对象存储服务协议
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
-    href: Object-Storage-Service-Level-Agreement-SLA.md 
+    href: Object-Storage-Service-Level-Agreement-SLA.md
   - name: 云缓存Redis服务协议
     href: Caching-Redis-Service-Clause.md
   - name: 云缓存Redis服务等级协议（SLA）
@@ -51,7 +51,7 @@ items:
   - name: 云数据库InfluxDB服务等级协议（SLA）
     href: JCS-For-InfluxDB-Level-Agreement-SLA.md
   - name: 云数据库Greenplum服务条款
-    href: JCS-For-Greenplum-Terms-Of-Service.md  
+    href: JCS-For-Greenplum-Terms-Of-Service.md
   - name: 云数据库Greenplum服务等级协议（SLA）
     href: JCS-For-Greenplum-Level-Agreement-SLA.md
   - name: 云主机安全服务协议
@@ -61,7 +61,7 @@ items:
   - name: 弹性公网IP服务协议
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
-    href: Elastic-IP-Level-Agreement-SLA.md   
+    href: Elastic-IP-Level-Agreement-SLA.md
   - name: IP高防服务协议
     href: IP-High-Protection-Clause.md
   - name: IP高防服务等级协议（SLA）
@@ -85,7 +85,7 @@ items:
   - name: API网关服务等级协议（SLA）
     href: Api-Gateway-Level-Agreements-SLA.md
   - name: API中心服务条款
-    href: API-Center-Service-Terms-Of-Service.md   
+    href: API-Center-Service-Terms-Of-Service.md
   - name: 云物理服务器服务协议
     href: Cloud-Physics-Server-Service-Clause.md
   - name: 云物理服务器服务等级协议（SLA）
@@ -93,9 +93,9 @@ items:
   - name: 物理云公网IP服务协议
     href: Elastic-IP-For-Physical-Cloud-Terms-Of-Service.md
   - name: 物理云负载均衡服务条款
-    href: Physical-Cloud-Load-Balancer-Service-Clause.md 
+    href: Physical-Cloud-Load-Balancer-Service-Clause.md
   - name: 物理云负载均衡服务等级协议（SLA）
-    href: Physical-Cloud-Load-Balancer-Level-Agreement-SLA.md    
+    href: Physical-Cloud-Load-Balancer-Level-Agreement-SLA.md
   - name: 分布式云物理服务器服务条款
     href: Distributed-Cloud-Physical-Server-Service-Clause.md
   - name: 分布式云物理服务器服务等级协议（SLA）
@@ -105,9 +105,9 @@ items:
   - name: 边缘网络隧道(ENT)服务协议
     href: Edge-Network-Tunnel-Terms-Of-Service.md
   - name: 对等边缘服务(JEES)服务条款
-    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
+    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md
   - name: 通知服务(JNS)服务条款
-    href: JD-Cloud-Notification-Service-Terms-Of-Service.md      
+    href: JD-Cloud-Callback-Service-Terms-Of-Service.md
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -127,39 +127,39 @@ items:
   - name: 云搜索Elasticsearch服务条款
     href: JCS-for-Elasticsearch-Service-Terms.md
   - name: 云搜索Elasticsearch服务等级协议（SLA）
-    href: JCS-for-Elasticsearch-Service-Terms-SLA.md  
+    href: JCS-for-Elasticsearch-Service-Terms-SLA.md
   - name: 函数服务服务条款
     href: Functional-Service-Terms-of-Service.md
   - name: 云桌面服务条款
-    href: Cloud-Desktop-Service-Protocol.md   
+    href: Cloud-Desktop-Service-Protocol.md
   - name: 云桌面服务等级协议（SLA）
     href: Cloud-Desktop-Service-Protocol-SLA.md
-  - name: 视频点播服务协议 
+  - name: 视频点播服务协议
     href: Video-on-demand-service-protocol.md
   - name: 队列服务服务条款
-    href: Queue-Service-Terms-Of-Service.md   
+    href: Queue-Service-Terms-Of-Service.md
   - name: 队列服务等级协议（SLA）
     href: Queue-Service-Terms-Of-Service-SLA.md
   - name: 智臻链BaaS平台服务条款
     href: JD-Blockchain-Open-Platform.md
   - name: 物联网协议适配服务条款
-    href: IoT-Protocol-Adaptor-Terms-Of-Service.md   
+    href: IoT-Protocol-Adaptor-Terms-Of-Service.md
   - name: 物联网协议适配服务等级协议(SLA)
     href: IoT-Protocol-Adaptor-Level-Agreements-SLA.md
   - name: 物联网引擎服务条款
-    href: IoT-Core-Terms-Of-Service.md 
-  - name: 物联网引擎服务等级协议(SLA)  
+    href: IoT-Core-Terms-Of-Service.md
+  - name: 物联网引擎服务等级协议(SLA)
     href: IoT-Core-Level-Agreements-SLA.md
   - name: 物联网中心服务条款
     href: IoT-Hub-Terms-Of-Service.md
-  - name: 物联网中心服务等级协议(SLA)  
+  - name: 物联网中心服务等级协议(SLA)
     href: IoT-Hub-Level-Agreements-SLA.md
   - name: 物联网卡服务服务条款
     href: IoT-Link-Service-Terms-Of-Service.md
   - name: 物联网卡服务等级协议（SLA）
     href: IoT-Link-Service-Level-Agreements-SLA.md
   - name: 物联网智能边缘计算服务条款
-    href: IoT-Edge-Terms-Of-Service.md    
+    href: IoT-Edge-Terms-Of-Service.md
   - name: 云文件服务协议
     href: Cloud-File-Service-terms-of-service.md
   - name: 云文件服务等级服务协议（SLA）
@@ -179,7 +179,7 @@ items:
   - name: 数据加密服务等级协议（SLA）
     href: JDCloudHSM-Level-Agreements-SLA.md
   - name: 数据传输(DTS)服务协议
-    href: Data-Transmission-Service-Terms-Of-Service.md 
+    href: Data-Transmission-Service-Terms-Of-Service.md
   - name: 智能设计产品服务协议
     href: Intelligent-Design-Terms-Of-Service.md
   - name: 京东云提货券服务协议
@@ -199,10 +199,10 @@ items:
   - name: 京东云微服务平台（JDSF）服务条款
     href: JDCloud-Distributed-Service-Framework-Terms-Of-Service.md
   - name: 京东云微服务平台（JDSF）服务等级协议（SLA）
-    href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md  
+    href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md
   - name: 云服务网格服务条款
     href: Mesh-Service-Terms-Of-Service.md
   - name: 智能边缘安全服务条款
-    href: Intelligent-Edge-Security-Terms-Of-Service.md   
+    href: Intelligent-Edge-Security-Terms-Of-Service.md
   - name: 堡垒机服务服务条款
-    href: Bastion-Terms-Of-Service.md  
+    href: Bastion-Terms-Of-Service.md
