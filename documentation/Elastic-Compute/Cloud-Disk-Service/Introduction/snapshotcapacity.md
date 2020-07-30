@@ -22,7 +22,7 @@
 
 因此，在t3时刻，云硬盘数据量为 11 GiB，当前快照数据量为13 GiB。
 
-![increment](C:\Users\wangguanyang\Desktop\快照原理文档\increment.png)
+![increment](../../../../image/Elastic-Compute/CloudDisk/cloud-disk/increment.png)
 
 
 
@@ -36,4 +36,4 @@
 
 所以删除快照1后，快照数据量由13 GiB变为了11 GiB。
 
-![deletesnapshot](C:\Users\wangguanyang\Desktop\快照原理文档\deletesnapshot.png)
+![deletesnapshot](../../../../image/Elastic-Compute/CloudDisk/cloud-disk/deletesnapshot.png)
