@@ -360,7 +360,9 @@ items:
                - name: setIpBlackList
                  href: JCloud-Openapi-For-CDN/setIpBlackList.md
                - name: configBackSourceRule
-                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md                 
+                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md
+               - name: queryBackSourceRule
+                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md                 
           - name: 停止删除域名
             items:
                - name: startDomain
