@@ -375,6 +375,8 @@ items:
                  href: JCloud-Openapi-For-CDN/configHttp2.md
                - name: configBackSourcePath
                  href: JCloud-Openapi-For-CDN/configBackSourcePath.md
+               - name: deleteForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/deleteForbiddenInfo.md
           - name: 停止删除域名
             items:
                - name: startDomain
