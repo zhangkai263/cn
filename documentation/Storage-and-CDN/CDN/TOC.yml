@@ -293,6 +293,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
                - name: queryUrlRule
                  href: JCloud-Openapi-For-CDN/queryUrlRule.md
+               - name: queryHttp2
+                 href: JCloud-Openapi-For-CDN/queryHttp2.md
           - name: 域名配置修改
             items:
                - name: createDomainGroup
