@@ -289,6 +289,8 @@ items:
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
                  href: SSL-Certificate/getSslCertList.md
+               - name: queryBackSourceRule
+                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
           - name: 域名配置修改
             items:
                - name: createDomainGroup
@@ -361,8 +363,8 @@ items:
                  href: JCloud-Openapi-For-CDN/setIpBlackList.md
                - name: configBackSourceRule
                  href: JCloud-Openapi-For-CDN/configBackSourceRule.md
-               - name: queryBackSourceRule
-                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md                 
+               - name: configUrlRule
+                 href: JCloud-Openapi-For-CDN/configUrlRule.md
           - name: 停止删除域名
             items:
                - name: startDomain
