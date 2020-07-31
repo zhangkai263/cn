@@ -45,6 +45,14 @@
 		<td align="center">NO RAID/RAID0/RAID1/RAID10</td>
     </tr>
     <tr>   
+        <td align="center"><B>计算效能型Ⅱ(二代)<br/>（cps.c2.perf2）<B></td>
+		    <td align="center">2*Gold-6267<br/>（24核 2.6GHz）</td>
+		    <td align="center">384G（12*32G）DDR4</td>
+		    <td >2*240GB（SSD）+16*960GB（SSD）</td>
+		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
+		<td align="center">NO RAID/RAID0/RAID1/RAID10</td>
+    </tr>
+    <tr>   
         <td align="center"><B>计算效能型Ⅱ内存型<br/>（cps.c.perf2.memory）<B></td>
 		    <td align="center">2*2683V4<br/>（16核 2.1G）</td>
 		    <td align="center">768G（24*32G）DDR4</td>

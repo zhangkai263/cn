@@ -55,7 +55,6 @@ Etag|Etag可以标识新创建的Object数据。不同Object有不同的Etag。<
 
 Error Code|描述|HTTP Status Code
 ---|---|---
-EntityTooSmall|每个分片至少5MB，最后一个分片没有大小限制。|400 Bad Request
 InvalidPart|一个或多个指定的分片不存在。分片可能没有上传或者指定的Etag与分片的Etag不匹配。|400 Bad Request
 InvalidPartOrder|分片列表没有按照升序排列。|400 Bad Request
 NoSuchUpload|指定的分片上传不存在，Upload ID是无效的。|404 Not Found

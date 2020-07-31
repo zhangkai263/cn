@@ -14,7 +14,7 @@
 
 ## 操作步骤
 ###  第1步: 开通API网关服务
-目前产品处于公测期间，请公测：在API网关产品页点击申请公测，之后经过运营人员审批加入公测名单，用户会收到已开通的通知（邮件或短信），之后可进入控制台开始使用，服务在菜单互联网中间件下，API网关。
+在官网的API网关产品页点击“立即使用”，会弹出提示开通的弹窗。请您点击“确认开通”，之后即可使用API网关服务。
 
 
 ###  第2步: 创建API分组，创建分组下的API
@@ -69,5 +69,7 @@ API 分组创建完成您就可以创建 API 了，创建 API 是定义 API 请�
 ###  第6步: API调用者下载和使用SDK包
 
 - 快速上手
-	- [快速发布和调用一个API应用](../Getting-Started/example_console.md)
+	- [使用签名密钥的方式构建API](../Getting-Started/example_SignatureKey.md)
+	- [使用Function函数构建API](../Getting-Started/example_function.md)
+	- [使用订阅密钥的方式构建API](../Getting-Started/example_subscriptionKey.md)
 

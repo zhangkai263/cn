@@ -1,6 +1,6 @@
-  name: 物联网引擎
-  href: 
-  items:
+name: 物联网引擎
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -14,7 +14,7 @@
       - name: 产品功能
         href: Introduction/Features.md
       - name: 限制说明
-        href: Introduction/Restrictions.md   
+        href: Introduction/Restrictions.md 
   - name: 产品定价
     items:
       - name: 计费概述
@@ -27,52 +27,51 @@
         href: Pricing/Purchase-Process.md 
   - name: 入门指南
     items:
-      - name: 创建产品与设备
-        href: Getting-Started/Create-Product-and-Device.md
-      - name: 定义物模型
-        href: Getting-Started/Product_Model.md
+      - name: 入门指南概述
+        href: Getting-Started/Getting-Started.md
+      - name: 创建实例
+        href: Getting-Started/Create-Instance.md
+      - name: 登录物联平台
+        href: Getting-Started/Login-IoT-Platform.md
   - name: 操作指南
     items:
-      - name: 创建产品
-        href: Operation-Guide/Create-Product.md
-      - name: 添加单个设备
-        href: Operation-Guide/Create-Device/Create-Single-Device.md
-      - name: 批量添加设备
-        href: Operation-Guide/Create-Device/Create-Batch-Devices.md
       - name: 设备管理
-        href: Operation-Guide/Create-Device/Manage-Devices.md
-      - name: 产品物模型介绍
-        href: Operation-Guide/Thing-Model/Thing-Model-Introduction.md       
-      - name: 新增物模型
-        href: Operation-Guide/Thing-Model/Create-Thing-Model.md    
+        items:
+          - name: 创建物类型
+            href: Operation-Guide/Device-Manager/Create-Thing-Type.md
+          - name: 物模型介绍
+            href: Operation-Guide/Device-Manager/Introduce-Thing-Model.md
+          - name: 创建物模型
+            href: Operation-Guide/Device-Manager/Create-Thing-Model.md
+          - name: 注册设备
+            href: Operation-Guide/Device-Manager/Create-Device.md 
+          - name: 设备信息
+            href: Operation-Guide/Device-Manager/Device-Info.md    
+          - name: 设备分组
+            href: Operation-Guide/Device-Manager/Device-Grouping.md    
       - name: 创建规则引擎
-        href: Operation-Guide/Rule-Engine/Create-Rule.md
+        href: Operation-Guide/Rule-Engine/Create-Rule.md  
+      - name: 档案管理
+        href: Operation-Guide/Archive-Manager/Create-Archive.md
   - name: 设备开发指南
     items:
       - name: Device SDK 介绍
-        href: Developer-Guide-Device/Introduction.md
-      - name: 快速接入设备
-        href: Developer-Guide-Device/DeviceEasyLink.md       
-      - name: 设备鉴权
-        href: Developer-Guide-Device/AuthenticateDevices.md   
-      - name: 建立连接
-        href: Developer-Guide-Device/EstablishConnection.md
-      - name: 订阅和发布
-        href: Developer-Guide-Device/SubPub.md
-      - name: 网络连接和心跳
-        href: Developer-Guide-Device/HeartBeat-Reconnection.md
-      - name: 网关功能
-        href: Developer-Guide-Device/Gateway_Connection.md   
-      - name: 辅助API
-        href: Developer-Guide-Device/API.md  
+        href: Developer-Guide-Device/Device-SDK-Introduction.md
       - name: 术语表
-        href: Developer-Guide-Device/Glossary.md 
-  - name: 相关资源
+        href: Developer-Guide-Device/Terminology-Table.md
+      - name: 硬件平台适配
+        href: Developer-Guide-Device/Platform-Abstract-Layer.md
+      - name: SDK API 简介
+        href: Developer-Guide-Device/Device-SDK-API.md
+  - name: 最佳实践
     items:
-    - name: 文档历史记录
-      href: Related-Resources/Document-History.md   
+      - name: 设备接入
+        href: Best-Practices/Device-Access.md
+      - name: 网关设备的拓扑关系维护 
+        href: Best-Practices/Device-Gateway-Topo.md 
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: Device SDK 下载
-    href: Developer-Guide-Device/Device-SDK-Download-Link.md
-
+  - name: 相关资源
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md

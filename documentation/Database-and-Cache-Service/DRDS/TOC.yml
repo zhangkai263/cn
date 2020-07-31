@@ -63,10 +63,18 @@
               href: Operation-Guide/Database/Expand-Database/View-Expansion-Task.md
             - name: 检查并清理
               href: Operation-Guide/Database/Expand-Database/Drop-Migrated-Databases.md 
+      - name: 读写分离
+        items:
+          - name: 读写分离介绍
+            href: Operation-Guide/Read-Write-Separation/Introduction.md
+          - name: 配置读写分离
+            href: Operation-Guide/Read-Write-Separation/Configure-RO-Separation.md           
       - name: 安全管理
         items:
           - name: 设置IP白名单
             href: Operation-Guide/Security/Set-Whitelist.md
+          - name: 配置SSL
+            href: Operation-Guide/Security/Configure-SSL.md            
       - name: 性能优化
         items:
           - name: 功能介绍

@@ -26,10 +26,15 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups
 |**azs**|String[]|False| |工作节点组的 az，必须为集群az的子集，默认为集群az|
 |**initialNodeCount**|Integer|True| |工作节点组初始化大小|
 |**vpcId**|String|True| |工作节点组初始化大小运行的VPC|
-|**nodeCidr**|String|True| |工作节点组的cidr|
+|**nodeCidr**|String|False| |工作节点组的cidr|
 |**autoRepair**|Boolean|False| |是否开启工作节点组的自动修复，默认关闭|
 |**caConfig**|[CAConfigSpec](createnodegroup#caconfigspec)|False| |自动伸缩配置|
+|**nodeGroupNetwork**|[NodeGroupNetworkSpec](createnodegroup#nodegroupnetworkspec)|False| |节点组的网络配置，如果集群的类型customized类型，则必须指定该参数，如果是auto，则不是必须|
 
+### <div id="nodegroupnetworkspec">NodeGroupNetworkSpec</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**subnetId**|String|False| |node所在子网id|
 ### <div id="caconfigspec">CAConfigSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

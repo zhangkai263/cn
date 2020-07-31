@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改缓存Redis实例的自动备份策略，可修改备份周期和备份时间
+开启或更新缓存Redis实例的自动备份策略，可修改备份周期和备份时间
 
 ## 请求方式
 PATCH
@@ -18,7 +18,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backupTime**|String|True| |备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
+|**backupTime**|String|True| |设置自动备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点,'-'表示关闭自动备份|
 |**backupPeriod**|String|True| |备份周期，包括：Monday，Tuesday，Wednesday，Thursday，Friday，Saturday，Sunday，多个用逗号分隔|
 
 

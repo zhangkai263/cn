@@ -1,18 +1,20 @@
 # 日志转储
+## 1.概述
+由于用户的业务不同，对日志的需求也不同。部分日志有长期存储及离线分析的需求，如安全审计类的日志。为了降低用户成本，日志服务支持用户将日志数据转储到对象存储OSS中。转储后，用户可在对象存储对应的bucket中下载需要的日志数据。
 
-## 一、转储配置
+转储支持选择是否压缩，压缩转储可进一步降低成本，支持snappy和gzip压缩格式。也可以选择所需的格式进行转储，支持JSON格式和原始格式。
 
-### 1.创建转储任务
+## 2.操作步骤
+
+### 创建转储任务
 
 创建转储任务需要确认已添加采集配置，否则无法创建转储任务。
 
-1）进入对应的日志集，在需要转储的日志主题后方的“管理”中点击“转储配置”，进入转储配置页面。
+1）进入对应的日志集，选择需要创建转储任务的日志主题，直接点击日志转储后方的“添加”按钮，或点击“日志转储”，在子菜单中选择“转储任务列表”，点击“新建转储任务”。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer1.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer01.jpg)
 
 2）转储信息配置
-
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer2.png)
 
 点击“新建转储任务”，填写转储任务名称，不为空，且只允许中文，数字，大小写字母，英文下划线“_”及中划线“-”，不超过32字符。
 
@@ -30,19 +32,23 @@
 
 转储任务创建完成后延迟约15分钟后开始进行转储。
 
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/createLogTransfer02.jpg)
 
-### 2.停止转储任务
+### 停止转储任务
 
-进入转储配置页面，选择需要停止的转储任务，点击后方的停止转储，即可停止转储日志数据。
+进入转储历史页面，选择需要停止的转储任务，点击“停止转储”，即可停止转储日志数据。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer3.png)
+### 转储任务历史
 
-点击日志服务左侧菜单的“日志转储专利”，选择需要转储的日志集，日志主题，以及转储任务，点击“停止转储”，即可停止转储日志数据。
+点击日志转储下方的子菜单“转储历史”，即可进入该页面。查看转储任务的转储历史。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/logtransfer4.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogTransfer/transferHistory03.jpg)
 
-## 二、转储任务历史
+## 3.注意事项
+1. 当前版本仅支持将日志数据转储至用户自己名下的对象存储OSS中。
+2. 压缩投递后，可进一步降低存储成本。
+3. 转储至对象存储后，所需费用将会体现在对象存储账单中，会由对象存储进行收费。
+4. 单个日志主题下最多支持创建10个转储任务。
 
-点击转储配置中转储任务后面的“查看”或者点击日志服务左侧菜单中的“转储历史”，即可进入该页面。
 
-日志转储管理中可以进行停止转储任务、修改转储配置的操作，同时可查看转储任务中的文件转储状态，如果有转储失败则可在一小时内进行重试操作，超过一小时后，不可重试。
+

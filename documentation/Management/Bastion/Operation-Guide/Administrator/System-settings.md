@@ -8,6 +8,8 @@
 
 ![](/image/Bastion/security.png) 
 
+   Access Key ID：提供用户的Access Key ID 和 Access Key Secret,否则“会话审计”和“操作审计”功能将无法正常使用。Access Key ID和Access Key Secret是您访问京东云API的密钥，可操作您名下的所有资源，为了您的财产和服务安全，请妥善保存和定期更换密钥。详细信息请参见[Accesskey管理](../../../../User-Service/Account-Management/AccessKey-Management.md)。
+   
    登录超时：编辑登录超时时间，完成后单击确定完成更改。
    
    密码尝试次数：编辑尝试密码次数，完成后单击确定完成更改。
@@ -37,6 +39,8 @@
 
 ## 日志备份
 
+可以通过日志备份功能，方便下载任意时间段的审计日志。
+
 **操作步骤**
 
 1、 进入系统 > 日志备份 标签页
@@ -46,6 +50,8 @@
 ![](/image/Bastion/backup.png) 
 
    选择时间范围，并选择需要导出的内容（操作日志、会话日志），即可生成备份文件。
-   
+ 
+3、 备份的日志文件，支持下载，编辑备注信息。
 
+![](/image/Bastion/backup2.png) 
 

@@ -23,22 +23,22 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/checkName
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](checkname#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](checkname#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](checkname#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|检测结果 code, 0: 不可用, 1: 可用|

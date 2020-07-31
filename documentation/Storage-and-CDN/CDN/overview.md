@@ -95,5 +95,10 @@ v1
 |**stopDomain**|POST|停止加速域名|
 |**stopMonitor**|POST|停止源站监控|
 |**updateCacheRule**|PUT|修改缓存规则|
+|**setExtraCacheTime**|POST|设置状态码缓存|
 |**updateDomainGroup**|POST|更新域名组|
+|**queryDailyRefreshTaskCount**|GET|查询刷新预热任务限额|
+|**queryCdnUserQuota**|GET|查询用户刷新预热封禁限额|
 |**uploadCert**|POST|上传证书|
+|**setAuthConfig**|POST|dash鉴权参数设置|
+|**setSourceAuthConfig**|POST|回源鉴权参数设置|

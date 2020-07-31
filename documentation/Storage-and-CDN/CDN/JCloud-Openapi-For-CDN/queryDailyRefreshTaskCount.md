@@ -18,7 +18,7 @@ https://cdn.jdcloud-api.com/v1/task:count
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querydailyrefreshtaskcount#result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>

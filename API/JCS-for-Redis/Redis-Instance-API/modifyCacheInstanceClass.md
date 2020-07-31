@@ -2,8 +2,7 @@
 
 
 ## 描述
-变更缓存Redis实例规格（变配），只能变更运行状态的实例规格，变更的规格不能与之前的相同。
-预付费用户，从集群版变配到主从版，新规格的内存大小要大于老规格的内存大小，从主从版到集群版，新规格的内存大小要不小于老规格的内存大小。
+变更缓存Redis实例规格（变配），实例运行时可以变配，新规格不能与之前的老规格相同，新规格内存大小不能小于实例的已使用内存
 
 
 ## 请求方式
@@ -20,19 +19,21 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cacheInstanceClass**|String|True| |变更后的实例规格|
+|**cacheInstanceClass**|String|True| |新规格|
+|**shardNumber**|Integer|False| |自定义分片数，只对自定义分片规格实例有效|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)|结果|
+|**result**|[Result](modifycacheinstanceclass#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**orderNum**|String|本次变更请求的订单编号|
+|**orderNum**|String|订单编号|
+|**buyId**|String|购买ID|
 
 ## 返回码
 |返回码|描述|

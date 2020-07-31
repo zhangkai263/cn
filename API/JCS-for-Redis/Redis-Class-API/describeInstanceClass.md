@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询某区域下的缓存Redis实例规格列表
+查询缓存Redis实例的规格列表
 
 ## 请求方式
 GET
@@ -23,15 +23,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/instanceClass
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeinstanceclass#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instanceClasses**|InstanceClass[]| |
+|**instanceClasses**|[InstanceClass[]](describeinstanceclass#instanceclass)| |
 |**totalCount**|Integer| |
-### InstanceClass
+### <div id="instanceclass">InstanceClass</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceClass**|String|规格代码：redis 2.8与redis 4.0的规格码不同，具体参考 https://docs.jdcloud.com/cn/jcs-for-redis/specifications|

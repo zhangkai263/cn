@@ -25,12 +25,12 @@
         href: Introduction/Restrictions.md
       - name: 应用场景
         items:
-          - name: 混合云环境互联
-            href: Introduction/Application-Scenarios/Connection-Into-IDC&Office.md
-          - name: VPN作为专线的备份，共同构建混合云
-            href: Introduction/Application-Scenarios/Connection-With-DirectConnect.md
-          - name: 多云环境互联
-            href: Introduction/Application-Scenarios/Multi-Cloud-Interconnect.md
+          - name: 公有云连接IDC或办公室
+            href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
+          - name: VPN作为专线的备用线路
+            href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
+          - name: 多公有云环境互联
+            href: Introduction/Application-Scenarios/Multi-Cloud-InterConnect.md
   - name: 产品定价
     items:
       - name: 计费概述
@@ -71,6 +71,10 @@
             href: Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md
           - name: 华为客户端配置
             href: Operation-Guide/Client-Site-Configuration/Huawei-Configuration.md
+          - name: 华三客户端配置
+            href: Operation-Guide/Client-Site-Configuration/H3C-Configuration.md
+          - name: 瞻博客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Juniper-Configuration.md
           - name: strongSwan客户端配置
             href: Operation-Guide/Client-Site-Configuration/StrongSwan-Configuration.md
        - name: 路由管理
@@ -87,6 +91,8 @@
          href: Best-Practices/Connection-With-DirectConnect.md
        - name: VPN连接到亚马逊AWS
          href: Best-Practices/Connection-Into-Amazon.md
+       - name: VPN连接到京东云跨地域资源
+         href: Best-Practices/Connection-Into-JDCloud.md
   - name: 问题排查
     items:
     status: 0

@@ -15,8 +15,8 @@
 
 ##### (可选)2.边界网关路由表添加去往VPC的路由
 若创建VPC接口时未指定传播的VPC网段，则可以手动添加去往VPC的路由。
-a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
-b)点击相应的边界网关，进入边界网关详情页；</br>
+a)登录[边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  <br />
+b)点击相应的边界网关，进入边界网关详情页；<br />
 c)在“路由表”Tab中将展示当前边界网关的有效路由表、静态路由表、动态路由表，点击“静态路由表”的“编辑”，选择“新增一条”，目的端为目的VPC内网段(如：192.168.0.0/24)，下一跳类型为VPC接口，下一跳为与目的VPC间创建的VPC接口，可对该路由添加备注。有关边界网关路由生效的的更多内容，详见[边界网关路由管理](https://docs.jdcloud.com/cn/direct-connection/border-gateway-features)；
 
 ```
@@ -26,9 +26,14 @@ c)在“路由表”Tab中将展示当前边界网关的有效路由表、静态
 ```
 
 ##### 3.边界网关路由表添加去往客户端的路由
-a)登录[京东云边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  </br>
-b)点击相应的边界网关，进入边界网关详情页；</br>
-c)在“路由表”Tab中，点击“静态路由表”的编辑，选择“新增一条”，，目的端为客户端网段(如：10.0.0.0/16)，下一跳类型为VPN连接，下一跳为与客户网关之间创建的VPN连接，可对该路由添加备注；
+a)登录[边界网关控制台](https://cns-console.jdcloud.com/host/borderGateway/list)；  <br />
+b)点击相应的边界网关，进入边界网关详情页；<br />
+c)若VPN连接设置了启用BGP路由，且边界网关和客户网关之间能够正常建立BGP会话，则在客户端发布路由后，边界网关能够自动将客户端的路由加入路由表中，无需额外配置静态路由；<br />
+
+![](../../../../../image/Networking/VPN/Operation-Guide/vpn-route-bgp.png)
+
+d)可选配置静态路由，在“路由表”Tab中，点击“静态路由表”的编辑，选择“新增一条”，，目的端为客户端网段(如：10.0.0.0/16)，下一跳类型为VPN连接，下一跳为与客户网关之间创建的VPN连接，可对该路由添加备注；<br />
+
 
 ```
   由于VPN连接中包含多条VPN隧道，默认情况下，流量将流经全部隧道状态为“UP”的VPN隧道，若要流量不流经某条VPN隧道，请断开该隧道，或将该隧道禁用。

@@ -1,8 +1,8 @@
-# MySQL数据迁移至Greenplum
+# MySQL数据迁移至JDW
 
 
 
-py-mysql2pgsql是一个开源的数据迁移工具 ，支持将MySQL中的表迁移到Greenplum。此工具同时连接源端MySQL数据库和目的端数据库，从MySQL库中通过查询得到要导出的数据，然后通过 COPY命令导入到目的端。
+py-mysql2pgsql是一个开源的数据迁移工具 ，支持将MySQL中的表迁移到JDW。此工具同时连接源端MySQL数据库和目的端数据库，从MySQL库中通过查询得到要导出的数据，然后通过 COPY命令导入到目的端。
 
 ## 安装说明
 
