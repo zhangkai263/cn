@@ -297,6 +297,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryHttp2.md
                - name: queryBackSourcePath
                  href: JCloud-Openapi-For-CDN/queryBackSourcePath.md
+               - name: queryUnForbiddenStatus
+                 href: JCloud-Openapi-For-CDN/queryUnForbiddenStatus.md
           - name: 域名配置修改
             items:
                - name: createDomainGroup
