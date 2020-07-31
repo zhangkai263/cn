@@ -291,6 +291,8 @@ items:
                  href: SSL-Certificate/getSslCertList.md
                - name: queryBackSourceRule
                  href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
+               - name: queryUrlRule
+                 href: JCloud-Openapi-For-CDN/queryUrlRule.md
           - name: 域名配置修改
             items:
                - name: createDomainGroup
