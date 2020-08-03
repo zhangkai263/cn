@@ -21,16 +21,16 @@ sc.hadoopConfiguration.set("fs.s3a.impl","org.apache.hadoop.fs.s3a.S3AFileSystem
 
 2. 用户可以在Spark默认配置文件中配置S3认证信息。以Spark3为例，在 {SPARK_HOME}/conf/spark-defaults.conf 配置S3认证信息示例如下:
 
-* Spark s3a
+Spark s3a
 ```
 spark.hadoop.fs.s3a.impl         org.apache.hadoop.fs.s3a.S3AFileSystem
 spark.hadoop.fs.s3a.access.key     yourAccessKeyID
 spark.hadoop.fs.s3a.secret.key      yourAccessKeySecret
 spark.hadoop.fs.s3a.endpoint       s3.cn-north-1.jdcloud-oss.com.jdcloud-oss.com    
 ```
-示例中endpoint为华北空间的endpoint，如使用其他区域空间，可以参考[OSS访问域名和地域](https://docs.jdcloud.com/cn/object-storage-service/oss-endpont-list)进行更换。
+* 示例中endpoint为华北空间的endpoint，如使用其他区域空间，可以参考[OSS访问域名和地域](https://docs.jdcloud.com/cn/object-storage-service/oss-endpont-list)进行更换。
 
-* Spark
+Spark
 ```
 spark.eventLog.enabled       true
 spark.eventLog.dir          s3a://YourBucketName/spark/
