@@ -48,7 +48,7 @@ slave2
 ./bin/spark-submit   --class org.apache.spark.examples.SparkPi --master yarn examples/jars/spark-examples_2.12-3.0.0.jar
 ```
 
-需使用s3a客户端，使用方法可参考：[hadoop-s3a]()
+需使用s3a客户端，使用方法可参考：[配置Spark读写对象存储](Spark-OSS.md)
 
 ## 示例
 
