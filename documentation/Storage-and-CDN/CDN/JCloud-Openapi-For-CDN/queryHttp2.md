@@ -14,7 +14,7 @@ GET
 ### 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[QueryHttp2Resp](#result)| |
+|**result**|[QueryHttp2Resp](queryhttp2#result)| |
 |**requestId**|String| |
 
 ### <div id="QueryHttp2Resp">QueryHttp2Resp</div>

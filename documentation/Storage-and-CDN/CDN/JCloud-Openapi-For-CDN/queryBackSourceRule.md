@@ -16,7 +16,7 @@ GET
 ### 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[QueryBackSourceRuleResp](#result)| |
+|**result**|[QueryBackSourceRuleResp](querybacksourcerule#result)| |
 |**requestId**|String| 请求id,每次请求的唯一标识|
 
 ### <div id="QueryBackSourceRuleResp">QueryBackSourceRuleResp</div>
