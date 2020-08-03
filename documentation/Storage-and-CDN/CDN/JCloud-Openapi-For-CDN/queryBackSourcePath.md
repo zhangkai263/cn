@@ -16,7 +16,7 @@ GET
 ### 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[QueryBackSourcePathResp](#result)| |
+|**result**|[QueryBackSourcePathResp](querybacksourcepath#result)| |
 |**requestId**|String| |
 
 ### <div id="QueryBackSourcePathResp">QueryBackSourcePathResp</div>
