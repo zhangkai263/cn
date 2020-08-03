@@ -16,7 +16,7 @@ GET
 ### 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[QueryUrlRuleResp](#result)| |
+|**result**|[QueryUrlRuleResp](queryurlrule#result)| |
 |**requestId**|String| |
 
 ### <div id="QueryUrlRuleResp">QueryUrlRuleResp</div>
