@@ -26,11 +26,11 @@
   - name: 快速入门
     items:
       - name: 创建实例
-        href: Operation-Guide/Instance/Create-Instance.md
+        href: Getting-Started/Create-Instance.md
       - name: 创建账号
-        href: Operation-Guide/Account/Create-Account.md
+        href: Getting-Started/Create-Account.md
       - name: 连接实例
-        href: Operation-Guide/Instance/Connect-Instance.md    
+        href: Getting-Started/Connect-Instance.md    
  
   - name: 操作指南
     items:
