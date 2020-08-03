@@ -2,9 +2,23 @@
 
 # 依赖资源
 
-[hadoop-aws-3.2.1.jar]()
+## Maven
 
-[aws-java-sdk-bundle-1.11.375.jar]()
+```
+<dependencies>
+  <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-aws</artifactId>
+      <version>3.2.1</version>
+  </dependency>
+  <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk-bundle</artifactId>
+      <version>1.11.375</version>
+  </dependency>
+</dependencies>
+
+```
 
 # 配置方法
 
