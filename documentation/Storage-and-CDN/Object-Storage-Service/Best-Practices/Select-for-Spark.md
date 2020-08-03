@@ -34,9 +34,9 @@ slave2
 
 下载地址：
 
-[cala 11版本对应jar包](https://cn-north-1-chenxue198.s3.cn-north-1.jdcloud-oss.com/spark-select_2.11-2.1.jar)
+[scala 11版本对应jar包](https://cn-north-1-chenxue198.s3.cn-north-1.jdcloud-oss.com/spark-select_2.11-2.1.jar)
 
-[cala 12版本对应jar包](https://cn-north-1-chenxue198.s3.cn-north-1.jdcloud-oss.com/spark-select_2.12-2.1.jar)
+[scala 12版本对应jar包](https://cn-north-1-chenxue198.s3.cn-north-1.jdcloud-oss.com/spark-select_2.12-2.1.jar)
 
 项目源码可参考开源项目[minio-SparkSelect](https://github.com/minio/spark-select)
 
