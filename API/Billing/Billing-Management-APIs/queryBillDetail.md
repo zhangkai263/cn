@@ -76,7 +76,7 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billDetail:list
 |**currPageNo**|Integer|当前页|
 |**numberPages**|Integer|总页数|
 |**numberRecords**|Integer|总记录数|
-|**pageSize**|Integer|每页记录数(默认值:10)|
+|**pageSize**|Integer|每页记录数,默认10|
 |**startIndex**|Integer|起始页|
 
 ## 返回码
