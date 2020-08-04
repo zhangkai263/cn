@@ -6,7 +6,7 @@
 2. 通过Linux环境下的curl命令访问云搜索Elasticsearch实例的9200端口。指定账号密码访问示例格式为curl –XGET [实例内网访问域名]/_cat，内网访问域名为ES实例基本信息界面的 **内网访问域名** ，指令示例如下：
 
 ```
-curl -XGET es-nlb-es-kgqo8zmgcv.jvessel-open-hb.jdcloud.com:9200/_cat
+curl -XGET es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/_cat
 ```
 响应如下代表访问成功：
 ```
@@ -56,7 +56,7 @@ gunzip logs.jsonl.gz
 '，示例如下：
 
 ```
-curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare" -H 'Content-Type: application/json' -d' { "mappings" : { "_default_" : { "properties" : { "speaker" : {"type": "keyword" }, "play_name" : {"type": "keyword" }, "line_id" : { "type" : "integer" }, "speech_number" : { "type" : "integer" } } } } } '
+curl -X PUT "es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/shakespeare" -H 'Content-Type: application/json' -d' { "mappings" : { "_default_" : { "properties" : { "speaker" : {"type": "keyword" }, "play_name" : {"type": "keyword" }, "line_id" : { "type" : "integer" }, "speech_number" : { "type" : "integer" } } } } } '
 
  
 ```
@@ -82,18 +82,18 @@ curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare" 
 }' ，示例如下：
 
 ```
-curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/logstash-20181011" -H 'Content-Type: application/json' -d' { "mappings": { "log": { "properties": { "geo": { "properties": { "coordinates": { "type": "geo_point" } } } } } } }' 
+curl -X PUT "es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/logstash-20181011" -H 'Content-Type: application/json' -d' { "mappings": { "log": { "properties": { "geo": { "properties": { "coordinates": { "type": "geo_point" } } } } } } }' 
 
 ```
 5. 加载数据集并验证加载是否成功，示例如下：
 ```
-curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/bank/account/_bulk?pretty' --data-binary @accounts.json
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/bank/account/_bulk?pretty' --data-binary @accounts.json
 
-curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare/_bulk?pretty' --data-binary @shakespeare.json
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/shakespeare/_bulk?pretty' --data-binary @shakespeare.json
 
-curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/_bulk?pretty' --data-binary @logs.jsonl
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'es-nlb-XXX.jvessel-open-hb.jdcloud.com:9200/_bulk?pretty' --data-binary @logs.jsonl
 
-curl -X GET "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/_cat/indices?v"
+curl -X GET "XXX.jvessel-open-hb.jdcloud.com:9200/_cat/indices?v"
 
 ```
 出现类似以下输出时表示数据加载成功：

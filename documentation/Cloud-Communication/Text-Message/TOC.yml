@@ -31,6 +31,10 @@ items:
       href: Operation-Guide/send.md
     - name: 统计分析
       href: Operation-Guide/stat.md
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: FAQ/FAQ.md
 - name: SDK参考
   items:
     - name: AccessKey

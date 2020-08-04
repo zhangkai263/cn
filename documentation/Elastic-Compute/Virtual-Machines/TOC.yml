@@ -261,6 +261,10 @@ items:
             href: Operation-Guide/Monitoring/Get-Monitor-Data.md
           - name: 设置报警
             href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 自动任务策略
+        items:
+          - name: 自动镜像策略
+            href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md                           
   - name: 最佳实践
     items:
       - name: 安全

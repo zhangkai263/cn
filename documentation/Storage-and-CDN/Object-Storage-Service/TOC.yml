@@ -117,6 +117,8 @@ items:
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
           - name: 对象锁定
             href: Operation-Guide/Manage-Object/Object-Lock.md
+          - name: SelectObject(公测)
+            href: Operation-Guide/Manage-Object/Select-Object.md
       - name: 权限控制
         items:
            - name: 权限控制概述
@@ -341,6 +343,8 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-Copy-2.md
               - name: Post Object Restore
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-Restore.md
+              - name: Select Object Content(公测)
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md
       - name: 错误响应
         href: API-Reference-S3-Compatible/Error-Response-2.md                
       - name: 扩展接口

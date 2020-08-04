@@ -79,6 +79,8 @@
         href: Operation-Guide/eslog.md
       - name: 自定义词库
         href: Operation-Guide/dic.md 
+      - name: 周期创建索引
+        href: Operation-Guide/index.md
       - name: 快照
         items: 
         - name: 创建快照
@@ -99,6 +101,8 @@
           href: Operation-Guide/status.md
         - name: 创建告警规则
           href: Operation-Guide/Monitor_Rules.md
+        - name: 一键报警
+          href: Operation-Guide/Onekey-Alarm.md
       - name: 标签
         items:
         - name: 标签概述
@@ -130,7 +134,13 @@
      - name: 监控告警配置建议
        href: Best-Practices/automonitor.md
   - name: 常见问题
-    href: FAQ/FAQ.md
+    items:
+    - name: 产品相关
+      href: FAQ/FAQ.md
+    - name: 访问相关
+      href: FAQ/Access.md
+    - name: 功能相关
+      href: FAQ/Function.md   
   - name: 相关资源
     items:
     - name: 文档历史记录

@@ -11,9 +11,9 @@
 ## 操作步骤
 1. 登录 [IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)。
 2. 在“实例列表”页面，点击 **创建** ，进入“创建实例”页面。
-![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/instance01.png)
-3.选择合适的线路和防护套餐，建议购买保底防护+弹性防护的组合方式。
-![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/instance02.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/instance04.png)
+3.选择合适的线路和防护套餐，建议购买保底防护+弹性防护的组合方式，业务带宽、端口数和防护域名数根据实际业务情况购买扩展包。
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/instance05.png)
 
 购买支付以后，即成功创建一个实例。
 
