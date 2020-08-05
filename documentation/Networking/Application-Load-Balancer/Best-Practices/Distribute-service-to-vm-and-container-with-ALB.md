@@ -32,7 +32,7 @@
 
 	配置健康检查参数，点击下一步
 
-	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-063.png)
+	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-094.png)
 
 - 新建服务器组：
 
@@ -44,11 +44,11 @@
 	
 	填写虚拟服务器组名称，选择并添加主机、容器类型的资源实例，配置端口、权重。
 
-	![ALB虚拟服务器组添加资源设置](../../../../image/Networking/ALB/ALB-065.png)
+	![ALB虚拟服务器组添加资源设置](../../../../image/Networking/ALB/ALB-050.png)
 
 - 绑定虚拟服务器组。
 
 	选择并绑定这个虚拟服务器组，点击确定。
 
-	![ALB绑定虚拟服务器组](../../../../image/Networking/ALB/ALB-066.png)
+	![ALB绑定虚拟服务器组](../../../../image/Networking/ALB/ALB-049.png)
 

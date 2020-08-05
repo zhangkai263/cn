@@ -36,7 +36,7 @@
 
 - 配置健康检查：设置健康检查相关参数，这里使用HTTP方式。
 
-	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-048.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-094.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
