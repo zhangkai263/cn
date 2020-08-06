@@ -134,9 +134,7 @@ items:
        - name: 核验单信息
          items:
           - name: 下载核验单
-            href: Data-download/General-check-list/Create check-list-download.md
-          - name: 核验单填写示例
-            href: Data-download/General-check-list/Create check-list-download.md
+            href: Data-download/check-list/check-list-download.md
        - name: 各省补充资料下载
          items:
           - name: 上海
