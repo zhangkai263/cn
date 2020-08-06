@@ -30,5 +30,5 @@
               * 同一IP可通过不同端口注册到同一虚拟服务器组。
 
 
-        ![设置端口和权重](../../../../image/Networking/ALB/ALB-035.png)后期再补图。
+        ![设置端口和权重](../../../../image/Networking/ALB/ALB-035.png)
 
