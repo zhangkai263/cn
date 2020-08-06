@@ -48,6 +48,6 @@
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-050.png)
 
-- 至此，已创建完成基于HTTP协议的监听器，可在监听器列表查看。
+- 至此，已创建完成基于HTTPS协议的监听器，可在监听器列表查看。
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-051.png)
