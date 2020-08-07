@@ -16,7 +16,25 @@
 5. 【采集状态】默认打开，用户也可以关闭。关闭后不采集日志。
 6. 【日志路径】填写所需采集的业务应用的日志的路径和文件名，路径支持“/* /”或“/* /abd/* /"的通配，不支持“/** /”的通配，文件名支持* 的通配。Linux的文件路径应该以/开头。日志文本的编码为UTF8。
 7. 【采集实例】根据用户自身需求选择实例，或者对应的高可用组和标签。
-8. 如果用户的业务应用日志是多行日志，则需要设置首行正则匹配的规则；如果不是怎么无需设置。默认不是多行日志。
+8. 如果用户的业务应用日志是多行日志，则需要设置首行正则匹配的规则；首行正则遵循 **POSIX Extended Regular Express** 正则表达式 ，示例如下：  
+
+日志首行基本上以时间格式开头，如java异常堆栈日志数据
+```
+2020-07-08 23:58:45.382 [INFO]  xxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx
+2020-07-08 23:58:55.582 [INFO]  xxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx
+	at xxxxxxxxxxxxxxxxxxx	
+```
+可以使用正则表达式进行匹配，不支持 ‘\d’ 方式进行数字匹配：  
+```
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}
+``` 
+预期结果是将以上数据分割成两条日志，每条日志的开头匹配年月日。  
+注：正在表达式相关语法可参考：[正则表达式](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions)
 
 
 <img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/multi-line.jpg" width=80% height=80% />
