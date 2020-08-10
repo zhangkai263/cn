@@ -129,6 +129,42 @@ items:
             href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
           - name: 政府网站备案说明
             href: Loading/Common-data/Government-Website-Description.md
+  - name: 资料下载
+    items:
+       - name: 核验单信息
+         items:
+          - name: 下载核验单
+            href: Data-download/General-check-list/Create check-list-download.md
+          - name: 核验单填写示例
+            href: Data-download/General-check-list/Create check-list-download.md
+       - name: 各省补充资料下载
+         items:
+          - name: 上海
+            href: Data-download/Addition-Filing/shanghai.md
+          - name: 湖北
+            href: Data-download/Addition-Filing/hubei.md
+          - name: 湖南
+            href: Data-download/Addition-Filing/hunan.md
+          - name: 重庆
+            href: Data-download/Addition-Filing/chongqing.md
+          - name: 四川
+            href: Data-download/Addition-Filing/sichuan.md
+          - name: 福建
+            href: Data-download/Addition-Filing/fujian.md
+          - name: 甘肃
+            href: Data-download/Addition-Filing/gansu.md
+          - name: 广西
+            href: Data-download/Addition-Filing/guangxi.md
+          - name: 贵州
+            href: Data-download/Addition-Filing/guizhou.md
+          - name: 吉林
+            href: Data-download/Addition-Filing/jilin.md
+          - name: 陕西
+            href: Data-download/Addition-Filing/shanghai.md
+          - name: 山西
+            href: Data-download/Addition-Filing/shan1xi.md
+       - name: 政府网站备案说明
+         href: Data-download/Addition-Filing/Government-domain-application-form.md       
   - name: 流程帮助
     items:
        - name: 工信部短信验证说明
