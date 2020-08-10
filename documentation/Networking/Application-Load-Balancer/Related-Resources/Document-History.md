@@ -5,6 +5,11 @@
 
 |发布日期|特性|描述|
 |-|-|-|
+|2020年3月|支持添加IP作为后端服务器|支持添加IP地址到虚拟服务器组，丰富了负载均衡挂载的后端服务类型|
+|2020年3月|支持权重为0|支持配置虚拟服务器组的后端服务器权重为0|
+|2020年3月|支持重定向|支持配置将七层访问请求重定向至指定URL|
+|2020年3月|支持健康检查域名|HTTP健康检查支持配置域名|
+|2020年3月|支持多证书|应用负载均衡支持同一个HTTPS/TLS监听器绑定多个SSL证书|
 |2020年2月|开放OpenAPI和SDK|应用负载均衡OpenAPI和SDK对外开放|
 |2020年1月|应用负载均衡列表页支持搜索|应用负载均衡列表页支持基于ID、名称等搜索|
 |2020年1月|修改计费类型|应用负载均衡计费类型从按配置改为按用量，但仍暂时免费|
@@ -33,7 +38,7 @@
 - [计费规则](../Pricing/Billing-Rules.md)
 - [创建负载均衡实例](../Getting-Started/Create-Instance.md)
 - [创建高可用组](../Getting-Started/Create-AvailabilityGroup.md)
-- [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
-- [配置侦听策略](../Operation-Guide/Listener-Management.md)
+- [虚拟服务器组管理](../Operation-Guide/TargetGroup-Management.md)
+- [监听器管理](../Operation-Guide/Listener-Management.md)
 - [管理后端服务与查看服务实例健康状态](../Operation-Guide/Backend-Management.md)
 - [查看监控信息](../Operation-Guide/Monitoring.md)
