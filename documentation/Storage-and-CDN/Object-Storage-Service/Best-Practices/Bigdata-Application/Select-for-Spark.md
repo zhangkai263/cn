@@ -1,4 +1,4 @@
-本文介绍了在Spark里使用[OSS select](../Object-Storage-Service/Operation-Guide/Manage-Object/Select-Object.md)来优化数据查询的方法。目前OSS select处于公测中。
+本文介绍了在Spark里使用[OSS select](../../Operation-Guide/Manage-Object/Select-Object.md)来优化数据查询的方法。目前OSS select处于公测中。
 
 # 引入s3select依赖包
 
