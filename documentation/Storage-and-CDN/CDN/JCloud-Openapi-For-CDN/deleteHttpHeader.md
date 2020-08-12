@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除httpHeader
+删除httpHeader，中国境外/全球加速时暂不支持HttpHeader相关配置
 
 ## 请求方式
 PUT
