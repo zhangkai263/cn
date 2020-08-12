@@ -33,9 +33,9 @@ ssl_protocol | ssl 协议 | string | eg：SSLv2 ，TLSv1
 -- | -- | -- | --
 timestamp | 时间戳 | time | 精确到毫秒，eg：2018-12-20T02:59:40.001Z
 alb_id | 负载均衡ID | string | alb-[0-9][a-z]{10} , eg: alb-gmjnqw8bnh
-backend_id | 后端服务ID |backend-[0-9][a-z]{10}，eg：backend-lea4mj3kw7
-backend_server_ip_port | 后端服务器的ip和端口 | eg：192.168.10.1:8080|
-log_detail |  日志详细内容 | 用于详细说明日志的类型，取值包括：1）server is unhealthy：后端服务器的健康状态变为不健康。 2)server is healthy：后端服务器的健康状态变为健康。 3)no available servers, num 1：后端服务下所有服务器的健康状态都已变为不健康，num表示服务器数量。 4)health check failed cause:ccc：本次健康检查异常及原因(原因类型见下表) 
+backend_id | 后端服务ID | string |backend-[0-9][a-z]{10}，eg：backend-lea4mj3kw7
+backend_server_ip_port | string | 后端服务器的ip和端口 | eg：192.168.10.1:8080|
+log_detail |  日志详细内容 | string | 用于详细说明日志的类型，取值包括：1）server is unhealthy：后端服务器的健康状态变为不健康。 2)server is healthy：后端服务器的健康状态变为健康。 3)no available servers, num 1：后端服务下所有服务器的健康状态都已变为不健康，num表示服务器数量。 4)health check failed cause:ccc：本次健康检查异常及原因(原因类型见下表) 
 
 #### health check 错误原因列表
 HTTP健康检查| TCP健康检查 |说明
