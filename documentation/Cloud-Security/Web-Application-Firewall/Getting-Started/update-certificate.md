@@ -12,7 +12,7 @@ Web应用防火墙的证书服务关联了京东智联云SSL证书服务，在�
 
 3.在**网站配置**页面，定位到要操作的域名，单击其协议状态列HTTPS的**未关联证书**。
 
-![image](../../../../image/WAF/join-in-WAF/Match-Cert-Entry.png)
+![image](../../../../image/WAF/join-in-WAF/Match-Cert-entry.png)
 
 4.在**关联证书**对话框，**关联证书**或者**上传证书**。
 
