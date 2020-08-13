@@ -4,7 +4,7 @@
 
 ## 前提条件
 
-已在Web应用防火墙中添加域名，并确保源站服务器协议、地址、端口配置正确。更多信息，请参见[添加网站](/Step-1.md)。
+已在Web应用防火墙中添加域名，并确保源站服务器协议、地址、端口配置正确。更多信息，请参见[添加网站](Step-1.md)。
 
 ## 背景信息
 
@@ -14,7 +14,7 @@
 
 以下操作以本地计算机使用Windows操作系统为例进行描述。
 
-1.获取CNAME值。进入**网站配置**页面，定位到您添加的域名，将鼠标悬浮到CNAME上方，可以查看到CNAME的值，点击 ![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Click-Cname.png)，获取并复制CNAME。![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Get-Cname.png)
+1.获取CNAME值。进入**网站配置**页面，定位到您添加的域名，将鼠标悬浮到CNAME上方，可以查看到CNAME的值，点击 ![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Click-Cname.png)，获取并复制CNAME。![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Get-Cname.png)
 
 2.获取WAF IP地址。在Windows打开cmd命令行工具，运行 `ping  CNAME`  命令，将获得CNAME对应的WAF IP地址。
 
@@ -22,7 +22,7 @@
 
 ​     在cmd命令行工具中，运行 ping  demo.jd.com-891519e3530e.jdcloudwaf.com  命令，将获得CNAME对应的WAF IP。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Get-WAF_IP.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Get-WAF_IP.png)
 
 在ping 命令的返回结果中，记录域名对应的WAF IP地址。如例子中 WAF IP为101.124.17.209。
 
@@ -34,11 +34,11 @@
 
 ​     iii. 在hosts文件最后一行添加记录：`WAF IP地址    被防护域名`
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Add-Hosts.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Add-Hosts.png)
 
 4.修改hosts后保存，在cmd命令行工具中，执行命令 `ping  <被防护的域名>` ，验证hosts修改已生效。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Hosts-Modify.png) 
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Hosts-Modify.png) 
 
 预期`ping`如果解析到了WAF IP地址，如上图所示。如果解析到了源站IP地址，请刷新本地的DNS缓存（Windows的cmd下可以执行`ipconfig`、`flushdns`命令）并重新执行ping命令，直到验证hosts修改已经生效。
 
@@ -52,8 +52,8 @@
 
 预期Web应用防火墙会返回以下拦截页面。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-WAF-Attack.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-WAF-Attack.png)
 
 ​    iii.进入**Web应用防火墙控制台**，可通过点击左侧**分析报表** > **全量日志** ，筛选实例域名后，查看防护域名的测试数据。如下图。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Attack-Record.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Attack-Record.png)
