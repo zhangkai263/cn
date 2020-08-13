@@ -28,7 +28,7 @@ Web应用防火墙支持通过CNAME方式接入，即将域名解析到WAF CNAME
 
 3.获取CNAME值。在**网站配置**页面，定位到您添加的域名，将鼠标悬浮到CNAME上方，可以查看到CNAME的值，点击 ![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Click-Cname.png)，获取并复制CNAME。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Get-Cname.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Get-Cname.png)
 
 4.修改域名DNS解析。到该域名的DNS服务商处，配置防护域名的别名解析，具体操作请咨询您的域名服务提供商。
 
@@ -50,7 +50,7 @@ Web应用防火墙支持通过CNAME方式接入，即将域名解析到WAF CNAME
 
 ​		CNAME接入：将**记录类型**设置为**CNAME**、**记录值**修改为**WAF CNAME**地址，其余设置保持不变。
 
-![image](../../../../image/WAF/join-in-WAF/本地验证/DNS-Modify.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/DNS-modify.png)
 
 关于不同记录类型的冲突，需要注意以下情况：
 
