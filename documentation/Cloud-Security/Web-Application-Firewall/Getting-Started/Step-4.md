@@ -4,13 +4,13 @@
 
 ## 前提条件
 
-- 已在Web应用防火墙（WAF）中添加要防护的网站信息。更多信息，请参见[添加网站](/Step-1.md)。
+- 已在Web应用防火墙（WAF）中添加要防护的网站信息。更多信息，请参见[添加网站](Step-1.md)。
 
-- 已放行Web应用防火墙回源IP段。更多信息，请参见[放行回源IP](/Step-2.md)。
+- 已放行Web应用防火墙回源IP段。更多信息，请参见[放行回源IP](Step-2.md)。
 
   > 注意：如果源站服务器上使用了安全软件（如安全狗、云锁等），您需要在这些软件上设置放行Web应用防火墙的回源IP段，防止由Web应用防火墙转发到源站的正常业务流量被拦截。
 
-- 已通过本地验证，确保Web应用防火墙的转发配置生效，防止因配置错误导致业务中断。更多信息，请参见[本地验证](/Step-3.md)。
+- 已通过本地验证，确保Web应用防火墙的转发配置生效，防止因配置错误导致业务中断。更多信息，请参见[本地验证](Step-3.md)。
 
 - 拥有在域名的DNS服务商处修改域名解析设置的权限。
 
@@ -26,7 +26,7 @@ Web应用防火墙支持通过CNAME方式接入，即将域名解析到WAF CNAME
 
 2.在左侧导航栏，单击**网站配置**。
 
-3.获取CNAME值。在**网站配置**页面，定位到您添加的域名，将鼠标悬浮到CNAME上方，可以查看到CNAME的值，点击 ![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Click-Cname.png)，获取并复制CNAME。
+3.获取CNAME值。在**网站配置**页面，定位到您添加的域名，将鼠标悬浮到CNAME上方，可以查看到CNAME的值，点击 ![image](../../../../image/WAF/join-in-WAF/本地验证/Checking-Click-Cname.png)，获取并复制CNAME。
 
 ![image](../../../..\image\WAF\join-in-WAF\本地验证\Checking-Get-Cname.png)
 
@@ -50,7 +50,7 @@ Web应用防火墙支持通过CNAME方式接入，即将域名解析到WAF CNAME
 
 ​		CNAME接入：将**记录类型**设置为**CNAME**、**记录值**修改为**WAF CNAME**地址，其余设置保持不变。
 
-![image](../../../..\image\WAF\join-in-WAF\本地验证\DNS-Modify.png)
+![image](../../../../image/WAF/join-in-WAF/本地验证/DNS-Modify.png)
 
 关于不同记录类型的冲突，需要注意以下情况：
 
