@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看参数的修改历史<br>- 仅支持MySQL
+查看参数组绑定的云数据库实例<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -25,18 +25,18 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeparametergroupattachedinstances#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instances**|AttachedDBInstance[]| |
+|**instances**|[AttachedDBInstance[]](describeparametergroupattachedinstances#attacheddbinstance)| |
 |**totalCount**|Integer| |
-### AttachedDBInstance
+### <div id="attacheddbinstance">AttachedDBInstance</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|实例ID|
-|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
+|**instanceName**|String|实例名称，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**instanceType**|String|实例类型，例如主实例，只读实例等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engine**|String|实例引擎类型，如MySQL或SQL Server等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**engineVersion**|String|实例引擎版本，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
@@ -49,3 +49,41 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeParameterGroupAttachedInstances() {
+    DescribeParameterGroupAttachedInstancesRequest request = new DescribeParameterGroupAttachedInstancesRequest();
+    request.setPageNumber(1);
+    request.setPageSize(20);
+    request.setParameterGroupId("mysql-pg-mpzspoh243");
+    request.setRegionId("cn-north-1");
+    DescribeParameterGroupAttachedInstancesResponse response = rdsClient.describeParameterGroupAttachedInstances(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaoeib2c7hcvwcso2ujcq31m9quh18f", 
+    "result": {
+        "instances": [
+            {
+                "createTime": "2020-01-07 18:42:46", 
+                "engine": "MySQL", 
+                "engineVersion": "5.7", 
+                "instanceId": "mysql-k67q8n46si", 
+                "instanceName": "hdj_test", 
+                "instanceStatus": "ACTIVE", 
+                "instanceType": "cluster", 
+                "parameterGroupId": "mysql-pg-mpzspoh243", 
+                "parameterStatus": "VALID"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

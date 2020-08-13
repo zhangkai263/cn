@@ -1,34 +1,26 @@
-## **基础架构**
+## 基础架构
 
-#### **概述**
+#### 概述
 
 专线服务整体架构图如下：
 
- ![](/image/Networking/Direct-Connect-Service/Infrastructure.png)
+ ![](../../../../image/Networking/Direct-Connect-Service/Introduction/Infrastructure.png)
 
+#### 专线服务的组件
 
+专线连接(Direct Connect)：
+  - 物理连接(Connection)：用于连接京东云机房和客户IDC机房的物理链路。
+  - 专线通道(Private Virtual Interface)：用于连接企业IDC和公有云的逻辑链路。
 
-#### **专线服务的组件**
+  托管连接(Hosted Connect)：
+  - 托管专线(Hosted Connection)：用于连接京东云机房和客户所在的京东云托管区的物理链路。
+  - 托管通道(Hosted Private Virtual Interface)：用于连接托管区和公有云的逻辑链路。
 
-专线连接(Direct Connect)
+边界网关(BGW，Border Gateway)：承载VPC之间、VPC与外部环境进行南北向内网通信的网关，目前已承载的功能为专线连接、托管连接、VPN连接。
 
-- 物理连接(Connection)：用于连接京东云机房和客户IDC机房的物理链路。
-- 专线通道(DirectConnect Tunnel)：用于连接物理连接和边界网关的逻辑链路。
+VPC接口(VPC Attachment)：京东云VPC与边界网关之间的互联接口。
 
-
-
-托管连接(Hosted Connect)
-
-- 托管专线(Hosted Connection)：用于连接京东云机房和客户所在的京东云托管区设备的物理链路。
-- 托管通道(HostedConnect Tunnel)：用于连接托管专线和边界网关的逻辑链路。
-
-
-
-边界网关(BGW，Border Gateway)：承载VPC与外部设备/环境进行通信的网关，目前已承载的功能为专线服务，边界网关会自动关联到该用户同地域下的全部VPC。
-
-
-
-#### **高可用架构**
+#### 高可用架构
 
 专线服务的所有组件全部采用/支持高可用架构设计，其中：
 

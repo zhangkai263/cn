@@ -2,7 +2,7 @@
 
 ## 公共请求头
 
-|AWS S3 请求头|兼容情况|
+|AWS S3请求头|兼容情况|
 |-|-|
 |Authorization|兼容|
 |Content-Length|兼容|
@@ -17,7 +17,7 @@
 
 ## 公共响应头
 
-|AWS S3 响应头|兼容情况|
+|AWS S3响应头|兼容情况|
 |-|-|
 |Content-Length|兼容|
 |Content-Type|兼容|

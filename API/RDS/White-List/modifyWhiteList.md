@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PUT
+```
+public void testModifyWhiteList() {
+    ModifyWhiteListRequest request = new ModifyWhiteListRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setIps("127.0.0.1,0.0.0.1");
+    ModifyWhiteListResponse response = rdsClient.modifyWhiteList(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaote3hqwti0r73ow6q0dct8ogcn507"
+}
+```

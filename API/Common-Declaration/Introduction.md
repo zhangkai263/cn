@@ -51,11 +51,14 @@ cn-south-1 | 华南-广州
 :---|:---|:---
 华北-北京 | 可用区A | cn-north-1a 
 华北-北京 | 可用区B | cn-north-1b  
+华北-北京 | 可用区C | cn-north-1c  
 华东-宿迁 | 可用区A | cn-east-1a 
-华东-上海 | 可用区A | cn-north-2a  
-华东-上海 | 可用区B | cn-north-2b 
+华东-上海 | 可用区A | cn-east-2a  
+华东-上海 | 可用区B | cn-east-2b 
+华东-上海 | 可用区C | cn-east-2c
 华南-广州 | 可用区A | cn-south-1a  
-   
+华南-广州 | 可用区B | cn-south-1b  
+华南-广州 | 可用区C | cn-south-1c  
 
 
 
@@ -80,7 +83,7 @@ cn-south-1 | 华南-广州
 
 ## 使用限制 ##
 
-对OpenAPI的调用有每分钟频次限制。大多数业务线的调用限制为1000次/分钟，个别API接口也有单独的频次限制。如果超出频次限制，会返回http返回码为429、status为RATE_LIMIT的错误信息。
+对OpenAPI的调用有每分钟频次限制。大多数业务线的调用限制为60000次/分钟，个别API接口也有单独的频次限制。如果超出频次限制，会返回http返回码为429、status为RATE_LIMIT的错误信息。
 
  
 
@@ -96,7 +99,7 @@ cn-south-1 | 华南-广州
 
 [Node.js](/SDK/nodejs/Nodejs.md)
 
-[PHP](/SDK/PHP.md)
+[PHP](/SDK/PHP/PHP.md)
 
 [.Net](/SDK/dotnet/dotnet.md)
 

@@ -9,7 +9,7 @@
 GET
 
 ## 请求地址
-https://nc.jdcloud-api.com/v1/regions/{regionId}/quotas
+https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/quotas
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -24,14 +24,14 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describequota#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**quota**|Quota| |
-### Quota
+|**quota**|[Quota](describequota#quota)| |
+### <div id="quota">Quota</div>
 |名称|类型|描述|
 |---|---|---|
 |**resourceType**|String|类型|

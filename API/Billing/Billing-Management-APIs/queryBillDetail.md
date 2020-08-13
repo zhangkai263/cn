@@ -17,14 +17,15 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billDetail:list
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**startTime**|String|True| |计费开始时间|
-|**endTime**|String|True| |计费结束时间|
+|**startTime**|String|True| |帐单开始时间|
+|**endTime**|String|True| |帐单结束时间|
 |**appCode**|String|False| |产品线代码|
 |**serviceCode**|String|False| |产品代码|
 |**billingType**|Integer|False| |计费类型 1、按配置 2、按用量 3、包年包月 4、按次|
-|**resourceIds**|String[]|False| |资源单id列表|
-|**pageIndex**|Integer|False| |pageIndex|
-|**pageSize**|Integer|False| |pageSize|
+|**resourceIds**|String[]|False| |资源单id列表,最多支持传入500个|
+|**tags**|Map[]|False| |标签|
+|**pageIndex**|Integer|False| |pageIndex 分页 从1开始,java客户端调用默认值1，其它客户端必传|
+|**pageSize**|Integer|False| |pageSize 每页查询数据条数，最多支持1000条,java客户端调用默认值10，其它客户端必传|
 
 
 ## 返回参数
@@ -63,13 +64,19 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billDetail:list
 |**balancePayFee**|Number|余额支付金额|
 |**cashPayFee**|Number|现金支付金额|
 |**arrearFee**|Number|欠费金额|
+|**tagDetails**|ResourceTagVo[]|标签明细|
+### ResourceTagVo
+|名称|类型|描述|
+|---|---|---|
+|**tagKey**|String|标签键|
+|**tagValue**|String|标签值|
 ### Pagination
 |名称|类型|描述|
 |---|---|---|
 |**currPageNo**|Integer|当前页|
-|**numberPages**|Integer|页数|
-|**numberRecords**|Integer|每页记录数|
-|**pageSize**|Integer|页面大小|
+|**numberPages**|Integer|总页数|
+|**numberRecords**|Integer|总记录数|
+|**pageSize**|Integer|每页记录数,默认10|
 |**startIndex**|Integer|起始页|
 
 ## 返回码

@@ -17,7 +17,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/ipBlackList
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ips**|String[]|False| |ip黑名单,ips中url不能超过50条|
+|**ips**|String[]|True| |ip黑名单,ips中url不能超过50条|
 
 
 ## 返回参数

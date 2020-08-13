@@ -18,7 +18,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**dbName**|String|True| |数据库名，数据库名称的限制请参考[帮助中心文档](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
+|**dbName**|String|True| |数据库名，数据库名称的限制请参考[帮助中心文档](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**characterSetName**|String|True| |数据库的字符集名，当前支持的字符集请查看[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 
 
@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testCreateDatabase() {
+    CreateDatabaseRequest createDatabaseRequest = new CreateDatabaseRequest();
+    createDatabaseRequest.setCharacterSetName("utf8");
+    createDatabaseRequest.setDbName("test_db");
+    createDatabaseRequest.setInstanceId("mysql-wp4e9ztap2");
+    createDatabaseRequest.setRegionId("cn-north-1");
+    CreateDatabaseResponse response = rdsClient.createDatabase(createDatabaseRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3ndd5dh5goirjip58obhmk1wwwhun"
+}
+```

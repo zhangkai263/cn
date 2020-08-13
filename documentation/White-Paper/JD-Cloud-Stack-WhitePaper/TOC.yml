@@ -1,0 +1,18 @@
+name: 专有云JD Cloud Stack白皮书 
+href: 
+items:
+
+- name: 简介
+  href: Introduction/introduction.md
+- name: 主要优势
+  href: Advantage/advantage.md
+- name: 平台概述
+  href: Overview/overview.md
+- name: 产品结构图
+  href: Structure/structure.md
+- name: 交付与运维
+  href: Operation/operation.md
+- name: 典型行业解决方案
+  href: Solution/solution.md
+- name: 下载地址
+  href: Download/download.md

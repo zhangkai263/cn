@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除一个跨地域备份同步服务。<br>- 仅支持MySQL
+删除一个跨地域备份同步服务。
 
 ## 请求方式
 DELETE
@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities/{service
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteBackupSynchronicity() {
+    DeleteBackupSynchronicityRequest request = new DeleteBackupSynchronicityRequest();
+    request.setRegionId("cn-east-2");
+    request.setServiceId("dbs-r1q51ene3s5d");
+    DeleteBackupSynchronicityResponse response = rdsClient.deleteBackupSynchronicity(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa35r3b7jni1rj6krrfbprsr68vpb38"
+}
+```

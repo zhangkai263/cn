@@ -2,7 +2,7 @@
 
 
 ## 描述
-获取当前账号下所有的参数组列表<br>- 仅支持MySQL
+获取当前账号下所有的参数组列表<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -24,14 +24,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeparametergroups#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**parameterGroups**|ParameterGroup[]| |
+|**parameterGroups**|[ParameterGroup[]](describeparametergroups#parametergroup)| |
 |**totalCount**|Integer| |
-### ParameterGroup
+### <div id="parametergroup">ParameterGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**parameterGroupId**|String|参数组ID|
@@ -47,3 +47,39 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeParameterGroups() {
+    DescribeParameterGroupsRequest request = new DescribeParameterGroupsRequest();
+    request.setPageNumber(1);
+    request.setPageSize(10);
+    request.setRegionId("cn-north-1");
+    DescribeParameterGroupsResponse response = rdsClient.describeParameterGroups(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpao7omjn7039ocmwo25nhdae9mag0pb", 
+    "result": {
+        "parameterGroups": [
+            {
+                "createTime": "2020-01-08 14:15:49", 
+                "description": "tttttt", 
+                "engine": "MySQL", 
+                "engineVersion": "5.7", 
+                "parameterGroupId": "mysql-pg-e4zkfymxwt", 
+                "parameterGroupName": "test mysql", 
+                "parameterGroupStatus": "AVAILABLE", 
+                "regionId": "cn-north-1"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

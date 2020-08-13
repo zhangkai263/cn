@@ -13,7 +13,7 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
-      - name: 产品规格
+      - name: 规格性能
         href: Introduction/Specifications.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
@@ -48,9 +48,9 @@
           - name: 删除实例
             href: Operation-Guide/Instance-Management/Release-Instance.md
       - name: 账号登录
-        href: Operation-Guide/Login/Login.md
+        href: Operation-Guide/Login.md
       - name: 监控报警
-        href: Operation-Guide/Monitoring/Monitoring.md             
+        href: Operation-Guide/Monitoring.md             
   - name: 最佳实践
     items:
     - name: C++客户端

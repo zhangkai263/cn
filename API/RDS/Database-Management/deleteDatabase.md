@@ -2,7 +2,7 @@
 
 
 ## 描述
-从RDS实例中删除数据库。为便于管理和数据恢复，RDS对用户权限进行了控制，用户仅能通过控制台或本接口删除数据库</br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>
+从RDS实例中删除数据库。为便于管理和数据恢复，RDS对用户权限进行了控制，用户仅能通过控制台或本接口删除数据库<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
@@ -28,3 +28,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteDatabase() {
+    DeleteDatabaseRequest deleteDatabaseRequest = new DeleteDatabaseRequest();
+    deleteDatabaseRequest.setDbName("test_db");
+    deleteDatabaseRequest.setInstanceId("mysql-wp4e9ztap2");
+    deleteDatabaseRequest.setRegionId("cn-north-1");
+    DeleteDatabaseResponse response = rdsClient.deleteDatabase(deleteDatabaseRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3ow7bae3ovbn5g0gmvbt3sgw00wda"
+}
+```

@@ -1,4 +1,4 @@
-# 配置部署HTTPS监听器
+# 利用负载均衡部署HTTPS服务
 
 ## 准备与规划
 
@@ -24,7 +24,7 @@
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-045.png)
 
-- 点击 **新建证书** 可新建一个SSL证书。
+- 点击 **新建证书** 跳转到**云安全-SSL数字证书**页面申购/上传一个证书。
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-046.png)
 
@@ -36,7 +36,7 @@
 
 - 配置健康检查：设置健康检查相关参数，这里使用HTTP方式。
 
-	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-048.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-094.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
@@ -48,6 +48,6 @@
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-050.png)
 
-- 至此，已创建完成基于HTTP协议的监听器，可在监听器列表查看。
+- 至此，已创建完成基于HTTPS协议的监听器，可在监听器列表查看。
 
 	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-051.png)

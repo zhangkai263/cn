@@ -22,13 +22,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describewhitelist#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**whiteLists**|WhiteList[]|白名单列表|
-### WhiteList
+|**whiteLists**|[WhiteList[]](describewhitelist#whitelist)|白名单列表|
+### <div id="whitelist">WhiteList</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|白名单名称|
@@ -38,3 +38,31 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeWhiteList() {
+    DescribeWhiteListRequest request = new DescribeWhiteListRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-k67q8n46si");
+    DescribeWhiteListResponse response = rdsClient.describeWhiteList(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaot34k3hifbuhtjkb181j0mbg42gke", 
+    "result": {
+        "whiteLists": [
+            {
+                "ips": "8.8.0.0/16", 
+                "name": "default"
+            }
+        ]
+    }
+}
+```

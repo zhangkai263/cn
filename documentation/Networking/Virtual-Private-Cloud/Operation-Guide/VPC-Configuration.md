@@ -4,7 +4,7 @@
 
 1.打开控制台，选择 网络>私有网络 ，进入私有网络列表页；
 
-2.选择创建私有网络所属地域（目前开放华北、华南地域），点击“创建”按钮；
+2.选择创建私有网络所属地域（目前开放华北-北京、华南-广州、华东-宿迁、华东-上海地域），点击“创建”按钮；
 
 3.地域选择：在此步骤仍可以选择创建私有网络的地域，如果所选地域限额已满，可以通过“提交工单”提升限额；
 
@@ -15,10 +15,6 @@
 6.设置私有网络描述：描述可以为空，只支持中文、数字、大小写字母、英文下划线“_”，且不能超过256字符；
 
 7.点击【确定】后即可进入“控制台”查看创建的私有网络；
-
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/VPC-Configuration/Step1.png)
-
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/VPC-Configuration/Step2.png)
 
 
 
@@ -33,8 +29,6 @@
 #### **步骤三、查看VPC内子网、路由表、网络ACL**
 
 打开控制台，选择 网络 > 私有网络，点击私有网络名称进入私有网络详情页，切换子网、路由表、网络ACL的tab即可查看此私有网络中已经创建的子网、路由表、网络ACL信息。
-
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/VPC-Configuration/Step3.png)
 
 
 

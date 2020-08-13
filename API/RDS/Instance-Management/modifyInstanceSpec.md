@@ -2,7 +2,7 @@
 
 
 ## 描述
-实例扩容，支持升级实例的CPU，内存及磁盘。目前暂不支持实例降配<br>- 仅支持MySQL
+实例扩容，支持升级实例的CPU，内存及磁盘。
 
 ## 请求方式
 POST
@@ -20,14 +20,16 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyI
 |---|---|---|---|---|
 |**newInstanceClass**|String|True| |扩容后实例规格|
 |**newInstanceStorageGB**|Integer|True| |扩容后实例磁盘大小|
+|**newInstanceStorageType**|String|False| |存储类型，如果不指定，默认会采用实例原存储类型.|
+|**storageEncrypted**|Boolean|False| |实例数据加密(存储类型为云硬盘才支持数据加密). false：不加密; true：加密. 如果实例从本地盘变为云硬盘，缺省为false. 如果实例本来就是使用云硬盘的，缺省和源实例保持一致|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyinstancespec#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**orderId**|String|生成的订单号|
@@ -36,3 +38,28 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyI
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyInstanceSpec() {
+    ModifyInstanceSpecRequest modifyInstanceSpecRequest = new ModifyInstanceSpecRequest();
+    modifyInstanceSpecRequest.setRegionId("cn-north-1");
+    modifyInstanceSpecRequest.setInstanceId("mysql-wp4e9ztap2");
+    modifyInstanceSpecRequest.setNewInstanceClass("db.mysql.s1.micro");
+    modifyInstanceSpecRequest.setNewInstanceStorageGB(40);
+    ModifyInstanceSpecResponse response = rdsClient.modifyInstanceSpec(modifyInstanceSpecRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa57oaqq1hdr0hsf3uoeuim9b22awg8", 
+    "result": {
+        "orderId": "188341099108437755"
+    }
+}
+```

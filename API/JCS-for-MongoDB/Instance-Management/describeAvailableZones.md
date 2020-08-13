@@ -21,13 +21,13 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/availableZones
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeavailablezones#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**availableZones**|AvailableZones[]| |
-### AvailableZones
+|**availableZones**|[AvailableZones[]](describeavailablezones#availablezones)| |
+### <div id="availablezones">AvailableZones</div>
 |名称|类型|描述|
 |---|---|---|
 |**az**|String|可用区|

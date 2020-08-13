@@ -19,7 +19,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**sharedFileGid**|String|False| |共享文件的全局ID，可从上传文件查询接口[describeImportFiles](../import/describeImportFiles.md)获取；如果该文件不是共享文件，则不用输入该参数|
+|**sharedFileGid**|String|False| |共享文件的全局ID，可从上传文件查询接口[describeImportFiles](../Cloud-on-Single-Database/describeImportFiles.md)获取；如果该文件不是共享文件，则不用输入该参数|
 |**fileName**|String|True| |用户上传的备份文件名称（包括文件后缀名），例如mydb1.bak|
 
 
@@ -31,3 +31,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testRestoreDatabaseFromFile() {
+    RestoreDatabaseFromFileRequest restoreDatabaseFromFileRequest = new RestoreDatabaseFromFileRequest();
+    restoreDatabaseFromFileRequest.setDbName("test_db");
+    restoreDatabaseFromFileRequest.setFileName("db1_1.bak");
+    restoreDatabaseFromFileRequest.setSharedFileGid("fcbb66c6-e7f0-4228-b4c0-b3e5a0d452c8");
+    restoreDatabaseFromFileRequest.setInstanceId("sqlserver-83uqv7avy4");
+    restoreDatabaseFromFileRequest.setRegionId("cn-north-1");
+    RestoreDatabaseFromFileResponse response = rdsClient.restoreDatabaseFromFile(restoreDatabaseFromFileRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3v2q3s2fn4awhisgpopkt14uachka"
+}
+```
