@@ -1,0 +1,21 @@
+name: 身份通
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 身份通概述
+        href: Introduction/Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+      - name: 产品功能
+        href: Introduction/Features.md
+  - name: 入门指南
+    items:
+      - name: 开通和使用身份通
+        href: Getting-Start/Initiate-Tenant-Account.md
+      - name: 管理用户
+        href: Getting-Start/Manage-Users.md
+      - name: 添加应用并授权
+        href: Getting-Start/Add-Applications.md

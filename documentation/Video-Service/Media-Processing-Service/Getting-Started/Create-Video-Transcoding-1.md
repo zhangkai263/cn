@@ -2,7 +2,7 @@
 
 ## 操作步骤
 
-1.登录[对象存储控制台](http://jfs-console.jdcloud.com/overview)。未来会移入媒体处理服务控制台。
+1.登录[对象存储控制台](https://oss-console.jdcloud.com/storageFile)。
 
 2.在【对象存储】>>【音视频处理】中，选中所需地域，单击【新建音视频工作流】按钮。
 

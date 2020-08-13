@@ -18,7 +18,7 @@
    </tr>
    <tr>  
       <td> Mac OS    </td>
-      <td> VNC 登录<br>rdesktop登录 </td>
+      <td> VNC 登录<br>Remote Desktop登录 </td>
    </tr>
 </table>
 
@@ -26,12 +26,12 @@
 创建实例并获取账号和对应密码
 
 * 管理员账号：Administrator
-* 密码：京东云实例可以通过两种方式获取密码
+* 密码：京东智联云实例可以通过两种方式获取密码
   *  在创建实例时，选择 【暂不设置 】，则系统将以短信及邮件方式发送默认密码，您可以在登录实例时，使用默认密码进行验证。
   *  选择【立即设置】，则在密码设置文本框中输入自定义密码，如果忘记密码，可以通过[重置密码](../Operation-Guide/Instance/Reset-Password.md)功能重新设置密码，此功能只有“运行”状态实例可用。
 
 ## 使用VNC登录实例
-VNC登录是京东云为用户提供的一种通过 Web 浏览器远程连接实例的方式。在没有安装远程登陆客户端或者客户端远程登陆无法使用的情况下，用户可以通过 VNC 登陆连接到实例，观察实例状态，并且可通过实例用户进行基本的实例管理操作。
+VNC登录是京东智联云为用户提供的一种通过 Web 浏览器远程连接实例的方式。在没有安装远程登陆客户端或者客户端远程登陆无法使用的情况下，用户可以通过 VNC 登陆连接到实例，观察实例状态，并且可通过实例用户进行基本的实例管理操作。
 VNC登陆的场景至少包括以下几种：
 * 查看实例的启动进度
 * 无法通过客户端 SSH 或 mstsc 登录时，通过 VNC 登陆来登录实例
@@ -52,7 +52,7 @@ VNC登陆的场景至少包括以下几种：
 * 暂不支持文件上传下载。
 
 ## 本地为Windows，使用远程桌面登录Windows实例
-使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
+使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东智联云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
 1. 点击电脑【开始】按钮，找到“运行”<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-menu.png)<br>
 2. 在运行中输入mstsc命令，点击确定，即可打开远程桌面连接对话框。<br>
@@ -63,9 +63,9 @@ VNC登陆的场景至少包括以下几种：
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc2.png)
 5. 勾选“不再询问我是否连接到此计算机”，点击【是】。<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png)
-6. 成功连接到您在京东云创建的Windows实例。<br>
+6. 成功连接到您在京东智联云创建的Windows实例。<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png)
-7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](../Operation-Guide/Security-Group/Overview.md)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
+7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
 
 
 ## 本地为Linux，使用rdesktop登录Windows实例
@@ -78,7 +78,23 @@ VNC登陆的场景至少包括以下几种：
 rdesktop -u administrator -p <实例登录密码> <实例公网IP地址>
 ```
 
-## 相关参考
+## 本地为MAC，使用远程桌面登录Windows实例
+以微软官方提供的Remote Desktop为例，示意本地为MAC OS如何远程登录Windows实例。Remote Desktop可以前往[HockeyApp](https://rink.hockeyapp.net/apps/5e0c144289a51fca2d3bfa39ce7f2b06/)下载，下载前请确认当前系统版本是否支持。
+
+1. 运行Microsoft Remote Desktop，点击【Add Desktop】。
+![](../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac1.png)
+
+2. 在弹出的窗口中输入windows实例的公网IP地址,点击【Add】添加保存。
+![](../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac2.png)
+
+3. 完成添加后，在“saved Desktop”中通过公网IP地址找到该实例，点击图标，输入用户名和密码，Windows实例的默认用户名是 administrator。随后点击【Done】即可连接实例。
+![](../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac3.png)
+![](../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac4.png)
+
+4. 首次连接后，再次连接时可以直接找到并选中希望连接的实例图标，点击窗口设置图标里的【Connect】完成登录信息输入后进行连接。
+
+
+## 相关参考 
 
 [重置密码](../Operation-Guide/Instance/Reset-Password.md)
 

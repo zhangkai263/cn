@@ -15,6 +15,8 @@ items:
       href: Introduction/Restrictions.md
     - name: 应用场景 
       href: Introduction/Application-Scenarios.md
+    - name: 日志服务IAM说明 
+      href: /Introduction/LogService-IAM.md
     - name: 云产品日志说明
       items:
         - name: 应用安全网关日志
@@ -22,9 +24,23 @@ items:
         - name: 函数服务日志
           href: Introduction/ResourceLog/FunctionLog.md
         - name: 云搜索Elasticsearch日志
-          href: Introduction/ResourceLog/eslog.md
+          href: Introduction/ResourceLog/esLog.md
         - name: API网关日志
           href: Introduction/ResourceLog/apiLog.md
+        - name: 应用负载均衡日志
+          href: Introduction/ResourceLog/ALBLog.md
+        - name: MySQL审计日志
+          href: Introduction/ResourceLog/MySQLLog.md
+        - name: Kubernetes集群系统日志
+          href: Introduction/ResourceLog/KubernetesLog.md
+        - name: 云缓存Redis日志
+          href: Introduction/ResourceLog/RedisLog.md
+        - name: PostgreSQL日志
+          href: Introduction/ResourceLog/PGLog.md
+        - name: JDW数据仓库日志
+          href: Introduction/ResourceLog/JDWLog.md
+        - name: 自动镜像执行日志
+          href: Introduction/ResourceLog/AutoImageLog.md
 - name: 产品定价
   items:
     - name: 计费概述
@@ -35,18 +51,26 @@ items:
       href: Getting-Started/LogService-Started.md
 - name: 操作指南
   items:
-    - name: 日志采集
+    - name: 日志源设置
       items:
-        - name: 云产品日志采集
-          href: Operation-Guide/LogCollection/CloudResource.md
+        - name: 云产品日志源设置
+          href: Operation-Guide/Logsource/cloudServiceLogSource.md
+        - name: 业务应用日志源设置
+          href: Operation-Guide/Logsource/customLogSource.md
     - name: 日志管理
       items:
-        - name: 日志集管理
-          href: Operation-Guide/LogSet/LogSetManagement.md
-        - name: 日志主题管理
-          href: Operation-Guide/LogSet/LogTopicManagement.md
         - name: 日志配置管理
           href: Operation-Guide/LogSet/collectionConfigManagement.md
+    - name: 日志预处理
+      items:
+        - name: 单行文本模式
+          href: Operation-Guide/Logpreprocessing/Singlelinetext.md
+        - name: 单行全文正则提取模式
+          href: Operation-Guide/Logpreprocessing/Fulltextregularization.md
+        - name: JSON提取模式
+          href: Operation-Guide/Logpreprocessing/Jsonlog.md
+        - name: 分隔符提取模式
+          href: Operation-Guide/Logpreprocessing/Separatorlog.md
     - name: 日志检索
       items:
         - name: 日志检索语法
@@ -55,16 +79,28 @@ items:
           href: Operation-Guide/LogSearch/fullTextSearch.md
         - name: 键值检索
           href: Operation-Guide/LogSearch/KVSearch.md
+    - name: 日志转储
+      href: Operation-Guide/LogTransfer/TransferConfig.md
+    - name: 日志监控
+      items:
+        - name: 日志监控配置
+          href: Operation-Guide/LogMonitor/MonitorConfig.md
 - name: 最佳实践
   items:
-    - name: 应用安全网关日志
+    - name: 日志采集——应用安全网关日志采集
       href: Best-Practices/Practice-waf.md
+    - name: 日志转储配置——ALB访问日志转储
+      href: Best-Practices/Besttransfer.md
+    - name: 日志监控配置——业务应用日志监控
+      href: Best-Practices/Bestmonitor.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 文档历史记录
-  href: Related-Resources/Document-History.md  
-- name: 服务条款         
-  status: 0      
+  href: Related-Resources/Document-History.md 
+- name: 用户协议
+  items:
+    - name: 服务条款
+      href: User-Agreement/Product-Terms-Of-Service.md        
 - name: SLA         
   status: 0       
 - name: 备案         

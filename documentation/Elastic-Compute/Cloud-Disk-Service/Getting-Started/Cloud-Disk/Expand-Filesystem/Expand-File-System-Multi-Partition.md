@@ -1,4 +1,4 @@
-# 扩容文件系统（多分区）
+# 扩容文件系统（有分区）
 
 <br>
 
@@ -16,7 +16,7 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/expand_multipart_002.jpg)
 
-**扩容Linux系统多分区的云硬盘**
+## 扩容Linux系统多分区的云硬盘 
 
 以CentOS 7.2 64位为例，将云主机已挂载的云硬盘由40G扩容到50G。
 

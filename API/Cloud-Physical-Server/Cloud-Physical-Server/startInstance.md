@@ -2,7 +2,7 @@
 
 
 ## 描述
-对单个云物理服务器执行开机操作，只能启动stopped状态的服务器
+对单台云物理服务器执行开机操作，只能启动stopped状态的服务器
 
 ## 请求方式
 PUT
@@ -24,10 +24,10 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:startIn
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](startinstance#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|开机操作是否成功|

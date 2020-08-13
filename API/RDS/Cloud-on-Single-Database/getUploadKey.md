@@ -22,9 +22,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/importF
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](getuploadkey#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String|上传文件需要用到的Key|
@@ -33,3 +33,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/importF
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testGetUploadKey(){
+    GetUploadKeyRequest request=new GetUploadKeyRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    GetUploadKeyResponse response= rdsClient.getUploadKey(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4m1sg1b8refswmtdq9h0r40082h3r", 
+    "result": {
+        "key": "GQx4EEy53e44Zt0por6NKhkrbhiHqw3NK4MBbZBft9xVy11m6BL5wTFsthBraXNSiN8G97OOED4dMryee1vybuQW7UliGAtzZdwX21NIX5dNcDQBcrELtQ=="
+    }
+}
+```
