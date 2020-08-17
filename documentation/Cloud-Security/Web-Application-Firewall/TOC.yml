@@ -1,4 +1,4 @@
-name: Web 应用防火墙
+﻿name: Web 应用防火墙
 href:
 items:
 - name: 产品简介
@@ -19,6 +19,12 @@ items:
       href: Pricing/Price-Overview.md
     - name: 购买方式
       href: Pricing/Purchase-Process.md
+    - name: 续费与升级
+      href: Pricing/Renew-And-Upgrade.md
+    - name: 域名扩展包
+      href: Pricing/domain-Expansion-Pack.md
+    - name: 带宽扩展包
+      href: Pricing/Bandwidth-Expansion-Pack.md
 - name:  快速入门
   items:
     - name: 添加准备
@@ -31,6 +37,8 @@ items:
       href: Getting-Started/Step-3.md 
     - name: 步骤4-修改DNS解析
       href: Getting-Started/Step-4.md
+    - name: 关联证书
+      href: Getting-Started/update-certificate.md
 - name: 操作指南
   items:
     - name: 防护配置
