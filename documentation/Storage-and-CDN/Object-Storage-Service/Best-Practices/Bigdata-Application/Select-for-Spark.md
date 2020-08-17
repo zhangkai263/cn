@@ -1,6 +1,8 @@
+# Spark使用OSS select优化数据查询（公测）
+
 本文介绍了在Spark里使用[OSS select](../../Operation-Guide/Manage-Object/Select-Object.md)来优化数据查询的方法。目前OSS select处于公测中。
 
-# 引入s3select依赖包
+## 引入s3select依赖包
 
 进入jars目录，下载oss-select.jar依赖包
 
@@ -12,7 +14,7 @@
 
 项目源码可参考开源项目[minio-SparkSelect](https://github.com/minio/spark-select)
 
-# 示例
+## 示例
 
 ```
 spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", "")
