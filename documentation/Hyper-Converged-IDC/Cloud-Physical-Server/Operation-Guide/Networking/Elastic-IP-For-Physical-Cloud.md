@@ -82,4 +82,5 @@
 ## 修改带宽
 
 打开控制台，在左侧导航栏依次点击云物理服务器->弹性公网IP，点击操作中的 **修改带宽** 按钮，弹框选择需要调整的带宽大小，即可完成操作。
+弹性公网IP支持升配和降配操作。<br/>
 ![修改带宽](https://github.com/jdcloudcom/cn/blob/cn-cloud-physical-server-latest/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS-VPC-037.png)
