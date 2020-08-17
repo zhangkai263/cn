@@ -1,5 +1,7 @@
 ## 多path回源配置（configBackSourcePath）
 
+中国境外/全球加速时暂不支持该配置
+
 ### 请求方式
 POST
 
