@@ -133,10 +133,8 @@ items:
     items:
        - name: 核验单信息
          items:
-          - name: 下载核验单
-            href: Data-download/General-check-list/Create check-list-download.md
-          - name: 核验单填写示例
-            href: Data-download/General-check-list/Create check-list-download.md
+          - name: 核验单下载
+            href: Data-download/check-list/check-list-download.md
        - name: 各省补充资料下载
          items:
           - name: 上海
@@ -164,7 +162,7 @@ items:
           - name: 山西
             href: Data-download/Addition-Filing/shan1xi.md
        - name: 政府网站备案说明
-         href: Data-download/Addition-Filing/Government-domain-application-form.md       
+         href: Data-download/Government-Website-domain.md
   - name: 流程帮助
     items:
        - name: 工信部短信验证说明
