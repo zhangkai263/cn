@@ -4,10 +4,10 @@
 
 ## 云物理服务器价格
 
-
+云物理服务器支持包年包月和按配置两种计费方式。
 <table>
     <tr>
-        <td rowspan="1"><B>实例规格类型</B></td> 
+        <td rowspan="1" colspan="2"><B>实例规格类型</B></td> 
         <td rowspan="1"><B>实例规格</B></td> 
 	<td rowspan="1"><B>包月价格（元/月）</B></td>
 	<td rowspan="1"><B>按配置（元/小时）</B></td>
@@ -60,7 +60,7 @@
 		<td >标准存储型</td>
 		<td >cps.s.normal</td>
 		<td >4500</td>
-	        <td >15.65</td>   
+	        <td >15.63</td>   
     </tr>
 	<tr>   
 		<td >标准存储型（二代）</td>
@@ -142,13 +142,10 @@
 <tr>
 <td>6Mbps及以上，n为带宽值</td>
 <td>125+(n-5)*80</td>
-<td>1500+(n-5)*960</td>
+<td>0.22+(n-5)*0.14</td>
 </tr>
 <tr>
-
 </table>
-
-
 
 请注意：
 
