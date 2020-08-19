@@ -27,6 +27,8 @@ server_protocol | 请求使用的协议 | string | 通常是HTTP/1.0或HTTP/1.1
 http_user_agent | 用户代理 | string | 客户端代理，eg: curl , chrome
 ssl_cipher | ssl cipher | string | eg：EECDH+AESGCM
 ssl_protocol | ssl 协议 | string | eg：SSLv2 ，TLSv1 
+certificate_id | 证书id |string | eg：cert-jq3a9yhugj
+docker_ip_port | docker 的ip 和端口 | string | eg：192.168.2.3:80
 
 ### 健康检查日志字段说明
 日志字段| 字段描述 | 字段类型 | 字段值说明
