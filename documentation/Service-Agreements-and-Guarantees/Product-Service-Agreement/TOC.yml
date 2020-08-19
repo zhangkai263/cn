@@ -122,10 +122,6 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Level-Agreement-SLA.md
   - name: 边缘共享带宽服务协议
     href: Edge-Shared-Bandwidth-Terms-Of-Service.md    
-  - name: 边缘网络隧道(ENT)服务协议
-    href: Edge-Network-Tunnel-Terms-Of-Service.md
-  - name: 对等边缘服务(JEES)服务条款
-    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
   - name: 通知服务(JNS)服务条款
     href: JD-Cloud-Notification-Service-Terms-Of-Service.md
   - name: 通知服务(JNS)服务等级协议（SLA）
@@ -222,8 +218,6 @@ items:
     href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md  
   - name: 云服务网格服务条款
     href: Mesh-Service-Terms-Of-Service.md
-  - name: 智能边缘安全服务条款
-    href: Intelligent-Edge-Security-Terms-Of-Service.md   
   - name: 堡垒机服务服务条款
     href: Bastion-Terms-Of-Service.md
   - name: 堡垒机服务等级协议（SLA）
