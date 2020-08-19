@@ -93,8 +93,6 @@ items:
         href: FAQ/Problem-summary.md
       - name: 备案拦截排查
         href: FAQ/Intercept-troubleshooting.md
-      - name: 备案密码找回办法
-        href: FAQ/ICP-Filing-Password-Recovery-Method.md
       - name: 公安局备案常见问题
         href: FAQ/Public-Security-Bureau-Filing-Common-Problems.md
       - name: 经营性ICP备案
@@ -135,6 +133,8 @@ items:
          items:
           - name: 核验单下载
             href: Data-download/check-list/check-list-download.md
+          - name: 核验单填写示例
+            href: Data-download/check-list/General-check-list.md
        - name: 各省补充资料下载
          items:
           - name: 上海
@@ -167,13 +167,8 @@ items:
     items:
        - name: 工信部短信验证说明
          href: Process/Recording-SMS-verification-instructions.md
-       - name: 各省补充材料说明
-         href: Process/Provincial-supplementary-materials.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
        - name: 京东智联云“备案用时多久送多久”说明
          href: Process/How-long-does-it-take-to-file-for-a-long-time.md
-       - name: 线下备案注销汇总
-         href: Process/Offline-cancel-cancellation-summary.md
-       - name: 京东智联云备案注销申请方式
-         href: Process/Cancel-Filing-application-method.md
+
