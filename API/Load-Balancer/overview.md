@@ -49,4 +49,8 @@ v1
 |**updateTargetGroup**|PATCH|修改一个虚拟服务器组的信息|
 |**updateTargets**|POST|修改target信息|
 |**updateUrlMap**|PATCH|修改转发规则组|
+|**addListenerCertificates**|POST|添加多证书|
+|**updateListenerCertificates**|POST|修改多证书|
+|**deleteListenerCertificates**|POST|删除多证书|
+
 
