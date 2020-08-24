@@ -20,13 +20,13 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}
 |---|---|---|---|---|
 |**listenerName**|String|False| |监听器名称,只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符|
 |**status**|String|False| |Listener状态, 取值为On或者为Off|
-|**certificateSpecs**|[CertificateSpec[]](updatelistener#certificatespec)|False| |【alb Https和Tls协议】ssl server证书列表，现只支持一个证书|
+|**certificateSpecs**|[CertificateSpec[]](#certificatespec)|False| |【alb Https和Tls协议】Listener绑定的默认证书，只支持一个证书|
 |**connectionIdleTimeSeconds**|Integer|False| |【alb、nlb】空闲连接超时时间, 范围为[1,86400]。 <br>（Tcp和Tls协议）默认为：1800s <br>（Http和Https协议）默认为：60s <br>【dnlb】不支持该功能|
 |**backendId**|String|False| |默认后端服务Id|
 |**urlMapId**|String|False| |【alb Https和Http协议】转发规则组Id|
 |**description**|String|False| |监听器描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 
-### <div id="certificatespec">CertificateSpec</div>
+### <div id="CertificateSpec">CertificateSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificateId**|String|True| |证书Id|
