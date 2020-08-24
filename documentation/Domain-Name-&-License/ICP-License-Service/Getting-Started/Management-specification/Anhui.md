@@ -4,7 +4,7 @@
 
 2. 主体负责人为法人
 
-3. 网站负责人非法人时需提供授权书
+3. 网站负责人非法人时需提供[授权书.doc](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/anhui/anhuishouquanshu.doc)
 
 3. **京东之前有备案的**，其备案信息必须与当前单位实际信息一致。有不一致请到原备案接入商变更后，再申请新增
 
