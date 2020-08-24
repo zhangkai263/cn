@@ -24,11 +24,11 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/
 |**loadBalancerId**|String|True| |Listener所属loadBalancer的Id|
 |**urlMapId**|String|False| |【alb Https和Http协议】转发规则组Id|
 |**action**|String|False| |默认后端服务的转发策略,取值为Forward或Redirect, 现只支持Forward, 默认为Forward|
-|**certificateSpecs**|[CertificateSpec[]](createlistener#certificatespec)|False| |【alb Https和Tls协议】ssl server证书列表，现只支持一个证书|
+|**certificateSpecs**|[CertificateSpec[]](#certificatespec)|False| |【alb Https和Tls协议】Listener绑定的默认证书，只支持一个证书|
 |**connectionIdleTimeSeconds**|Integer|False| |【alb、nlb】空闲连接超时时间, 范围为[1,86400]。 <br>（Tcp和Tls协议）默认为：1800s <br>（Http和Https协议）默认为：60s <br>【dnlb】不支持|
 |**description**|String|False| |描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 
-### <div id="certificatespec">CertificateSpec</div>
+### <div id="CertificateSpec">CertificateSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificateId**|String|True| |证书Id|
@@ -37,10 +37,10 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createlistener#result)|返回结果|
+|**result**|[Result](#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**listenerId**|String|监听器id|
@@ -52,4 +52,3 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/
 |**409**| 'xxx' is already exist|
 |**404**|Resource not found|
 |**400**|Request parameter x.y.z is 'xxx', expected one of [yyy,zzz]|
-
