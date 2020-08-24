@@ -27,6 +27,8 @@ items:
             href: LoadBalancer/associateSecurityGroup.md
           - name: disassociateSecurityGroup
             href: LoadBalancer/disassociateSecurityGroup.md
+          - name: describeQuota
+            href: LoadBalancer/describeQuota.md  
       - name: 监听器
         items:
           - name: createListener
