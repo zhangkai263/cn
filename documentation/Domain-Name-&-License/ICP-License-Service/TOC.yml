@@ -136,30 +136,34 @@ items:
             href: Data-download/check-list/General-check-list.md
        - name: 各省补充资料下载
          items:
-          - name: 上海
-            href: Data-download/Addition-Filing/shanghai.md
-          - name: 湖北
-            href: Data-download/Addition-Filing/hubei.md
-          - name: 湖南
-            href: Data-download/Addition-Filing/hunan.md
-          - name: 重庆
-            href: Data-download/Addition-Filing/chongqing.md
-          - name: 四川
-            href: Data-download/Addition-Filing/sichuan.md
-          - name: 福建
-            href: Data-download/Addition-Filing/fujian.md
-          - name: 甘肃
-            href: Data-download/Addition-Filing/gansu.md
-          - name: 广西
-            href: Data-download/Addition-Filing/guangxi.md
-          - name: 贵州
-            href: Data-download/Addition-Filing/guizhou.md
-          - name: 吉林
-            href: Data-download/Addition-Filing/jilin.md
-          - name: 陕西
-            href: Data-download/Addition-Filing/shanghai.md
-          - name: 山西
-            href: Data-download/Addition-Filing/shan1xi.md
+          - name: 上海市
+            href: Data-download/Addition-Filing/shanghaiziliao.md
+          - name: 湖北省
+            href: Data-download/Addition-Filing/hubeiziliao.md
+          - name: 湖南省
+            href: Data-download/Addition-Filing/hunanziliao.md
+          - name: 重庆市
+            href: Data-download/Addition-Filing/chongqingziliao.md
+          - name: 四川省
+            href: Data-download/Addition-Filing/sichuanziliao.md
+          - name: 福建省
+            href: Data-download/Addition-Filing/fujianziliao.md
+          - name: 甘肃省
+            href: Data-download/Addition-Filing/gansuziliao.md
+          - name: 广西省
+            href: Data-download/Addition-Filing/guangxiziliao.md
+          - name: 贵州省
+            href: Data-download/Addition-Filing/guizhouziliao.md
+          - name: 吉林省
+            href: Data-download/Addition-Filing/jilinziliao.md
+          - name: 陕西省
+            href: Data-download/Addition-Filing/shanghaiziliao.md
+          - name: 山西省
+            href: Data-download/Addition-Filing/shan1xiziliao.md
+          - name: 内蒙古省
+            href: Data-download/Addition-Filing/neimengguziliao.md  
+          - name: 浙江省
+            href: Data-download/Addition-Filing/zhejiangziliao.md 
        - name: 政府网站备案说明
          href: Data-download/Government-Website-domain.md
   - name: 流程帮助
