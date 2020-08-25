@@ -86,6 +86,8 @@ items:
             href: Getting-Started/Management-specification/Yunnan.md
           - name: 浙江
             href: Getting-Started/Management-specification/Zhejiang.md
+          - name: 山东
+            href: Getting-Started/Management-specification/shandong.md
   - name: 常见问题
     items:
       - name: 备案基本问题
