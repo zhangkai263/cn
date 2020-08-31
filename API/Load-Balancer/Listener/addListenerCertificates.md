@@ -18,9 +18,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:addListe
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**certificates**|[ExtCertificateSpec[]](addlistenercertificates#extcertificatespec)|True| |【alb Https和Tls协议】ssl server证书列表|
+|**certificates**|[ExtCertificateSpec[]](#extcertificatespec)|True| |【alb Https和Tls协议】ssl server证书列表|
 
-### <div id="extcertificatespec">ExtCertificateSpec</div>
+### <div id="ExtCertificateSpec">ExtCertificateSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificateId**|String|True| |证书Id|
