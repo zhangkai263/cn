@@ -55,3 +55,4 @@ v1
 |**updateTargetGroup**|PATCH|修改一个虚拟服务器组的信息|
 |**updateTargets**|POST|修改target信息|
 |**updateUrlMap**|PATCH|修改转发规则组|
+

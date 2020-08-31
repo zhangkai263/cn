@@ -21,6 +21,7 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:updateLi
 |**certificates**|[ExtCertificateUpdateSpec[]](#extcertificateupdatespec)|True| |【alb Https和Tls协议】Listener绑定的扩展证书列表|
 
 ### <div id="ExtCertificateUpdateSpec">ExtCertificateUpdateSpec</div>
+
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificateBindId**|String|True| |证书绑定Id|
