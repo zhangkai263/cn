@@ -18,9 +18,10 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/listeners/{listenerId}:updateLi
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**certificates**|[ExtCertificateUpdateSpec[]](updatelistenercertificates#extcertificateupdatespec)|True| |【alb Https和Tls协议】Listener绑定的扩展证书列表|
+|**certificates**|[ExtCertificateUpdateSpec[]](#extcertificateupdatespec)|True| |【alb Https和Tls协议】Listener绑定的扩展证书列表|
 
-### <div id="extcertificateupdatespec">ExtCertificateUpdateSpec</div>
+### <div id="ExtCertificateUpdateSpec">ExtCertificateUpdateSpec</div>
+
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificateBindId**|String|True| |证书绑定Id|
