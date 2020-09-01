@@ -37,9 +37,9 @@ curl -XGET 内网域名/_cat
 
 ```
 
-
+.ruxia 
 ### 通过客户端访问
-云搜索Elasticsearch完全兼容原生Elasticsearch，支持所有原生API，用户只需要使用原生客户端library就可以访问，或者是一些社区包装过的library，例如spring-data-elasticsearch。</br>
+ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client 有 Low Level 和 High Level 两种。如下为7.5.2版本Java High Level REST Client方式访问示例： </br>
 1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
 2. 初始化客户端代码。</br>
 
