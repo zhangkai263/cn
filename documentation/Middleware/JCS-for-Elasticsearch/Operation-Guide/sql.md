@@ -1,4 +1,4 @@
-## SQL插件
+## SQL支持
  京东智联云Elasticsearch 支持使用 SQL 代替 DSL 查询语言。对于ES的初学者，使用 SQL 语言进行查询，能够降低他们使用 ES 的学习成本。</br>
 
 ### 使用限制
