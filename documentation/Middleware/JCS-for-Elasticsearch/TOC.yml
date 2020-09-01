@@ -83,6 +83,8 @@
         href: Operation-Guide/index.md
       - name: 周期创建索引
         href: Operation-Guide/Configure.md
+      - name: SQL支持
+        href: Operation-Guide/sql.md
       - name: 快照
         items: 
         - name: 创建快照
