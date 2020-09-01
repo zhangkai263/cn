@@ -36,7 +36,6 @@ v1
 |**describeListeners**|GET|查询监听器列表|
 |**describeLoadBalancer**|GET|查询负载均衡详情|
 |**describeLoadBalancers**|GET|查询负载均衡列表详情|
-|**describeQuota**|GET|获取配额信息|
 |**describeTargetGroup**|GET|查询TargetGroup详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情|
 |**describeTargetGroups**|GET|查询虚拟服务器组列表详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情|
 |**describeTargetHealth**|GET|查询后端服务下的target的健康状态|
