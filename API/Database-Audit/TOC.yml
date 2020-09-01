@@ -1,7 +1,7 @@
 name: 数据库审计
 href:
 items:
-  - name: 结构概览
+  - name: 接口概览
     href: overview.md
   - name: 更新历史
     href: ChangeLog.md
