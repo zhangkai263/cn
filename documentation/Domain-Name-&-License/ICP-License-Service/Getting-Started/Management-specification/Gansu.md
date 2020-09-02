@@ -6,7 +6,7 @@
 
 2. 主体负责人为法人
 
-3. 若网站负责人不是法人，请提供[网站负责人授权书.doc](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/fujian/fujianshouquanshu.doc)
+3. 若网站负责人不是法人，请提供[主体负责人授权书.doc](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/gansu/gansushouquanshu.docx)
 
 4. 所有负责人手机号码必须甘肃本地号段
 

@@ -30,7 +30,6 @@
 
    ⑤湖北授权书（网站负责人不是法人时提供）
 
-   ⑥企业备案需要提供 [湖北电子商务情况说明书.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/hubei/hbdssm.docx)
 
 ### 湖北个人备案规则：
 
