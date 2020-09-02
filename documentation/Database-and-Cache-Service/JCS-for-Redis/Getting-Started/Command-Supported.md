@@ -4,11 +4,18 @@
 
 ## 支持的命令操作
 
-下表中 ✓ 表示支持 ； x 表示不支持 ； - 表示 无此命令 ； 受限  表示可支持但是受限，。
+操作命令表中的标识说明如下 ：
+
+| 标识 | 说明  |  
+|:--:|:--:|
+| ✓ |  表示支持  |
+| x |  表示不支持  |
+| - |  表示 无此命令   |
+| 受限 |  表示可支持但是受限 |
 
 
 
-### Keys（键）
+#### Keys（键）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  DEL      |  ✓   | ✓  |  ✓  | ✓   | 
@@ -49,7 +56,7 @@
 
 
 
-### String（字符串）
+#### String（字符串）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  APPEND    |   ✓   | ✓  |  ✓  | ✓   | 
@@ -78,7 +85,7 @@
 |  BITFIELD |   -   |  -  |  ✓  | ✓   | 
 
 
-###  Hash（哈希表） 
+####  Hash（哈希表） 
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  HDEL      |   ✓   | ✓  |  ✓  | ✓   | 
@@ -98,7 +105,7 @@
 |  HSTRLEN   |   -   | -  |  ✓  | ✓   | 
 
 
-###  List（列表）
+####  List（列表）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  BLPOP   |   -   | -  |  受限  | 受限   | 
@@ -120,7 +127,7 @@
 |  RPUSHX   |   ✓   | ✓  |  ✓  | ✓   | 
 
 
-###  Set（集合）
+####  Set（集合）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  SADD    |   ✓   | ✓  |  ✓  | ✓   | 
@@ -140,7 +147,7 @@
 |  SSCAN      |   ✓   | ✓  |  ✓  | ✓   | 
 
 
-###  Sorted Set（有序集合）
+####  Sorted Set（有序集合）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  ZADD     |   ✓   | ✓  |  ✓  | ✓   | 
@@ -154,7 +161,7 @@
 |  ZREMRANGEBYRANK  |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZREMRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZREVRANGE        |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREVRANGEBYLEX   |   --   | --  |  ✓  | ✓   | 
+|  ZREVRANGEBYLEX   |   -   | -  |  ✓  | ✓   | 
 |  ZREVRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZREVRANK      |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZSCORE        |   ✓   | ✓  |  ✓  | ✓   | 
@@ -164,13 +171,13 @@
 |  ZRANGEBYLEX      |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZLEXCOUNT        |   ✓   | ✓  |  ✓  | ✓   | 
 |  ZREMRANGEBYLEX   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZPOPMAX   |   --   | --  |  --  | --   | 
-|  ZPOPMIN   |   --   | --  |  --  | --   | 
-|  BZPOPMIN  |   --   | --  |  --  | --   | 
-|  BZPOPMAX  |   --   | --  |  --  | --   | 
+|  ZPOPMAX   |   -   | -  |  -  | -   | 
+|  ZPOPMIN   |   -   | -  |  -  | -   | 
+|  BZPOPMIN  |   -   | -  |  -  | -   | 
+|  BZPOPMAX  |   -   | -  |  -  | -   | 
 
 
-###  hyperloglog 
+####  hyperloglog 
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 | PFADD    | ✓ | x  | ✓ |  ✓  | 
@@ -178,7 +185,7 @@
 | PFMERGE  | ✓ | x  | ✓ |  ✓  | 
 
 
-###  Pub/Sub（发布/订阅）
+####  Pub/Sub（发布/订阅）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  PSUBSCRIBE   |   x   | x  |  ✓  | ✓   | 
@@ -189,7 +196,7 @@
 |  UNSUBSCRIBE  |   x   | x  |  ✓  | ✓   | 
 
 
-### Transaction（事务）
+#### Transaction（事务）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  DISCARD   |   ✓   | x  |  ✓  | ✓   | 
@@ -199,7 +206,7 @@
 |  WATCH     |   ✓   | x  |  ✓  | ✓   | 
 
 
-### Connection（连接）
+#### Connection（连接）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  AUTH   |   ✓   | ✓  |  ✓  | ✓   | 
@@ -210,7 +217,7 @@
 |  SWAPDB |   x   | x   |  x  | x   | 
 
 
-### Server（服务器）
+#### Server（服务器）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  FLUSHALL  |   ✓   | ✓  |  ✓  | ✓   | 
@@ -224,7 +231,7 @@
 |  CLIENT GETNAME   |   x   | x  |  ✓  | ✓   | 
 |  CLIENT SETNAME   |   x   | x  |  ✓  | ✓   | 
 |  CONFIG GET       |   x   | x  |  ✓  | ✓   | 
-|  MEMORY           |   --  | -- |  ✓  | ✓   | 
+|  MEMORY           |   -  | - |  ✓  | ✓   | 
 |  LATENCY          |   x   |  x  |  ✓  | ✓   | 
 
 **说明：**
@@ -249,7 +256,7 @@
 
 
 
-### Scripting（脚本）
+#### Scripting（脚本）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  EVAL      |   ✓   | ✓  |  ✓  | ✓   | 
@@ -261,7 +268,7 @@
 |  SCRIPT DEBUG    |   ✓   | x  |  ✓  | ✓   | 
 
 
-### Geo（地理位置）
+#### Geo（地理位置）
 | 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
 |:--:|:--:|:--:|:--:|:--:| 
 |  GEOADD   |   x   |  x  |  ✓  | ✓   | 
@@ -276,15 +283,15 @@
 
 ###  其它说明 
 
+* 如需在集群实例中执行受限制的命令，需要使用hash tag确保命令所要操作的key都要分布在一个hash slot中。
+
 * lua脚本中不支持的命令说明：
 
 	* 1. redis2.8 lua脚本中不支持的命令有：bgsave，bgrewriteaof，shutdown，config
 
 	* 2. redis4.0 lua脚本中不支持的命令有：swapdb，rename，renamenx， bgsave，bgrewriteaof，shutdown，config，cluster，post，host
 
-* Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。
-
-	* 事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
+* 事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
 
 * ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
 
