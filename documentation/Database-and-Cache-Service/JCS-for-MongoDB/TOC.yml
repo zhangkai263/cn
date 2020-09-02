@@ -63,6 +63,12 @@
             href: Operation-Guide/Account-Management/Create-MongoDB-Account.md
           - name: 修改密码
             href: Operation-Guide/Account-Management/Reset-Password.md
+      - name: 连接管理
+        items:
+          - name: 外网访问
+            href: Operation-Guide/Connection-Management/Internet-access.md
+          - name: 节点域名管理
+            href: Operation-Guide/Connection-Management/Node-Domain-Management.md
       - name: 备份管理
         items:
           - name: 设置自动备份

@@ -52,6 +52,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:desc
 |**ddosAlarmStatus**|Integer|DDos 告警总开关 0 关闭 1 开启|
 |**errorCodeAlarmStatus**|Integer|错误码告警总开关|
 |**errorCodeDomain**|String[]|错误码告警域名列表|
+|**errorCode**|Integer[]|错误码列表|
+|**errorCodePercent**|Integer|错误码触发告警比例|
+|**errorCodeCount**|Integer|错误码触发告警次数|
 
 ## 返回码
 |返回码|描述|

@@ -13,7 +13,7 @@
 
 * “云硬盘系统盘”镜像可用来创建系统盘是云硬盘的主机，无法将镜像转换为“本地盘系统盘”镜像。关于“本地盘系统盘”镜像和“云硬盘系统盘”镜像的区别请参见 [镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)。
 
-* 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认是否正确配置，并请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请。。
+* 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能。
 
 ## 镜像基本要求<br>
 ### Linux系统基本要求<br>
@@ -76,12 +76,11 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 
 <div id="user-content-1"></div>
 
-由于目前导入镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
+完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。（**目前导入镜像控制台操作入口为灰度开放，如需使用请提交工单申请**）
+![](../../../../../image/vm/Image-Import-Image-Step3.png)
 
 * OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
-
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
-
 * CLI指令示意：
 ```
 jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linux" --disk-format qcow2 --system-disk-size-gb 50 --image-url https://XXXX.s3-internal.cn-north-1.jdcloud-oss.com/XXXX.qcow2 --image-name importImageTest

@@ -2,7 +2,7 @@
 实例创建成功后，单击实例名称进入集群详情页，可以查看关于集群运行的详细监控信息，辅助集群运维监管。也可由“云监控-资源监控-Zookeeper监控”进入查看。</br>
 
 ### 操作步骤
-1. 访问Zookeeper控制台，即进入集群列表页面。</br>
+1. 访问[分布式协调服务 Zookeeper 版控制台](https://zk-console.jdcloud.com/list)，即进入集群列表页面。</br>
 
 2. 在实例列表页面，点击实例名称，进入详情页面。</br>
 
@@ -11,3 +11,7 @@
 4. 监控时段可选择据当前时间“1小时”、“6小时”、“12小时”进行选择，也可由日历时间段自主选择。</br>
 
 5. 单击右上方“设置报警规则”，可跳转至云监控页面进行报警规则的设置。
+
+![查询1](https://github.com/jdcloudcom/cn/blob/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/monitor2.png)
+
+![查询1](https://github.com/jdcloudcom/cn/blob/zookeeperv2/image/Internet-Middleware/JCS-for-ZK/monitor1.png)

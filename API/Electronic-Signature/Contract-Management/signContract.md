@@ -21,14 +21,14 @@ https://cloudsign.jdcloud-api.com/v1/contract
 
 | 名称             | 类型                                                         | 是否必需 | 默认值 | 描述 |
 | ---------------- | ------------------------------------------------------------ | -------- | ------ | ---- |
-| **contractSpec** | [ContractSpec](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/API/Electronic-Signature/Contract-Management/signContract.md#contractspec) | True     |        |      |
+| **contractSpec** |ContractSpec| True     |        |      |
 
 ### ContractSpec
 
 | 名称                | 类型                                                         | 是否必需 | 默认值 | 描述                                       |
 | ------------------- | ------------------------------------------------------------ | -------- | ------ | ------------------------------------------ |
-| **perStamps**       | [PerStamp](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/API/Electronic-Signature/Contract-Management/signContract.md#perstamp) | False    |        | 个人用户盖章信息                           |
-| **comStamps**       | [ComStamp](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/API/Electronic-Signature/Contract-Management/signContract.md#comstamp) | False    |        | 企业用户盖章信息                           |
+| **perStamps**       | PerStamp| False    |        | 个人用户盖章信息                           |
+| **comStamps**       | ComStamp | False    |        | 企业用户盖章信息                           |
 | **contractContent** | String                                                       | False    |        | 合同文件（base64）                         |
 | **templateContent** | String                                                       | False    |        | 合同模板文件（base64，与templateId二选一） |
 | **templateId**      | String                                                       | False    |        | 合同模板文件ID（与templateContent二选一）  |
@@ -92,7 +92,7 @@ https://cloudsign.jdcloud-api.com/v1/contract
 
 | 名称          | 类型                                                         | 描述   |
 | ------------- | ------------------------------------------------------------ | ------ |
-| **result**    | [Result](https://github.com/liangzy3/cn/blob/Electronic-Signature-1/API/Electronic-Signature/Contract-Management/signContract.md#result) |        |
+| **result**    | Result|        |
 | **requestId** | String                                                       | 请求ID |
 
 ### Result

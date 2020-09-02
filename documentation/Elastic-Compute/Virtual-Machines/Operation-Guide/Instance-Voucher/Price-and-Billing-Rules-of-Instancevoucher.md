@@ -2,7 +2,7 @@
 
 ## 价格总览
 
-云主机和原生容器/POD支持购买的规格族详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
+云主机和容器/POD支持购买的规格族详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
 
 无资源预留型实例抵扣券价格（暂不支持华东-宿迁地域购买）：
 
@@ -10,11 +10,10 @@
 	<thead>
    <tr>
       <th colspan="2" rowspan="2" align="center"> 规格族</td>
-      <th colspan="2" align="center">包月价格（元/计算力*月）</td>
+      <th align="center">包月价格（元/计算力*月）</td>
    </tr>
    <tr>
-      <th align="center">华北-北京/华东-上海/华南-广州</td>         
-      <th>华东-宿迁</td>
+      <th align="center">华北-北京/华东-上海/华南-广州/华东-宿迁</td>         
    </tr>
    </thead>
    <tbody>  
@@ -22,99 +21,81 @@
       <td rowspan="3">通用-标准</td>
       <td>g.n3</td>
       <td align="right">120</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>g.n2</td>
-      <td align="right">136.5</td>        
-      <td align="right">--</td>         
+      <td align="right">121.13</td>              
    </tr>
    <tr>
       <td>g.n1</td>
       <td align="right">147</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td rowspan="3">计算优化-标准</td>
       <td>c.n3</td>
       <td align="right">93.5</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>c.n2</td>
       <td align="right">89.5</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>c.n1</td>
       <td align="right">97</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>计算优化-密集</td>
       <td>c.c2</td>
       <td align="right">85</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td rowspan="3">内存优化-标准</td>
       <td>m.n3</td>
       <td align="right">159</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>m.n2</td>
       <td align="right">154.85</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>m.n1</td>
       <td align="right">249</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td rowspan="2">高频计算-通用</td>
       <td>h.g2</td>
       <td align="right">166</td>         
-      <td align="right">--</td>
    </tr> 
    <tr>
       <td>h.g1</td>
       <td align="right">171.5</td>         
-      <td align="right">--</td>
    </tr>      
    <tr>
       <td rowspan="2">存储优化-IO</td>
       <td>s.i3</td>
       <td align="right">174.46</td>         
-      <td align="right">--</td>
    </tr> 
    <tr>
       <td>s.i1</td>
       <td align="right">177.25</td>         
-      <td align="right">--</td>
    </tr> 
    <tr>
       <td>存储优化-大数据</td>
       <td>s.d2</td>
       <td align="right">208.63</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td rowspan="3">GPU-标准</td>
       <td>p.n1p40</td>
       <td align="right">4483.75</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>p.n1p40h</td>
       <td align="right">4315.75</td>         
-      <td align="right">--</td>
    </tr>
    <tr>
       <td>p.n1v100</td>
       <td align="right">6211.25</td>         
-      <td align="right">--</td>
    </tr>
 </tbody>  
 </table>     
@@ -138,4 +119,4 @@
 
 [云主机价格总览](https://docs.jdcloud.com/virtual-machines/price-overview)
 
-[原生容器/POD规格及价格](https://docs.jdcloud.com/native-container/price-overview)<br>
+[容器/POD规格及价格](https://docs.jdcloud.com/native-container/price-overview)<br>

@@ -46,7 +46,7 @@
 
 确定需要分析哪些对象信息。因此，在配置清单功能时，需要在源存储空间中配置以下信息：
 
-- 配置所需分析的对象属性：您需要明确需要将对象属性中的哪些信息记录到清单报告中，目前支持的对象属性包括账号 ID、源存储空间名称、对象文件名称、对象大小、对象最新修改日期、ETag、对象的存储类。
+- 配置所需分析的对象属性：您需要明确需要将对象属性中的哪些信息记录到清单报告中，目前支持的对象属性包括账号 ID、源存储空间名称、对象文件名称、对象大小、对象最新修改日期、ETag、对象的存储类型。
 
 **2.配置清单报告的存储信息**
 
@@ -108,13 +108,13 @@ destination-prefix/source-bucket/config-ID/data/example-file-name.csv.gz
 路径中所代表的含义如下：
 
 - **destination-prefix** ：是用户在配置清单时设置的“目标前缀”，可用于对目标存储空间中的公共位置的所有清单列表文件进行分组。
-- **source-bucket ：**是清单报告对应的源存储空间名称，添加它是为了避免在多个源存储空间将各自清单报告发送至同一目标存储空间时可能造成的冲突。
-- **config-ID ：**是用户在配置清单时设置的“清单名称”，添加它是为了避免从同一源存储空间发送到同一目标存储空间的多个清单报告发生冲突，可以用 config-ID 区分不同的清单报告。
-- **YYYY-MM-DDTHH-MMZ ：**时间戳，包含生成清单报告时开始扫描存储空间的开始时间和日期；例如，2020-04-28T00-32Z。
-- **manifest.json ：**是 Manifest 文件。
-- **manifest.checksum ：**是 manifest.json 文件内容的 MD5。
-- **symlink.txt ：**是与 Apache Hive 兼容的 Manifest 文件。
-- **example-file-name.csv.gz ：**是 CSV 清单文件之一。
+- **source-bucket** ：是清单报告对应的源存储空间名称，添加它是为了避免在多个源存储空间将各自清单报告发送至同一目标存储空间时可能造成的冲突。
+- **config-ID** ：是用户在配置清单时设置的“清单名称”，添加它是为了避免从同一源存储空间发送到同一目标存储空间的多个清单报告发生冲突，可以用 config-ID 区分不同的清单报告。
+- **YYYY-MM-DDTHH-MMZ** ：时间戳，包含生成清单报告时开始扫描存储空间的开始时间和日期；例如，2020-04-28T00-32Z。
+- **manifest.json** ：是 Manifest 文件。
+- **manifest.checksum** ：是 manifest.json 文件内容的 MD5。
+- **symlink.txt** ：是与 Apache Hive 兼容的 Manifest 文件。
+- **example-file-name.csv.gz** ：是 CSV 清单文件之一。
 
 其中，Manifest 相关文件总共包含两份文件 manifest.json 和 manifest.checksum。
 

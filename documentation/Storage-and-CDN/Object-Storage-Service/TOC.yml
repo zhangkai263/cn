@@ -89,10 +89,14 @@ items:
              href: Operation-Guide/Manage-Bucket/edgeStorage.md
            - name: 生命周期管理
              href: Operation-Guide/Manage-Bucket/Lifecycle.md
+           - name: 访问日志
+             href: Operation-Guide/Manage-Bucket/Bucket-Logging.md
            - name: 标签管理
              href: Operation-Guide/Manage-Bucket/Bucket-Tagging.md
            - name: 传输加速
              href: Operation-Guide/Manage-Bucket/Transfer-Acceleration.md
+           - name: 清单设置
+             href: Operation-Guide/Manage-Bucket/Inventory-Configuration.md
       - name: 文件管理
         items:
           - name: 新建文件夹
@@ -113,6 +117,8 @@ items:
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
           - name: 对象锁定
             href: Operation-Guide/Manage-Object/Object-Lock.md
+          - name: SelectObject(公测)
+            href: Operation-Guide/Manage-Object/Select-Object.md
       - name: 权限控制
         items:
            - name: 权限控制概述
@@ -337,6 +343,8 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-Copy-2.md
               - name: Post Object Restore
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-Restore.md
+              - name: Select Object Content(公测)
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md
       - name: 错误响应
         href: API-Reference-S3-Compatible/Error-Response-2.md                
       - name: 扩展接口
@@ -513,6 +521,12 @@ items:
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
         href: Best-Practices/Custom-Domain-Name-Guidance.md
+      - name: 大数据应用
+        items:
+            - name: Spark读写对象存储数据
+              href: Best-Practices/Bigdata-Application/Spark-OSS.md
+            - name: Spark使用OSS Select优化数据查询（公测）
+              href: Best-Practices/Bigdata-Application/Select-for-Spark.md
  - name: 常见问题
    items:
       - name: 一般性问题

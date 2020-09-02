@@ -28,7 +28,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/source
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**priority**|Integer|True| |优先级（1-10）|
-|**sourceHost**|String|False| |回源host|
+|**sourceHost**|String|False| |回源host中国境外/全球加速时暂不支持配置该项|
 |**domain**|String|True| |回源域名|
 ### <div id="ipsourceinfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|

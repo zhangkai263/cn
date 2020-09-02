@@ -9,6 +9,10 @@ items:
       href: Introduction/Introduction.md
     - name: 审核标准
       href: Introduction/standard.md
+    - name: 资质要求
+      href: Introduction/qualification.md
+    - name: 行业限制
+      href: Introduction/restriction.md
 - name: 产品定价
   items:
     - name: 价格总览

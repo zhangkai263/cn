@@ -35,4 +35,4 @@ API 网关（API Gateway），是API托管服务。 提供API的全生命周期�
 	
 
 ## 计费
-公测期间免费。详细说明请参见：[计费说明](../Pricing/Billing-Rules.md)。
+API网关按照后付费模式对您使用的资源进行收费。详细说明请参见：[计费说明](../Pricing/Billing-Rules.md)。

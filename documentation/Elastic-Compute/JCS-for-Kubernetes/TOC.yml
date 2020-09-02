@@ -1,6 +1,6 @@
-  name: Kubernetes 集群
-  href: 
-  items:
+name: Kubernetes 集群
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -31,6 +31,8 @@
         href: Getting-Started/Version-Notes.md
       - name: 创建集群
         href: Getting-Started/Create-to-Cluster.md
+      - name: 创建Windows集群
+        href: Getting-Started/Create-Win-Cluster.md
       - name: 连接集群
         href: Getting-Started/Connect-to-Cluster.md
   - name: 操作指南
@@ -63,6 +65,10 @@
             href: Operation-Guide/NodeGroup/Delete-NodeGroup.md
           - name: 设置自动修复
             href: Operation-Guide/NodeGroup/Auto-Repair.md
+      - name: 网络
+        items:
+          - name: 网络策略
+            href: Operation-Guide/Network/Network-Policy.md
       - name: 集群Dashboard
         items:
           - name: Dashboard
@@ -89,6 +95,8 @@
             href: Best-Practices/Deploy-Applications/Deploy-Service.md
          -  name: 部署Service（新版）
             href: Best-Practices/Deploy-Applications/Deploy-Service-New.md
+         -  name: 部署Windows应用
+            href: Best-Practices/Deploy-Applications/Deploy-Windows-Deployment.md
      - name: 使用云硬盘作为Volume
        items:
         -  name: 部署StorageClass
@@ -105,8 +113,6 @@
             href: Best-Practices/Volumes/Cloud-File-Service/CFS-Volume.md
          -  name: 通过静态PV的方式使用京东云文件服务
             href: Best-Practices/Volumes/Cloud-File-Service/CFS-PVC.md
-         -  name: 通过CSI插件和静态PV的方式使用京东云文件服务
-            href: Best-Practices/Volumes/Cloud-File-Service/CFS-CSI.md
          -  name: 部署nfs-client-provisioner
             href: Best-Practices/Volumes/Cloud-File-Service/nfs-client-provisioner.md
          -  name: 使用nfs-client-provisioner动态创建PV

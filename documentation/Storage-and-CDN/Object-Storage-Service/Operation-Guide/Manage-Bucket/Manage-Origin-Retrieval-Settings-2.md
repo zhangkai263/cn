@@ -39,7 +39,7 @@ Content-Encoding
 Content-Disposition
 Cache-Control
 Expires
-```
+ ```
 
 * 假设文件已经通过镜像方式回写到了OSS，如果源站的相同文件发生了变化，那OSS不会更新已经存在于OSS上的文件，因为此时文件已经在OSS上，不符合镜像回写的条件。
 * 如果镜像源站也无此文件，即镜像源返回给OSS的http status为404，那么OSS也返回404给用户，如果是其他非200的状态码（包括因为网络原因等获取不到文件的错误情况），OSS将返回424给用户，错误码为“MirrorFailed”。
@@ -53,13 +53,11 @@ Expires
 参考：[设置镜像回源](https://docs.jdcloud.com/cn/object-storage-service/api/putbacksourceconfiguration?content=API)
 ### 2.使用OSS管理控制台，设置镜像回源。
 
-(1)登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->镜像回源
+(1)登入控制台->对象存储->空间管理->进入某个Bucket->基础设置，导航至“镜像回源”功能区域。
 
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-98.png)
+(2)点击【设置规则】，进入镜像回源规则列表页。
 
-(2)点击设置规则，进入镜像回源规则列表页。
-
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-99.jpg)
+![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-99.png)
 
 (3)单击创建规则，在创建弹框中设置回源条件和回源地址。还可以根据实际需要选择设置是否携带请求字符串；设置3xx 请求响应是否跟随源站重定向请求。同时支持通过设置HTTP header传递规则，进行自定义透传、过滤或者修改。
 ![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-100.png) 
@@ -91,7 +89,7 @@ Expires
     ```
 - 传递所有 HTTP header会将所有header透传过去，包括host头（一般是bucketname.endpoint，如bucketname.s3.cn-north-1.jcloudcs.com），由于大部分源站会对host头做校验，可能导致源站无法识别请求，所以您要慎重勾选。如果您确定要透传所有 header，请尽量在`禁止传递指定 HTTP header`中配置禁止传递host头和其他可能会影响源站识别的header。
 - 以下HTTP header类型不支持设置HTTP header传递规则：
-    
+  
        以下前缀开头的header：
            x-oss-
        所有标准HTTP header，例如：
@@ -100,13 +98,8 @@ Expires
            content-length
            range
            date
-             
-(4)单击确定,提交规则。
+   
 
-### 规则保存成功后，您可以在镜像回源规则列表中查看已设置的回源规则，并进行编辑、删除或是排序等操作。
+(4)单击【确定】，提交规则。
 
-登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->镜像回源
-
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-102.png)
-
-
+(5)此外，当规则保存成功后，您可以在镜像回源规则列表中查看已设置的回源规则，并进行编辑、删除或是排序等操作。

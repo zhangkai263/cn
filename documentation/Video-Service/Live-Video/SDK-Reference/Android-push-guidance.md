@@ -95,4 +95,3 @@ libs/jdc_live.jar: SDK jar包
   ```
 
   4）将demo assets目录下的所有文件copy到目标工程的assets目录下。  
-

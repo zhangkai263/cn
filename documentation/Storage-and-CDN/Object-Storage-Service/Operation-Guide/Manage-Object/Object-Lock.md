@@ -72,32 +72,21 @@
 
 ## 控制台开启对象锁定功能
 
-登入控制台->对象存储->空间管理->新建空间->高级设置
+1. 登入对象存储控制台。
+2. 在**新建空间**时，选择**高级设置**并开启对象锁定功能。
 
-![开启对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-170.png)
+
 
 ## 控制台修改存储空间默认保留设置
 
-1.登入控制台->对象存储->空间管理->进入某个bucket->空间设置->对象锁定
-
-![空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-171.png)
-
-2.点击编辑，进入设置页面。
-
-![设置空间级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-172.png)
-
-3.选择保留模式，并指定保留期。
+1. 登入控制台->对象存储->空间管理->进入某个bucket->高级设置->对象锁定
+2. 点击**设置**，进入设置页面。
+3. 选择保留模式，并指定保留期。
 
 ## 控制台修改文件的对象锁定设置
 
-1.登入控制台->对象存储->空间管理->进入某个bucket->Object管理->某一文件->操作->更多->对象锁定
+1. 登入控制台->对象存储->空间管理->进入某个bucket->Object管理->某一文件->操作->更多->对象锁定
+2. 点击**对象锁定**，进入设置页面。
+3. 选择保留模式，并指定保留到期日期。
 
-![对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-173.png)
-
-2.点击对象锁定，进入设置页面。
-
-![设置对象级别对象锁定](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-174.png)
-
-3.选择保留模式，并指定保留到期日期。
-
-4.选择是否开启依法保留。
+4. 选择是否开启依法保留。

@@ -31,7 +31,7 @@
 
 3.	业务应用日志需要选择需采集状态，填写日志文件路径，采集实例信息以及根据需求设置高级配置。
 
-![业务应用日志源设置](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/GettingStarted/logsource-custom.png)
+![业务应用日志源设置](https://github.com/jdcloudcom/cn/blob/zhangwenjie-only/image/LogService/GettingStarted/logsourcefromcustom.png)
 
 4.	点击“保存”，进入完成页。5秒后自动跳转至日志检索页面。也可以点击“日志转储”或“日志监控”，创建转储任务和监控任务。
 

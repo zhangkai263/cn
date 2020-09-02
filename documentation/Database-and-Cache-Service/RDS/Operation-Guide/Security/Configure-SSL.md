@@ -3,8 +3,7 @@
 采用加密的连接方式，即使你通过公网访问云数据库 MySQL, MariaDB, Percona，即使数据传输内容被截获，传输内容也是被加密的，无法被识别。
 
 ## 注意事项
-* 老实例未开启 SSL 功能，如果要启用，需要手动开启
-* 新购实例 SSL 功能是默认开启的，并且不允许关闭
+* 新购实例 SSL 功能是默认关闭的，如果要启用，需要手动开启
 
 ## 操作步骤
 1. 点击下载 [SSL 证书](https://jddb-common-public.s3.cn-north-1.jdcloud-oss.com/jdcloud-rds-ca.pem)

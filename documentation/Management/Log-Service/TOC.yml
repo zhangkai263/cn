@@ -27,7 +27,7 @@ items:
           href: Introduction/ResourceLog/esLog.md
         - name: API网关日志
           href: Introduction/ResourceLog/apiLog.md
-        - name: 应用负载均衡访问日志
+        - name: 应用负载均衡日志
           href: Introduction/ResourceLog/ALBLog.md
         - name: MySQL审计日志
           href: Introduction/ResourceLog/MySQLLog.md
@@ -36,7 +36,11 @@ items:
         - name: 云缓存Redis日志
           href: Introduction/ResourceLog/RedisLog.md
         - name: PostgreSQL日志
-          href: Introduction/ResourceLog//PGLog.md
+          href: Introduction/ResourceLog/PGLog.md
+        - name: JDW数据仓库日志
+          href: Introduction/ResourceLog/JDWLog.md
+        - name: 自动镜像执行日志
+          href: Introduction/ResourceLog/AutoImageLog.md
 - name: 产品定价
   items:
     - name: 计费概述
@@ -47,20 +51,26 @@ items:
       href: Getting-Started/LogService-Started.md
 - name: 操作指南
   items:
-    - name: 日志采集
+    - name: 日志源设置
       items:
-        - name: 云产品日志采集
-          href: Operation-Guide/LogCollection/CloudResource.md
-        - name: 业务应用日志采集
-          href: Operation-Guide/LogCollection/CustomLog.md
-        - name: 业务应用日志投递至ES
-          href: Operation-Guide/LogCollection/logtoES.md
-        - name: 业务应用日志投递至Kafka
-          href: Operation-Guide/LogCollection/logtoKafka.md
+        - name: 云产品日志源设置
+          href: Operation-Guide/Logsource/cloudServiceLogSource.md
+        - name: 业务应用日志源设置
+          href: Operation-Guide/Logsource/customLogSource.md
     - name: 日志管理
       items:
         - name: 日志配置管理
           href: Operation-Guide/LogSet/collectionConfigManagement.md
+    - name: 日志预处理
+      items:
+        - name: 单行文本模式
+          href: Operation-Guide/Logpreprocessing/Singlelinetext.md
+        - name: 单行全文正则提取模式
+          href: Operation-Guide/Logpreprocessing/Fulltextregularization.md
+        - name: JSON提取模式
+          href: Operation-Guide/Logpreprocessing/Jsonlog.md
+        - name: 分隔符提取模式
+          href: Operation-Guide/Logpreprocessing/Separatorlog.md
     - name: 日志检索
       items:
         - name: 日志检索语法

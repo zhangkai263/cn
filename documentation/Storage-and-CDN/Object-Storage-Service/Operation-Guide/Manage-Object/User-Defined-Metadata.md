@@ -6,11 +6,9 @@
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->某一文件->更多->管理元数据
 
-![管理元数据入口](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-168.png)
-
 2.元数据配置对话框如图：
 
-![管理元数据配置页面](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-169.png)
+![管理元数据配置页面](../../../../../image/Object-Storage-Service/OSS-169.png)
 
 ## 支持的元数据列表
 

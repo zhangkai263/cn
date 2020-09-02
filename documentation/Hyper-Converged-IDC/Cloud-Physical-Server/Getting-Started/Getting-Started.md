@@ -26,4 +26,4 @@ www.jdcloud.com
 服务器配置介绍，请参考[产品规格](../Introduction/Specifications.md)章节。
 
 **计费** 
-采用包月包年计费方式。与计费有的详细信息，请参考[计费规则](../Pricing/Billing-Rules.md)章节。
+采用包月包年和按配置两种计费方式。与计费有的详细信息，请参考[计费规则](../Pricing/Billing-Rules.md)章节。
