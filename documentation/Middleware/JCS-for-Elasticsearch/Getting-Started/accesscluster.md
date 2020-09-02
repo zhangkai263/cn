@@ -37,7 +37,7 @@ curl -XGET 内网域名/_cat
 
 ```
 
-.ruxia 
+
 ### 通过客户端访问
 ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client 有 Low Level 和 High Level 两种。如下为7.5.2版本Java High Level REST Client方式访问示例，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。 </br>
 1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
