@@ -45,8 +45,7 @@ ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Jav
 
 ```
 说明：
-使用TCP协议连接ES集群的Transport Client官方已经不再维护，建议使用HTTP协议连接集群的
-Java High Level REST Client或者Java Low Level REST Client。
+使用TCP协议连接ES集群的Transport Client官方已经不再维护，建议使用HTTP协议连接集群的Java High Level REST Client或者Java Low Level REST Client。
 
 ```
 
