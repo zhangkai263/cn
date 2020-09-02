@@ -39,14 +39,14 @@ curl -XGET 内网域名/_cat
 
 .ruxia 
 ### 通过客户端访问
-ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client 有 Low Level 和 High Level 两种。如下为7.5.2版本Java High Level REST Client方式访问示例： </br>
+ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client 有 Low Level 和 High Level 两种。如下为7.5.2版本Java High Level REST Client方式访问示例，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。 </br>
 1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
 2. 创建Java Maven工程，并将如下的pom依赖添加到Java工程的pom.xml文件中。</br>
 
 ```
 请注意：
 - Java JDK版本需要为1.8及以上。
-- Client 版本需要与 ES 集群版本保持一致，否则可能会出现兼容性问题。此处的 Demo 适用于 京东云 ES 7.5.2版本，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。
+- 此处的 Demo 适用于ES 7.5.2版本，Client 版本需要与 ES 集群版本保持一致，否则可能会出现兼容性问题。
 - 请检查vpc、subnet等配置配确保网络互通。
 ```
 以下代码使用Index API创建索引，使用Get API读取索引以及使用Delete API删除该索引，示例代码中带{}的参数需要替换为您具体业务的参数。
