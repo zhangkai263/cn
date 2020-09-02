@@ -49,7 +49,7 @@ ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Jav
 - Client 版本需要与 ES 集群版本保持一致，否则可能会出现兼容性问题。此处的 Demo 适用于 京东云 ES 7.5.2版本，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。
 - 请检查vpc、subnet等配置配确保网络互通。
 ```
-以下代码使用Index API创建索引，使用Get API读取索引以及使用Delete API删除该索引,示例代码中带{}的参数需要替换为您具体业务的参数。
+以下代码使用Index API创建索引，使用Get API读取索引以及使用Delete API删除该索引，示例代码中带{}的参数需要替换为您具体业务的参数。
 ```
 import org.apache.http.HttpHost;
 import org.apache.http.client.CredentialsProvider;
