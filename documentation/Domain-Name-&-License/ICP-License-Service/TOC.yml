@@ -117,7 +117,7 @@ items:
           - name: 核验单下载
             href: Data-download/check-list/check-list-download.md
           - name: 核验单填写示例
-            href: Data-download/check-list/General-check-list-1.md
+            href: Data-download/check-list/quanguo-check-list.md
        - name: 各省补充资料下载
          items:
           - name: 上海市
