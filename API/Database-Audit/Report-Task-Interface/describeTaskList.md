@@ -43,7 +43,7 @@ https://dbaudit.jdcloud-api.com/v1/regions/{regionId}/tasks
 |**taskState**|Integer|报表任务状态(0 停止 1 运行中 2 一次性任务)|
 |**insId**|String|数据库审计实例ID|
 |**dbId**|String|审计数据库ID(默认为空,代表全部数据据库)|
-|**execDate**|Integer|[0,1,2,3,4,5,6,7,8](0:立即实行,1-7为每周特定日期执行,8为每天执行)|
+|**execDate**|Integer| 0,1,2,3,4,5,6,7,8 (0:立即实行,1-7为每周特定日期执行,8为每天执行)|
 |**createTime**|String|报表创建时间|
 
 ## 返回码
