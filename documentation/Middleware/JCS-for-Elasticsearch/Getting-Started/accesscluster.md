@@ -130,7 +130,7 @@ public class RestClientDemo
         }catch (Exception e){
             System.out.println("Delete exception: "+ e.toString());
         }
-//关闭连接
+        //关闭连接
         try {
             highClient.close();
         }catch (Exception e){
