@@ -6,7 +6,7 @@
 
 2. 主体负责人必须为法人。
 
-3. 若网站负责人不是法人，需提供[网站负责人授权书.doc](https:/https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/guangxi/gxshouquanshu.doc)
+3. 若网站负责人不是法人，需提供[网站负责人授权书.doc](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/guangxi/gxshouquanshu.doc)
 
 4. **所有负责人手机号码均需广西本省号段**
 
