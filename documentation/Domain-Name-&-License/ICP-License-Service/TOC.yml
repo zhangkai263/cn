@@ -88,6 +88,8 @@ items:
             href: Getting-Started/Management-specification/Zhejiang.md
           - name: 山东
             href: Getting-Started/Management-specification/shandong.md
+          - name: 天津
+            href: Getting-Started/Management-specification/tianjin.md
   - name: 常见问题
     items:
       - name: 备案基本问题
