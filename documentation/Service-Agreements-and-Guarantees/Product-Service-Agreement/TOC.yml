@@ -40,10 +40,6 @@ items:
     href: Load-Balancing-Service-Clause.md
   - name: 负载均衡服务等级协议（SLA）
     href: Load-Balancing-Service-Level-Protocol-SLA.md
-  - name: 数知服务协议
-    href: Number-Of-Terms-Of-Service.md
-  - name: 数知服务等级协议（SLA）
-    href: Number-Aware-Service-Level-Agreement-SLA.md
   - name: 云数据库 MongoDB 服务协议
     href: Cloud-Database-MongoDB-Service-Cause.md
   - name: 云数据库MongoDB服务等级协议（SLA）
