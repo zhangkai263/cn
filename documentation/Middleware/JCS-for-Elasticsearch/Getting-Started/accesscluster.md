@@ -39,7 +39,18 @@ curl -XGET 内网域名/_cat
 
 
 ### 通过客户端访问
-ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client 有 Low Level 和 High Level 两种。如下为7.5.2版本Java High Level REST Client方式访问示例，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。 </br>
+ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Java REST Client这个库底层用的是httpclient的组件，只不过es官网做了封装，支持多机器ip，以及对请求方法做了简化，因此想要减少项目的依赖，又对支持功能要求比较健壮的场景下，我们就可以使用这个库来开发我们的业务。Java REST Client 有 Low Level 和 High Level 两种：</br>
+- Java Low Level REST Client：通过 Http协议 与Elasticsearch服务进行通信，请求编码和响应解码保留给用户实现，与所有Elasticsearch 版本兼容。</br>
+- Java High Level REST Client：基于低级客户端，使用更方便快捷，提供特定的方法的API，并处理请求编码和响应解码，如果当前版本的 Java High Level REST Client 提供的 API 不满足需求，可以通过升级 ES 集群版本和 Client 版本解决。</br>
+
+```
+说明：
+使用TCP协议连接ES集群的Transport Client官方已经不再维护，建议使用HTTP协议连接集群的Java High Level REST Client或者Java Low Level REST Client。
+
+```
+
+
+如下为7.5.2版本Java High Level REST Client方式访问示例，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。 </br>
 1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
 2. 创建Java Maven工程，并将如下的pom依赖添加到Java工程的pom.xml文件中。</br>
 
@@ -47,7 +58,7 @@ ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Jav
 请注意：
 - Java JDK版本需要为1.8及以上。
 - 此处的 Demo 适用于ES 7.5.2版本，Client 版本需要与 ES 集群版本保持一致，否则可能会出现兼容性问题。
-- 请检查vpc、subnet等配置配确保网络互通。
+- 检查vpc、subnet等配置配确保网络互通。
 ```
 以下代码使用Index API创建索引，使用Get API读取索引以及使用Delete API删除该索引，示例代码中带{}的参数需要替换为您具体业务的参数。
 ```
