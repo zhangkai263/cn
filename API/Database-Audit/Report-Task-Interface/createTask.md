@@ -26,7 +26,7 @@ https://dbaudit.jdcloud-api.com/v1/regions/{regionId}/tasks
 |**taskDesc**|String|False| |报表任务描述，长度限制128字节|
 |**insId**|String|False| |数据库审计实例ID|
 |**dbId**|String|False| |审计数据库ID(默认为空,代表全部数据据库)|
-|**execDate**|Integer|False| |[0,1,2,3,4,5,6,7,8](0:立即实行,1-7为每周特定日期执行,8为每天执行)|
+|**execDate**|Integer|False| | 0,1,2,3,4,5,6,7,8 (0:立即实行,1-7为每周特定日期执行,8为每天执行)|
 |**startTime**|String|False| |报表统计开始时间(execDate =0立即执行时必传)|
 |**endTime**|String|False| |报表统计结束时间(execDate =0立即执行时必传)|
 
