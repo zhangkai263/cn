@@ -40,10 +40,6 @@ items:
     href: Load-Balancing-Service-Clause.md
   - name: 负载均衡服务等级协议（SLA）
     href: Load-Balancing-Service-Level-Protocol-SLA.md
-  - name: 数知服务协议
-    href: Number-Of-Terms-Of-Service.md
-  - name: 数知服务等级协议（SLA）
-    href: Number-Aware-Service-Level-Agreement-SLA.md
   - name: 云数据库 MongoDB 服务协议
     href: Cloud-Database-MongoDB-Service-Cause.md
   - name: 云数据库MongoDB服务等级协议（SLA）
@@ -122,10 +118,6 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Level-Agreement-SLA.md
   - name: 边缘共享带宽服务协议
     href: Edge-Shared-Bandwidth-Terms-Of-Service.md    
-  - name: 通知服务(JNS)服务条款
-    href: JD-Cloud-Notification-Service-Terms-Of-Service.md
-  - name: 通知服务(JNS)服务等级协议（SLA）
-    href: JD-Cloud-Notification-Service-Level-Agreement-SLA.md   
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
