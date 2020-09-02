@@ -45,7 +45,7 @@
 
 **说明：**
 
-* KEYS命令只能在VPC网络下使用，属于危险的命令，可能造成性能问题，请确保 **在key很少的情况下使用**  。如果需要从一个大数据集中查找特定的 key ，推荐使用 Redis 的集合结构(set) 。
+* KEYS命令只能在VPC网络下使用，属于危险的命令，可能造成性能问题，请确保 **在key很少的情况下使用**  。 不推荐一个集合放大量的key，key多的情况用scan命令 。
 
 * SORT命令使用方法：SORT key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern ...]] [ASC|DESC] [ALPHA] [STORE destination]
 
