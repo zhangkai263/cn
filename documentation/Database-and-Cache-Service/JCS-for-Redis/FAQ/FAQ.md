@@ -51,7 +51,7 @@ A：请参考 [命令支持](../Getting-Started/Command-Supported.md)  文档，
 
 **Q：如何将Redis数据导入导出？**
 
-A：导出文档请参考：[备份恢复](../Operation-Guide/Backup-And-Recovery.md)	。数据迁移请参考：[数据迁移](../Operation-Guide/data-migration.md) ，仍未解决请联系客服。
+A：导出请参考：[备份恢复](../Operation-Guide/Backup-And-Recovery.md)	。数据迁移请参考：[数据迁移](../Operation-Guide/Data-Migration.md) 。仍未解决请联系客服。
 
 
 **Q：使用jedis，发现存储在redis中的key多出了类似\xac\xed\x00\x05t\x00的字符串？**
