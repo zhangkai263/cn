@@ -6,6 +6,8 @@ items:
         href: Getting-Started/Introduction.md
       - name: 备案流程
         items:
+          - name: 备案授权码
+            href: Getting-Started/Process/IP-Authorization-code.md
           - name: 新增备案
             href: Getting-Started/Process/Addition-Filing.md
           - name: 新增网站（京东有主体）
