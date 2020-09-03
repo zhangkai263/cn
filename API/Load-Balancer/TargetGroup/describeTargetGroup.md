@@ -1,44 +1,34 @@
-# describeTargetGroups
+# describeTargetGroup
 
 
 ## 描述
-查询虚拟服务器组列表详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情
+查询TargetGroup详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
+https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |Region ID|
+|**targetGroupId**|String|True| |TargetGroup Id|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
-|**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](describetargetgroups#filter)|False| |targetGroupIds - TargetGroup ID列表，支持多个<br>targetGroupNames - TargetGroup名称列表，支持多个<br>loadBalancerId － TargetGroup所属负载均衡的Id，支持单个<br>loadBalancerType - 负载均衡类型，取值为：alb、nlb、dnlb，默认alb，支持单个<br>|
+无
 
-### <div id="filter">Filter</div>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describetargetgroups#result)| |
+|**result**|[Result](describetargetgroup#result)| |
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**targetGroups**|[TargetGroup[]](describetargetgroups#targetgroup)|TargetGroup资源信息列表|
-|**totalCount**|Integer|总数量|
+|**targetGroup**|[TargetGroup](describetargetgroup#targetgroup)|TargetGroup资源信息|
 ### <div id="targetgroup">TargetGroup</div>
 |名称|类型|描述|
 |---|---|---|
@@ -49,7 +39,7 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
 |**loadBalancerName**|String|TargetGroup所属LoadBalancer的名称|
 |**description**|String|TargetGroup的描述信息|
 |**createdTime**|String|TargetGroup的创建时间|
-|**targets**|[Target[]](describetargetgroups#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
+|**targets**|[Target[]](describetargetgroup#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
 |**type**|String|实例或IP|
 ### <div id="target">Target</div>
 |名称|类型|描述|
