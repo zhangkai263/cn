@@ -1,6 +1,6 @@
 # 备案授权码
 
-#### 一、登录备案系统
+### 一、登录备案系统
 
 1、 打开京东智联云官网www.jcloud.com打开后点击右上方“备案”
 
@@ -10,7 +10,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-denglu.png)
 
-#### 二、申请授权码
+### 二、申请授权码
 
 1、 进入备案系统，选择左侧“申请授权码”菜单
 
