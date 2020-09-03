@@ -3,26 +3,33 @@
 #### 一、登录备案系统
 
 1、 打开京东智联云官网www.jcloud.com打开后点击右上方“备案”
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-zhuye.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-denglu.png)
 
 #### 二、申请授权码
 
 1、 进入备案系统，选择左侧“申请授权码”菜单
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma.png)
 
 2、 您在京东智联云已购买的京东智联云服务器有效期必须为3个月以上的包年/包月类型且绑定京东智联云公网IP的产品才可申请备案授权码备案，若满足以上条件，系统中显示内容如下，点右侧“申请”即可。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma-shenqing.png)
 
 3、 每个服务器可申请5个授权码，每个授权码自申请之日起有效期1年，所以建议您根据需求（使用个数）申请授权码，点击弹窗中的“确定”即可申请完成。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma-youxiaoqi.png)
 
 4、 申请成功后，点击右侧“查看”或者选择左侧菜单中的“管理授权码”即可看到授权码及授权码有效期等信息。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma-chakan.png)
 
 5、 先将授权码复制，在填写备案信息验证产品处将授权码粘贴即可。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma-guanli.png)
 
 ### 说明：授权码有4个状态，未使用、备案中、已使用、无效
