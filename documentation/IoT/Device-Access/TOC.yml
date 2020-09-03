@@ -1,4 +1,4 @@
-name: 物联网引擎
+name: 设备接入服务
 href: 
 items:
   - name: 产品简介
@@ -31,7 +31,7 @@ items:
         href: Getting-Started/Getting-Started.md
       - name: 创建实例
         href: Getting-Started/Create-Instance.md
-      - name: 登录物联平台
+      - name: 登录设备接入服务
         href: Getting-Started/Login-IoT-Platform.md
   - name: 操作指南
     items:
