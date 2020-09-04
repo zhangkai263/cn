@@ -16,7 +16,6 @@ v1
 |**addRules**|POST|往转发规则组加入转发规则|
 |**associateElasticIp**|POST|负载均衡绑定弹性公网IP|
 |**associateSecurityGroup**|POST|负载均衡绑定安全组|
-|**checkLoadBalancerIDs**|POST|检查负载均衡ID|
 |**createBackend**|POST|创建一个后端服务|
 |**createListener**|POST|创建一个监听器|
 |**createLoadBalancer**|POST|创建负载均衡|
@@ -44,7 +43,6 @@ v1
 |**describeUrlMaps**|GET|查询转发规则组列表详情|
 |**disassociateElasticIp**|POST|负载均衡解绑弹性公网IP|
 |**disassociateSecurityGroup**|POST|负载均衡解绑安全组|
-|**modifyQuota**|PATCH|修改配额信息|
 |**registerTargets**|POST|往TargetGroup中加入Target|
 |**updateBackend**|PATCH|修改一个后端服务的信息|
 |**updateListener**|PATCH|修改一个监听器的信息|
@@ -54,4 +52,3 @@ v1
 |**updateTargetGroup**|PATCH|修改一个虚拟服务器组的信息|
 |**updateTargets**|POST|修改target信息|
 |**updateUrlMap**|PATCH|修改转发规则组|
-
