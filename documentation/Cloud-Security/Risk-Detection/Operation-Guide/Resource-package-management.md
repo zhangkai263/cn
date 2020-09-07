@@ -10,4 +10,4 @@
 4. 点击**购买记录**标签，可以看到所有已购买资源包信息。包括：资源包类型、规格、有效期、价格、付款时间。
 5. 点击**购买资源包**按钮，跳转到购买页面，可以按照您的业务需求，选择合适类型的资源包。
 
-![image](../../../../../image/Risk-Detection/Operation-Guide/resource.png)
+![image](../../../../../image/Risk-Detection/resource.png)

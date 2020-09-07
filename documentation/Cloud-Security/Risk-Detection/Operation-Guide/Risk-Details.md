@@ -10,6 +10,6 @@
 
 3. 可以在详情页中看到调用时间、检测类型、检测数据、风险等级。如图
 
-   ![image](../../../../../image/Risk-Detection/Operation-Guide/detail.png)
+   ![image](../../../../../image/Risk-Detection/detail.png)
 
 

@@ -14,23 +14,23 @@
 
    支持查询的时间段为最近3个月内。支持设置的时间跨度为1个月。如图
 
-   ![image](../../../../../image/Risk-Detection/Operation-Guide/time-screen.png)
+   ![image](../../../../../image/Risk-Detection/time-screen.png)
 
 5. 可以在统计表上看到单个服务识别总量及不同风险级别分布。如图
 
-   ![image](../../../../../image/Risk-Detection/Operation-Guide/IP-overview.png)
+   ![image](../../../../../image/Risk-Detection/IP-overview.png)
 
 
 6. 可以在统计表上看到单个服务识别量变化趋势及不同标签类型分布趋势。如下图，显示IP的识别量趋势及标签分布趋势。
 
-   ![image](../../../../../image/Risk-Detection/Operation-Guide/IP-trend.png)
+   ![image](../../../../../image/Risk-Detection/IP-trend.png)
    
 7. 可以查看不单个服务的详细调用量统计，如下表是IP调用量统计。
 
-   ![image](../../../../../image/Content-Moderation/Operation-Guide/Statistics-View/IP-statistics.png) 
+   ![image](../../../../../image/Content-Moderation/Risk-Detection/IP-statistics.png) 
 
 8. 可以查看调用不同风险识别服务的调用趋势。
 
-![image](../../../../../image/Content-Moderation/Operation-Guide/statistics.png) 
+![image](../../../../../image/Risk-Detection/statistics.png) 
 
 
