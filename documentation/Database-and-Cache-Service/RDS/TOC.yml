@@ -258,11 +258,11 @@
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
         - name: 从上传文件导入  
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
-          - name: 步骤二 上传备份
+          - name: 二 上传备份
             href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
-          - name: 步骤三 备份导入
+          - name: 三 备份导入
             href: Operation-Guide/Data-To-Cloud/Import-Backup.md
           - name: 删除上传文件
             href: Operation-Guide/Data-To-Cloud/Delete-Import.md
