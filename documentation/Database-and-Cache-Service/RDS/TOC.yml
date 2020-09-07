@@ -252,7 +252,7 @@
         - name: SQL Server 配置 SSL 证书 
           href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           
-      - name: 单库上云
+      - name: SQL Server 单库上云
         items:
         - name: 单库上云简介
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
@@ -316,7 +316,7 @@
         - name: PostgreSQL 审计服务
           href: Operation-Guide/Audit/PostgreSQL-Audit-Service.md
  
-      - name: 性能统计分析
+      - name: SQL Server 性能统计分析
         items:
         - name: 性能统计分析简介
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md
