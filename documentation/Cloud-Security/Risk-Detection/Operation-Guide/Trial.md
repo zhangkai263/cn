@@ -8,7 +8,7 @@
 2. 在左侧导航栏，单击**数据概览**，点击**手动试用**。
 3. 输入要检测的数据，点击**查询**
 
-![image](../../../../../image/Risk-Detection/trial.png)
+![image](../../../../image/Risk-Detection/trial.png)
 
 可查看当前输入数据的风险等级和风险标签。
 

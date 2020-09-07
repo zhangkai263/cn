@@ -9,12 +9,12 @@
 3. 选择要添加的数据类型，点击**添加**
 
 
-![image](../../../../../image/Risk-Detection/add.png)
+![image](../../../../image/Risk-Detection/add.png)
 
 4. 您也可以先**下载模板**，再进行**上传**
 
-   ![image](../../../../../image/Risk-Detection/download.png)
+   ![image](../../../../image/Risk-Detection/download.png)
 
-   ![image](../../../../../image/Risk-Detection/upload.png)
+   ![image](../../../../image/Risk-Detection/upload.png)
 
 ​    
