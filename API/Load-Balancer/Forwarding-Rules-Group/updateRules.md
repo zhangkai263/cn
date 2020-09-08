@@ -18,9 +18,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/urlMaps/{urlMapId}:updateRules
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ruleUpdateSpecs**|[RuleUpdateSpec[]](#ruleupdatespec)|True| |更新转发规则rules信息|
+|**ruleUpdateSpecs**|[RuleUpdateSpec[]](updaterules#ruleupdatespec)|True| |更新转发规则rules信息|
 
-### <div id="RuleUpdateSpec">RuleUpdateSpec</div>
+### <div id="ruleupdatespec">RuleUpdateSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ruleId**|String|True| |rule资源Id|
@@ -28,8 +28,8 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/urlMaps/{urlMapId}:updateRules
 |**path**|String|False| |URL访问路径，用于匹配URL的path字段。URL路径支持精确匹配和前缀匹配：1、必须以/开头，仅支持输入大小写字母、数字和特殊字符：$-_.+!'()%:@&=/，区分大小写，且不能超过128字符；2、前缀匹配支持包括一个星"\*"，输入格式为/XXX\*或/\*，仅输入"/"表示精确匹配。 host和path至少配置其一，host缺省为空（含义是匹配所有） ，path缺省为/\*（含义是匹配所有）|
 |**action**|String|False| |匹配转发规则后执行的动作，取值为Forward或Redirect|
 |**backendId**|String|False| |后端服务的Id。当action选择Forward时需配置本参数|
-|**redirectActionSpec**|[RedirectActionSpec](#redirectactionspec)|False| |重定向动作配置。当action选择Redirect时需配置本参数，且重定向配置参数protocol、port、host、path和query至少配置其一|
-### <div id="RedirectActionSpec">RedirectActionSpec</div>
+|**redirectActionSpec**|[RedirectActionSpec](updaterules#redirectactionspec)|False| |重定向动作配置。当action选择Redirect时需配置本参数，且重定向配置参数protocol、port、host、path和query至少配置其一|
+### <div id="redirectactionspec">RedirectActionSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**protocol**|String|False| |重定向后协议，取值为Http、Https。不设置，表示重定向不修改请求协议，与客户端请求协议一致|

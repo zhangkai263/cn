@@ -20,9 +20,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}:de
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](#filter)|False| |targetIds - Target ID列表，支持多个<br>instanceId - Instance ID,仅支持单个<br>type － vm, container, ip,仅支持单个<br>port - 端口,仅支持单个<br>ipAddress - ip地址,仅支持单个<br>|
+|**filters**|[Filter[]](describetargets#filter)|False| |targetIds - Target ID列表，支持多个<br>instanceId - Instance ID,仅支持单个<br>type － vm, container, ip,仅支持单个<br>port - 端口,仅支持单个<br>ipAddress - ip地址,仅支持单个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -32,15 +32,15 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}:de
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describetargets#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**targets**|[Target[]](#target)|Target信息列表|
+|**targets**|[Target[]](describetargets#target)|Target信息列表|
 |**totalCount**|Integer|总数量|
-### <div id="Target">Target</div>
+### <div id="target">Target</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetId**|String|Target的Id|

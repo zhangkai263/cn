@@ -22,14 +22,14 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describetargetgroup#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**targetGroup**|[TargetGroup](#targetgroup)|TargetGroup资源信息|
-### <div id="TargetGroup">TargetGroup</div>
+|**targetGroup**|[TargetGroup](describetargetgroup#targetgroup)|TargetGroup资源信息|
+### <div id="targetgroup">TargetGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetGroupId**|String|TargetGroup的Id|
@@ -39,9 +39,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}
 |**loadBalancerName**|String|TargetGroup所属LoadBalancer的名称|
 |**description**|String|TargetGroup的描述信息|
 |**createdTime**|String|TargetGroup的创建时间|
-|**targets**|[Target[]](#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
+|**targets**|[Target[]](describetargetgroup#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
 |**type**|String|实例或IP|
-### <div id="Target">Target</div>
+### <div id="target">Target</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetId**|String|Target的Id|

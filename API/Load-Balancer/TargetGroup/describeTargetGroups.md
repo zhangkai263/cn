@@ -19,9 +19,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](#filter)|False| |targetGroupIds - TargetGroup ID列表，支持多个<br>targetGroupNames - TargetGroup名称列表，支持多个<br>loadBalancerId － TargetGroup所属负载均衡的Id，支持单个<br>loadBalancerType - 负载均衡类型，取值为：alb、nlb、dnlb，默认alb，支持单个<br>|
+|**filters**|[Filter[]](describetargetgroups#filter)|False| |targetGroupIds - TargetGroup ID列表，支持多个<br>targetGroupNames - TargetGroup名称列表，支持多个<br>loadBalancerId － TargetGroup所属负载均衡的Id，支持单个<br>loadBalancerType - 负载均衡类型，取值为：alb、nlb、dnlb，默认alb，支持单个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,15 +31,15 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describetargetgroups#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**targetGroups**|[TargetGroup[]](#targetgroup)|TargetGroup资源信息列表|
+|**targetGroups**|[TargetGroup[]](describetargetgroups#targetgroup)|TargetGroup资源信息列表|
 |**totalCount**|Integer|总数量|
-### <div id="TargetGroup">TargetGroup</div>
+### <div id="targetgroup">TargetGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetGroupId**|String|TargetGroup的Id|
@@ -49,9 +49,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
 |**loadBalancerName**|String|TargetGroup所属LoadBalancer的名称|
 |**description**|String|TargetGroup的描述信息|
 |**createdTime**|String|TargetGroup的创建时间|
-|**targets**|[Target[]](#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
+|**targets**|[Target[]](describetargetgroups#target)|Target列表。该字段即将下线，请勿使用，已经使用该字段查询Target详情的服务请尽快切换使用describeTargets接口|
 |**type**|String|实例或IP|
-### <div id="Target">Target</div>
+### <div id="target">Target</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetId**|String|Target的Id|

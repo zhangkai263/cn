@@ -26,10 +26,10 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|返回结果|
+|**result**|[Result](createtargetgroup#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**targetGroupId**|String|虚拟服务器组Id |

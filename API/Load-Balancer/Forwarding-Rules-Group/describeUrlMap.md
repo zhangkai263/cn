@@ -22,14 +22,14 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/urlMaps/{urlMapId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|返回结果|
+|**result**|[Result](describeurlmap#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**urlMap**|[UrlMap](#urlmap)|转发规则组的信息|
-### <div id="UrlMap">UrlMap</div>
+|**urlMap**|[UrlMap](describeurlmap#urlmap)|转发规则组的信息|
+### <div id="urlmap">UrlMap</div>
 |名称|类型|描述|
 |---|---|---|
 |**urlMapId**|String|转发规则组的Id|
@@ -38,8 +38,8 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/urlMaps/{urlMapId}
 |**listenerIds**|String[]|关联的监听器Id列表|
 |**description**|String|转发规则组的描述信息|
 |**createdTime**|String|转发规则组的创建时间|
-|**rules**|[Rule[]](#rule)|转发规则列表|
-### <div id="Rule">Rule</div>
+|**rules**|[Rule[]](describeurlmap#rule)|转发规则列表|
+### <div id="rule">Rule</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleId**|String|转发规则Id|
@@ -47,8 +47,8 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/urlMaps/{urlMapId}
 |**path**|String|URL访问路径，用于匹配URL的path字段。URL路径支持精确匹配和前缀匹配：1、必须以/开头，仅支持输入大小写字母、数字和特殊字符：$-_.+!'()%:@&=/，区分大小写，且不能超过128字符；2、前缀匹配支持包括一个星"\*"，输入格式为/XXX\*或/\*。仅输入"/"表示精确匹配|
 |**action**|String|匹配转发规则后执行的动作，取值为Forward或Redirect。默认为Forward。|
 |**backendId**|String|后端服务的Id。当action选择Forward时显示本参数|
-|**redirectAction**|[RedirectAction](#redirectaction)|重定向的相关参数。当action选择Redirect时显示相关参数|
-### <div id="RedirectAction">RedirectAction</div>
+|**redirectAction**|[RedirectAction](describeurlmap#redirectaction)|重定向的相关参数。当action选择Redirect时显示相关参数|
+### <div id="redirectaction">RedirectAction</div>
 |名称|类型|描述|
 |---|---|---|
 |**protocol**|String|重定向后协议，取值为Http、Https。不设置，表示重定向不修改请求协议，与客户端请求协议一致|

@@ -16,7 +16,6 @@ v1
 |**addRules**|POST|往转发规则组加入转发规则|
 |**associateElasticIp**|POST|负载均衡绑定弹性公网IP|
 |**associateSecurityGroup**|POST|负载均衡绑定安全组|
-|**checkLoadBalancerIDs**|POST|检查负载均衡ID|
 |**createBackend**|POST|创建一个后端服务|
 |**createListener**|POST|创建一个监听器|
 |**createLoadBalancer**|POST|创建负载均衡|
@@ -36,7 +35,6 @@ v1
 |**describeListeners**|GET|查询监听器列表|
 |**describeLoadBalancer**|GET|查询负载均衡详情|
 |**describeLoadBalancers**|GET|查询负载均衡列表详情|
-|**describeQuota**|GET|获取配额信息|
 |**describeTargetGroup**|GET|查询TargetGroup详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情|
 |**describeTargetGroups**|GET|查询虚拟服务器组列表详情，返回target详情功能3个月后将会下线，建议用户直接使用describeTargets接口查询target详情|
 |**describeTargetHealth**|GET|查询后端服务下的target的健康状态|
@@ -45,7 +43,6 @@ v1
 |**describeUrlMaps**|GET|查询转发规则组列表详情|
 |**disassociateElasticIp**|POST|负载均衡解绑弹性公网IP|
 |**disassociateSecurityGroup**|POST|负载均衡解绑安全组|
-|**modifyQuota**|PATCH|修改配额信息|
 |**registerTargets**|POST|往TargetGroup中加入Target|
 |**updateBackend**|PATCH|修改一个后端服务的信息|
 |**updateListener**|PATCH|修改一个监听器的信息|
@@ -55,4 +52,3 @@ v1
 |**updateTargetGroup**|PATCH|修改一个虚拟服务器组的信息|
 |**updateTargets**|POST|修改target信息|
 |**updateUrlMap**|PATCH|修改转发规则组|
-
