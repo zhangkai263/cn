@@ -4,7 +4,7 @@
 
 **示例1：分析请求的个数**
 
-例如：以应用负载均衡7层访问日志中，将日志按照request_method分组，统计各个请求方法出现的次数。
+以应用负载均衡7层访问日志中，将日志按照request_method分组，统计各个请求方法出现的次数。
 
 ```
 select request_method,count(1) group by request_method
@@ -21,7 +21,7 @@ select request_method,count(1) group by request_method
 
 **示例2：获取查询较长时间的sql 语句** 
 
-例如：在mysql的慢日志中，按照clienthost字段分组，统计query_time 大于1s 发生的次数。
+在mysql的慢日志中，按照clienthost字段分组，统计query_time 大于1s 发生的次数。
 
 ```
 select clienthost,count(1) where query_time > 1 group by clienthost
