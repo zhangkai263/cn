@@ -57,9 +57,9 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 | ------------- | ------ | ------------------------------------------------------------ |
 | **riskTag**   | String | 风险类型，对应riskCode的中文描述                             |
 | **riskCode**  | String | 风险类型编码                                                 |
-| **riskClass** | String | 风险分类，对应riskCode的分类，201~207手机综合风险，501~503IP综合风险 |
-| **score**     | String | 风险评分，1-无风险 2-低风险 3-中低风险 4-中高风险 5-高风险 0-未知 |
-| **scoreDesc** | String | 对应score的中文描述，1-无风险 2-低风险 3-中低风险 4-中高风险 5-高风险 0-未知 |
+| **riskClass** | String | 风险分类，对应riskCode的分类，201-207手机综合风险，501-503IP综合风险 |
+| **score**     | String | 风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知 |
+| **scoreDesc** | String | 对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知 |
 
 ## 返回码
 
@@ -140,7 +140,7 @@ body：
           "riskCode": "none",
           "riskClass": "addr",
           "score": "0",
-          "scoreDesc": "未知"
+          "scoreDesc": "低风险"
         },
         "hitCache": "miss",
         "inBWList": "none"

@@ -30,7 +30,7 @@ https://bri.jdcloud-api.com/v1/regions/{regionId}/blackwhite:list
 |**id**|Integer|False| |数据的id，更新数据时需要传此ID|
 |**content**|String|True| |关联内容|
 |**bwType**|String|True| |黑白名单类型，黑名单-black，白名单-white|
-|**resourceType**|String|True| |数据类型，ip-IP，phone-手机，addr-地址，card-身份，pin-账户，eid-设备|
+|**resourceType**|String|True| |数据类型，ip-IP，phone-手机，addr-地址|
 
 ## 返回参数
 无
