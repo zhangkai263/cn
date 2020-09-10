@@ -87,14 +87,14 @@ select clienthost,count(1) where query_time > 1 group by clienthost
 | 非数字（string、IP、time/datetime）| 计数  |
 
 - 分组：统计结果按照value值进行分组，点击该图表之后，检索栏会将在GROUP BY后填充该字段，执行检索操作后，表格中会按照不同的value值分行展示统计结果。  
-## 操作指南
+### 操作指南
 以负载均衡7层访问日志为例，分析不同请求方法出现的次数。  
 
-### 前提条件 
+#### 前提条件 
 1. 已经创建了【日志来源：云产品】-【所属产品：应用负载均衡】-【日志类型：7层访问日志】的日志主题。
 2. 采集实例配置的应用负载均衡实例有访问信息。  
 
-### 操作步骤
+#### 操作步骤
 1.	访问[日志服务控制台](https://logs-console.jdcloud.com/overview)，进入日志集列表。
 2.	选择已创建好的日志主题所在的日志集，点击日志集名称或操作栏下的查看按钮，进入日志集详情页面。
 ![日志集详情](../../../../../image//LogService/analysis/logset-detail.png) 
