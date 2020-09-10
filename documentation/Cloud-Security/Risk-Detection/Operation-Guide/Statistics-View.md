@@ -27,7 +27,7 @@
    
 7. 可以查看不单个服务的详细调用量统计，如下表是IP调用量统计。
 
-   ![image](../../../../image/Content-Moderation/Risk-Detection/IP-statistics.png) 
+   ![image](../../../../image/Risk-Detection/IP-statistics.png) 
 
 8. 可以查看调用不同风险识别服务的调用趋势。
 
