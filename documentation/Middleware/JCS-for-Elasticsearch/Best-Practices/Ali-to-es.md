@@ -9,7 +9,7 @@
 
 ## 步骤一：源ES集群创建快照仓库
 
-oss快照进行数据迁移时，需要通过Kibana先在阿里云ES集群上创建OSS仓库，命令如下：</br>
+进行数据迁移时，需要通过Kibana先在阿里云ES集群上创建OSS仓库，命令如下：</br>
 
 ```
 POST _snapshot/test_auto_snapshot
@@ -84,7 +84,7 @@ POST _snapshot/test_auto_snapshot
 ```
 
 
-
+### 查看快照数据
 
 查看工具同步产生的快照数据，在仓库test_auto_snapshot下的快照auto_snapshot_2020081901。
 
