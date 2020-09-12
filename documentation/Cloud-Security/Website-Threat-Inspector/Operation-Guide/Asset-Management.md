@@ -2,7 +2,9 @@
 
 ### 界面
 
-  ![](../../../../image/Website-Threat-Inspector/wts-zxgl-01.png)
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-01.png)
+
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-12.png)
 
 ### 添加扫描公网资产
 
@@ -16,20 +18,18 @@
 
 首先，根据认证场景添加相关认证信息，然后手工点击【认证】。
 
-【域名认证场景】,点击【认证】生成cname信息,一个PIN产生一个cname记录,需要您登录自己的域名解析服务中添加相关生成的cname信息。  
+- 域名认证场景
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-rz1.png)
+  需要您登录自己的域名解析服务中添加相关生成的cname信息。  
 
-【IP/子域名认证场景】,点击【认证】生成资产认证文件,一个PIN产生一个认证文件,需要您登录自己的网站添加到网站根目录下。  
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-13.png)
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-rz2.png)
+- IP/子域名认证场景
 
-
+  下载资产认证文件（jd_scanner_verify.html），需要您登录自己的网站添加到网站根目录下，并进行认证。  
 
  ### 添加cookies登录状态&URI白名单
 
  点击【管理】进入URI白名单、cookies登录状态管理
 
-   ![](../../../../image/Website-Threat-Inspector/webscan-m.png)
-
- 
+ ![](../../../../image/Website-Threat-Inspector/wts-internet-assets-14.png)
