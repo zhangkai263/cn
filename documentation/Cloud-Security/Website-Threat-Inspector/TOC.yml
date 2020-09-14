@@ -53,3 +53,9 @@ items:
         href: FAQ/AgentDown.md
       - name: 认证文件加入web目录问题
         href: FAQ/AddWebDirectory.md
+  - name: 服务协议
+    items:
+      - name: 服务条款
+        href: SLA/ToS.md
+      - name: 服务等级协议
+        href: SLA/SLA.md

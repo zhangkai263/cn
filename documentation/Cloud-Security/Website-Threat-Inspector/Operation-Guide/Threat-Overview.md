@@ -48,14 +48,14 @@ PIN风险值定义
 
 #### 威胁数量&威胁对象
 
-点击【威胁数量】->【发现漏洞数量】，跳转到 【风险管理】-> 【漏洞维度】
+点击【威胁数量】->【发现漏洞数量】，跳转到 【风险管理】-> 【漏洞风险管理】
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-risk1.png)
-  
-点击【威胁对象】->【漏洞IP】，跳转到 【风险管理】-> 【IP维度】
+  ![](../../../../image/Website-Threat-Inspector/wts-riskm-12.png)
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-risk3.png)
+点击【威胁对象】->【漏洞IP】，跳转到 【风险管理】-> 【资产风险管理】
 
-点击【威胁对象】->【漏洞域名】，跳转到 【风险管理】-> 【域名维度】
+  ![](../../../../image/Website-Threat-Inspector/wts-riskm-11.png)
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-risk4.png)
+点击【威胁对象】->【漏洞域名】，跳转到 【风险管理】-> 【资产风险管理】
+
+  ![](../../../../image/Website-Threat-Inspector/wts-riskm-13.png)
