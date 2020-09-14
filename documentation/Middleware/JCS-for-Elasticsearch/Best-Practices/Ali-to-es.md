@@ -6,6 +6,8 @@
 
 基于快照方式迁移使用的是ES的Snapshot API接口进行迁移，基本原理为：将其他云厂商的ES集群创建索引快照， 通过工具把快照迁移至京东智联云对象存储OSS，然后在京东智联云ES集群中进行恢复。</br>
 
+由于其他云厂商版本比与京东智联云Elasticsearch版本不一致，因此需要选择合适的版本进行迁移，版本选取详情，请参见[官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshot-restore.html)。</br>
+
 
 ## 步骤一：源ES集群创建快照仓库
 
