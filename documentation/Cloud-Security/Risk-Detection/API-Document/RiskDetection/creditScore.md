@@ -56,8 +56,8 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 | 名称          | 类型   | 描述                                                         |
 | ------------- | ------ | ------------------------------------------------------------ |
 | **riskTag**   | String | 风险类型，对应riskCode的中文描述                             |
-| **riskCode**  | String | 风险类型编码                                                 |
-| **riskClass** | String | 风险分类，对应riskCode的分类，201-207手机综合风险，包括201-猫池小号、202-异常注册、203-异常登录、204-营销刷券、205-下单黄牛、206-异常支付、207-恶意售后、，501-506IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP。 |
+| **riskCode**  | String | 风险类型编码，201-207手机综合风险，包括201-猫池小号、202-异常注册、203-异常登录、204-营销刷券、205-下单黄牛、206-异常支付、207-恶意售后，501-506IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP。 |
+| **riskClass** | String | 风险分类，包括ip、phone、addr。                              |
 | **score**     | String | 风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知 |
 | **scoreDesc** | String | 对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知 |
 
@@ -78,7 +78,7 @@ body：
 {
   "tasks": [
     {
-      "content": "1.1.1.1",
+      "content": "116.196.12.23",
       "resourceType": "ip"
     },
     {
@@ -101,14 +101,14 @@ body：
         "success": true,
         "failMsg": "",
         "dataId": "test",
-        "content": "1.1.1.1",
+        "content": "116.196.12.23",
         "resourceType": "ip",
         "scoreDetail": {
           "riskTag": "黑软IP",
-          "riskCode": "501",
+          "riskCode": "506",
           "riskClass": "ip",
           "score": "3",
-          "scoreDesc": "中低风险"
+          "scoreDesc": "中风险"
         },
         "hitCache": "miss",
         "inBWList": "none"
@@ -121,7 +121,7 @@ body：
         "resourceType": "phone",
         "scoreDetail": {
           "riskTag": "异常注册风险",
-          "riskCode": "201",
+          "riskCode": "202",
           "riskClass": "phone",
           "score": "4",
           "scoreDesc": "中高风险"
@@ -139,7 +139,7 @@ body：
           "riskTag": "none",
           "riskCode": "none",
           "riskClass": "addr",
-          "score": "0",
+          "score": "1",
           "scoreDesc": "低风险"
         },
         "hitCache": "miss",
