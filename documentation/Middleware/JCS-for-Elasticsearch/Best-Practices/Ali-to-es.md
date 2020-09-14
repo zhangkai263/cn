@@ -18,8 +18,8 @@ POST _snapshot/test_auto_snapshot
 {
     "type": "oss",
     "settings": {
-        "endpoint": "***.aliyuncs.com",  //其他云厂商对象存储服务域名
-        "bucket": "***-aliyun-aliyuncs",  //OSS Bucket 名称
+        "endpoint": "***.***.com",  //其他云厂商对象存储服务域名
+        "bucket": "***-***",  //OSS Bucket 名称
         "access_key_id": "***",  //其他云厂商 API 密钥 AccessKey
         "secret_access_key": "8N7nu9fu274kn3ispVLQE37Hzwumyd",   //其他云厂商 API 密钥 SecretKey
         "base_path": "***_backup" //备份目录
