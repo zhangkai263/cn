@@ -26,15 +26,15 @@ items:
   - name: 操作指南
     items:
       - name: 统计数据查看
-        href: Operation-Guide/Risk-Dection/Statistics-View.md
+        href: Operation-Guide/Statistics-View.md
       - name: 风险详情
-        href: Operation-Guide/Risk-Detection/Risk-Details.md
+        href: Operation-Guide/Risk-Details.md
       - name: 黑白名单设置
-        href: Operation-Guide/Risk-Detection/setBWList.md
+        href: Operation-Guide/setBWList.md
       - name: 资源包管理
-        href: Operation-Guide/Risk-Detection/Resource-package-management.md
+        href: Operation-Guide/Resource-package-management.md
       - name: 手动试用
-        href: Operation-Guide/Risk-Detection/Trial.md         
+        href: Operation-Guide/Trial.md         
   - name: API指南
     items:
       - name: 接口概览
