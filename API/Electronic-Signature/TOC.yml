@@ -21,6 +21,8 @@
         items:
           - name: 上传合同模板
             href: Template-Management/uploadTemplate.md
+          - name: 填充合同模板
+            href: Template-Management/paddingTemplate.md
           - name: 下载合同模板
             href: Template-Management/downloadTemplate.md
           - name: 删除合同模板
