@@ -131,7 +131,7 @@
        href: Best-Practices/publicIP.md
      - name: MySQL数据同步
        href: Best-Practices/mysqltoes.md
-     - name: 阿里云Elasticsearch数据迁移至京东智联云
+     - name: 第三方Elasticsearch数据迁移
        href: Best-Practices/Ali-to-es.md
      - name: 性能指标
        items: 
