@@ -98,16 +98,16 @@ select clienthost,count(1) where query_time > 1 group by clienthost
 #### 操作步骤
 1.	访问[日志服务控制台](https://logs-console.jdcloud.com/overview)，进入日志集列表。
 2.	选择已创建好的日志主题所在的日志集，点击日志集名称或操作栏下的查看按钮，进入日志集详情页面。
-![日志集详情](../../../../../image//LogService/analysis/logset-detail.png) 
+![日志集详情](../../../../../image/LogService/analysis/logset-detail.png) 
 3. 在统计分析页面，快速分析栏找到【request_method】字段，移入右侧的统计图标，点击【计数】选项，同时点击将该字段添加为GROUP BY。
 4. 执行该操作后可以看到快速生成分析语句已在搜索栏中进行填充。选中查询时间段点击“检索”按钮，可以看到统计分析结果。
-![统计结果-表格1](../../../../../image//LogService/analysis/stastic-1.png) 
+![统计结果-表格1](../../../../../image/LogService/analysis/stastic-1.png) 
 5. 默认展示为表格信息，点击饼图。默认会将表格第1列作为分类，最后1列作为数值列。如果统计结果有多列数据时，可以根据需要调整分类列和数值列。操作示例可以看到该快速分析展示的饼图示例如下：
 ![统计结果-饼图](../../../../../image//LogService/analysis/stastic-2.png)  
 6. 选中“Status”字段，点击将该字段添加为GROUP BY图标。 切换到表格列，可以查看到不同请求方法及返回码状态。
-![统计结果-表格1](../../../../../image//LogService/analysis/stastic-3.png) 
+![统计结果-表格1](../../../../../image/LogService/analysis/stastic-3.png) 
 7. 切换至“折线图”图标。默认会将表格第1列作为分类，最后1列作为数值列。点开分类栏增加status列，查看到的折线视图如下：  
-![统计结果-折线图](../../../../../image//LogService/analysis/stastic-4.png)  
+![统计结果-折线图](../../../../../image/LogService/analysis/stastic-4.png)  
 
 
 
