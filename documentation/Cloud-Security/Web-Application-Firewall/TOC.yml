@@ -40,7 +40,7 @@ items:
     - name: 关联证书
       href: Getting-Started/update-certificate.md
     - name: 开启IPv6防护
-      href: Open-IPv6-Protection-Switch.md
+      href: Getting-Started/Open-IPv6-Protection-Switch.md
 - name: 操作指南
   items:
     - name: 防护配置
