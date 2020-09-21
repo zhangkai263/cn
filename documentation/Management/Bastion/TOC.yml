@@ -97,7 +97,9 @@ items:
         items:
           - name: WEB浏览器运维
             href: Operation-Guide/Operation/Web.md
-          - name: SSH协议运维
+          - name: SSH客户端运维
             href: Operation-Guide/Operation/SSH.md
+          - name: SFTP客户端运维
+            href: Operation-Guide/Operation/SFTP.md
           - name: MAC系统运维
             href: Operation-Guide/Operation/Mac.md

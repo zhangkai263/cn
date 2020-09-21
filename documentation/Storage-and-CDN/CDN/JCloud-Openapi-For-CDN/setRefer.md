@@ -19,8 +19,8 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/refer
 |---|---|---|---|---|
 |**referType**|String|True| |refer类型，取值：block（黑名单），allow（白名单）默认为block|
 |**referList**|String[]|True| |逗号隔开的域名列表，如果referList传空则为删除|
-|**allowNoReferHeader**|String|True| |是否允许空refer访问，默认为“on”|
-|**allowNullReferHeader**|String|True| |是否允许无ua访问，默认为“on”|
+|**allowNoReferHeader**|String|True| |是否允许空refer访问，默认为“on”； 中国境外/全球加速时无法修改该配置，未设置黑白名单时为“on”，设置黑名单时为“on”，设置白名单时为off|
+|**allowNullReferHeader**|String|True| |是否允许无refer访问，默认为“on”|
 
 
 ## 返回参数

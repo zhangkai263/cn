@@ -1,4 +1,4 @@
-name: 云托管服务
+name: 云托管
 href: 
 items:
 - name: 产品简介
@@ -41,7 +41,7 @@ items:
   items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-- name: 操作指南
+- name: 控制台操作指南
   items:
       - name: 使用须知
         href: Operation-Guide/Operation-Instruction/Operation-Instruction.md
@@ -73,6 +73,10 @@ items:
             href: Operation-Guide/Alarm-Management/View-Alarm-Rules.md
           - name: 报警历史
             href: Operation-Guide/Alarm-Management/View-Alarm-History.md
+      - name: 消费管理
+        items:
+          - name: 资源账单
+            href: Operation-Guide/Consumption-Management/Resource-Bill.md  
 - name: 最佳实践
   items:
   status: 0

@@ -1,13 +1,14 @@
 # 实例抵扣券概述（产品邀测中）
 
-实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、原生容器/POD实例）费用抵扣。<br>
+实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。<br>
 
 实例抵扣券将付费和资源创建解耦，其属性决定了可抵扣的实例特征而不限于具体某个或某些实例，因此既可满足有长期资源使用计划时的经济性考量，又可满足保持资源创删灵活的需求。
 
 ## 实例抵扣券分类
-从适用实例类型的角度划分，可分为 **云主机实例抵扣券** 和 **原生容器/POD实例抵扣券**：
+从适用实例类型的角度划分，可分为 **云主机实例抵扣券** 、 **容器实例抵扣券** 和 **POD实例抵扣券**：
 * 云主机实例抵扣券：适用于按配置计费云主机实例的抵扣
-* 原生容器实例抵扣券：适用于按配置计费原生容器/POD实例的抵扣
+* 容器实例抵扣券：适用于按配置计费容器实例的抵扣
+* POD实例抵扣券：适用于按配置计费POD实例的抵扣
 
 从资源是否预留的角度划分，可分为 **无资源预留型** 和 **资源预留型** 两类（目前仅支持无资源预留型实例抵扣券的购买）
 
@@ -31,7 +32,7 @@
 
 ## 支持购买的规格类型
 无资源预留型实例抵扣券，指定地域、适用产品和规格族后，按计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>购买，目前支持售卖的规格族及不支持使用实例券抵扣的规格如下表：<br>
-实例规格详见：[主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [原生容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)<br>
+实例规格详见：[主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)<br>
 实例抵扣券定价及计费规则详见：[价格及计费规则](https://docs.jdcloud.com/virtual-machines/price-and-billing-rules-of-instancevoucher)
 
     请注意：
@@ -45,7 +46,7 @@
       <th colspan="2"> 在售规格族</td>
       <th>不支持抵扣的规格</td>
       <th>主机可购</td>
-      <th>原生容器/POD可购</td>
+      <th>容器/POD可购</td>
       <th>购买单位换算</td>
    </tr>
   	</thead>
@@ -177,10 +178,11 @@
 无资源预留型实例抵扣券：（不限抵扣券数量）<br>
 * 非GPU规格：（1计算力=1核）
   * 云主机：500计算力/地域<br>
-  * 原生容器/POD：500计算力/地域<br>
+  * 容器：500计算力/地域<br>
+  * POD：500计算力/地域
 * GPU规格：（1计算力=1卡）
   * 云主机：100计算力/地域<br>
-  * 原生容器/POD：--（原生容器/POD暂无GPU规格）<br>
+  * 容器/POD：--（容器/POD暂无GPU规格）<br>
 
 
 如需提升配额请[提交工单](https://ticket.jdcloud.com/applyorder/submit)。

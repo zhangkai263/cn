@@ -7,18 +7,32 @@
     herf: ChangeLog.md
   - name: 接口信息
     items:
-      - name: 分布式云物理服务器相关接口
+      - name: 服务器生命周期管理
         items:
-          - name: describeOS
-            href: Distributed-Cloud-Physical-Server/describeOS.md
-          - name: describeDeviceStock
-            href: Distributed-Cloud-Physical-Server/describeDeviceStock.md
-          - name: describeInstanceName
-            href: Distributed-Cloud-Physical-Server/describeInstanceName.md
           - name: createInstances
             href: Distributed-Cloud-Physical-Server/createInstances.md
+          - name: startInstance
+            href: Distributed-Cloud-Physical-Server/startInstance.md
           - name: deleteInstance
             href: Distributed-Cloud-Physical-Server/deleteInstance.md
+          - name: restartInstance
+            href: Distributed-Cloud-Physical-Server/restartInstance.md  
+          - name: stopInstance
+            href: Distributed-Cloud-Physical-Server/stopInstance.md
+          - name: reinstallInstance
+            href: Distributed-Cloud-Physical-Server/reinstallInstance.md
+          - name: resetPassword
+            href: Distributed-Cloud-Physical-Server/resetPassword.md
+          - name: associateElasticIp
+            href: Distributed-Cloud-Physical-Server/associateElasticIp.md
+          - name: disassociateElasticIp
+            href: Distributed-Cloud-Physical-Server/disassociateElasticIp.md
+          - name: describeInstances
+            href: Distributed-Cloud-Physical-Server/describeInstances.md
+          - name: describeOS
+            href: Distributed-Cloud-Physical-Server/describeOS.md
+          - name: describeInstanceName
+            href: Distributed-Cloud-Physical-Server/describeInstanceName.md
           - name: modifyInstance
             href: Distributed-Cloud-Physical-Server/modifyInstance.md
           - name: describeDeviceTypes
@@ -29,91 +43,77 @@
             href: Distributed-Cloud-Physical-Server/describeInstanceRaid.md
           - name: describeInstanceStatus
             href: Distributed-Cloud-Physical-Server/describeInstanceStatus.md
-          - name: restartInstance
-            href: Distributed-Cloud-Physical-Server/restartInstance.md  
-          - name: stopInstance
-            href: Distributed-Cloud-Physical-Server/stopInstance.md
-          - name: startInstance
-            href: Distributed-Cloud-Physical-Server/startInstance.md
-          - name: reinstallInstance
-            href: Distributed-Cloud-Physical-Server/reinstallInstance.md
           - name: describeInstance
             href: Distributed-Cloud-Physical-Server/describeInstance.md
-          - name: resetPassword
-            href: Distributed-Cloud-Physical-Server/resetPassword.md
-          - name: describeInstances
-            href: Distributed-Cloud-Physical-Server/describeInstances.md
-          - name: associateElasticIp
-            href: Distributed-Cloud-Physical-Server/associateElasticIp.md
-          - name: disassociateElasticIp
-            href: Distributed-Cloud-Physical-Server/disassociateElasticIp.md
-          - name: createAliasIp
-            href: Distributed-Cloud-Physical-Server/createAliasIp.md
-          - name: describeAliasIps
-            href: Distributed-Cloud-Physical-Server/describeAliasIps.md
-          - name: deleteAliasIp
-            href: Distributed-Cloud-Physical-Server/deleteAliasIp.md
-          - name: describeAvailablePrivateIp
-            href: Distributed-Cloud-Physical-Server/describeAvailablePrivateIp.md
-          - name: describeLineTypes
-            href: Distributed-Cloud-Physical-Server/describeLineTypes.md
-      - name: 地域相关接口
-        items:
+          - name: describeDeviceStock
+            href: Distributed-Cloud-Physical-Server/describeDeviceStock.md
           - name: describeEdCPSRegions
-            href: Distributed-Cloud-Physical-Server/describeEdCPSRegions.md
-      - name: 边缘云公网IP相关接口
+            href: Distributed-Cloud-Physical-Server/describeEdCPSRegions.md   
+      - name: 子网管理
         items:
-          - name: describeElasticIps
-            href: Distributed-Cloud-Physical-Server/describeElasticIps.md
-          - name: applyElasticIps
-            href: Distributed-Cloud-Physical-Server/applyElasticIps.md
-          - name: deleteelasticIp
-            href: Distributed-Cloud-Physical-Server/deleteelasticIp.md
-          - name: describeElasticIp
-            href: Distributed-Cloud-Physical-Server/describeElasticIp.md
-          - name: modifyElasticIpBandwidth
-            href: Distributed-Cloud-Physical-Server/modifyElasticIpBandwidth.md
-          - name: describeElasticIpStock
-            href: Distributed-Cloud-Physical-Server/describeElasticIpStock.md
-      - name: 子网相关接口
-        items:
-          - name: describeSubnets
-            href: Distributed-Cloud-Physical-Server/describeSubnets.md
           - name: createSubnet
             href: Distributed-Cloud-Physical-Server/createSubnet.md
-          - name: describeSubnet
-            href: Distributed-Cloud-Physical-Server/describeSubnet.md
           - name: modifySubnet
             href: Distributed-Cloud-Physical-Server/modifySubnet.md
           - name: deleteSubnet
             href: Distributed-Cloud-Physical-Server/deleteSubnet.md
+          - name: describeSubnets
+            href: Distributed-Cloud-Physical-Server/describeSubnets.md
+          - name: describeSubnet
+            href: Distributed-Cloud-Physical-Server/describeSubnet.md
           - name: createSecondaryCidr
             href: Distributed-Cloud-Physical-Server/createSecondaryCidr.md
           - name: describeSecondaryCidrs
             href: Distributed-Cloud-Physical-Server/describeSecondaryCidrs.md
           - name: deleteSecondaryCidr
             href: Distributed-Cloud-Physical-Server/deleteSecondaryCidr.md
-      - name: SSH密钥相关接口
+      - name: 私有网络管理
+        items:
+          - name: createVpc
+            href: Distributed-Cloud-Physical-Server/createVpc.md
+          - name: deleteVpc
+            href: Distributed-Cloud-Physical-Server/deleteVpc.md
+          - name: modifyVpc
+            href: Distributed-Cloud-Physical-Server/modifyVpc.md
+          - name: describeVpcs
+            href: Distributed-Cloud-Physical-Server/describeVpcs.md
+          - name: describeVpc
+            href: Distributed-Cloud-Physical-Server/describeVpc.md  
+      - name: 弹性公网IP管理
+        items:
+          - name: describeElasticIps
+            href: Distributed-Cloud-Physical-Server/describeElasticIps.md
+          - name: applyElasticIps
+            href: Distributed-Cloud-Physical-Server/applyElasticIps.md
+          - name: describeElasticIp
+            href: Distributed-Cloud-Physical-Server/describeElasticIp.md
+          - name: modifyElasticIpBandwidth
+            href: Distributed-Cloud-Physical-Server/modifyElasticIpBandwidth.md
+          - name: deleteelasticIp
+            href: Distributed-Cloud-Physical-Server/deleteelasticIp.md
+          - name: describeElasticIpStock
+            href: Distributed-Cloud-Physical-Server/describeElasticIpStock.md
+          - name: describeAvailablePrivateIp
+            href: Distributed-Cloud-Physical-Server/describeAvailablePrivateIp.md
+          - name: describeLineTypes
+            href: Distributed-Cloud-Physical-Server/describeLineTypes.md
+      - name: SSH密钥管理
         items:
           - name: createKeypairs
             href: Distributed-Cloud-Physical-Server/createKeypairs.md
-          - name: describeKeypairs
-            href: Distributed-Cloud-Physical-Server/describeKeypairs.md
-          - name: importKeypairs
-            href: Distributed-Cloud-Physical-Server/importKeypairs.md
           - name: deleteKeypairs
             href: Distributed-Cloud-Physical-Server/deleteKeypairs.md
+          - name: importKeypairs
+            href: Distributed-Cloud-Physical-Server/importKeypairs.md
+          - name: describeKeypairs
+            href: Distributed-Cloud-Physical-Server/describeKeypairs.md
           - name: describeKeypair
             href: Distributed-Cloud-Physical-Server/describeKeypair.md
-      - name: 私有网络相关接口
+      - name: 别名IP范围管理
         items:
-          - name: describeVpc
-            href: Distributed-Cloud-Physical-Server/describeVpc.md
-          - name: modifyVpc
-            href: Distributed-Cloud-Physical-Server/modifyVpc.md
-          - name: deleteVpc
-            href: Distributed-Cloud-Physical-Server/deleteVpc.md
-          - name: describeVpcs
-            href: Distributed-Cloud-Physical-Server/describeVpcs.md
-          - name: createVpc
-            href: Distributed-Cloud-Physical-Server/createVpc.md
+          - name: createAliasIp
+            href: Distributed-Cloud-Physical-Server/createAliasIp.md
+          - name: deleteAliasIp
+            href: Distributed-Cloud-Physical-Server/deleteAliasIp.md
+          - name: describeAliasIps
+            href: Distributed-Cloud-Physical-Server/describeAliasIps.md

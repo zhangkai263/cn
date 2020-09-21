@@ -31,6 +31,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modi
 |**ddosAlarmStatus**|Integer|False| |DDos 告警总开关 0 关闭 1 开启|
 |**errorCodeAlarmStatus**|Integer|False| |错误码告警总开关|
 |**errorCodeDomain**|String[]|False| |错误码告警域名列表|
+|**errorCode**|Integer[]|False| |错误码列表|
+|**errorCodePercent**|Integer|False| |错误码触发告警比例|
+|**errorCodeCount**|Integer|False| |错误码触发告警次数|
 
 ## 返回参数
 |名称|类型|描述|

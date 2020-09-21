@@ -48,9 +48,12 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/ips
 |**idcName**|String|机房名称|
 |**ipId**|String|公网IP实例ID|
 |**cidrAddr**|String|IP地址段|
+|**ipQuantity**|String|IP数量|
+|**ipType**|String|IP类型 IPV4/IPV6|
 |**networkAddr**|String|网络位地址|
 |**gatewayAddr**|String|网关地址|
 |**broadcastAddr**|String|广播地址|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 |**status**|String|状态 normal:正常 abnormal:异常|
 
 ## 返回码

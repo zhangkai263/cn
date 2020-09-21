@@ -2,7 +2,7 @@
 
 ## 业务架构
 
-![1568968591708](../../../../image/Data-Transmission-Service/dts-003.png)
+![1568968591708](../../../../image/Data-Transmission-Service/dts-037.png)
 
 **说明**
 

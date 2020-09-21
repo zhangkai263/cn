@@ -2,7 +2,7 @@
 # API使用指南
 智臻链BaaS平台企业组网提供两种应用接入方式：
 
-* 使用Hyperledger Fabric官方提供的SDK直接与创建出来的区块链网络交互，具体参考[接入指南](https://wiki.hyperledger.org/display/fabric/Hyperledger+Fabric+SDKs)
+* 使用Hyperledger Fabric官方提供的SDK直接与创建出来的区块链网络交互，具体参考[接入指南](https://github.com/hyperledger)
 * 使用平台提供的HTTP API接口，与区块链网络交互
 
 本指南着重描述第二种接入方式。
@@ -21,6 +21,7 @@
    "err_msg": null,   // 成功返回时，具体值为null
 }
 ```
+
 ### 接口执行失败
 
 ```json
@@ -31,6 +32,7 @@
    "err_msg": "具体的错误信息",    // 状态详细信息字串：具体的错误信息
 }
 ```
+
 ## 服务状态检查
 ### 描述
 用于检测当前区块链节点API服务是否正常，当http状态码为200，且返回字符串**ok**代表服务正常。
@@ -44,7 +46,9 @@ GET
 ```
 curl -X GET http://bc-r3scqqdhru-peerft-0-FI.jvessel-public-stag2.jdcloud.com:80/healthz 
 ```
+
 ### 响应示例
+
 ```
 ok
 ```
@@ -65,6 +69,7 @@ JSON
 	"password": "",      // 创建区块链网络时定义的API用户密码
 }
 ```
+
 ### 请求示例
 ```
 curl -X POST \
@@ -107,6 +112,7 @@ JSON
 	"args": ["k", "100"] // 链码方法的入参，注意此处为JSON数组
 }
 ```
+
 ### 请求示例
 ```
 curl -X POST \
@@ -120,6 +126,7 @@ curl -X POST \
 	"args": ["k", "100"]
 }'
 ```
+
 ### 响应示例
 > 返回结果需从统一返回结果中的**data**字段中提取
 ```json
@@ -158,6 +165,7 @@ JSON
 	"args": ["k"] // 链码方法的入参，注意此处为JSON数组
 }
 ```
+
 ### 请求示例
 ```
 curl -X POST \
@@ -275,6 +283,7 @@ QUERY
 curl -X GET http://bc-oyw2mynhyj-peerft-0-FI.jvessel-public-stag2.jdcloud.com:80/external/v1/channel/block/hash?channelId=mychannel&blockHash=bb708f185322c9939a8696e46dd9d2e89599367e0c3e377a58126e14a4b5f932 \
   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODMyMzQ1OTcsImlkIjoicSIsIm9yaWdfaWF0IjoxNTgzMjMwOTk3fQ.lYH8jHlatgfImJ98SbvOE5clov50Y76tpTXnJqiVCHc' 
 ```
+
 ### 响应示例
 > 返回结果需从统一返回结果中的**data**字段中提取
 
@@ -314,6 +323,7 @@ QUERY
 curl -X GET http://bc-oyw2mynhyj-peerft-0-FI.jvessel-public-stag2.jdcloud.com:80/external/v1/channel/block/txid?channelId=mychannel&txId=9ad0ea1c81d0183d5a7b82fac854d8bf176abccf6d901b9fb5fd9158762a6962' \
   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODMyMzQ1OTcsImlkIjoicSIsIm9yaWdfaWF0IjoxNTgzMjMwOTk3fQ.lYH8jHlatgfImJ98SbvOE5clov50Y76tpTXnJqiVCHc' 
 ```
+
 ### 响应示例
 > 返回结果需从统一返回结果中的**data**字段中提取
 
@@ -354,6 +364,7 @@ curl -X GET \
   'http://bc-oyw2mynhyj-peerft-0-FI.jvessel-public-stag2.jdcloud.com:80/external/v1/channel/tx/txid?channelId=mychannel&txId=9ad0ea1c81d0183d5a7b82fac854d8bf176abccf6d901b9fb5fd9158762a6962' \
   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODMyMzQ1OTcsImlkIjoicSIsIm9yaWdfaWF0IjoxNTgzMjMwOTk3fQ.lYH8jHlatgfImJ98SbvOE5clov50Y76tpTXnJqiVCHc' 
 ```
+
 ### 响应示例
 > 返回结果需从统一返回结果中的**data**字段中提取
 
@@ -364,4 +375,58 @@ curl -X GET \
 	"txStatus":0, // 交易状态，0有效
 	"invokes":[{"args":["a","b"],"chaincode":"test","method":"put"}] // 交易内容
 }
+```
+
+## IPFS文件上传
+### 描述
+往IPFS集群上传文件
+### 请求方法
+POST
+### 请求路径
+/external/v1/files/upload
+### 请求格式
+multipart/form-data
+### 请求头
+* Authorization: Bearer +登录接口返回的Token
+* Content-Type: multipart/form-data
+### 请求参数
+* file: 文件
+
+```json
+curl -i -X POST \
+    -H "Content-Type:multipart/form-data" \
+    -H "Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA2NTUzNDYsImlkIjoiMTIzIiwib3JpZ19pYXQiOjE1OTA2NTE3NDZ9.sliHlgQkKMywB1VYxM_G1nwG0ZxzDJLGrc8iKgLw8w0" \
+    -F "file=@\"./file.txt\";type=application/gzip;filename=\"file.txt\"" \
+   'http://bc-6oebaqruiz-peerft-0-FI.jvessel-public-stag2.jdcloud.com/external/v1/files/upload'
+```
+
+### 相应示例
+```json
+{
+	"code":200,
+	"status":"ok",
+	"data":"QmPFULsxciTq37P9qL24ttBSsCQ1YzH1VnkKgWrCEJizcn",
+	"err_msg":""
+}
+```
+
+## IPFS文件下载
+### 描述
+从IPFS集群下载文件
+### 请求方法
+GET
+### 请求路径
+/external/v1/files/download
+### 请求格式
+QUERY
+### 请求头
+* Authorization: Bearer +登录接口返回的Token
+### 请求参数
+* hashId: 上传时返回的IPFS哈希
+* fileName: 保存的文件名
+
+```
+curl -i -X GET \
+   -H "Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA3MjU0NTcsImlkIjoiMTIzIiwib3JpZ19pYXQiOjE1OTA3MjE4NTd9.H_nPesJM8mcQ2tMYBEeGOKwHQE0PigjmnEZ20ptBoNI" \
+ 'http://bc-qgrpi7heoh-peerft-0-FI.jvessel-public-stag2.jdcloud.com/external/v1/files/download?hashId=QmSAQam7ikKh2J1JCBfuZhbv1opCQRWuZacKK5ZbkHw4Yy&fileName=file.txt'
 ```

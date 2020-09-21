@@ -10,9 +10,9 @@ Network Policy用于定义集群内部Pod之间的网络隔离策略以及Pod与
 
 京东云的Network Policy控制器通过集成Calico的Felix组件实现.支持基于Kubernetes标准API的NetworkPolicy来定义容器间的访问策略，并且兼容[Calico](https://docs.projectcalico.org/v3.8/security/calico-network-policy)的Network Policy。 
 
-您可以在创建集群时选择[开启Network Policy]()；也可以为已有集群[开启Network Policy]()。
+您可以在创建集群时选择开启“网络策略”；也可以为已有集群开启“网络策略”。
 
-集群中开启Network Policy后，您可以在集群中定义Network Policy资源，为集群中不同类型的应用定义精确的网络隔离策略，实现集群内部应用之间或集群应用与外部网络端点之间的网络控制。
+集群中开启网络策略后，您可以在集群中定义Network Policy资源，为集群中不同类型的应用定义精确的网络隔离策略，实现集群内部应用之间或集群应用与外部网络端点之间的网络控制。
 
 ## 通过Network Policy限制集群内服务访问
 
@@ -95,117 +95,87 @@ index.html           100% |*****************************************************
 ```
 用新的busybox测试，可以正常访问nginx
 
-## 通过Network Policy限制公网访问集群服务
+## 通过Network Policy限制集群服务访问公网
 
-1. 将上面步骤中创建的nginx service从ClusterIP变更为LoadBalancer
-
-```
-kubectl edit service nginx
-
-apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: "2020-06-19T07:05:39Z"
-  labels:
-    run: nginx
-  name: nginx
-  namespace: default
-  resourceVersion: "7080"
-  selfLink: /api/v1/namespaces/default/services/nginx
-  uid: 48080c2a-b1fb-11ea-8cbc-fa163ecd2a79
-spec:
-  clusterIP: 10.0.122.240
-  ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
-  selector:
-    run: nginx
-  sessionAffinity: None
-  type: LoadBalancer
-status:
-  loadBalancer: {}
-```
-将type从ClusterIP变更为LoadBalancer，获取公网IP地址
-
-```
-kubectl get service nginx
-NAME    TYPE           CLUSTER-IP     EXTERNAL-IP               PORT(S)        AGE
-nginx   LoadBalancer   10.0.122.240   10.0.112.4,114.67.122.3   80:31535/TCP   119m
-```
-
-2. 通过公网访问nginx服务
-
-登录到一台京东云虚机，然后通过wget访问nginx服务失败
-```
-wget 114.67.122.3
-Connecting to 114.67.122.3:80... connected.
-HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
-Retrying.
-```
-
-3. 更新网络策略，将测试机IP加入ipBlock网段
-```
-apiVersion: extensions/v1beta1
-kind: NetworkPolicy
-metadata:
-  creationTimestamp: "2020-06-19T09:21:15Z"
-  generation: 1
-  name: access-nginx
-  namespace: default
-  resourceVersion: "27276"
-  selfLink: /apis/extensions/v1beta1/namespaces/default/networkpolicies/access-nginx
-  uid: 39d80783-b20e-11ea-8cbc-fa163ecd2a79
-spec:
-  ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          access: "true"
-    - ipBlock:
-        cidr: 114.67.0.0/16
-  podSelector:
-    matchLabels:
-      run: nginx
-  policyTypes:
-  - Ingress
-```
-
-4. 再次验证通过公网可以访问nginx服务
-
-## 通过Network Policy限制集群服务访问外网
 
 1. 首先创建一个测试用的busybox
 ```
-kubectl run busybox --image=busybox --restart=Never --command -- sleep 36000
+kubectl run busybox --image=busybox --restart=Never --labels="run=busybox" --command -- sleep 36000
 kubectl exec -it busybox /bin/sh
-
+/ # ping www.baidu.com
+PING www.baidu.com (180.101.49.12): 56 data bytes
+64 bytes from 180.101.49.12: seq=0 ttl=45 time=8.173 ms
+64 bytes from 180.101.49.12: seq=1 ttl=45 time=8.017 ms
 ```
 
 2. 创建网络策略，默认禁止访问公网
-egress-test.yaml
+egress-deny.yaml
 ```
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  creationTimestamp: "2020-06-19T09:34:08Z"
-  generation: 2
   name: egress-test
   namespace: default
-  resourceVersion: "33225"
-  selfLink: /apis/extensions/v1beta1/namespaces/default/networkpolicies/access-test
-  uid: 06a8a537-b210-11ea-8cbc-fa163ecd2a79
 spec:
   podSelector:
     matchLabels:
       run: busybox
   policyTypes:
   - Egress
+```
+
+```
+kubectl create -f egress-deny.yaml
+```
+
+3. 再次验证busybox访问外网不通
+kubectl exec -it busybox /bin/sh
+/ # ping www.baidu.com
+ping: bad address 'www.baidu.com'
+
+4. 删除之前创建的网络策略，重新创建新的网络策略只允许访问www.baidu.com
+
+删除老的网络策略
+```
+kubectl delete networkpolicies. egress-test
+```
+
+egress-test.yaml
+```
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: egress-test
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      run: busybox
+  policyTypes:
+  - Egress
+  - Ingress
+  egress:
+  - to:
+    - ipBlock:
+        cidr: 180.101.49.12/32
+    - ipBlock:
+        cidr: 180.101.49.11/32
+  - to:
+    - ipBlock:
+        cidr: 0.0.0.0/0
+    ports:
+    - protocol: UDP
+      port: 53
   ```
-  
+  创建新的网络策略
   ```
   kubectl create -f egress-test.yaml
   ```
+  
+  5.再次验证网络连通性
+  
+  
+  
 
 
 

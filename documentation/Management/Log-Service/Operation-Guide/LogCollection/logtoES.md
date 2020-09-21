@@ -6,7 +6,9 @@
 
 ### 操作流程
 
-1.在创建业务应用日志配置时，打开高级配置，打开投递至指定目的地，投递目的地类型选择Kafka。
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogCollection/toES.png)
+
+1.在创建业务应用日志配置时，打开高级配置，打开投递至指定目的地，投递目的地类型选择ES。
 
 2.用户根据自身需求选择某个地域下的云ES实例或选择自建ES。若用户选择云ES，则默认获取该ES的访问域名；若用户选择自建ES，则需要填写对应自建ES的访问域名。
 

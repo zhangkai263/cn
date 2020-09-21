@@ -20,7 +20,13 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
 |**filters**|[Filter[]](describeloadbalancers#filter)|False| |loadBalancerType - 负载均衡类型，取值为：alb、nlb、dnlb，默认alb，支持单个<br>loadBalancerIds - 负载均衡ID列表，支持多个<br>loadBalancerNames - 负载均衡名称列表，支持多个<br>vpcId - 负载均衡所在Vpc的Id，支持单个<br>|
+|**tags**|[TagFilter[]](describeloadbalancers#tagfilter)|False| |Tag筛选条件|
 
+### <div id="tagfilter">TagFilter</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |Tag键|
+|**values**|String[]|False| |Tag值|
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -50,11 +56,17 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/
 |**state**|[LoadBalancerState](describeloadbalancers#loadbalancerstate)|LoadBalancer的状态|
 |**azs**|String[]|LoadBalancer所属availability Zone列表|
 |**securityGroupIds**|String[]|LoadBalancer绑定的安全组列表|
-|**privateIp**|[PrivateIpAddress](describeloadbalancers#privateipaddress)|LoadBalancer的IP地址信息|
+|**privateIp**|[PrivateIpAddress](describeloadbalancers#privateipaddress)|描述LB的私有对象信息|
 |**charge**|[Charge](describeloadbalancers#charge)|计费配置|
+|**tags**|[Tag[]](describeloadbalancers#tag)|tag信息|
 |**description**|String|LoadBalancer的描述信息|
 |**deleteProtection**|Boolean|删除保护，取值为True(开启)或False(关闭)|
 |**createdTime**|String|LoadBalancer的创建时间|
+### <div id="tag">Tag</div>
+|名称|类型|描述|
+|---|---|---|
+|**key**|String| |
+|**value**|String| |
 ### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|

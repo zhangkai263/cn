@@ -24,6 +24,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 ### <div id="webrulespec">WebRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**serviceIp**|String|False| |高防 IP|
 |**domain**|String|True| |子域名|
 |**protocol**|[WebRuleProtocol](modifywebrule#webruleprotocol)|True| |协议: http, https 至少一个为 true|
 |**port**|Integer[]|False| |HTTP 协议的端口号, 如80, 81; 如果 protocol.http 为 true, 至少配置一个端口, 最多添加 5 个|

@@ -20,7 +20,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码, 默认为1|
 |**pageSize**|Integer|False| |分页大小, 默认为10, 取值范围[10, 100]|
-|**searchType**|String|False| |查询类型名称, domain:源站域名, ip:源站 IP, port: 转发端口, originPort: 源站端口|
+|**searchType**|String|False| |查询类型名称, domain:源站域名, ip:源站 IP, port: 转发端口, originPort: 源站端口, serviceIp: 高防IP(仅支持BGP线路的实例)|
 |**searchValue**|String|False| |查询类型值|
 
 
@@ -57,6 +57,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**protocol**|String|TCP 或 UDP|
 |**cname**|String|规则的 CNAME|
 |**originType**|String|回源类型: ip 或者 domain|
+|**serviceIp**|String|高防 IP|
 |**port**|Integer|端口号|
 |**algorithm**|String|转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originAddr**|[OriginAddrItem[]](describeforwardrules#originaddritem)| |

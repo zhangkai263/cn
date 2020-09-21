@@ -83,6 +83,33 @@ dbpartition by string_hash(name);
  dbpartition by YYYY(order_date) start('2000') period 2;
  ```
 
+## 创建广播表
+广播表是指将这个表复制到DRDS的每个分库上。 创建了广播表后，每个RDS节点的分库中都有该表的全量数据。用户对这个表进行增删改时，DRDS后端对每个分库上的表也进行同样的操作，以实现数据一致。这样做的好处是可以将 JOIN 操作下推到底层的 RDS（MySQL)，来避免跨库 JOIN。 
+
+广播表主要用于提升跨库join的性能，常用于一些相对静态的配置表、字典表等数据量较小的表。
+
+广播表可支持自增长类型，即MySQL自己的自增长类型
+
+### 语法
+在创建表的SQL语句最后增加"BROADCAST"关键字，不区分大小写。
+
+```SQL
+CREATE TABLE table_name
+(create_definition,...) BROADCAST
+```
+**注意事项**
+1. 广播表和拆分表互斥，即：一个表不能同时为广播表和拆分表。
+2. 由于暂不支持分布式事务，如果某个分库的操作失败，可能会造成数据的不一致，需要应用自行处理。
+
+
+### 示例
+```SQL
+CREATE TABLE tbc1 (
+id int(11) DEFAULT '0',
+value varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 broadcast;
+```
+
 ## 删除拆分表
 删除表的语法为标准SQL
 ```SQL

@@ -8,9 +8,9 @@
 
 - 添加外部IDC内网探针
 
-  登录控制台，选择左侧【资产管理】，点击添加外部IDC内网探针
+  登录控制台，选择左侧【资产管理】，点击IDC资产管理
 
-![](../../../../image/Website-Threat-Inspector/wts-idc-assets-01.png)
+![](../../../../image/Website-Threat-Inspector/wts-idc-assets-11.png)
 
 - 下载外部IDC内网探针
 
@@ -20,9 +20,9 @@
 
 - 安装外部IDC内网探针
 
-  下载完成，解压缩下载文件（ScannerAgent.sh），手动在安装的资产设备上执行安装脚本。
+  下载完成，解压缩下载文件（jd_scanner_idcagent.zip），手动在安装的资产设备上执行安装脚本。
 
-![](../../../../image/Website-Threat-Inspector/wts-idc-assets-03.png)
+![](../../../../image/Website-Threat-Inspector/wts-idc-assets-13.png)
 
 - 查看外部IDC内网探针状态
 
@@ -31,3 +31,4 @@
 - 选择资产探测频率
 
   您可以根据扫描监控IDC内网资产的实际业务情况，选择资产探测频率，默认为24小时。
+

@@ -37,7 +37,8 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths/{bandwidthId}
 |**bandwidthId**|String|带宽实例ID|
 |**bandwidthName**|String|带宽名称|
 |**status**|String|状态 normal:正常 abnormal:异常|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**chargeType**|String|计费方式 fixedBandwidth:固定带宽 95thPercentile:95峰值 merge95thPercentile:合并95峰值|
 |**bandwidth**|Integer|合同带宽（Mbps）|
 |**relatedIp**|[RelatedIp[]](describebandwidth#relatedip)|关联的公网IP|
 |**switchboard**|[Switchboard[]](describebandwidth#switchboard)|交换机信息|
@@ -50,7 +51,7 @@ https://jdccs.jdcloud-api.com/v1/idcs/{idc}/bandwidths/{bandwidthId}
 |名称|类型|描述|
 |---|---|---|
 |**cidrAddr**|String|IP地址段|
-|**lineType**|String|线路类型 bgp:BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
+|**lineType**|String|线路类型 dynamicBGP:动态BGP thirdLineBGP:三线BGP telecom:电信单线 unicom:联通单线 mobile:移动单线|
 
 ## 返回码
 |返回码|描述|

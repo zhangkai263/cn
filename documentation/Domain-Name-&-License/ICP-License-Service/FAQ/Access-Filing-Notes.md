@@ -22,6 +22,4 @@
 
 4. 接入备案时，主体下已备案的网站必须全部保持打开状态，以备核查。
 
-5. 接入备案时，备案密码如果遗失，还请点击[找回密码](https://docs.jdcloud.com/cn/icp-license-service/icp-filing-password-recovery-method)尝试找回
-
 各省备案细则还请点击[管局规则](https://docs.jdcloud.com/cn/icp-license-service/anhui)针对性参考，还可通过[京东智联云工单](https://ticket.jdcloud.com/myorder/submit)方式咨询
