@@ -7,6 +7,14 @@ Web应用防火墙支持添加自定义规则对BOT机器人请求进行识别�
 - 已开通Web应用防火墙实例，企业版及以上的套餐版本，更多信息，请参见[开通Web应用防火墙](https://docs.jdcloud.com/cn/web-application-firewall/purchase-process)。
 - 已完成网站接入。更多信息，请参见[添加域名](https://docs.jdcloud.com/cn/web-application-firewall/step-1)。
 
+## 使用限制
+
+包年包月开通的Web应用防火墙实例，其自定义BOT规则-通用功能有以下限制。
+
+| 功能               | 说明                                     | 高级版 | 企业版   | 旗舰版 |
+| :----------------- | :--------------------------------------- | :----- | :------- | :----- |
+| 自定义BOT规则-通用 | 最多支持添加的自定义BOT规则-通用的数量。 | 不支持 | 20（条） | 不限   |
+
 ## 操作步骤
 
 1. 登录[Web应用防火墙控制台](https://cloudwaf-console.jdcloud.com/overview/business)。

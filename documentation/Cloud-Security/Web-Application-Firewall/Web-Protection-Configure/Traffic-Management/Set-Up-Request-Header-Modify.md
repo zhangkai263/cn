@@ -7,6 +7,14 @@ Web应用防火墙支持请求头的增删改。可以应用到服务端流量tr
 - 已开通Web应用防火墙实例，更多信息，请参见[开通Web应用防火墙](https://docs.jdcloud.com/cn/web-application-firewall/purchase-process)。
 - 已完成网站接入。更多信息，请参见[添加域名](https://docs.jdcloud.com/cn/web-application-firewall/step-1)。
 
+## 使用限制
+
+包年包月开通的Web应用防火墙实例，其请求头修改功能有以下限制。
+
+| 功能       | 说明                               | 高级版   | 企业版   | 旗舰版   |
+| :--------- | :--------------------------------- | :------- | :------- | :------- |
+| 请求头修改 | 最多支持添加请求头修改规则的数量。 | 10（条） | 20（条） | 50（条） |
+
 ## 操作步骤
 
 1. 登录[Web应用防火墙控制台](https://cloudwaf-console.jdcloud.com/overview/business)。

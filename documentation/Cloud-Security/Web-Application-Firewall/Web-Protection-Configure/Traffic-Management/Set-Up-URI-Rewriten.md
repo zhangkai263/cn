@@ -7,6 +7,14 @@ Web应用防火墙支持URI重写。如果源站的资源对外不想暴露资�
 - 已开通Web应用防火墙实例，更多信息，请参见[开通Web应用防火墙](https://docs.jdcloud.com/cn/web-application-firewall/purchase-process)。
 - 已完成网站接入。更多信息，请参见[添加域名](https://docs.jdcloud.com/cn/web-application-firewall/step-1)。
 
+## 使用限制
+
+包年包月开通的Web应用防火墙实例，其URI重写功能有以下限制。
+
+| 功能    | 说明                            | 高级版   | 企业版   | 旗舰版   |
+| :------ | :------------------------------ | :------- | :------- | :------- |
+| URI重写 | 最多支持添加URI重新规则的数量。 | 10（条） | 20（条） | 50（条） |
+
 ## 操作步骤
 
 1. 登录[Web应用防火墙控制台](https://cloudwaf-console.jdcloud.com/overview/business)。
