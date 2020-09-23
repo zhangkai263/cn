@@ -45,9 +45,9 @@ items:
   items:
     - name: Web防护
       items:
-         - name: 配置Web应用攻击防护
+         - name: 设置Web应用攻击防护
            href: Web-Protection-Configure/Web-Protection/Web-Application-Firewall-Engine.md
-         - name: 配置智能语义防护引擎
+         - name: 设置智能语义防护引擎
            href: Web-Protection-Configure/Web-Protection/Intelligent-Semantics-Protection-Engine.md
          - name: 开启恶意IP惩罚
            href: Web-Protection-Configure/Web-Protection/Open-Malice-IP-Punishment.md
@@ -55,15 +55,15 @@ items:
            href: Web-Protection-Configure/Web-Protection/Set-Up-Custom-Protection.md
     - name: 访问控制
       items:
-         - name: 配置白名单规则
+         - name: 设置白名单规则
            href: Web-Protection-Configure/Access-Control/Set-Up-Whitelist-Rules.md
-         - name: 配置黑名单规则
+         - name: 设置黑名单规则
            href: Web-Protection-Configure/Access-Control/Set-Up-Blacklist-Rules.md
-         - name: 配置限速
+         - name: 设置限速
            href: Web-Protection-Configure/Access-Control/Set-Up-Speed-Limit.md
     - name: CC安全防护
       items:
-         - name: 配置CC安全防护
+         - name: 设置CC安全防护
            href: Web-Protection-Configure/CC-Safety-Protection/Set-Up-Safety-Protection.md
     - name: BOT管理
       items:
