@@ -1,50 +1,61 @@
-# describeElasticIp
+# describeBandwidthPackages
 
 
 ## 描述
-查询弹性公网IP详情
+查询弹性公网IP列表<br/>
+支持分页查询，默认每页20条<br/>
+
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域ID，可调用接口（describeEdCPSRegions）获取分布式云物理服务器支持的地域|
-|**elasticIpId**|String|True| |弹性公网IPID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**pageNumber**|Integer|False|1|页码；默认为1|
+|**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
+|**name**|String|False| |共享带宽名称|
+|**filters**|[Filter[]](describebandwidthpackages#filter)|False| |bandwidthPackageId - 共享带宽ID，精确匹配，支持多个<br>|
 
+### <div id="filter">Filter</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
+|**operator**|String|False| |过滤条件的操作符，默认eq|
+|**values**|String[]|True| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeelasticip#result)| |
+|**result**|[Result](describebandwidthpackages#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIp**|[ElasticIp](describeelasticip#elasticip)|弹性公网IP详细信息|
-### <div id="elasticip">ElasticIp</div>
+|**bandwidthPackages**|[BandwidthPackage[]](describebandwidthpackages#bandwidthpackage)| |
+|**pageNumber**|Integer|页码；默认为1|
+|**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
+|**totalCount**|Integer|查询结果总数|
+### <div id="bandwidthpackage">BandwidthPackage</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-east-tz1|
-|**elasticIpId**|String|弹性公网IPID|
-|**elasticIp**|String|弹性公网IP|
+|**region**|String|区域代码, 如cn-east-tz1|
+|**az**|String|可用区代码, 如cn-east-tz1a|
+|**bandwidthPackageId**|String|共享带宽ID|
 |**bandwidth**|Integer|带宽, 单位Mbps|
 |**extraUplinkBandwidth**|Integer|额外上行带宽, 单位Mbps|
 |**lineType**|String|链路类型|
-|**status**|String|状态|
-|**instanceType**|String|实例类型|
-|**instanceId**|String|实例ID|
+|**name**|String|名称|
 |**createTime**|String|创建时间|
-|**targetIp**|String|绑定的ip地址|
-|**bandwidthPackageId**|String|共享带宽 id|
-|**charge**|[Charge](describeelasticip#charge)|计费信息|
+|**charge**|[Charge](describebandwidthpackages#charge)|计费信息|
 ### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|

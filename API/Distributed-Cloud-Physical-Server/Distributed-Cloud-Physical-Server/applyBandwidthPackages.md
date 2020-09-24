@@ -1,15 +1,15 @@
-# applyElasticIps
+# applyBandwidthPackages
 
 
 ## 描述
-申请弹性公网IP
+申请共享带宽
 
 
 ## 请求方式
 PUT
 
 ## 请求地址
-https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
+https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -19,16 +19,16 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**elasticIpSpec**|[ElasticIpSpec](applyelasticips#elasticipspec)|True| |弹性公网IP配置|
+|**bandwidthPackageSpec**|[BandwidthPackageSpec](applybandwidthpackages#bandwidthpackagespec)|True| |共享带宽配置|
 
-### <div id="elasticipspec">ElasticIpSpec</div>
+### <div id="bandwidthpackagespec">BandwidthPackageSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |名称|
 |**bandwidth**|Integer|True| |带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
-|**bandwidthPackageId**|String|False| |共享带宽ID, 选择加入共享带宽方式购买时必传|
 |**count**|Integer|True| |购买数量|
-|**charge**|[ChargeSpec](applyelasticips#chargespec)|True| |计费配置|
+|**charge**|[ChargeSpec](applybandwidthpackages#chargespec)|True| |计费配置|
 ### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -41,13 +41,13 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](applyelasticips#result)| |
+|**result**|[Result](applybandwidthpackages#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIpIds**|String[]|弹性公网IPID|
+|**bandwidthPackageIds**|String[]|共享带宽ID|
 
 ## 返回码
 |返回码|描述|
