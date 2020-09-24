@@ -15,6 +15,12 @@
         href: Introduction/Features.md
       - name: 应用场景  
         href: Introduction/Application-Scenarios.md    
+  - name: 产品定价
+    items:
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 欠费说明
+        href: Pricing/Overdue-Statement.md
   - name: 入门指南
     items:
       - name: 数据迁移
