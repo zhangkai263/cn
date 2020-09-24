@@ -40,10 +40,6 @@ items:
     href: Load-Balancing-Service-Clause.md
   - name: 负载均衡服务等级协议（SLA）
     href: Load-Balancing-Service-Level-Protocol-SLA.md
-  - name: 数知服务协议
-    href: Number-Of-Terms-Of-Service.md
-  - name: 数知服务等级协议（SLA）
-    href: Number-Aware-Service-Level-Agreement-SLA.md
   - name: 云数据库 MongoDB 服务协议
     href: Cloud-Database-MongoDB-Service-Cause.md
   - name: 云数据库MongoDB服务等级协议（SLA）
@@ -60,6 +56,8 @@ items:
     href: Cloud-Host-Security-Service-Clause.md
   - name: 云硬盘服务协议
     href: Cloud-Hard-Disk-Service-Clause.md
+  - name: 云硬盘服务等级协议（SLA）
+    href: Cloud-Hard-Disk-Level-Agreements-SLA.md   
   - name: 弹性公网IP服务协议
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
@@ -120,14 +118,6 @@ items:
     href: Elastic-IP-For-Edge-Cloud-Level-Agreement-SLA.md
   - name: 边缘共享带宽服务协议
     href: Edge-Shared-Bandwidth-Terms-Of-Service.md    
-  - name: 边缘网络隧道(ENT)服务协议
-    href: Edge-Network-Tunnel-Terms-Of-Service.md
-  - name: 对等边缘服务(JEES)服务条款
-    href: JD-Cloud-Equal-EdgeService-Terms-Of-Service.md  
-  - name: 通知服务(JNS)服务条款
-    href: JD-Cloud-Notification-Service-Terms-Of-Service.md
-  - name: 通知服务(JNS)服务等级协议（SLA）
-    href: JD-Cloud-Notification-Service-Level-Agreement-SLA.md   
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -150,10 +140,6 @@ items:
     href: JCS-for-Elasticsearch-Service-Terms-SLA.md  
   - name: 函数服务服务条款
     href: Functional-Service-Terms-of-Service.md
-  - name: 云桌面服务条款
-    href: Cloud-Desktop-Service-Protocol.md   
-  - name: 云桌面服务等级协议（SLA）
-    href: Cloud-Desktop-Service-Protocol-SLA.md
   - name: 队列服务服务条款
     href: Queue-Service-Terms-Of-Service.md   
   - name: 队列服务等级协议（SLA）
@@ -224,8 +210,6 @@ items:
     href: JDCloud-Distributed-Service-Framework-Level-Agreements-SLA.md  
   - name: 云服务网格服务条款
     href: Mesh-Service-Terms-Of-Service.md
-  - name: 智能边缘安全服务条款
-    href: Intelligent-Edge-Security-Terms-Of-Service.md   
   - name: 堡垒机服务服务条款
     href: Bastion-Terms-Of-Service.md
   - name: 堡垒机服务等级协议（SLA）
@@ -448,6 +432,11 @@ items:
     href: Iov-Mobility-Service-Terms-Of-Service.md  
   - name: 车主出行服务等级协议（SLA）
     href: Iov-Mobility-Service-Level-Agreements-SLA.md
+  - name: 数知服务协议
+    href: Number-Of-Terms-Of-Service.md
+  - name: 数知服务等级协议（SLA）
+    href: Number-Aware-Service-Level-Agreement-SLA.md
+  
 
     
     

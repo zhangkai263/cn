@@ -29,10 +29,10 @@ curl -fsSL https://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install | bash -s
 安装Agent的方法如下：
 
 ```
-wget -c http://devops-hb.oss.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-external-v0.01.448.0742c84.20190327191802.bin -O installer && sh installer -- -t $tenant -r $region -v $vpc -a zero-agent,hawkeye-agent,log-agent,ark-query /usr/local/share/jcloud/ifrit && rm -f installer
+wget -c http://devops-hb.oss.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-external-v0.01.498.fae99f1.20200707111506.bin -O installer && sh installer -- -t $tenant -r $region -v $vpc -O -a zero-agent,hawkeye-agent,log-agent,ark-query /usr/local/share/jcloud/ifrit && rm -f installer
     -t tenant #devops中的租户名
     -v vpc    #由用户编写,将作为服务器的vpc名称
-    -r region #由用户编写,将作为服务器的region名称
+    -r region #由用户编写,将作为服务器的region名称,不能与京东云的region命名重复
 ```
 
 关于Agent的说明如下：

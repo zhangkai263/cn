@@ -121,6 +121,8 @@ items:
       href: Metrics/mongodb.md
     - name: DRDS
       href: Metrics/drds.md
+    - name: 云缓存 redis
+      href: Metrics/redis.md
     - name: 云缓存 Memcached
       href: Metrics/Memcached.md
     - name: 云数据库 InfluxDB

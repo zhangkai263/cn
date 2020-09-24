@@ -23,10 +23,10 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:Decrypt
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](decrypt#result)| |
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**plaintext**|String|明文数据 Base64-encoded binary data object|

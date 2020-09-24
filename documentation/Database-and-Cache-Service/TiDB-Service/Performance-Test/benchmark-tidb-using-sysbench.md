@@ -6,7 +6,7 @@
 
 ## 测试环境
 
-- [硬件要求](/hardware-and-software-requirements.md)
+- [硬件要求](https://docs.pingcap.com/zh/tidb/v4.0/hardware-and-software-requirements)
 
 - 参考 [TiDB 部署文档](https://pingcap.com/docs-cn/v3.0/how-to/deploy/orchestrated/ansible/)部署 TiDB 集群。在 3 台服务器的条件下，建议每台机器部署 1 个 TiDB，1 个 PD，和 1 个 TiKV 实例。关于磁盘，以 32 张表、每张表 10M 行数据为例，建议 TiKV 的数据目录所在的磁盘空间大于 512 GB。
     对于单个 TiDB 的并发连接数，建议控制在 500 以内，如需增加整个系统的并发压力，可以增加 TiDB 实例，具体增加的 TiDB 个数视测试压力而定。
@@ -83,7 +83,7 @@ sync-log = false
 capacity = "30GB"
 ```
 
-更详细的 TiKV 参数调优请参考 [TiKV 内存参数性能调优](/tune-tikv-memory-performance.md)。
+更详细的 TiKV 参数调优请参考 [TiKV 内存参数性能调优](https://docs.pingcap.com/zh/tidb/v4.0/tune-tikv-memory-performance)。
 
 ## 测试过程
 
@@ -224,7 +224,7 @@ sysbench --config-file=config oltp_read_only --tables=32 --table-size=10000000 r
 | point_select | 3\*64 | 195218.54 | 195218.54 | 0.98 | 2.14 | 21.82 |
 | point_select | 3\*128 | 208189.53 | 208189.53 | 1.84 | 4.33 | 31.02 |
 
-![oltp_point_select](../../../../image/TiDB//oltp_point_select.png)
+![oltp_point_select](../../../../image/TiDB/oltp_point_select.png)
 
 ### oltp_update_index
 

@@ -1,8 +1,8 @@
-# **设置IP黑名单**
+# **设置IP黑白名单**
 
 ## **1. 描述**
 
-设置IP黑名单，使该IP无法访问当前加速域名。
+设置IP黑白名单。
 
 ## **2. 请求参数**
 
@@ -11,8 +11,8 @@
 | username   | String   | 是           | 京东用户名pin                                                |
 | signature  | String   | 是           |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61)|
 | domain     | String   | 是           | 加速域名|
-|iplist | String   | 是           |IP黑名单列表，多个以英文逗号隔开，最多添加50个ip且不能重复 |
-| ipType     | String   | 否           | 取值范围[ipv6,ipv4]，不传默认不区分ip类型。  |
+| ipList   | String | 是        | 逗号隔开的ip列表，如果ipList传空则为删除,最多50条  |
+| ipListType   | String | 否        | IP列表类型(i.e.黑名单或者白名单)，默认为black,取值范围[black,white] |
 
 ## **3. 返回参数**
 
@@ -32,11 +32,12 @@ https://opencdn.jcloud.com/api/setIpBlackList
 
 ```
 {
-    "username": "user_test",
-    "signature": "ca4c56f85e3582f4d814cc77949c82a7",
-    "domain":"test.jcloud.com",
-    "ipList":"1.1.1.1,2.2.2.2"
-}
+    "username" :"jd_cdntest",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "ipList" :"10.112.3.1,12.20.1.2",
+    "ipListType":"black"
+ }
 ```
 
 - ### **返回示例**

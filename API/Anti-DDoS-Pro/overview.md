@@ -55,6 +55,7 @@ v1
 |**describeNameList**|GET|查询高防实例名称列表|
 |**describeProtectionRuleOfForwardRule**|GET|查询非网站类转发规则的防护规则|
 |**describeProtectionStatistics**|GET|查询高防实例防护统计信息|
+|**describeServiceIpList**|GET|查询实例高防 IP 列表|
 |**describeVpcIpList**|GET|查询用户可设置为网站类规则回源 IP 的京东云云内弹性公网 IP 资源|
 |**describeWebRule**|GET|查询网站类规则|
 |**describeWebRuleBlackListGeoAreas**|GET|查询网站类转发规则 Geo 模式的黑名单可设置区域编码|

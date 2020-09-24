@@ -85,74 +85,74 @@ items:
           - name: getFirstServerVncUrl
             href: Cluster-Management/getFirstServerVncUrl.md
             status: 0
-      - name: JMR作业管理
-        items:
-          - name: getJobTypeList
-            href: Job-Management/getJobTypeList.md
-            status: 0
-          - name: getJobList
-            href: Job-Management/getJobList.md
-          - name: isValidJobName
-            href: Job-Management/isValidJobName.md
-            status: 0
-          - name: createJob
-            href: Job-Management/createJob.md
-          - name: modifyJob
-            href: Job-Management/modifyJob.md
-            status: 0
-          - name: deleteJob
-            href: Job-Management/deleteJob.md
-          - name: createAndExcuteJob
-            href: Job-Management/createAndExcuteJob.md
-            status: 0
-          - name: executeJob
-            href: Job-Management/executeJob.md
-          - name: showJobDetails
-            href: Job-Management/showJobDetails.md
-          - name: getTaskList
-            href: Job-Management/getTaskList.md
-            status: 0
-          - name: deleteHdfsFile
-            href: Job-Management/deleteHdfsFile.md
-            status: 0
-          - name: getClusterJobCount
-            href: Job-Management/getClusterJobCount.md
-            status: 0
-          - name: getClusterCronJobCount
-            href: Job-Management/getClusterCronJobCount.
-            status: 0
-          - name: getCronJobList
-            href: Job-Management/getCronJobList.md
-          - name: isValidPlanName
-            href: Job-Management/isValidPlanName.md
-            status: 0
-          - name: createCronJob
-            href: Job-Management/createCronJob.md
-          - name: getCronJobDetail
-            href: Job-Management/getCronJobDetail.md
-          - name: modifyCronJob
-            href: Job-Management/modifyCronJob.md
-            status: 0
-          - name: pauseCronJob
-            href: Job-Management/pauseCronJob.md
-            status: 0
-          - name: resumeCronJob
-            href: Job-Management/resumeCronJob.md
-            status: 0
-          - name: deleteCronJob
-            href: Job-Management/deleteCronJob.md
-          - name: getCronJobTaskList
-            href: Job-Management/getCronJobTaskList.md
-            status: 0
-          - name: getCronJobTaskList
-            href: Job-Management/getCronJobTaskListByJobId.md
-            status: 0
-          - name: runCronJobOnce
-            href: Job-Management/runCronJobOnce.md
-            status: 0
-          - name: getLastCronJobTask
-            href: Job-Management/getLastCronJobTask.md
-            status: 0
-          - name: queryExecutingJobList
-            href: Job-Management/queryExecutingJobList.md
-            status: 0
+      # - name: JMR作业管理
+      #   items:
+      #     - name: getJobTypeList
+      #       href: Job-Management/getJobTypeList.md
+      #       status: 0
+      #     - name: getJobList
+      #       href: Job-Management/getJobList.md
+      #     - name: isValidJobName
+      #       href: Job-Management/isValidJobName.md
+      #       status: 0
+      #     - name: createJob
+      #       href: Job-Management/createJob.md
+      #     - name: modifyJob
+      #       href: Job-Management/modifyJob.md
+      #       status: 0
+      #     - name: deleteJob
+      #       href: Job-Management/deleteJob.md
+      #     - name: createAndExcuteJob
+      #       href: Job-Management/createAndExcuteJob.md
+      #       status: 0
+      #     - name: executeJob
+      #       href: Job-Management/executeJob.md
+      #     - name: showJobDetails
+      #       href: Job-Management/showJobDetails.md
+      #     - name: getTaskList
+      #       href: Job-Management/getTaskList.md
+      #       status: 0
+      #     - name: deleteHdfsFile
+      #       href: Job-Management/deleteHdfsFile.md
+      #       status: 0
+      #     - name: getClusterJobCount
+      #       href: Job-Management/getClusterJobCount.md
+      #       status: 0
+      #     - name: getClusterCronJobCount
+      #       href: Job-Management/getClusterCronJobCount.
+      #       status: 0
+      #     - name: getCronJobList
+      #       href: Job-Management/getCronJobList.md
+      #     - name: isValidPlanName
+      #       href: Job-Management/isValidPlanName.md
+      #       status: 0
+      #     - name: createCronJob
+      #       href: Job-Management/createCronJob.md
+      #     - name: getCronJobDetail
+      #       href: Job-Management/getCronJobDetail.md
+      #     - name: modifyCronJob
+      #       href: Job-Management/modifyCronJob.md
+      #       status: 0
+      #     - name: pauseCronJob
+      #       href: Job-Management/pauseCronJob.md
+      #       status: 0
+      #     - name: resumeCronJob
+      #       href: Job-Management/resumeCronJob.md
+      #       status: 0
+      #     - name: deleteCronJob
+      #       href: Job-Management/deleteCronJob.md
+      #     - name: getCronJobTaskList
+      #       href: Job-Management/getCronJobTaskList.md
+      #       status: 0
+      #     - name: getCronJobTaskList
+      #       href: Job-Management/getCronJobTaskListByJobId.md
+      #       status: 0
+      #     - name: runCronJobOnce
+      #       href: Job-Management/runCronJobOnce.md
+      #       status: 0
+      #     - name: getLastCronJobTask
+      #       href: Job-Management/getLastCronJobTask.md
+      #       status: 0
+      #     - name: queryExecutingJobList
+      #       href: Job-Management/queryExecutingJobList.md
+      #       status: 0

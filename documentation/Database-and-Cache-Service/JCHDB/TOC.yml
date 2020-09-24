@@ -22,7 +22,16 @@
       - name: 计费规则
         href: Pricing/Billing-Rules.md
       - name: 价格总览
-        href: Pricing/Price-Overview.md     
+        href: Pricing/Price-Overview.md   
+  - name: 快速入门
+    items:
+      - name: 创建实例
+        href: Getting-Started/Create-Instance.md
+      - name: 创建账号
+        href: Getting-Started/Create-Account.md
+      - name: 连接实例
+        href: Getting-Started/Connect-Instance.md    
+ 
   - name: 操作指南
     items:
       - name: 实例管理
@@ -31,6 +40,8 @@
             href: Operation-Guide/Instance/Create-Instance.md
           - name: 查看实例
             href: Operation-Guide/Instance/View-Instance.md
+          - name: 连接实例
+            href: Operation-Guide/Instance/Connect-Instance.md    
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
       - name: 账号管理
@@ -42,4 +53,14 @@
           - name: 设置权限
             href: Operation-Guide/Account/Grant-Privilege.md
           - name: 重置密码
-            href: Operation-Guide/Account/Reset-Password.md              
+            href: Operation-Guide/Account/Reset-Password.md     
+            
+      - name: 最佳实践
+        items:
+          - name: 数据导入
+            href: Best-Practices/Load-Data-From-File.md
+            
+      - name: 常见问题
+        items:
+          - name: FAQ
+            href: FAQ/FAQ.md            

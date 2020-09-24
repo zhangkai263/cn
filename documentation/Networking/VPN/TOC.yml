@@ -91,6 +91,8 @@
          href: Best-Practices/Connection-With-DirectConnect.md
        - name: VPN连接到亚马逊AWS
          href: Best-Practices/Connection-Into-Amazon.md
+       - name: VPN连接到京东云跨地域资源
+         href: Best-Practices/Connection-Into-JDCloud.md
   - name: 问题排查
     items:
     status: 0

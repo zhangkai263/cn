@@ -1,0 +1,117 @@
+name: 数据库审计
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 实例管理接口
+        items:
+          - name: 获取实例列表
+            href: Instance-Interface/describeInstanceList.md
+          - name: 获取实例详情
+            href: Instance-Interface/describeInstance.md
+          - name: 修改实例备注
+            href: Instance-Interface/modifyInstance.md
+          - name: 获取IP白名单列表
+            href: Instance-Interface/describeIpWhiteList.md
+          - name: 添加IP白名单
+            href: Instance-Interface/addIpWhiteItem.md
+          - name: 删除IP白名单
+            href: Instance-Interface/deleteIpWhiteItem.md
+      - name: 数据库操作接口
+        items:
+          - name: 获取数据库列表
+            href: Database-Interface/describeDatabases.md
+          - name: 添加数据库接口
+            href: Database-Interface/addDatabase.md
+          - name: 删除数据库接口
+            href: Database-Interface/deleteDatabase.md
+          - name: 获取数据库详情
+            href: Database-Interface/describeDatabase.md
+          - name: 开启双向审计
+            href: Database-Interface/enableAuditResponse.md
+          - name: 关闭双向审计
+            href: Database-Interface/disableAuditResponse.md
+          - name: 更新数据库描述
+            href: Database-Interface/updateDatabase.md
+      - name: 规则操作接口
+        items:
+          - name: 获取规则组列表
+            href: Rule-Interface/describeRuleGroups.md
+          - name: 获取规则组内的规则列表
+            href: Rule-Interface/describeRuleGroupRules.md
+          - name: 获取规则详情
+            href: Rule-Interface/describeRule.md
+          - name: 添加新的规则组
+            href: Rule-Interface/addRuleGroup.md
+          - name: 启用规则组
+            href: Rule-Interface/enableRuleGroup.md
+          - name: 禁用规则组
+            href: Rule-Interface/disableRuleGroup.md
+          - name: 删除规则组
+            href: Rule-Interface/deleteRuleGroup.md
+          - name: 下发规则组
+            href: Rule-Interface/deployRuleGroup.md
+          - name: 添加规则
+            href: Rule-Interface/addRule.md
+          - name: 删除规则
+            href: Rule-Interface/deleteRule.md
+          - name: 更新规则
+            href: Rule-Interface/modifyRule.md
+      - name: 掩码规则操作接口
+        items:
+          - name: 获取掩码规则列表
+            href: Mask-Rule-Interface/describeMaskRuleList.md
+          - name: 添加掩码规则
+            href: Mask-Rule-Interface/addMaskRule.md
+          - name: 删除掩码规则
+            href: Mask-Rule-Interface/deleteMask.md
+          - name: 修改掩码规则
+            href: Mask-Rule-Interface/modifyMask.md
+      - name: 审计日志操作接口
+        items:
+          - name: 获取审计日志列表
+            href: Audit-Log-Interface/describeAuditLogList.md
+          - name: 获取审计日志详情
+            href: Audit-Log-Interface/describeAuditLog.md
+      - name: 报表任务接口
+        items:
+          - name: 获取任务列表
+            href: Report-Task-Interface/describeTaskList.md
+          - name: 获取任务下的报表列表
+            href: Report-Task-Interface/describeReportList.md
+          - name: 下载报表
+            href: Report-Task-Interface/downloadReport.md
+          - name: 添加自动生成报表任务
+            href: Report-Task-Interface/createTask.md
+          - name: 删除报表任务
+            href: Report-Task-Interface/deleteTask.md
+          - name: 修改报表任务
+            href: Report-Task-Interface/modifyTask.md
+          - name: 删除报表
+            href: Report-Task-Interface/deleteReport.md
+          - name: 启动报表任务
+            href: Report-Task-Interface/startTask.md
+          - name: 停止报表任务
+            href: Report-Task-Interface/stopTask.md
+      - name: 抓包代理操作接口
+        items:
+          - name: 获取安装抓包代理的主机列表
+            href: Agent-Interface/describeAgentList.md
+          - name: 获取主机配置的数据库列表
+            href: Agent-Interface/describeAgentDatabases.md
+          - name: 在指定的云主机安装抓包代理
+            href: Agent-Interface/installAgent.md
+          - name: 在指定的云主机卸载抓包代理
+            href: Agent-Interface/uninstallAgent.md
+          - name: 设置抓包代理运行时的CPU限制
+            href: Agent-Interface/modyfyAgentLimits.md
+          - name: 删除数据库审计配置
+            href: Agent-Interface/deleteAuditFromAgent.md
+          - name: 下发数据库审计配置
+            href: Agent-Interface/setAuditConfig.md
+          - name: 卸载抓包代理
+            href: Agent-Interface/uninstallAgent.md
