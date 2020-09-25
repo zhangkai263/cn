@@ -15,8 +15,6 @@
 #### 搭建IPv4/IPv6双栈VPC
 
 目标创建一个双栈VPC，包含一个子网，一个负载均衡
-
-
  ![dd](../../../../image/Networking/ipv6/v6-vpc.png)
 
  **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；点击网页右上角的控制台，选择私有网络，创建IPv6  VPC，具体操作请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)，填写相关信息，【IPv6 CIDR】字段，选择“京东智联云提供的IPv6 CIDR”
