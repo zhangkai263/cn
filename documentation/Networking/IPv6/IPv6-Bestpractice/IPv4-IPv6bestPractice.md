@@ -4,7 +4,6 @@
 
  ![dd](../../../../image/Networking/ipv6/image-20200918173639117.png)
  
- ![高复用架构](../../../../image/Networking/ipv6/image-20200918173639117.png)
 
 ### 前提条件
 
