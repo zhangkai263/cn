@@ -1,14 +1,14 @@
-# describeClusterInfo
+# describeClientList
 
 
 ## 描述
-查询Redis实例的集群内部信息
+查询当前客户端IP列表
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/clusterInfo
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/clientList
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -22,29 +22,20 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeclusterinfo#result)|结果|
+|**result**|[Result](describeclientlist#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**info**|[ClusterInfo](describeclusterinfo#clusterinfo)|集群内部信息|
-### <div id="clusterinfo">ClusterInfo</div>
+|**ips**|[Ips[]](describeclientlist#ips)|IP列表：包含IP和连接数|
+### <div id="ips">Ips</div>
 |名称|类型|描述|
 |---|---|---|
-|**proxies**|[Proxy[]](describeclusterinfo#proxy)|proxy列表|
-|**shards**|[Shard[]](describeclusterinfo#shard)|shard列表|
-### <div id="shard">Shard</div>
-|名称|类型|描述|
-|---|---|---|
-|**id**|String| |
-### <div id="proxy">Proxy</div>
-|名称|类型|描述|
-|---|---|---|
-|**id**|String| |
+|**ip**|String|client的ip地址|
+|**clientCount**|Integer|clientIp地址下对应的client个数|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**404**|NOT_FOUND|
