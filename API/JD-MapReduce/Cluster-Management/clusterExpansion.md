@@ -17,7 +17,7 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:expansion
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**clusterSpec**|[ClusterExpansion](#clusterexpansion)|True| |描述集群配置|
+|**clusterExpansion**|[ClusterExpansion](#clusterexpansion)|True| |描述集群配置|
 |**clientToken**|String|False| |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符。<br>|
 
 ### <div id="ClusterExpansion">ClusterExpansion</div>
@@ -25,6 +25,7 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:expansion
 |---|---|---|---|---|
 |**clusterId**|String|True| |集群ID|
 |**expansionNum**|String|True| |扩容节点个数|
+|**nodeType**|String|False| |扩容节点类型。 Task：计算节点，Core：存储和计算节点|
 
 ## 返回参数
 |名称|类型|描述|

@@ -26,26 +26,22 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:create
 |**name**|String|True| |集群名称(不能少于6字符不能超过20字符，除下划线外不能包含特殊符号)|
 |**password**|String|True| |集群root用户密码(须包含大小写字母、数字及特殊字符其中三类，且不能少于8字符不能超过30字符)|
 |**version**|String|True|JMR2.0.0|集群版本，默认版本为JMR2.0.0|
-|**payType**|String|True|按配置|集群计费类型，支持按配置和包年包月计费|
+|**payType**|String|False|按配置|集群计费类型，支持按配置和包年包月计费|
 |**masterNodeCount**|Integer|True| |主节点数量|
-|**masterCore**|Integer|False| |Master节点CPU|
-|**masterMemory**|Integer|False| |Master节点内存(推荐至少8G内存，否则服务可能会部署失败)|
 |**masterSystemDiskType**|String|True| |Master系统硬盘类型：ssd.gp1,ssd.io1和hdd.std1|
 |**masterSystemDiskVolume**|Integer|True| |Master系统硬盘大小，单位GB|
-|**masterSystemDiskIops**|Integer|True| |Master系统硬盘iops，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
+|**masterSystemDiskIops**|Integer|False| |Master系统硬盘iops，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
 |**masterDiskType**|String|True| |Master数据盘类型：ssd.gp1,ssd.io1和hdd.std1|
 |**masterDiskVolume**|Integer|True| |Master数据盘大小，单位GB|
-|**masterDiskIops**|Integer|True| |Master数据盘ipos，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
+|**masterDiskIops**|Integer|False| |Master数据盘ipos，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
 |**masterInstanceType**|String|True| |master节点规格|
 |**slaveNodeCount**|Integer|True| |Slave节点数量|
-|**slaveCore**|Integer|False| |Slave节点CPU|
-|**slaveMemory**|Integer|False| |Slave节点内存(推荐至少4G内存，否则服务可能会部署失败)|
 |**slaveSystemDiskType**|String|True| |Slave系统硬盘类型：ssd.gp1,ssd.io1和hdd.std1|
 |**slaveSystemDiskVolume**|Integer|True| |Slave系统硬盘大小，单位GB|
-|**slaveSystemDiskIops**|Integer|True| |Slave系统硬盘iops，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
+|**slaveSystemDiskIops**|Integer|False| |Slave系统硬盘iops，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
 |**slaveDiskType**|String|True| |Slave数据盘类型：ssd.gp1,ssd.io1和hdd.std1|
 |**slaveDiskVolume**|Integer|True| |Slave数据盘大小，单位GB|
-|**slaveDiskIops**|Integer|True| |Slave数据盘ipos，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
+|**slaveDiskIops**|Integer|False| |Slave数据盘ipos，只有在硬盘类型是ssd.gp1,ssd.io1时，才需要有iops，200起步，步长为10|
 |**coreInstanceType**|String|True| |slave节点规格|
 |**jssFlag**|Boolean|True| |关联JSS|
 |**dataCenter**|String|True|cn-north-1|数据中心，即regionId|
