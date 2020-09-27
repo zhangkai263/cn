@@ -1,5 +1,5 @@
 # 使用限制
-### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/product-overview)
 
 若要使用媒体处理服务，需要先开通京东云对象存储服务。
 
