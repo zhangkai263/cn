@@ -17,10 +17,10 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:create
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**clusterSpec**|[ClusterSpec](#clusterspec)|True| |描述集群配置|
+|**clusterSpec**|[ClusterSpec](createcluster#clusterspec)|True| |描述集群配置|
 |**clientToken**|String|False| |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符。<br>|
 
-### <div id="ClusterSpec">ClusterSpec</div>
+### <div id="clusterspec">ClusterSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |集群名称(不能少于6字符不能超过20字符，除下划线外不能包含特殊符号)|
@@ -54,10 +54,10 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:create
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](createcluster#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**status**|Boolean|是否开始创建集群|
