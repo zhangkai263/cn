@@ -22,7 +22,7 @@ items:
       - name: 规格类型
         items:
           - name: 查询实例规格信息列表
-            href: Instance-Type/describeInstanceTypes.md
+            href: Instance-Type/describeInstanceVoucherTypes.md
       - name: 配额
         items:
           - name: 查询配额
