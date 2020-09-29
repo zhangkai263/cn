@@ -12,11 +12,11 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**createClusterInNewNetwork**|POST|创建新集群|
-|**showClusterDetails**|GET|根据clusterId查询对应集群详情|
-|**getJmrVersionList**|GET|返回目前的JMR版本列表|
-| **getSoftwareInfo**           | POST     | 获取对应版本的软件清单信息                              |
-| **idataCluster**              | GET      | 查询用户指定clusterId对应的集群列表及相关服务的一些信息 |
-| **clusterExpansion**          | POST     | 对指定集群扩容指定数量的实例                            |
-| **releaseCluster**            | POST     | 释放指定clusterId对应集群                               |
-| **deleteCluster**             | POST     | 对指定集群执行逻辑删除                                  |
+|**clusterExpansion**|POST|扩容集群|
+|**createCluster**|POST|创建集群|
+|**describeCluster**|GET|查询指定集群的详细信息<br>|
+|**describeClusters**|GET|查询集群列表|
+|**getJmrVersionList**|GET|查询JMR的版本信息|
+|**getSoftwareInfo**|POST|获取对应版本的软件清单信息|
+|**idataCluster**|GET|查询用户指定clusterId对应的集群列表及相关服务的一些信息|
+|**releaseCluster**|POST|释放集群<br>|
