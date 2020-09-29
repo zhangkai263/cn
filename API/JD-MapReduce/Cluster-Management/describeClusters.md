@@ -29,16 +29,16 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/clusters
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeclusters#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalNum**|Integer|集群总的数目|
-|**clusters**|[Cluster[]](#cluster)| |
+|**clusters**|[Cluster[]](describeclusters#cluster)| |
 |**status**|Boolean| |
-### <div id="Cluster">Cluster</div>
+### <div id="cluster">Cluster</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|集群ID|
@@ -56,8 +56,8 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/clusters
 |**payType**|String|集群收费类型|
 |**duration**|String|集群运行时间|
 |**nodeCount**|Integer|集群节点个数|
-|**clusterNodes**|[ClusterNode[]](#clusternode)|集群节点信息|
-### <div id="ClusterNode">ClusterNode</div>
+|**clusterNodes**|[ClusterNode[]](describeclusters#clusternode)|集群节点信息|
+### <div id="clusternode">ClusterNode</div>
 |名称|类型|描述|
 |---|---|---|
 |**serverId**|String|节点ID|

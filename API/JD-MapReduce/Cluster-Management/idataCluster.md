@@ -21,10 +21,10 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/idata
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](idatacluster#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**data**|Object|包括集群信息列表|

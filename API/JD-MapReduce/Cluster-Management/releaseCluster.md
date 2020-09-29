@@ -23,10 +23,10 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}:release
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](releasecluster#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**status**|Boolean|是否开始释放集群|
