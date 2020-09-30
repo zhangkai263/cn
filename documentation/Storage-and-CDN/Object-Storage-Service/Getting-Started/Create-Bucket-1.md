@@ -23,6 +23,6 @@
 
 * 自定义权限：可对指定用户设置GetObject、PutObject、DeleteObject、ListBucket(ListObjects)、DeleteBucket的权限，并可指定该权限可访问的资源，以及指定具有该权限的IP地址和Referer白名单等
 
-6.高级设置可以选择是否开通![对象锁定](../Operation-Guide/Manage-Object/Object-Lock.md)功能，
+6.高级设置可以选择是否开通[对象锁定](../Operation-Guide/Manage-Object/Object-Lock.md)功能，
 
 7.点击“确定”按钮，创建存储空间完成。
