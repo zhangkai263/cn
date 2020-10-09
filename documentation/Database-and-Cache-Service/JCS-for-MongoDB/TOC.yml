@@ -57,8 +57,6 @@
             href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
           - name: 删除实例
             href: Operation-Guide/Instance-Management/Delete-Instance.md
-          - name: 外网访问
-            href: Operation-Guide/Instance-Management/Internet-access.md
       - name: 账号管理
         items:
           - name: 创建账号
