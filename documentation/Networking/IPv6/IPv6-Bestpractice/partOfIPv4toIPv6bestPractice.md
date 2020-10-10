@@ -14,16 +14,16 @@
 
 #### 搭建IPv4/IPv6双栈VPC
 
-目标创建一个双栈VPC，包含一个子网，一个负载均衡
+目标：创建一个双栈VPC，包含一个子网，一个负载均衡
  ![dd](../../../../image/Networking/ipv6/v6-vpc.png)
 
- **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；点击网页右上角的控制台，选择私有网络，创建IPv6  VPC，具体操作请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)，填写相关信息，【IPv6 CIDR】字段，选择“京东智联云提供的IPv6 CIDR”
+ **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；点击网页右上角的控制台，选择私有网络，创建IPv6 VPC，具体操作请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)，填写相关信息，【IPv6 CIDR】字段，选择“京东智联云提供的IPv6 CIDR”
 
 **步骤2：** 选择子网，在已创建的VPC中分别创建两个支持IPv6的子网1和子网2，具体操作请参考[子网配置](https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-configuration)，【私有网络】字段选择IPv6类型的VPC，勾选【IPv6 CIDR】（若不勾选即创建IPv4单栈子网），指定IPv6 CIDR范围
 
 **步骤3：** 在步骤2的一个子网中创建支持IPv6的云主机，在网络配置中选择上述步骤中创建的IPv6私有网络和子网，勾选“自动分配IPv6地址”，其余配置信息可与已有IPv4私有网络中的云主机一致，点击立即购买支付完成即创建成功
 
-**步骤4：** 在步骤2创建的另外一个子网中创建支持IPv6的负载均衡，类型与已有IPv4私有网络中的负载均衡类型一致，本例为应用型负载均衡，网络配置中选择上述步骤中创建的IPv6私有网络和子网，勾选“自动分配IPv6地址”，点击立即购买支付完成即创建成功
+**步骤4：** 在步骤2创建的另外一个子网中创建支持IPv6的负载均衡，类型与已有IPv4私有网络中的负载均衡类型一致，本例为应用型负载均衡，网络配置中选择上述步骤中创建的IPv6私有网络和子网，勾选“自动分配IPv6地址”，点击立即购买支付完成即创建双栈VPC成功
 
 
 
@@ -41,7 +41,7 @@
 
 #### 配置负载均衡
 
-目标：将IPv4 VPC中的云主机挂载到IPv4/IPv6 VPC的负载均衡上
+目标：将单栈VPC中的云主机挂载到双栈VPC的负载均衡上
 
  ![dd](../../../../image/Networking/ipv6/配置负载均衡.png)
 
