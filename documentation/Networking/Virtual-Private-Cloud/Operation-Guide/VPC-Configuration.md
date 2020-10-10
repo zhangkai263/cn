@@ -45,7 +45,7 @@
 5. 删除私有网络时，此私有网络中的路由表、网络ACL、安全组将同步删除。
 
 ### **配置双栈VPC**
-京东智联云支持IPv4/IPv6双栈私有网络（目前IPv6处于内测中，如需使用，请[提交工单](https://ticket.jdcloud.com/applyorder/submit)，申请内测）
+京东智联云支持IPv4/IPv6双栈私有网络（目前IPv6处于公测中，如需使用，请[提交工单](https://ticket.jdcloud.com/applyorder/submit)，申请公测）
 
 **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；
 
