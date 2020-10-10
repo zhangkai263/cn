@@ -12,7 +12,7 @@ MongoDB副本集实例支持3节点、5节点和7节点，实例创建完成后�
 
 2. 在"实例列表"页面，选择目标实例进入实例详情页，在右上角操作项中，点击 **变更节点数**，打开弹窗。
 
-   ![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-109.png)
+   ![](https://github.com/jdcloudcom/cn/blob/mongo-20200928/image/mongodb/mongo-109.png)
 
 3. 在弹窗中，选择需要调整的节点数。
 
