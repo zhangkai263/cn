@@ -36,7 +36,7 @@
 
 2、在弹窗中选择需要绑定的子网，点击“确定”，即可将网络ACL规则绑定到子网，绑定完成后及时生效 ；
 
-注意：一个网络ACL可以绑定多个子网、一个子网只能绑定一个网络ACL
+注意：一个网络ACL可以绑定多个子网、一个子网只能绑定一个网络ACL，如需配置支持IPv6的ACL规则，需关联IPv6子网
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step4.png)
 
