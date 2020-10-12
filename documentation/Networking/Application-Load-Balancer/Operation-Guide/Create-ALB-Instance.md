@@ -1,5 +1,9 @@
 # 创建应用负载均衡
 
+[创建IPv4应用负载均衡](Create-ALB-Instance#user-content-1)
+
+[创建IPv6应用负载均衡](Create-ALB-Instance#user-content-2)
+
 ## 创建IPv4应用负载均衡
 <div id="user-content-1"></div>
 
