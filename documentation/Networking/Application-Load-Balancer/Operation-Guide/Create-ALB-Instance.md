@@ -45,7 +45,7 @@
 
 1. 通过菜单-网络-负载均衡进入应用负载均衡列表页。
 
-	![ALB列表页](../../../../image/Networking/ALB/ALB-015.png)
+	![ALB列表页](../../../../image/Networking/ALB/alb-ipv61.png)
 
 1. 点击“创建”新建一个应用负载均衡实例，配置如下字段：
 
@@ -64,7 +64,7 @@
 
 1. 页面右侧确认配置及费用信息，点击 **立即购买**。
 
-	![ALB创建设置](../../../../image/Networking/ALB/ALB-016.png)
+	![ALB创建设置](../../../../image/Networking/ALB/alb-ipv62.png)
 
 	![ALB创建设置](../../../../image/Networking/ALB/ALB-017.png)
 
@@ -74,4 +74,4 @@
 
 1. 完成应用负载均衡实例创建；因资源创建需一定时间（通常为几秒），可手动刷新列表页查看状态。
 
-	![ALB创建完成](../../../../image/Networking/ALB/ALB-019.png)
+	![ALB创建完成](../../../../image/Networking/ALB/alb-ipv61.png)
