@@ -53,6 +53,10 @@ items:
             href:  API-Document/Setting/describeBWList.md
           - name: 删除黑白名单
             href:  API-Document/Setting/delBWList.md
+  - name: SDK接入
+    items:
+      - name: SDK概述
+        href: API-Document/sdk.md
   - name: 常见问题
     href: FAQ/FAQ.md
 
