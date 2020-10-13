@@ -3,7 +3,7 @@
 
 本教程将介绍如何将已有的IPv4私有网络（本例简称“单栈VPC”）业务迁移至IPv4/IPv6双栈网络（简称“双栈VPC”）中，使得服务能够被IPv4用户和IPv6用户同时访问。
 
- ![dd](../../../../image/Networking/ipv6/image-20200918173639117.png)
+ ![dd](../../../../image/Networking/IPv6/IPv6-01.png)
  
 
 ## 前提条件
@@ -17,7 +17,7 @@
 
   目标：创建一个双栈VPC，包含一个子网，一个负载均衡。
 
-  ![dd](../../../../image/Networking/ipv6/v6-vpc.png)
+  ![dd](../../../../image/Networking/IPv6/IPv6-02.png)
 
  1. 进入[京东智联云官方网站](https://www.jdcloud.com/)；点击网页右上角的控制台，选择私有网络，创建IPv6 VPC，具体操作请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)，填写相关信息，【IPv6 CIDR】字段，选择“京东智联云提供的IPv6 CIDR”。
  
@@ -30,7 +30,7 @@
 
  目标：通过VPC peering连接单栈VPC和双栈VPC，使得两个VPC通过内网IP地址进行通信。
 
- ![dd](../../../../image/Networking/ipv6/vpc-peering.png)
+ ![dd](../../../../image/Networking/IPv6/IPv6-03.png)
 
 
  1. 分别以上述两个VPC中的一个VPC作为本端VPC，另外一个VPC的ID作为对端VPC ID创建VPC对等连接，具体操作请参考[创建VPC对等连接](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-peering-configuration)。
@@ -44,7 +44,7 @@
 
  目标：将单栈VPC中的云主机挂载到双栈VPC的负载均衡上。
 
- ![dd](../../../../image/Networking/ipv6/配置负载均衡.png)
+ ![dd](../../../../image/Networking/IPv6/IPv6-04.png)
 
  1. 进入已创建的双栈VPC中负载均衡的详情页，首先选择配置虚拟服务器组，点击新建虚拟服务器组，其中一个类型选择IP，点击注册IP，输入单栈VPC中需要支持IPv6地址的云主机的内网IP地址，虚拟服务器组创建完成后进入下一步。
 
@@ -55,7 +55,7 @@
  4. 访问双栈VPC中的负载均衡的IPv6地址，若能够访问服务，则表示云主机挂载成功。
 
  5. 将单栈VPC中负载均衡的公网IP绑定到双栈VPC中的负载均衡上。
+   ![dd](../../../../image/Networking/IPv6/IPv6-06.png)
 
-  ![dd](../../../../image/Networking/ipv6/del-v4LB.png)
 
 完成上述步骤即可完成单栈业务迁移至双栈VPC，可对IPv4私有网络中的负载均衡资源进行释放，避免产生不必要的费用。
