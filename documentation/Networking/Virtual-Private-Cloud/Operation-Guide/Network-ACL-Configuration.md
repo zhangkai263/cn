@@ -12,7 +12,7 @@
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step1.png)
 
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step2.png)
+![](../../../../image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step2.png)
 
 
 
