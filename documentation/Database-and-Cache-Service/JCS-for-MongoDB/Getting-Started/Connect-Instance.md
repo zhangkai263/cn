@@ -1,8 +1,6 @@
 # 连接实例
 
-出于安全考虑，云数据库 MongoDB 目前仅提供内网连接，暂不提供公网连接。
-
-如果您需要本地直接连接云数据库 MongoDB 实例，可以通过云主机代理转发的方式实现，操作方式请参考 [公网连接 MongoDB 实例](../Best-Practices/Public-Network-Connect-to-MongoDB-Instance.md)。
+出于安全考虑，云数据库 MongoDB 默认仅提供内网连接地址，如需要可手动开启公网链接地址。
 
 
 
@@ -17,11 +15,11 @@
 
 1. 获取 MongoDB 副本集的连接信息。
 
-   1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
+   - 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
 
-   1. 在“实例列表”页面，选择目标实例，点击 **实例名称** ，进入“实例详情”页面。
+   - 在“实例列表”页面，选择目标实例，点击 **实例名称** ，进入“实例详情”页面。
 
-   1. 在“实例详情”页面，查看资源信息，获取 MongoDB 实例的连接信息。
+   - 在“实例详情”页面，查看资源信息，获取 MongoDB 实例的连接信息。
 
       ![查看连接](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-006.png)
 
@@ -71,11 +69,11 @@
 
 1. 获取MongoDB分片集群的连接地址。
 
-   1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
+   - 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
 
-   2. 在“实例列表”页面，选择目标实例，点击 **实例名称** ，进入“实例详情”页面。
+   - 在“实例列表”页面，选择目标实例，点击 **实例名称** ，进入“实例详情”页面。
 
-   3. 在“实例详情”页面，查看资源信息，获取 MongoDB 实例的连接信息。
+   - 在“实例详情”页面，查看资源信息，获取 MongoDB 实例的连接信息。
 
       ![image-20200120161354197](../../../../image/mongodb/mongo-053.png)
 
@@ -97,7 +95,6 @@
 
 ## 相关参考
 
-- [公网连接 MongoDB 实例](../Best-Practices/Public-Network-Connect-to-MongoDB-Instance.md)
 - [问题处理：云主机无法连接 MongoDB 实例](../Troubleshooting/Connect-Failed.md)
 - [问题处理：登录数据库提示无权限](../Troubleshooting/Authentication.md)
   	
