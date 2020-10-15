@@ -6,7 +6,7 @@
 
 实现风险识别功能需要您同时安装风险识别 SDK和京东智联云核心库。以Python SDK为例，您需要下载[京东云Python SDK](https://github.com/jdcloud-api/jdcloud-sdk-python)以及[风险识别Python SDK](https://github.com/jdcloud-api/jdcloud-sdk-python/tree/master/jdcloud_sdk/services/bri)。
 
-风险识别服务是以openAPI的形式对外提供服务，SDK中默认使用的公网Endpoint是bri.jdcloud-api.com，当访问不同的Region的时候，可根据需要修改相应的公网Endpoint，也可使用默认的。
+风险识别服务是以openAPI的形式对外提供服务，SDK中配置的公网Endpoint是bri.jdcloud-api.com，建议使用默认配置，也可根据需要修改相应的公网Endpoint。
 
 | 区域      | 公网Endpoint                   |
 | :-------- | :----------------------------- |
