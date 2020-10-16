@@ -43,5 +43,5 @@
 
   **步骤3：** 输入ping -6 [其他ipv6地址]，出现下图结果则连通成功。
 
-![image-20200908203808838](../../../../image/Networking/IPv6/IPv6-05.png))
+![image-20200908203808838](../../../../image/Networking/IPv6/IPv6-09.png))
 
