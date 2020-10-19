@@ -41,7 +41,7 @@
 将1个月内全部平均带宽值（30天算，约8640个点）从高到低进行排列，算出全部点的5%对应的点编号（非整数直接取整，如431.95，则取431），5%对应的点的下一个点对应的平均带宽则为消峰带宽值（如431，则取第432个点作为消峰带宽值），下图为1个完整自然月采样和计费方法。
 
 
-![img](https:../../../../image/Networking/Shared-Bandwidth-Packag/95-peak-elimination.png)
+![img](../../../../image/Networking/Shared-Bandwidth-Packag/95-peak-elimination.png)
 
 
 
