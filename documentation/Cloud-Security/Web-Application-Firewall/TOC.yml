@@ -1,6 +1,16 @@
 ﻿name: Web 应用防火墙
 href:
 items:
+- name: 安全公告
+  items:
+      - name: FastJSON 反序列化漏洞
+        href: Security-Notice/FastJSON-Deserializa-Loophole.md
+      - name: Thinkphp 远程命令执行漏洞
+        href: Security-Notice/Thinkphp-Remote-Command-Execution-Loophole
+      - name: Drupal远程代码执行漏洞
+        href: Security-Notice/Drupal-Remote-Code-Execution-Loophole.md
+      - name: Atlassian Jira服务端模板注入漏洞
+        href: Security-Notice/Atlassian-Jira-Server-Model-Injection-Loophole.md
 - name: 产品简介
   items:
       - name: 产品概述
@@ -41,6 +51,8 @@ items:
       href: Getting-Started/update-certificate.md
     - name: 开启IPv6防护
       href: Getting-Started/Open-IPv6-Protection-Switch.md
+    - name: 支持的自定义端口范围
+      href: Getting-Started/Support-Custom-Port.md
 - name: 网站防护配置
   items:
     - name: Web防护
@@ -97,22 +109,26 @@ items:
            href: Web-Protection-Configure/Web-Compliance/Set-Up-Sensitive-Information-Leakage-Prevention.md
          - name: 设置网页缓存
            href: Web-Protection-Configure/Web-Compliance/Set-Up-Web-Cache.md               
-- name: 防护统计
+- name: 防护统计与安全报表
   items: 
      - name: 总览
-       href: Operation-Guide/Protection-Statistics/overview.md
+       href: Protection-Statistics/Overview-Information.md
      - name: 安全报表
-       href: Operation-Guide/Protection-Statistics/Security-Report.md
+       href: Protection-Statistics/Security-Report.md
      - name: 全量日志查询
-       href: Operation-Guide/Protection-Statistics/Daily-Record.md
+       href: Protection-Statistics/General-Log.md
 - name: 最佳实践
   items:
-     - name: cname接入指南
-       href: Operation-Guide/Entering-WAF/Cname-access.md
-     - name: WAF源站负载均衡
-       href: Operation-Guide/Entering-WAF/WAF-LB.md
-     - name: https高级配置
-       href: Operation-Guide/Entering-WAF/https-Advantage.md
+     - name: WAF接入
+       items: 
+          - name: 同时部署IP高防和WAF
+            href: Best-Practices/WAF-Join-Up/Arrange-Anti-ddos-pro-and-WAF.md
+          - name: 同时部署CDN和WAF
+            href: Best-Practices/WAF-Join-Up/Arrange-CDN-and-WAF.md
+     - name: Web应用防护引擎最佳实践
+       href: Best-Practices/Web-Application-Protection-Engine-Best-Practices.md
+     - name: 如何获取客户端真实IP
+       href: Best-Practices/Get-Visitor-Ture-IP.md
 - name: 常见问题
   items:
     - name: 添加网站参数详解
