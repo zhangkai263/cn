@@ -63,6 +63,10 @@
         href: Operation-Guide/Parameter-Modification.md
       - name: 慢日志查询
         href: Operation-Guide/SlowLog.md
+      - name: 缓存分析
+        href: Operation-Guide/Cache-Analysis.md
+      - name: 白名单设置
+        href: Operation-Guide/Whitelist.md
       - name: 监控报警
         items:
           - name: 查看监控信息
@@ -87,6 +91,16 @@
         href: Best-Practices/Python-Connect-to-Redis-Instance.md
       - name: 公网连接Redis实例
         href: Best-Practices/Public-Network-Connect-to-Redis-Instance.md    
+  - name: 性能测试
+    items:
+      - name: 测试环境
+        href: Performance-Test/Test-environment.md
+      - name: 测试工具
+        href: Performance-Test/Test-tool.md
+      - name: 测试命令
+        href: Performance-Test/Test-commands.md
+      - name: 测试结果
+        href: Performance-Test/Test-result.md
   - name: 常见问题
     href: FAQ/FAQ.md     
   - name: 相关资源      

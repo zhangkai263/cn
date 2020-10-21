@@ -31,14 +31,14 @@ metadata:
   name: auto-cfs-storage
 provisioner: jdcloud-cfs        #nfs-client-provisioner deployment env中定义的PROVISIONER_NAME保持一致
 mountOptions:
-  - vers=4
+  - vers=3
   - noresvport
 parameters:
-  mountOptions: "vers=4,noresvport"
+  mountOptions: "vers=3,noresvport"
   archiveOnDelete: "false"          #archiveOnDelete定义为false时，删除NFS Server中对应的目录，为true则保留；
 ```
 
-备注：CFS目前暂不支持flock，如果应用需要flock支持，请开工单单独开通
+备注：CFS目前暂不支持flock，如果应用需要flock支持，请开工单单独开通. 如果NFS需要支持子目录，请将vers=3变更为vers=4
 
 * 使用Yaml文件创建Storage Class：
 

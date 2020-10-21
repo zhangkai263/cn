@@ -21,7 +21,7 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码；默认为1|
 |**pageSize**|Integer|False| |分页大小；默认为20；取值范围[10, 100]|
-|**filters**|[Filter[]](describecontainers#filter)|False| |containerId - 实例ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，模糊匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>status - 容器状态，精确匹配，支持多个<br>name - 实例名称，模糊匹配，支持单个<br>subnetId - 镜像ID，模糊匹配，支持单个<br>securityGroups - 安全组 id，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describecontainers#filter)|False| |containerId - 实例ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，精确匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>status - 容器状态，精确匹配，支持多个<br>name - 容器名称，模糊匹配，支持单个<br>subnetId - 子网ID，精确匹配，支持多个<br>securityGroups - 安全组 id，精确匹配，支持多个<br>|
 |**tags**|[TagFilter[]](describecontainers#tagfilter)|False| |Tag筛选条件|
 
 ### <div id="tagfilter">TagFilter</div>
@@ -71,8 +71,8 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**privateIpAddress**|String|主网卡主IP地址|
 |**elasticIpId**|String|主网卡主IP绑定弹性IP的ID|
 |**elasticIpAddress**|String|主网卡主IP绑定弹性IP的地址|
-|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](describecontainers#instancenetworkinterfaceattachment)|主网卡信息|
-|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](describecontainers#instancenetworkinterfaceattachment)|弹性网卡信息|
+|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](describecontainers#instancenetworkinterfaceattachment)|主网卡配置信息|
+|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](describecontainers#instancenetworkinterfaceattachment)|辅助网卡配置信息|
 |**logConfiguration**|[LogConfiguration](describecontainers#logconfiguration)|容器日志配置信息|
 |**tags**|[Tag[]](describecontainers#tag)| |
 |**charge**|[Charge](describecontainers#charge)|计费配置信息|
@@ -135,7 +135,12 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**mountPath**|String|容器内的挂载目录|
 |**readOnly**|Boolean|只读，默认false；只针对data volume有效，root volume为false|
 |**cloudDisk**|[InstanceCloudDisk](describecontainers#instanceclouddisk)|云硬盘规格|
+|**localDisk**|[InstanceLocalDisk](describecontainers#instancelocaldisk)|云硬盘规格|
 |**fsType**|String|指定volume文件系统类型，目前支持[xfs, ext4]|
+### <div id="instancelocaldisk">InstanceLocalDisk</div>
+|名称|类型|描述|
+|---|---|---|
+|**diskSize**|Integer|本地盘大小(GB)|
 ### <div id="instanceclouddisk">InstanceCloudDisk</div>
 |名称|类型|描述|
 |---|---|---|

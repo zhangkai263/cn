@@ -65,8 +65,6 @@
             href: Operation-Guide/Networking/Route-Table.md
           - name: 弹性公网IP
             href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
-          - name: 负载均衡
-            href: Operation-Guide/Networking/Load-Balancer.md
       - name: 防火墙配置说明
         items:
           - name: 功能描述

@@ -13,4 +13,4 @@
 
 http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/cc/300/200
 
-![居中裁剪](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-060.jpg)
+![居中裁剪](../../../../../image/Object-Storage-Service/OSS-060.jpg)

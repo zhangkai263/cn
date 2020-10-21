@@ -28,7 +28,7 @@ http://DomainName/Filename?auth_key=timestamp-rand-uid-md5hash
 
 ### 验证方法
 
-服务器拿到请求后，首先会判断请求中的 timestamp 是否小于当前时间，如果小于，则认为过期失效并返回 HTTP 403 错误，如果 timestamp 大于当前时间，则构造出一个同样的字符串（参考以下 sstring 构造方式）。然后使用MD5算法算出 HashValue，再和请求中带来的 md5hash 进行比对，比对结果一致，则认为鉴权通过，返回文件，否则鉴权失败，返回 HTTP 403 错误
+服务器拿到请求后，首先会判断请求中的 timestamp 是否小于当前时间，如果小于，则认为过期失效并返回 HTTP 403 错误，如果 timestamp 大于当前时间，则构造出一个同样的字符串（参考以下 string 构造方式）。然后使用MD5算法算出 HashValue，再和请求中带来的 md5hash 进行比对，比对结果一致，则认为鉴权通过，返回文件，否则鉴权失败，返回 HTTP 403 错误
 
 
 ### 示例说明
@@ -40,13 +40,13 @@ http://cdn.example.com/sports/football
 jdlivekeyexample123 (由用户自行设置)
 
 3、鉴权配置文件失效日期为：
-2015年10月10日00:00:00，计算出来的秒数为 1444435200
+2015年10月10日08:00:00，计算出来的秒数为 1444435200
 
 4、服务器会构造一个用于计算 Hashvalue 的签名字符串：
-/cdn.example.com/sports/football-1444435200-0-0-jdlivekeyexample123
+/sports/football-1444435200-0-0-jdlivekeyexample123
 
 5、服务器会根据该签名字符串计算 HashValue
-HashValue=md5sum("/cdn.example.com/sports/football-1444435200-0-0-jdlivekeyexample123")
+HashValue=md5sum("/sports/football-1444435200-0-0-jdlivekeyexample123")
 =f4d138be849cf65efb79260f9d17567d
 
 6、请求时 url 为：

@@ -42,11 +42,7 @@ items:
     - name: 监控报警
       href: Operation-Guide/Monitoring.md
 - name: 常见问题
-  items:
-    - name: 产品概述
-      href: FAQ/Function-FAQ.md
-    - name: 配置问题
-      href: FAQ/Configuration-FAQ.md
+  href: FAQ/FAQ.md
 - name: 相关资源
   items:
     - name: 文档历史记录

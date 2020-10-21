@@ -23,26 +23,26 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/describeIpSafetyInfo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeipsafetyinfo#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeipsafetyinfo#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeipsafetyinfo#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|IpSafetyInfo| |
-### IpSafetyInfo
+|**data**|[IpSafetyInfo](describeipsafetyinfo#ipsafetyinfo)| |
+### <div id="ipsafetyinfo">IpSafetyInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|公网 IP 地址|

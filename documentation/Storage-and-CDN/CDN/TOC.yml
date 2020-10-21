@@ -1,7 +1,6 @@
-    
-  name: CDN
-  href: 
-  items:
+name: CDN
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -116,7 +115,7 @@
             href: API-Reference/CDN-Open-API/Set-http-type.md
           - name: 设置忽略参数
             href: API-Reference/CDN-Open-API/Set-IgnoreArgs.md
-          - name: 设置rang参数
+          - name: 设置range参数
             href: API-Reference/CDN-Open-API/Set-range.md
           - name: 设置referer黑白名单
             href: API-Reference/CDN-Open-API/Set-referer.md
@@ -278,10 +277,28 @@
                  href: JCloud-Openapi-For-CDN/queryLiveDomainApps.md
                - name: queryPushDomainORAppOrStream
                  href: JCloud-Openapi-For-CDN/queryPushDomainORAppOrStream.md
+               - name: queryDailyRefreshTaskCount
+                 href: JCloud-Openapi-For-CDN/queryDailyRefreshTaskCount.md        
+               - name: queryCdnUserQuota
+                 href: JCloud-Openapi-For-CDN/queryCdnUserQuota.md
+               - name: queryExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/queryExtraCacheTime.md  
+               - name: queryForbiddenInfoList
+                 href: JCloud-Openapi-For-CDN/queryForbiddenInfoList.md                 
                - name: getSslCertDetail
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
                  href: SSL-Certificate/getSslCertList.md
+               - name: queryBackSourceRule
+                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
+               - name: queryUrlRule
+                 href: JCloud-Openapi-For-CDN/queryUrlRule.md
+               - name: queryHttp2
+                 href: JCloud-Openapi-For-CDN/queryHttp2.md
+               - name: queryBackSourcePath
+                 href: JCloud-Openapi-For-CDN/queryBackSourcePath.md
+               - name: queryUnForbiddenStatus
+                 href: JCloud-Openapi-For-CDN/queryUnForbiddenStatus.md
           - name: 域名配置修改
             items:
                - name: createDomainGroup
@@ -342,6 +359,28 @@
                  href: SSL-Certificate/uploadCert.md
                - name: queryDomainConfig
                  href: JCloud-Openapi-For-CDN/queryDomainConfig.md
+               - name: setExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
+               - name: deleteExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/deleteExtraCacheTime.md
+               - name: setAuthConfig
+                 href: JCloud-Openapi-For-CDN/setAuthConfig.md
+               - name: setSourceAuthConfig
+                 href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
+               - name: setIpBlackList
+                 href: JCloud-Openapi-For-CDN/setIpBlackList.md
+               - name: configBackSourceRule
+                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md
+               - name: configUrlRule
+                 href: JCloud-Openapi-For-CDN/configUrlRule.md
+               - name: configHttp2
+                 href: JCloud-Openapi-For-CDN/configHttp2.md
+               - name: configBackSourcePath
+                 href: JCloud-Openapi-For-CDN/configBackSourcePath.md
+               - name: deleteForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/deleteForbiddenInfo.md
+               - name: createForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/createForbiddenInfo.md                 
           - name: 停止删除域名
             items:
                - name: startDomain
@@ -380,6 +419,8 @@
                  href: JCloud-Openapi-For-CDN/queryDomainsLog.md
                - name: queryAreaIspList
                  href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+               - name: checkWhetherIpBelongToJCloud
+                 href: JCloud-Openapi-For-CDN/checkWhetherIpBelongToJCloud.md
           - name: 刷新预热
             items:
                - name: createLiveDomainPrefecthTask

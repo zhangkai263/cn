@@ -1,0 +1,42 @@
+name: 项目管理
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+  - name: 产品定价
+    items:
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+  - name: 入门指南
+    items:
+      - name: 快速开始
+        href: Getting-Started/Quick-Start.md
+  - name: 操作指南
+    items:
+      - name: 个人工作台
+        href: Operation-Guide/Workbench.md
+      - name: 个人中心
+        href: Operation-Guide/Personal-Center.md
+      - name: 项目管理
+        href: Operation-Guide/Project.md
+      - name: 自定义场景
+        href: Operation-Guide/Custom-Scene.md
+      - name: 团队管理
+        href: Operation-Guide/Group-Manage.md
+  - name: 最佳实践
+    items:
+        - name: 最佳敏捷实践
+          href: Best-Practices/Agile.md
+  - name: FAQ
+    items:
+        - name: FAQ
+          href: FAQ/Faq.md
+  - name: 相关资源
+    items:
+        - name: 产品上线记录
+          href: Release-Resoure/Road-Map.md
+

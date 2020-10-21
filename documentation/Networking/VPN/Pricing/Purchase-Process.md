@@ -5,16 +5,16 @@
 ## 前提条件
 ### 账户准备
 
-在开始创建VPN之前，您需要先完成京东云账号的注册、实名认证并为购买资源做好支付准备。
+在开始创建VPN之前，您需要先完成京东智联云账号的注册、实名认证并为购买资源做好支付准备。
 
 ### 账号注册
 
-若您已有京东云账号，可跳过本步骤进行后续设置。
-若您还未注册京东云账号，可在京东云官网进行注册，请参考[注册京东云](https://user.jdcloud.com/register)。
+若您已有京东智联云账号，可跳过本步骤进行后续设置。
+若您还未注册京东智联云账号，可在京东智联云官网进行注册，请参考[注册京东智联云](https://user.jdcloud.com/register)。
 
 ### 账号认证
 
-实名认证是在京东云购买并使用资源的前提，您可选择对账号进行个人实名认证或企业实名认证，详见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)。
+实名认证是在京东智联云购买并使用资源的前提，您可选择对账号进行个人实名认证或企业实名认证，详见[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)。
 
 ### 支付准备
 
@@ -23,5 +23,6 @@
 如您希望详细了解计费规则，可参考[VPN计费规则](Billing-Overview.md)。
 
 ## 操作步骤
-1.访问京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)； </br>
+1.访问京东智联云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)； <br />
+
 2.登录控制台，具体操作请参考[创建VPN连接](../Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md)；

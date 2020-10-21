@@ -20,4 +20,4 @@
 
 http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/wmi/wk/ZG93bmxvYWRzOmxvZ28ucG5n/ws/100
 
-![图片水印](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-062.jpg)
+![图片水印](../../../../../image/Object-Storage-Service/OSS-062.jpg)

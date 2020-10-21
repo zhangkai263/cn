@@ -88,6 +88,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods/{podId}/containers/{conta
 ### <div id="clouddisk">CloudDisk</div>
 |名称|类型|描述|
 |---|---|---|
+|**category**|String| 磁盘类型|
 |**volumeId**|String|云盘ID。|
 |**snapshotId**|String|云盘快照ID。|
 |**diskType**|String|云盘类型：hdd.std1,ssd.gp1,ssd.io1。|

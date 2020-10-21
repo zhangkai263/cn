@@ -23,7 +23,7 @@ Java 语言需要编译后才可在容器中运行。因此在函数服务中的
 
 1.`StreamRequestHandler`以流的方式接受输入event和返回执行结果，用户需要从`inputStream`中读取调用函数时的输入，处理完成后把函数执行结果写入到outputStream中返回。
 
-2.`PojoRequestHandler`通过泛型的方式，用户可以自定义输入和输出的类型，但必须是[`POJO`类型](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)。
+2.`PojoRequestHandler`通过泛型的方式，用户可以自定义输入和输出的类型，但必须是`POJO`类型。
 
 ### StreamRequestHandler
 一个简单的处理函数定义如下：
@@ -55,6 +55,7 @@ public class HelloFC implements StreamRequestHandler {
 
 代码例子中对应的函数执行入口 Handler为 : example.HelloFC::handleRequest，此处 example 为 Java package，HelloFC 为类，handleRequest 为类方法。                    
 用户的代码中必须要实现函数服务预定义的接口。上面的例子中实现了StreamRequestHandler，其中， inputStream 参数是调用函数时传入的数据，outputStream 用于返回函数的执行结果。
+
 
 
 ### PojoRequestHandler
@@ -143,13 +144,29 @@ public class SimpleResponse {
 
 - 事件入参及返回参数类型支持
 1. Java 基础类型，包括 byte，int，short，long，float，double，char，boolen 这八种基本类型和包装类，也包含 String 类型。           
-2. POJO 类型，[Plain Old Java Object](https://en.wikipedia.org/wiki/Plain_old_Java_object?spm=a2c4g.11186623.2.22.3b81481cbm3tHM)，您应使用可变 POJO 及公有 getter 和 setter，在代码中提供相应类型的实现。
+2. POJO 类型，Plain Old Java Object，您应使用可变 POJO 及公有 getter 和 setter，在代码中提供相应类型的实现。
 - Context 入参              
 使用 Context 需要在代码中使用 `com.jdcloud.function.Context`; 引入包，并在打包时带入 jar 包。
 
+**引入接口库说明**
+
+代码中引用的` com.jdcloud.function ` 依赖包，可通过以下 pom.xml引用：
+
+```
+<dependency>
+    <groupId>com.jdcloud.function</groupId>
+    <artifactId>java-runtime</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+```
+
+通过[ maven ](https://mvnrepository.com/artifact/com.jdcloud.function/java-runtime) 仓库可获取java-runtime的最新版本号，亦可直接下载添加打入 jar 包。
 
 ## 部署包上传
 
-请使用 Maven 创建 jar 部署包。创建完成后，可通过控制台页面直接上传包（小于50M），完成部署包提交。
+请使用 Maven 创建 jar 部署包，或使用IDEA打包jar。
+
+创建完成后，可通过控制台页面直接上传（小于50M），完成部署包提交。
 
 

@@ -5,6 +5,8 @@
     items:
       - name: 产品概述 
         href: Introduction/Product-Overview.md
+      - name: 支持的数据库
+        href: Introduction/Database-Type.md
       - name: 基础架构 
         href: Introduction/Basic-Infrastructure.md
       - name: 产品优势 
@@ -13,34 +15,54 @@
         href: Introduction/Features.md
       - name: 应用场景  
         href: Introduction/Application-Scenarios.md    
+  - name: 产品定价
+    items:
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 欠费说明
+        href: Pricing/Overdue-Statement.md
   - name: 入门指南
     items:
-      - name: 创建迁移任务 
-        href: Getting-Started/Create-Migration-Task.md
-      - name: 启动迁移任务 
-        href: Getting-Started/Start-Migration-Task.md
-      - name: 修改任务配置 
-        href: Getting-Started/Modify-Migration-Task.md
-      - name: 查看迁移任务进度 
-        href: Getting-Started/Describe-Task-Progress.md
-      - name: 查看迁移任务详情 
-        href: Getting-Started/Describe-Task-Detail.md
-      - name: 执行数据校验 
-        href: Getting-Started/Data-Comparison-Description.md
-      - name: 结束迁移任务 
-        href: Getting-Started/Stop-Migration-Task.md
-      - name: 支持的数据库类型与版本 
-        href: Getting-Started/Database-Type-and-Version.md
-      - name: 预检查说明 
-        href: Getting-Started/Task-Assessment-Description.md
-      - name: JSON方式定义迁移对象 
-        href: Getting-Started/Define-The-Migration-Object-in-JSON.md
+      - name: 数据迁移
+        items:
+          - name: 创建迁移任务 
+            href: Getting-Started/Data-Migration/Create-Migration-Task.md
+          - name: 启动迁移任务 
+            href: Getting-Started/Data-Migration/Start-Migration-Task.md
+          - name: 修改任务配置 
+            href: Getting-Started/Data-Migration/Modify-Migration-Task.md
+          - name: 查看迁移任务进度 
+            href: Getting-Started/Data-Migration/Describe-Task-Progress.md
+          - name: 查看迁移任务详情 
+            href: Getting-Started/Data-Migration/Describe-Task-Detail.md
+          - name: 执行数据校验 
+            href: Getting-Started/Data-Migration/Data-Comparison-Description.md
+          - name: 结束迁移任务 
+            href: Getting-Started/Data-Migration/Stop-Migration-Task.md
+          - name: 预检查说明 
+            href: Getting-Started/Data-Migration/Task-Assessment-Description.md
+          - name: JSON方式定义迁移对象 
+            href: Getting-Started/Data-Migration/Define-The-Migration-Object-in-JSON.md
+      - name: 数据订阅
+        items:
+          - name: 创建订阅任务 
+            href: Getting-Started/Data-Subscription/Create-Subscription-Task.md
+          - name: 配置订阅任务  
+            href: Getting-Started/Data-Subscription/Config-Subscription-Task.md  
+          - name: 修改订阅任务  
+            href: Getting-Started/Data-Subscription/Modify-Subscription-Task.md   
+          - name: 修改订阅目标端  
+            href: Getting-Started/Data-Subscription/Modify-Subscription-Target.md
+          - name: 删除订阅任务 
+            href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md                 
   - name: 操作指南
     items:
       - name: 自建MySQL迁移至云数据库MySQL
         href: Operation-Guide/MySQL-Migrate-to-JCS-for-MySQL.md
       - name: 自建SQL Server迁移至云数据库SQL Server
         href: Operation-Guide/SQLServer-Migrate-to-JCS-for-SQLServer.md
+      - name: 自建PostgreSQL迁移至云数据库PostgreSQL
+        href: Operation-Guide/PostgreSQL-Migrate-to-JCS-for-PostgreSQL.md
       - name: 自建MongoDB迁移至云数据库MongoDB
         href: Operation-Guide/MongoDB-Migrate-to-JCS-for-MongoDB.md 
   - name: 常见问题

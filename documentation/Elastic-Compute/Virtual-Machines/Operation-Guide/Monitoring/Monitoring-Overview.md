@@ -1,7 +1,7 @@
 # 监控与报警概述
 实例监控与告警为您提供实时实例监控管理服务，支持不同监控维度，在实例成功创建后即开始采集数据，以图表方式直观展现，方便您掌握实例资源使用情况、运行状态等信息，同时您可设置不同的报警规则，当触发该类条件后则触发报警通知，使您轻松定位故障。
 ## 监控项 
-京东云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
+京东智联云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
 * 由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
   * 磁盘读吞吐量（Host）：vm.disk.bytes.read
   * 磁盘写吞吐量（Host）：vm.disk.bytes.write
@@ -202,8 +202,11 @@
 <div id="user-content-1"></div>
 
 ## 监控插件安装说明
+
 云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，官方镜像在2019年5月-7月期间进行升级默认安装了升级工具'ifrit'以实现JCS-Agent的自动升级。<br>
+
 如您当前实例中未安装JCS-Agent或已安装但版本过低不具备自动升级能力，可在确保已卸载早期系统组件cloud-init和QGA的前提下，直接安装ifrit，安装完成10分钟内，JCS-Agent会被自动安装/更新为最新版本。<br>
+
 * cloud-init和QGA卸载方法以及Ifrit安装方法详见：[官方镜像系统组件-JCS-Agent](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image#user-content-1)
 * JCS-Agent版本查看方式：
   * Linux：

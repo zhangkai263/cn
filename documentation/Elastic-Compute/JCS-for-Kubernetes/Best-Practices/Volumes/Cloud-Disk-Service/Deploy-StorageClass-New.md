@@ -40,7 +40,7 @@ volumeBindingMode: WaitForFirstConsumer
 2、reclaimPolicy：由 storage class 动态创建的 Persistent Volume 会在的 reclaimPolicy 字段中指定回收策略，可以是 Delete 或者 Retain。如果 storageClass 对象被创建时没有指定 reclaimPolicy ，它将默认为 Delete。
 
 3、parameters  
-  - type：设置参数值为ssd或premium-hdd，分别对应京东云的SSD云盘和高效云盘；
+  - type：设置参数值为hdd.std1 ssd.gp1或ssd.io1，分别对应京东云的容量型hdd，通用型ssd和性能型ssd云盘；
   - fstype：设置文件系统类型，可选参数值为xfs和ext4，如未指定fstype，将使用ext4作为默认的文件系统类型；例如：fstype=ext4；
   - volumeBindingMode：可选参数包括WaitForFirstConsumer和Immediate，默认值为Immediate。
 

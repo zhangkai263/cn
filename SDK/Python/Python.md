@@ -13,7 +13,7 @@
 建议使用pip安装京东云Python SDK，如下所示：
 
 	pip install -U jdcloud_sdk
-您还可以下载sdk源代码自行使用。
+您还可以下载[SDK源代码](https://github.com/jdcloud-api/jdcloud-sdk-python)自行使用。
 
 使用源码安装您可以如下方式执行：
 

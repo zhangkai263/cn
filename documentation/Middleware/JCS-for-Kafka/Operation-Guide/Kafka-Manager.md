@@ -20,24 +20,13 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/Kafka-Manager.png)
 
-2.点击顶部导航的“Cluster - Add Cluster”添加Kafka实例信息。</br>
-
-![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/manager添加集群.png)
-
-3.在“Add Cluster”页面，设置“Cluster Name”和“Cluster Zookeeper Hosts”，点击“SAVE”进行保存，然后通过点击“Go to cluster view”查看实例相关信息。</br>
-
-- Cluster Name：尽量和实例名称保持一致，可方便的进行kafka实例管理。</br>
-- Cluster Zookeeper Hosts：zookeeper地址，通过在实例列表页面点击实例名称进入详情页获取，不同地址之间用英文符号“,”隔开。</br>
-
-![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/manager详细信息.png)
-
-4. 点击实例名称进入详情页面，可查看“Topic”和“Brokers”。</br>
+2. 点击实例名称进入详情页面，可查看“Topic”和“Brokers”。</br>
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image1.png)
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Kafka/image/Internet-Middleware/JCS-for-Kafka/image2.png)
 
-5. Topic管理</br>
+3. Topic管理</br>
 
 1). 新建Topic</br>
 
@@ -45,11 +34,11 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 
 点击上方Topic下拉菜单，点击Create填写相应参数创建topic，主要参数说明如下：</br>
 
-|参数|说明 
-:--|:---
-|Topic |Topic名称，用户自定义即可
-|Patitions |Topic的分区数，≥1，适当的分区数可以提高吞吐量
-|Replication Factor |副本数，用于保障kafka的高可用
+| 参数| 说明  |
+| :--| :---|
+| Topic | Topic名称，用户自定义即可 |
+| Patitions | Topic的分区数，≥1，适当的分区数可以提高吞吐量 |
+| Replication Factor | 副本数，用于保障kafka的高可用</br>**风险提示：当选择单一副本数时，存在丢失数据的风险，为了保证数据可靠性建议选择至少3副本** |
 
 2). 查看Topic</br>
 
@@ -91,7 +80,7 @@ kafka Manager是由Yahoo开源的一个Kafka管理工具，提供的主要功能
 请注意：Partitions中数目为分区后的总数，其应大于现有分区数。
 ```
 
-6. Broker管理</br>
+4. Broker管理</br>
 
 点击Broker后的数字，可查看集群id、Host、端口等列表信息。</br>
 

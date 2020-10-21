@@ -30,15 +30,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result[ ]| |
+|**result**|[Result](imagetasks#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**taskSet**|TaskInfo[ ]|任务详情|
+|**taskSet**|[TaskInfo[]](imagetasks#taskinfo)|任务详情|
 |**totalCount**|Integer|总数量|
-### <div id="TaskInfo">TaskInfo</div>
+### <div id="taskinfo">TaskInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskId**|Integer|任务id|

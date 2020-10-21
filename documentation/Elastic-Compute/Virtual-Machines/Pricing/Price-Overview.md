@@ -1,11 +1,11 @@
 # 价格总览
 
-您可以直接使用京东云提供的[云主机价格计算器](https://www.jdcloud.com/calculator/calHost)查看您所需的产品组合对应价格，也可以查阅相关资源价格总览用以估算投入成本。
+您可以直接使用京东智联云提供的[云主机价格计算器](https://www.jdcloud.com/calculator/calHost)查看您所需的产品组合对应价格，也可以查阅相关资源价格总览用以估算投入成本。
 
 请注意：价格总览中价格为统一官方标价，不包括用户折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
 
 
-京东云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
+京东智联云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
 
 ## 实例价格：
 
@@ -27,9 +27,69 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="29">通用</td>
-      <td rowspan="2">共享</td>
-      <td>g.s1.micro</td>
+      <td rowspan="35">通用</td>
+      <td rowspan="8">共享</td>
+      <td>g.s2.micro</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.28</td>
+      <td>--</td>
+      <td>0.12</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.small</td>
+      <td>1</td>
+      <td>2</td>
+      <td>60.5</td>
+      <td>--</td>
+      <td>0.21</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.s2.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>90.75</td>
+      <td>--</td>
+      <td>0.32</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>181.69</td>
+      <td>--</td>
+      <td>0.63</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>363</td>
+      <td>--</td>
+      <td>1.26</td>
+      <td>--</td>
+      <td></td>
+   </tr>   
+    <tr>
+      <td>g.s2.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>726.75</td>
+      <td>--</td>
+      <td>2.52</td>
+      <td>--</td>
+      <td></td>
+   </tr>    
+    <tr>     
+     <td>g.s1.micro</td>
       <td>1</td>
       <td>1</td>
       <td>56</td>
@@ -320,7 +380,88 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="27">计算优化</td>
+      <td rowspan="35">计算优化</td>
+      <td rowspan="3">共享</td>
+      <td>c.s2.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>125.3</td>
+      <td>--</td>
+      <td>0.41</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>250.6</td>
+      <td>--</td>
+      <td>0.82</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>501.2</td>
+      <td>--</td>
+      <td>1.65</td>
+      <td>--</td>
+      <td></td>
+  <tr>
+      <td rowspan="5">密集</td>
+      <td>c.c2.large</td>
+      <td>2</td>
+      <td>2</td>
+      <td>170</td>
+      <td>127.5</td>
+      <td>0.59</td>
+      <td>0.44</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.xlarge</td>
+      <td>4</td>
+      <td>4</td>
+      <td>340</td>
+      <td>255</td>
+      <td>1.18</td>
+      <td>0.89</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.c2.2xlarge</td>
+      <td>8</td>
+      <td>8</td>
+      <td>680</td>
+      <td>510</td>
+      <td>2.36</td>
+      <td>1.77</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.3xlarge</td>
+      <td>12</td>
+      <td>12</td>
+      <td>1020</td>
+      <td>765</td>
+      <td>3.54</td>
+      <td>2.66</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.4xlarge</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1360</td>
+      <td>1020</td>
+      <td>4.72</td>
+      <td>3.54</td>
+      <td></td>
+   </tr>
+</tr>
       <td rowspan="27">标准</td>
       <td>c.n3.large</td>
       <td>2</td>
@@ -1136,10 +1277,10 @@
       <td>5208.8</td>
       <td>24.11</td>
       <td>18.09</td>
-      <td>12*1117GB HDD</td>
+      <td>12*5587GB HDD</td>
    </tr> 
    <tr>
-      <td rowspan="9">GPU</td>
+      <td rowspan="17">GPU</td>
       <td rowspan="9">标准</td>
       <td>p.n1p40.3xlarge</td>
       <td>12</td>
@@ -1168,7 +1309,7 @@
       <td>13451.25</td>
       <td>62.27</td>
       <td>46.72</td>
-      <td>4*P40<br>4*5587GB SSD</td>
+      <td>4*P40<br>4*894GB SSD</td>
    </tr>
    <tr>
       <td>p.n1p40h.3xlarge</td>
@@ -1198,7 +1339,7 @@
       <td>12947.25</td>
       <td>59.94</td>
       <td>44.96</td>
-      <td>4*P40<br>4*9313GB HDD</td>
+      <td>4*P40<br>4*1117GB HDD</td>
    </tr>
    <tr>
       <td>p.n1v100.2xlarge</td>
@@ -1230,13 +1371,95 @@
       <td>64.7</td>
       <td>4*V100<br>4*5587GB HDD</td>
    </tr>
-
+   <tr>
+      <td rowspan="8">虚拟化</td>
+      <td>p.c1p40g.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>737.99</td>
+      <td>553.49</td>
+      <td>2.56</td>
+      <td>1.92</td>
+      <td>1*1/6 P40 </td>   
+    </tr>
+   <tr>
+      <td>p.c1p40m.large</td>
+      <td>2</td>
+      <td>14</td>
+      <td>1051.27</td>
+      <td>788.45</td>
+      <td>3.65</td>
+      <td>2.74</td>
+      <td> 1*1/4 P40</td>   
+    </tr>
+   <tr>
+      <td>p.c1p40g.xlarge</td>
+      <td>4</td>
+      <td>14</td>
+      <td>1226.07</td>
+      <td>919.55</td>
+      <td>4.26</td>
+      <td>3.19</td>
+      <td>1*1/4 P40 </td>   
+    </tr>    
+   <tr>
+      <td>p.c1p40g.3large</td>
+      <td>6</td>
+      <td>28</td>
+      <td>2205.82</td>
+      <td>1654.37</td>
+      <td>7.66</td>
+      <td>5.74</td>
+      <td>1*1/2 P40 </td>   
+    </tr>      
+   <tr>
+      <td>p.q1p40g.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>896.83</td>
+      <td>672.63</td>
+      <td>3.11</td>
+      <td>2.34</td>
+      <td>1*1/6 P40 </td>   
+    </tr>
+   <tr>
+      <td>p.q1p40m.large</td>
+      <td>2</td>
+      <td>14</td>
+      <td>1210.12</td>
+      <td>907.59</td>
+      <td>4.20</td>
+      <td>3.15</td>
+      <td> 1*1/4 P40</td>   
+    </tr>
+   <tr>
+      <td>p.q1p40g.xlarge</td>
+      <td>4</td>
+      <td>14</td>
+      <td>1384.92</td>
+      <td>1038.69</td>
+      <td>4.81</td>
+      <td>3.61</td>
+      <td> 1*1/4 P40</td>   
+    </tr>    
+   <tr>
+      <td>p.q1p40g.3large</td>
+      <td>6</td>
+      <td>28</td>
+      <td>2364.67</td>
+      <td>1773.50</td>
+      <td>8.21</td>
+      <td>6.16</td>
+      <td>1*1/2 P40 </td>   
+    </tr>  
 </table>
 
 请注意：
 
 * 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
 * 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供。
+* 计算优化密集型当前仅在华东-上海地域提供。
+* GPU虚拟化型当前仅在华北-北京开放邀测。
 
 ## 相关参考
 [云主机价格计算器](https://www.jdcloud.com/calculator/calHost)
@@ -1244,3 +1467,4 @@
 [云硬盘价格总览](http://docs.jdcloud.com/cn/cloud-disk-service/price-overview)
 
 [弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)
+

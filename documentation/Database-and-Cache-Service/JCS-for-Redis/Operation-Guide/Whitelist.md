@@ -1,0 +1,18 @@
+# 白名单设置 
+
+1. 登录[Redis 控制台](https://redis-console.jdcloud.com/redis)
+
+2. 选择目标实例，点击实例名称进入实例详情页面
+
+3. 点击白名单设置页签，进入白名单设置页面
+
+- 白名单默认值是0.0.0.0/0，表示所有IP均可访问，用户可根据要求自行修改
+
+![白名单1](https://github.com/jdcloudcom/cn/blob/master/image/Redis/whitelist1.png)
+
+- 点击编辑按钮，可进入编辑修改页面（注：IP白名单设置为 0.0.0.0/0 代表允许所有地址访问，仅设置 127.0.0.1 代表禁止所有地址访问。）
+
+![白名单2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/whitelist2.png)
+
+多个IP设置，用英文逗号隔开，不可重复设置。设置完点击保存即可生效
+

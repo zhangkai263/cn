@@ -10,7 +10,7 @@
 2. 检索条件中的Key是日志中所有建立键值检索的KV对中的Key，云产品默认将日志中的所有KV建立索引。
 3. 选择Key之后，根据需求选择比较符，输入Value的值，输入值得时候需要注意Key对应得value的类型。
 
-![](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/LogSearch/quickSearch.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogSearch/logsearch02.jpg)
 
 **使用场景**
 
@@ -28,7 +28,7 @@
 2. 高级检索条件中的Key必须都是日志字段中真实存在的Key，如需了解云产品系统日志中的所有字段说明，请在云产品日志中查看。
 3. 点击“检索”，展示符合检索条件日志数据。
 
-![](https://raw.githubusercontent.com/luolei-laurel/cn-1/patch-1/image/LogService/LogSearch/advanceSearch.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/LogSearch/logsearch03.jpg)
 
 **使用场景**
 

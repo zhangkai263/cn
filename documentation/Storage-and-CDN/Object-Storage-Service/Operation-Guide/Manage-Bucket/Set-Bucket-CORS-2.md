@@ -34,11 +34,9 @@
 
 ## 在控制台中设置过程如下：
 
-1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置，命名为“跨域访问设置”：
+1.登入控制台->对象存储->空间管理->进入某个Bucket->权限设置，可对“跨域访问设置”进行操作。
 
-![跨域访问设置](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-037.png)
-
-2.点击“跨域访问设置”Tab签之后，下方是CORS规则列表，默认每个Bucket最多支持10条规则。规则列表的各字段说明如下：
+2.在“跨域访问设置”功能区域，下方是CORS规则列表，默认每个Bucket最多支持10条规则。规则列表的各字段说明如下：
 
 a.来源Allowed Origin：允许跨域请求的来源，可以同时指定多个。配置时需带上完整的域信息，例如http://10.100.100.100:8001 或https://www.jcloud.com 。注意， 不要遗漏了协议名http或https，如果端口不是默认的80，还需要带上端口。如果不能确定的域名，可以打开浏览器的调试功能，查看header中的Origin。域名支持通配符\*，每个域名中允许最多使用一个\*，例如https://\*.jcloud.com 。如果来源指定为\*，则表示允许所有来源的跨域请求。
 
@@ -52,7 +50,7 @@ e.缓存Max Age：浏览器对特定资源的预取请求（OPTIONS请求）返�
 
 3.添加CORS规则：在跨域访问CORS规则列表上方，可通过点击“CORS规则设置”按钮来添加CORS规则，效果如下：
 
-![添加CORS规则](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-038.png)
+![添加CORS规则](../../../../../image/Object-Storage-Service/OSS-038.png)
 
 细节说明：
 
@@ -66,11 +64,10 @@ d. 域名格式的通配符只支持http://*.example.com ，不支持http://www.
 
 4.还可以通过点击“CORS规则编辑器”来自定义CORS规则，效果如下：
 
-![CORS规则编辑器](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-039.png)
+![添加CORS规则](../../../../../image/Object-Storage-Service/OSS-039.png)
 
 细节说明：
 
 a. CORS规则编辑器中会展示出当前全部已添加的CORS规则。
 
 b. 编辑器中无法使用代码注释，并且总大小不得超过16KB。
-

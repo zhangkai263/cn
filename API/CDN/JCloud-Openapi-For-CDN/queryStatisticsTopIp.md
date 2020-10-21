@@ -19,7 +19,7 @@ https://cdn.jdcloud-api.com/v1/statistics:topIp
 |**domain**|String|False| |需要查询的域名, 必须为用户pin下有权限的域名|
 |**subDomain**|String|False| |待查询的子域名|
 |**size**|Integer|False|20| |
-|**topBy**|String|False| |排序依据|
+|**topBy**|String|False| |排序依据,可根据pv,flow|
 
 
 ## 返回参数

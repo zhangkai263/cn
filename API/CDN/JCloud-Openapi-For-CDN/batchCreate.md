@@ -26,7 +26,7 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 |**sumFileSize**|Long|False| | |
 |**avgFileSize**|Long|False| | |
 |**defaultSourceHost**|String|False| | |
-|**httpType**|String|False| | |
+|**httpType**|String|True| |只能为http,设置为https的话需再次调用sethttptype接口 |
 |**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 |**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |

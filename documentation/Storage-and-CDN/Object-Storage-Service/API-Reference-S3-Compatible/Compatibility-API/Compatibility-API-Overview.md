@@ -41,6 +41,10 @@
 |Get Bucket tagging|获取Bucket的标签|兼容：[Get Bucket tagging](./Operations-On-Bucket/Get-Bucket-Tagging.md)|[Get Bucket tagging](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETtagging.html)|
 |Put Bucket accelerate|设置Bucket传输加速配置|兼容：[Put Bucket accelerate](./Operations-On-Bucket/PUT-Bucket-accelerate.md)|[Put Bucket accelerate](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html)|
 |Get Bucket accelerate|获取Bucket传输加速配置|兼容：[Get Bucket accelerate](./Operations-On-Bucket/GET-Bucket-accelerate.md)|[Get Bucket accelerate](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETaccelerate.html)|
+|Delete Bucket InventoryConfiguration|删除存储空间中指定的清单任务|兼容：[Delete Bucket InventoryConfiguration](./Operations-On-Bucket/Delete-Bucket-InventoryConfiguration.md)|[Delete Bucket InventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketInventoryConfiguration.html)|
+|Get Bucket InventoryConfiguration|查询存储空间中用户的清单任务信息|兼容：[Get Bucket InventoryConfiguration](./Operations-On-Bucket/Get-Bucket-InventoryConfiguration.md)|[Get Bucket InventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketInventoryConfiguration.html)|
+|List Bucket InventoryConfigurations|请求返回一个存储桶中的所有清单任务|兼容：[List Bucket InventoryConfigurations](./Operations-On-Bucket/List-Bucket-InventoryConfigurations.md)|[List Bucket InventoryConfigurations](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketInventoryConfigurations.html)|
+|Put Bucket InventoryConfiguration|在存储空间中创建清单任务|兼容：[Put Bucket InventoryConfiguration](./Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md)|[Put Bucket InventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html)|
 
 # 关于 Object 操作 
 

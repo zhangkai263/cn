@@ -21,26 +21,26 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/describeProtectionStatistic
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeprotectionstatistics#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeprotectionstatistics#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeprotectionstatistics#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|ProtectionStatistics| |
-### ProtectionStatistics
+|**data**|[ProtectionStatistics](describeprotectionstatistics#protectionstatistics)| |
+### <div id="protectionstatistics">ProtectionStatistics</div>
 |名称|类型|描述|
 |---|---|---|
 |**instancesCount**|Integer|实例数量|

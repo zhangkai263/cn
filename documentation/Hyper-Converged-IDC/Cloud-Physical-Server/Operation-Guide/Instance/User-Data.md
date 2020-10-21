@@ -10,19 +10,21 @@
 ### 格式要求
 
 1、实例自定义数据需要完成Base64编码后传入，且编码前的数据不能超过16 KB（编码后不大于21848Byte）。<br/>
-2、如果通过控制台创建实例，可以选择不对数据进行Base64编码，勾选对应提示框后由系统完成编码，如果通过API创建，您必须自行完成编码。<br/>
-3、Linux系统支持bash和python，编码前须分别以#!/bin/bash和#!/usr/bin/env python作为内容首行。<br/>
-4、请在 Linux 环境下进行编码，避免格式不兼容，且原始数据不大于16KB；<br/><br/>
-5、支持的镜像：CentOS 7.5 64位、CentOS 7.2 64位、CentOS 7.1 64位、CentOS 6.6 64位、CentOS 7.5 64位 TD增强版、Ubuntu 18.04 64位、Ubuntu 16.04 64位、Ubuntu 14.04 64位。<br/>
+2、控制台支持文本方式和文件形式两种上传方式，同时，要求文件大小不能超过16 KB（编码后不大于21848Byte）。<br/>
+3、如果通过控制台创建实例，可以选择不对数据进行Base64编码，勾选对应提示框后由系统完成编码，如果通过API创建，您必须自行完成编码。<br/>
+4、Linux系统支持bash和python，编码前须分别以#!/bin/bash和#!/usr/bin/env python作为内容首行。Windows系统支持bat和powershell，编码前须分别以“rem cmd”开头且作为内容首行和<powershell></powershell>作为内容首、尾行。<br/>
+5、请在 Linux 环境下进行编码，避免格式不兼容，且原始数据不大于16KB；<br/><br/>
+6、支持的镜像：CentOS 7.5 64位、CentOS 7.2 64位、CentOS 7.1 64位、CentOS 6.6 64位、CentOS 7.5 64位 TD增强版、Ubuntu 18.04 64位、Ubuntu 16.04 64位、Ubuntu 14.04 64位、Windows Server 2016标准版64位中文版。<br/>
 
 ### 操作步骤
-进入创建云物理服务器页面，选择高级设置部分，默认自定义数据为关闭状态，选择开启操作 ，具体如下图：<br/>
+1、进入创建云物理服务器页面，选择高级设置部分，默认自定义数据为关闭状态，选择开启操作；<br/>
+2、在文本框中输入自定义数据或者选择文件上传方式，如果数据已进行Base64编码，请勾选“以下输入已进行Base64编码”，若数据为明文未进行编码，请保持未勾选状态；<br/>
+3、为保证脚本正确执行，请务必参照上方格式要求，检查数据的声明格式是否正确 ；<br/>
+4、等待实例运行后，登录实例查看自定义数据运行结果。<br/>
 
 注意：<br/>
 1、仅限首次启动云物理服务器或重装系统时，通过传递文本执行命令。<br/>
-2、如果自定义数据没有按预期执行，可前往指定目录查看执行日志查找原因。Linux系统日志路径：/root/launch-script.log；另外，也可以查看执行的自定义脚本，详见路径：/root/launch-script。
-
-![创建自定义数据](../../Image/user-data.png)
+2、如果自定义数据没有按预期执行，可前往指定目录查看执行日志查找原因。Linux系统日志路径：/root/launch-script.log；Windows系统日志执行路径： C:\Program Files\Cloudbase Solutions\Cloudbase-Init\log\cloudbase-init.log 。
 
 
 

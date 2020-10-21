@@ -1,9 +1,18 @@
 # 更新历史
 
-API版本：1.7.0
+API版本：2.2.2
 
 | 发布时间   | 版本号 | 更新     | 说明                                                         |
 | ---------- | ------ | -------- | ------------------------------------------------------------ |
+| 2020-09-23 | 2.2.2  | 增加接口 |   内部接口调整   |
+| 2020-08-17 | 2.2.1  | 接口更新 | 内部接口调整     |
+| 2020-07-29 | 2.2.0  | 增加接口 | 新增接口describeClientList、describeClientIpDetail，内部接口调整     |
+| 2020-05-13 | 2.1.2  | 接口更新 | 更新describeSpecConfig接口返回结果     |
+| 2020-03-27 | 2.1.1  | 接口更新 | 更新describeSpecConfig接口返回结果     |
+| 2020-03-17 | 2.1.0  | 接口更新 | createCacheInstance、modifyCacheInstanceClass接口新增shardNumber参数；新增describeSpecConfig接口     |
+| 2020-03-16 | 2.0.0  | 增加接口 | 发布IP白名单接口：describeIpWhiteList、modifyIpWhiteList；新增大key热key分析接口：describeAnalysisTime、describeCacheAnalysisList、describeCacheAnalysisResult、modifyAnalysisTime、createCacheAnalysis     |
+| 2019-12-02 | 1.9.0  | 增加接口 | 内部接口调整     |
+| 2019-10-28 | 1.8.0  | 接口更新 | 修改createCacheInstance、modifyCacheInstanceClass接口返回参数，更新文档，内部接口调整     |
 | 2019-10-15 | 1.7.0  | 接口更新 | 发布接口：describeSlowLog     |
 | 2019-08-27 | 1.6.0  | 接口更新 | 内部接口调整     |
 | 2019-08-22 | 1.5.0  | 接口更新 | 发布接口：describeInstanceConfig、modifyInstanceConfig、describeBackupPolicy、modifyBackupPolicy、createBackup、describeBackups、describeDownloadUrl、restoreInstance    |

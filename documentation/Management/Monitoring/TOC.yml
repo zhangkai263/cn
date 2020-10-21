@@ -83,6 +83,8 @@ items:
           href: Operation-Guide/custom-monitoring/manage_alarmrules_cm.md
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
+    - name: 一键报警
+      href: Operation-Guide/Alarm-Management/One-Click-Alarming.md
 - name: 最佳实践
   items:
     - name: 批量资源监控
@@ -97,16 +99,56 @@ items:
       href: Metrics/vm.md
     - name: 云硬盘
       href: Metrics/disk.md
-    - name: 容器实例
+    - name: 原生容器
       href: Metrics/nativecontainer.md
     - name: kubernetes集群
-      href: Metrics/k8s.md  
+      href: Metrics/k8s.md
+    - name: 弹性伸缩
+      href: Metrics/autoscaling.md
+    - name: 函数服务
+      href: Metrics/function.md   
     - name: 弹性公网IP
       href: Metrics/ip.md
+    - name: 专线服务
+      href: Metrics/DirectConnection.md
+    - name: NAT网关
+      href: Metrics/natgateway.md
     - name: 负载均衡
       href: Metrics/lb.md
     - name: 云数据库RDS
       href: Metrics/rds.md
+    - name: 云数据库 MongoDB
+      href: Metrics/mongodb.md
+    - name: DRDS
+      href: Metrics/drds.md
+    - name: 云缓存 redis
+      href: Metrics/redis.md
+    - name: 云缓存 Memcached
+      href: Metrics/Memcached.md
+    - name: 云数据库 InfluxDB
+      href: Metrics/tsds.md
+    - name: 数据仓库 JDW
+      href: Metrics/jdw.md
+    - name: 数据传输 DTS
+      href: Metrics/dts.md
+    - name: 对象存储
+      href: Metrics/oss.md
+    - name: 云文件服务
+      href: Metrics/zfs.md
+    - name: CDN
+      href: Metrics/CDN.md
+    - name: 消息队列JCQ
+      href: Metrics/jcq.md
+    - name: 消息队列RabbitMQ版
+      href: Metrics/RabbitMQ.md
+    - name: Zookeeper
+      href: Metrics/zk.md
+    - name: 云搜索 ElasticSearch
+      href: Metrics/es.md
+    - name: 分布式事务
+      href: Metrics/jdts.md
+    - name: 堡垒机
+      href: Metrics/bastion.md 
 - name: 教程
   items:
   status: 0

@@ -1,6 +1,6 @@
 
 # 部署Service（新版本）
-从1.12.3-jcs.4版本开始，Service支持新版本LoadBalancer，新版本中不仅支持应用负载均衡(alb),网络负载均衡(nlb)以及分布式网络负载均衡(DNLB)，还支持丰富的配置项，同时还可以复用已创建的LoadBalancer，为用户提供了极大地灵活性。  
+从1.14-jcs.1版本开始，Service支持新版本LoadBalancer，新版本中不仅支持应用负载均衡(alb),网络负载均衡(nlb)以及分布式网络负载均衡(DNLB)，还支持丰富的配置项，同时还可以复用已创建的LoadBalancer，为用户提供了极大地灵活性。  
 
 **说明** 用户仍然可以使用老的service配置文件，新版本集群可以兼容。另外文章中尽量举例详细说明参数的配置，实际使用时用户只要填一个必填项指定lb类型，其他annotation参数都不需要指定即可轻松使用service服务
 
@@ -12,6 +12,7 @@
 - 创建的负载均衡会占用本地域的应用负载均衡配额，需要保证有足够配额。 
 - 一个service port 对应一组负载均衡监听器和后端服务器；
 - 如多组service port关联相同的nodeport，则监听器将关联到相同的后端服务；
+- 如需基于IPv6地址提供服务，请在集群创建时选择“自定义模式”，创建IPv4/IPv6双栈VPC和子网，并将LoadBalance放置在支持IPv6的双栈子网内。
 
 **service.beta.kubernetes.io/jdcloud-load-balancer-spec** 
 - 此annotation可以指定，也可以不指定，如果不指定，行为与原有的service的插件一致，默认创建ALB实例
@@ -117,7 +118,6 @@ metadata:
             algorithm: "IpHash"
             proxyProtocol: false
 spec:
-  externalTrafficPolicy: Local
   ports:
     - name: http1
       protocol: TCP

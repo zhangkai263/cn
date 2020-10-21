@@ -1,4 +1,4 @@
-# 监控指标说明
+# 云主机监控指标说明
 京东云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
 * 由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
   * 磁盘读吞吐量（Host）：vm.disk.bytes.read
@@ -6,8 +6,8 @@
   * 网络入带宽（Host）：vm.network.bytes.incoming
   * 网络出带宽（Host）：vm.network.bytes.outgoing
 * 由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据，此类指标共有2个，包括：
-  * CPU使用率：vm.cpu.util
-  * 内存使用率：vm.memory.usage
+  * CPU使用率：cpu_util
+  * 内存使用率：memory.usage
 * 其余指标由云主机内官方系统组件采集，仅不低于'3.0.989'版本的JCS-Agent组件支持采集。
 如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照本文底部 **监控插件安装说明** 进行安装。
 
@@ -16,8 +16,8 @@
 ### 实例
 metric | 中文名称 | 英文名称 | 单位 | 说明
 ---|--- |--- |---|---
-vm.cpu.util | CPU使用率 | CPU Usage | % | 
-vm.memory.usage | 内存使用率| Memory Usage | % | 
+cpu_util | CPU使用率 | CPU Usage | % | 
+memory.usage | 内存使用率| Memory Usage | % | 
 vm.memory.used.bytes | 内存使用量 | Memory Used |  Bytes | 
 vm.avg.load1 | 平均负载1min | CPU Average Load 1min | - | 
 vm.avg.load5 | 平均负载5min | CPU Average Load 5min |  - | 

@@ -75,7 +75,7 @@
 
 ## 相关参考
 
-[VsmManager配套软件下载](https://docs-downloads.s3.cn-north-1.jdcloud-oss.com/CloudHSM/VsmManager_1.2.2.15.rar)
+[VsmManager配套软件下载](https://database-audit.s3.cn-north-1.jdcloud-oss.com/cloudhsm-public/VsmManager_1.2.2.15.rar)
 
 [江南天安EVSM使用手册下载](/image/JDCloudHSM/云加密服务-EVSM管理工具用户使用手册V1.3.pdf)
 

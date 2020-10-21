@@ -56,6 +56,28 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/clusters/{clusterId}
 |**maintenanceWindow**|[MaintenanceWindow](describecluster#maintenancewindow)|配置集群维护策略|
 |**upgradePlan**|[UpgradePlan](describecluster#upgradeplan)|集群升级计划信息, 仅展示最新一条升级计划信息|
 |**masterProgress**|[MaintenanceWindow](describecluster#maintenancewindow)|控制节点操作进度|
+|**clusterNetwork**|[ClusterNetwork](describecluster#clusternetwork)|网络配置信息|
+|**networkMode**|String|集群网络类型,可取值为auto和customized|
+### <div id="clusternetwork">ClusterNetwork</div>
+|名称|类型|描述|
+|---|---|---|
+|**publicApiServer**|Boolean|kube-apiserver是否可公网访问，false则kube-apiserver不绑定公网地址，true绑定公网地址|
+|**masterCidr**|String|master网络的cidr|
+|**serviceCidr**|String|service网络的cidr|
+|**vpcId**|String|用户侧承载node和pod的vpc id|
+|**clusterSubnets**|[ClusterNetworkSubnet[]](describecluster#clusternetworksubnet)|集群子网信息|
+|**natGateway**|[NatGateway[]](describecluster#natgateway)|nat网关配置|
+### <div id="natgateway">NatGateway</div>
+|名称|类型|描述|
+|---|---|---|
+|**natType**|String|nat的类型，nat_vm/nat_gw/nat_none|
+|**natId**|String|nat虚机id，或者nat网关的实例id|
+### <div id="clusternetworksubnet">ClusterNetworkSubnet</div>
+|名称|类型|描述|
+|---|---|---|
+|**subnetId**|String|子网 ID|
+|**subnetType**|String|子网类型，可取值为：pod_subnet/lb_subnet/node_subnet|
+|**enabled**|Boolean|子网是否启用，仅pod子网可用。|
 ### <div id="maintenancewindow">MaintenanceWindow</div>
 |名称|类型|描述|
 |---|---|---|

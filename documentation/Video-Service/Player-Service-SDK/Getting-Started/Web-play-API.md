@@ -139,7 +139,7 @@ fluid :  true //视频大小根据容器自适应
 ```
 
 #### 4.3实现用例
-使用多种分辨率的设置及切换功能。线上示例如下，在 PC 浏览器中右键单击【查看网页源代码】即可查看页面的代码实现：<a href="https://j.jdcloud.com/video/player/1.0.0/index.html">分辨率实现</a>
+使用多种分辨率的设置及切换功能。线上示例如下，在 PC 浏览器中右键单击【查看网页源代码】即可查看页面的代码实现：<a href="https://j.jdcloud.com/video/player/index.html">分辨率实现</a>
 
 正常情况将看到如下效果：
 ![播放器多分辨率.png](https://github.com/jdcloudcom/cn/blob/cn-Player-Service-SDK/image/Player-Service-SDK/web%E6%92%AD%E6%94%BE%E5%99%A82.png)

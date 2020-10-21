@@ -19,6 +19,14 @@ items:
         href: Pricing/Billing-Overview.md
       - name: 计费规则
         href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Procedure.md
+      - name: 续费流程
+        href: Pricing/Renewal-Procedure.md
+      - name: 升级配额
+        href: Pricing/Resize-Instance.md
   - name: 入门指南
     items:
       - name: 概览
@@ -38,6 +46,8 @@ items:
     items:
       - name: 管理员手册
         items:
+          - name: 堡垒机实例
+            href: Operation-Guide/Administrator/Instance-Info.md
           - name: 登录堡垒机系统
             href: Operation-Guide/Administrator/Login-Bastion.md
           - name: 用户
@@ -70,13 +80,26 @@ items:
                   href: Operation-Guide/Administrator/Audit/Session-Audit.md
                 - name: 操作审计
                   href: Operation-Guide/Administrator/Audit/Operational-Audit.md
-
+          - name: 系统设置
+            href: Operation-Guide/Administrator/System-settings.md
+          - name: 监控
+            items:
+                - name: 监控概述
+                  href: Operation-Guide/Administrator/Monitoring/Overview.md
+                - name: 获取监控数据
+                  href: Operation-Guide/Administrator/Monitoring/Retrieve-Data.md
+                - name: 设置报警
+                  href: Operation-Guide/Administrator/Monitoring/Set-Alarm.md
+            
+                  
                     
       - name: 运维手册
         items:
           - name: WEB浏览器运维
             href: Operation-Guide/Operation/Web.md
-          - name: SSH协议运维
+          - name: SSH客户端运维
             href: Operation-Guide/Operation/SSH.md
+          - name: SFTP客户端运维
+            href: Operation-Guide/Operation/SFTP.md
           - name: MAC系统运维
             href: Operation-Guide/Operation/Mac.md

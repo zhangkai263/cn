@@ -2,7 +2,7 @@
 
 
 ## 描述
-使用密钥对数据进行加密
+使用密钥对数据进行加密，针对非对称密钥：使用公钥进行加密，仅支持RSA_PKCS1_PADDING填充方式，最大加密数据长度为245字节
 
 ## 请求方式
 POST
@@ -23,10 +23,10 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:Encrypt
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](encrypt#result)| |
 |**requestId**|String|请求ID|
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**ciphertextBlob**|String|密文数据 Base64-encoded binary data object|

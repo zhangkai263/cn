@@ -47,11 +47,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**osTypeId**|String|True| |操作系统类型ID|
 |**sysRaidTypeId**|String|True| |系统盘RAID类型ID|
 |**dataRaidTypeId**|String|True| |数据盘RAID类型ID|
-|**subnetId**|String|False| |子网编号|
+|**subnetId**|String|False| |子网ID|
 |**enableInternet**|String|False|yes|是否启用外网，取值范围：yes、no|
+|**internetChargeMode**|String|False| |启用外网时弹性公网IP的计费模式，取值范围：prepaid_by_duration、postpaid_by_duration|
+|**bandwidthPackageId**|String|False| |弹性公网IP加入的共享带宽ID|
 |**networkType**|String|True| |网络类型，取值范围：vpc|
 |**cidr**|String|False| |网络CIDR|
 |**privateIp**|String|False| |内网IP|
+|**aliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |内网添加的别名IP范围|
 |**lineType**|String|False| |外网链路类型, 目前支持联通un、电信ct、移动cm|
 |**bandwidth**|Integer|False| |外网带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
@@ -62,7 +65,22 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
 |**charge**|[ChargeSpec](createinstances#chargespec)|True| |计费配置|
-|**aliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |别名ip配置|
+|**interfaceMode**|String|False| |网络接口模式，单网口:bond、双网口:dual|
+|**extensionSubnetId**|String|False| |辅网口子网ID|
+|**extensionPrivateIp**|String|False| |辅网口手动分配的内网ip|
+|**extensionAliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |辅网口内网添加的别名IP范围|
+|**extensionEnableInternet**|String|False| |辅网口是否启用外网，取值范围：yes、no|
+|**extensionLineType**|String|False| |辅网口链路类型, 目前支持联通un、电信ct、移动cm|
+|**extensionBandwidth**|Integer|False| |辅网口外网带宽，范围[1,10240] 单位Mbps|
+|**extensionExtraUplinkBandwidth**|Integer|False| |辅网口额外上行带宽, 范围[0,10240] 单位Mbps|
+|**extensionInternetChargeMode**|String|False| |辅网口启用外网时弹性公网IP的计费模式，取值范围：prepaid_by_duration、postpaid_by_duration|
+|**extensionBandwidthPackageId**|String|False| |辅网口弹性公网IP加入的共享带宽ID|
+|**resourceTags**|[Tag[]](createinstances#tag)|False| |标签|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|True| |标签键|
+|**value**|String|True| |标签值|
 ### <div id="aliasipinfo">AliasIpInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

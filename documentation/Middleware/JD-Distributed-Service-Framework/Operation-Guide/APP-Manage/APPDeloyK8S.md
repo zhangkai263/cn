@@ -2,21 +2,30 @@
 
 Kubernetes集群采用管理节点全托管的方式，为用户提供简单易用、高可靠、功能强大的容器管理服务。而在微服务平台上，用户可以便捷地通过 Kubernetes部署方式实现Kubernetes容器应用部署。以下将介绍内容包括通过 JDSF 控制台实现对Kubernetes容器应用部署、删除、应用扩缩容、配置负载均衡等。
 
- 
+本章节将向您介绍如下内容：
+-  部署应用
+-   删除应用 
+-   扩缩容
+-   配置负载均衡 
+-   配置应用日志 
+-   配置应用监控 
+
 
 ## 操作场景
 
-当京东云用户，已经在京东云上创建了Kubernetes集群，那么接下来将需要在集群中部署应用。此时用户可以通过微服务平台控制台，通过界面操作来完成应用部署。
+当京东智联云用户，已经在京东智联云上创建了Kubernetes集群，那么接下来将需要在集群中部署应用。此时用户可以通过微服务平台控制台，通过界面操作来完成应用部署。
 
 ## 环境准备
 
-1、已经购买开通了京东云Kubernetes集群。
+1、已经购买开通了京东智联云 Kubernetes集群。
 
 2、已经开通所需资源如：微服务平台等。
 
-3、已经将需要部署的信息上传到镜像中。
+3、已经将需要部署的镜像，上传到京东智联云容器镜像仓库中。
 
-4、**注意：** 
+4、如需使用应用监控功能，需要提前在Kubernetes集群中打开集群监控开关。
+
+5、**注意：** 
 
 -  使用Kubernetes部署需要在拉取镜像过程中获取授权，因此请提前在Kubernetes中开通授权。授权详情请参考：[集成容器镜像仓库](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Deploy-Container-Registry.md) 。
 
@@ -26,7 +35,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 ## 操作步骤
 
+
 ### 部署应用
+
 
 #### 第1步：在JDSF中新建命名空间、新建Kubernetes集群资源池
 
@@ -74,7 +85,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-bsxq.png)
 
 
-###  删除应用
+
+
+### 删除应用
 
 1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
 
@@ -83,7 +96,9 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 3、用户需在删除数据前，自行做好数据备份工作。
 
 
-###  扩缩容
+
+
+### 扩缩容
 
 针对Kubernetes资源池的扩容，可以在微服务平台中进行配置。
 
@@ -119,11 +134,12 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 
 
 
-###  配置负载均衡
+### 配置负载均衡
+
 
 1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。
 
-2、选择需要配置扩缩容的应用，点击应用名称，进入应用详情页。
+2、选择需要配置的应用，点击应用名称，进入应用详情页。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq.png)
 
@@ -132,3 +148,75 @@ Kubernetes集群采用管理节点全托管的方式，为用户提供简单易�
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/k8s-zyc-yyxq-fzjh.png)
 
 可参考： [Nginx-ingress controller部署](../../../../Elastic-Compute/JCS-for-Kubernetes/Best-Practices/Ingress/Deploy-Ingress-NGINX-Controller.md)
+
+
+
+###  配置应用日志 
+
+配置应用日志的过程，需要在“配置部署”页面进行配置。
+
+1、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。点击操作“发起部署”。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yylb.png)
+
+2、在高级配置中，找到“应用日志”的配置。打开配置开关，填写日志信息。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-yyjk.png)
+
+| 信息项	| 说明	| 
+| :- | :- | 
+|  日志集	|  应用日志通过云日志进行采集，请提前准备日志集。创建日志集请参考： [日志集管理](../../../../Management/Log-Service/Operation-Guide/LogSet/LogSetManagement.md)	| 
+|日志路径 | 该路径为日志采集路径，请填写绝对路径。| 
+| AK/SK | 需要填写当前用户名下可用的 Access Key/Access Key Secret，该信息请参考： [Accesskey管理](../../../../User-Service/Account-Management/AccessKey-Management.md)|  
+
+ 
+3、部署成功后，在应用详情中的应用运行信息中，可查看不同资源池中的应用运行信息。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyxq.png)
+
+4、点击操作中的“日志”，即可跳转至日志信息页。通过检索，可查看采集的日志信息。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-rzfw.png)
+
+
+
+
+###  配置应用监控 
+
+配置应用监控的过程，需要在“配置部署”页面进行配置。
+
+1、在 Kubernetes 中打开 集群监控
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-k8s.png)
+
+2、登录微服务平台控制台。 在左侧导航栏点击应用管理，进入应用列表页。点击操作“发起部署”。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/yylb.png)
+
+3、在高级配置中，找到“应用监控”的配置。打开配置开关，填写配置信息。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyrz-yyjk.png)
+| 信息项	| 说明	| 
+| :- | :- | 
+| 采集端口 | 采集端口 | 
+| 采集路径 | Prometheus 将使用该路径进行采集，并将采集结果上报至云监控。 | 
+
+4、部署成功后，在应用详情中的应用运行信息中，可查看不同资源池中的应用运行信息。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyxq.png)
+
+5、点击操作中的“监控”，即可跳转至应用监控信息页。通过自定义指标方式，即可查看监控图表。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-zdyjk.png)
+
+自定义监控使用方式，可参考： [自定义监控使用说明](../../../../Management/Monitoring/Operation-Guide/custom-monitoring/custom-monitoring-overview.md) 
+
+
+【举例】在自定义监控中查看应用监控
+
+假设自定义了监控指标随机数统计custom_metrics_random_num_gauge，并且应用已经部署成功。那么在“自定义监控”中查看该指标方式为：
+
+STEP1:在“命名空间”项中选择“kubernetes集群(系统)”，
+
+STEP2:选择监控指标“custom_metrics_random_num_gauge”
+
+STEP3:选择聚合方式和维度。之后即可看到监控图表。
+
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fqbs-yyjk-zdyjk-2.png)
+

@@ -1,0 +1,25 @@
+name: 云搜索 Elasticsearch
+href: 
+items:
+  - name: 接口预览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: Elasticsearch实例API
+        items:
+          - name: createInstance
+            href: ES-Instance-API/createInstance.md
+          - name: deleteInstance
+            href: ES-Instance-API/deleteInstance.md
+          - name: describeInstance
+            href: ES-Instance-API/describeInstance.md
+          - name: describeInstances
+            href: ES-Instance-API/describeInstances.md
+          - name: modifyInstanceSpec
+            href: ES-Instance-API/modifyInstanceSpec.md
+      - name: Elasticsearch字典API
+        items:
+          - name: disableDicts
+            href: ES-Dictionary-API/disableDicts.md

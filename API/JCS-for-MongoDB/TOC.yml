@@ -9,39 +9,34 @@
     items:
       - name: createInstance
         href: Instance-Management/createInstance.md
+      - name: createShardingInstance
+        href: Instance-Management/createShardingInstance.md
       - name: deleteInstance
         href: Instance-Management/deleteInstance.md
-      - name: describeInstances
-        href: Instance-Management/describeInstances.md
       - name: describeAvailableZones
         href: Instance-Management/describeAvailableZones.md
       - name: describeBackupPolicy
         href: Instance-Management/describeBackupPolicy.md
       - name: describeFlavors
         href: Instance-Management/describeFlavors.md
+      - name: describeInstances
+        href: Instance-Management/describeInstances.md
       - name: modifyBackupPolicy
         href: Instance-Management/modifyBackupPolicy.md
       - name: modifyInstanceName
         href: Instance-Management/modifyInstanceName.md
       - name: modifyInstanceSpec
         href: Instance-Management/modifyInstanceSpec.md
+      - name: modifyNodeSpec
+        href: Instance-Management/modifyNodeSpec.md
       - name: resetPassword
         href: Instance-Management/resetPassword.md
-      - name: restartInstance.md
+      - name: restartInstance
         href: Instance-Management/restartInstance.md
-        status: 0
+      - name: restartNode
+        href: Instance-Management/restartNode.md
       - name: restoreInstance
-        status: 0
-        href: Instance-Management/restoreInstance.md
-      - name: deleteMongoDbs
-        status: 0
-        href: Instance-Management/deleteMongoDbs.md
-      - name: describeTopology
-        status: 0
-        href: Instance-Management/describeTopology.md
-      - name: describeUserQuota
-        status: 0
-        href: Instance-Management/describeUserQuota.md       
+        href: Instance-Management/restoreInstance.md  
   - name: 备份管理
     items:
       - name: backupDownloadURL

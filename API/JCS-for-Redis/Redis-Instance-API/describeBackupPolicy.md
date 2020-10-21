@@ -22,10 +22,10 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#Result)|结果|
+|**result**|[Result](describebackuppolicy#result)|结果,如果都为空,则表示自动备份已关闭|
 |**requestId**|String|本次请求ID|
 
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**backupPeriod**|String|备份周期，包括：Monday，Tuesday，Wednesday，Thursday，Friday，Saturday，Sunday，多个用逗号分隔|

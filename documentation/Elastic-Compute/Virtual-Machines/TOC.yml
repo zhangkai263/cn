@@ -87,6 +87,8 @@ items:
             href: Operation-Guide/Instance/Search-Instance.md
           - name: 重启动到期/欠费实例
             href: Operation-Guide/Instance/Restart-Overdue-or-Arrear-Instance.md
+          - name: 实例停机不计费
+            href: Operation-Guide/Instance/uncharged_for_stopped_vm.md    
           - name: 导出实例信息
             href: Operation-Guide/Instance/Export-Instance.md
           - name: 从按配置转换为包年包月
@@ -95,6 +97,8 @@ items:
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU云主机
             href: Operation-Guide/Instance/GPU-VM.md
+          - name: vGPU云主机
+            href: Operation-Guide/Instance/vGPU-VM.md            
           - name: 裸金属云主机
             items: 
               - name: 裸金属云主机概述
@@ -147,6 +151,18 @@ items:
             href: Operation-Guide/Image/Cancel-Share-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
+      - name: 实例抵扣券
+        items:
+          - name: 实例抵扣券概述
+            href: Operation-Guide/Instance-Voucher/Instancevoucher-Overview.md
+          - name: 价格及计费规则
+            href: Operation-Guide/Instance-Voucher/Price-and-Billing-Rules-of-Instancevoucher.md
+          - name: 购买实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Purchase-Instancevoucher.md
+          - name: 管理实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Manage-Instancevoucher.md
+          - name: 查看抵扣明细
+            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md            
       - name: 存储
         items:
           - name: 存储概述
@@ -245,6 +261,10 @@ items:
             href: Operation-Guide/Monitoring/Get-Monitor-Data.md
           - name: 设置报警
             href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 自动任务策略
+        items:
+          - name: 自动镜像策略
+            href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md                           
   - name: 最佳实践
     items:
       - name: 安全

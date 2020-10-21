@@ -31,7 +31,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|True| |弹性公网IP的限速（单位：Mbps），取值范围为[1-200]|
-|**provider**|String|True| |IP服务商，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：bgp；cn-east-1：[bgp，no_bgp]；cn-east-2：bgp|
+|**provider**|String|True| |IP服务商，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：bgp；cn-east-1：bgp；cn-east-2：bgp|
 |**chargeSpec**|[ChargeSpec](createelasticips#chargespec)|False| |计费配置|
 ### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|

@@ -20,9 +20,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyIn
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**networks**|InstanceNetworkAttribute[]|False| |弹性网卡列表|
+|**networks**|[InstanceNetworkAttribute[]](modifyinstancenetworkattribute#instancenetworkattribute)|False| |弹性网卡列表|
 
-### InstanceNetworkAttribute
+### <div id="instancenetworkattribute">InstanceNetworkAttribute</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**networkInterfaceId**|String|False| |弹性网卡ID|

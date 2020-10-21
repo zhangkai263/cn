@@ -1,6 +1,6 @@
 # 变更实例配置
 
-如果当前Greenplum实例的配置不能满足业务要求，您可以需要变更实例配置，Greenplum实例支持升级节点规格和扩展节点数量。
+如果当前JDW实例的配置不能满足业务要求，您可以需要变更实例配置，JDW实例支持升级节点规格和扩展节点数量。
 
 ## 注意事项
 
@@ -9,7 +9,7 @@
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](https://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](https://jdw-console.jdcloud.com/list)。
 
 2. 在实例列表页面或实例详情页，点击**变更配置**，打开变更配置弹窗。
 

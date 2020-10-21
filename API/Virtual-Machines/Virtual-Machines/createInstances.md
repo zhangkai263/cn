@@ -31,12 +31,16 @@
             - 如果是cloud类型的包年包月的云硬盘，默认为False，不可修改
     - 数据盘
         - 磁盘分类，数据盘仅支持cloud
-        - 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
+        - 云硬盘类型可以选择ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1
         - 磁盘大小
+            - premium-hdd：范围[20,3000]GB，步长为10G
+            - ssd：范围[20,1000]GB，步长为10G
             - hdd.std1、ssd.gp1、ssd.io1: 范围[20-16000]GB，步长为10GB
         - 自动删除
             - 默认自动删除，如果是包年包月的云硬盘，此参数不生效
         - 可以从快照创建磁盘
+    - iops
+        - 仅当云盘类型为ssd.io1时，可指定iops值，范围为【200， min（32000，size * 50 ）】，步长为10，若不指定则按此公式计算默认值
     - local类型系统的云主机可以挂载8块云硬盘
     - cloud类型系统的云主机可以挂载7块云硬盘
 - 计费
@@ -84,12 +88,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**systemDisk**|[InstanceDiskAttachmentSpec](createinstances#instancediskattachmentspec)|False| |系统盘配置信息|
 |**dataDisks**|[InstanceDiskAttachmentSpec[]](createinstances#instancediskattachmentspec)|False| |数据盘配置信息，本地盘(local类型)做系统盘的云主机可挂载8块数据盘，云硬盘(cloud类型)做系统盘的云主机可挂载7块数据盘。|
 |**charge**|[ChargeSpec](createinstances#chargespec)|False| |计费配置<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
-|**userdata**|[Userdata[]](createinstances#userdata)|False| |元数据信息，目前只支持传入一个key为"launch-script"，表示首次启动脚本。value为base64格式。<br>launch-script：linux系统支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行;<br>launch-script：windows系统支持bat和powershell，编码前须分别以 <cmd></cmd> 和 <powershell></powershell> 作为内容首、尾行。<br>|
+|**userdata**|[Userdata[]](createinstances#userdata)|False| |元数据信息，目前只支持传入一个key为"launch-script"，表示首次启动脚本。value为base64格式，编码前数据不能大于16KB。<br>launch-script：linux系统支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行;<br>launch-script：windows系统支持bat和powershell，编码前须分别以 <cmd></cmd> 和 <powershell></powershell> 作为内容首、尾行。<br>|
 |**description**|String|False| |主机描述，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 |**noPassword**|Boolean|False| |不使用模板中的密码。<br>仅当不使用Ag，并且使用了模板，并且password参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了password参数时，此参数无效，以新指定的为准。<br>|
 |**noKeyNames**|Boolean|False| |不使用模板中的密钥。<br>仅当不使用Ag，并且使用了模板，并且keynames参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了keynames参数时，此参数无效，以新指定的为准。<br>|
 |**noElasticIp**|Boolean|False| |不使用模板中的弹性公网IP。<br>仅当不使用Ag，并且使用了模板，并且elasticIp参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了elasticIp参数时，此参数无效，以新指定的为准。<br>|
 |**userTags**|[Tag[]](createinstances#tag)|False| |用户普通标签集合|
+|**chargeOnStopped**|String|False| |关机模式，只支持云盘做系统盘的按配置计费云主机。keepCharging：关机后继续计费；stopCharging：关机后停止计费。|
 ### <div id="tag">Tag</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -150,8 +155,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|True| |弹性公网IP的限速（单位：Mbps），取值范围为[1-200]|
-|**provider**|String|True| |IP服务商，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：[bgp，no_bgp]；cn-east-1：[bgp，no_bgp]；cn-east-2：bgp|
-|**chargeSpec**|[ChargeSpec](createinstances#chargespec)|False| |计费配置|
+|**provider**|String|True| |IP线路信息。当IP类型为标准公网IP时，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：bgp；cn-east-1：bgp；cn-east-2：bgp。当IP类型为边缘公网IP时，其值可通过调用describeEdgeIpProviders、获取不同边缘节点的边缘公网IP线路信息|
+|**chargeSpec**|[ChargeSpec](createinstances#chargespec)|False| |计费配置。边缘公网IP支持包年包月、按配置；标准公网IP支持包年包月、按配置、按流量|
 
 ## 返回参数
 |名称|类型|描述|

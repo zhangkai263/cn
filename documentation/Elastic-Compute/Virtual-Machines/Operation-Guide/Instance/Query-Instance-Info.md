@@ -10,7 +10,7 @@
 
 ## 概览页
 
-[概览页](https://console.jdcloud.com)即为您登录京东云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](../../../../../image/vm/queryinstance4.png)
+[概览页](https://console.jdcloud.com)即为您登录京东智联云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](../../../../../image/vm/queryinstance4.png)
 
 	
 	
@@ -18,7 +18,7 @@
 
 ## 实例列表页
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。![](../../../../../image/vm/queryinstance3.png)
 
 	您可查看选定地域下所有实例的信息，包括ID、名称、可用区、IP地址等。由于实例信息项较多，您可按需通过自定义列表调整在实例列表页显示的信息项，详细操作步骤如下：
@@ -35,7 +35,7 @@
 
 ## 实例详情页
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要查看详细信息的实例，点击实例名称进入详情页。
 
