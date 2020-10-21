@@ -62,7 +62,7 @@
      
 - 使用Connection String URI连接实例
    
-  MongoDB服务可以用传统的传参的方式进行连接，同时大部分的驱动程序也支持URI形式进行连接，MongoDB官方推荐使用URI的方式连接MongoDB服务以保证连接高可用。请使用MongoDB 3.2以上版本的driver。
+  MongoDB服务可以用传统的传参的方式进行连接，同时大部分的驱动程序也支持URI形式进行连接，MongoDB官方推荐使用URI的方式连接MongoDB服务以保证连接高可用。
    
   命令样式如下：
    
