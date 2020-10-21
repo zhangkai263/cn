@@ -46,7 +46,7 @@
 下图为1个完整自然月Top5峰值计费采样和计算方法说明。
 
 
- ![dd](../../../../image/Networking/Shared-Bandwidth-Package/Enhanced-95.png)
+ ![dd](../../../../../image/Networking/Shared-Bandwidth-Package/Enhanced-95.png)
 
 
 
