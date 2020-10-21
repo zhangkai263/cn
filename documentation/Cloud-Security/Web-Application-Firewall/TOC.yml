@@ -119,13 +119,13 @@ items:
        href: Protection-Statistics/General-Log.md
 - name: 最佳实践
   items:
-     - name: WAF接入
+     - name: WAF接入配置最佳实践
        items: 
           - name: 同时部署IP高防和WAF
             href: Best-Practices/WAF-Join-Up/Arrange-Anti-ddos-pro-and-WAF.md
           - name: 同时部署CDN和WAF
             href: Best-Practices/WAF-Join-Up/Arrange-CDN-and-WAF.md
-     - name: Web应用防护引擎最佳实践
+     - name: Web应用攻击防护最佳实践
        href: Best-Practices/Web-Application-Protection-Engine-Best-Practices.md
      - name: 如何获取客户端真实IP
        href: Best-Practices/Get-Visitor-Ture-IP.md
