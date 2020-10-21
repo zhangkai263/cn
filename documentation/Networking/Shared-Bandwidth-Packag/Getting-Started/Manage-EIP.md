@@ -1,5 +1,12 @@
 # 共享带宽包管理公网IP
-## 弹性公网IP加入共享带宽包
+本文将介绍在共享带宽包中如何管理公网IP，具体包括如下操作：
+- [EIP加入共享带宽包](instance-type-family#user-content-1)
+- [修改EIP带宽上限](instance-type-family#user-content-2)
+- [查看包含的EIP](instance-type-family#user-content-3)
+- [移除EIP](instance-type-family#user-content-4)
+
+## EIP加入共享带宽包
+<div id="user-content-1"></div>
 #### 配置介绍
 
 本教程将为您介绍如何将EIP加入共享带宽包，首先介绍如何在私有网络中创建EIP，然后介绍EIP加入共享带宽包。
@@ -31,7 +38,8 @@
 
 
 
-## 修改EIP限速
+## 修改EIP带宽上限
+<div id="user-content-2"></div>
 
 在某个共享带宽包中修改EIP带宽上限，需先定位共享带宽包，再对EIP进行单个或者批量限速。具体操作步骤如下：
 
@@ -49,8 +57,8 @@
 
 完成上述步骤即可完成EIP限速操作。
 
-## 查询EIP信息
-
+## 查询包含的EIP
+<div id="user-content-3"></div>
 查询共享带宽包中的EIP信息，需先定位共享带宽包，再查询EIP信息。具体操作步骤如下：
 
 **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；
@@ -68,7 +76,7 @@
 
 
 ## 移除EIP
-
+<div id="user-content-4"></div>
 共享带宽包中支持单独或批量移除EIP（弹性公网IP），具体操作步骤如下：
 
 **步骤1：** 进入[京东智联云官方网站](https://www.jdcloud.com/)；
