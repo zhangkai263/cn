@@ -19,7 +19,7 @@
 - 支持对公网IP二级限速，公网IP加入共享带宽包后，IP的带宽上限默认为共享带宽包的上限，支持共享带宽包内单IP独立设置带宽上限；
 
 ```
-公网IP加入共享带宽包后的最大带宽上限为共享带宽包的带宽上限，从共享带宽包移除后恢复原有的带宽上限和计费规则。
+说明：公网IP加入共享带宽包后的最大带宽上限为共享带宽包的带宽上限，从共享带宽包移除后恢复原有的带宽上限和计费规则。
 ```
 - 支持实时调整公网IP的带宽上限，立即生效
 
@@ -39,5 +39,10 @@
 ## 相关参考
 - [管理公网IP](../Getting-Started/Manage-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
+- [计费规则](../Pricing/Billed-Rules.md)
+- [价格总览](../Pricing/Price-Overview.md)
 - [增强95消峰计费](../Pricing/Charge-By-Usage/Top5-Eliminate.md)
 - [查看共享带宽包监控信息](../Operation-Guide/View-Monitoring.md)
+- [创建共享带宽包](../Operation-Guide/Create-Bwp.md)
+- [修改共享带宽包](../Operation-Guide/Modify-Bwp.md)
+- [删除共享带宽包](../Operation-Guide/Delete-Bwp.md)
