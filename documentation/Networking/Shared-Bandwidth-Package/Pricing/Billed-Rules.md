@@ -82,7 +82,7 @@
 
 - [价格总览](Price-Overview.md)
 
-- [增强95消峰计费](Top5-Eliminate.md)
+- [增强95消峰计费](Charge-By-Usage/Top5-Eliminate.md)
 
 - [计费概述](Billed-Overview.md)
 
