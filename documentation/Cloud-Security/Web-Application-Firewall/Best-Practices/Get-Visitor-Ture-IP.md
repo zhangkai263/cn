@@ -48,7 +48,7 @@
 
 ## IIS 7 配置方案
 
-1. 下载与安装插件 [F5XForwardedFor](https://devcentral.f5.com/s/articles/x-forwarded-for-log-filter-for-windows-servers) 模块，根据自己的服务器操作系统版本将`x86\Release`或者`x64\Release`目录下的`F5XFFHttpModule.dll`和`F5XFFHttpModule.ini`拷贝到某个目录，这里假设为`C:\F5XForwardedFor`，确保 IIS 进程对该目录有读取权限。
+1. 下载与安装插件 **F5XForwardedFor** 模块，根据自己的服务器操作系统版本将`x86\Release`或者`x64\Release`目录下的`F5XFFHttpModule.dll`和`F5XFFHttpModule.ini`拷贝到某个目录，这里假设为`C:\F5XForwardedFor`，确保 IIS 进程对该目录有读取权限。
 2. 选择【IIS 服务器】，双击【模块】功能。
 3. ![image](../../../../image/WAF/best-practice-image/IIS7-1.png)
 4. 单击【配置本机模块】。![image](../../../../image/WAF/best-practice-image/IIS7-2.png)
