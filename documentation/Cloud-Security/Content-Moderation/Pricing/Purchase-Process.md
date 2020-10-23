@@ -41,6 +41,6 @@
 
 3. 输入**实例名称**并选择**购买时长**。
 
-   ![image](../../../../image/Content-Moderation/Update-Website\6.website-buy-detection.png)
+   ![image](../../../../image/Content-Moderation/Update-Website/6.website-buy-detection.png)
 
 4. 单击**立即购买**并完成支付。

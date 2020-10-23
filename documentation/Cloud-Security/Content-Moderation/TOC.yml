@@ -31,6 +31,8 @@ items:
             href: Operation-Guide/Content-Censor-API/Statistics-View.md
           - name: 检测结果查询
             href: Operation-Guide/Content-Censor-API/Query-Detection-Result.md
+          - name: 自助审核
+            href: Operation-Guide/Content-Censor-API/Self-Service-Audit.md
       - name: OSS违规检测
         items:
           - name: 功能简介
@@ -43,6 +45,14 @@ items:
             href: Operation-Guide/OSS-Voilate-Detection/Callback-Notification.md
       - name: 流量包管理
         href: Operation-Guide/Resource-package-management.md
+      - name: 站点检测
+        items:
+          - name: 简介
+            href: Operation-Guide/Website-Detection/Overview.md
+          - name: 启用站点检测
+            href: Operation-Guide/Website-Detection/Start-up.md
+          - name: 查看检测结果
+            href: Operation-Guide/Website-Detection/Check-Detection-Result.md
   - name: API指南
     items:
       - name: 请求结构
