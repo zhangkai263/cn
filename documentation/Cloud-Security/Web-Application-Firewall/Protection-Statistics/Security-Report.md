@@ -5,7 +5,7 @@ Web应用防火墙（WAF）安全报表向您展示WAF各个防护模块的防�
 ## 前提条件
 
 - 已开通Web应用防火墙实例，更多信息，请参见[开通Web应用防火墙](https://docs.jdcloud.com/cn/web-application-firewall/purchase-process)。
-- 已完成网站接入。更多信息，请参见[添加域名]()。
+- 已完成网站接入。更多信息，请参见[添加域名](https://docs.jdcloud.com/cn/web-application-firewall/step-1)。
 
 ## 访问报表页面
 

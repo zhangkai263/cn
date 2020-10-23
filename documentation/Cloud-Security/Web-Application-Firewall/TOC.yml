@@ -6,7 +6,7 @@ items:
       - name: FastJSON 反序列化漏洞
         href: Security-Notice/FastJSON-Deserializa-Loophole.md
       - name: Thinkphp 远程命令执行漏洞
-        href: Security-Notice/Thinkphp-Remote-Command-Execution-Loophole
+        href: Security-Notice/Thinkphp-Remote-Command-Execution-Loophole.md
       - name: Drupal远程代码执行漏洞
         href: Security-Notice/Drupal-Remote-Code-Execution-Loophole.md
       - name: Atlassian Jira服务端模板注入漏洞
