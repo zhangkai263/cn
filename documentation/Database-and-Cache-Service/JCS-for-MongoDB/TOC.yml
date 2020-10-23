@@ -49,6 +49,8 @@
         items:
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Modify-Instance-Spec.md
+          - name: 变更节点数
+            href: Operation-Guide/Instance-Management/Modify-Replication-Factor.md
           - name: 重启实例
             href: Operation-Guide/Instance-Management/Restart-Instance.md
           - name: 续费实例
@@ -61,6 +63,12 @@
             href: Operation-Guide/Account-Management/Create-MongoDB-Account.md
           - name: 修改密码
             href: Operation-Guide/Account-Management/Reset-Password.md
+      - name: 连接管理
+        items:
+          - name: 外网访问
+            href: Operation-Guide/Connection-Management/Internet-access.md
+          - name: 节点域名管理
+            href: Operation-Guide/Connection-Management/Node-Domain-Management.md
       - name: 备份管理
         items:
           - name: 设置自动备份

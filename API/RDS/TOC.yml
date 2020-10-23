@@ -11,10 +11,16 @@
         items:
           - name: createAccount
             herf: Account-Management/createAccount.md
+          - name: createSuperAccount
+            herf: Account-Management/createSuperAccount.md
           - name: deleteAccount
             herf: Account-Management/deleteAccount.md
+          - name: describeAccountPrivilege
+            herf: Account-Management/describeAccountPrivilege.md
           - name: describeAccounts
             herf: Account-Management/describeAccounts.md
+          - name: grantAccountPrivilege
+            herf: Account-Management/grantAccountPrivilege.md
           - name: grantPrivilege
             herf: Account-Management/grantPrivilege.md
           - name: resetPassword
@@ -80,6 +86,16 @@
             herf: Cloud-on-Single-Database/getUploadKey.md
           - name: setImportFileShared
             herf: Cloud-on-Single-Database/setImportFileShared.md
+            
+      - name: 命令管理
+        items:
+          - name: alterTableWithOnlineDDL
+            herf: command/alterTableWithOnlineDDL.md
+            
+      - name: 公共接口管理
+        items:
+          - name: describePrivilege
+            herf: Common/describePrivilege.md
 
       - name: 跨地域备份
         items:
@@ -132,10 +148,14 @@
             herf: Instance-Management/describeInstances.md
           - name: describeLatestRestoreTime
             herf: Instance-Management/describeLatestRestoreTime.md
+          - name: describeSSL
+            herf: Instance-Management/describeSSL.md
           - name: disableInternetAccess
             href: Instance-Management/disableInternetAccess.md
           - name: enableInternetAccess
             href: Instance-Management/enableInternetAccess.md
+          - name: enableSSL
+            herf: Instance-Management/enableSSL.md
           - name: exchangeInstanceDns
             href: Instance-Management/exchangeInstanceDns.md
           - name: failoverInstance
@@ -144,6 +164,8 @@
             herf: Instance-Management/modifyBackupPolicy.md
           - name: modifyConnectionMode
             herf: Instance-Management/modifyConnectionMode.md
+          - name: modifyInstanceAz
+            herf: Instance-Management/modifyInstanceAz.md
           - name: modifyInstanceName
             herf: Instance-Management/modifyInstanceName.md
           - name: modifyInstanceSpec
@@ -154,6 +176,17 @@
             herf: Instance-Management/rebootInstance.md
           - name: restoreInstance
             herf: Instance-Management/restoreInstance.md
+          - name: restoreInstanceByTime
+            herf: Instance-Management/restoreInstanceByTime.md
+
+      - name: 日志管理
+        items:
+          - name: describeLogDownloadURL
+            herf: LOG/describeLogDownloadURL.md
+          - name: describeLogs
+            herf: LOG/describeLogs.md
+          - name: updateLogDownloadURLInternal
+            herf: LOG/updateLogDownloadURLInternal.md
 
       - name: 参数组管理
         items:
@@ -187,6 +220,8 @@
         items:
           - name: describeActiveQueryPerformance
             herf: Performance-Statistics/describeActiveQueryPerformance.md
+          - name: describeErrorLog
+            herf: Performance-Statistics/describeErrorLog.md
           - name: describeIndexPerformance
             herf: Performance-Statistics/describeIndexPerformance.md
           - name: describeQueryPerformance
@@ -206,6 +241,18 @@
             herf: SQL-Interception/disableIntercept.md
           - name: enableIntercept
             herf: SQL-Interception/enableIntercept.md
+            
+      - name: 表管理
+        items:
+          - name: describeTables
+            herf: Table-Management/describeTables.md
+
+      - name: 透明数据加密
+        items:
+          - name: describeTde
+            herf: TDE/describeTde.md
+          - name: enableTde
+            herf: TDE/enableTde.md
             
       - name: 白名单
         items:

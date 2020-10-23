@@ -1,0 +1,25 @@
+  name: 智能边缘安全
+  href:
+  items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 智能边缘安全相关接口
+        items: 
+          - name: 创建实例
+            href: Intelligent-Edge-Security/createInstance.md
+          - name: 查询实例信息
+            href: Intelligent-Edge-Security/describeInstance.md
+          - name: 查询实例基准信息
+            href: Intelligent-Edge-Security/describeInstanceStandards.md
+          - name: 查询攻击峰值
+            href: Intelligent-Edge-Security/describeNetAttackPeak.md
+          - name: 修改实例信息
+            href: Intelligent-Edge-Security/modifyInstance.md
+          - name: 开通智能边缘安全服务
+            href: Intelligent-Edge-Security/openService.md
+          - name: 查询资源和绑定资源
+            href: Intelligent-Edge-Security/selectDetailList.md

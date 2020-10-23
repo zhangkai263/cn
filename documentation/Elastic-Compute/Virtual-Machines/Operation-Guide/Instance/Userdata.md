@@ -1,7 +1,6 @@
 # 自定义数据
 
 实例自定义数据是指，在实例创建时，用户可以将可执行脚本以指定的数据格式传入实例，实现对实例启动行为的自定义。您可通过该功能，在实例启动后自动完成诸如下载/升级/安装软件、开启服务、修改系统配置、初始化服务环境等操作。<br>
-自定义数据功能目前处于公测阶段，如需使用，请提交工单申请使用资格。
 
 * [格式要求](Userdata#user-content-1)
 * [执行说明](Userdata#user-content-2)
@@ -13,12 +12,15 @@
 ## 格式要求
 实例自定义数据需要完成Base64编码后传入，且编码前的数据不能超过16 KB（编码后不大于21848Byte），如果通过控制台创建实例，可以不对数据进行Base64编码，勾选对应提示框后由系统完成编码，如果通过API创建，您必须自行完成编码。<br>
 实例自定义数据当前支持多种脚本类型，Linux系统支持bash和python，编码前须分别以 `#!/bin/bash`和 `#!/usr/bin/env python` 作为首行内容；Windows系统支持Bat和PowerShell，编码前须分别以`<cmd>`、`</cmd>`和`<powershell>`、`</powershell>`作为内容首、尾行。以下为不同类型脚本的声明示例：
+
 ```
 #!/bin/bash 
 echo 'launch-1a' >> /root/text1.txt
 ```
+
 ```
 #!/usr/bin/env python
+# -*- coding: utf-8-*-
 import random
 seq = list(range(1,10))
 tempstr = random.sample(seq,3)
@@ -26,11 +28,14 @@ f1 = open('/root/python2-text1.txt', 'a+')
 f1.writelines([str(tempstr)])
 f1.close()
 ```
+
+
 ```
 <cmd>
 echo %random%>cmd-text1.txt
 </cmd>
 ```
+
 ```
 <powershell>
 "hello" | Out-File text1.txt -Encoding utf8
@@ -39,6 +44,7 @@ echo %random%>cmd-text1.txt
 
       请注意：
       * 为避免格式不兼容，在使用bash或python格式脚本时，请在Linux环境下完成编码并进行调试后再行输入。
+      * python格式下，如脚本中有中文，请务必在首行后添加'# -*- coding: utf-8 -*-'，如无中文则此行可省略。
 
 <div id="user-content-2"></div>
 
@@ -57,7 +63,7 @@ echo %random%>cmd-text1.txt
 
 * 官方镜像：2018年12月14日以后使用官方镜像创建实例，均可正常使用该功能；<br>
 * 私有/共享镜像：如果制作私有镜像的实例是使用官方镜像创建且创建时间不早于2018年12月14日，则使用私有/共享镜像创建实例，可正常使用该功能；<br>
-* 云市场镜像：云市场镜像更新频率取决于服务商，不同镜像支持自定义数据功能的情况各异，请提交工单或联系京东云技术支持咨询。
+* 云市场镜像：云市场镜像更新频率取决于服务商，不同镜像支持自定义数据功能的情况各异，请提交工单或联系京东智联云技术支持咨询。
 
 您可以通过下述方法查看实例内JCS-Agent的版本，确认基于当前实例制作的私有镜像是否支持此功能，若当前实例内安装的agent为早期其他组件或JCS-Agent版本过低，请参照 [官方镜像系统组件](http://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) 进行安装。<br>
 
@@ -96,7 +102,7 @@ wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
 <div id="user-content-4"></div>
 
 ## 操作步骤
-1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问京东云控制台点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
+1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东智联云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
 2. 选择创建实例所属地域，点击【创建】按钮进入云主机实例购买页面。
 3. 选择镜像并完成其他基本配置后，在“高级选项”区域开启“自定义数据”功能。
 ![](../../../../../image/vm/Operation-Guide-Instance-userdata5.png)

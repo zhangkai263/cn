@@ -1,0 +1,43 @@
+name: 视频质量检测
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 回调配置
+        items:
+          - name: 设置回调配置
+            href: Callback/setCallback.md
+          - name: 查询回调配置
+            href: Callback/queryCallback.md
+      - name: 视频质检模板管理
+        items:
+          - name: 查询质检模板列表
+            href: Vqd-Template/listVqdTemplates.md
+          - name: 创建质检模板
+            href: Vqd-Template/createVqdTemplate.md
+          - name: 查询质检模板
+            href: Vqd-Template/getVqdTemplate.md
+          - name: 修改质检模板
+            href: Vqd-Template/updateVqdTemplate.md
+          - name: 删除质检模板
+            href: Vqd-Template/deleteVqdTemplate.md
+      - name: 视频质检任务
+        items:
+          - name: 提交质检任务
+            href: Vqd-Task/submitVqdTask.md
+          - name: 批量提交视频质检任务
+            href: Vqd-Task/batchSubmitVqdTasks.md
+          - name: 查询视频质检任务列表
+            href: Vqd-Task/listVqdTasks.md
+          - name: 查询视频质检任务
+            href: Vqd-Task/getVqdTask.md
+          - name: 查询视频质检任务结果
+            href: Vqd-Task/queryVqdTaskResult.md
+          - name: 删除视频质检任务
+            href: Vqd-Task/deleteVqdTask.md
+          - name: 批量删除视频质检任务
+            href: Vqd-Task/batchDeleteVqdTasks.md

@@ -33,14 +33,17 @@ kubectl apply -f common/default-server-secret.yaml
 ```
 kubectl apply -f common/nginx-config.yaml
 ```
+
 **说明:** 目前提供的config map中的data为空，您可以按需添加自定义配置。
 
 4. 为第1步中创建的service account配置RBAC：
+
 ```
 kubectl apply -f rbac/rbac.yaml
 ```
 
 5. 为nginx-ingress controller创建NodePort类型的service:
+
 ```
 # 修改Service Yaml文件
 
@@ -125,7 +128,7 @@ nginx-ingress   1         1         1            1           64m
 
 7. 查看部署结果:
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/ingress_deploy.jpg)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/ingress_deploy.jpg)
 
 ## 1.3 自建ALB
 
@@ -138,35 +141,35 @@ nginx-ingress   1         1         1            1           64m
 - 将集群工作节点组关联的AG手动添加到ALB服务组中，将外部请求转发到集群中；
 - 集群工作节点组增加/删除后，请手动更新ALB服务组；
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_alb.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_alb.png)
 
 ### 1.3.2 添加HTTP协议监听器
 
 1. 前端监听配置
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_front_listen.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_front_listen.png)
 
 2. 后端转发配置
 
 - 首先确认nginx-ingress service的NodePort:
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/node_port.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/node_port.png)
 
 3. 创建后端转发:
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_backend.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_backend.png)
 
 4. 添加后端健康检查
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_health_check.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_health_check.png)
 
 5. 添加服务组
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_backend_server_group.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_backend_server_group.png)
 
 6. 检查后端服务
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/check_backend_server.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/check_backend_server.png)
 
 **备注**：更多详情参考[应用负载均衡帮助文档](https://docs.jdcloud.com/cn/application-load-balancer/features)。
 
@@ -278,13 +281,14 @@ round-trip min/avg/max/stddev = 39.727/40.446/42.359/0.969 ms
 bash-3.2#
 ```
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/access_nginx_demo.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/access_nginx_demo.png)
 
 # 三、验证源IP透传
 
 ## 3.1 部署echoserver应用
 
 1. Yaml文件说明如下：
+
 ```
 cat echo-server.yaml
 
@@ -425,7 +429,7 @@ x-forwarded-port=80
 x-forwarded-proto=http
 x-real-ip=172.16.32.4
 BODY:
--no body in request-[root@succ-test ~]#
+-no body in request-
 ```
 
 2. echoserver返回`x-forwarded-for=14.ab.cd.240, 172.16.32.4`, 第一个IP即为待验证的客户端公网IP.
@@ -444,23 +448,23 @@ BODY:
 
 ## 4.2 创建负载均衡证书
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_ca.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_ca.png)
 
 ## 4.3 创建HTTPS listener
 
 创建监听器, 协议为https, 并且选择合适的证书
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/create_https_listen.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/create_https_listen.png)
 
 选择已有的http后端
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/add_http_backend.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/add_http_backend.png)
 
 ## 4.4 验证https协议ALB
 
 ### 验证浏览器访问
 
-![](../../../../../images/Elastic-Compute/JCS-for-Kubernetes/https_access_nginx_demo.png)
+![](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/https_access_nginx_demo.png)
 
 ### 验证IP透传
 
@@ -488,7 +492,7 @@ x-forwarded-port=80
 x-forwarded-proto=http
 x-real-ip=172.16.32.3
 BODY:
--no body in request-[root@succ-test ~]#
+-no body in request-
 ```
 
 # 五、关联LoadBalancer Service 的Ingress开启IP透传功能
@@ -531,6 +535,7 @@ spec:
 ## 5.3 修改ingress的ConfigMap
 
 编辑nginx-ingress/nginx-config ConfigMap 增加如下信息:
+
 ```
 data:
   proxy-protocol: "True"
@@ -566,7 +571,7 @@ x-forwarded-port=80
 x-forwarded-proto=http
 x-real-ip=14.119.106.240
 BODY:
--no body in request-[root@succ-test ~]#
+-no body in request-
 ```
 
 2. echoserver返回的信息`x-forwarded-for=14.ab.cd.240` 与客户端IP相同, 说明客户端源IP已透传到后段；

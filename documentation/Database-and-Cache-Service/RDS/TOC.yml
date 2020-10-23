@@ -86,7 +86,9 @@
           - name: 域名切换
             href: Operation-Guide/Instance/Exchanged-DNS.md          
           - name: 迁移可用区
-            href: Operation-Guide/Instance/Migrate-AZ.md                
+            href: Operation-Guide/Instance/Migrate-AZ.md 
+          - name: 配置目录服务
+            href: Operation-Guide/Instance/Modify-AD.md           
           - name: 重启实例
             items:
             - name: 重启 MySQL
@@ -104,7 +106,29 @@
           herf: Operation-Guide/Readonly-Instance-Management/Create-Readonly-Instance.md
         - name: 重启只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Restart-Readonly-Instance.md
-  
+
+      - name: 只读代理管理
+        items:
+        - name: 创建只读代理
+          herf: Operation-Guide/Readonly-Group/Create-ReadonlyGroup.md
+        - name: 删除只读代理
+          herf: Operation-Guide/Readonly-Group/Delete-ReadonlyGroup.md
+        - name: 只读代理外网访问
+          herf: Operation-Guide/Readonly-Group/Internet-Access-RO.md
+        - name: 修改只读代理
+          herf: Operation-Guide/Readonly-Group/Modify-ReadonlyGroup.md          
+
+      - name: 读写分离代理管理
+        items:
+        - name: 创建读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Create-ReadWriteProxy.md
+        - name: 删除读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Delete-ReadWriteProxy.md
+        - name: 重置读写分离代理
+          herf: Operation-Guide/ReadWriteProxy/Reset-ReadWriteProxy.md
+        - name: 读写分离代理外网访问
+          herf: Operation-Guide/ReadWriteProxy/Internet-Access-RW.md
+
       - name: 账户管理
         items:
           - name: 创建账号
@@ -119,6 +143,8 @@
               herf: Operation-Guide/Account/Create-Account/SQLServer-Create-Account.md
             - name: PostgreSQL 创建账号
               herf: Operation-Guide/Account/Create-Account/PostgreSQL-Create-Account.md
+          - name: 运维账号
+            herf: Operation-Guide/Account/Ops-Account.md
           - name: 修改权限
             herf: Operation-Guide/Account/Modify-Privilege.md
           - name: 重置密码
@@ -185,10 +211,26 @@
             items:
             - name: SQL Server 根据备份创建
               herf: Operation-Guide/Backup/Create-From-Backup/SQLServer-Create-From-Backup.md
+            - name: MySQL 根据备份创建
+              herf: Operation-Guide/Backup/Create-From-Backup/MySQL-Create-From-Backup.md
+            - name: Percona 根据备份创建
+              herf: Operation-Guide/Backup/Create-From-Backup/Percona-Create-From-Backup.md
+            - name: MariaDB 根据备份创建
+              herf: Operation-Guide/Backup/Create-From-Backup/MariaDB-Create-From-Backup.md
           - name: 根据时间点创建
             items:
             - name: SQL Server 根据时间点创建
               herf: Operation-Guide/Backup/Create-To-Point-In-Time/SQLServer-Create-To-Point-In-Time.md                  
+            - name: MySQL 根据时间点创建
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MySQL-Create-To-Point-In-Time.md                  
+            - name: Percona 根据时间点创建
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/Percona-Create-To-Point-In-Time.md                  
+            - name: MariaDB 根据时间点创建
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MariaDB-Create-To-Point-In-Time.md                  
+          - name: 根据时间点恢复
+            items:
+            - name: MySQL 根据时间点恢复
+              herf: Operation-Guide/Backup/Recover-To-Point-In-Time/MySQL-Recover-To-Point-In-Time.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
             
@@ -205,31 +247,33 @@
           href: Operation-Guide/Security/Set-Whitelist.md
         - name: 透明数据加密 TDE
           href: Operation-Guide/Security/tde.md
+        - name: MySQL 配置 SSL 证书 
+          href: Operation-Guide/Security/Configure-SSL.md
+        - name: SQL Server 配置 SSL 证书 
+          href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           
-      - name: 单库上云
+      - name: SQL Server 单库上云
         items:
         - name: 单库上云简介
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
         - name: 从上传文件导入  
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
-          - name: 步骤二 上传备份
+          - name: 二 上传备份
             href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
-          - name: 步骤三 备份导入
+          - name: 三 备份导入
             href: Operation-Guide/Data-To-Cloud/Import-Backup.md
           - name: 删除上传文件
             href: Operation-Guide/Data-To-Cloud/Delete-Import.md
         - name: 从OSS导入 
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/V2/Backup-Local-Database-v2.md
-          - name: 步骤二 上传备份
+          - name: 二 上传及权限设置
             href: Operation-Guide/Data-To-Cloud/V2/Upload-Backup-v2.md
-          - name: 步骤三 备份导入
+          - name: 三 导入备份
             href: Operation-Guide/Data-To-Cloud/V2/Import-Backup-v2.md
-          - name: 备份文件权限设置
-            href: Operation-Guide/Data-To-Cloud/V2/Grant-File-Privilege-v2.md        
       - name: 参数组 
         items:
          - name: 创建参数组
@@ -267,8 +311,10 @@
             href: Operation-Guide/Audit/SQL-Server-Audit/Dowload-Audit.md
           - name: 查看审计结果
             href: Operation-Guide/Audit/SQL-Server-Audit/View-Audit-Result.md    
+        - name: PostgreSQL 审计服务
+          href: Operation-Guide/Audit/PostgreSQL-Audit-Service.md
  
-      - name: 性能统计分析
+      - name: SQL Server 性能统计分析
         items:
         - name: 性能统计分析简介
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md
@@ -307,16 +353,42 @@
         - name: 删除备份同步服务
           href: Operation-Guide/Cross-Region-Synchronization-Service/Delete-Cross-Region-Synchronization-Service.md
            
-      - name: 日志管理
+      - name: 日志服务
         items:
+        - name: 日志管理
+          items:
+          - name: MySQL 日志管理 
+            href: Operation-Guide/Log/Log-Management/MySQL-Log-Management.md   
+          - name: Percona 日志管理 
+            href: Operation-Guide/Log/Log-Management/Percona-Log-Management.md   
+          - name: MariaDB 日志管理 
+            href: Operation-Guide/Log/Log-Management/MariaDB-Log-Management.md   
+          - name: PostgreSQL 日志管理 
+            href: Operation-Guide/Log/Log-Management/PostgreSQL-Log-Management.md   
+        - name: 日志下载
+          items:
+          - name: MySQL 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/MySQL-Log-Download.md   
+          - name: Percona 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/Percona-Log-Download.md   
+          - name: MariaDB 错误日志、慢日志下载 
+            href: Operation-Guide/Log/Log-Download/MariaDB-Log-Download.md   
+          - name: PostgreSQL 日志下载 
+            href: Operation-Guide/Log/Log-Download/PostgreSQL-Log-Download.md   
         - name: 慢日志 
-          href: Operation-Guide/Log/Log-Management.md   
-        - name: PostgreSQL 日志管理 
-          href: Operation-Guide/Log/PostgreSQL-Log-Management.md   
+          href: Operation-Guide/Log/SlowLogs.md   
+        - name: 错误日志 
+          href: Operation-Guide/Log/ErrorLog.md  
       - name: 设置访问模式
-        href: Operation-Guide/Set-Access-Mode.md     
-      - name: PostgreSQL 插件 
-        href: Operation-Guide/PostgreSQL-Extension.md   
+        href: Operation-Guide/Set-Access-Mode.md   
+        
+      - name:  PostgreSQL 插件 
+        items:
+        - name: PostgreSQL支持扩展
+          href: Operation-Guide/PostgreSQL-Extension/PostgreSQL-Extension.md         
+        - name: 使用s3_fdw插件将数据流转到OSS
+          href: Operation-Guide/PostgreSQL-Extension/S3_fdw.md
+        
             
   - name: 最佳实践
     items:
@@ -363,15 +435,23 @@
       - name: 从客户端连接 SQL Server
         href: Best-Practices/Connect-Database-Instance/Client-Connect-SQLServer.md
       - name: 从云主机连接 SQL Server
-        href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md  
+        href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md
+      - name: 连接PostgreSQL实例
+        href: Best-Practices/Connect-Database-Instance/Connect-Instance-PostgreSQL.md
     - name: 升级数据库版本
       items:
       - name: 升级数据库 MySQL 版本 
         href: Best-Practices/Upgrade-Database-Version/Upgrade-MySQL.md 
   - name: 教程 
     items:
-    - name: MySQL 性能测试 
-      href: Tutorial/MySQL-Performance-Test.md 
+    - name: 性能测试 
+      items:
+      - name: MySQL 性能测试 
+        items:
+        - name: 性能测试步骤 
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Step.md
+        - name: 性能测试结果 
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Result.md
   - name: 常见问题
     items:
     - name: FAQ

@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看参数的修改历史<br>- 仅支持MySQL
+查看参数的修改历史<br>- 仅支持MySQL，Percona，MariaDB，PostgreSQL
 
 ## 请求方式
 GET
@@ -27,14 +27,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeparametermodifyrecords#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**records**|ParameterModifyRecords[]| |
+|**records**|[ParameterModifyRecords[]](describeparametermodifyrecords#parametermodifyrecords)| |
 |**totalCount**|Integer| |
-### ParameterModifyRecords
+### <div id="parametermodifyrecords">ParameterModifyRecords</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|参数名称|
@@ -46,3 +46,36 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeParameterModifyRecords() {
+    DescribeParameterModifyRecordsRequest request = new DescribeParameterModifyRecordsRequest();
+    request.setParameterGroupId("mysql-pg-e4zkfymxwt");
+    request.setRegionId("cn-north-1");
+    request.setPageNumber(1);
+    request.setPageSize(10);
+    DescribeParameterModifyRecordsResponse response = rdsClient.describeParameterModifyRecords(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaod3dd4dgdc3tp0swuhpti0kncek92", 
+    "result": {
+        "records": [
+            {
+                "name": "binlog_cache_size", 
+                "postModify": "5000", 
+                "preModify": "262144", 
+                "updateTime": "2020-01-08 14:19:43"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

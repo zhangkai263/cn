@@ -1,0 +1,63 @@
+name: 数据库审计
+href:
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: Introduction/Product-Overview.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 产品功能
+      href: Introduction/Features.md
+- name: 产品定价
+  items:
+    - name: 计费概述
+      href: Pricing/Billing-Overview.md
+    - name: 计费规则
+      href: Pricing/Price-Overview.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md
+    - name: 续费流程
+      href: Pricing/Renew-Process.md       
+- name: 操作指南
+  items:
+    - name: 实例管理
+      items:
+        - name: 创建实例
+          href: Operation-Guide/Instance-Management/Creat-Instance.md        
+        - name: 实例基本信息
+          href: Operation-Guide/Instance-Management/Instance-Details.md
+        - name: 监控
+          href: Operation-Guide/Instance-Management/Monitor.md
+        - name: 数据库管理
+          items:
+            - name: 数据库基本信息
+              href: Operation-Guide/Instance-Management/Database-Management/Database-Details.md
+            - name: 添加数据库
+              href: Operation-Guide/Instance-Management/Database-Management/Add-Database.md
+            - name: 审计规则
+              href: Operation-Guide/Instance-Management/Database-Management/AuditRules-List.md            
+            - name: 遮蔽规则
+              href: Operation-Guide/Instance-Management/Database-Management/HideRules-List.md
+        - name: Agent管理
+          items:
+            - name: 安装Agent
+              href: Operation-Guide/Instance-Management/Agent-Management/InstallAgent.md
+            - name: 卸载Agent
+              href: Operation-Guide/Instance-Management/Agent-Management/UnInstallAgent.md
+            - name: 审计配置
+              href: Operation-Guide/Instance-Management/Agent-Management/AgentSetting.md
+            - name: 阈值设置
+              href: Operation-Guide/Instance-Management/Agent-Management/QuotaSetting.md
+        - name: 日志管理
+          href: Operation-Guide/Instance-Management/Log-List.md
+        - name: 规则管理
+          href: Operation-Guide/Instance-Management/Rules-List.md       
+        - name: 安全设置
+          href: Operation-Guide/Instance-Management/White-List.md             
+    - name: 报表管理
+      items:
+        - name: 创建报表任务
+          href: Operation-Guide/Report-management/Create-Task.md
+        - name: 查看报表任务详情
+          href: Operation-Guide/Report-management/View-Task.md

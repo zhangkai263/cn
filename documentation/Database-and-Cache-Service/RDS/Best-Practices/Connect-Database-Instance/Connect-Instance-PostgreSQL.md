@@ -1,27 +1,69 @@
 # 连接 PostgreSQL 实例
-如果您购买了云数据库 PostgreSQL 实例，可以通过京东云云主机内网连接实例，也支持本地客户端通过外网访问域名远程连接实例，不过通过外网访问域名远程连接实例的时候，请提前做好访问权限控制，保证数据库的安全性。
+云数据库PostgreSQL实例支持通过本地客户端连接，默认不支持外网访问，需要手动开启，具体操作请详见 “开启外网访问”。
+下面介绍通过命令行连接和通过pgAdmin客户端登陆两种连接方式。
 
-## 通过京东云主机连接数据库
-在京东云主机安装 PostgreSQL 客户端后，可进入命令行方式连接数据库。
+## 准备工作
+1，通过云主机连接云数据库PostgreSQL实例；
+2，安装pgAdmin客户端；
 
-1. 命令格式：mysql -h 域名 -p 端口 -U 用户名-d 库名 。
-2. 域名：要访问的云数据库 PostgreSQL 的域名，域名展示在实例的详情页面。
-3. 端口：链接端口号默认为 5432。
-4. 用户名：在账号管理中创建的用户名。
-5. 库名：需要访问的数据库的库名。
+## 连接方式
+## 1、通过命令行连接
+1，登陆云ECS或 可访问京东云PostgreSQL数据库的设备；
+2，在京东云RDS控制台创建PostgreSQL实例用户；
+3，执行如下命令连接云数据库PostgreSQL：
 
-## 通过本地数据库管理软件连接实例
-如果需要本地的数据库管理软件连接云数据库 PostgreSQL，默认云数据库 PostgreSQL 不支持外网访问，需要手动开启，具体操作请参见 [开启外网访问](../../Operation-Guide/Instance/Internet-Access.md)。
-我们以 SQLPro for Postgres 软件为例，介绍下如何连接云数据库 PostgreSQL 
+ *psql  -U\<user\> -h\<host\> -p\<port\> -d\<database\> -W*
+    
+### 参数说明
 
-### 操作步骤
-1. 打开本地的数据库管理软件，具体参数说明如下：
-    * Server Host：填写云数据库 PostgreSQL 的外网访问域名。
-    * Port：默认就是 5432，不需要做任何改动。
-    * Login：填写云数据库 PostgreSQL 的账号名。
-    * Password：填写云数据库 PostgreSQL 的账号名对应的密码。
-    * Database: 选填项，指需要访问的数据库的库名
+ \<user\> 用户名，京东云PostgreSQL数据库账号
+ 
+ \<host\> 要访问的云数据库的域名，域名展示在云数据库的详情页面
+ 
+ \<port\> 端口号，默认端口为5432，端口号展示在云数据库的详情页面
+ 
+ \<database\> 需要连接的数据库名，默认的管理数据库是postgres
+ 
+ -W是强制用户输入连接密码选项，上述命令执行后，根据提示输入密码
+    
+### 示例
+用户名为test_user 连接postgres数据库实例：
 
-    ![截图](../../../../../image/RDS/Connect-Instance-PostgreSQL.png)
+*psql  -U test_user -h 192.168.0.44 -p 5432 -d postgres -W*
 
-2.点击 ***Save and Connect*** 按钮，就可以连接到云数据库实例了。 
+## 2、通过客户端pgAdmin登录云数据库PostgreSQL
+ 1.将要访问RDS实例的IP地址加入RDS白名单中。
+ 
+ 2.启动pgAdmin 4客户端。
+ 
+ 3.右击Servers，选择创建 > 服务器。
+ 
+![Connect-Instance-PostgreSQL1](../../../../../image/RDS/Connect-Instance-PostgreSQL1.png)
+
+4.在创建-服务器页面的通常标签页面中，输入服务器名称。
+
+![Connect-Instance-PostgreSQL2](../../../../../image/RDS/Connect-Instance-PostgreSQL2.png)
+
+5.选择Connection标签页，输入要连接的实例信息。
+
+![Connect-Instance-PostgreSQL3](../../../../../image/RDS/Connect-Instance-PostgreSQL3.png)
+### 参数说明
+
+ 主机名称/地址：若使用内网连接，需输入RDS实例的内网地址。若使用外网连接，需输入RDS实例的外网地址。查看RDS实例的内外网地址及端口信息的步骤如下：
+ 
+    1，登录RDS管理控制台。
+    2，在页面左上角，选择实例所在地域。
+    3，找到目标实例，单击实例ID。
+    4，在基本信息栏中，即可查看内外网地址及内外网端口信息。
+    
+ 端口：若使用内网连接，需输入RDS实例的内网端口。若使用外网连接，需输入RDS实例的外网端口。
+ 
+ 用户名：RDS实例的高权限账号名称。
+ 
+ 密码：RDS实例的高权限账号所对应的密码。
+      
+6.单击保存。
+
+7.若连接信息无误，选择Servers > 服务器名称 > 数据库 > postgres，会出现如下界面，则表示连接成功。
+
+![Connect-Instance-PostgreSQL4](../../../../../image/RDS/Connect-Instance-PostgreSQL4.png)

@@ -23,21 +23,21 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/secrets/{name}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describesecret#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**secret**|Secret| |
-### Secret
+|**secret**|[Secret](describesecret#secret)| |
+### <div id="secret">Secret</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|机密数据名称|
 |**secretType**|String|私密数据的类型，目前仅支持如下类型：docker-registry：用来和docker registry认证的类型|
 |**createdAt**|String|创建时间|
-|**data**|DockerRegistryData|机密的数据|
-### DockerRegistryData
+|**data**|[DockerRegistryData](describesecret#dockerregistrydata)|机密的数据|
+### <div id="dockerregistrydata">DockerRegistryData</div>
 |名称|类型|描述|
 |---|---|---|
 |**server**|String|registry服务器地址|

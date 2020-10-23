@@ -32,17 +32,9 @@ context：使用此参数向您的处理程序传递运行时信息。
 
 ## 日志
 
-您可以使用 print 或 logging 模块来打印日志输出，并在函数日志中查看：
+您可以使用 print 语句来打印日志输出，并在函数日志中查看。
 
-```Python
-import logging
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-def main_handler(event, context):
-    logger.info('got event{}'.format(event))
-    print("got event{}".format(event))
-    return 'Hello World!'
-```
+
 
 
 ## 使用内置模块
@@ -58,3 +50,14 @@ def main_handler(event, context):
 import boto3
 ```
  
+## 支持WSGI接口协议
+Python Web Server Gateway Interface (简称：WSGI），函数服务Python接口已兼容WSGI， 您在Flask、Django 等基于 wsgi 协议的 web frameworks 构建的工程可以运行在函数服务的 python runtime 中，您基于WSGI协议的代码或在原有框架下的已有服务代码，都可快速迁移至京东云函数服务，详情可参考[ Python WSGI Web 框架服务迁移至函数服务](../../use-cases/wsgi.md)。
+
+函数服务内置了API网关触发器event到WSGI接口的转换库jdcloud_wsgi_wrapper，其中，wsgi_run函数用于将API网关的event事件转换为WSGI函数格式并运行应用程序，代码如下：
+
+```Python
+from jdcloud_wsgi_wrapper import wsgi_run
+def handler(event, context):
+    result = wsgi_run(event, context, application)
+    return result
+```

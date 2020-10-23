@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询Redis实例的内部集群信息
+查询Redis实例的集群内部信息
 
 ## 请求方式
 GET
@@ -22,23 +22,23 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|结果|
+|**result**|[Result](describeclusterinfo#result)|结果|
 |**requestId**|String|本次请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**info**|ClusterInfo|内部集群信息|
-### ClusterInfo
+|**info**|[ClusterInfo](describeclusterinfo#clusterinfo)|集群内部信息|
+### <div id="clusterinfo">ClusterInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**proxies**|Proxy|proxy列表|
-|**shards**|Shard|shard列表|
-### Shard
+|**proxies**|[Proxy[]](describeclusterinfo#proxy)|proxy列表|
+|**shards**|[Shard[]](describeclusterinfo#shard)|shard列表|
+### <div id="shard">Shard</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |
-### Proxy
+### <div id="proxy">Proxy</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |

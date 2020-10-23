@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteAudit(){
+    DeleteAuditRequest request=new DeleteAuditRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    DeleteAuditResponse response= rdsClient.deleteAudit(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2oa1smicmopa52n2oe7s1d6v5agdg"
+}
+```

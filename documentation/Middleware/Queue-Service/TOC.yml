@@ -44,6 +44,8 @@
             href: Operation-Guide/Queue-Management/Create-Queue.md
           - name: 管理队列
             href: Operation-Guide/Queue-Management/Manage-Queue.md
+          - name: 触发函数
+            href: Operation-Guide/Queue-Management/Trigger-Function.md
       - name: 消息管理
         items:
           - name: 发送消息

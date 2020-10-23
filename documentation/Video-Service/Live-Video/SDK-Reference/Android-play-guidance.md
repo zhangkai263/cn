@@ -21,7 +21,7 @@ x86
 本章节提供一个快速集成京东云播放SDK基础功能的示例。
 
 * **获取SDK**  
-Android端推流SDK&播放器SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_android.zip">点击下载</a><br/>  
+Android端推流SDK&播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/jdcloud_live_android_demo.zip">点击下载</a><br/>  
 
 * **工程目录结构**  
 demo: 示例工程，演示本SDK主要接口功能的使用    
@@ -53,3 +53,4 @@ libs/jdc_live.jar: SDK jar包
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
+

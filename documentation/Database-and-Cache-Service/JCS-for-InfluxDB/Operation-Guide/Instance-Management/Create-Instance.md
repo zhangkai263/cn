@@ -1,6 +1,6 @@
 # 创建实例
 
-您可以通过 InfluxDB 控制台快速创建 MongoDB 实例，本文介绍通过控制台如何创建 MongoDB 实例。
+您可以通过 InfluxDB 控制台快速创建 InfluxDB 实例，本文介绍通过控制台如何创建 InfluxDB 实例。
 
 ## 前提条件
 

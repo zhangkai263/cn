@@ -43,6 +43,14 @@
             href: Operation-Guide/Instance-Management/Renewal-Instance.md 
           - name: 删除实例
             href: Operation-Guide/Instance-Management/Delete-Instance.md
+      - name: 备份管理
+        items:
+          - name: 设置自动备份
+            href: Operation-Guide/Backup/Modify-Backup-Policy.md
+          - name: 创建手动备份
+            href: Operation-Guide/Backup/Create-Backup.md
+          - name: 根据备份创建实例
+            href: Operation-Guide/Backup/Create-Instance-by-Backup.md
       - name: 账号管理
         items:
           - name: 创建账号

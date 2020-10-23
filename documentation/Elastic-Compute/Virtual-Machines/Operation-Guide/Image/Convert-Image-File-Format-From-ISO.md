@@ -27,10 +27,10 @@ virt-manager
 ![](../../../../../image/vm/Image-Import-convert-iso3.png)<br>
 ![](../../../../../image/vm/Image-Import-convert-iso4.png)<br>
 ![](../../../../../image/vm/Image-Import-convert-iso5.png)<br>
-选择语音后开始设置分区表，这是比较重要的一步，按照京东云的要求，使用一个根目录区域即可。如下所示，点击图中圈出的有黄色标识的选项，并在随后的界面中选择“I will configure partitioning”。
+选择语音后开始设置分区表，这是比较重要的一步，按照京东智联云的要求，使用一个根目录区域即可。如下所示，点击图中圈出的有黄色标识的选项，并在随后的界面中选择“I will configure partitioning”。
 ![](../../../../../image/vm/Image-Import-convert-iso6.png)<br>
 ![](../../../../../image/vm/Image-Import-convert-iso7.png)<br>
-需要特别注意的是，由于默认选中了使用“LVM”模式，必须改为使用传统的分区方式。请点击添加按钮，添加新的挂载点，选择标准分区，选择符合京东云要求的文件系统类型（CentOS 7 的默认文件系统是 xfs；Ubuntu 的默认文件系统是 ext4；Windows 的默认文件系统是 NTFS）。另外根据京东云的镜像要求，只需要一个系统盘的分区，无论 Windows 还是 Linux在设置分区的时候都只设置一个根分区即可。
+需要特别注意的是，由于默认选中了使用“LVM”模式，必须改为使用传统的分区方式。请点击添加按钮，添加新的挂载点，选择标准分区，选择符合京东智联云要求的文件系统类型（CentOS 7 的默认文件系统是 xfs；Ubuntu 的默认文件系统是 ext4；Windows 的默认文件系统是 NTFS）。另外根据京东智联云的镜像要求，只需要一个系统盘的分区，无论 Windows 还是 Linux在设置分区的时候都只设置一个根分区即可。
 
 如果制作Ubuntu 系统镜像，虽然安装界面不同，但都有一步设置磁盘分区的步骤，类似的我们只需要设置一个主分区即可。 Windows 系统稍有不同，安装 Windows 后，会产生一个隐藏分区（如下图所示）。所以 Windows 系统中应该有两个分区，除隐藏分区外另一个就是默认的系统分区，我们称作 C 盘。
 ![](../../../../../image/vm/Image-Import-convert-iso8.png)<br>
@@ -46,10 +46,11 @@ virt-manager
 
 具体安装方式请参考 [安装virtio驱动](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 。
 
-### 4、配置京东云要求的软件环境
+### 4、配置京东智联云要求的软件环境
 请参照 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) ，检查并配置系统环境，并安装 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)。
 
 ### 5、获取镜像文件
 打开 virt-manager，并打开硬件配置页面，打开有灯泡显示的图标，然后选择左侧的磁盘选项，右侧“Source path”即为镜像文件路径。
 
 ![](../../../../../image/vm/Image-Import-convert-iso17.png)<br>
+

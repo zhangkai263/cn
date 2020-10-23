@@ -24,33 +24,33 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/cpsIpResources
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describecpsiplist#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describecpsiplist#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describecpsiplist#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|CpsIpResource[]| |
+|**dataList**|[CpsIpResource[]](describecpsiplist#cpsipresource)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|
-### CpsIpResource
+### <div id="cpsipresource">CpsIpResource</div>
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|云物理服务器公网 IP 地址|
-|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br>- 0: 未知类型<br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知)<br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源)<br>- 11: 弹性公网 IP, 绑定了云主机<br>- 12: 弹性公网 IP, 绑定了负载均衡<br>- 13: 弹性公网 IP, 绑定了原生容器实例<br>- 14: 弹性公网 IP, 绑定了原生容器 Pod<br>- 2: 云物理服务器公网 IP|
+|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br>- 0: 未知类型<br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知)<br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源)<br>- 11: 弹性公网 IP, 绑定了云主机<br>- 12: 弹性公网 IP, 绑定了负载均衡<br>- 13: 弹性公网 IP, 绑定了原生容器实例<br>- 14: 弹性公网 IP, 绑定了原生容器 Pod<br>- 2: 云物理服务器公网 IP<br>- 4: 托管区公网 IP|
 
 ## 返回码
 |返回码|描述|

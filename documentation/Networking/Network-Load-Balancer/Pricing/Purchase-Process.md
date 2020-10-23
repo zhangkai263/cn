@@ -3,7 +3,7 @@
 本文介绍网络负载均衡的购买入口。
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/cn/products/load-balancer)
-1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
+1. 登录京东智联云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“产品>网络>网络负载均衡”，具体见下图。
 
  ![NLB产品入口](../../../../image/Networking/NLB/NLB-Menu.png)
@@ -16,7 +16,7 @@
 
 ## 入口2：[负载均衡控制台](https://cns-console.jdcloud.com/host/loadBalance/list)
 
-1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
+1. 登录京东智联云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
 
 ![控制台](../../../../image/Networking/NLB/console-buy.png)

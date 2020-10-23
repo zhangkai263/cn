@@ -1,6 +1,6 @@
-  name: Kubernetes 集群
-  href: 
-  items:
+name: Kubernetes 集群
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -31,6 +31,8 @@
         href: Getting-Started/Version-Notes.md
       - name: 创建集群
         href: Getting-Started/Create-to-Cluster.md
+      - name: 创建Windows集群
+        href: Getting-Started/Create-Win-Cluster.md
       - name: 连接集群
         href: Getting-Started/Connect-to-Cluster.md
   - name: 操作指南
@@ -47,6 +49,8 @@
             href: Operation-Guide/Cluster/Delete-Cluster.md
           - name: 集群监控
             href: Operation-Guide/Cluster/Cluster-Monitor.md
+          - name: 集群日志
+            href: Operation-Guide/Cluster/Cluster-Logging.md
       - name: 工作节点组
         items:
           - name: 工作节点组概述
@@ -61,6 +65,12 @@
             href: Operation-Guide/NodeGroup/Delete-NodeGroup.md
           - name: 设置自动修复
             href: Operation-Guide/NodeGroup/Auto-Repair.md
+      - name: 网络
+        items:
+          - name: 网络策略
+            href: Operation-Guide/Network/Network-Policy.md
+          - name: 集群路由表
+            href: Operation-Guide/Network/Route-Table.md
       - name: 集群Dashboard
         items:
           - name: Dashboard
@@ -85,25 +95,30 @@
             href: Best-Practices/Deploy-Applications/Deploy-Deployment.md
          -  name: 部署Service
             href: Best-Practices/Deploy-Applications/Deploy-Service.md
-     - name: Volumes
+         -  name: 部署Service（新版）
+            href: Best-Practices/Deploy-Applications/Deploy-Service-New.md
+         -  name: 部署Windows应用
+            href: Best-Practices/Deploy-Applications/Deploy-Windows-Deployment.md
+     - name: 使用云硬盘作为Volume
        items:
-         -  name: 使用云硬盘作为Volume
-            items:
-             -  name: 部署StorageClass
-                href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-StorageClass.md
-             -  name: 部署持久化存储
-                href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-PV.md
-       items:
-         -  name: 使用CFS云文件服务作为Volume
-            items:
-             -  name: 定义nfs类型的Volume
-                href: Best-Practices/Volumes/Cloud-File-Service/CFS-Volume.md
-             -  name: 通过静态PV的方式使用京东云文件服务
-                href: Best-Practices/Volumes/Cloud-File-Service/CFS-PVC.md
-             -  name: 部署nfs-client-provisioner
-                href: Best-Practices/Volumes/Cloud-File-Service/nfs-client-provisioner.md
-             -  name: 使用nfs-client-provisioner动态创建PV
-                href: Best-Practices/Volumes/Cloud-File-Service/Create-PV-Dynamically.md
+        -  name: 部署StorageClass
+           href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-StorageClass.md
+        -  name: 部署CSI StorageClass
+           href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-StorageClass-New.md
+        -  name: 部署持久化存储
+           href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-PV.md
+        -  name: 部署CSI持久化存储
+           href: Best-Practices/Volumes/Cloud-Disk-Service/Deploy-PV-New.md
+     -  name: 使用CFS云文件服务作为Volume
+        items:
+         -  name: 定义nfs类型的Volume
+            href: Best-Practices/Volumes/Cloud-File-Service/CFS-Volume.md
+         -  name: 通过静态PV的方式使用京东云文件服务
+            href: Best-Practices/Volumes/Cloud-File-Service/CFS-PVC.md
+         -  name: 部署nfs-client-provisioner
+            href: Best-Practices/Volumes/Cloud-File-Service/nfs-client-provisioner.md
+         -  name: 使用nfs-client-provisioner动态创建PV
+            href: Best-Practices/Volumes/Cloud-File-Service/Create-PV-Dynamically.md
      - name: Ingress
        items:
          -  name: 部署 Nginx-ingress controller
@@ -114,6 +129,10 @@
             href: Best-Practices/Ingress/nginx-ingress-source-ip.md
          -  name: 自建CA证书和私钥
             href: Best-Practices/Ingress/deploy-CA-SSL.md
+     - name: Ingress新版文档
+       items:
+         -  name: Kubernetes Ingress
+            href: Best-Practices/Ingress-new/Deploy-K8s-Ingress-Nginx.md
      - name: 创建原生容器Pod
        items:
          - name: 部署Virtual-Kubelet

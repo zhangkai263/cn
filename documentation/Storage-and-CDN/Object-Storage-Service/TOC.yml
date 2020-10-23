@@ -25,6 +25,8 @@ items:
         href: Pricing/Billing-Rules.md
       - name: 价格总览
         href: Pricing/Price-Overview.md
+      - name: 预付费资源包
+        href: Pricing/Resource-Packages.md
       - name: 计费案例
         href: Pricing/Billing-Case.md
       - name: 查看账单
@@ -71,8 +73,10 @@ items:
              href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Website-2.md
-           - name: 跨区域复制设置
+           - name: 增量数据同步设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Cross-Region-Replication-2.md
+           - name: 历史数据同步设置
+             href: Operation-Guide/Manage-Bucket/Historical-Data-Synchronization-Setting.md
            - name: 自定义域名设置
              href: Operation-Guide/Manage-Bucket/Set-Custom-Domain-Name-2.md
            - name: 回调通知
@@ -85,8 +89,14 @@ items:
              href: Operation-Guide/Manage-Bucket/edgeStorage.md
            - name: 生命周期管理
              href: Operation-Guide/Manage-Bucket/Lifecycle.md
+           - name: 访问日志
+             href: Operation-Guide/Manage-Bucket/Bucket-Logging.md
            - name: 标签管理
              href: Operation-Guide/Manage-Bucket/Bucket-Tagging.md
+           - name: 传输加速
+             href: Operation-Guide/Manage-Bucket/Transfer-Acceleration.md
+           - name: 清单设置
+             href: Operation-Guide/Manage-Bucket/Inventory-Configuration.md
       - name: 文件管理
         items:
           - name: 新建文件夹
@@ -99,10 +109,16 @@ items:
             href: Operation-Guide/Manage-Object/Delete-Object.md
           - name: 表单上传
             href: Operation-Guide/Manage-Object/Post-Object-1.md                  
+          - name: 管理元数据
+            href: Operation-Guide/Manage-Object/User-Defined-Metadata.md
           - name: 用量监控
             href: Operation-Guide/Manage-Object/Usage-Monitoring.md
           - name: 还原归档对象
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
+          - name: 对象锁定
+            href: Operation-Guide/Manage-Object/Object-Lock.md
+          - name: SelectObject(公测)
+            href: Operation-Guide/Manage-Object/Select-Object.md
       - name: 权限控制
         items:
            - name: 权限控制概述
@@ -145,22 +161,52 @@ items:
             href: Operation-Guide/Image-Service-Guide/Delimiter-Guidance.md           
           - name: 错误响应
             href: Operation-Guide/Image-Service-Guide/Response-To-Errors.md
-      - name: 视频处理指南
-        items:                        
-          - name: 概述
-            href: Operation-Guide/Video-Service-Guide/Video-Service-Guide-Overview.md
-          - name: 快速使用视频处理
-            href: Operation-Guide/Video-Service-Guide/Getting-Started-2.md
-          - name: 视频处理签名认证
-            href: Operation-Guide/Video-Service-Guide/User-Signature-Authentication.md   
-          - name: 创建视频转码任务
-            href: Operation-Guide/Video-Service-Guide/Create-Video-Transcoding.md 
-          - name: 获取视频任务列表
-            href: Operation-Guide/Video-Service-Guide/Get-Video-Task.md 
-          - name: 查询视频任务
-            href: Operation-Guide/Video-Service-Guide/Query-Video-Task.md
-          - name: 删除视频任务
-            href: Operation-Guide/Video-Service-Guide/Delete-Video-Task.md	
+      - name: 媒体处理服务（旧）
+        items:
+          - name: 媒体处理产品简介
+            items:
+               - name: 产品概述
+                 href: Operation-Guide/Old-Media-Processing-Service/Introduction/Product-Overview1.md
+               - name: 功能概览
+                 href: Operation-Guide/Old-Media-Processing-Service/Introduction/Features1.md  
+          - name: 快速入门
+            items:
+               - name: 使用限制
+                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Restrictions1.md
+               - name: 开通服务
+                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Sign-Up-Service.md   
+               - name: 创建视频转码工作流
+                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Create-Video-Transcoding-1.md
+               - name: 创建视频截图工作流
+                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Create-Video-Snapshot.md 
+          - name: 操作指南
+            items:
+               - name: 视频转码
+                 items:
+                   - name: 转码基本规则
+                     href: Operation-Guide/Old-Media-Processing-Service/Operation-Guide/Video-Transcoding/Transcoding-Rules.md
+                   - name: 创建视频转码工作流
+                     href: Operation-Guide/Old-Media-Processing-Service/Operation-Guide/Video-Transcoding/Create-Video-Transcoding-2.md 	  
+               - name: 视频截图
+                 href: Operation-Guide/Old-Media-Processing-Service/Operation-Guide/Video-Snapshot.md
+               - name: 回调设置
+                 href: Operation-Guide/Old-Media-Processing-Service/Operation-Guide/Callback.md      
+          - name: 媒体处理服务相关接口
+            items:
+               - name: 视频处理签名认证
+                 href: Operation-Guide/Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/User-Signature-Authentication.md  
+               - name: 创建视频转码
+                 href: Operation-Guide/Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Create-Video-Transcoding-3.md 
+               - name: 获取视频任务列表
+                 href: Operation-Guide/Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Get-Video-Task.md 
+               - name: 查询视频任务
+                 href: Operation-Guide/Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Query-Video-Task.md
+               - name: 删除视频任务
+                 href: Operation-Guide/Old-Media-Processing-Service/API-Reference/Video-Transcoding-API/Delete-Video-Task.md   
+          - name: SDK参考
+            items:
+               - name: 视频截图
+                 href: Operation-Guide/Old-Media-Processing-Service/SDK-Reference/Thumbnail.md
  - name:  API文档
    items:
       - name: 强一致性
@@ -198,7 +244,9 @@ items:
                - name: Delete Bucket website
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Website-2.md
                - name: Delete Bucket lifecycle
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Lifecycle.md                 
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Lifecycle.md
+               - name: Delete Bucket InventoryConfiguration
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-InventoryConfiguration.md                 
                - name: GET Bucket acl
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Acl-2.md           
                - name: GET Bucket notification
@@ -217,12 +265,20 @@ items:
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Website-2.md
                - name: Get Bucket lifecycle
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Lifecycle.md
+               - name: Get Bucket object lock configuration
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Object-Lock-Configuration.md
                - name: Get Bucket tagging
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Tagging.md
+               - name: Get Bucket accelerate
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-accelerate.md
+               - name: Get Bucket InventoryConfiguration
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-InventoryConfiguration.md
                - name: Head Bucket
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
                - name: List Multipart Uploads
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Multipart-Uploads-2.md
+               - name: List Bucket InventoryConfigurations
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Bucket-InventoryConfigurations.md
                - name: PUT Bucket notification
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
                - name: Put Bucket
@@ -240,9 +296,15 @@ items:
                - name: Put Bucket website
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md 
                - name: Put Bucket lifecycle
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md   
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md  
+               - name: Put Bucket object lock configuration
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Object-Lock-Configuration.md
                - name: Put Bucket tagging
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Tagging.md 
+               - name: Put Bucket accelerate
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-accelerate.md
+               - name: Put Bucket InventoryConfiguration
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md
            - name: 关于Object操作
              items:
               - name: Abort Multipart Upload
@@ -255,6 +317,10 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Delete-Object-2.md
               - name: Get Object
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-2.md
+              - name: Get Object legal hold
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Legal-Hold.md
+              - name: Get Object retention
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Retention.md
               - name: Head Object
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Head-Object-2.md
               - name: Initiate Multipart Upload
@@ -267,12 +333,18 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-2.md
               - name: Put Object Copy	
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Copy-2.md
+              - name: Put Object legal hold
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Legal-Hold.md
+              - name: Put Object retention
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Retention.md
               - name: Upload Part
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-2.md
               - name: Upload Part Copy	
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-Copy-2.md
               - name: Post Object Restore
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-Restore.md
+              - name: Select Object Content(公测)
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md
       - name: 错误响应
         href: API-Reference-S3-Compatible/Error-Response-2.md                
       - name: 扩展接口
@@ -445,16 +517,34 @@ items:
         href: Best-Practices/Manage-OSS-With-s3browser.md        
       - name: 回调服务器设置签名认证
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
-      - name: OSS线上服务快速验证工具
-        href: Best-Practices/OSS-Verification-Tool.md
       - name: 移动应用直传OSS
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
         href: Best-Practices/Custom-Domain-Name-Guidance.md
+      - name: 大数据应用
+        items:
+            - name: Spark读写对象存储数据
+              href: Best-Practices/Bigdata-Application/Spark-OSS.md
+            - name: Spark使用OSS Select优化数据查询（公测）
+              href: Best-Practices/Bigdata-Application/Select-for-Spark.md
  - name: 常见问题
    items:
       - name: 一般性问题
         href: FAQ/General-Problem.md
+      - name: 计量计费
+        href: FAQ/Billing.md
+      - name: 数据安全
+        href: FAQ/Data-Security.md
+      - name: 上传/下载
+        href: FAQ/Uploads-and-Downloads.md
+      - name: Bucket管理
+        href: FAQ/Bucket-Management.md
+      - name: Object管理
+        href: FAQ/Object-Management.md
+      - name: 域名/网络
+        href: FAQ/Domain-Names-and-Network.md
+      - name: API/SDK
+        href: FAQ/API-SDK.md
  - name: 用户协议
    items:
      - name: 服务条款

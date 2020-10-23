@@ -1,15 +1,21 @@
   name: 实名认证
   href: 
   items:
-  - name: 实名认证
-    href: Real-Name-Verification.md
-  - name: 个人实名认证操作指引
-    href: Personal-Account-Verification.md
-  - name: 企业实名认证操作指引
-    href: Business-Account-Verification.md
-  - name: 企业实名认证信息更新
-    href: Business-Account-Update.md
-  - name: 学生实名认证操作指引
-    href: Student-Account-Verification.md
+  - name: 产品简介
+    href: Introduction.md
+  - name: 个人实名认证
+    items:
+      - name: 实名手机认证
+        href: Personal/Phone.md
+      - name: 个人扫脸认证
+        href: Personal/Face.md
+  - name: 企业实名认证
+    items: 
+      - name: 对公账户打款认证
+        href: Business/Remit.md
+      - name: 法人扫脸认证
+        href: Business/Legal.md
+      - name: 企业更新实名
+        href: Business/Update.md
   - name: 实名认证常见问题
     href: FAQs.md

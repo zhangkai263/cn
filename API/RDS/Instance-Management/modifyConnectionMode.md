@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyC
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyConnectionMode() {
+    ModifyConnectionModeRequest request = new ModifyConnectionModeRequest();
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setRegionId("cn-north-1");
+    request.setConnectionMode("security");
+    ModifyConnectionModeResponse response = rdsClient.modifyConnectionMode(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa5qbifb8uqcvkpi5goe9ts978evm6o"
+}
+```

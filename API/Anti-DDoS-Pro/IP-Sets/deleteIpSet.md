@@ -23,31 +23,31 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/ipSe
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](deleteipset#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](deleteipset#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](deleteipset#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|BatchResultDetail| |
-### BatchResultDetail
+|**data**|[BatchResultDetail](deleteipset#batchresultdetail)| |
+### <div id="batchresultdetail">BatchResultDetail</div>
 |名称|类型|描述|
 |---|---|---|
 |**successCount**|Integer|操作成功的资源个数|
-|**failed**|ErrorItem[]|操作失败的资源及原因|
-### ErrorItem
+|**failed**|[ErrorItem[]](deleteipset#erroritem)|操作失败的资源及原因|
+### <div id="erroritem">ErrorItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|出错资源ID|

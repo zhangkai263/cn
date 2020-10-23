@@ -2,13 +2,18 @@
 
 触发器（Triger）定义了事件源触发函数的规则。通过操作控制台、API/SDK可实现触发器的增删改查。本章节介绍通过控制台对触发器进行增、删、改、查。
 
-准备工作:
+## 准备工作
+
+为指定Functtion创建触发器前，请先创建触发器资源，再绑定Function。
+
+例如：
 
 * 创建API网关触发器之前，请开通API网关服务，并在API网关服务中创建分组及API。创建过程请参考：
    - [创建API分组](/documentation/Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md)
    - [创建API](/documentation/Middleware/API-Gateway/Operation-Guide/Create-API/Create-API.md)
 * 创建OSS触发器之前，请开通对象存储服务，并在对象存储服务中创建存储桶。创建过程请参考[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md)。
 
+您亦可在创建触发器页面，根据提示创建触发器资源。
 
  
 

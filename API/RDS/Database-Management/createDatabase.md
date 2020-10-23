@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testCreateDatabase() {
+    CreateDatabaseRequest createDatabaseRequest = new CreateDatabaseRequest();
+    createDatabaseRequest.setCharacterSetName("utf8");
+    createDatabaseRequest.setDbName("test_db");
+    createDatabaseRequest.setInstanceId("mysql-wp4e9ztap2");
+    createDatabaseRequest.setRegionId("cn-north-1");
+    CreateDatabaseResponse response = rdsClient.createDatabase(createDatabaseRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3ndd5dh5goirjip58obhmk1wwwhun"
+}
+```
