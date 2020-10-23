@@ -147,6 +147,51 @@
 <tr>
 </table>
 
+
+
+## IPv6公网带宽价格
+
+**按固定带宽计费**
+
+<table>
+<tr>
+<td rowspan="2"><B>线路</B></td>
+<td rowspan="2"><B>地域</B></td>
+<td rowspan="2"><B>带宽</B></td>
+</tr>
+<tr>
+<td><B>按配置（元/小时）</B></td>
+</tr>
+<tr>
+<td rowspan="12">BGP</td>
+<td rowspan="6">华北-北京<br/>
+</td>
+<td>1Mbps</td>
+<td>0.06</td>
+</tr>
+<tr>
+<td>2Mbps</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>3Mbps</td>
+<td>0.14</td>
+</tr>
+<tr>
+<td>4Mbps</td>
+<td>0.18</td>
+</tr>
+<tr>
+<td>5Mbps</td>
+<td>0.22</td>
+</tr>
+<tr>
+<td>6Mbps及以上，n为带宽值</td>
+<td>0.22+(n-5)*0.14</td>
+</tr>
+<tr>
+</table>
+
 请注意：
 
 公网IP的价格依据地域和线路类型而不同，具体价格请以购买时选择的地域和线路类型为准。表中的地域不代表全部已开放，部分地域正在开放筹备中。
