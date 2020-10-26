@@ -3,7 +3,7 @@
 
 - 消息队列 JCQ Java demo示例：[jcq-sdk-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-sdk-demo.zip)。
 - Spring框架下消息队列 JCQ的集成，请参考demo示例：[jcq-spring-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-spring-demo.zip)。
-- Https方式访问，请参考demo示例：[jcq-spring-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-spring-demo.zip)。
+- Https方式访问，请参考demo示例：[jcq-spring-demo.zip](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/Message-Queue/jcq-http-demo.zip)。
 
 
 ## Demo使用
