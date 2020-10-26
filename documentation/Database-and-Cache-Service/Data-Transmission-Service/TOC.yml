@@ -54,7 +54,15 @@
           - name: 修改订阅目标端  
             href: Getting-Started/Data-Subscription/Modify-Subscription-Target.md
           - name: 删除订阅任务 
-            href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md                 
+            href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md             
+      - name: 数据同步
+         items:
+          - name: 创建同步任务 
+            href: Getting-Started/Data-Synchronization/Creat-Synchronizaton-Task.md
+          - name: 配置同步任务  
+            href: Getting-Started/Data-Synchronization/Config-Synchronizaton-Task.md
+          - name: 停止同步任务  
+            href: Getting-Started/Data-Synchronization/Stop-Synchronizaton-Task.md
   - name: 操作指南
     items:
       - name: 自建MySQL迁移至云数据库MySQL
