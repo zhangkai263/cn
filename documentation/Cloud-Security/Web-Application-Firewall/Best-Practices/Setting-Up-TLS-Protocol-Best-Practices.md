@@ -31,10 +31,6 @@
 
 5. 选择适合的**SSL协议类型**和“**加密套件等级**。
 
-   
-
-   ![img](https://res-img3.huaweicloud.com/content/dam/cloudbu-site/archive/china/zh-cn/support/resource/framework/v3/images/support-doc-new-note.svg)说明：
-
    配置前，可以先通过“https://myssl.com/ssl.html”检测您的网站支持的TLS版本
 
 6. 单击“确定”，TLS配置完成。
