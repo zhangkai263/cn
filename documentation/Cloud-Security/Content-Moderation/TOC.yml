@@ -23,6 +23,8 @@ items:
     items:
       - name: 快速接入
         href: Getting-Started/Getting-Started.md
+      - name: 试用内容安全API检测服务
+        href: Getting-Started/Trial-Page-Guide.md
   - name: 操作指南
     items:
       - name: 内容检测API
@@ -33,6 +35,10 @@ items:
             href: Operation-Guide/Content-Censor-API/Query-Detection-Result.md
           - name: 自助审核
             href: Operation-Guide/Content-Censor-API/Self-Service-Audit.md
+          - name: 敏感库管理
+            items:
+              - name: 自定义文本库
+                href: Operation-Guide/Content-Censor-API/Custom-Text-Lib.md
       - name: OSS违规检测
         items:
           - name: 功能简介
