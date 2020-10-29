@@ -7,20 +7,30 @@
       herf: Introduction/Product-Overview.md
     - name: 产品优势
       herf: Introduction/Benefits.md
+    - name: 主备双活
+      href: Introduction/Double-Alive.md
     - name: 限制说明
       herf: Introduction/Restrictions.md
     - name: 应用场景 
       herf: Introduction/Application-Scenarios.md
     - name: 案例分析
       herf: Introduction/Practices.md
-  - name: 主备双活
+  - name: 入门指南
     items:
-    - name: 主备双活
-      href: Double-Alive/Double-Alive.md
+      - name: 创建集群
+        href: Getting-Started/Create-Cluster.md
+      - name: 创建Namespace
+        href: Getting-Started/Create-Namespace.md
+      - name: 创建表
+        href: Getting-Started/Create-Table.md
   - name: 使用指南
     items:
     - name: Rowkey设计
       href: Develop-Guide/RowkeyDesign.md
     - name: 用户访问
       href: Operation-Guide/sdk.md
+  - name: FAQ
+    items:
+      - name: 如何配置ACL
+        href: FAQ/ACLconf.md
       
