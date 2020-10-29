@@ -109,7 +109,7 @@ items:
            href: Web-Protection-Configure/Web-Compliance/Set-Up-Sensitive-Information-Leakage-Prevention.md
          - name: 设置网页缓存
            href: Web-Protection-Configure/Web-Compliance/Set-Up-Web-Cache.md               
-- name: 防护统计与安全报表
+- name: 统计报表与告警
   items: 
      - name: 总览
        href: Protection-Statistics/Overview-Information.md
@@ -117,6 +117,8 @@ items:
        href: Protection-Statistics/Security-Report.md
      - name: 全量日志查询
        href: Protection-Statistics/General-Log.md
+     - name: 设置告警监控
+       href: Protection-Statistics/Set-UP-Alarm.md
 - name: 最佳实践
   items:
      - name: WAF接入配置最佳实践
@@ -129,6 +131,8 @@ items:
        href: Best-Practices/Web-Application-Protection-Engine-Best-Practices.md
      - name: 如何获取客户端真实IP
        href: Best-Practices/Get-Visitor-Ture-IP.md
+     - name: 配置TLS协议最佳实践
+       href: Best-Practices/Setting-Up-TLS-Protocol-Best-Practices.md
 - name: 常见问题
   items:
     - name: 添加网站参数详解
