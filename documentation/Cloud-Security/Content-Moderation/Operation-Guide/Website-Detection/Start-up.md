@@ -13,11 +13,11 @@
 2. 前往**站点检测**>**实例管理**页面。
 
 3. 选择一个有效的且处于**未绑定**状态的实例，单击其操作列下的**去绑定**，绑定站点。
-   ![image](../../../../../image/Content-Moderation/Update-Website\4.website-instance-bind.png)
+   ![image](../../../../../image/Content-Moderation/Update-Website/4.website-instance-bind.png)
 
 4. 在**绑定站点**对话框中，完成网站信息和检测频率配置，并单击**下一步**。配置说明如下。
 
-   ![image](../../../../../image/Content-Moderation/Update-Website\5.website-add-html.png)
+   ![image](../../../../../image/Content-Moderation/Update-Website/5.website-add-html.png)
 
    | 配置             | 说明                                                         |
    | :--------------- | :----------------------------------------------------------- |
@@ -52,7 +52,7 @@
      > **说明** 解除绑定后，已购买的实例不会释放，但是您可以将其绑定到别的站点，为别的站点提供检测服务。
 
 
-   ![image](../../../../../image/Content-Moderation/Update-Website\6.website-more.png)
+   ![image](../../../../../image/Content-Moderation/Update-Website/6.website-more.png)
 
 ## 后续步骤
 

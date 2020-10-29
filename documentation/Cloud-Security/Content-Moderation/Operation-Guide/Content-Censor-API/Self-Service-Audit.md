@@ -25,15 +25,15 @@
 
    - 对于您认为需要管控，却被识别为疑似（review）或者正常（pass）的样本，将其标记为**违规**，并选择违规原因：**涉黄**、**暴恐涉政**、**图文广告**。
 
-     ![image](../../../../../image/Content-Moderation/Update-Website\12.Text-Block-Reason.png)
+     ![image](../../../../../image/Content-Moderation/Update-Website/12.Text-Block-Reason.png)
 
    - 支持勾选多张图片后进行批量处理，如**批量标记正常**、**批量标记违规**。
 
    - 单击样本图片，查看其**详细信息**。
 
-     ![image](../../../../../image/Content-Moderation/Update-Website\10.API-self-audit-detail-1.png)
+     ![image](../../../../../image/Content-Moderation/Update-Website/10.API-self-audit-detail-1.png)
 
-     ![image](../../../../../image/Content-Moderation/Update-Website\10.API-self-audit-detail-2.png)
+     ![image](../../../../../image/Content-Moderation/Update-Website/10.API-self-audit-detail-2.png)
 
    
 
@@ -41,7 +41,7 @@
 
    被标记的文本样本同理，且样本返回到系统自定义文本库。
 
-   ![image](../../../../../image/Content-Moderation/Update-Website\11.Text-System-lib.png)
+   ![image](../../../../../image/Content-Moderation/Update-Website/11.Text-System-lib.png)
 
 
 
@@ -51,11 +51,11 @@
 
 2. 前往**设置**>**内容检测API**页面。
 
-3. 选择**入审条件**页签，您可以选择流入自助审核的数据类型，默认选择确认违规数据和疑似违规数据。选择完毕后点击**确认保存**。![image](../../../../../image/Content-Moderation/Update-Website\7.setting-up-API.png)
+3. 选择**入审条件**页签，您可以选择流入自助审核的数据类型，默认选择确认违规数据和疑似违规数据。选择完毕后点击**确认保存**。![image](../../../../../image/Content-Moderation/Update-Website/7.setting-up-API.png)
 
 4. 选择**消息通知**页签，您可以填写回调地址，用于接收自助审核的检测结果。输入完毕后，点击**确认保存**。其中Seed表示京东云给接口传数据的认证，接收端请保存。
 
-   ![image](../../../../../image/Content-Moderation/Update-Website\7.setting-up-Address.png)
+   ![image](../../../../../image/Content-Moderation/Update-Website/7.setting-up-Address.png)
 
 
 
