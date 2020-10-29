@@ -21,7 +21,7 @@ A：拉取不到消息的情况大概包括两种：一种是订阅时带的Tag�
 
 **Q：用户订阅不上消息怎么办？**
 
-A：拉取不到消息的情况大概包括两种：一种是订阅时带的Tag信息被误过滤掉了，此时需要不带Tag信息重新订阅。另一种情况是由于用户以重启进程方式拉取时，若是partition无消息则会一直拉不到消息，此时需要设置多个partition后重新拉取。
+A： 用户未授予合适的权限导致，需要参考[主主授权](https://docs.jdcloud.com/cn/message-queue/main-main-authorization)对被授权用户进行授权。
 
 **Q：拉消息，返回{"code":500,"message":"FAILED","status":"FAILED"}怎么办？**
 
