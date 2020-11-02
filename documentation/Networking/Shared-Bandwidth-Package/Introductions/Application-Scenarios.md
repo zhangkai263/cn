@@ -6,6 +6,9 @@
 
 <img src="../../../../image/Networking/Shared-Bandwidth-Package/Unified-Management.png" alt=" " style="zoom:50%"/>
 
+
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi.png" alt=" " style="zoom:30%"/>
+
 + **统一计费**
 
 公网IP加入共享带宽后，原有的计费方式失效（移除后恢复原有的计费规则），变成纯公网IP，使用的带宽流量通过共享带宽包进行计费。
@@ -23,3 +26,4 @@
 
 共享带宽包支持消峰计费，可**支持短时间内带宽突发式增长业务**，短时间的突发流量费用通过消峰后不计入带宽费用，**只需支付较低的保底带宽费用**，降低带宽成本。在突发流量外，其余时间整体带宽速率较低，如电商促销活动、限时秒杀等。
 
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/One.png" alt=" " style="zoom:30%"/>
