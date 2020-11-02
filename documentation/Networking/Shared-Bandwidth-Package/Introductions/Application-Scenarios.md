@@ -7,7 +7,7 @@
 <img src="../../../../image/Networking/Shared-Bandwidth-Package/Unified-Management.png" alt=" " style="zoom:50%"/>
 
 
-<img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi.png" alt=" " style="zoom:30%"/>
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi-One.png" alt=" " style="zoom:30%"/>
 
 + **统一计费**
 
