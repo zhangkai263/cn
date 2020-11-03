@@ -8,7 +8,7 @@
 
 当您拥有多个公网IP时，需要购买多条带宽如下图表1所示，IP流量模型不尽相同，波峰波谷差距明显，在波谷时段带宽使用率低，若加入共享带宽包，波峰波谷差距更加扁平，提升带宽的使用率。
 
-<img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi-One.png" alt=" " style="zoom:30%"/>
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi-to-One.png" alt=" " style="zoom:30%"/>
 
 + **统一计费**
 
@@ -27,4 +27,4 @@
 
 共享带宽包支持消峰计费，可**支持短时间内带宽突发式增长业务**，短时间的突发流量费用通过消峰后不计入带宽费用，**只需支付较低的保底带宽费用**，降低带宽成本。在突发流量外，其余时间整体带宽速率较低，如电商促销活动、限时秒杀等。
 
-<img src="../../../../image/Networking/Shared-Bandwidth-Package/One.png" alt=" " style="zoom:30%"/>
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/One-Change.png" alt=" " style="zoom:30%"/>
