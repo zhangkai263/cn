@@ -23,6 +23,8 @@ v1
 |**describeCacheAnalysisResult**|GET|查询缓存分析任务详情，最多查询到30天前的数据|
 |**describeCacheInstance**|GET|查询缓存Redis实例的详细信息|
 |**describeCacheInstances**|GET|查询缓存Redis实例列表，可分页、可排序、可搜索、可过滤|
+|**describeClientIpDetail**|POST|查询指定客户端IP的连接详细信息|
+|**describeClientList**|GET|查询当前客户端IP列表|
 |**describeClusterInfo**|GET|查询Redis实例的集群内部信息|
 |**describeDownloadUrl**|GET|获取缓存Redis实例的备份文件临时下载地址（1个小时有效期）|
 |**describeInstanceClass**|GET|查询缓存Redis实例的规格列表|

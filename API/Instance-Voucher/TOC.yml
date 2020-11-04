@@ -1,0 +1,29 @@
+name: 实例抵扣券
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 实例抵扣券
+        items:
+          - name: 创建实例抵扣券
+            href: Instance-Voucher/createInstanceVoucher.md
+          - name: 查询实例抵扣券列表
+            href: Instance-Voucher/describeInstanceVouchers.md
+          - name: 查询实例抵扣券详情
+            href: Instance-Voucher/describeInstanceVoucher.md
+          - name: 修改实例抵扣券名称与描述
+            href: Instance-Voucher/modifyInstanceVoucherAttribute.md
+          - name: 删除实例抵扣券
+            href: Instance-Voucher/deleteInstanceVoucher.md
+      - name: 规格类型
+        items:
+          - name: 查询实例规格信息列表
+            href: Instance-Type/describeInstanceVoucherTypes.md
+      - name: 配额
+        items:
+          - name: 查询配额
+            href: Quota/describeQuotas.md

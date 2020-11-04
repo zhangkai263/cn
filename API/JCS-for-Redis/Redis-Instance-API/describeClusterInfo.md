@@ -32,8 +32,8 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ### <div id="clusterinfo">ClusterInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**proxies**|[Proxy](describeclusterinfo#proxy)|proxy列表|
-|**shards**|[Shard](describeclusterinfo#shard)|shard列表|
+|**proxies**|[Proxy[]](describeclusterinfo#proxy)|proxy列表|
+|**shards**|[Shard[]](describeclusterinfo#shard)|shard列表|
 ### <div id="shard">Shard</div>
 |名称|类型|描述|
 |---|---|---|

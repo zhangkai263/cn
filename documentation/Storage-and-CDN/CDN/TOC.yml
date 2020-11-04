@@ -419,6 +419,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryDomainsLog.md
                - name: queryAreaIspList
                  href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+               - name: checkWhetherIpBelongToJCloud
+                 href: JCloud-Openapi-For-CDN/checkWhetherIpBelongToJCloud.md
           - name: 刷新预热
             items:
                - name: createLiveDomainPrefecthTask

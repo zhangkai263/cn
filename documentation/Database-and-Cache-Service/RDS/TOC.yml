@@ -249,6 +249,8 @@
           href: Operation-Guide/Security/tde.md
         - name: MySQL 配置 SSL 证书 
           href: Operation-Guide/Security/Configure-SSL.md
+        - name: PostgreSQL 配置 SSL 证书 
+          href: Operation-Guide/Security/PostgreSQL-Configure-SSL.md  
         - name: SQL Server 配置 SSL 证书 
           href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           

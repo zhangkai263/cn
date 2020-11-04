@@ -1,5 +1,5 @@
 # 创建视频转码
-### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/product-overview)
 
 描述：将京东云对象存储上的视频文件进行视频转码操作，并将转码后的视频保存为新的文件。
 

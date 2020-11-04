@@ -1,5 +1,5 @@
 # 视频截图
-### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/product-overview)
 
 视频截图支持指定视频媒体文件按照一定规则进行视频截图操作,此功能可以为视频生成预览图、或通过截图来做视频封面等使用场景。以下为使用OpenAPI Java SDK创建转码任务的示例。
 
