@@ -100,13 +100,13 @@ items:
           - name: 安装与初始化
             href: SDK-Reference/GO-SDK/Install-And-Initialization.md
           - name: 文本检测
-            href: API-Document/GO-SDK/Text-Detection.md
+            href: SDK-Reference/GO-SDK/Text-Detection.md
           - name: 图片检测
-            href: API-Document/GO-SDK/Picture-Detection.md
+            href: SDK-Reference/GO-SDK/Picture-Detection.md
           - name: 视频检测
-            href: API-Document/GO-SDK/Video-Detection.md
+            href: SDK-Reference/GO-SDK/Video-Detection.md
           - name: 音频检测
-            href: API-Document/GO-SDK/Audio-Detection.md
+            href: SDK-Reference/GO-SDK/Audio-Detection.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新
