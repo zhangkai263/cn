@@ -15,17 +15,13 @@
 
 ## SDK支持类型
 
-- 内容安全SDK支持一下语言或环境：
+- 内容安全SDK支持以下语言或环境：
 
   - [Go SDK](https://docs.jdcloud.com/cn/sdk/go)
   - [Java SDK](https://docs.jdcloud.com/cn/sdk/java)
   - [Python SDK](https://docs.jdcloud.com/cn/sdk/python)
-- 下载SDK使用代码示例。
-
-  单击下载censor-sdk-sample_doc。
-
 - 参考第三方SDK。
 
-  如果您使用除Go、Java、Python以外的开发语言，推荐您通过HTTP请求直接调用内容检测API；我们也收集了一些第三方开发者编写的内容安全SDK，供您参考。内容安全第三方SDK包括以下语言：Node.js 、PHP、.Net、C++ 、Android 、Rust、Swift、Objective-C。具体参见[其他语言](https://docs.jdcloud.com/cn/?act=3)
+  如果您使用除Go、Java、Python以外的开发语言，内容安全SDK还包括以下语言：Node.js 、PHP、.Net、C++ 、Android 、Rust、Swift、Objective-C。具体参见[其他语言](https://docs.jdcloud.com/cn/?act=3)
 
 
