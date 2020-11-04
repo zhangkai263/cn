@@ -1,13 +1,13 @@
 # 		视频检测
 
-使用视频审核Java SDK检测视频中是否含有风险内容，支持同时检测视频中的图像和语音内容。
+使用视频审核Go SDK检测视频中是否含有风险内容，支持同时检测视频中的图像和语音内容。
 
 ## 准备工作
 
 在进行具体的服务调用之前，请完成以下准备工作：
 
-- 创建阿里云AccessKey。具体操作请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
-- 安装Go依赖。具体操作请参见[安装Go依赖](install.md)。
+- 创建京东智联云AccessKey。具体操作请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
+- 安装Go依赖。具体操作请参见[安装Go依赖](Install-And-Initialization.md)。
 
 ## 提交视频异步检测任务
 

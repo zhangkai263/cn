@@ -14,18 +14,17 @@
 
   在进行具体的服务调用之前，请完成以下准备工作：
   
-- 创建阿里云AccessKeyId和AccessKeySecret。具体请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
-  - 安装Java依赖。具体请参见[安装Go依赖](install.md)。
+- 创建京东智联云AccessKeyId和AccessKeySecret。具体请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
+
+- 安装Go依赖。具体请参见[安装Go依赖](Install-And-Initialization.md)。
 
   ## 文本内容检测
 
   文本垃圾检测支持自定义关键词，例如添加一些竞品关键词等。如果被检测的文本中包含您添加的关键词，算法会返回您suggestion=block。
-  
+
   | 接口               | 描述                                                         |
   | :----------------- | :----------------------------------------------------------- |
-  | NewTextScanRequest | 提交文本反垃圾检测任务，检测场景参数请传递antispam（scenes=antispam）。 |
-
-
+  | NewTextScanRequest | 提交文本反垃圾检测任务，检测场景参数请传递antispam（scenes=antispam） |
 
 代码示例：
 
@@ -91,10 +90,6 @@ func main() {
 }
 
 ```
-
-
-
-
 
 ### 查看文本检测结果
 
