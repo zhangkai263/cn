@@ -69,6 +69,8 @@ items:
         href: API-Document/Signature-Algorithm.md
       - name: 返回结果
         href: API-Document/Return-Result.md
+      - name: 子账号接入
+        href: API-Document/Sub-Account-Access.md
       - name: API概览
         href: API-Document/API-Overview.md
       - name: 文本检测
@@ -107,6 +109,18 @@ items:
             href: SDK-Reference/GO-SDK/Video-Detection.md
           - name: 音频检测
             href: SDK-Reference/GO-SDK/Audio-Detection.md
+      - name: JAVA SDK
+        items: 
+          - name: 安装与初始化
+            href: SDK-Reference/JAVA-SDK/Install-And-Initialization.md
+          - name: 文本检测
+            href: SDK-Reference/JAVA-SDK/Text-Detection.md
+          - name: 图片检测
+            href: SDK-Reference/JAVA-SDK/Picture-Detection.md
+          - name: 视频检测
+            href: SDK-Reference/JAVA-SDK/Video-Detection.md
+          - name: 音频检测
+            href: SDK-Reference/JAVA-SDK/Audio-Detection.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新

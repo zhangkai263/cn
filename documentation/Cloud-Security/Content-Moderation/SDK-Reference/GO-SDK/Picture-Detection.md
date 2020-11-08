@@ -180,10 +180,8 @@ import (
 
 func main() {
 	/** 设置credentials **/
-	//accessKey := "yourAccessKeyID"
-	//secretKey := "yourAccessKeySecret"
-	accessKey := "1A97F030F277083E50778A11B1ACD868"
-	secretKey := "5495E569CCD0906453D6748E49F623B2"
+	accessKey := "yourAccessKeyID"
+	secretKey := "yourAccessKeySecret"
 	credentials := core.NewCredentials(accessKey, secretKey)
 
 	/** 设置Config对象 **/
@@ -217,5 +215,4 @@ func main() {
 	fmt.Println("req: ", string(reqBytes))
 	fmt.Println("resp:", string(respBytes))
 }
-
 ```
