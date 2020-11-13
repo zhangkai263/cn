@@ -31,8 +31,8 @@
 
 
 ## 相关参考
-- [共享带宽包概述](../Bwp-Introductions.md)
-- [产品优势](../Benefits.md)
+- [共享带宽包概述](Bwp-Introductions.md)
+- [产品优势](Benefits.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
 - [价格总览](../Pricing/Price-Overview.md)
