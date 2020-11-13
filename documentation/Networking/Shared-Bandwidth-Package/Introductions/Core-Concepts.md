@@ -21,3 +21,15 @@
 | 保底带宽费用   | 消峰计费模式中从创建共享带宽包起每个自然日的需支付的基本带宽费用。值为当日保底带宽 \* 保底带宽价格    |
 | 超保底带宽费用 | 消峰计费模式中，每日带宽上限超出保底带宽后的带宽费用。                                   |
 | 变配           | 调整共享带宽包上限，升配：提升带宽上限；降配：降低带宽上限|
+
+## 相关参考
+- [共享带宽包概述](Bwp-Introduction.md)
+- [产品优势](Benefits.md)
+- [应用场景](Application-Scenarios.md)
+- [产品功能](Features.md)
+- [使用限制](Restrictions.md)
+- [管理公网IP](../Getting-Started/Manage-Public-IP.md)
+- [计费概述](../Pricing/Billing-Overview.md)
+- [价格总览](../Pricing/Price-Overview.md)
+- [创建共享带宽包](../Operation-Guide/Create-Bwp.md)
+- [常见问题](../FAQ/FAQ.md)
