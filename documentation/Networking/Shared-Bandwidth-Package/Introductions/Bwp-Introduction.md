@@ -35,7 +35,7 @@
 京东智联云采取**多种付费模式**：包年包月、按配置付费、按用量付费（增强95消峰计费），为您提供更便利的服务，满足您更多的需求。
 
 ## 相关参考
-- [管理公网IP](../Getting-Started/Manage-IP.md)
+- [管理公网IP](../Getting-Started/Manage-Public-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
 - [价格总览](../Pricing/Price-Overview.md)
