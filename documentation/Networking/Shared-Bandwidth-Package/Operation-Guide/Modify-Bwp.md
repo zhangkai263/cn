@@ -22,5 +22,5 @@
 - [创建共享带宽包](Create-Bwp.md)
 - [带宽包续费](Renew-Bwp.md)
 - [共享带宽包概述](../Introductions/Bwp-Introduction.md)
-- [计费概述](../Price/Billed-Overview.md)
+- [计费概述](../Pricing/Billing-Overview.md)
 - [常见问题](../FAQ/FAQ.md)
