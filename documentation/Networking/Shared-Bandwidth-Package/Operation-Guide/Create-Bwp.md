@@ -33,7 +33,7 @@
 **步骤9：** 完成上述步骤后，点击立即购买按钮，进入订单确认以及支付页。完成支付后，进入共享带宽包列表页，查看已创建的共享带宽包。
 
 ## 相关参考
-- [共享带宽包概述](../Introduction/Bwp-Introduction.md)
-- [应用场景](../Introduction/Application-Scenarios.md)
-- [使用限制](../Introduction/Restrictions.md)
+- [共享带宽包概述](../Introductions/Bwp-Introduction.md)
+- [应用场景](../Introductions/Application-Scenarios.md)
+- [使用限制](../Introductions/Restrictions.md)
 - [常见问题](../FAQ/FAQ.md)
