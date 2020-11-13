@@ -37,6 +37,9 @@
 支持选择或自定义不同的时间段对共享带宽包带宽出入速率及出入包量的数据监控，全面监测带宽用量。
 
 ## 相关参考
+- [共享带宽包概述](Bwp-Introduction.md)
+- [应用场景](Application-Scenarios.md)
+- [使用限制](Restrictions.md)
 - [管理公网IP](../Getting-Started/Manage-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
