@@ -64,6 +64,7 @@ A：支持，修改之前需要定位EIP所在的共享带宽包，点击【共�
 
 ## 相关参考
 - [共享带宽包概述](../Introductions/Bwp-Introduction.md)
+- [使用限制](../Introduction/Restrictions.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [增强95消峰计费](../Pricing/Charge-By-Usage/Top5-Eliminate.md)
