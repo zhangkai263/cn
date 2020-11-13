@@ -35,6 +35,9 @@
 | 每个共享带宽包可加入的EIP数量                       | 20             | 如需添加更多弹性公网IP，请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请。 |
 
 ## 相关参考
+- [共享带宽包概述](Bwp-Introduction.md)
+- [产品功能](Features.md)
+- [应用场景](Application-Scenarios.md)
 - [管理公网IP](../Getting-Started/Manage-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
