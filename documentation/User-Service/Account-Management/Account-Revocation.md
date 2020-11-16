@@ -14,7 +14,7 @@
 ## 账号注销流程
 （1）提交工单，选择账号&认证类别
 
-![](../../../image/User/Account%20Management/Account%20Revocation/账号注销1.png)
+![](../../../image/User/Account%20Management/Account%20Revocation/ticket.png)
 
 （2）在工单中提供注销必要的信息
 
