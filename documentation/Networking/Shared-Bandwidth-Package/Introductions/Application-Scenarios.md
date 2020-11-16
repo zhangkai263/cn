@@ -27,7 +27,7 @@
 
 共享带宽包支持消峰计费，可**支持短时间内带宽突发式增长业务，享受多倍弹性峰值**，短时间的突发流量费用通过消峰后不计入带宽费用，**只需支付少量的带宽费用**，降低带宽成本。在突发流量外，其余时间整体带宽速率较低，如电商促销活动、限时秒杀等。
 
-<img src="../../../../image/Networking/Shared-Bandwidth-Package/One-Change.png" alt=" " style="zoom:30%"/>
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/One-Changed.png" alt=" " style="zoom:30%"/>
 
 
 ## 相关参考
