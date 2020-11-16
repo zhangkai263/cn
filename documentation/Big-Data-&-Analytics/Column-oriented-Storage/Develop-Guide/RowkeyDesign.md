@@ -1,6 +1,6 @@
-# HBase Rowkey 设计
+# Rowkey设计指导
 
-## 引言
+## 引言 
 
 HBase Rowkey是唯一索引(Rowkey用来表示唯一一行记录)，Rowkey设计的优劣直接影响读写性能。
 
