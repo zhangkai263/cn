@@ -1,5 +1,5 @@
 # 按增强95消峰计费
-本文将详细介绍按增强95计费模式的共享带宽包的计费规则。
+本文将详细介绍按增强95计费模式的共享带宽包的计费规则。目前增强95消峰计费处于灰度中，如需使用请[提交工单](https://ticket.jdcloud.com/applyorder/submit)申请权限。
 
 
 
@@ -85,3 +85,10 @@
 
 
 注意：实际使用天数和共享带宽中是否有业务流量无关，如果创建后不使用也会计算实际使用天数。
+
+[价格总览](../Price-Overview.md)
+[计费概述](../Billing-Overview.md)
+[计费规则](../Billed-Rules.md)
+[续费流程](../Renew-Process.md)
+[购买流程](../Purchase-Process.md)
+[常见问题](../../FAQ/FAQ.md)
