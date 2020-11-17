@@ -86,9 +86,10 @@
 
 注意：实际使用天数和共享带宽中是否有业务流量无关，如果创建后不使用也会计算实际使用天数。
 
-[价格总览](../Price-Overview.md)
-[计费概述](../Billing-Overview.md)
-[计费规则](../Billed-Rules.md)
-[续费流程](../Renew-Process.md)
-[购买流程](../Purchase-Process.md)
-[常见问题](../../FAQ/FAQ.md)
+## 相关参考
+- [价格总览](../Price-Overview.md)
+- [计费概述](../Billing-Overview.md)
+- [计费规则](../Billed-Rules.md)
+- [续费流程](../Renew-Process.md)
+- [购买流程](../Purchase-Process.md)
+- [常见问题](../../FAQ/FAQ.md)
