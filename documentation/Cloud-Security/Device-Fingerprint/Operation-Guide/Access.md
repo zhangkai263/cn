@@ -12,5 +12,4 @@
 
 3. 点击**添加应用key**按钮，输入应用名称，即可添加应用key。
 
-
-![image](../../../../image/Device-Fingerprint/addappkey.png)
+   ![image](../../../../image/Device-Fingerprint/addappkey.png)
