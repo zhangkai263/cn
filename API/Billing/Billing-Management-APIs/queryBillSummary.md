@@ -23,8 +23,8 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billSummary:list
 |**serviceCode**|String|False| |产品代码|
 |**resourceIds**|String[]|False| |资源单id列表,最多支持传入500个|
 |**tags**|Map[]|False| |标签|
-|**pageIndex**|Integer|False| |pageIndex 分页,从1开始|
-|**pageSize**|Integer|False| |pageSize 每页查询数据条数，最多支持1000条|
+|**pageIndex**|Integer|False| |pageIndex 分页,从1开始,java客户端调用默认值1，其它客户端必传|
+|**pageSize**|Integer|False| |pageSize 每页查询数据条数，最多支持1000条,java客户端调用默认值10，其它客户端必传|
 
 
 ## 返回参数
@@ -71,9 +71,9 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billSummary:list
 |名称|类型|描述|
 |---|---|---|
 |**currPageNo**|Integer|当前页|
-|**numberPages**|Integer|页数|
-|**numberRecords**|Integer|每页记录数|
-|**pageSize**|Integer|页面大小|
+|**numberPages**|Integer|总页数|
+|**numberRecords**|Integer|总记录数|
+|**pageSize**|Integer|每页记录数,默认10|
 |**startIndex**|Integer|起始页|
 
 ## 返回码

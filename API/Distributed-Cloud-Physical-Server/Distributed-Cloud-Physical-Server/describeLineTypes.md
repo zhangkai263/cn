@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询链路类型列表
+查询链路类型
 
 ## 请求方式
 GET
@@ -27,7 +27,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**lineTypes**|[LineType[]](describelinetypes#linetype)| |
+|**lineType**|[LineType](describelinetypes#linetype)|链路类型信息|
 ### <div id="linetype">LineType</div>
 |名称|类型|描述|
 |---|---|---|

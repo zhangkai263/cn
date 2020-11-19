@@ -21,8 +21,10 @@
         href: Introduction/Multiattachdisk.md
       - name: 性能测试
         href: Introduction/Performance-Test.md
+      - name: 云硬盘快照容量说明
+        href: Introduction/snapshotcapacity.md
       - name: 使用约束
-        href: Introduction/Restrictions.md       
+        href: Introduction/Restrictions.md
   - name: 产品定价
     items:
     - name: 计费模式说明

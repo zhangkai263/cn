@@ -49,14 +49,14 @@
         items:
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Modify-Instance-Spec.md
+          - name: 变更节点数
+            href: Operation-Guide/Instance-Management/Modify-Replication-Factor.md
           - name: 重启实例
             href: Operation-Guide/Instance-Management/Restart-Instance.md
           - name: 续费实例
             href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
           - name: 删除实例
             href: Operation-Guide/Instance-Management/Delete-Instance.md
-          - name: 外网访问
-            href: Operation-Guide/Instance-Management/Internet-access.md
       - name: 账号管理
         items:
           - name: 创建账号

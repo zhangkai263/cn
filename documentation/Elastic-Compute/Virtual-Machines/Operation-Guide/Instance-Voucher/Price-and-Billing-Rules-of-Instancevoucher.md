@@ -24,7 +24,7 @@
    </tr>
    <tr>
       <td>g.n2</td>
-      <td align="right">136.5</td>              
+      <td align="right">121.13</td>              
    </tr>
    <tr>
       <td>g.n1</td>

@@ -38,9 +38,17 @@ items:
             - name: 审计规则
               href: Operation-Guide/Instance-Management/Database-Management/AuditRules-List.md            
             - name: 遮蔽规则
-              href: Operation-Guide/Instance-Management/Database-Management/HideRules-List.md           
+              href: Operation-Guide/Instance-Management/Database-Management/HideRules-List.md
+        - name: Agent管理
+          items:
             - name: 安装Agent
-              href: Operation-Guide/Instance-Management/Database-Management/Agent.md
+              href: Operation-Guide/Instance-Management/Agent-Management/InstallAgent.md
+            - name: 卸载Agent
+              href: Operation-Guide/Instance-Management/Agent-Management/UnInstallAgent.md
+            - name: 审计配置
+              href: Operation-Guide/Instance-Management/Agent-Management/AgentSetting.md
+            - name: 阈值设置
+              href: Operation-Guide/Instance-Management/Agent-Management/QuotaSetting.md
         - name: 日志管理
           href: Operation-Guide/Instance-Management/Log-List.md
         - name: 规则管理

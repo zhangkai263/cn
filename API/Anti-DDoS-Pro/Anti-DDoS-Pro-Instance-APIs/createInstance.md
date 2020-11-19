@@ -32,7 +32,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances
 |**id**|String|False| |实例 Id, 升级时必传|
 |**name**|String|False| |实例名称, 新购时必传|
 |**buyType**|Integer|True| |购买类型. <br>- 1: 新购<br>- 3: 升级|
-|**carrier**|Integer|True| |链路类型. <br>- 1: 电信<br>- 3: 电信、联通和移动<br>- 4: BGP 线路|
+|**carrier**|Integer|True| |链路类型. <br>- 3: 电信、联通和移动<br>- 4: BGP 线路|
 |**ipType**|Integer|False| |可防护 ip 类型, 目前仅电信线路支持 IPV6 线路<br>- 0: IPV4,<br>- 1: IPV4/IPV6|
 |**ipCount**|Integer|False| |IP 数量|
 |**portCount**|Integer|False| |可配的转发端口数量|

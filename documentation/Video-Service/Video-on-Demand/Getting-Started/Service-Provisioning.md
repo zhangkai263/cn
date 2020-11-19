@@ -4,5 +4,5 @@
 
 -   拨打电话：400-615-1212，由客服为您开通视频点播服务。
 
--   进入[视频点播工单系统](https://ticket.jdcloud.com/myorder/form?cateId=352&questionId=353)，填报【使用权限申请】工单，客服会联系您处理点播服务开通事宜。
+-   进入[视频点播工单系统](https://ticket.jdcloud.com/applyorder/form?cateId=1230&questionId=1235)，填报【使用权限申请】工单，客服会联系您处理点播服务开通事宜。
 

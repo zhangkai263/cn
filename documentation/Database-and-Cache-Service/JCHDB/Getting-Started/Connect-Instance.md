@@ -5,7 +5,7 @@
 
 ![域名信息](../../../../image/JCHDB/connect-instance.png)
 
-3. 登录到与该实例在同一VPC中的云主机，安装下载客户端. JCHDB使用clickhouse的客户端。
+3. 登录到与该实例在同一VPC中的云主机，安装下载客户端。 JCHDB使用clickhouse的客户端。
 - Ubuntu 或 Debian
 ```
 sudo apt-get install apt-transport-https ca-certificates dirmngr
@@ -37,4 +37,3 @@ sudo yum install  clickhouse-client
 - port：为步骤2中获得的实例的TCP端口号
 - user：连接的用户名，在控制台的“账号管理”页面中创建
 - password：连接的密码，在控制台的“账号管理”页面中创建
-
