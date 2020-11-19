@@ -41,9 +41,9 @@
   ```
   InitParams initParams = new InitParams.InitParamsBuilder()
        .acceptPrivacy(true)// 隐私协议是否授权，sdk中涉及采集mac和applist等
-       .host("http://devfinprint-api.jdcloud.com")//设置host
-       .appKey("tokentest")//设置appkey
-       .userPin("testtest810")//设置userPin
+       .host("https://eid-api.jdcloud.com")//设置host
+       .appKey("xxx")//设置appkey
+       .userPin("xxx")//设置userPin
        .build();
   //同步接口，初始化过程中有网络请求等操作，要在子线程调用
   LogoManager.getInstance(this.getApplicationContext()).init(initParams);

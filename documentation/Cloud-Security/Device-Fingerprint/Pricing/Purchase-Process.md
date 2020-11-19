@@ -27,5 +27,5 @@
 
 ​	4.点击**立即购买**，并完成支付。
 
-![image](../../../../image/Risk-Detection/resource.png)
+![image](../../../../image/device-fingerprint/creat.png)
 

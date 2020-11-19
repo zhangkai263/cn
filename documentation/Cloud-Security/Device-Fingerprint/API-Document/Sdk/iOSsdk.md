@@ -13,7 +13,7 @@ libstdc++.dylib
 4.在启动的时候配置信息
 
 ```
- [JDBFingerPrintModule configHost:@"http://devfinprint-api.jdcloud.com" appKey:@"tokentest" userPin:@"testtest810"];
+ [JDBFingerPrintModule configHost:@"https://eid-api.jdcloud.com" appKey:@"xxx" userPin:@"xxx"];
 ```
 
 5.获取设备指纹
