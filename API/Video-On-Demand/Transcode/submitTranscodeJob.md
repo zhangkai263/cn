@@ -52,13 +52,14 @@ POST
 https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
 
 ```
+
 ```
 {
     "templateIds": [
         1, 
         2
     ], 
-    "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+    "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
     "watermarkIds": [
         1, 
         2
@@ -75,7 +76,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
             {
                 "taskId": 1, 
                 "templateId": 1, 
-                "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+                "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
                 "watermarkIds": [
                     1, 
                     2
@@ -84,7 +85,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
             {
                 "taskId": 2, 
                 "templateId": 2, 
-                "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+                "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
                 "watermarkIds": [
                     1, 
                     2

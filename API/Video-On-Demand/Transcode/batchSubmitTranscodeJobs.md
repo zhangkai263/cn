@@ -57,6 +57,7 @@ POST
 https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
 
 ```
+
 ```
 {
     "bulkItems": [
@@ -65,7 +66,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
                 1, 
                 2
             ], 
-            "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+            "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
             "watermarkIds": [
                 1, 
                 2
@@ -76,7 +77,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
                 1, 
                 2
             ], 
-            "vidoeId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
+            "videoId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
             "watermarkIds": [
                 1, 
                 2
@@ -95,7 +96,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
             {
                 "taskId": 1, 
                 "templateId": 1, 
-                "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+                "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
                 "watermarkIds": [
                     1, 
                     2
@@ -104,7 +105,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
             {
                 "taskId": 2, 
                 "templateId": 2, 
-                "vidoeId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
+                "videoId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 
                 "watermarkIds": [
                     1, 
                     2
@@ -113,7 +114,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
             {
                 "taskId": 3, 
                 "templateId": 1, 
-                "vidoeId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
+                "videoId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
                 "watermarkIds": [
                     1, 
                     2
@@ -122,7 +123,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:batchSubmitJobs
             {
                 "taskId": 4, 
                 "templateId": 2, 
-                "vidoeId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
+                "videoId": "1ff72d2b-4da7-4dc0-850c-64825c1ef096", 
                 "watermarkIds": [
                     1, 
                     2

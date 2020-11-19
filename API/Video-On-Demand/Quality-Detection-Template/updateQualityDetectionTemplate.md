@@ -53,6 +53,7 @@ PUT
 https://vod.jdcloud-api.com/v1/qualityDetectionTemplates/10001
 
 ```
+
 ```
 {
     "detections": [
