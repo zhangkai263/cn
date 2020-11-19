@@ -2,7 +2,7 @@
 
 ## 计费项
 
-设备指纹服务主要计费方式为：[包年包月计费](http://docs.jdcloud.com/cn/billing/subscription)
+设备指纹服务计费方式为：[包年包月计费](http://docs.jdcloud.com/cn/billing/subscription)
 
 提前支付1年或数年的费用，目前购买时间段支持1年、2年、3年；费用在您创建实例时一次性扣除；
 

@@ -32,8 +32,8 @@ items:
   - name: SDK接入
     items:
       - name: Android SDK接入
-        href: SDK/Androidsdk.md
+        href: API-Document/SDK/Androidsdk.md
       - name: iOS SDK接入
-        href: SDK/iOSsdk.md
+        href: API-Document/SDK/iOSsdk.md
 
 
