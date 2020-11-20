@@ -26,7 +26,7 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/template/{templateId}/certi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](certificateTemplate#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
