@@ -23,13 +23,13 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/domain:check
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](checkDomain#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[CheckDomain](#checkdomain)|检查域名的返回结果|
+|**data**|[CheckDomain](checkDomain#checkdomain)|检查域名的返回结果|
 ### <div id="CheckDomain">CheckDomain</div>
 |名称|类型|描述|
 |---|---|---|
