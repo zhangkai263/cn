@@ -61,10 +61,10 @@ items:
             href: Operation-Guide/Backup/Modify-Backup-Strategy.md
             
       - name: 水平扩容  
-        href: Operation-Guide/Upload-Backup.md
+        href: Operation-Guide/modifyNodeNum.md
         
       - name: 上传及权限设置
-        href: Operation-Guide/modifyNodeNum.md
+        href: Operation-Guide/Upload-Backup.md
         
   - name: SQL 语法
     items:
