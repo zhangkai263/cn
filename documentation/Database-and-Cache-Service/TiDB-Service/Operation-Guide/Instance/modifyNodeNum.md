@@ -38,4 +38,4 @@
 
 3. 配置变更弹框，当创建实例时没有创建TiFlash节点, 可以选择规格和存错，当创建实例创建了tiflash，只能调节节点数。
 
-   <img src="C:\Users\liuxiao23\AppData\Roaming\Typora\typora-user-images\image-20200924153053187.png" alt="image-20200924153053187" style="zoom:50%;" />
+   (../../../../../image/TiDB/modifyNodeNum.png)
