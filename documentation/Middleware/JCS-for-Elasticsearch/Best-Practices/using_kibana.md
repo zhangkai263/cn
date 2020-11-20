@@ -1,4 +1,4 @@
-## 使用Kibana
+## 通过kibana构建可视化分析系统
 Kibana是一个开源的数据分析和可视化的平台，用户可以使用Kibana查询和分析存储在云搜索Elastisearch中的数据。
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana访问设置-01.png)
 

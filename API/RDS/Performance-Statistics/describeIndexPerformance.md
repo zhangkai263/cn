@@ -27,17 +27,17 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeindexperformance#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**missingIndexResult**|MissingIndexResult[]|当queryType为Missing时，返回结果集为MissingIndexResult<br>当queryType为其他值时，该字段为空|
-|**indexPerformanceResult**|IndexPerformanceResult[]|当queryType为Missing时，该字段为空<br>当queryType为其他值时，返回IndexPerformanceResult|
+|**missingIndexResult**|[MissingIndexResult[]](describeindexperformance#missingindexresult)|当queryType为Missing时，返回结果集为MissingIndexResult<br>当queryType为其他值时，该字段为空|
+|**indexPerformanceResult**|[IndexPerformanceResult[]](describeindexperformance#indexperformanceresult)|当queryType为Missing时，该字段为空<br>当queryType为其他值时，返回IndexPerformanceResult|
 |**totalCount**|Integer|总记录条数|
 |**pageNumber**|Integer|当前数据的页码|
 |**pageSize**|Integer|每页显示的数据条数|
-### IndexPerformanceResult
+### <div id="indexperformanceresult">IndexPerformanceResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**db**|String|数据库名|
@@ -50,7 +50,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |**lastUserSeek**|String|最近索引搜索时间，格式为YYYY-MM-DD hh:mm:ss|
 |**lastUserScan**|String|最近表扫描时间，格式为YYYY-MM-DD hh:mm:ss|
 |**lastUserUpdate**|String|最近索引更新时间，格式为YYYY-MM-DD hh:mm:ss|
-### MissingIndexResult
+### <div id="missingindexresult">MissingIndexResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**db**|String|数据库名|
@@ -66,3 +66,31 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeIndexPerformance() {
+    DescribeIndexPerformanceRequest request = new DescribeIndexPerformanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setQueryType("Missing");
+    DescribeIndexPerformanceResponse response = rdsClient.describeIndexPerformance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaoheg0ecbvgnj8verfr6e9awnfvicu", 
+    "result": {
+        "indexPerformanceResult": [], 
+        "missingIndexResult": [], 
+        "pageNumber": 1, 
+        "pageSize": 10, 
+        "totalCount": 0
+    }
+}
+```

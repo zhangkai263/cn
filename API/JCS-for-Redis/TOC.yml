@@ -9,27 +9,67 @@ items:
     items:
       - name: Redis实例API
         items:
+          - name: createBackup
+            href: Redis-Instance-API/createBackup.md
+          - name: createCacheAnalysis
+            href: Redis-Instance-API/createCacheAnalysis.md
           - name: createCacheInstance
             href: Redis-Instance-API/createCacheInstance.md
           - name: deleteCacheInstance
             href: Redis-Instance-API/deleteCacheInstance.md
+          - name: describeAnalysisTime
+            href: Redis-Instance-API/describeAnalysisTime.md
+          - name: describeBackupPolicy
+            href: Redis-Instance-API/describeBackupPolicy.md
+          - name: describeBackups
+            href: Redis-Instance-API/describeBackups.md
+          - name: describeCacheAnalysisList
+            href: Redis-Instance-API/describeCacheAnalysisList.md
+          - name: describeCacheAnalysisResult
+            href: Redis-Instance-API/describeCacheAnalysisResult.md
           - name: describeCacheInstance
             href: Redis-Instance-API/describeCacheInstance.md
           - name: describeCacheInstances
             href: Redis-Instance-API/describeCacheInstances.md
+          - name: describeClusterInfo
+            href: Redis-Instance-API/describeClusterInfo.md  
+          - name: describeDownloadUrl
+            href: Redis-Instance-API/describeDownloadUrl.md
+          - name: describeInstanceConfig
+            href: Redis-Instance-API/describeInstanceConfig.md
+          - name: describeIpWhiteList
+            href: Redis-Instance-API/describeIpWhiteList.md
+          - name: describeSlowLog
+            href: Redis-Instance-API/describeSlowLog.md
+          - name: modifyAnalysisTime
+            href: Redis-Instance-API/modifyAnalysisTime.md
+          - name: modifyBackupPolicy
+            href: Redis-Instance-API/modifyBackupPolicy.md
           - name: modifyCacheInstanceAttribute
             href: Redis-Instance-API/modifyCacheInstanceAttribute.md
           - name: modifyCacheInstanceClass
             href: Redis-Instance-API/modifyCacheInstanceClass.md
+          - name: modifyInstanceConfig
+            href: Redis-Instance-API/modifyInstanceConfig.md
+          - name: modifyIpWhiteList
+            href: Redis-Instance-API/modifyIpWhiteList.md
           - name: resetCacheInstancePassword
             href: Redis-Instance-API/resetCacheInstancePassword.md
-          - name: describeClusterInfo
-            href: Redis-Instance-API/describeClusterInfo.md  
-      - name: Redis实例类型API
+          - name: restoreInstance
+            href: Redis-Instance-API/restoreInstance.md
+          - name: describeClientList
+            href: Redis-Instance-API/describeClientList.md
+          - name: describeClientIpDetail
+            href: Redis-Instance-API/describeClientIpDetail.md
+      - name: Redis规格API
         items:
           - name: describeInstanceClass
             href: Redis-Class-API/describeInstanceClass.md
-      - name: Redis配额APIs
+      - name: Redis配额API
         items:
           - name: describeUserQuota
             href: Redis-Quota-API/describeUserQuota.md
+      - name: Redis规格配置API（可替换Redis规格API）
+        items:
+          - name: describeSpecConfig
+            href: Redis-SpecConfig-API/describeSpecConfig.md

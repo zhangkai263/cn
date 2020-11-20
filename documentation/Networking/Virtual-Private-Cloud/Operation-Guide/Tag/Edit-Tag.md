@@ -3,7 +3,7 @@
 
 ## 操作步骤
 
-1. 访问[公网IP控制台](https://cns-console.jdcloud.com/host/pip/list)，即进入公网IP列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【私有网络】-【弹性公网IP】进入公网IP列表页。
+1. 访问[公网IP控制台](https://cns-console.jdcloud.com/host/pip/list)，即进入公网IP列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【私有网络】-【弹性公网IP】进入公网IP列表页。
 2. 选择地域。
 3. 在公网IP列表中选择编辑标签的公网IP。
 4. 单台操作：点击【操作】-【更多】-【编辑标签】按钮，或点击公网IP名称进入详情页后点击【操作】-【编辑标签】按钮。

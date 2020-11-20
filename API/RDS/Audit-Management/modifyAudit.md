@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:m
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testModifyAudit(){
+    ModifyAuditRequest request=new ModifyAuditRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    request.setDrop("DATABASE_OBJECT_ACCESS_GROUP");
+    request.setAdd("AUDIT_CHANGE_GROUP");
+    ModifyAuditResponse response= rdsClient.modifyAudit(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2r0c5vtp69o4q3ded1gbud7h0jtmt"
+}
+```

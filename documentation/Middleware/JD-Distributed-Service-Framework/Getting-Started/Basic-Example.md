@@ -25,7 +25,7 @@
 
 # 环境准备
 
-1. 要求jdk版本1.8以上；<br />
+1. 要求jdk版本1.8及以上；<br />
 2. 下载示例项目：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)<br />
 3. 本Demo为idea项目，构建工具为maven。如果您的环境也是idea+maven，那么可以直接下载使用。否则请按照自己的工具和环境来创建项目；<br />
 4. 如果在配置文件中没有配置spring.cloud.consul.discovery.prefer-ip-address=true，那么需要在云主机的host文件中加上 本机名 本机IP；<br />

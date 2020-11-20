@@ -1,5 +1,5 @@
 
-# 部署持久化存储
+# 部署持久化存储(适配Kubernetes 1.12版本)
 
 京东云Kubernetes集群服务集成了京东云云硬盘，您可以在集群中使用京东云云硬盘作为持久化存储；  
 
@@ -21,7 +21,7 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   jdcloudElasticBlockStore:
-    volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同地域的且状态为可用的云硬盘ID替换
+    volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同可用区的且状态为可用的云硬盘ID替换
     fsType: xfs
 ```     
 
@@ -29,7 +29,7 @@ spec:
 
 1、如您需要在京东云Kubernetes集群服务中使用京东云云硬盘作为持久化存储，请在PersistentVolume定义时，指定插件jdcloudElasticBlockStore；  
 
-2、volumeID：指定同地域下为Kubernetes集群服务提供持久化存储的云硬盘ID；  
+2、volumeID：指定同可用区下为Kubernetes集群服务提供持久化存储的云硬盘ID；  
 
 3、fsType：指定文件系统类型；目前仅支持ext4和xfs两种；  
 
@@ -142,8 +142,6 @@ spec:
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
-|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
 |hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
 |ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
 |ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB| 

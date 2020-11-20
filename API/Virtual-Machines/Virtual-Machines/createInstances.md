@@ -39,6 +39,8 @@
         - 自动删除
             - 默认自动删除，如果是包年包月的云硬盘，此参数不生效
         - 可以从快照创建磁盘
+    - iops
+        - 仅当云盘类型为ssd.io1时，可指定iops值，范围为【200， min（32000，size * 50 ）】，步长为10，若不指定则按此公式计算默认值
     - local类型系统的云主机可以挂载8块云硬盘
     - cloud类型系统的云主机可以挂载7块云硬盘
 - 计费
@@ -66,11 +68,11 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceSpec**|InstanceSpec|True| |描述云主机配置<br>|
+|**instanceSpec**|[InstanceSpec](createinstances#instancespec)|True| |描述云主机配置<br>|
 |**maxCount**|Integer|False|1|购买云主机的数量；取值范围：[1,100]，默认为1。<br>|
 |**clientToken**|String|False| |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符。<br>|
 
-### InstanceSpec
+### <div id="instancespec">InstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**agId**|String|False| |高可用组Id。指定了此参数后，只能通过高可用组关联的实例模板创建虚机，并且实例模板中的参数不可覆盖替换。实例模板以外的参数还可以指定。|
@@ -81,36 +83,45 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**name**|String|True| |云主机名称，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 |**password**|String|False| |密码，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 |**keyNames**|String[]|False| |密钥对名称，当前只支持传入一个。|
-|**elasticIp**|ElasticIpSpec|False| |主网卡主IP关联的弹性IP规格|
-|**primaryNetworkInterface**|InstanceNetworkInterfaceAttachmentSpec|False| |主网卡配置信息|
-|**systemDisk**|InstanceDiskAttachmentSpec|False| |系统盘配置信息|
-|**dataDisks**|InstanceDiskAttachmentSpec[]|False| |数据盘配置信息，本地盘(local类型)做系统盘的云主机可挂载8块数据盘，云硬盘(cloud类型)做系统盘的云主机可挂载7块数据盘。|
-|**charge**|ChargeSpec|False| |计费配置<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
-|**userdata**|Userdata[]|False| |元数据信息，目前只支持传入一个key为"launch-script"，表示首次启动脚本。value为base64格式。<br>launch-script：linux系统支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行;<br>launch-script：windows系统支持bat和powershell，编码前须分别以 <cmd></cmd> 和 <powershell></powershell> 作为内容首、尾行。<br>|
+|**elasticIp**|[ElasticIpSpec](createinstances#elasticipspec)|False| |主网卡主IP关联的弹性IP规格|
+|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachmentSpec](createinstances#instancenetworkinterfaceattachmentspec)|False| |主网卡配置信息|
+|**systemDisk**|[InstanceDiskAttachmentSpec](createinstances#instancediskattachmentspec)|False| |系统盘配置信息|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](createinstances#instancediskattachmentspec)|False| |数据盘配置信息，本地盘(local类型)做系统盘的云主机可挂载8块数据盘，云硬盘(cloud类型)做系统盘的云主机可挂载7块数据盘。|
+|**charge**|[ChargeSpec](createinstances#chargespec)|False| |计费配置<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
+|**userdata**|[Userdata[]](createinstances#userdata)|False| |元数据信息，目前只支持传入一个key为"launch-script"，表示首次启动脚本。value为base64格式，编码前数据不能大于16KB。<br>launch-script：linux系统支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行;<br>launch-script：windows系统支持bat和powershell，编码前须分别以 <cmd></cmd> 和 <powershell></powershell> 作为内容首、尾行。<br>|
 |**description**|String|False| |主机描述，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 |**noPassword**|Boolean|False| |不使用模板中的密码。<br>仅当不使用Ag，并且使用了模板，并且password参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了password参数时，此参数无效，以新指定的为准。<br>|
 |**noKeyNames**|Boolean|False| |不使用模板中的密钥。<br>仅当不使用Ag，并且使用了模板，并且keynames参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了keynames参数时，此参数无效，以新指定的为准。<br>|
-|**noElasticIp**|Boolean|False| |不使用模板中的弹性公网IP。<br>仅当不使用Ag，并且使用了模板，并且elasticIp参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了elasticIp参数时，此参数无效，以新指定的为准。|
-### Userdata
+|**noElasticIp**|Boolean|False| |不使用模板中的弹性公网IP。<br>仅当不使用Ag，并且使用了模板，并且elasticIp参数为空时，此参数(值为true)生效。<br>若使用模板创建虚机时，又指定了elasticIp参数时，此参数无效，以新指定的为准。<br>|
+|**userTags**|[Tag[]](createinstances#tag)|False| |用户普通标签集合|
+|**chargeOnStopped**|String|False| |关机模式，只支持云盘做系统盘的按配置计费云主机。keepCharging：关机后继续计费；stopCharging：关机后停止计费。|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |Tag键|
+|**value**|String|False| |Tag值|
+### <div id="userdata">Userdata</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**key**|String|False| |键|
 |**value**|String|False| |值|
-### ChargeSpec
+### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
 |**chargeUnit**|String|False| |预付费计费单位，预付费必填，当chargeMode为prepaid_by_duration时有效，取值为：month、year，默认为month|
 |**chargeDuration**|Integer|False| |预付费计费时长，预付费必填，当chargeMode取值为prepaid_by_duration时有效。当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3|
-### InstanceDiskAttachmentSpec
+|**autoRenew**|Boolean|False| |True=：OPEN——开通自动续费、False=CLOSE—— 不开通自动续费，默认为CLOSE|
+|**buyScenario**|String|False| |产品线统一活动凭证JSON字符串，需要BASE64编码，目前要求编码前格式为 {"activity":{"activityType":必填字段, "activityIdentifier":必填字段}}|
+### <div id="instancediskattachmentspec">InstanceDiskAttachmentSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**diskCategory**|String|False| |磁盘分类，取值为本地盘(local)或者云硬盘(cloud)。<br>系统盘支持本地盘(local)或者云硬盘(cloud)。系统盘选择local类型，必须使用localDisk类型的镜像；同理系统盘选择cloud类型，必须使用cloudDisk类型的镜像。<br>数据盘仅支持云硬盘(cloud)。<br>|
 |**autoDelete**|Boolean|False| |是否随云主机一起删除，即删除主机时是否自动删除此磁盘，默认为true，本地盘(local)不能更改此值。<br>如果云主机中的数据盘(cloud)是包年包月计费方式，此参数不生效。<br>如果云主机中的数据盘(cloud)是共享型数据盘，此参数不生效。<br>|
-|**cloudDiskSpec**|DiskSpec|False| |数据盘配置|
+|**cloudDiskSpec**|[DiskSpec](createinstances#diskspec)|False| |数据盘配置|
 |**deviceName**|String|False| |数据盘逻辑挂载点，取值范围：vda,vdb,vdc,vdd,vde,vdf,vdg,vdh,vdi,vmj,vdk,vdl,vdm|
 |**noDevice**|Boolean|False| |排除设备，使用此参数noDevice配合deviceName一起使用。<br>创建整机镜像：如deviceName:vdb、noDevice:true，则表示云主机中的数据盘vdb不参与创建镜像。<br>创建模板：如deviceName:vdb、noDevice:true，则表示镜像中的数据盘vdb不参与创建主机。<br>创建主机：如deviceName:vdb、noDevice:true，则表示镜像中的数据盘vdb，或者模板(使用模板创建主机)中的数据盘vdb不参与创建主机。<br>|
-### DiskSpec
+### <div id="diskspec">DiskSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**az**|String|True| |云硬盘所属的可用区|
@@ -120,15 +131,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G, ssd.gp1, ssd.io1, hdd.std1 类型取值均是范围[20,16000]GB，步长为10G|
 |**iops**|Integer|False| |云硬盘IOPS的大小，当且仅当云盘类型是ssd.io1型的云盘有效，步长是10.|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
-|**charge**|ChargeSpec|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
+|**charge**|[ChargeSpec](createinstances#chargespec)|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**encrypt**|Boolean|False| |云硬盘是否加密，默认为false（不加密）|
-### InstanceNetworkInterfaceAttachmentSpec
+### <div id="instancenetworkinterfaceattachmentspec">InstanceNetworkInterfaceAttachmentSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**deviceIndex**|Integer|False| |网卡设备Index，主网卡只能是1|
-|**networkInterface**|NetworkInterfaceSpec|False| |网卡接口规范|
-### NetworkInterfaceSpec
+|**networkInterface**|[NetworkInterfaceSpec](createinstances#networkinterfacespec)|False| |网卡接口规范|
+### <div id="networkinterfacespec">NetworkInterfaceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**subnetId**|String|True| |子网ID|
@@ -140,20 +151,20 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**securityGroups**|String[]|False| |要绑定的安全组ID列表，最多指定5个安全组|
 |**sanityCheck**|Integer|False| |源和目标IP地址校验，取值为0或者1,默认为1|
 |**description**|String|False| |描述,​ 允许输入UTF-8编码下的全部字符，不超过256字符|
-### ElasticIpSpec
+### <div id="elasticipspec">ElasticIpSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|True| |弹性公网IP的限速（单位：Mbps），取值范围为[1-200]|
-|**provider**|String|True| |IP服务商，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：[bgp，no_bgp]；cn-east-1：[bgp，no_bgp]；cn-east-2：bgp|
-|**chargeSpec**|ChargeSpec|False| |计费配置|
+|**provider**|String|True| |IP线路信息。当IP类型为标准公网IP时，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：bgp；cn-east-1：bgp；cn-east-2：bgp。当IP类型为边缘公网IP时，其值可通过调用describeEdgeIpProviders、获取不同边缘节点的边缘公网IP线路信息|
+|**chargeSpec**|[ChargeSpec](createinstances#chargespec)|False| |计费配置。边缘公网IP支持包年包月、按配置；标准公网IP支持包年包月、按配置、按流量|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createinstances#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceIds**|String[]| |

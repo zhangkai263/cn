@@ -12,6 +12,7 @@
 | forbiddenType   | String | 是        | 只能是domain或者url中的一种 |
 | domain      | String | 是        | 封禁域名 |
 | forbiddenUrl   | String | 否        |只有url封禁删除时，此参数是必填项，每次只能删除封禁一个URL，如需删除多个，则需请求多次，url必须以/开头  |
+|shareCacheDomainForbid | String | 否 | 1为封禁共享缓存域名，0为不封禁共享缓存域名|
 
 ### 3. 返回参数
 

@@ -30,14 +30,14 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods/{podId}/containers/{conta
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](getcontainerlogs#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**logs**|Logs| |
-### Logs
+|**logs**|[Logs](getcontainerlogs#logs)| |
+### <div id="logs">Logs</div>
 |名称|类型|描述|
 |---|---|---|
 |**content**|String|容器日志内容，最多返回4KB|

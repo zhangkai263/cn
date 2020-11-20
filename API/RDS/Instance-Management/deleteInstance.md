@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除一个RDS实例或者MySQL的只读实例。删除MySQL主实例时，会同时将对应的MySQL只读实例也删除<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>
+删除一个RDS实例或者MySQL/PostgreSQL的只读实例。删除MySQL/PostgreSQL主实例时，会同时将对应的MySQL/PostgreSQL只读实例也删除<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteInstance() {
+    DeleteInstanceRequest request = new DeleteInstanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-4kopy2wqc3");
+    DeleteInstanceResponse response = rdsClient.deleteInstance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4otkbpdiwmomei1s23irbgawe6skn"
+}
+```

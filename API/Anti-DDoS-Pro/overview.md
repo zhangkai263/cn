@@ -12,6 +12,7 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
+|**bindCert**|POST|网站类规则绑定 SSL 证书|
 |**checkName**|GET|检测实例名称是否合法|
 |**createBlackListRuleOfWebRule**|POST|添加网站类规则的黑名单规则|
 |**createCCProtectionRuleOfWebRule**|POST|添加网站类规则的 CC 防护规则|
@@ -54,10 +55,12 @@ v1
 |**describeNameList**|GET|查询高防实例名称列表|
 |**describeProtectionRuleOfForwardRule**|GET|查询非网站类转发规则的防护规则|
 |**describeProtectionStatistics**|GET|查询高防实例防护统计信息|
+|**describeServiceIpList**|GET|查询实例高防 IP 列表|
 |**describeVpcIpList**|GET|查询用户可设置为网站类规则回源 IP 的京东云云内弹性公网 IP 资源|
 |**describeWebRule**|GET|查询网站类规则|
 |**describeWebRuleBlackListGeoAreas**|GET|查询网站类转发规则 Geo 模式的黑名单可设置区域编码|
 |**describeWebRuleBlackListUsage**|GET|查询网站类防护规则的黑名单用量信息|
+|**describeWebRuleRSGeoAreas**|GET|查询网站类转发规则按地域回源配置 geoRsRoute 可设置的区域|
 |**describeWebRuleWhiteListGeoAreas**|GET|查询网站类转发规则 Geo 模式的白名单可设置区域编码|
 |**describeWebRuleWhiteListUsage**|GET|查询网站类防护规则的白名单用量信息|
 |**describeWebRules**|GET|查询某个实例下的网站类规则|

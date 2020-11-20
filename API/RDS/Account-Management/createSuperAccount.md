@@ -30,3 +30,25 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testCreateSuperAccountRequest() {
+    CreateSuperAccountRequest request = new CreateSuperAccountRequest();
+    request.setAccountName("dj_ac");
+    request.setAccountPassword("123456aA");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    CreateSuperAccountResponse response = rdsClient.createSuperAccount(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2gss98ajwjm0n7k9q8i5g1m1pdnjv"
+}
+```

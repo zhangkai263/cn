@@ -1,0 +1,105 @@
+name: 堡垒机
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Procedure.md
+      - name: 续费流程
+        href: Pricing/Renewal-Procedure.md
+      - name: 升级配额
+        href: Pricing/Resize-Instance.md
+  - name: 入门指南
+    items:
+      - name: 概览
+        href: Getting-started/Getting-Started.md
+      - name: 登录堡垒机系统
+        href: Getting-started/Login-Bastion.md
+      - name: 导入京东云云主机
+        href: Getting-started/Import-ECS.md
+      - name: 导入京东云IAM子用户
+        href: Getting-started/Import-IAM.md
+      - name: 创建运维规则并授权
+        href: Getting-started/Create-Rules.md
+      - name: 主机运维
+        href: Getting-started/Login-Instance.md
+        
+  - name: 操作指南
+    items:
+      - name: 管理员手册
+        items:
+          - name: 堡垒机实例
+            href: Operation-Guide/Administrator/Instance-Info.md
+          - name: 登录堡垒机系统
+            href: Operation-Guide/Administrator/Login-Bastion.md
+          - name: 用户
+            items:
+               - name: 用户管理
+                 href: Operation-Guide/Administrator/Users/Users.md
+               - name: 用户组管理
+                 href: Operation-Guide/Administrator/Users/Users-Group.md
+               - name: 导入京东云IAM子用户
+                 href: Operation-Guide/Administrator/Users/Create-IAM.md
+          - name: 资产
+            items:
+                - name: 主机管理
+                  href: Operation-Guide/Administrator/Assets/Assets.md
+                - name: 主机组管理
+                  href: Operation-Guide/Administrator/Assets/Assets-Group.md
+                - name: 账户管理
+                  href: Operation-Guide/Administrator/Assets/Account.md
+          - name: 权限
+            items:
+                - name: 规则管理
+                  href: Operation-Guide/Administrator/Authorization/Rules.md
+                - name: 授权管理
+                  href: Operation-Guide/Administrator/Authorization/Permission.md
+          - name: 审计
+            items:
+                - name: 实时审计
+                  href: Operation-Guide/Administrator/Audit/Real-Time-Session.md
+                - name: 会话审计
+                  href: Operation-Guide/Administrator/Audit/Session-Audit.md
+                - name: 操作审计
+                  href: Operation-Guide/Administrator/Audit/Operational-Audit.md
+          - name: 系统设置
+            href: Operation-Guide/Administrator/System-settings.md
+          - name: 监控
+            items:
+                - name: 监控概述
+                  href: Operation-Guide/Administrator/Monitoring/Overview.md
+                - name: 获取监控数据
+                  href: Operation-Guide/Administrator/Monitoring/Retrieve-Data.md
+                - name: 设置报警
+                  href: Operation-Guide/Administrator/Monitoring/Set-Alarm.md
+            
+                  
+                    
+      - name: 运维手册
+        items:
+          - name: WEB浏览器运维
+            href: Operation-Guide/Operation/Web.md
+          - name: SSH客户端运维
+            href: Operation-Guide/Operation/SSH.md
+          - name: SFTP客户端运维
+            href: Operation-Guide/Operation/SFTP.md
+          - name: MAC系统运维
+            href: Operation-Guide/Operation/Mac.md

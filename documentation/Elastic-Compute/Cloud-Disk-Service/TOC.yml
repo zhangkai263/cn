@@ -21,20 +21,18 @@
         href: Introduction/Multiattachdisk.md
       - name: 性能测试
         href: Introduction/Performance-Test.md
+      - name: 云硬盘快照容量说明
+        href: Introduction/snapshotcapacity.md
       - name: 使用约束
-        href: Introduction/Restrictions.md       
+        href: Introduction/Restrictions.md
   - name: 产品定价
     items:
     - name: 计费模式说明
       items:
-        - name: 计费规则
-          href: Pricing/Billing-Mode-Instructions/Billing-Rules.md
-        - name: 续费规则
-          href: Pricing/Billing-Mode-Instructions/Renew-Rules.md
-        - name: 到期&欠费规则
-          href: Pricing/Billing-Mode-Instructions/Owe-Rules.md
-        - name: 到期&欠费提醒
-          href: Pricing/Billing-Mode-Instructions/Owe-Remind.md
+      - name: 云硬盘计费模式
+        href: Pricing/disk-billing-rules.md
+      - name: 云硬盘快照计费模式
+        href: Pricing/snapshot-billing-rules.md
     - name: 价格总览
       href: Pricing/Price-Overview.md
     - name:  购买渠道
@@ -52,25 +50,24 @@
       href: Getting-Started/Cloud-Disk/Attach-Cloud-Disk.md
     - name: 云硬盘分区、格式化、联机及创建文件系统
       items:
-        - name: Linux分区、格式化和创建文件系统
-          href: Getting-Started/Cloud-Disk/Parted-Format/Linux-Partition.md
+        - name: Linux分区、格式化
+          href: Getting-Started/Cloud-Disk/Linux-Partition.md
+        - name: Linux创建文件系统
+          href: Getting-Started/Cloud-Disk/Linux-mkfs.md
         - name: Windows分区、格式化和创建文件系统
-          href: Getting-Started/Cloud-Disk/Parted-Format/Windows-Partition.md
+          href: Getting-Started/Cloud-Disk/Windows-Partition.md
           
     - name: 扩容文件系统
       items:
         - name: 云硬盘扩容概述
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Cloud-Disk-Expansion-Overview.md
-        - name: 云硬盘升级容量
+        - name: 控制台扩容操作
           href: Getting-Started/Cloud-Disk/Disk-Expand.md
-        - name: 扩容文件系统（Windows）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Windows.md
-        - name: 扩容文件系统（Linux）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Linux.md
-        - name: 扩容裸盘文件系统（Linux）
-          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-Raw-Disk-File-System.md
-        - name: 扩容文件系统（多分区）
+        - name: 扩容文件系统（有分区）
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Multi-Partition.md
+        - name: 扩容文件系统（Linux无分区）
+          href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Linux.md
+
     - name: 卸载云硬盘
       href: Getting-Started/Cloud-Disk/Detach-Cloud-Disk.md
     - name: 删除云硬盘
@@ -89,5 +86,7 @@
       href: Operation-Guide/Cloud-Disk-Snapshot/Recover-CloudDisk.md
     - name: 删除快照
       href: Operation-Guide/Cloud-Disk-Snapshot/Deletion-Snapshot.md
+    - name: 自定义快照策略
+      href: Operation-Guide/Cloud-Disk-Snapshot/SnapshotPolicy.md
   - name: 常见问题
     href: FAQ/FAQ.md

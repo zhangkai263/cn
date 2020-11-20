@@ -61,6 +61,36 @@ function Filter(msg, metadata, msgType) {
 - 点击 **添加动作** ，出现添加动作弹窗，添加操作有三种方式，分别是转发到另一个Topic，转发到JCQ，转发到ES
 
 ![scrpit](../../../../../image/IoT/IoT-Hub/Add-Action.png)
+### 注意：
+
+设备上报的数据经过规则引擎转发后会进行数据增强处理，增加设备名称，设备标识及设备产品的信息，示例如下：
+
+ 产品 iottest下的名为test-device的设备上报的数据格式：
+
+```
+{
+ "msgId": "123",
+ "version": "1.0",
+ "data": {
+ "message": "Hello World"
+ },
+ "ts": 1559805611390
+}
+```
+
+规则引擎转发出去的格式：
+
+```
+{
+  "identifier":"kKvX***kvx",
+  "message":"Hello World",
+  "productKey":"REwf***gdne",
+  "deviceName":"test-device",
+  "ts":"1577181657114"
+} 
+```
+
+
 
 ### 2.2.1 转发到另一个Topic
 

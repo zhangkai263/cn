@@ -77,17 +77,27 @@ kubectl get services -n kube-system
 ## 二、dashboard身份认证  
 在dashboad中查看集群的资源信息，需要通过用户身份认证；  
 **以获取admin服务账户的令牌为例，具体操作方法如下：**  
-1、查看kube-system命名空间中的所有secret：  
+1. 创建一个新的token（可选步骤） 
+
+`
+kubectl create serviceaccount admin-user -n kube-system   
+`
+    
+`
+kubectl create clusterrolebinding admin-user --serviceaccount=kube-system:admin-user --clusterrole=cluster-admin   
+` 
+  
+2、查看kube-system命名空间中的所有secret：  
 `
 kubectl get secret -n kube-system
 `  
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/admintoken列表.png)  
-2、查看admin服务账户对应的secret详情，该集群为admin-user-token-b6djq，b6djq部分请根据自身集群进行替换：  
+3、查看admin服务账户对应的secret详情，该集群为admin-user-token-b6djq，b6djq部分请根据自身集群进行替换：  
 `
 kubectl describe secret admin-user-token-b6djq -n kube-system
 `  
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/查看admintoken.png)  
-3、将Data 项中对应的token信息拷贝到dashboard窗口令牌输入框中，点击确定即可；  
+4、将Data 项中对应的token信息拷贝到dashboard窗口令牌输入框中，点击确定即可；  
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/输入令牌.png)   
 
 您也可以将token信息添加到config文件user项目中，之后，您即可选择Kubeconfig方式进行身份认证。

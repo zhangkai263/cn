@@ -57,7 +57,7 @@ items:
         - name: 创建API
           herf: Operation-Guide/Create-API/Create-API.md
         - name: API高级配置
-          herf: Operation-Guide/Create-API/Adv-API.md
+          herf: Operation-Guide/Create-API/Advanced-Configuration-API.md
     - name: 后端服务
       items:
         - name: HTTP/HTTPS后端服务
@@ -98,6 +98,10 @@ items:
           herf: Operation-Guide/Code/TestAPI.md        
         - name:  错误码
           herf: Operation-Guide/Code/API_Errorcode.md
+    - name: SDK及相关文档
+      items:
+        - name:  SDK及相关文档
+          herf: Operation-Guide/SDK-and-Document.md  
 - name: 最佳实践
   items:
   - name: 最佳实践
@@ -109,4 +113,5 @@ items:
   items:
   - name: 文档历史记录
     herf: Related-Resources/Document-History.md 
-    
+  - name: 调用过程中公共错误码参考
+    herf: Related-Resources/Error-Code.md   

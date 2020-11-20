@@ -28,3 +28,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/databas
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteDatabase() {
+    DeleteDatabaseRequest deleteDatabaseRequest = new DeleteDatabaseRequest();
+    deleteDatabaseRequest.setDbName("test_db");
+    deleteDatabaseRequest.setInstanceId("mysql-wp4e9ztap2");
+    deleteDatabaseRequest.setRegionId("cn-north-1");
+    DeleteDatabaseResponse response = rdsClient.deleteDatabase(deleteDatabaseRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3ow7bae3ovbn5g0gmvbt3sgw00wda"
+}
+```

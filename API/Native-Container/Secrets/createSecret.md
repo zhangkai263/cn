@@ -20,9 +20,9 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/secrets
 |---|---|---|---|---|
 |**name**|String|True| |镜像仓库认证信息名称，不能重复<br>|
 |**secretType**|String|True| |镜像仓库认证信息类型，目前仅支持：docker-registry 类型，用来和docker registry认证的类型。<br>|
-|**data**|DockerRegistryData|True| |镜像仓库认证信息数据。<br><br>必须包含server、username、password 字段，email 字段是可选的。<br><br>|
+|**data**|[DockerRegistryData](createsecret#dockerregistrydata)|True| |镜像仓库认证信息数据。<br><br>必须包含server、username、password 字段，email 字段是可选的。<br><br>|
 
-### DockerRegistryData
+### <div id="dockerregistrydata">DockerRegistryData</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**server**|String|True| |registry服务器地址|
@@ -33,10 +33,10 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/secrets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](createsecret#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**secretName**|String| |

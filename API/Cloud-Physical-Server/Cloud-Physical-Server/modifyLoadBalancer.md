@@ -12,7 +12,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}:modifyLo
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID，可调用接口（queryCPSLBRegions）获取云物理服务器支持的地域|
+|**regionId**|String|True| |地域ID，可调用接口（describeCPSLBRegions）获取云物理服务器支持的地域|
 |**loadBalancerId**|String|True| |负载均衡实例ID|
 
 ## 请求参数
@@ -25,14 +25,14 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}:modifyLo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyloadbalancer#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**loadBalancer**|LoadBalancer|负载均衡实例详细信息|
-### LoadBalancer
+|**loadBalancer**|[LoadBalancer](modifyloadbalancer#loadbalancer)|负载均衡实例详细信息|
+### <div id="loadbalancer">LoadBalancer</div>
 |名称|类型|描述|
 |---|---|---|
 |**loadBalancerId**|String|负载均衡实例ID|
@@ -47,8 +47,8 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/slbs/{loadBalancerId}:modifyLo
 |**name**|String|名称|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
-|**charge**|Charge|计费配置|
-### Charge
+|**charge**|[Charge](modifyloadbalancer#charge)|计费配置|
+### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

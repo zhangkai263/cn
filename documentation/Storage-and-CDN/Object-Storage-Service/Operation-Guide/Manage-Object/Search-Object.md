@@ -4,9 +4,11 @@
 
 ### 搜索操作步骤如下：
 
-1.登录京东云对象存储控制台，并进入某一空间的空间管理->Object管理页，在右侧的搜索框中输入待搜索的内容，输入完成后点击回车键或搜索按钮：
+1. 登录京东云对象存储控制台。
 
-![搜索](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-045.png)
+2. 进入某一空间的空间管理->Object管理页。
 
-2.搜索后返回符合查询条件的文件列表：
-![结果](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-046.png)
+3. 在右侧的搜索框中输入待搜索的内容，输入完成后点击回车键或搜索按钮。
+
+   系统将列出符合查询条件的对象和文件目录的名称。
+

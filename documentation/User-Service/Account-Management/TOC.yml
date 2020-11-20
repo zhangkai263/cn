@@ -1,8 +1,6 @@
   name: 账户管理
   href: 
   items:
-  - name: 京东云新账号简介
-    href: What-Is-JDCloud-Account.md
   - name: 登录与注册
     href: Sign-In-And-Sign-Up.md
   - name: 查看账号信息

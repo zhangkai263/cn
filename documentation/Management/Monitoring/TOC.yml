@@ -10,8 +10,6 @@ items:
       href: Introduction/Basic-Infrastructure.md
     - name: 产品优势
       href: Introduction/Benefits.md
-    - name: 监控指标
-      href: Introduction/Metrics.md
     - name: 产品规格
       href: Introduction/Specifications.md
       status: 0
@@ -60,31 +58,97 @@ items:
         - name: 查看报警规则
           href: Operation-Guide/resource-monitoring/view-resource-rules.md     
         - name: 添加报警规则
-          href: Operation-Guide/resource-monitoring/set-alarm-rules-details.md
+          items:
+            - name: 批量添加报警
+              href: Operation-Guide/resource-monitoring/add-rule-in-batches.md
+            - name: 指定资源添加报警
+              href: Operation-Guide/resource-monitoring/add-rule.md
+            - name: 基于标签添加报警
+              href: Operation-Guide/resource-monitoring/add-rule-tags.md 
         - name: 管理报警规则
           href: Operation-Guide/resource-monitoring/resource-rules.md  
         - name: 报警模板
           href: Operation-Guide/resource-monitoring/alarm-template.md
     - name: 自定义监控 
       items:
-        - name: 自定义监控概述
+        - name: 概述
           href: Operation-Guide/custom-monitoring/custom-monitoring-overview.md
         - name: 上报监控数据
           href: Operation-Guide/custom-monitoring/reporting-monitoring-data.md
-        - name: 查看监控数据
-          href: Operation-Guide/custom-monitoring/view-monitoring-data.md
-        - name: 删除监控数据
-          href: Operation-Guide/custom-monitoring/delete-monitoring-data.md      
-        - name: 设置报警规则
-          href: Operation-Guide/custom-monitoring/set-alarm-rules-CustomMetric.md
+        - name: 查看监控图
+          href: Operation-Guide/custom-monitoring/chart-view.md
+        - name: 添加报警规则
+          href: Operation-Guide/custom-monitoring/create-alarmrule-custom.md      
+        - name: 管理报警规则
+          href: Operation-Guide/custom-monitoring/manage_alarmrules_cm.md
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
+    - name: 一键报警
+      href: Operation-Guide/Alarm-Management/One-Click-Alarming.md
 - name: 最佳实践
   items:
     - name: 批量资源监控
       href: Best-Practices/bulk-resource-monitoring.md
     - name: 日常业务监控
       href: Best-Practices/daily-business-monitoring.md
+- name: 云资源监控指标
+  items:
+    - name: 监控指标概述
+      href: Metrics/Metrics.md
+    - name: 云主机
+      href: Metrics/vm.md
+    - name: 云硬盘
+      href: Metrics/disk.md
+    - name: 原生容器
+      href: Metrics/nativecontainer.md
+    - name: kubernetes集群
+      href: Metrics/k8s.md
+    - name: 弹性伸缩
+      href: Metrics/autoscaling.md
+    - name: 函数服务
+      href: Metrics/function.md   
+    - name: 弹性公网IP
+      href: Metrics/ip.md
+    - name: 专线服务
+      href: Metrics/DirectConnection.md
+    - name: NAT网关
+      href: Metrics/natgateway.md
+    - name: 负载均衡
+      href: Metrics/lb.md
+    - name: 云数据库RDS
+      href: Metrics/rds.md
+    - name: 云数据库 MongoDB
+      href: Metrics/mongodb.md
+    - name: DRDS
+      href: Metrics/drds.md
+    - name: 云缓存 redis
+      href: Metrics/redis.md
+    - name: 云缓存 Memcached
+      href: Metrics/Memcached.md
+    - name: 云数据库 InfluxDB
+      href: Metrics/tsds.md
+    - name: 数据仓库 JDW
+      href: Metrics/jdw.md
+    - name: 数据传输 DTS
+      href: Metrics/dts.md
+    - name: 对象存储
+      href: Metrics/oss.md
+    - name: 云文件服务
+      href: Metrics/zfs.md
+    - name: CDN
+      href: Metrics/CDN.md
+    - name: 消息队列JCQ
+      href: Metrics/jcq.md
+    - name: 消息队列RabbitMQ版
+      href: Metrics/RabbitMQ.md
+    - name: Zookeeper
+      href: Metrics/zk.md
+    - name: 云搜索 ElasticSearch
+      href: Metrics/es.md
+    - name: 分布式事务
+      href: Metrics/jdts.md
+    - name: 堡垒机
+      href: Metrics/bastion.md 
 - name: 教程
   items:
   status: 0

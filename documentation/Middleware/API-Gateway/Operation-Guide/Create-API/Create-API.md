@@ -13,12 +13,14 @@ API分组是网关的基础服务单元并实现对外开放，而每个API分�
 ## 操作步骤：
 
 1. 在API分组列表页中，找到需要创建API的分组
- ![API分组管理](../../../../../image/Internet-Middleware/API-Gateway/apigroup-1.png)
+ ![API分组管理](../../../../../image/Internet-Middleware/API-Gateway/API-1.png)
 点击该分组行的操作 **管理API**，进入“API列表”页
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/API-2.png)
 
 2. 在“API列表”页面，点击 **新建API** ，进入创建API页面。
-![新建API](../../../../../image/Internet-Middleware/API-Gateway/apigroup-addapi.png)
+![新建API](../../../../../image/Internet-Middleware/API-Gateway/API-3.png)
+![新建API](../../../../../image/Internet-Middleware/API-Gateway/API-4.png)
+![新建API](../../../../../image/Internet-Middleware/API-Gateway/API-5.png)
    
 3.填写API信息后，点击保存，即新建完成。
 

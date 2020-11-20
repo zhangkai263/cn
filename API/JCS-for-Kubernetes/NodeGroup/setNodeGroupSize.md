@@ -2,7 +2,7 @@
 
 
 ## 描述
-调整节点组实例数量
+调整工作节点组实例数量
 
 ## 请求方式
 POST
@@ -13,12 +13,12 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |节点组 ID|
+|**nodeGroupId**|String|True| |工作节点组 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**expectCount**|Integer|True| |创建集群请求参数模型|
+|**expectCount**|Integer|True| |预期目标节点数量|
 
 
 ## 返回参数

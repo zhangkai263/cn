@@ -1,20 +1,19 @@
-#  应用管理
-应用，是一组具有特定功能组成的集合。当前平台提供虚拟机应用的部署，用户可通过虚拟机部署方式，部署应用程序包到云主机上。
-
-- 1台云主机上只能部署1个应用；
-- 支持WAR包、JAR包部署。
+#  应用管理概述
+应用，是一组具有特定功能组成的集合。当应用完成开发后可通过控制台进行应用部署，目前已支持虚拟机应用部署,集成K8S容器应用部署。
 
 
-## 操作场景
+|   | 云主机部署 | K8S容器应用部署 |
+| :- | :- | :- |
+| 操作场景 | 为传统部署方式。用户在命名空间（如预发环境、线上环境）中，部署程序包、创建应用、删除应用等。 | 在京东云上使用K8S集群后，可通过JDSF部署K8S应用。 |
+| 部署方式 | 部署应用程序包到云主机上。1台云主机上只能部署1个应用。 | 部署K8S应用到京东云上的K8S集群。  |
+| 资源池 | 云主机 | K8S集群 |
+| 部署介质 | WAR包、JAR包 | 镜像 |
 
-例如，用户在命名空间（如预发环境、线上环境）中，部署程序包、创建应用、删除应用等。
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/cvmk8sdeploy1.png)
 
-## 操作步骤
 
-应用的操作流程如下：
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow.png)
-
+## 应用的基本操作
 
 
 ### 创建应用
@@ -25,12 +24,8 @@
 
 3、	设置基本信息，单击确定，完成创建。
 
-**说明：**
 
--  Java运行环境目前支持OpenJDK1.7、OpenJDK1.8。
-
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-1.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-create-12.png)
 
 
 ### 删除应用
@@ -41,9 +36,9 @@
 
 **说明：**
 
-- 需先删除部署组，才能删除应用；否则无法删除。
+- 如果有部署组，需要先删除部署组，才能删除应用；否则无法删除。
 
-- 删除时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+- 删除应用时，将同时删除程序包和部署历史。
 
 - 用户需在删除数据前，自行做好数据备份工作。
 
@@ -51,37 +46,36 @@
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-del-1.png)
 
 
-### 部署应用
+### 应用部署
 
-1、 登录微服务平台控制台。	在左侧导航栏点击应用管理，进入应用列表页。
+1、云主机应用部署流程如下：
 
-2、对于需要部署的应用，点击操作列的发起部署。
-
-- 为提升用户体验，**系统将在云主机中使用Supervisor来管理用户服务。**
-
-- 如果已经创建了相应的部署组，则可直接配置好部署来源、选择部署组后，即可发起部署。
-
-- 如果还未创建部署组，可点击“新建部署组”，先新建部署组后再部署。关于部署组内容，可查看  [部署组](Deploy-Group.md)   章节。
-
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-fqbs.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-yzj.png)
 
 
-3、实施部署。
+详情请参考 ：[云主机中部署应用](APPDeloy.md)  
+ 
+ 
+2、K8S容器应用部署流程如下：
 
-![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/bsz-xq.png)
+![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-flow-k8s.png)
+
+详情请参考 ：[在K8S容器中部署应用](APPDeloyK8S.md)  
+ 
 
 **说明：**
 
-- 部署完成后，可进行回滚、重新部署等操作。
+1. 在资源池中重新导入云主机，可以把安全组的50001端口打开。
 
-- 用户还可查看每个实例的部署信息。
+2. 重做新操作系统，不会改动安全组。部署成功就可以正常停止/启动应用。
 
-- 删除应用时，用户可以选择，是否同时删除程序包。默认勾选同时删除。
+3.如果用户手动改动安全组或者云主机里面的防火墙设置，可能会影响停止/启动应用的功能。
+
 
 
 ### 实例部署信息
 
-1、 用户可查看当前应用，通过哪些部署组，被部署至哪些实例上；并可对每个实例上的应用，进行启动应用、停止应用操作。
+1、 用户可查看当前应用，通过哪些部署组，被部署至哪些实例上；并可对每个实例上的应用，进行启动应用、停止应用等操作。
 
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-slbsxx.png)
@@ -94,7 +88,11 @@
 
 ### 程序包管理
 
-程序包管理中上传的是，当前应用在部署中所使用的程序包。在删除应用的同时，用户可选择是否同步删除应用下的所有程序包；删除前用户需自行备份。
+1、程序包管理中上传的是当前应用在部署中所使用的程序包。
+
+2、在删除应用的同时，将删除应用下的所有程序包；删除前用户需自行备份。
+
+3、目前，程序包支持JAR, WAR两种类型。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-cxb-list-1.png)
 
@@ -102,13 +100,13 @@
 
 ### 部署历史
 
-该节内容，可查看部署组章节。在删除部署组的同时，用户可选择是否同步删除部署历史；删除前用户需自行备份。
+在删除部署组的同时，将同步删除部署历史；删除前用户需自行备份。
 
 ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/app-bsz-history-list.png)
 
 
 ### 部署组
 
-该节内容，可查看 [部署组](Deploy-Group.md)  章节。
+云主机方式部署应用时，需要通过部署组来实施部署，相关内容请参考： [部署组](Deploy-Group.md)  章节。
 
 

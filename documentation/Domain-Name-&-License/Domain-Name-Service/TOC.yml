@@ -48,18 +48,18 @@
             herf: Operation-Guide/Domain-Transfer/Domain-Name-Transfer.md    
   - name: 问题排查
     items:
-    - name: 域名与反向解析
-      herf: Troubleshooting/Domain-Name-and-Reverse-Resolution.md
-    - name: 如何将不带www的根域名跳转到带www的主域名上
-      herf: Troubleshooting/How-to-Skip-Root-Domain-Name-Without-www-to-Main-Domain-Name-With-www.md
+      - name: 域名与反向解析
+        herf: Troubleshooting/Domain-Name-and-Reverse-Resolution.md
+      - name: 如何将不带www的根域名跳转到带www的主域名上
+        herf: Troubleshooting/How-to-Skip-Root-Domain-Name-Without-www-to-Main-Domain-Name-With-www.md
   - name: 常见问题
     herf: FAQ/FAQ.md
   - name: 用户协议
     items:
     - name: 域名在线服务条款
-      herf: User-Agreements/Donline-Terms-of-Service-of-Domain-Name.md      
+      herf: User-Agreements/IDN-Online-Transfer-Agreement.md
     - name: 国际域名在线转移协议
-      herf: User-Agreements/IDN-Online-Transfer-Agreement.md      
+      herf: User-Agreements/Donline-Terms-of-Service-of-Domain-Name.md
 
           
           

@@ -21,14 +21,14 @@ https://vod.jdcloud-api.com/v1/domains/{domainId}:listHeaders
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询域名访问头参数列表结果|
+|**result**|[Result](listheaders#result)|查询域名访问头参数列表结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**headers**|GetHeaderResultObject[]|头参数列表|
-### GetHeaderResultObject
+|**headers**|[GetHeaderResultObject[]](listheaders#getheaderresultobject)|头参数列表|
+### <div id="getheaderresultobject">GetHeaderResultObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**headerName**|String|头参数名|
