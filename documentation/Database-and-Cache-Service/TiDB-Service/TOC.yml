@@ -42,7 +42,7 @@ items:
           - name: 连接实例
             href: Operation-Guide/Instance/Connect-Instance.md
           - name: 水平扩容  
-            href: Operation-Guide/modifyNodeNum.md
+            href: Operation-Guide/Instance/modifyNodeNum.md
 
       - name: 账户管理
         items:
