@@ -4,13 +4,13 @@
 
  登录服务商后台发布线下服务类服务：选择服务管理-->发布服务，选择线下服务类交付类型，选择完成后点击 “下一步，发布服务”                                              
 
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E7%BA%BF%E4%B8%8B%E6%9C%8D%E5%8A%A11.png)
+![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/人工服务类.png)
 
  
 
 2.编辑基本信息
 
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E7%BA%BF%E4%B8%8B%E6%9C%8D%E5%8A%A12.png)
+![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/人工服务类基本信息.png)
 
 
  
