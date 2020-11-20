@@ -63,14 +63,22 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createBlackListRuleOfWebRule.md
           - name: createCCProtectionRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createCCProtectionRuleOfWebRule.md
+          - name: createJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createJsPageOfWebRule.md
+          - name: createJsPagesOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createJsPagesOfWebRule.md
           - name: createWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWebRule.md
+          - name: createWebRules
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWebRules.md
           - name: createWhiteListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWhiteListRuleOfWebRule.md
           - name: deleteBlackListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteBlackListRuleOfWebRule.md
           - name: deleteCCProtectionRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteCCProtectionRuleOfWebRule.md
+          - name: deleteJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteJsPageOfWebRule.md
           - name: deleteWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteWebRule.md
           - name: deleteWhiteListRuleOfWebRule
@@ -87,6 +95,8 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeCCProtectionRuleOfWebRule.md
           - name: describeCCProtectionRulesOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeCCProtectionRulesOfWebRule.md
+          - name: describeJsPagesOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeJsPagesOfWebRule.md
           - name: describeWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeWebRule.md
           - name: describeWebRuleBlackListGeoAreas
@@ -115,6 +125,10 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCC.md
           - name: disableWebRuleCCObserverMode
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCCObserverMode.md
+          - name: disableWebRuleCCProtectionRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCCProtectionRule.md
+          - name: disableWebRuleJsPage
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleJsPage.md
           - name: disableWebRuleWhiteList
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleWhiteList.md
           - name: disableWhiteListRuleOfWebRule
@@ -129,6 +143,10 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCC.md
           - name: enableWebRuleCCObserverMode
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCCObserverMode.md
+          - name: enableWebRuleCCProtectionRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCCProtectionRule.md
+          - name: enableWebRuleJsPage
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleJsPage.md
           - name: enableWebRuleWhiteList
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleWhiteList.md
           - name: enableWhiteListRuleOfWebRule
@@ -141,8 +159,14 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyCCProtectionRuleOfWebRule.md
           - name: modifyCertInfo
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyCertInfo.md
+          - name: modifyJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyJsPageOfWebRule.md
           - name: modifyWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRule.md
+          - name: modifyWebRuleJsPageToAll
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRuleJsPageToAll.md
+          - name: modifyWebRuleJsPageToCustom
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRuleJsPageToCustom.md
           - name: modifyWhiteListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWhiteListRuleOfWebRule.md
           - name: switchWebRuleOrigin
@@ -153,6 +177,8 @@
         items:
           - name: createForwardRule
             href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/createForwardRule.md
+          - name: createForwardRules
+            href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/createForwardRules.md
           - name: deleteForwardRule
             href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/deleteForwardRule.md
           - name: describeBlackListRuleOfForwardRule
