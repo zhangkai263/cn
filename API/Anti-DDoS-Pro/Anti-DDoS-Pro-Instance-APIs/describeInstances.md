@@ -89,6 +89,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances
 |**ipHostUrlQps**|Integer|ccProtectMode为自定义模式时, 每个源IP对Host+URI的防护阈值|
 |**pageId**|String|关联的自定义页面id|
 |**pageName**|String|关联的自定义页面名称|
+|**pageStatus**|Integer|是否开启自定义页面, 关闭时透传状态码.  <br>- 0: 关闭<br>- 1: 开启|
+|**webRulePortLimit**|Integer|每条网站规则可配的http/https端口数|
 
 ## 返回码
 |返回码|描述|
