@@ -38,4 +38,4 @@
 
 3. 配置变更弹框，当创建实例时没有创建TiFlash节点, 可以选择规格和存错，当创建实例创建了tiflash，只能调节节点数。
 
-![水平扩容](../../../../../image/TiDB/nodifyNodeNum.png)
+![水平扩容](../../../../../image/TiDB/modifyNodeNum.png)
