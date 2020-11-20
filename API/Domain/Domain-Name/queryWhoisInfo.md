@@ -23,13 +23,13 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/domain:whoisInfo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryWhoisInfo#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DomainWhoisInfo](#domainwhoisinfo)|域名Whois返回结果|
+|**data**|[DomainWhoisInfo](queryWhoisInfo#domainwhoisinfo)|域名Whois返回结果|
 ### <div id="DomainWhoisInfo">DomainWhoisInfo</div>
 |名称|类型|描述|
 |---|---|---|

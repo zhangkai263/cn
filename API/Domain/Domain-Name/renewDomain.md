@@ -26,13 +26,13 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/renew
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](renewDomain#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DomainOrder](#domainorder)|域名续费返回结果，后续需要调用订单支付接口|
+|**data**|[DomainOrder](renewDomain#domainorder)|域名续费返回结果，后续需要调用订单支付接口|
 ### <div id="DomainOrder">DomainOrder</div>
 |名称|类型|描述|
 |---|---|---|

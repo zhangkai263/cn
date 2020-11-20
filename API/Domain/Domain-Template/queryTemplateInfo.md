@@ -22,13 +22,13 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/template/{templateId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryTemplateInfo#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[TemplateInfo](#templateinfo)|模板信息返回结果|
+|**data**|[TemplateInfo](queryTemplateInfo#templateinfo)|模板信息返回结果|
 ### <div id="TemplateInfo">TemplateInfo</div>
 |名称|类型|描述|
 |---|---|---|

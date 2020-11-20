@@ -23,13 +23,13 @@ https://domain.jdcloud-api.com/v1/regions/{regionId}/domain
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](domainInfo#result)| |
 |**requestId**|String|此次请求的ID|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DomainInfo](#domaininfo)|域名信息返回结果|
+|**data**|[DomainInfo](domainInfo#domaininfo)|域名信息返回结果|
 ### <div id="DomainInfo">DomainInfo</div>
 |名称|类型|描述|
 |---|---|---|
