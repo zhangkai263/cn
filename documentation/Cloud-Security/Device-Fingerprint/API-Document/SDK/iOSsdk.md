@@ -9,7 +9,9 @@ libstdc++.dylib
 ```
 
 2.增加 Build Setting 中 Other link Flag 中添加 -ObjC
+
 3.将 SDK JDBFingerPrintModule.framework 拖入工程
+
 4.在启动的时候配置信息
 
 ```

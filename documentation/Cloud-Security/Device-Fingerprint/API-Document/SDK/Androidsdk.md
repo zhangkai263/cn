@@ -36,7 +36,7 @@
 
 ## 四． 接口说明
 
-1. ### 初始化 
+1. 初始化 
 
   ```
   InitParams initParams = new InitParams.InitParamsBuilder()
@@ -53,7 +53,7 @@
 
   
 
-2. ### 获取指纹，同步接口无耗时操作
+2. 获取指纹，同步接口无耗时操作
 
    ```
    /**

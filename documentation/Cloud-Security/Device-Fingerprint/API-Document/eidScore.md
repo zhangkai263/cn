@@ -45,7 +45,7 @@ https://eid.jdcloud-api.com/v1/eidScore:check
 |名称|类型|描述|
 |---|---|---|
 |**riskTag**|String|风险类型，对应riskCode的中文描述|
-|**riskCode**|String|风险类型编码，101-正常设备，其它标签参考[标签列表](https://docs.jdcloud.com/cn/device-fingerprint/api-document/lable)|
+|**riskCode**|String|风险类型编码，101-正常设备，其它标签参考[标签列表](https://docs.jdcloud.com/cn/device-fingerprint/api-document/label)|
 |**riskClass**|String|风险分类，对应riskCode的分类|
 
 ## 返回码
