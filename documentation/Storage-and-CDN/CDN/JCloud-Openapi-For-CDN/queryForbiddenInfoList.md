@@ -34,8 +34,8 @@ https://cdn.jdcloud-api.com/v1/forbiddenInfo:query
 ### <div id="ForbiddenInfo">ForbiddenInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**id**|String|封禁类型|
-|**forbiddenType**|long|封禁id|
+|**forbiddenType**|String|封禁类型|
+|**id**|long|封禁id|
 |**forbiddenDomain**|String|封禁域名|
 |**forbiddenUrl**|String|封禁url|
 |**reason**|String|封禁原因|

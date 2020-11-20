@@ -45,6 +45,8 @@
         href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
+       - name: 搭建IPv4/IPv6双栈私有网络
+         href: Getting-Started/Create-VPC-For-IPv4andIPv6.md
        - name: 私有网络中创建云主机实例
          href: Getting-Started/Create-Virtual-Machine-Instance-In-VPC.md
        - name: 边缘子网中创建云主机实例
@@ -93,7 +95,8 @@
          href: Operation-Guide/VPC-Peering-Configuration.md
   - name: 最佳实践
     items:
-    status: 0
+     - name: IPv4私有网络业务迁移至IPv4/IPv6双栈网络
+       href: Best-Practice/Part-Of-IPv4toIPv6-Best-Practice.md
   - name: 问题排查
     items:
     status: 0

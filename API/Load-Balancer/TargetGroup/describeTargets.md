@@ -20,7 +20,7 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}:de
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](describetargets#filter)|False| |targetIds - Target ID列表，支持多个<br>instanceId - Instance ID，支持单个<br>port - Target提供服务的端口，支持单个<br>|
+|**filters**|[Filter[]](describetargets#filter)|False| |targetIds - Target ID列表，支持多个<br>instanceId - Instance ID,仅支持单个<br>type － vm, container, ip,仅支持单个<br>port - 端口,仅支持单个<br>ipAddress - ip地址,仅支持单个<br>|
 
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -45,11 +45,12 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/targetGroups/{targetGroupId}:de
 |---|---|---|
 |**targetId**|String|Target的Id|
 |**targetGroupId**|String|TargetGroup的Id|
-|**type**|String|Target的类型，取值为vm或container, 默认为vm|
-|**instanceId**|String|Target所属实例的Id|
-|**port**|Integer|Target提供服务的端口，取值范围：0-65535，其中0表示与backend的端口相同，默认为0|
-|**weight**|Integer|Target的权重，取值范围：1-100 ，默认为10|
-|**privateIpAddress**|String|Target的内网IP地址|
+|**type**|String|Target的类型，取值为vm、container或ip, 默认为vm|
+|**instanceId**|String|Target所属实例（vm或container）的Id|
+|**port**|Integer|Target提供服务的端口，取值范围：0-65535，其中0表示与backend的端口相同，默认为0。 <br>【dnlb】使用限制：dnlb同一TargetGroup下，同一实例/ip仅允许一个端口提供服务|
+|**weight**|Integer|该Target的权重，取值范围：0-100 ，默认为10。0表示不参与流量转发，仅alb支持权重为0的target|
+|**privateIpAddress**|String|Target所属实例（vm或container）的内网IP地址|
+|**ipAddress**|String|Target的IP地址。当Target类型为vm或container时，表示vm或container的内网IP地址；当Target类型为ip时，表示注册Target时指定的IP地址|
 
 ## 返回码
 |返回码|描述|

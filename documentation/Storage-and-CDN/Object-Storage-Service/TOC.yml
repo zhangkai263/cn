@@ -521,6 +521,12 @@ items:
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
         href: Best-Practices/Custom-Domain-Name-Guidance.md
+      - name: 大数据应用
+        items:
+            - name: Spark读写对象存储数据
+              href: Best-Practices/Bigdata-Application/Spark-OSS.md
+            - name: Spark使用OSS Select优化数据查询（公测）
+              href: Best-Practices/Bigdata-Application/Select-for-Spark.md
  - name: 常见问题
    items:
       - name: 一般性问题

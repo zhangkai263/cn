@@ -11,9 +11,13 @@
 | 区域      | 公网Endpoint                   | 内网EndPoint                            |
 | --------- | ------------------------------ | --------------------------------------- |
 | 华北-北京 | kms.cn-north-1.jdcloud-api.com | kms.internal.cn-north-1.jdcloud-api.com |
+| 华北-北京 IPv6 | kms.cn-north-1.ipv6.jdcloud-api.com |  |
 | 华东-上海 | kms.cn-east-2.jdcloud-api.com  | kms.internal.cn-east-2.jdcloud-api.com  |
+| 华东-上海 IPv6 | kms.cn-east-2.ipv6.jdcloud-api.com |  |
 | 华东-宿迁 | kms.cn-east-1.jdcloud-api.com  | kms.internal.cn-east-1.jdcloud-api.com  |
+| 华东-宿迁 IPv6 | kms.cn-east-1.ipv6.jdcloud-api.com  |  |
 | 华南-广州 | kms.cn-south-1.jdcloud-api.com | kms.internal.cn-south-1.jdcloud-api.com |
+| 华南-广州 IPv6 | kms.cn-south-1.ipv6.jdcloud-api.com  | |
 
 **使用京东云openAPI**
 

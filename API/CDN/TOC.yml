@@ -156,6 +156,8 @@ items:
             href: JCloud-Openapi-For-CDN/queryDomainsLog.md
           - name: queryAreaIspList
             href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+          - name: queryCodeStatTrafficDetail
+            href: JCloud-Openapi-For-CDN/queryCodeStatTrafficDetail.md            
 
 
       - name: 刷新预热

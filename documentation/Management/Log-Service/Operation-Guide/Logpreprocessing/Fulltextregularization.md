@@ -10,7 +10,7 @@
 ## 操作步骤
 1. 将键值提取模式切换至“单行全文正则”。
 2. 输入或粘贴日志样例。
-3. 输入或粘贴正则表达式。
+3. 输入或粘贴正则表达式。（点击查看[正则表达语法](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions)）
 4. 点击“提取字段”，将会按照刚才输入的正则表达式对日志样例中的日志进行键值提取。提取结果展示在下方的日志提取字段列表中。如果提取失败，则需要检查输入的日志样例是否正确或填写的正则表达式是否正确。
 
 <img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/Onelinefulltextregular.jpg" width=60% height=60% />

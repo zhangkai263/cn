@@ -69,6 +69,8 @@ items:
         items:
           - name: 网络策略
             href: Operation-Guide/Network/Network-Policy.md
+          - name: 集群路由表
+            href: Operation-Guide/Network/Route-Table.md
       - name: 集群Dashboard
         items:
           - name: Dashboard

@@ -379,6 +379,8 @@ items:
                  href: JCloud-Openapi-For-CDN/configBackSourcePath.md
                - name: deleteForbiddenInfo
                  href: JCloud-Openapi-For-CDN/deleteForbiddenInfo.md
+               - name: createForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/createForbiddenInfo.md                 
           - name: 停止删除域名
             items:
                - name: startDomain
@@ -417,6 +419,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryDomainsLog.md
                - name: queryAreaIspList
                  href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+               - name: checkWhetherIpBelongToJCloud
+                 href: JCloud-Openapi-For-CDN/checkWhetherIpBelongToJCloud.md
           - name: 刷新预热
             items:
                - name: createLiveDomainPrefecthTask
