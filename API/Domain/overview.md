@@ -21,7 +21,7 @@ v1
 |**domainInfo**|GET|查询用户的域名信息|
 |**domainLock**|POST|域名锁定，设置域名状态为禁止转移|
 |**domainTemplateAssigned**|POST|通过已实名的信息模板，完成域名的快速过户|
-|**domainUnLock**|POST|域名解锁，，取消域名禁止转移的状态|
+|**domainUnLock**|POST|域名解锁，取消域名禁止转移的状态|
 |**getDomainTransferOutPassWord**|GET|获取转移密码，用于域名转移注册商转出获取域名转移密码|
 |**modifyDns**|PUT|根据域名修改域名对应的 DNS 信息|
 |**modifyTemplateInfo**|PUT|修改域名信息模板|
