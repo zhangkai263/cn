@@ -52,11 +52,11 @@
 
 ```json
 { 
-    "Type": "Notification", 
+    "Type": "Callback", 
     "MessageId": "2c9f3f9ef9d348c58fb96a01ded6f886", 
     "TopicJrn": "jrn:jns:cn-north-1:userid:exampleTopic", 
     "Subject": "exampleMessage", 
-    "Message": "hello world，hello JDcloud Notification Service。", 
+    "Message": "hello world，hello JDcloud Callback Service。", 
     "TimeStamp": "2020-01-16 15:50:48", 
     "UnsubscribeURL": "http://jns.cn-north-1.jdcloud.com/unsubscribe.html?SubscriptionJrn=xxxxxxxx", 
     "MessageAttributes": { 

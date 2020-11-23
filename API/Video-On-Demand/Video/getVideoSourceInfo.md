@@ -1,14 +1,14 @@
-# getVideoPlayInfo
+# getVideoSourceInfo
 
 
 ## 描述
-获取视频播放信息
+获取视频源文件信息
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://vod.jdcloud-api.com/v1/videos/{videoId}:getPlayInfo
+https://vod.jdcloud-api.com/v1/videos/{videoId}:getSourceInfo
 
 
 ## 请求参数
@@ -20,14 +20,14 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}:getPlayInfo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](getvideoplayinfo#result)|获取视频播放信息结果|
+|**result**|[Result](getvideosourceinfo#result)|获取视频播放信息结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**baseInfo**|[VideoBaseInfo](getvideoplayinfo#videobaseinfo)|视频基础信息|
-|**playInfoList**|[VideoPlayInfo[]](getvideoplayinfo#videoplayinfo)|视频播放信息列表|
+|**baseInfo**|[VideoBaseInfo](getvideosourceinfo#videobaseinfo)|视频基础信息|
+|**playInfoList**|[VideoPlayInfo[]](getvideosourceinfo#videoplayinfo)|视频播放信息列表|
 ### <div id="videoplayinfo">VideoPlayInfo</div>
 |名称|类型|描述|
 |---|---|---|
@@ -71,41 +71,19 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}:getPlayInfo
 ## 请求示例
 GET
 ```
-https://vod.jdcloud-api.com/v1/videos/4fc583b4-d08a-457a-9ce4-8a59c5f474ac:getPlayInfo
+https://vod.jdcloud-api.com/v1/videos/4fc583b4-d08a-457a-9ce4-8a59c5f474ac:getSourceInfo
 
 ```
 
 ## 返回示例
 ```
 {
-    "code": 200, 
-    "requestId": "bkpp00iunavp370wuuur7tk4tw8hqnga", 
+    "requestId": "5E22S6v13138j19PV8C4081U21zzE67i", 
     "result": {
-        "baseInfo": {
-            "coverImgUrl": "https://s3.cn-north-1.jcloudcs.com/vod-storage-72757/img/2019/3044119/1/img1.jpg", 
-            "tag": "[]", 
-            "videoId": "0b2a55f8-233a-4169-8c0d-b441d693fb86", 
-            "videoName": "src_i-100_720p"
-        }, 
-        "playInfoList": [
-            {
-                "bitrate": 1489895, 
-                "codec": "avc1", 
-                "createTime": "2019-07-19T08:26:20Z", 
-                "definition": "HD", 
-                "duration": 217200, 
-                "format": "mp4", 
-                "fps": "25.000", 
-                "height": 720, 
-                "mediaType": 0, 
-                "size": 40513620, 
-                "status": 2, 
-                "taskId": 3045989, 
-                "updateTime": "2019-07-19T08:26:20Z", 
-                "url": "https://72757-playvod.jdcloud.com/1563528722/ff23b0202a4c59512034cd94d95aef0c/vod/product/3045989/7/0b2a55f8-233a-4169-8c0d-b441d693fb86.mp4", 
-                "width": 1280
-            }
-        ]
+        "fileName": "1d1aa87ea6df4b7b9090c12633c6948b", 
+        "fileUrl": "http://vod-storage-72757.s3.cn-north-1-stag.jcloudcs.com/video/8eb8a1253670cd928967fc4e84c9a5cc.mp4", 
+        "md5": "8eb8a1253670cd928967fc4e84c9a5cc", 
+        "videoId": "984c2b0d-c13e-42ed-a912-c0ad6ee4c0d0"
     }
 }
 ```
