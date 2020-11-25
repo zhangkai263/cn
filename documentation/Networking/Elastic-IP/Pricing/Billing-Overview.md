@@ -9,7 +9,7 @@
 - 按配置：按照带宽配置每小时出账单
 - 按用量：每天收取保有费，并每天根据弹性公网IP的实际使用流量出账单
     
-      仅支持按配置、按用量类型的公网IP支持通过续费转为包年包月，具体操作请参考[续费公网IP](O../peration-Guide/Elastic-IP-Management/Renew-Elastic-IP.md)。
+ 仅支持按配置、按用量类型的公网IP支持通过续费转为包年包月，具体操作请参考[续费公网IP](O../peration-Guide/Elastic-IP-Management/Renew-Elastic-IP.md)。
 
 
 边缘公网IP分为两种计费类型：
