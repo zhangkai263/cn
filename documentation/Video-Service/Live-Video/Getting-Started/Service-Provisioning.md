@@ -4,5 +4,5 @@
 
 -   拨打电话：4006151212，由客服为您开通视频直播服务。
 
--   进入[视频直播工单系统](https://uc.jdcloud.com/myorder/form?cateId=3&questionId=20)，填报【使用权限申请】工单，客服会联系您处理直播服务开通事宜。
+-   进入[视频直播工单系统](https://ticket.jdcloud.com/applyorder/form?cateId=1230&questionId=1235)，填报【使用权限申请】工单，客服会联系您处理直播服务开通事宜。
 

@@ -9,16 +9,16 @@
 </tr>
 <tr>
     <td rowspan="3"> 带宽峰值<br/>
-    <td>0-512Mbps(含)</td>
-    <td>1</td>
+    <td>0-500Mbps(含)</td>
+    <td>0.7</td>
 </tr>
 <tr>
-    <td>512Mbps-5Gbps(含)</td>
-    <td>0.9</td>
+    <td>500Mbps-5Gbps(含)</td>
+    <td>0.63</td>
 </tr>
   <tr>
     <td>>5Gbps</td>
-    <td>0.75</td>
+    <td>0.53</td>
 </tr>
 </table>
 

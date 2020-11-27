@@ -4,7 +4,7 @@
 
 -   拨打电话：400-615-1212，由客服为您开通视频质量检测服务。
 
--   进入[视频质量检测工单系统](https://ticket.jdcloud.com/applyorder/form?cateId=352&questionId=821)，填报【使用权限申请】工单，客服会联系您处理视频质量检测服务开通事宜。
+-   进入[视频质量检测工单系统](https://ticket.jdcloud.com/applyorder/form?cateId=1230&questionId=1235)，填报【使用权限申请】工单，客服会联系您处理视频质量检测服务开通事宜。
 
 # 获取待检测视频URL地址
 

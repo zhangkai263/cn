@@ -13,11 +13,7 @@ items:
   - name: 容器镜像仓库服务协议
     href: Container-Registry-Service-Terms.md
   - name: 容器镜像仓库服务等级协议（SLA）
-    href: Container-Registry-Service-SLA.md
-  - name: 云数据库 RDS 服务协议
-    href: Cloud-Database-RDS-Service-Clause.md
-  - name: 云数据库 RDS 服务等级协议（SLA）
-    href: Cloud-Database-RDS-Service-Level-Agreement-SLA.md
+    href: Container-Registry-Service-SLA.md 
   - name: 对象存储服务协议
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
@@ -40,6 +36,10 @@ items:
     href: Load-Balancing-Service-Clause.md
   - name: 负载均衡服务等级协议（SLA）
     href: Load-Balancing-Service-Level-Protocol-SLA.md
+  - name: 云数据库 RDS 服务协议
+    href: Cloud-Database-RDS-Service-Clause.md
+  - name: 云数据库 RDS 服务等级协议（SLA）
+    href: Cloud-Database-RDS-Service-Level-Agreement-SLA.md
   - name: 云数据库 MongoDB 服务协议
     href: Cloud-Database-MongoDB-Service-Cause.md
   - name: 云数据库MongoDB服务等级协议（SLA）
@@ -47,7 +47,15 @@ items:
   - name: 云数据库InfluxDB服务条款
     href: JCS-For-InfluxDB-Terms-Of-Service.md
   - name: 云数据库InfluxDB服务等级协议（SLA）
-    href: JCS-For-InfluxDB-Level-Agreement-SLA.md
+    href: JCS-For-InfluxDB-Level-Agreement-SLA.md 
+  - name: 分布式数据库TiDB服务条款
+    href: JCS-For-TiDB-Terms-Of-Service.md
+  - name: 分布式数据库TiDB服务等级协议（SLA）
+    href: JCS-For-TiDB-Level-Agreement-SLA.md
+  - name: 分析型云数据库JCHDB服务条款
+    href: JCS-For-JCHDB-Terms-Of-Service.md
+  - name: 分析型云数据库JCHDB服务等级协议（SLA）
+    href: JCS-For-JCHDB-Level-Agreement-SLA.md 
   - name: 数据仓库JDW服务条款
     href: JCS-For-Greenplum-Terms-Of-Service.md
   - name: 数据仓库JDW服务等级协议（SLA）
@@ -76,6 +84,8 @@ items:
     href: SSL-Digital-Certificate-Service-Clause.md
   - name: 云解析服务协议
     href: Cloud-Parsing-Service-Clause.md
+  - name: 云解析服务等级协议（SLA）
+    href: cloud-parsing-Level-Agreements-SLA.md    
   - name: 分布式数据库TiDB试用服务条款
     href: Distributed-Database-TiDB-Trial-Service-Clause.md
   - name: 分析型云数据库 JCHDB 试用服务条款
@@ -103,21 +113,7 @@ items:
   - name: 物理云公网IP服务协议
     href: Elastic-IP-For-Physical-Cloud-Terms-Of-Service.md
   - name: 物理云公网IP服务等级协议（SLA）
-    href: Elastic-IP-For-Physical-Cloud-Level-Agreement-SLA.md   
-  - name: 物理云负载均衡服务条款
-    href: Physical-Cloud-Load-Balancer-Service-Clause.md 
-  - name: 物理云负载均衡服务等级协议（SLA）
-    href: Physical-Cloud-Load-Balancer-Level-Agreement-SLA.md    
-  - name: 分布式云物理服务器服务条款
-    href: Distributed-Cloud-Physical-Server-Service-Clause.md
-  - name: 分布式云物理服务器服务等级协议（SLA）
-    href: Distributed-Cloud-Physical-Server-SLA.md
-  - name: 边缘云公网IP服务条款
-    href: Elastic-IP-For-Edge-Cloud-Terms-Of-Service.md
-  - name: 边缘云公网IP服务等级协议（SLA）
-    href: Elastic-IP-For-Edge-Cloud-Level-Agreement-SLA.md
-  - name: 边缘共享带宽服务协议
-    href: Edge-Shared-Bandwidth-Terms-Of-Service.md    
+    href: Elastic-IP-For-Physical-Cloud-Level-Agreement-SLA.md
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
@@ -216,6 +212,8 @@ items:
     href: Bastion-Level-Agreements-SLA.md 
   - name: 内容安全服务条款
     href: Content-Moderation-Terms-Of-Service.md
+  - name: 设备指纹服务条款
+    href: Device-Fingerprint-Terms-Of-Service.md
   - name: 京鱼座设备池开放服务条款
     href: JDWhale-DCS-Terms-Of-Service.md
   - name: 京鱼座设备池开放服务等级协议（SLA）
@@ -436,7 +434,11 @@ items:
     href: Number-Of-Terms-Of-Service.md
   - name: 数知服务等级协议（SLA）
     href: Number-Aware-Service-Level-Agreement-SLA.md
-  
+  - name: 风险识别服务协议
+    href: Risk-Detection-Service-Terms-Of-Service.md
+  - name: 风险识别服务等级协议（SLA）
+    href: Risk-Detection-Service-Level-Agreements-SLA.md
+
 
     
     

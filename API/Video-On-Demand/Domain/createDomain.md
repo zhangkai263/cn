@@ -50,6 +50,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains
 
 ```
+
 ```
 {
     "name": "vodplay.lomagicode.com"

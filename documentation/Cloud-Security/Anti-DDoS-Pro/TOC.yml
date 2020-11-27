@@ -17,8 +17,8 @@
       herf: Introduction/Specifications.md
     - name: 限制说明
       herf: Introduction/Restrictions.md
-    - name: 应用场景 
-      herf: Introduction/Application-Scenarios.md    
+    - name: 应用场景
+      herf: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
     - name: 计费概述
@@ -28,7 +28,7 @@
     - name: 价格总览
       herf: Pricing/Price-Overview.md
     - name: 购买流程
-      herf: Pricing/Purchase-Process.md 
+      herf: Pricing/Purchase-Process.md
     - name: 续费流程
       herf: Pricing/Renew-Process.md
   - name: 入门指南
@@ -64,15 +64,15 @@
     - name: 防护调度规则设置
       herf: Operation-Guide/Dispatch-Rule-Settings.md        
     - name: 攻击告警设置
-      herf: Operation-Guide/Attack-Alarm-Notification-Settings.md
+      herf: Operation-Guide/Attack-Alarm-Callback-Settings.md
     - name: 黑白名单设置
       herf: Operation-Guide/Blacklist-And-Whitelist-Settings.md
     - name: 自定义返回页面设置
       herf: Operation-Guide/Self-defined-default-page.md
     - name: 查看安全报表
-      herf: Operation-Guide/View-The-Security-Report.md   
+      herf: Operation-Guide/View-The-Security-Report.md
     - name: 选择合适的转发方式
-      herf: Operation-Guide/Choose-Suitable-Forwarding-Mode.md   
+      herf: Operation-Guide/Choose-Suitable-Forwarding-Mode.md
   - name: 最佳实践
     items:
     - name: IP高防结合Web应用防火墙方案说明
@@ -80,9 +80,9 @@
     - name: 本地防护+高防方案说明
       herf: Best-Practices/Local-Anti-Basic-DDoS-and-Anti-DDoS.md
     - name: IP高防结合应用安全网关方案说明
-      herf: Best-Practices/Scheme-Instructions.md 
+      herf: Best-Practices/Scheme-Instructions.md
   - name: 教程
-    status: 0    
+    status: 0
   - name: 常见问题
     herf: FAQ/FAQ.md
   - name: 文档历史记录

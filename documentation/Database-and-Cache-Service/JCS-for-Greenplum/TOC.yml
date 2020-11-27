@@ -51,6 +51,12 @@
         items:
           - name: JDW审计服务 
             href: Operation-Guide/Audit/JDW-Audit-service.md
+      - name: 安全管理
+        items:
+          - name: 白名单设置
+            href: Operation-Guide/Security/white-list.md
+          - name: 配置SSL证书
+            href: Operation-Guide/Security/SSL.md
       - name: 监控报警
         items:
           - name: 查看监控信息

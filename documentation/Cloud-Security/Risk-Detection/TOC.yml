@@ -44,7 +44,7 @@ items:
       - name: 风险识别接口
         items:
           - name: 风险识别API
-            href:  API-Document/Risk-Detection/creditScore.md
+            href:  API-Document/RiskDetection/creditScore.md
       - name: 黑白名单设置
         items:
           - name: 添加黑白名单
@@ -53,6 +53,12 @@ items:
             href:  API-Document/Setting/describeBWList.md
           - name: 删除黑白名单
             href:  API-Document/Setting/delBWList.md
+  - name: SDK接入
+    items:
+      - name: SDK概述
+        href: API-Document/sdk.md
+      - name: Java示例
+        href: API-Document/javasdk.md
   - name: 常见问题
     href: FAQ/FAQ.md
 

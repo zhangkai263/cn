@@ -158,12 +158,11 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 
 ## IPv6访问OSS服务
 
-IPv6域名在内外网均可使用，在IPv4和IPv4环境下也都可以使用，但需要使用支持IPv6的客户端才能访问IPv6地址。
+IPv6域名在内外网均可使用，在IPv4和IPv6环境下也都可以使用，但需要使用IPv6环境的客户端才能访问IPv6地址。
 
 IPv6访问OSS有如下两种方式：
 
 -   **访问方式一：在访问的时候以URL的形式来表示OSS的资源。OSS的URL构成如下。**
-
 
 ```
 <Schema>://<Bucket>.<IPv6 Endpoint>/<Object> 

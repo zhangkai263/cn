@@ -31,8 +31,6 @@ items:
         items:
           - name: 管理实例
             href: Operation-Guide/Manage-Instance.md
-          - name: 管理白名单
-            href: Operation-Guide/White-List.md
       - name: 数据加密实例操作
         items:
           - name: 实例初始化

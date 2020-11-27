@@ -17,6 +17,7 @@ qemu-img convert -O qcow2 /dev/vda /mnt/vdb/image_out.qcow2
 * -O 用来指定目标镜像格式（示例中：qcow2）、导出为镜像的源磁盘（示例中：/dev/vda）、目标镜像文件名及存放路径（示例中：/mnt/vdb/image_out.qcow2）
 
 3、如果本地远程连接工具使用的是Xshell，可以安装lrzsz，将文件压缩后（压缩后文件须小于4GB），下载至Xshell中设置的目录中。
+
 ```
 yum -y install lrzsz
 tar -zcvf image_out.tar.gz image_out.qcow2
