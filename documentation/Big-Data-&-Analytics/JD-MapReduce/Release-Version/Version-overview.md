@@ -35,7 +35,7 @@
 | Flink         | -         | 1.10.0    |
 | Oozie         | 4.3.1     | 4.3.1     |
 | Sqoop         | 1.4.6     | 1.4.6     |
-| Zeppelin      | 0.7.3     | 0.7.3     |
+| Zeppelin      | 0.7.3     | 0.8.2     |
 | Alluxio       | 1.6.0     | 1.6.0     |
 | Kafka         | 0.11.0    | 0.11.0    |
 | ElasticSearch | 5.6.2     | 5.6.2     |
