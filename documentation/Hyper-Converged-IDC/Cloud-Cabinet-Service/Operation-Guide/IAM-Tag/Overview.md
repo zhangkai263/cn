@@ -22,8 +22,8 @@
 4.选择服务：下拉选择**云托管服务**。</br>
 5.访问权限：对云托管服务是否有访问权限，选择允许，则后续所选接口&资源就允许访问，选择拒绝，则后续所选接口&资源就不可访问。</br>
 6.选择操作&资源，制定条件：操作，资源，条件可组合搭配制定需要的策略。</br>
+### 3种策略配置方式
 #### 方式1：子账号需要查看指定机房，指定资源ID的机柜
-
 <table>
 	<tr>
 	    <th>选择操作</th>
@@ -32,7 +32,7 @@
 	</tr>
 	<tr>
 	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
-	    <td>1.资源唯一标识，填写指定机房，不做限制则填写*</br>2.二级资源唯一标识，填写指定的机柜ID</td>
+	    <td>1.资源唯一标识：填写指定机房，不做限制则填写*</br>2.二级资源唯一标识：填写指定的机柜ID</td>
 	    <td>无</td>
 	</tr>
 </table>
@@ -48,5 +48,19 @@
 	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
 	    <td>添加全部资源</td>
 	    <td>标签键：部门</br>条件值：研发部</td>
+	</tr>
+</table>
+
+#### 方式3：子账号可以提交工单，但仅支持查看自己提交的工单
+<table>
+	<tr>
+	    <th>选择操作</th>
+	    <th>选择资源</th>
+	    <th>指定条件</th>  
+	</tr>
+	<tr>
+	    <td>createTicket</br>describeTickets</br>describeTicket</td>
+	    <td>添加全部资源</td>
+	    <td>标签键：选择系统标签，jdc-createdby</br>条件值：subuser-${name}</td>
 	</tr>
 </table>
