@@ -1,4 +1,4 @@
-# checkLegalPersonAndAgent
+# checkCompanyLegalPersonAndAgent
 
 
 ## 描述
