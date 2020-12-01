@@ -6,10 +6,33 @@
 资源绑定标签后，可以使用标签为资源进行分类并授权访问，如下介绍如何为子用户授权策略，控制其对云托管资源的访问。</br>
 ## 步骤一：创建或编辑标签
 当对新资源绑定标签，或对已经拥有标签的资源进行变更时，可通过编辑标签实现。</br>
-支持编辑标签的资源：[机柜](View-Cabinet-List.md)，[设备](View-Device-List.md)，[公网IP](View-ipAddress-List.md)，[带宽（出口）](View-Bandwidth-List.md)，[报警规则](View-Alarm-Rules.md)
+支持编辑标签的资源：[机柜](View-Cabinet-List.md)，[设备](View-Device-List.md)，[公网IP](View-ipAddress-List.md)，[带宽（出口）](View-Bandwidth-List.md)，[报警规则](View-Alarm-Rules.md)</br>
 ### 详细操作
 1.访问[云托管服务控制台](https://ccs-console.jdcloud.com/cabinet/list)，进入**资源管理或报警管理**。</br>
 2.在各资源列表页，选择需要绑定标签的资源，点击**编辑标签**。</br>
 3.在弹出的**编辑标签**弹窗中，当前标签默认显示当前已绑定的标签，支持添加、删除标签；若资源当前标签内已有10个标签则不能再添加标签，可查看[限制说明](https://docs.jdcloud.com/cn/tag-service/restrictions)了解具体限制条件.</br>
 4.可下拉选择已有标签键/值（Key-Value）添加标签，或者文本框输入键/值（Key-Value）来创建新标签，点击**添加**生成标签，例如 “部门：研发部”。</br>
 5.添加完成所需标签后，单击**确定**，将按照当前标签内显示情况完成标签的更新。</br>
+## 步骤二：创建自定义策略
+使用主账号新建自定义策略testiam，并介绍3种不同的使用方式的配置方法。
+### 详细操作
+1.登录京东智联云控制台，进入**访问控制-策略管理**。</br>
+2.点击**创建策略**，页面中选择**可视化策略生成器**。</br>
+3.页面中，首先定义**策略名**，例如testiam。</br>
+4.选择服务：下拉选择**云托管服务**。</br>
+5.访问权限：对云托管服务是否有访问权限，选择允许，则后续所选接口&资源就允许访问，选择拒绝，则后续所选接口&资源就不可访问。</br>
+6.选择操作&资源，制定条件：操作，资源，条件可组合搭配制定需要的策略。</br>
+#### 方式1：子账号需要查看指定机房，指定资源ID的机柜
+选择操作：</br>
+describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</br>
+选择资源：</br>
+1.资源唯一标识，填写指定机房，不做限制则填写*</br>
+2.二级资源唯一标识，填写指定的机柜ID</br>
+#### 方式2：子账号需要查看指定标签“部门：研发部”的机柜
+选择操作：</br>
+describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</br>
+选择资源：添加全部资源</br>
+指定条件：</br>
+标签键：部门</br>
+条件值：研发部</br>
+
