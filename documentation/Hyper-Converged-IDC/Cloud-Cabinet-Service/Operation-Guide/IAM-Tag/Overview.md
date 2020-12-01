@@ -24,28 +24,29 @@
 6.选择操作&资源，制定条件：操作，资源，条件可组合搭配制定需要的策略。</br>
 #### 方式1：子账号需要查看指定机房，指定资源ID的机柜
 
-#### 方式2：子账号需要查看指定标签“部门：研发部”的机柜
-
-
-
 <table>
 	<tr>
-	    <th>方式</th>
 	    <th>选择操作</th>
 	    <th>选择资源</th>
 	    <th>指定条件</th>  
 	</tr>
 	<tr>
-	    <td>方式1：子账号需要查看指定机房，指定资源ID的机柜</td>
-	    <td>describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</td>
+	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
 	    <td>1.资源唯一标识，填写指定机房，不做限制则填写*</br>2.二级资源唯一标识，填写指定的机柜ID</td>
 	    <td>无</td>
 	</tr>
+</table>
+
+#### 方式2：子账号需要查看指定标签“部门：研发部”的机柜
+<table>
 	<tr>
-	    <td>方式2：子账号需要查看指定标签“部门：研发部”的机柜</td>
-	    <td rowspan="2">describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</td>
+	    <th>选择操作</th>
+	    <th>选择资源</th>
+	    <th>指定条件</th>  
+	</tr>
+	<tr>
+	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
 	    <td>添加全部资源</td>
 	    <td>标签键：部门</br>条件值：研发部</td>
 	</tr>
 </table>
-
