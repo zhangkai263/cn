@@ -36,3 +36,22 @@ describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，d
 标签键：部门</br>
 条件值：研发部</br>
 
+
+<table>
+	<tr>
+	    <th style="width:300px;">选择操作</th>
+	    <th>选择资源</th>
+	    <th>指定条件</th>  
+	</tr >
+	<tr>
+	    <td >describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</td>
+	    <td>1.资源唯一标识，填写指定机房，不做限制则填写*</br>2.二级资源唯一标识，填写指定的机柜ID</td>
+	    <td>无</td>
+	</tr>
+	<tr >
+	    <td rowspan="2">describeConsolePermission ，describeIdcs，describeRooms，describeCabinets，describeCabinet</td>
+	    <td>添加全部资源</td>
+	    <td>标签键：部门</br>条件值：研发部</td>
+	</tr>
+</table>
+
