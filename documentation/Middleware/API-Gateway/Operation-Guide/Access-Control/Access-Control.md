@@ -25,17 +25,23 @@ API网关为您提供IP访问控制功能。您可以通过此功能对特定的
 
 1.点击左侧 **IP访问控制策略**，进入访问控制策略列表页，可进行策略的查看、配置和绑定。
 
-![IP访问控制策略列表页](../../../../../image/Internet-Middleware/API-Gateway/lkcl-list.png)
+![IP访问控制策略列表页](../../../../../image/Internet-Middleware/API-Gateway/策略列表.png)
 
 
 2.新增IP访问控制策略。您可以选择对目标IP和IP段进行*允许* 或*拒绝* 的动作设置。
 
 若选择允许，则目标IP和IP段以外的其他IP和IP段均无法通过API网关访问到您的后端服务。若选择拒绝，则除目标IP和IP段以外的其他IP和IP段均可以通过API网关访问到您的后端服务。
 
-![新增策略](../../../../../image/Internet-Middleware/API-Gateway/lkcl-add.png)
+![新增策略](../../../../../image/Internet-Middleware/API-Gateway/新建IP策略.png)
 
 
-3.给分组绑定策略
+新建成功后可以查看策略详情。
+![查看策略详情](../../../../../image/Internet-Middleware/API-Gateway/查看IP策略详情.png)
 
-![绑定策略](../../../../../image/Internet-Middleware/API-Gateway/lkcl-bd.png)
+
+3.将IP访问控制策略与API分组绑定。
+
+![绑定策略](../../../../../image/Internet-Middleware/API-Gateway/绑定API分组.png)
+
+4.
 
