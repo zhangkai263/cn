@@ -6,7 +6,7 @@
 资源绑定标签后，可以使用标签为资源进行分类并授权访问，如下介绍如何为子用户授权策略，控制其对云托管资源的访问。</br>
 ## 步骤一：创建或编辑标签
 当对新资源绑定标签，或对已经拥有标签的资源进行变更时，可通过编辑标签实现。</br>
-支持编辑标签的资源：[机柜](/Resources-Management/View-Cabinet-List.md)，[设备](View-Device-List.md)，[公网IP](View-ipAddress-List.md)，[带宽（出口）](View-Bandwidth-List.md)，[报警规则](View-Alarm-Rules.md)</br>
+支持编辑标签的资源：[机柜](Operation-Guide/Resources-Management/View-Cabinet-List.md)，[设备](View-Device-List.md)，[公网IP](View-ipAddress-List.md)，[带宽（出口）](View-Bandwidth-List.md)，[报警规则](View-Alarm-Rules.md)</br>
 ### 详细操作
 1.访问[云托管服务控制台](https://ccs-console.jdcloud.com/cabinet/list)，进入**资源管理或报警管理**。</br>
 2.在各资源列表页，选择需要绑定标签的资源，点击**编辑标签**。</br>
