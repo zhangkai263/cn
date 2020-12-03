@@ -39,9 +39,19 @@ API网关为您提供IP访问控制功能。您可以通过此功能对特定的
 ![查看策略详情](../../../../../image/Internet-Middleware/API-Gateway/查看IP策略详情.png)
 
 
-3.将IP访问控制策略与API分组绑定。
+3.将IP访问控制策略与API分组绑定。绑定成功后当用户调用该API分组时，对应的IP访问控制策略就会生效。
 
-![绑定策略](../../../../../image/Internet-Middleware/API-Gateway/绑定API分组.png)
+![绑定API分组](../../../../../image/Internet-Middleware/API-Gateway/绑定API分组.png)
 
-4.
+
+如果想更换策略绑定的分组，也可以进行解绑操作，解除当前策略与API分组的绑定关系。
+
+![解绑API分组](../../../../../image/Internet-Middleware/API-Gateway/解绑API分组.png)
+
+
+4.当某个IP访问控制策略失效时，您可以删除该策略。
+
+![删除IP策略](../../../../../image/Internet-Middleware/API-Gateway/删除IP策略.png)
+
+
 
