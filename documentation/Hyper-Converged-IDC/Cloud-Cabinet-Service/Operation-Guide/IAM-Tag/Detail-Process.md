@@ -35,13 +35,8 @@
 	    <th>指定条件</th>  
 	</tr>
 	<tr>
-	    <td>describeConsolePermission
-		    describeIdcs
-		    describeRooms
-		    describeCabinets
-		    describeCabinet</td>
-	    <td>1. 资源唯一标识：填写指定机房，不做限制则填写*
-		    2. 二级资源唯一标识：填写指定的机柜ID</td>
+	    <td>describeConsolePermission<br>describeIdcs<br>describeRooms<br>describeCabinets<br>describeCabinet</td>
+	    <td>1. 资源唯一标识：填写指定机房，不做限制则填写*<br>2. 二级资源唯一标识：填写指定的机柜ID</td>
 	    <td>无</td>
 	</tr>
 </table>
@@ -54,9 +49,9 @@
 	    <th>指定条件</th>  
 	</tr>
 	<tr>
-	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
+	    <td>describeConsolePermission<br>describeIdcs<br>describeRooms<br>describeCabinets<br>describeCabinet</td>
 	    <td>添加全部资源</td>
-	    <td>标签键：部门</br>条件值：研发部</td>
+	    <td>标签键：部门<br>条件值：研发部</td>
 	</tr>
 </table>
 
@@ -68,9 +63,9 @@
 	    <th>指定条件</th>  
 	</tr>
 	<tr>
-	    <td>createTicket</br>describeTickets</br>describeTicket</td>
+	    <td>createTicket<br>describeTickets<br>describeTicket</td>
 	    <td>添加全部资源</td>
-	    <td>标签键：选择系统标签，jdc-createdby</br>条件值：subuser-${name}</td>
+	    <td>标签键：选择系统标签，jdc-createdby<br>条件值：subuser-${name}</td>
 	</tr>
 </table>
 
