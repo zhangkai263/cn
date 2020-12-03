@@ -40,7 +40,8 @@
 		    describeRooms
 		    describeCabinets
 		    describeCabinet</td>
-	    <td>1.资源唯一标识：填写指定机房，不做限制则填写*</br>2.二级资源唯一标识：填写指定的机柜ID</td>
+	    <td>1. 资源唯一标识：填写指定机房，不做限制则填写*
+		    2. 二级资源唯一标识：填写指定的机柜ID</td>
 	    <td>无</td>
 	</tr>
 </table>
