@@ -35,7 +35,11 @@
 	    <th>指定条件</th>  
 	</tr>
 	<tr>
-	    <td>describeConsolePermission</br>describeIdcs</br>describeRooms</br>describeCabinets</br>describeCabinet</td>
+	    <td>describeConsolePermission
+		    describeIdcs
+		    describeRooms
+		    describeCabinets
+		    describeCabinet</td>
 	    <td>1.资源唯一标识：填写指定机房，不做限制则填写*</br>2.二级资源唯一标识：填写指定的机柜ID</td>
 	    <td>无</td>
 	</tr>
@@ -73,9 +77,9 @@
 ## 步骤三：创建子用户
 使用主账号创建子用户，并分配系统策略以及自定义策略
 ### 详细操作
-1.登录京东智联云控制台，进入**访问控制-用户管理**。</br>
-2.点击**创建子用户**，根据页面指引，填写必要信息后，创建成功。</br>
-3.用户列表中，点击**授权**，为子用户授权；可以分配系统策略，也可以分配主账号自己创建的自定义策略testiam，如果子用户需要访问云托管服务中的资源，请务必为子用户添加系统策略**JDCloudResourceTagRead**。</br>
-4.使用子用户登录控制台，即可查看被授权的内容。</br>
+1. 登录京东智联云控制台，进入**访问控制-用户管理**。
+2. 点击**创建子用户**，根据页面指引，填写必要信息后，创建成功。
+3. 用户列表中，点击**授权**，为子用户授权；可以分配系统策略，也可以分配主账号自己创建的自定义策略testiam，如果子用户需要访问云托管服务中的资源，请务必为子用户添加系统策略**JDCloudResourceTagRead**。
+4. 使用子用户登录控制台，即可查看被授权的内容。
 
 
