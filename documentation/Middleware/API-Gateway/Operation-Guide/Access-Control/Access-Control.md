@@ -26,6 +26,7 @@ API网关为您提供IP访问控制功能。您可以通过此功能对特定的
 
 
 新建成功后可以查看策略详情。
+
 ![查看策略详情](../../../../../image/Internet-Middleware/API-Gateway/查看IP策略详情.png)
 
 
