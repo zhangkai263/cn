@@ -18,7 +18,7 @@ https://cdn.jdcloud-api.com/v1/vodStatistics
 | subDomain | String | 否       | sub.example.com      | 子域名                                                       |
 | startTime | String   | 是       | 2018-11-16T16:01:00Z | 查询起始时间,UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z |
 | endTime   | String   | 是       | 2018-11-17T02:00:00Z | 查询截止时间,UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z |
-| fields    | String | 否       |                      | 查询的字段，决定了查询结果中出现哪些字段，取值范围见“统计字段说明”。多个用逗号分隔。默认为空，表示查询所有字段 |
+| fields    | String | 否       |                      | 查询的字段，决定了查询结果中出现哪些字段，取值范围见“查询统计字段说明”。多个用逗号分隔。默认为空，表示查询所有字段 |
 | area      | String | 否       |                      | 查询的区域，如beijing,shanghai。多个用逗号分隔               |
 | isp       | String | 否       |                      |                                                              |
 | origin    | String | 否       |                      |                                                              |
