@@ -13,12 +13,14 @@
 **支持操作**
 
  - 对象过期（Expiration）：设置Object的过期时间，OSS将在满足时间条件时删除指定Object。
+ 
  - 分片过期（AbortIncompleteMultipartUpload）：设置正在进行中的分片上传任务在保持一段时间后终止，并删除分片；该操作仅针对未完成的分片上传。
 
 **支持资源**
 
  - 前缀（Prefix）：支持按前缀过滤资源，只有匹配该前缀的Object才适用这个规则。
  
+ - 标签（Tag）：支持按标签过滤资源，只有匹配标签的Object才适用这个规则。
 
 **支持时间条件**
 
@@ -37,7 +39,13 @@
   <Rule>
     <ID>id1</ID>
     <Filter>
-       <Prefix>log1/</Prefix>
+       <And>
+          <Prefix>log1/</Prefix>
+          <Tag>
+             <Key>tagkey</Key>
+             <Value>tagvalue</Value>
+          </Tag>
+       </And>
     </Filter>
     <Status>Enabled</Status>
     <Expiration>
@@ -66,6 +74,8 @@
  - ID：当前生命周期规则名称，最多64个字符，不可与其他Rule中ID重叠；
 
  - Prefix：指定前缀过滤，该规则会匹配符合前缀条件的资源生效；
+ 
+ - Tag：
 
  - Status：指定该规则状态，Enabled为启用状态，该规则会一直匹配执行；Disabled为关闭状态，该规则将失效；
 
