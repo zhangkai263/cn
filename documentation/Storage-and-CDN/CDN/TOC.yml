@@ -231,7 +231,7 @@ items:
         href: diff.md
       - name: 接口概览
         href: overview.md
-      - name: 查询统计类说明
+      - name: 查询统计字段说明
         href: tongji.md
       - name: 接口信息
         items:
