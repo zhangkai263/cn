@@ -52,7 +52,7 @@
 	<tr>
 	    <td>describeConsolePermission<br>describeIdcs<br>describeRooms<br>describeCabinets<br>describeCabinet</td>
 	    <td>添加全部资源</td>
-	    <td>标签键：部门</br>条件值：研发部</td>
+	    <td>标签键：部门<br>条件值：研发部</td>
 	</tr>
 </table>
 
