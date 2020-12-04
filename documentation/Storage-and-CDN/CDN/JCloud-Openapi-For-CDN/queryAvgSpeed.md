@@ -21,6 +21,7 @@ https://cdn.jdcloud-api.com/v1/console:avgspeed
 |**isp**|String|False| | |
 |**sortField**|String|False| |排序字段默认avgbandwidth|
 |**sortRule**|String|False| |排序规则,默认desc|
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数

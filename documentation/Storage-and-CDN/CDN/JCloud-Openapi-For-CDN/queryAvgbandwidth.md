@@ -19,6 +19,7 @@ https://cdn.jdcloud-api.com/v1/console:avgbandwidth
 |**domain**|String|False| |需要查询的域名, 必须为用户pin下有权限的域名|
 |**area**|String|False| | |
 |**isp**|String|False| | |
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数
