@@ -2,7 +2,7 @@
 
 ## 描述
 
-该操作可设置文件的标签
+该操作可获取文件的标签
 
 ## 请求
 
@@ -30,7 +30,7 @@ GET /<object-key>?tagging HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Thu, 19 Apr 2020 22:18:21 GMT
 Authorization: authorization string
-
+```
 
 ### 响应示例
 ```HTTP
