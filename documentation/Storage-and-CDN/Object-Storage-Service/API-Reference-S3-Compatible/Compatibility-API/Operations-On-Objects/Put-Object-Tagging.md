@@ -12,7 +12,7 @@
 PUT /<object-key>?tagging HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-MD5: ContentMD5
-x-amz-expected-bucket-owner: ExpectedBucketOwner
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
    <TagSet>
@@ -27,9 +27,6 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 ### 请求参数
 无请求参数
 
-### 请求元素
-
-无请求元素
 
 ## 示例
 
