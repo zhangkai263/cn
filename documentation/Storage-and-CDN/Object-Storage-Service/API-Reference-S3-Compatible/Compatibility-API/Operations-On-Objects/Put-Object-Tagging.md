@@ -14,7 +14,7 @@ Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-MD5: ContentMD5
 
 <?xml version="1.0" encoding="UTF-8"?>
-<Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+<Tagging>
    <TagSet>
       <Tag>
          <Key>string</Key>
