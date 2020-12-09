@@ -23,7 +23,9 @@ Date: <date>
 ---|---|---
 x-amz-copy-source|源Bucket和源Object名称，通过"/"分隔。<br>Type: String<br>Default: None<br>字符串必须使用URL编码|是
 x-amz-storage-class|如果没有指定该header，存储类型默认为Standard标准存储。<br>Type: Enum<br>Default: STANDARD<br>Valid Values: STANDARD、GLACIER、REDUCED_REDUNDANCY、STANDARD_IA|否
+x-amz-tagging-directive|如果该header值指定为COPY，则原文件的标签将复制到目标文件。这时PutObjectCopy指定的Tags将会被忽略。<br>如果指定为REPLACE，目标文件的Tags取决于PutObjectCopy请求指定的Tags。<br>Type: String<br>Default: COPY<br>Valid values: COPY、REPLACE|否
 x-amz-metadata-directive|如果该header值指定为COPY，则原文件除x-amz-storage-class外的metadata将复制到目标文件。这时PutObjectCopy指定的自定义metadata将会被忽略。<br>如果指定为REPLACE，目标文件的metadata取决于PutObjectCopy请求指定的metadata。<br>Type: String<br>Default: COPY<br>Valid values: COPY、REPLACE|否
+x-amz-tagging|设置对象标签。如"Key1=Value1"<br>Type: String<br>Default: None<br>Constraints:标签键和标签值需分别做urlencode。该标签头大小不能超过2K。标签个数不能超过10个。|否
 x-amz-meta-\*|以x-amz-meta- 前缀开头的Header为用户自定义Header。自定义Header的大小（包括key、value）UTF-8编码下不能超过2K。|否
 
 ### 请求元素
