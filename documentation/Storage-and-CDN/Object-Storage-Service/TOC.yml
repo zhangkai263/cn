@@ -115,6 +115,8 @@ items:
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
           - name: 对象锁定
             href: Operation-Guide/Manage-Object/Object-Lock.md
+          - name: 对象标签
+            href: Operation-Guide/Manage-Object/Object-Tagging.md
           - name: SelectObject(公测)
             href: Operation-Guide/Manage-Object/Select-Object.md
       - name: 权限控制
