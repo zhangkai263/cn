@@ -1,0 +1,118 @@
+﻿  name: VPN
+  href:
+  items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        items:
+          - name: 边界网关
+            href: Introduction/Features/Border-Gateway-Features.md
+          - name: VPC接口
+            href: Introduction/Features/VPC-Interface-Features.md
+          - name: 客户网关
+            href: Introduction/Features/Customer-Gateway-Features.md
+          - name: VPN连接
+            href: Introduction/Features/VPN-Connection-Features.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 应用场景
+        items:
+          - name: 公有云连接IDC或办公室
+            href: Introduction/Application-Scenarios/Connection-Into-IDC-Or-Office.md
+          - name: VPN作为专线的备用线路
+            href: Introduction/Application-Scenarios/Standby-For-DirectConnect.md
+          - name: 多公有云环境互联
+            href: Introduction/Application-Scenarios/Multi-Cloud-InterConnect.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md
+  - name: 入门指南
+    items:
+       - name: 连接本地数据中心
+         href: Getting-Started/Connection-Into-On-Premise.md
+  - name: 操作指南
+    items:
+       - name: 边界网关管理
+         items:
+          - name: 边界网关配置
+            href: Operation-Guide/Border-Gateway-Management/Border-Gateway-Configuration.md
+          - name: VPC接口配置
+            href: Operation-Guide/Border-Gateway-Management/VPC-Attachment-Configuration.md
+       - name: 客户网关管理
+         items:
+          - name: 客户网关配置
+            href: Operation-Guide/Customer-Gateway-Management/Customer-Gateway-Configuration.md
+       - name: VPN连接管理
+         items:
+          - name: VPN连接配置
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Configuration.md
+          - name: VPN隧道配置
+            href: Operation-Guide/VPN-Connection-Management/VPN-Tunnel-Configuration.md
+          - name: VPN连接监控
+            href: Operation-Guide/VPN-Connection-Management/VPN-Connection-Monitoring.md
+       - name: 客户端管理
+         items:
+          - name: 思科客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Cisco-Configuration.md
+          - name: 华为客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Huawei-Configuration.md
+          - name: 华三客户端配置
+            href: Operation-Guide/Client-Site-Configuration/H3C-Configuration.md
+          - name: 瞻博客户端配置
+            href: Operation-Guide/Client-Site-Configuration/Juniper-Configuration.md
+          - name: strongSwan客户端配置
+            href: Operation-Guide/Client-Site-Configuration/StrongSwan-Configuration.md
+       - name: 路由管理
+         items:
+          - name: 边界网关路由配置
+            href: Operation-Guide/Route-Management/Border-Gateway-Route-Configuration.md
+          - name: VPC路由配置
+            href: Operation-Guide/Route-Management/VPC-Route-Configuration.md
+  - name: 最佳实践
+    items:
+       - name: 高可用的VPN
+         href: Best-Practices/VPN-High-Available.md
+       - name: 专线VPN混合云解决方案
+         href: Best-Practices/Connection-With-DirectConnect.md
+       - name: VPN连接到亚马逊AWS
+         href: Best-Practices/Connection-Into-Amazon.md
+       - name: VPN连接到京东云跨地域资源
+         href: Best-Practices/Connection-Into-JDCloud.md
+  - name: 问题排查
+    items:
+    status: 0
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: API参考
+    href:
+    status: 0
+  - name: SDK参考
+    href:
+    status: 0
+  - name: 用户协议
+    status: 0
+    items:
+    - name: 服务条款
+      href:
+      status: 0
+  - name: 相关资源
+    status: 0
+    items:
+    - name: 文档历史记录
+      href:
+      status: 0

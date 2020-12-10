@@ -1,51 +1,51 @@
-  name: 云解析
-  href: 
-  items:
+name: 域名服务
+href:
+items:
   - name: 接口概览
     href: overview.md
   - name: 更新历史
     href: ChangeLog.md
   - name: 接口信息
     items:
-      - name:  域名相关的接口
+      - name: 域名系统接口
         items:
-          - name: getDomains
-            href:  Domain-Name/getDomains.md
-          - name: delDomain
-            href:  Domain-Name/delDomain.md
-          - name: updateDomain
-            href:  Domain-Name/updateDomain.md
-          - name: addDomain
-            href:  Domain-Name/addDomain.md
-          - name: getDomainQueryCount
-            href:  Domain-Name/getDomainQueryCount.md
-          - name: getDomainQueryTraffic
-            href:  Domain-Name/getDomainQueryTraffic.md
-      - name: 解析记录相关的接口  
+          - name: checkDomain
+            herf: Domain-Name/checkDomain.md
+          - name: queryWhoisInfo
+            herf: Domain-Name/queryWhoisInfo.md
+          - name: createDomain
+            herf: Domain-Name/createDomain.md
+          - name: renewDomain
+            herf: Domain-Name/renewDomain.md
+          - name: transferin
+            herf: Domain-Name/transferinDomain.md
+          - name: transferinDomainState
+            herf: Domain-Name/transferinDomainState.md
+          - name: domainInfo
+            herf: Domain-Name/domainInfo.md
+      - name: 域名管理接口
         items:
-          - name: addRR
-            href: Resolution-Record/addRR.md
-          - name: getViewTree
-            href: Resolution-Record/getViewTree.md
-          - name: operateRR
-            href: Resolution-Record/operateRR.md  
-          - name: searchRR
-            href: Resolution-Record/searchRR.md
-          - name: updateRR
-            href: Resolution-Record/updateRR.md
-      - name:  网站监控相关的接口
+          - name: modifyDns
+            herf: Domain-Management/modifyDns.md
+          - name: domainTemplateAssigned
+            herf: Domain-Management/domainTemplateAssigned.md
+          - name: domainLock
+            herf: Domain-Management/domainLock.md
+          - name: domainUnLock
+            herf: Domain-Management/domainUnLock.md
+          - name: getDomainTransferOutPassWord
+            herf: Domain-Management/getDomainTransferOutPassWord.md
+      - name: 域名模板相关接口
         items:
-          - name: addMonitor
-            href: Website-Monitoring/addMonitor.md        
-          - name: addMonitorTarget
-            href: Website-Monitoring/addMonitorTarget.md 
-          - name: getMonitor
-            href: Website-Monitoring/getMonitor.md 
-          - name: getMonitorAlarmInfo
-            href: Website-Monitoring/getMonitorAlarmInfo.md 
-          - name: getTargets
-            href: Website-Monitoring/getTargets.md
-          - name: operateMonitor
-            href: Website-Monitoring/operateMonitor.md
-          - name: updateMonitor
-            href: Website-Monitoring/updateMonitor.md            
+          - name: createTemplate
+            herf: Domain-Template/createTemplate.md
+          - name: queryTemplateInfo
+            herf: Domain-Template/queryTemplateInfo.md
+          - name: modifyTemplateInfo
+            herf: Domain-Template/modifyTemplateInfo.md
+          - name: deleteTemplate
+            herf: Domain-Template/deleteTemplate.md
+          - name: certificateTemplate
+            herf: Domain-Template/certificateTemplate.md
+          - name: certificateTemplateState
+            herf: Domain-Template/certificateTemplateState.md

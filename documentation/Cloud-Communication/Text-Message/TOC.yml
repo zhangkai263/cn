@@ -1,0 +1,57 @@
+name: 文本短信
+href:
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: Introduction/product-overview.md
+    - name: 名词解释
+      href: Introduction/Glossary.md
+    - name: 审核标准
+      href: Introduction/standard.md
+- name: 产品定价
+  items:
+    - name: 价格总览
+      href: Pricing/Billing-Overview.md
+- name: 入门指南
+  items:
+    - name: 应用管理
+      href: Getting-Started/Application.md
+- name: 操作指南
+  items:
+    - name: 业务规则
+      href: Operation-Guide/rule.md
+    - name: 短信签名
+      href: Operation-Guide/signature.md
+    - name: 短信模板
+      href: Operation-Guide/content.md
+    - name: 模板变量规则
+      href: Operation-Guide/para.md
+    - name: 发送短信
+      href: Operation-Guide/send.md
+    - name: 统计分析
+      href: Operation-Guide/stat.md
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: FAQ/FAQ.md
+- name: SDK参考
+  items:
+    - name: AccessKey
+      href: SDK-Rerference/accesskey.md      
+    - name: java 参考
+      href: SDK-Rerference/java.md 
+    - name: python 参考
+      href: SDK-Rerference/python.md 
+    - name: php 参考
+      href: SDK-Rerference/php.md 
+    - name: .net 参考
+      href: SDK-Rerference/dotnet.md 
+    - name: Node.JS 参考
+      href: SDK-Rerference/nodejs.md 
+- name: 相关协议
+  items:
+    - name: 服务协议
+      href: Service-Agreements-and-Guarantees/Text-Message-Term.md
+    - name: SLA服务等级协议
+      href: Service-Agreements-and-Guarantees/Text-Message-SLA.md

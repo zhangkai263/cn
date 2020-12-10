@@ -1,175 +1,98 @@
-# 计费规则
+# 计费说明
 
-## 计费项
+本文主要介绍京东智联云对象存储OSS服务费用的各项组成部分及计费方式，您可以通过本文了解OSS服务费用收取详情。
 
-<table border=0 cellpadding=0 cellspacing=0 width=840 style='border-collapse:
- collapse;table-layout:fixed;width:632pt'>
- <col class=xl65 width=110 style='mso-width-source:userset;mso-width-alt:3520;
- width:83pt'>
- <col class=xl65 width=106 style='mso-width-source:userset;mso-width-alt:3392;
- width:80pt'>
- <col class=xl65 width=216 style='mso-width-source:userset;mso-width-alt:6912;
- width:162pt'>
- <col class=xl65 width=339 style='mso-width-source:userset;mso-width-alt:10858;
- width:255pt'>
- <col class=xl65 width=69 style='width:52pt'>
- <tr height=19 style='height:14.0pt'>
-  <td colspan=2 height=19 class=xl66 width=216 style='height:14.0pt;width:163pt'>计费项</td>
-  <td class=xl66 width=216 style='border-left:none;width:162pt'>释义</td>
-  <td class=xl66 width=339 style='border-left:none;width:255pt'><span
-  style='mso-spacerun:yes'>&nbsp;</span>计费公式</td>
-  <td class=xl66 width=69 style='border-left:none;width:52pt'><span
-  style='mso-spacerun:yes'>&nbsp;</span>说明</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td rowspan=2 height=131 class=xl67 width=110 style='height:98.0pt;
-  border-top:none;width:83pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>存储容量</span></td>
-  <td class=xl68 width=106 style='border-top:none;border-left:none;width:80pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>实际存储空间占用量</span></td>
-  <td class=xl69 width=216 style='border-top:none;border-left:none;width:162pt'>实际存储空间占用量包括：<br>
-    1.标准存储类型的数据占用量<br>
-    2.低冗余类型的数据占用量</td>
-  <td class=xl68 width=339 style='border-top:none;border-left:none;width:255pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>当前存储容量（GB）* 对应存储类型的每天单价</span></td>
-  <td class=xl70 width=69 style='border-top:none;border-left:none;width:52pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>具体价格请查阅价格总览</span></td>
- </tr>
- <tr height=75 style='height:56.0pt'>
-  <td height=75 class=xl68 width=106 style='height:56.0pt;border-top:none;
-  border-left:none;width:80pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>数据取回量</span></td>
-  <td class=xl71 width=216 style='border-top:none;border-left:none;width:162pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>对于低冗余存储类型数据的访问，会按照读取文件的大小计算数据取回量，不区分内、外网。</span></td>
-  <td class=xl69 width=339 style='border-top:none;border-left:none;width:255pt'>数据取回量费用
-  = 数据取回量（GB） * 每 GB 单价<br>
-    例：假如您需要从低冗余存储类型的Bucket中下载10个文件，每个文件10GB。那么数据取回的费用 = 10 * 10 * 每GB的数据取回单价</td>
-  <td class=xl72 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td rowspan=6 height=317 class=xl67 width=110 style='height:238.0pt;
-  border-top:none;width:83pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>访问流量</span></td>
-  <td class=xl73 width=106 style='border-top:none;border-left:none;width:80pt'>内网流入流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过京东云内网从云主机等内部服务上传数据到对象存储所产生的上行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>内网流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过京东云内网从对象存储下载数据到云主机等内部服务所产生的下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td height=37 class=xl73 width=106 style='height:28.0pt;border-top:none;
-  border-left:none;width:80pt'>外网流入流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过公网从本地端上传数据到京东云对象存储所产生的上行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>外网流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过公网从京东云对象存储下载数据到本地端所产生的下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计外网流出流量（GB）
-  * 每 GB 单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>具体价格请查阅价格总览</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>CDN回源流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过CDN服务层下载
-  OSS 的数据所产生的回源下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计
-  CDN 回源流出流量（GB） * 每 GB 单价跨区域复制流量</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>具体价格请查阅价格总览</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>跨区域复制流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>使用跨区域复制功能将源
-  Bucket 的数据同步复制到目标 Bucket 时所产生的流出流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计跨区域复制流量（GB）
-  * 每 GB 单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td rowspan=2 height=74 class=xl66 width=110 style='height:56.0pt;border-top:
-  none;width:83pt'>请求次数</td>
-  <td class=xl73 width=106 style='border-top:none;border-left:none;width:80pt'>GET请求</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>对象存储OPEN
-  API当中全部GET请求</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计GET请求总数/10000
-  * 每万次请求单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td height=37 class=xl73 width=106 style='height:28.0pt;border-top:none;
-  border-left:none;width:80pt'>PUT请求</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>对象存储OPEN
-  API当中全部PUT请求</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计PUT请求总数/10000
-  * 每万次请求单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
-</table>
+* [计费方式](Billing-Rules#user-content-1)
+* [费用组成](Billing-Rules#user-content-2)
+    * [存储费用](Billing-Rules#user-content-3)
+    * [流量费用](Billing-Rules#user-content-4)
+    * [请求费用](Billing-Rules#user-content-5)
+    * [数据取回费用](Billing-Rules#user-content-6)
+    * [云端数据处理费用](Billing-Rules#user-content-7)
 
-## 计费案例
+## 计费方式
 
-**案例背景1（使用标准型存储）**
+<div id="user-content-1"></div>
 
-A公司是一家传媒企业，会把大量图片素材文件放在对象存储上，采用标准存储方式，大约有100GB左右图片文件，每月图片文件的外网下行流量大约为500GB，不使用CDN加速，每月大概200万次读请求或写请求。
+京东智联云对象存储所有地域均采用按量后付费的计费模式，根据用户实际用量按天推送账单，每天按照账单收取前一天的费用。
 
-费用组成
+**说明**：
+标准存储类型为您在全地域提供了免费额度，请参见[免费额度](https://docs.jdcloud.com/cn/object-storage-service/free-tier-for-oss)。
 
-存储容量费用：100（GB） * 0.00427元/GB/天 * 30（天） = 12.81元
+## 费用组成
 
-外网下行流量费用：500（GB） * 0.50元/GB = 250.00元
+<div id="user-content-2"></div>
 
-请求次数费用：暂时免费，若收费，则此部分费用为 200（万次） / 10000  * 单价/万次
+OSS服务费用由存储费用、流量费用、请求费用、数据取回费用、云端处理费用几部分组成：
 
-总月消费 = 存储容量费用 + 外网下行流量费用 = 12.81元 + 250.00元 = 262.81元
+![计费组成](../../../../image/Object-Storage-Service/OSS-175.png)
 
-**案例背景2（使用对象存储+CDN）**
+**说明**
+OSS的所有收费项目都是单独计费的，例如：您在OSS的存储空间内存放了100GB数据，每天将产生存储费用；若每天有通过外网访问您的数据，则您还会产生外网流出流量费用。
 
-B公司是一家视频网站企业，会把大量视频文件放在对象存储上，采用标准存储方式，大约有200GB左右视频文件，每月视频文件使用CDN加速，CDN公网流量大约为4TB，CDN回源流量大约为800GB（若访问CDN节点没有命中待访问的文件，则回源到对象存储去获取），每月大概500万次读请求或写请求。
 
-费用组成
+###  存储费用
+<div id="user-content-3"></div>
 
-存储容量费用：200（GB） * 0.00427元/GB/天 * 30（天） = 25.62元
+OSS服务提供多种存储类型：标准存储类型、低频存储类型、归档存储类型、低冗余存储类型。详情请参见 [存储类型介绍](../Introduction/StorageClass-Overview.md)。
 
-CDN回源流量费用：800（GB） * 0.14元/GB = 112.00元
+存储费用根据实际存储容量收取，不同的存储类型，产生的存储费用说明如下：
 
-CDN公网流量费用：4 * 1024（GB） * 0.35元/GB = 1433.60元
+**说明：** [产品定价](./Price-Overview.md)中，存储费用是以每GB每天为单位，结算存储费用。
 
-请求次数费用：暂时免费，若收费，则此部分费用为 500（万次） / 10000  * 单价/万次
+|存储类型|计量项|计费方式|
+|:---|:--|:---|
+|标准存储|存储量：按照实际的存储量计算。<br>  存储时间：按实际存储时间计算。|每天结算一次存储空间内标准存储类型文件的存储费用。<br>存储费用： 每个地域存储量≤10：免费<br>（存储量（GB）-10（GB））\* 标准存储每天时单价。|
+|低频存储|存储量：<br>  存储的单个文件小于64KB，按照64KB计算。例如，存储了10个30KB的文件，计算存储量时计算为10个64KB的文件。<br>   存储的单个文件大于或等于64KB，按照实际大小计算。<br>  存储时间：<br>   低于30天按30天计算。<br>  大于或等于30天，按照实际存储时间计算。|每天时结算一次存储空间内低频存储类型文件的存储费用。<br>存储费用：存储量（GB）\* 低频存储每小时单价。<br>**说明：** 上传或复制同名文件到OSS会导致OSS原有文件被删除，或者直接删除未满30天的低频存储类型文件，系统会在下次费用结算时加上剩余天数的存储费用，如：example（old）为低频存储类型文件，存储10天后被覆写为example（new）。系统会在下次费用结算时加上example（old）剩余20天的存储费用并正常计算example（new）的存储费用。|
+|归档存储|存储量：<br>  存储的单个文件小于48KB，按照48KB计算。例如，存储了10个30KB的文件，计算存储量时计算为10个48KB的文件。<br>   存储的单个文件大于或等于48KB，按照实际大小计算。<br>  存储时间：<br>   低于60天，按60天计算。<br>  大于或等于60天，按照实际存储时间计算。|每天时结算一次存储空间内归档存储类型文件的存储费用。<br>存储费用：存储量（GB）\* 归档存储每小时单价。<br>**说明：** 上传或复制同名文件到OSS会导致OSS原有文件被删除，或者直接删除未满60天的归档存储类型文件，系统会在下次费用结算时加上剩余天数的存储费用，如：example（old）为归档存储类型文件，存储 10 天后被覆写为example（new）。系统会在下次费用结算时加上example（old）剩余50天的存储费用并正常计算example（new）的存储费用。|
+|低冗余存储| 存储量：按照实际的存储量计算。<br>  存储时间：按实际存储时间计算。|每天结算一次存储空间内低冗余存储类型文件的存储费用。存储费用：存储量（GB）\*低冗余存储每天单价。|
 
-总月消费 = 存储容量费用 + CDN回源流量费用 + CDN公网流量费用 = 25.62元 + 112.00元 + 1433.60元 = 1571.22元
+### 流量费用 
+<div id="user-content-4"></div>
 
-**案例背景3（使用低冗余型存储）**
+流量指您使用的网络带宽流量累计值。具体计量项有：外网下行流量、内网下行流量、外网上行流量、内网上行流量、CDN回源下行流量、数据同步流量。详细价格请参考[产品定价](./Price-Overview.md)。
 
-C公司是一家电商企业，会把大量电子发票文件放在对象存储上做数据冷备，采用低频访问型存储方式，大约有500TB左右电子发票文件，极少访问，目前阶段外网下行流量可以估算为0，请求次数也可以估算为0。
+|计量项|计量方式|计费方式|
+|---|----|----|
+|内网上行流量|通过京东智联云内网从云主机等内部服务上传数据到对象存储所产生的上行流量。|免费|
+|内网下行流量|通过京东智联云内网从对象存储下载数据到云主机等内部服务所产生的下行流量。|免费|
+|外网上行流量|通过公网从本地端上传数据到京东智联云对象存储所产生的上行流量。|免费|
+|外网下行流量|通过公网从京东智联云对象存储下载数据到本地端所产生的下行流量。|流量费会按天为单位，累计计费。<br>每天累计外网下行流量（GB）\*每GB单价。例如，北京地域某存储空间（Bucket），当天已累计产生外网下行流量100GB，所以外网下行流量费用为0.5\*100（GB）=50元|
+|CDN回源下行流量|通过CDN服务层下载OSS的数据所产生的回源下行流量。|每天累计CDN回源下行流量（GB）\*每GB单价|
+|数据同步流量|使用数据同步功能将源Bucket的数据同步到目标Bucket时所产生的流量。|每天累计数据同步流量（GB）\*每GB单价。|
 
-费用组成
 
-存储容量费用：500（TB） * 1024 *  0.00233元/GB/天 * 30（天） = 35788.80元
+### 请求次数费用
+<div id="user-content-5"></div>
 
-外网下行流量费用： 0.00元
+您所有对OSS的操作无论是通过控制台、生命周期管理、数据同步还是其他工具，最终都是对OSS API的调用。接口调用费即会用根据您调用OSS API接口的次数计费。写操作与读操作次数费用，详细价格请参考[产品定价](./Price-Overview.md)。
 
-请求次数费用：暂时免费
+|计量项|计量方式|计费方式|
+|---|----|----|
+|调用OSS API接口次数|调用OSS API接口的请求次数。|每天时结算一次调用OSS API接口的费用。请求次数费用计算公式：每万次调用单价\*每天实际调用次数/10000。|
 
-总月消费 = 存储容量费用 + 外网下行流量费用 = 35788.80元 + 0.00元 = 35788.80元
+### 数据取回费用 
+
+<div id="user-content-6"></div>
+
+如果您访问了低频存储类型或归档存储类型的文件，将会额外产生数据取回费用。详细价格请参考[产品定价](./Price-Overview.md)。
+
+|存储类型|计量项|计费方式|
+|----|---|----|
+|归档存储|归档存储文件被访问前，需先还原，产生文件取回费用。|每天结算一次数据取回费用：还原文件大小（GB）\*归档存储对应取回模式每GB的数据取回单价。|
+|低频存储|访问低频存储文件，会产生取回费用，按照实际读取大小计算。|每天结算一次数据取回费用：文件实际读取大小（GB）\*低频存储每GB的数据取回单价。|
+
+### 云端数据处理费用 
+
+<div id="user-content-7"></div>
+
+如果您使用了OSS的视频转码与截图，图片处理功能，将会产生云端数据处理费用详细价格请参考[产品定价](./Price-Overview.md)。
+
+|存储类型|计量项|计费方式|
+|----|---|----|
+|音视频转码时长|使用音视频转码服务的输出文件时长。|每天累计输出文件时长\*每分钟转码单价。|
+|视频截图张数|使用视频截图服务的截图张数。|每天累计截图张数/1000\*每千张单价。|
+|图片处理|OSS按处理原文件的实际大小计算数据处理量。|图片文件大小*每GB的图片处理单价，目前免费|
+
+
 

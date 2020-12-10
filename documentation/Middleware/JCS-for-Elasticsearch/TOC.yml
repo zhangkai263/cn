@@ -1,0 +1,154 @@
+  name: 云搜索 Elasticsearch
+  href: 
+  items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 产品规格
+        href: Introduction/Specifications.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 应用场景 
+        href: Introduction/Applicaton-Scenarios.md    
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md 
+      - name: 续费流程
+        href: Pricing/Renewal-Process.md
+  - name: 入门指南
+    items:
+      - name: 入门指南概述
+        href: Getting-Started/Overview.md
+      - name: 创建集群
+        href: Getting-Started/Create-ES.md
+      - name: 访问集群
+        href: Getting-Started/accesscluster.md
+      - name: 管理数据
+        items:
+        - name: 管理数据概述
+          href: Getting-Started/dataview.md
+        - name: 创建索引
+          href: Getting-Started/addindex.md
+        - name: 创建文档
+          href: Getting-Started/adddoc.md
+        - name: 查询文档
+          href: Getting-Started/querydoc.md
+        - name: 集群分析
+          href: Getting-Started/clusteranaly.md
+        - name: 删除数据
+          href: Getting-Started/deleteindex.md
+      - name: 管理集群
+        items:
+        - name: 查看集群
+          href: Getting-Started/View-ES.md
+        - name: 变更配置
+          href: Getting-Started/Change-ES.md
+        - name: 删除集群
+          href: Getting-Started/Delete-ES.md
+        - name: 重启集群
+          href: Getting-Started/reboot.md
+  - name: 操作指南
+    items:
+      - name: 专用主节点
+        href: Operation-Guide/Dedicated-master.md
+      - name: 协调节点
+        href: Operation-Guide/coordination_node.md
+      - name: Kibana
+        href: Operation-Guide/Kibana.md 
+      - name: Head
+        href: Operation-Guide/head.md
+      - name: 插件支持
+        href: Operation-Guide/IK.md
+      - name: Elasticsearch日志
+        href: Operation-Guide/eslog.md
+      - name: 自定义词库
+        href: Operation-Guide/dic.md 
+      - name: 周期创建索引
+        href: Operation-Guide/index.md
+      - name: SQL支持
+        href: Operation-Guide/sql.md
+      - name: 高级配置
+        href: Operation-Guide/Configure.md
+      - name: 快照
+        items: 
+        - name: 创建快照
+          href: Operation-Guide/creatsnapshot.md
+        - name: 查看快照信息
+          href: Operation-Guide/viewsnapshot.md 
+        - name: 快照指定索引
+          href: Operation-Guide/indexsnapshot.md
+        - name: 删除快照
+          href: Operation-Guide/deletesnapshot.md
+      - name: 访问控制
+        href: Operation-Guide/control.md
+      - name: 监控集群
+        items: 
+        - name: 查看监控信息
+          href: Operation-Guide/Monitoring.md 
+        - name: 查看状态信息
+          href: Operation-Guide/status.md
+        - name: 创建告警规则
+          href: Operation-Guide/Monitor_Rules.md
+      - name: 标签
+        items:
+        - name: 标签概述
+          href: Operation-Guide/Tag/Tag-Overview.md
+        - name: 编辑标签
+          href: Operation-Guide/Tag/Edit-Tag.md
+        - name: 根据标签筛选
+          href: Operation-Guide/Tag/Filter-by-Tag.md
+  - name: 最佳实践
+    items:
+     - name: 规格容量评估
+       href: Best-Practices/Capacity-Assessment.md
+     - name: 加载示例数据
+       href: Best-Practices/connect-ES.md
+     - name: 数据接入集群
+       href: Best-Practices/plugin.md
+     - name: 通过kibana构建可视化分析系统
+       href: Best-Practices/using_kibana.md
+     - name: 公网访问
+       href: Best-Practices/publicIP.md
+     - name: MySQL数据同步
+       href: Best-Practices/mysqltoes.md
+     - name: 第三方Elasticsearch数据迁移
+       href: Best-Practices/Ali-to-es.md
+     - name: 性能指标
+       items: 
+        - name: 性能测试步骤
+          href: Best-Practices/Capacity_Step.md
+        - name: 性能指标测试结果
+          href: Best-Practices/performance.md
+     - name: 监控告警配置建议
+       href: Best-Practices/automonitor.md
+  - name: 常见问题
+    items:
+    - name: 产品相关
+      href: FAQ/FAQ.md
+    - name: 访问相关
+      href: FAQ/Access.md
+    - name: 功能相关
+      href: FAQ/Function.md   
+  - name: 相关资源
+    items:
+    - name: 文档历史记录
+      href: Related-Resources/Document-History.md 
+    - name: 云搜索Elasticsearch产品服务协议
+      href: Related-Resources/Product-Service-Agreement.md
+

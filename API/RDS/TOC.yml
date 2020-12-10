@@ -1,4 +1,4 @@
-  name: 云数据库 RDS OpenAPI
+  name: 云数据库 RDS
   href: 
   items:
   - name: 接口概览
@@ -11,15 +11,23 @@
         items:
           - name: createAccount
             herf: Account-Management/createAccount.md
+          - name: createSuperAccount
+            herf: Account-Management/createSuperAccount.md
           - name: deleteAccount
             herf: Account-Management/deleteAccount.md
+          - name: describeAccountPrivilege
+            herf: Account-Management/describeAccountPrivilege.md
           - name: describeAccounts
             herf: Account-Management/describeAccounts.md
+          - name: grantAccountPrivilege
+            herf: Account-Management/grantAccountPrivilege.md
           - name: grantPrivilege
             herf: Account-Management/grantPrivilege.md
           - name: resetPassword
             herf: Account-Management/resetPassword.md
-            
+          - name: revokePrivilege
+            herf: Account-Management/revokePrivilege.md
+
       - name: 审计管理
         items:
           - name: createAudit
@@ -28,14 +36,25 @@
             herf: Audit-Management/deleteAudit.md
           - name: describeAudit
             herf: Audit-Management/describeAudit.md
-          - name: getAuditDownloadURL
-            herf: Audit-Management/getAuditDownloadURL.md
-          - name: getAuditFiles
-            herf: Audit-Management/getAuditFiles.md
-          - name: getAuditOptions
-            herf: Audit-Management/getAuditOptions.md
+          - name: describeAuditDownloadURL
+            herf: Audit-Management/describeAuditDownloadURL.md
+          - name: describeAuditFiles
+            herf: Audit-Management/describeAuditFiles.md
+          - name: describeAuditOptions
+            herf: Audit-Management/describeAuditOptions.md
+          - name: describeAuditResult
+            herf: Audit-Management/describeAuditResult.md
+          - name: disableAudit
+            herf: Audit-Management/disableAudit.md
+          - name: enableAudit
+            herf: Audit-Management/enableAudit.md
           - name: modifyAudit
             herf: Audit-Management/modifyAudit.md
+
+      - name: 可用区管理
+        items:
+          - name: describeAzs
+            herf: AvailabilityZones/describeAzs.md
             
       - name: 备份管理
         items:
@@ -48,14 +67,46 @@
           - name: describeBackups
             herf: Backup-Management/describeBackups.md
 
+      - name: Binlog管理
+        items:
+          - name: describeBinlogDownloadURL
+            herf: Binlog/describeBinlogDownloadURL.md
+          - name: describeBinlogs
+            herf: Binlog/describeBinlogs.md
+          - name: clearBinlogs
+            herf: Binlog/clearBinlogs.md
+
       - name: 单库上云
         items:
+          - name: deleteImportFile
+            herf: Cloud-on-Single-Database/deleteImportFile.md
           - name: describeImportFiles
             herf: Cloud-on-Single-Database/describeImportFiles.md
           - name: getUploadKey
             herf: Cloud-on-Single-Database/getUploadKey.md
           - name: setImportFileShared
             herf: Cloud-on-Single-Database/setImportFileShared.md
+            
+      - name: 命令管理
+        items:
+          - name: alterTableWithOnlineDDL
+            herf: command/alterTableWithOnlineDDL.md
+            
+      - name: 公共接口管理
+        items:
+          - name: describePrivilege
+            herf: Common/describePrivilege.md
+
+      - name: 跨地域备份
+        items:
+          - name: createBackupSynchronicity
+            herf: Cross-region-synchronization-service/createBackupSynchronicity.md
+          - name: deleteBackupSynchronicity
+            herf: Cross-region-synchronization-service/deleteBackupSynchronicity.md
+          - name: describeBackupSynchronicities
+            herf: Cross-region-synchronization-service/describeBackupSynchronicities.md
+          - name: createInstanceByTimeInCrossRegion
+            herf: Cross-region-synchronization-service/createInstanceByTimeInCrossRegion.md
 
       - name: 数据库管理
         items:
@@ -81,45 +132,145 @@
         items:
           - name: createInstance
             herf: Instance-Management/createInstance.md
+          - name: createInstanceByTime
+            herf: Instance-Management/createInstanceByTime.md
+          - name: createInstanceFromBackup
+            herf: Instance-Management/createInstanceFromBackup.md
+          - name: createROInstance
+            herf: Instance-Management/createROInstance.md
           - name: deleteInstance
             herf: Instance-Management/deleteInstance.md
+          - name: describeBackupPolicy
+            herf: Instance-Management/describeBackupPolicy.md
           - name: describeInstanceAttributes
             herf: Instance-Management/describeInstanceAttributes.md
           - name: describeInstances
             herf: Instance-Management/describeInstances.md
+          - name: describeLatestRestoreTime
+            herf: Instance-Management/describeLatestRestoreTime.md
+          - name: describeSSL
+            herf: Instance-Management/describeSSL.md
           - name: disableInternetAccess
             href: Instance-Management/disableInternetAccess.md
           - name: enableInternetAccess
             href: Instance-Management/enableInternetAccess.md
+          - name: enableSSL
+            herf: Instance-Management/enableSSL.md
+          - name: exchangeInstanceDns
+            href: Instance-Management/exchangeInstanceDns.md
           - name: failoverInstance
             herf: Instance-Management/failoverInstance.md
-          - name: getBackupPolicy
-            herf: Instance-Management/getBackupPolicy.md
+          - name: modifyBackupPolicy
+            herf: Instance-Management/modifyBackupPolicy.md
+          - name: modifyConnectionMode
+            herf: Instance-Management/modifyConnectionMode.md
+          - name: modifyInstanceAz
+            herf: Instance-Management/modifyInstanceAz.md
+          - name: modifyInstanceName
+            herf: Instance-Management/modifyInstanceName.md
+          - name: modifyInstanceSpec
+            herf: Instance-Management/modifyInstanceSpec.md
+          - name: modifyParameterGroup
+            herf: Instance-Management/modifyParameterGroup.md
           - name: rebootInstance
             herf: Instance-Management/rebootInstance.md
           - name: restoreInstance
             herf: Instance-Management/restoreInstance.md
-          - name: setInstanceName
-            herf: Instance-Management/setInstanceName.md
+          - name: restoreInstanceByTime
+            herf: Instance-Management/restoreInstanceByTime.md
+
+      - name: 日志管理
+        items:
+          - name: describeLogDownloadURL
+            herf: LOG/describeLogDownloadURL.md
+          - name: describeLogs
+            herf: LOG/describeLogs.md
+          - name: updateLogDownloadURLInternal
+            herf: LOG/updateLogDownloadURLInternal.md
+
+      - name: 参数组管理
+        items:
+          - name: copyParameterGroup
+            herf: Parameter-Group/copyParameterGroup.md
+          - name: createParameterGroup
+            herf: Parameter-Group/createParameterGroup.md
+          - name: deleteParameterGroup
+            herf: Parameter-Group/deleteParameterGroup.md
+          - name: describeParameterGroupAttachedInstances
+            herf: Parameter-Group/describeParameterGroupAttachedInstances.md
+          - name: describeParameterGroupParameters
+            herf: Parameter-Group/describeParameterGroupParameters.md
+          - name: describeParameterGroups
+            herf: Parameter-Group/describeParameterGroups.md
+          - name: describeParameterModifyRecords
+            herf: Parameter-Group/describeParameterModifyRecords.md
+          - name: modifyParameterGroupAttribute
+            herf: Parameter-Group/modifyParameterGroupAttribute.md
+          - name: modifyParameterGroupParameters
+            herf: Parameter-Group/modifyParameterGroupParameters.md
+
+      - name: 参数管理
+        items:
+          - name: describeParameters
+            herf: Parameters/describeParameters.md
+          - name: modifyParameters
+            herf: Parameters/modifyParameters.md
      
       - name: 性能统计
         items:
+          - name: describeActiveQueryPerformance
+            herf: Performance-Statistics/describeActiveQueryPerformance.md
+          - name: describeErrorLog
+            herf: Performance-Statistics/describeErrorLog.md
           - name: describeIndexPerformance
             herf: Performance-Statistics/describeIndexPerformance.md
           - name: describeQueryPerformance
             herf: Performance-Statistics/describeQueryPerformance.md
+          - name: describeSlowLogAttributes
+            herf: Performance-Statistics/describeSlowLogAttributes.md
+          - name: describeSlowLogs
+            herf: Performance-Statistics/describeSlowLogs.md
+
+      - name: SQL 拦截
+        items:
+          - name: describeIntercept
+            herf: SQL-Interception/describeIntercept.md
+          - name: describeInterceptResult
+            herf: SQL-Interception/describeInterceptResult.md
+          - name: disableIntercept
+            herf: SQL-Interception/disableIntercept.md
+          - name: enableIntercept
+            herf: SQL-Interception/enableIntercept.md
+            
+      - name: 表管理
+        items:
+          - name: describeTables
+            herf: Table-Management/describeTables.md
+
+      - name: 透明数据加密
+        items:
+          - name: describeTde
+            herf: TDE/describeTde.md
+          - name: enableTde
+            herf: TDE/enableTde.md
             
       - name: 白名单
         items:
           - name: describeWhiteList
             herf: White-List/describeWhiteList.md
+          - name: modifyWhiteList
+            herf: White-List/modifyWhiteList.md
             
   - name: 实例规格
     items:
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
+      - name: Percona 实例规格
+        href: Instance-Specifications/Instance-Specifications-Percona.md
+      - name: MariaDB 实例规格
+        href: Instance-Specifications/Instance-Specifications-MariaDB.md
       - name: SQL Server 实例规格
-        href: Instance-Specifications/Instance-Specifications-MySQL.md
+        href: Instance-Specifications/Instance-Specifications-SQLServer.md
 
   - name: 枚举参数说明
     items:

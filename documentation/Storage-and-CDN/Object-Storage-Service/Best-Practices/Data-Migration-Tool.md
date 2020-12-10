@@ -1,8 +1,9 @@
-# 数据迁移工具
+# 数据迁移工具(不推荐)
+### 此版迁移工具不再维护。推荐您使用新版迁移工具，[前往新版Osstransfer](./Migration-Tool.md)
 
 ## 概述
 
-京东云对象存储数据迁移工具支持从AW S3、阿里云、腾讯云、百度云、七牛云等服务迁移文件到京东云OSS；同时也支持本地文件列表迁移。迁移工具是一个简单的分布式系统，采用python rpc实现，拥有一个Master，一个或多个Worker，您可以将其运行在单台或多台机器上。
+京东云对象存储数据迁移工具支持从AWS S3、阿里云、腾讯云、百度云、七牛云等服务迁移文件到京东云OSS；同时也支持本地文件列表迁移。迁移工具是一个简单的分布式系统，采用python rpc实现，拥有一个Master，一个或多个Worker，您可以将其运行在单台或多台机器上。
 
 工具特点如下：
 
@@ -121,13 +122,16 @@ master的运行信息可以通过osstransfer/logs目录下的log-master.txt查�
 为了能够获取master和worker的运行状态，我们开发了一个单独的程序，该程序目录为：osstransfer/src/probe/probe.py，我们介绍该程序的使用：
 
 （1）显示帮助文档
+
 ```
 python probe.py -h
 ```
+
 （2）查看某个worker或master
 ```
 python probe.py -ip_port ip:port
 ```
+
 （3）查看所有的worker和master的状态
 ```
 python probe.py -f config-master

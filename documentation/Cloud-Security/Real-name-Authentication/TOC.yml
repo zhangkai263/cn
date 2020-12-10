@@ -1,0 +1,29 @@
+name: 实名认证服务
+href:
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: Introduction/Product-Overview.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 产品功能
+      href: Introduction/Features.md
+    - name: 限制说明
+      href: Introduction/Restrictions.md
+- name: 产品定价
+  items:
+    - name: 计费概述
+      href: Pricing/Billing-Overview.md
+    - name: 计费规则
+      href: Pricing/Price-Overview.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md
+    - name: 预付费资源包
+      href: Pricing/Resource-Packages.md       
+- name: 操作指南
+  items:
+    - name: 开通服务
+      href: Operation-Guide/Active.md
+    - name: 实名认证概览
+      href: Operation-Guide/Resource-Statistics/Overview.md

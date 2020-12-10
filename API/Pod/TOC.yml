@@ -1,0 +1,67 @@
+name: Pod
+href: 
+items:
+- name: 接口概览
+  href: overview.md
+- name: 更新历史
+  href: ChangeLog.md
+- name: 接口信息
+  items:
+  - name: Pod
+    items:
+    - name: 创建 Pod
+      href: pod/createPods.md
+    - name: 校验 Pod 名称是否可用
+      href: pod/checkPodName.md
+    - name: 删除 Pod
+      href: pod/deletePod.md
+    - name: 查询 Pod 详情
+      href: pod/describePod.md
+    - name: 查询 Pod 列表
+      href: pod/describePods.md
+    - name: Pod 绑定弹性IP
+      href: pod/associateElasticIp.md
+    - name: Pod 解绑弹性IP
+      href: pod/disassociateElasticIp.md
+    - name: 查询 Pod 中的容器日志
+      href: pod/getContainerLogs.md
+    - name: 修改 Pod 属性
+      href: pod/modifyPodAttribute.md
+    - name: 启动 Pod
+      href: pod/startPod.md
+    - name: 停止 Pod
+      href: pod/stopPod.md
+    - name: 重置 Pod 中容器镜像
+      href: pod/rebuildPod.md
+  - name: 容器
+    items:
+    - name: 查询 Pod 中的一个容器详情
+      href: Container/describeContainer.md
+    - name: attach 到 Pod 内的一个容器
+      href: Container/attach.md
+    - name: 创建 exec
+      href: Container/execCreate.md
+    - name: 获取 exec 退出码
+      href: Container/execGetExitCode.md
+    - name: 执行 exec
+      href: Container/execStart.md
+    - name: 重置 TTY 大小
+      href: Container/resizeTTY.md
+  - name: 配额
+    items:
+    - name: 查询 Pod 配额
+      href: Quota/describeQuota.md
+  - name: 镜像仓库认证信息
+    items:
+    - name: 创建镜像仓库认证信息
+      href: Secrets/createSecret.md
+    - name: 删除镜像仓库认证信息
+      href: Secrets/deleteSecret.md
+    - name: 查询镜像仓库认证信息详情
+      href: Secrets/describeSecret.md
+    - name: 查询镜像仓库认证信息列表
+      href: Secrets/describeSecrets.md
+  - name: 规格类型
+    items:
+    - name: 查询实例类型
+      href: Instance-Type/describeInstanceTypes.md

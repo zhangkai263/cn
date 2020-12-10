@@ -12,21 +12,40 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**accountName**|String|True||账号名，在同一个实例中账号名不能重复|
-|**instanceId**|String|True||RDS 实例ID，唯一标识一个RDS实例|
-|**regionId**|String|True||地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
+|**accountName**|String|True| |账号名，在同一个实例中账号名不能重复|
 
 ## 请求参数
 无
 
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-
+无
 
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteAccount() {
+    DeleteAccountRequest deleteAccountRequest = new DeleteAccountRequest();
+    deleteAccountRequest.setAccountName("dj_ac");
+    deleteAccountRequest.setInstanceId("mysql-wp4e9ztap2");
+    deleteAccountRequest.setRegionId("cn-north-1");
+    DeleteAccountResponse deleteAccountResponse = rdsClient.deleteAccount(deleteAccountRequest);
+    System.out.println(new Gson().toJson(deleteAccountResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa0670tan56mcbetqsimbk8a5ijr116"
+}
+```

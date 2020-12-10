@@ -12,23 +12,43 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**accountName**|String|True||账号名，在同一个实例中账号名不能重复|
-|**instanceId**|String|True||RDS 实例ID，唯一标识一个RDS实例|
-|**regionId**|String|True||地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
+|**accountName**|String|True| |账号名，在同一个实例中账号名不能重复|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**accountPassword**|String|True||新密码，密码的具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
+|**accountPassword**|String|True| |新密码，密码的具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Database-and-Cache-Service/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-
+无
 
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testResetPassword() {
+    ResetPasswordRequest resetPasswordRequest = new ResetPasswordRequest();
+    resetPasswordRequest.setAccountName("dj_ac");
+    resetPasswordRequest.setAccountPassword("123456aA");
+    resetPasswordRequest.setInstanceId("mysql-wp4e9ztap2");
+    resetPasswordRequest.setRegionId("cn-north-1");
+    ResetPasswordResponse resetPasswordResponse = rdsClient.resetPassword(resetPasswordRequest);
+    System.out.println(new Gson().toJson(resetPasswordResponse));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa0adwouffbe0k4i5h82dom3ks4opnb"
+}
+```

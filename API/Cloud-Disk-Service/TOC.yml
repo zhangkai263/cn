@@ -2,11 +2,9 @@
   href:
   items:
   - name: 接口概览
-    href: summary.yaml
-
+    href: overview.md
   - name: 更新历史
     herf: ChangeLog.md
-
   - name: 云硬盘相关接口
     items:
       - name: createDisks
@@ -34,7 +32,8 @@
         href: Snapshot-APIs/modifySnpAttribute.md
       - name: modifySnapshotAttribute
         href: Snapshot-APIs/modifySnapshotAttribute.md
+        status: 0
       - name: describeSnapshot
         href: Snapshot-APIs/describeSnapshot.md
       - name: describeSnapshots
-        href: Snapshot-APIs/describeSnapshot.md
+        href: Snapshot-APIs/describeSnapshots.md

@@ -1,10 +1,10 @@
-  name: CDN
-  href: 
-  items:
+name: CDN
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/What-Is-CDN.md
+        href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
       - name: 基础架构
@@ -12,9 +12,23 @@
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品功能
-        href: Introduction/Functions.md
-      - name: 应用场景 
-        href: Introduction/Application-Scenarios.md    
+        href: Introduction/Features.md
+      - name: 应用场景
+        items:
+          - name: 场景概述
+            href: Introduction/Application-Scenarios/Overview.md
+          - name: 静态页面加速
+            href: Introduction/Application-Scenarios/Website-Acceleration.md 
+          - name: 下载加速
+            href: Introduction/Application-Scenarios/Download-Acceleration.md
+          - name: 视频点播加速
+            href: Introduction/Application-Scenarios/Video-Acceleration.md
+          - name: 视频直播加速
+            href: Introduction/Application-Scenarios/Live-Acceleration.md  
+          - name: CDN动态加速
+            href: Introduction/Application-Scenarios/Dynamic-Acceleration.md
+          - name: CDN边缘计算
+            href: Introduction/Application-Scenarios/CDN-Edge-Computing.md
   - name: 产品定价
     items:
       - name: 计费概述
@@ -25,51 +39,403 @@
         href: Pricing/Arrears.md
   - name: 入门指南
     items:
-      - name: 入门指南
-        href: Getting-Started/Getting-started-guide.md
+      - name: 入门指南概述
+        href: Getting-Started/Getting-Started.md
+      - name: 开通CDN服务
+        href: Getting-Started/Open-CDN-service.md
   - name: 操作指南
-    items:
-      - name: 视频直播
-        items:
-          - name: 直播域名创建
-            href: Operation-Guide/Living-video/Create-living-domain.md
-          - name: 禁播
-            href: Operation-Guide/Living-video/Forbidden-Stream.md
-      - name: 运营分析
-        items:
-          - name: 热点分析
-            href: Operation-Guide/Operating-Analysis/Hot-spot-Analysis .md
-      - name: 质量分析
-        items:
-          - name:命中率
-            href: Operation-Guide/Quality-Monitoring/Hit-Ratio.md        
-          - name: 状态码
-            href: Operation-Guide/Quality-Monitoring/Status-Code.md         
+    items: 
+      - name: 控制台简介
+        href: Operation-Guide/Console-introduction.md  
+      - name: 域名管理
+        href: Operation-Guide/Create-domain.md
       - name: 访问控制
         href: Operation-Guide/Access-control.md  
       - name: 高级配置
         href: Operation-Guide/Advanced-configuration.md
-      - name: 回源策略
-        href: Operation-Guide/back-to-origin-Strategy.md
+      - name: 设Https
+        href: Operation-Guide/Set-Https.md
+      - name: 回源配置
+        items:
+          - name: 回源策略
+            href: Operation-Guide/Back-To-Origin-Configuration/back-to-origin-Strategy.md
+          - name: 协议跟随回源
+            href: Operation-Guide/Back-To-Origin-Configuration/Protocol-Follow-Back-To-Origin.md        
+          - name: 回源跟随302
+            href: Operation-Guide/Back-To-Origin-Configuration/Follow-302-Configuration.md
       - name: 业务监控
         href: Operation-Guide/Business-Monitoring.md        
       - name: 缓存配置
         href: Operation-Guide/Cache-configuration.md 
-      - name: 控制台简介
-        href: Operation-Guide/Console-introduction.md  
-      - name: 创建域名
-        href: Operation-Guide/Create-domain.md
       - name: 日志下载
         href: Operation-Guide/Log-download.md
       - name: 刷新预热
         href: Operation-Guide/Refresh-Preheat.md        
       - name: 共享缓存
         href: Operation-Guide/Shared-cache.md
-      - name: URL 鉴权
+      - name: URL鉴权
         href: Operation-Guide/URL-Authentication.md        
       - name: 视频拖拽
         href: Operation-Guide/Video-drag.md  
+      - name: 运营分析
+        items:
+          - name: 热点分析
+            href: Operation-Guide/Operating-Analysis/Hot-spot-Analysis.md
+      - name: 质量分析
+        items:
+          - name: 命中率
+            href: Operation-Guide/Quality-Monitoring/Hit-Ratio.md        
+          - name: 状态码
+            href: Operation-Guide/Quality-Monitoring/Status-Code.md   
+      - name: 视频直播
+        items:
+          - name: 直播域名创建
+            href: Operation-Guide/Living-video/Create-living-domain.md
+          - name: 禁播
+            href: Operation-Guide/Living-video/Forbidden-Stream.md
+  - name: 旧版API参考
+    items:
+      - name: CDN OPEN API
+        items:
+          - name: 开通OPEN API业务
+            href: API-Reference/CDN-Open-API/Open-api-business.md
+          - name: 创建域名
+            href: API-Reference/CDN-Open-API/Creat-domain.md
+          - name: 协议跟随回源
+            href: API-Reference/CDN-Open-API/Set-Protocol-Follow-Back-To-Origin.md
+          - name: 回源跟随302
+            href: API-Reference/CDN-Open-API/Set-Follow-302-Configuration.md
+          - name: 回源策略变更
+            href: API-Reference/CDN-Open-API/Change-Back-To-Source.md
+          - name: 缓存策略变更
+            href: API-Reference/CDN-Open-API/Change-Cache-policy.md
+          - name: 服务状态变更
+            href: API-Reference/CDN-Open-API/Change-Domain-Status.md
+          - name: 设置通信协议
+            href: API-Reference/CDN-Open-API/Set-http-type.md
+          - name: 设置忽略参数
+            href: API-Reference/CDN-Open-API/Set-IgnoreArgs.md
+          - name: 设置range参数
+            href: API-Reference/CDN-Open-API/Set-range.md
+          - name: 设置referer黑白名单
+            href: API-Reference/CDN-Open-API/Set-referer.md
+          - name: 查询referer黑白名单
+            href: API-Reference/CDN-Open-API/Query-Referer.md
+          - name: 设置URL鉴权
+            href: API-Reference/CDN-Open-API/Set-Url-Authentication.md
+          - name: 查询URL鉴权
+            href: API-Reference/CDN-Open-API/Query-Url-Authentication.md
+          - name: 分区域运营商详细数据统计
+            href: API-Reference/CDN-Open-API/Area-isp-detail-statistics.md
+          - name: 回源带宽统计
+            href: API-Reference/CDN-Open-API/Back-to-source-bandwidth.md
+          - name: 回源统计
+            href: API-Reference/CDN-Open-API/Origin-Code-status.md
+          - name: 状态码详情
+            href: API-Reference/CDN-Open-API/Code-status.md
+          - name: 获取所有运营商区域信息
+            href: API-Reference/CDN-Open-API/Get-all-area-isp.md
+          - name: 日志下载
+            href: API-Reference/CDN-Open-API/API-Log-download.md
+          - name: 刷新
+            href: API-Reference/CDN-Open-API/Refresh.md
+          - name: 预热
+            href: API-Reference/CDN-Open-API/Prefetch.md
+          - name: 查询带宽
+            href: API-Reference/CDN-Open-API/Query-bandwidth.md
+          - name: 计费数据查询
+            href: API-Reference/CDN-Open-API/Query-billing.md
+          - name: 查询缓存策略
+            href: API-Reference/CDN-Open-API/Query-Cache-policy.md
+          - name: 查询加速域名
+            href: API-Reference/CDN-Open-API/Query-domain.md
+          - name: 查询域名配置
+            href: API-Reference/CDN-Open-API/Query-domain-config.md
+          - name: 查询域名详情
+            href: API-Reference/CDN-Open-API/Query-domain-detail.md
+          - name: 查询流量
+            href: API-Reference/CDN-Open-API/Query-flow.md
+          - name: 查询节点IP
+            href: API-Reference/CDN-Open-API/Query-node-ip.md
+          - name: 查询预热任务
+            href: API-Reference/CDN-Open-API/Query-prefetch.md
+          - name: 查询PV和命中PV
+            href: API-Reference/CDN-Open-API/Query-pv.md
+          - name: 查询刷新任务
+            href: API-Reference/CDN-Open-API/Query-refresh.md
+          - name: 实时调度覆盖关系
+            href: API-Reference/CDN-Open-API/Query-scheduling-relationship.md
+          - name: 查询TOP IP
+            href: API-Reference/CDN-Open-API/Query-top-ip.md
+          - name: 查询TOP URL
+            href: API-Reference/CDN-Open-API/Query-top-url.md
+          - name: 查询总数据
+            href: API-Reference/CDN-Open-API/Query-total-data.md
+          - name: 查询UV
+            href: API-Reference/CDN-Open-API/Query-uv.md
+          - name: 设置/删除 Header
+            href: API-Reference/CDN-Open-API/Set-Header.md
+          - name: 设置IP黑名单
+            href: API-Reference/CDN-Open-API/Set-IP-Blacklist.md
+          - name: 查询IP黑名单
+            href: API-Reference/CDN-Open-API/Query-IP-Blacklist.md
+          - name: 设置UA访问控制
+            href: API-Reference/CDN-Open-API/Set-UA.md
+          - name: 查询UA访问控制
+            href: API-Reference/CDN-Open-API/Query-UA.md
+          - name: 查询Header
+            href: API-Reference/CDN-Open-API/Query-Header.md
+          - name: 查询IP是否为厂商IP
+            href: API-Reference/CDN-Open-API/Query-Include-Node-IP.md
+          - name: 分协议统计流量请求量
+            href: API-Reference/CDN-Open-API/Query-Scheme-Data.md
+          - name: 设置封禁
+            href: API-Reference/CDN-Open-API/Forbidden-DomainOrURL.md
+          - name: 查询封禁列表
+            href: API-Reference/CDN-Open-API/Query-Forbidden-DomainOrURL.md
+          - name: 删除封禁信息
+            href: API-Reference/CDN-Open-API/Delete-Forbidden-DomainOrURL.md
+          - name: 附：提示信息状态码参照表
+            href: API-Reference/CDN-Open-API/Status-code-reference-table.md
+          - name: 附：地域、运营商简称参照表
+            href: API-Reference/CDN-Open-API/area-isp-reference-table.md
+      - name: 直播 OPEN API
+        items:
+          - name: 设置禁播
+            href: API-Reference/Live-Video-Open-Api/Set-forbid-stream.md
+          - name: 解除禁播
+            href: API-Reference/Live-Video-Open-Api/Permit-stream.md
+          - name: 查询域名带宽流量
+            href: API-Reference/Live-Video-Open-Api/Query-bandwidth-flow.md
+          - name: 查询禁播流列表
+            href: API-Reference/Live-Video-Open-Api/Query-forbidden.md
+          - name: 查询推流实时帧率码率
+            href: API-Reference/Live-Video-Open-Api/Query-stream-data.md
+          - name: 分区域运营商详细数据统计
+            href: API-Reference/Live-Video-Open-Api/Area-isp-statistics.md
+          - name: 回源策略变更
+            href: API-Reference/Live-Video-Open-Api/Change-Live-Back-To-Source.md
+          - name: 服务状态变更
+            href: API-Reference/Live-Video-Open-Api/Change-Live-Domain-Status.md
+          - name: 创建直播加速域名
+            href: API-Reference/Live-Video-Open-Api/Creat-Live-Domain.md
+          - name: 查询域名配置信息
+            href: API-Reference/Live-Video-Open-Api/Query-Live-Domain-Config.md
+          - name: 查询在线人数
+            href: API-Reference/Live-Video-Open-Api/Query-online-Number.md
+          - name: 设置推流IP白名单
+            href: API-Reference/Live-Video-Open-Api/Set-Push-IP-Whitelist.md
+  - name: 新版API参考
+    items:
+      - name: 新旧版本API差异
+        href: diff.md
+      - name: 接口概览
+        href: overview.md
+      - name: 查询统计字段说明
+        href: tongji.md
+      - name: 接口信息
+        items:
+          - name: 创建域名
+            items:
+               - name: createDomain
+                 href: JCloud-Openapi-For-CDN/createDomain.md
+               - name: batchCreate
+                 href: JCloud-Openapi-For-CDN/batchCreate.md
+               - name: batchCreateLiveDomain
+                 href: JCloud-Openapi-For-CDN/batchCreateLiveDomain.md
+          - name: 域名配置查询
+            items:
+               - name: getDomainDetail
+                 href: JCloud-Openapi-For-CDN/getDomainDetail.md
+               - name: getDomainList
+                 href: JCloud-Openapi-For-CDN/getDomainList.md
+               - name: getDomainListByFilter
+                 href: JCloud-Openapi-For-CDN/getDomainListByFilter.md
+               - name: queryLiveDomainDetail
+                 href: JCloud-Openapi-For-CDN/queryLiveDomainDetail.md
+               - name: queryDomainGroupDetail
+                 href: JCloud-Openapi-For-CDN/queryDomainGroupDetail.md
+               - name: queryDomainGroupList
+                 href: JCloud-Openapi-For-CDN/queryDomainGroupList.md
+               - name: queryDomainsNotInGroup
+                 href: JCloud-Openapi-For-CDN/queryDomainsNotInGroup.md
+               - name: queryMonitor
+                 href: JCloud-Openapi-For-CDN/queryMonitor.md
+               - name: queryAccesskeyConfig
+                 href: JCloud-Openapi-For-CDN/queryAccesskeyConfig.md
+               - name: queryUserAgent
+                 href: JCloud-Openapi-For-CDN/queryUserAgent.md
+               - name: queryIpBlackList
+                 href: JCloud-Openapi-For-CDN/queryIpBlackList.md
+               - name: queryHttpHeader
+                 href: JCloud-Openapi-For-CDN/queryHttpHeader.md
+               - name: queryFollowRedirect
+                 href: JCloud-Openapi-For-CDN/queryFollowRedirect.md
+               - name: queryFollowSourceProtocol
+                 href: JCloud-Openapi-For-CDN/queryFollowSourceProtocol.md
+               - name: queryDefaultHttpHeaderKey
+                 href: JCloud-Openapi-For-CDN/queryDefaultHttpHeaderKey.md
+               - name: queryLiveDomainApps
+                 href: JCloud-Openapi-For-CDN/queryLiveDomainApps.md
+               - name: queryPushDomainORAppOrStream
+                 href: JCloud-Openapi-For-CDN/queryPushDomainORAppOrStream.md
+               - name: queryDailyRefreshTaskCount
+                 href: JCloud-Openapi-For-CDN/queryDailyRefreshTaskCount.md        
+               - name: queryCdnUserQuota
+                 href: JCloud-Openapi-For-CDN/queryCdnUserQuota.md
+               - name: queryExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/queryExtraCacheTime.md  
+               - name: queryForbiddenInfoList
+                 href: JCloud-Openapi-For-CDN/queryForbiddenInfoList.md                 
+               - name: getSslCertDetail
+                 href: SSL-Certificate/getSslCertDetail.md
+               - name: getSslCertList
+                 href: SSL-Certificate/getSslCertList.md
+               - name: queryBackSourceRule
+                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
+               - name: queryUrlRule
+                 href: JCloud-Openapi-For-CDN/queryUrlRule.md
+               - name: queryHttp2
+                 href: JCloud-Openapi-For-CDN/queryHttp2.md
+               - name: queryBackSourcePath
+                 href: JCloud-Openapi-For-CDN/queryBackSourcePath.md
+               - name: queryUnForbiddenStatus
+                 href: JCloud-Openapi-For-CDN/queryUnForbiddenStatus.md
+          - name: 域名配置修改
+            items:
+               - name: createDomainGroup
+                 href: JCloud-Openapi-For-CDN/createDomainGroup.md
+               - name: batchDeleteDomainGroup
+                 href: JCloud-Openapi-For-CDN/batchDeleteDomainGroup.md
+               - name: updateDomainGroup
+                 href: JCloud-Openapi-For-CDN/updateDomainGroup.md
+               - name: setSource
+                 href: JCloud-Openapi-For-CDN/setSource.md
+               - name: setLiveDomainBackSource
+                 href: JCloud-Openapi-For-CDN/setLiveDomainBackSource.md
+               - name: setLiveDomainRefer
+                 href: JCloud-Openapi-For-CDN/setLiveDomainRefer.md
+               - name: setLiveDomainIpBlackList
+                 href: JCloud-Openapi-For-CDN/setLiveDomainIpBlackList.md
+               - name: operateLiveDomainIpBlackList
+                 href: JCloud-Openapi-For-CDN/operateLiveDomainIpBlackList.md
+               - name: setLiveDomainBackSourceHost
+                 href: JCloud-Openapi-For-CDN/setLiveDomainBackSourceHost.md
+               - name: setLiveDomainAccessKey
+                 href: JCloud-Openapi-For-CDN/setLiveDomainAccessKey.md
+               - name: setMonitor
+                 href: JCloud-Openapi-For-CDN/setMonitor.md
+               - name: stopMonitor
+                 href: JCloud-Openapi-For-CDN/stopMonitor.md
+               - name: setRefer
+                 href: JCloud-Openapi-For-CDN/setRefer.md
+               - name: setAccesskeyConfig
+                 href: JCloud-Openapi-For-CDN/setAccesskeyConfig.md
+               - name: setUserAgentConfig
+                 href: JCloud-Openapi-For-CDN/setUserAgentConfig.md
+               - name: operateIpBlackList
+                 href: JCloud-Openapi-For-CDN/operateIpBlackList.md
+               - name: createCacheRule
+                 href: JCloud-Openapi-For-CDN/createCacheRule.md
+               - name: updateCacheRule
+                 href: JCloud-Openapi-For-CDN/updateCacheRule.md
+               - name: deleteCacheRule
+                 href: JCloud-Openapi-For-CDN/deleteCacheRule.md
+               - name: setIgnoreQueryString
+                 href: JCloud-Openapi-For-CDN/setIgnoreQueryString.md
+               - name: setRange
+                 href: JCloud-Openapi-For-CDN/setRange.md
+               - name: setVideoDraft
+                 href: JCloud-Openapi-For-CDN/setVideoDraft.md
+               - name: setHttpHeader
+                 href: JCloud-Openapi-For-CDN/setHttpHeader.md
+               - name: deleteHttpHeader
+                 href: JCloud-Openapi-For-CDN/deleteHttpHeader.md
+               - name: setHttpType
+                 href: JCloud-Openapi-For-CDN/setHttpType.md
+               - name: setFollowRedirect
+                 href: JCloud-Openapi-For-CDN/setFollowRedirect.md
+               - name: setFollowSourceProtocol
+                 href: JCloud-Openapi-For-CDN/setFollowSourceProtocol.md
+               - name: uploadCert
+                 href: SSL-Certificate/uploadCert.md
+               - name: queryDomainConfig
+                 href: JCloud-Openapi-For-CDN/queryDomainConfig.md
+               - name: setExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
+               - name: deleteExtraCacheTime
+                 href: JCloud-Openapi-For-CDN/deleteExtraCacheTime.md
+               - name: setAuthConfig
+                 href: JCloud-Openapi-For-CDN/setAuthConfig.md
+               - name: setSourceAuthConfig
+                 href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
+               - name: setIpBlackList
+                 href: JCloud-Openapi-For-CDN/setIpBlackList.md
+               - name: configBackSourceRule
+                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md
+               - name: configUrlRule
+                 href: JCloud-Openapi-For-CDN/configUrlRule.md
+               - name: configHttp2
+                 href: JCloud-Openapi-For-CDN/configHttp2.md
+               - name: configBackSourcePath
+                 href: JCloud-Openapi-For-CDN/configBackSourcePath.md
+               - name: deleteForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/deleteForbiddenInfo.md
+               - name: createForbiddenInfo
+                 href: JCloud-Openapi-For-CDN/createForbiddenInfo.md                 
+          - name: 停止删除域名
+            items:
+               - name: startDomain
+                 href: JCloud-Openapi-For-CDN/startDomain.md
+               - name: stopDomain
+                 href: JCloud-Openapi-For-CDN/stopDomain.md
+               - name: deleteDomain
+                 href: JCloud-Openapi-For-CDN/deleteDomain.md
+          - name: 统计数据查询
+            items:
+               - name: queryLiveStatisticsAreaDataGroupBy
+                 href: JCloud-Openapi-For-CDN/queryLiveStatisticsAreaDataGroupBy.md
+               - name: queryLiveStatisticsData
+                 href: JCloud-Openapi-For-CDN/queryLiveStatisticsData.md
+               - name: queryLiveTrafficGroupSum
+                 href: JCloud-Openapi-For-CDN/queryLiveTrafficGroupSum.md
+               - name: queryMixStatisticsData
+                 href: JCloud-Openapi-For-CDN/queryMixStatisticsData.md
+               - name: queryMixStatisticsWithAreaData
+                 href: JCloud-Openapi-For-CDN/queryMixStatisticsWithAreaData.md
+               - name: queryMixTrafficGroupSum
+                 href: JCloud-Openapi-For-CDN/queryMixTrafficGroupSum.md
+               - name: queryStatisticsData
+                 href: JCloud-Openapi-For-CDN/queryStatisticsData.md
+               - name: queryStatisticsDataGroupByArea
+                 href: JCloud-Openapi-For-CDN/queryStatisticsDataGroupByArea.md
+               - name: queryStatisticsDataGroupSum
+                 href: JCloud-Openapi-For-CDN/queryStatisticsDataGroupSum.md
+               - name: queryStatisticsTopIp
+                 href: JCloud-Openapi-For-CDN/queryStatisticsTopIp.md
+               - name: queryStatisticsTopUrl
+                 href: JCloud-Openapi-For-CDN/queryStatisticsTopUrl.md
+               - name: queryDomainLog
+                 href: JCloud-Openapi-For-CDN/queryDomainLog.md
+               - name: queryDomainsLog
+                 href: JCloud-Openapi-For-CDN/queryDomainsLog.md
+               - name: queryAreaIspList
+                 href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+               - name: checkWhetherIpBelongToJCloud
+                 href: JCloud-Openapi-For-CDN/checkWhetherIpBelongToJCloud.md
+          - name: 刷新预热
+            items:
+               - name: createLiveDomainPrefecthTask
+                 href: JCloud-Openapi-For-CDN/createLiveDomainPrefecthTask.md
+               - name: createRefreshTask
+                 href: JCloud-Openapi-For-CDN/createRefreshTask.md
+               - name: createRefreshTaskForCallback
+                 href: JCloud-Openapi-For-CDN/createRefreshTaskForCallback.md
+               - name: queryRefreshTask
+                 href: JCloud-Openapi-For-CDN/queryRefreshTask.md
+               - name: queryRefreshTaskById
+                 href: JCloud-Openapi-For-CDN/queryRefreshTaskById.md
+               - name: createRefreshTaskForCallbackV2
+                 href: JCloud-Openapi-For-CDN/createRefreshTaskForCallbackV2.md 
   - name: FAQ
     href: FAQ/FAQ.md
-
-      

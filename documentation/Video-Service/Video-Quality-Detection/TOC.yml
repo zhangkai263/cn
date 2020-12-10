@@ -1,0 +1,51 @@
+name: 视频质量检测
+href:
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: Introduction/Product-Overview.md
+    - name: 核心概念
+      href: Introduction/Core-Concepts.md
+    - name: 基础架构
+      href: Introduction/Basic-Infrastructure.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 产品功能
+      href: Introduction/Features.md
+    - name: 限制说明
+      href: Introduction/Restrictions.md
+    - name: 应用场景 
+      href: Introduction/Application-Scenarios.md    
+- name: 产品定价
+  items:
+    - name: 计费概述
+      href: Pricing/Billing-Overview.md
+    - name: 计费规则
+      href: Pricing/Billing-Rules.md
+    - name: 价格总览
+      href: Pricing/Price-Overview.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md 
+- name: 入门指南
+  href: Getting-Started/Started.md
+- name: 操作指南
+  items:
+    - name: 检测任务列表
+      href: Operation-Guide/Task-List.md
+    - name: 全局配置
+      href: Operation-Guide/Configuration.md
+- name: 问题排查
+  items:
+    - name: 检测失败
+      href: Troubleshooting/Detection-failed.md 
+- name: 常见问题
+  href: FAQ/FAQ.md
+- name: 相关协议
+  items:
+    - name: 服务协议
+      href: User-Agreements/Product-Terms-of-Service.md
+- name: 相关资源
+  items:
+    - name: 文档历史记录
+      href: Related-Resources/Document-History.md

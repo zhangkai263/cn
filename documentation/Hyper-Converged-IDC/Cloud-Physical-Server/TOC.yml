@@ -4,7 +4,7 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/What-Is-Cloud-Physical-Server.md
+        href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
       - name: 基础架构
@@ -12,9 +12,9 @@
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品功能
-        href: Introduction/Functions.md
+        href: Introduction/Features.md
       - name: 产品规格
-        href: Introduction/Specification.md
+        href: Introduction/Specifications.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -34,9 +34,9 @@
   - name: 入门指南
     items:
       - name: 入门指南概述
-        href: Getting-Started/Overview.md
+        href: Getting-Started/Getting-Started.md
       - name: 创建云物理服务器
-        href: Getting-Started/Create-Create-Cloud-Physical-Server.md
+        href: Getting-Started/Create-Cloud-Physical-Server.md
       - name: 配置云物理服务器
         href: Getting-Started/Allocate-Cloud-Physical-Server.md
       - name: 查看云物理服务器
@@ -47,52 +47,90 @@
     items:
       - name: 使用须知
         href: Operation-Guide/Terms-and-Conditions.md
-      - name: 网络和安全性
+      - name: 实例
+        items:
+          - name: 重置密码
+            href: Operation-Guide/Instance/Reset-Password.md
+          - name: 自定义数据
+            href: Operation-Guide/Instance/User-Data.md
+          - name: 标签
+            href: Operation-Guide/Instance/Tag.md
+      - name: 网络
+        items:
+          - name: 私有网络
+            href: Operation-Guide/Networking/Virtual-Network-Interface.md
+          - name: 子网
+            href: Operation-Guide/Networking/Subnet.md
+          - name: 路由表
+            href: Operation-Guide/Networking/Route-Table.md
+          - name: 弹性公网IP
+            href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
+          - name: IPv6互联网网关
+            href: Operation-Guide/Networking/IPv6-Internet-Access.md
+      - name: 防火墙配置说明
         items:
           - name: 功能描述
-            href: Operation-Guide/Network-And-Security/Description.md
+            href: Operation-Guide/Network-And-Security/Description-Network-And-Security.md
           - name: 操作步骤
-            href: Operation-Guide/Network-And-Security/Steps.md
+            href: Operation-Guide/Network-And-Security/Steps-Network-And-Security.md
       - name: 镜像使用说明
         items:
           - name: 功能描述
-            href: Operation-Guide/Image/Description.md
+            href: Operation-Guide/Image/Description-Image.md
           - name: 操作步骤
-            href: Operation-Guide/Image/Steps.md
+            href: Operation-Guide/Image/Steps-Image.md
       - name: 设置RAID级别
         items:
           - name: 功能描述
-            href: Operation-Guide/Set-RAID-Level/Description.md      
+            href: Operation-Guide/Set-RAID-Level/Description-Set-RAID-Level.md      
           - name: 操作步骤
-            href: Operation-Guide/Set-RAID-Level/Steps.md
+            href: Operation-Guide/Set-RAID-Level/Steps-Set-RAID-Level.md
       - name: 远程登陆
         items:
           - name: 功能描述
-            href: Operation-Guide/Remote-Login/Description.md
+            href: Operation-Guide/Remote-Login/Description-Remote-Login.md
           - name: 操作步骤
-            href: Operation-Guide/Remote-Login/Steps.md
-      - name: 云物理服务器生命周期管理
+            href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
+      - name: 生命周期管理
         items:
           - name: 功能描述
-            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Description.md
+            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Description-Cloud-Physical-Server-Life-Cycle-Management.md
           - name: 操作步骤
-            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Steps.md
+            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Steps-Cloud-Physical-Server-Life-Cycle-Management.md
       - name: 重装操作系统
         items:
           - name: 功能描述
-            href: Operation-Guide/Reinstall/Description.md
+            href: Operation-Guide/Reinstall/Description-Reinstall.md
           - name: 操作步骤
-            href: Operation-Guide/Reinstall/Steps.md
+            href: Operation-Guide/Reinstall/Steps-Reinstall.md
       - name: 调整公网带宽
         items:
           - name: 功能描述
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Description.md
+            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md
           - name: 操作步骤
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps.md
+            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps-Adjust-Public-Network-Bandwidth.md
+      - name: 监控
+        items:
+          - name: 硬件监控
+            href: Operation-Guide/Monitoring/Hardware-Monitoring.md
+          - name: 性能监控
+            href: Operation-Guide/Monitoring/Monitoring-Overview.md
+      - name: SSH密钥
+        items:
+          - name: 概述
+            href: Operation-Guide/SSH-Key-Pair/Description-SSH-Key-Pair.md
+          - name: 操作步骤
+            href: Operation-Guide/SSH-Key-Pair/Step-SSH-Key-Pair.md
+      - name: 操作审计
+        items:
+          - name: 概述
+            href: Operation-Guide/Audit-Trail/Audit-Trail-Ovewview.md
   - name: 最佳实践
     items:
-    - name: 创建与配置云物理服务器
-      href: Best-Practices/Create-And-Configure-Cloud-Physical-Server.md
+    - name: NAT网关网络安全方案
+      href: Best-Practices/NAT-Gateway-Network-Safety.md
+    - name: CPS到VPC专线通信配置方法
+      href: Best-Practices/CPS-VPC-DirectConnection.md 
   - name: 教程
     items:
     status: 0
@@ -107,13 +145,7 @@
   - name: API参考
     status: 0
   - name: SDK参考
-    status: 0
-  - name: 用户协议
-    items:
-    - name: 服务条款
-      href: User-Agreements/Product-Terms-of-Service.md              
-    - name: SLA
-      href: User-Agreements/SLA.md               
+    status: 0               
   - name: 相关资源
     items:
     - name: 文档历史记录

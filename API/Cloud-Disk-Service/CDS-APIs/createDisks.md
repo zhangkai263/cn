@@ -2,13 +2,18 @@
 
 
 ## 描述
--   创建一块或多块按配置或者按使用时长付费的云硬盘。
--   磁盘类型包括高效云盘和SSD云盘。
--   计费方式默认为按配置付费。
--   创建完成后，云硬盘状态为 available。
--   可选参数快照 ID用于从快照创建新盘。
--   批量创建时，云硬盘的命名为 硬盘名称-数字，例如 myDisk-1，myDisk-2。
--   maxCount为最大努力，不保证一定能达到maxCount。
+按照指定配置创建一块或多块云硬盘
+
+- 云硬盘类型可以选择hdd.std1、ssd.gp1、ssd.io1
+- 磁盘大小
+    - hdd.std1: 容量型hdd，范围[20,16000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比
+    - ssd.gp1: 通用型ssd，范围[20,16000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比。
+    - ssd.io1: 性能型ssd，范围[20,16000]GiB，步长为10GiB, iops可以通过购买容量计算得出，或者为用户指定。
+- 其他
+    - 创建完成后，云硬盘状态为 available
+    - 可选参数快照 ID用于从快照创建新盘
+    - 批量创建时，云硬盘的命名为 硬盘名称-数字，例如 myDisk-1，myDisk-2
+    - maxCount为最大努力，不保证一定能达到maxCount
 
 
 ## 请求方式
@@ -17,54 +22,79 @@ POST
 ## 请求地址
 https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**regionId**|String|True||地域ID|
+| 名称         | 类型   | 是否必需 | 默认值 | 描述   |
+| ------------ | ------ | -------- | ------ | ------ |
+| **regionId** | String | True     |        | 地域ID |
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**clientToken**|String|True||幂等性校验参数|
-|**diskSpec**|[DiskSpec](##DiskSpec)|True||创建云硬盘规格|
-|**maxCount**|Integer|True||购买实例数量；取值范围：[1,100]|
+| 名称            | 类型     | 是否必需 | 默认值 | 描述                            |
+| --------------- | -------- | -------- | ------ | ------------------------------- |
+| **diskSpec**    | DiskSpec | True     |        | 创建云硬盘规格                  |
+| **maxCount**    | Integer  | True     |        | 购买实例数量；取值范围：[1,100] |
+| **userTags**    | Tag[]    | False    |        | 用户标签                        |
+| **clientToken** | String   | True     |        | 幂等性校验参数                  |
 
-### <a name="DiskSpec">DiskSpec</a>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**az**|String|True||云硬盘所属的可用区|
-|**charge**|[ChargeSpec](##ChargeSpec)|False||计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
-|**description**|String|False||云硬盘描述|
-|**diskSizeGB**|Integer|True||云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G|
-|**diskType**|String|True||云硬盘类型，取值为ssd、premium-hdd之一|
-|**multiAttachable**|Boolean|False||云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
-|**name**|String|True||云硬盘名称|
-|**snapshotId**|String|False||用于创建云硬盘的快照ID|
-### <a name="ChargeSpec">ChargeSpec</a>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**chargeDuration**|Integer|False||预付费计费时长，预付费必填，当chargeMode取值为prepaid_by_duration时有效。当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3|
-|**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
-|**chargeUnit**|String|False||预付费计费单位，预付费必填，当chargeMode为prepaid_by_duration时有效，取值为：month、year，默认为month|
+### Tag
+
+| 名称    | 类型     | 是否必需 | 默认值 | 描述                            |
+| ------- | -------- | -------- | ------ | ------------------------------- |
+| **key** | String | False |        | Tag键              |
+| **value**   | String | False |        | Tag值 |
+
+
+
+### DiskSpec
+
+| 名称                | 类型       | 是否必需 | 默认值 | 描述                                                         |
+| ------------------- | ---------- | -------- | ------ | ------------------------------------------------------------ |
+| **az**              | String     | True     |        | 云硬盘所属的可用区                                           |
+| **name**            | String     | True     |        | 云硬盘名称                                                   |
+| **description**     | String     | False    |        | 云硬盘描述                                                   |
+| **diskType**        | String     | True     |        | 云硬盘类型，取值为ssd.gp1、ssd.io1、hdd.std1之一             |
+| **diskSizeGB**      | Integer    | True     |        | 云硬盘大小，单位为 GiB；ssd.io1 类型取值范围[20,16000]GB,步长为10G; ssd.gp1 类型取值范围[20,16000]GB,步长为10G; hdd.std1 类型取值范围[20,16000]GB,步长为10G |
+| **iops**            | Integer    | False    |        | 云硬盘IOPS的大小，当且仅当云盘类型是ssd.io1型的云盘有效，步长是10,默认值为容量*30，最大值为容量*50 |
+| **snapshotId**      | String     | False    |        | 用于创建云硬盘的快照ID                                       |
+| **charge**          | ChargeSpec | False    |        | 计费配置；如不指定，默认计费类型是后付费-按使用时常付费      |
+| **multiAttachable** | Boolean    | False    |        | 云硬盘是否支持一盘多主机挂载，默认为false（不支持）          |
+| **encrypt**         | Boolean    | False    |        | 云硬盘是否加密，默认为false（不加密）                        |
+### ChargeSpec
+| 名称               | 类型    | 是否必需 | 默认值               | 描述                                                         |
+| ------------------ | ------- | -------- | -------------------- | ------------------------------------------------------------ |
+| **chargeMode**     | String  | False    | postpaid_by_duration | 计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型 |
+| **chargeUnit**     | String  | False    |                      | 预付费计费单位，预付费必填，当chargeMode为prepaid_by_duration时有效，取值为：month、year，默认为month |
+| **chargeDuration** | Integer | False    |                      | 预付费计费时长，预付费必填，当chargeMode取值为prepaid_by_duration时有效。当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3 |
+| **autoRenew**      | boolean | False    | false                | true为开通自动续费，false为不开通自动续费,，仅对包年包月资源有效。开通后，将以本次创建时的购买时长作为自动续费周期，自动续费周期可在续费管理功能中进行修改。 |
+
+## 成功的响应
+
+```json
+{
+    "result": {
+        "diskIds": [string]
+    },
+    "requestId": string
+}
+```
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-|**requestId**|String|请求ID|
-|**result**|[Result](##Result)|结果集|
+| 名称          | 类型   | 描述   |
+| ------------- | ------ | ------ |
+| **result**    | Result | 结果集 |
+| **requestId** | String | 请求ID |
 
-
-### <a name="Result">Result</a>
-|名称|类型|描述|
-|---|---|---|
-|**diskIds**|String[]|创建的云硬盘ID列表|
+### Result
+| 名称        | 类型     | 描述               |
+| ----------- | -------- | ------------------ |
+| **diskIds** | String[] | 创建的云硬盘ID列表 |
+| **tagmsg**  | String   | 标签结果信息       |
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**400**|Invalid parameter|
-|**401**|Authentication failed|
-|**500**|Internal server error|
-|**503**|Service unavailable|
-|**200**|OK|
-|**404**|Not found|
-|**429**|Quota exceeded|
+| 返回码  | 描述                  |
+| ------- | --------------------- |
+| **200** | OK                    |
+| **400** | Invalid parameter     |
+| **401** | Authentication failed |
+| **404** | Not found             |
+| **429** | Quota exceeded        |
+| **500** | Internal server error |
+| **503** | Service unavailable   |

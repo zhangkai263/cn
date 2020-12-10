@@ -12,8 +12,8 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceId**|String|True||RDS 实例ID，唯一标识一个RDS实例|
-|**regionId**|String|True||地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 
 ## 请求参数
 无
@@ -22,20 +22,47 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/whiteLi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|[Result](describewhitelist#result)| |
 
-
-### <a name="Result">Result</a>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**whiteLists**|[WhiteList[]](##WhiteList)|白名单列表|
-### <a name="WhiteList">WhiteList</a>
+|**whiteLists**|[WhiteList[]](describewhitelist#whitelist)|白名单列表|
+### <div id="whitelist">WhiteList</div>
 |名称|类型|描述|
 |---|---|---|
-|**ips**|String|IP或IP段，不同的IP/IP段之间用英文逗号分隔，例如0.0.0.0/0,192.168.0.10|
 |**name**|String|白名单名称|
+|**ips**|String|IP或IP段，不同的IP/IP段之间用英文逗号分隔，例如0.0.0.0/0,192.168.0.10|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeWhiteList() {
+    DescribeWhiteListRequest request = new DescribeWhiteListRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-k67q8n46si");
+    DescribeWhiteListResponse response = rdsClient.describeWhiteList(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaot34k3hifbuhtjkb181j0mbg42gke", 
+    "result": {
+        "whiteLists": [
+            {
+                "ips": "8.8.0.0/16", 
+                "name": "default"
+            }
+        ]
+    }
+}
+```

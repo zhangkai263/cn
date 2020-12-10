@@ -1,0 +1,22 @@
+name: 身份认证
+href: 
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: changelog.md
+  - name: 接口信息
+    items:
+      - name: 应用管理
+        items:
+          - name: createApp
+            href: App-Mgmt/createApp.md
+          - name: deleteApp
+            href: App-Mgmt/deleteApp.md
+          - name: getApp
+            href: App-Mgmt/getApp.md
+          - name: getApps
+            href: App-Mgmt/getApps.md
+          - name: updateApp
+            href: App-Mgmt/updateApp.md
+

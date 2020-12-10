@@ -1,0 +1,157 @@
+  name: 云物理服务器
+  href:
+  items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    herf: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 服务器生命周期管理
+        items:
+          - name: createInstances
+            href: Cloud-Physical-Server/createInstances.md
+          - name: startInstance
+            href: Cloud-Physical-Server/startInstance.md
+          - name: restartInstance
+            href: Cloud-Physical-Server/restartInstance.md
+          - name: stopInstance
+            href: Cloud-Physical-Server/stopInstance.md
+          - name: reinstallInstance
+            href: Cloud-Physical-Server/reinstallInstance.md
+          - name: resetPassword
+            href: Cloud-Physical-Server/resetPassword.md
+          - name: associateElasticIp
+            href: Cloud-Physical-Server/associateElasticIp.md
+          - name: disassociateElasticIp
+            href: Cloud-Physical-Server/disassociateElasticIp.md
+          - name: describeInstances
+            href: Cloud-Physical-Server/describeInstances.md
+          - name: describeOS
+            href: Cloud-Physical-Server/describeOS.md
+          - name: describeInstanceName
+            href: Cloud-Physical-Server/describeInstanceName.md
+          - name: modifyInstance
+            href: Cloud-Physical-Server/modifyInstance.md
+          - name: describeDeviceTypes
+            href: Cloud-Physical-Server/describeDeviceTypes.md
+          - name: describeDeviceRaids
+            href: Cloud-Physical-Server/describeDeviceRaids.md
+          - name: describeInstanceRaid
+            href: Cloud-Physical-Server/describeInstanceRaid.md          
+          - name: describeInstanceStatus
+            href: Cloud-Physical-Server/describeInstanceStatus.md
+          - name: describeInstanceMonitorInfo
+            href: Cloud-Physical-Server/describeInstanceMonitorInfo.md
+          - name: describeInstance
+            href: Cloud-Physical-Server/describeInstance.md
+          - name: describeRegiones
+            href: Cloud-Physical-Server/describeRegiones.md
+          - name: modifyBandwidth
+            href: Cloud-Physical-Server/modifyBandwidth.md
+      - name: 子网管理
+        items:
+          - name: createSubnet
+            href: Cloud-Physical-Server/createSubnet.md
+          - name: modifySubnet
+            href: Cloud-Physical-Server/modifySubnet.md
+          - name: deleteSubnet
+            href: Cloud-Physical-Server/deleteSubnet.md
+          - name: describeSubnets
+            href: Cloud-Physical-Server/describeSubnets.md
+          - name: describeSubnet
+            href: Cloud-Physical-Server/describeSubnet.md
+          - name: describeBasicSubnet
+            href: Cloud-Physical-Server/describeBasicSubnet.md  
+      - name: 私有网络管理
+        items:
+          - name: createVpc
+            href: Cloud-Physical-Server/createVpc.md
+          - name: deleteVpc
+            href: Cloud-Physical-Server/deleteVpc.md
+          - name: modifyVpc
+            href: Cloud-Physical-Server/modifyVpc.md
+          - name: describeVpcs
+            href: Cloud-Physical-Server/describeVpcs.md
+          - name: describeVpc
+            href: Cloud-Physical-Server/describeVpc.md
+      - name: 路由表管理
+        items:
+          - name: describeRouteTables
+            href: Cloud-Physical-Server/describeRouteTables.md
+          - name: describeRouteTable
+            href: Cloud-Physical-Server/describeRouteTable.md
+      - name: 弹性公网IP管理
+        items:
+          - name: describeElasticIps
+            href: Cloud-Physical-Server/describeElasticIps.md
+          - name: applyElasticIps
+            href: Cloud-Physical-Server/applyElasticIps.md
+          - name: describeElasticIp
+            href: Cloud-Physical-Server/describeElasticIp.md
+          - name: modifyElasticIpBandwidth
+            href: Cloud-Physical-Server/modifyElasticIpBandwidth.md
+      - name: SSH密钥管理
+        items:
+          - name: createKeypairs
+            href: Cloud-Physical-Server/createKeypairs.md
+          - name: deleteKeypairs
+            href: Cloud-Physical-Server/deleteKeypairs.md
+          - name: importKeypairs
+            href: Cloud-Physical-Server/importKeypairs.md
+          - name: describeKeypairs
+            href: Cloud-Physical-Server/describeKeypairs.md
+          - name: describeKeypair
+            href: Cloud-Physical-Server/describeKeypair.md  
+      - name: 负载均衡管理
+        items:
+          - name: createLoadBalancer
+            href: Cloud-Physical-Server/createLoadBalancer.md
+          - name: modifyLoadBalancer
+            href: Cloud-Physical-Server/modifyLoadBalancer.md
+          - name: startLoadBalancer
+            href: Cloud-Physical-Server/startLoadBalancer.md
+          - name: stopLoadBalancer
+            href: Cloud-Physical-Server/stopLoadBalancer.md
+          - name: associateElasticIpLB
+            href: Cloud-Physical-Server/associateElasticIpLB.md
+          - name: disassociateElasticIpLB
+            href: Cloud-Physical-Server/disassociateElasticIpLB.md
+          - name: describeLoadBalancers
+            href: Cloud-Physical-Server/describeLoadBalancers.md
+          - name: describeCPSLBRegions
+            href: Cloud-Physical-Server/describeCPSLBRegions.md
+          - name: describeLoadBalancer
+            href: Cloud-Physical-Server/describeLoadBalancer.md
+          - name: createListener
+            href: Cloud-Physical-Server/createListener.md
+          - name: modifyListener
+            href: Cloud-Physical-Server/modifyListener.md
+          - name: deleteListener
+            href: Cloud-Physical-Server/deleteListener.md
+          - name: startListener
+            href: Cloud-Physical-Server/startListener.md
+          - name: stopListener
+            href: Cloud-Physical-Server/stopListener.md
+          - name: describeListeners
+            href: Cloud-Physical-Server/describeListeners.md
+          - name: describeListener
+            href: Cloud-Physical-Server/describeListener.md
+          - name: createServerGroup
+            href: Cloud-Physical-Server/createServerGroup.md
+          - name: modifyServerGroup
+            href: Cloud-Physical-Server/modifyServerGroup.md
+          - name: deleteServerGroup
+            href: Cloud-Physical-Server/deleteServerGroup.md
+          - name: describeServerGroups
+            href: Cloud-Physical-Server/describeServerGroups.md
+          - name: describeServerGroup
+            href: Cloud-Physical-Server/describeServerGroup.md
+          - name: addServers
+            href: Cloud-Physical-Server/addServers.md
+          - name: describeServers
+            href: Cloud-Physical-Server/describeServers.md
+          - name: modifyServer
+            href: Cloud-Physical-Server/modifyServer.md
+          - name: removeServer
+            href: Cloud-Physical-Server/removeServer.md

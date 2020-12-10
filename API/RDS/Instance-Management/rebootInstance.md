@@ -12,23 +12,42 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:rebootI
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceId**|String|True||RDS 实例ID，唯一标识一个RDS实例|
-|**regionId**|String|True||地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**rebootMaster**|Boolean|False||是否重启主节点。<br> - 仅SQL Server 支持该参数|
-|**rebootSlave**|Boolean|False||是否重启备节点。<br> - 仅SQL Server 支持该参数|
+|**rebootMaster**|Boolean|False| |是否重启主节点。<br> - 仅SQL Server 支持该参数|
+|**rebootSlave**|Boolean|False| |是否重启备节点。<br> - 仅SQL Server 支持该参数|
 
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-
+无
 
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testRebootInstance() {
+    RebootInstanceRequest request = new RebootInstanceRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRebootSlave(true);
+    RebootInstanceResponse response = rdsClient.rebootInstance(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa4w921t82as6c9rm18m8m88fc01rcm"
+}
+```

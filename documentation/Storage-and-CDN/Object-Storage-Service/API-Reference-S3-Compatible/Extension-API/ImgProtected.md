@@ -6,10 +6,11 @@
 
 设置原图保护的访问规则，如果原规则存在则覆盖原规则，配置了原图保护的访问规则即视为开启原图保护功能。
 
-请求语法
+请求语法:
+
 ```
 PUT /?imgProtected HTTP/1.1
-Host: bucket.s3.region.jcloudcs.com
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Content-Length: ContentLength
 Content-MD5: ContentMD5
 Date: Date
@@ -20,6 +21,7 @@ Authorization: <Authorization_String>
   <Extension>extension1</Extension>   
   <Extension>extension2</Extension> 
 </Condition>
+
 ```
 
 请求Header
@@ -46,9 +48,10 @@ Authorization: <Authorization_String>
 4.如果bucket不存在，返回404，错误码：NoSuchBucket
 
 请求示例：
+
 ```
 PUT /?imgProtected HTTP/1.1
-Host: example-bucket.s3.cn-north-1.jcloudcs.com
+Host: example-bucket.s3.cn-north-1.jdcloud-oss.com
 X-Amz-Date: 20180117T122143Z
 Authorization: signatureValue
 Content-MD5: yzoQScp1SjEhK6u7tdCQbw==
@@ -58,6 +61,7 @@ Content-Length: 113
 ```
 
 返回示例：
+
 ```
 HTTP/1.1 200 OK
 Server: nginx
@@ -73,9 +77,10 @@ Cache-Control: no-cache
 获取bucket原图保护的配置
 
 请求语法
+
 ```
 GET /?imgProtected HTTP/1.1
-Host: bucket.s3.region.jcloudcs.com
+Host:<bucket>.s3.<region>.jdcloud-oss.com
 Date: Date
 Authorization: <Authorization_String>
 ```
@@ -97,7 +102,7 @@ Authorization: <Authorization_String>
 请求示例
 ```
 GET /?imgProtected HTTP/1.1
-Host: example-bucket.s3.cn-north-1.jcloudcs.com
+Host: example-bucket.s3.cn-north-1.jdcloud-oss.com
 X-Amz-Date: 20180117T122144Z
 Authorization: signatureValue
 ```
@@ -123,7 +128,7 @@ Cache-Control: no-cache
 请求语法
 ```
 DELETE /?imgProtected HTTP/1.1
-Host: bucket.s3.region.jcloudcs.com
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: Date
 Authorization: <Authorization_String>
 ```
@@ -138,7 +143,7 @@ Authorization: <Authorization_String>
 请求示例
 ```
 DELETE /?imgProtected HTTP/1.1
-Host: example-bucket.s3.cn-north-1.jcloudcs.com
+Host: example-bucket.s3.cn-north-1.jdcloud-oss.com
 X-Amz-Date: 20180117T122640Z
 Authorization: signatureValue
 ```

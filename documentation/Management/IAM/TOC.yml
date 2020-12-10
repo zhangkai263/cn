@@ -1,0 +1,75 @@
+name: 访问控制
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: IAM概述
+        href: Introduction/Product-Overview.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 支持IAM的云产品
+        href: Introduction/Support-Services.md
+  - name: 操作指南
+    items:
+      - name: 概览
+        href: Operation-manual/overview.md
+      - name: 子用户管理
+        href: Operation-manual/subuser-management.md
+      - name: 群组管理
+        href: Operation-manual/group-management.md
+      - name: 角色管理
+        items:
+          - name: 角色概览
+            href: Operation-manual/Role-management/role-overview.md
+          - name: 创建角色
+            items:
+              - name: 创建用户角色
+                href: Operation-manual/Role-management/create-role/createuserrole.md
+              - name: 创建服务角色
+                href: Operation-manual/Role-management/create-role/createservicerole.md
+              - name: 创建联合身份角色
+                href: Operation-manual/Role-management/create-role/createfederatedrole.md
+          - name: 为角色授权策略
+            href: Operation-manual/Role-management/attach-policy.md
+          - name: 编辑角色
+            href: Operation-manual/Role-management/modify-role.md
+          - name: 删除角色
+            href: Operation-manual/Role-management/delete-role.md
+          - name: 代入角色
+            href: Operation-manual/Role-management/switch-role.md
+      - name: 策略管理
+        items:
+          - name: 策略概览
+            href: Operation-manual/Policy-management/policy-overview.md
+          - name: 策略语法
+            items:
+              - name: 策略元素
+                href: Operation-manual/Policy-management/policy-grammar/elements.md
+              - name: 策略变量
+                href: Operation-manual/Policy-management/policy-grammar/variable.md
+          - name: 策略管理
+            items:
+              - name: 可视化创建策略
+                href: Operation-manual/Policy-management/policy-manage/UI-create.md
+              - name: Json 方式创建策略
+                href: Operation-manual/Policy-management/policy-manage/Json-create.md
+              - name: 按标签创建策略
+                href: Operation-manual/Policy-management/policy-manage/Tag-create.md
+              - name: 编辑策略
+                href: Operation-manual/Policy-management/policy-manage/edit.md
+              - name: 删除策略
+                href: Operation-manual/Policy-management/policy-manage/delete.md
+              
+               
+            
+           
+          
+            
+            
+

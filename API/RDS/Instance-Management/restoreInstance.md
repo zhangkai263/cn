@@ -2,7 +2,7 @@
 
 
 ## 描述
-使用实例的全量备份覆盖恢复当前实例<br>- 仅支持MySQL
+使用实例的全量备份覆盖恢复当前实例
 
 ## 请求方式
 POST
@@ -12,22 +12,41 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:restore
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**instanceId**|String|True||RDS 实例ID，唯一标识一个RDS实例|
-|**regionId**|String|True||地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backupId**|String|False||用于恢复的备份Id，仅限于本实例生成的备份|
+|**backupId**|String|False| |用于恢复的备份Id，仅限于本实例生成的备份|
 
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-
+无
 
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testRestoreInstance() {
+    RestoreInstanceRequest restoreInstanceRequest = new RestoreInstanceRequest();
+    restoreInstanceRequest.setRegionId("cn-north-1");
+    restoreInstanceRequest.setInstanceId("mysql-wp4e9ztap2");
+    restoreInstanceRequest.setBackupId("dcd25cd6-a787-4fea-8e89-1451ba600591");
+    RestoreInstanceResponse response = rdsClient.restoreInstance(restoreInstanceRequest);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa52futu48fs55crqrowuetussetnn0"
+}
+```
