@@ -29,46 +29,48 @@ items:
     items:
       - name: 入门指南概述
         href: Getting-Started/Getting-Started.md
-      - name: 创建实例
-        href: Getting-Started/Create-Instance.md
-      - name: 登录设备接入服务
+      - name: 购买服务
+        href: Getting-Started/Create-Tenant.md
+      - name: 登录智能生活物联网平台
         href: Getting-Started/Login-IoT-Platform.md
   - name: 操作指南
     items:
+      - name: 项目管理
+        items:
+          - name: 创建项目
+            href: Operation-Guide/Project-Manager/Create-Project.md
+          - name: 创建应用
+            href: Operation-Guide/Project-Manager/Create-Application.md
+          - name: 设备管理
+            href: Operation-Guide/Project-Manager/Manage-Project-Device.md
+      - name: 产品管理
+        items:
+          - name: 创建产品
+            href: Operation-Guide/Product-Manager/Create-Product.md
+          - name: 物模型介绍
+              href: Operation-Guide/Product-Manager/Introduce-Thing-Model.md
+          - name: 编辑物模型
+            href: Operation-Guide/Product-Manager/Manage-ThingModel.md
       - name: 设备管理
         items:
-          - name: 创建物类型
-            href: Operation-Guide/Device-Manager/Create-Thing-Type.md
-          - name: 物模型介绍
-            href: Operation-Guide/Device-Manager/Introduce-Thing-Model.md
-          - name: 创建物模型
-            href: Operation-Guide/Device-Manager/Create-Thing-Model.md
           - name: 注册设备
             href: Operation-Guide/Device-Manager/Create-Device.md 
           - name: 设备信息
-            href: Operation-Guide/Device-Manager/Device-Info.md    
-          - name: 设备分组
-            href: Operation-Guide/Device-Manager/Device-Grouping.md    
+            href: Operation-Guide/Device-Manager/Device-Info.md
       - name: 创建规则引擎
-        href: Operation-Guide/Rule-Engine/Create-Rule.md  
-      - name: 档案管理
-        href: Operation-Guide/Archive-Manager/Create-Archive.md
-  - name: 设备开发指南
+        href: Operation-Guide/Rule-Engine/Create-Rule.md
+  - name: 开发指南
     items:
       - name: Device SDK 介绍
-        href: Developer-Guide-Device/Device-SDK-Introduction.md
-      - name: 术语表
-        href: Developer-Guide-Device/Terminology-Table.md
-      - name: 硬件平台适配
-        href: Developer-Guide-Device/Platform-Abstract-Layer.md
+        href: Developer-Guide/Device-SDK-Introduction.md
       - name: SDK API 简介
-        href: Developer-Guide-Device/Device-SDK-API.md
+        href: Developer-Guide/Device-SDK-API.md
+      - name: 云对云接入简介
+        href: Developer-Guide/Cloud-To-Cloud.md
   - name: 最佳实践
     items:
       - name: 设备接入
         href: Best-Practices/Device-Access.md
-      - name: 网关设备的拓扑关系维护 
-        href: Best-Practices/Device-Gateway-Topo.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 相关资源
