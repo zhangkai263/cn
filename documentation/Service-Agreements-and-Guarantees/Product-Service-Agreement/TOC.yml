@@ -70,7 +70,7 @@ items:
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
     href: Elastic-IP-Level-Agreement-SLA.md   
-  - name: 弹性公网IP服务等级协议（SLA）-公示期
+  - name: 弹性公网IP服务等级协议（SLA）-公示期版
     href: Elastic-Ip--Level-Agreements-X-SLA.md   
   - name: IP高防服务协议
     href: IP-High-Protection-Clause.md
@@ -107,7 +107,7 @@ items:
   - name: VPN 网关服务条款
     href: VPN-Gateway-Terms-Of-Service.md
   - name: 专线服务条款
-    href: Direct-Connection-Terms-Of-Servicee.md 
+    href: Direct-Connection-Terms-Of-Service.md 
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
   - name: API中心用户服务协议
