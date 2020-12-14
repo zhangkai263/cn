@@ -15,3 +15,5 @@
 * 获取设备属性 /device/properties/get
 * 设备服务调用 /device/service/invoke
 * 数据推送接口 /data/push
+
+详细接口说明请参考：[云对云接入规范](../Related-Resources/京东智慧社区平台设备云接入协议v1.0.6.pdf)

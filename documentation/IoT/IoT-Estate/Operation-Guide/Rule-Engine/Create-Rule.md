@@ -46,12 +46,12 @@
 
 **数据转发**
 
-通过规则过滤后的数据可以转发至三种消息存储：Kafka、MySQL、JCQ。
+通过规则过滤后的数据可以转发至三种消息存储：Kafka、MySQL、HTTP接口。
 
-- 注意：Kafka和MySQL必须和当前平台实例处于相同的VPC下。
+- 注意：Kafka和MySQL必须提供网络访问权限。
 
 1. 转发到Kafka
-填写转发到kafka需填写名称、地址、Topic。
+填写转发到Kafka需填写名称、地址、Topic。
 
 ![转发到Kafka](../../../../../image/IoT/IoT-Estate/Rule-Engine/To-Kafka.png)
 
@@ -66,7 +66,7 @@
 ![转发到Http](../../../../../image/IoT/IoT-Estate/Rule-Engine/To-Http.png)
 
 ## 启停规则
-1. 进入规则引擎-规则列表页面，点击运行/停止按钮。
+1. 进入规则引擎-规则列表页面，点击**运行/停止**按钮。
 2. 运行成功后，状态变为运行，在规则列表中操作中运行按钮变成停止按钮。停止成功后状态变为运行，在规则列表中操作中运行按钮变成停止按钮。
 
 ![启停规则](../../../../../image/IoT/IoT-Estate/Rule-Engine/Start-Stop.png)
