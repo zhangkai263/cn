@@ -31,6 +31,10 @@
       herf: Pricing/Purchase-Process.md 
     - name: 续费流程
       herf: Pricing/Renew-Process.md
+    - name: 升级流程
+      herf: Pricing/Upgrade-Process.md
+    - name: 编辑标签
+      herf: Pricing/Tag-Process.md
   - name: 入门指南
     items:
     - name: 产品概述
