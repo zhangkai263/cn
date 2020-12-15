@@ -13,7 +13,7 @@
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2007.png)
 
 3. 点击“添加规则”按钮，根据如下的弹窗提示，配置转发规则。
-![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2008.png)
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2015.PNG)
 
 规则配置字段解释如下：
 
@@ -30,6 +30,20 @@
 - HTTP访问跳转：**勾选HTTPS协议后开关可见**，开启时，所有来自HTTP协议的访问都将重定向到HTTPS的域名。
 
 - 开启HTTP回源：**勾选HTTPS协议后开关可见**，若您的网站不支持HTTPS回源，请务必开启此项，默认回源端口为80。
+
+- 开启HTTP2.0：**勾选HTTPS协议后开关可见**，开启后支持HTTP2.0协议。
+
+- 回源长连接：默认回源短连接，开启后支持回源长连接。
+
+- 被动健康检查：默认开启被动健康检查，支持关闭。
+
+- 回源连接超时时长：默认5s，支持输入3-75之间的整数。
+
+- 请求头支持下滑线：默认忽略请求头中的下划线，开启后可支持。
+
+- SSL协议类型：**勾选HTTPS协议后开关可见**，默认勾选TLSV1.0/1.1/1.2，需至少勾选一种协议。
+
+- 加密套件等级：**勾选HTTPS协议后开关可见**，默认勾选中级，如遇到安全扫描显示低版本加密套件问题，建议勾选加密等级为高级。
 
 - 转发规则：支持轮询和源IP hash。
 
