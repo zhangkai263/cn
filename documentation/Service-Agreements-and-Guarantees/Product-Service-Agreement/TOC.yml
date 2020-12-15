@@ -1,16 +1,16 @@
 name: 产品服务协议
 items:
-  - name: 云主机服务协议
+  - name: 云主机服务条款
     href: Cloud-Hosting-Service-Terms.md
   - name: 云主机服务等级协议（SLA）
     href: Cloud-Host-Service-Level-Agreement-SLA.md
-  - name: 原生容器服务协议
+  - name: 原生容器服务条款
     href: Native-Container-Service-Clause.md
   - name: 原生容器等级协议（SLA）
     href: Native-Container-Hierarchy-Protocol-SLA.md
-  - name: Kubernetes集群服务协议
+  - name: Kubernetes集群服务条款
     href: Kubernetes-Cluster-Service-Provision.md
-  - name: 容器镜像仓库服务协议
+  - name: 容器镜像仓库服务条款
     href: Container-Registry-Service-Terms.md
   - name: 容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-SLA.md 
