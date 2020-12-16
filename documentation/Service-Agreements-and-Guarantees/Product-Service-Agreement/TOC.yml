@@ -18,7 +18,7 @@ items:
     href: Container-Registry-Service-Terms.md
   - name: 容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-SLA.md 
-  - name: 容器镜像仓库服务等级协议（SLA）
+  - name: 【新】容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-X-SLA.md
   - name: 对象存储服务协议
     href: Object-Storage-Service-Clause.md
