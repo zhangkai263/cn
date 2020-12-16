@@ -8,7 +8,7 @@
 
 3.产品管理页可根据节点类型、产品名称、产品ID来进行搜索
 
-![产品管理](../../../../../image/IoT/IoT-Estate/Product-Manager/Manage-Product.png)
+![产品管理](../../../../../image/IoT/IoT-Estate/Product-Manager/Manage-Product.jpg)
 
  ## 创建产品
 

@@ -11,5 +11,5 @@
 
 4.支付完成后会自动跳转至服务列表页，可查看本次购买所分配的账号和初始密码
 
-![购买详情](../../../../image/IoT/IoT-Estate/Getting-Started/Service-List.png)
+![购买详情](../../../../image/IoT/IoT-Estate/Getting-Started/Service-List.jpg)
 

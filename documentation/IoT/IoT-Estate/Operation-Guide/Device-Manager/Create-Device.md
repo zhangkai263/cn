@@ -6,11 +6,11 @@
 
 3.点击页面右上方 **创建**
 
-![管理设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Manage-Device.png)
+![管理设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Manage-Device.jpg)
 
 4.填写设备的基本信息、设备名称、MAC地址等
 
-![注册设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Create-Device.png)
+![注册设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Create-Device.jpg)
 
 **基本信息**
 - 选择产品：下拉选择要创建设备所属产品
@@ -36,11 +36,11 @@
 
 可根据ID编号，设备名称，所属产品，设备状态，节点类型等条件进行设备信息查询。点击重置可清空已选查询条件
 
-![查询设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Query-Device.png)
+![查询设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Query-Device.jpg)
 
 
  ## 删除设备
 
 在设备列表页面点击要删除的设备对应的**删除**按钮，输入当前登录用户密码进行验证，点击**删除**按钮
 
-![删除设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Delete-Device.png)
+![删除设备](../../../../../image/IoT/IoT-Estate/Device-Manager/Delete-Device.jpg)
