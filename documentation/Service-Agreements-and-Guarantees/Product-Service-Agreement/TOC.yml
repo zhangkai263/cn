@@ -1,19 +1,25 @@
 name: 产品服务协议
 items:
-  - name: 云主机服务协议
+  - name: 云主机服务条款
     href: Cloud-Hosting-Service-Terms.md
   - name: 云主机服务等级协议（SLA）
     href: Cloud-Host-Service-Level-Agreement-SLA.md
-  - name: 原生容器服务协议
+  - name: 【新】云主机服务等级协议（SLA）
+    href: Cloud-Host-Service-Level-Agreement-X-SLA.md
+  - name: 原生容器服务条款
     href: Native-Container-Service-Clause.md
   - name: 原生容器等级协议（SLA）
     href: Native-Container-Hierarchy-Protocol-SLA.md
-  - name: Kubernetes集群服务协议
+  - name: 【新】原生容器等级协议（SLA）
+    href: Native-Container-Hierarchy-Protocol-X-SLA.md
+  - name: Kubernetes集群服务条款
     href: Kubernetes-Cluster-Service-Provision.md
-  - name: 容器镜像仓库服务协议
+  - name: 容器镜像仓库服务条款
     href: Container-Registry-Service-Terms.md
   - name: 容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-SLA.md 
+  - name: 容器镜像仓库服务等级协议（SLA）
+    href: Container-Registry-Service-X-SLA.md
   - name: 对象存储服务协议
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
@@ -70,6 +76,8 @@ items:
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
     href: Elastic-IP-Level-Agreement-SLA.md   
+  - name: 【新】弹性公网IP服务等级协议（SLA）
+    href: Elastic-Ip--Level-Agreements-X-SLA.md   
   - name: IP高防服务协议
     href: IP-High-Protection-Clause.md
   - name: IP高防服务等级协议（SLA）
@@ -102,6 +110,12 @@ items:
     href: Api-Gateway-Terms-Of-Service.md
   - name: API网关服务等级协议（SLA）
     href: Api-Gateway-Level-Agreements-SLA.md
+  - name: VPN 网关服务条款
+    href: VPN-Gateway-Terms-Of-Service.md
+  - name: NAT 网关服务条款
+    href: NAT-Terms-Of-Service.md      
+  - name: 专线服务条款
+    href: Direct-Connection-Terms-Of-Service.md 
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
   - name: API中心用户服务协议
