@@ -113,7 +113,9 @@ items:
   - name: VPN 网关服务条款
     href: VPN-Gateway-Terms-Of-Service.md
   - name: NAT 网关服务条款
-    href: NAT-Terms-Of-Service.md      
+    href: NAT-Terms-Of-Service.md 
+  - name: NAT 网关服务等级协议（SLA）
+    href: NAT-Gateway-Service-Level-Agreement-SLA.md
   - name: 专线服务条款
     href: Direct-Connection-Terms-Of-Service.md 
   - name: API中心服务条款
