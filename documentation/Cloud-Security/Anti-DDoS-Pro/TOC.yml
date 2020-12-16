@@ -68,7 +68,7 @@
     - name: 防护调度规则设置
       herf: Operation-Guide/Dispatch-Rule-Settings.md        
     - name: 攻击告警设置
-      herf: Operation-Guide/Attack-Alarm-Callback-Settings.md
+      herf: Operation-Guide/Attack-Alarm-Notification-Settings.md
     - name: 黑白名单设置
       herf: Operation-Guide/Blacklist-And-Whitelist-Settings.md
     - name: 自定义返回页面设置
