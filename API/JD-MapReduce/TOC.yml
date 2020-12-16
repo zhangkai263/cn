@@ -11,6 +11,8 @@ items:
         items:
           - name: clusterExpansion
             href: Cluster-Management/clusterExpansion.md
+          - name: clusterReduction
+            href: Cluster-Management/clusterReduction.md
           - name: createCluster
             href: Cluster-Management/createCluster.md
           - name: describeCluster
@@ -18,10 +20,12 @@ items:
           - name: describeClusters
             href: Cluster-Management/describeClusters.md
           - name: getJmrVersionList
-            href: Cluster-Management/getJmrVersionList
+            href: Cluster-Management/getJmrVersionList.md
           - name: getSoftwareInfo
             href: Cluster-Management/getSoftwareInfo.md
           - name: idataCluster
             href: Cluster-Management/idataCluster.md
           - name: releaseCluster
             href: Cluster-Management/releaseCluster.md
+          - name: monitorLabelList
+            href: Cluster-Management/monitorLabelList.md
