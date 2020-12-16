@@ -18,12 +18,14 @@ items:
     href: Container-Registry-Service-Terms.md
   - name: 容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-SLA.md 
-  - name: 容器镜像仓库服务等级协议（SLA）
+  - name: 【新】容器镜像仓库服务等级协议（SLA）
     href: Container-Registry-Service-X-SLA.md
   - name: 对象存储服务协议
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
     href: Object-Storage-Service-Level-Agreement-SLA.md 
+  - name: 【新】对象存储服务等级协议（SLA）
+    href: Object-Storage-Service-Level-Agreements-X-SLA.md 
   - name: OSS违规检测服务条款
     href: OSS-Violate-Detection-Terms-Of-Service.md  
   - name: 云缓存Redis服务协议
@@ -38,10 +40,12 @@ items:
     href: CDN-Terms-Of-Service.md
   - name: CDN服务等级协议（SLA）
     href: CDN-Service-Level-Agreement-SLA.md
-  - name: 负载均衡服务协议
+  - name: 负载均衡服务条款
     href: Load-Balancing-Service-Clause.md
   - name: 负载均衡服务等级协议（SLA）
     href: Load-Balancing-Service-Level-Protocol-SLA.md
+  - name: 【新】负载均衡服务等级协议（SLA）
+    href:  Load-Balancing-Service-Level-Agreements-X-SLA.md
   - name: 云数据库 RDS 服务协议
     href: Cloud-Database-RDS-Service-Clause.md
   - name: 云数据库 RDS 服务等级协议（SLA）
@@ -71,8 +75,10 @@ items:
   - name: 云硬盘服务协议
     href: Cloud-Hard-Disk-Service-Clause.md
   - name: 云硬盘服务等级协议（SLA）
-    href: Cloud-Hard-Disk-Level-Agreements-SLA.md   
-  - name: 弹性公网IP服务协议
+    href: Cloud-Hard-Disk-Level-Agreements-SLA.md
+  - name: 【新】云硬盘服务等级协议（SLA）
+    href: Cloud-Hard-Disk-Level-Agreements-X-SLA.md  
+  - name: 弹性公网IP服务条款
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
     href: Elastic-IP-Level-Agreement-SLA.md   
@@ -112,10 +118,18 @@ items:
     href: Api-Gateway-Level-Agreements-SLA.md
   - name: VPN 网关服务条款
     href: VPN-Gateway-Terms-Of-Service.md
+  - name: VPN 网关服务等级协议（SLA
+    href: VPN-Gateway-Level-Agreements-SLA.md
   - name: NAT 网关服务条款
-    href: NAT-Terms-Of-Service.md      
+    href: NAT-Terms-Of-Service.md 
+  - name: NAT 网关服务等级协议（SLA）
+    href: NAT-Gateway-Service-Level-Agreement-SLA.md
+  - name: 【新】NAT 网关服务等级协议（SLA）
+    href: NAT-Gateway-Service-Level-Agreements-X-SLA.md
   - name: 专线服务条款
-    href: Direct-Connection-Terms-Of-Service.md 
+    href: Direct-Connection-Terms-Of-Service.md
+  - name: 专线服务等级协议（SLA）
+    href: Direct-Connection-Level-Agreements-SLA.md    
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
   - name: API中心用户服务协议
@@ -180,6 +194,8 @@ items:
     href: Cloud-File-Service-terms-of-service.md
   - name: 云文件服务等级服务协议（SLA）
     href: Cloud-File-Service-Level-Service-Agreement-SLA.md
+  - name: 【新】云文件服务等级服务协议（SLA）
+    href: Cloud-File-Service-Level-Agreements-X-SLA.md
   - name: 富媒体短信服务条款
     href: Rich-Media-SMS-Terms-Of-Service.md
   - name: 富媒体短信服务等级协议（SLA）
