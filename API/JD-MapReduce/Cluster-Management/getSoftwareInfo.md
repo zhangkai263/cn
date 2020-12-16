@@ -5,7 +5,7 @@
 获取对应版本的软件清单信息
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
 https://jmr.jdcloud-api.com/v1/regions/{regionId}/softwareInfo
@@ -15,7 +15,9 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/softwareInfo
 |**regionId**|String|True| |地域ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**version**|String|True| |JMR软件版本号|
 
 
 ## 返回参数
