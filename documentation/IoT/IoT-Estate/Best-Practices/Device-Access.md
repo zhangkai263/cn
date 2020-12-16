@@ -43,5 +43,5 @@
 ## SDK快速集成
 将设备SDK集成到设备服务中，并将下载的证书导入存放到指定位置，按SDK文档说明填写配置信息连接EMQ服务
 
-![设备上线](../../../../image/IoT/IoT-Estate/Best-Practices/Device-Online.png)
+![设备上线](../../../../image/IoT/IoT-Estate/Best-Practices/Device-Online.jpg)
 

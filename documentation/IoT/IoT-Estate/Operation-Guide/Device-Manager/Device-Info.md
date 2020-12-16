@@ -31,4 +31,4 @@
 
 ![子设备管理](../../../../../image/IoT/IoT-Estate/Device-Manager/Add-Sub.png)
 
-![子设备管理](../../../../../image/IoT/IoT-Estate/Device-Manager/Sub-Device.png)
+![子设备管理](../../../../../image/IoT/IoT-Estate/Device-Manager/Sub-Device.jpg)
