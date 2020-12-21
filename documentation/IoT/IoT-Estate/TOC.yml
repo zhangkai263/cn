@@ -48,7 +48,7 @@ items:
           - name: 创建产品
             href: Operation-Guide/Product-Manager/Create-Product.md
           - name: 物模型介绍
-              href: Operation-Guide/Product-Manager/Introduce-Thing-Model.md
+            href: Operation-Guide/Product-Manager/Introduce-Thing-Model.md
           - name: 编辑物模型
             href: Operation-Guide/Product-Manager/Manage-ThingModel.md
       - name: 设备管理
