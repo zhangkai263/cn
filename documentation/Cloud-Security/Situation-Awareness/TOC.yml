@@ -11,7 +11,7 @@
         href: Introduction/Application-Scenarios.md
       - name: 态势感知专有云
         href: Introduction/Private-Cloud-Overview.md
-  - name: 操作手册
+  - name: 用户指南
     items:
       - name: 威胁概览
         href: Operation-Guide/Threat-Overview.md
@@ -38,4 +38,4 @@
   - name: 计费模型
     href: Related-Resources/Pricing-Model.md    
   - name: 服务条款
-    href: SLA/SLA.md
+    href: SLA/ToS2021.md
