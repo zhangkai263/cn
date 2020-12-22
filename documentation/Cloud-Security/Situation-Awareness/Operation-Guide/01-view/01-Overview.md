@@ -8,3 +8,4 @@
 ![](../../../../image/CSoC/CSoC-01-1-1.png)
 
 
+![](../../../../image/Situational-Awareness/bash2.png)
