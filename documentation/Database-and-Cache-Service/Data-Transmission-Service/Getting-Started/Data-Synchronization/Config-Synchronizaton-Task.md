@@ -57,9 +57,9 @@
 
     可视化选择支持选择库后编辑筛选表的规则，支持指定表或排除表，表名称支持“*”通配符。
 
-    ![image-20200421185942156](/Users/yinxingtao/Documents/Github/image/Data-Transmission-Service/dts-025.png)
+    ![image-20200421185942156](../../../../../image/Data-Transmission-Service/dts-025.png)
 
-  - 源库类型为“通过专线连接的自建数据库”时，只支持通过**JSON**定义要迁移的库表，格式请参考：[JSON方式定义迁移对象](Define-The-Migration-Object-in-JSON.md)。
+  - 源库类型为“通过专线连接的自建数据库”时，只支持通过**JSON**定义要迁移的库表，格式请参考：[JSON方式定义迁移对象](../Data-Migration/Define-The-Migration-Object-in-JSON.md)。
 
 5. 保存任务，在数据同步任务列表页可查看当前任务信息。
 
