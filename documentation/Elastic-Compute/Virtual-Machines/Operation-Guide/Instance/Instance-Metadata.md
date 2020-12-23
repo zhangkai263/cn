@@ -16,7 +16,7 @@
 
 ### Linux系统
 
-1、登录实例，方法参见[登录Linux实例](https://docs.jdcloud.com/virtual-machines/connect-to-linux-instance)。
+1、登录实例，方法参见[登录Linux实例](https://docs.jdcloud.com/virtual-machines/connect-to-linux-instance)。<br>
 2、在系统内获取元数据根目录：
 ```
 curl http://169.254.169.254/jcs-metadata/latest/
@@ -25,7 +25,7 @@ curl http://169.254.169.254/jcs-metadata/latest/
 ```
 ["attributes/","disks/","network/","placement/","image/","description","instance-name","instance-type","instance-id","pin"]
 ```
-3、参照【元数据信息】，根据目录结构指定元数据查询：
+3、参照【元数据信息】，根据目录结构指定元数据查询：<br>
 * 获取实例的hostname：
 ```
 curl http://169.254.169.254/metadata/latest/attributes/hostname
@@ -37,12 +37,12 @@ curl http://169.254.169.254/metadata/latest/instance-id
 
 ### Windows系统
 
-1、登录实例，方法参见[登录Windows实例]((https://docs.jdcloud.com/virtual-machines/connect-to-linux-instance)。
-2、在系统内获取元数据根目录（使用Powershell）：
+1、登录实例，方法参见[登录Windows实例](https://docs.jdcloud.com/virtual-machines/connect-to-linux-instance)。<br>
+2、在系统内获取元数据根目录（使用Powershell）：<br>
 ```
 Invoke-RestMethod http://169.254.169.254/metadata/latest/
 ```
-3、参照【元数据信息】，根据目录结构指定元数据查询：
+3、参照【元数据信息】，根据目录结构指定元数据查询：<br>
 * 获取实例的镜像ID：
 ```
 Invoke-RestMethod http://169.254.169.254/metadata/latest/image/image-id
