@@ -5,7 +5,7 @@
 # 获取SDK开发包
 开发者需要选择适合自身设备平台环境的SDK，具体细节可联系平台技术支持人员。
 
-开发者可参考 **最佳实践-设备接入(../Best-Practices/Device-Access.md)** 章节，使用SDK快速接入设备
+开发者可参考 **[最佳实践-设备接入](../Best-Practices/Device-Access.md)** 章节，使用SDK快速接入设备
 
 
 
