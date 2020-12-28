@@ -8,13 +8,16 @@
 
 在多账号托管体系下，选择账号，编辑策略名称，选择当前不关心的告警类型、规则、匹配方式、以及针对单个账号的个性化配置应用范围（全局、单个实例），以及配置后的策略启停状态。
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-07-1-5.png)
+![](../../../../../image/CSoC/CSoC-07-1-5.png)
+
+
 
 - 策略白名单列表
 
 策略白名单列表包含策略名称、账号、策略内容、告警类型、状态以及操作（启停状态）等可视化呈现。
+![](../../../../../image/CSoC/CSoC-07-1-6.png)
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-07-1-6.png)
+
 
 
 

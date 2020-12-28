@@ -6,7 +6,7 @@
 
 #### 申请托管
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-06-1-4.png)
+![](../../../../../image/CSoC/CSoC-06-1-4.png)
 
 被托管账号点击左上角申请托管，进行账号托管申请，填写申请托管单，填写托管方pin、包括托管方子账号基础信息（子账号名、手机号、邮箱、描述），选择访问类型（支持AKSK访问、控制台访问），子账号授权策略（只读、读写（即管理员授权））
 
@@ -19,5 +19,7 @@
 
 被托管账号申请列表包含子账号名称、描述、访问授权、托管方PIN、托管状态、申请时间以及操作（重新申请、删除子账号）
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-06-1-5.png)
+![](../../../../../image/CSoC/CSoC-06-1-5.png)
+
+
 
