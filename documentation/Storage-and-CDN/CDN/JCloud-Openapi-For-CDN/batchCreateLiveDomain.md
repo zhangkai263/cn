@@ -14,7 +14,6 @@ https://cdn.jdcloud-api.com/v1/liveDomain:batchCreate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**x-jdcloud-channel**|String|False|cdn|域名来源cdn/cdn,video视频云|
 |**playDomain**|String|True| |播放域名|
 |**publishDomain**|String|False| |创建推流域名时，必传推流域名|
 |**sourceType**|String|True| |回源类型只能是[ips,domain]中的一种|
