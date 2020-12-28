@@ -63,8 +63,6 @@ items:
     items:
       - name: Device SDK 介绍
         href: Developer-Guide/Device-SDK-Introduction.md
-      - name: SDK API 简介
-        href: Developer-Guide/Device-SDK-API.md
       - name: 云对云接入简介
         href: Developer-Guide/Cloud-To-Cloud.md
   - name: 最佳实践
