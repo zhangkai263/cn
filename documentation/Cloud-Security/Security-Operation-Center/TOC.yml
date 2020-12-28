@@ -54,9 +54,9 @@
           - name: 通知
             href: Operation-Guide/07-SystemSetting/01-Notice.md
           - name: 策略白名单
-            href: Operation-Guide/07-SystemSetting/02-StrategyWhitelist.md    
+            href: Operation-Guide/07-SystemSetting/02-StrategyWhitelist.md
           - name: 操作审计
-            href: Operation-Guide/07-SystemSetting/03-OperatingAudit.md     
+            href: Operation-Guide/07-SystemSetting/03-OperatingAudit.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 版本更新
