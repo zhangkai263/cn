@@ -255,7 +255,7 @@ mCallBack:验证码验证码结果回调，类型CallBack或SSLDialogCallback或
 
 
 
-## 3 APP工程接入说明
+## 3、 APP工程接入说明
 
 1） 接入app在app启动时调用AntiGuard.init初始化SDK，之后可以正常调用其他接口;
 

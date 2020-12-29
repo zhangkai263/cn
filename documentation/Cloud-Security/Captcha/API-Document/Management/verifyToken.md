@@ -28,12 +28,12 @@ https://captcha.jdcloud-api.com/v1/captcha:verifytoken
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[VerifyDataResp](#verifydataresp)| |
+|**data**|VerifyDataResp| |
 ### <div id="VerifyDataResp">VerifyDataResp</div>
 |名称|类型|描述|
 |---|---|---|
