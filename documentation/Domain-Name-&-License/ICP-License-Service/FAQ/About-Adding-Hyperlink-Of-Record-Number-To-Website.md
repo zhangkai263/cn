@@ -8,7 +8,7 @@
 
 示例：[工信部官网:](beian.miit.gov.cn) 添加备案号后的效果如下
 
-![1.jpg](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020030701/image/ICP-License-Service/About-Adding-Hyperlink-Of-Record-Number-To-Website-cn-1.jpg)
+![1.jpg](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20201229/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/guanju-shili.png)
 
 ·网站底部已添加网站的备案号“京ICP备04000001号”。
 
