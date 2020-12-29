@@ -21,7 +21,9 @@
 
 详细的中英文对照参考：字段说明
 
-![](/Users/chentongle/Documents/GitHub/cn/image/Situational-Awareness/etl-1.png)
+![](../../../../../image/Situational-Awareness/etl-1.png)
+
+
 
 2、关联查询：主要用于原始日志的实时关联
 
@@ -31,7 +33,9 @@
 
 详细的中英文对照参考：字段说明
 
-![](/Users/chentongle/Documents/GitHub/cn/image/Situational-Awareness/relation-1.png)
+![](../../../../../image/Situational-Awareness/relation-1.png)
+
+
 
 ##### 复杂查询模式：
 

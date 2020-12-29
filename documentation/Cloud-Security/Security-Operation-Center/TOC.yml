@@ -1,6 +1,12 @@
   name: 安全运营中心
   href: 
   items:
+  - name: 产品简介
+    items:
+      - name: 产品定义
+        href: Introduction/01-VersionDefine.md
+      - name: 产品架构
+        href: Introduction/02-ProductInfrasture.md
   - name: 用户指南
     items:
       - name: 安全可视
@@ -48,8 +54,14 @@
           - name: 通知
             href: Operation-Guide/07-SystemSetting/01-Notice.md
           - name: 策略白名单
-            href: Operation-Guide/07-SystemSetting/02-StrategyWhitelist.md    
+            href: Operation-Guide/07-SystemSetting/02-StrategyWhitelist.md
           - name: 操作审计
-            href: Operation-Guide/07-SystemSetting/03-OperatingAudit.md       
+            href: Operation-Guide/07-SystemSetting/03-OperatingAudit.md 
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: 版本更新
+    href: Related-Resources/VersionUpdate.md
+  - name: 计费模型
+    href: Related-Resources/Pricing-Model.md
   - name: 服务条款
     href: SLA/ToS2021.md

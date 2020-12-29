@@ -8,4 +8,5 @@
 
 列表包含操作时间、操作人、操作类型与操作内容。
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-07-1-7.png)
+![](../../../../../image/CSoC/CSoC-07-1-7.png)
+
