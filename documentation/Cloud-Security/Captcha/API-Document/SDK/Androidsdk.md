@@ -1,8 +1,8 @@
 # 验证码SDK Android接入
 
-# 1 、静默验证接口调用
+## 1 、静默验证接口调用
 
-## 1.1 初始化接口
+### 1.1 初始化接口
 
 手动设置log和环境：
 
@@ -23,11 +23,7 @@ SDK使用之前需要先调用该接口初始化必要的参数
 
 TrackBaseData成员变量
 
-| appId | APPID，用来标识一个APP |
-| ----- | ---------------------- |
-|       |                        |
-
-
+appId：用来标识一个APP
 
 调用示例：
 
@@ -38,7 +34,7 @@ AntiGuard.init(MyApp.getInstance(), trackBaseData,false,false);
 
 
 
-## 1.2 业务埋点上报接口
+### 1.2 业务埋点上报接口
 
 ```
 AntiGuard.report(Context context ,JSONObject event);         
@@ -67,7 +63,7 @@ try {
 
    }
 
-## 1.3 设置是否开启防刷
+### 1.3 设置是否开启防刷
 
 AntiGuard. setAntiEnable (boolean enable )
 
@@ -75,7 +71,7 @@ AntiGuard. setAntiEnable (boolean enable )
 | ------ | ----------------------------------- |
 | enable | 是否开启防刷，true开启，false不开启 |
 
-## 1.4 获取指纹掩码
+### 1.4 获取指纹掩码
 
 AntiGuard. getUnionFingerPrint(Context context)
 
@@ -83,7 +79,7 @@ AntiGuard. getUnionFingerPrint(Context context)
 | ------- | --------- |
 | Context | APP上下文 |
 
-## 1.5 设置是否采集隐私信息, 默认采集
+### 1.5 设置是否采集隐私信息, 默认采集
 
 AntiGuard. setPrivacyPolicyHelper(PrivacyPolicyHelper helper)
 
@@ -91,9 +87,9 @@ PrivacyPolicyHelper接口的 isAgree方法里头返回true采集，返回false�
 
 
 
-# 2 、二次验证接口调用
+## 2 、二次验证接口调用
 
-## 2.1 获取验证码实例
+### 2.1 获取验证码实例
 
 ```
 Verify verify = Verify.getInstance();
@@ -101,31 +97,17 @@ Verify verify = Verify.getInstance();
 
 每个Verify实例对应一次验证的流程，同一场景的验证不需要重新获取Verify实例。
 
- 
-
 public void free()：Activity销毁时调用该方法，释放资源
-
- 
 
 public Verify setDebug(boolean isDebug)：设置环境
 
- 
-
 public Verify setLog(boolean openLog)：是否开启LOG
-
- 
 
 public Verify setLoading (boolean openLog)：是否显示loading圈
 
+public Verify setURL(String url)：设置访问后台的url
 
-
-```
-public Verify setURL(String url)：设置访问后台的url，国际站中需要定制url，默认访问泰国站的url。
-```
-
-
-
-## 2.2 执行验证
+### 2.2 执行验证
 
 ```
 verify.init(session_id, MainActivity.this, udid, mCallBack);
@@ -223,13 +205,11 @@ ShowCapCallback：验证结果回调
 
    
 
-## 2.3 验证API
+### 2.3 验证API
 
-```
- 1.public void init(String session_id, Context context, String udid, CallBack callBack)
-```
+ 1.public void init(String session_id, Context context, String udid, CallBack callBack) 
 
-  参数说明：
+参数说明：
 
 Session_id:后台下发的验证码会话id, 由调用方从调用放后台获取并传入sdk
 
@@ -239,13 +219,11 @@ Udid：用户唯一标识，建议用imei_macAddress拼接(注意：此udid尽�
 
 mCallBack:验证码验证码结果回调，类型CallBack或SSLDialogCallback或ShowCapCallback
 
-```
 
-```
 
-  2.public void init(String session_id, Context context, String udid, String account, CallBack callBack)
+2.public void init(String session_id, Context context, String udid, String account, CallBack callBack)
 
-  参数说明：
+参数说明：
 
 Session_id:后台下发的验证码会话id, 由调用方从调用放后台获取并传入sdk
 
@@ -259,9 +237,9 @@ mCallBack:验证码验证码结果回调，类型CallBack或SSLDialogCallback或
 
 
 
- 3.public void init(String session_id, Context context, String udid, String countryCode, String account, CallBack callBack)
+3.public void init(String session_id, Context context, String udid, String countryCode, String account, CallBack callBack)
 
-  参数说明：
+参数说明：
 
 Session_id:后台下发的验证码会话id, 由调用方从调用放后台获取并传入sdk
 
@@ -271,13 +249,13 @@ Udid：用户唯一标识，建议用imei_macAddress拼接(注意：此udid尽�
 
 countryCode：国家码，例：86（不需要加+）
 
-account:：用户名，用于盲人用户白名单
+account:：用户名
 
 mCallBack:验证码验证码结果回调，类型CallBack或SSLDialogCallback或ShowCapCallback
 
 
 
-# 3 APP工程接入说明
+## 3 APP工程接入说明
 
 1） 接入app在app启动时调用AntiGuard.init初始化SDK，之后可以正常调用其他接口;
 

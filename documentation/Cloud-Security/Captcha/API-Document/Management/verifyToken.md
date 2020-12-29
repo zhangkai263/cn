@@ -33,7 +33,12 @@ https://captcha.jdcloud-api.com/v1/captcha:verifytoken
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|Object| |
+|**data**|[VerifyDataResp](#verifydataresp)| |
+### <div id="VerifyDataResp">VerifyDataResp</div>
+|名称|类型|描述|
+|---|---|---|
+|**code**|String|代号，0000:验证成功，0001:验证失败，0002:内部错误|
+|**sessionId**|String|会话id，验证失败后返回|
 
 ## 返回码
 |返回码|描述|

@@ -1,8 +1,8 @@
 # 验证码SDK iOS接入
 
-# 1、安全上报接口说明
+## 1、安全上报接口说明
 
-## 1.1 注册接口
+### 1.1 注册接口
 
 ```
 /**
@@ -12,9 +12,7 @@
 + (void)registerJMAWithAppid:( NSString * _Nonnull )appid;
 ```
 
-
-
-1.2 业务埋点上报接口
+### 1.2 业务埋点上报接口
 
 ```
 /**
@@ -23,7 +21,7 @@
 + (void)reportJMA;
 ```
 
-## 1.3 停止采集方法
+### 1.3 停止采集方法
 
 ```
 /**
@@ -32,17 +30,20 @@
 + (void)setupReportJMAEnable:(BOOL)enable;
 ```
 
-## 1.4 获取设备指纹掩码
+### 1.4 获取设备指纹掩码
 
 ```
-/**`` ``* 4、获取设备指纹掩码`` ``*/``+ (NSString *_Nullable)getwhwswswws;
+/**
+ * 4、获取设备指纹掩码
+ */
++ (NSString *_Nullable)getwhwswswws;
 ```
 
 
 
-# 2 、验证码接口说明
+## 2 、验证码接口说明
 
-## 2.1 初始化
+### 2.1 初始化
 
 提供2种初始化方式：
 
@@ -67,19 +68,19 @@
 -(id _Nonnull )initWithURL:(nonnull NSURL *)url languageType:(nonnull NSString *)lt params:(JDAFDCapParams *_Nonnull)params;
 ```
 
-*@@特别注意*
+注意事项
 
-*1.获取非弹出式验证码需设置embed=YES，同时设置embedwidth，业务接口返回会回调-(void)jdAFDCapVerifyEmbedView:(UIView \*)view;*
+1.获取非弹出式验证码需设置embed=YES，同时设置embedwidth，业务接口返回会回调-(void)jdAFDCapVerifyEmbedView:(UIView \*)view;
 
-*2.获取错误回调需设置receiveErrors=YES*
+2.获取错误回调需设置receiveErrors=YES
 
-*3.不需要使用sdk内置loading需设置canShowWaitDialogView=NO*
+3.不需要使用sdk内置loading需设置canShowWaitDialogView=NO
 
-*4.使用弹出式验证码时，在页面出现时需设置canShowVerifyView=YES ，在页面消失时需设置canShowVerifyView=NO*
+4.使用弹出式验证码时，在页面出现时需设置canShowVerifyView=YES ，在页面消失时需设置canShowVerifyView=NO
 
 
 
-## 2.2 获取sessiod后，获取验证码
+### 2.2 获取sessiod后，获取验证码
 
 2.2.1 通过执行下面的函数获取弹出式验证码
 
@@ -113,11 +114,11 @@
 
 
 
-# 3 、工程调试和接入说明
+## 3 、工程调试和接入说明
 
-## 3.1 项目初始化
+### 3.1 项目初始化
 
-京东智能防刷SDK–JDAFDSDK项目分为Demo和SDK两部分 (内部开发调试)
+验证码SDK–JDAFDSDK项目分为Demo和SDK两部分 (内部开发调试)
 
 1、非Pod模式
 
@@ -133,11 +134,11 @@
 
 
 
-## 3.2 Framework编译
+### 3.2 Framework编译
 
 选择Scheme-->JDAFDSDKLib (聚合包)进行编译，自动执行Run Script脚本，会重新在Release模式下编译SDK和资源Bundle target，形成交叉包和资源文件输出到根目录的Products文件下
 
-## 3.3 第三方接入与初始化
+### 3.3 第三方接入与初始化
 
 接入方APP，集成JDAFDSDK.framework进入项目中：
 
