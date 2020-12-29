@@ -18,7 +18,7 @@
 
 需要说明的一点是：检查范围是从当前选择账号下的**主机安全产品页-资产管理**中获取，通过**分组管理功能模块**创建分组信息配置。
 
-![img](file:///Users/chentongle/Documents/GitHub/cn/image/Endpoint-Security/baseline-11.png?lastModify=1608955876)
+![](../../../../../image/Endpoint-Security/baseline-11.png)
 
 #### 执行检查任务
 
