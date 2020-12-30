@@ -27,32 +27,18 @@ items:
       href: Getting-Started/Service-Provisioning.md
 - name: SDK参考
   items:
-    - name: SDK简介
-      href: SDK-Reference/SDK-introduction.md
-    - name: 推流SDK
+    - name: Android SDK参考
       items:
-        - name: 功能特性
-          href: SDK-Reference/pushstream-feature.md
-        - name: Android端快速集成
-          href: SDK-Reference/Android-push-guidance.md
-        - name: Android端SDK的使用
-          href: SDK-Reference/Android-push-API.md
-        - name: iOS端快速集成
-          href: SDK-Reference/iOS-push-guidance.md
-        - name: iOS端SDK的使用
-          href: SDK-Reference/iOS-push-API.md
-    - name: 播放器SDK
+        - name: Android JRTC SDK快速集成
+          href: Android-JRTC-SDK-quick-integration.md
+        - name: Android JRTC 接口概览
+          href: SDK-Reference/Android-JRTC-API-overview.md
+    - name: iOS SDK参考
       items:
         - name: 功能特性
           href: SDK-Reference/playstream-feature.md
         - name: Android端快速集成
           href: SDK-Reference/Android-play-guidance.md
-        - name: Android端SDK的使用
-          href: SDK-Reference/Android-play-API.md
-        - name: iOS端快速集成
-          href: SDK-Reference/iOS-play-guidance.md
-        - name: iOS端SDK的使用
-          href: SDK-Reference/iOS-play-API.md
 - name: 相关资源
   items:
     - name: 文档历史记录
