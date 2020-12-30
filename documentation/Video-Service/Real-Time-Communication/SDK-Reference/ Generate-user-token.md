@@ -1,4 +1,4 @@
-## 用户Token计算
+## 用户Token生成
 
 ### Token算法
 
