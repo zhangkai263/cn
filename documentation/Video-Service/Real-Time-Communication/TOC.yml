@@ -27,10 +27,14 @@ items:
       href: Getting-Started/Service-Provisioning.md
 - name: SDK参考
   items:
+    - name: 公共参数
+      items:
+        - name: 鉴权Token生成
+          href: SDK-Reference/generate-user-token.md
     - name: Android SDK参考
       items:
         - name: Android JRTC SDK快速集成
-          href: Android-JRTC-SDK-quick-integration.md
+          href: SDK-Reference/Android-JRTC-SDK-quick-integration.md
         - name: Android JRTC 接口概览
           href: SDK-Reference/Android-JRTC-API-overview.md
     - name: iOS SDK参考
