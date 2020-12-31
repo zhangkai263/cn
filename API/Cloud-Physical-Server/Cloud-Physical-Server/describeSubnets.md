@@ -47,15 +47,23 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnets
 ### <div id="subnet">Subnet</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-east-1|
-|**az**|String|可用区, 如cn-east-1a|
+|**region**|String|地域代码, 如cn-north-1|
+|**az**|String|可用区, 如cn-north-1c|
 |**subnetId**|String|子网ID|
 |**name**|String|子网名称|
-|**cidr**|String|子网CIDR|
+|**cidr**|String|子网ipv4 CIDR|
+|**ipv6Cidr**|String|子网IPv6 CIDR|
 |**vpcId**|String|私有网络Id|
 |**vpcName**|String|私有网络名称|
-|**availableIpCount**|Integer|可用ip数量|
-|**totalIpCount**|Integer|总ip数量|
+|**vpcCidr**|String|私有网络IPv4 CIDR|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
+|**availableIpCount**|Integer|可用IPv4地址数量|
+|**totalIpCount**|Integer|总IPv4地址数量|
+|**usedIpv6IpCount**|Integer|已用IPv6地址数量|
+|**totalIpv6IpCount**|String|总IPv6地址数量|
+|**secondaryCidrName**|String|子网次要CIDR名称|
+|**secondaryCidr**|String|子网次要CIDR|
+|**secondaryCidrId**|String|子网次要CIDR ID|
 |**networkType**|String|网络类型|
 |**description**|String|描述|
 |**createTime**|String|创建时间|

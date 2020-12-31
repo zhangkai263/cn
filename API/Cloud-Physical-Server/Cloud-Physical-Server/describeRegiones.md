@@ -14,7 +14,7 @@ https://cps.jdcloud-api.com/v1/regions
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**networkType**|String|False| |网络类型basic/vpc, 默认basic|
+|**networkType**|String|False| |网络类型basic（基础网络）、vpc（私有网络）、retail（零售中台网络）, 默认basic|
 
 
 ## 返回参数
@@ -30,8 +30,8 @@ https://cps.jdcloud-api.com/v1/regions
 ### <div id="region">Region</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如 cn-east-1|
-|**regionName**|String|地域名称，如 华东一区|
+|**region**|String|地域代码, 如 cn-north-1|
+|**regionName**|String|地域名称，如华北-北京|
 |**azs**|[Az[]](describeregiones#az)|可用区列表|
 ### <div id="az">Az</div>
 |名称|类型|描述|

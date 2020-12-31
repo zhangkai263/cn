@@ -1,26 +1,26 @@
-# describeVpcs
+# describeIpv6Gateways
 
 
 ## 描述
-查询私有网络列表
+查询IPv6网关实例列表
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
+https://cps.jdcloud-api.com/v1/regions/{regionId}/ipv6Gateways
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID，可调用接口（describeRegiones）获取云物理服务器支持的地域|
+|**regionId**|String|True| |地域ID，可调用接口（describeRegions）获取云物理服务器支持的地域|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
-|**name**|String|False| |私有网络名称|
-|**filters**|[Filter[]](describevpcs#filter)|False| |vpcId - 私有网络ID，精确匹配，支持多个<br>|
+|**ipv6GatewayName**|String|False| |IPv6网关名称|
+|**filters**|[Filter[]](describeipv6gateways#filter)|False| |ipv6GatewayId - IPv6网关实例ID，精确匹配，支持多个<br>|
 
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -32,26 +32,24 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describevpcs#result)| |
+|**result**|[Result](describeipv6gateways#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**vpcs**|[Vpc[]](describevpcs#vpc)| |
+|**ipv6Gateways**|[Ipv6Gateway[]](describeipv6gateways#ipv6gateway)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="vpc">Vpc</div>
+### <div id="ipv6gateway">Ipv6Gateway</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-north-1|
+|**region**|String|地域，如cn-north-1|
+|**ipv6GatewayId**|String|IPv6网关实例ID|
+|**ipv6GatewayName**|String|IPv6网关名称|
 |**vpcId**|String|私有网络ID|
-|**name**|String|私有网络名称|
-|**cidr**|String|私有网络IPv4 CIDR|
-|**ipv6Cidr**|String|私有网络IPv6 CIDR|
-|**ipv6GatewayId**|String|IPv6网关ID|
-|**description**|String|描述|
+|**vpcName**|String|私有网络名称|
 |**createTime**|String|创建时间|
 
 ## 返回码
