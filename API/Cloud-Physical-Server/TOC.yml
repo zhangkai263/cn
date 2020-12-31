@@ -49,6 +49,8 @@
             href: Cloud-Physical-Server/describeRegiones.md
           - name: modifyBandwidth
             href: Cloud-Physical-Server/modifyBandwidth.md
+          - name: describeEventLogs
+            href: Cloud-Physical-Server/describeEventLogs.md
       - name: 子网管理
         items:
           - name: createSubnet
@@ -97,6 +99,8 @@
             href: Cloud-Physical-Server/describeElasticIp.md
           - name: modifyElasticIpBandwidth
             href: Cloud-Physical-Server/modifyElasticIpBandwidth.md
+          - name: describeAvailablePrivateIp
+            href: Cloud-Physical-Server/describeAvailablePrivateIp.md
       - name: Ipv6管理
         items:
           - name: assignIpv6Address
@@ -130,7 +134,15 @@
           - name: describeKeypairs
             href: Cloud-Physical-Server/describeKeypairs.md
           - name: describeKeypair
-            href: Cloud-Physical-Server/describeKeypair.md  
+            href: Cloud-Physical-Server/describeKeypair.md
+      - name: 别名IP范围管理
+        items:
+          - name: createAliasIp
+            href: Cloud-Physical-Server/createAliasIp.md
+          - name: deleteAliasIp
+            href: Cloud-Physical-Server/deleteAliasIp.md
+          - name: describeAliasIps
+            href: Cloud-Physical-Server/describeAliasIps.md
       - name: 负载均衡管理
         items:
           - name: createLoadBalancer
