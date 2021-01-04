@@ -1,4 +1,4 @@
-# Android JRTC API概览
+# Android JRTC API接口说明
 
 ## 1.JRTCCloud
 + ### 基础方法
