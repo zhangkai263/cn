@@ -218,7 +218,7 @@ g.n1.8xlarge|32|128|4 |	 |
 |c.n3.8xlarge|32|64|4
 |c.n3.12xlarge|48|96|4
 |c.n3.16xlarge|64|128|4
-|c.n3.18xlarge|72|176|4
+|c.n3.22xlarge|88|176|4
 
 第二代
 

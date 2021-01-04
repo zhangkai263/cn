@@ -107,6 +107,8 @@ items:
                 href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
           - name: 自定义数据
             href: Operation-Guide/Instance/Userdata.md
+          - name: 实例元数据
+            href: Operation-Guide/Instance/Instance-Metadata.md            
       - name: 实例模板
         items:
           - name: 实例模板概述
