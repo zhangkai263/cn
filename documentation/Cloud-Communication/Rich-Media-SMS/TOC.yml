@@ -28,7 +28,7 @@ items:
     - name: 短信内容
       href: Operation-Guide/content.md
     - name: 资质管理
-      href: Operation-Guide/qualification1.md
+      href: Operation-Guide/qualification_management.md
     - name: 发送短信
       href: Operation-Guide/send.md
     - name: 统计分析
