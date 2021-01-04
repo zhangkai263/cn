@@ -31,12 +31,20 @@ items:
       items:
         - name: 鉴权Token生成
           href: SDK-Reference/generate-user-token.md
+    - name: 工具下载
+      items:
+        - name: SDK下载
+          href: SDK-Reference/SDK-download.md
     - name: Android SDK参考
       items:
         - name: Android JRTC SDK快速集成
           href: SDK-Reference/Android-JRTC-SDK-quick-integration.md
         - name: Android JRTC 接口说明
           href: SDK-Reference/Android-JRTC-API-overview.md
+        - name: iOS JRTC SDK快速集成
+          href: SDK-Reference/iOS-JRTC-SDK-quick-integration.md
+        - name: iOS JRTC 接口说明
+          href: SDK-Reference/iOS-JRTC-API-overview.md
 - name: 相关资源
   items:
     - name: 文档历史记录
