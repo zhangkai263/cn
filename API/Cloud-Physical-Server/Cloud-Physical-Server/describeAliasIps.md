@@ -1,26 +1,28 @@
-# describeVpcs
+# describeAliasIps
 
 
 ## 描述
-查询私有网络列表
+查询别名IP列表
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
+https://cps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID，可调用接口（describeRegiones）获取云物理服务器支持的地域|
+|**regionId**|String|True| |地域ID，可调用接口（describeRegions）获取云物理服务器支持的地域|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
-|**name**|String|False| |私有网络名称|
-|**filters**|[Filter[]](describevpcs#filter)|False| |vpcId - 私有网络ID，精确匹配，支持多个<br>|
+|**subnetId**|String|False| |子网ID|
+|**instanceId**|String|False| |实例ID|
+|**cidr**|String|False| |CIDR段，模糊搜索|
+|**filters**|[Filter[]](describealiasips#filter)|False| |aliasIpId - 别名IP id<br/><br>|
 
 ### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -32,27 +34,27 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describevpcs#result)| |
+|**result**|[Result](describealiasips#result)| |
 |**requestId**|String| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**vpcs**|[Vpc[]](describevpcs#vpc)| |
+|**aliasIps**|[AliasIp[]](describealiasips#aliasip)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="vpc">Vpc</div>
+### <div id="aliasip">AliasIp</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-north-1|
-|**vpcId**|String|私有网络ID|
-|**name**|String|私有网络名称|
-|**cidr**|String|私有网络IPv4 CIDR|
-|**ipv6Cidr**|String|私有网络IPv6 CIDR|
-|**ipv6GatewayId**|String|IPv6网关ID|
-|**description**|String|描述|
-|**createTime**|String|创建时间|
+|**region**|String|地域|
+|**az**|String|可用区|
+|**instanceId**|String|实例ID|
+|**subnetId**|String|子网ID|
+|**secondaryCidrId**|String|次要cidr ID|
+|**aliasIpId**|String|别名IP ID|
+|**cidr**|String|cidr段|
+|**isBondEip**|Boolean|是否已绑弹性公网ip|
 
 ## 返回码
 |返回码|描述|

@@ -40,19 +40,22 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances
 ### <div id="instancespec">InstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**az**|String|True| |可用区, 如 cn-east-1|
+|**az**|String|True| |可用区, 如 cn-north-1|
 |**deviceType**|String|True| |实例类型, 如 cps.c.normal|
 |**hostname**|String|False| |主机名|
 |**imageType**|String|True| |镜像类型, 取值范围：standard|
 |**osTypeId**|String|True| |操作系统类型ID|
 |**sysRaidTypeId**|String|True| |系统盘RAID类型ID|
-|**dataRaidTypeId**|String|True| |数据盘RAID类型ID|
+|**dataRaidTypeId**|String|False| |数据盘RAID类型ID|
 |**subnetId**|String|False| |子网编号|
 |**enableInternet**|String|False|yes|是否启用外网，取值范围：yes、no|
+|**internetChargeMode**|String|False| |启用外网时弹性公网IP的计费模式，取值范围：prepaid_by_duration、postpaid_by_duration|
 |**enableIpv6**|String|False|no|是否启用IPv6，取值范围：yes、no|
-|**networkType**|String|True| |网络类型，取值范围：basic、vpc|
+|**ipv6Address**|String|False| |IPv6地址|
+|**networkType**|String|True| |网络类型，取值范围：basic（基础网络）、vpc（私有网络）、retail（零售中台网络）|
 |**cidr**|String|False| |网络CIDR|
 |**privateIp**|String|False| |内网IP|
+|**aliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |内网添加的别名IP范围|
 |**lineType**|String|False| |外网链路类型, 目前只支持bgp|
 |**bandwidth**|Integer|False| |外网带宽, 范围[1,200] 单位Mbps|
 |**name**|String|True| |云物理服务器名称|
@@ -62,6 +65,27 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
 |**charge**|[ChargeSpec](createinstances#chargespec)|True| |计费配置|
+|**interfaceMode**|String|False| |网络接口模式，取值：bond（网口bond）、dual（双网口）|
+|**extensionEnableIpv6**|String|False|no|辅网口是否启用IPv6，取值范围：yes、no|
+|**extensionIpv6Address**|String|False| |辅网口IPv6地址|
+|**extensionSubnetId**|String|False| |辅网口子网ID|
+|**extensionPrivateIp**|String|False| |辅网口手动分配的内网ip|
+|**extensionAliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |辅网口内网添加的别名IP范围|
+|**extensionEnableInternet**|String|False| |辅网口是否启用外网，取值范围：yes、no|
+|**extensionLineType**|String|False| |辅网口链路类型, 目前支持BGP|
+|**extensionBandwidth**|Integer|False| |辅网口外网带宽，范围[1,200] 单位Mbps|
+|**extensionInternetChargeMode**|String|False| |辅网口启用外网时弹性公网IP的计费模式，取值范围：prepaid_by_duration、postpaid_by_duration|
+|**resourceTags**|[Tag[]](createinstances#tag)|False| |标签|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|True| |标签键|
+|**value**|String|True| |标签值|
+### <div id="aliasipinfo">AliasIpInfo</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**id**|String|False| |主CIDR或次要CIDR id|
+|**cidr**|String|False| |cidr段|
 ### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
