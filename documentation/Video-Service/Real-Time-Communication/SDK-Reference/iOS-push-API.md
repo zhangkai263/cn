@@ -40,7 +40,7 @@ JRTC_iOS SDK 当前只支持手动集成到您的项目中。您可以在京东�
 
 打开您的Xcode工程项目，选择要运行的target,选中 General项，点击Frameworks,Libraries,and Embedded Content项展开， 选中JRTC_iOS.framework,将Embed 设置为 Embed & Sign。
 
-![Embed&Sign.jpg.jpg](../../../../image/Real-Time-Communicat/Embed&Sign.jpg.jpg)
+![Embed&Sign.jpg.jpg](../../../../image/Real-Time-Communicat/Embed&Sign.jpg)
 
 
 # 授权摄像头和麦克风使用权限
