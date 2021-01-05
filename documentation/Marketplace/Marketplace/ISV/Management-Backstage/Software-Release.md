@@ -4,7 +4,7 @@
 
 1.选择发布类目
 
-登录服务商后台发布下载类服务：选择服务管理-->发布服务，选择下载类交付类型，设置服务名称，选择服务类型、是否绑定域名产品，选择接入方式后填写回调地址，完成后点击 “下一步”。
+登录服务商后台发布下载类服务：选择服务管理-->发布服务，选择软件类交付类型，设置服务名称，选择服务类型、是否绑定域名产品，选择接入方式后填写回调地址，完成后点击 “下一步”。
 
 ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/SaaS类服务发布1.jpg)
 
