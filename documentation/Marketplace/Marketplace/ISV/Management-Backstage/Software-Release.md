@@ -42,3 +42,6 @@
 完成后勾选同意并签署《京东云市场入驻及服务协议》，可选择“暂存”或”发布服务”。
 
 5. 至此，服务已成功发布，进入服务审核流程。可在服务管理-->发布服务查看服务审核状态与修改。审核通过，则服务上线可销售。
+
+![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E7%BA%BF%E4%B8%8B%E6%9C%8D%E5%8A%A13.png)
+
