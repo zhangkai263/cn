@@ -41,6 +41,8 @@ items:
           href: SDK-Reference/Android-JRTC-SDK-quick-integration.md
         - name: Android JRTC 接口说明
           href: SDK-Reference/Android-JRTC-API-overview.md
+       - name: iOS SDK参考
+      items:
         - name: iOS JRTC SDK快速集成
           href: SDK-Reference/iOS-JRTC-SDK-quick-integration.md
         - name: iOS JRTC 接口说明
