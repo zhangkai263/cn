@@ -23,10 +23,10 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|房间信息|
+|**result**|[Result](createroom#result)|房间信息|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**roomId**|Long|房间ID|
