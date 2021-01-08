@@ -39,6 +39,9 @@
 5. 多条非网站转发规则支持按照转发端口进行排序，默认按照创建时间排序，可点击图中按钮进行升序或降序排序，点击按钮旁空白处可恢复默认创建时间排序。BGP线路的非网站转发规则排序会优先按照同一高防IP的不同端口聚合后，再根据端口进行升序或降序排序。
 ![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/Port-Sorting.PNG)
 
+6. 非网站转发规则支持批量进行删除和切换防御/回源模式。
+![非网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/batch-operate01.PNG)
+
 ## 相关参考
 
 - [创建实例](Create-Instance.md)
