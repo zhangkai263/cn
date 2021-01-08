@@ -22,10 +22,10 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|房间实时在线人数|
+|**result**|[Result](describeroomonlineusernum#result)|房间实时在线人数|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**appId**|String|应用ID|
@@ -46,7 +46,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 ## 请求示例
 GET
 ```
-/v1/describeRoomOnlineUserNum/252
+/v1/describeOnlineUserNum/252
 
 ```
 
@@ -60,7 +60,8 @@ GET
         "appId": "febf9a1401763b06490e14739c4be622", 
         "createTime": "2020-12-08T02:23:37Z", 
         "number": 100, 
-        "roomId": 252
+        "roomId": 252, 
+        "userId": 9527
     }
 }
 ```

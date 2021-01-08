@@ -24,10 +24,10 @@ https://openjrtc.jdcloud-api.com/v1/createUser
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|创建JRtc用户信息返回结果|
+|**result**|[Result](createuser#result)|创建JRtc用户信息返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**peerId**|Long|JRtc用户ID|
