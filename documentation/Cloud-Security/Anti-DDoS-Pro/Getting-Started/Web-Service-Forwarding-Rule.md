@@ -65,6 +65,9 @@
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2013.png)
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2014.png)
 
+7. 网站转发规则支持批量删除、开/关CC防护模式、开/关CC观察模式、切换防御/回源模式。
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/batch-operate02.PNG)
+
 ## 相关参考
 
 - [创建实例](Create-Instance.md)
