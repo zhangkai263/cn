@@ -88,6 +88,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods/{podId}
 |**sanityCheck**|Boolean|源和目标IP地址校验，取值为0或者1|
 |**primaryIp**|[NetworkInterfacePrivateIp](describepod#networkinterfaceprivateip)|网卡主IP|
 |**secondaryIps**|[NetworkInterfacePrivateIp[]](describepod#networkinterfaceprivateip)| |
+|**ipv6Addresses**|String[]|网卡IPv6地址|
 ### <div id="networkinterfaceprivateip">NetworkInterfacePrivateIp</div>
 |名称|类型|描述|
 |---|---|---|
