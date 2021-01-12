@@ -19,8 +19,6 @@ SDK使用之前需要先调用该接口初始化必要的参数
 | enableLog     | log开关，false是关闭log                  |
 | debug         | 设置是否使用预发布环境，false是线上环境  |
 
-
-
 TrackBaseData成员变量
 
 appId：用来标识一个APP
@@ -34,7 +32,7 @@ AntiGuard.init(MyApp.getInstance(), trackBaseData,false,false);
 
 
 
-### 1.2 业务埋点上报接口
+### 1.2 设备指纹信息上报接口
 
 ```
 AntiGuard.report(Context context ,JSONObject event);         
@@ -49,6 +47,7 @@ AntiGuard.report(Context context ,JSONObject event);
 
 调用示例：
 
+```
 try {
 
    JSONObject event = new JSONObject();
@@ -62,6 +61,9 @@ try {
    
 
    }
+```
+
+
 
 ### 1.3 设置是否开启防刷
 
@@ -71,7 +73,7 @@ AntiGuard. setAntiEnable (boolean enable )
 | ------ | ----------------------------------- |
 | enable | 是否开启防刷，true开启，false不开启 |
 
-### 1.4 获取指纹掩码
+### 1.4 获取设备指纹信息
 
 AntiGuard. getUnionFingerPrint(Context context)
 
@@ -79,15 +81,13 @@ AntiGuard. getUnionFingerPrint(Context context)
 | ------- | --------- |
 | Context | APP上下文 |
 
-### 1.5 设置是否采集隐私信息, 默认采集
+### 1.5 设置是否采集设备信息, 默认采集
 
 AntiGuard. setPrivacyPolicyHelper(PrivacyPolicyHelper helper)
 
 PrivacyPolicyHelper接口的 isAgree方法里头返回true采集，返回false不采集
 
-
-
-## 2 、二次验证接口调用
+## 2 、验证码接口调用
 
 ### 2.1 获取验证码实例
 
@@ -205,7 +205,7 @@ ShowCapCallback：验证结果回调
 
    
 
-### 2.3 验证API
+### 2.3 验证码验证API
 
  1.public void init(String session_id, Context context, String udid, CallBack callBack) 
 
@@ -263,7 +263,7 @@ mCallBack:验证码验证码结果回调，类型CallBack或SSLDialogCallback或
 
 \# jma sdk包不混淆
 
--keep class com.jdbusiness.anti.** {*;}
+-keep class com.jdbusiness.anti. {;}
 
 \#确保native方法不被混淆
 
