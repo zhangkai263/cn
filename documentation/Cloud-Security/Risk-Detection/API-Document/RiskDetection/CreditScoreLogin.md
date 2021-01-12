@@ -29,7 +29,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**loginIp**|String|True| |登录IP，用户登录IP，IPV4 或 IPV6|
 |**loginType**|String|True| |登录认证方式，1：手动帐号密码输入；2：动态短信密码登录；3：二维码扫描登录；0其他|
 |**loginName**|String|True| |登录账号名pin，用户登录使用名称|
-|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Brower；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
+|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
 |**deviceName**|String|True| |应用设备名称，PC 端：如果为浏览器说明浏览器名称 IE、firefox、chrome等;移动APP端：请说明移动APP名称|
 |**deviceVersion**|String|True| |应用设备版本，跟deviceName关联，说明deviceName对应的版本|
 |**deviceOS**|String|True| |设备操作系统，说明设备的操作系统，如windows ，openSUSE、debian、ubuntu，unix, android, ios 等。|

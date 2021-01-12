@@ -30,7 +30,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**regEmail**|String|True| |注册邮箱，用户注册邮箱；邮箱注册，必填|
 |**regName**|String|True| |注册账号名，用户注册名称；pin注册，必填|
 |**regType**|Integer|True| |注册类型，1：手机注册；2 ：邮箱注册；3：pin注册；0：其他。|
-|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Brower；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
+|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
 |**timestamp**|Integer|True| |注册时间，用户注册完成时间，UNIX时间戳，精确到毫秒|
 |**elapsedTime**|String|True| |注册占用时长，从用户进入注册页到点击注册提交之间的时间差，单位ms|
 |**macAddress**|String|False| |MAC地址，MAC 地址或设备唯一标识。|

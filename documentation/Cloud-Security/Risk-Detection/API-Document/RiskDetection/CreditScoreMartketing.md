@@ -28,7 +28,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**phone**|String|True| |注册手机号，国内手机：11位手机号;海外手机：以+号开头，4位国家代码+5-11位手机号扩展位；手机注册，必填|
 |**ip**|String|True| |参与活动IP,用户领取奖励时的真实外网 IP（非服务端），IPV4 或 IPV6|
 |**time**|Integer|True| |参与活动时间戳，参与活动时间戳，UNIX时间戳|
-|**channel**|Integer|False| |用户参加活动渠道或终端，1：PC端web浏览器注册 PC-Brower；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
+|**channel**|Integer|False| |用户参加活动渠道或终端，1：PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
 |**referUrlLower**|String|True| |小写referUrl|
 |**loginType**|Integer|False| |登录方式，1：手动帐号密码输入；2：动态短信密码登录；3：二维码扫描登录；0：其他|
 |**lastLoginTime**|Integer|False| |登录时间，用户最近登录完成时间，UNIX时间戳|
@@ -36,7 +36,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**regIp**|String|True| |注册来源的外网 IP，IPV4 或 IPV6|
 |**regType**|Integer|True| |注册类型，1：手机注册；2：邮箱注册；3：pin注册；0：其他。|
 |**regName**|String|True| |注册帐号名，用户注册使用名称|
-|**regChannel**|Integer|True| |注册渠道或注册终端，1： PC端web浏览器注册 PC-Brower；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
+|**regChannel**|Integer|True| |注册渠道或注册终端，1： PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
 |**uid**|String|False| |参加活动设备uid，UID是使用iOS系统非隐私参数，用一套统一规则生成的用于标识苹果手机的ID|
 |**eid**|String|False| |参与活动登录的设备号，设备指纹编码|
 |**macAddress**|String|False| |MAC地址，MAC 地址或设备唯一标识。|
