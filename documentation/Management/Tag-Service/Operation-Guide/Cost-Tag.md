@@ -4,4 +4,4 @@
 ![costtag](../../../../image/Tag/TagFilter/costtag.png)
 
 消费总览页面使用费用标签查询分类账单
-![costoverview](../../../../image/Tag/TagFilter/costoverview.png)
+![costoverview](../../../../image/Tag/CostTag/costtag.png)
