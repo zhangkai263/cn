@@ -11,7 +11,6 @@
 可供筛选的标签以树状结构在筛选框中列出，默认显示标签键，点击标签键前的三角图标，可以展开看到该标签键所对应的标签值。
 
 ![tagfilter](../../../../image/Tag/TagFilter/tagfilter.png)
-
 ![tagfilter-open](../../../../image/Tag/TagFilter/tagfilter-open.png)
 
 点击标签值前的多选框，即为选中该标签作为筛选条件；
