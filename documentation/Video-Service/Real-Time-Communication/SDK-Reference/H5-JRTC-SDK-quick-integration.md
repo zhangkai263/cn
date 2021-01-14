@@ -1,11 +1,13 @@
-# JRTC简介
+#  H5 JRTC SDK快速集成
+
+## JRTC简介
 JRTC的基本功能包含创建实例、加入房间、本地发布、订阅远端和离开房间等。当您成功创建实例，您可以进行本地预览视频功能，进行简单的预览和测试。
 
-# 前提条件
+## 前提条件
 在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见[生成Token](https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token)。
 您需要下载示例代码，详情请参见[SDK下载](http://player.jdcloud-elive.com/app-download/jrtc/jrtc_sdk.zip)。
 
-# 操作步骤
+## 操作步骤
 1.集成SDK。
   > JRTC SDK存放于demo中src/lib文件夹内，可根据自身项目构建需求，调整JRTC SDK存放位置。
   ```js
