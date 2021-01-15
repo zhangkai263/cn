@@ -110,7 +110,7 @@
     - name: 弹性公网IP服务条款
       href: User-Agreements/Product-Terms-of-Service.md
     - name: 弹性公网IP服务等级协议(SLA)
-      href: Elastic-Ip-Level-Agreements-SLA.md   
+      href: User-Agreements/Elastic-Ip-Level-Agreements-SLA.md   
   - name: 相关资源
     items:
     - name: 文档历史记录
