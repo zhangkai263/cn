@@ -15,7 +15,7 @@
 
 将图片文件内人脸进行检测并返回人脸矩形坐标：
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/lena.jpg?x-oss-process=img/analyse/f/1
+http://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=img/analyse/f/1
 
 返回结果：
 ```
