@@ -34,14 +34,16 @@
          
         b. 涉及操作：定义了对该Bucket可以进行的操作，可进行单选也可进行全选，但至少要勾选一项，每项操作定义如下：
 
-        |操作项名称|操作项说明|
+
+|操作项名称|操作项说明|
 |-|-|
-        |PutObject|上传某个Object到该Bucket，支持普通上传和分块上传|
+|PutObject|上传某个Object到该Bucket，支持普通上传和分块上传|
 |GetObject|获取该Bucket内某个Object及其相关信息|
-        |DeleteObject|删除该Bucket内某个Object|
-        |ListBucket|列出该Bucket内的Objcet|
-        |DeleteBucket|删除该Bucket|
-        
+|DeleteObject|删除该Bucket内某个Object|
+|ListBucket|列出该Bucket内的Objcet|
+|DeleteBucket|删除该Bucket|
+
+
         c. 影响资源：定义了对该Bucket下的哪些资源可操作或不可操作（即Allow或Deny），默认选中“可操作资源”，文本框中默认值为bucketname/*，语义为对当前Bucket下的全部资源是可操作的，输入格式示例：myBucket/myfolder/object* ，myBucket/*，内容必须以Bucket名称开始，资源如果只有1个斜杠，不能以斜杠结尾，资源可以设置多个，每行1个且每行最多1个通配符，最多可以增加10条记录。
         
         d. Referer白名单：由于京东云对象存储是按用量收费，为避免您存储在京东云对象存储的数据被其他人盗链，京东云对象存储支持基于HTTP Header中表头字段的Referer防盗链方法，您可以在对象存储控制台的自定义权限中或者通过API的方式对一个Bucket设置Referer字段的白名单和是否允许Referer为空的请求访问，下文会对Referer白名单的规则作出详解。
