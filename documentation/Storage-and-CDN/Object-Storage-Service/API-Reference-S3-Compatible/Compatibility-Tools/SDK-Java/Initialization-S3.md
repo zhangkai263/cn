@@ -50,7 +50,6 @@ public class S3SdkTest{
                 .withClientConfiguration(config)
                 .withCredentials(awsCredentialsProvider)
                 .disableChunkedEncoding()
-                .withPathStyleAccessEnabled(true)
                 .build();
     }
 }
