@@ -97,8 +97,7 @@ s3:ObjectRemoved:Delete |删除文件
 
 **说明**
 
-*  发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证]
-(https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
+*  发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证](https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
 *  消息通知格式参见[消息通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
 
 8.此外，您可通过控制台，编辑或者删除事件通知规则。
