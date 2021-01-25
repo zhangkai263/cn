@@ -45,6 +45,12 @@ items:
   items:
   - name: 操作指南
     href: Operation-Guide/Guide.md
+- name: 开发指南
+  items:
+  - name: 端口配置与文件路径
+    href: Developer/clusterPorts-filePaths.md
+  - name: 集群运维
+    href: Developer/cluster-operations.md
 - name: 最佳实践
   items:
   - name: 离线分析
