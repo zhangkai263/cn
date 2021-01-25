@@ -45,7 +45,7 @@
 
 - 加密套件等级：**勾选HTTPS协议后开关可见**，默认勾选中级，如遇到安全扫描显示低版本加密套件问题，建议勾选加密等级为高级。
 
-- 转发规则：支持轮询和源IP hash。
+- 转发规则：支持轮询、源IP hash和加权轮询。
 
 - 回源方式：可选择回源IP或回源域名。其中回源IP（云内+云外）支持20个IP地址，回源域名支持1个。源站域名不能和防护域名一样。**注意，源站IP不允许填写内网地址，如源站为港澳台或海外地区，请用户自行确认网络延迟和稳定性是否满足要求，如延迟过高，接入IP高防可能出现超时现象，此场景建议使用京东智联云SCDN产品海外线路**。
 
@@ -64,6 +64,9 @@
 6. 网站转发规则配置中如勾选HTTPS，在规则列表中，需要点击关联SSL数字证书。点击上传按钮，在证书管理界面可选择已上传的证书。如首次上传证书，点击 **管理证书** 按钮跳转SSL数字证书控制台界面上传证书，详情参考[上传SSL证书](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/SSL-Certificate/Operation-Guide/Upload-SSL-Certificate.md)
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2013.png)
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2014.png)
+
+7. 网站转发规则支持批量删除、开/关CC防护模式、开/关CC观察模式、切换防御/回源模式。
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/batch-operate02.PNG)
 
 ## 相关参考
 
