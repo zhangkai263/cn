@@ -29,7 +29,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**loginIp**|String|True| |登录IP，用户登录IP，IPV4 或 IPV6|
 |**loginType**|String|True| |登录认证方式，1：手动帐号密码输入；2：动态短信密码登录；3：二维码扫描登录；0其他|
 |**loginName**|String|True| |登录账号名pin，用户登录使用名称|
-|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Brower；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
+|**channel**|Integer|True| |注册渠道或注册终端，1：PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
 |**deviceName**|String|True| |应用设备名称，PC 端：如果为浏览器说明浏览器名称 IE、firefox、chrome等;移动APP端：请说明移动APP名称|
 |**deviceVersion**|String|True| |应用设备版本，跟deviceName关联，说明deviceName对应的版本|
 |**deviceOS**|String|True| |设备操作系统，说明设备的操作系统，如windows ，openSUSE、debian、ubuntu，unix, android, ios 等。|
@@ -79,7 +79,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |名称|类型|描述|
 |---|---|---|
 |**riskTag**|String|风险类型，对应riskCode的中文描述|
-|**riskCode**|String|风险类型编码，对应riskCode的分类：<br/>201-207手机综合风险，包括201-猫池小号、202-异常注册、203-异常登录、204-营销刷券、205-下单黄牛、206-异常支付、207-恶意售后<br/>501-506IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP<br/>600-604注册综合风险，包括600：其他、601：机器批量注册、602：代理IP注册、603：黑卡注册、604：垃圾小号注册<br/>700-703登录综合风险，包括700：其他、701：机器批量登录、702：撞库登录、703：代理IP登录<br/>800-803营销综合风险，包括800：其他、801：批量刷券、802：黑手机、803：黑设备|
+|**riskCode**|String|风险类型编码，对应riskCode的分类：<br/>201-207手机综合风险，包括201-异常注册、202-异常登录、203-营销刷券、204-下单黄牛、205-异常支付、206-恶意售后、207-猫池小号<br/>501-507IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP、507-爬虫IP<br/>600-604注册综合风险，包括600：其他、601：机器批量注册、602：代理IP注册、603：黑卡注册、604：垃圾小号注册<br/>700-703登录综合风险，包括700：其他、701：机器批量登录、702：撞库登录、703：代理IP登录<br/>800-803营销综合风险，包括800：其他、801：批量刷券、802：黑手机、803：黑设备|
 |**riskClass**|String|风险分类，包括ip、phone、addr、login，signup，marketing|
 |**score**|String|风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
 |**scoreDesc**|String|对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
