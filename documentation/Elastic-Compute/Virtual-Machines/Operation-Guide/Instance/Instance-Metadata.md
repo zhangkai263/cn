@@ -21,15 +21,15 @@
 | placement/availability-zone | 实例所属可用区 | "cn-north-1c"|
 | image/image-id | 创建实例使用的镜像ID | "img-ix4782iy3c" |
 | image/os-type | 实例操作系统类型 | "linux" |
-| network/_serial-no_/| 实例网卡[serial-no]的属性目录，[serial-no]为网卡相对索引，从1开始（主网卡为1） |["local-ipv4","floating-ipv4","mac","network-interface-id","subnet-id","security-group-ids"]
-| network/_serial-no_/local-ipv4 | 实例网卡[serial-no]的内网IPv4地址 | "10.0.128.6"
-| network/_serial-no_/floating-ipv4 | 实例网卡[serial-no]的弹性公网IPv4地址 | "11x.xx.xx.xx"
-| network/_serial-no_/mac | 实例网卡[serial-no]的mac地址 | "02:29:96:8f:xx:xx"
-| network/_serial-no_/network-interface-id| 实例网卡[serial-no]的ID | 	"port-a2uvxxxxxx"
-| network/_serial-no_/subnet-id| 实例网卡[serial-no]所属的子网ID|"subnet-1vfnyxxxxx"
-| network/_serial-no_/security-group-ids| 实例网卡[serial-no]所绑定的安全组 | ["sg-wx0ivnxxxx","sg-jh8ebvxxxx"]
+| network/[serial-no]/| 实例网卡[serial-no]的属性目录，[serial-no]为网卡相对索引，从1开始（主网卡为1） |["local-ipv4","floating-ipv4","mac","network-interface-id","subnet-id","security-group-ids"]
+| network/[serial-no]/local-ipv4 | 实例网卡[serial-no]的内网IPv4地址 | "10.0.128.6"
+| network/[serial-no]/floating-ipv4 | 实例网卡[serial-no]的弹性公网IPv4地址 | "11x.xx.xx.xx"
+| network/[serial-no]/mac | 实例网卡[serial-no]的mac地址 | "02:29:96:8f:xx:xx"
+| network/[serial-no]/network-interface-id| 实例网卡[serial-no]的ID | 	"port-a2uvxxxxxx"
+| network/[serial-no]/subnet-id| 实例网卡[serial-no]所属的子网ID|"subnet-1vfnyxxxxx"
+| network/[serial-no]/security-group-ids| 实例网卡[serial-no]所绑定的安全组 | ["sg-wx0ivnxxxx","sg-jh8ebvxxxx"]
 | attributes/customdata/userdata/launch-script | 用户自定义启动脚本，base64后结果 |"IyEvYmluL2Jhc2gKZWNobyAnaGVsbG8n"
-| attributes/customdata/custom-metadata/_key_ | 用户自定义元数据[key]对应的value值|
+| attributes/customdata/custom-metadata/[key]| 用户自定义元数据[key]对应的value值|
 
 
 ## 查看元数据
