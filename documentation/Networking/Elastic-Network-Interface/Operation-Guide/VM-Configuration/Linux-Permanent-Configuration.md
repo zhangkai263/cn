@@ -23,15 +23,16 @@
 
 
 
-#### [配置CentOS 6.9或CentOS 7.6](Linux-Permanent-Configuration#user-content-1)
+#### [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
 
 
-#### [配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04](Linux-Permanent-Configuration#user-content-2)
+#### [配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04](linux-permanent-configuration#user-content-2)
 
 
 
 #### 配置CentOS 6.9或CentOS 7.6
 <div id="user-content-1"></div>
+
 步骤1：通过ssh登录云主机1
 
 步骤2：通过以下命令查看云主机1的网卡
@@ -66,7 +67,7 @@ vi /etc/sysconfig/network-scripts/[route-eth1]
 
 ```
 default via [10.0.16.1] dev [eth1] table [1000] pref [100]    	  #配置网关
-[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]		  #配置路由
+[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]		        #配置路由
 ```
 
 步骤7：配置永久策略路由，执行以下命令打开文件：
@@ -84,9 +85,9 @@ from [10.0.16.3] table [1000]
 CentOS  7.6需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
 
 ```
-yum install NetworkManager-config-routing-rules 		#安装服务
+yum install NetworkManager-config-routing-rules 		  #安装服务
 systemctl enable NetworkManager-dispatcher.service 		#使服务可用
-systemctl start NetworkManager-dispatcher.service		#启动服务
+systemctl start NetworkManager-dispatcher.service		  #启动服务
 ```
 
 步骤9：执行以下命令重启网络服务：
@@ -99,7 +100,7 @@ service network restart
 
 ```
 ping [10.0.32.5]    #ping主网卡IP
-ping [10.0.16.3]	#ping辅助网卡IP
+ping [10.0.16.3]	  #ping辅助网卡IP
 ```
 
 
@@ -134,9 +135,9 @@ vi /etc/network/interfaces.d/[51-eth1].cfg
 步骤4：将以下命令添加到上述文件中，本例中添加的辅助网卡是eth1，具体配置信息根据实际情况进行配置
 
 ```
-auto [eth1]						##辅助网卡名称
+auto [eth1]						      #辅助网卡名称
 iface [eth1] inet static
-address [172.16.64.3]			#辅助网卡的主IP
+address [172.16.64.3]			  #辅助网卡的主IP
 netmask [255.255.240.0]			#辅助网卡IP的子网掩码
 
 # 配置默认网关
@@ -165,8 +166,8 @@ systemctl restart networking
 步骤6：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功
 
 ```
-ping [172.16.0.4]    #ping主网卡IP
-ping [172.16.64.3]	#ping辅助网卡IP
+ping [172.16.0.4]     #ping主网卡IP
+ping [172.16.64.3]	  #ping辅助网卡IP
 ```
 
 
@@ -224,7 +225,7 @@ netplan --debug apply
 步骤6：验证配置，使用云主机2分别ping 云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
-ping [172.16.0.4]    #ping主网卡IP
-ping [172.16.64.3]	#ping辅助网卡I:P
+ping [172.16.0.4]     #ping主网卡IP
+ping [172.16.64.3]	  #ping辅助网卡I:P
 ```
 
