@@ -48,11 +48,11 @@ vi /etc/sysconfig/network-scripts/[ifcfg-eth1]
 步骤4：在网卡配置文件中加入配置信息：
 
 ```
-DEVICE=[eth1]				        #辅助网卡名称，本例中为eth1
+DEVICE=[eth1]                   #辅助网卡名称，本例中为eth1
 NM_CONTROLLED=yes
 ONBOOT=yes
-IPADDR=[10.0.16.3]         	#辅助网卡的主IP
-NETMASK=[255.255.240.0]		  #辅助网卡IP的子网掩码
+IPADDR=[10.0.16.3]              #辅助网卡的主IP
+NETMASK=[255.255.240.0]         #辅助网卡IP的子网掩码
 ```
 
 步骤5：配置永久路由，执行以下命令打开文件
@@ -64,8 +64,8 @@ vi /etc/sysconfig/network-scripts/[route-eth1]
 步骤6：在文件中增加命令行，添加路由规则，本例如下，具体需根据您网络配置实际情况填写：
 
 ```
-default via [10.0.16.1] dev [eth1] table [1000] pref [100]    	  #配置网关
-[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]		        #配置路由
+default via [10.0.16.1] dev [eth1] table [1000] pref [100]          #配置网关
+[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]              配置路由
 ```
 
 步骤7：配置永久策略路由，执行以下命令打开文件：
@@ -83,9 +83,9 @@ from [10.0.16.3] table [1000]
 CentOS  7.6需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
 
 ```
-yum install NetworkManager-config-routing-rules 		  # 安装服务
-systemctl enable NetworkManager-dispatcher.service 		# 使服务可用
-systemctl start NetworkManager-dispatcher.service		  # 启动服务
+yum install NetworkManager-config-routing-rules 		    # 安装服务
+systemctl enable NetworkManager-dispatcher.service 		  # 使服务可用
+systemctl start NetworkManager-dispatcher.service		    # 启动服务
 ```
 
 步骤9：执行以下命令重启网络服务：
@@ -97,8 +97,8 @@ service network restart
 步骤10：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功
 
 ```
-ping [10.0.32.5]       # ping主网卡IP
-ping [10.0.16.3]	     # ping辅助网卡IP
+ping [10.0.32.5]          # ping主网卡IP
+ping [10.0.16.3]	        # ping辅助网卡IP
 ```
 
 
@@ -132,10 +132,10 @@ vi /etc/network/interfaces.d/[51-eth1].cfg
 步骤4：将以下命令添加到上述文件中，本例中添加的辅助网卡是eth1，具体配置信息根据实际情况进行配置
 
 ```
-auto [eth1]						      # 辅助网卡名称
+auto [eth1]						          # 辅助网卡名称
 iface [eth1] inet static
-address [172.16.64.3]			  # 辅助网卡的主IP
-netmask [255.255.240.0]			# 辅助网卡IP的子网掩码
+address [172.16.64.3]			      # 辅助网卡的主IP
+netmask [255.255.240.0]			    # 辅助网卡IP的子网掩码
 
 # 配置默认网关
 up ip route add default via [172.16.64.1] dev [eth1] table [100]
@@ -163,8 +163,8 @@ systemctl restart networking
 步骤6：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功
 
 ```
-ping [172.16.0.4]     # ping主网卡IP
-ping [172.16.64.3]	  # ping辅助网卡IP
+ping [172.16.0.4]       # ping主网卡IP
+ping [172.16.64.3]	    # ping辅助网卡IP
 ```
 
 
@@ -197,17 +197,17 @@ network:
   ethernets:
     [eth1]:
       addresses:
-       - [172.16.0.6/20]        # 辅助网卡IP地址，可配置多个
+       - [172.16.0.6/20]            # 辅助网卡IP地址，可配置多个
       dhcp4: no
-      routes:              	    # 配置路由表
+      routes:              	        # 配置路由表
         - to: 0.0.0.0/0
-         via: [172.16.0.1]      # 默认网关，为辅助网卡所在子网的首个地址
+         via: [172.16.0.1]          # 默认网关，为辅助网卡所在子网的首个地址
          table: [1000]
         - to: [172.16.0.6]
          via: 0.0.0.0
          scope: link
          table: [1000]
-      routing-policy:           # 配置策略路由
+      routing-policy:               # 配置策略路由
         - from: [172.16.0.6]
           table: [1000]
 ```
@@ -223,7 +223,7 @@ netplan --debug apply
 步骤6：验证配置，使用云主机2分别ping 云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
-ping [172.16.0.4]       # ping主网卡IP
-ping [172.16.64.3]	    # ping辅助网卡I:P
+ping [172.16.0.4]             # ping主网卡IP
+ping [172.16.64.3]	          # ping辅助网卡I:P
 ```
 
