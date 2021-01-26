@@ -4,7 +4,7 @@
 
 - [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
 - [配置Ubuntu 14.04、Ubuntu 16.04](linux-permanent-configuration#user-content-2)
-- [配置Ubuntu 18.04](linux-permanent-configuration#user-content-3
+- [配置Ubuntu 18.04](linux-permanent-configuration#user-content-3)
 
 
 ### 场景概述
