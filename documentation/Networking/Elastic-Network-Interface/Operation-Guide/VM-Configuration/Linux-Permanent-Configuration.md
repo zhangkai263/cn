@@ -2,6 +2,11 @@
 
 本文将介绍如何在Linux中配置弹性网卡相关信息，Linux包括CentOS和Ubuntu两种镜像类型，且不同版本的镜像配置弹性网卡步骤稍有不同，下面将对有差异的版本分别进行详细介绍。
 
+- [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
+- [配置Ubuntu 14.04、Ubuntu 16.04](linux-permanent-configuration#user-content-2)
+- [配置Ubuntu 18.04](linux-permanent-configuration#user-content-3
+
+
 ### 场景概述
 
 当服务器只有单个网卡无法满足您的业务需求时，您需要使用辅助网卡，使用辅助网卡需配置策略路由，使网卡的进出流量能够同进同出，否则会出现网卡不可用的情况。
@@ -20,13 +25,6 @@
 ```
 注：中括号中的内容需您根据您实际配置自行填写
 ```
-
-
-
-#### [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
-
-
-#### [配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04](linux-permanent-configuration#user-content-2)
 
 
 
@@ -105,10 +103,9 @@ ping [10.0.16.3]	     # ping辅助网卡IP
 
 
 
-#### 配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04
+#### 配置Ubuntu 14.04、Ubuntu 16.04
 <div id="user-content-2"></div>
 
-##### 配置Ubuntu 14.04、Ubuntu 16.04
 
 步骤1：通过ssh登录云主机1
 
@@ -172,7 +169,8 @@ ping [172.16.64.3]	  # ping辅助网卡IP
 
 
 
-##### 配置Ubuntu18.04
+#### 配置Ubuntu18.04
+<div id="user-content-3"></div>
 
 步骤1：通过ssh登录云主机
 
