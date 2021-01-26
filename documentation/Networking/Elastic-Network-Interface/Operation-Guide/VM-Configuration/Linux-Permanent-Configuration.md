@@ -7,8 +7,9 @@
 当服务器只有单个网卡无法满足您的业务需求时，您需要使用辅助网卡，使用辅助网卡需配置策略路由，使网卡的进出流量能够同进同出，否则会出现网卡不可用的情况。
 
 本教程基于下图所示场景进行介绍如何配置辅助网卡，在VPC不同的子网中分别创建云主机1、云主机2及辅助网卡，其中云主机1已绑定辅助网卡，如未绑定请参考[绑定网卡](../Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)。对云主机1的辅助网卡进行配置，使云主机2能分别ping通云主机1的主/辅网卡IP地址。
-
+```
 注：windows镜像不支持策略路由，如使用多网卡，仅支持同网段资源访问，本例不适用于windows。
+```
 ![eniforvm](../../../../../image/Networking/Elastic-Network-Interface/eni-004.png)
 
 ### 配置步骤
