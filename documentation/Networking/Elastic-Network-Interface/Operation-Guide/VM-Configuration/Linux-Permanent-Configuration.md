@@ -23,15 +23,15 @@
 
 
 
-#### [配置CentOS 6.9或CentOS 7.6](6.9  7.6)
+#### [配置CentOS 6.9或CentOS 7.6](Linux-Permanent-Configuration#user-content-1)
 
 
-#### [配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04](14、16、18)
+#### [配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04](Linux-Permanent-Configuration#user-content-2)
 
 
 
 #### 配置CentOS 6.9或CentOS 7.6
-
+<div id="user-content-1"></div>
 步骤1：通过ssh登录云主机1
 
 步骤2：通过以下命令查看云主机1的网卡
@@ -105,6 +105,7 @@ ping [10.0.16.3]	#ping辅助网卡IP
 
 
 #### 配置Ubuntu 14.04、Ubuntu 16.04或Ubuntu 18.04
+<div id="user-content-2"></div>
 
 ##### 配置Ubuntu 14.04、Ubuntu 16.04
 
