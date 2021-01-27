@@ -90,6 +90,7 @@ systemctl start NetworkManager-dispatcher.service         # 启动服务
 ```
 
 步骤9：执行以下命令重启网络服务：
+
 CentOS6.9
 ```
 service network restart
