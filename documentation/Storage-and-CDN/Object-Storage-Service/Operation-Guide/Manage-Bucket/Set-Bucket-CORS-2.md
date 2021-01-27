@@ -41,11 +41,33 @@ http://test.jdcloud.com/other.html |需要|域名不同
 
 2.在“跨域访问设置”功能区域，下方是CORS规则列表，默认每个Bucket最多支持10条规则。规则列表的各字段说明如下：
 
-a.来源Allowed Origin：允许跨域请求的来源，可以同时指定多个。配置时需带上完整的域信息，例如http://10.100.100.100:8001 或https://www.jcloud.com 。注意， 不要遗漏了协议名http或https，如果端口不是默认的80，还需要带上端口。如果不能确定的域名，可以打开浏览器的调试功能，查看header中的Origin。域名支持通配符\*，每个域名中允许最多使用一个\*，例如https://\*.jcloud.com 。如果来源指定为\*，则表示允许所有来源的跨域请求。
+**来源Allowed Origin**：允许跨域请求的来源。
 
-b.Allowed Method：按照需求开通对应的方法即可，如GET、PUT、POST、HEAD、DELETE，可以全选。
+- 来源可以设置多个，每行一个。
 
-c.Allowed Headers：允许的跨域请求header，可以配置多条匹配规则，以回车间隔。在Access-Control-Request-Headers中指定的每个header，都必须在Allowed Header中有对应项。Header容易遗漏，没有特殊需求的情况下，建议设置为*，表示允许所有。大小写不敏感；当CORS规则列表页中同一个规则内当有多条记录时换行展示时，不做缩略处理，每行记录如果超出列宽限制，后缀以...展示。
+- 支持单个具体域名，例如http://www.jdcloud.com
+
+- 支持二级以上泛域名，但每行只能有一个* 号。例如http://* .jdcloud.com。
+
+- http:// 或 https:// 必须携带。
+
+- 支持设置为IP（可以是IPv4或IPv6），但不推荐。
+
+- 支持在域名或IP后加端口号。
+
+**Allowed Method**：按照需求开通对应的方法即可，如GET、PUT、POST、HEAD、DELETE，可以全选。
+
+**Allowed Headers**：允许的跨域请求header。
+
+- 可以配置多条匹配规则，以回车间隔。
+
+- 在Access-Control-Request-Headers中指定的每个header，都必须在Allowed Header中有对应项。
+
+- Header容易遗漏，没有特殊需求的情况下，建议设置为* ，表示允许所有。
+
+- 大小写不敏感，设置为大写或小写都没有区别。
+
+- 当CORS规则列表页中同一个规则内当有多条记录时换行展示时，不做缩略处理，每行记录如果超出列宽限制，后缀以...展示。
 
 d.Exposed Headers：暴露给浏览器的header列表，即用户从应用程序中访问的响应头（例如一个Javascript的XMLHttpRequest对象）。不允许使用通配符。具体的配置需要根据应用的需求确定，只暴露需要使用的header。如果不需要暴露可以不填。大小写不敏感，该项是可选配置项；当CORS规则列表页中同一个规则内有多条记录时换行展示时，不做缩略处理，每行记录如果超出列宽限制，后缀以...展示。
 
