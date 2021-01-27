@@ -28,7 +28,7 @@
 
 
 
-#### 配置CentOS 6.9或CentOS 7.6
+### 配置CentOS 6.9或CentOS 7.6
 <div id="user-content-1"></div>
 
 步骤1：通过ssh登录云主机1
@@ -103,7 +103,7 @@ ping [10.0.16.3]          # ping弹性网卡IP
 
 
 
-#### 配置Ubuntu 14.04、Ubuntu 16.04
+### 配置Ubuntu 14.04、Ubuntu 16.04
 <div id="user-content-2"></div>
 
 
@@ -169,7 +169,7 @@ ping [172.16.64.3]      # ping弹性网卡IP
 
 
 
-#### 配置Ubuntu18.04
+### 配置Ubuntu18.04
 <div id="user-content-3"></div>
 
 步骤1：通过ssh登录云主机
