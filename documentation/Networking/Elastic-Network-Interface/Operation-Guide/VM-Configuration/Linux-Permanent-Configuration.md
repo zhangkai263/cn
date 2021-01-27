@@ -223,6 +223,6 @@ netplan --debug apply
 
 ```
 ping [172.16.0.4]             # ping主网卡IP
-ping [172.16.64.3]            # ping弹性网卡I:P
+ping [172.16.64.3]            # ping弹性网卡IP
 ```
 
