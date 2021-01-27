@@ -90,9 +90,14 @@ systemctl start NetworkManager-dispatcher.service         # 启动服务
 ```
 
 步骤9：执行以下命令重启网络服务：
-
-``` 
+CentOS6.9
+```
 service network restart
+```
+
+CantOS 7.6
+``` 
+systemctl restart network
 ```
 
 步骤10：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
