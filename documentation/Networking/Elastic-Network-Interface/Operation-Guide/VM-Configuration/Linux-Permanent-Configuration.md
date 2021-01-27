@@ -11,7 +11,7 @@
 
 当单个网卡无法满足您的业务需求时，您需要使用弹性网卡，使用弹性网卡需配置策略路由，使流量从某个网卡进后能从该网卡返回，否则会出现网卡不可用的情况。
 
-本教程基于下图所示场景介绍如何配置弹性网卡，在VPC不同的子网中分别创建云主机1、云主机2及弹性网卡，其中云主机1已绑定弹性网卡，如未绑定请参考[绑定网卡](../Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)。对云主机1的弹性网卡进行配置，使云主机2能分别ping通云主机1的主/辅网卡IP地址（本文中所提“辅网卡”均为弹性网卡）。
+本教程基于下图所示场景介绍如何配置弹性网卡，在VPC不同的子网中分别创建云主机1、云主机2及弹性网卡，其中云主机1已绑定弹性网卡，如未绑定请参考[绑定网卡](../Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)。对云主机1的弹性网卡进行配置，使云主机2能分别ping通云主机1的主/辅网卡IP地址（本文中所提“辅网卡”均指弹性网卡）。
 ```
 注：windows镜像不支持策略路由，如使用多网卡，仅支持同网段资源访问，本例不适用于windows。
 ```
@@ -74,7 +74,7 @@ default via [10.0.16.1] dev [eth1] table [1000] pref [100]          #配置网�
 vi /etc/sysconfig/network-scripts/[rule-eth1]
 ```
 
-步骤8：在文件中添加以下命令行，配置策略路由：
+步骤8：在文件中添加以下命令行，配置路由策略：
 
 ```
 from [10.0.16.3] table [1000]			
@@ -140,7 +140,7 @@ netmask [255.255.240.0]         # 弹性网卡IP的子网掩码
 # 配置默认网关
 up ip route add default via [172.16.64.1] dev [eth1] table [100]
 
-# 配置路由表及策略路由
+# 配置路由及路由策略
 up ip route add [172.16.64.3] dev [eth1] table [100]
 up ip rule add from [172.16.64.3] lookup [100]
 
@@ -206,12 +206,12 @@ network:
          via: 0.0.0.0
          scope: link
          table: [1000]
-      routing-policy:               # 配置策略路由
+      routing-policy:               # 配置路由策略
         - from: [172.16.0.6]
           table: [1000]
 ```
 
-注：上述配置信息采用了yaml语法格式编辑，yaml语法对缩进有严格要求，如缩进不一致执行下一步将会报错。
+注：上述配置信息采用了yaml语法格式编辑，yaml语法对缩进有严格要求，如缩进不一致执行下一步时将会报错。
 
 步骤5：执行如下命令，使网络配置生效：
 
