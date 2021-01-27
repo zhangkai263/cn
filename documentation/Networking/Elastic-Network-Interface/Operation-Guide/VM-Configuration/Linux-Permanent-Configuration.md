@@ -1,6 +1,6 @@
 # Linux服务器弹性网卡配置
 
-本文将介绍如何在Linux中配置弹性网卡相关信息，Linux包括CentOS和Ubuntu两种镜像类型，且不同版本的镜像配置弹性网卡步骤稍有不同，下面将对有差异的版本分别进行详细介绍。
+本文将介绍如何在Linux中配置弹性网卡，Linux包括多种镜像类型，且不同版本的镜像配置弹性网卡步骤稍有不同，本文以CentOS和Ubuntu两种镜像为例，对有差异的版本分别进行详细介绍。
 
 - [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
 - [配置Ubuntu 14.04、Ubuntu 16.04](linux-permanent-configuration#user-content-2)
@@ -9,7 +9,7 @@
 
 ### 场景概述
 
-当单个网卡无法满足您的业务需求时，您需要使用弹性网卡，使用弹性网卡需配置策略路由，使各个网卡的进出流量能够同进同出，否则会出现网卡不可用的情况。
+当单个网卡无法满足您的业务需求时，您需要使用弹性网卡，使用弹性网卡需配置策略路由，使流量从某个网卡进后能从该网卡返回，否则会出现网卡不可用的情况。
 
 本教程基于下图所示场景介绍如何配置弹性网卡，在VPC不同的子网中分别创建云主机1、云主机2及弹性网卡，其中云主机1已绑定弹性网卡，如未绑定请参考[绑定网卡](../Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)。对云主机1的弹性网卡进行配置，使云主机2能分别ping通云主机1的主/辅网卡IP地址（本文中所提“辅网卡”均为弹性网卡）。
 ```
@@ -55,7 +55,7 @@ IPADDR=[10.0.16.3]              #弹性网卡的主IP
 NETMASK=[255.255.240.0]         #弹性网卡IP的子网掩码
 ```
 
-步骤5：配置永久路由，执行以下命令打开文件
+步骤5：配置路由，执行以下命令打开文件
 
 ```
 vi /etc/sysconfig/network-scripts/[route-eth1]
@@ -68,7 +68,7 @@ default via [10.0.16.1] dev [eth1] table [1000] pref [100]          #配置网�
 [10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]              #配置路由
 ```
 
-步骤7：配置永久策略路由，执行以下命令打开文件：
+步骤7：配置路由策略，执行以下命令打开文件：
 
 ```
 vi /etc/sysconfig/network-scripts/[rule-eth1]
@@ -211,7 +211,7 @@ network:
           table: [1000]
 ```
 
-注：上述配置信息使用了netplan网络配置，netplan使用yaml语言的语法格式编辑，否则netplan命令会报错。
+注：上述配置信息采用了yaml语法格式编辑，yaml语法对缩进有严格要求，如缩进不一致执行下一步将会报错。
 
 步骤5：执行如下命令，使网络配置生效：
 
