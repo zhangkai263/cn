@@ -13,6 +13,7 @@
 
 本教程基于下图所示场景介绍如何配置弹性网卡，在VPC不同的子网中分别创建云主机1、云主机2及弹性网卡，其中云主机1已绑定弹性网卡，如未绑定请参考[绑定网卡](../Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md)。对云主机1的弹性网卡进行配置，使云主机2能分别ping通云主机1的主/辅网卡IP地址（本文中所提“辅网卡”均指弹性网卡）。
 ```
+
 注：windows镜像不支持策略路由，如使用多网卡，仅支持同网段资源访问，本例不适用于windows。
 ```
 ![eniforvm](../../../../../image/Networking/Elastic-Network-Interface/eni-004.png)
@@ -68,7 +69,7 @@ default via [10.0.16.1] dev [eth1] table [1000] pref [100]          #配置网�
 [10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]              #配置路由
 ```
 
-步骤7：配置路由策略，执行以下命令打开文件：
+步骤7：配置策略路由规则，执行以下命令打开文件：
 
 ```
 vi /etc/sysconfig/network-scripts/[rule-eth1]
