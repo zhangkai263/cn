@@ -98,7 +98,7 @@ service network restart
 
 ```
 ping [10.0.32.5]          # ping主网卡IP
-ping [10.0.16.3]	        # ping辅助网卡IP
+ping [10.0.16.3]          # ping辅助网卡IP
 ```
 
 
