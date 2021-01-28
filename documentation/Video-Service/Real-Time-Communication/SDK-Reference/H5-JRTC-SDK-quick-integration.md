@@ -5,7 +5,7 @@ JRTC的基本功能包含创建实例、加入房间、本地发布、订阅远�
 
 ## 前提条件
 在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见[生成Token](https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token)。
-您需要下载示例代码，详情请参见[SDK下载](http://player.jdcloud-elive.com/app-download/jrtc/jrtc_sdk.zip)。
+您需要下载示例代码，详情请参见[SDK下载](https://docs.jdcloud.com/cn/real-time-communication/sdk/sdk-download)。
 
 ## 操作步骤
 1.集成SDK。
