@@ -1,29 +1,30 @@
-# createRoom
+# describeRoomInfo
 
 
 ## 描述
-创建房间
+获取房间信息
 
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/createRoom
+https://openjrtc.jdcloud-api.com/v1/rooms/{appId}
 
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**appId**|String|True| |应用ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**roomName**|String|True| |房间名称|
-|**appId**|String|True| |应用ID|
-|**peerId**|Long|True| |用户ID(创建者ID)|
+|**roomId**|Long|True| |房间ID|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createroom#result)|房间信息|
+|**result**|[Result](describeroominfo#result)|房间信息|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
@@ -42,9 +43,9 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 |**200**|OK|
 
 ## 请求示例
-POST
+GET
 ```
-https://openjrtc.jdcloud-api.com/v1/createRoom
+https://openjrtc.jdcloud-api.com/v1/rooms/febf9a1401763b06490e14739c4be622?roomId=1
 
 ```
 

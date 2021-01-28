@@ -1,19 +1,19 @@
-# describeRoomOnlineUserNum
+# describeAppKey
 
 
 ## 描述
-查询房间实时在线人数
+查询应用appKey
 
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
+https://openjrtc.jdcloud-api.com/v1/applications/{appId}:describeAppKey
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**roomId**|Long|True| |房间ID|
+|**appId**|String|True| |应用ID|
 
 ## 请求参数
 无
@@ -22,16 +22,14 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeroomonlineusernum#result)|房间实时在线人数|
+|**result**|[Result](describeappkey#result)|查询用户应用列表结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**appId**|String|应用ID|
-|**roomId**|Long|房间ID|
-|**number**|Integer|房间在线人数|
-|**createTime**|String|创建时间UTC|
+|**appKey**|String|appKey|
 
 ## 返回码
 |返回码|描述|
@@ -46,7 +44,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 ## 请求示例
 GET
 ```
-https://openjrtc.jdcloud-api.com/v1/describeOnlineUserNum/252
+https://openjrtc.jdcloud-api.com/v1/applications/9f3440230172c69b5e01b1ad1ea7c6c7:describeAppKey
 
 ```
 
@@ -57,11 +55,8 @@ https://openjrtc.jdcloud-api.com/v1/describeOnlineUserNum/252
     "error": null, 
     "requestId": "10-12-221-161-37013926-7f4f-4ffa-b352-8328defc377c", 
     "result": {
-        "appId": "febf9a1401763b06490e14739c4be622", 
-        "createTime": "2020-12-08T02:23:37Z", 
-        "number": 100, 
-        "roomId": 252, 
-        "userId": 9527
+        "appId": "9f3440230172c69b5e01b1ad1ea7c6c7", 
+        "appKey": "+RSB8FerWxzThgLEMe1/OlOTY92KWpyQZmuvOM74vJ3Q1kXTTcV3Hk5SEVaa2hOF/LX0CLJdzCL3Jcr+ma7I8Q=="
     }
 }
 ```
