@@ -47,6 +47,8 @@ items:
             href: Video/getVideoPlayInfo.md
           - name: 删除视频转码流信息
             href: Video/deleteVideoStreams.md
+          - name: 获取视频源文件信息
+            href: Video/getVideoSourceInfo.md
       - name: 转码模板管理
         items:
           - name: 查询转码模板列表
@@ -74,9 +76,9 @@ items:
       - name: 视频转码
         items:
           - name: 提交转码作业
-            href: Transcode-Task/submitTranscodeJob.md
+            href: Transcode/submitTranscodeJob.md
           - name: 批量提交转码作业
-            href: Transcode-Task/batchSubmitTranscodeJobs.md
+            href: Transcode/batchSubmitTranscodeJobs.md
       - name: 质检模板管理
         items:
           - name: 查询质检模板列表

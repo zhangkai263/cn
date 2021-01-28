@@ -21,6 +21,7 @@ https://cdn.jdcloud-api.com/v1/console:common
 |**isp**|String|False| |isp|
 |**fields**|String|False| |查询的字段|
 |**period**|String|False| |查询周期|
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数

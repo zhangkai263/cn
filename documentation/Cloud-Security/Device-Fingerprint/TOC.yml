@@ -28,7 +28,9 @@ items:
       - name: 更新历史
         href: API-Document/ChangeLog.md
       - name: 获取设备标签接口
-        href: API-Document/eidScore.md    
+        href: API-Document/eidScore.md
+      - name: 标签列表
+        href: API-Document/label.md       
   - name: SDK接入
     items:
       - name: Android SDK接入

@@ -70,6 +70,7 @@ Header特别提示:
 |x-amz-signature|字符串|签名字符串<br>默认值：无|对于需要签名的请求来说是必须的|
 |x-amz-storage-class|字符串|Object的存储类型<br> 默认值：STANDARD（标准存储）<br>有效值：STANDARD（标准存储）、GLACIER（归档存储）、REDUCED_REDUNDANCY（低冗余存储）、STANDARD_IA（低频存储）|否|
 |file|字符串|文件或文本内容，此属性必须放在form最后，否则file后的属性将被忽略，不支持多个文件同时上传<br>默认值：无|是|
+|tagging|字符串|设置对象标签，需要写成UML格式。格式同[Put Object Tagging](../Operations-On-Objects/Put-Object-Tagging.md)中格式。<br>默认值:无 <br>限制条件:标签键和标签值需分别做urlencode。该标签头大小不能超过2K。标签个数不能超过10个。|否
 |x-amz-meta-\*|字符串|以x-amz-meta- 前缀开头的Header为用户自定义Header。自定义Header的大小（包括key、value）UTF-8编码下不能超过2K。|否|
  
 #### 响应

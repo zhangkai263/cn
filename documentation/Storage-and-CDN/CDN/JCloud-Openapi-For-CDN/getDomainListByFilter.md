@@ -15,7 +15,6 @@ https://cdn.jdcloud-api.com/v1/domain:query
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**keyWord**|String|False| |根据关键字进行模糊匹配|
-|**x-jdcloud-channel**|String|False|cdn|域名来源cdn/cdn,video视频云|
 |**pageNumber**|Integer|False|1|pageNumber,默认值为1|
 |**pageSize**|Integer|False|20|pageSize,默认值为20,最大值为50|
 |**status**|String|False| |根据域名状态查询, 可选值[offline, online, configuring, auditing, audit_reject]|

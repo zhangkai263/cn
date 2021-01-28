@@ -63,7 +63,7 @@
   
   ![image](../../../../../image/WAF/protect-configure/24.White-List-Cookie.png)
   
-   - **Header白名单：**添加Header类型白名单，根据请求Header的key添加匹配规则：
+   - **Header白名单**：添加Header类型白名单，根据请求Header的key添加匹配规则：
   
      - key：Header的key，可选择下拉框中的key或点击输入编辑。
   

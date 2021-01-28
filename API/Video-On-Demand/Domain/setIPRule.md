@@ -47,6 +47,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:setIPRule
 
 ```
+
 ```
 {
     "config": {
@@ -58,4 +59,3 @@ https://vod.jdcloud-api.com/v1/domains/2:setIPRule
     "enabled": true
 }
 ```
-

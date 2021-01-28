@@ -2,41 +2,65 @@
 
 
 ## 描述
+
 企业所有信息核验
 
 ## 请求方式
+
 POST
 
 ## 请求地址
-https://cloudauth.jdcloud-api.com/v1/companyAuth:legalPersonAndAgent
+
+https://cloudauth.jdcloud-api.com/v1/company:legalPersonAndAgent
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**legalPersonAndAgentSpec**|LegalPersonAndAgentSpec|True| | |
 
-### <div id="legalpersonandagentspec">LegalPersonAndAgentSpec</div>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**companyType**|Integer|True| |企业类型：<br>企业(ET_PE_QiYe)<br>个体工商户(ET_SE_GeTiGongShangHu)<br>政府机构/事业单位(ET_OU_ZhengFu_ShiYeDanWei)<br>|
-|**companyName**|String|True| |企业名称|
-|**idCode**|String|True| |统一社会信用代码或营业执照注册号|
-|**legalPersonName**|String|True| |法定代表人姓名|
-|**legalPersonId**|String|True| |法定代表人身份证号|
-|**agentName**|String|True| |代理人姓名|
-|**agentId**|String|True| |代理人身份证号|
-|**businessId**|String|True| |业务流水号(如果一天之内服务端收到两次相同的businessId，则返回上一次业务的结果)|
+| 名称                        | 类型                    | 是否必需 | 默认值 | 描述 |
+| --------------------------- | ----------------------- | -------- | ------ | ---- |
+| **legalPersonAndAgentSpec** | LegalPersonAndAgentSpec | True     |        |      |
+
+### <div id="LegalPersonAndAgentSpec">LegalPersonAndAgentSpec</div>
+
+| 名称                | 类型    | 是否必需 | 默认值 | 描述                                                         |
+| ------------------- | ------- | -------- | ------ | ------------------------------------------------------------ |
+| **companyType**     | Integer | True     |        | 企业类型：<br>0: 企业(ET_PE_QiYe)<br>1: 个体工商户(ET_SE_GeTiGongShangHu)<br>2: 政府机构/事业单位(ET_OU_ZhengFu_ShiYeDanWei)<br> |
+| **companyName**     | String  | True     |        | 企业名称                                                     |
+| **idCode**          | String  | True     |        | 统一社会信用代码或营业执照注册号                             |
+| **legalPersonName** | String  | True     |        | 法定代表人姓名                                               |
+| **legalPersonId**   | String  | True     |        | 法定代表人身份证号                                           |
+| **agentName**       | String  | True     |        | 代理人姓名                                                   |
+| **agentId**         | String  | True     |        | 代理人身份证号                                               |
 
 ## 返回参数
-无
 
+| 名称          | 类型   | 描述   |
+| ------------- | ------ | ------ |
+| **result**    | Result |        |
+| **requestId** | String | 请求ID |
+
+### <div id="Result">Result</div>
+
+| 名称         | 类型     | 描述 |
+| ------------ | -------- | ---- |
+| **authInfo** | AuthInfo |      |
+
+### <div id="AuthInfo">AuthInfo</div>
+
+| 名称             | 类型    | 描述                                                    |
+| ---------------- | ------- | ------------------------------------------------------- |
+| **success**      | Boolean | 认证结果true 成功, false 失败                           |
+| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常                    |
+| **code**         | String  | 认证结果状态码                                          |
+| **message**      | String  | 1. 认证结果信息<br>2. 查询结果信息<br>3. 状态码信息<br> |
+| **detail**       | String  | 1. 认证结果信息<br>2. 查询结果信息<br>                  |
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**403**|FAIL|
+
+| 返回码  | 描述 |
+| ------- | ---- |
+| **200** | OK   |
+| **403** | FAIL |
 
 ## 示例代码
 
