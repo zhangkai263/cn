@@ -1,8 +1,4 @@
 # SDK 下载
-
-   安卓 SDK下载                        
-![Android-SDK-download.png](../../../../image/Real-Time-Communicat/Android-SDK-download.png)
+                     
+![客户端SDK下载1.jpg](../../../../image/Real-Time-Communicat/客户端SDK下载1.jpg)
    
-  iOS SDK下载
-
-![iOS-SDK-download.png](../../../../image/Real-Time-Communicat/iOS-SDK-download.png)
