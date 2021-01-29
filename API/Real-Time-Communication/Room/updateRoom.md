@@ -20,7 +20,6 @@ https://openjrtc.jdcloud-api.com/v1/rooms/{appId}
 |---|---|---|---|---|
 |**roomId**|Long|True| |房间ID|
 |**roomName**|String|True| |房间名称|
-|**appId**|String|True| |应用ID|
 
 
 ## 返回参数
