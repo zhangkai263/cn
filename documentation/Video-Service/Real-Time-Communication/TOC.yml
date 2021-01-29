@@ -47,7 +47,7 @@ items:
           href: SDK-Reference/iOS-JRTC-SDK-quick-integration.md
         - name: iOS JRTC 接口说明
           href: SDK-Reference/iOS-JRTC-API-overview.md
-     - name: H5 SDK参考
+    - name: H5 SDK参考
       items:
         - name: H5 JRTC SDK快速集成
           href: SDK-Reference/H5-JRTC-SDK-quick-integration.md        
