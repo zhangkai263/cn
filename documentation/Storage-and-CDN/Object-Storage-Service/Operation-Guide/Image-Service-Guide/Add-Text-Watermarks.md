@@ -20,6 +20,6 @@
 
 将图片文件加文字水印“京东云”：
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/wmt/wt/5Lqs5Lic5LqR
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg?x-oss-process=img/wmt/wt/5Lqs5Lic5LqR
 
 ![文字水印](../../../../../image/Object-Storage-Service/OSS-063.jpg)

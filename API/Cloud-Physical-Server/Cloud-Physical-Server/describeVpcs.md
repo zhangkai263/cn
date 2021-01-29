@@ -48,7 +48,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 |**region**|String|地域代码, 如cn-north-1|
 |**vpcId**|String|私有网络ID|
 |**name**|String|私有网络名称|
-|**cidr**|String|私有网络CIDR|
+|**cidr**|String|私有网络IPv4 CIDR|
+|**ipv6Cidr**|String|私有网络IPv6 CIDR|
+|**ipv6GatewayId**|String|IPv6网关ID|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
 

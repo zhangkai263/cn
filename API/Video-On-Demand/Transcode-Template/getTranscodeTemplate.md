@@ -10,12 +10,11 @@ GET
 ## 请求地址
 https://vod.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 
+
+## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**templateId**|Long|True| |模板ID|
-
-## 请求参数
-无
 
 
 ## 返回参数
@@ -32,11 +31,16 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 |**video**|[Video](gettranscodetemplate#video)|视频参数配置|
 |**audio**|[Audio](gettranscodetemplate#audio)|音频参数配置|
 |**encapsulation**|[Encapsulation](gettranscodetemplate#encapsulation)|封装配置|
+|**outFile**|[OutFile](gettranscodetemplate#outfile)|输出文件配置|
 |**definition**|String|清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**source**|String|模板来源。取值范围：<br>  system - 系统预置<br>  custom - 用户自建<br>|
 |**templateType**|String|模板类型。取值范围：<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
+### <div id="outfile">OutFile</div>
+|名称|类型|描述|
+|---|---|---|
+|**filePath**|String|输出文件路径。<br>路径支持占位符 YEAR、MONTH、DAY、JOBID、TASKID、TEMPLATEID, VIDEOID，但对于转码输出路径，必须以 vod/product 为路径前缀。<br>最终生成的转码输出文件，将会是此路径和一个随机文件名共同构成。<br>若转码模板中该字段配置为：vod/product/{YEAR}{MONTH}{DAY}/{JOBID}/{TEMPLATEID}/{TASKID}<br>则最终生成的输出文件可能为：vod/product/20200921/8238/2243310/2378041/6b91f559d51b4b62ac60b98c318e9ae9.mp4<br>|
 ### <div id="encapsulation">Encapsulation</div>
 |名称|类型|描述|
 |---|---|---|
@@ -71,7 +75,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates/{templateId}
 ## 请求示例
 GET
 ```
-https://vod.jdcloud-api.com/v1/transcodeTemplates/1
+https://vod.jdcloud-api.com/v1/transcodeTemplates/10001
 
 ```
 
@@ -94,6 +98,9 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates/1
         }, 
         "id": 1, 
         "name": "我的转码模板", 
+        "outFile": {
+            "filePath": "/vod/product/{YEAR}{MONTH}{DAY}/{TASKID}"
+        }, 
         "source": "custom", 
         "templateType": "jdchd", 
         "updateTime": "2019-04-16T15:51:32Z", 

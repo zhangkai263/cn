@@ -1,0 +1,51 @@
+name: 域名服务
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 域名系统接口
+        items:
+          - name: checkDomain
+            herf: Domain-Name/checkDomain.md
+          - name: queryWhoisInfo
+            herf: Domain-Name/queryWhoisInfo.md
+          - name: createDomain
+            herf: Domain-Name/createDomain.md
+          - name: renewDomain
+            herf: Domain-Name/renewDomain.md
+          - name: transferin
+            herf: Domain-Name/transferinDomain.md
+          - name: transferinDomainState
+            herf: Domain-Name/transferinDomainState.md
+          - name: domainInfo
+            herf: Domain-Name/domainInfo.md
+      - name: 域名管理接口
+        items:
+          - name: modifyDns
+            herf: Domain-Management/modifyDns.md
+          - name: domainTemplateAssigned
+            herf: Domain-Management/domainTemplateAssigned.md
+          - name: domainLock
+            herf: Domain-Management/domainLock.md
+          - name: domainUnLock
+            herf: Domain-Management/domainUnLock.md
+          - name: getDomainTransferOutPassWord
+            herf: Domain-Management/getDomainTransferOutPassWord.md
+      - name: 域名模板相关接口
+        items:
+          - name: createTemplate
+            herf: Domain-Template/createTemplate.md
+          - name: queryTemplateInfo
+            herf: Domain-Template/queryTemplateInfo.md
+          - name: modifyTemplateInfo
+            herf: Domain-Template/modifyTemplateInfo.md
+          - name: deleteTemplate
+            herf: Domain-Template/deleteTemplate.md
+          - name: certificateTemplate
+            herf: Domain-Template/certificateTemplate.md
+          - name: certificateTemplateState
+            herf: Domain-Template/certificateTemplateState.md

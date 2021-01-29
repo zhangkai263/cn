@@ -1,5 +1,6 @@
 # companyTransfer
 
+
 ## 描述
 
 对公银行账户打款(随机小额)
@@ -12,6 +13,7 @@ POST
 
 https://cloudauth.jdcloud-api.com/v1/company:transfer
 
+
 ## 请求参数
 
 | 名称            | 类型        | 是否必需 | 默认值 | 描述 |
@@ -20,15 +22,15 @@ https://cloudauth.jdcloud-api.com/v1/company:transfer
 
 ### <div id="AccountInfo">AccountInfo</div>
 
-| 名称               | 类型   | 是否必需 | 默认值 | 描述       |
-| ------------------ | ------ | -------- | ------ | ---------- |
-| **orgName**        | String | True     |        | 组织名称   |
-| **bankCardNum**    | String | True     |        | 银行卡号   |
-| **bankName**       | String | True     |        | 银行名称   |
-| **branchBankName** | String | True     |        | 支行名称   |
-| **bankCode**       | String | False    |        | 银行代码   |
-| **cityCode**       | String | False    |        | 城市代码   |
-| **provinceCode**   | String | False    |        | 省份代码   |
+| 名称               | 类型   | 是否必需 | 默认值 | 描述     |
+| ------------------ | ------ | -------- | ------ | -------- |
+| **orgName**        | String | True     |        | 组织名称 |
+| **bankCardNum**    | String | True     |        | 银行卡号 |
+| **bankName**       | String | True     |        | 银行名称 |
+| **branchBankName** | String | True     |        | 支行名称 |
+| **bankCode**       | String | False    |        | 银行代码 |
+| **cityCode**       | String | False    |        | 城市代码 |
+| **provinceCode**   | String | False    |        | 省份代码 |
 
 ## 返回参数
 
@@ -45,13 +47,13 @@ https://cloudauth.jdcloud-api.com/v1/company:transfer
 
 ### <div id="AuthInfo">AuthInfo</div>
 
-| 名称             | 类型    | 描述                                 |
-| ---------------- | ------- | ------------------------------------ |
-| **success**      | Boolean | 认证结果true 成功, false 失败        |
-| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常 |
-| **code**         | String  | 认证结果状态码                       |
-| **message**      | String  | 认证结果                             |
-| **detail**       | String  | 字符串形式的详细认证结果，内容为json |
+| 名称             | 类型    | 描述                                                    |
+| ---------------- | ------- | ------------------------------------------------------- |
+| **success**      | Boolean | 认证结果true 成功, false 失败                           |
+| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常                    |
+| **code**         | String  | 认证结果状态码                                          |
+| **message**      | String  | 1. 认证结果信息<br>2. 查询结果信息<br>3. 状态码信息<br> |
+| **detail**       | String  | 1. 认证结果信息<br>2. 查询结果信息<br>                  |
 
 ## 返回码
 
@@ -97,7 +99,7 @@ func main() {
 
 	client := client.NewCloudauthClient(credentials)
 	client.SetConfig(config)
-// CompanyTransfer，返回订单号，供CheckCompanyTransfer使用
+// CompanyTransfer，返回订单号以及打款金额，供CheckCompanyTransfer使用
  {
   accountInfo := &models.AccountInfo{
    /* 组织名称 */
@@ -126,5 +128,5 @@ func main() {
   		}
  	}
 }
-
+```
 

@@ -56,13 +56,21 @@
           - name: 删除订阅任务 
             href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md             
       - name: 数据同步
-         items:
-          - name: 创建同步任务 
+        items:
+          - name: 预检查与限制说明
+            href: Getting-Started/Data-Synchronization/Synchronizaton-Astrict.md
+          - name: 创建数据同步任务 
             href: Getting-Started/Data-Synchronization/Creat-Synchronizaton-Task.md
-          - name: 配置同步任务  
+          - name: 配置数据同步任务  
             href: Getting-Started/Data-Synchronization/Config-Synchronizaton-Task.md
-          - name: 停止同步任务  
+          - name: 停止数据同步任务  
             href: Getting-Started/Data-Synchronization/Stop-Synchronizaton-Task.md
+          - name: 创建灾备同步任务 
+            href: Getting-Started/Data-Synchronization/Creat-DisasterRecovery-Task.md
+          - name: 配置灾备同步任务  
+            href: Getting-Started/Data-Synchronization/Config-DisasterRecovery-Task.md
+          - name: 停止灾备同步任务  
+            href: Getting-Started/Data-Synchronization/Stop-DisasterRecovery-Task.md
   - name: 操作指南
     items:
       - name: 自建MySQL迁移至云数据库MySQL
@@ -96,3 +104,4 @@
     - name: 词汇表
       href: Related-Resources/Glossary.md           
       status: 0
+

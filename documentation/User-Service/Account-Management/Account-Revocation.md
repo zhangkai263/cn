@@ -12,9 +12,9 @@
 **如果您仍希望保留该账号下的产品、服务或相关信息，请不要申请账号注销。**
 
 ## 账号注销流程
-（1）提交工单，选择账号&认证类别
+（1）提交工单，选择账号与认证类别
 
-![](../../../image/User/Account%20Management/Account%20Revocation/账号注销1.png)
+![](../../../image/User/Account%20Management/Account%20Revocation/ticket.png)
 
 （2）在工单中提供注销必要的信息
 

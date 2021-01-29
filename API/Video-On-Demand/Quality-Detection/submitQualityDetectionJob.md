@@ -39,6 +39,7 @@ POST
 https://vod.jdcloud-api.com/v1/qualityDetectionJobs:submitJob
 
 ```
+
 ```
 {
     "mediaId": "343a6194-85ea-49bd-8b43-df1c654f5d79", 

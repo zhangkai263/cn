@@ -43,6 +43,7 @@ POST
 https://vod.jdcloud-api.com/v1/qualityDetectionJobs:batchSubmit
 
 ```
+
 ```
 {
     "bulkItems": [

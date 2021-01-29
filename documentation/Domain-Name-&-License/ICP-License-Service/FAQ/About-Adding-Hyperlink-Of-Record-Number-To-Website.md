@@ -1,14 +1,16 @@
-# 备案成功网站添加备案号超级链接工信部网
+# 备案成功后网站添加备案号并设置超链接至工信部备案官网
 
-您好，根据相关规定，网站备案成功后，在网站开通时您需编辑网页源代码，将工信部下发的主体备案号或网站备案号放置在网页底部且能够链接至工信部网站：[http://www.beian.miit.gov.cn](http://www.beian.miit.gov.cn/)；
+按照《非经营性互联网信息服条案管理办法》(原信息产业部令第33号)规定：ICP主办者在其网站备案成功后，需在网站底部标注备案号，并在网站备案编号下链接“工业和信息化部ICP/IP地址/域名信息备案管理系统”网址。
 
-因每个网站搭建方式不同，因此添加备案号的具体操作步骤请联系网站技术负责人自行添加。
+在网站开通时，您需编辑网页源代码，将工信部下发的主体备案号或网站备案号放置在网页底部并链接到最新备案查询系统：：[beian.miit.gov.cn](https://beian.miit.gov.cn/)
 
-重要提示：若被相关部门核查到未在网站底部添加备案号超级链接至工信部网站，将处以五千元以上一万元以下罚款，因此在备案成功后请及时按要求完成操作。
+**因每个网站搭建方式不同，因此添加备案号的具体操作步骤请联系网站技术负责人自行添加。**
 
-示例：工信部官网（beian.miit.gov.cn）添加备案号后的效果如下
+重要提示：若被相关部门核查到未在网站底部添加备案号超级链接至工信部网站，**将处以五千元以上一万元以下罚款，因此在备案成功后请及时按要求完成操作。**
 
-![1.jpg](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020030701/image/ICP-License-Service/About-Adding-Hyperlink-Of-Record-Number-To-Website-cn-1.jpg)
+示例：[工信部官网](https://beian.miit.gov.cn/) 添加备案号后的效果如下
+
+![1.jpg](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20201229/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/guanju-shili.png)
 
 ·网站底部已添加网站的备案号“京ICP备04000001号”。
 

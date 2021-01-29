@@ -49,6 +49,8 @@
             href: Cloud-Physical-Server/describeRegiones.md
           - name: modifyBandwidth
             href: Cloud-Physical-Server/modifyBandwidth.md
+          - name: describeEventLogs
+            href: Cloud-Physical-Server/describeEventLogs.md
       - name: 子网管理
         items:
           - name: createSubnet
@@ -62,7 +64,13 @@
           - name: describeSubnet
             href: Cloud-Physical-Server/describeSubnet.md
           - name: describeBasicSubnet
-            href: Cloud-Physical-Server/describeBasicSubnet.md  
+            href: Cloud-Physical-Server/describeBasicSubnet.md
+          - name: createSecondaryCidr
+            href: Cloud-Physical-Server/createSecondaryCidr.md
+          - name: deleteSecondaryCidr
+            href: Cloud-Physical-Server/deleteSecondaryCidr.md
+          - name: describeSecondaryCidrs
+            href: Cloud-Physical-Server/describeSecondaryCidrs.md
       - name: 私有网络管理
         items:
           - name: createVpc
@@ -91,6 +99,30 @@
             href: Cloud-Physical-Server/describeElasticIp.md
           - name: modifyElasticIpBandwidth
             href: Cloud-Physical-Server/modifyElasticIpBandwidth.md
+          - name: describeAvailablePrivateIp
+            href: Cloud-Physical-Server/describeAvailablePrivateIp.md
+      - name: Ipv6管理
+        items:
+          - name: assignIpv6Address
+            href: Cloud-Physical-Server/assignIpv6Address.md
+          - name: assignIpv6AddressesBandwidth
+            href: Cloud-Physical-Server/assignIpv6AddressesBandwidth.md
+          - name: assignIpv6Cidr
+            href: Cloud-Physical-Server/assignIpv6Cidr.md
+          - name: assignIpv6Gateway
+            href: Cloud-Physical-Server/assignIpv6Gateway.md
+          - name: describeIpv6Address
+            href: Cloud-Physical-Server/describeIpv6Address.md
+          - name: describeIpv6Addresses
+            href: Cloud-Physical-Server/describeIpv6Addresses.md
+          - name: describeIpv6Gateway
+            href: Cloud-Physical-Server/describeIpv6Gateway.md
+          - name: describeIpv6Gateways
+            href: Cloud-Physical-Server/describeIpv6Gateways.md
+          - name: modifyIpv6AddressBandwidth
+            href: Cloud-Physical-Server/modifyIpv6AddressBandwidth.md
+          - name: modifyIpv6Gateway
+            href: Cloud-Physical-Server/modifyIpv6Gateway.md
       - name: SSH密钥管理
         items:
           - name: createKeypairs
@@ -102,7 +134,15 @@
           - name: describeKeypairs
             href: Cloud-Physical-Server/describeKeypairs.md
           - name: describeKeypair
-            href: Cloud-Physical-Server/describeKeypair.md  
+            href: Cloud-Physical-Server/describeKeypair.md
+      - name: 别名IP范围管理
+        items:
+          - name: createAliasIp
+            href: Cloud-Physical-Server/createAliasIp.md
+          - name: deleteAliasIp
+            href: Cloud-Physical-Server/deleteAliasIp.md
+          - name: describeAliasIps
+            href: Cloud-Physical-Server/describeAliasIps.md
       - name: 负载均衡管理
         items:
           - name: createLoadBalancer
