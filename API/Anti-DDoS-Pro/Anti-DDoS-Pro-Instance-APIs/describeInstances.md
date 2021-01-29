@@ -91,6 +91,12 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances
 |**pageName**|String|关联的自定义页面名称|
 |**pageStatus**|Integer|是否开启自定义页面, 关闭时透传状态码.  <br>- 0: 关闭<br>- 1: 开启|
 |**webRulePortLimit**|Integer|每条网站规则可配的http/https端口数|
+|**tags**|[Tag[]](describeinstances#tag)|Tag信息|
+### <div id="tag">Tag</div>
+|名称|类型|描述|
+|---|---|---|
+|**key**|String|Tag键|
+|**value**|String|Tag值|
 
 ## 返回码
 |返回码|描述|

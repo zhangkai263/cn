@@ -1,14 +1,14 @@
-# describeDDoSAttackLogs
+# describeDDoSIpAttackLogs
 
 
 ## 描述
-查询 DDoS 攻击日志, 仅能查询非BGP实例的攻击记录, 同时查询BGP和非BGP实例请使用 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/describeDDoSIpAttackLogs'>describeDDoSIpAttackLogs</a>
+查询高防IP的 DDoS 攻击日志, 仅BGP实例返回的是IP级别的攻击记录, 非BGP实例返回的仍是实例级别的攻击记录(serviceIp 字段为空)
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSAttackLogs
+https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSIpAttackLogs
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -27,14 +27,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSAttac
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeddosattacklogs#result)| |
+|**result**|[Result](describeddosipattacklogs#result)| |
 |**requestId**|String| |
-|**error**|[Error](describeddosattacklogs#error)| |
+|**error**|[Error](describeddosipattacklogs#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](describeddosattacklogs#err)| |
+|**err**|[Err](describeddosipattacklogs#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -45,13 +45,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSAttac
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[DDoSAttackLog[]](describeddosattacklogs#ddosattacklog)| |
+|**dataList**|[DDoSIpAttackLog[]](describeddosipattacklogs#ddosipattacklog)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|实例总数|
 |**totalPage**|Integer|总页数|
-### <div id="ddosattacklog">DDoSAttackLog</div>
+### <div id="ddosipattacklog">DDoSIpAttackLog</div>
 |名称|类型|描述|
 |---|---|---|
+|**serviceIp**|String|高防 IP|
 |**attackTraffic**|Double|攻击流量大小|
 |**blackHole**|Integer|封禁状态,0:未封禁,1:封禁中,2:封禁结束|
 |**startTime**|String|攻击开始时间|

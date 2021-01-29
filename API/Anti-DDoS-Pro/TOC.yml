@@ -19,6 +19,8 @@
             href: Anti-DDoS-Pro-Attack-Log-APIs/describeCCAttackLogs.md
           - name: describeDDoSAttackLogs
             href: Anti-DDoS-Pro-Attack-Log-APIs/describeDDoSAttackLogs.md
+          - name: describeDDoSIpAttackLogs
+            href: Anti-DDoS-Pro-Attack-Log-APIs/describeDDoSIpAttackLogs.md
       - name: IP高防报表相关接口
         items:
           - name: describeCCGraph
@@ -27,6 +29,10 @@
             href: Anti-DDoS-Pro-Flow-APIs/describeDDoSGraph.md
           - name: describeFwdGraph
             href: Anti-DDoS-Pro-Flow-APIs/describeFwdGraph.md
+          - name: describeBusinessGraph
+            href: Anti-DDoS-Pro-Flow-APIs/describeBusinessGraph.md
+          - name: describeConnStatGraph
+            href: Anti-DDoS-Pro-Flow-APIs/describeConnStatGraph.md
       - name: IP高防实例相关接口
         items:
           - name: checkName
@@ -55,6 +61,30 @@
             href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceName.md
           - name: describeServiceIpList
             href: Anti-DDoS-Pro-Instance-APIs/describeServiceIpList.md
+          - name: createCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/createCustomPage.md
+          - name: deleteCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/deleteCustomPage.md
+          - name: describeCcsIpList
+            href: Anti-DDoS-Pro-Instance-APIs/describeCcsIpList.md
+          - name: describeCustomPages
+            href: Anti-DDoS-Pro-Instance-APIs/describeCustomPages.md
+          - name: describeInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/describeInstanceAcl.md
+          - name: disableInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/disableInstanceCustomPage.md
+          - name: enableInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/enableInstanceCustomPage.md
+          - name: modifyCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/modifyCustomPage.md
+          - name: modifyInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceAcl.md
+          - name: modifyInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceCustomPage.md
+          - name: modifyInstanceCustomPageDefault
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceCustomPageDefault.md
+          - name: recoverInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/recoverInstanceAcl.md
       - name: IP高防网站转发配置相关接口
         items:
           - name: bindCert
