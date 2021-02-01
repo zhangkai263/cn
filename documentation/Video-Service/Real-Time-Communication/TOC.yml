@@ -50,7 +50,7 @@ items:
     - name: H5 SDK参考
       items:
         - name: H5 JRTC SDK快速集成
-          href: SDK-Reference/H5-JRTC-SDK-quick-integration.md        
+          href: SDK-Reference/H5-JRTC-SDK-quick-integration.md       
 - name: 相关资源
   items:
     - name: 文档历史记录
