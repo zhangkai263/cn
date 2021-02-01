@@ -1,4 +1,4 @@
-# H5-API
+# H5 JRTC API接口说明
 import JRTCClient from '../lib/jrtc.min.js'
 
 ## 1.JRTCClient 
