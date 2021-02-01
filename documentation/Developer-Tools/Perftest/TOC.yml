@@ -11,8 +11,14 @@ items:
         href: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
+      - name: 计费概述
+        href: Pricing/Billing-overview.md
       - name: 计费规则
         href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-process.md
   - name: 入门指南
     items:
       - name: 快速实施压测
