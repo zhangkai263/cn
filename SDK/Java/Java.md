@@ -107,3 +107,9 @@ List<String> headerValue = headers.getHeaderStringValues("headerKey");
 ```
 
 更多调用示例参考  [SDK使用Demo](https://github.com/jdcloud-api/jdcloud-sdk-java/tree/master/demo)
+
+# 常见问题 #
+
+1. SDK调用返回异常 org.apache.http.NoHttpResponseException: xxx.jdcloud-api.com: failed to respond
+
+NoHttpResponseException 是客户端缓存的tcp链接失效（lb因负载过大或者连接过期主动关闭了tcp连接）导致的。解决方法：通过客户端重试解决，如果您当前使用的core sdk版本低于1.2.1，请使用1.2.x(x>=1)版本的core sdk，该版本引入了重试机制。禁止使用2.x.x版本的core sdk（该版本sdk给指定产品使用）。
