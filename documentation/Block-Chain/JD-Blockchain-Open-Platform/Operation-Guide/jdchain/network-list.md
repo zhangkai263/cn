@@ -10,7 +10,7 @@
 	* 详情：点击详情操作，可以进入该网络进行网络内管理
 	* 运行状态：可实时查看当前区块链网络节点各组件的运行情况
 	* 待办：可以在页面中查询申请加入网的信息，并根据申请信息决定是否允许申请人加入此链。*同意*按钮表示同意加入网络，*拒绝*按钮表示不允许加入网络。任何按钮点击成功后，右上角均会弹出操作成功提示
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/to_be_donejpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/to_be_done.jpg)
 	* 联盟成员：可通过此操作，了解网络中现有的所有联盟成员
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/fed_account_list.jpg)
 	* 删除：将无用的区块链网络删除。注意，如果是网络发起者，那么需要所有参与方均退出网络后，才可以开始进行删除，否则删除网络动作不会成功。

@@ -83,4 +83,3 @@ items:
         items: 
           - name: JDChain合约编写规则
             href: Getting-Started/consortium/jdchain-chaincode.md
-
