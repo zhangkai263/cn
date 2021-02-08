@@ -39,7 +39,7 @@ https://opencdn.jcloud.com/api/queryDomains
 curl请求示例： 
 
 ```
-curl -H "Content-type: application/json" -X POST -d '{"username":"jd_cdntest","signature":"914a3f412fd9bc1eec14bb5eb104d253","pageNumber":1,"pageSize":10,"type": "web"}'
+curl -H "Content-type: application/json" -X POST -d '{"username":"test_user","signature":"914a3f412fd9bc1eec14bb5eb104d251","pageNumber":1,"pageSize":10,"type": "web"}'
 http://opencdn.jcloud.com/api/queryDomains
 ```
 
