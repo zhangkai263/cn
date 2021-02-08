@@ -17,7 +17,7 @@
 | httpType   | String | 是        | http类型，只能为http或者https，默认为http。当设为https时，需要调用“设置通讯协议”接口上传证书和私钥 |
 | backSourceType   | String | 是        | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
 | dailyBandWidth   | String | 是        | 日均值带宽 |
-| accelerateRegion   | String | 否        | 加速区域[mainland,nonMainland,all]默认mainland|
+| accelerateRegion   | String | 否        | 加速区域[mainland,nonMainland,all]，mainland为中国境内，nonMainland为中国境外，all为全球，默认mainland|
 
 
 ## **3. 返回参数**
