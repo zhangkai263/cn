@@ -37,7 +37,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**priority**|Integer|True| |优先级（1-10）|
-|**sourceHost**|String|False| |回源host|
+|**sourceHost**|String|False| |自定义回源host，仅中国境内加速域名可配置|
 |**domain**|String|True| |回源域名|
 ### <div id="IpSourceInfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
