@@ -42,7 +42,7 @@
 点击**运行状态**按钮，可以查看节点运行状态，当所有状态变成*运行中*时，网络创建成功。
 
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/status_service.jpg)
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/status_floatip.jpg
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/status_floatip.jpg)
 
 网络创建完毕后，点击**详情**按钮，进入网络详情页面:
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/netdetail_status_api.jpg)
