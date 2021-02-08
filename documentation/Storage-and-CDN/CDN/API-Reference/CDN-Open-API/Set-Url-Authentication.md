@@ -2,7 +2,7 @@
 
 ## **1. 描述**
 
-设置url鉴权 (setAccessKeyConfig)
+仅中国境内加速域名可配置。设置url鉴权 (setAccessKeyConfig)
 
 ## **2. 请求参数**
 
