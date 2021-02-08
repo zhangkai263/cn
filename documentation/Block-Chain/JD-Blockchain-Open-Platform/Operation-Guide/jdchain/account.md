@@ -1,7 +1,7 @@
 # 数据账户管理
 数据账户是JDChain区块链组网独有的一种类型，如果将账本类比为数据库的话，可以类比为数据库中的表，用于存储数据，实现数据隔离的作用；所以数据账户是从属于账本之下的一种资源类型；
 
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/netsatus_dataaccount.jpg)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/netstatus_dataaccount.jpg)
 
 如果一条链下有多个账本，那么每个账本下都最少有一个数据账户，具体展示如下：
 

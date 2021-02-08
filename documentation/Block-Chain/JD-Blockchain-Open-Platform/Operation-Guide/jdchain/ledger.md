@@ -49,7 +49,7 @@
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_open.jpg)
 
 已公开的账本下，可以申请加入一个公开账本，点击申请按钮，右侧弹出界面，可以查看账本的基本信息。输入说明后，点击**申请加入**按钮，可以申请加入账本。
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_ask_add.png)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_ask_add.jpg)
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_ask_add2.jpg)
 
 
