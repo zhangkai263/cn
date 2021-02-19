@@ -11,7 +11,7 @@
 ![](../../../../image/privatezone/price.png)
 
 3. 在操作项中点击 **升级**，进入“升级页面”，进行升级操作。
-![](../../../../image/privatezone/Upgrade01.PNG)
+![](../../../../image/privatezone/Upgrade01.png)
 
 4. 在升级页面中，支持对域名数量进行调整。
-![](../../../../image/privatezone/Upgrade02.PNG)
+![](../../../../image/privatezone/Upgrade02.png)
