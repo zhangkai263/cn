@@ -10,7 +10,7 @@
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200220/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、填写验证备案类型信息
 
