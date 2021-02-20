@@ -22,7 +22,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Cancel-Access-cn-4.png)
 
-3、点“下一步“，提交审核
+3、点“确认”，提交审核
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Cancel-Access-cn-6.png)
 
