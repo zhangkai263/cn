@@ -4,29 +4,29 @@
 
   1、购买实例后，在实例列表中点击实例名称，或点击菜单栏域名解析进入 **我的域名** 页面，如购买多个实例，支持在下拉菜单中选择已购买的实例。
 
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain02.png)  
+  ![img](../../../../../image/privatezone/domain02.png)  
   
   2、点击 **添加域名**，选择全局Zone（后缀固定为 .local,云内全局唯一，无需关联VPC），输入域名前缀，点击确定完成域名添加。
   
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain01.png)
+  ![img](../../../../../image/privatezone/domain01.png)
   
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain03.png)
+  ![img](../../../../../image/privatezone/domain03.png)
   
   3、域名添加后，支持在列表中查看域名相关信息，并可通过提示查看当前实例剩余域名数量，如达到套餐限制，可升级或购买新的实例。
   
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain06.png)
+  ![img](../../../../../image/privatezone/domain06.png)
   
 ## 添加私有Zone
 
   点击 **添加域名**，选择私有Zone（可添加公网无法注册或已注册的域名，需要关联VPC），输入域名，默认勾选子域名递归解析代理，点击确定完成域名添加。
   
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain04.png)
+  ![img](../../../../../image/privatezone/domain04.png)
 
 ## 添加反向解析
 
   点击 **添加域名**，选择反向解析（后缀固定为 .in-addr.arpa，需要关联VPC），输入域名前缀需按照IP地址逆向输入，且仅支持"10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16"三个保留地址网段，点击确定完成域名添加。
   
-  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain05.png)
+  ![img](../../../../../image/privatezone/domain05.png)
 
 
   添加域名规则：
