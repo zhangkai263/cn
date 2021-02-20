@@ -2,15 +2,15 @@
 
 1、在域名列表中查找需要添加解析记录的域名，点击 **解析** 按钮进入域名解析页面。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/add-record01.png) 
+![img](../../../../../image/privatezone/add-record01.png) 
 
 2、在域名解析页面，点击 **添加解析** 按钮。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/add-record02.png)  
+![img](../../../../../image/privatezone/add-record02.png)  
 
 3、在弹出的 **添加域名解析** 窗口中填写域名配置。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/add-record03.png)  
+![img](../../../../../image/privatezone/add-record03.png)  
  
 4、根据您的域名填写对应的记录。
 
