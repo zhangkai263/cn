@@ -70,11 +70,11 @@ d)   负责人着装需要符合当季节（例如：冬天不能穿半袖衣服
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-12.png)
 
-2、照片通过审核后，京东智联云将在 1 个工作日内将您的备案信息提交至通信管理局审核
+2、照片通过审核后，京东云将在 1 个工作日内将您的备案信息提交至通信管理局审核
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-13.png)
 
-管局审核结果将以短信及邮件形式通知。您也可以登录京东智联云备案系统主页查看您的备案信息情况。
+管局审核结果将以短信及邮件形式通知。您也可以登录京东云备案系统主页查看您的备案信息情况。
 
 ### 幕布申请流程
 
