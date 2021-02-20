@@ -1,10 +1,10 @@
 # 共享带宽包管理公网IP
 本文将介绍在共享带宽包中如何管理公网IP，具体包括如下操作：
 
-- [查看公网IP](instance-type-family#user-content-1)
-- [添加公网IP](instance-type-family#user-content-2)
-- [单IP限速](instance-type-family#user-content-3)
-- [移除公网IP](instance-type-family#user-content-4)
+- [查看公网IP](manage-public-ip#user-content-1)
+- [添加公网IP](manage-public-ip#user-content-2)
+- [单IP限速](manage-public-ip#user-content-3)
+- [移除公网IP](manage-public-ip#user-content-4)
 
 
 ## 查看公网IP
