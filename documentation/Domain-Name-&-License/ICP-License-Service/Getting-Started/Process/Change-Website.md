@@ -1,16 +1,16 @@
 # 网站变更
 
-###### 网站变更定义：对京东智联云备案系统中已备案成功信息修改，只允许修改网站信息。
+###### 网站变更定义：对京东云备案系统中已备案成功信息修改，只允许修改网站信息。
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-website-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-website-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、选择变更网站信息
 
@@ -32,7 +32,7 @@
 
   ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-website-cn-6.png)
 
-提交信息后等待京东智联云初审审核。
+提交信息后等待京东云初审审核。
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-website-cn-7.png)
 
@@ -42,7 +42,7 @@
 
 ### 当面核验拍照流程
 
-1、 初审通过后, 登录京东智联云备案系统，办理网站负责人拍照核验。
+1、 初审通过后, 登录京东云备案系统，办理网站负责人拍照核验。
 
 如无京东智联云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东智联云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
 
