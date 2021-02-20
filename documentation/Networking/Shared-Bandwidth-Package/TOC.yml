@@ -4,7 +4,7 @@ name: 共享带宽包
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introductions/Bwp-Introduction.md
+        href: Introductions/product-overview.md
       - name: 核心概念
         href: Introductions/Core-Concepts.md
       - name: 产品优势
@@ -24,7 +24,7 @@ name: 共享带宽包
       - name: 按用量计费
         items: 
           - name: 增强95消峰计费
-            href: Pricing/Charge-By-Usage/Top5-Eliminate.md
+            href: Pricing/Charge-By-Usage/Enhance95th-Eliminate.md
       - name: 价格总览
         href: Pricing/Price-Overview.md
       - name: 购买流程
