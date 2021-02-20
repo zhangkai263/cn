@@ -25,6 +25,10 @@
 
 ![unlock1](../../../../../image/privatezone/unlock01.png)
 
+2、根据提示，选择是否解锁。
+
+![unlock1](../../../../../image/privatezone/unlock03.png)
+
 - 未添加操作保护 
 
 确定解锁后，即解除域名锁定。
