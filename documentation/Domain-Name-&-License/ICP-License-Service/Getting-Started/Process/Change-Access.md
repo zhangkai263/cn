@@ -18,7 +18,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-access-cn-3.png)
 
-2、 点击“变更接入”后，进入网站信息页面，可对关联服务IP地址项进行修改变更。
+2、 点击“变更接入”后，进入网站信息页面，可对关联服务授权码项进行修改变更。
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Change-access-cn-4.png)
 
