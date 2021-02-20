@@ -6,11 +6,11 @@
 
 1、打开京东云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、填写新增网站信息
 
