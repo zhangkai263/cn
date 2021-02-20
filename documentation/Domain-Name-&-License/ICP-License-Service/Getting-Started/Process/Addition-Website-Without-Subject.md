@@ -1,10 +1,10 @@
 # 新增网站（京东无主体）
 
-###### 新增网站（京东无主体）定义：主体已通过其他服务商进行过备案，现有新的网站托管到京东智联云服务器上，需在京东智联云提交新的网站及域名备案申请。
+###### 新增网站（京东无主体）定义：主体已通过其他服务商进行过备案，现有新的网站托管到京东云服务器上，需在京东云提交新的网站及域名备案申请。
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200220/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
