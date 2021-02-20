@@ -10,18 +10,18 @@
 
 1、在域名列表中关联VCP状态一栏，点击 **未关联**，进入VPC关联设置界面。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain07.png)
+![img](../../../../../image/privatezone/domain07.png)
 
 2、选择需要关联VPC所在区域，勾选需要关联的VPC（支持多选），点击方向按钮，移入已选择页面，点击确定。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain08.png)
+![img](../../../../../image/privatezone/domain08.png)
 
 3、根据提示确认选择的区域和VPC数量，点击确定完成关联操作。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain09.png)
+![img](../../../../../image/privatezone/domain09.png)
 
 4、需要取消关联VPC时，点击 **已关联**，进入配置页面，勾选VPC并移出已选择页面即可。
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain10.png)
+![img](../../../../../image/privatezone/domain10.png)
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/privatezone/domain11.png)
+![img](../../../../../image/privatezone/domain11.png)
