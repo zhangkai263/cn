@@ -3,6 +3,7 @@
 本文介绍 内网域名解析 实例的购买入口。
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/products/private-zone)
+
 1. 登录[京东云官网](https://www.jdcloud.com)。
 
 2. 选择“产品>企业应用>域名与备案>内网域名解析”，具体见下图。
