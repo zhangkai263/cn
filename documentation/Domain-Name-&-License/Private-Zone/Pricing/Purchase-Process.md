@@ -4,6 +4,7 @@
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/products/private-zone)
 1. 登录[京东云官网](https://www.jdcloud.com)。
+
 2. 选择“产品>企业应用>域名与备案>内网域名解析”，具体见下图。
 
 ![内网域名解析购买](../../../../image/privatezone/product.png)
@@ -17,6 +18,7 @@
 ## 入口2：[内网域名解析 控制台](https://privatezone-console.jdcloud.com/instance)
 
 1. 登录[京东云官网](https://www.jdcloud.com)。
+
 2. 选择“控制台”，具体见下图。
 ![控制台](../../../../image/privatezone/console-buy1.png)
 
