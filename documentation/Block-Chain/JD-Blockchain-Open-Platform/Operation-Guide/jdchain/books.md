@@ -52,7 +52,6 @@
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_ask_add.jpg)
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_ask_add2.jpg)
 
-
 申请者申请加入账本时，需要*账本创建者*同意申请后，方可加入账本。
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_tobedone.jpg)
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_permitordeny.jpg)

@@ -48,15 +48,15 @@ items:
       - name: 企业组网JDChain
         items:
           - name: 网络创建
-            href: Operation-Guide/jdchain/network-create.md
+            href: Operation-Guide/jdchain/net-create.md
           - name: 网络列表
-            href: Operation-Guide/jdchain/network-list.md
+            href: Operation-Guide/jdchain/net-list.md
           - name: 数据账户管理
             href: Operation-Guide/jdchain/account.md
           - name: 账本管理
-            href: Operation-Guide/jdchain/ledger.md
+            href: Operation-Guide/jdchain/ledgers.md
           - name: 合约管理
-            href: Operation-Guide/jdchain/chaincode.md    
+            href: Operation-Guide/jdchain/chaincodes.md    
   - name: 开发指南
     items:
       - name: 一键部署
