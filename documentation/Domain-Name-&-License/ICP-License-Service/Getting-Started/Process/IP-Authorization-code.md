@@ -2,13 +2,13 @@
 
 ### 一、登录备案系统
 
-1、 打开京东智联云官网www.jcloud.com打开后点击右上方“备案”
+1、 打开京东云官网www.jcloud.com打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-zhuye.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-denglu.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ### 二、申请授权码
 
@@ -16,7 +16,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma.png)
 
-2、 您在京东智联云已购买的京东智联云服务器有效期必须为3个月以上的包年/包月类型且绑定京东智联云公网IP的产品才可申请备案授权码备案，若满足以上条件，系统中显示内容如下，点右侧“申请”即可。
+2、 您在京东云已购买的京东云服务器有效期必须为3个月以上的包年/包月类型且绑定京东云公网IP的产品才可申请备案授权码备案，若满足以上条件，系统中显示内容如下，点右侧“申请”即可。
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200903-shouquanma/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/jdcloud-shouquanma-shenqing.png)
 
