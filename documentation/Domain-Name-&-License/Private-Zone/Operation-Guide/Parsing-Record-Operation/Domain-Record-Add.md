@@ -15,4 +15,4 @@
 4、根据您的域名填写对应的记录。
 
 其中带 * 号的为必填项，不同的记录类型添加的记录值不同
-具体解析记录添加请参考解析记录类型详解。
+具体解析记录添加请参考[支持解析记录类型详解](../Operation-Guide/Parsing-Record-Operation/Detailed-Interpretation-Of-Parsed-Records.md)。
