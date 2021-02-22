@@ -1,5 +1,5 @@
 # 常见问题
-[三种负载均衡类型，如何选择使用哪一种](FAQ#user-content-1)
+- [三种负载均衡类型，如何选择使用哪一种](FAQ#user-content-1)
 
 [添加转发规则组(转发、重定向)](FAQ#user-content-2)
 
