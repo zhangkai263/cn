@@ -23,7 +23,7 @@
 | 变配           | 调整共享带宽包上限，升配：提升带宽上限；降配：降低带宽上限|
 
 ## 相关参考
-- [共享带宽包概述](Bwp-Introduction.md)
+- [共享带宽包概述](Product-Overview.md)
 - [产品优势](Benefits.md)
 - [应用场景](Application-Scenarios.md)
 - [产品功能](Features.md)
