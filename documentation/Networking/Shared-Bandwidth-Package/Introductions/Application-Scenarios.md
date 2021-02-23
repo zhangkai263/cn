@@ -6,7 +6,7 @@
 
 <img src="../../../../image/Networking/Shared-Bandwidth-Package/Unified-Management.png" alt=" " style="zoom:50%"/>
 
-当您拥有多个公网IP时，需要购买多条带宽如下图表1所示，IP流量模型不尽相同，波峰波谷差距明显，在波谷时段带宽使用率低。若加入共享带宽包，如图2所示，充分利用错峰波谷时段带宽，波峰波谷差距更加扁平，提升带宽的使用率的同时降低带宽成本。
+当您拥有多个公网IP时，需要购买多条带宽如下图表1所示，IP流量模型不尽相同，波峰波谷差距明显，在波谷时段带宽使用率低。若加入共享带宽包，如表2所示，充分利用错峰波谷时段带宽，波峰波谷差距更加扁平，提升带宽的使用率的同时降低带宽成本。
 
 <img src="../../../../image/Networking/Shared-Bandwidth-Package/Multi-to-One.png" alt=" " style="zoom:30%"/>
 
