@@ -34,7 +34,7 @@
 ## 相关参考
 - [计费规则](Billed-Rules.md)
 - [计费概述](Billing-Overview.md)
-- [增强95消峰计费](Charge-By-Usage/Top5-Eliminate.md)
+- [增强95消峰计费](Charge-By-Usage/Enhance95th-Eliminate.md)
 - [创建共享带宽包](../Operation-Guide/Create-Bwp.md)
 - [续费流程](../Operation-Guide/Renew-Bwp.md)
 - [常见问题](../FAQ/FAQ.md)
