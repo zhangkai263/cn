@@ -59,6 +59,12 @@
             href: Operation-Guide/Parsing-Record-Operation/Domain-Record-Import.md
           - name: 统计报表
             href: Operation-Guide/Parsing-Record-Operation/Domain-Record-Report.md
+      - name: 子域名递归解析代理
+        href: Operation-Guide/Recursion.md
+      - name: 反向解析
+        href: Operation-Guide/Reverse.md
+      - name: 操作日志记录
+        href: Operation-Guide/Auditlog.md
   - name: 常见问题
     href: FAQ/FAQ.md  
   - name: 文档历史记录
