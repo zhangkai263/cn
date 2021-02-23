@@ -81,7 +81,7 @@ A：按配置和包年包月计费的配额不限，按用量计费的配额为5
 - [使用限制](../Introduction/Restrictions.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
-- [增强95消峰计费](../Pricing/Charge-By-Usage/Enhanced95-Eliminate.md)
+- [增强95消峰计费](../Pricing/Charge-By-Usage/Enhance95th-Eliminate.md)
 - [计费规则](../Pricing/Billed-Rules.md)
 - [管理公网IP](../Getting-Started/Manage-Public-IP.md)
 - [修改共享带宽包带宽上限](../Operation-Guide/Modify-Bwp.md)
