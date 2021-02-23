@@ -1,8 +1,8 @@
 # 计费规则
 共享带宽包计费类型支持以下三种类型：
-- [包年包月](instance-type-family#user-content-1)
-- [按配置计费](instance-type-family#user-content-2)
-- [按用量计费](instance-type-family#user-content-3)
+- [包年包月](billed-rules#user-content-1)
+- [按配置计费](billed-rules#user-content-2)
+- [按用量计费](billed-rules#user-content-3)
 
 ## 包年包月
 <div id="user-content-1"></div>
@@ -11,7 +11,7 @@
 
 - 包年包月为预付费方式，一次性支付一个月、多个月或多年的费用。
 
-- 提前支付数月或数年的费用，目前购买时间段支持1个月~9个月、1年，一次购买1年打8.3折，费用在您创建资源时一次性扣除；
+- 提前支付数月或数年的费用，目前购买时间段支持1个月~9个月、1年、2年、3年，一次购买1年打8.5 折，费用在您创建资源时一次性扣除；
 
 - 包年包月的资源在到期前不支持执行删除操作，为了保障您的使用权益，请确认业务需求后进行购买。
 
@@ -58,13 +58,13 @@
 
 #### 详细介绍
 
-- 按用量计费模式支持按增强95消峰计费，详情请参考[增强95消峰计费](Charge-By-Usage/Top5-Eliminate.md)。
+- 按用量计费模式支持按增强95消峰计费，详情请参考[增强95消峰计费](Charge-By-Usage/Enhance95th-Eliminate.md)。
 
 - 按用量计费每天收取保底带宽费用，并每天根据共享带宽包实际使用流量出账单；
 
 - 目前保底带宽按照购买带宽上限的20%设定，此时保底带宽单价和超保底带宽单价相同；
 
-- 选择按用量计费模式至少需要使用一个完整的自然月，最早支持在完整自然月的下个月出完账单之后删除。
+- 选择按用量计费模式至少需要使用一个完整的自然月，最早支持在使用一个完整自然月的下个月1日出完账单之后删除。
 
 
 
@@ -82,7 +82,7 @@
 
 - [价格总览](Price-Overview.md)
 
-- [增强95消峰计费](Charge-By-Usage/Top5-Eliminate.md)
+- [增强95消峰计费](Charge-By-Usage/Enhance95th-Eliminate.md)
 
 - [计费概述](Billed-Overview.md)
 
