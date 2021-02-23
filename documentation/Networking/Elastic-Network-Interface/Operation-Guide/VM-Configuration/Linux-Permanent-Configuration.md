@@ -16,6 +16,7 @@
 
 注：windows镜像不支持策略路由，如使用多网卡，仅支持同网段资源访问，本例不适用于windows。
 ```
+
 ![资源配置](../../../../../image/Networking/Elastic-Network-Interface/eni-004.png)
 
 ### 配置步骤
