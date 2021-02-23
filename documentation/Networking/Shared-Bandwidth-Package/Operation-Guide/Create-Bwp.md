@@ -35,14 +35,14 @@
 **步骤9：** 完成上述步骤后，点击立即购买按钮，进入订单确认以及支付确认页。完成支付后，进入共享带宽包列表页，查看已创建的共享带宽包。
 
 ## 相关参考
-- [共享带宽包概述](../Introductions/Bwp-Introduction.md)
+- [共享带宽包概述](../Introductions/Product-Overview.md)
 - [应用场景](../Introductions/Application-Scenarios.md)
 - [使用限制](../Introductions/Restrictions.md)
 - [管理公网IP](../Getting-Started/Manage-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
 - [价格总览](../Pricing/Price-Overview.md)
-- [增强95消峰计费](../Pricing/Charge-By-Usage/Top5-Eliminate.md)
+- [增强95消峰计费](../Pricing/Charge-By-Usage/Enhance95th-Eliminate.md)
 - [查看共享带宽包监控信息](View-Monitoring.md)
 - [修改共享带宽包](Modify-Bwp.md)
 - [删除共享带宽包](Delete-Bwp.md)
