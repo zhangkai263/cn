@@ -1,4 +1,4 @@
-**用户授权协议<div align="center" vertical-align="middle"> **
+**用户授权协议<div align="center"> **
 
 **一、概述**
 
