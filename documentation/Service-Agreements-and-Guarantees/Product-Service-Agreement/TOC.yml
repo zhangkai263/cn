@@ -88,6 +88,10 @@ items:
     href: IP-High-Protection-Clause.md
   - name: IP高防服务等级协议（SLA）
     href: IP-High-Level-Of-Service-Agreement-SLA.md
+  - name: Web应用防火墙服务协议
+    href: Web-Application-Firewall-Service-Terms-Of-Service.md 
+  - name: Web应用防火墙服务等级协议（SLA）
+    href: Web-Application-Firewall-Level-Agreements-SLA.md 
   - name: 弹性伸缩服务条款
     href: Flexible-Telescopic-Service-Clause.md
   - name: 视频直播服务条款
