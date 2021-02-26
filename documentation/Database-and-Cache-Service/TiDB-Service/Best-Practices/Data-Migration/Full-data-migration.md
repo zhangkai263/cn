@@ -20,7 +20,7 @@ https://docs.jdcloud.com/cn/rds/upload-backup-v2
 
 1. 登录京东云控制台，进入TiDB产品页，选择***数据迁移***功能页，点击***从OSS导入*** 功能键
 
-![全量迁移1](../../../../../../image/TiDB/Data-migration-1.png)
+![全量迁移1](../../../../../../../image/TiDB/Data-migration-1.png)
 
 
 2. 弹出数据导入界面，根据之前上传的OSS全量备份文件，评估原始数据量大小（**单位GB**）。
