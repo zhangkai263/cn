@@ -31,17 +31,17 @@ https://docs.jdcloud.com/cn/rds/upload-backup-v2
 
       例如单个TiKV容量为2T，有3个TiKV，总容量为6T，那么可导入的数据大小不能超过1T。
 
-![全量迁移2](../../../../../../image/TiDB/Data-migration-2.png)
+![全量迁移2](../../../../../image/TiDB/Data-migration-2.png)
 
 3. 填写备份文件在OSS中的完整路径，然后点击校验，当校验通过后，**确认**按钮高亮。
 
    ***例如*** 备份文件存放在OSS的database-bak这个Bucket 中，在Bucket中的中路径为test-env/db1.bak, 则输入 database-bak/test_env/db1.bak
 
-![全量迁移3](../../../../../../image/TiDB/Data-migration-3.png)
+![全量迁移3](../../../../../image/TiDB/Data-migration-3.png)
 
 
    4.点击**确认**按钮，开始全量数据迁移，待数据迁移完成，迁移状态会变成***完成***。
 
 
-![全量迁移4](../../../../../../image/TiDB/Data-migration-4.png)
+![全量迁移4](../../../../../image/TiDB/Data-migration-4.png)
   	
