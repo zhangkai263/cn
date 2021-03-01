@@ -15,9 +15,9 @@ PullConsumer实时性不高，实时性取决于客户端的拉取频率。
 
 每次Pull请求返回结果包含两部分数据：取到的消息，和这次请求的凭证，凭证用于消息确认。
 
-每次只会轮询选择一个Partition进行拉取，每次默认拉取32条消息。当Topic有多个Partition时，若Partition之间数据不均衡，会存在消息时而能拉到，时而拉不到的情况。这是Pull每次选择一个Partition进行消费导致的。
+每次只会轮询选择一个Partition进行拉取，每次默认拉取32条消息。当Topic有多个Partition时，若Partition之间数据不均衡，会存在消息时而能拉到，时而拉不到的情况，这是Pull每次选择一个Partition进行消费导致的。
 
-JCQ 服务端默认开启长轮询，若当前Partition没有消息，Pull请求会被服务端挂起一段时间，当有新消息写入Partition时，立即将挂起的请求唤醒，将消息返回给Consumer。期间，在客户端看来Pull请求是被Block住的。
+JCQ 服务端默认开启长轮询，若当前Partition没有消息，Pull请求会被服务端挂起一段时间，当有新消息写入Partition时，立即将挂起的请求唤醒，将消息返回给Consumer，期间，在客户端看来Pull请求是被Block住的。
 
 ## Push型消费者
 
