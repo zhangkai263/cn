@@ -58,20 +58,6 @@
 
 3. Spring框架下消息队列 JCQ的集成，请参考demo示例：[jcq-spring-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-spring-demo.zip)。
 
-## 消费者特性
 
-同一ConsumerGroup下，Consumer数目是否必须小于等于Partition数目吗？
-
-* 是，以Kafka、RocketMQ等为代表：
-
-  利：避免Ack Offset 加锁；避免消息重复，严格保证顺序；
-  
-  弊：堆积情况下不能通过增加Consumer来加速消息消费慢消息，一条慢消息导致后面的消息都不能被及时处理。
-  
-* 否，JCQ：
-
-  利： 堆积情况下可以通过增加Consumer加速消费应对慢消息的问题；
-  
-  弊：不能保证消息严格顺序，可能造成消息重复。
 
 
