@@ -1,6 +1,6 @@
 # 消费组与消费者
 
-JCQ支持消费组ConsumerGroup（与Kafka类似），消费组的作用是将消费者管理起来，同一个消费组的消费者是组内关系，会瓜分消息。不同消费组内的消费者没有关系，相互独立。
+JCQ支持消费组ConsumerGroup（与Kafka类似），消费组的作用是将消费者管理起来，同一个消费组的消费者是组内关系，会瓜分消息。不同消费组内的消费者相互独立。
 
 同一个消费组可以消费多个topic，多个消费组也可以消费同一个Topic。这里Topic与ConsumerGroup是多对多的关系。而一个Consumer只能属于一个ConsumerGroup。
 
