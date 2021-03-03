@@ -474,7 +474,10 @@ items:
     href: Risk-Detection-Service-Level-Agreements-SLA.md
   - name: 验证码服务协议
     href: Captcha-Terms-Of-Service.md
-
+  - name: 数据安全中心服务协议
+    href: Data-Centric-Audit-And-Protection-Service-Terms-Of-Service.md
+  - name: 数据安全中心服务等级协议（SLA）
+    href: Data-Centric-Audit-And-Protection-Level-Agreements-SLA.md
 
     
     
