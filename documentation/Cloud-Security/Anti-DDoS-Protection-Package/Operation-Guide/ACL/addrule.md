@@ -44,7 +44,15 @@ DDoS防护包支持访问控制功能，允许用户进行 **南北向从外到�
 
 ![image](../../../../../image/Anti-DDoS-Protection-Package/addACL03.png)
 
+5、支持对已创建规则进行查询和批量删除操作。
+
+![image](../../../../../image/Anti-DDoS-Protection-Package/addACL04.png)
+
 ## 编辑规则
 
+针对已创建的规则，点击操作栏 **编辑** 按钮，支持对规则进行更新，**注意，编辑规则不允许修改规则优先级，优先级一栏为禁用状态，如需修改规则优先级请使用 [移动规则](../Operation-Guide/ACL
+/moverule.md)功能**。
 
+![image](../../../../../image/Anti-DDoS-Protection-Package/editACL01.png)
 
+![image](../../../../../image/Anti-DDoS-Protection-Package/editACL02.png)
