@@ -10,7 +10,7 @@ DDoS防护包支持访问控制功能，允许用户进行 **南北向从外到�
 
 ![image](../../../../../image/Anti-DDoS-Protection-Package/防护包列表-防护对象设置.jpg)
 
-2、在访问控制规则中，点击 **添加** 按钮，进行规则添加。
+2、在访问控制规则中，点击 **添加** 按钮，进行规则添加。支持最多添加100条规则。
 
 ![image](../../../../../image/Anti-DDoS-Protection-Package/addACL01.png)
 
