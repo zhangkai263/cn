@@ -42,7 +42,7 @@ https://openjrtc.jdcloud-api.com/v1/message/{appId}/toUser/{roomId}
 ## 请求示例
 POST
 ```
-https://openjrtc.jdcloud-api.com/v1/message/febf9a1401763b06490e14739c4be622/sendToRoom/9527
+https://openjrtc.jdcloud-api.com/v1/message/febf9a1401763b06490e14739c4be622/toUser/9527
 
 ```
 
