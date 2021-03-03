@@ -55,3 +55,15 @@ DDoS防护包支持访问控制功能，允许用户进行 **南北向从外到�
 ![image](../../../../../image/Anti-DDoS-Protection-Package/editACL01.png)
 
 ![image](../../../../../image/Anti-DDoS-Protection-Package/editACL02.png)
+
+## 场景案例说明
+
+用户需要放行可信的源IP访问云主机的80端口，并拒绝其他源访问80端口的流量。
+
+举例说明，添加一条可信源IP 2.2.2.2/32访问云主机1.1.1.1/32的80端口规则，优先级为1。
+
+再添加一条所有源IP 0.0.0.0/0禁止访问云主机1.1.1.1/32的80端口规则，优先级为2。
+
+开启规则开关后即可实现只有2.2.2.2/32才能访问云主机1.1.1.1/32的80端口。
+
+![image](../../../../../image/Anti-DDoS-Protection-Package/addACL01.png)
