@@ -51,6 +51,8 @@
           herf: Operation-Guide/ACL/portlist.md
         - name: 云服务地址库
           herf: Operation-Guide/ACL/cloudlist.md
+        - name: 验证配置生效
+          herf: Operation-Guide/ACL/Verify-ACL-Settings.md
     - name: 查看操作日志
       herf: Operation-Guide/View-The-Operation-Log.md
     - name: 查看安全报表
