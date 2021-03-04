@@ -1,4 +1,4 @@
-### TiDB 全量数据迁移
+# TiDB 全量数据迁移
 
 全量数据迁移主要分为以下3步：
 
@@ -12,7 +12,9 @@
 
 https://docs.jdcloud.com/cn/rds/upload-backup-v2
 
-***注意***：目前TiDB全量数据迁移只支持 Mydumper导出数据或 CSV 输出格式的数据源
+***注意***：目前从MySQL到TiDB的全量数据迁移只支持 Mydumper导出数据或 CSV 输出格式的数据源
+
+Mydumper备份全量数据文档：
 
 
 
