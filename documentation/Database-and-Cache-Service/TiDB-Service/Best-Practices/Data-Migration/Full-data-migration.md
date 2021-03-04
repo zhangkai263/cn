@@ -14,7 +14,7 @@ https://docs.jdcloud.com/cn/rds/upload-backup-v2
 
 ***注意***：目前从MySQL到TiDB的全量数据迁移只支持 Mydumper导出数据或 CSV 输出格式的数据源
 
-查看[Mydumper备份全量数据文档](../Mydumper.md)
+查看[Mydumper备份全量数据文档](../../Mydumper.md)
 
 
 
