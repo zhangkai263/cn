@@ -35,6 +35,24 @@
     items:
     - name: 防护规则设置
       herf: Operation-Guide/Protection-Rules-Setting.md
+    - name: 访问控制规则
+      items:
+        - name: 添加/编辑规则
+          herf: Operation-Guide/ACL/addrule.md
+        - name: 插入规则
+          herf: Operation-Guide/ACL/insertrule.md
+        - name: 移动规则
+          herf: Operation-Guide/ACL/moverule.md
+        - name: 删除规则
+          herf: Operation-Guide/ACL/deleterule.md
+        - name: IP地址库
+          herf: Operation-Guide/ACL/iplist.md
+        - name: 端口库
+          herf: Operation-Guide/ACL/portlist.md
+        - name: 云服务地址库
+          herf: Operation-Guide/ACL/cloudlist.md
+        - name: 验证配置生效
+          herf: Operation-Guide/ACL/Verify-ACL-Settings.md
     - name: 查看操作日志
       herf: Operation-Guide/View-The-Operation-Log.md
     - name: 查看安全报表
