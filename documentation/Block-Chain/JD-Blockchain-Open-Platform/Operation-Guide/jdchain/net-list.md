@@ -1,7 +1,7 @@
 # 企业组网网络列表
 如上文所述，企业组网可以帮助用户在京东云版的BaaS平台中创建一条联盟链网络，联盟链是目前最广泛的一种区块链网络搭建形式，可以结合多个节点，使这些互不授信的节点组合起来，在同样的规则下传递可信的数据信息。智臻链区块链BaaS平台为用户提供便捷的联盟链组建、配置页面，让用户能够像“拉朋友圈”一样快速增减区块链网络内节点。
 
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/consortium11.png)
+![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/create_status.png)
 
 联盟链的展示分为4个Tab页，每个Tab页的展示信息不同，具体如下:
 
@@ -21,8 +21,7 @@
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/buy1.jpg)
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/buy2.jpg)
 当区块链网络的创建方同意加入后，进入节点启动界面。与网络创建页面不同的是，节点启动页面会首先展示区块链网络基本信息，之后才会要求用户输入信息细节。
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/consortium19.png)
-![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/consortium16.png)
+
 
 下端为申请加入链配置的信息，需要输入的项目如表：
 
