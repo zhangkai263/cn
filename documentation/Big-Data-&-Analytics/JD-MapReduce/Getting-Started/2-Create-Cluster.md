@@ -9,7 +9,7 @@
 - 如计费类型选择按配置计费，请确认您的账户余额（包括代金券）不小于50元。
 
 ## 操作步骤
-1. 登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择地域。JMR 目前支持华北-北京、华南-广州，后续将支持更多地域。
+1. 登录 [JMR 控制台](https://jmr-console.jdcloud.com/cluster/list)，选择地域。JMR 目前支持华北-北京、华南-广州，后续将支持更多地域。
 	
 2. 在集群管理页面，点击“创建”，进入创建页面。
 
