@@ -5,7 +5,7 @@
 ## 前提条件
 
 - 已开通Web应用防火墙实例，更多信息，请参见[开通Web应用防火墙](https://docs.jdcloud.com/cn/web-application-firewall/purchase-process)。
-- 已完成网站接入。更多信息，请参见[添加域名](https://help.aliyun.com/document_detail/97063.html#task-1796689)。
+- 已完成网站接入。更多信息，请参见[添加域名](https://docs.jdcloud.com/cn/web-application-firewall/step-1)。
 
 ## 背景信息
 
@@ -62,28 +62,29 @@
      - 匹配类型：可选完全匹配、前缀匹配或正则匹配
 
      - 匹配值：待匹配字符串
-  
+    
      - 规则执行：可选择**封禁**、**302跳转**或**验证码**。
-  
+    
        配置完成后，单击页面下方的**确定**。
 
      ![image](../../../../../image/WAF/protect-configure/16.Black-List-Cookie.png)
-  
+    
    - **Header黑名单：**添加Header类型黑名单，根据请求Header的key添加匹配规则：
-  
+    
      - key：指Header的key，可选择，可编辑。
-  
+    
      - 匹配类型：可选完全匹配、前缀匹配或正则匹配。
-  
+    
      - 匹配值：待匹配字符串。
-  
+    
      - 规则执行：可选择**封禁**、**302跳转**或**验证码**。
-  
+    
        配置完成后，单击页面下方的**确定**。
      
      ![image](../../../../../image/WAF/protect-configure/17.Black-List-Header.png)
-  
-   执行动作，如下表
+    
+   
+  执行动作，如下表
   
   | 执行动作 | 配置                                            | 动作含义                                                     |
   | -------- | ----------------------------------------------- | ------------------------------------------------------------ |
