@@ -31,6 +31,16 @@ items:
             href: Room/describeRooms.md
           - name: 删除房间
             href: Room/deleteRoom.md
+          - name: 移除房间内所有人员
+            href: Room-User/removeAllRoomUsers.md
+          - name: 移除房间内指定人员
+            href: Room-User/removeRoomUser.md
+      - name: 消息管理
+        items:
+          - name: 发送自定义信令消息给房间
+            href: Message/sendMessageToRoom.md
+          - name: 发送自定义信令消息给房间内的指定人员
+            href: Message/sendMessageToUser.md
       - name: 查询统计
         items:
           - name: 查询房间实时在线人数
