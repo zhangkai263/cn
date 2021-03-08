@@ -5,7 +5,7 @@
 * 自建数据库版本需要和备份文件的源数据库版本一致。
 * 备份的解压软件只支持在 Linux 下执行。
 * 解压工具的系统软件依赖：tee，python 版本 >= 2.7。
-* 当前系统已经安装 percona xtrabackup >= 2.4 ；如果没有安装，请参考 [官方手册](https://www.percona.com/doc/percona-xtrabackup/2.4/index.html)。
+* 当前系统已经安装 percona xtrabackup >= 2.4.8 ；如果没有安装，请参考 [官方手册](https://www.percona.com/doc/percona-xtrabackup/2.4/index.html)。
 
 ## 操作说明
 1. 安装环境依赖，见注意事项
