@@ -17,6 +17,6 @@ tel: 400-098-8505转2<br />
 4. 邮箱<br />
 mail:jdcloud@jd.com<br />
 服务时间: 7*24小时支持<br /><br />
-5. 京东智联云微信服务号<br />
-wechat: 京东智联云（JD-jcloud）<br />
+5. 京东云微信服务号<br />
+wechat: 京东智联云服务（JD-jcloud）<br />
 服务时间: 7*24小时支持
