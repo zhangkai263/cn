@@ -8,7 +8,7 @@
 * 解压工具的系统软件依赖：tee，python 版本 >= 2.7。
 * 当前系统已经安装 percona xtrabackup, 如果没有安装，请参考 [官方手册](https://www.percona.com/doc/percona-xtrabackup/2.4/index.html)。
    * MySQL版本为8.0时，需要xtrabackup >= 8.0.5；
-   * MySQL为5.6、5.7时，需要xtrabackup >= 2.4.8；
+   * MySQL为5.5\5.6、5.7时，需要xtrabackup >= 2.4.8；
 
 ## 操作说明
 1. 安装环境依赖，见注意事项
