@@ -68,6 +68,21 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 | **200** | OK          |
 | **400** | Bad Request |
 
+注：当请求数超过购买的包年不限次套餐里面限定的QPS后，会提示如下：
+
+```
+{
+    "requestId": "xxxxx", 
+    "error": {
+        "status": "CREDITSCORE_REQUEST_LIMITEXCEEDED", 
+        "code": 400, 
+        "message": "请求的次数超过了频率限制"
+    }
+}
+```
+
+
+
 ## 示例代码
 
 ```
@@ -104,7 +119,7 @@ body：
         "content": "116.196.12.23",
         "resourceType": "ip",
         "scoreDetail": {
-          "riskTag": "黑软IP",
+          "riskTag": "黑产IP",
           "riskCode": "506",
           "riskClass": "ip",
           "score": "3",
