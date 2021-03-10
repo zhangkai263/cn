@@ -5,7 +5,7 @@ DDoS防护包提供丰富的安全报表，帮助您了解购买以后的防护�
 ### 方法1
 登录DDoS防护包 [监控报表](https://antiddos-console.jdcloud.com/gz/ddos/protection-monitor-list) 页面。菜单栏位置如下：
 
-![防护包-监控报表菜单](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Anti-DDoS-Protection-Package/防护包-监控报表菜单.png)
+![防护包-监控报表菜单](https://github.com/jdcloudcom/cn/blob/edit/image/Anti-DDoS-Protection-Package/防护包-监控报表菜单.png)
 
 默认将显示第一个防护包的相关报表。
 
