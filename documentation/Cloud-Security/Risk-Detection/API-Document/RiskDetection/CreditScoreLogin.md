@@ -90,7 +90,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**200**|OK|
 |**400**|Bad Request|
 
-注：当请求数超过购买的包年不限次套餐里面限定的QPS后，会提示如下：
+注：当请求QPS超过购买的包年不限次套餐里面限定的QPS阈值后，会提示如下：
 
 ```
 {
