@@ -53,8 +53,11 @@ items:
       herf: Operation-Guide/Delete-SSL-Certificate.md
     - name: 追加域名
       herf: Operation-Guide/Add-Domain.md
-    - name: 吊销证书
+    - name: 重颁发
       herf: Operation-Guide/Reissue-SSL-Sertificate.md
+      status: 0
+    - name: 吊销证书
+      herf: Operation-Guide/Revoke-SSL-Sertificate.md
     - name: 更新证书
       herf: Operation-Guide/Update-SSL-Certificate.md
     - name: 续签证书
