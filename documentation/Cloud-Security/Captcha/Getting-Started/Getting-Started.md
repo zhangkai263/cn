@@ -10,7 +10,7 @@
 
 ![img](../../../../image/Captcha/creat-AK-SK.png)
 
-3、客户端接入。验证码客户端接入，请参照[APP端接入SDK](https://docs.jdcloud.com/cn/captcha/androidsdk)、[PC/M端接入SDK](https://docs.jdcloud.com/cn/captcha/browser-sdk)\[小程序接入SDK](https://docs.jdcloud.com/cn/captcha/miniprograms-sdk)
+3、客户端接入。验证码客户端接入，请参照[APP端接入SDK](https://docs.jdcloud.com/cn/captcha/androidsdk)、[PC/M端接入SDK](https://docs.jdcloud.com/cn/captcha/browser-sdk)、[小程序接入SDK](https://docs.jdcloud.com/cn/captcha/miniprograms-sdk)
 
 4、服务端接入。服务端接入通过OpenAPI接口进行调用，请参照[服务器端接入](https://docs.jdcloud.com/cn/captcha/getSessionId)。验证码前后端调用时序图如下：
 
