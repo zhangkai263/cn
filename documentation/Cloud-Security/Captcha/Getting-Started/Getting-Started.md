@@ -14,7 +14,7 @@
 
 4、服务端接入。服务端接入通过OpenAPI接口进行调用，请参照[服务器端接入](https://docs.jdcloud.com/cn/captcha/getSessionId)。验证码前后端调用时序图如下：
 
-[![img](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/work.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/work.png)
+![img](../../../../image/Captcha/work.png)
 
 5、打开京东智联云验证码控制台，选择**云安全-验证码**页面，查看统计数据、应用管理、场景管理、流量包管理等信息。
 
@@ -32,9 +32,7 @@
 
 3. 可以查看应用名称/ID、应用描述、应用类型、应用包名、下属场景ID数及创建时间，并可进行添加、编辑和删除管理操作。如图
 
-   [![image](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/packageManagement.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/packageManagement.png)
-
-   [![image](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/addpackage.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/addpackage.png)
+   ![image](../../../../image/Captcha/packageManagement.png)
 
 ## 场景管理
 
@@ -48,9 +46,7 @@
 
 3. 可以查看场景名称/ID、场景密钥、场景描述、所属应用、场景类型、预估QPS及创建时间，并可进行添加、编辑和删除管理操作。如图
 
-   [![image](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/sceneManagement.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/sceneManagement.png)
-
-   [![image](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/addscene.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Captcha/addscene.png)
+   ![image](../../../../image/Captcha/sceneManagement.png)
 
 ## 策略管理
 
