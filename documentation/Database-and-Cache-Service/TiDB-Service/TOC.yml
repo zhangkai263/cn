@@ -31,7 +31,7 @@ items:
       - name: 价格概览
         href: Pricing/Price-Overview.md
       - name: 购买流程
-        href: Purchase-Process.md
+        href: Pricing/Purchase-Process.md
         
   - name: 入门指南
     items:
