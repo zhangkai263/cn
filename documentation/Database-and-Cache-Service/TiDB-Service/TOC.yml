@@ -95,7 +95,7 @@ items:
           - name: 数据迁移概述
             href: Best-Practices/Data-Migration/Data-Migration-Overview.md
           - name: 全量数据迁移
-            href: Best-Practices/Data-Migration/Full-data-migration.md
+            href: Best-Practices/Data-Migration/Full-Data-Migration.md
           - name: Mydumper
             href: Best-Practices/Data-Migration/Mydumper.md
           - name: 增量迁移
