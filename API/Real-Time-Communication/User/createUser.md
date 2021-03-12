@@ -2,7 +2,7 @@
 
 
 ## 描述
-创建JRtc用户
+创建用户
 
 
 ## 请求方式
@@ -24,13 +24,13 @@ https://openjrtc.jdcloud-api.com/v1/createUser
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createuser#result)|创建JRtc用户信息返回结果|
+|**result**|[Result](createuser#result)|创建用户信息返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**peerId**|Long|JRtc用户ID|
+|**peerId**|Long|用户ID|
 |**appId**|String|应用ID|
 |**userId**|String|业务接入方的用户ID|
 
@@ -42,7 +42,7 @@ https://openjrtc.jdcloud-api.com/v1/createUser
 ## 请求示例
 POST
 ```
-/v1/createUser
+https://openjrtc.jdcloud-api.com/v1/createUser
 
 ```
 

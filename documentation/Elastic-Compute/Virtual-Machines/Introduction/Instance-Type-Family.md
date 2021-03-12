@@ -394,7 +394,7 @@ g.n1.8xlarge|32|128|4 |	 |
 |s.i3.8xlarge|32|128|4 x 1862 NVMe SSD|4
 |s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|4
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|4
-|s.i3.22large|88|352|8 x 1862 NVMe SSD|4
+|s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|4
 
 第二代：
 

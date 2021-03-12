@@ -55,16 +55,17 @@ items:
       herf: Operation-Guide/Add-Domain.md
     - name: 重颁发证书
       herf: Operation-Guide/Reissue-SSL-Sertificate.md
+      status: 0
     - name: 吊销证书
-      herf: Operation-Guide/Reissue-SSL-Sertificate.md
+      herf: Operation-Guide/Revoke-SSL-Sertificate.md
     - name: 更新证书
       herf: Operation-Guide/Update-SSL-Certificate.md
     - name: 续签证书
       herf: Operation-Guide/Renew-SSL-Certificate.md
-    - name: 提交资料-Symantec免费DV证书
-      herf: Operation-Guide/Symantec-DV-Complete.md  
-    - name: 提交资料-GeoTrust付费OV/EV证书
-      herf: Operation-Guide/GeoTrust-OEV-Complete.md
+    - name: 购买证书（DV）
+      herf: Operation-Guide/Purchase-DV-Complete.md  
+    - name: 购买证书（OV/EV）
+      herf: Operation-Guide/Purchase-OEV-Complete.md
 - name: SSL证书安装指南
   items:
     - name: Apache服务器安装证书

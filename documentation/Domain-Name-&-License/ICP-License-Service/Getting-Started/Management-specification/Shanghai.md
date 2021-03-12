@@ -6,7 +6,7 @@
 
 2. 主体负责人必须为法人
 
-3. 网站负责人不是法人时，**需提供[网站负责人授权书.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/shanghai/shanghaishouquanshu.docx)**
+3. 网站负责人不是法人时，**需提供[网站负责人授权书.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/shanghai/shouquanshu2021.docx)**
 
 4. **需提供[上海市互联网信息服务备案承诺书.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/shanghai/fuwuchengnuo.docx)**
 

@@ -39,7 +39,7 @@
 
 1、在系统内获取元数据根目录：
 ```
-curl http://169.254.169.254/jcs-metadata/latest/
+curl http://169.254.169.254/metadata/latest/
 ```
 将以以下形式返回：
 ```

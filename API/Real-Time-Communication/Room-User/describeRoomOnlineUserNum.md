@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询房间实时在线人数:
+查询房间实时在线人数
 
 
 ## 请求方式
@@ -13,7 +13,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**roomId**|Long|False| |房间ID|
+|**roomId**|Long|True| |房间ID|
 
 ## 请求参数
 无
@@ -46,7 +46,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomOnlineUserNum/{roomId}
 ## 请求示例
 GET
 ```
-/v1/describeOnlineUserNum/252
+https://openjrtc.jdcloud-api.com/v1/describeOnlineUserNum/252
 
 ```
 

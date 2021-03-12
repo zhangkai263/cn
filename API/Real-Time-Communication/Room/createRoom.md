@@ -17,7 +17,7 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 |---|---|---|---|---|
 |**roomName**|String|True| |房间名称|
 |**appId**|String|True| |应用ID|
-|**peerId**|Long|True| |JRtc用户ID(创建者ID)|
+|**peerId**|Long|True| |用户ID(创建者ID)|
 
 
 ## 返回参数
@@ -32,7 +32,9 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 |**roomId**|Long|房间ID|
 |**roomName**|String|房间名称|
 |**appId**|String|appId|
-|**peerId**|Long|JRtc用户ID(创建者ID)|
+|**peerId**|Long|用户ID(创建者ID)|
+|**createTime**|String|创建时间|
+|**updateTime**|String|更新时间|
 
 ## 返回码
 |返回码|描述|
@@ -42,7 +44,7 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 ## 请求示例
 POST
 ```
-/v1/createRoom
+https://openjrtc.jdcloud-api.com/v1/createRoom
 
 ```
 
@@ -54,9 +56,11 @@ POST
     "requestId": "10-12-212-116-2561fbd6-23cb-4697-8379-7cbb762ee9c3", 
     "result": {
         "appId": "febf9a1401763b06490e14739c4be622", 
+        "createTime": "2020-12-08T02:23:37Z", 
         "peerId": 252, 
         "roomId": 123, 
-        "roomName": "房间名称"
+        "roomName": "房间名称", 
+        "updateTime": "2020-12-08T02:23:37Z"
     }
 }
 ```
