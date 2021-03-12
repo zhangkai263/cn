@@ -88,6 +88,8 @@ items:
 
   - name: 最佳实践
     items:
+      - name: 大数据量处理
+        href: Best-Practices/Data-Operation.md    
       - name: 数据迁移
         items:
           - name: 数据迁移概述
@@ -96,12 +98,8 @@ items:
             href: Best-Practices/Data-Migration/Full-data-migration.md
           - name: Mydumper
             href: Best-Practices/Data-Migration/Mydumper.md
-          - name: 全量迁移
-            href: Best-Practices/Data-Migration/Full-Import.md
           - name: 增量迁移
             href: Best-Practices/Data-Migration/Incremental-Import.md
-      - name: 大数据量处理
-        href: Best-Practices/Data-Operation.md
       - name: 高效使用 Secondary Index
         href: Best-Practices/Secondary-Index.md
 
