@@ -35,6 +35,7 @@
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_inviteme_detail.jpg)
 
 ![图片](../../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/books_confirm.jpg)
+
 此页面可以对申请加入账本的节点进行审核，同意按钮表示同意节点加入，拒绝按钮表示拒绝节点加入。无论哪个按钮，点击并操作成功后，系统右上角会弹出提示。
 
 * **我加入的账本**：在我加入的账本下可以查看账本信息，点击账本名称链接，同样可以进入账本查看详情信息。
