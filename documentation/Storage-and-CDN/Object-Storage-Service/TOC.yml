@@ -543,6 +543,8 @@ items:
         href: FAQ/Object-Management.md
       - name: 域名/网络
         href: FAQ/Domain-Names-and-Network.md
+      - name: 对象存储域名内网IP新旧对应表
+        href: FAQ/urlipmapping.md
       - name: API/SDK
         href: FAQ/API-SDK.md
  - name: 用户协议
