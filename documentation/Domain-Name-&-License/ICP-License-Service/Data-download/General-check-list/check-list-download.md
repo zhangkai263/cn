@@ -8,6 +8,6 @@
 
 [广东省个人核验单.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/heyandan/guangdongdanwei.pdf)
 
-### 广东省企业核验单下载
+### 广东省单位核验单下载
 
-[广东省企业核验单.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/heyandan/guangdonggeren.pdf)
+[广东省单位核验单.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/heyandan/guangdonggeren.pdf)
