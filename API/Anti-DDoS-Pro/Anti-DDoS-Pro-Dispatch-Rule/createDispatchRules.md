@@ -51,7 +51,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 |名称|类型|描述|
 |---|---|---|
 |**dispatchRuleIds**|String[]|创建成功的防护调度规则id|
-|**failRules**|[FailedRule[]](createdispatchrules#failedrule)|创建失败的防护调度规则域名|
+|**failRules**|[FailedRule[]](#failedrule)|创建失败的防护调度规则域名|
 ### <div id="failedrule">FailedRule</div>
 |名称|类型|描述|
 |---|---|---|
