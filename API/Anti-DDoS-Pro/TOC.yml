@@ -1,6 +1,6 @@
-  name: IP 高防
-  href:
-  items:
+name: IP 高防
+href:
+items:
   - name: 接口概览
     href: overview.md
   - name: 更新历史
@@ -49,6 +49,10 @@
             href: Anti-DDoS-Pro-Instance-APIs/describeInstances.md
           - name: describeNameList
             href: Anti-DDoS-Pro-Instance-APIs/describeNameList.md
+          - name: describeOriginWhiteIpList
+            href: Anti-DDoS-Pro-Instance-APIs/describeOriginWhiteIpList.md
+          - name: describeProtectionOutline
+            href: Anti-DDoS-Pro-Instance-APIs/describeProtectionOutline.md
           - name: describeProtectionStatistics
             href: Anti-DDoS-Pro-Instance-APIs/describeProtectionStatistics.md
           - name: describeVpcIpList
@@ -255,3 +259,19 @@
             href: IP-Sets/describeIpSets.md
           - name: describeIpSetUsage
             href: IP-Sets/describeIpSetUsage.md
+      - name: IP高防防护调度规则相关接口
+        items:
+          - name: createDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/createDispatchRule.md
+          - name: createDispatchRules
+            href: Anti-DDoS-Pro-Dispatch-Rule/createDispatchRules.md
+          - name: deleteDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/deleteDispatchRule.md
+          - name: describeDispatchRules
+            href: Anti-DDoS-Pro-Dispatch-Rule/describeDispatchRules.md
+          - name: modifyDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/modifyDispatchRule.md
+          - name: switchDispatchRuleOrigin
+            href: Anti-DDoS-Pro-Dispatch-Rule/switchDispatchRuleOrigin.md
+          - name: switchDispatchRuleProtect
+            href: Anti-DDoS-Pro-Dispatch-Rule/switchDispatchRuleProtect.md
