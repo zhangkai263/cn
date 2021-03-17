@@ -22,14 +22,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:desc
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeoriginwhiteiplist#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
-|**error**|[Error](describeoriginwhiteiplist#error)| |
+|**error**|[Error](#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](describeoriginwhiteiplist#err)| |
+|**err**|[Err](#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
