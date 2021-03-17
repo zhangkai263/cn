@@ -41,7 +41,7 @@
  
       <!-- 编写合约依赖包 -->
       <properties>
-         <ledger.version>1.3.0.RELEASE</ledger.version>
+         <ledger.version>1.4.2.RELEASE</ledger.version>
        </properties>
       <dependency>
          <groupId>com.jd.blockchain</groupId>
