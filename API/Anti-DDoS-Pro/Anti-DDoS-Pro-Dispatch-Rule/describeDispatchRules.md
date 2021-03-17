@@ -28,14 +28,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describedispatchrules#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
-|**error**|[Error](describedispatchrules#error)| |
+|**error**|[Error](#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](describedispatchrules#err)| |
+|**err**|[Err](#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -46,7 +46,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[DispatchRule[]](describedispatchrules#dispatchrule)| |
+|**dataList**|[DispatchRule[]](#dispatchrule)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|
