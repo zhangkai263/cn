@@ -19,7 +19,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**modifyDispatchRuleSpec**|[ModifyDispatchRuleSpec](modifydispatchrule#modifydispatchrulespec)|True| |更新防护调度规则请求参数|
+|**modifyDispatchRuleSpec**|[ModifyDispatchRuleSpec](#modifydispatchrulespec)|True| |更新防护调度规则请求参数|
 
 ### <div id="modifydispatchrulespec">ModifyDispatchRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -33,14 +33,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](modifydispatchrule#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
-|**error**|[Error](modifydispatchrule#error)| |
+|**error**|[Error](#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](modifydispatchrule#err)| |
+|**err**|[Err](#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
