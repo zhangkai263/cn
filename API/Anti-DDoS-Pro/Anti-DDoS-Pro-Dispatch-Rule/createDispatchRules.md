@@ -18,7 +18,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**dispatchRuleSpecList**|[CreateDispatchRuleSpec[]](#createdispatchrulespec)|True| |批量添加防护调度规则请求参数|
+|**dispatchRuleSpecList**|[CreateDispatchRuleSpec[]](createdispatchrules#createdispatchrulespec)|True| |批量添加防护调度规则请求参数|
 
 ### <div id="createdispatchrulespec">CreateDispatchRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -32,14 +32,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|批量创建结果|
+|**result**|[Result](createdispatchrules#result)|批量创建结果|
 |**requestId**|String| |
-|**error**|[Error](#error)| |
+|**error**|[Error](createdispatchrules#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](#err)| |
+|**err**|[Err](createdispatchrules#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -51,7 +51,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 |名称|类型|描述|
 |---|---|---|
 |**dispatchRuleIds**|String[]|创建成功的防护调度规则id|
-|**failRules**|[FailedRule[]](#failedrule)|创建失败的防护调度规则域名|
+|**failRules**|[FailedRule[]](createdispatchrules#failedrule)|创建失败的防护调度规则域名|
 ### <div id="failedrule">FailedRule</div>
 |名称|类型|描述|
 |---|---|---|
