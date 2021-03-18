@@ -1,6 +1,6 @@
 ## 使用 Mydumper 全量备份数据
 
-`mydumper` 是一个强大的数据备份工具，具体可以参考 [`maxbube/mydumper`](https://github.com/maxbube/mydumper)
+`mydumper` 是一个强大的数据备份工具
 
 
 可使用 [Mydumper](https://docs.pingcap.com/zh/tidb/stable/mydumper-overview) 从 TiDB 导出数据进行备份，然后用 [TiDB Lightning](https://docs.pingcap.com/zh/tidb/stable/tidb-lightning-overview) 将其导入到 TiDB 里面进行恢复。
