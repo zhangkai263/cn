@@ -1,6 +1,6 @@
 # 核心概念
 
-以下是安全加速产品，帮助文档中使用到的概念及其解释，请参考。
+以下是京东云安全加速产品，帮助文档中使用到的概念及其解释，请参考。
 
 **DoS（Denial of Service）**
 
@@ -25,7 +25,7 @@ Web应用防火墙（Web Application Firewall，简称： WAF）。WAF是通过�
 
 **半接入**
 
-半接入也称为Cname接入，域名接入安全加速需要用到CNAME记录，在京东云控制台配置完成加速域名后，用户会得到一个对应的加速CNAME域名（向*.*cnd.jdcloud-scdn.com），用户需要在域名服务商处配置 CNAME 记录，将域名作CNAME指向*.*cdn.jdcloud-scdndns.com的域名，这样，该域名所有的请求都将转向安全加速的节点。
+半接入也称为Cname接入，域名接入安全加速需要用到CNAME记录，在京东云控制台配置完成加速域名后，用户会得到一个对应的加速CNAME域名（*.*cnd.jdcloud-scdn.com），用户需要在域名解析服务商处配置 CNAME 记录，将域名作CNAME指向*.*cdn.jdcloud-scdndns.com的域名，这样，该域名所有的请求都将转向安全加速的节点。
 
 **边缘节点**
 
