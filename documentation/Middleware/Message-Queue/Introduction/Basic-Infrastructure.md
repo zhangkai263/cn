@@ -4,8 +4,8 @@
 ## 业务架构
 业务架构如下图：
 
-![架构](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/Message-Queue/jcq-framework.PNG)
-
+ ![架构](../../../../../image/Internet-Middleware/Message-Queue/jcq-framework.PNG)
+ 
 
 | 概念 | 解释 |
 | :- | :- |
