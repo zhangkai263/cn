@@ -18,7 +18,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**createDispatchRuleSpec**|[CreateDispatchRuleSpec](#createdispatchrulespec)|True| |添加防护调度规则请求参数|
+|**createDispatchRuleSpec**|[CreateDispatchRuleSpec](createdispatchrule#createdispatchrulespec)|True| |添加防护调度规则请求参数|
 
 ### <div id="createdispatchrulespec">CreateDispatchRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -32,14 +32,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](createdispatchrule#result)| |
 |**requestId**|String| |
-|**error**|[Error](#error)| |
+|**error**|[Error](createdispatchrule#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](#err)| |
+|**err**|[Err](createdispatchrule#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|

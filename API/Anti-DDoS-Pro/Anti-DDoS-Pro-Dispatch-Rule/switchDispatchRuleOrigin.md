@@ -23,14 +23,14 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/disp
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](switchdispatchruleorigin#result)| |
 |**requestId**|String| |
-|**error**|[Error](#error)| |
+|**error**|[Error](switchdispatchruleorigin#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](#err)| |
+|**err**|[Err](switchdispatchruleorigin#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
