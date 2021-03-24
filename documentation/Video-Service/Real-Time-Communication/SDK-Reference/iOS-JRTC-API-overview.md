@@ -1,6 +1,6 @@
-# iOS JRTC API接口说明
-## 1 JRTCCloud类
-## 描述
+# iOS JRTC API接口说明  
+# 1 JRTCCloud类
+# 描述
 JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，供音视频会议App开发者调用
 
 ## JRTCCloud类基础方法
@@ -68,7 +68,19 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | authModel   | JRTCEnterRoomAuthModel   | 是    | authModel 初始化消息大厅必须的认证信息，由京东云控制台相关接口下发   |
 
-8. 加入房间
+8. 开启/关闭 网络增强
+
+只能在进入房间前进行设置，不设置的话，默认为NO
+
+`- (void)enableNetWorkEnhance:(BOOL) enable;`
+
+参数说明：
+
+| 参数名  | 类型  | 是否必传  | 说明  |
+|:----------|:----------|:----------|:----------|
+| enable   | BOOL   | 否    | 是否打开网络增强功能   |
+
+9. 加入房间
 
 如果在调用加入房间前，调用了退出房间，则必须等退出房间finishBlock回调后，才能再次调用加入房间接口；
 加入房间后，本地用户会收到JRTCCloudRoomDelegate中加入房间成功的消息回调，
@@ -84,7 +96,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | enterRoomModel    | JRTCEnterRoomModel    | 是    | enterRoomModel 加入房间必传的参数，携带加入房间必须的鉴权信息，其中enterRoomModel中的authModel相关数据，由京东云控制台相关接口下发    |
 
-9. 离开房间
+10. 离开房间
 
 本地用户调用离开房间后，同一房间内，远端用户会收到JRTCCloudRoomDelegate中用户离开房间的回调消息，
 - 注意:只有处于已进入房间状态下，才能调用退出房间，否则调用无效。
@@ -98,10 +110,12 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 
 ## JRTCCloud类视频相关方法
 
-10. 设置视频编码器相关参数 
+11. 设置视频编码器相关参数 
 
 该设置决定了远端用户看到的画面质量及远端用户能否拉去大小画面视频流
 该设置应该在调用 startLocalPreview:view:函数前设置
+参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
+如果不设置，本地视频默认分辨率为720P，帧率为15帧，默认不开启视频大小画面推流
 
 `- (void)setCameraEncoderWithParam:(JRTCVideoEncParam*)param;`
 参数说明：
@@ -110,7 +124,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | param    | JRTCVideoEncParam    | 是    | 视频编码相关参数   |
 
-11. 设置采集本地预览视频的前后摄像头，及视频要绘制展示的画面。
+12. 设置采集本地预览视频的前后摄像头，及视频要绘制展示的画面。
 
 - 1.调用此接口前，先调用初始化消息大厅接口（initJmsgMessageWithAuthModel）或者进入房间接口（enterRoomWithEnterRoomModel），打开本地预览。否则本地用户会收不到JRTCCloudRoomDelegate中本地视频流视频第一帧宽高回调。加入房间成功后，会自动发布本地用户视频流，同一房间内，远端用户会收到JRTCCloudRoomDelegate中有视频流可以订阅的回调，远端用户可以根据可以订阅的视频流，来决定是否订阅对应视频流。打开本地预览，并发布本地用户视频流，同一房间内，远端用户会收JRTCCloudRoomDelegate中有视频流可以订阅的回调，远端用户可以根据可以订阅的视频流，来决定是否订阅对应视频流。
 - 2.本地用户自己也会在视频流发布成功后，收到JRTCCloudRoomDelegate中本地视频流打开的回调消息，并且也会收到本地视频流视频第一帧宽高，通过宽高比，来决定如何展示。参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
@@ -129,16 +143,17 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | view    | JRTCVideoView    | 是   | 视频绘制展示画面    |
 
 
-12. 停止本地摄像头采集视频
+13. 停止本地摄像头采集视频
 
+调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调；
+成功的话本地用户端不会收到任何回调，直接修改相关数据状态。
 本地用户调用停止本地摄像头采集视频成功后，同一房间内，
 远端用户会收到JRTCCloudRoomDelegate中有视频流不可以订阅的回调消息，
 远端用户可以根据此视频流不可以订阅，来置空此条视频流相关信息。
-本地用户自己也会收到JRTCCloudRoomDelegate中本地视频流不可用的回调消息。
 
 `- (void)stopLocalPreview;`
 
-13. 暂停/继续推送本地的视频数据
+14. 暂停/继续推送本地的视频数据
 
 加入房间成功后，才可以调用此接口。
 同一房间中，本地用户不会收到任何回调，
@@ -152,19 +167,23 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | mute    | BOOL    | 是    |   YES为暂停 NO为继续    |
 
-14. 订阅远端视频流
+15. 订阅远端视频流
 
-加入房间成功后，才可调用此接口。
-同一房间中，订阅远端视频流成功后，用户会收到JRTCCloudRoomDelegate中是否有
-视频暂停或继续的回调消息，及视频画面第一帧宽高的回调消息。如果视频第一帧宽高都不为0，
-则可以展示此画面。
+加入房间成功后，才可调用此接口。同一房间中，订阅远端视频流成功后，
+用户会收到JRTCCloudRoomDelegate中是否有
+视频暂停或继续的回调消息，及视频画面第一帧宽高的回调消息。如果视频第一帧宽高都不为0，则可以展示此画面。
 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
+本地用户加入房间后，调用此函数，订阅远端视频流，订阅视频流超时，会触发JRTC_ERROR_CODE_SUBSCRIBE_VEDIO_STREAM_TIMEOUT类型的错误回调，超时时间15秒，本地用户可重新调用此函数，重新订阅视频流。如果远端用户只发布了小画面视频流，本地用户订阅大小画面视频流无效，都会只订阅成功远端用户发布的视频流。
+如果远端用户只发布了大画面视频流，本地用户订阅大小画面视频流会有效，会订阅成功远端用户发布的大小画面视频流。
+
 - 本地用户加入房间后，调用此函数，订阅远端视频流，订阅视频流超时，会触发JRTC_ERROR_CODE_SUBSCRIBE_VEDIO_STREAM_TIMEOUT类型的错误回调，超时时间15秒，本地用户可重新调用此函数，重新订阅视频流。
 
 ```Object-C
 - (void)startRemoteVideoWithVideoView:(JRTCVideoView *)videoView
                                peerID:(NSString *)peerId
-                             streamID:(NSString *)streamId;
+                             streamID:(NSString *)streamId
+                      streamModelType:(JRTC_VIDEO_STREAM_MODEL_TYPE)modelType
+                           streamType:(JRTC_VIDEO_STREAM_TYPE)streamType;
 ```
 参数说明：
 
@@ -173,12 +192,45 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | videoView    | JRTCVideoView    | 是    | 远端视频流要绘制的画面    |
 | peerId    | NSString    | 是   | 要订阅视频流对应的peerID    |
 | streamId    | NSString    | 是   | 要订阅视频流对应的streamId    |
+| modelType    | JRTC_VIDEO_STREAM_MODEL_TYPE    | 是   | 指定获取到视频流类型    |
+| streamType    | JRTC_VIDEO_STREAM_TYPE    | 是   | 视频流类型，0为小画面视频流 1为大画面视频流    |
 
-15. 取消订阅远端视频流，
+16. 切换大小画面流
+
+加入房间成功后，才可调用此接口。
+全屏展示视频时，可以选择视频流为大画面视频流，
+小屏展示视频时，可选择视频流为小画面视频流，已达到减少耗电与节省流量。
+此接口没有相应的成功失败回调，如果失败，则保持为切换前的大小画面视频流。
+如果视频流大小画面切换成功，会触发onFirstVideoFrame视频帧宽高改变回调
+参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
+如果远端用户只发布了小画面视频流，本地用户切换远端用户大小画面视频流无效，都会只展示远端用户发布的视频流。
+如果远端用户只发布了大画面视频流，本地用户切换远端用户大小画面视频流会有效，会展示远端用户发布的大小画面视频流。
+注意:未订阅成功的视频流，禁止切换大小画面流。
+
+```Object-C
+- (void)changeVideoStreamWithPeerId:(NSString *)peerId
+                      videoStreamId:(NSString *)videoStreamId
+                    streamModelType:(JRTC_VIDEO_STREAM_MODEL_TYPE)modelType
+                         streamType:(JRTC_VIDEO_STREAM_TYPE)streamType;
+```
+参数说明：
+
+| 参数名   | 类型  | 是否必传 | 说明  |
+|:----------|:----------|:----------|:----------|
+| peerId    | NSString    | 是    | 视频流对应的peerId    |
+| videoStreamId    | NSString    | 是   | 视频流    |
+| modelType    | JRTC_VIDEO_STREAM_MODEL_TYPE    | 是   | 指定获取到视频流类型   |
+| streamType    | JRTC_VIDEO_STREAM_TYPE    | 是   | 视频流类型，0为小画面视频流 1为大画面视频流    |
+
+
+
+17. 取消订阅远端视频流，
 
 加入房间成功后，才可调用此接口。
 取消订阅成功后，本地用户会收到JRTCCloudRoomDelegate.h中对应视频流不可用回调，
 进而更改相应UI展示。
+调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调；
+成功的话本地用户端不会收到任何回调，直接修改相关数据状态。
 调完此接口后，videoView会展示为黑色画面。
 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
 
@@ -195,7 +247,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | peerId    | NSString    | 是   | 要取消订阅视频流对应的peerID    |
 | streamId    | NSString    | 是   | 要取消订阅视频流对应的streamId    |
 
-16. 暂停/继续订阅远端的视频数据。
+18. 暂停/继续订阅远端的视频数据。
 
 加入房间成功后，才可调用此接口。
 暂停的话通道不断，网络数据不收，本地用户不会收到回调消息，
@@ -213,7 +265,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | streamId    | NSString    | 是    | 远端视频流streamId   |
 | mute    | BOOL    | 是   |  YES为暂停 NO为继续    |
 
-17. 暂停/继续订阅所有远端用户的视频数据。
+19. 暂停/继续订阅所有远端用户的视频数据。
 
 加入房间成功后，才可调用此接口。
 暂停的话通道不断，网络数据不收，本地用户不会收到回调消息，
@@ -227,7 +279,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | mute    | BOOL    | 是   |  YES为暂停 NO为继续    |
 
-18. 设置本地摄像头预览画面的镜像模式
+20. 设置本地摄像头预览画面的镜像模式
 
 `- (void)setLocalViewWithMirror:(BOOL)mirror;`
 参数说明：
@@ -238,10 +290,10 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 
 ## JRTCCloud类音频相关方法
 
-19. 开启本地音频的采集
+21. 开启本地音频的采集
 
 当本地用户加进房间成功后，会自动发布本地用户音频流，
-开启成功后，本地用户会收到JRTCCloudRoomDelegate中本地音频流可用的回调消息，
+推流成功后，本地用户会收到JRTCCloudRoomDelegate中本地音频流可用的回调消息，
 远端用户会收到JRTCCloudRoomDelegate中有音频流可以订阅的回调，远端用户可以根据有音频流可以订阅，
 来决定是否订阅此条音频流。
 
@@ -250,15 +302,16 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 
 `- (void)startLocalAudio;`
 
-20. 关闭本地音频的采集和上行
+22. 关闭本地音频的采集和上行
 
-关闭成功后，本地用户会收到JRTCCloudRoomDelegate中本地音频流不可用的回调消息，
+调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调；
+成功的话本地用户端不会收到任何回调，直接修改相关数据状态。
 远端用户会走JRTCCloudRoomDelegate中有音频流不可以订阅的回调，
 远端用户可以根据有音频流不可以订阅，来置空此条音频流相关信息。
 
 `- (void)stopLocalAudio;`
 
-21. 订阅远端音频流
+23. 订阅远端音频流
 
 加入房间成功后，才可调用此接口。
 订阅远端视频流后，订阅成功后，本地用户会收到JRTCCloudRoomDelegate中音频流继续、
@@ -279,10 +332,11 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | streamId    | NSString    | 是   |  要订阅音频流对应的streamId   |
 
 
-22. 取消订阅远端音频流
+24. 取消订阅远端音频流
 
 加入房间成功后，才可调用此接口。
-取消订阅成功后，本地用户会收到JRTCCloudRoomDelegate中音频流不可用回调消息。
+调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调；
+成功的话本地用户端不会收到任何回调，直接修改相关数据状态。
 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。
 - 注意:1.大房间模式下，本地用户不可取消订阅远端用户音频流。
 
@@ -297,7 +351,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | peerId    | NSString    | 是   |  要取消订阅音频流对应的peerID   |
 | streamId    | NSString    | 是   |  要取消订阅音频流对应的streamId   |
 
-23. 静音/取消静音本地的音频
+25. 静音/取消静音本地的音频
 
 加入房间成功后，才可调用此接口。
 远端用户会收到JRTCCloudRoomDelegate中有音频流暂停或者继续的回调消息，
@@ -311,18 +365,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | mute    | BOOL    | 是   |  mute YES为静音 NO为取消静音  |
 
-
-24. 设置音频路由
-
-`- (void)setAudioRouteWithRoute:(JRTC_AUDIO_ROUTE)route;`
-
-参数说明：
-
-| 参数名   | 类型  | 是否必传 | 说明  |
-|:----------|:----------|:----------|:----------|
-| route    | JRTC_AUDIO_ROUTE    | 是   |  音频路由，即声音由哪里输出（扬声器、听筒），连接耳机的情况下，音频输出路由只能是听筒  |
-
-25. 静音/取消静音指定的远端用户的声音。
+26. 静音/取消静音指定的远端用户的声音。
 
 加入房间成功后，才可以调用此接口。
 静音的话通道不断，网络数据不收，本地用户不会收到回调消息。
@@ -340,7 +383,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | streamId    | NSString   | 是   |  音频流streamId  |
 | mute    | BOOL    | 是   |  YES为静音 NO为取消静音  |
 
-26. 静音/取消静音所有远端用户的声音
+27. 静音/取消静音所有远端用户的声音
 
 加入房间成功后，才可以调用此接口。
 静音的话通道不断，网络数据不收，本地用户不会收到回调消息。
@@ -352,18 +395,6 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 |:----------|:----------|:----------|:----------|
 | mute    | BOOL    | 是   | YES为静音 NO为取消静音  |
 
-
-## JRTCCloud类耳返开启与关闭接口
-
-27. 设置耳反是否开启
-
-`- (void)enableAudioEarMonitoringWithEnable:(BOOL)enable;`
-
-参数说明：
-
-| 参数名   | 类型  | 是否必传 | 说明  |
-|:----------|:----------|:----------|:----------|
-| enable    | BOOL    | 是   | YES为开启耳返 NO为关闭耳返  |
 
 ## JRTCCloud类切换摄像头接口
 
@@ -481,8 +512,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 ## JRTCCloud类获取版本号接口
 
 36. 获取版本号
-  @return     
-*/
+  
 `+ (NSString *)getSDKVersion;`
 
 
@@ -771,7 +801,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 
 ## 流信息事件回调
 
-5. 对于远端视频流对应为是否可订阅回调；对于用户自己的视频流，则表示为打开或者关闭回调。
+5. 对于远端视频流对应为是否可订阅回调；对于用户自己的视频流，用户本地视频流推流成功后，本行用户会收到此回调，同时available为YES。
 
 ```Object-C
 -(void)onUserVideoAvailableWithPeerId:(NSString *)peerId
@@ -788,7 +818,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | streamName    | NSString  |  视频流名称   |
 | available    | BOOL  |   视频流是否可用    |
 
-6. 对于远端音频流对应为是否可订阅回调；对于用户自己的音频流，则表示为打开或者关闭回调。
+6. 对于远端音频流对应为是否可订阅回调；对于用户自己的音频流，用户本地音频流推流成功后，本行用户会收到此回调，同时available为YES。
 
 ```Object-C
 -(void)onUserAudioAvailableWithPeerId:(NSString *)peerId
@@ -900,7 +930,9 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 
 ## 消息事件回调
 
-13. 普通房间接收到广播消息回调，如果是自己发送给所有人，自己也会收到这条回调
+13. 普通房间接收到广播消息回调
+
+如果是自己发送给所有人，自己也会收到这条回调
     
 ```Object-C
 -(void)onRecvMsgFromPeerId:(NSString *)peerId
@@ -1028,7 +1060,9 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | peerId    | NSInteger   |关闭禁言房间聊天发出者peerId |
 | nickName    | NSString   |  关闭禁言房间聊天发出者nickName  |
 
-22. 本地用户接收到向整个房间广播的主持人结束会议回调，同一房间里所有人都会收到此回调
+22. 本地用户接收到向整个房间广播的主持人结束会议回调
+
+同一房间里所有人都会收到此回调
 
 ```Object-C
 -(void)onHosterFinishMeeting;
@@ -1046,12 +1080,14 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | peerId    | NSString   | 新的主持人peerId   |
 
 24. 本地用户接收到向整个房间广播的自定义信令回调
+
+同一房间里除了主持人，其他人都会收到此回调
          
 ```Object-C
 -(void)onCustomSignalToRoomWithEventName:(NSString *)eventName
                                   peerId:(NSString *)peerId
                                 nickName:(NSString *)nickName
-                               eventInfo:(NSDictionary *)info;
+                               eventInfo:(NSString *)info;
 ```
 参数说明：
 
@@ -1060,7 +1096,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | eventName    | NSString   | 自定义事件名称   |
 | peerId    | NSString   | 发出自定义广播信令者的peerId   |
 | nickName    | NSString  |  发出自定义广播信令者的nickName   |
-| info    | NSDictionary  |  自定义事件携带的信息    |
+| info    | NSDictionary  |  自定义事件携带的信息，可以是普通字符串，也可以是可转化为json格式的字符串，客户端可根据自己需要获取相关信息    |
 
 
 25. 本地用户接收到发送给本地用户的自定义信令回调
@@ -1069,7 +1105,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 -(void)onCustomSignalToPeerWithEventName:(NSString *)eventName
                                   peerId:(NSString *)peerId
                                 nickName:(NSString *)nickName
-                               eventInfo:(NSDictionary *)info;
+                               eventInfo:(NSString *)info;
 ```
 参数说明：
 
@@ -1078,7 +1114,7 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | eventName    | NSString   | 自定义事件名称   |
 | peerId    | NSString   | 发出自定义信令者的peerId   |
 | nickName    | NSString  |  发出自定义信令者的nickName   |
-| info    | NSDictionary  |  自定义事件携带的信息    |
+| info    | NSDictionary  |  自定义事件携带的信息，可以是普通字符串，也可以是可转化为json格式的字符串，客户端可根据自己需要获取相关信息    |
 
 
 
@@ -1088,6 +1124,11 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 视频通话网络事件回调接口
 
 1. 网络连接状态错误回调
+
+errorCode错误码，errorCode如果为JRTC_ERROR_CODE_NETWORK，SDK自动重新加入房间，
+本地App层需要相应的正在重新加入房间弹框做提示，本地App需要清空订阅的远端信息，
+本地App层不需要对本地音视频做特殊处理，可保持原状。
+注意：远端画面会保持一段时间拉取不到远端画面视频流。
 
 ```Object-C
 -(void)onNetErrorWithErrorCode:(NSInteger)errorCode errorState:(NSString *)errorState;
@@ -1100,12 +1141,20 @@ JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，�
 | errorState    | NSString   | 错误描述  |
 
 
-2. 网络已连接
-
-设备有无网变为有网，会触发此回调，收到此回调后，需重新加入房间
+2. 网络类型切换
 
 ```Object-C
--(void)onNetConnected;
+-(void)onNetTypeChange:(JRTC_NetWorkType) type;
+```
+
+3. 网络状态发生变化
+
+SDK自动重新加入房间，本地App层需要相应的正在重新加入房间弹框做提示，
+本地App需要清空订阅的远端信息，本地App层不需要对本地音视频做特殊处理，可保持原状。
+注意：远端画面会保持一段时间拉取不到远端画面视频流。
+
+```Object-C
+-(void)onNetStatusChanged;
 ```
 
 
@@ -1507,7 +1556,7 @@ typedef NS_ENUM(NSInteger, JRTC_MESSAGE_MODE) {
 
 6. bitrate
 
-`@property(nonatomic,strong)NSNumber *bitrate;//`
+`@property(nonatomic,strong)NSNumber *bitrate;`
 
 属性说明:
 
@@ -1551,6 +1600,19 @@ typedef NS_ENUM(NSInteger, JRTC_MESSAGE_MODE) {
 
 用于视频画面展示，继承自UIView
 
+1. 设置视频背景画面颜色
+
+```Object-C
+-(void)setBackGroundColorWithColor:(UIColor *)color;
+```
+参数说明：
+
+| 参数名   | 类型  |  说明  |
+|:----------|:----------|:----------|
+| color    | UIColor   |   视频背景颜色  |
+
+
+
 
 # 4 JRTCCloudDef
 
@@ -1571,7 +1633,46 @@ block说明：
 | error    | NSError    | 发送失败信息    |
 | messageModel    | JRTCMessageModel    | 发送的消息   |
 
-2. JRTC_VIDEO_RESOLUTION  
+
+2. JRTC_VIDEO_STREAM_MODEL_TYPE
+
+指定下发视频流类型
+自动下发大小画面视频流，下发的视频流类型不一定为指定的视频流类型。
+
+```Object-C
+typedef NS_ENUM(NSInteger, JRTC_VIDEO_STREAM_MODEL_TYPE) {
+    JRTC_VIDEO_STREAM_MODEL_TYPE_AUTO   = 1,     
+    JRTC_VIDEO_STREAM_MODEL_TYPE_FIX = 2,     
+};
+```
+枚举类型说明：
+
+| 枚举类型  | 说明 | 
+|:----------|:----------|
+| JRTC_VIDEO_STREAM_MODEL_TYPE_AUTO    | 自动下发大小画面视频流    | 
+| JRTC_VIDEO_STREAM_MODEL_TYPE_FIX   | 固定下发指定的大小画面视频流    | 
+
+3. JRTC_VIDEO_STREAM_TYPE
+
+视频流类型
+如果上行网络和性能比较好，则可以同时送出大小两路画面。
+不支持单独开启小画面，小画面必须依附于主画面而存在。
+
+```Object-C
+typedef NS_ENUM(NSInteger, JRTC_VIDEO_STREAM_TYPE) {
+    JRTC_VIDEO_STREAM_TYPE_BIG   = 1,     
+    JRTC_VIDEO_STREAM_TYPE_SMALL = 0,      
+};
+```
+枚举类型说明：
+
+| 枚举类型  | 说明 | 
+|:----------|:----------|
+| JRTC_VIDEO_STREAM_TYPE_BIG    | 大画面视频流，用来传输摄像头的视频数据    | 
+| JRTC_VIDEO_STREAM_TYPE_SMALL   | 小画面视频流，跟大画面的内容相同，但是分辨率和码率更低    | 
+
+
+4. JRTC_VIDEO_RESOLUTION  
 
 视频分辨率
 
@@ -1589,7 +1690,7 @@ typedef NS_ENUM(NSInteger, JRTC_VIDEO_RESOLUTION) {
 | JRTC_VIDEO_RESOLUTION_360P   | 视频分辨率360*640    | 
 
 
-3. JRTC_ROOM_TEMPLATE 
+5. JRTC_ROOM_TEMPLATE 
 
 房间模板
 
@@ -1612,7 +1713,33 @@ typedef NS_ENUM(NSInteger, JRTC_ROOM_TEMPLATE) {
 | JRTC_ROOM_TEMPLATE_AUDIO_INTERACTIVE_LIVING   | 房间枚举类型，音频直播互动    | 
 
 
-4. JRTC_ROOM_EXPIREMODE
+7. JRTC_NetWorkType
+
+网络类型
+```Object-C
+typedef NS_ENUM(NSInteger,JRTC_NetWorkType){
+    NET_WORK_TYPE_UNKNOWN,
+    NET_WORK_TYPE_ETHERNET,
+    NET_WORK_TYPE_WIFI,
+    NET_WORK_TYPE_CELLULAR,
+    NET_WORK_TYPE_VPN,
+    NET_WORK_TYPE_LOOPBACK,
+    NET_WORK_TYPE_ANY,
+};
+```
+| 枚举类型  | 说明 | 
+|:----------|:----------|
+| NET_WORK_TYPE_UNKNOWN    | 未知网络类型    | 
+| NET_WORK_TYPE_ETHERNET   | 以太网    | 
+| NET_WORK_TYPE_WIFI  | Wi-Fi    | 
+| NET_WORK_TYPE_CELLULAR  | 移动流量    | 
+| NET_WORK_TYPE_VPN  | VPN网络   | 
+| NET_WORK_TYPE_WIFI  | 本地网络    | 
+| NET_WORK_TYPE_WIFI  | 任意网络    | 
+
+
+
+8. JRTC_ROOM_EXPIREMODE
   
 房间过期类型
 
@@ -1631,7 +1758,7 @@ typedef NS_ENUM(NSInteger, JRTC_ROOM_EXPIREMODE) {
 | JRTC_ROOM_EXPIREMODE_IN_THE_END  | 永久不过期    | 
 
 
-5. JRTC_VIDEO_FPS
+9. JRTC_VIDEO_FPS
 
 视频帧率
 
@@ -1652,22 +1779,7 @@ typedef NS_ENUM(NSInteger,JRTC_VIDEO_FPS) {
 | JRTC_VIDEO_FPS_30  | 频帧率枚举类型，30帧每秒    | 
 
 
-6. JRTC_AUDIO_ROUTE
-
-音频路由
-
-```Object-C
-typedef NS_ENUM(NSInteger, JRTC_AUDIO_ROUTE) {
-    JRTC_AUDIO_ROUTE_SPEAKER = 0,
-    JRTC_AUDIO_ROUTE_EARPIECE = 1,
-};
-```
-| 枚举类型  | 说明 | 
-|:----------|:----------|
-| JRTC_AUDIO_ROUTE_SPEAKER    | 音频路由枚举类型，扬声器，默认类型    | 
-| JRTC_AUDIO_ROUTE_EARPIECE   | 音频路由枚举类型，听筒    | 
-
-7. JRTC_ERROR
+10. JRTC_ERROR
 
 错误类型
 
@@ -1755,7 +1867,10 @@ typedef NS_ENUM(NSInteger, JRTC_ERROR) {
     JRTC_ERROR_CODE_NETCONNECT_CLOSED                    = -330,    
     
     JRTC_ERROR_CODE_CANSUL_NOPUBLISHED_VIDEO             = -340,   
-    JRTC_ERROR_CODE_CANSUL_NOPUBLISHED_AUDIO             = -341,   
+    JRTC_ERROR_CODE_CANSUL_NOPUBLISHED_AUDIO             = -341,  
+
+    JRTC_ERROR_CODE_PUBLISHING_OR_PUBLISHED_VIDEO        = -342,      
+    JRTC_ERROR_CODE_PUBLISHING_OR_PUBLISHED_AUDIO        = -343,     
     
     JRTC_ERROR_CODE_CANSUL_SUB_AUDIO                     = -350,    
     JRTC_ERROR_CODE_CANSUL_UNSUB_AUDIO                   = -351,    
@@ -1884,6 +1999,8 @@ typedef NS_ENUM(NSInteger, JRTC_ERROR) {
 | JRTC_ERROR_CODE_NETCONNECT_CLOSED   | 设备网络连接断开 |
 | JRTC_ERROR_CODE_CANSUL_NOPUBLISHED_VIDEO  |  没有可以取消的视频流 |
 | JRTC_ERROR_CODE_CANSUL_NOPUBLISHED_AUDIO  | 没有可以取消的音频流 |
+| JRTC_ERROR_CODE_PUBLISHING_OR_PUBLISHED_VIDEO  | 本地视频流正在发布或者已发布 |
+| JRTC_ERROR_CODE_PUBLISHING_OR_PUBLISHED_AUDIO  | 本地音频流正在发布或者已发布 |
 | JRTC_ERROR_CODE_CANSUL_SUB_AUDIO     | 大房间模式，不允许用户订阅音频流 |
 | JRTC_ERROR_CODE_CANSUL_UNSUB_AUDIO    | 大房间模式，不允许用户取消订阅音频流 |
 | JRTC_ERROR_CODE_NO_INROOM   | 没有加入房间，不允许此操作(如订阅、取消订阅远端音视频、发送聊天消息、禁言其他人等) |
@@ -1943,17 +2060,17 @@ typedef NS_ENUM(NSInteger, JRTC_ERROR) {
 
 ## JRTCVideoEncParam类保存视频分辨率、帧率等信息 
 
-8. 视频分辨率
+11. 视频分辨率
 
-`@property(nonatomic,assign)JRTC_VIDEO_RESOLUTION videoResolution;//默认720P`
+`@property(nonatomic,assign)JRTC_VIDEO_RESOLUTION videoResolution;`
 
 属性说明:
 
 |   属性名   | 属性类型  | 是否必须设置  | 说明  |
 |:----------|:----------|:----------|:----------|
-| videoResolution    | JRTC_VIDEO_RESOLUTION    | 是  | 视频推流及预览分辨率  |
+| videoResolution    | JRTC_VIDEO_RESOLUTION    | 是  | 视频推流分辨率，默认720P  |
 
-9. 帧率
+12. 帧率
 
 `@property(nonatomic,assign)JRTC_VIDEO_FPS videoFps;`
 
@@ -1961,4 +2078,14 @@ typedef NS_ENUM(NSInteger, JRTC_ERROR) {
 
 |   属性名   | 属性类型  | 是否必须设置  | 说明  |
 |:----------|:----------|:----------|:----------|
-| videoFps    | videoFps    | 是  | 视频推流及预览帧率  |
+| videoFps    | JRTC_VIDEO_FPS    | 是  | 视频推流帧率，默认15帧  |
+
+13. 是否开启多路推流
+
+`@property(nonatomic,assign)BOOL enableMultiStream;`
+
+属性说明:
+
+|   属性名   | 属性类型  | 是否必须设置  | 说明  |
+|:----------|:----------|:----------|:----------|
+| enableMultiStream    | BOOL    | 是  | 是否开启多路推流，默认为NO，不开启多路推流  |
