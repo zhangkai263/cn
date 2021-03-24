@@ -25,7 +25,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 ### <div id="CreditTaskSignUpDetail">CreditTaskSignUpDetail</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**phone**|String|True| |注册手机号，国内手机：11位手机号;海外手机：以+号开头，4位国家代码+5-11位手机号扩展位；手机注册，必填|
+|**phone**|String|True| |注册手机号，国内手机：11位手机号;海外手机：以+号开头，4位国家代码+5-11位手机号扩展位；手机注册，必填。手机号支持明文或者32位MD5手机号，必传其一。|
 |**ip**|String|True| |注册IP，用户注册IP，IPV4 或 IPV6|
 |**regEmail**|String|True| |注册邮箱，用户注册邮箱；邮箱注册，必填|
 |**regName**|String|True| |注册账号名，用户注册名称；pin注册，必填|
@@ -64,8 +64,8 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**riskTag**|String|风险类型，对应riskCode的中文描述|
 |**riskCode**|String|风险类型编码，对应riskCode的分类：<br/>200-208手机综合风险，包括200-黑手机、201-异常注册、202-异常登录、203-营销刷券、204-下单黄牛、205-异常支付、206-恶意售后、207-猫池小号、208-订单风险、998-未知<br/>501-507IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP、507-爬虫IP、998-未知<br/>600-604注册综合风险，包括600-其他、601-机器批量注册、602-代理IP注册、603-黑卡注册、604-垃圾小号注册、998-未知<br/>700-703登录综合风险，包括700-其他、701-机器批量登录、702-撞库登录、703-代理IP登录、998-未知<br/>800-803营销综合风险，包括800-其他、801-批量刷券、802-黑手机、803-黑设备、998-未知<br>详见[标签说明](https://docs.jdcloud.com/cn/risk-detection/core-concepts)|
 |**riskClass**|String|风险分类，包括ip、phone、addr、login，signup，marketing|
-|**score**|String|风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
-|**scoreDesc**|String|对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
+|**score**|String|风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险|
+|**scoreDesc**|String|对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险|
 
 ## 返回码
 |返回码|描述|
