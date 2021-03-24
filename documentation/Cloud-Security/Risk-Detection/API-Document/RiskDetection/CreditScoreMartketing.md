@@ -25,7 +25,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 ### <div id="CreditTaskMarketingDetail">CreditTaskMarketingDetail</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**phone**|String|True| |注册手机号，国内手机：11位手机号;海外手机：以+号开头，4位国家代码+5-11位手机号扩展位；手机注册，必填|
+|**phone**|String|True| |注册手机号，国内手机：11位手机号;海外手机：以+号开头，4位国家代码+5-11位手机号扩展位；手机注册，必填。手机号支持明文或者32位MD5手机号，必传其一。|
 |**ip**|String|True| |参与活动IP,用户领取奖励时的真实外网 IP（非服务端），IPV4 或 IPV6|
 |**time**|Integer|True| |参与活动时间戳，参与活动时间戳，UNIX时间戳|
 |**channel**|Integer|False| |用户参加活动渠道或终端，1：PC端web浏览器注册 PC-Browser；2：PC客户端注册 PC-Client；3：移动设备各种APP注册 Mobile-APP；4 ：移动设备浏览器登录，移动端M页注册 Mobile-Brower；5：移动设备微信客户端中购物入口的注册操作 Mobile-WX；6： 移动设备QQ客户端中购物入口的注册操作 Mobile-QQ；7： 移动设备微信客户端中微信小程序注册操作- Mobile-WX；0：其他|
@@ -90,16 +90,18 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |名称|类型|描述|
 |---|---|---|
 |**riskTag**|String|风险类型，对应riskCode的中文描述|
-|**riskCode**|String|风险类型编码，对应riskCode的分类：<br/>201-207手机综合风险，包括201-异常注册、202-异常登录、203-营销刷券、204-下单黄牛、205-异常支付、206-恶意售后、207-猫池小号、998-未知<br/>501-507IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP、507-爬虫IP、998-未知<br/>600-604注册综合风险，包括600-其他、601-机器批量注册、602-代理IP注册、603-黑卡注册、604-垃圾小号注册、998-未知<br/>700-703登录综合风险，包括700-其他、701-机器批量登录、702-撞库登录、703-代理IP登录、998-未知<br/>800-803营销综合风险，包括800-其他、801-批量刷券、802-黑手机、803-黑设备、998-未知<br>详见[标签说明](https://docs.jdcloud.com/cn/risk-detection/core-concepts)|
+|**riskCode**|String|风险类型编码，对应riskCode的分类：<br/>200-208手机综合风险，包括200-黑手机、201-异常注册、202-异常登录、203-营销刷券、204-下单黄牛、205-异常支付、206-恶意售后、207-猫池小号、208-订单风险、998-未知<br/>501-507IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP、507-爬虫IP、998-未知<br/>600-604注册综合风险，包括600-其他、601-机器批量注册、602-代理IP注册、603-黑卡注册、604-垃圾小号注册、998-未知<br/>700-703登录综合风险，包括700-其他、701-机器批量登录、702-撞库登录、703-代理IP登录、998-未知<br/>800-803营销综合风险，包括800-其他、801-批量刷券、802-黑手机、803-黑设备、998-未知<br>详见[标签说明](https://docs.jdcloud.com/cn/risk-detection/core-concepts)|
 |**riskClass**|String|风险分类，包括ip、phone、addr、login，signup，marketing|
-|**score**|String|风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
-|**scoreDesc**|String|对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-未知|
+|**score**|String|风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险|
+|**scoreDesc**|String|对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
 |**400**|Bad Request|
+
+[其他常见错误码](https://docs.jdcloud.com/cn/common-declaration/api/error-codes)
 
 注：当请求QPS超过购买的包年不限次套餐里面限定的QPS阈值后，会提示如下：
 
@@ -147,7 +149,7 @@ body：
                     "riskCode": "998",
                     "riskClass": "marketing",
                     "score": "0",
-                    "scoreDesc": "未知"
+                    "scoreDesc": "无风险"
                 },
                 "hitCache": "miss",
                 "inBWList": "none"
