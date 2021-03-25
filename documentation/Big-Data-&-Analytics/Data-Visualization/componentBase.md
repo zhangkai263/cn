@@ -6,7 +6,7 @@
 
 ### 图表位置
 
-![](image/20200817180053.png)
+![](http://storage.360buyimg.com/docs-image/20200817180053.png)
 
 以柱状图为例，选中组件，右侧样式设置中出现图表的位置信息，默认显示图表左上角的位置坐标。
 
@@ -24,7 +24,7 @@
 
 ### 图表切换
 
-![](image/1614825398(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1614825398.jpg)
 
 部分图表组件支持图表切换功能，以柱状图为例，选中组件，点击编辑区名称区域的右侧的图表切换按钮，即可展示当前图表支持切换的其他图表种类。
 
@@ -36,11 +36,11 @@
 
 2、同类型图表之间可以切换、不同类型间不能切换；
 
-![](image/1614825458(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1614825458.jpg)
 
-![](image/1614825535(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1614825535.jpg)
 
-![](image/1614825583(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1614825583.jpg)
 
 
 

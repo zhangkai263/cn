@@ -8,17 +8,17 @@
 
 ### 样式设置
 
-![](image/55af6b30086938c41bcaea2187a295a0.png)
+![](http://storage.360buyimg.com/docs-image/55af6b30086938c41bcaea2187a295a0.png)
 
 边框的样式设置包括边框样式，图表位置，图表尺寸。
 
 边框样式
 
-![](image/37270b949ee1f4028c0ad6092941a482.png)
+![](http://storage.360buyimg.com/docs-image/37270b949ee1f4028c0ad6092941a482.png)
 
 点击边框样式后的
 
-![](image/c6105be6588870ddd83b2ef017730d9a.png)
+![](http://storage.360buyimg.com/docs-image/c6105be6588870ddd83b2ef017730d9a.png)
 
 加号，弹出系统预置的6类边框，选择需要的边框即可；
 
@@ -34,17 +34,17 @@
 
 ### 样式设置
 
-![](image/f6c208e5847ece40032cc78510982cd0.png)
+![](http://storage.360buyimg.com/docs-image/f6c208e5847ece40032cc78510982cd0.png)
 
 标题的样式设置包括标题样式，标题名称，文本样式，图表位置，图表尺寸。
 
 标题样式
 
-![](image/5c947391e8bdec1e9b1ec858b129bbfc.png)
+![](http://storage.360buyimg.com/docs-image/5c947391e8bdec1e9b1ec858b129bbfc.png)
 
 点击边框样式后的
 
-![](image/c6105be6588870ddd83b2ef017730d9a.png)
+![](http://storage.360buyimg.com/docs-image/c6105be6588870ddd83b2ef017730d9a.png)
 
 加号，弹出系统预置的5类标题，选择需要的标题即可；
 
@@ -62,7 +62,7 @@
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
 
-![](image/1590660143(1).png)
+![](http://storage.360buyimg.com/docs-image/1590660143(1).png)
 
 目前颜色选择支持设置色值以及透明度，如上图所示，红框①处拖动可调整色值，红框②处拖动可调整透明度。
 
@@ -80,7 +80,7 @@
 
 ### 样式设置
 
-![](image/c799aaae6d6e4818946d812f6c69de4f.png)
+![](http://storage.360buyimg.com/docs-image/c799aaae6d6e4818946d812f6c69de4f.png)
 
 线条的样式设置包括线条的主题样式，主题颜色、图表位置，图表尺寸。
 
@@ -100,7 +100,7 @@
 
 ### 样式设置
 
-![](image/1600140405(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140405(1).png)
 
 样式设置包括边框样式，文本样式，背景设置，边框设置
 
@@ -117,13 +117,13 @@
 字体粗细：字体的粗细，有正常、细体、粗体、更粗四个选项；
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
-![](image/1589445453(1).png)
+![](http://storage.360buyimg.com/docs-image/1589445453(1).png)
 
 对齐方式：文字的对齐方式，有居左、居中、居右三个选项；
 
 背景设置
 
-![](image/1589445692(1).png)
+![](http://storage.360buyimg.com/docs-image/1589445692(1).png)
 
 背景来源可以设置颜色背景或者图片填充背景。
 
@@ -133,7 +133,7 @@
 
 边框设置
 
-![](image/1589446429(1).png)
+![](http://storage.360buyimg.com/docs-image/1589446429(1).png)
 边框设置中可以设置边框的线条的粗细，颜色以及线条类型。线条类型包括实线，虚线和点线。
 
 ### 数据设置
@@ -149,12 +149,12 @@
 
 ### 样式设置
 
-![](image/1600140901(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140901(1).png)
 
 图标组件的样式设置可以选择图标的样式。
 
 点击加号，选择样式即可，如下图：
-![](image/1600140929(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140929(1).png)
 
 
 

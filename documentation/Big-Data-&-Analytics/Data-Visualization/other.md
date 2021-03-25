@@ -8,12 +8,12 @@
 
 ### 样式设置
 
-![](image/855fb8b0ba176db76c11599942621138.png)
+![](http://storage.360buyimg.com/docs-image/855fb8b0ba176db76c11599942621138.png)
 
 内嵌网页即iframe，将网址链接粘贴到样式设置中的链接地址中即可显示网页。
 
 ### 数据设置
-![](image/1597745510(1).png)
+![](http://storage.360buyimg.com/docs-image/1597745510.png)
 
 数据设置包括url一个字段，代表网页的url地址。
 
@@ -29,7 +29,7 @@
 
 ### 样式设置
 
-![image-20200312130403683](image/1600142053(1).png)
+![image-20200312130403683](http://storage.360buyimg.com/docs-image/1600142053.png)
 
 样式设置中包含基础设置和样式设置与图表位置、图表尺寸的配置。
 
@@ -41,7 +41,7 @@
 
 数据设置中包含text和url两个字段的配置
 
-![image-20200312130951387](image/1597745570(1).png)
+![image-20200312130951387](http://storage.360buyimg.com/docs-image/1597745570.png)
 
 url字段指的是点击弹出框之后，生成界面的url地址。
 
@@ -67,17 +67,17 @@ url字段指的是点击弹出框之后，生成界面的url地址。
 
 ### 样式设置
 
-![](image/1600142195(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1600142195.jpg)
 
 样式设置中包含标题栏设置，切换按钮设置，动画设置。
 
 其中标题栏设置包含标题高度，文本设置，以及边框和背景的设置。
 
-![](image/1600142315(1).png)
+![](http://storage.360buyimg.com/docs-image/1600142315.png)
 
 切换按钮设置包括按钮大小，边距和颜色设置，还有按钮位置设置。
 
-![](image/1600151496(1).png)
+![](http://storage.360buyimg.com/docs-image/1600151496.png)
 
 动画设置包括循环翻页和首页暂停。
 
@@ -85,7 +85,7 @@ url字段指的是点击弹出框之后，生成界面的url地址。
 
 数据设置中包含text和url两个字段的配置
 
-![](image/1597745599(1).png)
+![](http://storage.360buyimg.com/docs-image/1597745599.png)
 
 
 数据设置包括url一个字段，代表网页的url地址。
@@ -110,13 +110,13 @@ url字段指的是点击弹出框之后，生成界面的url地址。
 
 ### 样式设置
 
-![](image/20200723161843.png)
+![](http://storage.360buyimg.com/docs-image/20200723161843.png)
 
 滚动通知栏组件的样式设置包含：单条设置，标题，描述，标签1，标签2。
 
 单条设置
 
-![](image/20200722103637.png)
+![](http://storage.360buyimg.com/docs-image/20200722103637.png)
 
 单条设置可以对条与条之间的间距，轮播时间以及内填充，背景图，条高度进行设置。
 
@@ -126,31 +126,31 @@ url字段指的是点击弹出框之后，生成界面的url地址。
 
 标题
 
-![](image/20200722104122.png)
+![](http://storage.360buyimg.com/docs-image/20200722104122.png)
 
 可以对标题显示与否，字号，高度，是否单独成行，字体颜色，字体粗细，对齐方式进行设置。
 
 描述
 
-![](image/20200722104314.png)
+![](http://storage.360buyimg.com/docs-image/20200722104314.png)
 
 可以对描述内容样式进行设置：可设置是否显示，字体，字号，颜色，粗细；描述的高度以及文本对齐方式。
 
 标签1
 
-![](image/20200723161944.png)
+![](http://storage.360buyimg.com/docs-image/20200723161944.png)
 
 可对标签1的字体，字号，颜色，粗细，对齐方式，以及左边距，右边距，文字是否显示等进行设置。
 
 标签2
 
-![](image/20200723162032.png)
+![](http://storage.360buyimg.com/docs-image/20200723162032.png)
 
 可对标签2的字体，字号，颜色，粗细，对齐方式，文字是否显示进行设置。
 
 ### 数据设置
 
-![](image/1597745764(1).png)
+![](http://storage.360buyimg.com/docs-image/1597745764.png)
 
 数据字段包含4个：title,text，tag1，tag2
 
@@ -186,7 +186,7 @@ tag2：设置标签2中的内容
 
 ### 样式设置
 
-![image-20200723163834826](image/image-20200723163834826.png)
+![image-20200723163834826](http://storage.360buyimg.com/docs-image/image-20200723163834826.png)
 
 自定义组件的样式设置包含：组件名、资源地址和导入配置
 

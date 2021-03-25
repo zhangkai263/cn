@@ -9,7 +9,7 @@
 
 ### 样式设置
 
-![](image/1600085719(1).png)
+![](http://storage.360buyimg.com/docs-image/1600085719.png)
 
 时间器显示的是当前时间，可调整时间格式，显示年月日时分秒，以及星期。
 
@@ -23,7 +23,7 @@
 
 文本样式
 
-![](image/1600085844(1).png)
+![](http://storage.360buyimg.com/docs-image/1600085844.png)
 
 字体：支持微软雅黑、宋体、黑体、隶书、幼圆、楷体和系统默认字体；
 
@@ -33,7 +33,7 @@
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
 
-![](image/1590660271(1).png)
+![](http://storage.360buyimg.com/docs-image/1590660271.png)
 
 
 目前颜色选择支持设置色值以及透明度，如上图所示，红框①处拖动可调整色值，红框②处拖动可调整透明度。
@@ -50,7 +50,7 @@
 
 ### 样式设置
 
-![](image/1600085931(1).png)
+![](http://storage.360buyimg.com/docs-image/1600085931.png)
 
 普通文字的样式设置包括 文本样式，超链接设置，使用render,图表位置，图表尺寸。
 
@@ -64,7 +64,7 @@
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
 
-![](image/1590660271(1).png)
+![](http://storage.360buyimg.com/docs-image/1590660271.png)
 
 目前颜色选择支持设置色值以及透明度，如上图所示，红框①处拖动可调整色值，红框②处拖动可调整透明度。
 
@@ -72,7 +72,7 @@
 
 超链接配置
 
-![](image/1600085960(1).png)
+![](http://storage.360buyimg.com/docs-image/1600085960.png)
 
 勾选在新窗口打开，则配置的超链接会在浏览器的新标签页打开。不勾选，则配置的超链接会在当前页面刷新。
 
@@ -80,7 +80,7 @@
 
 数据字段
 
-![](image/1597735750(1).png)
+![](http://storage.360buyimg.com/docs-image/1597735750.png)
 
 >   text：文本内容，必填
 
@@ -113,13 +113,13 @@
 
 ### 样式设置
 
-![](image/1600086190.png)
+![](http://storage.360buyimg.com/docs-image/1600086190.png)
 
 数字翻牌器的样式设置包括组件风格、文本设置、动画设置、图表位置，图表尺寸。
 
 组件风格
 
-![](image/1600086294(1).jpg)
+![](http://storage.360buyimg.com/docs-image/1600086294.jpg)
 
 主题样式：纯色、立体、边框，并可设置主题颜色；
 
@@ -127,11 +127,11 @@
 
 文本设置包括数字设置，前缀设置和后缀设置。
 
-![](image/1596701123(1).png)
+![](http://storage.360buyimg.com/docs-image/1596701123.png)
 
 数字设置
 
-![](image/1596701251(1).png)
+![](http://storage.360buyimg.com/docs-image/1596701251.png)
 
 数字设置可以设置数字的文本样式，默认位数，小数保留以及数字间隔。
 
@@ -139,7 +139,7 @@
 
 动画设置
 
-![](image/03831b70a52e4600a32b0565fd3f0c75.png)
+![](http://storage.360buyimg.com/docs-image/03831b70a52e4600a32b0565fd3f0c75.png)
 
 动画设置包括动画间隔、动画时长、始终动画 三个设置。
 
@@ -151,13 +151,13 @@
 
 前缀设置
 
-![](image/e239b279e7f34c13ae549edd1dd1c7e7.png)
+![](http://storage.360buyimg.com/docs-image/e239b279e7f34c13ae549edd1dd1c7e7.png)
 
 前缀设置包含前缀文本内容设置及文本的样式设置，文本内容不填则不显示。
 
 后缀设置
 
-![](image/e5dc60863b534bf3bd4aa457d19a2d89.png)
+![](http://storage.360buyimg.com/docs-image/e5dc60863b534bf3bd4aa457d19a2d89.png)
 
 后缀设置包含后缀文本内容设置及文本的样式设置，文本内容不填则不显示。
 
@@ -165,7 +165,7 @@
 
 数据字段
 
-![](image/1597735865(1).png)
+![](http://storage.360buyimg.com/docs-image/1597735865.png)
 
 数据字段需要输入value值，value值为数字翻牌器数字停止跳动时所显示的数值。
 
