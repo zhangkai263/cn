@@ -4,7 +4,7 @@
 
 访问莫奈-数据可视化平台
 
-![](http://storage.360buyimg.com/alotoficons/http://storage.360buyimg.com/docs-image/e38cadd6807b4253a865234519381cfd.png)
+![](http://storage.360buyimg.com/docs-image/e38cadd6807b4253a865234519381cfd.png)
 
 点击数据可视化菜单，显示数据大屏列表，在这里我们可以看到当前这个用户所在的群组里所有用户创建的大屏，方便当前用户使用同一群组里其他用户创建的大屏。
 

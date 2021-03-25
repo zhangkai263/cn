@@ -62,7 +62,7 @@
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
 
-![](http://storage.360buyimg.com/docs-image/1590660143(1).png)
+![](http://storage.360buyimg.com/docs-image/1590660143.png)
 
 目前颜色选择支持设置色值以及透明度，如上图所示，红框①处拖动可调整色值，红框②处拖动可调整透明度。
 
@@ -100,7 +100,7 @@
 
 ### 样式设置
 
-![](http://storage.360buyimg.com/docs-image/1600140405(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140405.png)
 
 样式设置包括边框样式，文本样式，背景设置，边框设置
 
@@ -117,13 +117,13 @@
 字体粗细：字体的粗细，有正常、细体、粗体、更粗四个选项；
 
 字体颜色：字体的颜色，鼠标悬停后出现颜色选择框，选择颜色即可，如下图：
-![](http://storage.360buyimg.com/docs-image/1589445453(1).png)
+![](http://storage.360buyimg.com/docs-image/1589445453.png)
 
 对齐方式：文字的对齐方式，有居左、居中、居右三个选项；
 
 背景设置
 
-![](http://storage.360buyimg.com/docs-image/1589445692(1).png)
+![](http://storage.360buyimg.com/docs-image/1589445692.png)
 
 背景来源可以设置颜色背景或者图片填充背景。
 
@@ -133,7 +133,7 @@
 
 边框设置
 
-![](http://storage.360buyimg.com/docs-image/1589446429(1).png)
+![](http://storage.360buyimg.com/docs-image/1589446429.png)
 边框设置中可以设置边框的线条的粗细，颜色以及线条类型。线条类型包括实线，虚线和点线。
 
 ### 数据设置
@@ -149,12 +149,12 @@
 
 ### 样式设置
 
-![](http://storage.360buyimg.com/docs-image/1600140901(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140901.png)
 
 图标组件的样式设置可以选择图标的样式。
 
 点击加号，选择样式即可，如下图：
-![](http://storage.360buyimg.com/docs-image/1600140929(1).png)
+![](http://storage.360buyimg.com/docs-image/1600140929.png)
 
 
 
