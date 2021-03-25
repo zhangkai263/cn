@@ -3,7 +3,7 @@
 
 基础架构如下图：
 
- ![架构](https://github.com/jdcloudcom/cn/blob/jcq0323/image/Internet-Middleware/Message-Queue/jcq-framework.PNG)
+ ![架构](https://github.com/jdcloudcom/cn/blob/jcq0323/image/Internet-Middleware/Message-Queue/jcq-framework-1.PNG)
  
 
 | 概念 | 解释 |
