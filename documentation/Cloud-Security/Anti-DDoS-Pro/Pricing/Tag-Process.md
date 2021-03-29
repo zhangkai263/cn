@@ -7,7 +7,7 @@
 
 ## 入口：[IP高防 控制台](https://ip-anti-console.jdcloud.com/instancelist)
 
-1. 进入京东智联云控制台。
+1. 进入京东云控制台。
 
 2. 通过页头导航，依次点击 **云服务** >  **云安全** >  **IP高防**,打开“实例列表”页面。
 ![](../../../../image/Advanced%20Anti-DDoS/price05.png)
