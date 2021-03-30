@@ -10,17 +10,17 @@
 
 根据向导选择您的数据源，如果数据源为京东云购买的RDS，则可以直接通过控制台进行选择，如图：
 
-![](../../images/datasource-add-1.png)
+![](./image/Data-Centric-Audit-and-Protection/datasource-add-1.png)
 
 如果您的数据源为自建的MySQL数据库，选择`自建MySQL`，需要您补全数据库所在的私有网络及子网信息，以及数据库的地址、端口，以及数据库的库名称，如下图：
 
-![](../../images/datasource-add-2.png)
+![](./image/Data-Centric-Audit-and-Protection/datasource-add-2.png)
 
 **第二步：防护策略设置：**
 
 配置数据源的名称，以及数据保护策略，这里需要您已经开通京东云[`密钥管理服务`](https://kms-console.jdcloud.com/)，并创建数据保护密钥，如图：
 
-![](../../images/datasource-add-3.png)
+![](./image/Data-Centric-Audit-and-Protection/datasource-add-3.png)
 
 ```
 数据密钥（Data Key）是用来对数据进行加解密的密钥，受KMS主密钥的加密保护，此密钥用来对数据源内的数据进行加密使用，请妥善保管。
@@ -32,7 +32,7 @@
 
 对数据源的配置进行确认，如果配置正确的话，则点击`创建`按钮，进行数据源的创建操作。
 
-![](../../images/datasource-add-4.png)
+![](./image/Data-Centric-Audit-and-Protection/datasource-add-4.png)
 
 
 创建数据源完成后，您可以在控制台看到该数据源，同时可以通过点击数据源的名称或ID进入数据源的详情页，进行[元数据的管理](MetaData.md)。
