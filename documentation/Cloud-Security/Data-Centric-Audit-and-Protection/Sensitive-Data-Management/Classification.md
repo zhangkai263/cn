@@ -15,11 +15,11 @@
 
 在控制台调整敏感数据分级的路径为： 云安全->数据安全中心->敏感数据管理->敏感数据分级
 
-![](./../images/classification-datalevel.png)
+![](/image/Data-Centric-Audit-and-Protection/classification-datalevel.png)
 
 
 ## 敏感数据分类
 
 在控制台调整敏感数据分类的路径为： 云安全->数据安全中心->敏感数据管理->敏感数据分类
 
-![](./../images/classification-datatype.png)
+![](/image/Data-Centric-Audit-and-Protection/classification-datatype.png)
