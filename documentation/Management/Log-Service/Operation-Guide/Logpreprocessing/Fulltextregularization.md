@@ -28,7 +28,7 @@
 ^(?P<date>[\d]{2}-[\d]{2}-[\d]{2}).(?P<time>[\d:\.]+)\s+\[(?P<thread>.+)\]\s(?P<level>\w+)\s+(?P<class>\w+)\s+(?P<traceId>\w+)\s+-\s+(?P<content>.+)
 ```
 
-  <!--注意-->：字段名称须通过正则语句 `(?p<name>expression)`中的name进行修改，在提取结果列表中修改不生效。
+说明：字段名称须通过正则语句 `(?p<name>expression)`中的name进行修改，在提取结果列表中修改不生效。
 
 - 正则调试
 
