@@ -11,7 +11,7 @@
 
 创建实例的路径为： 云安全->数据安全中心->敏感数据保护->防护实例->创建
 
-![](./image/Data-Centric-Audit-and-Protection/instance-createinstance.png)
+![](/image/Data-Centric-Audit-and-Protection/instance-createinstance.png)
 
 在这里选择实例的类型、需要保护的数据源、以及访问该数据源的凭证(AccessKey)，即可完成实例的创建。
 

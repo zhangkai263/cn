@@ -8,12 +8,12 @@
 注：插件类型的防护实例暂只支持Java语言，要求JDK/JRE版本为 1.8.0-u162 及以上版本
 ```
 
-![](./image/Data-Centric-Audit-and-Protection/instance-downloadplugin.png)
+![](/image/Data-Centric-Audit-and-Protection/instance-downloadplugin.png)
 
 ## 上传服务器并解压
 
 将下载的插件压缩包解压到 /opt/datasec/目录：
-![](./image/Data-Centric-Audit-and-Protection/instance-extractplugin.png)
+![](/image/Data-Centric-Audit-and-Protection/instance-extractplugin.png)
 
 
 ## 调整业务配置

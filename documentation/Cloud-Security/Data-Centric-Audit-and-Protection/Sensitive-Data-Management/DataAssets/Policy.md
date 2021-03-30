@@ -4,6 +4,6 @@
 
 路径： 云安全->数据安全中心->敏感数据资产->数据源ID/名称->防护策略
 
-![](./image/Data-Centric-Audit-and-Protection/dataassets-policy.png)
+![](/image/Data-Centric-Audit-and-Protection/dataassets-policy.png)
 
 注意：已经初始化防护策略和，不再支持修改。
