@@ -17,14 +17,14 @@
 
 ## 单行正则提取示例
 - 示例日志
-
-  ```java
+   
+```java
 21-03-28.19:35:33.907 [jdcloud_consumer_t1] INFO ConsumerService e2ecadf2258706e18edfaaa13347fdc7 - "hello world" env=test
 ```
 
 - 正则表达式
-
-  ```bash
+   
+```bash
 ^(?P<date>[\d]{2}-[\d]{2}-[\d]{2}).(?P<time>[\d:\.]+)\s+\[(?P<thread>.+)\]\s(?P<level>\w+)\s+(?P<class>\w+)\s+(?P<traceId>\w+)\s+-\s+(?P<content>.+)
 ```
 
