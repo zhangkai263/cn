@@ -15,6 +15,31 @@
 
 <img src="https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/operationguide/Onelinefulltextregular.jpg" width=60% height=60% />
 
+## 单行正则提取示例
+- 示例日志
+
+```java
+21-03-28.19:35:33.907 [jdcloud_consumer_t1] INFO ConsumerService e2ecadf2258706e18edfaaa13347fdc7 - "hello world" env=test
+```
+
+- 正则表达式
+
+```bash
+^(?P<date>[\d]{2}-[\d]{2}-[\d]{2}).(?P<time>[\d:\.]+)\s+\[(?P<thread>.+)\]\s(?P<level>\w+)\s+(?P<class>\w+)\s+(?P<traceId>\w+)\s+-\s+(?P<content>.+)
+```
+
+  <!--注意-->：字段名称须通过正则语句 `(?p<name>expression)`中的name进行修改，在提取结果列表中修改不生效。
+
+- 正则调试
+
+  填写正则表达式过程中，您可使用[https://regex101.com/](https://regex101.com/检查和调试正则表达式) 检查和调试正则表达式，以使其完全匹配示例日志
+
+<img src="https://github.com/jdcloudcom/cn/blob/0330log/image/LogService/operationguide/regex101.png" width=60% height=60% />
+
+- 操作截图
+
+<img src="https://github.com/jdcloudcom/cn/blob/0330log/image/LogService/operationguide/regex-eg.png" width=60% height=60% />
+
 ## 注意事项
 1. 单行正则的日志样例大小不能超过1K
 2. 单行正则表达式的长度不超过256个字符
