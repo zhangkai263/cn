@@ -36,6 +36,7 @@
    <img src="https://github.com/jdcloudcom/cn/blob/0330log/image/LogService/operationguide/regex101.png" width=60% height=60% />
 
 - 操作截图
+
   提取出字段后，可根据实际情况更改字段类型。
   
    <img src="https://github.com/jdcloudcom/cn/blob/0330log/image/LogService/operationguide/regex-eg.png" width=60% height=60% />
