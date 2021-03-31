@@ -6,4 +6,4 @@
 
 ![](/image/Data-Centric-Audit-and-Protection/dataassets-policy.png)
 
-注意：已经初始化防护策略和，不再支持修改。
+注意：已经初始化防护策略不再支持修改。
