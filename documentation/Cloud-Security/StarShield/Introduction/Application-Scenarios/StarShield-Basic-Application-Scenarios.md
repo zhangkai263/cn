@@ -23,4 +23,4 @@ SCDN 提供Web攻击防护能力，预定义规则、自定义规则与OWASP规�
 
 
 
-![应用场景图](https://github.com/jdcloudcom/cn/edit/image/SCDN/SCDN-BAS.png)
+![应用场景图](https://github.com/jdcloudcom/cn/edit/image/StarshieldStarshield-BAS.png)
