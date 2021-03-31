@@ -73,10 +73,8 @@ items:
           status: 0
 - name: 最佳实践
   items:
-    - name: 最佳实践1
-      href: Best-Practices/x.md
-      status: 0
-  status: 0
+    - name: 数据保护
+      href: Best-Practices/DataProtection.md
 - name: 常见问题
   items:
     - name: FAQ/faq.md 
