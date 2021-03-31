@@ -13,7 +13,7 @@ DNS为域名解析系统，安全加速提供半接入与全接入方式。均�
 如图所示，我们将相应主机记录的A记录配置好，这样安全加速节点就可以顺利回源到源站，前提条件已经添加好域名。
 
 
-![添加A记录](https://github.com/jdcloudcom/cn/edit/image/Starshield/ADD-A-Accord.png)
+![添加A记录](https://github.com/jdcloudcom/cn/blob/cn-starshield/image/Starshield/ADD-A-Accord.png)
 
 步骤参考：
 1. 登录京东云控制台，选择安全加速产品。
@@ -24,7 +24,7 @@ DNS为域名解析系统，安全加速提供半接入与全接入方式。均�
 **解析记录值说明**
 
 - A记录，是将访问者的浏览器请求重定向到源服务器。
-- Cname，是将访问者的浏览器请求重定向到源服务器。与A记录不同，Cname将指向www.example.com 等主机名，而不是IP地址，然后，www.example.com 将具有列出 IP 地址的 A 记录或使用指向不同主机名的另一个 CNAME 记录。最终，CNAME 记录链必须指向解析为 IP 地址的主机名。
+- Cname，是将访问者的浏览器请求重定向到源服务器。与A记录不同，Cname将指向 example.com 等主机名，而不是IP地址，然后，example.com 将具有列出 IP 地址的 A 记录或使用指向不同主机名的另一个 CNAME 记录。最终，CNAME 记录链必须指向解析为 IP 地址的主机名。
 - A记录，是将访问者的浏览器请求重定向到源服务器，需使用IPv6地址。
 
 **DNS代理功能 隐藏源站IP**
