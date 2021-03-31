@@ -14,7 +14,7 @@
 以非网站转发规则为例，如下找到红框处待复制的cname：
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2005.png)
 3. 在域名提供商处，需要修改域名解析配置让域名解析到高防IP上。
-以京东智联云“云解析”为例，在 **控制台** –> **域名与备案** –> **云解析 DNS** ，进入京东云[云解析控制台](https://dns-console.jdcloud.com/list)<Br/>
+以京东云“云解析”为例，在 **控制台** –> **域名与备案** –> **云解析 DNS** ，进入京东云[云解析控制台](https://dns-console.jdcloud.com/list)<Br/>
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2006.png)<Br/>
 找到待解析的域名，如下：
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2007.png)<Br/>
