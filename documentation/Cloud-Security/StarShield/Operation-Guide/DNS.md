@@ -13,7 +13,7 @@ DNS为域名解析系统，安全加速提供半接入与全接入方式。均�
 如图所示，我们将相应主机记录的A记录配置好，这样安全加速节点就可以顺利回源到源站，前提条件已经添加好域名。
 
 
-![添加A记录](https://github.com/jdcloudcom/cn/edit/image/Starshield/ADD-A-Accord.png)
+![添加A记录](https://github.com/jdcloudcom/cn/blob/cn-starshield/image/Starshield/ADD-A-Accord.png)
 
 步骤参考：
 1. 登录京东云控制台，选择安全加速产品。
