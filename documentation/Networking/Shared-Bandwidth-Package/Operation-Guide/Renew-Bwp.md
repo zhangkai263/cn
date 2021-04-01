@@ -38,5 +38,5 @@
 - [查看共享带宽包监控信息](View-Monitoring.md)
 - [修改共享带宽包](Modify-Bwp.md)
 - [删除共享带宽包](Delete-Bwp.md)
-- [管理公网IP](../Getting-Started/Manage-IP.md)
+- [管理公网IP](../Getting-Started/Manage-Public-IP.md)
 - [常见问题](../FAQ/FAQ.md)
