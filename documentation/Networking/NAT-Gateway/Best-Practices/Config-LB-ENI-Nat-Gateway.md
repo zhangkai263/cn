@@ -7,4 +7,9 @@ NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的�
 
 ## 绑定辅助网卡方式
 
+### 配置说明
+1. 创建NAT网关、配置NAT网关所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为Internet）、配置VPC内云主机所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为NAT网关）。NAT网关与VPC内云主机必须属于不同子网。具体可参照步骤[云主机使用NAT网关](../Getting-Started/Create-NatGateway.md)
+2. 参照步骤[云主机使用NAT网关](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)
+![NAT网关绑定辅助网卡](../../../../image/Networking/Nat-Gateway/natgw-eni.png)
+
 ## 绑定负载均衡方式
