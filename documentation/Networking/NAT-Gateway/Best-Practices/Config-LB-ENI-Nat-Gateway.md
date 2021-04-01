@@ -19,7 +19,7 @@ NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的�
 
 4. 登录云主机，配置路由使辅助网卡在云主机内生效，可参照步骤[云主机内配置路由使辅助网卡生效](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)。
  
- 组网图如下：
+  组网图如下：
 
 ![NAT网关绑定辅助网卡](../../../../image/Networking/Nat-Gateway/natgw-eni.png)
 
@@ -36,6 +36,7 @@ NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的�
 
 2. 在【网络-负载均衡】页面创建外网负载均衡，负载均衡与NAT网关部署在同一个外部子网，配置负载均衡的监听器、后端服务、虚拟服务器组，并将VPC内云主机添加到虚拟服务器组。负载均衡的类型选择及配置步骤可参见负载均衡产品文档。
 
+ 组网图如下：
 
 ![NAT网关绑定辅助网卡](../../../../image/Networking/Nat-Gateway/natgw-lb.png)
 
