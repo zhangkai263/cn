@@ -8,8 +8,13 @@ NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的�
 ## 绑定辅助网卡方式
 
 ### 配置说明
-1. 创建NAT网关、配置NAT网关所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为Internet）、配置VPC内云主机所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为NAT网关）。NAT网关与VPC内云主机必须属于不同子网。具体可参照步骤[云主机使用NAT网关](../Getting-Started/Create-NatGateway.md)
-2. 参照步骤[云主机使用NAT网关](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)
+1. 创建NAT网关、配置NAT网关所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为Internet）、配置VPC内云主机所在子网绑定路由表路由（目的地址0.0.0.0/0，下一跳为NAT网关）。NAT网关与VPC内云主机必须属于不同子网，可参照步骤[云主机使用NAT网关](../Getting-Started/Create-NatGateway.md)。
+2. 在【网络-私有网络-弹性网卡】页面创建弹性辅助网卡，辅助网卡与NAT网关部署在同一个外部子网，并为辅助网卡的内网IP绑定公网IP。
+3. 进入【弹性计算-云主机】页面，点击云主机详情，在【弹性网卡】页签为云主机绑定上一步骤创建的辅助网卡。
+4. 登录云主机，配置路由使辅助网卡在云主机内生效，可参照步骤[云主机内配置路由使辅助网卡生效](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)。
+ 
+ 组网图如下：
+
 ![NAT网关绑定辅助网卡](../../../../image/Networking/Nat-Gateway/natgw-eni.png)
 
 ## 绑定负载均衡方式
