@@ -35,7 +35,7 @@ A：不会。公网IP加入共享带宽包后原有计费失效，统一通过�
 
 **Q：为什么在待添加IP的列表中找不到某个IP？**
 
-A：待添加的列表IP为与当前共享带宽包同地域下所有线路相同的IP，如未找到请确认所加IP与共享带宽包的线路是否相同，更多限制请参考[使用限制](../Introduction/Restrictions.md)。
+A：待添加的列表IP为与当前共享带宽包同地域下所有线路相同的IP，如未找到请确认所加IP与共享带宽包的线路是否相同，更多限制请参考[使用限制](../Introductions/Restrictions.md)。
 
 **Q：共享带宽包带宽上限可以修改吗？**
 
@@ -78,7 +78,7 @@ A：按配置和包年包月计费的配额不限，按用量计费的配额为5
 
 ## 相关参考
 - [共享带宽包概述](../Introductions/Product-Overview.md)
-- [使用限制](../Introduction/Restrictions.md)
+- [使用限制](../Introductions/Restrictions.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [增强95消峰计费](../Pricing/Charge-By-Usage/Enhance95th-Eliminate.md)

@@ -1,7 +1,7 @@
 # 购买流程
 
 ### 使用限制
-为保证实例能顺利创建，购买实例前请仔细查阅实例使用限制，详细请参见[使用限制](../Introduction/Restrictions.md)。
+为保证实例能顺利创建，购买实例前请仔细查阅实例使用限制，详细请参见[使用限制](../Introductions/Restrictions.md)。
 
 ### 前提条件
 - 首先您需要有京东云的账号，并完成实名认证，若您目前没有账号，请先[注册](https://user.jdcloud.com/register?source=jdcloud&ReturnUrl=https%3A%2F%2Fwww.jdcloud.com)账号并完成[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)。
