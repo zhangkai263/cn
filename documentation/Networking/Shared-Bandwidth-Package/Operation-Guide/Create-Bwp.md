@@ -38,7 +38,7 @@
 - [共享带宽包概述](../Introductions/Product-Overview.md)
 - [应用场景](../Introductions/Application-Scenarios.md)
 - [使用限制](../Introductions/Restrictions.md)
-- [管理公网IP](../Getting-Started/Manage-IP.md)
+- [管理公网IP](../Getting-Started/Manage-Public-IP.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [计费规则](../Pricing/Billed-Rules.md)
 - [价格总览](../Pricing/Price-Overview.md)
