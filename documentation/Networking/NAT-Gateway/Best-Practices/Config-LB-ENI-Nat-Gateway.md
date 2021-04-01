@@ -3,7 +3,7 @@
 
 NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的云主机提供访问互联网的代理服务。如果VPC内某些云主机仍需对外提供Telent、SSH等服务，您可根据不同场景选择如下两种配置方式：
 
-- [绑定辅助网卡方式](Config-LB-ENI-Nat-Gateway#user-content-1)：如配置SNAT功能的VPC内网云主机仍需通过Telnet、SSH等方式登录云主机进行其他配置，可为云主机绑定辅助网卡，您通过Telent、SSH辅助网卡的公网IP登录云主机；
+- [绑定辅助网卡方式](Config-LB-ENI-Nat-Gateway#user-content-1)：如配置SNAT功能的VPC内网云主机仍需通过Telnet、SSH等方式登录云主机进行其他配置，可为云主机绑定辅助网卡，您通过Telnet、SSH辅助网卡的公网IP登录云主机；
 
 - [配置负载均衡方式](Config-LB-ENI-Nat-Gateway#user-content-2)：如配置SNAT功能的VPC内云主机仍需对外提供高可用服务，可将多台云主机绑定负载均衡，您通过负载均衡的公网IP访问云主机服务。
 
