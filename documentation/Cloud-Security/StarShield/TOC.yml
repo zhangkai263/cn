@@ -12,7 +12,7 @@ items:
       - name: 产品功能
         href: Introduction/Features.md
       - name: 基础架构
-        href: Basic-Infrastructure.md
+        href: Introduction/Basic-Infrastructure.md
       - name: 应用场景
         href: Introduction/Application-Scenarios/StarShield-Basic-Application-Scenarios.md
   - name: 产品定价
