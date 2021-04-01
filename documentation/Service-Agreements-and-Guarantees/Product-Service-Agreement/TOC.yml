@@ -69,7 +69,9 @@ items:
   - name: 弹性公网IP服务条款
     href: Public-Network-IP-Service-Clause.md
   - name: 弹性公网IP服务等级协议（SLA）
-    href: Elastic-Ip--Level-Agreements-X-SLA.md   
+    href: Elastic-Ip--Level-Agreements-X-SLA.md 
+  - name: 共享带宽包服务协议
+    href: Shared-Bandwidth-Package-Service-Clause.md
   - name: IP高防服务协议
     href: IP-High-Protection-Clause.md
   - name: IP高防服务等级协议（SLA）
@@ -464,8 +466,7 @@ items:
     href: Starshield-Terms-Of-Service.md
   - name: 京东云星盾安全加速服务等级协议（SLA）
     href: Starshield-Service-Level-Agreement-SLA.md
-  - name: 共享带宽包服务协议
-    href: Shared-Bandwidth-Package-Service-Clause.md
+
     
     
     
