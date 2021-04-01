@@ -79,7 +79,7 @@
 
 - [计费规则](Billed-Rules.md)
 
-- [价格总览](price-Overview.md)
+- [价格总览](Price-Overview.md)
 
 - [增强95消峰计费](Charge-By-Usage/Enhance95th-Eliminate.md)
 
