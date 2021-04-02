@@ -1,4 +1,4 @@
-# 最佳实践-数据保护
+# 最佳实践-敏感数据加密保护
 
 ## 购买MySQL数据库
 
@@ -87,7 +87,7 @@ insert into student(s_name, s_phone, s_addr) values("李四", "13455556666", "�
 ![](/image/Data-Centric-Audit-and-Protection/bestpractices-insertdata.png)
 
 
-插入数据后，可以通过网管类型防护实例，以及原始数据库进行数据对比。
+插入数据后，可以通过网关类型防护实例，以及原始数据库进行数据对比。
 
 原始数据库的数据：
 
