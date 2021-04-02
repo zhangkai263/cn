@@ -4,7 +4,7 @@
 
 随着业务增长，大量的业务需要布置在云上，每个云主机、容器等实例访问公网或被公网访问均需要购买一条带宽，利用共享带宽包不仅只需要购买一条带宽，且可将同一个项目中的公网IP资源加入一个共享带宽包实现根据业务对资源进行分组管理，如下图所示。
 
-<img src="../../../../image/Networking/Shared-Bandwidth-Package/Unified-Management.png" alt=" " style="zoom:50%"/>
+<img src="../../../../image/Networking/Shared-Bandwidth-Package/02.jpg" alt=" " style="zoom:50%"/>
 
 当您拥有多个公网IP时，需要购买多条带宽如下图表1所示，IP流量模型不尽相同，波峰波谷差距明显，在波谷时段带宽使用率低。若加入共享带宽包，如表2所示，充分利用错峰波谷时段带宽，波峰波谷差距更加扁平，提升带宽的使用率的同时降低带宽成本。
 
