@@ -65,7 +65,7 @@ NAT网关SNAT场景最佳实践环境包括：
      
        （1）该子网内所有云主机将通过NAT网关访问互联网
      
-       （2）子网内原绑定公网IP的云主机将不能再通过公网IP与互联网互通。如云主机仍需对外提供Telent、SSH或其他高可用服务，可参见NAT网关最佳实践文档。
+       （2）子网内原绑定公网IP的云主机将不能再通过公网IP与互联网互通。如云主机仍需对外提供Telent、SSH或其他高可用服务，请参见NAT网关最佳实践文档https://docs.jdcloud.com/cn/nat-gateway/config-lb-eni-nat-gateway。
      
 
 ## 验证NAT网关Internet连通性
