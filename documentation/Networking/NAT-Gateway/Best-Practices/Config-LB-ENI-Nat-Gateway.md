@@ -41,6 +41,6 @@ NAT网关可以为VPC内云主机提供SNAT功能，即为VPC内无公网IP的�
 ![NAT网关绑定辅助网卡](../../../../image/Networking/Nat-Gateway/natgw-lb.png)
 
 ### 验证及流量转发说明
-1. 验证VPC内云主机通可正常访问互联网，云主机主动访问互联网的流量转发路径为“ 云主机 ↔ NAT网关 ↔ VR ↔ Internet ”。
+1. 验证VPC内云主机可正常访问互联网，云主机访问互联网的流量转发路径为“ 云主机 ↔ NAT网关 ↔ VR ↔ Internet ”。
 
 2. 验证访问负载均衡公网IP流量可正常分发到VPC内云主机，访问负载均衡公网IP的流量转发路径为“ Internet ↔ VR ↔ 负载均衡 ↔ 云主机”。
