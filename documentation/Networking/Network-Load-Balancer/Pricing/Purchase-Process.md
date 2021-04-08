@@ -11,4 +11,4 @@
 ## 入口2：[负载均衡控制台](https://cns-console.jdcloud.com/host/loadBalance/list)
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
-2. 选择右上角的“控制台”，登录控制台后，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
+2. 选择右上角的“控制台”，登录控制台后，购买具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
