@@ -83,7 +83,7 @@ vi /etc/sysconfig/network-scripts/[rule-eth1]
 from [10.0.16.3] table [1000]			
 ```
 
-CentOS 7.6需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
+CentOS 7.6及CentOS 8.2需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
 
 ```
 yum install NetworkManager-config-routing-rules           # 安装服务
@@ -93,7 +93,7 @@ systemctl start NetworkManager-dispatcher.service         # 启动服务
 
 步骤9：执行以下命令重启网络服务：
 
-CentOS6.9
+CentOS 6.9
 ```
 service network restart
 ```
