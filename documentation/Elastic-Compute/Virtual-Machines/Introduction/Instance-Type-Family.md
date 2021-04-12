@@ -292,6 +292,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 * vCPU与内存比约为1:8
 * 处理器：
+	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
@@ -305,6 +306,18 @@ g.n1.8xlarge|32|128|4 |	 |
 	* Hadoop、Spark群集以及其他企业大内存需求应用
 
 **实例规格**
+
+第四代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|m.n4.large|2|16|2
+|m.n4.xlarge|4|32|4
+|m.n4.2xlarge|8|64|8
+|m.n4.3xlarge|12|96|8
+|m.n4.4xlarge|16|128|8
+|m.n4.6xlarge|24|192|16
+|m.n4.8xlarge|32|256|16
 
 第三代
 
