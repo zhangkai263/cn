@@ -2,7 +2,7 @@
 
 本文将介绍如何在Linux中配置弹性网卡，Linux包括多种镜像类型，且不同版本的镜像配置弹性网卡步骤稍有不同，本文以CentOS和Ubuntu两种镜像为例，对有差异的版本分别进行详细介绍。
 
-- [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
+- [配置CentOS 6.9、CentOS 7.6或CentOS 8.2](linux-permanent-configuration#user-content-1)
 - [配置Ubuntu 14.04、Ubuntu 16.04](linux-permanent-configuration#user-content-2)
 - [配置Ubuntu 18.04](linux-permanent-configuration#user-content-3)
 
@@ -30,7 +30,7 @@
 
 
 
-### 配置CentOS 6.9或CentOS 7.6
+### 配置CentOS 6.9、CentOS 7.6或CentOS 8.2
 <div id="user-content-1"></div>
 
 步骤1：通过ssh登录云主机1
@@ -55,6 +55,7 @@ NM_CONTROLLED=yes
 ONBOOT=yes
 IPADDR=[10.0.16.3]              #弹性网卡的主IP
 NETMASK=[255.255.240.0]         #弹性网卡IP的子网掩码
+NAME=[eth1]           
 ```
 
 步骤5：配置路由，执行以下命令打开文件：
@@ -82,7 +83,7 @@ vi /etc/sysconfig/network-scripts/[rule-eth1]
 from [10.0.16.3] table [1000]			
 ```
 
-CentOS 7.6需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
+CentOS 7.6及CentOS 8.2需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
 
 ```
 yum install NetworkManager-config-routing-rules           # 安装服务
@@ -92,16 +93,20 @@ systemctl start NetworkManager-dispatcher.service         # 启动服务
 
 步骤9：执行以下命令重启网络服务：
 
-CentOS6.9
+CentOS 6.9
 ```
 service network restart
 ```
 
-CantOS 7.6
+CentOS 7.6
 ``` 
 systemctl restart network
 ```
-
+CentOS 8.2
+```
+nmcli c up eth0
+nmcli c up eth1
+```
 步骤10：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
