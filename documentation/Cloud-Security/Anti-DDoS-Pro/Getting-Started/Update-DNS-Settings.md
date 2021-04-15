@@ -2,6 +2,8 @@
 
 此步骤完成后，所有用户的访问流量都将经过IP高防，经高防保障后再转发回用户源站。
 
+**注意，修改DNS解析需使用CNAME解析到IP高防的CNAME记录值，IP高防节点为高可用集群部署，具备完善的监控和可用性保障措施，出现网络/硬件的维护、升级问题系统会切换IP高防CNAME对应的防护IP地址。如用户存在不支持CNAME记录或记录冲突的情况，可以使用A记录解析到IP高防的IP地址，此场景下如出现高防节点网络和系统维护情况，京东云会提前通知用户，需用户配合切换到京东云提供的备用防护IP。**
+
 ## 前提条件
 - 已成功购买了IP高防，且计费状态正常。<Br/>
 - 已完成了所有转发配置，并且确定配置已验证生效。
@@ -12,7 +14,7 @@
 以非网站转发规则为例，如下找到红框处待复制的cname：
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2005.png)
 3. 在域名提供商处，需要修改域名解析配置让域名解析到高防IP上。
-以京东智联云“云解析”为例，在 **控制台** –> **域名与备案** –> **云解析 DNS** ，进入京东云[云解析控制台](https://dns-console.jdcloud.com/list)<Br/>
+以京东云“云解析”为例，在 **控制台** –> **域名与备案** –> **云解析 DNS** ，进入京东云[云解析控制台](https://dns-console.jdcloud.com/list)<Br/>
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2006.png)<Br/>
 找到待解析的域名，如下：
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2007.png)<Br/>

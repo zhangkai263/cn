@@ -15,9 +15,9 @@ kubectl版本可以集群版本一致，或者集群版本+1。集群版本为1.
 京东云提供了1.16.4版本的kubectl客户端，您可以直接下载使用，详情参考如下命令：
 
 ```
-wget https://kubernetes.s3.cn-north-1.jdcloud-oss.com/kubectl/1.16.4/kubectl
-chmod +x ./kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
+wget https://jke-download-cn-north-1.oss.cn-north-1.jcloudcs.com/rpm/kubectl-1.16.4.12-8d683d98.x86_64.rpm
+rpm2cpio kubectl-1.16.4.12-8d683d98.x86_64.rpm | cpio -div
+cp ./usr/bin/kubectl /usr/bin/
 ```
 具体其他系统安装，还请参考[官方文档](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 

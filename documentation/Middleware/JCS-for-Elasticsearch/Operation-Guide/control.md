@@ -13,8 +13,8 @@ ES已经预置2种系统策略，用户可以按需授权给子账户。系统�
 
 系统策略名称 | 权限描述 | 类型 | 资源范围 | 备注 
 :---: | :--- | :--- | :--- | :---
-JDCloudElasticSearchAdmin  | 云搜索Elasticsearch读权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有创建和管理 es所有集群实例的权限，包括访问Kibana的权限 |
-JDCloudElasticSearchRead  | 云搜索Elasticsearch管理员权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有查看 ES 集群实例的权限，包括访问kibana的权限，但是不具有创建、删除等操作的权限。 |
+JDCloudElasticSearchAdmin  | 云搜索Elasticsearch管理员权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有创建和管理 es所有集群实例的权限，包括访问Kibana的权限 |
+JDCloudElasticSearchRead  | 云搜索Elasticsearch读权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有查看 ES 集群实例的权限，包括访问kibana的权限，但是不具有创建、删除等操作的权限。 |
 
 #### 依赖策略
 子账户依赖的资源策略如下，可在系统策略不能满足使用需求时添加：</br>

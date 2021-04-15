@@ -53,7 +53,13 @@
           - name: 设置权限
             href: Operation-Guide/Account/Grant-Privilege.md
           - name: 重置密码
-            href: Operation-Guide/Account/Reset-Password.md     
+            href: Operation-Guide/Account/Reset-Password.md
+      - name: 监控报警
+        items:
+          - name: 设置报警规则
+            href: Operation-Guide/Monitor-Alarm/Set-Alarm-Rules.md
+          - name: 查看监控信息
+            href: Operation-Guide/Monitor-Alarm/View-Monitor-Information.md
             
       - name: 最佳实践
         items:

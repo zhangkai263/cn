@@ -4,13 +4,13 @@
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[www.jdcloud.com](https://www.jdcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jdcloud.com](https://www.jdcloud.com)打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、提交网站注销流程
 
@@ -22,15 +22,11 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-4.png)
 
-3、请再次仔细阅读系统中的提示内容，确认操作请在下方填写备案密码，备案密码很重要，直接影响您的网站注销操作是否成功，密码忘记可查看帮助中心的“备案密码找回办法“帮助文档。
-
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-5.png)
-
-4、 输入密码后点“下一步“，提交审核
+3、 点“确认注销”后提交审核
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-6.png)
 
-5、 京东智联云会在1个工作日内审核您提交的申请，审核通过提交管局页面如下：
+5、 京东云会在1个工作日内审核您提交的申请，审核通过提交管局页面如下：
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020042801/image/ICP-License-Service/Website-Cancellation-cn-7.png)
 

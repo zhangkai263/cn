@@ -61,6 +61,8 @@ items:
     items:
           - name: NAT实例向NAT网关迁移
             href: Best-Practices/Migration-From-Instance-To-Nat-Gateway.md  
+          - name: 配置SNAT功能的云主机对外提供Telent、SSH等服务
+            href: Best-Practices/Config-LB-ENI-Nat-Gateway.md  
   - name: 问题排查
     items:
     status: 0      
@@ -80,4 +82,5 @@ items:
       href: User-Agreements/SLA.md     
   - name: 相关资源
     items:
-    status: 0 
+    - name: 文档历史记录
+      href: Related-Resources/Document-History.md       

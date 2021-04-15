@@ -19,7 +19,7 @@
 
 ## 操作步骤
 
-1. 访问[内容安全功能免费体验页面](https://promotion.aliyun.com/ntms/act/lvwangdemo.html)并登录您的阿里云账号。
+1. 访问[内容安全功能免费体验页面](https://censor-trial.jdcloud.com/index)并登录您的京东云账号。
 
 2. 选择要体验的检测功能和场景。本示例中选择**图片审核** > **图片智能鉴黄**。
 

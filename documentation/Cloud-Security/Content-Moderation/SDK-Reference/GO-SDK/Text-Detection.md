@@ -14,18 +14,17 @@
 
   在进行具体的服务调用之前，请完成以下准备工作：
   
-- 创建阿里云AccessKeyId和AccessKeySecret。具体请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
-  - 安装Java依赖。具体请参见[安装Go依赖](install.md)。
+- 创建京东智联云AccessKeyId和AccessKeySecret。具体请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
+
+- 安装Go依赖。具体请参见[安装Go依赖](Install-And-Initialization.md)。
 
   ## 文本内容检测
 
   文本垃圾检测支持自定义关键词，例如添加一些竞品关键词等。如果被检测的文本中包含您添加的关键词，算法会返回您suggestion=block。
-  
+
   | 接口               | 描述                                                         |
   | :----------------- | :----------------------------------------------------------- |
-  | NewTextScanRequest | 提交文本反垃圾检测任务，检测场景参数请传递antispam（scenes=antispam）。 |
-
-
+  | NewTextScanRequest | 提交文本反垃圾检测任务，检测场景参数请传递antispam（scenes=antispam） |
 
 代码示例：
 
@@ -47,8 +46,8 @@ import (
 
 func main() {
 	/** 设置credentials **/
-	accessKey := "F25C887204DE2494FACA17CE0AC20ABA"
-	secretKey := "4A21A0B811270B2FBD1E7D81B06D6942"
+	accessKey := "yourAccessKeyID"
+	secretKey := "yourSecretKeyID"
 	credentials := core.NewCredentials(accessKey, secretKey)
 
 	/** 设置Config对象 **/
@@ -92,63 +91,3 @@ func main() {
 
 ```
 
-
-
-
-
-### 查看文本检测结果
-
-代码示例：
-
-```
-package main
-
-import (
-	"encoding/json"
-	"fmt"
-	"net/http"
-	"time"
-
-	core "git.jd.com/jcloud-api-gateway/jcloud-sdk-go/core"
-	censor "git.jd.com/jcloud-api-gateway/jcloud-sdk-go/services/censor/apis"
-	client "git.jd.com/jcloud-api-gateway/jcloud-sdk-go/services/censor/client"
-)
-
-func main() {
-	/** 设置credentials **/
-	accessKey := "yourAccessKeyID"
-	secretKey := "yourAccessKeySecret"
-	credentials := core.NewCredentials(accessKey, secretKey)
-
-	/** 设置Config对象 **/
-	config := core.NewConfig()
-	config.SetTimeout(30 * time.Second)
-
-	/** 设置Client对象 **/
-	client := client.NewCensorClient(credentials)
-	client.SetConfig(config)
-
-	/** 创建查询音频审核结果请求 **/
-	taskids := []string{"taskid"}
-	req := censor.NewAudioResultsRequest(taskids)
-
-	/** 发送查询音频审核结果请求 **/
-	resp, err := client.AudioResults(req)
-	if err != nil {
-		/** TODO: error **/
-	} else {
-		for k, result := range resp.Result.Data {
-			if result.Code != http.StatusOK {
-				/** TODO: error **/
-			} else {
-				fmt.Printf("item: %d:  result: %+v\n", k, result)
-			}
-		}
-	}
-
-	reqBytes, _ := json.MarshalIndent(req, "", "\t")
-	respBytes, _ := json.MarshalIndent(resp, "", "\t")
-	fmt.Println("req: ", string(reqBytes))
-	fmt.Println("resp:", string(respBytes))
-}
-```

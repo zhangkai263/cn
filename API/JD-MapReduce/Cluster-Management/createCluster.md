@@ -46,10 +46,13 @@ https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:create
 |**jssFlag**|Boolean|True| |关联JSS|
 |**dataCenter**|String|True|cn-north-1|数据中心，即regionId|
 |**softwareList**|String|True|HADOOP,ZOOKEEPER|软件列表|
-|**haFlag**|Boolean|True|True|集群是否为高可用，默认为高可用集群|
+|**haFlag**|Boolean|True| |集群是否为高可用，默认为高可用集群|
 |**vpcId**|String|True|new|Vpc网络ID|
 |**vpcSubnetId**|String|True|new|Vpc子网ID|
 |**az**|String|True| |数据中心的可用区|
+|**createOuterIpFlag**|Boolean|False| |是否创建公网IP|
+|**createSecurityGroupFlag**|Boolean|False| |是否创建安全组|
+|**securityGroupId**|String|False| |安全组ID|
 
 ## 返回参数
 |名称|类型|描述|

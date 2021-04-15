@@ -85,8 +85,6 @@ items:
              href: Operation-Guide/Manage-Bucket/Default-Encryption-For-Oss-Buckets-2.md
            - name: 镜像回源设置
              href: Operation-Guide/Manage-Bucket/Manage-Origin-Retrieval-Settings-2.md
-           - name: 边缘存储
-             href: Operation-Guide/Manage-Bucket/edgeStorage.md
            - name: 生命周期管理
              href: Operation-Guide/Manage-Bucket/Lifecycle.md
            - name: 访问日志
@@ -117,6 +115,8 @@ items:
             href: Operation-Guide/Manage-Object/Restore-Glacier-Object.md
           - name: 对象锁定
             href: Operation-Guide/Manage-Object/Object-Lock.md
+          - name: 对象标签
+            href: Operation-Guide/Manage-Object/Object-Tagging.md
           - name: SelectObject(公测)
             href: Operation-Guide/Manage-Object/Select-Object.md
       - name: 权限控制
@@ -170,15 +170,11 @@ items:
                - name: 功能概览
                  href: Operation-Guide/Old-Media-Processing-Service/Introduction/Features1.md  
           - name: 快速入门
-            items:
-               - name: 使用限制
-                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Restrictions1.md
-               - name: 开通服务
-                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Sign-Up-Service.md   
+            items: 
                - name: 创建视频转码工作流
                  href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Create-Video-Transcoding-1.md
                - name: 创建视频截图工作流
-                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Create-Video-Snapshot.md 
+                 href: Operation-Guide/Old-Media-Processing-Service/Getting-Started/Create-Video-Snapshot.md
           - name: 操作指南
             items:
                - name: 视频转码
@@ -321,6 +317,8 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Legal-Hold.md
               - name: Get Object retention
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Retention.md
+              - name: Get Object Tagging
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Tagging.md
               - name: Head Object
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Head-Object-2.md
               - name: Initiate Multipart Upload
@@ -337,6 +335,8 @@ items:
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Legal-Hold.md
               - name: Put Object retention
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Retention.md
+              - name: Put Object Tagging
+                href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Tagging.md
               - name: Upload Part
                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-2.md
               - name: Upload Part Copy	
@@ -543,6 +543,8 @@ items:
         href: FAQ/Object-Management.md
       - name: 域名/网络
         href: FAQ/Domain-Names-and-Network.md
+      - name: 对象存储域名内网IP新旧对应表
+        href: FAQ/urlipmapping.md
       - name: API/SDK
         href: FAQ/API-SDK.md
  - name: 用户协议

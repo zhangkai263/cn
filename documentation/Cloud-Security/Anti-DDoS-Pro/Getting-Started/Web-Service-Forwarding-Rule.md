@@ -13,11 +13,11 @@
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2007.png)
 
 3. 点击“添加规则”按钮，根据如下的弹窗提示，配置转发规则。
-![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2008.png)
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2015.PNG)
 
 规则配置字段解释如下：
 
-- **高防IP**：如购买BGP线路，支持选择高防的BGP IP地址。如购买多个BGP IP，支持将不同的源站业务流量转发给不同的BGP IP进行防护。**此配置项在电信、联动和移动线路中不支持**。
+- **高防IP**：购买BGP线路，支持选择高防的BGP IP地址。如购买多个BGP IP，支持将不同的源站业务流量转发给不同的BGP IP进行防护。
 
 - 域名：支持多级域名的配置，包括泛域名支持。  
 
@@ -31,9 +31,21 @@
 
 - 开启HTTP回源：**勾选HTTPS协议后开关可见**，若您的网站不支持HTTPS回源，请务必开启此项，默认回源端口为80。
 
-- 转发规则：支持轮询和源IP hash。
+- 开启HTTP2.0：**勾选HTTPS协议后开关可见**，开启后支持HTTP2.0协议。
 
-- 回源方式：可选择回源IP或回源域名。其中回源IP（云内+云外）支持20个IP地址，回源域名支持1个。源站域名不能和防护域名一样，源站IP不允许为内网地址。
+- 回源长连接：默认回源短连接，开启后支持回源长连接。
+
+- 被动健康检查：默认开启被动健康检查，支持关闭。
+
+- 请求头支持下滑线：默认忽略请求头中的下划线，开启后可支持。
+
+- SSL协议类型：**勾选HTTPS协议后开关可见**，默认勾选TLSV1.0/1.1/1.2，需至少勾选一种协议。
+
+- 加密套件等级：**勾选HTTPS协议后开关可见**，默认勾选中级，如遇到安全扫描显示低版本加密套件问题，建议勾选加密等级为高级。
+
+- 转发规则：支持轮询、源IP hash和加权轮询。
+
+- 回源方式：可选择回源IP或回源域名。其中回源IP（云内+云外）支持20个IP地址，回源域名支持1个。源站域名不能和防护域名一样。**注意，源站IP不允许填写内网地址，如源站为港澳台或海外地区，请用户自行确认网络延迟和稳定性是否满足要求，如延迟过高，接入IP高防可能出现超时现象，此场景建议使用京东云SCDN产品海外线路**。
 
 - GEO回源：支持基于地域的访问回源。
 
@@ -50,6 +62,9 @@
 6. 网站转发规则配置中如勾选HTTPS，在规则列表中，需要点击关联SSL数字证书。点击上传按钮，在证书管理界面可选择已上传的证书。如首次上传证书，点击 **管理证书** 按钮跳转SSL数字证书控制台界面上传证书，详情参考[上传SSL证书](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/SSL-Certificate/Operation-Guide/Upload-SSL-Certificate.md)
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2013.png)
 ![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/web-rule%2014.png)
+
+7. 网站转发规则支持批量删除、开/关CC防护模式、开/关CC观察模式、切换防御/回源模式。
+![网站转发规则](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/batch-operate02.PNG)
 
 ## 相关参考
 

@@ -31,6 +31,8 @@
             href: Virtual-Machines/describeInstanceStatus.md
           - name: describeInstanceVncUrl
             href: Virtual-Machines/describeInstanceVncUrl.md
+          - name: describeInstancesCustomData
+            href: Virtual-Machines/describeInstancesCustomData.md            
           - name: attachDisk
             href: Virtual-Machines/attachDisk.md
           - name: detachDisk
@@ -91,6 +93,10 @@
             href: SSH-Keypair/describeKeypairs.md
           - name: deleteKeypair
             href: SSH-Keypair/deleteKeypair.md
+          - name: attachKeypair
+            href: SSH-Keypair/attachKeypair.md            
+          - name: detachKeypair
+            href: SSH-Keypair/detachKeypair.md            
       - name: 实例模板
         items:      
           - name: createInstanceTemplate
@@ -101,6 +107,8 @@
             href: Instance-Template/describeInstanceTemplate.md
           - name: describeInstanceTemplates
             href: Instance-Template/describeInstanceTemplates.md
+          - name: describeInstanceTemplatesCustomdata
+            href: Instance-Template/describeInstanceTemplatesCustomdata.md            
           - name: updateInstanceTemplate
             href: Instance-Template/updateInstanceTemplate.md
           - name: verifyInstanceTemplate

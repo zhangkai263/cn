@@ -6,10 +6,10 @@
 
 图片审核支持同步检测和异步检测两种方式。
 
-| 检测方式                            | 支持的检测对象                                              | 获取检测结果                                                 |
-| :---------------------------------- | :---------------------------------------------------------- | :----------------------------------------------------------- |
-| （推荐）同步检测NewImageScanRequest | 支持传入互联网图片URL、本地图片文件路径或二进制图片文件流。 | 同步返回检测结果。                                           |
-| 异步检测NewAsyncImageScanRequest    | 支持传入互联网图片URL、本地图片文件路径或二进制图片文件流。 | 支持通过以下两种方式获取检测结果：提交异步检测任务后，调用异步检测结果查询接口（NewImageResultsRequest），轮询检测结果。 |
+| 检测方式                            | 支持的检测对象          | 获取检测结果                                                 |
+| :---------------------------------- | :---------------------- | :----------------------------------------------------------- |
+| （推荐）同步检测NewImageScanRequest | 支持传入互联网图片URL。 | 同步返回检测结果。                                           |
+| 异步检测NewAsyncImageScanRequest    | 支持传入互联网图片URL。 | 支持通过以下方式获取检测结果：提交异步检测任务后，调用异步检测结果查询接口（NewImageResultsRequest），轮询检测结果。 |
 
 相关API文档：
 
@@ -21,7 +21,7 @@
 在进行具体的服务调用之前，请完成以下准备工作：
 
 - 创建京东云AccessKey。具体操作请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
-- 安装Java依赖。具体操作请参见[安装Go依赖](install.md)。
+- 安装Go依赖。具体操作请参见[安装Go依赖](Install-And-Initialization.md)。
 
 ## （推荐）提交图片同步检测任务
 
@@ -180,10 +180,8 @@ import (
 
 func main() {
 	/** 设置credentials **/
-	//accessKey := "yourAccessKeyID"
-	//secretKey := "yourAccessKeySecret"
-	accessKey := "1A97F030F277083E50778A11B1ACD868"
-	secretKey := "5495E569CCD0906453D6748E49F623B2"
+	accessKey := "yourAccessKeyID"
+	secretKey := "yourAccessKeySecret"
 	credentials := core.NewCredentials(accessKey, secretKey)
 
 	/** 设置Config对象 **/
@@ -217,5 +215,4 @@ func main() {
 	fmt.Println("req: ", string(reqBytes))
 	fmt.Println("resp:", string(respBytes))
 }
-
 ```

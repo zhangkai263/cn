@@ -1,8 +1,9 @@
 # checkCompanyTransfer
 
+
 ## 描述
 
-小额打款验证
+对公打款查询
 
 ## 请求方式
 
@@ -11,6 +12,7 @@ POST
 ## 请求地址
 
 https://cloudauth.jdcloud-api.com/v1/company:check
+
 
 ## 请求参数
 
@@ -22,7 +24,7 @@ https://cloudauth.jdcloud-api.com/v1/company:check
 
 | 名称              | 类型   | 是否必需 | 默认值 | 描述   |
 | ----------------- | ------ | -------- | ------ | ------ |
-| **paymentAmount** | Float  | True     |        | 金额   |
+| **paymentAmount** | String | True     |        | 金额   |
 | **orderNumber**   | String | True     |        | 订单号 |
 
 ## 返回参数
@@ -40,13 +42,13 @@ https://cloudauth.jdcloud-api.com/v1/company:check
 
 ### <div id="AuthInfo">AuthInfo</div>
 
-| 名称             | 类型    | 描述                                 |
-| ---------------- | ------- | ------------------------------------ |
-| **success**      | Boolean | 认证结果true 成功, false 失败        |
-| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常 |
-| **code**         | String  | 认证结果状态码                       |
-| **message**      | String  | 认证结果                             |
-| **detail**       | String  | 字符串形式的详细认证结果，内容为json |
+| 名称             | 类型    | 描述                                                    |
+| ---------------- | ------- | ------------------------------------------------------- |
+| **success**      | Boolean | 认证结果true 成功, false 失败                           |
+| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常                    |
+| **code**         | String  | 认证结果状态码                                          |
+| **message**      | String  | 1. 认证结果信息<br>2. 查询结果信息<br>3. 状态码信息<br> |
+| **detail**       | String  | 1. 认证结果信息<br>2. 查询结果信息<br>                  |
 
 ## 返回码
 
@@ -109,3 +111,5 @@ func main() {
   		}
  	}
 }
+```
+

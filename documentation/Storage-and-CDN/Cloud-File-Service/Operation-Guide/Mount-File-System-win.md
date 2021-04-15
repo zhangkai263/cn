@@ -62,9 +62,9 @@ Windows Server 2008、Windows Server 2012 R2 及Windows Server 2016均支持使�
 
 5. 重启云主机后，打开cmd，执行：
 
-    `mount -o mtype=hard \\10.0.0.4\cfs d:` 
+    `mount -o mtype=hard nolock \\10.0.0.4\cfs d:` 
 
-   其中 10.0.0.4\cfs 为挂载目标，请根据您实际的挂载目标地址做调整； d: 为目标盘符，可根据您需要挂载的盘符做调整； -o mtype=hard 指定为异常情况时恢复行为为hard，即CFS服务异常时， nfs-client会持续重试，直至重新连接。
+   其中 10.0.0.4\cfs 为挂载目标，请根据您实际的挂载目标地址做调整； d: 为目标盘符，可根据您需要挂载的盘符做调整； -o mtype=hard 指定为异常情况时恢复行为为hard，即CFS服务异常时， nfs-client会持续重试，直至重新连接； nolock，禁用文件锁。
 
    挂载成功后，如下图所示，在“资源管理器”中也可看到挂载好的CFS服务。
 

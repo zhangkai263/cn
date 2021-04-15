@@ -11,19 +11,21 @@ items:
         items:
           - name: clusterExpansion
             href: Cluster-Management/clusterExpansion.md
+          - name: clusterReduction
+            href: Cluster-Management/clusterReduction.md
           - name: createCluster
             href: Cluster-Management/createCluster.md
           - name: describeCluster
             href: Cluster-Management/describeCluster.md
+          - name: describeClusters
+            href: Cluster-Management/describeClusters.md
           - name: getJmrVersionList
-            href: Cluster-Management/getJmrVersionList
-            status: 0
+            href: Cluster-Management/getJmrVersionList.md
           - name: getSoftwareInfo
             href: Cluster-Management/getSoftwareInfo.md
-            status: 0
           - name: idataCluster
             href: Cluster-Management/idataCluster.md
-            status: 0
           - name: releaseCluster
             href: Cluster-Management/releaseCluster.md
-            status: 0
+          - name: monitorLabelList
+            href: Cluster-Management/monitorLabelList.md

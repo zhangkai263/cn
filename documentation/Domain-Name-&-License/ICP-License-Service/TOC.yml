@@ -132,6 +132,8 @@ items:
             href: Data-download/Addition-Filing/chongqingziliao.md
           - name: 四川省
             href: Data-download/Addition-Filing/sichuanziliao.md
+          - name: 宁夏省
+            href: Data-download/Addition-Filing/chongqingziliao.md
           - name: 福建省
             href: Data-download/Addition-Filing/fujianziliao.md
           - name: 甘肃省
@@ -140,8 +142,12 @@ items:
             href: Data-download/Addition-Filing/guangxiziliao.md
           - name: 贵州省
             href: Data-download/Addition-Filing/guizhouziliao.md
+          - name: 黑龙江省
+            href: Data-download/Addition-Filing/heilongjiangziliao.md
           - name: 吉林省
             href: Data-download/Addition-Filing/jilinziliao.md
+          - name: 江西省
+            href: Data-download/Addition-Filing/jiangxiziliao.md
           - name: 陕西省
             href: Data-download/Addition-Filing/shanxiziliao.md
           - name: 山西省
@@ -158,6 +164,6 @@ items:
          href: Process/Recording-SMS-verification-instructions.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
-       - name: 京东智联云“备案用时多久送多久”说明
+       - name: 京东云“备案用时多久送多久”说明
          href: Process/How-long-does-it-take-to-file-for-a-long-time.md
 

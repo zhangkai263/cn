@@ -12,7 +12,7 @@
 
 #### OSS对上传和下载带宽是否有限制？
 
-OSS不对上传和下载带宽进行限制，具体的上传和下载速度与您本地带宽有关。
+请参见[限制说明](../Introduction/Restrictions.md)
 
 <div id="user-content-2"></div>
 

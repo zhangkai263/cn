@@ -15,7 +15,7 @@
 在进行具体的服务调用之前，请完成以下准备工作：
 
 - 创建京东智联云AccessKey。具体请参见[创建AccessKey](https://uc.jdcloud.com/account/accesskey)。
-- 安装Go依赖。具体请参见[安装Go依赖](install.md)。
+- 安装Go依赖。具体请参见[安装Go依赖](Install-And-Initialization.md)。
 
 ## 提交语音异步检测任务
 

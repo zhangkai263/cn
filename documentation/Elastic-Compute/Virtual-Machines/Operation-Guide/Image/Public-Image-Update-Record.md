@@ -17,9 +17,21 @@
   	</thead>
     <tbody>     
     <tr>
+        <td>2021-01-28 北京/广州/宿迁/上海</td>
+      	<td>CentOS 8.2</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr> 
+    <tr>
+        <td>2020-12-21 北京/广州/宿迁/上海</td>
+      	<td>CentOS 6.5, CentOS 6.6, CentOS 6.8</td>
+      	<td>* 镜像下线</td>
+        <td> </td>
+    </tr> 
+    <tr>
         <td>2019-07-03 北京</td>
       	<td>CentOS 7.6</td>
-      	<td>发布上线</td>
+      	<td>* 发布上线</td>
         <td> </td>
     </tr>    	    
     <tr>

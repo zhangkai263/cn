@@ -1,16 +1,16 @@
 # 新增接入（京东有主体）
 
-###### 新增接入（京东有主体）定义：主体已在京东智联云备案，但域名在其他服务商进行过备案，此次备案是变更或增加接入商。
+###### 新增接入（京东有主体）定义：主体已在京东云备案，但域名在其他服务商进行过备案，此次备案是变更或增加接入商。
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、填写验证备案类型信息
 
@@ -40,7 +40,7 @@
 
   ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-8.png)
 
-提交信息后等待京东智联云初审审核。
+提交信息后等待京东云初审审核。
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-9.png)
 
@@ -50,11 +50,11 @@
 
 ### 当面核验拍照流程
 
-1、 初审通过后, 登录京东智联云备案系统，办理网站负责人拍照核验。
+1、 初审通过后, 登录京东云备案系统，办理网站负责人拍照核验。
 
-如无京东智联云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东智联云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
+如无京东云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
 
-如有京东智联云幕布并已拍照，请直接**上传照片**。
+如有京东云幕布并已拍照，请直接**上传照片**。
 
 **拍照要求：**
 
@@ -62,7 +62,7 @@ a)   拍照人与网站负责人必须为同一人；
 
 b)   负责人需站在背景幕布中间位置，仅拍上半身即可；
 
-c)   整个背景画布必须是京东智联云画布，幕布为蓝色且字迹清晰；
+c)   整个背景画布必须是京东云画布，幕布为蓝色且字迹清晰；
 
 d)   负责人着装需要符合当季节（例如：冬天不能穿半袖衣服拍照）。
 
@@ -70,11 +70,11 @@ d)   负责人着装需要符合当季节（例如：冬天不能穿半袖衣服
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-12.png)
 
-2、照片通过审核后，京东智联云将在 1 个工作日内将您的备案信息提交至通信管理局审核
+2、照片通过审核后，京东云将在 1 个工作日内将您的备案信息提交至通信管理局审核
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-13.png)
 
-管局审核结果将以短信及邮件形式通知。您也可以登录京东智联云备案系统主页查看您的备案信息情况。
+管局审核结果将以短信及邮件形式通知。您也可以登录京东云备案系统主页查看您的备案信息情况。
 
 ### 幕布申请流程
 

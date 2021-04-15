@@ -53,7 +53,7 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 
 ```HTML
 
-<img src="https:// 123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.png">
+<img src="https://123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.png">
 
 ```
 
@@ -83,7 +83,6 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
                 .withClientConfiguration(config)
                 .withCredentials(awsCredentialsProvider)
                 .disableChunkedEncoding()
-                .withPathStyleAccessEnabled(true)
                 .build();
     }
  }
@@ -138,7 +137,6 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
                   .withClientConfiguration(config)
                   .withCredentials(awsCredentialsProvider)
                   .disableChunkedEncoding()
-                  .withPathStyleAccessEnabled(true)
                   .build();
       }
   }
@@ -152,7 +150,7 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的VM：
 
 *  其中一个Bucket名称为examplebeijing，Region为华北-北京，那么在华北-北京的ECS中可以使用`s3-internal.cn-north-1.jdcloud-oss.com`
-来访问 beijingres 的资源。
+来访问examplebeijing的资源。
 *  另外一个Bucket名称为exampleguangzhou，Region为华南-广州，那么在华北-北京的ECS用内网地址`s3-internal.cn-south-1.jdcloud-oss.com`
 是无法访问OSS的，必须使用外网地址`s3.cn-south-1.jdcloud-oss.com`。
 
@@ -201,12 +199,7 @@ IPv6访问OSS有如下两种方式：
                   .withClientConfiguration(config)
                   .withCredentials(awsCredentialsProvider)
                   .disableChunkedEncoding()
-                  .withPathStyleAccessEnabled(true)
                   .build();
       }
   }
 ```
-
-**说明：**   
-    
-目前华北-北京、华东-宿迁两个区域的OSS服务支持IPv6，华东-上海、华东-广州尚未支持。

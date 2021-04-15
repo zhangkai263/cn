@@ -10,7 +10,6 @@ POST
 ## 请求地址
 https://cdn.jdcloud-api.com/v1/vodStatistics
 
-
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -23,6 +22,7 @@ https://cdn.jdcloud-api.com/v1/vodStatistics
 |**isp**|String|False| | |
 |**origin**|String|False| | |
 |**period**|String|False| |时间粒度，可选值:[oneMin,fiveMin,followTime],followTime只会返回一个汇总后的数据|
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数
@@ -31,14 +31,14 @@ https://cdn.jdcloud-api.com/v1/vodStatistics
 |**result**|[Result](querystatisticsdata#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String| |
 |**endTime**|String| |
 |**domain**|String| |
 |**statistics**|[StatisticsDataItem[]](querystatisticsdata#statisticsdataitem)| |
-### <div id="statisticsdataitem">StatisticsDataItem</div>
+### <div id="StatisticsDataItem">StatisticsDataItem</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|

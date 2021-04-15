@@ -77,6 +77,12 @@ items:
         items:
           - name: 资源账单
             href: Operation-Guide/Consumption-Management/Resource-Bill.md  
+      - name: 访问控制与标签
+        items:
+          - name: 使用标签控制资源的访问
+            href: Operation-Guide/IAM-Tag/Detail-Process.md
+          - name: 边缘物理计算服务支持的策略配置
+            href: Operation-Guide/IAM-Tag/Policy-List.md
 - name: 最佳实践
   status: 0
 - name: 教程

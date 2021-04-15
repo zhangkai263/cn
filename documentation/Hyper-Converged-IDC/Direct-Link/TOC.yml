@@ -1,4 +1,4 @@
-name: 专线互联
+name: 数据同步服务
 href: 
 items:
 - name: 产品简介
@@ -10,12 +10,16 @@ items:
       - name: 产品功能
         href: Introduction/Features.md
       - name: 应用场景 
-        href: Introduction/Application-Scenarios.md    
+        href: Introduction/Application-Scenarios.md
 - name: 产品定价
   items:
-      - name: 产品定价
-        href: Pricing/Price-Overview.md   
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md
 - name: 常见问题
-  items:
-      - name: 常见问题
-        href: FAQ/FAQ.md
+  href: FAQ/FAQ.md

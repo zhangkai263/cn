@@ -107,6 +107,8 @@ items:
                 href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
           - name: 自定义数据
             href: Operation-Guide/Instance/Userdata.md
+          - name: 实例元数据
+            href: Operation-Guide/Instance/Instance-Metadata.md            
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -261,6 +263,10 @@ items:
             href: Operation-Guide/Monitoring/Get-Monitor-Data.md
           - name: 设置报警
             href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 事件
+        items:
+          - name: 事件通知
+            href: Operation-Guide/Monitoring/Event-Overview.md
       - name: 自动任务策略
         items:
           - name: 自动镜像策略

@@ -22,7 +22,13 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**pageSize**|Integer|False| |分页大小, 默认为10, 取值范围[10, 100]|
 |**searchType**|String|False| |查询类型名称, domain:源站域名, ip:源站 IP, port: 转发端口, originPort: 源站端口, serviceIp: 高防IP(仅支持BGP线路的实例)|
 |**searchValue**|String|False| |查询类型值|
+|**sorts**|[Sort[]](describeforwardrules#sort)|False| |排序属性：<br>port - 按转发端口排序，默认不排序,asc表示按转发端口升序，desc表示按转发端口降序<br>|
 
+### <div id="sort">Sort</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|False| |排序条件的名称|
+|**direction**|String|False| |排序条件的方向|
 
 ## 返回参数
 |名称|类型|描述|
