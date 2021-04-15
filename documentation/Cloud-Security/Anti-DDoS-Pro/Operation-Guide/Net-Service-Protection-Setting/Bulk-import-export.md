@@ -36,4 +36,4 @@ xml文件必须以\<?xml version="1.0" encoding="UTF-8"?\>开头，文件内容�
 | \<originDomain\> \</originDomain\> |  回源方式选择源站域名时填写，一般为CNAME |
 | \<originPort\> \</originPort\> |  源站端口，支持范围1-65535 |
 
-建议手动配置一条转发规则，导出xml配置文件后根据内容进行参考。
+建议手动配置一条转发规则，导出xml配置文件后根据内容进行参考配置。
