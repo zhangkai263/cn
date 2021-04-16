@@ -32,9 +32,9 @@ xml文件必须以\<?xml version="1.0" encoding="UTF-8"?\>开头，文件内容�
 | \<httpsPort\> \</httpsPort\>  | HTTPS协议转发端口，支持范围1-65535，最多5个  | 
 | \<webSocketStatus\> \</webSocketStatus\>  | websocket协议开关,</br>0:关闭</br>1:开启  | 
 | \<enableKeepalive\> \</enableKeepalive\>  | 回源长连接开关,</br>off:关闭</br>on:开启  | 
-| \<httpVersion\> \</httpVersion\>  | http协议版本,</br>https1:http1.0/1.1</br>http2:http2.0  | 
+| \<httpVersion\> \</httpVersion\>  | http协议版本,</br>http1:http1.0/1.1</br>http2:http2.0  | 
 | \<sslProtocols\> \</sslProtocols\>  | ssl协议版本，支持SSLv2、SSLv3、TLSv1、TLSv1.1、TLSv1.2，可填写多个  | 
-| \<suiteLevel\> \</suiteLevel\>  | 加密套件等级,这次low、middle、high，只能填写一个  | 
+| \<suiteLevel\> \</suiteLevel\>  | 加密套件等级,支持low、middle、high，只能填写一个  | 
 | \<forceJump\> \</forceJump\>  | 强制跳转https,</br>0:关闭</br>1:开启  |
 | \<httpOrigin\> \</httpOrigin\>  | http回源,</br>0:关闭</br>1:开启  |
 | \<algorithm\> \</algorithm\>  | 转发规则，</br>wrr: 加权轮询</br>rr:  不带权重的轮询</br>sh:源地址hash |  
