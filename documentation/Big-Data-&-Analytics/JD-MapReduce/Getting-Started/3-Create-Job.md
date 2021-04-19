@@ -5,7 +5,7 @@
 
 ## 操作步骤
 
-1.登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择查看哪个地域下的集群。
+1.登录 [JMR 控制台](https://jmr-console.jdcloud.com/cluster/list)，选择查看哪个地域下的集群。
 
 2.创建
 
@@ -14,7 +14,7 @@
  - 作业类型跟集群时候选择的版本软件清单有关。
  - 对作业进行日期设置。
  - 对作业进行失败重试，失败通知主联系人。
- 
+
 3.相关操作说明
 
  - 立即执行：点击立即执行部署的作业。  
