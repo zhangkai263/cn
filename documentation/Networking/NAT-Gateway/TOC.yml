@@ -49,6 +49,8 @@ items:
             href: Operation-Guide/Nat-Gateway-Management/Edit-Nat-Gateway.md
           - name: 启停NAT网关
             href: Operation-Guide/Nat-Gateway-Management/Start-Stop-Nat-Gateway.md
+          - name: 配置NAT网关连接日志
+            href: Operation-Guide/Nat-Gateway-Management/View-Nat-Gateway-Log.md
       - name: 查看NAT网关监控信息
         items:
           - name: 查看NAT网关监控信息
