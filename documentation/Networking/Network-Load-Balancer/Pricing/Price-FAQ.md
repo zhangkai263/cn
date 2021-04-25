@@ -4,11 +4,9 @@
 
 [2.内网负载均衡是否收取流量费？](Price-FAQ#user-content-3)
 
-[3.公网IP流量费和负载均衡流量费有什么不同？](Price-FAQ#user-content-4)
+[3.通过哪个指标可查看负载均衡的流量，从而计算流量费？](Price-FAQ#user-content-5)
 
-[4.通过哪个指标可查看负载均衡的流量，从而计算流量费？](Price-FAQ#user-content-5)
-
-[5.健康检查的流量是否会被计费？](Price-FAQ#user-content-6)
+[4.健康检查的流量是否会被计费？](Price-FAQ#user-content-6)
 
 ## 1.负载均衡服务如何计费？
 <div id="user-content-1"></div>
