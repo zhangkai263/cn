@@ -1,14 +1,14 @@
 # 网络负载均衡计费FAQ
 
-[1.负载均衡服务如何计费？](Price-FAQ#user-content-1)
+[1.负载均衡服务如何收费？](Price-FAQ#user-content-1)
 
 [2.内网负载均衡是否收取流量费？](Price-FAQ#user-content-3)
 
-[3.通过哪个指标可查看负载均衡的流量，从而计算流量费？](Price-FAQ#user-content-5)
+[3.通过哪个指标可查看负载均衡的流量，从而预估流量费？](Price-FAQ#user-content-5)
 
-[4.健康检查的流量是否会被计费？](Price-FAQ#user-content-6)
+[4.健康检查的流量是否收费？](Price-FAQ#user-content-6)
 
-## 1.负载均衡服务如何计费？
+## 1.负载均衡服务如何收费？
 <div id="user-content-1"></div>
 
 网络负载均衡费用说明请参见[计费概述](Billing-Overview.md)，计费项价格请参见[价格总览](Price-Overview.md)。
@@ -23,7 +23,7 @@
 
 您可以通过控制台的【网络-负载均衡-网络负载均衡详情-监控】页面的“流入字节数”查看负载均衡入方向业务流量，从而预估流量费。
 
-## 4.健康检查的流量是否会被计费？
+## 4.健康检查的流量是否收费？
 <div id="user-content-6"></div>
 
 流量费收取的是经由负载均衡处理的用户业务流量产生的费用，负载均衡健康检查的流量不会被计费。
