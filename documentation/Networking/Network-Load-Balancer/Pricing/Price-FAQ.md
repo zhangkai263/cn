@@ -13,7 +13,7 @@
 ## 1.负载均衡服务如何计费？
 <div id="user-content-1"></div>
 
-负载均衡费用说明请参见[计费概述](Billing-Overview.md)，计费项价格请参见[价格总览](Price-Overview.md)。
+网络负载均衡费用说明请参见[计费概述](Billing-Overview.md)，计费项价格请参见[价格总览](Price-Overview.md)。
 
 ## 2.负载均衡流量费如何计算？
 <div id="user-content-2"></div>
