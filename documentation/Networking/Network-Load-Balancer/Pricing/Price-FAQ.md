@@ -1,7 +1,5 @@
 # 网络负载均衡计费FAQ
 
-# 网络负载均衡计费FAQ
-
 [1.负载均衡服务如何计费？](Price-FAQ#user-content-1)
 
 [2.内网负载均衡是否收取流量费？](Price-FAQ#user-content-3)
