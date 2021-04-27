@@ -7,4 +7,4 @@ NAT网关连接日志记录了所有经过NAT网关流量的连接信息，包�
 NAT网关的连接日志需在[日志服务](https://docs.jdcloud.com/log-service/product-overview)配置进行实时采集，不需在NAT网关侧进行任何配置。日志服务可配置开启采集连接日志、关闭采集连接日志、连接日志检索、配置连接日志转储等操作。
 
 ### 2、连接日志字段说明
-连接日志各字段说明请参考[NAT网关连接日志说明](https://docs.jdcloud.com/log-service/natgwlog)。
+连接日志各字段说明请参考[NAT网关连接日志说明](https://docs.jdcloud.com/cn/log-service/natlog)。
