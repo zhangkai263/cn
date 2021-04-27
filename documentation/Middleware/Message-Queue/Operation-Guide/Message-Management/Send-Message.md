@@ -9,10 +9,10 @@
 - 消息体大小为256KB
 
 ## 操作步骤
-### 1. 在topic列表，选择想要发送消息topic所在行的“发送消息”按钮
+**1. 在topic列表，选择想要发送消息topic--操作--发布消息
 
-![发送消息步骤1](../../../../../image/Internet-Middleware/Message-Queue/发送消息-01.png)
-### 2.填写完发送消息的内容，点击“发送”按钮
+![发送消息步骤1](../../../../../image/Internet-Middleware/Message-Queue/topiclist.PNG)
+**2.填写发送消息的内容，单击“发送”
 
 ![发送消息步骤2](../../../../../image/Internet-Middleware/Message-Queue/发送消息-02.png)  
 
