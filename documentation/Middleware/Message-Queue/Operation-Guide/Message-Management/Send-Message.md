@@ -9,7 +9,7 @@
 - 消息体大小为256KB
 
 ## 操作步骤
-**1. 在topic列表，选择想要发送消息topic--操作--发布消息**
+**1. 在topic列表，选择要发送消息的topic--操作--发布消息**
 
 ![发送消息步骤1](../../../../../image/Internet-Middleware/Message-Queue/topiclist.PNG)
 
