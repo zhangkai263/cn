@@ -4,6 +4,10 @@
 
 云主机和容器/POD支持购买的规格族详见：[实例抵扣券支持购买的规格类型](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview#user-content-2)
 
+### 预留型实例抵扣券
+预留型实例抵扣券，指定地域、可用区、规格和数量后购买，单实例预留价格与购买实例的价格相同，可直接参考实例价格：[云主机价格](https://docs.jdcloud.com/virtual-machines/price-overview) 和 [容器/POD价格](https://docs.jdcloud.com/native-container/price-overview)。
+
+### 无预留型实例抵扣券
 无资源预留型实例抵扣券价格（暂不支持华东-宿迁地域购买）：
 
 <table>
