@@ -42,4 +42,4 @@ GET {Http接入点}/v2/messages HTTP/1.1
 
 
 **说明：**
-Https消息收发，除请求中的Http接入点需替换为Https接入点外，使用方式同Http。
+Https消息收发，除请求中的Http接入点需替换为Https接入点外，接口同Http。
