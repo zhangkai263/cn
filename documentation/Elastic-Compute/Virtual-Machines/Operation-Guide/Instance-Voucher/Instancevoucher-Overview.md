@@ -42,7 +42,6 @@
 资源预留型实例抵扣券，指定地域、可用区、规格和数量后购买，单实例预留价格与购买实例的价格相同，主机/原生容器中的多数规格均支持售卖。<br>
 
 * 实例规格详见：[云主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)<br>
-
 * 实例抵扣券定价及计费规则详见：[价格及计费规则](https://docs.jdcloud.com/virtual-machines/price-and-billing-rules-of-instancevoucher)
 
 
@@ -50,7 +49,6 @@
 无资源预留型实例抵扣券，指定地域、适用产品和规格族后，按计算力<sup>[1](instancevoucher-overview#user-content-1)</sup>购买，目前支持售卖的规格族及不支持使用实例券抵扣的规格如下表：<br>
 
 * 实例规格详见：[云主机实例规格](https://docs.jdcloud.com/virtual-machines/instance-type-family) 和 [容器/POD规格](https://docs.jdcloud.com/native-container/price-overview)<br>
-
 * 实例抵扣券定价及计费规则详见：[价格及计费规则](https://docs.jdcloud.com/virtual-machines/price-and-billing-rules-of-instancevoucher)
 
 <table>
@@ -234,6 +232,7 @@
 * 每有按配置计费实例结算时（整点结算或删除结算），会判断该规格是否有可用的实例抵扣券（地域、（可用区）、规格族、有效期等属性），如有则计算实例消耗的计算量，扣减本结算周期内可用计算量，若无可用实例抵扣券则正常扣款结算；<br>
 * 若当前结算周期内可用计算量仅可抵扣部分实例消耗，则剩余未抵扣计算量按比例依据规格定价进行扣款结算：规格单价/（规格尺寸* 3600s）* （实例消耗计算量-已抵扣计算量），抵扣记录查看方式请参考文档[查看抵扣明细](https://docs.jdcloud.com/virtual-machines/check-usage-of-instancevoucher)；<br>
 * 实例抵扣券每小时可用计算量无论是否被实例全部抵扣，都不会进行累计或退款；
+* 如某一实例在抵扣时，同时有无预留型和预留型实例抵扣券可用，则会优先抵扣预留型实例抵扣券。
 
 
 <div id="user-content-1"></div>
