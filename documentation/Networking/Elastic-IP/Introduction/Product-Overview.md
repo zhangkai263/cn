@@ -36,17 +36,14 @@
 ## 快速入门
 **了解**：①[产品概述](https://docs.jdcloud.com/cn/elastic-ip/product-overview)——>②[应用场景](https://docs.jdcloud.com/cn/elastic-ip/application-scenarios)——>③[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)。
 
-**使用**：①[创建EIP]()——>②[绑定云资源]()——>③[调整带宽]()——>④[解绑云资源]()——>⑤[释放EIP]()。
+**使用**：①[创建EIP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)——>②[绑定云资源](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)——>③[调整带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)——>④[解绑云资源](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)——>⑤[删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md))。
 
 ## 相关参考
-
+- [应用场景](https://docs.jdcloud.com/cn/elastic-ip/application-scenarios)
+- [使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
 - [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
 - [删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
 - [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
 - [解绑弹性公网IP](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)
 - [修改弹性公网IP带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)
-- [弹性公网IP资源信息查看](../Operation-Guide/View-Elastic-IP-Detail/View-Elastic-IP-Detail.md)
-- [弹性公网IP监控信息查看](../Operation-Guide/View-Elastic-IP-Monitoring/View-Elastic-IP-Monitoring.md)
-- [弹性公网IP计费信息查看](../Operation-Guide/View-Elastic-IP-Billing/View-Elastic-IP-Billing.md)
-- [导出弹性公网IP列表](../Operation-Guide/Export-Elastic-IP-List/Export-Elastic-IP-List.md)
 
