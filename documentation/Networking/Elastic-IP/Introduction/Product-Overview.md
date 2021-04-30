@@ -10,7 +10,7 @@
 
 **边缘弹性公网IP**：为边缘可用区提供公网服务能力
 
-弹性公网IP的中心可用区及边缘可用区详细介绍请参考[地域及可用区]()。
+弹性公网IP的中心可用区及边缘可用区详细介绍请参考[地域及可用区](Region-Az.md)。
 
 ## 特性优势
 * 完全弹性
@@ -41,7 +41,7 @@
 ## 相关参考
 - [产品优势](https://docs.jdcloud.com/cn/elastic-ip/benefits)
 - [应用场景](https://docs.jdcloud.com/cn/elastic-ip/application-scenarios)
-- [地域及可用区]()
+- [地域及可用区](Region-Az.md)
 - [使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
 - [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
 - [删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
