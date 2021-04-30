@@ -34,15 +34,15 @@
 
 
 ## 快速入门
-**了解**：①[产品概述](https://docs.jdcloud.com/cn/elastic-ip/product-overview)——>②[产品功能](Features.md)——>③[产品优势](https://docs.jdcloud.com/cn/elastic-ip/benefits)——>④[应用场景](https://docs.jdcloud.com/cn/elastic-ip/application-scenarios)——>③[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)。
+**了解**：①[产品概述](Product-Overview.md)——>②[产品功能](Features.md)——>③[产品优势](Benefits.md)——>④[应用场景](Application-Scenarios.md)——>③[使用限制](Restrictions.md)。
 
 **使用**：①[创建EIP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)——>②[绑定云资源](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)——>③[调整带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)——>④[解绑云资源](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)——>⑤[删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)。
 
 ## 相关参考
-- [产品优势](https://docs.jdcloud.com/cn/elastic-ip/benefits)
-- [应用场景](https://docs.jdcloud.com/cn/elastic-ip/application-scenarios)
+- [产品优势](Benefits.md)
+- [应用场景](Application-Scenarios.md)
 - [地域及可用区](Region-Az.md)
-- [使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
+- [使用限制](Restrictions.md)
 - [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
 - [删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
 - [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
