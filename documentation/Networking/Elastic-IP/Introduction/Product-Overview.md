@@ -43,6 +43,7 @@
 - [应用场景](Application-Scenarios.md)
 - [地域及可用区](Region-Az.md)
 - [使用限制](Restrictions.md)
+- [价格总览](../Pricing/Billed-Overview.md)
 - [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
 - [删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
 - [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
