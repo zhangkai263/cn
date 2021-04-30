@@ -164,7 +164,9 @@ items:
           - name: 管理实例抵扣券
             href: Operation-Guide/Instance-Voucher/Manage-Instancevoucher.md
           - name: 查看抵扣明细
-            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md            
+            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
+          - name: 查看预留资源
+            href: Operation-Guide/Instance-Voucher/Reserved-Resources.md             
       - name: 存储
         items:
           - name: 存储概述
@@ -211,6 +213,8 @@ items:
             href: Operation-Guide/Network/Configurate-ENI-Multi-Queue.md
           - name: 配置弹性网卡删除属性
             href: Operation-Guide/Network/Configurate-ENI-Delete-Attributes.md
+          - name: 修改私有网络配置
+            href: Operation-Guide/Network/Modify-VPC-Attribute.md           
       - name: 密钥
         items:
           - name: 密钥概述
