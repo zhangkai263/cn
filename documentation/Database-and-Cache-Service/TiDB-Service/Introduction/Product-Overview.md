@@ -14,7 +14,7 @@
 
 ## 常用操作
 - [创建实例](../Operation-Guide/Instance/Create-Instance.md)
-- [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
 - [创建账号](../Operation-Guide/Account/Create-Account.md)
+- [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
 - [创建备份](../Operation-Guide/Backup/Create-Backup.md)
  
