@@ -11,8 +11,8 @@
     * 列表页：选择需要删除的目标实例，点击 **操作** 这一列的 **删除**。
     * 实例详情页：选择需要删除的目标实例，进入到实例详情页，点击页面右上角的 **操作 -> 删除**。
 
-![删除实例1](../../../../../image/TiDB/delete-instance-1.png)
+![删除实例1](../../../../../image/TiDB/instance-list.png)
 
 3. 为防止勿删，需要输入 TiDB 实例的ID ，点击 **确认** 后删除
 
-![删除实例2](../../Image/Document/delete-instance-2.png)
+![删除实例2](../../../../../image/TiDB/delete-instance.png)
