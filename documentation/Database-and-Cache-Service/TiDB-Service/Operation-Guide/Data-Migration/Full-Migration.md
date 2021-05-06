@@ -6,7 +6,7 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 
 ## 操作步骤
 ### 一. 对 MySQL 进行全量备份
-1. 使用 Dumpling 工具导出MySQL的全量数据。 Dumpling相比其他MySQL的数据导出工具，性能更高。具体的使用方式和下载地址可参考[帮助文档](https://docs.pingcap.com/zh/tidb/stable/dumpling-overview)。
+1. 使用 Dumpling 工具导出MySQL的全量数据。 Dumpling相比其他MySQL的数据导出工具，性能更高。具体的使用方式和下载地址可参考 [帮助文档](https://docs.pingcap.com/zh/tidb/stable/dumpling-overview)。
 
 > **注意：**
 > 1. 导出文件的格式必须是sql文件。
@@ -49,11 +49,12 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 >
 > 例如单个TiKV容量为2T，有3个TiKV，总容量为6T，那么可导入的数据大小不能超过1T。
 
-3. 填写备份文件在OSS中的完整路径，然后点击 **校验**。当校验通过后，**确认** 按钮高亮。 例如数据文件存放在OSS的database-bak这个Bucket 中，在Bucket中的中路径为test-env/db1.bak, 则输入 database-bak/test_env/db1.bak
-
-4. 点击 **确认** 按钮，开始全量数据迁移，待数据迁移完成，迁移状态会变成**"完成"**。
+3. 填写备份文件在OSS中的完整路径，然后点击 **校验**。当校验通过后，**确认** 按钮高亮。 例如数据文件存放在OSS的database-bak这个Bucket 中，在Bucket中的中路径为test-env/db1.bak, 则输入 database-bak/test_env/db1.bak. 然后点击 **确认** 按钮，开始全量数据迁移。
 
 ![全量迁移2](../../../../../image/TiDB/full-migration-2.png)
 
+4. 在 **数据迁移** 页面中可看到迁移正在运行中。 待数据迁移完成，迁移状态会变成 **"完成"**。
+
+![全量迁移3](../../../../../image/TiDB/full-migration-3.png)
 
   	
