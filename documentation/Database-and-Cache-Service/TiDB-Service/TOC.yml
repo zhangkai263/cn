@@ -19,8 +19,6 @@ items:
         href: Introduction/Restrictions.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
-      - name: 公测说明
-        href: Introduction/Public-Beta-Introduction.md    
 
   - name: 产品定价
     items:
@@ -48,12 +46,18 @@ items:
         items:
           - name: 创建实例
             href: Operation-Guide/Instance/Create-Instance.md
+          - name: 查看实例
+            href: Operation-Guide/Instance/View-Instance.md            
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 连接实例
             href: Operation-Guide/Instance/Connect-Instance.md
-          - name: 水平扩容  
-            href: Operation-Guide/Instance/modifyNodeNum.md
+          - name: 变更配置  
+            href: Operation-Guide/Instance/Modify-Instance-Spec.md
+          - name: 节点重启  
+            href: Operation-Guide/Instance/Reboot-Node.md
+          - name: 小版本升级  
+            href: Operation-Guide/Instance/Upgrade-Engine-Version.md            
 
       - name: 账户管理
         items:
@@ -70,9 +74,15 @@ items:
             href: Operation-Guide/Backup/Create-Instance-From-Backup.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
-          - name: 修改策略
+          - name: 设置备份策略
             href: Operation-Guide/Backup/Modify-Backup-Strategy.md
-        
+  
+      - name: 参数修改
+        href: Operation-Guide/Parameter/Modify-Parameters.md  
+
+      - name: 数据迁移
+        href: Operation-Guide/Data-Migration/Full-Migration.md.md 
+ 
   - name: SQL 语法
     items:
       - name: 数据处理相关SQL
