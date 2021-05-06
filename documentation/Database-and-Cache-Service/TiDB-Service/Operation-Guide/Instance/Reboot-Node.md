@@ -8,9 +8,9 @@
 ## 操作步骤
 1. 进入实例详情页面，可看到 **配置** 部分下，各类节点右边有重启按钮。 
 
-![变更配置1](../../Image/Document/reboot-node-1.png)
+![变更配置1](../../../../../image/TiDB/reboot-node-1.png)
 
 2. 点击 **重启** 按钮，并且弹出的对话框中点击 **确认**。
 
-![变更配置2](../../Image/Document/reboot-node-2.png)
+![变更配置2](../../../../../image/TiDB/reboot-node-2.png)
 
