@@ -17,4 +17,5 @@
 - [创建账号](../Operation-Guide/Account/Create-Account.md)
 - [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
 - [创建备份](../Operation-Guide/Backup/Create-Backup.md)
+- [变更配置](../Operation-Guide/Instance/Modify-Instance-Spec.md)
  
