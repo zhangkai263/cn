@@ -80,8 +80,11 @@ items:
       - name: 参数修改
         href: Operation-Guide/Parameter/Modify-Parameters.md  
 
+      - name: 监控
+        href: Operation-Guide/Data-Migration/TiDB-Monitor.md
+
       - name: 数据迁移
-        href: Operation-Guide/Data-Migration/Full-Migration.md.md 
+        href: Operation-Guide/Data-Migration/Full-Migration.md
  
   - name: SQL 语法
     items:
