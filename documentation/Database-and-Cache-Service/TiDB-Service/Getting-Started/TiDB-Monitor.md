@@ -23,6 +23,11 @@
 3. 在和TiDB 实例处于同一VPC的云主机中，打开浏览器，输入步骤2 的域名和端口，例如：tidb-axbjt980b1-grafana.tidb-axbjt980b1-hd.jvessel2-test.jdcloud.com:3000
 4. 浏览器中显示Grafana的登录界面，默认的用户名和密码均为: admin 。
 
+> **注意**
+> 
+> 1. 为安全起见，建议修改admin账号的密码。
+> 2. admin 的密码无法重置，修改后请务必妥善保管。
+
 ![监控1](../../../../image/TiDB/monitor-grafana-1.png)
 
 5. 登录后，点击左上方 **Home** 链接，可看到如下列表。
