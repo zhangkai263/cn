@@ -18,17 +18,17 @@
 1. 登录 分布式数据库TiDB 管理控制台。
 2. 选择目标实例，并点击进入实例详情页。在 **域名和端口** 部分，查看并记录 **监控** 的域名和端口。
 
-![监控](../../../../image/TiDB/monitor-2.png)
+![监控](../../../../../image/TiDB/monitor-2.png)
 
 3. 在和TiDB 实例处于同一VPC的云主机中，打开浏览器，输入步骤2 的域名和端口，例如：tidb-axbjt980b1-grafana.tidb-axbjt980b1-hd.jvessel2-test.jdcloud.com:3000
 4. 浏览器中显示Grafana的登录界面，默认的用户名和密码均为: admin 。
 
-![监控1](../../../../image/TiDB/monitor-grafana-1.png)
+![监控1](../../../../../image/TiDB/monitor-grafana-1.png)
 
 5. 登录后，点击左上方 **Home** 链接，可看到如下列表。
 
-![监控2](../../../../image/TiDB/monitor-grafana-2.png)
+![监控2](../../../../../image/TiDB/monitor-grafana-2.png)
 
 6. 选择需要看的信息，即可查看详细的监控指标。
 
-![监控3](../../../../image/TiDB/monitor-grafana-3.png)
+![监控3](../../../../../image/TiDB/monitor-grafana-3.png)
