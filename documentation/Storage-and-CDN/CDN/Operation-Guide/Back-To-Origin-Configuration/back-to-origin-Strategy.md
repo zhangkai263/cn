@@ -33,7 +33,7 @@ l  域名回源最多可配置5个域名，区分优先级进行回源，优先�
 
 不配置任何回源host时，回源host是您的加速域名
 
-支持域名回源的自定义回源host，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com
+目前仅中国境内加速支持域名回源的自定义回源host，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com
 
 默认回源host指IP回源或者域名回源时，回源地址均对应同一个回源host，如回源域名为test1.com和test2.com，默认回源host为origin.com，即test1.com和test2.com的回源host均为origin.com
 
@@ -41,7 +41,7 @@ l  域名回源最多可配置5个域名，区分优先级进行回源，优先�
 
 **源站监控**
 
-开启源站监控后，CDN分发节点将按照探测周期探测源站的可用性及网络延迟情况，您可以到【管理】-【云监控】配置并查询源站的异常告警信息。
+目前仅中国境内加速支持源站监控服务。开启源站监控后，CDN分发节点将按照探测周期探测源站的可用性及网络延迟情况，您可以到【管理】-【云监控】配置并查询源站的异常告警信息。
 
 ![image.png](https://img1.jcloudcs.com/cms/ce478878-87ee-49a0-a29b-f72e6b61606f20180118102744.png)
 

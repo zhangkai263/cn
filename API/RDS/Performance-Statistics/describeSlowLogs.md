@@ -28,26 +28,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeslowlogs#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**slowLogs**|SlowLogDigest[]|慢日志信息|
+|**slowLogs**|[SlowLogDigest[]](describeslowlogs#slowlogdigest)|慢日志信息|
 |**totalCount**|Integer|总记录条数|
-### SlowLogDigest
+### <div id="slowlogdigest">SlowLogDigest</div>
 |名称|类型|描述|
 |---|---|---|
 |**dbName**|String|数据库名，表示该SQL是在哪个数据库中执行的|
 |**sql**|String|SQL语句|
 |**executionTime**|String|SQL语句执行的开始时间，格式为YYYY-MM-DD hh:mm:ss|
 |**executionCount**|Integer|SQL语句的执行次数|
-|**elapsedTime**|DigestData|SQL语句执行的时长，单位秒|
-|**lockTime**|DigestData|SQL语句等待锁的时间，单位秒|
-|**sqlLength**|DigestData|SQL语句的长度|
-|**rowsExamined**|DigestData|SQL语句扫描的行数|
-|**rowsReturned**|DigestData|SQL语句返回的行数|
-### DigestData
+|**elapsedTime**|[DigestData](describeslowlogs#digestdata)|SQL语句执行的时长，单位秒|
+|**lockTime**|[DigestData](describeslowlogs#digestdata)|SQL语句等待锁的时间，单位秒|
+|**sqlLength**|[DigestData](describeslowlogs#digestdata)|SQL语句的长度|
+|**rowsExamined**|[DigestData](describeslowlogs#digestdata)|SQL语句扫描的行数|
+|**rowsReturned**|[DigestData](describeslowlogs#digestdata)|SQL语句返回的行数|
+### <div id="digestdata">DigestData</div>
 |名称|类型|描述|
 |---|---|---|
 |**pct95**|Float|表示执行结果中95% 数据小于或等于此数值|
@@ -60,3 +60,31 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeSlowLogs() {
+    DescribeSlowLogsRequest request = new DescribeSlowLogsRequest();
+    request.setRegionId("cn-north-1");
+    request.setPageNumber(1);
+    request.setPageSize(20);
+    request.setStartTime("2020-01-08 00:00:00");
+    request.setEndTime("2020-01-08 14:00:00");
+    request.setInstanceId("mysql-k67q8n46si");
+    DescribeSlowLogsResponse response = rdsClient.describeSlowLogs(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaojtjd19rwgeruauestqgwwfm9imwv", 
+    "result": {
+        "slowLogs": [], 
+        "totalCount": 0
+    }
+}
+```

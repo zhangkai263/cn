@@ -24,20 +24,20 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/raids
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describedeviceraids#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**raids**|Raid[]| |
-### Raid
+|**raids**|[Raid[]](describedeviceraids#raid)| |
+### <div id="raid">Raid</div>
 |名称|类型|描述|
 |---|---|---|
 |**volumeType**|String|磁盘类型, 如 system/data|
 |**volumeDetail**|String|设备详情|
 |**raidTypeId**|String|RAID类型ID|
-|**raidType**|String|RAID类型, 如 NORAID, RAID0, RAID1|
+|**raidType**|String|RAID类型, 如 NORAID, RAID0, RAID1，RAID10|
 |**deviceType**|String|云物理服务器类型, 如 cps.c.normal|
 |**description**|String|RAID类型描述|
 

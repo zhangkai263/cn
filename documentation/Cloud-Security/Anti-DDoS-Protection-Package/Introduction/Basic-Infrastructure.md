@@ -7,6 +7,6 @@ DDoS防护包是一款针对京东云内业务，快速提升其抗D防护能力
 ## 产品架构
 京东云DDoS防护包作为DDoS基础防护的升级版，其架构图和基础防护一致，但是会提供更大的DDoS防护能力。
 
-![防护包架构图](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Anti-DDoS-Protection-Package/防护包架构图.png)
+![防护包架构图](https://github.com/jdcloudcom/cn/blob/edit/image/Anti-DDoS-Protection-Package/防护包架构图.png)
 
 如图所示，在京东云机房出口处，旁路部署DDoS攻击检测及清洗设备。实时对Internet的网络流量进行检测，一旦发现流量异常，就将所有流量自动牵引到清洗设备，完成一系列流量清洗后，干净的流量再回源到用户服务器。

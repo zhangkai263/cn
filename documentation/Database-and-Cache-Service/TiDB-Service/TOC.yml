@@ -1,92 +1,118 @@
-  name: 分布式数据库 TiDB
-  href:
-  items:
+name: 分布式数据库 TiDB
+href:
+items:
   - name: 产品简介
     items:
-    - name: 产品概述
-      herf: Introduction/Product-Overview.md
-    - name: 核心概念
-      herf: Introduction/Core-Concepts.md
-    - name: 基础架构
-      herf: Introduction/Basic-Infrastructure.md
-    - name: 产品优势
-      herf: Introduction/Benefits.md
-    - name: 产品功能
-      herf: Introduction/Features.md
-    - name: 产品规格
-      herf: Introduction/Specifications.md
-    - name: 限制说明
-      herf: Introduction/Restrictions.md
-    - name: 应用场景
-      herf: Introduction/Application-Scenarios.md
-    - name: 公测说明
-      herf: Introduction/Public-Beta-Introduction.md      
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 产品规格
+        href: Introduction/Specifications.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+      - name: 公测说明
+        href: Introduction/Public-Beta-Introduction.md    
 
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格概览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md
+        
   - name: 入门指南
     items:
-    - name: 创建实例
-      herf: Getting-Started/Create-TiDB-Instance.md
-    - name: 连接实例
-      herf: Getting-Started/Connect-TiDB-Instance.md
-    - name: 监控实例
-      herf: Getting-Started/TiDB-Monitor.md
+      - name: 创建实例
+        href: Getting-Started/Create-Instance.md
+      - name: 连接实例
+        href: Getting-Started/Connect-Instance.md
+      - name: 监控实例
+        href: Getting-Started/TiDB-Monitor.md
 
   - name: 操作指南
     items:
-    - name: 实例管理
-      items:
-      - name: 创建实例
-        herf: Operation-Guide/Instance/Create-Instance.md
-      - name: 删除实例
-        herf: Operation-Guide/Instance/Delete-Instance.md
-      - name: 连接实例
-        herf: Operation-Guide/Instance/Connect-Instance.md
+      - name: 实例管理
+        items:
+          - name: 创建实例
+            href: Operation-Guide/Instance/Create-Instance.md
+          - name: 删除实例
+            href: Operation-Guide/Instance/Delete-Instance.md
+          - name: 连接实例
+            href: Operation-Guide/Instance/Connect-Instance.md
+          - name: 水平扩容  
+            href: Operation-Guide/Instance/modifyNodeNum.md
 
-    - name: 节点管理
-      herf: Operation-Guide/Node-Management.md
-    - name: 重置密码
-      herf: Operation-Guide/Reset-Password.md
-    - name: 监控实例
-      herf: Operation-Guide/Monitor.md
+      - name: 账户管理
+        items:
+          - name: 创建账号
+            href: Operation-Guide/Account/Create-Account.md
+          - name: 重置密码
+            href: Operation-Guide/Account/Reset-Password.md
 
+      - name: 备份管理
+        items:
+          - name: 创建备份
+            href: Operation-Guide/Backup/Create-Backup.md
+          - name: 根据备份创建
+            href: Operation-Guide/Backup/Create-Instance-From-Backup.md
+          - name: 删除备份
+            href: Operation-Guide/Backup/Delete-Backup.md
+          - name: 修改策略
+            href: Operation-Guide/Backup/Modify-Backup-Strategy.md
+        
   - name: SQL 语法
     items:
-    - name: 数据处理相关SQL
-      herf: SQL-Syntax/Data-SQL.md
-    - name: 数据库相关SQL
-      herf: SQL-Syntax/Database-SQL.md
-    - name: 表相关SQL
-      herf: SQL-Syntax/Table-SQL.md
-    - name: 索引相关SQL
-      herf: SQL-Syntax/Index-SQL.md
-    - name: 用户相关SQL
-      herf: SQL-Syntax/User-SQL.md
+      - name: 数据处理相关SQL
+        href: SQL-Syntax/Data-SQL.md
+      - name: 数据库相关SQL
+        href: SQL-Syntax/Database-SQL.md
+      - name: 表相关SQL
+        href: SQL-Syntax/Table-SQL.md
+      - name: 索引相关SQL
+        href: SQL-Syntax/Index-SQL.md
+      - name: 用户相关SQL
+        href: SQL-Syntax/User-SQL.md
 
   - name: 最佳实践
     items:
-    - name: 数据迁移
-      items:
-      - name: 数据迁移概述
-        herf: Best-Practices/Data-Migration/Data-Migration-Overview.md
-      - name: 全量迁移
-        herf: Best-Practices/Data-Migration/Full-Import.md
-      - name: 增量迁移
-        herf: Best-Practices/Data-Migration/Incremental-Import.md
-    - name: 大数据量处理
-      herf: Best-Practices/Data-Operation.md
-    - name: 参数优化
-      herf: Best-Practices/Parameters-Optimization.md
-    - name: 高效使用 Secondary Index
-      herf: Best-Practices/Secondary-Index.md
+      - name: 大数据量处理
+        href: Best-Practices/Data-Operation.md    
+      - name: 数据迁移
+        items:
+          - name: 数据迁移概述
+            href: Best-Practices/Data-Migration/Data-Migration-Overview.md
+          - name: 全量数据迁移
+            href: Best-Practices/Data-Migration/Full-Data-Migration.md
+          - name: Mydumper
+            href: Best-Practices/Data-Migration/Mydumper.md
+          - name: 增量迁移
+            href: Best-Practices/Data-Migration/Incremental-Import.md
+      - name: 高效使用 Secondary Index
+        href: Best-Practices/Secondary-Index.md
 
   - name: 性能测试
     items:
-    - name: sysbench 性能测试
-      herf: Performance-Test/sysbench-Test.md
-    - name: TPC-H 50G 性能测试
-      herf: Performance-Test/tpch-Test.md
-
+      - name: 如何用Sysbench进行测试
+        href: Performance-Test/benchmark-tidb-using-sysbench.md
+      - name: 如何进行TPC-C测试
+        href: Performance-Test/benchmark-tidb-using-tpcc.md
+      - name: 性能测试结果概览
+        href: Performance-Test/Performance-Test-Overview.md
+      
   - name: 常见问题
-    herf: FAQ/FAQ.md
-
-
+    items:
+      - name: FAQ
+        href: FAQ/FAQ.md

@@ -2,13 +2,13 @@
 
 应用负载均衡可将大并发流量分发到多台后端实例，调整资源利用情况，消除由于单台设备故障对系统的影响，提高系统可用性、扩展系统服务能力。
 
-京东云私有网络部署：
+京东智联云私有网络部署：
 
 ![VPC基础架构](../../../../image/Networking/ALB/ALB-001.png)
 
 ## 提供多重保障的高可用服务
 
-京东云应用负载均衡提供多重机制保障服务的高可用：
+京东智联云应用负载均衡提供多重机制保障服务的高可用：
 
 - 应用负载均衡的高可用：
 
@@ -33,7 +33,7 @@
 
 - 自动调节后端实例数：应用负载均衡后端可以绑定指定的高可用组，通过设置弹性伸缩策略，自动调整后端服务实例数量，合理配置资源。
 
-- 防DDoS攻击：京东云免费为应用负载均衡服务提供基于公网IP的DDoS基础防护，最大支持2G的抗DDoS攻击能力，提升了服务的安全性能，详见[DDoS基础防护](https://docs.jdcloud.com/anti-ddos-basic/product-overview)。如您需要更大流量的攻击防护，请购买[DDoS防护包](https://www.jdcloud.com/products/anti-ddos-protection-package)。
+- 防DDoS攻击：京东智联云免费为应用负载均衡服务提供基于公网IP的DDoS基础防护，最大支持2G的抗DDoS攻击能力，提升了服务的安全性能，详见[DDoS基础防护](https://docs.jdcloud.com/anti-ddos-basic/product-overview)。如您需要更大流量的攻击防护，请购买[DDoS防护包](https://www.jdcloud.com/products/anti-ddos-protection-package)。
 
 - 会话保持：应用负载均衡支持基于HTTP/HTTPS协议类型的会话保持功能。
 
@@ -42,6 +42,8 @@
 - 源IP透传：应用负载均衡支持基于TCP/TLS/HTTP/HTTPS协议的客户端IP透传功能。
 
 - 支持WebSocket：WebSocket为客户端和服务器提供双向通信的通道，能更好的节省服务器资源及带宽，保证通信的实时性。
+
+- 支持SNI：应用负载均衡的HTTPS/TLS监听支持挂载多个证书，实现将不同域名的访问请求转发到不同的后端服务
 
 ## 应用负载均衡&网络负载均衡&分布式网络负载均衡对比
 
@@ -55,16 +57,17 @@
 |后端服务实例弹性伸缩 | ✔ | ✔ | ✔ |
 |多可用区高可用部署 | ✔ | ✔ | ✔ |
 |调度算法	| 加权轮询、加权最小连接数和加权源IP | 加权轮询、加权最小连接数和加权源IP | 加权源IP和加权五元组 |
-|SSL卸载与证书管理 | ✔ | —— | —— |
+|SSL卸载及支持SNI | ✔ | —— | —— |
+|支持重定向 | ✔ | —— | —— |
 |空闲连接超时 | ✔ | ✔ | —— |
 |源IP保留	| 基于HTTP头的X-forward-for机制透传 | 三层报文源IP透传 | 三层报文源IP透传 |
 |会话保持 | 基于Cookie的会话保持  |  TCP连接的会话保持 | —— |
 |连接耗尽超时 | 只支持连接耗尽，不支持配置超时时间 |  ✔ | —— |
-|后端服务实例类型 | 云主机/原生容器/高可用组| 云主机/原生容器/高可用组 | 云主机/原生容器/高可用组 |
+|后端服务实例类型 | 云主机/原生容器/高可用组/IP地址| 云主机/原生容器/高可用组 | 云主机/原生容器/高可用组 |
 |健康检查 | ✔ | ✔ | ✔ |
 |内外网负载均衡切换	 | ✔ |	✔ | ✔ |
 |删除保护 | ✔  | ✔ | ✔ |
-|计费标准	| 费率相对高（暂时免费）| 费率相对低（暂时免费） | 免费 |
+|计费标准	| 收费| 收费（暂时免费） | 免费 |
 
 ## 相关参考
 
@@ -75,7 +78,7 @@
 - [计费规则](../Pricing/Billing-Rules.md)
 - [创建负载均衡实例](../Getting-Started/Create-Instance.md)
 - [创建高可用组](../Getting-Started/Create-AvailabilityGroup.md)
-- [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
-- [配置侦听策略](../Operation-Guide/Listener-Management.md)
+- [虚拟服务器组管理](../Operation-Guide/TargetGroup-Management.md)
+- [监听器管理](../Operation-Guide/Listener-Management.md)
 - [管理后端服务与查看服务实例健康状态](../Operation-Guide/Backend-Management.md)
 - [查看监控信息](../Operation-Guide/Monitoring.md)

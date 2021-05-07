@@ -11,7 +11,7 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
-      - name: 限制说明
+      - name: 使用限制
         href: Introduction/Restrictions.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
@@ -107,8 +107,10 @@
     status: 0      
   - name: 用户协议
     items:
-    - name: 服务条款
-      href: User-Agreements/Product-Terms-of-Service.md          
+    - name: 弹性公网IP服务条款
+      href: User-Agreements/Product-Terms-of-Service.md
+    - name: 弹性公网IP服务等级协议(SLA)
+      href: User-Agreements/Elastic-Ip-Level-Agreements-SLA.md   
   - name: 相关资源
     items:
     - name: 文档历史记录

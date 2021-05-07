@@ -22,15 +22,15 @@ https://vod.jdcloud-api.com/v1/videos
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**filters**|Filter[]|False| | |
-|**sorts**|Sort[]|False| | |
+|**filters**|[Filter[]](listvideos#filter)|False| | |
+|**sorts**|[Sort[]](listvideos#sort)|False| | |
 
-### Sort
+### <div id="sort">Sort</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |排序属性名|
 |**direction**|String|False| |排序方向|
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤器属性名|
@@ -40,35 +40,35 @@ https://vod.jdcloud-api.com/v1/videos
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询视频列表信息结果|
+|**result**|[Result](listvideos#result)|查询视频列表信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|VideoObject[]|分页内容|
-### VideoObject
+|**content**|[VideoObject[]](listvideos#videoobject)|分页内容|
+### <div id="videoobject">VideoObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|视频ID|
 |**name**|String|视频名称|
 |**description**|String|视频描述|
 |**coverUrl**|String|封面图地址|
-|**status**|String|视频状态。取值范围：<br>  transcoding - 转码中<br>  transcode_failed - 转码失败<br>  normal - 正常<br>  uploaded - 上传完成（未转码）<br>|
+|**status**|String|视频状态。取值范围：<br>  transcoding - 转码中<br>  transcode_failed - 转码失败<br>  normal - 正常<br>  uploaded - 上传完成（未转码）<br>  blocked - 封禁<br>|
 |**fileSize**|Long|文件大小，单位为 Byte|
 |**checksum**|String|文件MD5校验和|
 |**duration**|Long|视频时长|
 |**tags**|String[]|标签集合|
 |**categoryId**|Long|分类ID|
 |**categoryName**|String|分类名称|
-|**snapshots**|Snapshot[]|转码截图|
+|**snapshots**|[Snapshot[]](listvideos#snapshot)|转码截图|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
-### Snapshot
+### <div id="snapshot">Snapshot</div>
 |名称|类型|描述|
 |---|---|---|
 |**imgId**|Long|截图ID|

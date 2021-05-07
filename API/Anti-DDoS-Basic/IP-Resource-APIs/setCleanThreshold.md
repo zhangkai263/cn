@@ -19,9 +19,9 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/ipResources/{ip}:setClean
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**cleanThresholdSpec**|CleanThresholdSpec|True| |请求参数|
+|**cleanThresholdSpec**|[CleanThresholdSpec](setcleanthreshold#cleanthresholdspec)|True| |请求参数|
 
-### CleanThresholdSpec
+### <div id="cleanthresholdspec">CleanThresholdSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**cleanThresholdBps**|Long|True| |触发清洗的流量速率, 单位 bps. 取值范围由 <a href='http://docs.jdcloud.com/anti-ddos-basic/api/describeipcleanthresholdrange'>describeIpCleanThresholdRange</a> 接口查询可知|
@@ -31,13 +31,13 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/ipResources/{ip}:setClean
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](setcleanthreshold#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](setcleanthreshold#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|

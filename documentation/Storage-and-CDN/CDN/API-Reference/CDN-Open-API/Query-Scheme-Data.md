@@ -2,7 +2,7 @@
 
 ## **1. 描述**
 
-分协议流量请求量数据统计 (scheme_data)
+仅可查询中国境内的相关信息。分协议流量请求量数据统计 (scheme_data)
 
 ## **2. 请求参数**
 
@@ -13,6 +13,7 @@
 | domain     | String   | 是           | 待查询的域名，支持多域名查询，参数示例“www.a.com,www.b.com”  |
 | start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00； |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间                             |
+| ipType     | String   | 否           | 取值范围[ipv6,ipv4]，不传默认不区分ip类型。  |
 
 
 ## **3. 返回参数**

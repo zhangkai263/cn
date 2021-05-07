@@ -18,9 +18,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/paramet
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**parameters**|Parameter[]|True| |修改的实例参数|
+|**parameters**|[Parameter[]](modifyparameters#parameter)|True| |修改的实例参数|
 
-### Parameter
+### <div id="parameter">Parameter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |参数名称|
@@ -34,3 +34,27 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/paramet
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PUT
+```
+public void testModifyParameters(){
+    ModifyParametersRequest request=new ModifyParametersRequest();
+    request.setRegionId("cn-north-1");
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    Parameter parameter=new Parameter();
+    parameter.setName("max_worker_threads");
+    parameter.setValue("32767");
+    request.addParameter(parameter);
+    ModifyParametersResponse response= rdsClient.modifyParameters(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpam6djdg3117vskkhm8c0fjmtksb9db"
+}
+```

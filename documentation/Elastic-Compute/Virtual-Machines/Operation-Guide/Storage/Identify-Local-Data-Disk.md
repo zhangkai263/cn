@@ -4,7 +4,7 @@
 
 实例规格不同，则本地数据盘块数及单盘容量实例类型不同。对于同一实例规格，本地数据盘块数及单盘容量均不可调整。
 
-	请注意：本地数据盘的数据将在实例关机时清空。
+	请注意：本地数据为临时存储，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。
 	
 为了保证数据不同类型数据存储在合适的盘里，您需要系统内识别并区分本地数据盘及云硬盘，详细步骤参考如下。
 
@@ -14,7 +14,7 @@
 
 Linux以 CentOS 7.4 系统为例，操作步骤如下：
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要查看本地数据盘的实例，[登录Linux实例](https://docs.jdcloud.com/cn/virtual-machines/connect-to-linux-instance)
 4. 输入：
@@ -30,7 +30,7 @@ ll /dev/disk/by-id
 
 Windows以 Windows 2008 标准版 系统为例，操作步骤如下：
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)，点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)，点击左侧导航栏【弹性计算】-【云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要查看本地数据盘的实例，[登录Windows实例](https://docs.jdcloud.com/cn/virtual-machines/connect-to-windows-instance)
 4. 输入：

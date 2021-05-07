@@ -2,7 +2,7 @@
 
 
 ## 描述
-仅支持MySQL实例开启数据库审计
+仅支持MySQL实例开启数据库审计<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB, PostgreSQL
 
 ## 请求方式
 POST
@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:e
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testEnableAudit() {
+    EnableAuditRequest request = new EnableAuditRequest();
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    EnableAuditResponse response = rdsClient.enableAudit(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2sur0aovda2093o03m9bfawbr3r1n"
+}
+```

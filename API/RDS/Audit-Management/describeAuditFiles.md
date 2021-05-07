@@ -22,13 +22,13 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeauditfiles#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**auditFiles**|AuditFile[]| |
-### AuditFile
+|**auditFiles**|[AuditFile[]](describeauditfiles#auditfile)| |
+### <div id="auditfile">AuditFile</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|审计日志文件名称|
@@ -40,3 +40,34 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeAuditFiles(){
+    DescribeAuditFilesRequest request = new DescribeAuditFilesRequest();
+    request.setInstanceId("sqlserver-83uqv7avy4");
+    request.setRegionId("cn-north-1");
+    DescribeAuditFilesResponse response= rdsClient.describeAuditFiles(request);
+    String result = new Gson().toJson(response);
+    System.out.println(result);
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2rdrg41dcqujn7k4f89ji0ocfspde", 
+    "result": {
+        "auditFiles": [
+            {
+                "lastUpdateTime": "2020-01-07 14:56:23", 
+                "name": "RDSAudit_054F6E2E-01C1-41FD-ABC8-91EE34CD2AF9_0_132228536211390000.sqlaudit", 
+                "sizeByte": 8704, 
+                "uploadTime": "2020-01-07 14:56:24"
+            }
+        ]
+    }
+}
+```

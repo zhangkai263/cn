@@ -2,7 +2,7 @@
 
 
 ## 描述
-cluster 摘除 nodeGroup 并删除 nodeGroup
+集群摘除工作节点组并删除工作节点组
 
 ## 请求方式
 DELETE
@@ -13,7 +13,7 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/nodeGroups/{nodeGroupId
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 ID|
-|**nodeGroupId**|String|True| |节点组 ID|
+|**nodeGroupId**|String|True| |工作节点组 ID|
 
 ## 请求参数
 无

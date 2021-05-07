@@ -4,11 +4,11 @@
 
 ## 使用说明
 
-Greenplum 控制台提供的修改密码为修改高权限账号密码。
+JDW 控制台提供的修改密码为修改高权限账号密码。
 
 ## 操作步骤
 
-1. 登录 [Greenplum 控制台](http://jdw-console.jdcloud.com/list)。
+1. 登录 [JDW 控制台](http://jdw-console.jdcloud.com/list)。
 
 2. 在“实例列表”页面选择目标实例，点击实例名称进入实例详情页。
 

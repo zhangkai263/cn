@@ -2,7 +2,7 @@
 
 ## **1. 描述**
 
-设置Range参数（setRangeArgs）
+仅中国境内加速域名可配置。设置Range参数（setRangeArgs）
 
 ## **2. 请求参数**
 

@@ -20,10 +20,10 @@ https://vod.jdcloud-api.com/v1/domains
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|添加域名结果|
+|**result**|[Result](createdomain#result)|添加域名结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域名ID|
@@ -50,6 +50,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains
 
 ```
+
 ```
 {
     "name": "vodplay.lomagicode.com"

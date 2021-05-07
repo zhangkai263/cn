@@ -22,18 +22,18 @@ https://vod.jdcloud-api.com/v1/qualityDetectionTemplates
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询质检模板列表信息结果|
+|**result**|[Result](listqualitydetectiontemplates#result)|查询质检模板列表信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|QualityDetectionTemplateObject[]|分页内容|
-### QualityDetectionTemplateObject
+|**content**|[QualityDetectionTemplateObject[]](listqualitydetectiontemplates#qualitydetectiontemplateobject)|分页内容|
+### <div id="qualitydetectiontemplateobject">QualityDetectionTemplateObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|模板ID|

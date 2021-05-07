@@ -1,9 +1,142 @@
 # 提交工单
 
-打开控制台，选择超融合数据中心->边缘物理计算服务->工单管理->提交工单，如下图：
-![](https://github.com/jdcloudcom/cn/blob/cn-edge-physical-computing-service/documentation/Hyper-Converged-IDC/Edge-Physical-Computing-Service/Image/EPCSWO001.png)
+打开控制台，选择边缘物理计算服务->工单管理->提交工单，选择需要提交的运维服务工单。</br>
 
-点击 **设备重启** 工单模板，跳转到提交工单页面，需要客户填写信息，支持保存工单或者立即提交，如下图：
-![提交工单填写页面查看连接](https://github.com/jdcloudcom/cn/blob/cn-edge-physical-computing-service/documentation/Hyper-Converged-IDC/Edge-Physical-Computing-Service/Image/EPCSWO003.png)
+根据用户需求选择相应类型的工单，填写工单内容：
 
-填写完以上信息，点击 **提交** 按钮，工单提交完成，跳转到我的工单列表查看。
+1、点击 **立即提交**，工单提交完成，跳转到我的工单列表查看；</br>
+
+2、点击 **保存草稿**，保存当前工单草稿至我的工单，跳转到**我的工单**列表查看；</br>
+
+3、点击**取消**，取消提交工单操作，跳转至**提交工单**页。</br>
+
+# 运维服务列表（免费+增值）
+
+<table>
+	<tr>
+	    <th style="width:300px;">工单类型</th>
+	    <th>工单名称</th>
+	    <th>描述</th>  
+	</tr >
+	<tr>
+	    <td >资源申请</td>
+	    <td>机柜预留</td>
+	    <td>提交机柜资源的预留申请</td>
+	</tr>
+	<tr >
+	    <td rowspan="2">资源开通</td>
+	    <td>机柜开通</td>
+	    <td>开通已预留的机柜资源</td>
+	</tr>
+	<tr>
+	    <td>设备开通</td>
+	    <td>开通设备资源</td>
+	</tr>
+	<tr >
+	    <td rowspan="2">资源退订</td>
+	    <td>机柜关电</td>
+	    <td>资源下线后退订机柜资源</td>
+	</tr>
+	<tr>
+	    <td>设备退订</td>
+	    <td>资源下线后退订设备资源</td>
+	</tr>
+	<tr >
+	    <td rowspan="3">日常接待</td>
+	    <td>人员入室</td>
+	    <td>来访并进入机房，需提前24小时预约</td>
+	</tr>
+	<tr>
+	    <td>代收快递</td>
+	    <td>按照客户要求接收快递</td>
+	</tr>
+	<tr>
+	    <td>代发快递</td>
+	    <td>联系快递公司将机房设备快递到指定地点</td>
+	</tr>
+	<tr >
+	    <td rowspan="3">设备变更</td>
+	    <td>设备迁入</td>
+	    <td>客户自备设备迁入机房</td>
+	</tr>
+	<tr>
+	    <td>设备迁出</td>
+	    <td>客户已上架自备设备迁出</td>
+	</tr>
+	<tr>
+	    <td>设备异动</td>
+	    <td>同机房设备异动</td>
+	</tr>
+	<tr >
+	    <td rowspan="8">设备操作</td>
+	    <td>设备开机</td>
+	    <td>服务器/交换机等设备等冷启动</td>
+	</tr>
+	<tr>
+	    <td>设备关机</td>
+	    <td>服务器/交换机等设备关机</td>
+	</tr>
+	<tr>
+	    <td>设备断网</td>
+	    <td>对设备上连接的网线进行插拔操作</td>
+	</tr>
+	<tr>
+	    <td>设备断电</td>
+	    <td>对设备上连接的电源线进行插拔操作</td>
+	</tr>
+	<tr>
+	    <td>设备重启</td>
+	    <td>服务器/交换机等设备等重启</td>
+	</tr>
+	<tr>
+	    <td>线缆维护</td>
+	    <td>更换单台IT设备电源线、网线等其它与设备相关的线缆工作</td>
+	</tr>
+	<tr>
+	    <td>设备外置配件更换</td>
+	    <td>外置硬盘等配件插拔操作</td>
+	</tr>
+	<tr>
+	    <td>外设接入</td>
+	    <td>协助接入KVM、加密狗、移动硬盘、USB光驱、放入光盘、连接console线等外设的工作</td>
+	</tr>
+	<tr >
+	    <td rowspan="3">现场支持</td>
+	    <td>设备查看</td>
+	    <td>设备信息查看、服务器状态查看</td>
+	</tr>
+	<tr>
+	    <td>机柜查看</td>
+	    <td>查看指定机柜的空间、电力使用情况，机柜设备数量情况</td>
+	</tr>
+	<tr>
+	    <td>核实布线距离</td>
+	    <td>根据客户的需求，依据数据中心弱电桥架排布，核实同层、跨层等两个机柜间网络线缆的距离</td>
+	</tr>
+	<tr >
+	    <td rowspan="3">系统操作</td>
+	    <td>网络配置</td>
+	    <td>IP地址，网关地址，子网掩码，DNS地址等配置</td>
+	</tr>
+	<tr>
+	    <td>重置BMC</td>
+	    <td>重置基板管理控制器</td>
+	</tr>
+	<tr>
+	    <td>系统重装</td>
+	    <td>linux系统安装，Windows系统安装等</td>
+	</tr>
+	<tr >
+	    <td rowspan="3">故障维护</td>
+	    <td>电源故障</td>
+	    <td>电源故障维护</td>
+	</tr>
+	<tr>
+	    <td>硬盘故障</td>
+	    <td>硬盘故障维护</td>
+	</tr>
+	<tr>
+	    <td>网线故障</td>
+	    <td>网线故障维护</td>
+	</tr>
+</table>

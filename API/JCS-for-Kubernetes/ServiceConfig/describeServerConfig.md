@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询(k8s 集群)服务配置信息
+查询 kubernetes 集群服务配置信息
 
 ## 请求方式
 GET
@@ -21,20 +21,20 @@ https://kubernetes.jdcloud-api.com/v1/regions/{regionId}/serverConfig
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeserverconfig#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**serverConfig**|ServerConfig| |
-### ServerConfig
+|**serverConfig**|[ServerConfig](describeserverconfig#serverconfig)| |
+### <div id="serverconfig">ServerConfig</div>
 |名称|类型|描述|
 |---|---|---|
 |**validMasterVersions**|String[]|kubernetes master 的支持版本|
 |**defaultMasterVersion**|String|kubernetes master 的默认版本|
-|**validNodeConfig**|ValidNodeConfig[]|node 节点的配置|
-### ValidNodeConfig
+|**validNodeConfig**|[ValidNodeConfig[]](describeserverconfig#validnodeconfig)|node 节点的配置|
+### <div id="validnodeconfig">ValidNodeConfig</div>
 |名称|类型|描述|
 |---|---|---|
 |**nodeVersion**|String|kubernetes node 的版本|

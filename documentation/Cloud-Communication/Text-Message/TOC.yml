@@ -24,13 +24,31 @@ items:
     - name: 短信签名
       href: Operation-Guide/signature.md
     - name: 短信模板
-      href: Operation-Guide/content.md    
+      href: Operation-Guide/content.md
+    - name: 模板变量规则
+      href: Operation-Guide/para.md
+    - name: 发送短信
+      href: Operation-Guide/send.md
     - name: 统计分析
       href: Operation-Guide/stat.md
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: FAQ/FAQ.md
 - name: SDK参考
   items:
-    - name: 环境准备
-      href: SDK-Rerference/Environment-Preparation.md      
+    - name: AccessKey
+      href: SDK-Rerference/accesskey.md      
+    - name: java 参考
+      href: SDK-Rerference/java.md 
+    - name: python 参考
+      href: SDK-Rerference/python.md 
+    - name: php 参考
+      href: SDK-Rerference/php.md 
+    - name: .net 参考
+      href: SDK-Rerference/dotnet.md 
+    - name: Node.JS 参考
+      href: SDK-Rerference/nodejs.md 
 - name: 相关协议
   items:
     - name: 服务协议

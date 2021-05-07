@@ -181,9 +181,9 @@ timeout = 20
 华东-上海 |cn-east-2 | monitor.cn-east-2.jdcloud-api.com |monitor.internal.cn-east-2.jdcloud-api.com
 
 ### 上报监控数据  
-使用 put-metric-data 接口上报监控数据，示例如下：  
+使用 put-custom-metric-data 接口上报监控数据，示例如下：  
 ```
-jdc monitor put-metric-data --input-json '{"metricDataList": [{"namespace": "test_ns","metric": "vm.cpu.usage1","dimensions": {"host": "10.10.10.23","datacenter": "cn_north_1"},"timestamp": 1544425695,"type": 1,"values": {"value": "12342213"}}]}'
+jdc monitor put-custom-metric-data --input-json '{"metricDataList": [{"namespace": "test_ns","metric": "vm.cpu.usage1","dimensions": {"host": "10.10.10.23","datacenter": "cn_north_1"},"timestamp": 1544425695,"type": 1,"values": {"value": "12342213"}}]}'
 ```  
 注意：仅能上报近1周的监控数据，请将上边示例中timestamp 中的时间戳修改为你当前上报的UNIX时间。
 
@@ -198,3 +198,5 @@ jdc monitor put-metric-data --input-json '{"metricDataList": [{"namespace": "tes
     "request_id": "bg9ofp78ikqqgvastas64owpqmoijk77"
 }
 ```
+
+ 

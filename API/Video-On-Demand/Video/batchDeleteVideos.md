@@ -20,10 +20,10 @@ https://vod.jdcloud-api.com/v1/videos:batchDelete
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|批量删除视频结果|
+|**result**|[Result](batchdeletevideos#result)|批量删除视频结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**okVideoIds**|String[]|删除成功的视频ID集合|
@@ -39,6 +39,7 @@ https://vod.jdcloud-api.com/v1/videos:batchDelete
 |**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
 ## 返回示例
 ```
 {

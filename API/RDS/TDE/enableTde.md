@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/tde:ena
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testEnableTde() {
+    EnableTdeRequest request = new EnableTdeRequest();
+    request.setInstanceId("sqlserver-0nyjcvjxls");
+    request.setRegionId("cn-north-1");
+    EnableTdeResponse response = rdsClient.enableTde(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpaoqk0mt49r2cc5bhh9ahq4vvivw1ie"
+}
+```

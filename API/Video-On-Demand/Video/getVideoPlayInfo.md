@@ -10,26 +10,25 @@ GET
 ## 请求地址
 https://vod.jdcloud-api.com/v1/videos/{videoId}:getPlayInfo
 
+
+## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**videoId**|String|True| |视频ID|
-
-## 请求参数
-无
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|获取视频播放信息结果|
+|**result**|[Result](getvideoplayinfo#result)|获取视频播放信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**baseInfo**|VideoBaseInfo|视频基础信息|
-|**playInfoList**|VideoPlayInfo[]|视频播放信息列表|
-### VideoPlayInfo
+|**baseInfo**|[VideoBaseInfo](getvideoplayinfo#videobaseinfo)|视频基础信息|
+|**playInfoList**|[VideoPlayInfo[]](getvideoplayinfo#videoplayinfo)|视频播放信息列表|
+### <div id="videoplayinfo">VideoPlayInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**taskId**|String|生成播放信息的转码任务ID|
@@ -47,7 +46,7 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}:getPlayInfo
 |**fps**|String|视频帧率|
 |**createTime**|String| |
 |**updateTime**|String| |
-### VideoBaseInfo
+### <div id="videobaseinfo">VideoBaseInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**videoId**|String|视频ID|

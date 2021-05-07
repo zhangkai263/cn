@@ -4,17 +4,15 @@
 
 ## 新建图片样式
 
-1.进入OSS管理控制台-空间管理
+1.进入OSS管理控制台-空间管理。
 
-2.单击bucket进入bucket概览页
+2.单击bucket进入bucket概览页。
 
-3.在概览页点击图片处理进入图片处理页面
-
-![图片处理](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-054.jpg)
+3.在概览页点击【数据处理】Tab页，导航至**图片处理**功能页面。
 
 4.点击新建样式，在该页面可以新建您需要的图片样式，如下图所示：
 
-![新建图片样式](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-056.jpg)
+![新建图片样式](../../../../../image/Object-Storage-Service/OSS-056.jpg)
 
 
 规则说明：
@@ -55,7 +53,7 @@
 
 3.样式名为Stylename的图片样式可通过如下URL访问：
 
-http://s3.cn-north-1.jdcloud-oss.com/bucket/object?x-oss-process=imgalias/Stylename
+http://bucketname.s3.cn-north-1.jdcloud-oss.com/object?x-oss-process=imgalias/Stylename
 
 
 示例：
@@ -64,6 +62,6 @@ http://s3.cn-north-1.jdcloud-oss.com/bucket/object?x-oss-process=imgalias/Stylen
 
 img-style-example样式：缩放80%、旋转60°
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=imgalias/img-style-example
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg?x-oss-process=imgalias/img-style-example
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-057.jpg)
+![](../../../../../image/Object-Storage-Service/OSS-057.jpg)

@@ -22,9 +22,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnets
 |**az**|String|False| |可用区，精确匹配|
 |**name**|String|False| |子网名称|
 |**vpcId**|String|False| |私有网络ID，精确匹配|
-|**filters**|Filter[]|False| |subnetId - 子网ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describesubnets#filter)|False| |subnetId - 子网ID，精确匹配，支持多个<br>|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -34,28 +34,36 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describesubnets#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**subnets**|Subnet[]| |
+|**subnets**|[Subnet[]](describesubnets#subnet)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### Subnet
+### <div id="subnet">Subnet</div>
 |名称|类型|描述|
 |---|---|---|
-|**region**|String|地域代码, 如cn-east-1|
-|**az**|String|可用区, 如cn-east-1a|
+|**region**|String|地域代码, 如cn-north-1|
+|**az**|String|可用区, 如cn-north-1c|
 |**subnetId**|String|子网ID|
 |**name**|String|子网名称|
-|**cidr**|String|子网CIDR|
+|**cidr**|String|子网ipv4 CIDR|
+|**ipv6Cidr**|String|子网IPv6 CIDR|
 |**vpcId**|String|私有网络Id|
 |**vpcName**|String|私有网络名称|
-|**availableIpCount**|Integer|可用ip数量|
-|**totalIpCount**|Integer|总ip数量|
+|**vpcCidr**|String|私有网络IPv4 CIDR|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
+|**availableIpCount**|Integer|可用IPv4地址数量|
+|**totalIpCount**|Integer|总IPv4地址数量|
+|**usedIpv6IpCount**|Integer|已用IPv6地址数量|
+|**totalIpv6IpCount**|String|总IPv6地址数量|
+|**secondaryCidrName**|String|子网次要CIDR名称|
+|**secondaryCidr**|String|子网次要CIDR|
+|**secondaryCidrId**|String|子网次要CIDR ID|
 |**networkType**|String|网络类型|
 |**description**|String|描述|
 |**createTime**|String|创建时间|

@@ -10,12 +10,11 @@ DELETE
 ## 请求地址
 https://vod.jdcloud-api.com/v1/watermarks/{watermarkId}
 
+
+## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**watermarkId**|Long|True| |水印ID|
-
-## 请求参数
-无
 
 
 ## 返回参数
@@ -37,7 +36,6 @@ https://vod.jdcloud-api.com/v1/watermarks/{watermarkId}
 ## 请求示例
 DELETE
 ```
-https://vod.jdcloud-api.com/v1/watermarks/1
+https://vod.jdcloud-api.com/v1/watermarks/10001
 
 ```
-

@@ -24,10 +24,10 @@ https://vod.jdcloud-api.com/v1/qualityDetectionTemplates/{templateId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|修改质检模板信息结果|
+|**result**|[Result](updatequalitydetectiontemplate#result)|修改质检模板信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|模板ID|
@@ -53,6 +53,7 @@ PUT
 https://vod.jdcloud-api.com/v1/qualityDetectionTemplates/10001
 
 ```
+
 ```
 {
     "detections": [

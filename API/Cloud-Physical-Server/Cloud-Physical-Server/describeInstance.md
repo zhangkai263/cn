@@ -22,19 +22,19 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeinstance#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instance**|Instance| |
-### Instance
+|**instance**|[Instance](describeinstance#instance)| |
+### <div id="instance">Instance</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|云物理服务器实例ID|
-|**region**|String|区域代码, 如 cn-east-1|
-|**az**|String|可用区, 如 cn-east-1a|
+|**region**|String|区域代码, 如 cn-north-1|
+|**az**|String|可用区, 如 cn-north-1a|
 |**deviceType**|String|实例类型, 如 cps.c.normal|
 |**name**|String|云物理服务器名称|
 |**description**|String|云物理服务器描述|
@@ -50,19 +50,47 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**sysRaidTypeId**|String|系统盘RAID类型ID|
 |**sysRaidType**|String|系统盘RAID类型, 如 NORAID, RAID0, RAID1|
 |**dataRaidTypeId**|String|数据盘RAID类型ID|
-|**dataRaidType**|String|数据盘RAID类型, 如 NORAID, RAID0, RAID1|
-|**networkType**|String|网络类型, 如 basic, vpc|
+|**dataRaidType**|String|数据盘RAID类型, 如 NORAID, RAID0, RAID1，RAID10|
+|**networkType**|String|网络类型：basic（基础网络）、vpc（私有网络）、retail（零售中台网络）|
 |**vpcId**|String|私有网络ID|
 |**vpcName**|String|私有网络名称|
+|**vpcIpv4Cidr**|String|私有网络IPv4 CIDR|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
+|**ipv6GatewayId**|String|IPv6网关ID|
 |**subnetId**|String|子网编号|
 |**subnetName**|String|子网名称|
+|**subnetIpv4Cidr**|String|子网IPv4 CIDR|
+|**subnetIpv6Cidr**|String|子网IPv6 CIDR|
 |**privateIp**|String|内网IP|
 |**lineType**|String|外网链路类型, 如 bgp|
 |**elasticIpId**|String|弹性公网IPID|
 |**publicIp**|String|公网IP|
-|**publicIpv6**|String|公网IPv6|
-|**charge**|Charge|计费信息|
-### Charge
+|**ipv6Address**|String|IPv6地址|
+|**ipv6AddressId**|String|公网IPv6地址ID|
+|**ipv6AddressBandwidth**|Integer|公网IPv6带宽, 单位Mbps|
+|**interfaceMode**|String|网络接口模式：bond（网口bond）、dual（双网口）|
+|**extensionVpcId**|String|辅网口私有网络ID|
+|**extensionVpcName**|String|辅网口私有网络名称|
+|**extensionVpcIpv4Cidr**|String|辅网口私有网络IPv4 CIDR|
+|**extensionVpcIpv6Cidr**|String|辅网口私有网络IPv6 CIDR|
+|**extensionSubnetId**|String|辅网口子网ID|
+|**extensionSubnetName**|String|辅网口子网名称|
+|**extensionSubnetIpv4Cidr**|String|辅网口子网IPv4 CIDR|
+|**extensionSubnetIpv6Cidr**|String|辅网口子网IPv6 CIDR|
+|**extensionPrivateIp**|String|辅网口手动分配的内网ip|
+|**extensionEnableInternet**|String|辅网口是否启用外网|
+|**extensionElasticIpId**|String|辅网口弹性公网ip id|
+|**extensionPublicIp**|String|辅网口公网ip|
+|**extensionBandwidth**|Integer|辅网口外网带宽，单位Mbps|
+|**extensionEnableIpv6**|String|辅网口是否启用IPv6, 如 yes/no|
+|**extensionIpv6Address**|String|辅网口IPv6地址|
+|**extensionIpv6AddressId**|String|辅网口公网IPv6地址ID|
+|**extensionIpv6AddressBandwidth**|Integer|辅网口IPv6公网带宽, 单位Mbps|
+|**extensionIpv6GatewayId**|String|IPv6网关ID|
+|**keypairId**|String|密钥对id|
+|**agentStatus**|String|agent状态|
+|**charge**|[Charge](describeinstance#charge)|计费信息|
+### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|

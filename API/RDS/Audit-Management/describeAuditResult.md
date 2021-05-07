@@ -2,7 +2,7 @@
 
 
 ## 描述
-仅支持查看MySQL实例的审计内容
+仅支持查看MySQL实例的审计内容<br>- 仅支持 MySQL 5.6, MySQL 5.7, Percona, MariaDB, PostgreSQL
 
 ## 请求方式
 GET
@@ -24,9 +24,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |**accountName**|String|False| |账号名|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为10，取值范围：10、20、50|
-|**filters**|Filter[]|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
+|**filters**|[Filter[]](describeauditresult#filter)|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>operation<br>|
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -36,14 +36,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeauditresult#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**auditResult**|AuditResult[]| |
+|**auditResult**|[AuditResult[]](describeauditresult#auditresult)| |
 |**totalCount**|Integer| |
-### AuditResult
+### <div id="auditresult">AuditResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|SQL开始执行时间|
@@ -51,6 +51,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |**accountName**|String|账号名|
 |**operation**|String|操作类型|
 |**threadId**|String|线程ID|
+|**processId**|String|线程ID，仅 PostgreSQL 支持此参数|
 |**dbName**|String|数据库名|
 |**sql**|String|sql语句|
 
@@ -58,3 +59,33 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeAuditResult() {
+    DescribeAuditResultRequest request = new DescribeAuditResultRequest();
+    request.setStartTime("2020-01-05 00:00:00");
+    request.setEndTime("2020-01-07 14:59:49");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    Filter filter = new Filter();
+    filter.setName("operation");
+    filter.addValue("DDL");
+    request.addFilter(filter);
+    DescribeAuditResultResponse response = rdsClient.describeAuditResult(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa2ud0kg5ngr6bm3nor1t3wcg3oqqbg", 
+    "result": {
+        "auditResult": [], 
+        "totalCount": 0
+    }
+}
+```

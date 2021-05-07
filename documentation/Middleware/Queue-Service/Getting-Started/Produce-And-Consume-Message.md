@@ -66,7 +66,7 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
 
 ![接入点地址](../../../../image/Internet-Middleware/Queue-Service/入门指南-07.png)
 
-![地址信息](../../../../image/Internet-Middleware/Queue-Service/入门指南-08.png)
+![地址信息](../../../../image/Internet-Middleware/Queue-Service/入门指南--接入点.png)
 
 
 

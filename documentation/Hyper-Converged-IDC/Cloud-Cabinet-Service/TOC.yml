@@ -1,4 +1,4 @@
-name: 云托管服务
+name: 云托管
 href: 
 items:
 - name: 产品简介
@@ -41,7 +41,7 @@ items:
   items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-- name: 操作指南
+- name: 控制台操作指南
   items:
       - name: 使用须知
         href: Operation-Guide/Operation-Instruction/Operation-Instruction.md
@@ -52,11 +52,11 @@ items:
           - name: 查看机柜列表
             href: Operation-Guide/Resources-Management/View-Cabinet-List.md
           - name: 查看设备列表
-            href: Operation-Guide/Instance-Management/View-Device-List.md
+            href: Operation-Guide/Resources-Management/View-Device-List.md
           - name: 查看公网IP列表
-            href: Operation-Guide/Instance-Management/View-ipAddress-List.md
+            href: Operation-Guide/Resources-Management/View-ipAddress-List.md
           - name: 查看带宽列表
-            href: Operation-Guide/Instance-Management/View-Bandwidth-List.md
+            href: Operation-Guide/Resources-Management/View-Bandwidth-List.md
       - name: 工单管理
         items:
           - name: 提交工单
@@ -66,13 +66,29 @@ items:
       - name: 监控报警
         items:
           - name: 带宽流量
-            href: Operation-Guide/Monitoring Alarm/View-Bandwidth-Traffic-List.md
+            href: Operation-Guide/Monitoring-Alarm/View-Bandwidth-Traffic-List.md
       - name: 报警管理
         items:
           - name: 报警规则
             href: Operation-Guide/Alarm-Management/View-Alarm-Rules.md
           - name: 报警历史
             href: Operation-Guide/Alarm-Management/View-Alarm-History.md
+      - name: 巡检报告
+        items:
+          - name: 机房巡检
+            href: Operation-Guide/Inspection-Report/DataCenter-Inspection.md
+          - name: 设备巡检
+            href: Operation-Guide/Inspection-Report/Device-Inspection.md
+      - name: 消费管理
+        items:
+          - name: 资源账单
+            href: Operation-Guide/Consumption-Management/Resource-Bill.md  
+      - name: 访问控制与标签
+        items:
+          - name: 使用标签控制资源的访问
+            href: Operation-Guide/IAM-Tag/Detail-Process.md
+          - name: 云托管服务支持的策略配置
+            href: Operation-Guide/IAM-Tag/Policy-List.md
 - name: 最佳实践
   items:
   status: 0

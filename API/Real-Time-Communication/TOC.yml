@@ -1,0 +1,48 @@
+name: 视音频通信
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name: 应用管理
+        items:
+          - name: 查询应用信息
+            href: Application/describeApp.md
+          - name: 查询应用appKey
+            href: Application/describeAppKey.md
+          - name: 查询用户应用列表
+            href: Application/describeApps.md
+      - name: 用户管理
+        items:
+          - name: 创建用户
+            href: User/createUser.md
+      - name: 房间管理
+        items:
+          - name: 创建房间
+            href: Room/createRoom.md
+          - name: 修改房间
+            href: Room/updateRoom.md
+          - name: 查询房间详情
+            href: Room/describeRoomInfo.md
+          - name: 查询应用下的房间列表
+            href: Room/describeRooms.md
+          - name: 删除房间
+            href: Room/deleteRoom.md
+          - name: 移除房间内所有人员
+            href: Room-User/removeAllRoomUsers.md
+          - name: 移除房间内指定人员
+            href: Room-User/removeRoomUser.md
+      - name: 消息管理
+        items:
+          - name: 发送自定义信令消息给房间
+            href: Message/sendMessageToRoom.md
+          - name: 发送自定义信令消息给房间内的指定人员
+            href: Message/sendMessageToUser.md
+      - name: 查询统计
+        items:
+          - name: 查询房间实时在线人数
+            href: Room-User/describeRoomOnlineUserNum.md
+

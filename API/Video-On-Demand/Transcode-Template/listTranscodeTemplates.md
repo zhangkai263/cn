@@ -20,9 +20,9 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码；默认值为 1|
 |**pageSize**|Integer|False|10|分页大小；默认值为 10；取值范围 [10, 100]|
-|**filters**|Filter[]|False| | |
+|**filters**|[Filter[]](listtranscodetemplates#filter)|False| | |
 
-### Filter
+### <div id="filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤器属性名|
@@ -32,35 +32,40 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|查询转码模板列表信息结果|
+|**result**|[Result](listtranscodetemplates#result)|查询转码模板列表信息结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalElements**|Integer|查询总数|
 |**totalPages**|Integer|总页数|
-|**content**|TranscodeTemplateObject[]|分页内容|
-### TranscodeTemplateObject
+|**content**|[TranscodeTemplateObject[]](listtranscodetemplates#transcodetemplateobject)|分页内容|
+### <div id="transcodetemplateobject">TranscodeTemplateObject</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Long|模板ID|
 |**name**|String|模板名称。长度不超过128个字符。UTF-8编码。<br>|
-|**video**|Video|视频参数配置|
-|**audio**|Audio|音频参数配置|
-|**encapsulation**|Encapsulation|封装配置|
+|**video**|[Video](listtranscodetemplates#video)|视频参数配置|
+|**audio**|[Audio](listtranscodetemplates#audio)|音频参数配置|
+|**encapsulation**|[Encapsulation](listtranscodetemplates#encapsulation)|封装配置|
+|**outFile**|[OutFile](listtranscodetemplates#outfile)|输出文件配置|
 |**definition**|String|清晰度规格标记。取值范围：<br>  SD - 标清<br>  HD - 高清<br>  FHD - 超清<br>  2K<br>  4K<br>|
 |**source**|String|模板来源。取值范围：<br>  system - 系统预置<br>  custom - 用户自建<br>|
 |**templateType**|String|模板类型。取值范围：<br>  jdchd - 京享超清<br>  jdchs - 极速转码<br>|
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
-### Encapsulation
+### <div id="outfile">OutFile</div>
+|名称|类型|描述|
+|---|---|---|
+|**filePath**|String|输出文件路径。<br>路径支持占位符 YEAR、MONTH、DAY、JOBID、TASKID、TEMPLATEID, VIDEOID，但对于转码输出路径，必须以 vod/product 为路径前缀。<br>最终生成的转码输出文件，将会是此路径和一个随机文件名共同构成。<br>若转码模板中该字段配置为：vod/product/{YEAR}{MONTH}{DAY}/{JOBID}/{TEMPLATEID}/{TASKID}<br>则最终生成的输出文件可能为：vod/product/20200921/8238/2243310/2378041/6b91f559d51b4b62ac60b98c318e9ae9.mp4<br>|
+### <div id="encapsulation">Encapsulation</div>
 |名称|类型|描述|
 |---|---|---|
 |**format**|String|封装格式|
-### Audio
+### <div id="audio">Audio</div>
 |名称|类型|描述|
 |---|---|---|
 |**codec**|String|音频编码。取值范围：aac|
@@ -68,7 +73,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |**sampleRate**|Integer|音频采样率。取值范围：8000、11025、12000、16000、22050、24000、32000、44100、48000、64000、88200、96000|
 |**channels**|Integer|音频声道数：1、2|
 |**comfortable**|Boolean|是否开启舒适音频：true、false|
-### Video
+### <div id="video">Video</div>
 |名称|类型|描述|
 |---|---|---|
 |**codec**|String|视频编码。取值范围：h265、h264|
@@ -83,7 +88,6 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates
 |**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
-|**404**|Not found|
 |**500**|Internal server error|
 |**503**|Service unavailable|
 
@@ -113,8 +117,11 @@ https://vod.jdcloud-api.com/v1/transcodeTemplates?pageNumber=1&pageSize=10&filte
                 "encapsulation": {
                     "format": "FLV"
                 }, 
-                "id": 1, 
+                "id": 10001, 
                 "name": "我的转码模板", 
+                "outFile": {
+                    "filePath": "/vod/product/{YEAR}{MONTH}{DAY}/{TASKID}"
+                }, 
                 "source": "custom", 
                 "templateType": "jdchd", 
                 "updateTime": "2019-04-16T15:51:32Z", 

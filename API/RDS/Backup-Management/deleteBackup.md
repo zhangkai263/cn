@@ -27,3 +27,23 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/backups/{backupId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+public void testDeleteBackup() {
+    DeleteBackupRequest request = new DeleteBackupRequest();
+    request.setRegionId("cn-north-1");
+    request.setBackupId("0313e588-44d0-4b20-b532-6eebb9d83352");
+    DeleteBackupResponse response = rdsClient.deleteBackup(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3243h5ev46ih8q7dr4au0021v1btg"
+}
+```

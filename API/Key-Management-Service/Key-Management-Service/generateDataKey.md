@@ -21,14 +21,14 @@ https://kms.jdcloud-api.com/v1/key/{keyId}:GenerateDataKey
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](generatedatakey#result)| |
 |**requestId**|String|请求ID|
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**ciphertextBlob**|String|密文DEK Base64-encoded binary data object|
 |**plaintext**|String|明文DEK Base64-encoded binary data object|
+|**ciphertextBlob**|String|密文DEK Base64-encoded binary data object|
 
 ## 返回码
 |返回码|描述|

@@ -37,6 +37,22 @@
         href: Getting-Started/Overview.md
       - name: 创建集群
         href: Getting-Started/Create-ES.md
+      - name: 访问集群
+        href: Getting-Started/accesscluster.md
+      - name: 管理数据
+        items:
+        - name: 管理数据概述
+          href: Getting-Started/dataview.md
+        - name: 创建索引
+          href: Getting-Started/addindex.md
+        - name: 创建文档
+          href: Getting-Started/adddoc.md
+        - name: 查询文档
+          href: Getting-Started/querydoc.md
+        - name: 集群分析
+          href: Getting-Started/clusteranaly.md
+        - name: 删除数据
+          href: Getting-Started/deleteindex.md
       - name: 管理集群
         items:
         - name: 查看集群
@@ -45,18 +61,30 @@
           href: Getting-Started/Change-ES.md
         - name: 删除集群
           href: Getting-Started/Delete-ES.md
+        - name: 重启集群
+          href: Getting-Started/reboot.md
   - name: 操作指南
     items:
       - name: 专用主节点
-        href: Operation-Guide/Dedicated-master.md 
+        href: Operation-Guide/Dedicated-master.md
+      - name: 协调节点
+        href: Operation-Guide/coordination_node.md
+      - name: Kibana
+        href: Operation-Guide/Kibana.md 
+      - name: Head
+        href: Operation-Guide/head.md
       - name: 插件支持
         href: Operation-Guide/IK.md
       - name: Elasticsearch日志
         href: Operation-Guide/eslog.md
       - name: 自定义词库
         href: Operation-Guide/dic.md 
-      - name: 协调节点
-        href: Operation-Guide/coordination_node.md   
+      - name: 周期创建索引
+        href: Operation-Guide/index.md
+      - name: SQL支持
+        href: Operation-Guide/sql.md
+      - name: 高级配置
+        href: Operation-Guide/Configure.md
       - name: 快照
         items: 
         - name: 创建快照
@@ -69,8 +97,6 @@
           href: Operation-Guide/deletesnapshot.md
       - name: 访问控制
         href: Operation-Guide/control.md
-      - name: Kibana
-        href: Operation-Guide/Kibana.md 
       - name: 监控集群
         items: 
         - name: 查看监控信息
@@ -91,18 +117,34 @@
     items:
      - name: 规格容量评估
        href: Best-Practices/Capacity-Assessment.md
-     - name: 访问集群示例
+     - name: 加载示例数据
        href: Best-Practices/connect-ES.md
      - name: 数据接入集群
        href: Best-Practices/plugin.md
-     - name: 使用kibana
+     - name: 通过kibana构建可视化分析系统
        href: Best-Practices/using_kibana.md
+     - name: 公网访问
+       href: Best-Practices/publicIP.md
+     - name: MySQL数据同步
+       href: Best-Practices/mysqltoes.md
+     - name: 第三方Elasticsearch数据迁移
+       href: Best-Practices/Ali-to-es.md
      - name: 性能指标
-       href: Best-Practices/performance.md
+       items: 
+        - name: 性能测试步骤
+          href: Best-Practices/Capacity_Step.md
+        - name: 性能指标测试结果
+          href: Best-Practices/performance.md
      - name: 监控告警配置建议
        href: Best-Practices/automonitor.md
   - name: 常见问题
-    href: FAQ/FAQ.md
+    items:
+    - name: 产品相关
+      href: FAQ/FAQ.md
+    - name: 访问相关
+      href: FAQ/Access.md
+    - name: 功能相关
+      href: FAQ/Function.md   
   - name: 相关资源
     items:
     - name: 文档历史记录

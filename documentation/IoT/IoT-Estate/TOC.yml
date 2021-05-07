@@ -1,0 +1,77 @@
+name: 智能生活物联网平台
+href: 
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md 
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md 
+  - name: 入门指南
+    items:
+      - name: 入门指南概述
+        href: Getting-Started/Getting-Started.md
+      - name: 购买服务
+        href: Getting-Started/Create-Tenant.md
+      - name: 登录智能生活物联网平台
+        href: Getting-Started/Login-IoT-Platform.md
+  - name: 操作指南
+    items:
+      - name: 项目管理
+        items:
+          - name: 创建项目
+            href: Operation-Guide/Project-Manager/Create-Project.md
+          - name: 创建应用
+            href: Operation-Guide/Project-Manager/Create-Application.md
+          - name: 设备管理
+            href: Operation-Guide/Project-Manager/Manage-Project-Device.md
+      - name: 产品管理
+        items:
+          - name: 创建产品
+            href: Operation-Guide/Product-Manager/Create-Product.md
+          - name: 物模型介绍
+            href: Operation-Guide/Product-Manager/Introduce-Thing-Model.md
+          - name: 编辑物模型
+            href: Operation-Guide/Product-Manager/Manage-ThingModel.md
+      - name: 设备管理
+        items:
+          - name: 注册设备
+            href: Operation-Guide/Device-Manager/Create-Device.md 
+          - name: 设备信息
+            href: Operation-Guide/Device-Manager/Device-Info.md
+      - name: 创建规则引擎
+        href: Operation-Guide/Rule-Engine/Create-Rule.md
+  - name: 开发指南
+    items:
+      - name: Device SDK 介绍
+        href: Developer-Guide/Device-SDK-Introduction.md
+      - name: 云对云接入简介
+        href: Developer-Guide/Cloud-To-Cloud.md
+  - name: 最佳实践
+    items:
+      - name: 设备接入
+        href: Best-Practices/Device-Access.md
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: 相关资源
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md

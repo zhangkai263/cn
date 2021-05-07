@@ -29,3 +29,24 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyP
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PUT
+```
+public void testModifyParameterGroup() {
+    ModifyParameterGroupRequest request = new ModifyParameterGroupRequest();
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setParameterGroupId("mysql-pg-mpzspoh243");
+    request.setRegionId("cn-north-1");
+    ModifyParameterGroupResponse response = rdsClient.modifyParameterGroup(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa619fvrs7hr0ummene90284de7nq66"
+}
+```

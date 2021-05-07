@@ -6,46 +6,48 @@ items:
     - name: 产品概述
       href: Introduction/Product-Overview.md
     - name: 产品功能
-      href: Introduction/Features.md
+      href: Introduction/Product-Features.md
+    - name: 产品架构
+      href: Introduction/Product-Infrastructure.md
+    - name: 应用场景
+      href: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
-  - name: 入门指南
-    items:
-    - name: 快速指导
-      href: Getting-Started/Getting-Started.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md
   - name: 操作指南
     items:
     - name: 威胁概览
       href: Operation-Guide/Security-Status.md
-    - name: 安全配置
-      href: Operation-Guide/Security-Configuration.md
-    - name: 安全漏洞
-      href: Operation-Guide/Security-Vulnerability.md    
-    - name: 安全事件
-      href: Operation-Guide/Security-Incidents.md
+    - name: 资产管理
+      href: Operation-Guide/Asset-Management.md
+    - name: 主机漏洞
+      href: Operation-Guide/Host-Vulnerability.md    
+    - name: 账号风险
+      href: Operation-Guide/Account-Risk.md
+    - name: 异常登录
+      href: Operation-Guide/Abnormal-Logon.md
+    - name: 暴力破解
+      href: Operation-Guide/Brute-Force.md
+    - name: 合规基线
+      href: Operation-Guide/Compliance-Baseline.md      
+    - name: 病毒木马
+      href: Operation-Guide/Virus-Detection.md
+    - name: 网页木马
+      href: Operation-Guide/Webshell-Detection.md
     - name: 系统后门
       href: Operation-Guide/Rookit-Detection.md      
     - name: 可疑操作
-      href: Operation-Guide/Suspicious-Operation.md
-    - name: 合规基线
-      href: Operation-Guide/Compliance-Baseline.md         
-    - name: 资产管理
-      href: Operation-Guide/Asset-Management.md   
-  - name: 最佳实践
-    items:
-    - name: 主机安全最近实践
-      href: Best-Practices/Endpoint-Security.md
-  - name: 教程
-    items:
-    status: 0       
+      href: Operation-Guide/Suspicious-Operation.md     
+    - name: 敏感文件篡改
+      href: Operation-Guide/File-Monitoring.md     
+    - name: 安全报表
+      href: Operation-Guide/Security-Report.md    
+    - name: 多云安装
+      href: Operation-Guide/MultiCloud-Install.md  
+    - name: 系统设置
+      href: Operation-Guide/System-Setting.md        
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: 问题排查
-    href: Troubleshooting/Uninstall-Endpoint-Security.md
-  - name: API参考
-    href: 
-    status: 0
-  - name: 文档历史记录
-    href: Related-Resources/Document-History.md

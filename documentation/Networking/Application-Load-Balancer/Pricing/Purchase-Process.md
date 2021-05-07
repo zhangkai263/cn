@@ -3,7 +3,7 @@
 本文介绍 应用负载均衡 实例的购买入口。
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/products/loadbalance)
-1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
+1. 登录京东智联云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“产品>网络 负载均衡”，具体见下图。
 
 ![ALB](../../../../image/Networking/ALB/ALB-011.png)
@@ -16,7 +16,7 @@
 
 ## 入口2：[LB 控制台](https://console.jdcloud.com/host/loadBalance/list)
 
-1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
+1. 登录京东智联云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
 
 ![控制台](../../../../image/Networking/ALB/console-buy.png)

@@ -31,3 +31,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:alterTa
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+public void testAlterTableWithOnlineDDL() {
+    AlterTableWithOnlineDDLRequest request = new AlterTableWithOnlineDDLRequest();
+    request.setCommand("add column x int");
+    request.setDatabase("dj_db");
+    request.setTable("dj_db");
+    request.setInstanceId("mysql-wp4e9ztap2");
+    request.setRegionId("cn-north-1");
+    AlterTableWithOnlineDDLResponse response = rdsClient.alterTableWithOnlineDDL(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpa3hn82be6twg4dwk033s2o0i3j9bmh"
+}
+```

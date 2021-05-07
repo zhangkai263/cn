@@ -2,7 +2,7 @@
 
 #### **步骤一、创建/删除网络ACL**
 
-进入京东云控制台，点击左侧导航条 【私有网络 】— 【网络ACL】，进入网络ACL 页面
+进入京东智联云控制台，点击左侧导航条 【私有网络 】— 【网络ACL】，进入网络ACL 页面
 
 1、点击“创建”，弹出网络ACL创建弹框；
 
@@ -12,7 +12,7 @@
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step1.png)
 
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step2.png)
+![](../../../../image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step2.png)
 
 
 
@@ -22,7 +22,9 @@
 
 2、根据需要添加的规则的类型，选择入站规则或出站规则选项卡；
 
-3、点击“编辑规则”，设置协议类型、IP、端口以及策略后点击“确定”，即添加完成规则的修改。规则修改完成后及时生效 ；
+3、点击“编辑规则”，设置协议类型、IP、端口以及策略后点击“确定”，即添加完成规则的修改；规则修改完成后及时生效；
+
+    注：若协议类型为IPv4独有的或者IPv6独有的协议，需输入对应类型的IP地址，如选择ICMPv6协议类型，则在目的端需输入IPv6地址
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step3.png)
 
@@ -34,7 +36,7 @@
 
 2、在弹窗中选择需要绑定的子网，点击“确定”，即可将网络ACL规则绑定到子网，绑定完成后及时生效 ；
 
-注意：一个网络ACL可以绑定多个子网、一个子网只能绑定一个网络ACL
+    注：一个网络ACL可以绑定多个子网、一个子网只能绑定一个网络ACL，如需配置支持IPv6的ACL规则，需关联IPv6子网
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step4.png)
 

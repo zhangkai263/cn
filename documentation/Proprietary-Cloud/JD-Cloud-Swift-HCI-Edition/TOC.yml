@@ -1,0 +1,91 @@
+  name: 京东云敏捷专有云超融合版
+  href: 
+  items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+        status: 0
+      - name: 应用场景 
+        href: Introduction/Application-Scenarios.md    
+  - name: 入门指南
+    items:
+      - name: 概述
+        href: Getting-Started/Getting-Started-Overview.md
+      - name: 用户体系
+        href: Getting-Started/User-System.md
+      - name: 计算资源
+        items:
+          - name: 概述
+            href: Getting-Started/Computing-Resources/Computing-Resources-Overview.md
+          - name: 云主机
+            href: Getting-Started/Computing-Resources/Instances.md
+          - name: 镜像
+            href: Getting-Started/Computing-Resources/Images.md
+      - name: 存储资源
+        items:
+          - name: 概述
+            href: Getting-Started/Storage-Resources/Storage-Resources-Overview.md
+          - name: 云硬盘
+            href: Getting-Started/Storage-Resources/Disks.md
+          - name: 云硬盘快照
+            href: Getting-Started/Storage-Resources/Snapshots.md
+          - name: 对象存储
+            href: Getting-Started/Storage-Resources/Object-Storage.md
+      - name: 网络资源
+        items:
+          - name: 概述
+            href: Getting-Started/Network-Resources/Network-Resources-Overview.md
+          - name: 网络
+            href: Getting-Started/Network-Resources/Networks.md
+          - name: 路由
+            href: Getting-Started/Network-Resources/Routers.md
+          - name: 弹性网卡
+            href: Getting-Started/Network-Resources/Ports.md
+          - name: 安全组
+            href: Getting-Started/Network-Resources/Security-Groups.md
+          - name: 浮动IP
+            href: Getting-Started/Network-Resources/Floating-IP.md
+          - name: 负载均衡
+            href: Getting-Started/Network-Resources/Load-Balancers.md
+  - name: 操作指南
+    items:
+      - name: 账户管理
+        href: Operation-Guide/Account-Management.md   
+      - name: 管理员指南
+        items:
+          - name: 创建用户
+            href: Operation-Guide/Administrator-Guide/Create-Users.md
+      - name: 租户指南
+        items:
+          - name: 创建云主机
+            href: Operation-Guide/User-Guide/Create-Instances.md
+          - name: 使用对象存储
+            href: Operation-Guide/User-Guide/Use-Object-Storage.md
+          - name: 创建负载均衡
+            href: Operation-Guide/User-Guide/Create-Load-Balancers.md
+      - name: 运维指南
+        items:
+          - name: 运维监控
+            href: Operation-Guide/Operational-Maintenance-Guide/Operation-Maintenance-And-Monitoring.md
+          - name: 系统设置
+            href: Operation-Guide/Operational-Maintenance-Guide/System-Settings.md
+  - name: 常见问题
+    items:
+      - name: FAQ
+        href: FAQ/FAQ.md
+  - name: 相关资源
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md
+

@@ -34,9 +34,9 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers/{contai
 |**args**|String[]|False| |容器启动执行命令的参数, 如果不指定默认是镜像的CMD. 数组字符总长度范围：[0-2048]|
 |**tty**|Boolean|False| |容器是否分配tty。默认不分配|
 |**workingDir**|String|False| |容器的工作目录。如果不指定，默认是根目录（/），必须是绝对路径。字符长度范围：[0-1024]|
-|**envs**|EnvVar[]|False| |容器执行的环境变量；如果和镜像中的环境变量Key相同，会覆盖镜像中的值；</br> 最大100对|
+|**envs**|[EnvVar[]](rebuildcontainer#envvar)|False| |容器执行的环境变量；如果和镜像中的环境变量Key相同，会覆盖镜像中的值；</br> 最大100对|
 
-### EnvVar
+### <div id="envvar">EnvVar</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |环境变量名称|

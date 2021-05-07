@@ -87,6 +87,8 @@ items:
             href: Operation-Guide/Instance/Search-Instance.md
           - name: 重启动到期/欠费实例
             href: Operation-Guide/Instance/Restart-Overdue-or-Arrear-Instance.md
+          - name: 实例停机不计费
+            href: Operation-Guide/Instance/uncharged_for_stopped_vm.md    
           - name: 导出实例信息
             href: Operation-Guide/Instance/Export-Instance.md
           - name: 从按配置转换为包年包月
@@ -95,8 +97,18 @@ items:
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU云主机
             href: Operation-Guide/Instance/GPU-VM.md
+          - name: vGPU云主机
+            href: Operation-Guide/Instance/vGPU-VM.md            
+          - name: 裸金属云主机
+            items: 
+              - name: 裸金属云主机概述
+                href:  Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md
+              - name: 创建裸金属云主机
+                href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
           - name: 自定义数据
             href: Operation-Guide/Instance/Userdata.md
+          - name: 实例元数据
+            href: Operation-Guide/Instance/Instance-Metadata.md            
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -113,8 +125,14 @@ items:
             href: Operation-Guide/Image/Image-Type.md
           - name: 官方镜像系统组件
             href: Operation-Guide/Image/Default-Agent-in-Public-Image.md            
+          - name: 官方镜像更新记录
+            href: Operation-Guide/Image/Public-Image-Update-Record.md 
           - name: 制作私有镜像
             href: Operation-Guide/Image/Create-Private-Image.md
+          - name: 镜像类型转换
+            href: Operation-Guide/Image/Convert-Image.md
+          - name: 复制镜像
+            href: Operation-Guide/Image/Copy-Image.md
           - name: 导入镜像
             items:
               - name: 导入私有镜像
@@ -127,16 +145,28 @@ items:
                 href: Operation-Guide/Image/Convert-Image-File-Format.md
               - name: ISO格式镜像转换
                 href: Operation-Guide/Image/Convert-Image-File-Format-From-ISO.md
+          - name: 导出镜像
+            href: Operation-Guide/Image/Export-Private-Image.md
           - name: 共享私有镜像
             href: Operation-Guide/Image/Share-Image.md
           - name: 取消共享私有镜像
             href: Operation-Guide/Image/Cancel-Share-Image.md
-          - name: 镜像类型转换
-            href: Operation-Guide/Image/Convert-Image.md
-          - name: 复制镜像
-            href: Operation-Guide/Image/Copy-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
+      - name: 实例抵扣券
+        items:
+          - name: 实例抵扣券概述
+            href: Operation-Guide/Instance-Voucher/Instancevoucher-Overview.md
+          - name: 价格及计费规则
+            href: Operation-Guide/Instance-Voucher/Price-and-Billing-Rules-of-Instancevoucher.md
+          - name: 购买实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Purchase-Instancevoucher.md
+          - name: 管理实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Manage-Instancevoucher.md
+          - name: 查看抵扣明细
+            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
+          - name: 查看预留资源
+            href: Operation-Guide/Instance-Voucher/Reserved-Resources.md             
       - name: 存储
         items:
           - name: 存储概述
@@ -183,6 +213,8 @@ items:
             href: Operation-Guide/Network/Configurate-ENI-Multi-Queue.md
           - name: 配置弹性网卡删除属性
             href: Operation-Guide/Network/Configurate-ENI-Delete-Attributes.md
+          - name: 修改私有网络配置
+            href: Operation-Guide/Network/Modify-VPC-Attribute.md           
       - name: 密钥
         items:
           - name: 密钥概述
@@ -193,48 +225,56 @@ items:
             href: Operation-Guide/Key-Pair/Bind-Keypair.md
           - name: 删除密钥
             href: Operation-Guide/Key-Pair/Delete-Keypair.md
-  - name: 安全组
-    items:
-      - name: 安全组概述
-        href: Operation-Guide/Security-Group/Security-Group-Overview.md
-      - name: 安全组规则
-        href: Operation-Guide/Security-Group/Security-Group-Rules.md
-      - name: 安全组规则典型配置
-        href: Operation-Guide/Security-Group/Typical-Configuration.md
-      - name: 使用场景
-        href: Operation-Guide/Security-Group/Security-Group-Scenarios.md
-      - name: 创建安全组
-        href: Operation-Guide/Security-Group/Create-Security-Group.md
-      - name: 安全组绑定云主机
-        href: Operation-Guide/Security-Group/Associate-Security-Group.md
-      - name: 安全组解绑云主机
-        href: Operation-Guide/Security-Group/Disassociate-Security-Group.md
-      - name: 配置安全组入站规则
-        href: Operation-Guide/Security-Group/Configurate-Inbound-Rules.md
-      - name: 配置安全组出站规则
-        href: Operation-Guide/Security-Group/Configurate-Outbound-Rules.md
-      - name: 删除安全组
-        href: Operation-Guide/Security-Group/Delete-Security-Group.md
-  - name: 标签
-    items:
-      - name: 标签概述
-        href: Operation-Guide/Tag/Tag-Overview.md
-      - name: 根据标签筛选
-        href: Operation-Guide/Tag/Filter-by-Tag.md
-      - name: 编辑标签
-        href: Operation-Guide/Tag/Edit-Tag.md
-  - name: 安全
-    items:
-      - name: 开启CC防护
-        href: Operation-Guide/Security/Turn-on-CC-Protection.md
-  - name: 监控
-    items:
-      - name: 监控概述
-        href: Operation-Guide/Monitoring/Monitoring-Overview.md
-      - name: 获取监控数据
-        href: Operation-Guide/Monitoring/Get-Monitor-Data.md
-      - name: 设置报警
-        href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 安全组
+        items:
+          - name: 安全组概述
+            href: Operation-Guide/Security-Group/Security-Group-Overview.md
+          - name: 安全组规则
+            href: Operation-Guide/Security-Group/Security-Group-Rules.md
+          - name: 安全组规则典型配置
+            href: Operation-Guide/Security-Group/Typical-Configuration.md
+          - name: 使用场景
+            href: Operation-Guide/Security-Group/Security-Group-Scenarios.md
+          - name: 创建安全组
+            href: Operation-Guide/Security-Group/Create-Security-Group.md
+          - name: 安全组绑定云主机
+            href: Operation-Guide/Security-Group/Associate-Security-Group.md
+          - name: 安全组解绑云主机
+            href: Operation-Guide/Security-Group/Disassociate-Security-Group.md
+          - name: 配置安全组入站规则
+            href: Operation-Guide/Security-Group/Configurate-Inbound-Rules.md
+          - name: 配置安全组出站规则
+            href: Operation-Guide/Security-Group/Configurate-Outbound-Rules.md
+          - name: 删除安全组
+            href: Operation-Guide/Security-Group/Delete-Security-Group.md
+      - name: 标签
+        items:
+          - name: 标签概述
+            href: Operation-Guide/Tag/Tag-Overview.md
+          - name: 根据标签筛选
+            href: Operation-Guide/Tag/Filter-by-Tag.md
+          - name: 编辑标签
+            href: Operation-Guide/Tag/Edit-Tag.md
+      - name: 安全
+        items:
+          - name: 开启CC防护
+            href: Operation-Guide/Security/Turn-on-CC-Protection.md
+      - name: 监控
+        items:
+          - name: 监控概述
+            href: Operation-Guide/Monitoring/Monitoring-Overview.md
+          - name: 获取监控数据
+            href: Operation-Guide/Monitoring/Get-Monitor-Data.md
+          - name: 设置报警
+            href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 事件
+        items:
+          - name: 事件通知
+            href: Operation-Guide/Monitoring/Event-Overview.md
+      - name: 自动任务策略
+        items:
+          - name: 自动镜像策略
+            href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md                           
   - name: 最佳实践
     items:
       - name: 安全

@@ -10,28 +10,26 @@ POST
 ## 请求地址
 https://vod.jdcloud-api.com/v1/videos/{videoId}:deleteStreams
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**videoId**|String|True| |视频ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**videoId**|String|True| |视频ID|
 |**taskIds**|Long[]|True| | |
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|删除视频转码流|
+|**result**|[Result](deletevideostreams#result)|删除视频转码流|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**okTaskIds**|Number[]|删除成功的转码任务ID列表|
-|**notFoundTaskIds**|Number[]|未找到的转码任务ID列表|
-|**failedTaskIds**|Number[]|删除失败的转码任务ID列表|
+|**okTaskIds**|Long[]|删除成功的转码任务ID列表|
+|**notFoundTaskIds**|Long[]|未找到的转码任务ID列表|
+|**failedTaskIds**|Long[]|删除失败的转码任务ID列表|
 
 ## 返回码
 |返回码|描述|
@@ -49,6 +47,7 @@ POST
 https://vod.jdcloud-api.com/v1/videos/f74a601a-6abc-46a6-9739-f53e9dfe041f:deleteStreams
 
 ```
+
 ```
 {
     "taskIds": [

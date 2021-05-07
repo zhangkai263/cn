@@ -26,20 +26,22 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](modifyvpc#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**vpc**|Vpc|私有网络详细信息|
-### Vpc
+|**vpc**|[Vpc](modifyvpc#vpc)|私有网络详细信息|
+### <div id="vpc">Vpc</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-north-1|
 |**vpcId**|String|私有网络ID|
 |**name**|String|私有网络名称|
-|**cidr**|String|私有网络CIDR|
+|**cidr**|String|私有网络IPv4 CIDR|
+|**ipv6Cidr**|String|私有网络IPv6 CIDR|
+|**ipv6GatewayId**|String|IPv6网关ID|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
 

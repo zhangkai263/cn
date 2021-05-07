@@ -28,7 +28,7 @@ https://renewal.jdcloud-api.com/v2/regions/{regionId}/instances:autoRenewStatus
 |**timeUnit**|String|False| |时间单位(MONTH-月,YEAR-年)|
 |**instanceIds**|String|True| |资源ID列表,英文逗号分隔|
 |**autoRenewStatus**|String|True| |自动续费状态(OPEN-开通自动续费,CLOSE-关闭自动续费,MODIFY-修改自动续费)|
-|**allAutoPay**|String|False| |是否绑定关联资源一并自动续费(AUTO_RENEW-是,UN_AUTO_RENEW-否)|
+|**allAutoPay**|String|False| |是否绑定关联资源一并开通自动续费(UNBIND：不绑定，BIND：绑定)|
 
 ## 返回参数
 |名称|类型|描述|

@@ -15,8 +15,8 @@ items:
       href: Introduction/Features.md
     - name: 限制说明
       href: Introduction/Restrictions.md
-    - name: 应用场景 
-      href: Introduction/Application-Scenarios.md    
+    - name: 应用场景
+      href: Introduction/Application-Scenarios.md
 - name: 产品定价
   items:
     - name: 计费概述
@@ -26,7 +26,7 @@ items:
     - name: 价格总览
       href: Pricing/Price-Overview.md
     - name: 欠费说明
-      href: Pricing/Arrears-Description.md 
+      href: Pricing/Arrears-Description.md
 - name: 入门指南
   items:
     - name: 开通服务
@@ -48,7 +48,19 @@ items:
     - name: 统计分析
       href: Operation-Guide/Statistical-Analysis.md
     - name: 访问控制（IAM）
-      href: Operation-Guide/IAM.md     
+      href: Operation-Guide/IAM.md
+- name: 开发指南
+  items:
+    - name: 事件回调
+      items:
+        - name: 文件上传回调
+          href: Developer-Guide/File-Upload-Complete.md
+        - name: 视频转码回调
+          href: Developer-Guide/Stream-Transcode-Complete.md
+- name: 上传SDK
+  items:
+    - name: AWS原生SDK上传
+      href: Upload-SDK/AWS-Native-SDK-Upload.md
 - name: 最佳实践
   items:
     - name: 终端格式建议

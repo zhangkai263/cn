@@ -21,9 +21,9 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:reinsta
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**instanceSpec**|ReinstallInstanceSpec|True| |云物理服务器配置|
+|**instanceSpec**|[ReinstallInstanceSpec](reinstallinstance#reinstallinstancespec)|True| |云物理服务器配置|
 
-### ReinstallInstanceSpec
+### <div id="reinstallinstancespec">ReinstallInstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**az**|String|True| |可用区, 如cn-east-1a|
@@ -31,17 +31,19 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:reinsta
 |**osTypeId**|String|True| |操作系统类型ID|
 |**sysRaidTypeId**|String|True| |系统盘RAID类型ID|
 |**keepData**|String|True| |是否保留数据盘数据, 取值为：yes、no|
-|**dataRaidTypeId**|String|True| |数据盘RAID类型ID|
+|**dataRaidTypeId**|String|False| |数据盘RAID类型ID|
 |**password**|String|True| |密码|
 |**hostname**|String|False| |主机名|
+|**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
+|**keypairId**|String|False| |秘钥对id|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](reinstallinstance#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**success**|Boolean|重装操作是否成功|

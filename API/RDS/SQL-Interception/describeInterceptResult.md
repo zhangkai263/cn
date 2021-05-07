@@ -25,14 +25,14 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/interce
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeinterceptresult#result)| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**interceptResult**|InterceptResult[]| |
+|**interceptResult**|[InterceptResult[]](describeinterceptresult#interceptresult)| |
 |**totalCount**|Integer| |
-### InterceptResult
+### <div id="interceptresult">InterceptResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**startTime**|String|SQL开始执行时间|
@@ -46,3 +46,29 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/interce
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+public void testDescribeInterceptResult() {
+    DescribeInterceptResultRequest request = new DescribeInterceptResultRequest();
+    request.setInstanceId("mysql-k67q8n46si");
+    request.setPageNumber(1);
+    request.setPageSize(100);
+    request.setRegionId("cn-north-1");
+    DescribeInterceptResultResponse response = rdsClient.describeInterceptResult(request);
+    System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "bpakcho72tqtw7g22hb8ttv83wjpi0h9", 
+    "result": {
+        "interceptResult": [], 
+        "totalCount": 0
+    }
+}
+```

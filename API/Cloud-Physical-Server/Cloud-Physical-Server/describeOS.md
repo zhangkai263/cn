@@ -18,20 +18,20 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/os
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**deviceType**|String|True| |实例类型，可调用接口（describeDeviceTypes）获取指定地域的实例类型，例如：cps.c.normal|
-|**osType**|String|False| |操作系统类型，取值范围：CentOS、Ubuntu|
+|**osType**|String|False| |操作系统类型，取值范围：CentOS、Ubuntu、Windows|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeos#result)| |
 |**requestId**|String| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**oss**|Os[]| |
-### Os
+|**oss**|[Os[]](describeos#os)| |
+### <div id="os">Os</div>
 |名称|类型|描述|
 |---|---|---|
 |**osTypeId**|String|操作系统系统类型ID|

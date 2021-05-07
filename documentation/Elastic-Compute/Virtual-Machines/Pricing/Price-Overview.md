@@ -1,11 +1,11 @@
 # 价格总览
 
-您可以直接使用京东云提供的[云主机价格计算器](https://www.jdcloud.com/calculator/calHost)查看您所需的产品组合对应价格，也可以查阅相关资源价格总览用以估算投入成本。
+您可以直接使用京东智联云提供的[云主机价格计算器](https://www.jdcloud.com/calculator/calHost)查看您所需的产品组合对应价格，也可以查阅相关资源价格总览用以估算投入成本。
 
-请注意：价格总览中价格为统一官方标价，不包用户括折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
+请注意：价格总览中价格为统一官方标价，不包括用户折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
 
 
-京东云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
+京东智联云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
 
 ## 实例价格：
 
@@ -27,9 +27,69 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="17">通用</td>
-      <td rowspan="2">共享</td>
-      <td>g.s1.micro</td>
+      <td rowspan="46">通用</td>
+      <td rowspan="8">共享</td>
+      <td>g.s2.micro</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.28</td>
+      <td>--</td>
+      <td>0.12</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.small</td>
+      <td>1</td>
+      <td>2</td>
+      <td>60.5</td>
+      <td>--</td>
+      <td>0.21</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.s2.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>90.75</td>
+      <td>--</td>
+      <td>0.32</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>181.69</td>
+      <td>--</td>
+      <td>0.63</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s2.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>363</td>
+      <td>--</td>
+      <td>1.26</td>
+      <td>--</td>
+      <td></td>
+   </tr>   
+    <tr>
+      <td>g.s2.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>726.75</td>
+      <td>--</td>
+      <td>2.52</td>
+      <td>--</td>
+      <td></td>
+   </tr>    
+    <tr>     
+     <td>g.s1.micro</td>
       <td>1</td>
       <td>1</td>
       <td>56</td>
@@ -49,7 +109,227 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="15">标准</td>
+      <td rowspan="38">标准</td>
+      <td>g.n4.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>120</td>
+      <td>120</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>480</td>
+      <td>480</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>960</td>
+      <td>960</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.3xlarge</td>
+      <td>12</td>
+      <td>48</td>
+      <td>1440</td>
+      <td>1440</td>
+      <td>3</td>
+      <td>3</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.4xlarge</td>
+      <td>16</td>
+      <td>64</td>
+      <td>1920</td>
+      <td>1920</td>
+      <td>4</td>
+      <td>4</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.6xlarge</td>
+      <td>24</td>
+      <td>96</td>
+      <td>2880</td>
+      <td>2880</td>
+      <td>6</td>
+      <td>6</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>3840</td>
+      <td>3840</td>
+      <td>8</td>
+      <td>8</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.12xlarge</td>
+      <td>48</td>
+      <td>192</td>
+      <td>5760</td>
+      <td>5760</td>
+      <td>12</td>
+      <td>12</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.16xlarge</td>
+      <td>64</td>
+      <td>256</td>
+      <td>7680</td>
+      <td>7680</td>
+      <td>16</td>
+      <td>16</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.24xlarge</td>
+      <td>96</td>
+      <td>352</td>
+      <td>11520</td>
+      <td>11520</td>
+      <td>24</td>
+      <td>24</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>120</td>
+      <td>90</td>
+      <td>0.25</td>
+      <td>0.19</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>240</td>
+      <td>180</td>
+      <td>0.5</td>
+      <td>0.38</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>480</td>
+      <td>360</td>
+      <td>1</td>
+      <td>0.75</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>960</td>
+      <td>720</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.3xlarge</td>
+      <td>12</td>
+      <td>48</td>
+      <td>1440</td>
+      <td>1080</td>
+      <td>3</td>
+      <td>2.25</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.4xlarge</td>
+      <td>16</td>
+      <td>64</td>
+      <td>1920</td>
+      <td>1440</td>
+      <td>4</td>
+      <td>3</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.6xlarge</td>
+      <td>24</td>
+      <td>96</td>
+      <td>2880</td>
+      <td>2160</td>
+      <td>6</td>
+      <td>4.5</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>3840</td>
+      <td>2880</td>
+      <td>8</td>
+      <td>6</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.12xlarge</td>
+      <td>48</td>
+      <td>192</td>
+      <td>5760</td>
+      <td>4320</td>
+      <td>12</td>
+      <td>9</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.16xlarge</td>
+      <td>64</td>
+      <td>256</td>
+      <td>7680</td>
+      <td>5760</td>
+      <td>16</td>
+      <td>12</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n3.18xlarge</td>
+      <td>72</td>
+      <td>288</td>
+      <td>8640</td>
+      <td>6480</td>
+      <td>18</td>
+      <td>13.5</td>
+      <td></td>
+   </tr>
+   <tr>
       <td>g.n2.medium</td>
       <td>1</td>
       <td>4</td>
@@ -129,6 +409,16 @@
       <td>22.71</td>
       <td></td>
    </tr>
+      <tr> 
+      <td>g.n2.metal</td>
+      <td>80</td>
+      <td>384</td>
+      <td>9690</td>
+      <td>7267.5</td>
+      <td>33.65</td>
+      <td>25.23</td>
+      <td></td>
+   </tr>
    <tr>
      <td>g.n1.medium</td>
       <td>1</td>
@@ -200,8 +490,289 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="17">计算优化</td>
-      <td rowspan="17">标准</td>
+      <td rowspan="45">计算优化</td>
+      <td rowspan="3">共享</td>
+      <td>c.s2.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>125.3</td>
+      <td>--</td>
+      <td>0.41</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>250.6</td>
+      <td>--</td>
+      <td>0.82</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s2.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>501.2</td>
+      <td>--</td>
+      <td>1.65</td>
+      <td>--</td>
+      <td></td>
+  <tr>
+      <td rowspan="5">密集</td>
+      <td>c.c2.large</td>
+      <td>2</td>
+      <td>2</td>
+      <td>170</td>
+      <td>127.5</td>
+      <td>0.59</td>
+      <td>0.44</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.xlarge</td>
+      <td>4</td>
+      <td>4</td>
+      <td>340</td>
+      <td>255</td>
+      <td>1.18</td>
+      <td>0.89</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.c2.2xlarge</td>
+      <td>8</td>
+      <td>8</td>
+      <td>680</td>
+      <td>510</td>
+      <td>2.36</td>
+      <td>1.77</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.3xlarge</td>
+      <td>12</td>
+      <td>12</td>
+      <td>1020</td>
+      <td>765</td>
+      <td>3.54</td>
+      <td>2.66</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c2.4xlarge</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1360</td>
+      <td>1020</td>
+      <td>4.72</td>
+      <td>3.54</td>
+      <td></td>
+   </tr>
+</tr>
+      <td rowspan="37">标准</td>
+      <td>c.n4.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>187</td>
+      <td>187</td>
+      <td>0.39</td>
+      <td>0.39</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>374</td>
+      <td>374</td>
+      <td>0.78</td>
+      <td>0.78</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>748</td>
+      <td>748</td>
+      <td>1.56</td>
+      <td>1.56</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.3xlarge</td>
+      <td>12</td>
+      <td>24</td>
+      <td>1122</td>
+      <td>1122</td>
+      <td>2.34</td>
+      <td>2.34</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.4xlarge</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1496</td>
+      <td>1496</td>
+      <td>3.12</td>
+      <td>3.12</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.6xlarge</td>
+      <td>24</td>
+      <td>48</td>
+      <td>2244</td>
+      <td>2244</td>
+      <td>4.68</td>
+      <td>4.68</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.8xlarge</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2992</td>
+      <td>2992</td>
+      <td>6.23</td>
+      <td>6.23</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.12xlarge</td>
+      <td>48</td>
+      <td>96</td>
+      <td>4488</td>
+      <td>4488</td>
+      <td>9.36</td>
+      <td>9.36</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.16xlarge</td>
+      <td>64</td>
+      <td>128</td>
+      <td>5984</td>
+      <td>5984</td>
+      <td>12.46</td>
+      <td>12.46</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.24xlarge</td>
+      <td>96</td>
+      <td>192</td>
+      <td>8976</td>
+      <td>8976</td>
+      <td>18.7</td>
+      <td>18.7</td>
+      <td></td>
+   </tr>
+   </tr>
+      <td>c.n3.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>187</td>
+      <td>140.25</td>
+      <td>0.39</td>
+      <td>0.29</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>374</td>
+      <td>280.5</td>
+      <td>0.78</td>
+      <td>0.59</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>748</td>
+      <td>561</td>
+      <td>1.56</td>
+      <td>1.17</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.3xlarge</td>
+      <td>12</td>
+      <td>24</td>
+      <td>1122</td>
+      <td>841.5</td>
+      <td>2.34</td>
+      <td>1.76</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.4xlarge</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1496</td>
+      <td>1122</td>
+      <td>3.12</td>
+      <td>2.34</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.6xlarge</td>
+      <td>24</td>
+      <td>48</td>
+      <td>2244</td>
+      <td>1683</td>
+      <td>4.68</td>
+      <td>3.51</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.8xlarge</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2992</td>
+      <td>2244</td>
+      <td>6.23</td>
+      <td>4.67</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.12xlarge</td>
+      <td>48</td>
+      <td>96</td>
+      <td>4488</td>
+      <td>3366</td>
+      <td>9.36</td>
+      <td>7.02</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.16xlarge</td>
+      <td>64</td>
+      <td>128</td>
+      <td>5984</td>
+      <td>4488</td>
+      <td>12.46</td>
+      <td>9.35</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n3.22xlarge</td>
+      <td>88</td>
+      <td>176</td>
+      <td>8228</td>
+      <td>6171</td>
+      <td>17.14</td>
+      <td>12.86</td>
+      <td></td>
+   </tr>
+   <tr>
       <td>c.n2.large</td>
       <td>2</td>
       <td>4</td>
@@ -372,8 +943,148 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="14">内存优化</td>
-      <td rowspan="14">标准</td>
+      <td rowspan="28">内存优化</td>
+      <td rowspan="28">标准</td>
+      <td>m.n4.large</td>
+      <td>2</td>
+      <td>16</td>
+      <td>318</td>
+      <td>318</td>
+      <td>0.66</td>
+      <td>0.66</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.xlarge</td>
+      <td>4</td>
+      <td>32</td>
+      <td>636</td>
+      <td>636</td>
+      <td>1.33</td>
+      <td>1.33</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.2xlarge</td>
+      <td>8</td>
+      <td>64</td>
+      <td>1272</td>
+      <td>1272</td>
+      <td>2.65</td>
+      <td>2.65</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.3xlarge</td>
+      <td>12</td>
+      <td>96</td>
+      <td>1908</td>
+      <td>1908</td>
+      <td>3.98</td>
+      <td>3.98</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.4xlarge</td>
+      <td>16</td>
+      <td>128</td>
+      <td>2544</td>
+      <td>2544</td>
+      <td>5.3</td>
+      <td>5.3</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.6xlarge</td>
+      <td>24</td>
+      <td>192</td>
+      <td>3816</td>
+      <td>3816</td>
+      <td>7.95</td>
+      <td>7.95</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.8xlarge</td>
+      <td>32</td>
+      <td>256</td>
+      <td>5088</td>
+      <td>5088</td>
+      <td>10.6</td>
+      <td>7.95</td>
+      <td></td>
+   </tr>
+   </tr>
+      <td>m.n3.large</td>
+      <td>2</td>
+      <td>16</td>
+      <td>318</td>
+      <td>238.5</td>
+      <td>0.66</td>
+      <td>0.5</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.xlarge</td>
+      <td>4</td>
+      <td>32</td>
+      <td>636</td>
+      <td>477</td>
+      <td>1.33</td>
+      <td>1</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.2xlarge</td>
+      <td>8</td>
+      <td>64</td>
+      <td>1272</td>
+      <td>954</td>
+      <td>2.65</td>
+      <td>1.99</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.3xlarge</td>
+      <td>12</td>
+      <td>96</td>
+      <td>1908</td>
+      <td>1431</td>
+      <td>3.98</td>
+      <td>2.99</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.4xlarge</td>
+      <td>16</td>
+      <td>128</td>
+      <td>2544</td>
+      <td>1908</td>
+      <td>5.3</td>
+      <td>3.98</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.6xlarge</td>
+      <td>24</td>
+      <td>192</td>
+      <td>3816</td>
+      <td>2862</td>
+      <td>7.95</td>
+      <td>5.96</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n3.8xlarge</td>
+      <td>32</td>
+      <td>256</td>
+      <td>5088</td>
+      <td>3816</td>
+      <td>10.6</td>
+      <td>7.95</td>
+      <td></td>
+   </tr>
+   <tr>
       <td>m.n2.large</td>
       <td>2</td>
       <td>16</td>
@@ -616,7 +1327,250 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="9">GPU</td>
+      <td rowspan="24">存储优化</td>
+      <td rowspan="14">IO</td>
+      <td>s.i3.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>1395.7</td>
+      <td>1046.8</td>
+      <td>4.85</td>
+      <td>3.63</td>
+      <td>1*1862GB NVMe SSD</td>
+   </tr>
+   <tr>
+      <td>s.i3.4xlarge</td>
+      <td>16</td>
+      <td>64</td>
+      <td>2791.4</td>
+      <td>2093.6</td>
+      <td>9.69</td>
+      <td>7.27</td>
+      <td>2*1862GB NVMe SSD</td>
+   </tr>   
+   <tr>
+      <td>s.i3.6xlarge</td>
+      <td>24</td>
+      <td>96</td>
+      <td>4187.1</td>
+      <td>3140.4</td>
+      <td>14.54</td>
+      <td>10.9</td>
+      <td>3*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>5582.8</td>
+      <td>4187.2</td>
+      <td>19.38</td>
+      <td>14.54</td>
+      <td>4*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3.12xlarge</td>
+      <td>48</td>
+      <td>192</td>
+      <td>8374.2</td>
+      <td>6280.8</td>
+      <td>29.08</td>
+      <td>21.81</td>
+      <td>6*1862GB NVMe SSD</td>
+   </tr>
+   <tr>
+      <td>s.i3.16xlarge</td>
+      <td>64</td>
+      <td>256</td>
+      <td>11165.6</td>
+      <td>8373.4</td>
+      <td>38.77</td>
+      <td>29.08</td>
+      <td>8*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3.22xlarge</td>
+      <td>88</td>
+      <td>352</td>
+      <td>14045.7</td>
+      <td>10534.3</td>
+      <td>48.77</td>
+      <td>36.58</td>
+      <td>8*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3f.metal</td>
+      <td>96</td>
+      <td>384</td>
+      <td>11955.71</td>
+      <td>11955.71</td>
+      <td>24.91</td>
+      <td>24.91</td>
+      <td>1*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i2.metal</td>
+      <td>80</td>
+      <td>384</td>
+      <td>10125.7</td>
+      <td>7594.3</td>
+      <td>35.16</td>
+      <td>26.37</td>
+      <td>1*1862GB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i1.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>709</td>
+      <td>531.8</td>
+      <td>2.46</td>
+      <td>1.85</td>
+      <td>1*894GB SSD</td>
+   </tr>
+   <tr>
+      <td>s.i1.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>1418</td>
+      <td>1063.6</td>
+      <td>4.92</td>
+      <td>3.69</td>
+      <td>2*894GB SSD</td>
+   </tr>  
+   <tr>
+      <td>s.i1.4xlarge</td>
+      <td>16</td>
+      <td>64</td>
+      <td>2836</td>
+      <td>2127.2</td>
+      <td>9.85</td>
+      <td>7.39</td>
+      <td>4*894GB SSD</td>
+   </tr>
+   <tr>
+      <td>s.i1.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>5672</td>
+      <td>4254.4</td>
+      <td>19.69</td>
+      <td>14.77</td>
+      <td>8*894GB SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i1.14xlarge</td>
+      <td>56</td>
+      <td>224</td>
+      <td>9926</td>
+      <td>7445.2</td>
+      <td>34.47</td>
+      <td>25.85</td>
+      <td>14*894GB SSD</td>
+   </tr>
+   <tr>
+      <td rowspan="10">大数据</td>
+      <td>s.d2.xlarge</td>
+      <td>4</td>
+      <td>22</td>
+      <td>834.5</td>
+      <td>625.9</td>
+      <td>2.9</td>
+      <td>2.17</td>
+      <td>1*9313GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d2.2xlarge</td>
+      <td>8</td>
+      <td>44</td>
+      <td>1669</td>
+      <td>1251.8</td>
+      <td>5.8</td>
+      <td>4.35</td>
+      <td>2*9313GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d2.4xlarge</td>
+      <td>16</td>
+      <td>88</td>
+      <td>3338</td>
+      <td>2503.5</td>
+      <td>11.59</td>
+      <td>8.69</td>
+      <td>4*9313GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d2.8xlarge</td>
+      <td>32</td>
+      <td>176</td>
+      <td>6676</td>
+      <td>5007</td>
+      <td>23.18</td>
+      <td>17.39</td>
+      <td>8*9313GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d2.10xlarge</td>
+      <td>40</td>
+      <td>220</td>
+      <td>8345</td>
+      <td>6258.8</td>
+      <td>28.98</td>
+      <td>21.73</td>
+      <td>12*9313GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d1.xlarge</td>
+      <td>4</td>
+      <td>22</td>
+      <td>694.5</td>
+      <td>520.9</td>
+      <td>2.41</td>
+      <td>1.81</td>
+      <td>1*5587GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d1.2xlarge</td>
+      <td>8</td>
+      <td>44</td>
+      <td>1389</td>
+      <td>1041.8</td>
+      <td>4.82</td>
+      <td>3.62</td>
+      <td>2*5587GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d1.4xlarge</td>
+      <td>16</td>
+      <td>88</td>
+      <td>2778</td>
+      <td>2083.5</td>
+      <td>9.65</td>
+      <td>7.23</td>
+      <td>4*5587GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d1.8xlarge</td>
+      <td>32</td>
+      <td>176</td>
+      <td>5556</td>
+      <td>4167</td>
+      <td>19.29</td>
+      <td>14.47</td>
+      <td>8*5587GB HDD</td>
+   </tr> 
+   <tr>
+      <td>s.d1.10xlarge</td>
+      <td>40</td>
+      <td>220</td>
+      <td>6945</td>
+      <td>5208.8</td>
+      <td>24.11</td>
+      <td>18.09</td>
+      <td>12*5587GB HDD</td>
+   </tr> 
+   <tr>
+      <td rowspan="17">GPU</td>
       <td rowspan="9">标准</td>
       <td>p.n1p40.3xlarge</td>
       <td>12</td>
@@ -625,7 +1579,7 @@
       <td>3181.13</td>
       <td>14.73</td>
       <td>11.05</td>
-      <td>1*P40<br>1*960GB SSD</td>
+      <td>1*P40<br>1*894GB SSD</td>
    </tr>
    <tr>
      <td>p.n1p40.7xlarge</td>
@@ -635,7 +1589,7 @@
       <td>6725.63</td>
       <td>31.14</td>
       <td>23.36</td>
-      <td>2*P40<br>2*960GB SSD</td>
+      <td>2*P40<br>2*894GB SSD</td>
    </tr>
    <tr>
       <td>p.n1p40.14xlarge</td>
@@ -645,7 +1599,7 @@
       <td>13451.25</td>
       <td>62.27</td>
       <td>46.72</td>
-      <td>4*P40<br>4*960GB SSD</td>
+      <td>4*P40<br>4*894GB SSD</td>
    </tr>
    <tr>
       <td>p.n1p40h.3xlarge</td>
@@ -655,7 +1609,7 @@
       <td>3055.13</td>
       <td>14.14</td>
       <td>10.61</td>
-      <td>1*P40<br>1*1200GB HDD</td>
+      <td>1*P40<br>1*1117GB HDD</td>
    </tr>
    <tr>
      <td>p.n1p40h.7xlarge</td>
@@ -665,7 +1619,7 @@
       <td>6473.63</td>
       <td>29.97</td>
       <td>22.48</td>
-      <td>2*P40<br>2*1200GB HDD</td>
+      <td>2*P40<br>2*1117GB HDD</td>
    </tr>
    <tr>
       <td>p.n1p40h.14xlarge</td>
@@ -675,7 +1629,7 @@
       <td>12947.25</td>
       <td>59.94</td>
       <td>44.96</td>
-      <td>4*P40<br>4*1200GB HDD</td>
+      <td>4*P40<br>4*1117GB HDD</td>
    </tr>
    <tr>
       <td>p.n1v100.2xlarge</td>
@@ -685,7 +1639,7 @@
       <td>4476.75</td>
       <td>20.73</td>
       <td>15.55</td>
-      <td>1*V100<br>1*6000GB HDD</td>
+      <td>1*V100<br>1*5587GB HDD</td>
    </tr>
    <tr>
       <td>p.n1v100.5xlarge</td>
@@ -695,7 +1649,7 @@
       <td>9316.88</td>
       <td>43.13</td>
       <td>32.35</td>
-      <td>2*V100<br>2*6000GB HDD</td>
+      <td>2*V100<br>2*5587GB HDD</td>
    </tr>
    <tr>
       <td>p.n1v100.10xlarge</td>
@@ -705,15 +1659,95 @@
       <td>18633.75</td>
       <td>86.27</td>
       <td>64.7</td>
-      <td>4*V100<br>4*6000GB HDD</td>
+      <td>4*V100<br>4*5587GB HDD</td>
    </tr>
-
+   <tr>
+      <td rowspan="8">虚拟化</td>
+      <td>p.c1p40g.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>737.99</td>
+      <td>553.49</td>
+      <td>2.56</td>
+      <td>1.92</td>
+      <td>1*1/6 P40 </td>   
+    </tr>
+   <tr>
+      <td>p.c1p40m.large</td>
+      <td>2</td>
+      <td>14</td>
+      <td>1051.27</td>
+      <td>788.45</td>
+      <td>3.65</td>
+      <td>2.74</td>
+      <td> 1*1/4 P40</td>   
+    </tr>
+   <tr>
+      <td>p.c1p40g.xlarge</td>
+      <td>4</td>
+      <td>14</td>
+      <td>1226.07</td>
+      <td>919.55</td>
+      <td>4.26</td>
+      <td>3.19</td>
+      <td>1*1/4 P40 </td>   
+    </tr>    
+   <tr>
+      <td>p.c1p40g.3large</td>
+      <td>6</td>
+      <td>28</td>
+      <td>2205.82</td>
+      <td>1654.37</td>
+      <td>7.66</td>
+      <td>5.74</td>
+      <td>1*1/2 P40 </td>   
+    </tr>      
+   <tr>
+      <td>p.q1p40g.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>896.83</td>
+      <td>672.63</td>
+      <td>3.11</td>
+      <td>2.34</td>
+      <td>1*1/6 P40 </td>   
+    </tr>
+   <tr>
+      <td>p.q1p40m.large</td>
+      <td>2</td>
+      <td>14</td>
+      <td>1210.12</td>
+      <td>907.59</td>
+      <td>4.20</td>
+      <td>3.15</td>
+      <td> 1*1/4 P40</td>   
+    </tr>
+   <tr>
+      <td>p.q1p40g.xlarge</td>
+      <td>4</td>
+      <td>14</td>
+      <td>1384.92</td>
+      <td>1038.69</td>
+      <td>4.81</td>
+      <td>3.61</td>
+      <td> 1*1/4 P40</td>   
+    </tr>    
+   <tr>
+      <td>p.q1p40g.3large</td>
+      <td>6</td>
+      <td>28</td>
+      <td>2364.67</td>
+      <td>1773.50</td>
+      <td>8.21</td>
+      <td>6.16</td>
+      <td>1*1/2 P40 </td>   
+    </tr>  
 </table>
-
 请注意：
 
-* 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
-* 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供。
+* 标* 表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
+* 规格可售情况请以控制台云主机创建页面展示为准，或提交工单咨询客服。
+
 
 ## 相关参考
 [云主机价格计算器](https://www.jdcloud.com/calculator/calHost)
