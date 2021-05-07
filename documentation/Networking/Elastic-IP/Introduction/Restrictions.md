@@ -40,8 +40,14 @@
 
 ### 删除公网IP
 <div id="user-content-5"></div>
+
 - 不支持删除绑定资源的公网IP，如需删除IP，需先解绑资源
+
 - 不支持删除已加入共享带宽包的公网IP，如需删除IP，需先从共享带宽包中移除公网IP
 
 ## 相关参考
-
+- [创建公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
+- [公网IP加入共享带宽包](../../Shared-Bandwidth-Package/Getting-Started/Manage-Public-IP.md)
+- [修改带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)
+- [删除公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
+- [绑定资源](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
