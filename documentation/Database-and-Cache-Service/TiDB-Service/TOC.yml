@@ -84,8 +84,14 @@ items:
         href: Operation-Guide/Data-Migration/TiDB-Monitor.md
 
       - name: 数据迁移
-        href: Operation-Guide/Data-Migration/Full-Migration.md
- 
+        items:
+          - name: 数据迁移概述
+            href: Operation-Guide/Data-Migration/Migration-Overview.md          
+          - name: 全量迁移
+            href: Operation-Guide/Data-Migration/Full-Migration.md
+          - name: 增量数据
+            href: Operation-Guide/Data-Migration/Incremental-Migration.md
+
   - name: SQL 语法
     items:
       - name: 数据处理相关SQL
