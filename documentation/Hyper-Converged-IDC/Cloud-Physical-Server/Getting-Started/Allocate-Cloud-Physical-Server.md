@@ -1,4 +1,8 @@
-## 配置云物理服务器
+## 确定配置项
+
+- 计费模式
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提供 **包年包月** 和 **按配置** 两种计费模式，详见[计费规则](../Pricing/Billing-Rules.md)。
 
 - 配置地域与可用区
 
