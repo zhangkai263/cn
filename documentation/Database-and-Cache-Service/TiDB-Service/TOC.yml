@@ -88,7 +88,7 @@ items:
           - name: 数据迁移概述
             href: Data-Migration/Data-Migration-Overview.md   
           - name: 全量迁移
-            href: Operation-Guide/Data-Migration/Full-Migration.md
+            href: Data-Migration/Full-Migration.md
           - name: 增量数据
             href: Data-Migration/Incremental-Migration.md
 
