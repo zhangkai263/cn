@@ -33,7 +33,7 @@
         href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
-      - name: 入门指南概述
+      - name: 入门概述
         href: Getting-Started/Getting-Started.md
       - name: 创建云物理服务器
         href: Getting-Started/Create-Cloud-Physical-Server.md
