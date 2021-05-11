@@ -37,7 +37,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网IP**：用户可以在创建云物理服务器时选择购买或不购买公网IP。选择购买基础网络实例时，公网IP和云物理服务器是绑定的。公网IP由系统自动分配，用户不可修改公网IP,**但是云物理服务器创建后不可添加公网IP**。（选择购买私有网络实例时，若不够买公网IP，可以待实例创建成功后绑定公网IP。）
 
 用户可选择1-200Mbps的公网带宽速率，并可在创建后做升配操作。
-具体操作步骤参见[调整公网带宽](../../Operation-Guide/Instance/Description-Adjust-Public-Network-Bandwidth.md)。
+具体操作步骤参见[调整公网带宽](../Operation-Guide/Instance/Description-Adjust-Public-Network-Bandwidth.md)。
 
 #### 私有网络实例
 
