@@ -55,6 +55,8 @@
             href: Operation-Guide/Instance/Reinstall.md
           - name: 调整公网带宽
             href: Operation-Guide/Description-Adjust-Public-Network-Bandwidth.md
+          - name: 绑定弹性公网IP
+            href: Operation-Guide/Instance/Associate-The-EIP.md
           - name: 添加别名IP范围
             href: Operation-Guide/Instance/Instance-Alias-IP.md
       - name: 网络
