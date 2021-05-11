@@ -81,16 +81,16 @@ items:
         href: Operation-Guide/Parameter/Modify-Parameters.md  
 
       - name: 监控
-        href: Operation-Guide/Data-Migration/TiDB-Monitor.md
+        href: Operation-Guide/Monitor/TiDB-Monitor.md
 
       - name: 数据迁移
         items:
           - name: 数据迁移概述
-            href: Operation-Guide/Data-Migration/Data-Migration-Overview.md   
+            href: Data-Migration/Data-Migration-Overview.md   
           - name: 全量迁移
             href: Operation-Guide/Data-Migration/Full-Migration.md
           - name: 增量数据
-            href: Operation-Guide/Data-Migration/Incremental-Migration.md
+            href: Data-Migration/Incremental-Migration.md
 
   - name: SQL 语法
     items:
