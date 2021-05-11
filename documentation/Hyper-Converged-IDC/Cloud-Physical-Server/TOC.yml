@@ -54,7 +54,7 @@
           - name: 重装系统
             href: Operation-Guide/Instance/Reinstall.md
           - name: 调整公网带宽
-            href: Operation-Guide/Description-Adjust-Public-Network-Bandwidth.md
+            href: Operation-Guide/Instance/Description-Adjust-Public-Network-Bandwidth.md
           - name: 绑定弹性公网IP
             href: Operation-Guide/Instance/Associate-The-EIP.md
           - name: 解绑弹性公网IP
