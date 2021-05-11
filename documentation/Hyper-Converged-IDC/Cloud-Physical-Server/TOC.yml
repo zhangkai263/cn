@@ -101,12 +101,6 @@
             href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Description-Cloud-Physical-Server-Life-Cycle-Management.md
           - name: 操作步骤
             href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Steps-Cloud-Physical-Server-Life-Cycle-Management.md
-      - name: 重装操作系统
-        items:
-          - name: 功能描述
-            href: Operation-Guide/Reinstall/Description-Reinstall.md
-          - name: 操作步骤
-            href: Operation-Guide/Reinstall/Steps-Reinstall.md
       - name: 调整公网带宽
         items:
           - name: 功能描述
