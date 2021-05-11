@@ -2,7 +2,7 @@
 如果您购买了分布式数据库 TiDB 实例，可以通过 MySQL 连接器连接，也可以使用 API 连接。数据库连接器为客户端提供了连接数据库服务端的方式，APIs 提供了使用 MySQL 协议和资源的底层接口。无论是连接器还是 API，都可以用来在不同的语言和环境内连接服务器并执行 sql 语句，包括 odbc、java(jdbc)、Perl、Python、PHP、Ruby 和 C。 
 
 ## 1. 获取连接信息
-在 TiDB 控制台上，查看 TiDB 实例详细信息，获取数据库连接的域名及端口，具体步骤可参考文档 [查看实例](View-Instance.md)
+在 TiDB 控制台上，查看 TiDB 实例详细信息，获取数据库连接的域名及端口，具体步骤可参考文档 [查看实例](../Operation-Guide/Instance/View-Instance.md)
 
 ## 2. 连接 TiDB 实例
 有以下三种方式可以连接 TiDB 实例。
