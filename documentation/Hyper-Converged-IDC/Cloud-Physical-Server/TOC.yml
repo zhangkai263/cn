@@ -49,6 +49,8 @@
         href: Operation-Guide/Terms-and-Conditions.md
       - name: 实例
         items:
+          - name: 删除实例
+            href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
           - name: 添加别名IP范围
