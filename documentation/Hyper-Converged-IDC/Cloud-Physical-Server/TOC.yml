@@ -51,6 +51,8 @@
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
+          - name: 重装系统
+            href: Operation-Guide/Instance/Reinstall.md
           - name: 添加别名IP范围
             href: Operation-Guide/Instance/Instance-Alias-IP.md
       - name: 网络
