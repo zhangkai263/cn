@@ -51,6 +51,8 @@
         items:
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
+          - name: 添加别名IP范围
+            href: Operation-Guide/Instance/Instance-Alias-IP.md
       - name: 网络
         items:
           - name: 私有网络
