@@ -51,8 +51,6 @@
         items:
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
-          - name: 自定义数据
-            href: Operation-Guide/Instance/User-Data.md
       - name: 网络
         items:
           - name: 私有网络
@@ -131,6 +129,10 @@
         items:
           - name: 概述
             href: Operation-Guide/Tag/Tag.md
+      - name: 自定义数据
+        items:
+          - name: 概述
+            href: Operation-Guide/User-Data/User-Data.md
   - name: 最佳实践
     items:
     - name: NAT网关网络安全方案
