@@ -65,6 +65,8 @@
             href: Operation-Guide/Networking/Route-Table.md
           - name: 弹性公网IP
             href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
+          - name: 别名IP
+            href: Operation-Guide/Networking/Alias-IP.md
           - name: IPv6互联网网关
             href: Operation-Guide/Networking/IPv6-Internet-Access.md
           - name: 负载均衡
