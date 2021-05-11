@@ -37,7 +37,7 @@
         href: Getting-Started/Getting-Started.md
       - name: 创建云物理服务器
         href: Getting-Started/Create-Cloud-Physical-Server.md
-      - name: 配置云物理服务器
+      - name: 确定配置项
         href: Getting-Started/Allocate-Cloud-Physical-Server.md
   - name: 操作指南
     items:
