@@ -20,7 +20,7 @@
 
 选取系统盘和数据盘的RAID模式。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取 **系统盘** 和 **数据盘** 的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 选取 **系统盘** 和 **数据盘** 的RAID模式。某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。
 
 #### 基础网络实例
 
@@ -51,7 +51,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 别名IP范围 ：如果您有多项服务在一台云物理服务器上运行，并且希望为每项服务分配一个不同的 IP 地址，可以使用别名IP范围功能实现。单实例主网口最多可添加50个，详见[别名IP范围](../Operation-Guide/Networking/Alias-IP.md)。 <br/>       
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公网带宽 ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。（创建后为主网口的弹性公网IP）</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公网IP ：如果实例要访问公网网络，可以在创建实例时勾选为其绑定弹性公网IP（由系统自动分配，不支持用户修改），也可以在实例创建后另行购买，支持与实例绑定、解绑。（创建后为主网口的弹性公网IP）</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽计费模式 ：支持按固定带宽计费方式。</br>
 
