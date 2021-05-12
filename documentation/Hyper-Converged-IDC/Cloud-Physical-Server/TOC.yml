@@ -39,8 +39,6 @@
         href: Getting-Started/Allocate-Cloud-Physical-Server.md
   - name: 操作指南
     items:
-      - name: 使用须知
-        href: Operation-Guide/Terms-and-Conditions.md
       - name: 实例
         items:
           - name: 创建实例
@@ -101,12 +99,10 @@
             href: Operation-Guide/Remote-Login/Description-Remote-Login.md
           - name: 操作步骤
             href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
-      - name: 生命周期管理
+      - name: 实例生命周期
         items:
           - name: 功能描述
             href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Description-Cloud-Physical-Server-Life-Cycle-Management.md
-          - name: 操作步骤
-            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Steps-Cloud-Physical-Server-Life-Cycle-Management.md
       - name: 监控
         items:
           - name: 硬件监控
