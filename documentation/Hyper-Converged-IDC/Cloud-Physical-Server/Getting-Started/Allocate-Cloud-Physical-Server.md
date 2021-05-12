@@ -14,9 +14,7 @@
 
 - 镜像
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如，现阶段支持“标准镜像类型。
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前支持 **标准镜像**。镜像类型包括 CentOS6.6、7.1、7.2、7.5，Ubuntu14.04、16.04、18.04和Windows Server 2016标准版64位中文版。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前支持 **标准镜像**，镜像类型包括 CentOS6.6、7.1、7.2、7.5，Ubuntu14.04、16.04、18.04和Windows Server 2016标准版64位中文版。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
 - 存储
 
