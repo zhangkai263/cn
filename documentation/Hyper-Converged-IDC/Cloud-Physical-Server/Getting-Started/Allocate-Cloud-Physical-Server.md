@@ -97,14 +97,16 @@
 
 - 高级设置 </br>   
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../Operation-Guide/User-Data/User-Data.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **自定义数据** ：用于启动时配置实例，仅在实例系统首次启动时执行，详见[自定义数据](../Operation-Guide/User-Data/User-Data.md)。<br/>   
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **标签** ：支持创建实例时绑定标签，单个实例最多可绑定10个标签，详见[标签](../Operation-Guide/Tag/Tag.md)。<br/>  
 
 - 购买时长 </br>  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **自动续费** ：包年包月资源开通自动续费功能。勾选自动续费待资源创建后，自动续费属性和时长均修改。按月购买，则自动续费周期为1个月；按年购买，则自动续费周期为1年，按年自动续费享受自动续费折扣。</br>  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 购买时长：支持1-9个月、1、2、3年。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 购买时长：包年包月计费方式支持1-9个月、1、2、3年。</br>  
 
-- 点击**立即购买**按钮，跳转到订单确认页
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  购买数量：购买数量受限与该地域您云物理服务器、弹性公网IP及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。 </br>  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照京东云统一的订单计费流程支付成功后，跳转回控制台列表页面。
+- 点击**立即购买**按钮，跳转到订单确认页，按照京东云统一的订单计费流程支付成功后，跳转至控制台列表查看资源信息。</br>  
