@@ -79,18 +79,21 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **防火墙** ：操作系统安装完成后，系统对外网网络只开放IN方向的22端口。操作系统安装成功后，用户可自行登录操作系统更改iptable设置。详见[防火墙设置操作指南](../Operation-Guide/Network-And-Security/Steps-Network-And-Security.md)。</br>
 
-
-
-
-
 - 基本信息：
-配置服务器名称、描述、操作系统密码。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **实例名称** ：实例名称是指云物理服务器的别名，用户可以自定义设置，设置完成后可以通过云物理服务器列表中使用别名来筛选。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **实例名称** ：实例名称是指云物理服务器的别名，用户可以自定义设置，设置完成后可以通过云物理服务器列表中使用别名来筛选。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主机名** ：主机名是指云物理服务器操作系统内部的计算机名，用户可以自定义设置，云物理服务器成功生产后可以通过登录云物理服务器内部查看。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 描述 ：可选择为实例添加描述。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主机名为可选项，如果不输入主机名，则默认使用“host-内网IPv4地址第三段-内网IPv4地址第四段”为主机名。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主机名** ：主机名是指云物理服务器操作系统内部的计算机名，用户可以自定义设置，云物理服务器成功生产后可以通过登录云物理服务器内部查看。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。（主机名为可选项，如果不输入主机名，则默认使用“host-内网IPv4地址第三段-内网IPv4地址第四段”为主机名。）
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用户名 ：根据所选操作系统自动设置，Linux系统默认为 **root** 。</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 登录方式 ：密码同时用于远程登录和控制台登录。</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、自定义密码：即“立即设置密码”，实例创建后支持修改；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、自动生成密码登录：即暂不设置密码，系统会以短信和邮件方式发送默认密码；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、密钥登录：对于Linux系统，可以选择SSH密钥登录，若采用密钥登录方式须先创建或导入密钥，详见[SSH密钥](../Operation-Guide/SSH-Key-Pair/Description-SSH-Key-Pair.md)。<br/>   
 
 - 购买时长：
 购买时长1-9个月、1、2、3年。
