@@ -34,11 +34,10 @@
 
 ## ext2、ext3或ext4文件系统的扩容
 
-1. 确认云硬盘已经在控制台完成扩容并再次挂载到此云主机后，从控制台重启此云主机。
+1. 在控制台完成对该云硬盘的扩容操作，控制台的扩容操作方式可参考https://docs.jdcloud.com/cn/cloud-disk-service/disk-expand
 
-   ![vm_restart](../../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/vm_restart.png)
-
-2. 重启后登陆此云主机，输入`lsblk` 命令检查设备名称：
+  
+2. 登陆此云硬盘挂载的云主机，输入`lsblk` 命令检查设备名称：
 
    `lsblk`
 
