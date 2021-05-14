@@ -34,6 +34,6 @@
 
 ![监控2](../../../../../image/TiDB/monitor-grafana-2.png)
 
-6. 选择需要看的信息，即可查看详细的监控指标。
+6. 选择需要看的信息，即可查看详细的监控指标。 各个监控指标的详细说明，可以参考[官方文档](https://docs.pingcap.com/zh/tidb/stable/grafana-overview-dashboard)
 
 ![监控3](../../../../../image/TiDB/monitor-grafana-3.png)
