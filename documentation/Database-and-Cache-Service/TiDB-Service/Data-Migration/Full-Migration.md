@@ -1,18 +1,21 @@
 # 全量数据迁移
 TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤主要分为以下3步：
 1. 对 MySQL 进行全量备份。
-2. 全量备份数据上传到OSS，并设置权限
+2. 全量备份数据上传到OSS，并设置权限。
 3. 通过控制台进行全量数据迁移。
 
 ## 操作步骤
 ### 一. 对 MySQL 进行全量备份
-1. 使用 Dumpling 工具导出MySQL的全量数据。 Dumpling相比其他MySQL的数据导出工具，性能更高。具体的使用方式和下载地址可参考 [帮助文档](https://docs.pingcap.com/zh/tidb/stable/dumpling-overview)。
+1. 使用 Dumpling 工具导出MySQL的全量数据。 Dumpling相比其他MySQL的数据导出工具，性能更高。具体的使用方式和下载地址可参考 [官方帮助文档](https://docs.pingcap.com/zh/tidb/stable/dumpling-overview)。
 
 > **注意：**
 > 1. 导出文件的格式必须是sql文件。
 > 2. 使用 -F 选项将单个文件的最大大小保持在 256 MiB 或以下。
 
-2. 将导出的数据打包为 *.tar.gz的格式
+2. 将导出的数据打包为 \*.tar.gz的格式，例如:
+```SHELL
+tar –zcvf dts.tar.gz ./*
+```
 
 
 ### 二. 上传数据，并设置权限
