@@ -2,7 +2,7 @@
 
 分布式数据库 TiDB 支持 MySQL 到 TiDB 的全量迁移，增量迁移，增量数据同步。
 
-1. 全量迁移：方案和步骤可参考文档 [全量数据迁移](../Operation-Guide/Data-Migration/Full-Migration.md) 。
+1. 全量迁移：方案和步骤可参考文档 [全量数据迁移](Full-Migration.md) 。
 2. 增量迁移：需使用DTS进行，具体步骤可参考文档 [增量数据迁移](Incremental-Migration.md) 。
 3. 增量数据同步：操作步骤同上，GTID可以从现有的 MySQL 选择一个GTID进行。
 
