@@ -20,11 +20,11 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 
 1. 进入控制台中的 **“对象存储”** ，点击 **“空间管理”**。
 
-![上传备份1](../../../../../image/TiDB/upload-data-1.png)
+![上传备份1](../../../../image/TiDB/upload-data-1.png)
 
 2. 点击空间名称，进入要上传文件的空间。
 
-![上传备份2](../../../../../image/TiDB/upload-data-2.png)
+![上传备份2](../../../../image/TiDB/upload-data-2.png)
 
 3. 选择 **Object管理** 页面，根据需要点击 **上传** 或者 **新建文件**。
 
@@ -32,11 +32,11 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 >
 > 控制台上传单个文件大小不超过 5GB，如需上传更大的文件请使用京东云对象存储提供的 [SDK](https://docs.jdcloud.com/cn/object-storage-service/multipart-upload-s3)。
 
-![上传备份3](../../../../../image/TiDB/upload-data-3.png)
+![上传备份3](../../../../image/TiDB/upload-data-3.png)
 
 4. 然后在该空间，选择 **空间设置** ， **添加自定义权限**。
 
-![权限设置1](../../../../../image/TiDB/Grant-File-Privilege-1.png)
+![权限设置1](../../../../image/TiDB/Grant-File-Privilege-1.png)
 
 5. 设置权限
 - 选择 **“自定义用户”** ，添加用户ID： **785455908940**。
@@ -49,13 +49,13 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 > 1. 785455908940 这个ID为后台系统ID，不能更改。
 > 2. 不要对该Bucket中 “空间设置” 下的 “静态网站托管” 页面中的任何参数进行设置，否则可能会导致文件读取失败。
 
-![权限设置2](../../../../../image/TiDB/Grant-File-Privilege-2.png)
+![权限设置2](../../../../image/TiDB/Grant-File-Privilege-2.png)
 
 ### 三. 通过控制台导入数据
 
 1. 登录京东云控制台，进入TiDB产品页，选择 **数据迁移** 功能页，点击 **从OSS导入** 。
 
-![全量迁移1](../../../../../image/TiDB/full-migration-1.png)
+![全量迁移1](../../../../image/TiDB/full-migration-1.png)
 
 2. 弹出数据导入界面，根据之前上传的OSS全量备份文件，评估原始数据量大小（**单位GB**）。
 
@@ -67,10 +67,10 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 
 3. 填写备份文件在OSS中的完整路径，然后点击 **校验**。当校验通过后，**确认** 按钮高亮。 例如数据文件存放在OSS的database-bak这个Bucket 中，在Bucket中的中路径为test-env/db1.bak, 则输入 database-bak/test_env/db1.bak. 然后点击 **确认** 按钮，开始全量数据迁移。
 
-![全量迁移2](../../../../../image/TiDB/full-migration-2.png)
+![全量迁移2](../../../../image/TiDB/full-migration-2.png)
 
 4. 在 **数据迁移** 页面中可看到迁移正在运行中。 待数据迁移完成，迁移状态会变成 **"完成"**。
 
-![全量迁移3](../../../../../image/TiDB/full-migration-3.png)
+![全量迁移3](../../../../image/TiDB/full-migration-3.png)
 
   	
