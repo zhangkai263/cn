@@ -16,6 +16,7 @@ TiDB 控制台支持将 MySQL 的数据全量迁移到 TiDB 中，迁移步骤�
 ```SHELL
 tar –zcvf dts.tar.gz ./*
 ```
+![打包文件](../../../../image/TiDB/tar-data-migration.png)
 
 
 ### 二. 上传数据，并设置权限
