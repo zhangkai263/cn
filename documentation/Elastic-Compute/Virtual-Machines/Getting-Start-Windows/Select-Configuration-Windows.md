@@ -33,7 +33,7 @@
 
 ### 实例规格
   
-提供 **通用** 、 **计算** 、 **内存优化** 、 **高频计算** 四类实例规格，从最小规格1C1GB（如g.s1.micro）到最大规格72C576GB（如m.n2.18xlarge），您可根据不同应用量级选择最优CPU内存比例的实例规格，详见[实例规格](../Introduction/Instance-Type-Family.md)。
+提供 **通用** 、 **计算优化** 、 **内存优化** 、 **高频计算** 、**存储优化**、**GPU**等多种实例规格，从最小规格1C1GB（如g.s1.micro）到最大规格96C352GB（如g.n4.24xlarge），您可根据不同应用量级选择最优CPU内存比例的实例规格，详见[实例规格](../Introduction/Instance-Type-Family.md)。
 
 ### 存储
   
@@ -88,7 +88,6 @@
 [子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)
 
 [安全组概述](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)
-
 
 [弹性公网IP计费规则](../../../Networking/Elastic-IP/Pricing/Billing-Rules.md)
 
