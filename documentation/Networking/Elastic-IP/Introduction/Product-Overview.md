@@ -5,14 +5,21 @@
 京东云目前采用业内领先的双活vRouter（Virtual Router，虚拟路由器）高可用技术，相对于传统的主备vRouter高可用方式，该技术在高并发连接、超大流量负载以及流量突发等场景下可以为用户提供链路冗余以及高可用性。基于该项技术，京东云弹性公网IP最大带宽可以达到用户实际购买带宽的150%，为用户业务提供保障。
 
 基于双活vRouter的流量分担模型，普遍情况下，弹性公网IP的最大带宽为用户实际购买带宽的150%；在极特殊情况下，如单连接FTP下载文件，弹性公网IP最大带宽约为用户实际购买带宽的75%。
-## EIP类型
+### EIP类型
 **标准弹性公网IP**：为中心可用区提供公网服务能力
 
 **边缘弹性公网IP**：为边缘可用区提供公网服务能力
 
 弹性公网IP的中心可用区及边缘可用区详细介绍请参考[地域及可用区](Region-Az.md)。
 
-## 特性优势
+### 线路类型
+|IP类型|线路|
+|-----|------|
+|标准公网IP|BGP、ISPBGP|
+|边缘公网IP|BGP、telecom（电信）、unicom（联通）、chinamobile（中国移动）|
+
+
+### 特性优势
 * 完全弹性
 * 支持多种弹性公网IP类型
 * 支持绑定多种云资源
@@ -20,7 +27,8 @@
 * 支持独立购买及持续保留
 
 详情请参考[产品优势](https://docs.jdcloud.com/cn/elastic-ip/benefits)。
-## EIP与普通IP的异同点
+
+### EIP与普通IP的异同点
 具体异同点如下表：
 |功能点|EIP|普通公网IP|
 |-----|------|------|
@@ -33,7 +41,7 @@
 
 
 
-## 快速入门
+### 快速入门
 **了解**：①[产品概述](Product-Overview.md)——>②[产品功能](Features.md)——>③[产品优势](Benefits.md)——>④[应用场景](Application-Scenarios.md)——>③[使用限制](Restrictions.md)。
 
 **使用**：①[创建EIP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)——>②[绑定云资源](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)——>③[调整带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)——>④[解绑云资源](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)——>⑤[删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)。
