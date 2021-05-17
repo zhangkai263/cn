@@ -48,3 +48,4 @@
 - [创建负载均衡](https://docs.jdcloud.com/cn/application-load-balancer/create-alb-instance)
 - [创建公网IP](https://docs.jdcloud.com/cn/elastic-ip/create-elastic-ip)
 - [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/disassociate-elastic-ip)
+- [配置说明](https://docs.jdcloud.com/cn/elastic-ip/lb-configuration-introduction)
