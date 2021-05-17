@@ -49,4 +49,5 @@
 - [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
 - [解绑弹性公网IP](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)
 - [修改弹性公网IP带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)
+- [常见问题](https://docs.jdcloud.com/cn/elastic-ip/faq)
 
