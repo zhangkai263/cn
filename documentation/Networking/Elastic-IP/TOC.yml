@@ -37,30 +37,18 @@
         items:
           - name: 配置介绍
             href: Getting-Started/Elastic-IP-with-VM/VM-Configuration-Introduction.md
-          - name: 创建云主机
-            href: Getting-Started/Elastic-IP-with-VM/Create-VM-Instance.md
-          - name: 云主机绑定弹性公网IP
-            href: Getting-Started/Elastic-IP-with-VM/Associate-VM-to-Elastic-IP.md
           - name: 弹性公网IP绑定云主机
             href: Getting-Started/Elastic-IP-with-VM/Associate-Elastic-IP-to-VM.md
       - name: 负载均衡使用弹性公网IP
         items:
           - name: 配置介绍
             href: Getting-Started/Elastic-IP-with-LB/LB-Configuration-Introduction.md
-          - name: 创建负载均衡
-            href: Getting-Started/Elastic-IP-with-LB/Create-LB-Instance.md
-          - name: 负载均衡绑定弹性公网IP
-            href: Getting-Started/Elastic-IP-with-LB/Associate-LB-to-Elastic-IP.md
           - name: 弹性公网IP绑定负载均衡
             href: Getting-Started/Elastic-IP-with-LB/Associate-Elastic-IP-to-LB.md
       - name: 原生容器使用弹性公网IP
         items:
           - name: 配置介绍
             href: Getting-Started/Elastic-IP-with-Container/Container-Configuration-Introduction.md
-          - name: 创建原生容器
-            href: Getting-Started/Elastic-IP-with-Container/Create-Container-Instance.md
-          - name: 原生容器绑定弹性公网IP
-            href: Getting-Started/Elastic-IP-with-Container/Associate-Container-to-Elastic-IP.md
           - name: 弹性公网IP绑定原生容器
             href: Getting-Started/Elastic-IP-with-Container/Associate-Elastic-IP-to-Container.md
   - name: 操作指南
