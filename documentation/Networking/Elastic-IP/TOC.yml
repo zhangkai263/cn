@@ -1,6 +1,8 @@
-﻿  name: 弹性公网 IP
+  name: 弹性公网 IP
   href: 
   items:
+  - name: 产品动态
+    href: Related-Resources/Document-History.md
   - name: 产品简介
     items:
       - name: 产品概述
@@ -11,6 +13,8 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
+      - name: 地域及可用区
+        href: Introduction/Region-Az.md
       - name: 使用限制
         href: Introduction/Restrictions.md
       - name: 应用场景 
