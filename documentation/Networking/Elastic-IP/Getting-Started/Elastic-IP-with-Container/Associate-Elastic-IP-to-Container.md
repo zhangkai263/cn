@@ -12,7 +12,8 @@
 
 步骤3：在弹性公网IP列表页，定位未绑定的弹性公网IP，在操作列点击【绑定资源】，进入弹性公网IP绑定资源弹窗。
 
-	目前弹性公网IP支持绑定云主机、负载均衡、容器、弹性网卡等资源。弹性公网IP详情页右上角快捷操作菜单同时提供绑定资源按键，功能与列表页按键保持一致。
+	- 目前弹性公网IP支持绑定云主机、负载均衡、容器、弹性网卡等资源
+	- 弹性公网IP详情页右上角快捷操作菜单同时提供绑定资源按键，功能与列表页按键保持一致
 
 步骤4：在绑定资源弹窗，点击资源类型的下拉列表，选择【容器】。
 
@@ -50,3 +51,4 @@
 - [使用限制](../../Introduction/Restrictions.md)
 - [创建公网IP](https://docs.jdcloud.com/cn/elastic-ip/create-elastic-ip)
 - [创建原生容器](https://docs.jdcloud.com/cn/native-container/create-to-instance)
+- [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/disassociate-elastic-ip)
