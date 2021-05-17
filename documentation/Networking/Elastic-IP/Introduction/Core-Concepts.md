@@ -14,6 +14,7 @@
 | VPN Gateway | VPN网关 | VPN为Virtual Private Network的缩写。VPN网关是基于互联网，通过加密隧道技术将企业数据中心与云上VPC进行安全互联的产品 |
 | NAT Gateway | NAT网关 | NAT为Network Address Translator的缩写。NAT网关可以为用户提供企业级VPC公网接入服务 |
 | Load Balancer | 负载均衡 | 负载均衡可以对多台云主机进行流量分发，提升应用系统的对外服务能力，消除单点故障 |
+|Shared Bandwidth Package|共享带宽包|多个公网IP的一种聚合计费和管理模式，支持多个公网IP复用共享一条带宽，实现对多个公网IP的统一管理、统一计费、统一监控|
 
 以下是边缘公网IP相关的概念及其解释，请参考。
 
@@ -29,3 +30,4 @@
 - [产品概述](Product-Overview.md)
 - [计费概述](../Pricing/Billing-Overview.md)
 - [常见问题](../FAQ/FAQ.md)
+- [共享带宽包](https://docs.jdcloud.com/cn/shared-bandwidth-package/product-overview)
