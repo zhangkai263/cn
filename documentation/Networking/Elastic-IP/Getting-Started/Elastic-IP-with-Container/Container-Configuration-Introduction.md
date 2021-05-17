@@ -24,5 +24,6 @@
 
 ## 相关参考
 - [创建VPC](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)
-- [绑定容器实例](Associate-Elastic-IP-to-Container.md)
+- [创建原生容器](https://docs.jdcloud.com/cn/native-container/create-to-instance)
 - [创建公网IP](https://docs.jdcloud.com/cn/elastic-ip/create-elastic-ip)
+- [绑定容器实例](Associate-Elastic-IP-to-Container.md)
