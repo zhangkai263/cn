@@ -1,4 +1,4 @@
-## 创建云物理服务器
+## 创建实例
 
 1、访问[实例控制台](https://cps-console.jdcloud.com/instance/basic/list)，或访问[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航“智能IDC-云物理服务器”，进入实例列表页。<br/>
 
