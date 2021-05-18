@@ -54,7 +54,7 @@
 
 ## 后续测试
 
-负载均衡实例与弹性公网IP绑定之后，您可以通过访问弹性公网IP地址的方式来负载均衡的后端服务。负载均衡相关配置请参考[负载均衡配置导览](https://docs.jdcloud.com/cn/network-load-balancer/start-from-here)
+负载均衡实例与弹性公网IP绑定之后，您可以通过访问弹性公网IP地址的方式来负载均衡的后端服务。相关配置请参考[负载均衡配置导览](https://docs.jdcloud.com/cn/network-load-balancer/start-from-here)
 
 
 ## 相关参考
