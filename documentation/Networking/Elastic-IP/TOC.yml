@@ -34,23 +34,11 @@
   - name: 入门指南
     items:
       - name: 云主机使用弹性公网IP
-        items:
-          - name: 配置介绍
-            href: Getting-Started/Elastic-IP-with-VM/VM-Configuration-Introduction.md
-          - name: 弹性公网IP绑定云主机
-            href: Getting-Started/Elastic-IP-with-VM/Associate-Elastic-IP-to-VM.md
+        href: Getting-Started/Elastic-IP-with-VM/Associate-Elastic-IP-to-VM.md
       - name: 负载均衡使用弹性公网IP
-        items:
-          - name: 配置介绍
-            href: Getting-Started/Elastic-IP-with-LB/LB-Configuration-Introduction.md
-          - name: 弹性公网IP绑定负载均衡
-            href: Getting-Started/Elastic-IP-with-LB/Associate-Elastic-IP-to-LB.md
+        href: Getting-Started/Elastic-IP-with-LB/Associate-Elastic-IP-to-LB.md
       - name: 原生容器使用弹性公网IP
-        items:
-          - name: 配置介绍
-            href: Getting-Started/Elastic-IP-with-Container/Container-Configuration-Introduction.md
-          - name: 弹性公网IP绑定原生容器
-            href: Getting-Started/Elastic-IP-with-Container/Associate-Elastic-IP-to-Container.md
+        href: Getting-Started/Elastic-IP-with-Container/Associate-Elastic-IP-to-Container.md
   - name: 操作指南
     items:
       - name: 弹性公网IP管理
