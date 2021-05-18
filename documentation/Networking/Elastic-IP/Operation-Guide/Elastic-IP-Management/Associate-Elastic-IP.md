@@ -6,7 +6,7 @@
 
 步骤1：登录京东云控制台，进入控制台导航页面。
 
-步骤2：在控制台左侧导航栏，选择网络-私有网络-弹性公网IP，进入弹性公网IP列表页。
+步骤2：在控制台左侧导航栏，选择网络-【私有网络】-【弹性公网IP】，进入弹性公网IP列表页。
 
 步骤3：在弹性公网IP列表页，若弹性公网IP处于未绑定状态，则显示【绑定资源】按键。
 
@@ -25,3 +25,4 @@
 
 - [使用限制](../../Introduction/Restrictions.md)
 - [常见问题](https://docs.jdcloud.com/cn/elastic-ip/faq)
+- [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/associate-elastic-ip)
