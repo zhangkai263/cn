@@ -64,6 +64,10 @@
         items:
           - name: 白名单设置
             href: Operation-Guide/Security/SetWhiteList.md
+      - name: 日志审计
+        items:
+          - name: SQL审计
+            href: Operation-Guide/Audit/audit.md
             
       - name: 最佳实践
         items:
