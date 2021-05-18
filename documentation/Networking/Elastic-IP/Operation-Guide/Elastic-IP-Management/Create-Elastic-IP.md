@@ -5,7 +5,15 @@
 - [创建标准公网IP](create-elastic-ip#user-content-1)
 - [创建边缘公网IP](create-elastic-ip#user-content-2)
 
-## 创建标准公网IP
+
+## 前提条件
+
+- 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://realname.jdcloud.com/account/verify)；
+
+- 确保账户中有足够余额，相关限制请查看[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
+
+
+### 创建标准公网IP
 
 <div id="user-content-1"></div>
 
@@ -44,7 +52,7 @@
 
 步骤1：登录京东云控制台，进入控制台导航页面。
 
-步骤2：在控制台左侧导航栏，选择网络-私有网络-弹性公网IP，进入弹性公网IP列表页。
+步骤2：在控制台左侧导航栏，选择网络-【私有网络】-【弹性公网IP】，进入弹性公网IP列表页。
 
 步骤3：确认您需要创建弹性公网IP的地域，在弹性公网IP列表页选中对应地域标签，点击申请按键，进入创建弹性公网IP页面。
 
