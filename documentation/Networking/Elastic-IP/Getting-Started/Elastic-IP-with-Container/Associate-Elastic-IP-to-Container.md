@@ -1,5 +1,19 @@
 # 绑定容器实例
-本文分别从公网IP产品侧绑定容器和从容器实例侧绑定公网IP的操作步骤。
+本文详细地介绍了如何将公网IP绑定到容器实例上，为容器提供公网访问和被公网访问的能力。
+
+## 前提条件
+
+- 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://realname.jdcloud.com/account/verify)；
+
+- 确保您已经创建一个弹性公网IP，且未绑定云资源；
+
+- 确保您已经创建一个容器，且未绑定弹性公网IP。
+
+## 操作流程
+
+分别介绍从公网IP产品侧绑定容器和从容器实例侧绑定公网IP的操作步骤，操作流程如下图所示：
+
+![弹性公网IP绑定云主机](../../../../../image/Networking/Elastic-IP/container.png)
 
 ## 弹性公网IP绑定容器实例
 从公网IP产品侧绑定容器实例，具体操作步骤如下：
@@ -19,7 +33,7 @@
 
 步骤5：选择需绑定公网IP的容器实例，点击【确定】按钮，完成绑定弹性公网IP操作。
 
-步骤7：返回弹性公网IP列表页，查看弹性公网IP绑定情况。
+步骤6：返回弹性公网IP列表页，查看弹性公网IP绑定情况。
 
 
 
@@ -49,6 +63,7 @@
 ## 相关参考
 
 - [使用限制](../../Introduction/Restrictions.md)
+- [创建VPC](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)
 - [创建公网IP](https://docs.jdcloud.com/cn/elastic-ip/create-elastic-ip)
 - [创建原生容器](https://docs.jdcloud.com/cn/native-container/create-to-instance)
 - [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/disassociate-elastic-ip)
