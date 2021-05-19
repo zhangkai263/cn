@@ -38,3 +38,4 @@
 - [使用限制](../../Introduction/Restrictions.md)
 - [常见问题](https://docs.jdcloud.com/cn/elastic-ip/faq)
 - [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/associate-elastic-ip)
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
