@@ -2,7 +2,22 @@
 
 京东云支持删除后付费的弹性公网IP。预付费的弹性公网IP在到期前不允许删除，更多不允许删除公网IP请查看[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)。
 
-## 操作步骤
+### 操作背景
+
+不再使用当前的弹性公网IP，避免产生不必要的成本开销。
+
+
+### 前提条件及限制
+
+- 确保待删除公网IP不再使用
+
+- 确保待删除公网IP处于未绑定状态，如处于绑定状态，请先[解绑资源](./Disassociate-Elastic-IP.md)
+
+- 包年包月未到期的公网IP不支持提前删除
+- 公网IP加入共享带宽包后不支持直接删除IP，需先[移除公网IP](https://docs.jdcloud.com/cn/shared-bandwidth-package/manage-public-ip#user-content-4)
+
+
+### 操作步骤
 
 步骤1：登录京东云控制台，进入控制台导航页面。
 
