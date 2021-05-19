@@ -14,7 +14,8 @@
 - 确保待删除公网IP处于未绑定状态，如处于绑定状态，请先[解绑资源](./Disassociate-Elastic-IP.md)
 
 - 包年包月未到期的公网IP不支持提前删除
-- 公网IP加入共享带宽包后不支持直接删除IP，需先[移除公网IP](https://docs.jdcloud.com/cn/shared-bandwidth-package/manage-public-ip#user-content-4)
+
+- 公网IP加入共享带宽包后不支持直接删除IP，需先从共享带宽包中[移除公网IP](https://docs.jdcloud.com/cn/shared-bandwidth-package/manage-public-ip#user-content-4)
 
 
 ### 操作步骤
@@ -41,5 +42,5 @@
 - [解绑弹性公网IP](./Disassociate-Elastic-IP.md)
 - [使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
 - [计费规则](https://docs.jdcloud.com/cn/elastic-ip/billing-rules)
-
+- [移除公网IP](https://docs.jdcloud.com/cn/shared-bandwidth-package/manage-public-ip#user-content-4)
 
