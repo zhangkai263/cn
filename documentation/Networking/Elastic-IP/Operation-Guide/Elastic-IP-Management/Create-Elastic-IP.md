@@ -5,8 +5,11 @@
 - [创建标准公网IP](create-elastic-ip#user-content-1)
 - [创建边缘公网IP](create-elastic-ip#user-content-2)
 
+### 操作背景
 
-## 前提条件
+需要使用弹性公网IP，支持独立绑定云资源，为云资源提供公网服务，标准公网IP或边缘公网IP。
+
+### 前提条件
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://realname.jdcloud.com/account/verify)；
 
