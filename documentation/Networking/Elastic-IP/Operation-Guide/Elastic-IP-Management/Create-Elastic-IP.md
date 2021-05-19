@@ -9,11 +9,13 @@
 
 需要使用弹性公网IP，支持独立绑定云资源，为云资源提供公网服务，标准公网IP或边缘公网IP。
 
-### 前提条件
+### 前提条件及限制
 
-- 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://realname.jdcloud.com/account/verify)；
+- 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 
-- 确保账户中有足够余额，相关限制请查看[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)
+- 确保账户中有足够余额，相关限制请查看[使用限制](https://docs.jdcloud.com/cn/elastic-ip/restrictions)；
+
+- 公网IP可创建数量受配额限制，如需提升配额请提[工单申请](https://ticket.jdcloud.com/applyorder/submit)。
 
 
 ### 创建标准公网IP
