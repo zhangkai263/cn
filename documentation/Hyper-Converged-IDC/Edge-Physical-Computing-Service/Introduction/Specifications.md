@@ -22,7 +22,12 @@
 		<td >EPCS-TS3040</td>
 		<td >E5-2640 v3 * 2/16G * 8/2.05T NVME-PCIE SSD * 1 + 300G SAS HDD * 2 + 4.1T SATA HDD * 12</td>
 	        <td >4860</td>   
-     </tr>   
+     </tr>
+	<tr>
+		<td >EPCS-C14</td>
+		<td >E5-2683 v4 * 2/32 GB*8/600 GB*8(HDD)</td>
+	        <td >6925</td>   
+     </tr>
 	<tr>
 		<td >EPCS-B14</td>
 		<td >E5-2650 v4 * 2/32G * 8/300G SAS HDD * 2 + 6000G SATA HDD * 12</td>
