@@ -24,14 +24,17 @@ v1
 |**createQualityDetectionTemplate**|POST|创建质检模板|
 |**createSnapshotTemplate**|POST|创建截图模板|
 |**createTranscodeTemplate**|POST|创建转码模板|
+|**createTranscodeTemplateGroup**|POST|创建转码模板组|
 |**createVideoUploadTask**|POST|获取视频上传地址和凭证|
 |**createWatermark**|POST|添加水印|
 |**deleteCategory**|DELETE|删除分类|
 |**deleteDomain**|DELETE|删除域名。执行该操作，需确保域名已被停用。|
+|**deleteGroupedTranscodeTemplates**|POST|删除转码模板组中的模板。<br>|
 |**deleteHeader**|POST|删除域名访问头参数|
 |**deleteQualityDetectionTemplate**|DELETE|删除质检模板|
 |**deleteSnapshotTemplate**|DELETE|删除截图模板|
 |**deleteTranscodeTemplate**|DELETE|删除转码模板|
+|**deleteTranscodeTemplateGroup**|DELETE|删除转码模板组|
 |**deleteVideo**|DELETE|删除视频，调用该接口会同时删除与指定视频相关的所有信息，包括转码任务信息、转码流数据等，同时清除云存储中相关文件资源。|
 |**deleteVideoStreams**|POST|删除视频转码流|
 |**deleteWatermark**|DELETE|删除水印|
@@ -49,6 +52,7 @@ v1
 |**getTranscodeSummaries**|GET|查询视频转码摘要|
 |**getTranscodeTaskSummaries**|GET|查询转码任务摘要|
 |**getTranscodeTemplate**|GET|查询转码模板|
+|**getTranscodeTemplateGroup**|GET|查询转码模板组|
 |**getURLRule**|GET|查询CDN域名URL鉴权规则配置|
 |**getVideo**|GET|查询单个视频信息|
 |**getVideoPlayInfo**|GET|获取视频播放信息|
@@ -59,6 +63,7 @@ v1
 |**listHeaders**|GET|查询域名访问头参数列表|
 |**listQualityDetectionTemplates**|GET|查询质测模板列表。<br>|
 |**listSnapshotTemplates**|GET|查询截图模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- templateType[eq] 按模板类型精确查询<br>|
+|**listTranscodeTemplateGroups**|GET|查询转码模板组列表。<br>|
 |**listTranscodeTemplates**|GET|查询转码模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- source[eq] 按模板来源精确查询<br>  \- templateType[eq] 按模板类型精确查询<br>|
 |**listVideos**|GET|查询视频列表信息。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- status[eq] 按视频状态精确查询<br>  \- categoryId[eq] 按分类ID精确查询<br>  \- videoId[eq] 按视频ID精确查询<br>  \- name[eq] 按视频名称精确查询<br>|
 |**listWatermarks**|GET|查询水印列表|
@@ -76,6 +81,7 @@ v1
 |**updateQualityDetectionTemplate**|PUT|修改质检模板|
 |**updateSnapshotTemplate**|PATCH|修改截图模板|
 |**updateTranscodeTemplate**|PUT|修改转码模板|
+|**updateTranscodeTemplateGroup**|PUT|修改转码模板组|
 |**updateVideo**|PUT|修改视频信息|
 |**updateWatermark**|PUT|修改水印|
 |**videoAudit**|POST|视频审核<br>视频在上传中或者转码中不允许更改视频审核状态，即视频只有在正常或屏蔽状态下才可以调用此接口设置审核状态<br>|
