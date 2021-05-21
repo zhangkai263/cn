@@ -132,6 +132,10 @@ items:
     href: Elastic-IP-For-Physical-Cloud-Terms-Of-Service.md
   - name: 物理云公网IP服务等级协议（SLA）
     href: Elastic-IP-For-Physical-Cloud-Level-Agreement-SLA.md
+  - name: 物理云NAT网关服务协议
+    href: Physical-Cloud-NAT-Gateway-Service-Clause.md
+  - name: 物理云NAT网关服务等级协议（SLA）
+    href: Physical-Cloud-NAT-Gateway-Service-Level-Agreement.md
   - name: 消息队列 JCQ服务协议
     href: Message-Queue-JCQ-Service-Terms.md
   - name: 消息队列 JCQ服务等级协议（SLA）
