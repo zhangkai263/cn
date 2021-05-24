@@ -29,3 +29,4 @@
 
 - [计费规则](https://docs.jdcloud.com/cn/elastic-ip/billing-rules)
 - [创建弹性公网IP](../Elastic-IP-Management/Create-Elastic-IP.md)
+- [查看弹性公网IP订单](View-Ip-Order.md)
