@@ -45,3 +45,10 @@
 
 步骤6：在订单确认页，点击立即开通，完成支付并返回弹性公网IP列表页，查看带宽修改情况。
 
+## 相关参考
+
+- [使用限制](../../Introduction/Restrictions.md)
+- [常见问题](https://docs.jdcloud.com/cn/elastic-ip/faq)
+- [创建公网IP](Create-Elastic-IP.md)
+- [单IP限速](https://docs.jdcloud.com/cn/shared-bandwidth-package/manage-public-ip#user-content-3)
+
