@@ -27,10 +27,15 @@
         href: Pricing/Billing-Rules.md
       - name: 价格总览
         href: Pricing/Price-Overview.md
+      - name: 计费类型转换
+        href: Pricing/Change-Billing.md
       - name: 购买流程
         href: Pricing/Purchase-Process.md 
       - name: 续费流程
         href: Pricing/Renew-Process.md
+      - name: 常见计费问题
+        href: Pricing/FAQ.md
+       
   - name: 入门指南
     items:
       - name: 云主机使用弹性公网IP
@@ -43,18 +48,20 @@
     items:
       - name: 管理弹性公网IP
         items:
-          - name: 创建弹性公网IP
+          - name: 创建公网IP
             href: Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md
-          - name: 删除弹性公网IP
+          - name: 删除公网IP
             href: Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md
-          - name: 绑定弹性公网IP
+          - name: 绑定公网IP
             href: Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md
-          - name: 解绑弹性公网IP
+          - name: 解绑公网IP
             href: Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md
-          - name: 修改弹性公网IP
+          - name: 修改公网IP
             href: Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md
-          - name: 续费弹性公网IP
+          - name: 续费公网IP
             href: Operation-Guide/Elastic-IP-Management/Renew-Elastic-IP.md
+          - name: 导出公网IP列表
+            href: Operation-Guide/Export-Elastic-IP-List/Export-Elastic-IP-List.md      
       - name: 监控与报警
         items:
           - name: 监控概述
@@ -65,14 +72,10 @@
             href: Operation-Guide/View-Elastic-IP-Monitoring/Set-Alarm.md
       - name: 账单与订单
         items:
-          - name: 查看弹性公网IP账单信息
+          - name: 查看公网IP账单信息
             href: Operation-Guide/View-Elastic-IP-Billing/View-Elastic-IP-Billing.md
-          - name: 查看弹性公网IP订单信息
+          - name: 查看公网IP订单信息
             href: Operation-Guide/View-Elastic-IP-Billing/View-Ip-Order.md
-      - name: 导出弹性公网IP列表
-        items:
-          - name: 导出弹性公网IP列表
-            href: Operation-Guide/Export-Elastic-IP-List/Export-Elastic-IP-List.md      
   - name: 最佳实践
     items:
     status: 0
