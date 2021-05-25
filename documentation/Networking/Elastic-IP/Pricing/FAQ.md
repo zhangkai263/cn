@@ -64,4 +64,10 @@ A：不支持，支持按配置或按包年包月计费。
 
 A：支持，按包年包月计费的边缘公网IP不支持转换成按配置计费。
 
+## 相关参考
+
+- [计费规则](Billing-Rules.md)
+- [价格总览](Price-Overview.md)
+- [计费类型转换](Change-Billing.md)
+- [创建公网IP](Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
 
