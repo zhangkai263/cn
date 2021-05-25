@@ -20,7 +20,7 @@
 
 1. 登录[云搜索Elasticsearch 控制台](https://es-console.jdcloud.com/clusters)。</br>
 2. 在云搜索Elasticsearch集群列表页，选择要扩容的集群，点击“操作-更多-变更配置”进行集群参数变更的设置。
-
- ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/变配_2020.png)
+ 
+ ![查询1](https://github.com/jdcloudcom/cn/blob/es-2021/image/Internet-Middleware/JCS%20for%20Elasticsearch/变配_2020.png)
 
 
