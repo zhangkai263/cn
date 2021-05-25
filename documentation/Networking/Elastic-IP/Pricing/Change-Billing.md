@@ -18,6 +18,7 @@
 - [续费公网IP](../Operation-Guide/Elastic-IP-Management/Renew-Elastic-IP.md)
 - [价格总览](Price-Overview.md)
 - [计费规则](Billing-Rules.md)
+- [常见计费问题](FAQ.md)
 
 
 
