@@ -105,7 +105,7 @@
 
 4. 在防护配置页面，单击**访问控制**页签，定位到**白名单**模块，开启**状态**开关，并点击**添加规则**。
 
-   ![image](D:\Web应用防火墙-官网文档\cn\image\WAF\protect-configure\23.White-List-IP-Instance1.png)
+   ![image](../../../../../image/WAF/protect-configure/23.White-List-IP-Instance1.png)
 
 5. 在**白名单**页面，可以配置**IP白名单**。输入要放行的IP地址，可以输入IPv4（8 16 24 32）和IPv6（64 128）地址及IP段。IP命中匹配值后的请求，可以选择直接放行，或者选择后续执行阶段。配置完成后，单击页面下方的**确定**。
 
