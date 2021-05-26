@@ -31,4 +31,4 @@
 
 [镜像类型转换](Convert-Image.md)
 
-[云硬盘快照收费](https://docs.jdcloud.com/cloud-disk-service/price-overview)。
+[云硬盘快照收费](https://docs.jdcloud.com/cloud-disk-service/price-overview)
