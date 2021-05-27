@@ -22,7 +22,9 @@
 2. 在**私有镜像**TAB下，选择需要转换的本地盘系统盘私有镜像，点击 **更多-镜像类型转换**。<br>
 ![](../../../../../image/vm/Operation-Guide-Image-Convert1.png)
 3. 在确认弹窗中点击 **确定**，开始镜像转换任务。新镜像名称、系统盘快照名称均默认与原镜像相同，可创建完成后自行修改。
-![](../../../../../image/vm/Operation-Guide-Image-convert2.png)
+<div align="center">
+<img src="../../../../../image/vm/Operation-Guide-Image-convert2.png" width="700">
+</div>
 
 ## 相关参考
 
