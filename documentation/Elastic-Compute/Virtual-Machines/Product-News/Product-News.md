@@ -1,8 +1,29 @@
 # 产品动态
+## 2021年
+
+| 功能名称 | 功能描述 | 发布时间 | 相关文档|
+| :---------------| :--------------|:------------|:--------
+|修改云主机私有网络配置功能上线|若创建实例时选错VPC/子网或在与其他网络环境打通时存在IP地址冲突，可通过修改网络配置功能调整实例的内网IP地址，进而实现网络的重新规划。|2021-04|[修改私有网络配置](https://docs.jdcloud.com/cn/virtual-machines/modify-vpc-attribute)|
+|实例抵扣券支持调整配置|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2021-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
+|资源预留型实例抵扣券产品上线|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2021-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
+|云主机事件服务上线|云主机事件是对接云事件服务，提供的一类系统事件通知功能。事件是针对资源生命周期中平台底层基础设施维护、资源重要属性变更等所发送的一类统一格式的通知。基于事件用户可及时获知资源动态，完善云上业务的自动化运维和监控流程。|2021-03|[事件服务](https://docs.jdcloud.com/cn/virtual-machines/event-overview)
+| CentOS 8.2 镜像发布|全地域支持CentOS 8.2 镜像，丰富操作系统类型。|2021-01|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
 ## 2020年
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------
+|元数据metadata查询功能上线|实例元数据是云主机实例的基本信息，包括实例id、内/外网IP地址等，用户可在云主机内通过访问元数据服务来查看实例的元数据，以便于针对某些元数据进行实例内部的配置或与外部应用的连接	|2020-12|[实例元数据](https://docs.jdcloud.com/cn/virtual-machines/instance-metadata)
+|云主机支持SSH密钥绑定/解绑|支持云主机创建后按需绑定/解绑SSH密钥|2020-12|[绑定密钥](https://docs.jdcloud.com/cn/virtual-machines/bind-keypair)
+|自动镜像任务策略上线|可通过自动镜像策略为用户的云主机设置周期性的主机备份任务，此功能可免去用户定期手动为云主机制作镜像的工作，也可避免由于人为疏忽造成的疏漏。|2020-07|[自动镜像策略](https://docs.jdcloud.com/cn/virtual-machines/autoimagepolicy)
+|云主机创建时设置云盘快照策略|创建云主机时，用户可根据备份需要，在存储模块中为每块云盘指定快照策略，系统会根据策略自动定期备份用户云盘|2020-07|[创建实例](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
+|删除镜像支持删除关联快照|删除私有镜像时，可以选择将镜像关联快照一同删除。|2020-06|[删除镜像](https://docs.jdcloud.com/cn/virtual-machines/delete-private-image)
+|无资源预留型实例抵扣券产品上线|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2020-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
+|停机不计费上线|计费方式为按配置且系统盘为云盘的云主机，在停机时可设置为计算资源不计费模式，节省用户开销。|2020-04|[停机不计费](https://docs.jdcloud.com/cn/virtual-machines/uncharged_for_stopped_vm)
+|计算优化密集型上线|新增cpu内存比为1:1的计算优化-密集型规格族|2020-04|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)
+|第二代共享型云主机上线|提供高性价比的云主机，采用非绑定CPU调度模式，每个vCPU会被分配到任何空闲的超线程核上，不同实例的vCPU可以互相争抢物理CPU资源。	|2020-03|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)
+|云主机支持角色（role）创建与使用|可以使用角色对云主机实例进行访问、创建、使用等权限控制管理。	|2020-02|[角色管理](https://docs.jdcloud.com/cn/iam/role-overview)
+|GPU虚拟化云主机上线|提供vComputeServer和Quadro vDWS 两种Nvidia虚拟化类型GPU；提供1/2、1/4、1/6三种虚拟化规格的P40卡主机规格|2020-02|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)
+|私有镜像导出|支持将用户的私有镜像，以QCOW2的格式导出至与镜像同地域的指定的OSS Bucket中。|2020-01|[镜像导出](https://docs.jdcloud.com/cn/virtual-machines/export-private-image)
 |华南-广州地域开放新可用区|华南-广州地域开放新可用区|2020-01|[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)
 |第三代云主机上线|第三代云主机基于京东定制化的第二代英特尔®至强®可扩展处理器 Cascade Lake Gold 6267及Mellanox CX-5智能网卡开发。提供更高性能。|2020-01|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)
 |云主机新增监控指标|新增二十余项监控指标。采集粒度更细，支持磁盘、网卡、GPU卡维度相关指标的监控和报警，同时新增平均负载、TCP链接等实例整体指标。|2020-01|[监控](https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview)
@@ -75,5 +96,4 @@
 | 云主机正式上线             | 云主机是京东云提供的一种云计算基础服务单元，提供处理能力可弹性伸缩的计算服务。包含CPU、内存、操作系统、磁盘、网络、安全等全部所需资源，每种资源都提供多种规格，以满足不同业务的个性化需求。 | 2016-04        |[云主机](https://docs.jdcloud.com/cn/virtual-machines/product-overview)
 
 
- 
  
