@@ -24,6 +24,10 @@
 3. 在确认弹窗中点击 **确定**，开始镜像转换任务。新镜像名称、系统盘快照名称均默认与原镜像相同，可创建完成后自行修改。
 ![](../../../../../image/vm/Operation-Guide-Image-convert2.png)
 
+## 相关参考
+
+[镜像类型](https://docs.jdcloud.com/virtual-machines/image-type)
+
   [1]: https://cns-console.jdcloud.com/host/image/list
   [2]: https://console.jdcloud.com/
  
