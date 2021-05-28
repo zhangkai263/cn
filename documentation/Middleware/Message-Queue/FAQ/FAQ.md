@@ -54,4 +54,4 @@ A：该报错是因为网络不通，通常有如下几种原因:
 **Q：SDK报错```
 The heart beat service for the channel localAddress: 10.0.0.3:44452, remoteAddress: 100.72.13.171:2888 has already been shutdown```**
 
-A：该报错是客户端重新拉取路由，属于正常情况
+A：该报错是客户端重新拉取路由，属于正常情况。
