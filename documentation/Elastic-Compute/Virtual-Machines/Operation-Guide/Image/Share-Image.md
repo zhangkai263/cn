@@ -30,7 +30,8 @@
 5. 已经共享的账号会在下方列表中展示，可在此直接进行【取消共享】操作。
 ![](../../../../../image/vm/Operation-Guide-Image-share2.png)
 
-
+## 相关参考
+[取消共享私有镜像](https://docs.jdcloud.com/virtual-machines/cancel-share-image)
 
 
 
