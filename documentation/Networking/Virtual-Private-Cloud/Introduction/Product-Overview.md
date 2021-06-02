@@ -5,11 +5,8 @@
 京东云私有网络(Virtual Private Cloud，简称VPC)，是您在京东公有云上自定义的逻辑隔离的网络空间，与您在数据中心搭建的传统网络类似，此私有网络空间由用户完全掌控，支持自定义网段划分、路由策略等。用户可以在VPC内创建和管理多种云产品，如云主机、负载均衡等，同时可配置网络内的资源连接Internet。另外，您可以通过VPN\专线接入，打通您的IDC内网和京东云网络，实现应用的混合云部署，以及将应用平滑地迁移至云上。
 
 
-
-### 私有网络整体结构
-
-![私有网络整体结构](/image/Networking/Virtual-Private-Cloud/VPC_Infrastrucure.png)
-
+### 相关功能
+一个私有网络的必要组成部分包括一个私有网络网段、子网、路由表，子网必须绑定一个路由表，京东云支持的私有网段有：10.0.0.0/16、172.16.0.0/16、192.168.0.0/16，每个网段包含65532个可用IP地址（不包含保留地址）。为保障子网内业务安全性，可在子网上绑定ACL，制定相关的ACL策略；如需保障子网中某个资源实例的安全，可通过安全组进行保障，支持自定义安全组规则；若同地域下不同VPC的资源需要进行通信，可通过VPC对等连接实现。
 
 
 ### 私有网络VS传统网络
@@ -37,6 +34,14 @@
 
  
 
-### 私有网络安全性
+### 快速入门
 
-用户可自主建立VPC网络，不同VPC间逻辑隔离，用户可自定义VPC网段和子网网段，可设置子网级别的ACL策略，为子网内的实例绑定安全组，提供多重安全保障。
+**了解**：①[产品概述](Product-Overview.md)——>②[产品功能](Features.md)——>③[产品优势](Benefits.md)——>④[应用场景](Application-Scenarios.md)——>③[使用限制](Restrictions.md)。
+
+**使用**：①[创建EIP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)——>②[绑定云资源](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)——>③[调整带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)——>④[解绑云资源](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)——>⑤[删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)。
+
+
+
+## 相关参考
+
+- 
