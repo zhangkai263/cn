@@ -44,7 +44,7 @@
 >备注：
 >* 非GPU规格：1计算力=1核；GPU规格：1计算力=1卡
 
-## 购买实例抵扣券
+## 操作步骤
 
 1、访问[实例抵扣券控制台](https://cns-console.jdcloud.com/host/instancevoucher/list)，或在[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航栏**弹性计算-云主机-实例抵扣券**或**弹性计算-原生容器-实例抵扣券**进入实例抵扣券列表页。<br>
 
