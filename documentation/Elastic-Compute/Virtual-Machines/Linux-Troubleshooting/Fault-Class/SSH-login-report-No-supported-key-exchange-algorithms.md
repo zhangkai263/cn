@@ -189,7 +189,7 @@ total 156
 对于 Ubuntu 、Debain 类操作系统，修复指令如下：
 
 ```
-sudo rm -r /etc/ssh/sshkey*
+sudo rm -rf /etc/ssh/sshkey*
 
 sudo dpkg-reconfigure openssh-server
 ```
