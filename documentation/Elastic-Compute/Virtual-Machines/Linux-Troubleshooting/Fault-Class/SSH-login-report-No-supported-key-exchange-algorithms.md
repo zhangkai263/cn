@@ -53,7 +53,7 @@ cd /etc/ssh/
 
 chmod 600 ssh_host_*
 
-*chmod 644* *.pub*
+chmod 644* *.pub
 ```
 
 
