@@ -28,6 +28,9 @@
 
 ### 1、确认对象存储空间<br>
 镜像只能导出到同地域下OSS的Bucket中，因此如果有多个地域下的私有镜像需要导出，请确认各地域下均有可以存放镜像文件的Bucket。<br>有关Bucket创建请参考：[创建存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)。<br>
+
+<div id="user-content-1"></div>
+
 ### 2、创建服务角色<br>
 访问 [角色管理控制台](https://iam-console.jdcloud.com/role/list)，或访问 [京东智联云控制台](https://console.jdcloud.com/overview) 依次点击顶部【云服务】菜单中的【管理】-【访问控制】-【角色管理】进入角色管理页面。<br>
 ![](../../../../../image/vm/image-export-image2.png)
