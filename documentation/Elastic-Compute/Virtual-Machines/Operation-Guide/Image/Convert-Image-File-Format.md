@@ -13,10 +13,10 @@ Linux系统可使用qemu-img进行系统盘镜像的导出及格式转换。支�
 ```
 qemu-img convert -O qcow2 /dev/vda /mnt/vdb/image_out.qcow2
 ```
-其中：
-* -O 用来指定目标镜像格式（示例中：qcow2）、导出为镜像的源磁盘（示例中：/dev/vda）、目标镜像文件名及存放路径（示例中：/mnt/vdb/image_out.qcow2）
+>说明：<br>
+>* -O 用来指定目标镜像格式（示例中：qcow2）、导出为镜像的源磁盘（示例中：/dev/vda）、目标镜像文件名及存放路径（示例中：/mnt/vdb/image_out.qcow2）
 
-3、如果本地远程连接工具使用的是Xshell，可以安装lrzsz，将文件压缩后（压缩后文件须小于4GB），下载至Xshell中设置的目录中。
+3、如果本地远程连接工具使用的是Xshell，可以安装lrzsz，将文件压缩后（压缩后文件须小于4GB），下载至Xshell设置的目录中。
 
 ```
 yum -y install lrzsz
@@ -58,9 +58,9 @@ Windows系统可使用微软官方提供的 [Disk2vhd](https://docs.microsoft.co
 ```
 .\qemu-img.exe convert -f raw -O qcow2 image.raw image_out.qcow2
 ```
-其中：
-* -f 用来指定源镜像文件格式（示例中：raw）
-* -O 用来指定目标镜像格式（示例中：qcow2）、源镜像文件名（示例中：image.raw）、目标镜像文件名（示例中：image_out.qcow2）
+>说明：<br>
+>* -f 用来指定源镜像文件格式（示例中：raw）<br>
+>* -O 用来指定目标镜像格式（示例中：qcow2）、源镜像文件名（示例中：image.raw）、目标镜像文件名（示例中：image_out.qcow2）
 
 4、执行下述指令可查看生成的镜像信息。
 ```
