@@ -65,7 +65,7 @@
 
 实例支持使用本地盘及云硬盘作为其数据盘。其中：
 
-* **本地盘** 当前仅部分实例类型（如：GPU标准型、存储优化型等）提供，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景，不建议存储重要数据。
+* **本地盘** 当前仅部分实例类型（如：GPU标准型、存储优化型等）提供，本地数据盘的数量和单盘容量取决于规格中的配置，且与实例同生命周期，不允许操作卸载挂载或进行容量调整。由于其有丢失数据的风险（比如发生迁移或宿主机宕机等情况），因此不适用于应用层没有数据冗余架构的使用场景，通常仅将其作为中间数据的临时存储介质，不建议存储重要数据。
 
 * **云硬盘** 支持多种类，包括通用型SSD云盘、性能型SSD云盘、容量型HDD云盘。每个实例至多可挂载7/8块云硬盘作数据盘（若系统盘为云硬盘则可挂载7块云硬盘作数据盘），若需调整此限额请[提交工单][1]申请，更多信息，请参考[云硬盘产品文档](http://docs.jdcloud.com/cn/cloud-disk-service/product-overview)。
 
@@ -77,6 +77,10 @@
 ![](../../../../../image/vm/Operation-Guide-CD-overview.png)
 
 <div id="user-content-1"></div>
+
+## 存储计费
+本地系统盘免费，容量固定40GB。本地数据盘与实例同生命周期，其价格包含在实例价格中。<br>
+云盘系统盘及数据盘的价格取决于磁盘类型和容量，详细价格参见[云硬盘价格](https://docs.jdcloud.com/cloud-disk-service/price-overview)。
 
 ## 多点挂载云硬盘
 
@@ -99,5 +103,7 @@
 [多点挂载云硬盘使用方法](https://docs.jdcloud.com/cloud-disk-service/multiattachdisk)
 
 [设备名分配规则](https://docs.jdcloud.com/virtual-machines/assign-device-name)
+
+[云硬盘价格](https://docs.jdcloud.com/cloud-disk-service/price-overview)
 
   [1]: https://ticket.jdcloud.com/myorder/submit
