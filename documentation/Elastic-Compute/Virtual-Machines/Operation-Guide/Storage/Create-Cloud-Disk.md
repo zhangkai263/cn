@@ -1,27 +1,22 @@
 # 创建云硬盘
 
-京东智联云为您提供多种创建云硬盘方法：
+云硬盘创建方式包括以下几种：
 
-* 实例创建时一起创建云硬盘，详细请参考[创建实例](../Instance/Create-Instance.md)；
-* 单独[创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-cloud-disk)；
-* [使用快照创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)，即可在新硬盘中保留某一云硬盘的历史时间点数据。
+* 随实例创建，详细请参考[创建实例](../Instance/Create-Instance.md)；
+* 创建空盘，挂载至实例使用，请参考[创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-cloud-disk)；
+* 基于已有快照创建，以获得某一云硬盘的备份数据，请参考[使用快照创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)。
 
+## 注意事项
+* 每个地域云硬盘默认配额为15块，如需更多资源可提交工单提升配额；
+* 单实例可以支持最多挂载8块云硬盘，单盘容量上限为16000GB；
+* 支持在创建空数据盘时指定云硬盘加密属性，加密属性一经配置无法修改且会继承于基于该盘所创建的快照中；同理，若使用快照创建数据盘则云硬盘的加密属性取决于快照；
+* 创建按配置计费云硬盘，需要保证您的余额（账号余额+加可用代金券）不低于50元；
 
-		请注意：
-		* 默认每个地域云硬盘限额为15块，可以通过提交工单提升限额；
-        * 单实例可以支持最多挂载8块云硬盘；
-        * 支持在创建空数据盘时指定云硬盘加密属性，加密属性一经配置无法修改且会继承于基于该盘所创建的快照中；同理，若使用快照创建数据盘则云硬盘的加密属性取决于快照；
-        * 每块通用型SSD云盘、性能型SSD云盘或容量型HDD云盘最大支持16000GB容量；
-        * 若您需要创建按配置计费云硬盘，您需要保证您的余额加可用代金券不低于50元，若当前余额不足请进行充值；
-        * 目前实例不支持合并多块云硬盘。云盘创建后，每块云硬盘都是独立个体，无法通过格式化将多块云硬盘空间合并到一起。建议您提前做好磁盘数量和容量的规划；若云硬盘已经创建，但您需要对其进行扩容，可按以下步骤操作：
-          * 包年包月云硬盘，通过扩容云硬盘实现；
-          * 按配置计费的云硬盘，您可对其创建云硬盘快照，再使用快照创建新盘，旧盘即可删除。
 
 ## 相关参考
 [创建实例](../Instance/Create-Instance.md)
 
 [创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-cloud-disk)
-
 
 [使用快照创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)
 
