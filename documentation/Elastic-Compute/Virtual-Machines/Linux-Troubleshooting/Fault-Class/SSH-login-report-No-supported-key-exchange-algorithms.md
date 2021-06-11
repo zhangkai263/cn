@@ -48,44 +48,49 @@ SSH 服务会对相关密钥文件的权限进行检查。比如，私钥文件�
 
 可以通过如下指令恢复相关文件的默认权限配置：
 
+```Shell
+cd /etc/ssh/
 
-*cd /etc/ssh/*
+chmod 600 ssh_host_*
 
-*chmod 600 ssh_host_**
+chmod 644* *.pub
+```
 
-*chmod 644* *.pub*
 
 
 操作示意如下：
 
+```
+[root@centos]# cd /etc/ssh/
 
-*[root@centos]# cd /etc/ssh/*
+[root@centos]# chmod 600 ssh_host_*
 
-*[root@centos]# chmod 600 ssh_host_**
+[root@centos]# chmod 644* *.pub
 
-*[root@centos]# chmod 644* *.pub*
+[root@centos]# ll
 
-*[root@centos]# ll*
+total 156
 
-*total 156*
+-rw-------. 1 root root 125811 Nov 23  2013 moduli
 
-*-rw-------. 1 root root 125811 Nov 23  2013 moduli*
+-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config
 
-*-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config*
+-rw-------  1 root root   3639 May 16 11:43 sshd_config
 
-*-rw-------  1 root root   3639 May 16 11:43 sshd_config*
+-rw-------  1 root root    668 May 20 23:31 ssh_host_dsa_key
 
-*-rw-------  1 root root    668 May 20 23:31 ssh_host_dsa_key*
+-rw-r--r--  1 root root    590 May 20 23:31 ssh_host_dsa_key.pub
 
-*-rw-r--r--  1 root root    590 May 20 23:31 ssh_host_dsa_key.pub*
+-rw-------  1 root root    963 May 20 23:31 ssh_host_key
 
-*-rw-------  1 root root    963 May 20 23:31 ssh_host_key*
+-rw-r--r--  1 root root    627 May 20 23:31 ssh_host_key.pub
 
-*-rw-r--r--  1 root root    627 May 20 23:31 ssh_host_key.pub*
+-rw-------  1 root root   1675 May 20 23:31 ssh_host_rsa_key
 
-*-rw-------  1 root root   1675 May 20 23:31 ssh_host_rsa_key*
+-rw-r--r--  1 root root    382 May 20 23:31 ssh_host_rsa_key.pub
+```
 
-*-rw-r--r--  1 root root    382 May 20 23:31 ssh_host_rsa_key.pub*
+
 
 
 **方法二：检查文件有效性**
@@ -94,94 +99,100 @@ SSH 服务会对相关密钥文件的权限进行检查。比如，私钥文件�
 
 相关指令如下：
 
-*cd /etc/ssh/*
+```
+cd /etc/ssh/
 
-*rm -rf ssh_host_**
+rm -rf ssh_host_*
 
-*service sshd restart*
+service sshd restart
+```
+
 
 
 操作示意如下：
 
+```
+[root@centos]# cd /etc/ssh/
 
-*[root@centos]# cd /etc/ssh/*
+[root@centos]# ll
 
-*[root@centos]# ll*
+total 156
 
-*total 156*
+-rw-------. 1 root root 125811 Nov 23  2013 moduli
 
-*-rw-------. 1 root root 125811 Nov 23  2013 moduli*
+-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config
 
-*-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config*
+-rw-------  1 root root   3639 May 16 11:43 sshd_config
 
-*-rw-------  1 root root   3639 May 16 11:43 sshd_config*
+-rw-------  1 root root    672 May 20 23:08 ssh_host_dsa_key
 
-*-rw-------  1 root root    672 May 20 23:08 ssh_host_dsa_key*
+-rw-r--r--  1 root root    590 May 20 23:08 ssh_host_dsa_key.pub
 
-*-rw-r--r--  1 root root    590 May 20 23:08 ssh_host_dsa_key.pub*
+-rw-------  1 root root    963 May 20 23:08 ssh_host_key
 
-*-rw-------  1 root root    963 May 20 23:08 ssh_host_key*
+-rw-r--r--  1 root root    627 May 20 23:08 ssh_host_key.pub
 
-*-rw-r--r--  1 root root    627 May 20 23:08 ssh_host_key.pub*
+-rw-------  1 root root   1675 May 20 23:08 ssh_host_rsa_key
 
-*-rw-------  1 root root   1675 May 20 23:08 ssh_host_rsa_key*
+-rw-r--r--  1 root root    382 May 20 23:08 ssh_host_rsa_key.pub
 
-*-rw-r--r--  1 root root    382 May 20 23:08 ssh_host_rsa_key.pub*
+[root@centos]# rm -rf ssh_host_*
 
-*[root@centos]# rm -rf ssh_host_**
+[root@centos]# ll
 
-*[root@centos]# ll*
+total 132
 
-*total 132*
+-rw-------. 1 root root 125811 Nov 23  2013 moduli
 
-*-rw-------. 1 root root 125811 Nov 23  2013 moduli*
+-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config
 
-*-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config*
+-rw-------  1 root root   3639 May 16 11:43 sshd_config
 
-*-rw-------  1 root root   3639 May 16 11:43 sshd_config*
+[root@centos]# service sshd restart*
 
-*[root@centos]# service sshd restart*
+Stopping sshd:                                             [  OK  ]
 
-*Stopping sshd:                                             [  OK  ]*
+Generating SSH1 RSA host key:                              [  OK  ]
 
-*Generating SSH1 RSA host key:                              [  OK  ]*
+Generating SSH2 RSA host key:                              [  OK  ]
 
-*Generating SSH2 RSA host key:                              [  OK  ]*
+Generating SSH2 DSA host key:                              [  OK  ]
 
-*Generating SSH2 DSA host key:                              [  OK  ]*
+Starting sshd:                                             [  OK  ]
 
-*Starting sshd:                                             [  OK  ]*
+[root@centos]# ll
 
-*[root@centos]# ll*
+total 156
 
-*total 156*
+-rw-------. 1 root root 125811 Nov 23  2013 moduli
 
-*-rw-------. 1 root root 125811 Nov 23  2013 moduli*
+-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config
 
-*-rw-r--r--. 1 root root   2047 Nov 23  2013 ssh_config*
+-rw-------  1 root root   3639 May 16 11:43 sshd_config
 
-*-rw-------  1 root root   3639 May 16 11:43 sshd_config*
+-rw-------  1 root root    668 May 20 23:16 ssh_host_dsa_key
 
-*-rw-------  1 root root    668 May 20 23:16 ssh_host_dsa_key*
+-rw-r--r--  1 root root    590 May 20 23:16 ssh_host_dsa_key.pub
 
-*-rw-r--r--  1 root root    590 May 20 23:16 ssh_host_dsa_key.pub*
+-rw-------  1 root root    963 May 20 23:16 ssh_host_key
 
-*-rw-------  1 root root    963 May 20 23:16 ssh_host_key*
+-rw-r--r--  1 root root    627 May 20 23:16 ssh_host_key.pub
 
-*-rw-r--r--  1 root root    627 May 20 23:16 
-ssh_host_key.pub*
+-rw-------  1 root root   1671 May 20 23:16 ssh_host_rsa_key
 
-*-rw-------  1 root root   1671 May 20 23:16 ssh_host_rsa_key*
+-rw-r--r--  1 root root    382 May 20 23:16 ssh_host_rsa_key.pub
+```
 
-*-rw-r--r--  1 root root    382 May 20 23:16 ssh_host_rsa_key.pub*
+
 
 
 对于 Ubuntu 、Debain 类操作系统，修复指令如下：
 
+```
+sudo rm -rf /etc/ssh/sshkey*
 
-*sudo rm -r /etc/ssh/ssh*key*
-
-*sudo dpkg-reconfigure openssh-server*
+sudo dpkg-reconfigure openssh-server
+```
 
 
 如无法解决您的问题，请向我们提工单。
