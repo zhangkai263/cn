@@ -8,7 +8,8 @@
 - 私有网络中添加云主机时，系统默认会在指定子网内为该实例随机分配一个可用的内网 IP，用户也可指定所选子网内未分配的内网IP进行分配；
 - 支持创建IPv4/IPv6双栈私有网络，不支持创建仅支持IPv6的私有网络；
 - 不支持IPv4私有网络直接转换成双栈VPC；
-- 预设CIDR的VPC创建后，不支持修改CIDR。
+- 预设CIDR的VPC创建后，不支持修改CIDR；
+- 删除VPC前须删除其关联的子网、路由表、安全组、ACL等资源。
 
 
 
@@ -18,6 +19,7 @@
 - 同一个VPC下的子网CIDR不可重叠；
 - 边缘子网和标准子网的资源之间内网不互通，不同边缘可用区的资源之间内网不互通；
 - 子网CIDR的第一个地址为网络地址，最后一个地址为广播地址，第二个和第三个IP地址已被京东云预留用作网络的管理，例如子网的CIDR为10.1.0.0/24，其中10.1.0.0为网络地址，10.1.0.255为广播地址，10.1.0.1和10.1.0.2被京东云预留，用户是不可以使用的，故该子网的可用IP个数为252；
+- 删除子网资源前须删除其关联的云主机、负载均衡、VPC对等连接
 
 
 
@@ -73,3 +75,8 @@
 
 ## 相关参考
 - [常见问题](../FAQ/FAQ.md)
+- [配置VPC](../Operation-Guide/VPC-Configuration.md)
+- [配置子网](../Operation-Guide/Subnet-Configuration.md)
+- [配置路由表](../Operation-Guide/Route-Table-Configuration.md)
+- [配置安全组](../Operation-Guide/Security-Group-Configuration.md)
+- [配置ACL](../Operation-Guide/Network-ACL-Configuration.md)
