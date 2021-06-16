@@ -52,10 +52,10 @@
 
 #### 私有网络相关资源配额
 
-| 资源	| 限制	| 例外申请方式	|
-| :-: | :-: | :-: |
-|同一地域内私有网络个数	|10	| 工单	|
-|VPC CIDR掩码范围	|16至28	| 工单	|
+| 资源	| 限制	| 特殊配额及需求	|
+| :---- | :----| :---- |
+|同一地域内私有网络个数	|10	| [工单申请](https://ticket.jdcloud.com/applyorder/form?cateId=1135&questionId=1155)	|
+|VPC CIDR掩码范围	|16至28	| [工单申请](https://ticket.jdcloud.com/applyorder/form?cateId=1135&questionId=1155)	|
 |子网CIDR掩码范围	|16至28	| 不可修改	|
 |同VPC内ACL个数	|20	| 工单	|
 |每个VPC内子网个数	|10	| 工单	|
