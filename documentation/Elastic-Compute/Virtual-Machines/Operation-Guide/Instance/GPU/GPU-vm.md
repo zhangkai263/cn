@@ -52,5 +52,6 @@
 
 4. GPU驱动验证
 	* 安装完成后，执行以下命令`nvidia-smi`
-	* 若出现下图类似信息则说明安装成功。<br>![](../../../../../../image/vm/GPUdriver10new.png)
+	* 若出现下图类似信息则说明安装成功。<br><div align="center"><img src="../../../../../../image/vm/GPUdriver10new.png" width="700"></div>
+
 	
