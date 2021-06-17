@@ -13,7 +13,7 @@
 
 ### 操作步骤
 
-![](../../../../../../image/vm/BM-Image-Transfer1.png)
+![](../../../../../../image/vm/baremetal-1.png)
 
 <div id="user-content-2"></div>
 
@@ -70,3 +70,19 @@
 ### 京东云处理
 镜像导入完成后，京东云需要对您的私有镜像进行相关处理以使其能够被裸金属云主机使用，请在镜像导入完成后提交工单联系我们，工单中请注明私有镜像ID。
 
+## 相关参考
+[创建实例](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
+
+[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image)
+
+[私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image)
+
+[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)
+
+[挂载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk)
+
+[开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2)
+
+[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)
+
+[使用S3fs在Linux实例上挂载Bucket](https://docs.jdcloud.com/cn/object-storage-service/s3fs)
