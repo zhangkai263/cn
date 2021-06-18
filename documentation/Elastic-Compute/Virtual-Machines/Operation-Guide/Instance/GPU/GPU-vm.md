@@ -31,7 +31,9 @@
 	* 手动查找适用于实例的驱动程序，并单击【搜索】。筛选信息说明如下图所示。<br>![](../../../../../../image/vm/GPUdriver5new.png)
 	* 确认无误后，两次单击【下载】按钮，下图是CentOS7.6的驱动截图。<br>![](../../../../../../image/vm/GPUdriver6new.png)<br>![](../../../../../../image/vm/GPUdriver6nnew.png)
 	* 在CentOS 7.6中也可以通过以下命令直接下载上述驱动，其中下载链接可在上图中右键点击下载按钮获取：<br>
-	`wget http://cn.download.nvidia.com/tesla/440.33.01/nvidia-driver-local-repo-rhel7-440.33.01-1.0-1.x86_64.rpm`
+		```Shell
+		wget http://cn.download.nvidia.com/tesla/440.33.01/nvidia-driver-local-repo-rhel7-440.33.01-1.0-1.x86_64.rpm
+		```
 	
 2. 安装GPU驱动依赖
 	* 下载并安装kernel对应版本的kernel-devel和kernel-header包:
@@ -40,13 +42,15 @@
 		
 		> 需要特别注意下载的kernel-devel，kernel-header版本要与当前运行的kernel版本完全一致，否则gpu驱动无法正常安装使用。
 		
-	安装完成后，运行`rpm -qa | grep $(uname -r)`命令，出现如下类似信息则说明安装成功 ：
-	```
+	* 安装完成后，运行`rpm -qa | grep $(uname -r)`命令，出现如下类似信息则说明安装成功 ：
+		
+		```Shell
 		# rpm -qa | grep $(uname -r)
 		kernel-3.10.0-957.el7.x86_64
 		kernel-headers-3.10.0-957.el7.x86_64
 		kernel-devel-3.10.0-957.el7.x86_64
-	```
+		```
+		
 3. 安装下载的gpu驱动
 	* 请按照Nvidia驱动下载页中**其他信息**指导步骤安装，下图为CentOS 7.6提示的操作信息，请以页面实际显示操作。<br>![](../../../../../../image/vm/GPUdriver11.png)
 
