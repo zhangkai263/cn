@@ -6,8 +6,8 @@
 
 
 ## 前提条件及限制
-
-* 实例需要处于“运行中”或“已停止”状态；
+ 
+* 实例需要处于 **运行中** 或 **已停止** 状态；
 * 仅支持将同VPC的弹性网卡绑定至实例；
 * 二代裸金属规格`g.n2.metal`及`s.i2.metal`不支持绑定弹性网卡；
 * 不同实例规格支持绑定的弹性网卡数量不同，详见[实例规格类型](https://docs.jdcloud.com/virtual-machines/instance-type-family)。
@@ -23,7 +23,7 @@
 3. 点击 **弹性网卡Tab**下 **绑定弹性网卡** 按钮。
 4. 在弹出弹窗中，选择一个弹性网卡，配置随实例删除属性后，点击 **确定**。
 
-<div align="center"><img src="../../../../../image/vm/attach-eni1.png" width="900"></div>
+![](../../../../../image/vm/attach-eni1.png)
 
 <div align="center"><img src="../../../../../image/vm/attach-eni2.png" width="700"></div>
 
