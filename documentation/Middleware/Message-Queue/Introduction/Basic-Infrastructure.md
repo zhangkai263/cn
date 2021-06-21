@@ -5,12 +5,13 @@
 
  ![架构](https://github.com/jdcloudcom/cn/blob/jcq0323/image/Internet-Middleware/Message-Queue/jcq-framework-1.PNG)
  
-
+消息队列JCQ核心组件如下：
 | 概念 | 解释 |
 | :- | :- |
-| Broker Cluster | 消息队列JCQ核心组件，负责订阅管理、消费管理和数据统计等功能 |	
-| Store Cluster | 消息队列JCQ核心组件，负责消息存储 |	
-| Meta Manager Cluster | 消息队列 JCQ核心组件，负责消息路由、broker管理等功能 |
+| Broker Cluster | 负责订阅管理、消费管理和数据统计等功能 |	
+| Store Cluster | 负责消息存储 |	
+| Meta Manager Cluster | 负责消息路由、broker管理等功能 |
+|Http Proxy | 负责请求的签名认证、链接管理 |
 
 
 
