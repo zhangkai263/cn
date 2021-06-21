@@ -13,7 +13,7 @@
 * 不同实例规格支持绑定的弹性网卡数量不同，详见[实例规格类型](https://docs.jdcloud.com/virtual-machines/instance-type-family)。
 
 ## 操作影响
-* 操作绑定后需要几分钟生效，还请耐心等待后刷新页面；
+* 操作绑定后可能需要几分钟才可生效，还请耐心等待后刷新页面；
 * 绑定后需要登录实例进行相关路由及IP配置，详见[配置路由](../../../../Networking/Elastic-Network-Interface/Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md)。
 
 ## 操作步骤
