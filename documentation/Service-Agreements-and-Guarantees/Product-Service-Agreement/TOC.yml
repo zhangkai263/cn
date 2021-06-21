@@ -132,6 +132,8 @@ items:
     href: Elastic-IP-For-Physical-Cloud-Terms-Of-Service.md
   - name: 物理云公网IP服务等级协议（SLA）
     href: Elastic-IP-For-Physical-Cloud-Level-Agreement-SLA.md
+  - name: 物理云共享带宽服务协议
+    href: Physical-Cloud-Shared-Bandwidth-Service-Agreement.md
   - name: 物理云NAT网关服务协议
     href: Physical-Cloud-NAT-Gateway-Service-Clause.md
   - name: 物理云NAT网关服务等级协议（SLA）
@@ -471,7 +473,7 @@ items:
   - name: 京东云星盾安全加速服务等级协议（SLA）
     href: Starshield-Service-Level-Agreement-SLA.md
 
-    
+   
     
     
     
