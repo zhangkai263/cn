@@ -59,3 +59,10 @@
 
 
 完成上述步骤即可完成单栈业务迁移至双栈VPC，可对IPv4私有网络中的负载均衡资源进行释放，避免产生不必要的费用。
+
+## 相关参考
+- [配置VPC](../Operation-Guide/VPC-Configuration.md)
+- [配置子网](../Operation-Guide/Subnet-Configuration.md)
+- [创建负载均衡](https://docs.jdcloud.com/cn/application-load-balancer/create-alb-instance)
+- [解绑公网IP](https://docs.jdcloud.com/cn/elastic-ip/disassociate-elastic-ip)
+- [绑定公网IP](https://docs.jdcloud.com/cn/elastic-ip/associate-elastic-ip)
