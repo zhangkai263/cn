@@ -1,4 +1,4 @@
-##  **边界网关连通私有网络**
+# 边界网关连通私有网络
 
 **业务场景**
 
@@ -79,6 +79,7 @@
 6) 配置完路由表需将路由表绑定至需要互通的子网。
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Border-Gateway-Connects-VPC/Step4-3.png) 
+
 7）在第二个VPC中使用同样的步骤创建并配置路由表RTBforBGWBtoA。
 
 配置完成后两端VPC即可通过内网IP建立连接。同理，可以通过边界网关连通同地域下多个私有网络(支持VPC Hub功能)。
