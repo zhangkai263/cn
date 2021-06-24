@@ -5,7 +5,7 @@
 ![iam-overview](../../../../image/IAM/Getting-Started/iam-overview.png)
 
 - 为企业人员创建子用户并分配适当的权限，使员工能通过子用户账号访问企业资源，请参考[为团队成员授权](../../../../documentation/Management/IAM/Getting-Started/Empower-the-Team.md)。
-- 为企业的外部合作伙伴分配适当的权限，使合作伙伴能够访问企业资源，请参考[跨账户访问控制]()。
+- 为企业的外部合作伙伴分配适当的权限，使合作伙伴能够访问企业资源，请参考[跨账户访问授权](../../../../documentation/Management/IAM/Getting-Started/Authorize-3P-Partners.md)。
 
 ## 相关概念
 
