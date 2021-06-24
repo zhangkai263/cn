@@ -2,7 +2,7 @@
 
 访问控制（Identity and Access Management, IAM）是京东云提供的一项用户身份管理与资源访问控制服务。使用 IAM，主账号不必共享密码或访问秘钥，即可授权他人管理账户中的资源，按需为用户分配所需的最小权限，降低企业信息安全风险。
 
-![iam-overview](../../../../../image/IAM/Getting-Started/iam-overview.png)
+![](../../../../../image/IAM/Getting-Started/iam-overview.png)
 
 - 为企业人员创建子用户并分配适当的权限，使员工能通过子用户账号访问企业资源，请参考[为团队成员授权]()。
 - 为企业的外部合作伙伴分配适当的权限，使合作伙伴能够访问企业资源，请参考[跨账户访问控制]()。
