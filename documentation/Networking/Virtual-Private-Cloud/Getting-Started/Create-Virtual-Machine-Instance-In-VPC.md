@@ -100,6 +100,7 @@
 ```
 如已有公网IP，且公网IP处于未绑定状态，可直接进入绑定云主机环节。
 ```
+
 步骤1：登录京东云控制台，进入控制台导航页面；
 
 步骤2：在控制台左侧导航栏，选择网络-私有网络-【弹性公网IP】，进入弹性公网IP列表页；
@@ -112,6 +113,7 @@
 #### 绑定云主机
 
 <div id="user-content-5"> </div>
+
 ```
 IP绑定云主机，可从IP侧绑定云资源，也可以从云主机列表页绑定公网IP，实现云主机与公网IP绑定。
 ```
@@ -133,6 +135,7 @@ IP绑定云主机，可从IP侧绑定云资源，也可以从云主机列表页�
 - [配置子网](../Operation-Guide/Subnet-Configuration.md)
 - [创建云主机实例](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
 - [弹性公网IP](https://docs.jdcloud.com/cn/elastic-ip/product-overview)
+- [云主机使用公网IP](../../Elastic-IP/Getting-Started/Elastic-IP-with-VM/Associate-Elastic-IP-to-VM.md)
 - [配置安全组](../Operation-Guide/Security-Group-Configuration.md)
 - [配置路由表](../Operation-Guide/Route-Table-Configuration.md)
 - [创建负载均衡](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
