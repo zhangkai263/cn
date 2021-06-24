@@ -6,7 +6,7 @@
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://realname.jdcloud.com/account/verify)；
 
 - 确保您已经创建一个弹性公网IP，且未绑定云资源；
-- 
+
 - 确保您已经创建一个云主机，且未绑定弹性IP。
 
 ### 弹性公网IP绑定云主机
