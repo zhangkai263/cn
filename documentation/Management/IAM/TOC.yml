@@ -19,6 +19,8 @@ items:
     items:
       - name: 为团队成员授权
         href: Getting-Started/Empower-the-Team.md
+      - name: 跨账户访问授权
+        href: Getting-Started/Authorize-3P-Partners.md
   - name: 操作指南
     items:
       - name: 概览
