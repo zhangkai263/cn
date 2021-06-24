@@ -45,7 +45,7 @@
 
 2、【选择】可视化策略生成器。
 
-针对策略的不同创建方式的说明，请参考[《策略管理》]()。
+针对策略的不同创建方式的说明，请参考[策略管理](../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-overview.md)。
 
 ![image-20210623185826554](../../../../image/IAM/Getting-Started/image-20210623185826554.png)
 
