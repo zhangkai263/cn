@@ -7,6 +7,7 @@
 您的业务迁移上云，或业务增量，需增加部署服务器，大致流程如下：
 
 ### 操作流程
+
 ![](../../../../image/Networking/Virtual-Private-Cloud/Getting-Started/Create-Virtual-Machine-Instance-In-VPC/Create-Virtual-Machine-Instance-In-VPC-1.png)
 
 ### 前提条件
