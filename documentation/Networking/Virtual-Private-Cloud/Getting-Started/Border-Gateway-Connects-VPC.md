@@ -29,20 +29,14 @@
 
 步骤3：在边界网关列表页点击创建，打开创建边界网关创建窗口。
 
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Border-Gateway-Connects-VPC/Step2-1.png)
+步骤4：在边界网关创建窗口中配置网关名称，点击确定完成创建，列表页显示新创建的边界网关信息。
 
-3) 在边界网关创建窗口中配置网关名称，点击确定完成创建，列表页显示新创建的边界网关信息。配置信息如下
-
-- 地域选择华北
-- 名称填写BGWA-B 
-
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/Border-Gateway-Connects-VPC/Step2-2.png)
 
 #### 为需要连通的VPC配置BGW路由策略
 
 <div id="user-content-2"> </div>
 
-步骤1：在边界网关列表页点击“编辑路由策略”前往编辑路由信息
+步骤1：在边界网关列表页为新创建的边界网关配置路由策略，点位具体的边界网关，点击操作列“编辑路由策略”前往编辑路由信息
 
 - 配置下一跳指向VPCforBGWA的路由
 - 配置下一跳指向VPCforBGWB的路由
