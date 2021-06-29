@@ -1,4 +1,6 @@
-## SOS
+## SOS带外控制台
+
+背景：由于网络中断，安装错误，配置错误，内核升级，防火墙规则错误等原因，服务器无法通过SSH进行访问；用户新创建服务器未绑定EIP时也无法访问到服务器；服务器重启时无法看到kernel的输出信息；解决上述问题需要为用户提供一种类似传统tty的终端控制台，而这就是SOS（Serial Over SSH），即基于SSH协议的安全串口控制台。
 
 访问[实例控制台](https://cps-console.jdcloud.com/instance/basic/list)，或访问[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航“智能IDC-云物理服务器”，进入实例列表页可以查看实例信息。
 
