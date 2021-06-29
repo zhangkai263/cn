@@ -39,7 +39,15 @@
 
 #### 限制说明
 
+若2021年7月1号之前创建的实例，需要手动修改SOS或者重装系统才能使用SOS带外控制台功能。<br/>
+手动修改步骤如下：<br/>
+编辑/etc/default/grub，为GRUB_CMDLINE_LINUX 选项添加 console=ttyS0,115200n8 <br/>
+GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8 crashkernel=auto biosdevname=0 net.ifnames=0" <br/>
+生成grub.cfg文件 <br/>
+grub2-mkconfig -o /boot/grub2/grub.cfg <br/>
+改完以上配置，需要reboot机器生效
 
+注意：若实例创建时仅支持密码登录，用户需先将实例设置密码，在进行以上操作。
 
 
 
