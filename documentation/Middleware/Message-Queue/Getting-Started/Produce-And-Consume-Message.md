@@ -48,6 +48,9 @@
    <version>${jcq.sdk.version}</version>
 </dependency>
 ```
+
+查看 Java SDK [最新版本号](https://mvnrepository.com/artifact/com.jdcloud/jcq-java-sdk)
+
 2. 发送和订阅代码部分请参考demo示例：[jcq-sdk-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-sdk-demo.zip)。
 
 ### 说明：
