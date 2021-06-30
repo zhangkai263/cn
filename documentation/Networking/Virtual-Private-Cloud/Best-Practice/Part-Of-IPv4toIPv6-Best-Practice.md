@@ -9,7 +9,8 @@
 ## 前提条件
 
 - 首先您需要有京东云的账号，并完成实名认证，若您目前没有账号，请先[注册](https://user.jdcloud.com/register?source=jdcloud&ReturnUrl=https%3A%2F%2Fwww.jdcloud.com)。
-- 已有IPv4私有网络部署环境。
+- 已有IPv4私有网络部署环境；
+- 账户有足够的余额以便创建资源。
 
 ## 操作步骤
 
