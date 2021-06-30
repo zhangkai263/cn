@@ -4,4 +4,4 @@
 
 #### （2）不涉及金融服务承诺书撰写说明
 
-[不涉及金融服务承诺书撰写说明.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/sichuan/jinrongqingkuangshuoming.docx)
+[不涉及金融服务承诺书撰写说明.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/sichuan/bushejijinrongyewuchengnuoshu.docx)

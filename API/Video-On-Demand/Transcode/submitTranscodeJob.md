@@ -15,6 +15,7 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**videoId**|String|False| |视频ID|
+|**templateGroupId**|String|False| |转码模板组ID。若此字段不为空，则以模板组方式提交作业，templateIds字段将被忽略。|
 |**templateIds**|Long[]|False| |转码模板ID列表|
 |**watermarkIds**|Long[]|False| |水印ID列表|
 
@@ -34,7 +35,10 @@ https://vod.jdcloud-api.com/v1/transcodeTasks:submitJob
 |---|---|---|
 |**taskId**|Long|任务ID|
 |**videoId**|String|视频ID|
-|**templateId**|Long|转码模板ID|
+|**packageType**|String|打包类型。取值范围：None, HLSPackage|
+|**templateId**|Long|转码模板ID。非打包转码，包含此字段。|
+|**templateGroupId**|String|转码模板组ID。若是以模板组方式提交作业，生成的转码任务中包含此字段。|
+|**templateIds**|Long[]|模板ID列表。|
 |**watermarkIds**|Long[]|水印ID列表|
 
 ## 返回码
