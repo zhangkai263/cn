@@ -161,8 +161,10 @@ items:
             href: Operation-Guide/Instance-Voucher/Price-and-Billing-Rules-of-Instancevoucher.md
           - name: 购买实例抵扣券
             href: Operation-Guide/Instance-Voucher/Purchase-Instancevoucher.md
-          - name: 管理实例抵扣券
-            href: Operation-Guide/Instance-Voucher/Manage-Instancevoucher.md
+          - name: 续费实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Renew-Instancevoucher.md
+          - name: 调整实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Resize-Instancevoucher.md           
           - name: 查看抵扣明细
             href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
           - name: 查看预留资源
