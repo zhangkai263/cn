@@ -40,8 +40,7 @@
 2.执行命令 cat filename 查看 PAM 配置文件，如 cat /etc/pam.d/login 和 cat /etc/pam.d/system-auth。
 
 3.检查配置文件是否有类似如下配置信息，如，本文检查到 /etc/pam.d/system-auth 配置文件中有如下配置信息。
-
-![](https://github.com/jdcloudcom/cn/blob/cn-VirtualMachine-Linux/image/Elastic-Compute/Virtual-Machine/Linux/SSH%E7%99%BB%E5%BD%95%E6%8A%A5loginModule%20is%20unknown01.png)
+![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Linux/SSH%E7%99%BB%E5%BD%95%E6%8A%A5loginModule%20is%20unknown01.png)
 
 4.执行命令 ll /lib/security/pam_limits.so 检查 pam_limits.so 模块在系统中是否存在。
 
