@@ -35,19 +35,19 @@
 
 #### 操作步骤
 
-通过该操作为实例关联SSH密钥，待修复完成后，该实例即可访问**SOS**获取带外控制台；<br/>
+通过该操作为实例关联SSH密钥，待修复完成后，该实例绑定SOS密钥，即可访问**SOS**获取带外控制台；<br/>
 
 #### 限制说明
 
-若2021年7月1号之前创建的实例，需要手动修改SOS或者重装系统才能使用SOS带外控制台功能。<br/>
-手动修改步骤如下：<br/>
+若2021年7月1号之前创建的实例，需要手动修复SOS或者重装系统才能使用SOS带外控制台功能。<br/>
+手动修复SOS步骤如下：<br/>
 编辑/etc/default/grub，为GRUB_CMDLINE_LINUX 选项添加 console=ttyS0,115200n8 <br/>
 GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8 crashkernel=auto biosdevname=0 net.ifnames=0" <br/>
 生成grub.cfg文件 <br/>
 grub2-mkconfig -o /boot/grub2/grub.cfg <br/>
-改完以上配置，需要reboot机器生效
+操作完以上步骤，需要重启实例后以上配置生效。<br/>
 
-注意：若实例创建时仅支持密码登录，用户需先将实例设置密码，在进行以上操作。
+注意：若实例创建时仅支持密钥登录，用户需先将实例设置密码后，再进行以上操作。<br/>
 
 
 
