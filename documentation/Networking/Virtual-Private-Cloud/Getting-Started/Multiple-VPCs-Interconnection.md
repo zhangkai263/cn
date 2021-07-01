@@ -119,6 +119,7 @@
 
 ## 相关参考
 
+- [边界网关简介](https://docs.jdcloud.com/cn/direct-connection/border-gateway-features)
 - [创建边界网关](https://docs.jdcloud.com/cn/direct-connection/border-gateway-configuration)       
 - [创建VPC接口](https://docs.jdcloud.com/cn/direct-connection/vpc-attachment-configuration)
 - [边界网关路由管理](https://docs.jdcloud.com/cn/direct-connection/border-gateway-route-configuration)
