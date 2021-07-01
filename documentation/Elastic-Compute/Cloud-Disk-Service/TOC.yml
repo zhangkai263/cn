@@ -5,6 +5,8 @@
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concept.md
       - name: 地域和可用区
         href: Introduction/Regionzone.md       
       - name: 产品功能
