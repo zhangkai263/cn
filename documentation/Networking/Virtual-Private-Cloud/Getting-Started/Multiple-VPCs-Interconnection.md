@@ -32,7 +32,7 @@
 
 步骤1：登录京东云控制台；
 
-步骤2：点击左侧导航栏，选择“专线服务 -> 边界网关”；
+步骤2：点击左侧导航栏，选择“混合云连接-> 边界网关”；
 
 步骤3：创建边界网关，新建的边界网关不会与任何VPC或者通道连接、需要配置创建边界网关接口或者专线通道等建立连接通道。
 
@@ -44,7 +44,7 @@
 
 步骤1：登录京东云控制台；
 
-步骤2：点击左侧导航栏，选择“专线服务 -> 边界网关 -> VPC接口-> 创建”；
+步骤2：点击左侧导航栏，选择混合云连接 -> 边界网关 -> VPC接口-> 创建”；
 
 步骤3：配置VPC接口，以便边界网关与选定的VPC建立连接、进行互通，详见控制台页面；
 
@@ -119,8 +119,10 @@
 
 ## 相关参考
 
-- []()       
-- []()
+- [创建边界网关](https://docs.jdcloud.com/cn/direct-connection/border-gateway-configuration)       
+- [创建VPC接口](https://docs.jdcloud.com/cn/direct-connection/vpc-attachment-configuration)
+- [边界网关路由管理](https://docs.jdcloud.com/cn/direct-connection/border-gateway-route-configuration)
+- [VPC路由管理](../Operation-Guide/Route-Table-Configuration.md)
 
 
 
