@@ -15,11 +15,11 @@
 
 ### 操作步骤
 
-- [创建边界网关](border-gateway-connects-vpc#user-content-1)
-- [为需要连通的VPC配置BGW路由策略](border-gateway-connects-vpc#user-content-2)
-- [为需要连通的私有网络创建路由表](border-gateway-connects-vpc#user-content-3)
+1. [创建边界网关](border-gateway-connects-vpc#user-content-1)
+2. [为需要连通的VPC配置BGW路由策略](border-gateway-connects-vpc#user-content-2)
+3. [为需要连通的私有网络创建路由表](border-gateway-connects-vpc#user-content-3)
 
-#### 创建边界网关
+#### 1. 创建边界网关
 
 <div id="user-content-1"> </div>
 
@@ -32,7 +32,7 @@
 步骤4：在边界网关创建窗口中配置网关名称，点击确定完成创建，列表页显示新创建的边界网关信息。
 
 
-#### 为需要连通的VPC配置BGW路由策略
+#### 2. 为需要连通的VPC配置BGW路由策略
 
 <div id="user-content-2"> </div>
 
@@ -43,7 +43,7 @@
 - 配置下一跳指向VPCforBGWB的路由
 
 
-#### 为需要连通的私有网络创建路由表
+#### 3. 为需要连通的私有网络创建路由表
 
 <div id="user-content-3"> </div>
 
