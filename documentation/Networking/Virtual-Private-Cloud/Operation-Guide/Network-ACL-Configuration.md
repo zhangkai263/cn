@@ -7,18 +7,23 @@
 - [ACL关联子网](network-acl-configuration#user-content-3)
 - [ACL与子网解绑](network-acl-configuration#user-content-4)
 
+## 前提条件及限制
 
-### **创建/删除网络ACL**
+
+
+### **创建网络ACL**
 
 <div id="user-content-1"> </div>
 
-步骤1：进入京东云控制台，点击左侧导航条 【私有网络 】— 【网络ACL】，进入网络ACL 页面
+步骤1：进入[京东云控制台](https://console.jdcloud.com/overview)，点击左侧导航条 【私有网络 】-> 【网络ACL】，进入网络ACL列表页面
 
-步骤2：点击“创建”，弹出网络ACL创建弹框；
+步骤2：点击【创建】按钮，弹出网络ACL创建弹框；
 
-步骤3：选择VPC，并输入网络ACL名称、描述，点击“确定”，即创建完成。请您注意在一个VPC创建的网络ACL只能适用于当前VPC，在其他VPC内不可使用；
-
-3、删除网络ACL，点击要删除网络ACL对应操作框中的删除按钮，即可完成操作；
+步骤3：选择VPC，并输入网络ACL名称、描述，点击【确定】，即创建完成。
+```
+请您注意在一个VPC创建的网络ACL只能适用于当前VPC，不支持在其他VPC内使用。
+```
+步骤4：删除网络ACL，点击要删除网络ACL对应操作框中的删除按钮，即可完成操作；
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Network-ACL-Configuration/Step1.png)
 
@@ -67,6 +72,19 @@
 3、在关联子网列表中需要解关联的子网项后点击【解关联】按钮；
 
 4、在弹窗中点击"确定"；
+
+
+### 删除网络ACL
+
+步骤1：进入[京东云控制台](https://console.jdcloud.com/overview)，点击左侧导航条 【私有网络 】-> 【网络ACL】，进入网络ACL列表页面
+
+步骤2：定位需要删除的网络ACL，在操作列点击【删除】，进入删除资源弹窗
+
+```
+
+```
+
+步骤3：点击【确认】，删除对应的网络ACL。
 
 ## 相关参考
 
