@@ -29,6 +29,11 @@
 	        <td >6925</td>   
      </tr>
 	<tr>
+		<td >EPCS-B12</td>
+		<td >E5-2620 v4*2 /16GB*4/4TB SATA HDD*12 + 300GB SAS HDD*2</td>
+	        <td >7950</td>   
+     </tr>
+	<tr>
 		<td >EPCS-B14</td>
 		<td >E5-2650 v4 * 2/32G * 8/300G SAS HDD * 2 + 6000G SATA HDD * 12</td>
 	        <td >9900</td>   

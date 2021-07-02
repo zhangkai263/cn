@@ -59,6 +59,8 @@
             href: Operation-Guide/Instance/Disassociate-The-EIP.md
           - name: 添加别名IP范围
             href: Operation-Guide/Instance/Instance-Alias-IP.md
+          - name: SOS带外控制台
+            href: Operation-Guide/Instance/SOS.md
       - name: 网络
         items:
           - name: 私有网络

@@ -11,10 +11,10 @@
 
 当使用 SSH 登录Linux 云主机时，如果是 root 用户，即便正确输入了密码，也会出现类似如下错误信息。
 
-*• Permission denied, please try again.*
-
+```shell
+• Permission denied, please try again.
 • SSH 服务器拒绝了密码，请再试一次。
-
+```
 但非root用户可以正常登录，而且root用户通过 VNC 登录也正常。
 
 
@@ -31,12 +31,13 @@
 
 要解决此问题，请进行如下配置检查和修改：
 
-1.通过 VNC 进入系统。
+1. 通过 VNC 进入系统。
 
-2.通过 cat 等指令查看 /etc/ssh/sshd_config 中是否包含类似如下配置：
+2. 通过 cat 等指令查看 /etc/ssh/sshd_config 中是否包含类似如下配置：
 
-
-*PermitRootLogin no*
+```shell
+PermitRootLogin no
+```
 
 参数说明：
 
@@ -46,18 +47,21 @@
 
 
 
-3.如果需要修改相关策略配置，在继续之前建议进行文件备份。
+3. 如果需要修改相关策略配置，在继续之前建议进行文件备份。
 
-4.使用 vi 等编辑器，将参数值设置为 yes，或者整个删除或注释（在最开头添加 # 号）整行配置。比如：
+4. 使用 vi 等编辑器，将参数值设置为 yes，或者整个删除或注释（在最开头添加 # 号）整行配置。比如：
 
-*# PermitRootLogin no*
+```shell
+# PermitRootLogin no
+```
 
-5.使用如下指令重启 SSH 服务：
+5. 使用如下指令重启 SSH 服务：
 
+```shell
+service sshd restart
+```
 
-*service sshd restart*
-
-6.尝试再次使用 root 用户登录服务器。
+6. 尝试再次使用 root 用户登录服务器。
 
 
 
