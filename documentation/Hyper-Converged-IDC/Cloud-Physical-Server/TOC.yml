@@ -73,6 +73,8 @@
             href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
           - name: 别名IP范围
             href: Operation-Guide/Networking/Alias-IP.md
+          - name: 共享带宽
+            href: Operation-Guide/Networking/Shared-Bandwidth.md
           - name: NAT网关
             href: Operation-Guide/Networking/NAT-Gateway.md
           - name: IPv6互联网网关
