@@ -37,11 +37,11 @@
 
 3. 使用云硬盘快照备份
 
-云硬盘用户可以手动或使用[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)为指定云硬盘创建快照备份，以提高云硬盘内数据的安全性。云硬盘快照详情请参考[快照概述](https://)。
+云硬盘用户可以手动或使用[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)为指定云硬盘创建快照备份，以提高云硬盘内数据的安全性。。
 
 
 4. 数据加密
-云硬盘服务提供加密功能，基于京东云KMS系统，对云硬盘加密，进一步保障云硬盘内敏感数据的安全。云硬盘加密采用AES-256算法，从云主机传输到云硬盘的数据会被自动加密，并以加密数据的形式存储在物理磁盘上。数据读取时，会自动解密。详情请参考[云硬盘加密](https://https://docs.jdcloud.com/cn/cloud-disk-service/disk-encrypt)
+云硬盘服务提供加密功能，基于京东云KMS系统，对云硬盘加密，进一步保障云硬盘内敏感数据的安全。云硬盘加密采用AES-256算法，从云主机传输到云硬盘的数据会被自动加密，并以加密数据的形式存储在物理磁盘上。数据读取时，会自动解密。详情请参考[云硬盘加密](https://docs.jdcloud.com/cn/cloud-disk-service/disk-encrypt)
 
 
 5. 数据删除
