@@ -8,7 +8,7 @@
 
 您在使用共享带宽时请注意以下使用限制：
 
-1、目前每个京东云账户支持每个地域最多申请10个物理云公网IP，如需更多配额通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。<br/>
+1、目前每个京东云账户支持每个地域最多申请10个共享带宽，如需更多配额通过[提交工单](https://ticket.jdcloud.com/applyorder/submit)提升配额。<br/>
 
 2、共享带宽仅支持同地域下的物理云公网IP加入。<br/>
 
