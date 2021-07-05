@@ -19,7 +19,7 @@
 * [停机不计费](uncharged_for_stopped_vm.md)
 * [按配置计费实例转包年包月计费](Switch-from-Postpaid-to-Prepaid.md)
 * [查找实例](Search-Instance.md)
-* [自定义元数据](userdata.md)
-* [实例元数据](instance-metadata)
+* [自定义数据](Userdata.md)
+* [实例元数据](Instance-Metadata)
 * [删除实例](Delete-Instance.md)
 
