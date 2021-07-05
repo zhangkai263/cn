@@ -19,7 +19,7 @@
         <td> 实例创建失败</td>
         <td> SystemFailure.Delete</td>
         <td> 实例创建请求成功后，由于系统原因导致的资源回滚删除。 </td>
-        <td> 尝试重新创建，如仍无法成功请咨询客服。</td>
+        <td> 尝试重新创建，如仍无法成功请联系客服。</td>
     </tr>
     <tr>
         <td> 系统异常实例迁移</td>
@@ -68,28 +68,28 @@
 </table> 
  
 ## 事件格式
-云主机事件是基于 [云事件](https://www.jdcloud.com/cn/products/cloud-events) 产品提供的服务。事件格式规范示例如下，其中，"detail"为事件详情，不同事件的信息项不尽相同，具体内容可参考下方的 [事件通知详情](event-overview#event-details)。
+云主机事件是基于 [云事件](https://www.jdcloud.com/cn/products/cloud-events) 产品提供的服务。事件格式规范示例如下，其中，**detail**为事件详情，不同事件的信息项不尽相同，具体内容可参考下方的 [事件通知详情](event-overview#event-details)。
 
-*（以实例创建成功从pending状态变为running状态为例）*
-```
+**以实例创建成功从pending状态变为running状态为例**
+```JSON
 {
-"detail":{
-	"eventAction":"StateChange",
-	"eventTime":"2021-03-18 11:40:38",
-	"instanceCurrentState":"running",
-	"instanceId":"i-eiu****bqp",
-	"instanceLastState":"pending"
-},
-"detailType":"StatusNotification",
-"id":"1xo6n4os********6g2d5721f2",
-"pin":"iaasdevops",
-"region":"cn-east-1",
-"resources":[
-	"i-eiuciglbqp"
-],
-"source":"jcloud.vm",
-"time":"2021-03-18T11:49:46+0800",
-"version":""	
+	"detail":{
+		"eventAction":"StateChange",
+		"eventTime":"2021-03-18 11:40:38",
+		"instanceCurrentState":"running",
+		"instanceId":"i-eiu****bqp",
+		"instanceLastState":"pending"
+		},
+	"detailType":"StatusNotification",
+	"id":"1xo6n4os********6g2d5721f2",
+	"pin":"iaasdevops",
+	"region":"cn-east-1",
+	"resources":[
+		"i-eiuciglbqp"
+	],
+	"source":"jcloud.vm",
+	"time":"2021-03-18T11:49:46+0800",
+	"version":""	
 }
 ```
 <div id="event-details"></div>
@@ -111,20 +111,20 @@
 ### 实例创建失败
 * 事件代码：SystemFailure.Delete
 * 事件通知说明：此事件会在创建失败开始删除和删除成功时刻发送两条通知（由于删除会导致资源状态变更，因此同时会触发状态变更事件，详见下方StateChange），事件详情如下：
-```
+```JSON
 {
-"eventAction":"SystemFailure.Delete",
-"eventState":"Executing",
-"eventTime":"2021-02-25 20:13:35",
-"instanceId":"i-ai0****net"
+	"eventAction":"SystemFailure.Delete",
+	"eventState":"Executing",
+	"eventTime":"2021-02-25 20:13:35",
+	"instanceId":"i-ai0****net"
 }
 ```
-```
+```JSON
 {
-"eventAction":"SystemFailure.Delete",
-"eventState":"Executed",
-"eventTime":"2021-02-25 20:13:39",
-"instanceId":"i-ai0****net"
+	"eventAction":"SystemFailure.Delete",
+	"eventState":"Executed",
+	"eventTime":"2021-02-25 20:13:39",
+	"instanceId":"i-ai0****net"
 }
 ```
 
@@ -133,20 +133,20 @@
 ### 系统异常实例迁移
 * 事件代码：SystemFailure.Migrate
 * 事件通知说明：此事件会在开始迁移和迁移完成后发送两条通知，事件详情如下：
-```
+```JSON
 {
-"eventAction": "SystemFailure.Migrate",
-"eventState":"Executing",
-"eventTime": "2021-02-25 06:44:06",
-"instanceId": "i-bc4****9oh"
+	"eventAction": "SystemFailure.Migrate",
+	"eventState":"Executing",
+	"eventTime": "2021-02-25 06:44:06",
+	"instanceId": "i-bc4****9oh"
 }
-```
+```JSON
 ```
 {
-"eventAction": "SystemFailure.Migrate",
-"eventState":"Executed",
-"eventTime": "2021-02-25 06:44:26",
-"instanceId": "i-bc4****9oh"
+	"eventAction": "SystemFailure.Migrate",
+	"eventState":"Executed",
+	"eventTime": "2021-02-25 06:44:26",
+	"instanceId": "i-bc4****9oh"
 }
 ```
 <div id="SystemFailure.Fault"></div>
@@ -154,11 +154,11 @@
 ### 系统异常实例不可用
 * 事件代码：SystemFailure.Fault
 * 事件通知说明：此事件会在物理机故障，确认实例不可用后发送一条通知，事件详情如下：
-```
+```JSON
 {
-"eventAction": "SystemFailure.Fault",
-"eventTime": "2021-02-25 09:51:27",
-"instanceId": "i-qj7****e7m"
+	"eventAction": "SystemFailure.Fault",
+	"eventTime": "2021-02-25 09:51:27",
+	"instanceId": "i-qj7****e7m"
 }
 ```
 
@@ -167,20 +167,20 @@
 ### 实例停止（资源到期）
 * 事件代码：InstanceExpiration.Stop
 * 事件通知说明：此事件会在开始停止和停止完成后发送两条通知，事件详情如下：
-```
+```JSONJSON
 {
-"eventAction": "InstanceExpiration.Stop",
-"eventState": "Executing",
-"eventTime": "2021-02-25 11:00:14",
-"instanceId": "i-l16****r0v"
+	"eventAction": "InstanceExpiration.Stop",
+	"eventState": "Executing",
+	"eventTime": "2021-02-25 11:00:14",
+	"instanceId": "i-l16****r0v"
 }
 ```
-```
+```JSON
 {
-"eventAction": "InstanceExpiration.Stop",
-"eventState": "Executed",
-"eventTime": "2021-02-25 11:00:20",
-"instanceId": "i-l16****r0v"
+	"eventAction": "InstanceExpiration.Stop",
+	"eventState": "Executed",
+	"eventTime": "2021-02-25 11:00:20",
+	"instanceId": "i-l16****r0v"
 }
 ```
 <div id="InstanceExpiration.Delete"></div>
@@ -188,20 +188,20 @@
 ### 实例删除（资源到期）
 * 事件代码：InstanceExpiration.Delete
 * 事件通知说明：此事件会在开始删和删除完成后发送两条通知，事件详情如下：
-```
+```JSON
 {
-"eventAction": "InstanceExpiration.Delete",
-"eventState": "Executing",
-"eventTime": "2021-02-25 11:00:14",
-"instanceId": "i-l16****r0v"
+	"eventAction": "InstanceExpiration.Delete",
+	"eventState": "Executing",
+	"eventTime": "2021-02-25 11:00:14",
+	"instanceId": "i-l16****r0v"
 }
 ```
-```
+```JSON
 {
-"eventAction": "InstanceExpiration.Delete",
-"eventState": "Executed",
-"eventTime": "2021-02-25 11:00:20",
-"instanceId": "i-l16****r0v"
+	"eventAction": "InstanceExpiration.Delete",
+	"eventState": "Executed",
+	"eventTime": "2021-02-25 11:00:20",
+	"instanceId": "i-l16****r0v"
 }
 ```
 <div id="AccountArrearage.Stop"></div>
@@ -209,20 +209,20 @@
 ### 实例停止（资源欠费）
 * 事件代码：AccountArrearage.Stop
 * 事件通知说明：此事件会在开始停止和停止完成后发送两条通知，事件详情如下：
-```
+```JSON
 {
-"eventAction": "AccountArrearage.Stop",
-"eventState": "Executing",
-"eventTime": "2021-02-25 11:00:14",
-"instanceId": "i-l16****r0v"
+	"eventAction": "AccountArrearage.Stop",
+	"eventState": "Executing",
+	"eventTime": "2021-02-25 11:00:14",
+	"instanceId": "i-l16****r0v"
 }
 ```
-```
+```JSON
 {
-"eventAction": "AccountArrearage.Stop",
-"eventState": "Executed",
-"eventTime": "2021-02-25 11:00:20",
-"instanceId": "i-l16****r0v"
+	"eventAction": "AccountArrearage.Stop",
+	"eventState": "Executed",
+	"eventTime": "2021-02-25 11:00:20",
+	"instanceId": "i-l16****r0v"
 }
 ```
 <div id="AccountArrearage.Delete"></div>
@@ -230,20 +230,20 @@
 ### 实例删除（资源欠费）
 * 事件代码：AccountArrearage.Delete
 * 事件通知说明：此事件会在开始删除和删除完成后发送两条通知，事件详情如下：
-```
+```JSON
 {
-"eventAction": "AccountArrearage.Delete",
-"eventState": "Executing",
-"eventTime": "2021-02-25 11:00:14",
-"instanceId": "i-l16****r0v"
+	"eventAction": "AccountArrearage.Delete",
+	"eventState": "Executing",
+	"eventTime": "2021-02-25 11:00:14",
+	"instanceId": "i-l16****r0v"
 }
 ```
-```
+```JSON
 {
-"eventAction": "AccountArrearage.Delete",
-"eventState": "Executed",
-"eventTime": "2021-02-25 11:00:20",
-"instanceId": "i-l16****r0v"
+	"eventAction": "AccountArrearage.Delete",
+	"eventState": "Executed",
+	"eventTime": "2021-02-25 11:00:20",
+	"instanceId": "i-l16****r0v"
 }
 ```
 <div id="StateChange"></div>
@@ -253,77 +253,76 @@
 * 事件通知说明：**目前仅支持实例创建和删除触发的状态变更事件**，此事件会在每有状态变化时发送一条通知，通知中包含之前状态和当前状态，事件详情如下：<br>
 
 例：实例创建成功
-```
+```JSON
 {
-"eventAction": "StateChange",
-"eventTime": "2021-02-25 11:00:30",
-"instanceCurrentState": "pending",
-"instanceId": "i-x0r****q2b",
-"instanceLastState": ""
+	"eventAction": "StateChange",
+	"eventTime": "2021-02-25 11:00:30",
+	"instanceCurrentState": "pending",
+	"instanceId": "i-x0r****q2b",
+	"instanceLastState": ""
 }
 ```
-```
+```JSON
 {
-"eventAction": "StateChange",
-"eventTime": "2021-02-25 11:00:52",
-"instanceCurrentState": "running",
-"instanceId": "i-x0r****q2b",
-"instanceLastState": "pending"
+	"eventAction": "StateChange",
+	"eventTime": "2021-02-25 11:00:52",
+	"instanceCurrentState": "running",
+	"instanceId": "i-x0r****q2b",
+	"instanceLastState": "pending"
 }
 ```
 例：实例创建失败
-```
+```JSON
 {
-"eventAction":"StateChange",
-"eventTime":"2021-02-26 19:55:18",
-"instanceCurrentState":"pending",
-"instanceId":"i-mob****hpa",
-"instanceLastState":""
+	"eventAction":"StateChange",
+	"eventTime":"2021-02-26 19:55:18",
+	"instanceCurrentState":"pending",
+	"instanceId":"i-mob****hpa",
+	"instanceLastState":""
 }
 ```
-```
+```JSON
 {
-"eventAction": "StateChange",
-"eventTime": "2021-02-26 19:55:39",
-"instanceCurrentState": "error",
-"instanceId": "i-mob****hpa",
-"instanceLastState": "pending"
+	"eventAction": "StateChange",
+	"eventTime": "2021-02-26 19:55:39",
+	"instanceCurrentState": "error",
+	"instanceId": "i-mob****hpa",
+	"instanceLastState": "pending"
 }
 ```
 例：实例删除成功
-```
+```JSON
 {
-"eventAction": "StateChange",
-"eventTime": "2021-03-19 18:42:14",
-"instanceCurrentState": "deleting",
-"instanceId": "i-5kh****v3b",
-"instanceLastState": "stopped"
+	"eventAction": "StateChange",
+	"eventTime": "2021-03-19 18:42:14",
+	"instanceCurrentState": "deleting",
+	"instanceId": "i-5kh****v3b",
+	"instanceLastState": "stopped"
 }
 ```
-```
+```JSON
 {
-"eventAction": "StateChange",
-"eventTime": "2021-03-19 18:42:16",
-"instanceCurrentState": "terminated",
-"instanceId": "i-5kh****v3b",
-"instanceLastState": "deleting"
+	"eventAction": "StateChange",
+	"eventTime": "2021-03-19 18:42:16",
+	"instanceCurrentState": "terminated",
+	"instanceId": "i-5kh****v3b",
+	"instanceLastState": "deleting"
 }
 ```
 
 ## 订阅事件通知
-* 前往 [云事件服务](https://events-console.jdcloud.com/event/list) 控制台,点击【创建订阅规则】
-* 在“基本信息”中填写自定义名称和描述
-* 在“事件源”配置项中依次做如下选择：
+* 前往 [云事件服务](https://events-console.jdcloud.com/event/list) 控制台,点击**创建订阅规则**
+* 在**基本信息**中填写自定义名称和描述
+* 在**事件源**配置项中依次做如下选择：
   *  事件来源类型：**系统事件**
   *  事件来源：**云主机**
   *  事件类型：参照上方事件列表，选择事件一级分类
   *  事件筛选：选择事件类型下的全部事件或指定个别事件
-  *  订阅对象：如需订阅“实例创建失败”事件，请务必选择订阅“全部对象”；其他事件可选择订阅“部分对象”指定资源id订阅
-* 在“事件目的地”中，选择短信或邮件方式，并添加联系人或联系组
+  *  订阅对象：如需订阅**实例创建失败**事件，请务必选择订阅**全部对象**；其他事件可选择订阅“部分对象”指定资源id订阅
+* 在**事件目的地**中，选择短信或邮件方式，并添加联系人或联系组
 ![](../../../../../image/vm/event.png)
    
-    订阅提示：
-    * [消息管理控制台](https://message-console.jdcloud.com/message/message-settings) 提供针对全部资源由于欠费或到期导致的停服和释放的通知，如同时订阅云主机事件中的“欠费/到期”事件，会收到两类通知，请视情况选择性订阅；
+> 订阅提示：<br>[消息管理控制台](https://message-console.jdcloud.com/message/message-settings) 提供针对全部资源由于欠费或到期导致的停服和释放的通知，如同时订阅云主机事件中的**欠费/到期**事件，会收到两类通知，请视情况选择性订阅。
     
 ## 相关参考
 
