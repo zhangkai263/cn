@@ -1,6 +1,8 @@
   name: IP 高防
   href:
   items:
+  - name: 公告
+    herf: Announce/Announce.md
   - name: 产品简介
     items:
     - name: 产品概述
@@ -59,12 +61,16 @@
           herf: Operation-Guide/Web-service-Protection-Settings/CC-Defense-Related.md
         - name: 黑白名单配置
           herf: Operation-Guide/Web-service-Protection-Settings/URL-Whitelist-Rules-Setting.md
+        - name: 批量导入导出
+          herf: Operation-Guide/Web-service-Protection-Settings/Web-Bulk-import-export.md        
     - name: 非网站类规则设置
       items:
         - name: 防护规则配置
           herf: Operation-Guide/Net-Service-Protection-Setting/Protection-Rule.md
         - name: 黑白名单配置
           herf: Operation-Guide/Net-Service-Protection-Setting/Whitelist-Rules-Setting.md
+        - name: 批量导入导出
+          herf: Operation-Guide/Net-Service-Protection-Setting/Net-Bulk-import-export.md
     - name: 防护调度规则设置
       herf: Operation-Guide/Dispatch-Rule-Settings.md        
     - name: 攻击告警设置

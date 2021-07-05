@@ -1,4 +1,4 @@
-# Android JRTC API接口说明
+# Android JRTC API接口说明  
 
 ## 1.JRTCCloud
 + ### 基础方法
@@ -89,7 +89,7 @@
 + ### 音频相关
     - #### startLocalAudio
         开启本地音频的采集和上行
-    - #### storepLocalAudio
+    - #### stopLocalAudio
         关闭本地音频采集和上行
     - #### startRemoteAudio
         订阅远端用户发布的音频流
@@ -272,3 +272,10 @@
    |参数||
    |---|---|
    |RTCVideoFrame|当前帧数据<br>textureId:RGB类型的纹理<br>width:宽<br>height:高<br>rotation:旋转<br>timestamp:时间戳<br>textureType:纹理类型(目前为RGB)|
+
+## 5.JRTCConfig
+   JRTC高级功能设置
+   + #### enableNetWorkEnhance
+        开启网络增强,开启后jrtc会同时使用wifi与4g, 开启此功能需要app申请android.permission.CHANGE_NETWORK_STATE权限
+   + #### enableEncSmallVideoStream
+        开启双路编码,大小流双路编码

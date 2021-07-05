@@ -4,14 +4,14 @@
 本文介绍如何部署作业。
 
 ## 操作步骤
-1.登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择查看哪个地域下的集群。
+1.登录 [JMR 控制台](https://jmr-console.jdcloud.com/cluster/list)，选择查看哪个地域下的集群。
 
 2.创建
 
  - 选择执行策略：单次执行和周期执行。
  - 选择调度时间。
  - 勾选要部署的作业。
- 
+
 3.相关操作说明
 
  - 立即执行：点击立即执行部署的作业。  

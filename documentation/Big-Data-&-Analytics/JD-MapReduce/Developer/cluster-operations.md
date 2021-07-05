@@ -21,27 +21,21 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
 - YARN
 
   操作用账号：hadoop
-
   - ResourceManager （Master 节点）
-
     ```
     // 启动
     /data0/hadoop-home/sbin/yarn-daemon.sh start resourcemanager
     // 停止
     /data0/hadoop-home/sbin/yarn-daemon.sh stop resourcemanager
     ```
-
   - NodeManager （Core 节点）
-
     ```
     // 启动
     /data0/hadoop-home/sbin/yarn-daemon.sh start nodemanager
     // 停止
     /data0/hadoop-home/sbin/yarn-daemon.sh stop nodemanager
     ```
-
   - JobHistoryServer （Master 节点）
-
     ```
     // 启动
     /data0/hadoop-home/sbin/mr-jobhistory-daemon.sh start historyserver
@@ -52,18 +46,14 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
 - HDFS
 
   操作用账号：hadoop
-
   - NameNode （Master 节点）
-
     ```
     // 启动
     /data0/hadoop-home/sbin/hadoop-daemon.sh start namenode
     // 停止
     /data0/hadoop-home/sbin/hadoop-daemon.sh stop namenode
     ```
-
   - DataNode （Core 节点）
-
     ```
     // 启动
     /data0/hadoop-home/sbin/hadoop-daemon.sh start datanode
@@ -74,7 +64,6 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
 - Hive
 
   操作用账号：hadoop
-
   - MetaStore （Master 节点）
 
     ```
@@ -82,7 +71,6 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
     HADOOP_HEAPSIZE=512
     /data0/hive-home/bin/hive --service metastore >/data0/var/log/hive/metastore.log 2>&1 &
     ```
-
   - HiveServer2 （Master 节点）
 
     ```
@@ -94,11 +82,8 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
 - HBase
 
   操作用账号：hadoop
-
   使用条件：安装完成 HBase 组件
-
   - HMaster （Master 节点）
-
     ```
     // 启动
     /data0/hbase-home/bin/hbase-daemon.sh start master
@@ -107,9 +92,7 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
     // 停止
     /data0/hbase-home/bin/hbase-daemon.sh stop master
     ```
-
   - HRegionServer （Core 节点）
-
     ```
     // 启动
     /data0/hbase-home/bin/hbase-daemon.sh start regionserver
@@ -118,9 +101,7 @@ ZOOKEEPER_HOME=/data0/zookeeper-3.4.10
     // 停止
     /data0/hbase-home/bin/hbase-daemon.sh stop regionserver
     ```
-
   - ThriftServer （Master 节点）
-
     ```
     // 启动
     /data0/hbase-home/bin/hbase-daemon.sh start thrift -p 9099 >/data0/var/log/hbase/thriftserver.log 2>&1 &

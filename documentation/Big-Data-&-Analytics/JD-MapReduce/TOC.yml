@@ -51,6 +51,10 @@ items:
     href: Developer/clusterPorts-filePaths.md
   - name: 集群运维
     href: Developer/cluster-operations.md
+  - name: 数据迁移
+    items:
+    - name: DistCp 迁移数据
+      href: Developer/Data-Migration/Using-DistCp-to-Migrate-Data.md
 - name: 最佳实践
   items:
   - name: 离线分析

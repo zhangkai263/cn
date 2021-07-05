@@ -18,7 +18,7 @@
 
 - 通过“缓存”页面调整缓存级别、TTL等
 - 通过“页面规则”为各个URL指定缓存配置
-- 通过“Workers”自定义缓存（Workers功能暂未上线 敬请期待）
+- 通过“Workers”自定义缓存（Workers边缘计算功能即将上线，敬请期待）
 
 针对不同套餐级别，缓存文件大小上限限制不同，具体可参考套餐规格。
 
@@ -51,8 +51,8 @@ Cache-Status标头输出显示资源是否缓存。
 - MISS 未在安全加速缓存中找到资源，从源Web服务器获取
 - EXPIRED 在安全加速缓存中找到资源但已过期，从源Web服务器获取
 - STALE 资源通过缓存提供，但已经过期，安全加速无法获取源站检索更新后的资源
-- BYPASS 源站通过设置为no-cache、private或max-age=0的Cache-Control标头指示源站绕过缓存。
-- REWALIDATED 资源通过缓存提供，但已过时。已通过 If-Modified-Since 标头或 If-None-Match 标头重新验证资源。
+- BYPASS 源站通过设置为no-cache、private或max-age=0的Cache-Control标头指示源站绕过缓存
+- REWALIDATED 资源通过缓存提供，但已过时。已通过 If-Modified-Since 标头或 If-None-Match 标头重新验证资源
 - UPDATING 资源通过缓存提供，但已过期。资源目前正在由源Web服务器进行更新。
 
 **缓存配置**

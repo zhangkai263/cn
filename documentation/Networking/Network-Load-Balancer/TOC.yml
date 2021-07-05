@@ -31,6 +31,8 @@
         href: Pricing/Purchase-Process.md 
       - name: 续费流程
         href: Pricing/Renew-Process.md
+      - name: 网络负载均衡计费FAQ
+        href: Pricing/Price-FAQ.md 
   - name: 入门指南
     items:
       - name: 创建网络负载均衡实例

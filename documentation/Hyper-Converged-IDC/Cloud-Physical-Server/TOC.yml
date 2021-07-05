@@ -33,28 +33,34 @@
         href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
-      - name: 入门指南概述
+      - name: 入门概述
         href: Getting-Started/Getting-Started.md
-      - name: 创建云物理服务器
-        href: Getting-Started/Create-Cloud-Physical-Server.md
-      - name: 配置云物理服务器
+      - name: 确定配置项
         href: Getting-Started/Allocate-Cloud-Physical-Server.md
-      - name: 查看云物理服务器
-        href: Getting-Started/Check-Cloud-Physical-Server.md
-      - name: 删除云物理服务器
-        href: Getting-Started/Delete-Cloud-Physical-Server.md
   - name: 操作指南
     items:
-      - name: 使用须知
-        href: Operation-Guide/Terms-and-Conditions.md
       - name: 实例
         items:
+          - name: 创建实例
+            href: Operation-Guide/Instance/Create-Instance.md
+          - name: 查看实例
+            href: Operation-Guide/Instance/Check-Instance.md
+          - name: 删除实例
+            href: Operation-Guide/Instance/Delete-Instance.md
           - name: 重置密码
             href: Operation-Guide/Instance/Reset-Password.md
-          - name: 自定义数据
-            href: Operation-Guide/Instance/User-Data.md
-          - name: 标签
-            href: Operation-Guide/Instance/Tag.md
+          - name: 重装系统
+            href: Operation-Guide/Instance/Reinstall.md
+          - name: 调整公网带宽
+            href: Operation-Guide/Instance/Description-Adjust-Public-Network-Bandwidth.md
+          - name: 绑定弹性公网IP
+            href: Operation-Guide/Instance/Associate-The-EIP.md
+          - name: 解绑弹性公网IP
+            href: Operation-Guide/Instance/Disassociate-The-EIP.md
+          - name: 添加别名IP范围
+            href: Operation-Guide/Instance/Instance-Alias-IP.md
+          - name: SOS带外控制台
+            href: Operation-Guide/Instance/SOS.md
       - name: 网络
         items:
           - name: 私有网络
@@ -65,8 +71,14 @@
             href: Operation-Guide/Networking/Route-Table.md
           - name: 弹性公网IP
             href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
+          - name: 别名IP范围
+            href: Operation-Guide/Networking/Alias-IP.md
+          - name: NAT网关
+            href: Operation-Guide/Networking/NAT-Gateway.md
           - name: IPv6互联网网关
             href: Operation-Guide/Networking/IPv6-Internet-Access.md
+          - name: 负载均衡
+            href: Operation-Guide/Networking/Load-Balancer.md
       - name: 防火墙配置说明
         items:
           - name: 功能描述
@@ -85,30 +97,16 @@
             href: Operation-Guide/Set-RAID-Level/Description-Set-RAID-Level.md      
           - name: 操作步骤
             href: Operation-Guide/Set-RAID-Level/Steps-Set-RAID-Level.md
-      - name: 远程登陆
+      - name: 远程登录
         items:
           - name: 功能描述
             href: Operation-Guide/Remote-Login/Description-Remote-Login.md
           - name: 操作步骤
             href: Operation-Guide/Remote-Login/Steps-Remote-Login.md
-      - name: 生命周期管理
+      - name: 实例生命周期
         items:
           - name: 功能描述
             href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Description-Cloud-Physical-Server-Life-Cycle-Management.md
-          - name: 操作步骤
-            href: Operation-Guide/Cloud-Physical-Server-Life-Cycle-Management/Steps-Cloud-Physical-Server-Life-Cycle-Management.md
-      - name: 重装操作系统
-        items:
-          - name: 功能描述
-            href: Operation-Guide/Reinstall/Description-Reinstall.md
-          - name: 操作步骤
-            href: Operation-Guide/Reinstall/Steps-Reinstall.md
-      - name: 调整公网带宽
-        items:
-          - name: 功能描述
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md
-          - name: 操作步骤
-            href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps-Adjust-Public-Network-Bandwidth.md
       - name: 监控
         items:
           - name: 硬件监控
@@ -125,6 +123,14 @@
         items:
           - name: 概述
             href: Operation-Guide/Audit-Trail/Audit-Trail-Ovewview.md
+      - name: 标签
+        items:
+          - name: 概述
+            href: Operation-Guide/Tag/Tag.md
+      - name: 自定义数据
+        items:
+          - name: 概述
+            href: Operation-Guide/User-Data/User-Data.md
   - name: 最佳实践
     items:
     - name: NAT网关网络安全方案

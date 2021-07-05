@@ -13,4 +13,4 @@
 
 ## 业务架构
 
-![安全加速原理图](https://github.com/jdcloudcom/cn/edit/image/SCDN/SCDN-BI.png)
+![安全加速原理图](https://github.com/jdcloudcom/cn/blob/edit/image/Starshield/Starshield-BI.png)

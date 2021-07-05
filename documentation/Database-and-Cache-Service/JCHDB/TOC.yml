@@ -53,7 +53,21 @@
           - name: 设置权限
             href: Operation-Guide/Account/Grant-Privilege.md
           - name: 重置密码
-            href: Operation-Guide/Account/Reset-Password.md     
+            href: Operation-Guide/Account/Reset-Password.md
+      - name: 监控报警
+        items:
+          - name: 设置报警规则
+            href: Operation-Guide/Monitor-Alarm/Set-Alarm-Rules.md
+          - name: 查看监控信息
+            href: Operation-Guide/Monitor-Alarm/View-Monitor-Information.md
+      - name: 安全管理
+        items:
+          - name: 白名单设置
+            href: Operation-Guide/Security/SetWhiteList.md
+      - name: 日志审计
+        items:
+          - name: SQL审计
+            href: Operation-Guide/Audit/audit.md
             
       - name: 最佳实践
         items:
@@ -63,4 +77,14 @@
       - name: 常见问题
         items:
           - name: FAQ
-            href: FAQ/FAQ.md            
+            href: FAQ/FAQ.md     
+            
+      - name: 开发指南
+        items:
+          - name: 集群参数设置
+            href: DevelopmentGuide/ParameterSetting.md
+          - name: 数据库引擎
+            href: DevelopmentGuide/DatabaseEngine.md
+          - name: SQL语法
+            href: DevelopmentGuide/SQLGrammar.md
+     

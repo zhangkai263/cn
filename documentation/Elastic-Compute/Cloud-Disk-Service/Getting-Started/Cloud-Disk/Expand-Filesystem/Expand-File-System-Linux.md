@@ -34,28 +34,25 @@
 
 ## ext2、ext3或ext4文件系统的扩容
 
-1. 确认云硬盘已经在控制台完成扩容并再次挂载到此云主机后，从控制台重启此云主机。
-
-   ![vm_restart](../../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/vm_restart.png)
-
-2. 重启后登陆此云主机，输入`lsblk` 命令检查设备名称：
+  
+1. 登陆此云硬盘挂载的云主机，输入`lsblk` 命令检查设备名称：
 
    `lsblk`
 
    ![lsblk_ext4](../../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/lsblk_ext4.PNG)
 
-3. 使用`e2fsck`命令检查文件系统：
+2. 使用`e2fsck`命令检查文件系统：
 
    `e2fsck -f /dev/vde`
 
    ![e2fsck_ext4](../../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/e2fsck_ext4.PNG)
 
-4. 使用resize2fs命令对文件系统进行扩容，如扩容/dev/vde设备的文件系统：
+3. 使用resize2fs命令对文件系统进行扩容，如扩容/dev/vde设备的文件系统：
 
    `sudo resize2fs /dev/vde`
 
    ![resize2fs_ext4](../../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/expand-filesystem/resize2fs_ext4.PNG)
 
-5. 挂在成功后可运行`df -h`命令验证挂载是否成功。
+4. 挂载成功后，可运行`df -h`命令验证扩容是否成功。
 
 

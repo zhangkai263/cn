@@ -91,6 +91,8 @@ items:
       items:
          - name: 数据风控
            href: Web-Protection-Configure/Business-Risk-Control/Data-Risk-Control.md
+         - name: 账号安全
+           href: Web-Protection-Configure/Business-Risk-Control/Account-Safety.md
     - name: 流量管理
       items:
          - name: 设置状态码修改

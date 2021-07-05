@@ -24,13 +24,13 @@
    安全加速提供免费的通用SSL证书，可以通过SSL证书-订购SSL证书获取免费证书。通用SSL证书与专用证书相比有以下限制：
    - 浏览器和操作系统支持相比较少
    - 在多个安全加速客户之间共享
-   - 仅涵盖一级子域（例如：www.example.com，但不包括dev.www.example.com）
+   - 仅涵盖一级子域（例如：:example.com，但不包括“dev.example.com”）
 
 - 专用SSL证书
   与通用证书相比，购买专用证书有以下几点优势：
    - 浏览器和操作系统支持更好
    - 证书单独使用不与其他客户共享
-   - 可涵盖其他级别的子域（例如：test.dev.www.example.com，而不仅仅是www.example.com）
+   - 可涵盖其他级别的子域（例如：“test.dev.example.com”，而不仅仅是“example.com”）
 
 
 - 自定义证书

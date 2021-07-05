@@ -13,7 +13,7 @@
 ![](../../../../image/Advanced%20Anti-DDoS/self-define%20default%20page02.png)</br>
 5. 输入页面名称，并以标准html格式输入页面内容，支持最多不超过10000个字符的内容。</br>
 ![](../../../../image/Advanced%20Anti-DDoS/self-define%20default%20page03.png)</br>
-6. 编辑完成后，审核状态默认为 **审核中** ，等待京东智联云安全管理人员后台人工审核通过，审核状态修改为 **审核通过** 后，即可在实例和CC自定义规则下引用该页面。</br>
+6. 编辑完成后，审核状态默认为 **审核中** ，等待京东云安全管理人员后台人工审核通过，审核状态修改为 **审核通过** 后，即可在实例和CC自定义规则下引用该页面。</br>
 ![](../../../../image/Advanced%20Anti-DDoS/self-define%20default%20page05.png)</br>
 7. 返回 **实例详情** 页面，下拉列表选择自定义页面，即可在该实例下生效，此时IP高防节点返回的异常状态码页面即为自定义页面。</br>
 ![](../../../../image/Advanced%20Anti-DDoS/self-define%20default%20page04.png)</br>

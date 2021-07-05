@@ -27,7 +27,7 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="35">通用</td>
+      <td rowspan="46">通用</td>
       <td rowspan="8">共享</td>
       <td>g.s2.micro</td>
       <td>1</td>
@@ -109,7 +109,117 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="27">标准</td>
+      <td rowspan="38">标准</td>
+      <td>g.n4.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>120</td>
+      <td>120</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>480</td>
+      <td>480</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>960</td>
+      <td>960</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.3xlarge</td>
+      <td>12</td>
+      <td>48</td>
+      <td>1440</td>
+      <td>1440</td>
+      <td>3</td>
+      <td>3</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.4xlarge</td>
+      <td>16</td>
+      <td>64</td>
+      <td>1920</td>
+      <td>1920</td>
+      <td>4</td>
+      <td>4</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.6xlarge</td>
+      <td>24</td>
+      <td>96</td>
+      <td>2880</td>
+      <td>2880</td>
+      <td>6</td>
+      <td>6</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>3840</td>
+      <td>3840</td>
+      <td>8</td>
+      <td>8</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.12xlarge</td>
+      <td>48</td>
+      <td>192</td>
+      <td>5760</td>
+      <td>5760</td>
+      <td>12</td>
+      <td>12</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.16xlarge</td>
+      <td>64</td>
+      <td>256</td>
+      <td>7680</td>
+      <td>7680</td>
+      <td>16</td>
+      <td>16</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.n4.24xlarge</td>
+      <td>96</td>
+      <td>352</td>
+      <td>11520</td>
+      <td>11520</td>
+      <td>24</td>
+      <td>24</td>
+      <td></td>
+   </tr>
+   <tr>
       <td>g.n3.medium</td>
       <td>1</td>
       <td>4</td>
@@ -380,7 +490,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="35">计算优化</td>
+      <td rowspan="45">计算优化</td>
       <td rowspan="3">共享</td>
       <td>c.s2.large</td>
       <td>2</td>
@@ -462,7 +572,107 @@
       <td></td>
    </tr>
 </tr>
-      <td rowspan="27">标准</td>
+      <td rowspan="37">标准</td>
+      <td>c.n4.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>187</td>
+      <td>187</td>
+      <td>0.39</td>
+      <td>0.39</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>374</td>
+      <td>374</td>
+      <td>0.78</td>
+      <td>0.78</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>748</td>
+      <td>748</td>
+      <td>1.56</td>
+      <td>1.56</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.3xlarge</td>
+      <td>12</td>
+      <td>24</td>
+      <td>1122</td>
+      <td>1122</td>
+      <td>2.34</td>
+      <td>2.34</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.4xlarge</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1496</td>
+      <td>1496</td>
+      <td>3.12</td>
+      <td>3.12</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.6xlarge</td>
+      <td>24</td>
+      <td>48</td>
+      <td>2244</td>
+      <td>2244</td>
+      <td>4.68</td>
+      <td>4.68</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.8xlarge</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2992</td>
+      <td>2992</td>
+      <td>6.23</td>
+      <td>6.23</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.12xlarge</td>
+      <td>48</td>
+      <td>96</td>
+      <td>4488</td>
+      <td>4488</td>
+      <td>9.36</td>
+      <td>9.36</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.16xlarge</td>
+      <td>64</td>
+      <td>128</td>
+      <td>5984</td>
+      <td>5984</td>
+      <td>12.46</td>
+      <td>12.46</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.n4.24xlarge</td>
+      <td>96</td>
+      <td>192</td>
+      <td>8976</td>
+      <td>8976</td>
+      <td>18.7</td>
+      <td>18.7</td>
+      <td></td>
+   </tr>
+   </tr>
       <td>c.n3.large</td>
       <td>2</td>
       <td>4</td>
@@ -733,8 +943,78 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="21">内存优化</td>
-      <td rowspan="21">标准</td>
+      <td rowspan="28">内存优化</td>
+      <td rowspan="28">标准</td>
+      <td>m.n4.large</td>
+      <td>2</td>
+      <td>16</td>
+      <td>318</td>
+      <td>318</td>
+      <td>0.66</td>
+      <td>0.66</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.xlarge</td>
+      <td>4</td>
+      <td>32</td>
+      <td>636</td>
+      <td>636</td>
+      <td>1.33</td>
+      <td>1.33</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.2xlarge</td>
+      <td>8</td>
+      <td>64</td>
+      <td>1272</td>
+      <td>1272</td>
+      <td>2.65</td>
+      <td>2.65</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.3xlarge</td>
+      <td>12</td>
+      <td>96</td>
+      <td>1908</td>
+      <td>1908</td>
+      <td>3.98</td>
+      <td>3.98</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.4xlarge</td>
+      <td>16</td>
+      <td>128</td>
+      <td>2544</td>
+      <td>2544</td>
+      <td>5.3</td>
+      <td>5.3</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.6xlarge</td>
+      <td>24</td>
+      <td>192</td>
+      <td>3816</td>
+      <td>3816</td>
+      <td>7.95</td>
+      <td>7.95</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.8xlarge</td>
+      <td>32</td>
+      <td>256</td>
+      <td>5088</td>
+      <td>5088</td>
+      <td>10.6</td>
+      <td>7.95</td>
+      <td></td>
+   </tr>
+   </tr>
       <td>m.n3.large</td>
       <td>2</td>
       <td>16</td>
@@ -1463,7 +1743,6 @@
       <td>1*1/2 P40 </td>   
     </tr>  
 </table>
-
 请注意：
 
 * 标* 表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
