@@ -15,8 +15,8 @@
         href: Introduction/Benefits.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
-      - name: 产品分类
-        href: Introduction/Specifications.md
+      - name: 实例规格
+        href: Introduction/Instance-type.md
       - name: 云硬盘加密
         href: Introduction/Disk-Encrypt.md
       - name: 性能测试
