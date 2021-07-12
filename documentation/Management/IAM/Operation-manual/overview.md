@@ -16,9 +16,9 @@ https://uc.jdcloud.com/subAccount/login/ 链接是京东云子用户登录页面
 
 请将您的【子用户登录链接】或是【账号 ID】告知给您的子用户，以便子用户在访问控制台时能够指定所属的账户。
 
-![image-20210712141658215](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210712141658215.png)
+![image-20210712141658215](../../../../image/IAM/Summary/image-20210712141658215.png)
 
-![image-20210712141746232](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210712141746232.png)
+![image-20210712141746232](../../../../image/IAM/Summary/image-20210712141746232.png)
 
 ## IAM 的资源概览
 
@@ -32,5 +32,5 @@ IAM 的资源概览包括以下信息：
 
 点击数字链接，能够跳转到对应的列表页面；点击创建按钮，可以开始创建流程。
 
-![image-20210712142310209](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210712142310209.png)
+![image-20210712142310209](../../../../image/IAM/Summary/image-20210712142310209.png)
 
