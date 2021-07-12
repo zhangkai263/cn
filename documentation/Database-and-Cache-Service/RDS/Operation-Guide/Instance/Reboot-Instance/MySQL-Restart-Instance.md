@@ -15,4 +15,4 @@
     * 点击 **确认** 按钮，完成重启实例操作
     * 点击 **取消** 按钮，放弃重启实例操作
     
-![截图](https://img1.jcloudcs.com/cms/0d8ca556-e783-4fa9-ab72-b30652c0251020180423125543.png)
+![截图](../../../../image/RDS/MySQL-Restart-Instance.png)
