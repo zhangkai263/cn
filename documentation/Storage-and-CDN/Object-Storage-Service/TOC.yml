@@ -12,7 +12,9 @@ items:
       - name: 存储类型
         href: Introduction/StorageClass-Overview.md
       - name: 限制说明
-        href: Introduction/Restrictions.md 
+        href: Introduction/Restrictions.md
+      - name: 产品优势
+        href: Introduction/Advantages.md 
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
  - name: 产品定价
@@ -211,6 +213,8 @@ items:
         href: API-Reference/Introduction/OSS-Compared-With-File-System.md
       - name: 兼容S3 API 概述
         href:  API-Reference-S3-Compatible/Introduction-2.md
+      - name: 兼容接口概览
+        href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md        
       - name: 服务器域名
         href:  API-Reference-S3-Compatible/Regions-And-Endpoints.md
       - name:  兼容签名认证
@@ -219,8 +223,6 @@ items:
         href:  API-Reference-S3-Compatible/Compatibility-Header.md      
       - name:  兼容接口
         items:
-           - name: 兼容接口概览
-             href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md
            - name: 关于Service操作
              items:
                - name: GetService
@@ -353,7 +355,7 @@ items:
              href: API-Reference-S3-Compatible/Extension-API/Compress-Object.md
            - name: ImgProtected
              href: API-Reference-S3-Compatible/Extension-API/ImgProtected.md
-      - name: 旧版OSS API 简介
+      - name: 旧版OSS API 简介（不推荐）
         items:
            - name: 基本概念
              href: API-Reference/Introduction/Basic-Concepts.md
@@ -507,8 +509,6 @@ items:
         href: Best-Practices/Signature-In-URL-1.md
       - name: 跨域访问
         href:  Best-Practices/CORS.md
-      - name: 数据迁移工具 Osstransfer (推荐)
-        href: Best-Practices/Migration-Tool.md 
       - name: 数据迁移工具
         href: Best-Practices/Data-Migration-Tool.md 
       - name: 使用S3cmd管理OSS
