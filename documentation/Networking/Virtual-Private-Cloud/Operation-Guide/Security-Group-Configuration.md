@@ -1,6 +1,15 @@
-## **安全组配置**
+# **安全组配置**
+本文将详细介绍安全组的相关配置，具体包括如下操作：
 
-#### **步骤一、创建安全组**
+- [创建安全组](security-group-configuration#user-content-1)
+- [绑定资源](security-group-configuration#user-content-2)
+- [解绑资源](security-group-configuration#user-content-3)
+- [管理安全组规则](security-group-configuration#user-content-4)
+- [删除安全组](security-group-configuration#user-content-5)
+
+
+
+### 创建安全组
 
 1、进入京东云控制台，选择 弹性计算>>云主机>>安全组 页面（或者 弹性计算>>容器服务>>安全组，本帮助以云主机为例），点击【创建】，弹出创建弹框；
 
