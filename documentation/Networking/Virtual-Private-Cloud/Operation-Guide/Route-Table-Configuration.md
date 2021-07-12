@@ -6,6 +6,8 @@
 - [配置路由传播](route-table-configuration#user-content-3)
 - [关联子网](route-table-configuration#user-content-4)
 - [修改路由表](route-table-configuration#user-content-5)
+- [解绑子网](route-table-configuration#user-content-6)
+- [删除路由表](route-table-configuration#user-content-7)
 ## 操作背景
 
 - 打通网络连接，配置路由策略；
@@ -14,7 +16,8 @@
 ## 前提条件及限制
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
-- 确保您已创建了一个私有网络(VPC)
+- 确保您已创建了一个私有网络(VPC)；
+
 - 每个子网必须关联一张路由表，每张路由表可以关联多个子网；
 - 默认路由表及已经关联了子网的自定义路由表不支持删除；
 - 默认 Local 路由规则不可编辑、不可删除；
@@ -111,18 +114,23 @@
 3）已关联标准子网的路由表，不能再关联边缘子网，已关联边缘子网的路由表，不能再关联标准子网，也不能关联不同边缘可用区的边缘子网；
 4）如需配置支持IPv6的路由策略，须选择支持IPv6的VPC。
 ```
-### 解绑子网
-<div id="user-content-5"> </div>
+
 
 ### 修改路由表
+
+<div id="user-content-5"> </div>
 
 步骤1：打开控制台，选择 网络 > 私有网络 > 路由表 ，点击路由表名称进入路由表详情页；
    
 步骤2：点击名称/描述后的修改按钮，即可对路由表名称/描述进行修改，具体的名称/描述规则参见路由表创建；
 
+### 解绑子网
 
+<div id="user-content-6"> </div>
 
 ### 删除路由表
+
+<div id="user-content-7"> </div>
 
 步骤1：打开控制台，选择 网络 > 私有网络 > 路由表 ，进入路由表列表页；
   
