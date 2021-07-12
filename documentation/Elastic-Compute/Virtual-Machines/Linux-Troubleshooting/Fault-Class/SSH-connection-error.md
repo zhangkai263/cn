@@ -1,7 +1,5 @@
 # SSH 连接时出现如下错误：error Could not get shadow infromation for root
 
-
-
 注意：本文相关 Linux 配置及说明已在 CentOS 6.5 64 位操作系统中进行过测试。其它类型及版本操作系统配置可能有所差异，具体情况请参阅相应操作系统官方文档。
 
 
