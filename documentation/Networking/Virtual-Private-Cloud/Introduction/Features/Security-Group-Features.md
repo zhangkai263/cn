@@ -64,7 +64,7 @@
 | 支持允许规则和拒绝规则       | 支持允许规则                             |
 | 自动应用到子网内的所有云主机 | 安全组规则应用到已关联的所有云主机实例上 |
 ## 相关参考
-- [使用限制](../Restriction.md)
+- [使用限制](../Restrictions.md)
 - [配置安全组](../../Operation-Guide/Security-Group-Configuration.md)
 - [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
 - [配置VPC](../../Operation-Guide/VPC-Configuration.md)
