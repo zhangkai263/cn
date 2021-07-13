@@ -147,13 +147,16 @@
              href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Extension-API/Compress-Object.md
            - name: ImgProtected
              href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Extension-API/ImgProtected.md
-
- - name: API概览
-   href: overview.md
- - name: 更新历史
-   href: ChangeLog.md
- - name: 对象存储API
-   items:
+   
+ - name: 京东云OpenAPI
+   items：
+   
+  - name: API概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 对象存储API
+    items:
       - name: deleteBucket
         href: OSS-APIs/deleteBucket.md
       - name: headBucket
@@ -178,4 +181,64 @@
         href: OSS-APIs/getHistoricalReplicatTask.md
       - name: listHistoricalReplicatTasks
         href: OSS-APIs/listHistoricalReplicatTasks.md 
-        
+
+   - name: 旧版OSS API 简介（
+     items:
+       - name: 基本概念
+         href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Introduction/Basic-Concepts.md
+       - name: OSS术语表
+         href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Introduction/OSS-Concepts.md 
+       - name: API 概览
+         href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/API-Overview.md
+       - name: 通用HTTP头定义
+         items:
+           - name: 通用请求头
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/HTTP-Header/Request-Headers.md
+           - name: 公共响应头
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/HTTP-Header/Response-Headers.md
+           - name: 访问控制
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Access-Control-Signature-In-Header-Or-URL.md
+       - name:  关于Service的操作
+         items:
+           - name: GetService
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Service-Operations/GetService.md
+       - name: 关于Bucket的操作
+         items:
+           - name: PutBucket
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Bucket-Operations/PutBucket-1.md
+           - name: GetBucket
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Bucket-Operations/GetBucket.md             
+           - name: PutBucketReferer
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Bucket-Operations/PutBucketReferer.md 
+           - name: GetBucketReferer
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Bucket-Operations/GetBucketReferer.md 
+           - name: DeleteBucket
+             href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Bucket-Operations/DeleteBucket-1.md               
+       - name: 关于Object的操作
+         items:
+          - name: PutObject
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Object-Operations/PutObject.md
+          - name: GetObject
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Object-Operations/GetObject.md
+          - name: DeleteObject
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Object-Operations/DeleteObject.md
+       - name: 关于MultipartUpload的操作
+         items:
+          - name: InitiateMultipartUpload
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/InitiateMultipartUpload.md
+          - name: UploadPart
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/UploadPart.md
+          - name: CompleteMultipartUpload
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/CompleteMultipartUpload.md
+          - name: ListMultipartUploads
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/ListMultipartUploads.md 
+          - name: AbortMultipartUpload
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/AbortMultipartUpload.md 
+          - name: ListParts
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/MultipartUpload-Operations/ListParts.md
+       - name:  错误响应
+         items:
+          - name: 错误响应列表
+            href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Response-To-Errors/Error-List.md 
+          - name: 错误响应结构
+            href:../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Response-To-Errors/Response-Structure.md
