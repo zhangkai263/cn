@@ -4,7 +4,7 @@
 # 操作步骤
 ## 加入域
 1. 首先需要在跟云数据库 SQL Server相同的地域和VPC中创建目录服务，具体操作步骤可查看目录服务的相关[文档](https://docs.jdcloud.com/cn/driectory-service/create-instance)
-2. 进入到SQL Server **实例信息**的页面中，点击**修改目录服务**
+2. 进入到SQL Server **实例信息** 的页面中，点击 **修改目录服务**
 
 ![修改目录服务1](../../../../../image/RDS/Modify-AD-1.png)
 
