@@ -182,7 +182,7 @@
           - name: listHistoricalReplicatTasks
             href: OSS-APIs/listHistoricalReplicatTasks.md 
 
- - name: 旧版OSS API 简介（
+ - name: 旧版OSS API 简介（不推荐）
    items:
        - name: 基本概念
          href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference/Introduction/Basic-Concepts.md
