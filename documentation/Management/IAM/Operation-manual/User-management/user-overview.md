@@ -10,7 +10,9 @@
 
 ## 常用操作
 
-创建子用户
+[创建子用户](../../../../documentation/Management/IAM/Operation-manual/User-management/Create-subuser.md)
+
+[管理子用户](../../../../documentation/Management/IAM/Operation-manual/User-management/Manage-user.md)
 
 设置子用户的安全凭证
 
