@@ -510,7 +510,7 @@ items:
       - name: 跨域访问
         href:  Best-Practices/CORS.md
       - name: 数据迁移工具
-        href: Best-Practices/Data-Migration-Tool.md 
+        href: Best-Practices/Migration-Tool.md 
       - name: 使用S3cmd管理OSS
         href: Best-Practices/S3cmd.md
       - name: 使用S3 Browser管理OSS
