@@ -25,7 +25,7 @@ xml文件必须以\<?xml version="1.0" encoding="UTF-8"?\>开头，文件内容�
 
 | 参数 |  说明  |  
 | :------ |:---------: |
-| \<serviceIp\> \</serviceIp\>    |  IP高防防护IP地址 |
+| \<serviceIp\> \</serviceIp\>    |  DDoS IP高防防护IP地址 |
 | \<protocol\> \</protocol\>  | 转发协议，支持TCP和UDP  |
 | \<port\> \</port\>  | 转发端口，支持范围1-65535  |  	
 | \<algorithm\> \</algorithm\>  | 转发规则，</br>wrr: 加权轮询</br>rr:  不带权重的轮询</br>sh:源地址hash |  
