@@ -4,5 +4,6 @@
 
 子用户创建成功后，可以在弹窗内下载子用户的密码和 Access Key 信息。
 
-![创建子用户页面](../../../../../image/IAM/SubUserManagement/createsubuser.png)
+![image-20210714211825407](../../../../../image/IAM/SubUserManagement/image-20210714211825407.png)
 
+![image-20210714211804856](../../../../../image/IAM/SubUserManagement/image-20210714211804856.png)
