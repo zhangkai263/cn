@@ -22,7 +22,7 @@ DDoS IP高防的报表分为四类，DDoS攻击防护、业务流量、CC防护�
 ![图表](../../../../image/Advanced%20Anti-DDoS/report%2011.png)
 
 3. CC防护报表</BR>
-IP高防防御的CC攻击，会生成CC防护报表，CC报表支持切换不同的域名,CC防护仅对网站类业务有效。</BR>
+DDoS IP高防防御的CC攻击，会生成CC防护报表，CC报表支持切换不同的域名,CC防护仅对网站类业务有效。</BR>
 ![图表](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/report%2012.png)
 
 4. 连接数报表</BR>
