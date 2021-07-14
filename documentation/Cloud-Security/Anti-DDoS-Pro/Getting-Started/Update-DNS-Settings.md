@@ -20,7 +20,7 @@
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2007.png)<Br/>
 单击进入解析配置：
 ![修改DNS](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/update%20dns%2008.png)<Br/>
-将记录值，改为DDoS IP高防的cname地址即可。
+将记录值，改为DDoS IP高防的CNAME地址即可。
 
 
 ## 特殊说明
