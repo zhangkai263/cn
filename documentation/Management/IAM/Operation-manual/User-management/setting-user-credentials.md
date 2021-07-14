@@ -14,11 +14,11 @@
 
 为子用户【开启控制台登录】或【重置密码】时，需要设置登录密码和首次登录是否需要重置密码的规则。如果选择自定义密码，则密码规则必须符合[子用户的密码强度设置]()。
 
-![image-20210714224234744](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714224234744.png)
+![image-20210714224234744](../../../../../image/IAM/SubUserManagement/image-20210714224234744.png)
 
 设置完成后，请下载子用户的密码，以方便将登录信息提供给子用户使用。
 
-![image-20210714224344113](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714224344113.png)
+![image-20210714224344113](../../../../../image/IAM/SubUserManagement/image-20210714224344113.png)
 
 ## 虚拟MFA认证管理
 
@@ -26,7 +26,7 @@
 
 “虚拟 MFA 设备” 是一个能生成 6 位 TOTP 随机验证码的软件程序，即安装在指定手机上的特定版本的 “[京东云 APP](https://console.jdcloud.com/download)” 。启用 MFA 需要您使用京东云 APP 扫码，将该 APP 绑定为虚拟 MFA 设备，后续即可通过该 APP 上生产的验证码进行身份确认。
 
-![image-20210714231812428](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714231812428.png)
+![image-20210714231812428](../../../../../image/IAM/SubUserManagement/image-20210714231812428.png)
 
 **请注意，如果绑定后，更换手机重装 APP 或是将 APP 卸载重装，则新的 APP 不再是您绑定的虚拟 MFA 设备，不能再用作身份认证。此时请联系管理员，协助重新绑定虚拟 MFA 设备（即先停用 MFA，再重新绑定启用）。**
 
@@ -36,9 +36,9 @@
 2. 管理员不启用 MFA，而是要求子用户【必须开启 MFA 认证】（推荐）：子用户首次登录时，自行绑定虚拟 MFA 设备；后续每一次登录控制台，都使用自己的京东云 APP 进行验证；
 3. 在 MFA 已经启用的情况下，可以【启用操作保护】：子用户执行所有的[敏感操作](../../../../../documentation/User-Service/Security-Operation-Protection/Introduction/Support-Services.md)，无论通过控制台访问还是通过 OpenAPI 访问，都需要使用 MFA 验证码进行身份确认。
 
-![image-20210714232129506](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714232129506.png)
+![image-20210714232129506](../../../../../image/IAM/SubUserManagement/image-20210714232129506.png)
 
-![image-20210714232100395](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714232100395.png)
+![image-20210714232100395](../../../../../image/IAM/SubUserManagement/image-20210714232100395.png)
 
 ## AccessKey 管理
 
@@ -46,4 +46,5 @@
 
 每个子用户最多可以创建 2 个 AccessKeys 以支持秘钥的定期轮换。
 
-![image-20210714232701097](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210714232701097.png)
+![image-20210714232701097](../../../../../image/IAM/SubUserManagement/image-20210714232701097.png)
+
