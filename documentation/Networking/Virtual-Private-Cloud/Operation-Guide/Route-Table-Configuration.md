@@ -6,7 +6,7 @@
 - [配置路由传播](route-table-configuration#user-content-3)
 - [关联子网](route-table-configuration#user-content-4)
 - [修改路由表](route-table-configuration#user-content-5)
-- [更换路由表](route-table-configuration#user-content-6)
+- [子网更换路由表](route-table-configuration#user-content-6)
 - [删除路由表](route-table-configuration#user-content-7)
 
 ## 操作背景
@@ -29,14 +29,14 @@
 
 - 私有网络内的子网之间进行通信，优先匹配Local路由；
 
-- 路由表的路由规则匹配顺序为local、路由前缀掩码从长到短的精确匹配、0.0.0.0/0最后匹配；路由前缀与掩码长度一样时，静态路由优先、传播路由其次，同为传播路由则为等价路由；
+- 路由表的路由规则匹配顺序为local、路由前缀掩码从长到短的精确匹配、0.0.0.0/0最后匹配；路由前缀与掩码长度一样时，静态路由优先、传播路由其次，同为传播路由则为等价路由。
 
 ### 创建路由表
 
 <div id="user-content-1"> </div>
 
 ```
-您创建的路由表即为自定义路由表，支持删除，默认路由表由系统创建，不支持删除，随VPC删除而删除。
+您创建的路由表即为自定义路由表，支持删除，默认路由表随VPC创建而创建，随VPC删除而删除，不支持单独删除。
 ```
 步骤1：打开控制台，选择 网络 -> 【私有网络】 -> 【路由表】，进入路由表列表页；
 
@@ -162,10 +162,10 @@
 
 步骤4：输入修改后的内容，点击【确认】按钮完成内容修改。
 
-### 更换路由表
+### 子网更换路由表
 
 <div id="user-content-6"> </div>
-
+**从路由侧更换路由表**
 步骤1：登录京东云，打开控制台，选择 网络 -> 【私有网络】 -> 【路由表】，进入路由表列表页；
    
 步骤2：定位需要更换子网的路由表，点击路由表名称进入详情页，选择关联子网tab；
@@ -174,6 +174,7 @@
 
 步骤4：点击【确定】，完成子网更换路由表。
 
+**从子网侧更换路由表**
 在子网侧也可进行更换路由操作，具体操作如下：
 
 步骤1：登录京东云，打开控制台，选择 网络 -> 【私有网络】 -> 【子网】，进入子网列表页；
@@ -200,5 +201,11 @@
 2. 默认路由表不可删除。
 ```
 
-
+## 相关参考
+- [路由表概述](../Introduction/Features/Route-Table-Features.md)
+- [创建VPC](VPC-Configuration.md)
+- [子网配置](Subnet-Configuration.md)
+- [使用限制](../Introduction/Restrictions.md)
+- [地域及可用区](Introduction/Region-Az.md)
+- [常见问题](../FAQ/FAQ.md)
 
