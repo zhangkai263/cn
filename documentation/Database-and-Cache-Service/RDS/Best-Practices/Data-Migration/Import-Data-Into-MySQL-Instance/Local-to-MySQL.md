@@ -12,9 +12,9 @@
 3. 通过控制台进行数据库账号的创建，也可以使用创建云数据库 MySQL 的时候的账号，然后赋予这个账号在第 2 步操作中新建的库的 **读写** 权限，具体的创建步骤请参考 [创建账号](../../../Operation-Guide/Account/Create-Account/MySQL-Create-Account.md)。
 4. 完成云数据库 MySQL 创建和初始化工作之后，开始从本地自建的 MySQL 进行数据导出到本地的操作，执行命令
 
-    ```SQL
+```SQL
     mysqldump -u用户名 -p密码 --single-transaction --set-gtid-purged=OFF -B 数据库名称 > /路径/导出文件名.sql
- ```
+```
   **参数描述**
       用户名：自建数据库的用户名。
       密码：自建数据库的密码。
