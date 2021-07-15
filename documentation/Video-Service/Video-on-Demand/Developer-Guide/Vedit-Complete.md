@@ -14,7 +14,7 @@
 |jobId|Long|作业ID|
 |projectId|String|文件地址|
 |status|string|结果状态，成功 succeeded，失败 failed|
-|resultCode|String|结果状态码，RC00为成功，其他为失败|
+|resultCode|String|结果状态码，成功时，此结果状态码为RC00，失败时为其他值|
 |resultPhrase|String|结果状态短语|
 |veditResult|**VeditResult**|剪辑结果，当status为succeeded时，此结果不为空|
 
