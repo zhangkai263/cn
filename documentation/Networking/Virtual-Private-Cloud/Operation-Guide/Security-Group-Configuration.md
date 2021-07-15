@@ -9,12 +9,15 @@
 - [删除安全组](security-group-configuration#user-content-5)
 
 ### 前提条件及限制
+
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 
 
 ### 创建安全组
 
-步骤1：进入京东云控制台，选择 弹性计算>>云主机>>安全组 页面（或者 弹性计算>>容器服务>>安全组，本帮助以云主机为例），点击【创建】，弹出创建弹框；
+<div id="user-content-1"> </div>
+
+步骤1：进入京东云控制台，选择 弹性计算 -> 【云主】 -> 【安全组】 页面（或者 弹性计算 -> 【容器服务】 -> 安全组，本帮助以云主机为例），点击【创建】，弹出创建弹框；
 
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration/Step1.png)
 
@@ -31,6 +34,8 @@
 
 ### 绑定云资源
 
+<div id="user-content-2"> </div>
+
 步骤1：进入京东云控制台，选择 弹性计算>>云主机>>安全组 页面（或者 弹性计算>>容器服务>>安全组，本帮助以云主机为例），进入控制台安全组列表页，选择【绑定主机】按钮，弹出绑定云主机弹窗；或者点击安全组名称进入安全组详情页，选择“云主机”TAB页，点击【添加】按钮，弹出绑定云主机弹窗；
 
  ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration/Step3.png)
@@ -42,10 +47,12 @@
 ![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration/Step4.png)
 
 ```
-更改安全组不影响已建立的连接
+注：更改安全组出入方向规则后，立即生效，但不影响更改规则前已建立的连接，如需在已建立的连接上生效，需手动断开已建立连接。
 ```
 
 ### 解绑云资源
+
+<div id="user-content-3"> </div>
 
 步骤1：进入京东云控制台，选择 弹性计算>>云主机>>安全组 页面（或者 弹性计算>>容器服务>>安全组，本帮助以云主机为例），点击列表中的安全组名称进入详情页，选择“云主机”TAB页，显示安全组绑定的云主机列表；
 
@@ -55,8 +62,10 @@
 
 
 
-### 配置出站规则
+### 管理安全组规则
+<div id="user-content-4"> </div>
 
+#### 添加出/入站规则
 出站规则用于过滤云主机访问互联网或其他云主机的网络流量，设置方式如下：
 
 步骤1：进入京东云控制台，选择 弹性计算>>云主机>>安全组 页面（或者 弹性计算>>容器服务>>安全组，本帮助以云主机为例），找到需要配置出站规则的安全组，点击“更多”操作中的【修改出站规则】或点击安全组名称跳转到其详情页面；
