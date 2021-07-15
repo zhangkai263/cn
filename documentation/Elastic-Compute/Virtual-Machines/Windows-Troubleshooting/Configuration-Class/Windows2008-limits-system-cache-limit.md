@@ -14,28 +14,28 @@ http://www.microsoft.com/en-us/download/details.aspx?id=9258
 具体设置步骤如下：
 
 1.解压后根据不同系统版本中对应的DynCache.exe文件复制到C:\windows\system32中。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9001.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9001.png)
 
 2.以管理员身份打开命令提示符，执行如下命令添加服务：
 
-***sc create DynCache binPath= %SystemRoot%\System32\DynCache.exe start= auto type= own DisplayName= "Dynamic Cache Service"***
+```sc create DynCache binPath= %SystemRoot%\System32\DynCache.exe start= auto type= own DisplayName= "Dynamic Cache Service"```
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9002.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9002.png)
 
 3.回到DynCache文件夹，找到DynCache.reg的注册表文件导入（双击文件即可）。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9003.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9004.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9003.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9004.png)
 
 4.运行输入regedit 打开注册表，找到*HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DynCache\Parameters*。右侧找到*MaxSystemCacheMBytes*，双击它，这里我们选择“十进制”，在数值里输入要限制最大的缓存数（单位是MB），输入200就是限制缓存最大为200MB，输入0为不限制。
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9005.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9006.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9007.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9005.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9006.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9007.png)
 
 5.运行输入*services.msc*，到服务中启动*DynCache*服务。
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9008.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9009.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9008.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2008%E9%99%90%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%BC%93%E5%AD%98%E4%B8%8A%E9%99%9009.png)
 
 注：下载的dyncache解压出来是有多几个版本可选的，请选择retail amd64的版本，不要选择ia64（ia64表示安腾的64位处理器版本）。
 

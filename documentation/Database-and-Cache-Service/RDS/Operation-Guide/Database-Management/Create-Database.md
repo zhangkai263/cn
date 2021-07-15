@@ -12,11 +12,13 @@
 1. 登录[云数据库 RDS管理控制台](https://rds-console.jdcloud.com/database)。
 2. 点击目标实例，进入实例详情页，切换至 **库管理** Tab页。
 3. 点击 **创建库** 按钮，创建库弹窗框参数说明如下：
+
 |参数名称|说明|
 |--|--|
 |数据库名称|&bull;2-32位字符<br> &bull;支持小写字母、数字以及英文划线及下划线<br> &bull;数据库名称在实例中唯一<br> &bull;不可使用保留字，参见 [限制说明](https://docs.jdcloud.com/cn/rds/mysql-restrictions)|
 |字符集|可选择utf8, gbk, latin1, utf8mb4, euckr, armscii8, ascii, big5。|
 ![Create-Database](.../../../../../image/RDS/Create-Database.png)
+
 4. 单击 **确定** 按钮，完成库的创建，返回库管理的列表页。
 
 

@@ -17,9 +17,9 @@
 #### 操作步骤
 
 通过该操作获取SOS带外控制台，在终端中使用以下命令访问该服务器的带外控制台：<br/>
-命令格式：ssh {instanceId}@sos.cpsoob-{az}.jdcloud.com，其中：<br/>
+命令格式：ssh {instanceId}@sos.cpsoob.jdcloud.com，其中：<br/>
 instanceId：创建实例分配的实例Id;<br/>
-az：实例所在可用区;<br/>
+
 获取命令后运行，打开一个终端窗口并输入SSH命令，待密钥认证通过后，可进入带外控制台，进入linux系统需要输入root账号及密码。<br/>
 
 说明：<br/>

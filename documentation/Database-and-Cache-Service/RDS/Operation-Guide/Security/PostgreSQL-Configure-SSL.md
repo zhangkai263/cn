@@ -11,7 +11,7 @@
 
 > 下面以 PostgreSQL  11.6 为例，通过命令行的方式连接数据库
 
-```
+```SQL
 # SSL 证书为上一步下载的证书文件所在路径
 
 psql -host [域名] -port [端口] -user [用户名] -dbname [数据库] -password [密码] -sslrootcert [SSL 证书路径]-sslmode=verify-ca
