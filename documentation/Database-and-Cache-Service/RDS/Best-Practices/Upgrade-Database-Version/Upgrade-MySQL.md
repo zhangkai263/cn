@@ -17,11 +17,11 @@
 
     ```SQL
     mysqldump -u用户名 -p密码 -R -E --skip-tz-utc --opt --skip-add-drop-table --single-transaction --hex-blob --default-character-set=binary --master-data=2 -B 数据库名称 > /路径/导出文件名.sql
-```
-    **参数描述**
-    用户名：云数据库的用户名。
-    密码：云数据库的密码。
-    数据库名称：填写您需要导出的库名，多个库名通过空格来分隔。
+    ```
+    **参数描述**<br>
+    用户名：云数据库的用户名。<br>
+    密码：云数据库的密码。<br>
+    数据库名称：填写您需要导出的库名，多个库名通过空格来分隔。<br>
 
 4. 完成云数据库 MySQL 5.7 数据导出之后，开始创建云数据库 MySQL 8.0，具体的创建步骤请参考 [创建云数据库 MySQL 实例](../../Operation-Guide/Instance/Create-Instance.md)。
 5. 通过控制台进行库的创建，确保云数据库 MySQL 5.7 中需要导出的库名在云数据库 MySQL 8.0 中同样的创建了一遍，具体的创建步骤请参考 [创建库](../../Operation-Guide/Database-Management/Create-Database.md)。
@@ -31,10 +31,10 @@
 
     ```SQL
     mysql -u用户名 -p密码 -h 云数据库域名 --default-character-set=binary < /路径/导出文件名.sql
-```
-    **参数描述**
-    用户名：第 6 步操作中的用户名。
-    密码：第 6 步操作中的用户对应的密码。
-    数据库域名：云数据库 MySQL 8.0 的域名可以在实例的详情页查看。
+    ```
+    **参数描述**<br>
+    用户名：第 6 步操作中的用户名。<br>
+    密码：第 6 步操作中的用户对应的密码。<br>
+    数据库域名：云数据库 MySQL 8.0 的域名可以在实例的详情页查看。<br>
 
 8. 如果没有任何错误提示，表示导入成功。您可以登录到云数据库 MySQL 8.0 里面查看，是否数据真的已经导入进去了。
