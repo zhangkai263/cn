@@ -8,14 +8,14 @@
 - 只有状态为 **运行** 的数据库才显示在列表中。
 - 如果刚创建的新库状态还是 **创建中** ，等待创建完成变为 **运行中** 状态。
 
-![导入备份2](../../../../../image/RDS/Import-Backup-2.png)
+  ![导入备份2](../../../../../image/RDS/Import-Backup-2.png)
 
 ## 3. 确认导入
 - 查看操作的信息无误。 
->注意： 单库上云的备份仅支持FULL模式的备份，因此请确认备份方式是否正确，具体的方法可以查看[文档](https://docs.jdcloud.com/cn/rds/backup-local-database)
+  >注意： 单库上云的备份仅支持FULL模式的备份，因此请确认备份方式是否正确，具体的方法可以查看[文档](https://docs.jdcloud.com/cn/rds/backup-local-database)
 - 确认信息无误后，勾选选择框，并开始导入
 
-![导入备份3](../../../../../image/RDS/Import-Backup-3.png)
+  ![导入备份3](../../../../../image/RDS/Import-Backup-3.png)
          
 ## 4. 查看导入状态
 - 点击一下刷新按钮，能看到文件的导入状态为**导入中**，同时实例的状态也变更为**单库备份恢复中**。
