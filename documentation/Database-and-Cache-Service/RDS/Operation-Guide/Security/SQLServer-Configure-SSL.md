@@ -7,10 +7,9 @@
 2. 点击 **是否开启** 按钮，开启或关闭SSL
 3. 在控制台开启、关闭SSL，均需要重启SQL Server实例才能生效
 
-注意： 开启SSL后，对数据库性能和CPU负荷有一定影响，建议在测试的基础上使用。
+   >注意： 开启SSL后，对数据库性能和CPU负荷有一定影响，建议在测试的基础上使用。
 
 ## 客户端配置
-在SQL Server的连接中使用SSL，可以参考SQL Server 官方文档：
+在SQL Server的连接中使用SSL，可以参考[SQL Server 官方文档](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)。
 
-https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15
 
