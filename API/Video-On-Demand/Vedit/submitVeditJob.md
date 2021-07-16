@@ -14,7 +14,7 @@ https://vod.jdcloud-api.com/v1/veditJobs:submit
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**projectId**|Long|False| |工程ID|
+|**projectId**|Long|True| |工程ID|
 |**mediaMetadata**|[MediaMetadata](submitveditjob#mediametadata)|False| |合成媒资元数据|
 |**userData**|String|False| |用户数据，JSON格式字符串|
 

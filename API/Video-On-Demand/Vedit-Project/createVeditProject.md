@@ -14,23 +14,23 @@ https://vod.jdcloud-api.com/v1/veditProjects
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**projectName**|String|False| |工程名称|
+|**projectName**|String|True| |工程名称|
 |**description**|String|False| |工程描述|
-|**timeline**|[Timeline](createveditproject#timeline)|False| |时间线信息|
+|**timeline**|[Timeline](createveditproject#timeline)|True| |时间线信息|
 
 ### <div id="timeline">Timeline</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**trackList**|[MediaTrack[]](createveditproject#mediatrack)|False| |媒体轨列表，有序，若有重合时间段，则排在后面的媒体轨上的重叠部分将被忽略|
+|**trackList**|[MediaTrack[]](createveditproject#mediatrack)|True| |媒体轨列表，有序，若有重合时间段，则排在后面的媒体轨上的重叠部分将被忽略|
 ### <div id="mediatrack">MediaTrack</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**trackType**|String|False| |轨类型。当前只支持 video|
-|**clips**|[MediaClip[]](createveditproject#mediaclip)|False| | |
+|**clips**|[MediaClip[]](createveditproject#mediaclip)|True| | |
 ### <div id="mediaclip">MediaClip</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**mediaId**|String|False| |素材ID，此处，必须为视频点播媒资的视频ID|
+|**mediaId**|String|True| |素材ID，此处，必须为视频点播媒资的视频ID|
 |**mediaIn**|Integer|False| |素材片段在媒资中的入点|
 |**mediaOut**|Integer|False| |素材片段在媒资中的出点|
 |**timelineIn**|Integer|False| |素材片段在合成时间线中的入点|
