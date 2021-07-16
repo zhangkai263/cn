@@ -11,13 +11,12 @@
 3. 点击下载 [SSL 证书](https://jddb-common-public.s3.cn-north-1.jdcloud-oss.com/jdcloud-rds-ca.pem)
 4. 下载完 SSL 证书之后，就可以使用加密的连接方式访问云数据库 MySQL
 
-> 下面以 MySQL 5.7 为例，通过命令行的方式连接数据库
+   > 下面以 MySQL 5.7 为例，通过命令行的方式连接数据库
 
-```SQL
-# SSL 证书为上一步下载的证书文件所在路径
-
-mysql -h [域名] -P [端口] -u [用户名] -p [密码] --ssl-ca [SSL 证书]
-```
+   ```SQL
+   # SSL 证书为上一步下载的证书文件所在路径
+   mysql -h [域名] -P [端口] -u [用户名] -p [密码] --ssl-ca [SSL 证书]
+   ```
 
 当成功连接上云数据库 MySQL 之后，就表示加密的连接已经成功建立
 
