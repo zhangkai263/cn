@@ -39,6 +39,5 @@ upload-tool.exe -r [区域代码] -f [备份文件本地路径] -k [上传key值
 upload-tool.exe -r cn-north -f z:/Backup/testdb.bak -k   U2FsdGVkX19c7B0ZGP0mU++sXgWZoHCeGP0tacbRz3TpoOKPsXmncA
 ```
 >注意事项：
-
 >1. 出于安全考虑，key值在1个小时之内有效。Key过期后需点击按钮重新生成
 >2. 为安全起见，上传文件时不支持同名文件的覆盖，请先删除原文件后再上传。
