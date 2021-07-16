@@ -25,12 +25,15 @@ NVIDIA device plugin以daemonset的方式在Kubernetes节点上运行，与kubel
 1. NVIDIA device plugin的yaml文件内容如下：
 
 ```
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: nvidia-device-plugin-daemonset
   namespace: kube-system
 spec:
+  selector:
+    matchLabels:
+      name: "nvidia-device-plugin-ds"
   updateStrategy:
     type: RollingUpdate
   template:

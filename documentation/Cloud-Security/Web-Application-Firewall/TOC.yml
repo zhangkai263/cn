@@ -1,6 +1,16 @@
-name: Web 应用防火墙
+﻿name: Web 应用防火墙
 href:
 items:
+- name: 安全公告
+  items:
+      - name: FastJSON 反序列化漏洞
+        href: Security-Notice/FastJSON-Deserializa-Loophole.md
+      - name: Thinkphp 远程命令执行漏洞
+        href: Security-Notice/Thinkphp-Remote-Command-Execution-Loophole.md
+      - name: Drupal远程代码执行漏洞
+        href: Security-Notice/Drupal-Remote-Code-Execution-Loophole.md
+      - name: Atlassian Jira服务端模板注入漏洞
+        href: Security-Notice/Atlassian-Jira-Server-Model-Injection-Loophole.md
 - name: 产品简介
   items:
       - name: 产品概述
@@ -15,10 +25,16 @@ items:
   items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
-    - name: 价格说明
+    - name: 价格及版本说明
       href: Pricing/Price-Overview.md
     - name: 购买方式
       href: Pricing/Purchase-Process.md
+    - name: 续费与升级
+      href: Pricing/Renew-And-Upgrade.md
+    - name: 域名扩展包
+      href: Pricing/domain-Expansion-Pack.md
+    - name: 带宽扩展包
+      href: Pricing/Bandwidth-Expansion-Pack.md
 - name:  快速入门
   items:
     - name: 添加准备
@@ -31,42 +47,94 @@ items:
       href: Getting-Started/Step-3.md 
     - name: 步骤4-修改DNS解析
       href: Getting-Started/Step-4.md
-- name: 操作指南
+    - name: 关联证书
+      href: Getting-Started/update-certificate.md
+    - name: 开启IPv6防护
+      href: Getting-Started/Open-IPv6-Protection-Switch.md
+    - name: 支持的自定义端口范围
+      href: Getting-Started/Support-Custom-Port.md
+- name: 网站防护配置
   items:
-    - name: 防护配置
+    - name: Web防护
       items:
-         - name: Web应用防护
-           href: Operation-Guide/Protection-Configuration/Web-Attack-Protection.md
-         - name: CC防护
-           href: Operation-Guide/Protection-Configuration/CC-Protection.md
-         - name: 精准访问控制
-           href: Operation-Guide/Protection-Configuration/Precise-Access-Control.md
-         - name: 恶意IP惩罚
-           href: Operation-Guide/Protection-Configuration/Malicious-IP-Punishment.md
-         - name: IP黑白名单配置
-           href: Operation-Guide/Protection-Configuration/Black-and-White-List.md
-         - name: 网页防篡改
-           href: Operation-Guide/Protection-Configuration/Tamper.md
-         - name: 自定义CC防护
-           href: Operation-Guide/Protection-Configuration/Custom-CC.md
-         - name: 防爬虫
-           href: Operation-Guide/Protection-Configuration/Reptile-protection.md
-    - name: 防护统计
-      items: 
-         - name: 总览
-           href: Operation-Guide/Protection-Statistics/overview.md
-         - name: 安全报表
-           href: Operation-Guide/Protection-Statistics/Security-Report.md
-         - name: 全量日志查询
-           href: Operation-Guide/Protection-Statistics/Daily-Record.md
-    - name: 接入WAF
+         - name: 设置Web应用攻击防护
+           href: Web-Protection-Configure/Web-Protection/Web-Application-Firewall-Engine.md
+         - name: 设置智能语义防护引擎
+           href: Web-Protection-Configure/Web-Protection/Intelligent-Semantics-Protection-Engine.md
+         - name: 开启恶意IP惩罚
+           href: Web-Protection-Configure/Web-Protection/Open-Malice-IP-Punishment.md
+         - name: 设置自定义防护
+           href: Web-Protection-Configure/Web-Protection/Set-Up-Custom-Protection.md
+    - name: 访问控制
       items:
-         - name: cname接入指南
-           href: Operation-Guide/Entering-WAF/Cname-access.md
-         - name: WAF源站负载均衡
-           href: Operation-Guide/Entering-WAF/WAF-LB.md
-         - name: https高级配置
-           href: Operation-Guide/Entering-WAF/https-Advantage.md
+         - name: 设置白名单规则
+           href: Web-Protection-Configure/Access-Control/Set-Up-Whitelist-Rules.md
+         - name: 设置黑名单规则
+           href: Web-Protection-Configure/Access-Control/Set-Up-Blacklist-Rules.md
+         - name: 设置限速
+           href: Web-Protection-Configure/Access-Control/Set-Up-Speed-Limit.md
+    - name: CC安全防护
+      items:
+         - name: 设置CC安全防护
+           href: Web-Protection-Configure/CC-Safety-Protection/Set-Up-Safety-Protection.md
+    - name: BOT管理
+      items:
+         - name: 开启防爬虫
+           href: Web-Protection-Configure/BOT-Management/Open-Anti-Crawler.md
+         - name: 设置已知爬虫库规则
+           href: Web-Protection-Configure/BOT-Management/Set-Up-Known-Crawler-Rules.md
+         - name: 设置自定义BOT规则-通用
+           href: Web-Protection-Configure/BOT-Management/Set-Up-Custom-BOT-Rules-Currency.md
+         - name: 设置自定义BOT规则-高级
+           href: Web-Protection-Configure/BOT-Management/Set-Up-Custom-BOT-Rules-Senior.md
+    - name: 业务风控
+      items:
+         - name: 数据风控
+           href: Web-Protection-Configure/Business-Risk-Control/Data-Risk-Control.md
+         - name: 账号安全
+           href: Web-Protection-Configure/Business-Risk-Control/Account-Safety.md
+    - name: 流量管理
+      items:
+         - name: 设置状态码修改
+           href: Web-Protection-Configure/Traffic-Management/Set-Up-Status-Code-Modify.md
+         - name: 设置请求头修改
+           href: Web-Protection-Configure/Traffic-Management/Set-Up-Request-Header-Modify.md
+         - name: 设置响应头修改
+           href: Web-Protection-Configure/Traffic-Management/Set-Up-Respond-Header-Modify.md
+         - name: 设置URI重写
+           href: Web-Protection-Configure/Traffic-Management/Set-Up-URI-Rewriten.md
+    - name: 网站合规
+      items:
+         - name: 设置网页防篡改
+           href: Web-Protection-Configure/Web-Compliance/Set-Up-Anti-Tampering-Of-Web-Pages.md
+         - name: 设置敏感信息防泄漏
+           href: Web-Protection-Configure/Web-Compliance/Set-Up-Sensitive-Information-Leakage-Prevention.md
+         - name: 设置网页缓存
+           href: Web-Protection-Configure/Web-Compliance/Set-Up-Web-Cache.md               
+- name: 统计报表与告警
+  items: 
+     - name: 总览
+       href: Protection-Statistics/Overview-Information.md
+     - name: 安全报表
+       href: Protection-Statistics/Security-Report.md
+     - name: 全量日志查询
+       href: Protection-Statistics/General-Log.md
+     - name: 设置告警监控
+       href: Protection-Statistics/Set-UP-Alarm.md
+- name: 最佳实践
+  items:
+     - name: WAF接入配置最佳实践
+       items: 
+          - name: 同时部署IP高防和WAF
+            href: Best-Practices/WAF-Join-Up/Arrange-Anti-ddos-pro-and-WAF.md
+          - name: 同时部署CDN和WAF
+            href: Best-Practices/WAF-Join-Up/Arrange-CDN-and-WAF.md
+     - name: Web应用攻击防护最佳实践
+       href: Best-Practices/Web-Application-Protection-Engine-Best-Practices.md
+     - name: 如何获取客户端真实IP
+       href: Best-Practices/Get-Visitor-Ture-IP.md
+     - name: 配置TLS协议最佳实践
+       href: Best-Practices/Setting-Up-TLS-Protocol-Best-Practices.md
 - name: 常见问题
   items:
     - name: 添加网站参数详解

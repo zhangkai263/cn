@@ -47,6 +47,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs
 |**keyName**|String|密钥对名称|
 |**keyFingerprint**|String|密钥对的指纹，根据 RFC4716 定义的公钥指纹格式，采用 MD5 信息摘要算法。|
 |**createTime**|String|创建时间|
+|**instanceIds**|String[]|绑定此密钥的云主机id|
 
 ## 返回码
 |返回码|描述|

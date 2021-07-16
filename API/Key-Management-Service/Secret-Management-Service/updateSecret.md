@@ -17,13 +17,13 @@ https://kms.jdcloud-api.com/v1/secret/{secretId}
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**secretDescCfg**|SecretDescCfg|True| | |
+|**secretDescCfg**|[SecretDescCfg](updatesecret#secretdesccfg)|True| | |
 
-### SecretDescCfg
+### <div id="secretdesccfg">SecretDescCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**secretDesc**|String|True| |secret描述，默认为""|
 |**secretName**|String|True| |secret名称，默认为""|
+|**secretDesc**|String|True| |secret描述，默认为""|
 
 ## 返回参数
 |名称|类型|描述|

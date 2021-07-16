@@ -37,7 +37,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/raids
 |**volumeType**|String|磁盘类型, 如 system/data|
 |**volumeDetail**|String|设备详情|
 |**raidTypeId**|String|RAID类型ID|
-|**raidType**|String|RAID类型, 如 NORAID, RAID0, RAID1|
+|**raidType**|String|RAID类型, 如 NORAID, RAID0, RAID1，RAID10|
 |**deviceType**|String|云物理服务器类型, 如 cps.c.normal|
 |**description**|String|RAID类型描述|
 

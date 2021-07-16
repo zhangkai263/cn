@@ -95,7 +95,6 @@ s3.endpoint = "https://s3.cn-north-1.jdcloud-oss.com"
 s3.config.update({
   accessKeyId: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
   secretAccessKey: "yyyyyyyyyyyyyyyyyyyyyyyyyyy",
-  s3ForcePathStyle: true,
   signatureVersion: "v4"
 })
 

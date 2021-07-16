@@ -1,9 +1,11 @@
   name: 平台协议
   href: 
   items:
-  - name: 京东智联云用户服务协议
+  - name: 京东云用户服务协议
     href: Registration-Agreement.md
-  - name: 京东智联云隐私政策
+  - name: 京东云隐私政策
     href: Privacy-Policy.md
   - name: 第三方账号绑定登录协议
     href: bind-agreement.md
+  - name: 用户授权协议
+    href: User-Authorization-Agreement.md

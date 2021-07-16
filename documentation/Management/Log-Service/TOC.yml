@@ -27,7 +27,7 @@ items:
           href: Introduction/ResourceLog/esLog.md
         - name: API网关日志
           href: Introduction/ResourceLog/apiLog.md
-        - name: 应用负载均衡访问日志
+        - name: 应用负载均衡日志
           href: Introduction/ResourceLog/ALBLog.md
         - name: MySQL审计日志
           href: Introduction/ResourceLog/MySQLLog.md
@@ -41,6 +41,8 @@ items:
           href: Introduction/ResourceLog/JDWLog.md
         - name: 自动镜像执行日志
           href: Introduction/ResourceLog/AutoImageLog.md
+        - name: NAT网关日志
+          href: Introduction/ResourceLog/NATLog.md
 - name: 产品定价
   items:
     - name: 计费概述
@@ -71,7 +73,7 @@ items:
           href: Operation-Guide/Logpreprocessing/Jsonlog.md
         - name: 分隔符提取模式
           href: Operation-Guide/Logpreprocessing/Separatorlog.md
-    - name: 日志检索
+    - name: 日志检索与分析
       items:
         - name: 日志检索语法
           href: Operation-Guide/LogSearch/LS-grammar.md
@@ -79,6 +81,8 @@ items:
           href: Operation-Guide/LogSearch/fullTextSearch.md
         - name: 键值检索
           href: Operation-Guide/LogSearch/KVSearch.md
+        - name: 统计分析
+          href: Operation-Guide/LogSearch/analysis.md
     - name: 日志转储
       href: Operation-Guide/LogTransfer/TransferConfig.md
     - name: 日志监控

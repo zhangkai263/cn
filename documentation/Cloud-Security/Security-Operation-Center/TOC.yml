@@ -1,0 +1,67 @@
+  name: 安全运营中心
+  href: 
+  items:
+  - name: 产品简介
+    items:
+      - name: 产品定义
+        href: Introduction/01-VersionDefine.md
+      - name: 产品架构
+        href: Introduction/02-ProductInfrasture.md
+  - name: 用户指南
+    items:
+      - name: 安全可视
+        items:
+          - name: 仪表盘
+            href: Operation-Guide/01-view/01-Dashboard.md
+          - name: 安全大屏
+            href: Operation-Guide/01-view/02-SecurityScreen.md
+      - name: 资产中心
+        items:
+          - name: 资产中心概览
+            href: Operation-Guide/02-AssetCenter/01-AssetCenter.md
+          - name: 资产详情页
+            href: Operation-Guide/02-AssetCenter/02-AssetDetails.md
+      - name: 安全防范
+        items:
+          - name: 策略管理
+            href: Operation-Guide/03-SecurityPrecautions/01-PolicyManage.md
+          - name: 漏洞管理
+            href: Operation-Guide/03-SecurityPrecautions/02-VulManage.md
+          - name: 云产品基线
+            href: Operation-Guide/03-SecurityPrecautions/03-CloudBaseline.md
+          - name: 合规基线
+            href: Operation-Guide/03-SecurityPrecautions/04-ComplianceBaseline.md
+      - name: 威胁检测
+        items:
+          - name: 安全告警
+            href: Operation-Guide/04-ThreatDetection/01-SecurityAlert.md
+          - name: 安全事件
+            href: Operation-Guide/04-ThreatDetection/02-SecurityIncident.md
+      - name: 调查响应
+        items:
+          - name: 自动化攻击溯源
+            href: Operation-Guide/05-SurveyResponse/01-Tracing.md
+          - name: 全量日志分析
+            href: Operation-Guide/05-SurveyResponse/02-Fulllog.md
+      - name: 安全托管
+        items:
+          - name: 托管角色
+            href: Operation-Guide/06-ManagedSecurity/01-ManageRole.md
+          - name: 被托管角色
+            href: Operation-Guide/06-ManagedSecurity/02-ManagedRole.md
+      - name: 系统设置
+        items:
+          - name: 通知
+            href: Operation-Guide/07-SystemSetting/01-Notice.md
+          - name: 策略白名单
+            href: Operation-Guide/07-SystemSetting/02-StrategyWhitelist.md
+          - name: 操作审计
+            href: Operation-Guide/07-SystemSetting/03-OperatingAudit.md 
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: 版本更新
+    href: Related-Resources/VersionUpdate.md
+  - name: 计费模型
+    href: Related-Resources/Pricing-Model.md
+  - name: 服务条款
+    href: SLA/ToS2021.md

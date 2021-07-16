@@ -29,7 +29,7 @@ items:
     items:
       - name: 一键部署
         href: Operation-Guide/hyperledger.md
-      - name: 企业组网
+      - name: 企业组网Fabric
         items:
           - name: 网络创建
             href: Operation-Guide/consortium/network-create.md
@@ -45,6 +45,18 @@ items:
             href: Operation-Guide/consortium/sensitive.md
           - name: IPFS管理
             href: Operation-Guide/consortium/ipfs.md
+      - name: 企业组网JDChain
+        items:
+          - name: 网络创建
+            href: Operation-Guide/jdchain/net-create.md
+          - name: 网络列表
+            href: Operation-Guide/jdchain/net-list.md
+          - name: 数据账户管理
+            href: Operation-Guide/jdchain/account.md
+          - name: 账本管理
+            href: Operation-Guide/jdchain/ledgers.md
+          - name: 合约管理
+            href: Operation-Guide/jdchain/chaincodes.md    
   - name: 开发指南
     items:
       - name: 一键部署
@@ -63,5 +75,11 @@ items:
             href: Getting-Started/quickdeploy/call-chain-code.md
       - name: 企业组网
         items:
-          - name: 对外API指南
+          - name: Fabric对外API指南
             href: Getting-Started/consortium/api.md
+          - name: JDChain对外API指南
+            href: Getting-Started/consortium/jdchain.md
+      - name: 合约编写规则
+        items: 
+          - name: JDChain合约编写规则
+            href: Getting-Started/consortium/jdchain-chaincode.md

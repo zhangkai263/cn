@@ -49,6 +49,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:setRefererRule
 
 ```
+
 ```
 {
     "config": {
@@ -62,4 +63,3 @@ https://vod.jdcloud-api.com/v1/domains/2:setRefererRule
     "enabled": true
 }
 ```
-

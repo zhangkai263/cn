@@ -11,6 +11,8 @@ items:
         items:
           - name: putMetricData
             href: Monitor-Item-Customized-Monitoring-APIs/putMetricData.md
+          - name: describeCustomMetricData
+            href: CustomMonitor-APIs/describeCustomMetricData.md
       - name: 云监控规则
         items:
           - name: createAlarm

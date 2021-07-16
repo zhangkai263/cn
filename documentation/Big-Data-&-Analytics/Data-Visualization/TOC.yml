@@ -1,4 +1,4 @@
-name: 数据大屏
+name: 京东城市莫奈可视化平台
 href: 
 items:
 - name: 产品简介
@@ -7,64 +7,38 @@ items:
       href: Introduction/Product-Overview.md
     - name: 产品优势
       href: Introduction/Benefits.md
-    - name: 核心功能
-      href: Introduction/Features.md
 - name: 产品定价
   items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
-- name: 操作指南
+- name: 详细说明
   items:
-    - name: 1.登录京东云
-      href: Operation-Guide/login.md
-    - name: 2.我的大屏
-      href: 
-      items:
-       - name: 2.1创建大屏
-         href: Operation-Guide/Mydashboard.md      
-       - name: 2.2编辑大屏
-         href: Operation-Guide/editDashboard.md            
-      
-    - name: 3. 基础图表组件配置
-      href: 
-      items:
-       - name: 3.0 基础图表
-         href: Operation-Guide/BasicChart.md
-       - name: 3.1 柱折图
-         href: Operation-Guide/BarandLine.md
-       - name: 3.2 饼图
-         href: Operation-Guide/Pie.md
-       - name: 3.3 雷达图
-         href: Operation-Guide/leida.md
-       - name: 3.4 榜单
-         href: Operation-Guide/table.md
-       - name: 3.5 日期热力图
-         href: Operation-Guide/hot.md     
-    - name: 4. 地图组件配置
-      href: 
-      items:
-       - name: 4.0 地图组件
-         href: Operation-Guide/Map.md
-       - name: 4.1 3D边界地图
-         href: Operation-Guide/3DmapStyle.md
-       - name: 4.2 2D边界地图
-         href: Operation-Guide/2DmapStyle.md   
-       - name: 4.3 地图交互设置
-         href: Operation-Guide/MapInteractive.md    
-    - name: 5. 文本组件配置
-      href:
-      items:
-       - name: 5.1文本
-         href: Operation-Guide/text.md
-       - name: 5.2时间器
-         href: Operation-Guide/text_time.md
-       - name: 5.2词云
-         href: Operation-Guide/text_word.md
-    - name:  6. 交互组件配置
-      href: Operation-Guide/Interactive.md
-    - name:  7. 辅助组件配置
-      href: Operation-Guide/other.md
-    - name:  8. 大屏预览/发布
-      href: Operation-Guide/preview.md
-    - name: 9. 数据源管理
-      href: Operation-Guide/database.md
+    - name: 产品迭代记录
+      href: README.md
+    - name: 管理端基础操作
+      href: screenManage.md
+    - name: 配置端基础操作
+      href: screenConfig.md
+    - name: 大屏基本设置
+      href: screenBaseConfig.md
+    - name: 数据源配置
+      href: datasourceConfig.md
+    - name: 组件基础操作
+      href: componentBase.md
+    - name: 图表组件
+      href: chart.md
+    - name: 2D地图组
+      href: map.md
+    - name: 文字组件
+      href: text.md
+    - name: 媒体组件
+      href: media.md
+    - name: 交互组件
+      href: event.md
+    - name: 装饰组件
+      href: decorate.md
+    - name: 其他组件
+      href: other.md
+    - name: 开放平台
+      href: open.md      
+

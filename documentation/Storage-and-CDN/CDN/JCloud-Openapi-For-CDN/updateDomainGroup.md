@@ -19,7 +19,7 @@ https://cdn.jdcloud-api.com/v1/domainGroup/{id}:update
 |---|---|---|---|---|
 |**domains**|String[]|True| |域名组内域名，包含主域名|
 |**primaryDomain**|String|False| |主域名,开启共享缓存时必传|
-|**shareCache**|String|True| |是否共享内存|
+|**shareCache**|String|True| |是否共享内存，共享缓存仅对中国境内加速域名生效|
 |**domainGroupName**|String|True| | |
 
 

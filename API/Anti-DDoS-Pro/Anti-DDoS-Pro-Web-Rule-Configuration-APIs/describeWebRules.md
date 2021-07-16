@@ -68,6 +68,16 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**blackListEnable**|Integer|黑名单状态, 0: 关闭, 1: 开启|
 |**whiteListEnable**|Integer|白名单状态, 0: 关闭, 1: 开启|
 |**geoRsRoute**|[GeoRsRoute[]](describewebrules#georsroute)|按区域分流回源配置|
+|**enableKeepalive**|String|是否开启回源长连接, protocol 选项开启 https 时生效, 可取值<br>- on: 开启<br>- off: 关闭|
+|**httpVersion**|String|http 版本, protocol 选项开启 https 时生效, 可取值 http1 或 http2|
+|**sslProtocols**|String[]|SSL协议类型, protocol 选项开启 https 时生效, 可取值SSLv2,SSLv3,TLSv1.0,TLSv1.1,TLSv1.2|
+|**suiteLevel**|String|加密套件等级, protocol 选项开启 https 时生效, 可取值<br>- low: 低级<br>- middle: 中级<br>- high：高级|
+|**jsFingerprintEnable**|Integer|是否允许在 response 中插入 JS, 0: 关闭, 1: 开启|
+|**jsFingerprintScope**|Integer|JS 指纹生效范围, 0: 所有页面, 1: 已配置的自定义页面|
+|**ccCustomStatus**|Integer|CC自定义规则总开关, 0: 关闭, 1: 开启|
+|**enableHealthCheck**|Integer|健康检查开关, 0: 关闭, 1: 开启|
+|**proxyConnectTimeout**|Integer|回源连接超时时长, 单位 秒|
+|**enableUnderscores**|Integer|请求头支持下划线, 0: 关闭, 1: 开启|
 ### <div id="georsroute">GeoRsRoute</div>
 |名称|类型|描述|
 |---|---|---|

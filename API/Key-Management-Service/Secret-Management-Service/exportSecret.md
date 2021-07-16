@@ -21,10 +21,10 @@ https://kms.jdcloud-api.com/v1/secret/{secretId}:export
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](exportsecret#result)| |
 |**requestId**|String|请求ID|
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**secretPackage**|String|机密包|

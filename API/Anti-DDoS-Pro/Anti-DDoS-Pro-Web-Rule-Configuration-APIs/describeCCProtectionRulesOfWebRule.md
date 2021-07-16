@@ -57,9 +57,9 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**matchType**|Integer|匹配 uri 类型, 0: 精确匹配, 1: 前缀匹配|
 |**detectPeriod**|Long|检测周期, 单位为秒, 取值范围[5, 10800]|
 |**singleIpLimit**|Long|ip 访问次数, 取值范围[2, 2000]|
-|**blockType**|Integer|阻断类型, 1: 封禁, 2: 人机交互|
+|**blockType**|Integer|阻断类型, 1: 封禁并返回自定义页面, 2: 人机交互|
 |**blockTime**|Long|阻断持续时间, 单位为秒, 取值范围[10, 86400]|
-|**pageId**|String|关联的自定义页面id|
+|**pageId**|String|关联的自定义页面id, 阻断类型为封禁时有效, 为空时封禁并返回默认页面|
 |**pageName**|String|关联的自定义页面名称|
 
 ## 返回码

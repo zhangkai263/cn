@@ -57,6 +57,10 @@ items:
             href: Redis-Instance-API/resetCacheInstancePassword.md
           - name: restoreInstance
             href: Redis-Instance-API/restoreInstance.md
+          - name: describeClientList
+            href: Redis-Instance-API/describeClientList.md
+          - name: describeClientIpDetail
+            href: Redis-Instance-API/describeClientIpDetail.md
       - name: Redis规格API
         items:
           - name: describeInstanceClass

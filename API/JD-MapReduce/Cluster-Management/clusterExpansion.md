@@ -2,13 +2,13 @@
 
 
 ## 描述
-对指定集群扩容指定数量的实例
+扩容集群
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/cluster:expansion
+https://jmr.jdcloud-api.com/v1/regions/{regionId}/cluster:expansion
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -17,24 +17,28 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/cluster:expansion
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**clusterId**|String|True| |需要扩容的集群ID|
-|**expansionNum**|Integer|True| |扩容的数量|
+|**clusterExpansion**|[ClusterExpansion](clusterexpansion#clusterexpansion)|True| |描述集群扩容信息|
+|**clientToken**|String|False| |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符。<br>|
 
+### <div id="clusterexpansion">ClusterExpansion</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**clusterId**|String|True| |集群ID|
+|**expansionNum**|String|True| |扩容节点个数|
+|**nodeType**|String|False| |扩容节点类型。 Task：计算节点，Core：存储和计算节点|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](clusterexpansion#result)| |
 |**requestId**|String| |
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**message**|String| |
-|**status**|String| |
+|**status**|Boolean|是否开始扩容集群|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**500**|Internal server error|

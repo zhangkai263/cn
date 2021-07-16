@@ -107,6 +107,8 @@ items:
                 href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
           - name: 自定义数据
             href: Operation-Guide/Instance/Userdata.md
+          - name: 实例元数据
+            href: Operation-Guide/Instance/Instance-Metadata.md            
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -159,10 +161,14 @@ items:
             href: Operation-Guide/Instance-Voucher/Price-and-Billing-Rules-of-Instancevoucher.md
           - name: 购买实例抵扣券
             href: Operation-Guide/Instance-Voucher/Purchase-Instancevoucher.md
-          - name: 管理实例抵扣券
-            href: Operation-Guide/Instance-Voucher/Manage-Instancevoucher.md
+          - name: 续费实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Renew-Instancevoucher.md
+          - name: 调整实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Resize-Instancevoucher.md           
           - name: 查看抵扣明细
-            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md            
+            href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
+          - name: 查看预留资源
+            href: Operation-Guide/Instance-Voucher/Reserved-Resources.md             
       - name: 存储
         items:
           - name: 存储概述
@@ -209,6 +215,8 @@ items:
             href: Operation-Guide/Network/Configurate-ENI-Multi-Queue.md
           - name: 配置弹性网卡删除属性
             href: Operation-Guide/Network/Configurate-ENI-Delete-Attributes.md
+          - name: 修改私有网络配置
+            href: Operation-Guide/Network/Modify-VPC-Attribute.md           
       - name: 密钥
         items:
           - name: 密钥概述
@@ -261,6 +269,10 @@ items:
             href: Operation-Guide/Monitoring/Get-Monitor-Data.md
           - name: 设置报警
             href: Operation-Guide/Monitoring/Set-Alarm.md
+      - name: 事件
+        items:
+          - name: 事件通知
+            href: Operation-Guide/Monitoring/Event-Overview.md
       - name: 自动任务策略
         items:
           - name: 自动镜像策略

@@ -14,7 +14,7 @@
 | cacheType | String   | 否           | 缓存方式：0表示不缓存，1表示自定义。 默认是自定义缓存        |
 | weight    | String   | 是           | 权重，权重不能重复，权重相同的只能创建一条                   |
 | content   | String   | 是           | 缓存策略内容                                                 |
-| ttl       | int      | 是           | 过期时间，时间秒                                             |
+| ttl       | int      | 是           | 过期时间，时间秒，中国境内加速域名最长可配置2年，中国境外/全球加速域名最长可配置1年                                             |
 | configid   | int      | 否         |  调用update和delete时请求参数必须要configid,缓存配置id                                        |
 
 ## **3. 返回参数**

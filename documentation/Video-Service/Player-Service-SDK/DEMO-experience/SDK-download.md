@@ -11,7 +11,7 @@
 </tr>
 <tr>
     <td>移动端播放器Android端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/jdcloud_live_android_demo.zip">点击下载</a><br/> </td>
+    <td><a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/sdk/jdcloud_live_android_demo.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
     <td>移动端播放器iOS端</td>

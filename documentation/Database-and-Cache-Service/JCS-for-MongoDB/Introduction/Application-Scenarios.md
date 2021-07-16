@@ -3,7 +3,7 @@
 以下说明云数据库 MongoDB 的适用场景。
 
 ## 同城容灾
-云数据库 MongoDB 支持多可用区部署模式，您可以将实例的主从节点与隐藏节点分别部署在不同的可用区，以提供同城容灾能力。当因不可抗力导致某一可用区不能提供服务时，MongoDB 服务可快速切换到另一可用区，确保服务的可用性。
+云数据库 MongoDB 支持多可用区部署模式，您可以将实例的多个节点分别部署在不同的可用区，以提供同城容灾能力。当因不可抗力导致某一可用区不能提供服务时，MongoDB 服务可自动切换到另一可用区，确保服务的可用性。
 
 ![同城容灾场景](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mogno-001.png)
 
@@ -20,3 +20,5 @@
 - [价格总览](../Pricing/Price-Overview.md)
 - [计费规则](../Pricing/Billing-Rules.md)
 - [创建实例](../Getting-Started/Create-Instance.md)
+
+

@@ -31,12 +31,17 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**instanceType**|String|True| |实例规格，可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeinstancetypes">DescribeInstanceTypes</a>接口获得指定地域或可用区的规格信息。|
 |**imageId**|String|True| |镜像ID，可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeimages">DescribeImages</a>接口获得指定地域的镜像信息。|
 |**password**|String|False| |密码，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
-|**keyNames**|String[]|False| |密钥对名称；当前只支持一个|
-|**elasticIp**|[InstanceTemplateElasticIpSpec](createinstancetemplate#instancetemplateelasticipspec)|False| |主网卡主IP关联的弹性IP规格|
-|**primaryNetworkInterface**|[InstanceTemplateNetworkInterfaceAttachmentSpec](createinstancetemplate#instancetemplatenetworkinterfaceattachmentspec)|True| |主网卡配置信息|
-|**systemDisk**|[InstanceTemplateDiskAttachmentSpec](createinstancetemplate#instancetemplatediskattachmentspec)|True| |系统盘配置信息|
-|**dataDisks**|[InstanceTemplateDiskAttachmentSpec[]](createinstancetemplate#instancetemplatediskattachmentspec)|False| |数据盘配置信息|
+|**keyNames**|String[]|False| |密钥对名称，当前只支持一个。|
+|**metadata**|[Metadata[]](createinstancetemplate#metadata)|False| |自定义元数据信息，key-value 键值对数量不超过20。key、value不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
+|**userdata**|[Userdata[]](createinstancetemplate#userdata)|False| |自定义脚本，目前只支持传入一个key为"launch-script"，表示首次启动脚本。value为base64格式。<br>launch-script：linux系统支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行;<br>launch-script：windows系统支持bat和powershell，编码前须分别以 <cmd></cmd> 和 <powershell></powershell> 作为内容首、尾行。<br>|
+|**elasticIp**|[InstanceTemplateElasticIpSpec](createinstancetemplate#instancetemplateelasticipspec)|False| |主网卡主IP关联的弹性IP规格。|
+|**primaryNetworkInterface**|[InstanceTemplateNetworkInterfaceAttachmentSpec](createinstancetemplate#instancetemplatenetworkinterfaceattachmentspec)|True| |主网卡配置信息。|
+|**systemDisk**|[InstanceTemplateDiskAttachmentSpec](createinstancetemplate#instancetemplatediskattachmentspec)|True| |系统盘配置信息。|
+|**dataDisks**|[InstanceTemplateDiskAttachmentSpec[]](createinstancetemplate#instancetemplatediskattachmentspec)|False| |数据盘配置信息。|
 |**chargeOnStopped**|String|False| |停机不计费的标志， keepCharging(默认)：关机后继续计费；stopCharging：关机后停止计费。|
+|**autoImagePolicyId**|String|False| |自动镜像策略ID。|
+|**passWordAuth**|String|False| |当存在密钥时，是否同时使用密码登录，"yes"为使用，"no"为禁用，默认为"yes"。|
+|**imageInherit**|String|False| |使用镜像中的原有的登录凭证不再额外指定，仅使用私有镜像和共享镜像时此参数有效。"yes"为使用，"no"为不使用，默认为"no"。|
 ### <div id="instancetemplatediskattachmentspec">InstanceTemplateDiskAttachmentSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -71,6 +76,18 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**bandwidthMbps**|Integer|True| |弹性公网IP的限速（单位：MB）|
 |**provider**|String|False| |IP服务商，取值为BGP,nonBGP，不支持边缘可用区|
 |**chargeMode**|String|True| |计费类型，支持按带宽计费(bandwith)，按流量计费(flow)|
+### <div id="userdata">Userdata</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |键|
+|**value**|String|False| |值|
+|**key**|String|False| |键，当前仅支持launch-script|
+|**value**|String|False| |值，最大长度21848字符|
+### <div id="metadata">Metadata</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |键，最大长度256，支持全字符|
+|**value**|String|False| |值，最大长度16k，支持全字符|
 
 ## 返回参数
 |名称|类型|描述|

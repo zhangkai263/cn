@@ -1,7 +1,7 @@
 # **删除封禁信息**
 ### 1. 描述
 
-删除封禁信息(deleteForbiddenInfo)
+仅中国境内加速域名可配置。删除封禁信息(deleteForbiddenInfo)
 
 ### 2. 请求参数
 

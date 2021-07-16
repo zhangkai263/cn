@@ -19,8 +19,8 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/log
 |---|---|---|---|---|
 |**startTime**|String|True| |查询起始时间,UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|
 |**endTime**|String|True| |查询截止时间,UTC时间，格式为:yyyy-MM-dd'T'HH:mm:ss'Z'，示例:2018-10-21T10:00:00Z|
-|**interval**|String|False| |时间间隔，取值(hour，day，fiveMin)，不传默认小时。|
-|**logType**|String|False| |日志类型，取值(log，zip,gz)，不传默认gz。|
+|**interval**|String|False| |时间间隔，取值(hour，day，fiveMin)，不传默认查询所有粒度的日志|
+|**logType**|String|False| |日志类型，取值(log，zip,gz)，不传默认查询所有粒度的日志。|
 |**pageSize**|Integer|False| |页面大小，默认值10|
 |**pageNumber**|Integer|False| |分页页数，默认值1|
 

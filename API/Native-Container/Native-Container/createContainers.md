@@ -99,6 +99,12 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**logConfiguration**|[LogConfiguration](createcontainers#logconfiguration)|False| |容器日志配置信息；默认会在本地分配10MB的存储空间|
 |**description**|String|False| |容器描述|
 |**charge**|[ChargeSpec](createcontainers#chargespec)|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
+|**userTags**|[Tag[]](createcontainers#tag)|False| |用户普通标签集合|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |Tag键|
+|**value**|String|False| |Tag值|
 ### <div id="chargespec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -155,7 +161,6 @@ https://nativecontainer.jdcloud-api.com/v1/regions/{regionId}/containers
 |**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G, ssd.gp1, ssd.io1, hdd.std1 类型取值均是范围[20,16000]GB，步长为10G|
 |**iops**|Integer|False| |云硬盘IOPS的大小，当且仅当云盘类型是ssd.io1型的云盘有效，步长是10.|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
-|**policyId**|String|False| |策略ID|
 |**charge**|[ChargeSpec](createcontainers#chargespec)|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**encrypt**|Boolean|False| |云硬盘是否加密，默认为false（不加密）|

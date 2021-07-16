@@ -42,8 +42,8 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**instanceType**|String|实例类型|
 |**instanceId**|String|实例ID|
 |**createTime**|String|创建时间|
-|**aliasIpId**|String|别名IP id|
-|**aliasIp**|String|别名IP ip|
+|**targetIp**|String|绑定的ip地址|
+|**bandwidthPackageId**|String|共享带宽 id|
 |**charge**|[Charge](describeelasticip#charge)|计费信息|
 ### <div id="charge">Charge</div>
 |名称|类型|描述|

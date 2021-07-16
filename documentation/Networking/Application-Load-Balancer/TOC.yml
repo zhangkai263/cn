@@ -43,7 +43,7 @@
         href: Getting-Started/Create-Backend.md
       - name: 创建虚拟服务器组
         href: Getting-Started/Create-TargetGroup.md
-      - name: 修改虚拟服务器组
+      - name: 注册/取消注册虚拟服务器
         href: Getting-Started/Register-Targets.md
       - name: 创建高可用组
         href: Getting-Started/Create-AvailabilityGroup.md
@@ -62,7 +62,9 @@
       - name: 虚拟服务器组管理
         href: Operation-Guide/TargetGroup-Management.md
       - name: 转发规则组管理
-        href: Operation-Guide/UrlMap-Management.md      
+        href: Operation-Guide/UrlMap-Management.md
+      - name: 证书管理
+        href: Operation-Guide/Certificates-Management.md
       - name: 配置访问日志
         href: Operation-Guide/Access-Log.md
       - name: 监控服务
@@ -85,7 +87,7 @@
       href: Best-Practices/AG-as-backend-server.md
     - name: 公网负载均衡和私网负载均衡转换
       href: Best-Practices/Switch-between-Internal-and-External-ALB.md
-    - name: 基于域名和URL路径转发流量
+    - name: 部署负载均衡基于域名转发流量，不同域名使用不同证书
       href: Best-Practices/Forward-traffic-based-on-UrlMap.md
   - name: 常见问题
     href: FAQ/FAQ.md

@@ -15,7 +15,7 @@
 | source         | String   | 是           | 1. 根据sourceType确定源站IP列表或者域名。</br>2. IP和domain回源必须是json格式。</br> 3. ip回源示例："[{'ip':'1.1.1.1','master':1,'ratio':0.4},{'ip':'1.1.1.2','master':1,'ratio':0.6}]"；ip回源时，1表示主IP，2表示备IP；ratio表示权重，权重值之和为1；</br>4. domain回源示例："[{'domain':'www.a.com','priority':'1','sourceHost':'source.a.com'},{'domain':'www.b.com','priority':'2','sourceHost':'source.b.com'}]"，domain回源时，priority代表的是域名优先级，1-5代表优先级从高到低；</br>5. sourceHost表示该回源域名或者回源IP对应的回源host，可针对IP回源或者域名回源设置；</br> 6.可自定义设置IP/域名回源端口，如"[{'ip':'1.1.1.1:8080','master':1}]". </br>7. OSS回源"oss.jcloud.com" |
 | httpType       | String   | 否           | http类型，只能为http或者https，默认为http。当设为https时，需要调用“设置通信协议”接口上传证书和私钥 |
 | backSourceType | String   | 否           | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
-| sourceHost | String   | 否 |1. 自定义回源host,只有当域名回源时，可支持自定义回源host   </br>2. 自定义回源host可针对单个回源域名设置，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com   </br>3. 当sourceHost和defaultSourceHost均设置了参数值时，则以sourceHost为准   </br>4. 当该参数为空时则表示删除自定义回源host |
+| sourceHost | String   | 否 |1. 自定义回源host,只有当域名回源且域名加速区域为中国境内时，可支持自定义回源host   </br>2. 自定义回源host可针对单个回源域名设置，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com   </br>3. 当sourceHost和defaultSourceHost均设置了参数值时，则以sourceHost为准   </br>4. 当该参数为空时则表示删除自定义回源host |
 | defaultSourceHost | String   | 否| 1. 默认的回源host，默认回源host指IP回源或者域名回源时，回源地址均对应同一个回源host，如回源域名为test1.com和test2.com，默认回源host为origin.com，即test1.com和test2.com的回源host均为origin.com；   </br>2. 当该参数为空时则表示删除默认回源host |
 
 ## **3. 返回参数**

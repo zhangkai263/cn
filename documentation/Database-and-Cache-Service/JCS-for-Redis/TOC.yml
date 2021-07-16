@@ -91,7 +91,7 @@
         href: Best-Practices/Python-Connect-to-Redis-Instance.md
       - name: 公网连接Redis实例
         href: Best-Practices/Public-Network-Connect-to-Redis-Instance.md    
-   - name: 性能测试
+  - name: 性能测试
     items:
       - name: 测试环境
         href: Performance-Test/Test-environment.md

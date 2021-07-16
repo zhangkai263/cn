@@ -1,5 +1,5 @@
 # 视频处理签名认证
-### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/product-overview)
 
 用户可以在HTTP请求中增加 Authorization 的Header来包含签名（Signature）信息，表明这个消息已被授权。
 

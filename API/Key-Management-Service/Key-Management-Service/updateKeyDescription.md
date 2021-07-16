@@ -19,19 +19,19 @@ https://kms.jdcloud-api.com/v1/key/{keyId}
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**keyCfg**|KeyCfg|True| | |
+|**keyCfg**|[KeyCfg](updatekeydescription#keycfg)|True| | |
 
-### <div id="KeyCfg">KeyCfg</div>
+### <div id="keycfg">KeyCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**keyDescCfg**|KeyDescCfg|True| |密钥描述配置|
-|**keyRotateCfg**|KeyRotateCfg|True| |对称密钥的轮换配置；非对称密钥的操作，不支持该配置|
-### <div id="KeyRotateCfg">KeyRotateCfg</div>
+|**keyDescCfg**|[KeyDescCfg](updatekeydescription#keydesccfg)|True| |密钥描述配置|
+|**keyRotateCfg**|[KeyRotateCfg](updatekeydescription#keyrotatecfg)|True| |对称密钥的轮换配置；非对称密钥的操作，不支持该配置|
+### <div id="keyrotatecfg">KeyRotateCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**autoRotate**|Boolean|True| |是否自动轮换，默认为false|
 |**rotationCycle**|Integer|True| |自动轮换周期，单位为（天），默认为0（永不轮换）|
-### <div id="KeyDescCfg">KeyDescCfg</div>
+### <div id="keydesccfg">KeyDescCfg</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**keyName**|String|True| |key名称，默认为""|

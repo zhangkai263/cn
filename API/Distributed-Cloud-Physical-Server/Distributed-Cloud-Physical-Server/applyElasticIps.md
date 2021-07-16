@@ -26,6 +26,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps
 |---|---|---|---|---|
 |**bandwidth**|Integer|True| |带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
+|**bandwidthPackageId**|String|False| |共享带宽ID, 选择加入共享带宽方式购买时必传|
 |**count**|Integer|True| |购买数量|
 |**charge**|[ChargeSpec](applyelasticips#chargespec)|True| |计费配置|
 ### <div id="chargespec">ChargeSpec</div>

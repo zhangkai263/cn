@@ -1,6 +1,8 @@
   name: IP 高防
   href:
   items:
+  - name: 公告
+    herf: Announce/Announce.md
   - name: 产品简介
     items:
     - name: 产品概述
@@ -17,8 +19,8 @@
       herf: Introduction/Specifications.md
     - name: 限制说明
       herf: Introduction/Restrictions.md
-    - name: 应用场景 
-      herf: Introduction/Application-Scenarios.md    
+    - name: 应用场景
+      herf: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
     - name: 计费概述
@@ -28,9 +30,13 @@
     - name: 价格总览
       herf: Pricing/Price-Overview.md
     - name: 购买流程
-      herf: Pricing/Purchase-Process.md 
+      herf: Pricing/Purchase-Process.md
     - name: 续费流程
       herf: Pricing/Renew-Process.md
+    - name: 升级流程
+      herf: Pricing/Upgrade-Process.md
+    - name: 编辑标签
+      herf: Pricing/Tag-Process.md
   - name: 入门指南
     items:
     - name: 产品概述
@@ -55,12 +61,16 @@
           herf: Operation-Guide/Web-service-Protection-Settings/CC-Defense-Related.md
         - name: 黑白名单配置
           herf: Operation-Guide/Web-service-Protection-Settings/URL-Whitelist-Rules-Setting.md
+        - name: 批量导入导出
+          herf: Operation-Guide/Web-service-Protection-Settings/Web-Bulk-import-export.md        
     - name: 非网站类规则设置
       items:
         - name: 防护规则配置
           herf: Operation-Guide/Net-Service-Protection-Setting/Protection-Rule.md
         - name: 黑白名单配置
           herf: Operation-Guide/Net-Service-Protection-Setting/Whitelist-Rules-Setting.md
+        - name: 批量导入导出
+          herf: Operation-Guide/Net-Service-Protection-Setting/Net-Bulk-import-export.md
     - name: 防护调度规则设置
       herf: Operation-Guide/Dispatch-Rule-Settings.md        
     - name: 攻击告警设置
@@ -70,9 +80,9 @@
     - name: 自定义返回页面设置
       herf: Operation-Guide/Self-defined-default-page.md
     - name: 查看安全报表
-      herf: Operation-Guide/View-The-Security-Report.md   
+      herf: Operation-Guide/View-The-Security-Report.md
     - name: 选择合适的转发方式
-      herf: Operation-Guide/Choose-Suitable-Forwarding-Mode.md   
+      herf: Operation-Guide/Choose-Suitable-Forwarding-Mode.md
   - name: 最佳实践
     items:
     - name: IP高防结合Web应用防火墙方案说明
@@ -80,9 +90,9 @@
     - name: 本地防护+高防方案说明
       herf: Best-Practices/Local-Anti-Basic-DDoS-and-Anti-DDoS.md
     - name: IP高防结合应用安全网关方案说明
-      herf: Best-Practices/Scheme-Instructions.md 
+      herf: Best-Practices/Scheme-Instructions.md
   - name: 教程
-    status: 0    
+    status: 0
   - name: 常见问题
     herf: FAQ/FAQ.md
   - name: 文档历史记录

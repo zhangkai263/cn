@@ -8,7 +8,9 @@
   - name: 管理绑定手机或邮箱
     href: Change-JDCloud-Phone-Number.md
   - name: 修改登录密码
-    href: Set-User-Password.md    
+    href: Set-User-Password.md
+  - name: 设置账户IP保护
+    href: Setting-Up-IP-Protection.md
   - name: AccessKey 管理
     href: AccessKey-Management.md
   - name: 账号注销

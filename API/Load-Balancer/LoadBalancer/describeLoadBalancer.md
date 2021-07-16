@@ -40,11 +40,17 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/{loadBalancerId}
 |**state**|[LoadBalancerState](describeloadbalancer#loadbalancerstate)|LoadBalancer的状态|
 |**azs**|String[]|LoadBalancer所属availability Zone列表|
 |**securityGroupIds**|String[]|LoadBalancer绑定的安全组列表|
-|**privateIp**|[PrivateIpAddress](describeloadbalancer#privateipaddress)|LoadBalancer的IP地址信息|
+|**privateIp**|[PrivateIpAddress](describeloadbalancer#privateipaddress)|描述LB的私有对象信息|
 |**charge**|[Charge](describeloadbalancer#charge)|计费配置|
+|**tags**|[Tag[]](describeloadbalancer#tag)|tag信息|
 |**description**|String|LoadBalancer的描述信息|
 |**deleteProtection**|Boolean|删除保护，取值为True(开启)或False(关闭)|
 |**createdTime**|String|LoadBalancer的创建时间|
+### <div id="tag">Tag</div>
+|名称|类型|描述|
+|---|---|---|
+|**key**|String| |
+|**value**|String| |
 ### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|

@@ -1,8 +1,8 @@
-# **查询IP黑名单**
+# **查询IP黑白名单**
 
 ## **1. 描述**
 
-设置IP黑名单，使该IP无法访问当前加速域名,该接口查询域名下禁止访问的IP列表
+查询ip黑白名单
 
 ## **2. 请求参数**
 
@@ -20,6 +20,14 @@
 | msg  | 提示信息 | 
 | data | 返回数据| 
 
+## **data数据**
+| **名称**         | **描述**               |
+| -------------- | -------------------- |
+| domain      | 加速域名 |
+| ipList  | 数组，ip黑名单列表  |
+| whiteIps  | 数组，ip白名单列表  |
+| isOpen   | 是否打开，取值：on(打开),off（关闭）   |
+
 ## **4. 调用示例**
 
 - ### **请求地址**
@@ -32,7 +40,7 @@ https://opencdn.jcloud.com/api/queryIpBlackList
 {
     "username": "user_test",
     "signature": "ca4c56f85e3582f4d814cc77949c82a7",
-    "domain":"test.jcloud.com"
+    "domain":"www.a.com"
 }
 ```
 
@@ -43,12 +51,13 @@ https://opencdn.jcloud.com/api/queryIpBlackList
   "status": 0,
   "msg": "成功",
   "data": {
-    "domain": "test.jcloud.com",
+    "domain": "www.a.com",
     "ipList": [
       "10.112.3.1",
       "10.112.3.2",
     ],
-    "isOpen": "on"
+    "whiteIps": [],
+    "isOpen": "off"
   }
 }
 

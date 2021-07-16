@@ -61,6 +61,7 @@
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
+	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
@@ -75,6 +76,22 @@
 	* 计算集群、依赖内存的数据处理
 
 **实例规格**
+
+第四代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|g.n4.medium|1|4|1
+|g.n4.large|2|8|2
+|g.n4.xlarge|4|16|4
+|g.n4.2xlarge|8|32|8
+|g.n4.3xlarge|12|48|8
+|g.n4.4xlarge|16|64|8
+|g.n4.6xlarge|24|96|16
+|g.n4.8xlarge|32|128|16
+|g.n4.12xlarge|48|192|16
+|g.n4.16xlarge|64|256|32
+|g.n4.24xlarge|96|352|32
 
 第三代
 
@@ -106,7 +123,7 @@
 |g.n2.18xlarge|72|288|4
 |g.n2.metal|80|384|60
 
-**关于裸金属云主机g.n2.metal更详细说明请查阅[裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
+* **关于裸金属云主机g.n2.metal更详细说明请查阅[裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
 
 第一代
 
@@ -189,6 +206,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 * vCPU与内存比约为1:2
 * 处理器：
+	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
@@ -205,6 +223,21 @@ g.n1.8xlarge|32|128|4 |	 |
 
 **实例规格**
 
+第四代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|c.n4.large|2|4|2
+|c.n4.xlarge|4|8|4
+|c.n4.2xlarge|8|16|8
+|c.n4.3xlarge|12|24|8
+|c.n4.4xlarge|16|32|8
+|c.n4.6xlarge|24|48|16
+|c.n4.8xlarge|32|64|16
+|c.n4.12xlarge|48|96|16
+|c.n4.16xlarge|64|128|32
+|c.n4.24xlarge|96|192|32
+
 第三代
 
 实例规格|vCPU（核）|内存（GB）|网卡多队列
@@ -218,7 +251,7 @@ g.n1.8xlarge|32|128|4 |	 |
 |c.n3.8xlarge|32|64|4
 |c.n3.12xlarge|48|96|4
 |c.n3.16xlarge|64|128|4
-|c.n3.18xlarge|72|176|4
+|c.n3.22xlarge|88|176|4
 
 第二代
 
@@ -259,6 +292,7 @@ g.n1.8xlarge|32|128|4 |	 |
 
 * vCPU与内存比约为1:8
 * 处理器：
+	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
@@ -272,6 +306,18 @@ g.n1.8xlarge|32|128|4 |	 |
 	* Hadoop、Spark群集以及其他企业大内存需求应用
 
 **实例规格**
+
+第四代
+
+实例规格|vCPU（核）|内存（GB）|网卡多队列
+:---|:---|:---|:---
+|m.n4.large|2|16|2
+|m.n4.xlarge|4|32|4
+|m.n4.2xlarge|8|64|8
+|m.n4.3xlarge|12|96|8
+|m.n4.4xlarge|16|128|8
+|m.n4.6xlarge|24|192|16
+|m.n4.8xlarge|32|256|16
 
 第三代
 
@@ -394,13 +440,13 @@ g.n1.8xlarge|32|128|4 |	 |
 |s.i3.8xlarge|32|128|4 x 1862 NVMe SSD|4
 |s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|4
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|4
-|s.i3.22large|88|352|8 x 1862 NVMe SSD|4
+|s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|4
 
 第二代：
 
 实例规格|vCPU（核）|内存（GB）|本地数据盘（临时存储|网卡多队列
 :---|:---|:---|:---|:---
-|s.i2.metal|88|384|1 x 1862 NVMe SSD|60
+|s.i2.metal|80|384|1 x 1862 NVMe SSD|60
 
 第一代：
 
@@ -542,7 +588,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 请注意：
 
 * 标 * 规格表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
-* 计算优化密集型当前仅在华东-上海地域提供；
+* 计算优化密集型当前仅在华北-北京、华东-上海地域提供；
 * 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供；
 * GPU虚拟化型当前在华北-北京、华东-上海部分可用区邀测中；
 * 第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；

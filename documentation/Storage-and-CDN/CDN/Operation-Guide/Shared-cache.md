@@ -1,6 +1,6 @@
 # 共享缓存
 
-适用于多个域名共享一个主域名的缓存策略，可将这些域名添加在一个分组内并开启共享缓存功能，即组内域名将共享同一份缓存策略，从而降低回源。如域名a.com和b.com共享a.com的缓存策略，设置共享缓存后，用户请求b.com时返回a.com的缓存策略。
+仅针对中国境内加速域名支持。适用于多个域名共享一个主域名的缓存策略，可将这些域名添加在一个分组内并开启共享缓存功能，即组内域名将共享同一份缓存策略，从而降低回源。如域名a.com和b.com共享a.com的缓存策略，设置共享缓存后，用户请求b.com时返回a.com的缓存策略。
 
 1、登录[CDN控制台](https://cdn-console.jdcloud.com/overview)，打开[域名管理](https://cdn-console.jdcloud.com/domainlist)，选择“[域名组列表](https://cdn-console.jdcloud.com/domainlist?activeName=group)”，点击“添加域名组”进行新建域名组。![image.png](https://img1.jcloudcs.com/cms/4091df29-08bc-4beb-80c6-019459f39a1120180403173118.png)
 

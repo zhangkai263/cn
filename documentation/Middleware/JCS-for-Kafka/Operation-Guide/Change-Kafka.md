@@ -10,4 +10,5 @@
 4.	变更配置后可能会导致分区（Partition）消息乱序，请谨慎操作。
 
 ```
+
 ![规格变更](../../../../image/Internet-Middleware/JCS-for-Kafka/规格变更.png)

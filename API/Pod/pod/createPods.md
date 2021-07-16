@@ -89,6 +89,12 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**charge**|[ChargeSpec](createpods#chargespec)|False| |计费模式：包年包月预付费（prepaid_by_duration）, 按配置后付费（postpaid_by_duration）。默认：按配置后付费|
 |**elasticIp**|[ElasticIpSpec](createpods#elasticipspec)|False| |主网卡主IP关联的弹性IP规格|
 |**primaryNetworkInterface**|[NetworkInterfaceAttachmentSpec](createpods#networkinterfaceattachmentspec)|True| |主网卡配置信息|
+|**userTags**|[Tag[]](createpods#tag)|False| |用户普通标签集合|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |Tag键|
+|**value**|String|False| |Tag值|
 ### <div id="networkinterfaceattachmentspec">NetworkInterfaceAttachmentSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

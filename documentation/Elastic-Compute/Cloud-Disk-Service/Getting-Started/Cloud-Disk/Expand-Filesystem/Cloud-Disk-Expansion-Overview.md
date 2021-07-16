@@ -14,7 +14,7 @@
 
 
 
-- 扩容 Linux 实例未做分区的数据盘，请参考[扩容文件系统（Linux无分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-raw-disk-file-system)。
+- 扩容 Linux 实例未做分区的数据盘，请参考[扩容文件系统（Linux无分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-linux)。
 
 
 ## 扩容限制

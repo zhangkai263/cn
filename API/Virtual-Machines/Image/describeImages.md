@@ -20,13 +20,12 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**imageSource**|String|False| |镜像来源，如果没有指定ids参数，此参数必传；取值范围：public、shared、thirdparty、private、community|
-|**serviceCode**|String|False| |产品线标识，非必传，不传的时候返回全部产品线镜像|
-|**offline**|Boolean|False| |是否下线，默认值为false；imageSource为public或者thirdparty时，此参数才有意义，其它情况下此参数无效；指定镜像ID查询时，此参数无效|
-|**platform**|String|False| |操作系统平台，取值范围：Windows Server、CentOS、Ubuntu|
-|**ids**|String[]|False| |镜像ID列表，如果指定了此参数，其它参数可为空|
-|**rootDeviceType**|String|False| |镜像支持的系统盘类型，[localDisk,cloudDisk]|
-|**launchPermission**|String|False| |镜像的使用权限[all, specifiedUsers，ownerOnly]，可选参数，仅当imageSource取值private时有效|
+|**ids**|String[]|False| |镜像ID列表，如果指定了此参数，其它参数无效。|
+|**imageSource**|String|False| |镜像来源，如果没有指定ids参数，此参数必传。<br> 取值范围： public（官方）、private（私有）、shared(共享)、thirdparty（云市场）|
+|**offline**|Boolean|False| |镜像是否下线，imageSource为public或者thirdparty时，此参数才有意义；指定镜像ID查询时，此参数无效。<br>取值范围：true（下线镜像）、false（在线镜像）。<br>默认值:false。|
+|**platform**|String|False| |操作系统平台。<br>取值范围：Windows Server、CentOS、Ubuntu。<br>默认值：空，空表示返回不限制操作系统平台|
+|**rootDeviceType**|String|False| |镜像支持的系统盘类型。<br>取值范围：localDisk（本地盘系统盘）、cloudDisk（云硬盘系统盘）。|
+|**launchPermission**|String|False| |镜像的使用权限，仅当imageSource取值private时有效。<br>取值范围：ownerOnly（仅镜像owner可用，不存在共享关系）、specifiedUsers（存在共享关系，除镜像owner外还有其他用户可用）。<br>默认值：空，空表示返回不限制使用权限。|
 |**status**|String|False| |<a href="http://docs.jdcloud.com/virtual-machines/api/image_status">参考镜像状态</a>|
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[10, 100]|
@@ -46,83 +45,82 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 ### <div id="image">Image</div>
 |名称|类型|描述|
 |---|---|---|
-|**imageId**|String|镜像ID|
-|**name**|String|镜像名称|
-|**platform**|String|镜像的操作系统发行版。取值：Ubuntu,CentOS,Windows Server|
+|**imageId**|String|镜像ID。|
+|**name**|String|镜像名称。|
+|**platform**|String|镜像的操作系统发行版。<br>可能值：Windows Server、CentOS、Ubuntu|
 |**osVersion**|String|镜像的操作系统版本。|
-|**architecture**|String|镜像架构。取值：i386,x86_64|
-|**systemDiskSizeGB**|Integer|镜像系统盘大小|
-|**imageSource**|String|镜像来源。取值：jcloud：官方镜像；marketplace：镜像市场镜像；self：用户自己的镜像；shared：其他用户分享的镜像|
-|**osType**|String|镜像的操作系统类型。取值：windows,linux|
-|**status**|String|<a href="http://docs.jdcloud.com/virtual-machines/api/image_status">参考镜像状态</a>|
-|**createTime**|String|创建时间|
-|**sizeMB**|Integer|镜像文件实际大小|
-|**desc**|String|镜像描述|
-|**ownerPin**|String|该镜像所有者的用户PIN|
-|**launchPermission**|String|镜像的使用权限，取值：all（所有人可用）， specifiedUsers（共享用户可用），ownerOnly（镜像所有者自己可用）|
-|**systemDisk**|[InstanceDiskAttachment](describeimages#instancediskattachment)|镜像系统盘配置|
-|**dataDisks**|[InstanceDiskAttachment[]](describeimages#instancediskattachment)|镜像数据盘映射信息|
+|**architecture**|String|镜像架构。<br>可能值：x86_64。|
+|**systemDiskSizeGB**|Integer|镜像系统盘大小。|
+|**imageSource**|String|镜像来源。<br>可能值：jcloud（官方）、self（私有）、shared(共享)、marketplace（云市场像）。|
+|**osType**|String|镜像的操作系统类型。<br>可能值：windows、linux。|
+|**status**|String|<a href="http://docs.jdcloud.com/virtual-machines/api/image_status">参考镜像状态</a>。|
+|**createTime**|String|创建时间。|
+|**sizeMB**|Integer|镜像文件实际大小。|
+|**desc**|String|镜像描述。|
+|**ownerPin**|String|该镜像所有者的用户PIN。|
+|**launchPermission**|String|镜像的使用权限，可能值：all（所有人可使用，官方和云市场镜像返回此值）、ownerOnly（仅镜像owner可用）、specifiedUsers（除镜像owner外还有其他共享用户可用）。|
+|**systemDisk**|[InstanceDiskAttachment](describeimages#instancediskattachment)|镜像系统盘配置。|
+|**dataDisks**|[InstanceDiskAttachment[]](describeimages#instancediskattachment)|镜像数据盘映射信息。|
 |**snapshotId**|String|创建云盘系统盘所使用的云硬盘快照ID。系统盘类型为本地盘的镜像，此参数为空。|
-|**rootDeviceType**|String|镜像支持的系统盘类型。取值：localDisk：本地盘系统盘；cloudDisk：云盘系统盘。|
-|**progress**|String|镜像复制和转换时的进度，仅显示数值，单位为百分比|
-|**offline**|Boolean|该镜像的上下线状态|
-|**serviceCode**|String|该镜像所属的产品线标识|
+|**rootDeviceType**|String|镜像支持的系统盘类型。<br>可能值：localDisk（本地盘系统盘）、cloudDisk（云硬盘系统盘）。|
+|**progress**|String|镜像复制和转换时的进度，仅显示数值，单位为百分比。|
+|**offline**|Boolean|镜像的在线状态。<br>可能值：true（下线镜像）、false（在线镜像）。|
 ### <div id="instancediskattachment">InstanceDiskAttachment</div>
 |名称|类型|描述|
 |---|---|---|
-|**diskCategory**|String|磁盘分类，取值为本地盘(local)或者数据盘(cloud)。<br>系统盘支持本地盘(local)或者云硬盘(cloud)。系统盘选择local类型，必须使用localDisk类型的镜像；同理系统盘选择cloud类型，必须使用cloudDisk类型的镜像。<br>数据盘仅支持云硬盘(cloud)。<br>|
-|**autoDelete**|Boolean|随云主机一起删除，删除主机时自动删除此磁盘，默认为true，本地盘(local)不能更改此值。<br>如果云主机中的数据盘(cloud)是包年包月计费方式，此参数不生效。<br>如果云主机中的数据盘(cloud)是共享型数据盘，此参数不生效。<br>|
-|**localDisk**|[LocalDisk](describeimages#localdisk)|本地磁盘配置|
-|**cloudDisk**|[Disk](describeimages#disk)|云硬盘配置|
-|**deviceName**|String|数据盘逻辑挂载点，取值范围：vda,vdb,vdc,vdd,vde,vdf,vdg,vdh,vdi,vmj,vdk,vdl,vdm|
-|**status**|String|数据盘挂载状态，取值范围：attaching,detaching,attached,detached,error_attach,error_detach|
+|**diskCategory**|String|磁盘分类，可能值：local（本地盘）、cloud（云硬盘）。<br>|
+|**autoDelete**|Boolean|随实例删除属性，即删除主机时是否自动删除此磁盘。<br>磁盘是包年包月计费方式时，此参数不生效。<br>磁盘多点挂载至多个实例上时，此参数不生效。<br>|
+|**localDisk**|[LocalDisk](describeimages#localdisk)|本地盘配置。|
+|**cloudDisk**|[Disk](describeimages#disk)|云硬盘配置。|
+|**deviceName**|String|磁盘逻辑挂载点，可能值：vda、vdb... ...vdm。|
+|**status**|String|数据盘挂载状态，可能值：attaching、detaching、attached、detached、error_attach、error_detach|
 ### <div id="disk">Disk</div>
 |名称|类型|描述|
 |---|---|---|
-|**diskId**|String|云硬盘ID|
-|**az**|String|云硬盘所属AZ|
-|**name**|String|云硬盘名称，只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符。|
-|**description**|String|云硬盘描述，允许输入UTF-8编码下的全部字符，不超过256字符。|
-|**diskType**|String|云硬盘类型，取值为 ssd,premium-hdd,ssd.gp1,ssd.io1,hdd.std1|
-|**diskSizeGB**|Integer|云硬盘大小，单位为 GiB|
-|**iops**|Integer|该云硬盘实际应用的iops值|
-|**throughput**|Integer|该云硬盘实际应用的吞吐量的数值|
-|**status**|String|云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
-|**attachments**|[DiskAttachment[]](describeimages#diskattachment)|挂载信息|
-|**snapshotId**|String|创建该云硬盘的快照ID|
-|**multiAttachable**|Boolean|云盘是否支持多挂载|
-|**encrypted**|Boolean|云盘是否为加密盘|
-|**enabled**|Boolean|云盘是否被暂停（IOPS限制为极低）|
-|**createTime**|String|创建云硬盘时间|
-|**charge**|[Charge](describeimages#charge)|云硬盘计费配置信息|
-|**tags**|[Tag[]](describeimages#tag)|Tag信息|
+|**diskId**|String|云硬盘ID。|
+|**az**|String|云硬盘所属AZ。|
+|**name**|String|云硬盘名称。|
+|**description**|String|云硬盘描述。|
+|**diskType**|String|云硬盘类型，可能值：ssd（已下线）、premium-hdd（已下线）、ssd.gp1、ssd.io1、hdd.std1。|
+|**diskSizeGB**|Integer|云硬盘大小，单位为 GiB。|
+|**iops**|Integer|云硬盘实际应用的iops值。|
+|**throughput**|Integer|云硬盘实际应用的吞吐量的数值。|
+|**status**|String|云硬盘状态，可能值：creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend。|
+|**attachments**|[DiskAttachment[]](describeimages#diskattachment)|挂载信息。|
+|**snapshotId**|String|创建该云硬盘的快照ID。|
+|**multiAttachable**|Boolean|云盘是否支持多挂载。|
+|**encrypted**|Boolean|云盘是否为加密盘。|
+|**enabled**|Boolean|云盘是否被暂停（IOPS限制为极低）。|
+|**createTime**|String|创建云硬盘时间。|
+|**charge**|[Charge](describeimages#charge)|云硬盘计费信息。|
+|**tags**|[Tag[]](describeimages#tag)|云硬盘Tag信息。|
 ### <div id="tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
-|**key**|String|Tag键|
-|**value**|String|Tag值|
+|**key**|String|Tag键。|
+|**value**|String|Tag值。|
 ### <div id="charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
-|**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
-|**chargeStatus**|String|费用支付状态，取值为：normal、overdue、arrear，normal表示正常，overdue表示已到期，arrear表示欠费|
-|**chargeStartTime**|String|计费开始时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
-|**chargeExpiredTime**|String|过期时间，预付费资源的到期时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ，后付费资源此字段内容为空|
-|**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
+|**chargeMode**|String|计费方式，可能值：prepaid_by_duration（包年包月预付费）、postpaid_by_duration（按配置后付费）。|
+|**chargeStatus**|String|计费状态，可能值：normal（正常）、overdue（包年包月已到期）、arrear（按配置已欠费）。|
+|**chargeStartTime**|String|计费开始时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ。|
+|**chargeExpiredTime**|String|过期时间，预付费资源的到期时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ，后付费资源此字段内容为空。|
+|**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源在到期/欠费后会有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ。|
 ### <div id="diskattachment">DiskAttachment</div>
 |名称|类型|描述|
 |---|---|---|
-|**attachmentId**|String|挂载ID|
-|**diskId**|String|云硬盘ID|
-|**instanceType**|String|挂载实例的类型，取值为 vm、nc|
-|**instanceId**|String|挂载实例的ID|
-|**status**|String|挂载状态，取值为 "attaching", "attached", "detaching", "detached"|
-|**attachTime**|String|挂载时间|
+|**attachmentId**|String|挂载ID。|
+|**diskId**|String|云硬盘ID。|
+|**instanceType**|String|挂载实例的类型，可能值：vm（云主机）、nc（原生容器）。|
+|**instanceId**|String|挂载实例的ID。|
+|**status**|String|挂载状态，可能值：attaching、attached、detaching、detached。|
+|**attachTime**|String|挂载时间。|
 ### <div id="localdisk">LocalDisk</div>
 |名称|类型|描述|
 |---|---|---|
-|**diskType**|String|磁盘类型，取值范围{ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1}|
-|**diskSizeGB**|Integer|磁盘大小|
+|**diskType**|String|磁盘类型，可能值：ssd、hdd、nvme ssd。本地系统盘不返回此参数。|
+|**diskSizeGB**|Integer|磁盘大小。|
 
 ## 返回码
 |返回码|描述|

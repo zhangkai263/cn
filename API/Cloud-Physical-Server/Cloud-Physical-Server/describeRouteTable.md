@@ -35,6 +35,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**routeTableId**|String|路由表ID|
 |**region**|String|地域|
 |**vpcId**|String|私有网络ID|
+|**vpcName**|String|私有网络名称|
 |**name**|String|名称|
 |**createTime**|String|创建时间|
 |**routes**|[Route[]](describeroutetable#route)|路由规则|

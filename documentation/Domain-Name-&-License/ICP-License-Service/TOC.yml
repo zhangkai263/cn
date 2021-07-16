@@ -1,5 +1,4 @@
 name: 备案服务
-href:
 items:
   - name: 备案入门
     items:
@@ -7,6 +6,8 @@ items:
         href: Getting-Started/Introduction.md
       - name: 备案流程
         items:
+          - name: 备案授权码
+            href: Getting-Started/Process/IP-Authorization-code.md
           - name: 新增备案
             href: Getting-Started/Process/Addition-Filing.md
           - name: 新增网站（京东有主体）
@@ -87,18 +88,20 @@ items:
             href: Getting-Started/Management-specification/Yunnan.md
           - name: 浙江
             href: Getting-Started/Management-specification/Zhejiang.md
+          - name: 山东
+            href: Getting-Started/Management-specification/shandong.md
+          - name: 天津
+            href: Getting-Started/Management-specification/tianjin.md
   - name: 常见问题
     items:
       - name: 备案基本问题
         href: FAQ/Problem-summary.md
       - name: 备案拦截排查
         href: FAQ/Intercept-troubleshooting.md
-      - name: 备案密码找回办法
-        href: FAQ/ICP-Filing-Password-Recovery-Method.md
       - name: 公安局备案常见问题
         href: FAQ/Public-Security-Bureau-Filing-Common-Problems.md
-      - name: 经营性ICP备案
-        href: FAQ/Operational-ICP-Filing.md
+      - name: 经营性备案
+        href: FAQ/Operational-Filing.md
       - name: 接入备案说明
         href: FAQ/Access-Filing-Notes.md
       - name: 网站备案号超链接设置
@@ -109,37 +112,62 @@ items:
          href: Protocol/Assist-in-changing-the-filing-information-service-online-terms-of-service.md
        - name: 信息安全管理协议
          href: Protocol/Information-Security-Management-Protocol.md
-  - name: 文档下载
+  - name: 资料下载
     items:
-      - name: 网站核验单信息
-        href: Loading/Website-verification-information.md
-      - name: 上海互联网信息服务备案承诺书
-        href: Loading/Website-shanghai-internet-service-commitment.md     
-      - name: 核验单样例
-        href: Loading/Verification-sample.md
-      - name: 常用资料下载
-        items:
-          - name: 各省备案授权书
-            href: Loading/Common-data/Provincial-filing-authorization.md
-          - name: 全国核验单下载
-            href: Loading/Common-data/National-verification-checklist-download.md
-          - name: 广东省个人核验单下载
-            href: Loading/Common-data/Guangdong-Province-Personal-Verification-Checklist-Download.md
-          - name: 广东省单位核验单下载
-            href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
-          - name: 政府网站备案说明
-            href: Loading/Common-data/Government-Website-Description.md
+       - name: 核验单信息
+         items:
+          - name: 核验单下载
+            href: Data-download/check-list/check-list-download.md
+          - name: 核验单填写示例
+            href: Data-download/check-list/quanguo-check-list.md
+       - name: 各省补充资料下载
+         items:
+          - name: 上海市
+            href: Data-download/Addition-Filing/shanghaiziliao.md
+          - name: 江苏省
+            href: Data-download/Addition-Filing/jiangsuziliao.md           
+          - name: 湖北省
+            href: Data-download/Addition-Filing/hubeiziliao.md
+          - name: 湖南省
+            href: Data-download/Addition-Filing/hunanziliao.md
+          - name: 重庆市
+            href: Data-download/Addition-Filing/chongqingziliao.md
+          - name: 河南省
+            href: Data-download/Addition-Filing/henanziliao.md
+          - name: 四川省
+            href: Data-download/Addition-Filing/sichuanziliao.md
+          - name: 宁夏省
+            href: Data-download/Addition-Filing/chongqingziliao.md
+          - name: 福建省
+            href: Data-download/Addition-Filing/fujianziliao.md
+          - name: 甘肃省
+            href: Data-download/Addition-Filing/gansuziliao.md
+          - name: 广西省
+            href: Data-download/Addition-Filing/guangxiziliao.md
+          - name: 贵州省
+            href: Data-download/Addition-Filing/guizhouziliao.md
+          - name: 黑龙江省
+            href: Data-download/Addition-Filing/heilongjiangziliao.md
+          - name: 吉林省
+            href: Data-download/Addition-Filing/jilinziliao.md
+          - name: 江西省
+            href: Data-download/Addition-Filing/jiangxiziliao.md
+          - name: 陕西省
+            href: Data-download/Addition-Filing/shanxiziliao.md
+          - name: 山西省
+            href: Data-download/Addition-Filing/shan1xiziliao.md
+          - name: 青海省
+            href: Data-download/Addition-Filing/qinghaiziliao.md 
+          - name: 安徽省
+            href: Data-download/Addition-Filing/anhuiziliao.md
+       - name: 政府网站备案说明
+         href: Data-download/Government-Website-domain.md
   - name: 流程帮助
     items:
        - name: 工信部短信验证说明
          href: Process/Recording-SMS-verification-instructions.md
-       - name: 各省补充材料说明
-         href: Process/Provincial-supplementary-materials.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
-       - name: 京东智联云“备案用时多久送多久”说明
+       - name: 京东云“备案用时多久送多久”说明
          href: Process/How-long-does-it-take-to-file-for-a-long-time.md
-       - name: 线下备案注销汇总
-         href: Process/Offline-cancel-cancellation-summary.md
-       - name: 京东智联云备案注销申请方式
-         href: Process/Cancel-Filing-application-method.md
+

@@ -19,13 +19,13 @@
 
 3. 在“创建实例”页面，选择计费类型，可选择：**包年包月** 或 **按配置**。
 
-   ![image-20200120161354197](../../../../image/mongodb/mongo-048.png)
+   ![image-20200120161354197](../../../../image/mongodb/mongo-110.png)
 
 4. 选择实例配置
 
    - 地域
 
-     京东云的机房分布在全球多个位置，这些位置称为地域。云数据库 MongoDB 目前支持华北-北京、华东-上海，后续将支持更多地域。
+     京东云的机房分布在全球多个位置，这些位置称为地域，云数据库 MongoDB 目前支持华北-北京、华东-上海。
 
      说明：
 
@@ -39,9 +39,10 @@
 
      - 副本集实例
 
-       ![image-20200120161354197](../../../../image/mongodb/mongo-049.png)
+       ![image-20200120161354197](../../../../image/mongodb/mongo-111.png)
 
        - 数据库版本：目前可选版本为3.2版、3.4版、3.6版、4.0版。
+       - 节点数：副本集节点数，可选择3节点、5节点、7节点。
        - 存储类型：可选 本地盘 SSD 、SSD 云盘。
        - 规格：实例占用的CPU和内存，不同规格对应不同的最大连接数和IOPS（即读和写分别可以达到的最大值，混合读写最高可以达到指标的2倍）不同。
        - 存储空间：实例占用的磁盘空间。
@@ -62,17 +63,19 @@
 
      说明：
 
-     MongoDB 实例选择私有网络后不可更改，请务必保证您的 MongoDB实例与云主机在同一个私有网络内，以免您的云主机不能连接 MongoDB 实例。
+     - **如果您选择的子网支持IPv6，将自动创建支持IPv6网络的MongoDB实例。**
+
+     - MongoDB 实例选择私有网络后不可更改，请务必保证您的 MongoDB实例与云主机在同一个私有网络内，以免您的云主机不能连接 MongoDB 实例。
 
    - 部署方式
 
-     MongoDB 实例支持单可用区和多可用区部署。单可用区部署指 MongoDB 实例的三个物理节点分布在同一可用区的不同物理机上，可以提供跨机架的容灾；多可用区部署指 MongoDB 实例的三个物理节点分布在不同可用区的物理机上，可以提供跨机房的容灾，但网络传输会有一定延迟。您可以根据业务要求选择部署方式。
+     MongoDB 实例支持单可用区和多可用区部署。单可用区部署指 MongoDB 副本集的节点分布在同一可用区的不同物理机上，可以提供跨机架的容灾；多可用区部署指 MongoDB 的多个节点分布在不同可用区的物理机上，可以提供跨机房的容灾，但网络传输会有一定延迟。您可以根据业务要求选择部署方式。
 
-     - 副本集实例，依次选择Primary、Secondary、Hidden节点所在的可用区。
+     - 副本集实例，选择副本集节点节点所在的可用区，副本集节点将循环创建在所选的可用区。
 
        ![image-20200120161354197](../../../../image/mongodb/mongo-052.png)
 
-     - 分片集群实例，选择shard、configserver的Primary、Secondary、Hidden节点所在的可用区，以及多个mongos所在的可用区。
+     - 分片集群实例的shard、configserver为三节点副本集，选择shard、configserver的Primary、Secondary、Hidden节点所在的可用区，以及多个mongos所在的可用区。
 
        ![image-20200120161354197](../../../../image/mongodb/mongo-051.png)
 
@@ -100,4 +103,4 @@
 - [修改密码](../Operation-Guide/Account-Management/Reset-Password.md)
 - [导入数据](Import-Data.md)
 - [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
-- [计费规则](../Pricing/Billing-Rules.md)
+

@@ -16,7 +16,7 @@ API 分组是 API 的基础管理单元。SDK是基于该API分组生成的。�
  
  ### STEP2:创建API分组
  在“API分组管理”页面，点击 **创建分组** ，进入“新建API分组”页面。
- 注意：当前只有华北地区支持IPV6。
+ 注意：当前只有华北-北京和华东-上海地区支持IPV6。
 
 ![创建分组](../../../../../image/Internet-Middleware/API-Gateway/APIgroup-addgroup.png)
     

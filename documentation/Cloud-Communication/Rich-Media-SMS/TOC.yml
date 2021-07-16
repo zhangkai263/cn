@@ -9,6 +9,10 @@ items:
       href: Introduction/Introduction.md
     - name: 审核标准
       href: Introduction/standard.md
+    - name: 资质要求
+      href: Introduction/qualification.md
+    - name: 行业限制
+      href: Introduction/restriction.md
 - name: 产品定价
   items:
     - name: 价格总览
@@ -21,8 +25,10 @@ items:
   items:
     - name: 业务规则
       href: Operation-Guide/rule.md
-    - name: 创建富媒体短信
+    - name: 短信内容
       href: Operation-Guide/content.md
+    - name: 资质管理
+      href: Operation-Guide/qualification_management.md
     - name: 发送短信
       href: Operation-Guide/send.md
     - name: 统计分析

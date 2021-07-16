@@ -8,7 +8,7 @@
 POST
 
 ## 请求地址
-https://ossopenapi.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/historical-replicat-task/{taskId}/abort
+https://ossopenapi.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/historical_replicat_task/{taskId}/abort
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

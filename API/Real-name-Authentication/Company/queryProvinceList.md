@@ -2,39 +2,46 @@
 
 
 ## 描述
+
 查询所有省份列表
 
 ## 请求方式
+
 GET
 
 ## 请求地址
+
 https://cloudauth.jdcloud-api.com/v1/query:provinceList
 
 
 ## 请求参数
+
 无
 
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-|**result**|Result| |
-|**requestId**|String|请求ID|
+
+| 名称          | 类型   | 描述   |
+| ------------- | ------ | ------ |
+| **result**    | Result |        |
+| **requestId** | String | 请求ID |
 
 ### <div id="Result">Result</div>
-|名称|类型|描述|
-|---|---|---|
-|**success**|Boolean|认证结果true 成功, false 失败|
-|**hasException**|Boolean|是否有异常 true 有异常, false 无异常|
-|**code**|String|认证结果状态码|
-|**message**|String|认证结果|
-|**detail**|String|字符串形式的查询结果，内容为json|
+
+| 名称             | 类型    | 描述                                 |
+| ---------------- | ------- | ------------------------------------ |
+| **success**      | Boolean | 认证结果true 成功, false 失败        |
+| **hasException** | Boolean | 是否有异常 true 有异常, false 无异常 |
+| **code**         | String  | 认证结果状态码                       |
+| **message**      | String  | 认证结果                             |
+| **detail**       | String  | 字符串形式的查询结果，内容为json     |
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**403**|FAIL|
+
+| 返回码  | 描述 |
+| ------- | ---- |
+| **200** | OK   |
+| **403** | FAIL |
 
 ## 示例代码
 

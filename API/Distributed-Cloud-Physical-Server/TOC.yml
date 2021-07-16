@@ -97,6 +97,26 @@
             href: Distributed-Cloud-Physical-Server/describeAvailablePrivateIp.md
           - name: describeLineTypes
             href: Distributed-Cloud-Physical-Server/describeLineTypes.md
+      - name: 共享带宽管理
+        items:
+          - name: applyBandwidthPackages
+            href: Distributed-Cloud-Physical-Server/applyBandwidthPackages.md
+          - name: describeBandwidthPackage
+            href: Distributed-Cloud-Physical-Server/describeBandwidthPackage.md
+          - name: describeBandwidthPackages
+            href: Distributed-Cloud-Physical-Server/describeBandwidthPackages.md
+          - name: deleteBandwidthPackage
+            href: Distributed-Cloud-Physical-Server/deleteBandwidthPackage.md
+          - name: modifyBandwidthPackage
+            href: Distributed-Cloud-Physical-Server/modifyBandwidthPackage.md
+          - name: modifyBandwidthPackageBandwidth
+            href: Distributed-Cloud-Physical-Server/modifyBandwidthPackageBandwidth.md
+          - name: addBandwidthPackageIp
+            href: Distributed-Cloud-Physical-Server/addBandwidthPackageIp.md
+          - name: removeBandwidthPackageIp
+            href: Distributed-Cloud-Physical-Server/removeBandwidthPackageIp.md
+          - name: describeBandwidthPackageStock
+            href: Distributed-Cloud-Physical-Server/describeBandwidthPackageStock.md
       - name: SSH密钥管理
         items:
           - name: createKeypairs

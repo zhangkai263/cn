@@ -1,5 +1,5 @@
 # 查询视频任务
-### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/introduction/product-overview)
+### 此版媒体处理服务不再维护。推荐您使用[新版媒体处理服务](https://docs.jdcloud.com/cn/media-processing-service/product-overview)
 
 描述：通过任务id查询视频任务
 

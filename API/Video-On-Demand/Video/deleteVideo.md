@@ -10,12 +10,11 @@ DELETE
 ## 请求地址
 https://vod.jdcloud-api.com/v1/videos/{videoId}
 
+
+## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**videoId**|String|True| |视频ID|
-
-## 请求参数
-无
 
 
 ## 返回参数
@@ -40,4 +39,3 @@ DELETE
 https://vod.jdcloud-api.com/v1/videos/4fc583b4-d08a-457a-9ce4-8a59c5f474ac
 
 ```
-

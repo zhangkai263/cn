@@ -3,7 +3,7 @@
 - 请求行
 
 ```
-GET {Http接入点}/v1/messages HTTP/1.1
+GET {Http接入点}/v2/messages HTTP/1.1
 ```
 
 - 请求headers参数
@@ -21,7 +21,7 @@ GET {Http接入点}/v1/messages HTTP/1.1
 | consumeFromWhere     | string     | Optional     | 默认的起始消费位置，可选值：HEAD、TAIL，defaultValue = HEAD |
 | filterExpressionType | string     | Optional     | 消息过滤表达式类型，目前可选值只有TAG                       |
 | filterExpression     | string     | Optional     | 消息过滤表达式，默认没有过滤，如果需要过滤，此参数与filterExpressionType需同时传入 |
-| ack                  | string     | Optional     | 拉消息时是否由服务端自动ACK，可选值true、false，</br>为true时，服务端自动ACK消费的消息，</br>为false时，需要客户端来ACK消费的消息，默认值defaultValue = false |
+| ack                  | string     | Optional     | 拉消息时是否由服务端自动ACK，ACK 必须在消息确认接收的超时时间内，可选值true、false，</br>为true时，服务端自动ACK消费的消息，</br>为false时，需要客户端来ACK消费的消息，默认值defaultValue = false |
 
 - Response Body
 
@@ -29,8 +29,8 @@ GET {Http接入点}/v1/messages HTTP/1.1
 
 |  字段名   | 字段类型 | 说明                                                         |
 |:----|:----|:----|
-| requestId |  string  | 本次请求的requestId，用于搜索调用链                          |
-|  result   |   map    | 返回格式为：`{"topicName":"lizhijian-041","ackIndex":31,"messages":[{"messageId":"messageId_1","messageBody":"test-0","properties":{"TAGS":"world"}},{"messageId":"messageId_2","messageBody":"test-2","properties":{"TAGS":"world"}}]}`|
+| requestId |  string  | 本次请求的requestId，用于搜索调用链                             |
+|  result   |   map    | 返回格式为：`{"topicName":"lizhijian-041","ackIndex":"broker-31","messages":[{"messageId":"messageId_1","messageBody":"test-0","properties":{"TAGS":"world"}},{"messageId":"messageId_2","messageBody":"test-2","properties":{"TAGS":"world"}}]}`|
 
 2.请求失败
 
@@ -38,3 +38,8 @@ GET {Http接入点}/v1/messages HTTP/1.1
 |:----|:----|:----|
 | requestId |  string  | 本次请求的requestId，用于搜索调用链                          |
 |   error   |   map    | 返回格式为：`{"code":500,"message":"Topic information query failure","status":"INTERNAL"}` |
+
+
+
+**说明：**
+Https消息收发，除请求中的Http接入点需替换为Https接入点外，接口同Http。

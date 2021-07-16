@@ -75,7 +75,7 @@
     status: 0
     items:
     - name: 服务条款
-      href: User-Agreements/Product-Terms-of-Service.md           
+      href: User-Agreements/Product-Terms-of-Service.md
       status: 0      
     - name: SLA
       href: User-Agreements/SLA.md           
@@ -92,3 +92,4 @@
     - name: 词汇表
       href: Related-Resources/Glossary.md           
       status: 0
+      

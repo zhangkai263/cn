@@ -39,6 +39,8 @@
     items:
       - name: 主题管理
         items:
+          - name: 主题Topic
+            href: Getting-Started/topic.md  
           - name: 创建Topic
             href: Operation-Guide/Topic-Management/Create-Topic.md
           - name: 订阅topic
@@ -47,10 +49,18 @@
             href: Operation-Guide/Topic-Management/Delete-And-Manage-Topic.md
       - name: 消息管理
         items:
+          - name: 生产者
+            href: Getting-Started/producer.md 
+          - name: 消费者
+            href: Getting-Started/consumer.md
+          - name: 消费者与消费组
+            href: Getting-Started/consumergroup.md 
+          - name: 跳跃ACK
+            href: Operation-Guide/Message-Management/ack.md           
           - name: 发送消息
-            href: Operation-Guide/Message-Management/Send-Message.md      
+            href: Operation-Guide/Message-Management/Send-Message.md    
           - name: 查询消息
-            href: Operation-Guide/Message-Management/Query-Message.md    
+            href: Operation-Guide/Message-Management/Query-Message.md  
           - name: 消息轨迹
             href: Operation-Guide/Message-Management/Message-Trace.md
           - name: 重发消息

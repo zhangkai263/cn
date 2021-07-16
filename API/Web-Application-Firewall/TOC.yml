@@ -1,0 +1,41 @@
+﻿  name: Web 应用防火墙
+  href:
+  items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: ChangeLog.md
+  - name: 接口信息
+    items:
+      - name:  网站类接口
+        items:
+          - name: addDomain
+            href: Domain/addDomain.md
+          - name: deleteDomain
+            href: Domain/deleteDomain.md
+          - name: disableRules
+            href: Domain/disableRules.md
+          - name: getDomainAntiConfig
+            href: Domain/getDomainAntiConfig.md
+          - name: listDomains
+            href: Domain/listDomains.md
+          - name: listMainCfg
+            href: Domain/listMainCfg.md
+          - name: updateDomain
+            href: Domain/updateDomain.md
+      - name:  网站防护接口
+        items:
+          - name: addIps
+            href: Domain-Protection/addIps.md
+          - name: delIps
+            href: Domain-Protection/delIps.md
+          - name: listIps
+            href: Domain-Protection/listIps.md
+          - name: updateIps
+            href: Domain-Protection/updateIps.md
+      - name:  日志报表接口
+        items:
+          - name: getBpsData
+            href: Data-Chart/getBpsData.md
+          - name: getQpsData
+            href: Data-Chart/getQpsData.md

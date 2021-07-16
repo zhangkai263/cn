@@ -10,13 +10,11 @@ PUT
 ## 请求地址
 https://vod.jdcloud-api.com/v1/videos/{videoId}
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**videoId**|String|True| |视频ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**videoId**|String|True| |视频ID|
 |**name**|String|False| |视频名称|
 |**categoryId**|Long|False| |分类ID|
 |**tags**|String[]|False| |标签|
@@ -37,7 +35,7 @@ https://vod.jdcloud-api.com/v1/videos/{videoId}
 |**name**|String|视频名称|
 |**description**|String|视频描述|
 |**coverUrl**|String|封面图地址|
-|**status**|String|视频状态。取值范围：<br>  transcoding - 转码中<br>  transcode_failed - 转码失败<br>  normal - 正常<br>  uploaded - 上传完成（未转码）<br>|
+|**status**|String|视频状态。取值范围：<br>  transcoding - 转码中<br>  transcode_failed - 转码失败<br>  normal - 正常<br>  uploaded - 上传完成（未转码）<br>  blocked - 封禁<br>|
 |**fileSize**|Long|文件大小，单位为 Byte|
 |**checksum**|String|文件MD5校验和|
 |**duration**|Long|视频时长|
@@ -71,6 +69,7 @@ PUT
 https://vod.jdcloud-api.com/v1/videos/4fc583b4-d08a-457a-9ce4-8a59c5f474ac
 
 ```
+
 ```
 {
     "categoryId": 10, 

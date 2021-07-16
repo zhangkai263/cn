@@ -249,33 +249,33 @@
           href: Operation-Guide/Security/tde.md
         - name: MySQL 配置 SSL 证书 
           href: Operation-Guide/Security/Configure-SSL.md
+        - name: PostgreSQL 配置 SSL 证书 
+          href: Operation-Guide/Security/PostgreSQL-Configure-SSL.md  
         - name: SQL Server 配置 SSL 证书 
           href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           
-      - name: 单库上云
+      - name: SQL Server 单库上云
         items:
         - name: 单库上云简介
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
         - name: 从上传文件导入  
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
-          - name: 步骤二 上传备份
+          - name: 二 上传备份
             href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
-          - name: 步骤三 备份导入
+          - name: 三 备份导入
             href: Operation-Guide/Data-To-Cloud/Import-Backup.md
           - name: 删除上传文件
             href: Operation-Guide/Data-To-Cloud/Delete-Import.md
         - name: 从OSS导入 
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/V2/Backup-Local-Database-v2.md
-          - name: 步骤二 上传备份
+          - name: 二 上传及权限设置
             href: Operation-Guide/Data-To-Cloud/V2/Upload-Backup-v2.md
-          - name: 步骤三 备份导入
+          - name: 三 导入备份
             href: Operation-Guide/Data-To-Cloud/V2/Import-Backup-v2.md
-          - name: 备份文件权限设置
-            href: Operation-Guide/Data-To-Cloud/V2/Grant-File-Privilege-v2.md        
       - name: 参数组 
         items:
          - name: 创建参数组
@@ -316,7 +316,7 @@
         - name: PostgreSQL 审计服务
           href: Operation-Guide/Audit/PostgreSQL-Audit-Service.md
  
-      - name: 性能统计分析
+      - name: SQL Server 性能统计分析
         items:
         - name: 性能统计分析简介
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md

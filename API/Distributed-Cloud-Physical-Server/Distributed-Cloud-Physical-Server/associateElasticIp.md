@@ -22,6 +22,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:assoc
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
 |**elasticIpId**|String|True| |弹性公网IPID|
 |**targetIp**|String|False| |私有IP|
+|**subnetId**|String|False| |主网口或辅网口的子网ID，多网口实例必填|
 
 
 ## 返回参数

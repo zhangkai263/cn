@@ -1,8 +1,10 @@
+# Spark读写对象存储数据
+
 本文介绍了如何配置Spark客户端读写对象存储中的数据。
 
-# 依赖资源
+## 依赖资源
 
-## Maven
+### Maven
 
 ```
 <dependencies>
@@ -20,7 +22,7 @@
 
 ```
 
-# 配置方法
+## 配置方法
 
 1.用户可以在spark-shell中配置S3认证信息。使用sc配置S3认证信息示例如下:
 
@@ -60,14 +62,14 @@ spark-shell \
 --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
 ```
 
-# 操作示例
-## 读取数据
+## 操作示例
+### 读取数据
 ```
 val rdd = sc.textFile("s3a://YourBucketName/spark-read/test-read")
 rdd.collect().foreach(println)
 ```
 
-## 写入数据
+### 写入数据
 ```
 val rdd = sc.textFile("s3a://YourBucketName/spark-read/")
 rdd.count

@@ -23,6 +23,7 @@ https://cdn.jdcloud-api.com/v1/console:hitRatioTable
 |**sortRule**|String|False| |排序规则,默认desc|
 |**pageSize**|Integer|False|10| |
 |**pageNumber**|Integer|False|1| |
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数

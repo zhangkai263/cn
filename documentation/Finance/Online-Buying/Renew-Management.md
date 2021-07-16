@@ -36,3 +36,48 @@
 6、已开通自动续费功能前提下，用户人工续费，则按人工续费后的到期时间自动执行自动续费。
 
 ![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Charge/%E7%BB%AD%E8%B4%B93.jpg)
+
+## 新购同步开通自动续费
+用户新购资源时，已明确有后续续费需求，可在新购同时同步设置开通自动续费功能，资源创建成功后，后期可自动进行续费。
+
+![file-list](https://github.com/jdcloudcom/cn/blob/soymilk-20201014-order/image/Charge/%E6%96%B0%E8%B4%AD%E5%90%8C%E6%AD%A5%E5%BC%80%E9%80%9A%E8%87%AA%E5%8A%A8%E7%BB%AD%E8%B4%B9.png)
+
+## 设置到期不续费
+为用户提供对于资源到期后不再继续使用，可以为资源设置到期不续费。已设置到期不续费的资源，可筛选对应分类进行管理。
+
+您可以在[续费管理](https://renewal-console.jdcloud.com/renew)页面，对资源进行到期不续费设置。
+
+![file-list](https://github.com/jdcloudcom/cn/blob/soymilk-20201014-order/image/Charge/%E5%88%B0%E6%9C%9F%E4%B8%8D%E7%BB%AD%E8%B4%B9.png)
+
+![file-list](https://github.com/jdcloudcom/cn/blob/soymilk-20201014-order/image/Charge/%E5%88%B0%E6%9C%9F%E4%B8%8D%E7%BB%AD%E8%B4%B92.png)
+
+已设置为到期不续费资源可恢复设置为手动续费资源
+
+![file-list](https://github.com/jdcloudcom/cn/blob/soymilk-20201014-order/image/Charge/%E6%89%8B%E5%8A%A8%E7%BB%AD%E8%B4%B9.png)
+
+![file-list](https://github.com/jdcloudcom/cn/blob/soymilk-20201014-order/image/Charge/%E6%81%A2%E5%A4%8D%E5%88%B0%E6%9C%9F%E7%BB%AD%E8%B4%B9.png)
+
+## 设置统一到期日
+您可以通过统一到期日功能将实例统一续费到各月份的同一天。
+
+统一到期日功能具有以下限制：
+
+当前计费周期到期日与统一到期日之间的间隔不能少于1个月。
+如果间隔不足1个月，则统一续费到30天后的第一个统一到期日。续费到统一到期日时，系统以按月价格计算续费价格。
+
+例如：您持有2台包年包月ECS实例，到期日分别为2018-09-10和2018-05-17，设置统一到期日为每个月的1号。则统一两台ECS实例的到期日后，两台ECS实例将分别续费到2018-11-01和 2018-07-01。
+
+仅支持未过期的包年包月ECS实例。
+统一到期日时，如果选中的ECS实例中包括已到期的ECS实例，会导致操作失败。您需要先移除已到期的ECS实例，或者先手动续费ECS实例，再重新操作。
+
+1.适用对象：包年包月未过期资源（按配置、已过期资源不支持）
+
+2.续费周期时长：最终续费生效的统一到期日与当前计费周期到期日之间的间隔必须等于或多于1个月。
+
+如果当前计费周期到期日与最近的统一到期日之间的间隔不足1个月，则续费到下个月的统一到期日。续费到统一到期日时，系统以按天价格计算续费价格。
+
+举例：
+您有2个实例，到期日分别为2019-09-10和2019-05-17，设置统一到期日为每个月的1号，那么，它们将分别续费到2019-11-01和 2019-07-01。
+
+3.统一到期日可选设置范围为“每月1号–每月28日”
+

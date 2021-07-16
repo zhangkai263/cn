@@ -48,6 +48,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:setURLRule
 
 ```
+
 ```
 {
     "config": {
@@ -57,4 +58,3 @@ https://vod.jdcloud-api.com/v1/domains/2:setURLRule
     "enabled": true
 }
 ```
-

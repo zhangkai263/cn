@@ -13,6 +13,6 @@
 
 示例：将example.jpg转换图片格式为png格式
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/fmt/png
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg?x-oss-process=img/fmt/png
 
 ![格式转换](../../../../../image/Object-Storage-Service/OSS-061.png)

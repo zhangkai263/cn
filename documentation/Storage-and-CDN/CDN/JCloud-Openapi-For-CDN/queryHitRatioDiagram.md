@@ -20,6 +20,7 @@ https://cdn.jdcloud-api.com/v1/console:hitRatioDiagram
 |**area**|String|False| | |
 |**isp**|String|False| | |
 |**period**|String|False| |查询周期，默认fiveMin|
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数

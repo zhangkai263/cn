@@ -63,7 +63,20 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**publicIp**|String|公网IP|
 |**publicIpv6**|String|公网IPv6|
 |**keypairId**|String|密钥对id|
+|**interfaceMode**|String|网络接口模式，单网口:bond、双网口:dual|
+|**extensionVpcId**|String|辅网口私有网络ID|
+|**extensionVpcName**|String|辅网口私有网络名称|
+|**extensionSubnetId**|String|辅网口子网ID|
+|**extensionSubnetName**|String|辅网口子网名称|
+|**extensionPrivateIp**|String|辅网口手动分配的内网ip|
+|**extensionEnableInternet**|String|辅网口是否启用外网|
+|**extensionElasticIpId**|String|辅网口弹性公网ip id|
+|**extensionPublicIp**|String|辅网口公网ip|
+|**extensionBandwidth**|Integer|辅网口外网带宽，单位Mbps|
+|**extensionExtraUplinkBandwidth**|Integer|辅网口额外上行带宽, 单位Mbps|
 |**agentStatus**|String|agent状态|
+|**createTime**|String|创建时间|
+|**updateTime**|String|更新时间|
 |**charge**|[Charge](describeinstance#charge)|计费信息|
 ### <div id="charge">Charge</div>
 |名称|类型|描述|

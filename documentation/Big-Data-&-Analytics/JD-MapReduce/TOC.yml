@@ -1,23 +1,25 @@
 name: JMR
 href: 
 items:
+- name: 发行版本
+  items:
+  - name: 版本概述
+    href: Release-Version/Version-overview.md
+  - name: 产品动态
+    href: Release-Version/Release-History.md
 - name: 产品简介
   items:
   - name: 产品概述
     href: Introduction/Product-Overview.md
-  - name: 核心概念
-    href: Introduction/Core-Concepts.md
-  - name: 基础架构
-    href: Introduction/Basic-Infrastructure.md
   - name: 产品优势
     href: Introduction/Benefits.md
   - name: 产品功能
     href: Introduction/Features.md
-  - name: 产品规格
-    href: Introduction/Specifications.md
+  - name: 节点类型说明
+    href: Introduction/Node-Desc.md
   - name: 限制说明
     href: Introduction/Restrictions.md
-  - name: 应用场景 
+  - name: 应用场景
     href: Introduction/Application-Scenarios.md
 - name: 产品定价
   items:
@@ -27,14 +29,10 @@ items:
     href: Pricing/Billing-Rules.md
   - name: 价格总览
     href: Pricing/Price-Overview.md
-  - name: 购买流程
-    href: Pricing/Purchase-Process.md 
   - name: 续费流程
     href: Pricing/Renew-Process.md
 - name: 入门指南
   items:
-  - name: 产品概述
-    href: Getting-Started/1-Overview.md
   - name: 创建集群
     href: Getting-Started/2-Create-Cluster.md
   - name: 配置作业
@@ -47,6 +45,16 @@ items:
   items:
   - name: 操作指南
     href: Operation-Guide/Guide.md
+- name: 开发指南
+  items:
+  - name: 端口配置与文件路径
+    href: Developer/clusterPorts-filePaths.md
+  - name: 集群运维
+    href: Developer/cluster-operations.md
+  - name: 数据迁移
+    items:
+    - name: DistCp 迁移数据
+      href: Developer/Data-Migration/Using-DistCp-to-Migrate-Data.md
 - name: 最佳实践
   items:
   - name: 离线分析
@@ -65,8 +73,3 @@ items:
     href: FAQ/FAQ.md
   - name: 如何与OSS交互
     href: FAQ/uploadOSS.md
-- name: 相关资源
-  items:
-  - name: 文档历史记录
-    href: Related-Resources/Document-History.md     
-

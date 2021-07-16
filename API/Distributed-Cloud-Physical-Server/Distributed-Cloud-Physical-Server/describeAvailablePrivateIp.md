@@ -16,7 +16,9 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/avail
 |**instanceId**|String|True| |分布式云物理服务器ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**subnetId**|String|True| |主网口或者辅网口的子网id|
 
 
 ## 返回参数

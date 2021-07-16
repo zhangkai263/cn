@@ -1,58 +1,61 @@
-  name: 列式存储
+  name: 云数据库 JDNoSQL
   href: 
   items:
   - name: 产品简介
     items:
     - name: 产品概述
-      herf: Introduction/Product-Overview.md
-    - name: 核心概念
-      herf: Introduction/Core-Concepts.md
-    - name: 基础架构
-      herf: Introduction/Basic-Infrastructure.md
+      href: Introduction/Product-Overview.md
     - name: 产品优势
-      herf: Introduction/Benefits.md
-    - name: 产品功能
-      herf: Introduction/Features.md
-    - name: 产品规格
-      herf: Introduction/Specification.md
+      href: Introduction/Benefits.md
+    - name: 主备双活
+      href: Introduction/Double-Alive.md
     - name: 限制说明
-      herf: Introduction/Restrictions.md
-    - name: 应用场景 
-      herf: Introduction/Application-Scenarios.md   
-  - name: 产品定价
+      href: Introduction/Restrictions.md
+    - name: 应用场景
+      href: Introduction/Application-Scenarios.md
+  - name: 快速入门
     items:
-    - name: 计费概述
-      href: Pricing/Billing-Overview.md
-    - name: 计费规则
-      href: Pricing/Billing-Rules.md
-    - name: 价格总览
-      href: Pricing/Price-Overview.md
-    - name: 购买流程
-      href: Pricing/Purchase-Process.md 
-    - name: 续费流程
-      href: Pricing/Renew-Process.md
-  - name: 入门指南
+    - name: 概述
+      href: Quick-Started/Summary.md
+    - name: 购买集群
+      href: Quick-Started/Purchase.md
+    - name: 设置白名单
+      href: Quick-Started/SetWhiteList.md
+    - name: 访问集群
+      href: Quick-Started/Connect.md
+  - name: 产品介绍
     items:
     - name: 创建集群
-      href: Getting-Started/Create-Cluster.md
+      href: Product-Introduction/Create-Cluster.md
+    - name: 集群管理
+      href: Product-Introduction/Manage.md
+    - name: 服务管理
+      href: Product-Introduction/Service-Manage.md
+    - name: 主机管理
+      href: Product-Introduction/Host-Manage.md
+    - name: JDNoSQL管理
+      href:
+      items:
+      - name: 基本介绍
+        href: Product-Introduction/JDNoSQL/Summary.md
+      - name: Namespace管理
+        href: Product-Introduction/JDNoSQL/Namespace.md
+      - name: 表管理
+        href: Product-Introduction/JDNoSQL/Table.md
+      - name: 分组管理
+        href: Product-Introduction/JDNoSQL/Group.md
+      - name: 用户管理
+        href: Product-Introduction/JDNoSQL/User.md
+      - name: 访问控制（白名单）
+        href: Product-Introduction/JDNoSQL/ACL.md
   - name: 操作指南
     items:
-    - name: 使用hbase shell访问
-      href: Operation-Guide/hshell.md
-    - name: 使用Native JAVA API访问
-      href: Operation-Guide/NJavaAPI.md
-    - name: 使用REST API访问
-      href: Operation-Guide/RESTAPI.md
-    - name: 使用Thrift API访问
-      href: Operation-Guide/ThriftAPI.md
-  - name: 常见问题
+    - name: Rowkey设计指导
+      href: Develop-Guide/RowkeyDesign.md
+  - name: FAQ
     items:
     - name: 如何配置ACL
       href: FAQ/ACLconf.md
-    - name: 如何访问列式存储
-      href: FAQ/FAQ.md
-  - name: 相关资源
-    items:
-    - name: 文档历史记录
-      href: Related-Resources/Document-History.md
+    - name: JDNoSQL管理 常见问题
+      href: FAQ/ACLconf.md
       

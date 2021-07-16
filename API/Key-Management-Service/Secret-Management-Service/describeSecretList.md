@@ -21,22 +21,22 @@ https://kms.jdcloud-api.com/v1/secret
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|[Result](describesecretlist#result)| |
 |**requestId**|String|请求ID|
-|**result**|Result| |
 
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**secretList**|SecretInfo[]|Secret列表|
+|**secretList**|[SecretInfo[]](describesecretlist#secretinfo)|Secret列表|
 |**totalCount**|Integer|Secret的数量|
-### SecretInfo
+### <div id="secretinfo">SecretInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**createTime**|String|Secret创建时间，采用ISO8601标准，格式为: YYYY-MM-DDTHH:mm:ssZ|
-|**secretDesc**|String|Secret用途描述|
 |**secretId**|String|SecretID|
 |**secretName**|String|Secret名称|
+|**secretDesc**|String|Secret用途描述|
 |**secretStatus**|Integer|Secret当前状态: 0: 已启用、1: 已禁用|
+|**createTime**|String|Secret创建时间，采用ISO8601标准，格式为: YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
 |返回码|描述|

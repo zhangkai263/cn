@@ -57,6 +57,8 @@
             href: Operation-Guide/Custom-Route-Operation/Custom-Route.md
       - name: 访问控制
         href: Operation-Guide/iam.md
+      - name: 负载均衡设置
+        href: Operation-Guide/LoadBalance.md
   - name: 常见问题
     items:
     - name: 网站监控

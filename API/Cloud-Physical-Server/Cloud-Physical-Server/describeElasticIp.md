@@ -40,6 +40,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**status**|String|状态|
 |**instanceType**|String|实例类型|
 |**instanceId**|String|实例ID|
+|**targetIp**|String|绑定的ip地址|
 |**createTime**|String|创建时间|
 |**charge**|[Charge](describeelasticip#charge)|计费信息|
 ### <div id="charge">Charge</div>

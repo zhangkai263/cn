@@ -41,7 +41,6 @@ s3:ObjectRemoved:Delete |删除文件
 ## 事件通知消息可以发送到的目标：
 
 *  **HTTP(S)**: 按照您配置的回调URL，当Bucket中事件通知触发时，OSS会向回调URL发送指定格式的通知内容，通知方式支持HTTP(S)。
-*  **函数服务（Function Service）**: 函数服务是一项事件驱动的Serverless计算服务。通过函数服务平台，用户无需配置和管理服务器等基础设施，即可弹性、可靠地运行业务代码，快速构建应用与服务，且只需为代码实际消耗的资源付费。**目前函数服务仅支持华北地域配置**
 
 <div id="user-content-3"></div>
 
@@ -84,21 +83,17 @@ s3:ObjectRemoved:Delete |删除文件
    -  要关注bucket中目录jdcloudoss下的.mp3格式的影片，则前缀填 jdcloudoss/，后缀填 .mp3。
   
 
- 6.在 **发送到** 下拉框中，选择【http(s)】或者【函数服务】，完成接收终端的设置。
+ 6.在 **发送到** 下拉框中，选择【http(s)】，完成接收终端的设置。
 
 **说明**
 
 * 【http(s)】 ：OSS会向此地址发布消息，您可输入最多5个回调地址。必须为完整的URL，需指定http协议。了解更多请参考[回调通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
-* 【函数服务】：可运行基于OSS事件的Function 函数脚本。函数服务目前在公测阶段，您需先申请试用，了解更多[函数服务](https://www.jdcloud.com/cn/products/function-service)，参与公测。
-*  函数服务目前仅支持华北-北京，其他区域暂不可设置【函数服务】。
-*  OSS作为函数服务触发器，需满足函数服务关于单个函数最多创建10个触发器的限制，如果您超过限制将导致失败，查看某个函数触发器配置详情，请前往[函数服务控制台](https://function-console.jdcloud.com/services)。
 
 7.点击【保存】。
 
 **说明**
 
-*  发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证]
-(https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
+*  发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证](https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
 *  消息通知格式参见[消息通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
 
 8.此外，您可通过控制台，编辑或者删除事件通知规则。

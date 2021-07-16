@@ -39,6 +39,8 @@
         href: Getting-Started/Create-ES.md
       - name: 访问集群
         href: Getting-Started/accesscluster.md
+      - name: 多可用区部署说明
+        href: Getting-Started/MultiAZ-ES.md
       - name: 管理数据
         items:
         - name: 管理数据概述
@@ -81,6 +83,10 @@
         href: Operation-Guide/dic.md 
       - name: 周期创建索引
         href: Operation-Guide/index.md
+      - name: SQL支持
+        href: Operation-Guide/sql.md
+      - name: 高级配置
+        href: Operation-Guide/Configure.md
       - name: 快照
         items: 
         - name: 创建快照
@@ -101,8 +107,6 @@
           href: Operation-Guide/status.md
         - name: 创建告警规则
           href: Operation-Guide/Monitor_Rules.md
-        - name: 一键报警
-          href: Operation-Guide/Onekey-Alarm.md
       - name: 标签
         items:
         - name: 标签概述
@@ -125,6 +129,8 @@
        href: Best-Practices/publicIP.md
      - name: MySQL数据同步
        href: Best-Practices/mysqltoes.md
+     - name: 第三方Elasticsearch数据迁移
+       href: Best-Practices/Ali-to-es.md
      - name: 性能指标
        items: 
         - name: 性能测试步骤

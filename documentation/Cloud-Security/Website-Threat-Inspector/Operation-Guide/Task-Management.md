@@ -2,16 +2,16 @@
 
 ### 创建任务
 
-  ![](../../../../image/Website-Threat-Inspector/wts-rwgl-01.png)
+  ![](../../../../image/Website-Threat-Inspector/wts-rwgl-11.png)
 
 扫描目标：
 - 公网资产：通过资产管理导入，支持单IP，域名、子域名 
 - 云上VPC内网资产
 - 外部IDC内网资产
 
-扫描模块：端口漏洞扫描，Web漏洞扫描。（插件支持范围：请参考下方插件支持列表） 
+扫描模块：端口漏洞扫描，Web漏洞扫描、弱口令扫描、WebService扫描。
 
-执行方式：立刻执行、定时执行  
+执行方式：立刻扫描、定时启动、周期任务  
 
 端口配置：端口扫描策略，您可以根据需要进行灵活设置，默认启动扫描的端口：21-25,80-89,110,143,443,513,873,1080,1433,1521,1158,3306-3308,3389,3690,5900,6379,7001,8000-8090,9000,9418,27017-27019,50060,111,11211,2049  
 
@@ -21,16 +21,13 @@ Web扫描配置：爬虫深度：默认为3（可以配置1-7），设置爬虫�
 
            最大爬取总数：默认为50（可以配置1-1000）  
 
-
-
 ### 任务管理
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-task2.png)
+  ![](../../../../image/Website-Threat-Inspector/wts-rwgl-12.png)
 
 
-### 报表
+### 报表下载
 
 在任务栏，点击【下载】
 
-  ![](../../../../image/Website-Threat-Inspector/webscan-task3.png)
-
+  ![](../../../../image/Website-Threat-Inspector/wts-rwgl-13-bb.png)

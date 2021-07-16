@@ -231,6 +231,8 @@ items:
         href: diff.md
       - name: 接口概览
         href: overview.md
+      - name: 查询统计字段说明
+        href: tongji.md
       - name: 接口信息
         items:
           - name: 创建域名
@@ -419,6 +421,8 @@ items:
                  href: JCloud-Openapi-For-CDN/queryDomainsLog.md
                - name: queryAreaIspList
                  href: JCloud-Openapi-For-CDN/queryAreaIspList.md
+               - name: checkWhetherIpBelongToJCloud
+                 href: JCloud-Openapi-For-CDN/checkWhetherIpBelongToJCloud.md
           - name: 刷新预热
             items:
                - name: createLiveDomainPrefecthTask

@@ -92,6 +92,10 @@ items:
       items:
         - name: 流控策略
           herf: Operation-Guide/Create-Stream/Create-Stream.md  
+    - name: IP访问控制
+      items:
+        - name: IP访问控制
+          herf: Operation-Guide/Access-Control/Access-Control.md     
     - name: 调试
       items:
         - name:  调试API

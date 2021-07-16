@@ -23,6 +23,8 @@ items:
     items:
       - name: 快速接入
         href: Getting-Started/Getting-Started.md
+      - name: 试用内容安全API检测服务
+        href: Getting-Started/Trial-Page-Guide.md
   - name: 操作指南
     items:
       - name: 内容检测API
@@ -31,6 +33,12 @@ items:
             href: Operation-Guide/Content-Censor-API/Statistics-View.md
           - name: 检测结果查询
             href: Operation-Guide/Content-Censor-API/Query-Detection-Result.md
+          - name: 自助审核
+            href: Operation-Guide/Content-Censor-API/Self-Service-Audit.md
+          - name: 敏感库管理
+            items:
+              - name: 自定义文本库
+                href: Operation-Guide/Content-Censor-API/Custom-Text-Lib.md
       - name: OSS违规检测
         items:
           - name: 功能简介
@@ -43,6 +51,14 @@ items:
             href: Operation-Guide/OSS-Voilate-Detection/Callback-Notification.md
       - name: 流量包管理
         href: Operation-Guide/Resource-package-management.md
+      - name: 站点检测
+        items:
+          - name: 简介
+            href: Operation-Guide/Website-Detection/Overview.md
+          - name: 启用站点检测
+            href: Operation-Guide/Website-Detection/Start-up.md
+          - name: 查看检测结果
+            href: Operation-Guide/Website-Detection/Check-Detection-Result.md
   - name: API指南
     items:
       - name: 请求结构
@@ -53,6 +69,8 @@ items:
         href: API-Document/Signature-Algorithm.md
       - name: 返回结果
         href: API-Document/Return-Result.md
+      - name: 子账号接入
+        href: API-Document/Sub-Account-Access.md
       - name: API概览
         href: API-Document/API-Overview.md
       - name: 文本检测
@@ -73,7 +91,36 @@ items:
         items:
           - name: 异步检测
             href: API-Document/Audio-Detection-API/Audio-Asynchronous-Detection-API.md
-
+  - name: SDK参考
+    items:
+      - name: SDK概览
+        href: SDK-Reference/SDK-Overview.md
+      - name: SDK调用参数说明
+        href: SDK-Reference/SDK-Args.md
+      - name: GO SDK
+        items:
+          - name: 安装与初始化
+            href: SDK-Reference/GO-SDK/Install-And-Initialization.md
+          - name: 文本检测
+            href: SDK-Reference/GO-SDK/Text-Detection.md
+          - name: 图片检测
+            href: SDK-Reference/GO-SDK/Picture-Detection.md
+          - name: 视频检测
+            href: SDK-Reference/GO-SDK/Video-Detection.md
+          - name: 音频检测
+            href: SDK-Reference/GO-SDK/Audio-Detection.md
+      - name: JAVA SDK
+        items: 
+          - name: 安装与初始化
+            href: SDK-Reference/JAVA-SDK/Install-And-Initialization.md
+          - name: 文本检测
+            href: SDK-Reference/JAVA-SDK/Text-Detection.md
+          - name: 图片检测
+            href: SDK-Reference/JAVA-SDK/Picture-Detection.md
+          - name: 视频检测
+            href: SDK-Reference/JAVA-SDK/Video-Detection.md
+          - name: 音频检测
+            href: SDK-Reference/JAVA-SDK/Audio-Detection.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新

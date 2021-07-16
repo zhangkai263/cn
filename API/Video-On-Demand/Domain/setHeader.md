@@ -44,6 +44,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:setHeader
 
 ```
+
 ```
 {
     "headerName": "Access-Control-Allow-Origin", 
@@ -51,4 +52,3 @@ https://vod.jdcloud-api.com/v1/domains/2:setHeader
     "headerValue": "*"
 }
 ```
-

@@ -39,4 +39,3 @@ DELETE
 https://vod.jdcloud-api.com/v1/categories/1
 
 ```
-

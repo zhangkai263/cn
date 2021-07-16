@@ -15,6 +15,12 @@
         href: Introduction/Features.md
       - name: 应用场景  
         href: Introduction/Application-Scenarios.md    
+  - name: 产品定价
+    items:
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 欠费说明
+        href: Pricing/Overdue-Statement.md
   - name: 入门指南
     items:
       - name: 数据迁移
@@ -48,7 +54,23 @@
           - name: 修改订阅目标端  
             href: Getting-Started/Data-Subscription/Modify-Subscription-Target.md
           - name: 删除订阅任务 
-            href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md                 
+            href: Getting-Started/Data-Subscription/Delete-Subscription-Task.md             
+      - name: 数据同步
+        items:
+          - name: 预检查与限制说明
+            href: Getting-Started/Data-Synchronization/Synchronizaton-Astrict.md
+          - name: 创建数据同步任务 
+            href: Getting-Started/Data-Synchronization/Creat-Synchronizaton-Task.md
+          - name: 配置数据同步任务  
+            href: Getting-Started/Data-Synchronization/Config-Synchronizaton-Task.md
+          - name: 停止数据同步任务  
+            href: Getting-Started/Data-Synchronization/Stop-Synchronizaton-Task.md
+          - name: 创建灾备同步任务 
+            href: Getting-Started/Data-Synchronization/Creat-DisasterRecovery-Task.md
+          - name: 配置灾备同步任务  
+            href: Getting-Started/Data-Synchronization/Config-DisasterRecovery-Task.md
+          - name: 停止灾备同步任务  
+            href: Getting-Started/Data-Synchronization/Stop-DisasterRecovery-Task.md
   - name: 操作指南
     items:
       - name: 自建MySQL迁移至云数据库MySQL
@@ -82,3 +104,4 @@
     - name: 词汇表
       href: Related-Resources/Glossary.md           
       status: 0
+

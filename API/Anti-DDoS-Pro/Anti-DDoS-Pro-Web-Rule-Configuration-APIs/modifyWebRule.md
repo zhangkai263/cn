@@ -27,8 +27,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**serviceIp**|String|False| |高防 IP|
 |**domain**|String|True| |子域名|
 |**protocol**|[WebRuleProtocol](modifywebrule#webruleprotocol)|True| |协议: http, https 至少一个为 true|
-|**port**|Integer[]|False| |HTTP 协议的端口号, 如80, 81; 如果 protocol.http 为 true, 至少配置一个端口, 最多添加 5 个|
-|**httpsPort**|Integer[]|False| |HTTPS 协议的端口号, 如443, 8443; 如果 protocol.https 为 true, 至少配置一个端口, 最多添加 5 个|
+|**port**|Integer[]|False| |HTTP 协议的端口号, 如80, 81; 如果 protocol.http 为 true, 至少配置一个端口|
+|**httpsPort**|Integer[]|False| |HTTPS 协议的端口号, 如443, 8443; 如果 protocol.https 为 true, 至少配置一个端口|
 |**originType**|String|True| |回源类型：A 或者 CNAME|
 |**originAddr**|[OriginAddrItem[]](modifywebrule#originaddritem)|False| |originType 为 A 时, 需要设置该字段|
 |**onlineAddr**|String[]|False| |备用的回源地址列表, 可以配置为一个域名或者多个 ip 地址|
@@ -39,6 +39,13 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/webR
 |**httpOrigin**|Integer|False| |是否开启 HTTP 回源, protocol.https 为 true 时此参数生效. <br>- 0: 不开启. <br>- 1: 开启|
 |**webSocketStatus**|Integer|True| |是否开启 WebSocket.<br>- 0: 不开启<br>- 1: 开启|
 |**geoRsRoute**|[GeoRsRoute[]](modifywebrule#georsroute)|False| |按区域分流回源配置|
+|**enableKeepalive**|String|False| |是否开启回源长连接, protocol 选项开启 https 时生效, 可取值<br>- on: 开启<br>- off: 关闭|
+|**httpVersion**|String|False| |http 版本, protocol 选项开启 https 时生效, 可取值 http1 或 http2|
+|**sslProtocols**|String[]|False| |SSL协议类型, protocol 选项开启 https 时生效, 可取值SSLv2,SSLv3,TLSv1.0,TLSv1.1,TLSv1.2|
+|**suiteLevel**|String|False| |加密套件等级, protocol 选项开启 https 时生效, 可取值<br>- low: 低级<br>- middle: 中级<br>- high：高级|
+|**enableHealthCheck**|Integer|False| |健康检查开关, 0: 关闭, 1: 开启|
+|**proxyConnectTimeout**|Integer|False| |回源连接超时时长, 单位 秒|
+|**enableUnderscores**|Integer|False| |请求头支持下划线, 0: 关闭, 1: 开启|
 ### <div id="georsroute">GeoRsRoute</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

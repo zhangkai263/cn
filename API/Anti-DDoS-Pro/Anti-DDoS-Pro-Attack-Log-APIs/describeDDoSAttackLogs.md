@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询 DDoS 攻击日志
+查询 DDoS 攻击日志, 仅能查询非BGP实例的攻击记录, 同时查询BGP和非BGP实例请使用 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/describeDDoSIpAttackLogs'>describeDDoSIpAttackLogs</a>
 
 ## 请求方式
 GET

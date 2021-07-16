@@ -39,20 +39,23 @@ https://opencdn.jcloud.com/api/queryDomains
 curl请求示例： 
 
 ```
-curl -H “Content-type: application/json” -X POST -d ‘{“username”:“test_user”,“signature”:“914a3f412fd9bc1eec14bb5eb104d253”,“pageNumber”:1,“pageSize”:10}’ https://opencdn.jcloud.com/api/queryDomains
+curl -H "Content-type: application/json" -X POST -d '{"username":"test_user","signature":"914a3f412fd9bc1eec14bb5eb104d251","pageNumber":1,"pageSize":10,"type": "web"}'
+http://opencdn.jcloud.com/api/queryDomains
 ```
 
 * json格式
 
 ```
-https://opencdn.jcloud.com/api/queryDomains
+http://opencdn.jcloud.com/api/queryDomains
 {
-    "username" :"test_user",
+    "username" :"jd_cdntest",
     "signature" :"b036e6094db32b5a5abc47e6be426c50",
     "pageNumber":1,
-    "pageSize":10
+    "pageSize":10,
+    "type": "web"
    
  }
+
 ```
 
 - ### **返回示例**
@@ -64,23 +67,28 @@ https://opencdn.jcloud.com/api/queryDomains
     "status": 0,
     "msg": "成功",
     "data": {
-        "total": 10,
+        "total": 41,
         "domains": [
             {
                 "cname": "www.a.com.s.galileo.jcloud-cdn.com",
                 "domain": "www.a.com",
-                "status": "配置中",
-                "type": "图片小文件"
+                "status": "部署中",
+                "type": "图片小文件",
+                "accelerateRegion": "mainland",
             },
+           
             {
-                "cname": "www.b.com.s.galileo.jcloud-cdn.com",
-                "domain": " www.b.com ",
-                "status": "配置中",
-                "type": "图片小文件"
+                "cname": "www.b.com.vod.galileo.jcloud-cdn.com",
+                "domain": "www.b.com",
+                "status": "运行",
+                "type": "视频文件",
+                "accelerateRegion": "mainland",
             }
-            ]
+            
+        ]
     }
 }
+
 ```
 
  

@@ -21,7 +21,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码；默认为1|
 |**pageSize**|Integer|False| |分页大小；默认为20；取值范围[10, 100]|
-|**filters**|[Filter[]](describepods#filter)|False| |podId - pod ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，精确匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>phase - pod 状态，精确匹配，支持多个<br>name - 实例名称，模糊匹配，支持单个<br>subnetId - 镜像ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describepods#filter)|False| |podId - pod ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，模糊匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>phase - pod 状态，精确匹配，支持多个<br>name - 实例名称，模糊匹配，支持单个<br>subnetId - 镜像ID，精确匹配，支持多个<br>|
 |**tags**|[TagFilter[]](describepods#tagfilter)|False| |Tag筛选条件|
 
 ### <div id="tagfilter">TagFilter</div>
@@ -105,6 +105,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**sanityCheck**|Boolean|源和目标IP地址校验，取值为0或者1|
 |**primaryIp**|[NetworkInterfacePrivateIp](describepods#networkinterfaceprivateip)|网卡主IP|
 |**secondaryIps**|[NetworkInterfacePrivateIp[]](describepods#networkinterfaceprivateip)| |
+|**ipv6Addresses**|String[]|网卡IPv6地址|
 ### <div id="networkinterfaceprivateip">NetworkInterfacePrivateIp</div>
 |名称|类型|描述|
 |---|---|---|

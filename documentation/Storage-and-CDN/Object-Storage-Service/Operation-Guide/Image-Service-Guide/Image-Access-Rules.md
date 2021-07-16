@@ -72,28 +72,28 @@ http://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/s
        
      例如：
       
-     s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/style&img/s/100/200    (非法)
+     bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?imgalias/style&img/s/100/200    (非法)
        
-     s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/style&x-oss-process=imgalias/style2   (非法)
+     bucketname.s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/style&x-oss-process=imgalias/style2   (非法)
        
-     s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/style   (合法)
+     bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?imgalias/style   (合法)
        
 * imgalias, img, x-oss-process=imgalias, x-oss-process=img参数必须跟有具体参数
 
     例如：
     
-    s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/   （非法）
+    bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?imgalias/   （非法）
 
 * RequestQuery 的KV没有明确顺序
 
     例如：
     
-    s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?aaa=bb&imgalias/style    (合法)
+    bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?aaa=bb&imgalias/style    (合法)
 
 * RequestQuery 大小写敏感（KV都大小写敏感）
 
     例如：
     
-    s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?imgalias/style    (合法)
+    bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?imgalias/style    (合法)
 
-    s3.cn-north-1.jdcloud-oss.com/bucket/key.jpg?Imgalias/style    (正常访问原图)
+    bucketname.s3.cn-north-1.jdcloud-oss.com/key.jpg?Imgalias/style    (正常访问原图)

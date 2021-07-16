@@ -18,11 +18,11 @@
 
 ### 单可用区部署
 
-支持单可用区部署，副本集三个节点自动部署到不同的机架的物理机上，可以提供跨机架的高可用。
+支持单可用区部署，实例的多个节点自动部署到不同的机架的物理机上，可以提供跨机架的高可用。
 
 ### 多可用区部署
 
-支持多可用区部署，您可指定主从节点与隐藏节点部署的可用区，可以提供跨机房的高可用。
+支持多可用区部署，实例的多个节点分别部署在不同的可用区，可以提供跨机房的高可用。
 
 ## 安全保障
 
@@ -68,4 +68,3 @@ MongoDB 控制台提供丰富的监控信息，包括CPU、内存、存储空间
 - [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
 - [数据恢复](../Operation-Guide/Backup/Restore-Instance.md)
 - [设置报警规则](../Operation-Guide/Monitoring/Alarm-Rules.md)
-

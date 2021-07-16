@@ -12,6 +12,7 @@
 - 创建的负载均衡会占用本地域的应用负载均衡配额，需要保证有足够配额。 
 - 一个service port 对应一组负载均衡监听器和后端服务器；
 - 如多组service port关联相同的nodeport，则监听器将关联到相同的后端服务；
+- 如需基于IPv6地址提供服务，请在集群创建时选择“自定义模式”，创建IPv4/IPv6双栈VPC和子网，并将LoadBalance放置在支持IPv6的双栈子网内。
 
 **service.beta.kubernetes.io/jdcloud-load-balancer-spec** 
 - 此annotation可以指定，也可以不指定，如果不指定，行为与原有的service的插件一致，默认创建ALB实例

@@ -11,8 +11,6 @@ items:
       href: Introduction/Benefits.md
     - name: 产品功能
       href: Introduction/Features.md
-    - name: 产品规格
-      href: Introduction/Product-Specification.md  
     - name: 限制说明
       href: Introduction/Restrictions.md
     - name: 应用场景 
@@ -33,35 +31,19 @@ items:
       href: Getting-Started/Connect-Kafka.md
 - name: 操作指南
   items:
-    - name: 实例管理
-      items:
-        - name: 查看实例
-          href: Operation-Guide/View-Kafka.md
-        - name: 规格变更
-          href: Operation-Guide/Change-Kafka.md
-        - name: 续费/转包年包月
-          href: Operation-Guide/Renew-Kafka.md
-        - name: 删除实例
-          href: Operation-Guide/Delete-Kafka.md
-    - name: Topic及ConsumerGroup管理
-      items:
-        - name: Kafka Manager
-          href: Operation-Guide/Kafka-Manager.md
+    - name: 查看实例
+      href: Operation-Guide/View-Kafka.md
+    - name: 规格变更
+      href: Operation-Guide/Change-Kafka.md
+    - name: 删除实例
+      href: Operation-Guide/Delete-Kafka.md
+    - name: Kafka Manager
+      href: Operation-Guide/Kafka-Manager.md
     - name: 监控报警
-      items:
-        - name: 查看监控信息
-          href: Operation-Guide/Monitoring.md
-- name: 最佳实践
-  items:
-    - name: 性能测试
-      href: Best-Practice/Performance-Test.md 
+      href: Operation-Guide/Monitoring.md
 - name: 常见问题
-  items:
-    - name: 功能问题
-      href: FAQ/Function-FAQ.md
-    - name: 配置问题
-      href: FAQ/Configuration-FAQ.md
+  href: FAQ/FAQ.md
 - name: 相关资源
   items:
     - name: 文档历史记录
-      href: Related-Resources/Document-History.md
+      href: Related-Resources/Document-History.md 

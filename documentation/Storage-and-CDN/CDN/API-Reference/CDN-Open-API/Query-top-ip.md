@@ -2,7 +2,7 @@
 
 ## **1. 描述**
 
-查询Top IP (queryTopIP)
+仅可查询中国境内的相关信息。查询Top IP (queryTopIP)
 
 ## **2. 请求参数**
 

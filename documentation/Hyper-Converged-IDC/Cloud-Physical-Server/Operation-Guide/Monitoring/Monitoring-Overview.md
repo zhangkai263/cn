@@ -3,6 +3,7 @@
 ## 概述
 
 云物理服务器产品性能监控服务，支持不同监控维度，目前需要用户手动安装agent到已创建成功的实例，然后才能开始收集到用户的监控数据，以图标的方式更清晰的展示，让用户实时掌握资源的使用情况。<br/>
+Windows系统实例暂不支持性能监控功能。<br/>
 
 ## 监控项
 
@@ -19,6 +20,13 @@
 curl [http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v1.0.0.bin](http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v1.0.0.bin) -O <br/>
 chmod +x jdcps-agent-v1.0.0.bin<br/>
 sudo ./jdcps-agent-v1.0.0.bin<br/>
+
+说明：基础网络实例安装前准备工作如下：<br/>
+基础网络实例增加路由<br/>
+1、确定内网Gateway地址 route -n <br/>
+查询eth0对应的Gateway地址（eg：10.123.0.1）<br/>
+2、将监控流量引导到内网网关<br/>
+route add -net 100.66.1.0 netmask 255.255.255.0 gw {机器内网网关地址}<br/>
 
 ## 卸载Agent
 

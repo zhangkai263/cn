@@ -11,6 +11,6 @@
 
 示例：将图片顺时针旋转角度60°
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/r/60
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg?x-oss-process=img/r/60
 
 ![旋转](../../../../../image/Object-Storage-Service/OSS-059.jpg)

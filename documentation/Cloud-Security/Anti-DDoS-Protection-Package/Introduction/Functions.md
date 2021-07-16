@@ -36,7 +36,9 @@
 |扫描窥探威胁防护|端口扫描攻击；地址扫描攻击；TRACERT控制报文攻击；IP源站选路选项攻击；IP时间戳选项攻击；IP路由记录选项攻击等|
 |传输层威胁防护|SYN flood攻击；ACK flood攻击；SYN-ACK flood攻击；FIN/RST flood攻击；TCP fragment flood攻击；UDP flood攻击；UDP fragment flood攻击；ICMP flood等|
 
+### 9、访问控制
 
+- 对南北向流量设置基于源IP、目的IP、协议、目的端口的访问控制规则，实现南北向流量管控。
 
 ## 相关参考
 

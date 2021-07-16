@@ -23,6 +23,7 @@ https://cdn.jdcloud-api.com/v1/console:areaIspTable
 |**sortField**|String|False| |排序字段默认avgbandwidth,flowPercent同flow，pvPercent同pv|
 |**sortRule**|String|False| |排序规则,默认desc|
 |**groupBy**|String|False| |分组字段，默认为area|
+|**abroad**|Boolean|False| |true 代表查询境外数据，默认false查询境内数据|
 
 
 ## 返回参数

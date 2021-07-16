@@ -1,5 +1,5 @@
 
-# API使用指南
+# Fabric API使用指南
 智臻链BaaS平台企业组网提供两种应用接入方式：
 
 * 使用Hyperledger Fabric官方提供的SDK直接与创建出来的区块链网络交互，具体参考[接入指南](https://github.com/hyperledger)

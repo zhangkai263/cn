@@ -129,7 +129,6 @@ public class TokenExample {
                 .withClientConfiguration(config)
                 .withCredentials(awsCredentialsProvider)
                 .disableChunkedEncoding()
-                .withPathStyleAccessEnabled(true)
                 .build();
         //使用s3Client上传Object
         s3Client.putObject("your-bucket","your-key","this is test");

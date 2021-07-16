@@ -2,7 +2,7 @@
 
 
 ## 描述
-获取所有上层节点的ip
+获取所有上层节点的ip，仅支持中国境内上层节点IP地址查询
 
 ## 请求方式
 POST
@@ -20,13 +20,13 @@ https://cdn.jdcloud-api.com/v1/ip:whetherBelongToJCloud
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](checkWhetherIpBelongToJCloud#result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**ipList**|[CheckWhetherIpBelongToJCloudItem[]](#checkwhetheripbelongtojclouditem)| |
+|**ipList**|[CheckWhetherIpBelongToJCloudItem[]](checkWhetherIpBelongToJCloud#checkwhetheripbelongtojclouditem)| |
 ### <div id="CheckWhetherIpBelongToJCloudItem">CheckWhetherIpBelongToJCloudItem</div>
 |名称|类型|描述|
 |---|---|---|

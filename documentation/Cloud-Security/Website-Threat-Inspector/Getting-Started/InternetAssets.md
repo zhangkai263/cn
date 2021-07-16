@@ -28,30 +28,38 @@
 
 ### （1）步骤1：添加公网资产
 
+注：如果您添加的资产属于不在京东智联云域名解析服务的下注册的资产，需要您手动添加，认证
+
 进入网站威胁扫描控制台，在左侧导航栏，单击【资产管理】，在网站管理页面，单击【添加公网资产】
 
 注：您同一个账号下的域名和IP资产，在资产列表中可以自动关联发现，无需手动添加
 
 ![](../../../../image/Website-Threat-Inspector/wts-internet-assets-01.png)
-### （2）步骤2：填写资产信息
+### （2）步骤2：填写资产信息与认证路径
+
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-12.png)
 
 域名/子域名/IP：根据您网站的访问方式选择您要添加的资产类型（如：example.com、test.examlple.com、116.196.104.180）
 
-资产探测频率：探测资产认证状态是否有效，默认为1小时，可手动修改
+资产认证路径：针对手动添加的资产，需要对该资产进行身份认证，确保待扫描均为租户名下的资产。认证路径默认为根目录，如根路径存放认证文件不便，则可自定义相关路径。
 
 ### （3）步骤3：认证公网资产
 
-注：如果您添加的资产属于不在京东智联云域名解析服务的下注册的资产，需要您手动添加，认证。
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-13.png)
 
-- ##### 主域名认证场景
+- ##### 主域名添加解析
 
-![](../../../../image/Website-Threat-Inspector/wts-internet-assets-02.png)
-添加主域名（如：test.com）点击【认证】，弹出认证提示信息，生成CNAME信息，您需要您的主域名下新增CNAME解析记录c443df2c1b574708bd0f398254e6e93c.test.com至f5ed337b81af2efc9ca0e3d6d2d504c0.verify.scanner.jdcloud.com以完成添加资产的认证。
+需要在您的主域名下，新增CNAME解析记录（以1.1.1.12地址为例）
 
-- ##### IP/子域名认证场景
+f3d40a15facc466593e32ee91f57f974.1.1.1.12 至df0b08b86088a0f781faade30269a78a.verify.scanner.jdcloud.com以通过主域名资产认证。
 
-![](../../../../image/Website-Threat-Inspector/wts-internet-assets-03.png)
-添加子域名（如：test.test.com）点击【认证】，弹出认证提示信息，您要下载认证文件并添加到您的网站目录中(http ://test.test.com/af27f275a3584c7bb53414515d2900bd.txt)以完成添加资产的认证。
+- ##### IP/子域名添加认证
+
+（1）点击获取认证文件 ，将认证文件（jd_scanner_verify.html）下载到本地。
+
+（2）将下载的认证文件上传 ，请勿修改文件名称和内容
+
+（3）确保能从公网访问该文件；点击【点击访问】即可验证认证是否成功 。
 
 ### （4）步骤4：配置需要登录的资产
 
@@ -59,8 +67,8 @@
 
 产品支持管理资产的登录状态，为您的目标资产填写登录状态信息，当目标资产登录状态的cookies内容配置成功后，可帮助您深入检测发现资产被登录后的漏洞风险。
 
-![](../../../../image/Website-Threat-Inspector/wts-internet-assets-04.png)
-添加需要登录的资产，点击【管理】，弹出管理资产界面，填写登录状态cookies内容。
+![](../../../../image/Website-Threat-Inspector/wts-internet-assets-14.png)
+在认证完成后，您也可以添加需要登录的资产，点击【管理】，弹出管理资产界面，填写登录状态cookies内容。
 
 > ##### 如何填写登录状态的cookies内容？
 >
@@ -83,5 +91,3 @@ URI白名单：指当页面地址包含这些关键词时，禁止网站威胁�
 配置URI白名单可以指定产品不爬取的页面，如：/logout.php，此处填写logout。 
 
 匹配模式采取全量匹配的方式，即logout1.php 不会被排除。
-
-![](../../../../image/Website-Threat-Inspector/wts-internet-assets-08.png)

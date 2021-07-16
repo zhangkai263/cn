@@ -47,6 +47,7 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:setHttpSsl
 
 ```
+
 ```
 {
     "enabled": true, 
@@ -57,4 +58,3 @@ https://vod.jdcloud-api.com/v1/domains/2:setHttpSsl
     "title": "测试证书"
 }
 ```
-

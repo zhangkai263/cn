@@ -1,7 +1,7 @@
 # **查询封禁列表**
 ### 1. 描述
 
-查询封禁列表 (queryForbiddenInfoList)
+仅中国境内加速域名可配置封禁。查询封禁列表 (queryForbiddenInfoList)
 
 ### 2. 请求参数
 

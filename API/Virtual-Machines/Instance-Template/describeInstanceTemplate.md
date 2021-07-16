@@ -57,6 +57,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates/{instanceTemp
 |**elasticIp**|[InstanceTemplateElasticIp](describeinstancetemplate#instancetemplateelasticip)|主网卡主IP关联的弹性IP规格|
 |**keyNames**|String[]|密钥对名称；当前只支持一个|
 |**chargeOnStopped**|String|停机不计费的标志， keepCharging(默认)：关机后继续计费；stopCharging：关机后停止计费。|
+|**autoImagePolicyId**|String|自动镜像策略ID。|
+|**passwordAuth**|String|是否允许使用密码。|
+|**imageInherit**|String|是否继承镜像登录凭证。|
 ### <div id="instancetemplateelasticip">InstanceTemplateElasticIp</div>
 |名称|类型|描述|
 |---|---|---|

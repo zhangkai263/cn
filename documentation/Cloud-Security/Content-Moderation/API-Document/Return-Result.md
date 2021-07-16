@@ -42,5 +42,28 @@
 | **data**      | 整型/字符串/JSON对象 | 否       | API（业务）相关的返回数据。出错情况下，该字段可能为空。一般来说，该字段为一个JSON结构体或数组。 |
 | **error**     | 是                   | JSON对象 | 调用服务的相应接口产生错误时，返回的信息中应有具体的错误数据，error对象中的code, message 和 status定义见错误码定义 |
 
-### 
 
+
+### 错误码
+
+| Code | Status                        | 描述                                                     |
+| :--- | :---------------------------- | :------------------------------------------------------- |
+| 208  | CENSOR_PROCESSING             | 任务正在执行中，建议您等待一段时间（比如5s）后再查询结果 |
+| 400  | CENSOR_INVALID_SCENE          | 不支持的检测场景                                         |
+| 400  | CENSOR_INVALID_PIN            | 无效的用户pin                                            |
+| 400  | CENSOR_INVALID_REQUEST_BODY   | 无效的请求体，请检查                                     |
+| 400  | CENSOR_INVALID_TASKLEN        | 无效的task长度, 应在1-10之间                             |
+| 400  | CENSOR_INVALID_CONTENTLEN     | 无效的content长度, 应在1-1000之间                        |
+| 400  | CENSOR_INVALID_ARGUMENT       | 参数param存在错误                                        |
+| 400  | CENSOR_DOWNLOAD_FAILED        | 文件下载失败                                             |
+| 400  | CENSOR_DOWNLOAD_TIMEOUT       | 文件下载超时                                             |
+| 400  | CENSOR_LARGE_IMAGE            | 图片过大，不能超过5M                                     |
+| 400  | CENSOR_LARGE_AUDIO            | 音频文件过大，不能超过100M                               |
+| 400  | CENSOR_LARGE_VIDEO            | 视频文件过大，不能超过200M                               |
+| 400  | CENSOR_INVALID_IMAGE          | 图片格式不支持，仅支持jpg、png、jpeg、bmp                |
+| 400  | CENSOR_INVALID_AUDIO          | 音频格式不支持                                           |
+| 400  | CENSOR_INVALID_VIDEO          | 视频格式不支持                                           |
+| 400  | CENSOR_ARGUMENT_NOTFOUND      | 参数param是必填参数                                      |
+| 400  | CENSOR_INVALID_ARGUMENT       | 参数param取值不合法                                      |
+| 400  | CENSOR_REQUEST_LIMITEXCEEDED  | 请求的次数超过了频率限制                                 |
+| 500  | CENSOR_SERVICE_INTERNAL_ERROR | 服务器内部错误                                           |

@@ -47,13 +47,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 ### <div id="aliasip">AliasIp</div>
 |名称|类型|描述|
 |---|---|---|
-|**instanceId**|String|实例ID|
 |**region**|String|地域|
 |**az**|String|可用区|
+|**instanceId**|String|实例ID|
 |**subnetId**|String|子网ID|
 |**secondaryCidrId**|String|次要cidr ID|
 |**aliasIpId**|String|别名IP ID|
 |**cidr**|String|cidr段|
+|**isBondEip**|Boolean|是否已绑弹性公网ip|
 
 ## 返回码
 |返回码|描述|

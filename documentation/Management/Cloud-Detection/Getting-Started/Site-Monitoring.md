@@ -4,7 +4,7 @@
 1.登录京东云云拨测控制台，点击“管理->云拨测->站点监控”，进入监控任务列表页面。点击左上角的“新建任务”按钮。  
 2.填写基本信息  
 - 监控任务名称。
-- 探测协议：支持HTTP(S)、Ping、TCP、UDP、SMTP和FTP，选择HTTP（S）;
+- 探测协议：支持HTTP(S)、Ping、TCP、UDP、DNS、SMTP、POP3和FTP，选择HTTP（S）;
 - 站点地址：指定监控的目标地址，例如：console.jdcloud.com；  
 
 3.设置探测方案

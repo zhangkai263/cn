@@ -43,10 +43,10 @@ POST
 https://vod.jdcloud-api.com/v1/domains/2:deleteHeader
 
 ```
+
 ```
 {
     "headerName": "Access-Control-Allow-Origin", 
     "headerType": "resp"
 }
 ```
-

@@ -8,7 +8,7 @@
 POST
 
 ## 请求地址
-https://ossopenapi.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/historical-replicat-task/
+https://ossopenapi.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/historical_replicat_task/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

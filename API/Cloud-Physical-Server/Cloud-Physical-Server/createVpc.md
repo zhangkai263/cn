@@ -25,6 +25,7 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/vpcs
 |---|---|---|---|---|
 |**cidr**|String|True| |私有网络范围|
 |**name**|String|True| |名称|
+|**enableIpv6**|String|False|no|是否开通IPv6网关，取值范围：yes、no|
 |**description**|String|True| |描述|
 
 ## 返回参数

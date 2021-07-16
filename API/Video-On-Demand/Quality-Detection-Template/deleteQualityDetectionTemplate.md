@@ -40,4 +40,3 @@ DELETE
 https://vod.jdcloud-api.com/v1/qualityDetectionTemplates/1
 
 ```
-

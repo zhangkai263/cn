@@ -1,6 +1,6 @@
-  name: IP 高防
-  href:
-  items:
+name: IP 高防
+href:
+items:
   - name: 接口概览
     href: overview.md
   - name: 更新历史
@@ -19,6 +19,8 @@
             href: Anti-DDoS-Pro-Attack-Log-APIs/describeCCAttackLogs.md
           - name: describeDDoSAttackLogs
             href: Anti-DDoS-Pro-Attack-Log-APIs/describeDDoSAttackLogs.md
+          - name: describeDDoSIpAttackLogs
+            href: Anti-DDoS-Pro-Attack-Log-APIs/describeDDoSIpAttackLogs.md
       - name: IP高防报表相关接口
         items:
           - name: describeCCGraph
@@ -27,6 +29,10 @@
             href: Anti-DDoS-Pro-Flow-APIs/describeDDoSGraph.md
           - name: describeFwdGraph
             href: Anti-DDoS-Pro-Flow-APIs/describeFwdGraph.md
+          - name: describeBusinessGraph
+            href: Anti-DDoS-Pro-Flow-APIs/describeBusinessGraph.md
+          - name: describeConnStatGraph
+            href: Anti-DDoS-Pro-Flow-APIs/describeConnStatGraph.md
       - name: IP高防实例相关接口
         items:
           - name: checkName
@@ -43,6 +49,10 @@
             href: Anti-DDoS-Pro-Instance-APIs/describeInstances.md
           - name: describeNameList
             href: Anti-DDoS-Pro-Instance-APIs/describeNameList.md
+          - name: describeOriginWhiteIpList
+            href: Anti-DDoS-Pro-Instance-APIs/describeOriginWhiteIpList.md
+          - name: describeProtectionOutline
+            href: Anti-DDoS-Pro-Instance-APIs/describeProtectionOutline.md
           - name: describeProtectionStatistics
             href: Anti-DDoS-Pro-Instance-APIs/describeProtectionStatistics.md
           - name: describeVpcIpList
@@ -55,6 +65,30 @@
             href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceName.md
           - name: describeServiceIpList
             href: Anti-DDoS-Pro-Instance-APIs/describeServiceIpList.md
+          - name: createCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/createCustomPage.md
+          - name: deleteCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/deleteCustomPage.md
+          - name: describeCcsIpList
+            href: Anti-DDoS-Pro-Instance-APIs/describeCcsIpList.md
+          - name: describeCustomPages
+            href: Anti-DDoS-Pro-Instance-APIs/describeCustomPages.md
+          - name: describeInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/describeInstanceAcl.md
+          - name: disableInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/disableInstanceCustomPage.md
+          - name: enableInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/enableInstanceCustomPage.md
+          - name: modifyCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/modifyCustomPage.md
+          - name: modifyInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceAcl.md
+          - name: modifyInstanceCustomPage
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceCustomPage.md
+          - name: modifyInstanceCustomPageDefault
+            href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceCustomPageDefault.md
+          - name: recoverInstanceAcl
+            href: Anti-DDoS-Pro-Instance-APIs/recoverInstanceAcl.md
       - name: IP高防网站转发配置相关接口
         items:
           - name: bindCert
@@ -63,14 +97,22 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createBlackListRuleOfWebRule.md
           - name: createCCProtectionRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createCCProtectionRuleOfWebRule.md
+          - name: createJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createJsPageOfWebRule.md
+          - name: createJsPagesOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createJsPagesOfWebRule.md
           - name: createWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWebRule.md
+          - name: createWebRules
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWebRules.md
           - name: createWhiteListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/createWhiteListRuleOfWebRule.md
           - name: deleteBlackListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteBlackListRuleOfWebRule.md
           - name: deleteCCProtectionRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteCCProtectionRuleOfWebRule.md
+          - name: deleteJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteJsPageOfWebRule.md
           - name: deleteWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/deleteWebRule.md
           - name: deleteWhiteListRuleOfWebRule
@@ -87,6 +129,8 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeCCProtectionRuleOfWebRule.md
           - name: describeCCProtectionRulesOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeCCProtectionRulesOfWebRule.md
+          - name: describeJsPagesOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeJsPagesOfWebRule.md
           - name: describeWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/describeWebRule.md
           - name: describeWebRuleBlackListGeoAreas
@@ -115,6 +159,10 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCC.md
           - name: disableWebRuleCCObserverMode
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCCObserverMode.md
+          - name: disableWebRuleCCProtectionRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleCCProtectionRule.md
+          - name: disableWebRuleJsPage
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleJsPage.md
           - name: disableWebRuleWhiteList
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/disableWebRuleWhiteList.md
           - name: disableWhiteListRuleOfWebRule
@@ -129,6 +177,10 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCC.md
           - name: enableWebRuleCCObserverMode
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCCObserverMode.md
+          - name: enableWebRuleCCProtectionRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleCCProtectionRule.md
+          - name: enableWebRuleJsPage
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleJsPage.md
           - name: enableWebRuleWhiteList
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/enableWebRuleWhiteList.md
           - name: enableWhiteListRuleOfWebRule
@@ -141,8 +193,14 @@
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyCCProtectionRuleOfWebRule.md
           - name: modifyCertInfo
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyCertInfo.md
+          - name: modifyJsPageOfWebRule
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyJsPageOfWebRule.md
           - name: modifyWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRule.md
+          - name: modifyWebRuleJsPageToAll
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRuleJsPageToAll.md
+          - name: modifyWebRuleJsPageToCustom
+            href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWebRuleJsPageToCustom.md
           - name: modifyWhiteListRuleOfWebRule
             href: Anti-DDoS-Pro-Web-Rule-Configuration-APIs/modifyWhiteListRuleOfWebRule.md
           - name: switchWebRuleOrigin
@@ -153,6 +211,8 @@
         items:
           - name: createForwardRule
             href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/createForwardRule.md
+          - name: createForwardRules
+            href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/createForwardRules.md
           - name: deleteForwardRule
             href: Anti-DDoS-Pro-non-Web-Rule-Configuration-APIs/deleteForwardRule.md
           - name: describeBlackListRuleOfForwardRule
@@ -199,3 +259,19 @@
             href: IP-Sets/describeIpSets.md
           - name: describeIpSetUsage
             href: IP-Sets/describeIpSetUsage.md
+      - name: IP高防防护调度规则相关接口
+        items:
+          - name: createDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/createDispatchRule.md
+          - name: createDispatchRules
+            href: Anti-DDoS-Pro-Dispatch-Rule/createDispatchRules.md
+          - name: deleteDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/deleteDispatchRule.md
+          - name: describeDispatchRules
+            href: Anti-DDoS-Pro-Dispatch-Rule/describeDispatchRules.md
+          - name: modifyDispatchRule
+            href: Anti-DDoS-Pro-Dispatch-Rule/modifyDispatchRule.md
+          - name: switchDispatchRuleOrigin
+            href: Anti-DDoS-Pro-Dispatch-Rule/switchDispatchRuleOrigin.md
+          - name: switchDispatchRuleProtect
+            href: Anti-DDoS-Pro-Dispatch-Rule/switchDispatchRuleProtect.md

@@ -3,7 +3,7 @@
 国内文本短信采用预付费的方式，按发送条数计算, 具体价格(包括验证码，通知，营销类短信) 请参考下表。<br><br>
 
 **短信套餐包**<br>
-![套餐包](../../../../image/Text-Message/dx-000tp-tcb2.gif)<br><br>
+![套餐包](../../../../image/Text-Message/dx-000tp-tcb3.png)<br><br>
 
 **有效期: 24个月**<br><br>
 

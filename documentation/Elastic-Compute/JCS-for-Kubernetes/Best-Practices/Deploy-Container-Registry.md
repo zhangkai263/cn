@@ -3,6 +3,37 @@
 关于使用容器镜像仓库的方法，请参考[容器镜像仓库帮助文档](https://docs.jdcloud.com/cn/container-registry/create-image)。  
 例：注册表为myregistry，镜像仓库为myrepo，镜像版本号为latest，地域选择华北-北京为cn-north-1。用户可根据具体情况修改。
 
+**对于2020年7月1号以后新建集群用户不再需要手工创建令牌**
+对于2020年7月1号以后新建集群用户，集群已经默认集成了jdcloud-jcr-credential-cron任务自动拉取和更新镜像仓库的令牌，不再需要参考文档中手工创建令牌的方法
+运行kubectl get secrets可以看到jcr-pull-secret
+用户直接使用该令牌即可
+例：
+```
+apiVersion: extensions/v1beta1  #1.16集群请换成 apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - image: myregistry-cn-north-1.jcr.service.jdcloud.com/myrepo:latest
+        imagePullPolicy: Always
+        name: nginx
+      imagePullSecrets:
+      - name: jcr-pull-secret
+```
+
+
 **对于一次性使用，临时令牌有效期内有效，有一定时效性**  
 该方案只能实现某个注册表下的所有容器镜像的获取权限。  
 1、获取临时令牌，Docker客户端登录命令中，-p后面的一串字符串为docker-password的内容：  

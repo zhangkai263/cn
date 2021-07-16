@@ -1,7 +1,7 @@
 # **设置封禁**
 ### 1. 描述
 
-域名封禁或者URL封禁 (forbiddenCdnDomainOrUrl)
+仅中国境内加速域名可配置。域名封禁或者URL封禁 (forbiddenCdnDomainOrUrl)
 
 ### 2. 请求参数
 

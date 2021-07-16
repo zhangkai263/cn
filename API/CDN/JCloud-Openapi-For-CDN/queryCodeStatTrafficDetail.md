@@ -26,14 +26,14 @@ https://cdn.jdcloud-api.com/v1/console:codestatDetail
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querycodestattrafficdetail#result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**codeMap**|Object|状态码对应map，类型为LinkedHashMap<String,String>|
-|**details**|[CodeDetailItem[]](#codedetailitem)| |
+|**details**|[CodeDetailItem[]](querycodestattrafficdetail#codedetailitem)| |
 ### <div id="CodeDetailItem">CodeDetailItem</div>
 |名称|类型|描述|
 |---|---|---|

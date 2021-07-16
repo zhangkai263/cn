@@ -39,7 +39,6 @@ public class S3SdkTest{
                 .withClientConfiguration(config)
                 .withCredentials(awsCredentialsProvider)
                 .disableChunkedEncoding()
-                .withPathStyleAccessEnabled(true)
                 .build();
         //初始化TransferManager实例
         TransferManager xfer_mgr = TransferManagerBuilder.standard()

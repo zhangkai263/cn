@@ -13,13 +13,13 @@
 
 图片如下：
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg
 
 ![识别](../../../../../image/Object-Storage-Service/OSS-065.jpg)
 
 鉴黄处理：
 
-http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/analyse/p
+http://downloads.s3.cn-north-1.jdcloud-oss.com/example.jpg?x-oss-process=img/analyse/p
 
 返回结果：
 

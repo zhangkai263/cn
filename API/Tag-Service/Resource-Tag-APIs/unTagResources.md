@@ -37,7 +37,7 @@ https://resource-tag.jdcloud-api.com/v1/regions/{regionId}/tags:unTagResources
 ### ResourcesMap
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**serviceCode**|String|True| |产品线名称列表<br>标签系统支持的产品线名称如下<br>- vm               disk        sqlserver  es          mongodb               ip<br>- memcached        redis       drds       rds         database              db_ro<br>- percona          percona_ro  mariadb    mariadb_ro  pg                    cdn<br>- nativecontainer  pod         zfs        jqs         kubernetesNodegroup   jcq<br>|
+|**serviceCode**|String|True| |产品线名称列表<br>标签系统支持的产品线名称列表请查阅[产品介绍](https://docs.jdcloud.com/cn/tag-service/product-overview)
 |**resourceId**|String[]|True| |资源id列表|
 
 ## 返回参数

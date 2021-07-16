@@ -1,6 +1,6 @@
 ### 描述
 
-回源统计 (origin)
+仅可查询中国境内的相关信息。回源统计 (origin)
 
 ### 请求参数
 
@@ -51,7 +51,7 @@ http://opencdn.jcloud.com/api/origin
 "data": [
 [
 TS, //时间戳
-BANDWIDTH, //回源带宽,单位:bps
+BANDWIDTH, //回源带宽,单位:Mbps
 PV, //回源请求数
 {
 CODE1 : CODE1_COUNT, // CODE1 为具体的状态码,如 206,

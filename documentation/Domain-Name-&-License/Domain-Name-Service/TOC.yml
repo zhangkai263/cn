@@ -56,10 +56,10 @@
     herf: FAQ/FAQ.md
   - name: 用户协议
     items:
-      - name: 域名在线服务条款
-        herf: User-Agreements/Donline-Terms-of-Service-of-Domain-Name.md      
-      - name: 国际域名在线转移协议
-        herf: User-Agreements/IDN-Online-Transfer-Agreement.md      
+    - name: 域名在线服务条款
+      herf: User-Agreements/IDN-Online-Transfer-Agreement.md
+    - name: 国际域名在线转移协议
+      herf: User-Agreements/Donline-Terms-of-Service-of-Domain-Name.md
 
           
           
