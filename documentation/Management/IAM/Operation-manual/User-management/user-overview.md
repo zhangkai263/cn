@@ -18,6 +18,6 @@
 
 [设置子用户密码策略](../../../../../documentation/Management/IAM/Operation-manual/User-management/setting-up-credential-policies.md)
 
-子用户访问控制台
+[子用户访问控制台](../../../../../documentation/Management/IAM/Operation-manual/User-management/User-visit-console.md)
 
 子用户访问OpenAPI
