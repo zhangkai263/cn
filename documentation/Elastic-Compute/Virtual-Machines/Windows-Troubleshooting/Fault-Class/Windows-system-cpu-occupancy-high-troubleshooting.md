@@ -3,7 +3,7 @@
 
 
 
-如果希望快速解决问题，请尝试如下方法：
+## 如果希望快速解决问题，请尝试如下方法：
 
 1.如果有安装杀毒软件，请检查CPU飙高时，杀毒软件是否在后台执行扫描操作。如果可能，请升级杀毒软件到最新版本，或者删除杀毒软件。
 
@@ -15,31 +15,32 @@
 
 
 
-**排查方式**
+## 排查方式
 
 如果需要定位为何出现CPU高的原因，可以参考微软官方博客说明，微软有多个工具可以定位CPU高的问题，例如任务管理器，资源监视器，Process Explorer。
 
-
-
 通过任务管理器，资源监视器来查看cpu的占用情况，以及查看占用cpu高的进程。
 
-**windows2008系统查看方式：**
+### windows2008系统查看方式：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A501.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A502.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A503.png)
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查01.png)
 
-**windows2012系统查看方式：**
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查02.png)
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A504.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A505.png)
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A506.png)
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查03.png)
 
-**通过Process Explorer工具查看方式：**
+### windows2012系统查看方式：
+
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查04.png)
+
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查05.png)
+
+### 通过Process Explorer工具查看方式：
 
 微软官方sysinternals工具，下载链接：https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx
 
 该工具非常强大，在检查高CPU问题方面，通过配置正确的Symbols，可以通过检查对应应用程序的线程调用的Call Stack，来定位可能的问题驱动。
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E7%B3%BB%E7%BB%9Fcpu%E5%8D%A0%E7%94%A8%E9%AB%98%E6%8E%92%E6%9F%A507.png)
+![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查07.png)
 
 如无法解决您的问题，请向我们提工单。
+
