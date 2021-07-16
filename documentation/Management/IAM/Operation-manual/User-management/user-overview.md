@@ -16,7 +16,7 @@
 
 [设置子用户的安全凭证](../../../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
 
-设置子用户密码强度
+[设置子用户密码策略](../../../../../documentation/Management/IAM/Operation-manual/User-management/setting-up-credential-policies.md)
 
 子用户访问控制台
 
