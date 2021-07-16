@@ -20,4 +20,4 @@
 
 [子用户访问控制台](../../../../../documentation/Management/IAM/Operation-manual/User-management/User-visit-console.md)
 
-子用户访问OpenAPI
+[子用户访问OpenAPI](../../../../../documentation/Management/IAM/Operation-manual/User-management/User-visit-openapi.md)
