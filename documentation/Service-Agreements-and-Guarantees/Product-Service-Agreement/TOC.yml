@@ -160,12 +160,6 @@ items:
     href: JCS-for-Elasticsearch-Service-Terms.md
   - name: 云搜索Elasticsearch服务等级协议（SLA）
     href: JCS-for-Elasticsearch-Service-Terms-SLA.md  
-  - name: 函数服务服务条款
-    href: Functional-Service-Terms-of-Service.md
-  - name: 队列服务服务条款
-    href: Queue-Service-Terms-Of-Service.md   
-  - name: 队列服务等级协议（SLA）
-    href: Queue-Service-Terms-Of-Service-SLA.md
   - name: 智臻链BaaS平台服务条款
     href: JD-Blockchain-Open-Platform.md
   - name: 智臻链BaaS平台服务等级协议（SLA）
