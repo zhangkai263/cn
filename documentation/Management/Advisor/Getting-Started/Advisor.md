@@ -70,4 +70,4 @@
 
 ## 相关参考
 
-- [使用限制](../../Introduction/Restrictions.md)
+- [使用限制](../Introduction/Restrictions.md)
