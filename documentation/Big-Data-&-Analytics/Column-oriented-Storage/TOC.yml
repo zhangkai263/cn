@@ -57,5 +57,5 @@
     - name: 如何配置ACL
       href: FAQ/ACLconf.md
     - name: JDNoSQL管理 常见问题
-      href: FAQ/ACLconf.md
+      href: FAQ/ClusterManager.md
       
