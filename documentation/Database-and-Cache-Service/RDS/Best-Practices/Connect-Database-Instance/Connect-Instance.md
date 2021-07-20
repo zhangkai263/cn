@@ -33,4 +33,4 @@
     ![截图](https://img1.jcloudcs.com/cms/94be7bf2-3a37-4d1d-9add-cb35d27cc7aa20180803100645.jpeg)
 
 
-2.点击 connect 按钮，就可以连接到云数据库实例了。 
+2.点击 **connect** 按钮，就可以连接到云数据库实例了。 
