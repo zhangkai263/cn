@@ -38,7 +38,7 @@
 
 **二、流量包预付费方式**
 
-预付费购买流量包的模式，购买当日即刻生效，过期后作废。[**立刻购买**](https://common-buy.jdcloud.com/resource/create?serviceCode=cdnbag)
+预付费购买流量包的模式，购买当日即刻生效，过期后作废。[**点击购买**](https://common-buy.jdcloud.com/resource/create?serviceCode=cdnbag)
 
 **仅线上结算、采用日流量计费方式时**，才可抵扣流量包，抵扣的用量为**图片小文件、大文件下载、视频文件、视频云直播**域名产生的中国境内用量，查看[资源包使用明细](https://package.jdcloud.com/resource/useList)，超出部分按照日流量计费模式进行自然月阶梯计费。（目前仅支持**中国境内流量包**，抵扣中国境内用量）
 
