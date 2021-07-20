@@ -2,7 +2,7 @@
 
 在有【启用】状态下的 AccessKey 的前提下，子用户可以编程访问京东云 OpenAPI。
 
-![image-20210716190729035](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210716190729035.png)
+![image-20210716190729035](../../../../../image/IAM/SubUserManagement/image-20210716190729035.png)
 
 ## 京东云OpenAPI介绍
 
