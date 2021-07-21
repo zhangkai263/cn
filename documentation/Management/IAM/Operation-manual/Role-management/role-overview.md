@@ -41,16 +41,15 @@
 
 ## 常用操作
 
-创建用户角色
+[创建用户角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/create-role/createuserrole.md)
 
-创建服务角色
+[创建服务角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/create-role/createservicerole.md)
 
-创建联合身份角色
+[创建联合身份角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/create-role/createfederatedrole.md)
 
-编辑角色
+[管理角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/modify-role.md)
 
-为角色授权
+[为角色授权](../../../../../documentation/Management/IAM/Operation-manual/Role-management/attach-policy.md)
 
-代入角色访问控制台
+[代入用户角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/switch-role.md)
 
-代入角色访问OpenAPI
