@@ -74,6 +74,6 @@
 
 以下是当授权 vm:createInstances 后系统提示关联授权的示例：
 
-![](../../../../../image/IAM/PolicyManagement/image-20210721203833797.png)
+![](../../../../../../image/IAM/PolicyManagement/image-20210721203833797.png)
 
-![](../../../../../image/IAM/PolicyManagement/image-20210721204118282.png)
+![](../../../../../../image/IAM/PolicyManagement/image-20210721204118282.png)
