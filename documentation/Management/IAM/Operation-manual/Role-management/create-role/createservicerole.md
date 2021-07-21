@@ -1,19 +1,18 @@
+# 创建服务角色
+
 本页介绍京东智联云服务角色的创建流程。
 
-
-## 创建服务角色
-
-### 1. 点击“创建角色”
+## 1.创建角色
 在角色管理列表页点击“创建角色”
 
 ![image](../../../../../../image/IAM/RoleNew/list.png)
 
-### 2. 选择角色类型
+## 2. 选择角色类型
 选择“服务角色”
 
 ![image](../../../../../../image/IAM/RoleNew/create-select.png)
 
-### 3. 设置角色信息
+## 3. 设置角色信息
 
 ![image](../../../../../../image/IAM/RoleNew/createservicerole.png)
 
