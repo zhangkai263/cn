@@ -70,4 +70,6 @@
    </tbody>
 </table>
 
+> 实际可使用可用区请以控制台显示为准。
+
 ![](../../../../image/vm/region-and-az.png)
