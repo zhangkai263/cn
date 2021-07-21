@@ -51,5 +51,5 @@
 
 [为角色授权](../../../../../documentation/Management/IAM/Operation-manual/Role-management/attach-policy.md)
 
-[代入用户角色](../../../../../documentation/Management/IAM/Operation-manual/Role-management/switch-role.md)
+[代入用户角色访问](../../../../../documentation/Management/IAM/Operation-manual/Role-management/switch-role.md)
 
