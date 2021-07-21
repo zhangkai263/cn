@@ -1,6 +1,6 @@
 # 策略元素
 
-京东智联云 IAM 策略（Policy）由以下元素组成：
+京东云 IAM 策略（Policy）由以下元素组成：
 
 - Version 策略版本
 - Effect 效力
@@ -12,7 +12,7 @@
 ## 元素介绍
 
 ### Version
-必填项，描述策略语法版本。京东智联云当前的策略版本为 v3。示例：
+必填项，描述策略语法版本。京东云当前的策略版本为 v3。示例：
 
 > "version": "3"
 
@@ -26,12 +26,12 @@
 > "effect":"Allow"
 
 ### Action
-必填项，定义京东智联云的一个或一组api。示例：
+必填项，定义京东云的一个或一组api。示例：
 
 > "action":"vm:createInstance"
 
 ### Resource
-必填项，描述京东智联云的一个或多个资源。京东智联云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
+必填项，描述京东云的一个或多个资源。京东云资源采用六段式 jrn 描述，使用 jrn 可以全局指定一个资源：
 
     jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
     
@@ -44,7 +44,7 @@
 > "resource":"jrn:rds:\*:859150329790:\*"
 
 ### Condition
-选填项，描述策略生效的约束条件。条件包括条件运算符、条件键和条件值组成。京东智联云目前支持指定资源标签作为策略生效条件。
+选填项，描述策略生效的约束条件。条件包括条件运算符、条件键和条件值组成。京东云目前支持指定资源标签作为策略生效条件。
 如指定带有 department = finance 标签的资源，其 condition 为：
 
 > "Condition": {"StringEquals": {"JDCloud:ResourceTag/department":\["finance"\]}}
