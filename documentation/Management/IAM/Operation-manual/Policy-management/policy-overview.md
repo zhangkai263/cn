@@ -30,3 +30,22 @@ IAM 支持两种类型的策略：京东云预置的系统策略和用户自行�
 代入角色时所传入的策略称之为会话策略，用于限制角色会话期间的所实际拥有的权限。角色会话期间实际拥有的权限为其会话策略和附加的托管策略的交集。
 
 会话策略随角色会话的失效而失效。
+
+## 策略语法介绍
+
+授权策略是一端 JSON 格式的代码，通过这段代码描述了授权策略版本、授权操作类型、授权操作对象、授权操作条件等多个内容。
+
+策略语法的详细介绍，请参考[策略元素](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-grammar/elements.md)和[策略变量](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-grammar/variable.md)说明。
+
+## 常用操作
+
+[通过可视化策略生成器创建策略](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-manage/UI-create.md)
+
+[通过策略编辑器创建策略](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-manage/Json-create.md)
+
+[按标签创建策略](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-manage/Tag-create.md)
+
+[编辑策略](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-manage/edit.md)
+
+[删除策略](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-manage/delete.md)
+
