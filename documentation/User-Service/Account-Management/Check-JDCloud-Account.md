@@ -1,6 +1,6 @@
 # 查看账号信息
 
-登录京东云后，可以通过[账户基本资料](https://uc.jdcloud.com/account/basic-info)页面查看账号信息：
+登录京东云后，可以通过账户管理-[基本资料](https://uc.jdcloud.com/account/basic-info)页面查看账号信息：
 
 - 账号名：注册或京东账号升级时由用户设置，用于登录。账号名不支持修改
 - 账号ID：账号标识，用于 IAM 授权（参考 [IAM 帮助文档](https://docs.jdcloud.com/iam)）。账号ID不支持修改
