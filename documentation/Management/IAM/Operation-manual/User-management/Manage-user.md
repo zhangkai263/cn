@@ -19,7 +19,7 @@
 
 ![image-20210714213540697](../../../../../image/IAM/SubUserManagement/image-20210714213540697.png)
 
-点击【授权】，可以勾选需要授权的策略对子用户授权。创建和选择符合权限需求的策略，请参考[策略管理]()。
+点击【授权】，可以勾选需要授权的策略对子用户授权。创建和选择符合权限需求的策略，请参考[策略管理](../../../../../documentation/Management/IAM/Operation-manual/Policy-management/policy-overview.md)。
 
 ![image-20210714214911634](../../../../../image/IAM/SubUserManagement/image-20210714214911634.png)
 
@@ -35,7 +35,7 @@
 
 点击子用户名进入子用户详情页，可以查看和管理子用户的授权详情、所属群组和安全凭证。
 
-子用户安全凭证的管理，详见[设置子用户的安全凭证]()。
+子用户安全凭证的管理，详见[设置子用户的安全凭证](../../../../../documentation/Management/IAM/Operation-manual/User-management/setting-up-credential-policies.md)。
 
 ![image-20210714215310474](../../../../../image/IAM/SubUserManagement/image-20210714215310474.png)
 
