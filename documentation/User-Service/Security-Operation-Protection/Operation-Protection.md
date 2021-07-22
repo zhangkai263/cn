@@ -10,13 +10,13 @@
 
 要启用基于 MFA 的操作保护，请先启用虚拟 MFA 认证。详见：[虚拟 MFA 认证](../../../documentation/User-Service/Account-Management/Setting-up-MFA.md)
 
-# 为子用户设置操作保护
+## 为子用户设置操作保护
 
 在访问控制的[用户管理]()页面，进入用户详情 > 安全凭证，可以设置子用户的操作保护。详见：[设置子用户的安全凭证](../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
 
 ![子用户操作保护设置](../../../image/IAM/Virtual-MFA-Device/子用户操作保护设置.jpg)
 
-# 身份验证
+## 身份验证
 
 在执行[敏感操作](../../../documentation/User-Service/Security-Operation-Protection/Introduction/Support-Services.md)时，控制台会按照操作保护的设置进行拦截验证。
 
