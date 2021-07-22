@@ -24,7 +24,7 @@ AccessKey 由 AccessKey 和 AccessKey Secret 秘钥对（简称 AK/SK）构成�
 
 ![image-20210722210835865](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210722210835865.png)
 
-有子用户安全凭证管理权限的管理员，也可以在 [IAM 控制台](https://iam-console.jdcloud.com/subUser/list)完成子用户 AK/SK 管理操作。详见：[设置子用户的安全凭证](../../../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
+有子用户安全凭证管理权限的管理员，也可以在 [IAM 控制台](https://iam-console.jdcloud.com/subUser/list)完成子用户 AK/SK 管理操作。详见：[设置子用户的安全凭证](../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
 
 ![image-20210722211148793](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210722211148793.png)
 
@@ -38,4 +38,4 @@ AccessKey 由 AccessKey 和 AccessKey Secret 秘钥对（简称 AK/SK）构成�
 >
 > 只有启用【MFA】作为操作保护验证方式，才能对编程访问生效。
 
-操作保护的设置方法，详见：[操作保护设置](../../../../../documentation/User-Service/Security-Operation-Protection/Operation-Protection.md)
+操作保护的设置方法，详见：[操作保护设置](../../../documentation/User-Service/Security-Operation-Protection/Operation-Protection.md)
