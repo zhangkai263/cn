@@ -16,17 +16,17 @@ AccessKey 由 AccessKey 和 AccessKey Secret 秘钥对（简称 AK/SK）构成�
 
 主账号登录后，可以在账户管理-[AccessKey管理](https://uc.jdcloud.com/account/accesskey)页面管理AK/SK。但是，京东云不建议在任何情况下启用主账号的 AK/SK，该秘钥对拥有主账号的全量权限，一旦泄露将会产生最大风险。
 
-![image-20210722210205813](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210722210205813.png)
+![image-20210722210205813](../../../image/User/Account-Mgmt/image-20210722210205813.png)
 
 ### 管理子用户的 AK/SK
 
 子用户可以登录[账户中心](https://uc.jdcloud.com/subaccount/subaccount-accesskey)管理自己的 AK/SK。
 
-![image-20210722210835865](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210722210835865.png)
+![image-20210722210835865](../../../image/User/Account-Mgmt/image-20210722210835865.png)
 
 有子用户安全凭证管理权限的管理员，也可以在 [IAM 控制台](https://iam-console.jdcloud.com/subUser/list)完成子用户 AK/SK 管理操作。详见：[设置子用户的安全凭证](../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
 
-![image-20210722211148793](C:\Users\xialiwen\AppData\Roaming\Typora\typora-user-images\image-20210722211148793.png)
+![image-20210722211148793](../../../image/User/Account-Mgmt/image-20210722211148793.png)
 
 ## 对API访问设置多因子认证（MFA）
 
