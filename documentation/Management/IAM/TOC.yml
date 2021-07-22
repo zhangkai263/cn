@@ -59,11 +59,9 @@ items:
                 href: Operation-manual/Role-management/create-role/createfederatedrole.md
           - name: 为角色授权策略
             href: Operation-manual/Role-management/attach-policy.md
-          - name: 编辑角色
+          - name: 管理角色
             href: Operation-manual/Role-management/modify-role.md
-          - name: 删除角色
-            href: Operation-manual/Role-management/delete-role.md
-          - name: 代入角色
+          - name: 代入用户角色访问
             href: Operation-manual/Role-management/switch-role.md
       - name: 策略管理
         items:
@@ -87,9 +85,8 @@ items:
                 href: Operation-manual/Policy-management/policy-manage/edit.md
               - name: 删除策略
                 href: Operation-manual/Policy-management/policy-manage/delete.md
-              
-               
-            
+      - name: 常见问题（FAQ）
+        href: Operation-manual/FAQ.md
            
           
             
