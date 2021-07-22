@@ -35,7 +35,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**cacheInstanceId**|String|实例ID|
 |**cacheInstanceName**|String|实例名称|
 |**cacheInstanceClass**|String|规格代码，2.8、4.0标准版是实例规格，4.0自定义分片集群版实例表示单分片规格|
-|**cacheInstanceMemoryMB**|Integer|实例的总内存（MB）|
+|**cacheInstanceMemoryMB**|Integer|实例的总内存（MB），表示用户购买的可使用内存|
 |**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中|
 |**cacheInstanceDescription**|String|实例描述|
 |**createTime**|String|创建时间（ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ）|
@@ -77,3 +77,61 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetInstanceDetail() {
+  // 1. 设置请求参数
+  DescribeCacheInstanceRequest request = new DescribeCacheInstanceRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-dr8kqlkauchk");
+
+  // 2. 发起请求
+  DescribeCacheInstanceResponse response = redisClient.describeCacheInstance(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mc3", 
+    "result": {
+        "cacheInstance": {
+            "auth": false, 
+            "azId": {
+                "master": "cn-north-1b", 
+                "slave": "cn-north-1c"
+            }, 
+            "cacheInstanceClass": "redis.m.micro.basic", 
+            "cacheInstanceDescription": "", 
+            "cacheInstanceId": "redis-m0vcg462xe31", 
+            "cacheInstanceMemoryMB": 1024, 
+            "cacheInstanceName": "test", 
+            "cacheInstanceStatus": "running", 
+            "cacheInstanceType": "master-slave", 
+            "charge": {
+                "chargeExpiredTime": "2024-01-26T15:59:59Z", 
+                "chargeMode": "prepaid_by_duration", 
+                "chargeStartTime": "2020-03-20T03:27:58Z", 
+                "chargeStatus": "normal"
+            }, 
+            "connectionDomain": "redis-m0vcg462xe31-proxy-nlb.jvessel-open-hb.jdcloud.com", 
+            "createTime": "2020-03-20T03:27:28Z", 
+            "instanceVersion": "4.0-1.3", 
+            "ipv6On": 0, 
+            "memoryMBPerShard": 1024, 
+            "port": 6379, 
+            "redisVersion": "4.0", 
+            "shardNumber": 1, 
+            "subnetId": "subnet-k8sjnalvo3", 
+            "tags": null, 
+            "vpcId": "vpc-hvo176vm93"
+        }
+    }
+}
+```

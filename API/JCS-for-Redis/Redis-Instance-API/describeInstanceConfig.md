@@ -40,3 +40,72 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetInstanceConfig() {
+  // 1. 设置请求参数
+  DescribeInstanceConfigRequest request = new DescribeInstanceConfigRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeInstanceConfigResponse response = redisClient.describeInstanceConfig(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mca", 
+    "result": {
+        "instanceConfig": [
+            {
+                "configName": "zset-max-ziplist-value", 
+                "configValue": "64"
+            }, 
+            {
+                "configName": "maxmemory-policy", 
+                "configValue": "volatile-lru"
+            }, 
+            {
+                "configName": "list-compress-depth", 
+                "configValue": "0"
+            }, 
+            {
+                "configName": "zset-max-ziplist-entries", 
+                "configValue": "128"
+            }, 
+            {
+                "configName": "set-max-intset-entries", 
+                "configValue": "512"
+            }, 
+            {
+                "configName": "slowlog-log-slower-than", 
+                "configValue": "10000"
+            }, 
+            {
+                "configName": "notify-keyspace-events", 
+                "configValue": ""
+            }, 
+            {
+                "configName": "hash-max-ziplist-entries", 
+                "configValue": "512"
+            }, 
+            {
+                "configName": "hash-max-ziplist-value", 
+                "configValue": "64"
+            }, 
+            {
+                "configName": "list-max-ziplist-size", 
+                "configValue": "-2"
+            }
+        ]
+    }
+}
+```

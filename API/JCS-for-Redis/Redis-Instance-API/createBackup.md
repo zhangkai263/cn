@@ -37,3 +37,31 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+@Test
+public void testCreateBackup() {
+  // 1. 设置请求参数
+  CreateBackupRequest request = new CreateBackupRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").fileName("backup1").backupType(1);
+
+  // 2. 发起请求
+  CreateBackupResponse response = redisClient.createBackup(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o986hq3n514145svdkk3hcdrv2on13", 
+    "result": {
+        "baseId": "a607efba-ff06-4d78-ba3c-b3119fce27fd"
+    }
+}
+```

@@ -32,8 +32,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ### <div id="clusterinfo">ClusterInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**proxies**|[Proxy[]](describeclusterinfo#proxy)|proxy列表|
-|**shards**|[Shard[]](describeclusterinfo#shard)|shard列表|
+|**proxies**|[Proxy[]](describeclusterinfo#proxy)|代理列表|
+|**shards**|[Shard[]](describeclusterinfo#shard)|分片列表|
+|**redis**|[Redis[]](describeclusterinfo#redis)|redis列表|
+### <div id="redis">Redis</div>
+|名称|类型|描述|
+|---|---|---|
+|**id**|String| |
 ### <div id="shard">Shard</div>
 |名称|类型|描述|
 |---|---|---|
@@ -48,3 +53,56 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetClusterInfo() {
+  // 1. 设置请求参数
+  DescribeClusterInfoRequest request = new DescribeClusterInfoRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeClusterInfoResponse response = redisClient.describeClusterInfo(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9ip1087ivavankn482asfnpcpei45", 
+    "result": {
+        "info": {
+            "proxies": [
+                {
+                    "id": "redis-1234-proxy-0"
+                }, 
+                {
+                    "id": "redis-1234-proxy-1"
+                }
+            ], 
+            "redis": [
+                {
+                    "id": "redis-1234-master-0"
+                }, 
+                {
+                    "id": "redis-1234-slave-0"
+                }, 
+                {
+                    "id": "redis-1234-shard-0"
+                }
+            ], 
+            "shards": [
+                {
+                    "id": "redis-1234-shard-0"
+                }
+            ]
+        }
+    }
+}
+```
