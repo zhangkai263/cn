@@ -17,3 +17,5 @@
       href: Change-JDCloud-Phone-Number.md
     - name: 设置账户IP保护
       href: Setting-Up-IP-Protection.md
+    - name: 设置虚拟MFA认证
+      href: Setting-up-MFA.md
