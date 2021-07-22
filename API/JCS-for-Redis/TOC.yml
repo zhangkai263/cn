@@ -73,3 +73,11 @@ items:
         items:
           - name: describeSpecConfig
             href: Redis-SpecConfig-API/describeSpecConfig.md
+      - name: Redis可用区API
+        items:
+          - name: describeAvailableRegion
+            href: Redis-Available-Region-API/describeAvailableRegion.md
+      - name: Redis可用资源API
+        items:
+          - name: describeAvailableResource
+            href: Redis-Available-Resource-API/describeAvailableResource.md
