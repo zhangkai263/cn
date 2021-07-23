@@ -42,3 +42,36 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetCacheAnalysisList() {
+  // 1. 设置请求参数
+  DescribeCacheAnalysisListRequest request = new DescribeCacheAnalysisListRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").date("2021-07-14");
+
+  // 2. 发起请求
+  DescribeCacheAnalysisListResponse response = redisClient.describeCacheAnalysisList(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o90nja6aa3wivwg7spfd32dc56kntn", 
+    "result": {
+        "analyses": [
+            {
+                "analysisTime": "2021-07-14 15:20:05", 
+                "taskId": "c3o909b88c33djgeskogeo0cefaj1j1h"
+            }
+        ]
+    }
+}
+```

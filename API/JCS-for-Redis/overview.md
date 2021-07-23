@@ -17,6 +17,8 @@ v1
 |**createCacheInstance**|POST|创建一个指定配置的缓存Redis实例：可选择版本、类型、规格（按CPU核数、内存容量、磁盘容量、带宽等划分），自定义分片规格可通过describeSpecConfig接口获取，老规格代码请参考，https://docs.jdcloud.com/cn/jcs-for-redis/specifications<br>|
 |**deleteCacheInstance**|DELETE|删除按配置计费、或包年包月已到期的缓存Redis实例，包年包月未到期不可删除。<br>只有处于运行running或者错误error状态才可以删除，其余状态不可以删除。<br>白名单用户不能删除包年包月已到期的缓存Redis实例。<br>|
 |**describeAnalysisTime**|GET|获取自动缓存分析时间|
+|**describeAvailableRegion**|GET|查询支持的地域列表|
+|**describeAvailableResource**|GET|查询支持的规格列表|
 |**describeBackupPolicy**|GET|查询缓存Redis实例的自动备份策略|
 |**describeBackups**|GET|查询缓存Redis实例的备份任务（文件）列表，可分页、可指定起止时间或备份任务ID|
 |**describeCacheAnalysisList**|GET|查询缓存分析任务列表|
@@ -32,6 +34,7 @@ v1
 |**describeIpWhiteList**|GET|获取Redis实例的IP白名单（只有白名单内的IP、网络才能访问该实例）|
 |**describeSlowLog**|GET|获取缓存Redis实例的慢查询日志，可分页、可搜索|
 |**describeSpecConfig**|GET|查询缓存Redis实例的规格配置信息|
+|**describeTaskProgressList**|GET|查询正在执行的任务进度列表|
 |**describeUserQuota**|GET|查询账户的缓存Redis配额信息|
 |**modifyAnalysisTime**|POST|设置自动缓存分析时间|
 |**modifyBackupPolicy**|PATCH|开启或更新缓存Redis实例的自动备份策略，可修改备份周期和备份时间|

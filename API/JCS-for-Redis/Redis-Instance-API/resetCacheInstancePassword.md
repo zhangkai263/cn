@@ -31,3 +31,28 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+@Test
+public void testModifyInstancePassword() {
+  // 1. 设置请求参数
+  ResetCacheInstancePasswordRequest request = new ResetCacheInstancePasswordRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").password("Newpass1234");
+
+  // 2. 发起请求
+  ResetCacheInstancePasswordResponse response = redisClient.resetCacheInstancePassword(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mc8"
+}
+```

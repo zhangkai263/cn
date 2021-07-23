@@ -31,3 +31,31 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PATCH
+```
+@Test
+public void testModifyIpWhiteList() {
+  // 1. 设置请求参数
+  ModifyIpWhiteListRequest request = new ModifyIpWhiteListRequest();
+  List<String> ips = new ArrayList<>();
+  ips.add("10.0.0.1/16");
+  ips.add("100.1.1.1/32");
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").ipWhiteList(ips);
+
+  // 2. 发起请求
+  ModifyIpWhiteListResponse response = redisClient.modifyIpWhiteList(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9mm8r59mi59wrsb4u0i7f4vie996c"
+}
+```
