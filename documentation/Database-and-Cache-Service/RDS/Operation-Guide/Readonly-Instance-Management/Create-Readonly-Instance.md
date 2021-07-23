@@ -32,10 +32,10 @@
 
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 从实例列表中找到只读实例，点击该只读实例的名称
-![查看只读实例](.../../../../../image/RDS/Create-Readonly-1.png)
+![查看只读实例](../../../../../image/RDS/Create-Readonly-1.png)
 
 在主实例列表中查看只读实例。
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 点击需要查看只读实例的主实例，进入实例详情页
 3. 切换至只读实例标签页，查看主实例关联的只读实例。
-![查看只读实例](.../../../../../image/RDS/Create-Readonly-2.png)
+![查看只读实例](../../../../../image/RDS/Create-Readonly-2.png)
