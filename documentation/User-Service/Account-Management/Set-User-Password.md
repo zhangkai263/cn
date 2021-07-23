@@ -1,8 +1,6 @@
 # 修改登录密码
 
-（如果您使用的是京东账号，请前往 “[我的京东](https://home.jd.com/)” 进行操作。）
-
-您可以在 “账户管理 - 安全设置” 页面修改登录密码。
+您可以在 “账户管理 - [安全设置](https://uc.jdcloud.com/account/security-settings)” 页面修改登录密码。
 
 ![](../../../image/User/Account-Mgmt/safe6.png)
 
