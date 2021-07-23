@@ -13,9 +13,9 @@
 
 - [2008R2](https://docs.microsoft.com/zh-cn/previous-versions/sql/sql-server-2008-r2/cc280663%28v%3dsql.105%29)
 - [2012](https://docs.microsoft.com/zh-cn/previous-versions/sql/sql-server-2012/cc280663%28v%3dsql.110%29)
-- [2014](https://docs.microsoft.com/zh-cn/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions?view=sql-server-2014)
+- [2014](https://docs.microsoft.com/zh-cn/previous-versions/sql/sql-server-2012/cc280663%28v%3dsql.110%29)
 - [2016](https://docs.microsoft.com/zh-cn/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions?view=sql-server-2016)
 
 ## 备注
 - 关闭审计时，审计结果文件不会被删除，还是会保存6个月；
-- 审计文件每半个小时会上传到云存储上供用户下载，因此控制台的审计结果文件大约有0.5小时的延迟；
+- 审计文件每30分钟会上传到云存储上供用户下载，因此控制台的审计结果文件大约有30分钟的延迟；

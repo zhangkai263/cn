@@ -8,4 +8,4 @@ Binlog 文件记录实例的事务信息，是云数据库 MySQL/Percona/MariaDB
 ## 查看已经上传云存储的 Binlog 文件
 1. 进入 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 选择需要查看 Binlog 的目标实例，点击目标实例的名称，进入到实例详情页。
-3. 选择 ***备份管理*** 标签，点击 ***Binlog*** 标签进入 Binlog 的列表页，就能看到已经上传到云存储的 Binlog 文件。
+3. 选择 **备份管理** 标签，点击 **Binlog** 标签进入 Binlog 的列表页，就能看到已经上传到云存储的 Binlog 文件。

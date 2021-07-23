@@ -6,16 +6,17 @@
 * 新购实例 SSL 功能是默认关闭的，如果要启用，需要手动开启
 
 ## 操作步骤
-1. 点击下载 [SSL 证书](https://jddb-common-public.s3.cn-north-1.jdcloud-oss.com/jdcloud-rds-ca.pem)
-2. 下载完 SSL 证书之后，就可以使用加密的连接方式访问云数据库 MySQL
+1. 登录[数据库控制台](https://rds-console.jdcloud.com/rds)
+2. 点击需要设置SSL证书的实例名称进入实例详情，点击开启SSl开关进行SSL证书开启。
+3. 点击下载 [SSL 证书](https://jddb-common-public.s3.cn-north-1.jdcloud-oss.com/jdcloud-rds-ca.pem)
+4. 下载完 SSL 证书之后，就可以使用加密的连接方式访问云数据库 MySQL
 
-> 下面以 MySQL 5.7 为例，通过命令行的方式连接数据库
+   > 下面以 MySQL 5.7 为例，通过命令行的方式连接数据库
 
-```
-# SSL 证书为上一步下载的证书文件所在路径
-
-mysql -h [域名] -P [端口] -u [用户名] -p [密码] --ssl-ca [SSL 证书]
-```
+   ```SQL
+   # SSL 证书为上一步下载的证书文件所在路径
+   mysql -h [域名] -P [端口] -u [用户名] -p [密码] --ssl-ca [SSL 证书]
+   ```
 
 当成功连接上云数据库 MySQL 之后，就表示加密的连接已经成功建立
 

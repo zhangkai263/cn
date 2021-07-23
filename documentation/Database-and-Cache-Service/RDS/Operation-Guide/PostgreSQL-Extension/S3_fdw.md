@@ -4,7 +4,7 @@
 
 目前s3_fdw支持读取和写入的文件格式为 csv。
 ## 前提条件
-京东云PostgreSQL实例版本支持 9.6、 10.6、 11.2、12.2。
+京东云PostgreSQL实例版本支持 9.6、 10.6、 11.6、12.6、13.2。
 ## s3_fdw参数说明
 s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，用户可以像使用数据表一样通过s3_fdw读取OSS中存放的数据。s3_fdw提供独有的参数用于连接和解析OSS上的文件数据。
 
@@ -14,7 +14,9 @@ s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，�
 |host|是|内网访问OSS的地址|
 |bucket|是|OSS Bucket，需要先在OSS中创建对应的bucket，再设置该参数|
 ### 示例
-*CREATE USER MAPPING FOR CURRENT_USER SERVER s3_fdw_server OPTIONS (access_key_id 'xxxxx', secret_access_key 'xxxxx')*
+```SQL
+CREATE USER MAPPING FOR CURRENT_USER SERVER s3_fdw_server OPTIONS (access_key_id 'xxxxx', secret_access_key 'xxxxx')
+```
 
 ## CREATE FOREIGN TABLE 参数
 |参数名|是否必选|说明|
@@ -29,7 +31,9 @@ s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，�
 |force_not_null|否|指定某些列的值不为null。例如，force_not_null ‘id’表示：如果id列的值为空，则该值为空字符串，而不是null|
 |force_null|否|指定某些列的值为null。例如，force_null ‘id’表示：如果id列的值等于空字符串，则该值为null，而不是空字符串|
 ### 示例
-*CREATE FOREIGN TABLE oss(id integer,name character varying,password character varying) SERVER s3_fdw_server OPTIONS(dir 's3_fdw_dir/', format 'csv')*
+```SQL
+CREATE FOREIGN TABLE oss(id integer,name character varying,password character varying) SERVER s3_fdw_server OPTIONS(dir 's3_fdw_dir/', format 'csv')
+```
 
 ## 辅助函数
 |参数名|用途|
@@ -38,7 +42,8 @@ s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，�
 ### 示例
 
 
-```select * from s3_fdw_list_file('oss');
+```SQL
+select * from s3_fdw_list_file('oss');
 
 name | size
 
@@ -62,31 +67,47 @@ s3_fdw_dir/s3_put_xxxxx_18796 | 20
 |s3_fdw.put_file_size|1GB|写入OSS的最大文件大小，超出之后会切换到另一个文件续写，可选范围200MB到2048MB|
 
 ### s3_fdw使用示例
-``` 创建插件
-pgbench=> create extension s3_fdw;
 
+创建插件
+```SQL
+pgbench=> create extension s3_fdw;
+```
 创建SERVER 
+```SQL
 pgbench=> CREATE SERVER s3_fdw_server FOREIGN DATA WRAPPER s3_fdw options(host 's3-internal.cn-north-1.jdcloud-oss.com', bucket 'postgresql');
+```
 
 创建USER MAPPING
+```SQL
 pgbench=> CREATE USER MAPPING FOR CURRENT_USER SERVER s3_fdw_server OPTIONS (access_key_id 'xxxxxx', secret_access_key 'xxxxxx');
+```
 
 创建OSS外部表
+```SQL
 pgbench=> CREATE FOREIGN TABLE oss(id integer, name character varying, password character varying) SERVER s3_fdw_server OPTIONS(dir 's3_fdw_dir/', format 'csv');
+```
 
 创建本地表
+```SQL
 pgbench=> CREATE TABLE local(id integer, name character varying, password character varying);
+```
 
 往本地表先插入200条数据
+```SQL
 pgbench=> insert into local select generate_series(1,200), md5(random()::text), md5(random()::text);
 INSERT 0 200
+```
 
 测试将本地表数据导出到OSS外部表
+```SQL
 pgbench=> insert into oss select * from local;
 INSERT 0 200
+```
 
 查询外部表
+```SQL
 pgbench=> select * from oss;
+
  id  |               name               |             password             
 -----+----------------------------------+----------------------------------
    1 | 7263461406680f166631e2ef19ed9c52 | 9c42a9ba08e87144d62082cea78e9cb8
@@ -114,16 +135,20 @@ pgbench=> explain select * from oss;
  Foreign Scan on oss  (cost=0.00..16.50 rows=145 width=68)
    OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
 (2 rows)
+```
 
 删除本地表数据
+```SQL
 pgbench=> truncate table local;
 TRUNCATE TABLE
 pgbench=> select * from local;
  id | name | password 
 ----+------+----------
 (0 rows)
+```
 
 测试将OSS上的数据导入本地表
+```SQL
 pgbench=> insert into local select * from oss;
 INSERT 0 200
 pgbench=> select * from local;
