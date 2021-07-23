@@ -12,7 +12,7 @@
 
 ## 为子用户设置操作保护
 
-在访问控制的[用户管理]()页面，进入用户详情 > 安全凭证，可以设置子用户的操作保护。详见：[设置子用户的安全凭证](../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
+在访问控制的[用户管理](https://iam-console.jdcloud.com/subUser/list)页面，进入用户详情 > 安全凭证，可以设置子用户的操作保护。详见：[设置子用户的安全凭证](../../../documentation/Management/IAM/Operation-manual/User-management/setting-user-credentials.md)
 
 ![子用户操作保护设置](../../../image/IAM/Virtual-MFA-Device/子用户操作保护设置.jpg)
 
