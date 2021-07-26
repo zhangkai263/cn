@@ -18,7 +18,7 @@
    |数据库名称|&bull;2-32位字符<br> &bull;支持小写字母、数字以及英文划线及下划线<br> &bull;数据库名称在实例中唯一<br> &bull;不可使用保留字，参见 [限制说明](https://docs.jdcloud.com/cn/rds/mysql-restrictions)|
    |字符集|可选择utf8, gbk, latin1, utf8mb4, euckr, armscii8, ascii, big5。|
    
-   ![Create-Database](.../../../../../image/RDS/Create-Database.png)
+   ![Create-Database](../../../../../image/RDS/Create-Database.png)
 
 4. 单击 **确定** 按钮，完成库的创建，返回库管理的列表页。
 
