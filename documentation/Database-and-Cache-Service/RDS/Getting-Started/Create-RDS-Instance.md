@@ -9,7 +9,7 @@
 - 进入 [RDS实例列表页](https://rds-console.jdcloud.com/database)，可以看到当前区域下的各个云数据库实例的概要信息，包括计费信息和过期时间等。
 - 点击 **创建** 按钮，进入实例创建页面。
 
-  ![实例列表](.../../../../../../image/RDS/Instance-List.png)
+  ![实例列表](../../../../../../image/RDS/Instance-List.png)
    
 ## 2. 进行实例参数配置
 
@@ -17,12 +17,12 @@
 
 |参数|说明|
 |--|--|
-|计费方式|支持包年包月和按配置计费。关于计费方式的选择，请参考[计费规则](../../Pricing/Billing-Rules.md)。|
-|地域|&bull;选择实例所在的地域， **不同地域资源的内网不互通，创建后不能更改** 。<br>&bull;关于地域的详细说明，请参考 [核心概念](../../Introduction/Core-Concepts.md)。<br>&bull;建议选择最靠近您的地域，可降低访问时延、提高下载速度。|
+|计费方式|支持包年包月和按配置计费。关于计费方式的选择，请参考[计费规则](https://docs.jdcloud.com/cn/rds/billing-rules)。|
+|地域|&bull;选择实例所在的地域， **不同地域资源的内网不互通，创建后不能更改** 。<br>&bull;关于地域的详细说明，请参考 [核心概念](https://docs.jdcloud.com/cn/rds/core-concepts)。<br>&bull;建议选择最靠近您的地域，可降低访问时延、提高下载速度。|
 |数据库类型|目前支持 MySQL，SQL Server，Percona, MariaDB, PostgreSQL 五种数据库类型，不同地域支持的数据库类型不同，具体以控制台为准。|
 |实例类型|分为主备和单机两种实例，用户根据需求进行选择|
-|存储类型|不同的存储类对应的实例规格的最大IOPS不同，当前支持本地SSD、本地NVMe、SSD云盘，具体以控制台为准。存储类型情况请参考 [MySQL 产品规格](../../Introduction/Specifications/MySQL-Specifications.md)。|
-|规格|实例的CPU和内存，不同的规格对应不同的最大连接数和最大IOPS, 请参考 [MySQL 产品规格](../../Introduction/Specifications/MySQL-Specifications.md)。|
+|存储类型|不同的存储类对应的实例规格的最大IOPS不同，当前支持本地SSD、本地NVMe、SSD云盘，具体以控制台为准。存储类型情况请参考 [MySQL 产品规格](https://docs.jdcloud.com/cn/rds/mysql-specifications)。|
+|规格|实例的CPU和内存，不同的规格对应不同的最大连接数和最大IOPS, 请参考 [MySQL 产品规格](https://docs.jdcloud.com/cn/rds/mysql-specifications)。|
 |存储空间|该存储空间包括数据空间、系统文件空间以及日志文件空间。|
 |私有网络|&bull;请确保需要连接数据库实例的云主机和数据库实例在同一个私有网络内。<br>&bull;由于管理需要，创建MySQL, Percona, MariaDB所绑定的子网需要4个以上的剩余IP<br>&bull;由于管理需要，创建SQL Server、PostgreSQL所绑定的子网需要10个以上的剩余IP |
 |部署方式|&bull;支持多区域和单区域部署两种方式。<br>&bull;多可用区部署：数据库主从分别位于不同的可用区，可用性更高：一个可用区发生故障，整个实例仍然可提供服务。<br>&bull;单可用区部署：主从位于同一可用区，如果该可用区发生故障，整个实例无法对外提供服务。|
@@ -35,17 +35,17 @@
 ## 3. 确认购买
 信息输入完成后，可查看点击页面右边的价格信息，并点击 **立即购买**
 
-![创建实例5](.../../../../../../image/RDS/Create-Instance-5.png)
+![创建实例5](../../../../../../image/RDS/Create-Instance-5.png)
 
 ## 4. 支付订单
 然后进入订单确认页面，确认购买信息无误后，点击 **立即支付**
 
-![创建实例6](.../../../../../../image/RDS/Create-Instance-6.png)
+![创建实例6](../../../../../../image/RDS/Create-Instance-6.png)
 
 ## 5. 实例创建中
 - 支付成功后自动返回实例列表页面，能看到实例状态为**创建中**
 - 然后进入 **订单确认页面** ，确认购买信息无误后，点击 **立即支付**,完成实例创建。
 
-  ![创建实例7](.../../../../../../image/RDS/Create-Instance-7.png)
+  ![创建实例7](../../../../../../image/RDS/Create-Instance-7.png)
 
 
