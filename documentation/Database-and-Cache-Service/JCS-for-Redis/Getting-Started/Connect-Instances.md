@@ -22,9 +22,7 @@ Step1  登录云数据Redis控制台，选择要登录的实例，进入实例�
 
 Step2  进入Web Cli 菜单，使用密码登录和操作实例。
 
-**注意：**
-
-使用Web-cli连接实例前提为：该实例已设置密码，免密无法使用Web-cli。为安全起见请关闭免密，设置密码后再使用Redis Web Cli。 
+**注意：**  使用Web-cli连接实例前提为：该实例已设置密码，免密无法使用Web-cli。为安全起见请关闭免密，设置密码后再使用Redis Web Cli。 
 
 ![](../../../../image/Redis/Connect-Instances-1.png)
 
