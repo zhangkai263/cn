@@ -20,7 +20,7 @@
 | 	实例节点最大内存使用率   |  %	   |  jmiss.redis.cluster.memory_max_usage	   |  单位时间内Redis实例所有节点中的最大内存使用率   |  
 | 	实例Key数量   |  count	   |  jmiss.redis.cluster.db_keys   |  	当前实例的Key数量总计   |  
 | 	带过期时间Key数量   |  count	   |  jmiss.redis.cluster.expired_keys	   |  当前实例所有带有过期时间Key的数量   |  
-| 	实例驱逐Key数量   |  count	jmiss.redis.cluster.evicted_keys	   |  单位时间内实例驱逐了的Key数量   |  
+| 	实例驱逐Key数量   |  count	   |  jmiss.redis.cluster.evicted_keys	   |  单位时间内实例驱逐了的Key数量   |  
 | 	实例已经过期Key数量   |  count   |  	jmiss.redis.cluster.expires_keys   |  	单位时间内实例上已经过期的Key数量   |  
 | 	实例使用内存Rss   |  Bytes	   |  jmiss.redis.cluster.used_memory_rss   |  	单位时间内实例使用内存Rss   |  
 | 	代理内存使用率   |  %	   |  jmiss.redis.proxy.memory_usage	   |  proxy代理的内存使用率   |  
