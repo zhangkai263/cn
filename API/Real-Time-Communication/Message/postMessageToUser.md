@@ -1,23 +1,22 @@
-# sendMessageToRoom
+# postMessageToUser
 
 
 ## 描述
-发送自定义信令消息给房间
+发送自定义信令给房间内的人员
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/message/{appId}/toRoom/{roomId}
+https://openjrtc.jdcloud-api.com/v1/postMessageToUser
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**appId**|String|True| |应用ID|
-|**roomId**|Long|True| |房间ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**appId**|String|True| |应用ID|
+|**userRoomId**|String|True| |业务接入方定义的且在JRTC系统内注册过的房间号|
+|**userId**|String|True| |业务接入方用户体系定义的且在JRTC系统内注册过的userId|
 |**eventName**|String|True| |事件名称|
 |**message**|String|True| |自定义信令消息|
 
@@ -41,7 +40,7 @@ https://openjrtc.jdcloud-api.com/v1/message/{appId}/toRoom/{roomId}
 ## 请求示例
 POST
 ```
-https://openjrtc.jdcloud-api.com/v1/message/febf9a1401763b06490e14739c4be622/toRoom/9527
+https://openjrtc.jdcloud-api.com/v1/postMessageToUser
 
 ```
 

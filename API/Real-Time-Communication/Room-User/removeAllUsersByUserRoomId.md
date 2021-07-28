@@ -1,15 +1,15 @@
-# deleteRoom
+# removeAllUsersByUserRoomId
 
 
 ## 描述
-删除房间
+移除房间内所有人员
 
 
 ## 请求方式
-DELETE
+POST
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/rooms/{appId}
+https://openjrtc.jdcloud-api.com/v1/removeAllUsersByUserRoomId/{appId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,7 +18,7 @@ https://openjrtc.jdcloud-api.com/v1/rooms/{appId}
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**roomId**|Long|True| |房间ID|
+|**userRoomId**|String|False| |业务接入方定义的且在JRTC系统内注册过的房间号|
 
 
 ## 返回参数
@@ -31,11 +31,16 @@ https://openjrtc.jdcloud-api.com/v1/rooms/{appId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
+|**400**|Invalid parameter|
+|**401**|Authentication failed|
+|**404**|Not found|
+|**500**|Internal server error|
+|**503**|Service unavailable|
 
 ## 请求示例
-DELETE
+POST
 ```
-https://openjrtc.jdcloud-api.com/v1/rooms/febf9a1401763b06490e14739c4be622?roomId=1
+https://openjrtc.jdcloud-api.com/v1/removeAllUsersByUserRoomId/561fbd6-23cb-4697-8379
 
 ```
 
