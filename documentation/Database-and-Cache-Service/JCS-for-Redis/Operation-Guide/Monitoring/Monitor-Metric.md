@@ -76,14 +76,15 @@
 | 	未命中次数（节点）| 	count	| 	jmiss.redis.instance.keyspace_misses	| 	每秒key的未命中数量| 	
 | 	命中率（节点）| 	%	| 	jmiss.redis.instance.keyspace_hit_rate	| 	节点命中次数 ÷（节点命中次数+节点未命中次数） | 	
 
-###  异常监控
-|   监控指标   |  单位   | metric	  |   说明   | 
-| :--- | :---  |:---  |:---  |
-| 	    | 	count/s	| 	jmiss.redis.cluster.instantaneous_ops_per_sec	| 	单位时间内实例的OPS 总和| 	
-| 	实例协议错误次数   | 	count/s	| 	jmiss.redis.cluster.protocol_errors	| 	单位时间内实例协议的错误次数 | 	
-| 	代理OPS   | 	count/s	| 	jmiss.redis.proxy.ops	| 	单位时间内Proxy的OPS 总和 | 	
-| 	代理协议错误次数  | 	count/s	| 	jmiss.redis.proxy.protocol_errors	| 	单位时间内Proxy协议的错误次数| 	
-| 	OPS （节点）| 	count/s	 | 	jmiss.redis.instance.instantaneous_ops_per_sec	| 	单位时间内某个节点的的OPS 总和| 	
+
+### 异常监控
+| 监控指标 | 单位 | metric | 说明 |
+| :--- | :--- |:--- |:--- |
+|  主节点故障  | count  |   jmiss.redis.cluster.master_in_failover  | 单位时间内实例的所有主节点发生故障的次数    |
+|  从节点故障  | count  |  jmiss.redis.cluster.replica_in_failove  | 单位时间内实例的所有从节点发生故障的次数    |
+|  Proxy 节点故障  | count  |  jmiss.redis.cluster.proxy_in_failover  | 单位时间内实例的所有proxy节点发生故障的次数    |
+
+
 
 
 
