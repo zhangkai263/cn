@@ -9,7 +9,7 @@
 |  网络连接  |  说明  |  
 | :--- | :---  | 
 |  内网连接	|  云缓存Redis实例仅支持通过京东云内网连接。京东云内其它产品与其连接则需要与云缓存Redis在相同地域、相同VPC内。|  
-|  公网连接	|  目前暂不支持直接公网访问，但可通过云主机代理转发方式连接实例。具体请见:  [公网链接Redis实例](../../Operation-Guide/Connect/ConnectInstance.md)  |  
+|  公网连接	|  目前暂不支持直接公网访问，但可通过云主机代理转发方式连接实例。具体请见:  [公网链接Redis实例](../Operation-Guide/Connect/ConnectInstance.md)  |  
 
 
 ##  连接方式
