@@ -1,10 +1,11 @@
 # 实例状态
 
 ## 实例状态说明
+
 实例状态可通过在控制台的实例列表页查看，也可调用 [describeCacheInstances](https://docs.jdcloud.com/cn/jcs-for-redis/api/describecacheinstances?content=API)  接口获取。
 
 
-| 实例状态 |  触发该状态操作）  | 
+| 实例状态 |  说明   | 
 |   :--- | :---  |
 |  创建中	|  创建实例 |  
 |  运行	|  创建成功后的实例即为运行状态|  
