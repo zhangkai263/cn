@@ -14,7 +14,7 @@
 
 3. 在列表页的下左侧“更多”操作中，可以给实例批量打标签。
 
-![](../../../../image/Redis/TagManage-1.png)
+![](../../../../../image/Redis/TagManage-1.png)
 
 
 ## 查看实例绑定的标签
@@ -28,5 +28,5 @@
 
 2、选择目标标签键和标签值，点击筛选后，即可列出目标结果
 
-![](../../../../image/Redis/TagManage-2.png)
+![](../../../../../image/Redis/TagManage-2.png)
 
