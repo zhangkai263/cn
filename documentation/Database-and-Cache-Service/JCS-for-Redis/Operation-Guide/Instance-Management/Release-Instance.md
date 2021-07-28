@@ -17,7 +17,7 @@
 
 3、点击删除，在弹出的提示框中单击确定
 
-![](../../../../image/Redis/Release-Instance-1.png)
+![](../../../../../image/Redis/Release-Instance-1.png)
 
 
 ## 删除包年包月付费实例
