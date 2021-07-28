@@ -82,8 +82,10 @@
 >提示：如您希望仅在导出操作时才对系统服务进行授权，可以保留服务角色和策略，在每次导出前进行授权，导出完成后解除授权。
       
 ### 5、导出镜像
-由于目前导出镜像功能未提供控制台操作入口，因此，完成以上几步操作后，请参照openAPI文档，使用CLI或SDK完成导入。<br>
-导出任务提交成功后请记住接口返回的```exportTaskId```，以用于调用task查询接口获知导出进度。
+完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。
+>提示：目前导出镜像控制台操作入口为灰度开放，如需使用请提交工单申请。
+<div align="center"><img src="../../../../../image/vm/exportimage.png" width="650"></div>
+
 * OpenAPI文档见：[镜像导出](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
 * CLI指令示意：
