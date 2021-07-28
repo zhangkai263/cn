@@ -24,7 +24,7 @@
 
 <div id="user-content-1"> </div>
 
-步骤1：进入[京东云控制台](https://console.jdcloud.com/overview)，点击左侧导航条 【私有网络 】-> 【子网】，进入子网列表页；
+步骤1：进入[京东云控制台](https://console.jdcloud.com/overview)，点击左侧导航条选择 网络->【私有网络】-> 【子网】，进入子网列表页；
 
 步骤2：选择创建子网所属地域，点击【创建】按钮，进入创建弹窗；
 ```
