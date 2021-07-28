@@ -34,22 +34,22 @@
 
 redis-cli是原生Redis自带的命令行工具，使用可参考：https://redis.io/topics/rediscli
 
-京东云缓存Redis仅支持京东云VPC访问，即只有在相同VPC中的云主机上安装Redis，才能使用redis-cli与云缓存Redis建立连接并进行数据操作。使用详情请参考：[redis-cli连接Redis](../Operation-Guide/Connect/Operation-Guide/Connect/Tool-Redis-CLI.md)   
+京东云缓存Redis仅支持京东云VPC访问，即只有在相同VPC中的云主机上安装Redis，才能使用redis-cli与云缓存Redis建立连接并进行数据操作。使用详情请参考：[redis-cli连接Redis](../Operation-Guide/Connect/Tool-Redis-CLI.md)   
 
 ###  通过SDK连接
 关于Redis支持的客户端列表，请参见[Redis Clients](http://redis.io/clients)。目前云缓存Redis提供如下多语言示例：
 
-  -  [C/C++连接](../Operation-Guide/Connect/Operation-Guide/Connect/CorCplusplus-Connect-to-Redis-Instance.md)   
+  -  [C/C++连接](../Operation-Guide/Connect/CorCplusplus-Connect-to-Redis-Instance.md)   
 
-  -   [Golang连接](../Operation-Guide/Connect/Operation-Guide/Connect/Golang-Connect-to-Redis-Instance.md)   
+  -   [Golang连接](../Operation-Guide/Connect/Golang-Connect-to-Redis-Instance.md)   
 
-  -   [Java连接](../Operation-Guide/Connect/Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md)   
+  -   [Java连接](../Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md)   
 
-  -   [PHP连接](../Operation-Guide/Connect/Operation-Guide/Connect/Node.js-Connect-to-Redis-Instance.md)   
+  -   [PHP连接](../Operation-Guide/Connect/Node.js-Connect-to-Redis-Instance.md)   
 
-  -   [Python连接](../Operation-Guide/Connect/Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md)   
+  -   [Python连接](../Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md)   
 
-  -   [Node.js连接](../Operation-Guide/Connect/Operation-Guide/Connect/Python-Connect-to-Redis-Instance.md)   
+  -   [Node.js连接](../Operation-Guide/Connect/Python-Connect-to-Redis-Instance.md)   
 
 
 ##  测试连通性
