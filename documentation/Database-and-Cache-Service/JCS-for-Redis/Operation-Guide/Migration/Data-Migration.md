@@ -8,12 +8,12 @@
 
 ## 2.迁移术语
 
-术语|解释
-:--|:--
-源实例source|迁移的源实例
-目标实例target|迁移的目标实例，即用户购买的京东云 Redis
-云主机自建|用户在京东云服务器上部署的Redis 服务迁移至京东云Redis
-公网自建|用户在外网环境下部署的 Redis 服务迁移至京东云Redis
+| 术语 |  解释  | 
+| :--- | :---  | 
+|  源实例source |  迁移的源实例 | 
+|  目标实例target|迁移的目标实例，即用户购买的京东云 Redis | 
+|  云主机自建|用户在京东云服务器上部署的Redis 服务迁移至京东云Redis | 
+|  公网自建|用户在外网环境下部署的 Redis 服务迁移至京东云Redis | 
 
 ## 3.数据迁移说明
 
@@ -22,13 +22,13 @@
 - 先清空目标实例，如果不清空目标实例，数据导入会覆盖原来数据；
 - redis-migration-tool 配置文件rmt.conf参数说明：
 
-[source]：源实例/[target]：目标实例
-
-type：类型，有single和aof file两种
-
-redis_auth：redis实例访问密码
-
-servers：服务器地址和端口或者AOF存放路径
+| 术语 |  解释  | 
+| :--- | :---  | 
+|  source   | 源实例 | 
+|  target  |  目标实例 | 
+|  type | 类型，有single和aof file两种 | 
+|  redis_auth | redis实例访问密码 | 
+|  servers  | 服务器地址和端口或者AOF存放路径 | 
  
 实时迁移数据配置示例：
 ```
