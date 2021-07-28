@@ -36,6 +36,27 @@
 
 
 ###  网络监控
+|   监控指标   |  单位   | metric	  |   说明   | 
+| :--- | :---  |:---  |:---  |
+| 	客户端到代理的TCP连接数 | 	count	| 	jmiss.redis.cluster.connected_clients	| 	单位时间内客户端到Proxy代理的TCP连接数总和| 	
+| 	实例连接使用率| 	%	| 	jmiss.redis.cluster.conn_usage| 		实际 TCP 连接数量和最大连接数比| 	
+| 	实例内网进流量| 	KBps| 		jmiss.redis.cluster.net_io_in_per_sec	| 	内网进入流量| 	
+| 	实例内网出流量| 	KBps| 		jmiss.redis.cluster.net_io_out_per_sec	| 	内网出口流量| 	
+| 	实例最大执行时延| 	ms| 		jmiss.redis.cluster.max_delay| 		Proxy 到 Redis Server 的执行时延最大值| 	
+| 	代理当前连接数| 	count| 		jmiss.redis.proxy.connected_clients	| 	单位时间内Proxy代理的连接数总和| 	
+| 	代理连接使用率| 	%	| 	jmiss.redis.proxy.connection_usage	| 	Proxy上的实际 TCP 连接数量和最大连接数比| 	
+| 	代理入口带宽| 	Bps	| 	jmiss.redis.proxy.net_in	| 	Proxy上的入口带宽| 	
+| 	代理出口带宽  | 	Bps	| 	jmiss.redis.proxy.net_out	 | 	Proxy上的出口带宽| 	
+| 	代理最大时延 | 	ms  | 		jmiss.redis.proxy.max_latency	| 	单位时间内Proxy的执行时延最大值| 	
+| 	TCP连接数 （节点）| 	count	| 	jmiss.redis.instance.connected_clients	| 	单位时间内与Redis的连接数| 	
+| 	最大执行时延（节点）| 	ms	| 	jmiss.redis.instance.max_latency	Redis | 	节点最大延迟| 	
+| 	内网进流量（节点）| 	KBps	| 	jmiss.redis.instance.net_io_in_per_sec	| 	内网进入流量| 	
+| 	内网出流量（节点）| 	KBps	| 	jmiss.redis.instance.net_io_out_per_sec	| 	内网出口流量| 	
+
+
+###  请求监控
+
+
 
 
 
