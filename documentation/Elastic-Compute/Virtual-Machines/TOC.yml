@@ -98,7 +98,17 @@ items:
           - name: GPU云主机
             href: Operation-Guide/Instance/GPU-VM.md
           - name: vGPU云主机
-            href: Operation-Guide/Instance/vGPU-VM.md            
+            href: Operation-Guide/Instance/vGPU-VM.md
+          - name: 突发性能型实例
+            items: 
+              - name: 突发性能型实例概述
+                href: Operation-Guide/Instance/Burst-Instance/Burst-Instance-Overview.md
+              - name: 突发性能型计费规则
+                href: Operation-Guide/Instance/Burst-Instance/Billing-Rules-of-burst-Instance.md
+              - name: 创建突发性能型实例
+                href: Operation-Guide/Instance/Burst-Instance/Create-Burst-Instance.md
+              - name: 调整性能模式
+                href: Operation-Guide/Instance/Burst-Instance/Modify-Burst-Mode.md           
           - name: 裸金属云主机
             items: 
               - name: 裸金属云主机概述
