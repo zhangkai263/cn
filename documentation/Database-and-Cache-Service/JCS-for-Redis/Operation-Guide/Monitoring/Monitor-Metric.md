@@ -81,7 +81,7 @@
 | 监控指标 | 单位 | metric | 说明 |
 | :--- | :--- |:--- |:--- |
 |  主节点故障  | count  |   jmiss.redis.cluster.master_in_failover  | 单位时间内实例的所有主节点发生故障的次数    |
-|  从节点故障  | count  |  jmiss.redis.cluster.replica_in_failove  | 单位时间内实例的所有从节点发生故障的次数    |
+|  从节点故障  | count  |  jmiss.redis.cluster.replica_in_failover  | 单位时间内实例的所有从节点发生故障的次数    |
 |  Proxy 节点故障  | count  |  jmiss.redis.cluster.proxy_in_failover  | 单位时间内实例的所有proxy节点发生故障的次数    |
 
 
