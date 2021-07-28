@@ -26,7 +26,7 @@
 ## 计费方式
  按备份空间的实际使用量 扣除一定的免费空间额度后，进行计费
 
- 详细价格信息见[SQL Server价格](urlhttps://docs.jdcloud.com/cn/rds/sql-server-price)
+ 详细价格信息见 [SQL Server价格](https://docs.jdcloud.com/cn/rds/sql-server-price)
 
 ## 操作步骤
 - 在备份管理-备份策略中操作，无其他入口
