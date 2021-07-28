@@ -59,13 +59,13 @@ servers:
 
 ## 4.使用方式：
 
-1.下载解压[redis-migrate-tool.tar.gz](https://img1.jcloudcs.com/cms/4c5a2fc3-1dc5-468c-89d5-7d38dbc1a5c720180910162509.gz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
+1. 下载解压[redis-migrate-tool.tar.gz](https://img1.jcloudcs.com/cms/4c5a2fc3-1dc5-468c-89d5-7d38dbc1a5c720180910162509.gz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
 
-2.修改配置文件，配置source和target端redis信息(建议配置从节点同步数据)
+2. 修改配置文件，配置source和target端redis信息(建议配置从节点同步数据)
 
-3.运行工具迁移数据，”./redis-migrate-tool -c rmt.conf”(server配置为服务器地址和端口时支持实时同步数据，配置为AOF存放路径时单次同步数据)
+3. 运行工具迁移数据，”./redis-migrate-tool -c rmt.conf”(server配置为服务器地址和端口时支持实时同步数据，配置为AOF存放路径时单次同步数据)
  
-- 注：如果用户key值大的话会发生failover
+ - 注：如果用户key值大的话会发生failover
 
 ## 5.其他迁移
 如需支持更多版本，请联系客服支持
