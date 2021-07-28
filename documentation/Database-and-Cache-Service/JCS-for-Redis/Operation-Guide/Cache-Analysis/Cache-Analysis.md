@@ -22,7 +22,10 @@
  ##  手动分析
  
 您也可以点击手动分析，马上进行缓存分析，分析所耗时长将取决于Key数量。
-
+ 
+![](../../../../../image/Redis/Cache-Analysis-3.png)
+ 
+ 
 **注意：**
 
 -  因版本不同，Redis 2.8版返回的分析结果无法统计内存大小，只能显示value长度，且无法进行热Key分析。
@@ -32,7 +35,6 @@
 -  因版本不同，Redis 2.8版返回的分析结果无法统计内存大小，只能显示value长度，且无法进行热Key分析。
 
 -  Redis 4.0版要查看热KEY分析需要先修改参数，把实例maxmemory-policy参数配置为allkeys-lfu或者volatile-lfu（该参数默认为	volatile-lru）。修改方式请参考： [参数修改](../Instance-Management/Modify-Instancename.md)
- 
- ![](../../../../../image/Redis/Cache-Analysis-3.png)
+
  
 
