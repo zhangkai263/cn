@@ -26,7 +26,7 @@
 
 - 对于扩容操作，变配后的规格内存必须大于目前已用大小
 
-![](../../../../image/Redis/Change-Configuration-1.png)
+![](../../../../../image/Redis/Change-Configuration-1.png)
 
 
 **说明**
