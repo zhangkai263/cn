@@ -13,7 +13,7 @@
 
 | 参数名称  |  参数说明  | 默认值	  |  参数范围  |  
 | :--- | :---  |:---  |:---  | 
-|  maxmemory-policy	 | 达到最大内存使用率时数据的移除策略	 | 请参考后文。注意4.0版比2.8版本多allkeys-lfu,volatile-random  | 
+|  maxmemory-policy	 | 达到最大内存使用率时数据的移除策略		  |  	 volatile-lru | 请参考后文。注意4.0版比2.8版本多allkeys-lfu,volatile-random  | 
 |  hash-max-ziplist-entries	|  当hash的key的数量不大于指定值时，使用特殊存储(ZIPLIST)来节省空间  |	512		  |  0-10000	  |  
 |  hash-max-ziplist-value	|  当FIELD和VALUE的长度不大于指定值时，使用特殊存储(ZIPLIST)来节省存储空间  |	64	  |  	0-10000	  |  
 |  list-max-ziplist-entries(2.8版)	|  当列表的数据不大于指定值时，使用特殊编码（ziplist）来捷顺存储空间  |	512	  |  	0-10000	  |  
