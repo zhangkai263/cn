@@ -5,9 +5,9 @@
 
 ##  Proxy介绍
 
-=====================云管平台用户指南 > 04-Redis Proxy特性说明 > 架构.png
-
 代理（Proxy）是Redis实例中的一个组件，每个实例独享数个Proxy。标准版有两个Proxy，集群版Proxy的数量和分片数量一致。每个proxy最大内网带宽48MB/s，可以和客户端建立的最大连接数为10000。
+
+![](../../../../image/Redis/Proxy-Info-1.png)
 
 | Proxy能力 |  说明  | 
 |   :--- | :---  | 
