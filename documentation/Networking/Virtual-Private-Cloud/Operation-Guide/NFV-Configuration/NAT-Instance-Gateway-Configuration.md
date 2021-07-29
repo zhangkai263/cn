@@ -1,16 +1,20 @@
 ## **NAT实例网关配置**
 
-#### **步骤一、创建NAT Gateway的云主机**
+#### **创建NAT Gateway的云主机**
 
-1. 进入京东智联云控制台云主机页面，选择创建云主机，进入云主机的创建流程。
-2. 选择CentOS 7.2 64位 NAT Gateway镜像及主机其他相应的参数，进行云主机创建。
-3. 创建成功，相关信息更新；创建失败，则出现提示框，如果多次申请失败，请联系客服。
+步骤1：访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏 弹性计算-> 【云主机】进入实例列表页。
+步骤2：选择地域，点击【创建】进入主机创建页，需要实例规格、镜像、私有网络、安全组信息等，镜像镜像选择CentOS-7.2 64位 NAT Gateway；
 
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/NFV-Configuration/NAT-Mirror-Gateway-Configuration/Step1.png)
+步骤3：配置公网IP类型、带宽；
+
+步骤4：点击【立即购买】按钮则触发购买，支付完成即完成创建主机。
+
+更多操作请参考[创建云主机](../../..//Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
+![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/NFV-Configuration/NAT-Mirror-Gateway-Configuration/vmNatGateway.png)
 
 
 
-#### **步骤二、配置路由表路由规则**
+#### **配置路由表路由规则**
 
 1. 进入京东智联云控制台相应VPC路由表的详情页面，选择新建路由策略。
 2. 添加路由策略，目的端为公网地址，下一跳类型为云主机，下一跳选择之前通过NAT Gateway镜像创建的云主机。
