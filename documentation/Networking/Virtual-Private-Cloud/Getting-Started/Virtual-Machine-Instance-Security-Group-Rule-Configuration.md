@@ -105,4 +105,7 @@
 | 运维安全组  | tcp      | 22       | 接受       | Linux实例允许来自运维安全组的入站SSH访问   |
 | 运维安全组  | tcp      | 3389     | 接受       | Windows实例允许来自运维安全组的入站RDP访问 |
 
- 
+## 相关参考
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
+- [安全组配置](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-configuration)
+- [常见问题](https://docs.jdcloud.com/cn/virtual-private-cloud/faq)
