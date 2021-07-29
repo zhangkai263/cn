@@ -65,7 +65,7 @@
          href: Getting-Started/Muitiple-Virtual-Machine-Use-Shared-IpAddress.md
        - name: 使用边界网关实现多VPC互通
          href: Getting-Started/Multiple-VPCs-Interconnection.md
-       - name: NAT实例网关
+       - name: NAT实例网关访问公网
          href: Getting-Started/NAT-Instance-Gateway.md
        - name: VPN镜像网关
          href: Getting-Started/VPN-Mirror-Gateway.md
