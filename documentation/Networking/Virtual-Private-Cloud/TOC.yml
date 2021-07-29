@@ -63,8 +63,6 @@
          href: Getting-Started/Security-Group-Rules-Typically-Configured.md
        - name: 多主机共享公网IP访问公网
          href: Getting-Started/Muitiple-Virtual-Machine-Use-Shared-IpAddress.md
-       - name: VPC对等连接
-         href: Getting-Started/VPC-Peering.md
        - name: 使用边界网关实现多VPC互通
          href: Getting-Started/Multiple-VPCs-Interconnection.md
        - name: NAT实例网关
