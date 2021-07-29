@@ -20,7 +20,7 @@
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
 |   集群实例开放支持2分片| 集群实例新增支持2分片  | 2021-03	|  -   |   
-|   变配进度可查询	|   列表页操作变配时，将支持展示变配进度、耗时等进度信息 	|   2021-03	|  [实例变配进度可查询](../Operation-Guide/Instance-Management/Change-Configuration.md)  |   
+|   变配进度可查询	|   列表页操作变配时，将支持展示变配进度、耗时等进度信息 	|   2021-03	|  [实例变配进度可查询](../Operation-Guide/Instance-Management/Change-Configuration.md)  | 
 |   列表页增加检索方式	|   列表页新增支持通过内网URL搜索实例信息|   	2021-02	|  -    |   
 |   增加监控指标	|   增加带过期时间的key监控	|   2021-01	|  [实例监控](../Operation-Guide/Monitoring/Monitoring.md)    |   
 
@@ -39,21 +39,20 @@
 ## 2020年Q3月
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   支持命令	|   增加2.8/4/0支持命令、不支持的命令集合。	|   2020-09	|   https://docs.jdcloud.com/cn/jcs-for-redis/command-supported
-|   支持自定义分片|   	对于集群版4.0的产品，在创建资源/变更配置时，支持用户自定义分片数量。	|   2020-09	|   |   
-|   增加性能测试手册和测试结果	  |  性能测试手册和测试结果	  |  2020-08  |  	https://docs.jdcloud.com/cn/jcs-for-redis/test-result  |  
-|   Redis 2.8 产品售罄	|   基于目前资源使用情况，Redis2.8版本计划不再提供支持。 |   2020-08	|   | 
+|   增加支持命令	|   增加2.8/4/0支持命令、不支持的命令集合。	|   2020-09	|    [Redis命令支持](../Getting-Started/Command-Supported.md)	| 
+|   支持自定义分片|   	对于集群版4.0的产品，在创建资源/变更配置时，支持用户自定义分片数量。	|   2020-09	|   [创建实例](../Getting-Started/Create-Instance.md)  |   
+|   增加性能测试手册和测试结果	  |  性能测试手册和测试结果	  |  2020-08  |  	 [性能测试](../Performance-Test/Test-environment.md)  |  
+|   Redis 2.8 产品售罄	|   基于目前资源使用情况，Redis2.8版本计划不再提供支持。 |   2020-08	|   -   | 
 
 
 ## 2019年Q4月
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   开放scan命令	|   开放scan命令	|   2019-08	|   |   
-|   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-08	|   |   
-|   新增4.0版本	|      redis 4.0版 正式上线，新增备份恢复、访问控制等功能。  |   2019-08	|   |   
-|   支持命令	redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   https://docs.jdcloud.com/cn/jcs-for-redis/command-supported|   
-|   上线公测|   	redis 4.0版  开放公测|   	2019-01 |    |   
-|   新增版本号  |   用户可以在实例详情查看该实例版本号。云缓存Redis 版目前的版本为Redis 2.8、4.0，京东云内部小版本号为3.0。用户开通Redis实例即为最新版本2.8-3.0。|   	2019-01	| -  | 
+|   开放scan命令	|   开放scan命令	|   2019-08	|    -   |   
+|   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-08	|   -   |   
+|   新增4.0版本	|      redis 4.0版 正式上线，新增备份恢复、访问控制等功能。  |   2019-08	|   -   |   
+|   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Getting-Started/Command-Supported.md) |   
+|   上线公测|   	redis 4.0版  开放公测|   	2019-01 |  -    |   
 |   Redis2.8公测上线|   	Redis2.8公测上线|   	2017-04	|  - |   
 
 
