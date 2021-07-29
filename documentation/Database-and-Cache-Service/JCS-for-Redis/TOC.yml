@@ -129,7 +129,5 @@
     href: FAQ/FAQ.md     
   - name: 相关资源      
     items:
-       - name: 文档发布历史
-         href: Related-Resources/Document-History.md 
        - name: 服务条款
          href: Related-Resources/Product-Service-Agreement.md
