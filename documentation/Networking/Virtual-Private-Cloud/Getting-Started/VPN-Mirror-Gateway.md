@@ -103,6 +103,6 @@ VPN默认提供隧道连通性自动检测，定时检测隧道的连通状况�
 
 
 ## 相关参考
-
+- [创建VPN镜像网关](../Operation-Guide/NFV-Configuration/VPN-Mirror-Gateway-Configuration.md)
 - [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
 - [配置路由表](../Operation-Guide/Route-Table-Configuration.md)
