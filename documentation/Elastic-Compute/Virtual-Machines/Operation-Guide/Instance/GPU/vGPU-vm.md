@@ -32,8 +32,8 @@
 > 仅Q模式的vGPU规格支持Windows操作系统，C模式不支持Windows操作系统。
 驱动下载及安装:
 * 请跟据Windows系统的版本下载对应的驱动程序：<br>
-	* 	[适用于Win10、Windows Server2016的驱动版本 (内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win10_server2016_server2019_64bit_international.exe) <br>
-	* 	[适用于Win7、Win8、Windows Server2008、Windows Server2012的驱动版本(内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win7_win8_server2008R2_server2012R2_64bit_international.exe) <br> 
+	* 	[适用于Win10、WindowsServer 2016、WindowsServer 2019的驱动版本 (内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win10_server2016_server2019_64bit_international.exe) <br>
+	* 	[适用于Win7、Win8、WindowsServer 2008、WindowsServer 2012的驱动版本(内网下载)](https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/431.79_grid_win7_win8_server2008R2_server2012R2_64bit_international.exe) <br> 
 * 下载完成后双击安装包，根据提示完成安装，安装完成后请重启Windows云主机。
 
 
