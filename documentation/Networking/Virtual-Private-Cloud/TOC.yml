@@ -31,6 +31,8 @@
             href: Introduction/Features/VPC-Peering-Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
+      - name: 地域及可用区
+        href: Introduction/Region-Az.md
       - name: 应用场景
         items:
           - name: 基础业务上云
@@ -65,7 +67,7 @@
          href: Getting-Started/Subnet-Based-Policy-Routing-Management.md
        - name: VPC对等连接
          href: Getting-Started/VPC-Peering.md
-       - name: 多VPC互通
+       - name: 使用边界网关实现多VPC互通
          href: Getting-Started/Multiple-VPCs-Interconnection.md
        - name: NAT实例网关
          href: Getting-Started/NAT-Instance-Gateway.md
