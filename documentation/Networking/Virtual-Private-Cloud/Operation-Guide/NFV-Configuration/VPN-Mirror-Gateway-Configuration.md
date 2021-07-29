@@ -69,3 +69,4 @@ VPN网关主机所在子网路由配置（例）：
 ## 相关参考
 
 - [配置VPN镜像网关](../Getting-Started/VPN-Mirror-Gateway.md)
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
