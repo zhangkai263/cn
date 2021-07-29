@@ -47,7 +47,7 @@
 ## 2020年Q2月
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   支持大Key热Key分析	|  帮助用户对实例的大Key和热Key分析统计，并优化性能。	|   2020-06	|    [慢日志查询](../Operation-Guide/Cache-Analysis/Key-Analysis.md)	| 
+|   支持大Key热Key分析	|  帮助用户对实例的大Key和热Key分析统计，并优化性能。	|   2020-06	|    [大Key热Key分析](../Operation-Guide/Cache-Analysis/Key-Analysis.md)	| 
 |   支持缓存分析	|  帮助用户对实例进行访问分析，用户可根据分析结果进行性能调优。	|   2020-04	|    [缓存分析](../Operation-Guide/Cache-Analysis/Cache-Analysis.md)	| 
 
 ## 2020年Q1月
