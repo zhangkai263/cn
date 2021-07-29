@@ -161,6 +161,8 @@
   
       - name: 备份管理
         items:
+          - name: 快照备份
+            href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
             items:
             - name: MySQL 创建备份
