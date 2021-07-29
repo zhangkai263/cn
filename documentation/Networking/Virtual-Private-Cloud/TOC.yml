@@ -55,9 +55,9 @@
          href: Getting-Started/Create-Virtual-Machine-Instance-In-VPC.md
        - name: 边缘子网中部署云主机
          href: Getting-Started/Create-Virtual-Machine-Instance-In-Edge-Zone.md
-       - name: 子网业务安全访问控制
+       - name: 基于网络ACL配置子网级别的访问控制
          href: Getting-Started/Subnet-Business-Security-Access-Control.md
-       - name: 主机实例安全组规则配置
+       - name: 基于安全组实现主机级别的访问控制
          href: Getting-Started/Virtual-Machine-Instance-Security-Group-Rule-Configuration.md
        - name: 安全组规则典型配置
          href: Getting-Started/Security-Group-Rules-Typically-Configured.md
