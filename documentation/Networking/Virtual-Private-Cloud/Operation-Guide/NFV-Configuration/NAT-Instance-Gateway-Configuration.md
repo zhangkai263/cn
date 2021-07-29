@@ -26,9 +26,8 @@
 
 配置完成后，子网SNAT02下的所有主机都可以通过作为NAT网关的主机进行公网访问。
 
+## 相关参考
 
-
-
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/NFV-Configuration/NAT-Mirror-Gateway-Configuration/Step2.png)
-
-![](/image/Networking/Virtual-Private-Cloud/Operation-Guide/NFV-Configuration/NAT-Mirror-Gateway-Configuration/Step3.png)
+- [NAT实例网关访问公网](../../Getting-Started/NAT-Instance-Gateway.md)
+- [创建云主机](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
+- [创建NAT网关](https://docs.jdcloud.com/cn/nat-gateway/create-nat-gateway)
