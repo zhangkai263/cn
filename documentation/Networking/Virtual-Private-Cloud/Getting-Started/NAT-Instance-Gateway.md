@@ -76,3 +76,4 @@ NAT 实例网关是一种将私有网络中内网 IP 地址和公网 IP 地址�
 - [创建云主机](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
 - [创建NAT网关](https://docs.jdcloud.com/cn/nat-gateway/create-nat-gateway)
 - [云主机使用NAT网关](https://docs.jdcloud.com/cn/nat-gateway/create-natgateway)
+- [创建NAT实例网关](../Operation-Guide/NFV-Configuration/NAT-Instance-Gateway-Configuration.md)
