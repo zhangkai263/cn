@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询用户应用列表
+查询用户应用列表信息
 
 
 ## 请求方式
@@ -39,6 +39,7 @@ https://openjrtc.jdcloud-api.com/v1/applications
 |**appId**|String|应用ID|
 |**appName**|String|应用名称|
 |**status**|String|应用状态: OPEN-启用, CLOSE-停用<br>|
+|**roomType**|Integer|应用默认创建的房间类型 1-小房间；2-大房间|
 |**billType**|String|计费类型: Duration-按时长<br>|
 |**createTime**|String|创建时间(UTC)|
 
@@ -72,6 +73,7 @@ https://openjrtc.jdcloud-api.com/v1/applications
                 "appName": "我的应用", 
                 "billType": "Duration", 
                 "createTime": "2020-07-21T15:19:03Z", 
+                "roomType": 2, 
                 "status": "OPEN"
             }
         ], 

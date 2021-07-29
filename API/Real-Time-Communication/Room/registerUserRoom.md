@@ -1,38 +1,40 @@
-# createRoom
+# registerUserRoom
 
 
 ## 描述
-创建房间
+注册用户房间号-将业务接入方定义的userRoomId注册为jrtc系统内可识别和流转的房间号
 
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/createRoom
+https://openjrtc.jdcloud-api.com/v1/registerUserRoom
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**userRoomId**|String|True| |业务接入方定义的房间号|
 |**roomName**|String|True| |房间名称|
 |**appId**|String|True| |应用ID|
-|**peerId**|Long|True| |用户ID(创建者ID)|
+|**roomType**|Integer|False| |房间类型 1-小房间(音频单流订阅) 2-大房间(音频固定订阅),默认取控制台APP对应的房间类型|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createroom#result)|房间信息|
+|**result**|[Result](registeruserroom#result)|房间信息|
 |**requestId**|String|请求ID|
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**roomId**|Long|房间ID|
+|**roomId**|Long|jrtc系统房间号|
+|**userRoomId**|String|业务接入方定义的且在JRTC系统内注册过的房间号|
 |**roomName**|String|房间名称|
+|**roomType**|Integer|房间类型 1-小房间(音频单流订阅) 2-大房间(音频固定订阅)|
 |**appId**|String|appId|
-|**peerId**|Long|用户ID(创建者ID)|
 |**createTime**|String|创建时间|
 |**updateTime**|String|更新时间|
 
@@ -44,7 +46,7 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
 ## 请求示例
 POST
 ```
-https://openjrtc.jdcloud-api.com/v1/createRoom
+https://openjrtc.jdcloud-api.com/v1/registerUserRoom
 
 ```
 
@@ -57,10 +59,11 @@ https://openjrtc.jdcloud-api.com/v1/createRoom
     "result": {
         "appId": "febf9a1401763b06490e14739c4be622", 
         "createTime": "2020-12-08T02:23:37Z", 
-        "peerId": 252, 
-        "roomId": 123, 
+        "roomId": 666, 
         "roomName": "房间名称", 
-        "updateTime": "2020-12-08T02:23:37Z"
+        "roomType": 1, 
+        "updateTime": "2020-12-08T02:23:37Z", 
+        "userRoomId": "userRoomId"
     }
 }
 ```
