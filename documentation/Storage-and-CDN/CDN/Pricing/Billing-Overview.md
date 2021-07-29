@@ -42,9 +42,7 @@
 
 **仅线上结算、采用日流量计费方式时**，才可抵扣流量包，抵扣的用量为**图片小文件、大文件下载、视频文件、视频云直播**域名产生的中国境内用量，查看[资源包使用明细](https://package.jdcloud.com/resource/useList)，超出部分按照日流量计费模式进行自然月阶梯计费。（目前仅支持**中国境内流量包**，抵扣中国境内用量）
 
-**资源包定价表**
-<table ><tr align="center"><td width="200" rowspan="2">规格</td><td colspan="3">有效期（定价单位：元）</td></tr><tr align="center"><td width="200">3月</td><td width="200">6月</td><td width="200">1年</td></tr><tr align="center"><td>100GB</td><td>16</td><td>17</td><td>18</td></tr><tr align="center"><td>500GB</td><td>84</td><td>88</td><td>90</td></tr><tr align="center"><td>1TB</td><td>165</td><td>175</td><td>180</td></tr><tr align="center"><td>5TB</td><td>825</td><td>875</td><td>900</td></tr><tr align="center"><td>10TB</td><td>1592</td><td>1775</td><td>1800</td></tr><tr align="center"><td>50TB</td><td>6316</td><td>5814</td><td>3978</td></tr><tr align="center"><td>200TB</td><td>16830</td><td>17680</td><td>14688</td></tr><tr align="center"><td>1PB</td><td>84150</td><td>83520</td><td>70200</td></tr><tr align="center"><td>5PB</td><td>378675</td><td>377145</td><td>351000</td></tr></table>
-<br />
+
 
 
 **三、大客户后付费方式**

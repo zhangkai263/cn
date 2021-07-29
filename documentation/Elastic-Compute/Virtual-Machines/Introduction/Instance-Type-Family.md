@@ -7,8 +7,9 @@
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
 * 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
+* 突发性能型：[突发性能型](instance-type-family#user-content-12)
 * 高频计算型：[高频计算通用型](instance-type-family#user-content-5)
-* 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)、
+* 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 
 ## 通用型
@@ -356,6 +357,44 @@ g.n1.8xlarge|32|128|4 |	 |
 
 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用。
 
+### 突发性能型
+
+突发性能型实例是一种通过积分机制约束CPU使用率的实例规格，适用于平时CPU使用率较低，偶发使用率突增的入门级或轻量级计算场景。突发型实例提供了在一定时间区间内动态分配计算力的能力，闲时积累忙时消耗，相对于普通实例规格，更为经济。[突发性能型规格介绍](https://docs.jdcloud.com/virtual-machines/Burst-Instance-Overview)
+
+**规格类型特点：**
+
+* 基于规格和基准性能提供算力，允许一定时间范围内算力的累积，通过积分体现实例算力的消耗和积累情况。
+* 处理器：
+	* 第二代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+        * 仅支持云盘系统盘镜像
+* 适用场景：
+	* 微服务、轻负载应用
+	* 代码库、Web服务、开发测试环境
+
+**实例规格**
+
+第二代
+
+实例规格|vCPU（核）|内存（GB）|基准性能 |弹性网卡|网卡多队列 |每小时可获积分 | 积分余额上限
+|:---|:---|:---|:--- |:---|:---|:---|:---
+|t.e2.small|2|1|10% |2|1 |12 |288
+|t.e2.large|2|2|20% |2|1 | 24 |576
+|t.c2.large|2|4|20% |2|1 | 24 |576
+|t.g2.large|2|8|30% |2|1 | 36|864
+|t.e2.xlarge|4|4|30% |2|1 | 72 |1728
+|t.c2.xlarge|4|8|30% |2|1 | 72 |1728
+|t.g2.xlarge|4|16|40% |2|1| 96 | 2304
+|t.e2.2xlarge|8|8|30% |2|1 | 144| 3456
+|t.c2.2xlarge|8|16|30% |2|1 | 144| 3456
+|t.g2.2xlarge|8|32|40% |2|1| 192|4608
+
+
+
 ## 高频计算型
 
 高频计算型当前提供高频计算通用型，为您提供高性能的计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
@@ -588,10 +627,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 请注意：
 
 * 标 * 规格表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
-* 计算优化密集型当前仅在华北-北京、华东-上海地域提供；
-* 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供；
-* GPU虚拟化型当前在华北-北京、华东-上海部分可用区邀测中；
-* 第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；
+* 可购买规格还请以控制台为准；
 * 在购买实例后，您可根据业务规模变更情况对实例进行配置修改，详细请参见[调整配置](../Operation-Guide/Instance/Resize-Instance.md)。
 
 ## 相关参考

@@ -1,23 +1,23 @@
-# removeAllRoomUsers
+# postMessageToUserRoom
 
 
 ## 描述
-移除房间内所有人员
-
+发送自定义信令给房间
 
 ## 请求方式
-PUT
+POST
 
 ## 请求地址
-https://openjrtc.jdcloud-api.com/v1/roomUser/{appId}/removeAll/{roomId}
+https://openjrtc.jdcloud-api.com/v1/postMessageToUserRoom
 
+
+## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**appId**|String|True| |应用ID|
-|**roomId**|Long|True| |房间ID|
-
-## 请求参数
-无
+|**userRoomId**|String|True| |业务接入方定义的且在JRTC系统内注册过的房间号|
+|**eventName**|String|True| |事件名称|
+|**message**|String|True| |自定义信令消息|
 
 
 ## 返回参数
@@ -37,9 +37,9 @@ https://openjrtc.jdcloud-api.com/v1/roomUser/{appId}/removeAll/{roomId}
 |**503**|Service unavailable|
 
 ## 请求示例
-PUT
+POST
 ```
-https://openjrtc.jdcloud-api.com/v1/roomUser/febf9a1401763b06490e14739c4be622/removeAll/9527
+https://openjrtc.jdcloud-api.com/v1/postMessageToUserRoom
 
 ```
 
