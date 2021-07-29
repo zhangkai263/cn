@@ -53,17 +53,20 @@
 ## 2020年Q1月
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   支持慢日志查询	|  通过慢日志查询功能，用户可查找性能变慢原因，并优化性能。	|   2020-01	|    [慢日志查询](../Operation-Guide/Cache-Analysis/SlowLog.md)	| 
+|   支持慢日志查询	|  通过慢日志查询功能，用户可查找性能变慢原因，并优化性能。	|   2020-03	|    [慢日志查询](../Operation-Guide/Cache-Analysis/SlowLog.md)	| 
+|   开放参数修改	|  通过慢日志查询功能，用户可查找性能变慢原因，并优化性能。	|   2020-01	|    [参数修改](../Operation-Guide/Instance-Management/Modify-Instancename.md)	| 
 
 
-## 2019年Q4月
+## 2019年
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   开放scan命令	|   开放scan命令	|   2019-08	|    -   |   
-|   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-08	|   -   |   
-|   新增4.0版本	|      redis 4.0版 正式上线，新增备份恢复、访问控制等功能。  |   2019-08	|   -   |   
+|   开放scan命令	|   开放scan命令	|   2019-11	|    -   |   
+|   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-10	|   -   |   
+|   新增备份恢复	|      新增备份恢复、访问控制等功能。  |   2019-09	|     [备份恢复](../Operation-Guide/Backup-And-Recovery.md)    |   
+|   新增4.0版本	|      redis 4.0版 正式上线  |   2019-08	|   -   |   
 |   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Getting-Started/Command-Supported.md) |   
 |   上线公测|   	redis 4.0版  开放公测|   	2019-01 |  -    |   
+|   新增WEBCli	|   开放scan命令	|   2018-11	|     [连接实例](../Getting-Started/Connect-Instances.md)    |   
 |   Redis2.8公测上线|   	Redis2.8公测上线|   	2017-04	|  - |   
 
 
