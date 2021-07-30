@@ -20,7 +20,7 @@
 
 **问题：是否支持企业实名认证更新？**
 
-答：京东云不支持更换企业认证的主体（即不允许变更社会信用代码）。如果您是到期换证、法人变更、名称变更等情况，不涉及证件号变更，可以通过【[更新实名](../../../../documentation/User-Service/Real-Name-Verification/Business/Update.md)】的方式提交变更。
+答：京东云不支持更换企业认证的主体（即不允许变更社会信用代码）。如果您是到期换证、法人变更、名称变更等情况，不涉及证件号变更，可以通过【[更新实名](../../../documentation/User-Service/Real-Name-Verification/Business/Update.md)】的方式提交变更。
 
 ## 个人实名认证常见问题
 
