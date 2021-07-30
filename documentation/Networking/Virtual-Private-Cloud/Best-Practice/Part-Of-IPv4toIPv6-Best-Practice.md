@@ -4,9 +4,6 @@
 本教程将介绍如何将已有的IPv4私有网络（本例简称“单栈VPC”）业务迁移至IPv4/IPv6双栈网络（简称“双栈VPC”）中，使得服务能够被IPv4用户和IPv6用户同时访问。
 
  ![dd](../../../../image/Networking/IPv6/IPv6-01.png)
-## 前提条件及限制
-
-
 
 ## 前提条件及限制
 
@@ -15,8 +12,15 @@
 - 账户有足够的余额，相关限制请查看[使用限制](../Introduction/Restrictions.md)。
 
 ## 操作步骤
+- [搭建IPv4/IPv6双栈VPC](Part-Of-IPv4toIPv6-Best-Practice#user-content-1)
+
+- [通过VPC peering连接单栈VPC和双栈VPC](Part-Of-IPv4toIPv6-Best-Practice#user-content-2)
+
+- [配置负载均衡](Part-Of-IPv4toIPv6-Best-Practice#user-content-3)
 
 ### 搭建IPv4/IPv6双栈VPC
+
+<div id="user-content-1"> </div>
 
   目标：创建一个双栈VPC，包含一个子网，一个负载均衡。
 
@@ -31,6 +35,8 @@
 
 ### 通过VPC peering连接单栈VPC和双栈VPC
 
+<div id="user-content-2"> </div>
+
  目标：通过VPC peering连接单栈VPC和双栈VPC，使得两个VPC通过内网IP地址进行通信。
 
  ![dd](../../../../image/Networking/IPv6/IPv6-03.png)
@@ -44,6 +50,8 @@
 
 
 ### 配置负载均衡
+
+<div id="user-content-3"> </div>
 
  目标：将单栈VPC中的云主机挂载到双栈VPC的负载均衡上。
 
