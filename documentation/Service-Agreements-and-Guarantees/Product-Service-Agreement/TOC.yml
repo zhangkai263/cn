@@ -64,6 +64,8 @@ items:
     href: Database-Audit-Terms-Of-Service.md   
   - name: 云主机安全服务协议
     href: Cloud-Host-Security-Service-Clause.md
+  - name: 云主机安全等级协议（SLA）
+    href: Endpoint-Security-SLA.md
   - name: 云硬盘服务协议
     href: Cloud-Hard-Disk-Service-Clause.md
   - name: 云硬盘服务等级协议（SLA）
@@ -82,6 +84,14 @@ items:
     href: Web-Application-Firewall-Service-Terms-Of-Service.md 
   - name: Web应用防火墙服务等级协议（SLA）
     href: Web-Application-Firewall-Level-Agreements-SLA.md 
+  - name: 网站威胁扫描服务条款
+    href: Threat-Scanner.md
+  - name: 网站威胁扫描服务等级协议（SLA）
+    href: Threat-Scanner-SLA.md  
+  - name: 安全运营中心服务协议
+    href: Security-Operation-Center.md
+  - name: 安全运营中心服务等级协议（SLA）
+    href: Security-Operation-Center-SLA.md    
   - name: 弹性伸缩服务条款
     href: Flexible-Telescopic-Service-Clause.md
   - name: 视频直播服务条款
