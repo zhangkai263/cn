@@ -1,7 +1,7 @@
 **常见问题FAQ**
 
 - **Q:单用户的私有网络配额？**</br>
-  A：京东云允许用户在同一个地域创建不多于10个VPC，用户可以根据实际使用情况，在限制数量内创建或删除VPC；</br>
+  A：京东云允许用户在同一个地域创建不多于10个VPC，用户可以根据实际使用情况[提交工单](https://ticket.jdcloud.com/applyorder/form?cateId=1135&questionId=1155)申请提升配额；</br>
   
 - **Q：子网间CIDR可以重复吗，有什么要求？**</br>
   A：相同VPC下的子网的CIDR不允许重复，如果用户输入的数值和已有CIDR冲突，会有相应提示。CIDR子网掩码的区间范围限定在16~28。</br>
@@ -13,7 +13,7 @@
   A: 京东云允许用户在同一地域申请不超过10个公网IP，用户可以根据实际使用情况，在限制数量内申请或删除公网IP。</br>
   
 - **Q：公网IP带宽范围？**</br>
-  A：公网IP带宽范围为1~200Mbps。</br>
+  A：默认公网IP带宽范围为1~200Mbps，按包年包月和按配置计费的公网IP支持提升公网带宽，按用量计费的公网IP不支持提升带宽，更多可参考[公网IP常见问题](../../Elastic-IP/FAQ/FAQ.md)</br>
   
 - **Q：为什么资源绑定公网IP后，资源仍不能访问公网？**</br>
   A：VPC内的资源绑定公网IP后，需在资源所在子网的路由表中添加访问公网的路由规则，目的端为公网网段(如全部地址：0.0.0.0/0)，下一跳类型及地址均为Internet。</br>
@@ -28,6 +28,6 @@
   A：当新一批需要更新的路由条数+传播路由表已有条数>传播路由配额时，该批路由一条也不更新到VPC路由表中，并且会阻塞后续到达的路由更新；直到VPC路由表释放出足够的路由空间、或者通过提升配额提供更大的有效路由空间后，该批路由才会被处理。</br>
   
 - **Q：如何创建IPv4/IPv6双栈VPC？**</br>
-  A：当前IPv6相关服务处于公测中，如需使用须申请相关权限，若您已有相关权限，创建双栈VPC请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)；若您暂无权限且需使用IPv6相关服务，请联系客服或提交[工单申请](https://ticket.jdcloud.com/applyorder/form?cateId=1135&questionId=1155)，申请参与公测。</br>
+  A：当前IPv6相关服务处于公测中，如需使用须申请相关权限，若您已有相关权限，创建双栈VPC请参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)；若您暂无权限且需使用IPv6相关服务，请联系客服或[提交工单](https://ticket.jdcloud.com/applyorder/form?cateId=1135&questionId=1155)申请，申请参与公测。</br>
   
 
