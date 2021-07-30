@@ -5,6 +5,7 @@
 ## 2021年
 | 功能名称 | 功能描述 | 发布时间 | 相关文档
 | :---------------| :--------------|:------------|:--------
+|文档改版|丰富结构和内容|2021/7|all|
 |支持加入共享带宽包|支持加入共享带宽包，多IP共享一份带宽|2021/4|[删除公网IP](https://docs.jdcloud.com/cn/elastic-ip/delete-elastic-ip)、[修改公网IP带宽](https://docs.jdcloud.com/cn/elastic-ip/modify-elastic-ip)、[续费弹性公网IP](https://docs.jdcloud.com/cn/elastic-ip/renew-elastic-ip)
 |修改产品服务条款|更新服务条款主体|2021/2|[产品服务协议](https://docs.jdcloud.com/cn/elastic-ip/product-terms-of-service)
 
