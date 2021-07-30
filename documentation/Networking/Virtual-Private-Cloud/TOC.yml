@@ -45,7 +45,7 @@ href:
             href: Introduction/Application-Scenarios/Multiple-Virtual-Machines-Use-Shared-IpAddress-To-Access-Internet.md
   - name: 产品定价
     items:
-      - name: 计费规则
+      - name: 计费概览
         href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
