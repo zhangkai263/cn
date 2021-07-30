@@ -8,7 +8,6 @@
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
 - 确保您已经创建一个私有网络，且已经创建两个子网；
-- 
 - 确保您有足够的资源配额，如配额已满。可通过[工单申请](https://ticket.jdcloud.com/applyorder/submit)提升配额。
 
 ## 操作步骤
