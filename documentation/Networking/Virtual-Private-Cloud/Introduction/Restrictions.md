@@ -143,6 +143,9 @@
 
 - 边缘子网和标准子网的资源之间内网不互通，不同独立边缘可用区的资源之间内网不互通。
 
+## 购买门槛限制
+
+购买门槛只涉及计费产品，免费产品不受购买门槛限制，具体计费产品请参考[门槛说明](https://docs.jdcloud.com/cn/billing/postpay)
 
 ## 相关参考
 - [常见问题](../FAQ/FAQ.md)
@@ -151,3 +154,5 @@
 - [配置路由表](../Operation-Guide/Route-Table-Configuration.md)
 - [配置安全组](../Operation-Guide/Security-Group-Configuration.md)
 - [配置ACL](../Operation-Guide/Network-ACL-Configuration.md)
+- [地域及可用区](Region-Az.md)
+- [计费概览](../Pricing/Billing-Overview.md)
