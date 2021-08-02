@@ -25,7 +25,7 @@ A：目前每个用户支持的缓存Redis最大限额为5个，如需创建更�
 
 **Q：缓存Redis支持外网访问吗？**
 
-A：为提升数据访问的安全性，缓存Redis目前仅支持内网云主机访问。可以设置公网代理访问，详情见： [公网连接Redis实例](../Best-Practices/Public-Network-Connect-to-Redis-Instance.md)	。
+A：为提升数据访问的安全性，缓存Redis目前仅支持内网云主机访问。可以设置公网代理访问，详情见： [公网连接Redis实例](../Operation-Guide/Connect/ConnectInstance.md) 	。
  
 
 **Q：云主机为何访问不了Redis实例？**
