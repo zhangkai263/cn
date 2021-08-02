@@ -14,7 +14,7 @@ Windows系统服务器，DNS默认是自动获取的，如果用户想使用自�
 
 2. 选择"更改适配器设置";
 
-![](../../../../..//image/Elastic-Compute/Virtual-Machine/Windows/Windows%E4%BF%AE%E6%94%B9DNS%E7%9A%84%E6%96%B9%E6%B3%9502.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E4%BF%AE%E6%94%B9DNS%E7%9A%84%E6%96%B9%E6%B3%9502.png)
 
 3. 选择网卡，右击选择“属性”;
 
