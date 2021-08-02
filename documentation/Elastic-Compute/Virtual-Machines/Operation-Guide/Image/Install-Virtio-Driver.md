@@ -20,12 +20,12 @@ lsinitrd /boot/initramfs-$(uname -r).img | grep virtio
 ![](../../../../../image/vm/Image-Import-Virtio01.png)<br>
 如果initramfs已经包含了`virtio_blk`驱动，以及其所依赖的`virtio.ko`、`virtio_pci.ko` 和 `virtio_ring.ko`，则无须执行下述操作。<br>
 如果initramfs未找到 virtio 相关信息，则需要修复临时文件系统：<br>
-A. CentOS 7/6
+ A. CentOS 7/6
 ```
 cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
 mkinitrd -f --with=virtio_blk --with=virtio_pci /boot/initramfs-$(uname -r).img $(uname -r)
 ```
-B. Ubuntu
+ B. Ubuntu
 ```
 echo -e "virtio_pci\nvirtio_blk" >> /etc/initramfs-tools/modules
 update-initramfs  -u
@@ -37,10 +37,12 @@ A.下载内核安装包
 ```
 yum install -y ncurses-devel gcc make wget
 ```
+
 * 查询当前系统使用的内核版本：
 ```
 uname -r
 ```
+
 * 前往 Linux 内核列表页面( https://mirrors.edge.kernel.org/pub/linux/kernel/ )找到对应的内核版本源码。
 * 切换目录，下载安装包（以3.0内核为例），解压：
 ```
@@ -48,14 +50,17 @@ cd /usr/src/
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/v3.0/linux-3.10.tar.gz
 tar -zxvf linux-3.10.tar.gz
 ```
+
 * 建立链接：
 ```
 ln -s linux-3.10 linux
 ```
+
 * 切换目录：
 ```
 cd /usr/src/linux
 ```
+
 B.编译内核
 * 清除之前编译过程生成的文件：
 ```
@@ -66,20 +71,22 @@ make mrproper
 make menuconfig
 ```
 
-![](../../../../../image/vm/Image-Import-Virtio1.png)<br>
 在 Device Drivers-->Block devices 中选择Virtio block driver <br>
-![](../../../../../image/vm/Image-Import-Virtio2.png)<br>
+<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio1.png" width="400"></div>
 
 在 Device Drivers-->Network device support 中选择Virtio network driver
+<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio2.png" width="400"></div>
 
 * 完成模块编译 (可能需要30~40分钟，具体时间取决于服务器配置)
 ```
 make bzImage && make modules && make modules_install
 ```
+
 * 安装
 ```
 make install
 ```
+
 * 运行以下命令查看 virtio 驱动的安装情况，如果任一命令输出 virtio_blk、virtio_pci.virtio_console 等文件列表，表明已经正确安装了 virtio 驱动。
 ```
 find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
@@ -91,7 +98,7 @@ find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
 ② 将virtio-win-0.1.137.iso文件拷贝到Windows虚机里面的某个目录下，可以通过远程连接共享文件夹等方式，将ios文件拷贝到虚机里。<br>
 
 ③ 双击iso文件，Windows会自动将其挂载到DVD设备上用于读取数据，下图中右侧的文件夹就是iso软件包里的内容，包括各种设备的驱动程序，如NetKVM对应的就是网卡驱动。<br>
-![](../../../../../image/vm/Image-Import-Virtio3.png)<br>
+<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio3.png" width="600"></div>
 
 ④ 从控制面板里，找到并打开“设备管理器”窗口，只需要安装以下三个设置的驱动程序：
 * 存储控制器－Red Hat VirtIO SCSI controller
@@ -110,7 +117,7 @@ find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
 ⑧ 重启系统。<br>
 
 ⑨ 打开“设备管理器”，并检查我们安装的三个驱动程序的版本号：在我们文档的例子里，目标版本号是以13700结尾的数字字符串。<br>
-![](../../../../../image/vm/Image-Import-Virtio5.png)<br>
+<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio5.png" width="600"></div>
 
 ⑩ 清理配置信息，此步骤极为重要。打开命令行窗口或powershell运行窗口，执行如下命令：
 ```

@@ -39,3 +39,35 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/quota
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testInstanceQuota() {
+  // 1. 设置请求参数
+  DescribeUserQuotaRequest request = new DescribeUserQuotaRequest();
+  request.regionId("cn-north-1");
+
+  // 2. 发起请求
+  DescribeUserQuotaResponse response = redisClient.describeUserQuota(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5me1", 
+    "result": {
+        "quota": {
+            "max": 20, 
+            "name": "缓存Redis", 
+            "used": 1
+        }
+    }
+}
+```

@@ -35,19 +35,19 @@
 
 无法通过服务器管理员账号密码登录时
 
-1.通过vnc登录 Linux 云主机。
+1.通过**【vnc】**登录 Linux 云主机。
 
-2.执行命令 cat filename 查看 PAM 配置文件，如 cat /etc/pam.d/login 和 cat /etc/pam.d/system-auth。
+2.执行命令 `cat filename` 查看 PAM 配置文件，如 `cat /etc/pam.d/login` 和 `cat /etc/pam.d/system-auth`。
 
 3.检查配置文件是否有类似如下配置信息，如，本文检查到 /etc/pam.d/system-auth 配置文件中有如下配置信息。
 
-![](https://github.com/jdcloudcom/cn/blob/cn-VirtualMachine-Linux/image/Elastic-Compute/Virtual-Machine/Linux/SSH%E7%99%BB%E5%BD%95%E6%8A%A5loginModule%20is%20unknown01.png)
+![](../../../../image/Elastic-Compute/Virtual-Machine/Linux/SSH%E7%99%BB%E5%BD%95%E6%8A%A5loginModule%20is%20unknown01.png)
 
-4.执行命令 ll /lib/security/pam_limits.so 检查 pam_limits.so 模块在系统中是否存在。
+4.执行命令 `ll /lib/security/pam_limits.so` 检查 pam_limits.so 模块在系统中是否存在。
 
 这一步检查 pam_limits.so 模块是否被错误地放置在 /lib/security 目录下，因为64位 Linux系统的正确路径应该为 /lib64/security。
 
-5.执行命令 vi filename 修改项目模块 pam_limits.so 的路径为正确路径，其中 filename 为您在第 3 步查看到的配置文件，如本示例中的 vi /etc/pam.d/system-auth。
+5.执行命令 `vi filename` 修改项目模块 pam_limits.so 的路径为正确路径，其中 filename 为您在第 3 步查看到的配置文件，如本示例中的 `vi /etc/pam.d/system-auth`。
 
 *session    required     /lib64/security/pam_limits.so*     # 修改为正确路径
 

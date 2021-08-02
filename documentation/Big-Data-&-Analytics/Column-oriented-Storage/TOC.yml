@@ -4,33 +4,58 @@
   - name: 产品简介
     items:
     - name: 产品概述
-      herf: Introduction/Product-Overview.md
+      href: Introduction/Product-Overview.md
     - name: 产品优势
-      herf: Introduction/Benefits.md
+      href: Introduction/Benefits.md
     - name: 主备双活
       href: Introduction/Double-Alive.md
     - name: 限制说明
-      herf: Introduction/Restrictions.md
+      href: Introduction/Restrictions.md
     - name: 应用场景
-      herf: Introduction/Application-Scenarios.md
-    - name: 案例分析
-      herf: Introduction/Practices.md
-  - name: 入门指南
+      href: Introduction/Application-Scenarios.md
+  - name: 快速入门
+    items:
+    - name: 概述
+      href: Quick-Started/Summary.md
+    - name: 购买集群
+      href: Quick-Started/Purchase.md
+    - name: 设置白名单
+      href: Quick-Started/SetWhiteList.md
+    - name: 访问集群
+      href: Quick-Started/Connect.md
+  - name: 产品介绍
     items:
     - name: 创建集群
-      href: Getting-Started/Create-Cluster.md
-    - name: 创建Namespace
-      href: Getting-Started/Create-Namespace.md
-    - name: 创建表
-      href: Getting-Started/Create-Table.md
-  - name: 使用指南
+      href: Product-Introduction/Create-Cluster.md
+    - name: 集群管理
+      href: Product-Introduction/Manage.md
+    - name: 服务管理
+      href: Product-Introduction/Service-Manage.md
+    - name: 主机管理
+      href: Product-Introduction/Host-Manage.md
+    - name: JDNoSQL管理
+      href:
+      items:
+      - name: 基本介绍
+        href: Product-Introduction/JDNoSQL/Summary.md
+      - name: Namespace管理
+        href: Product-Introduction/JDNoSQL/Namespace.md
+      - name: 表管理
+        href: Product-Introduction/JDNoSQL/Table.md
+      - name: 分组管理
+        href: Product-Introduction/JDNoSQL/Group.md
+      - name: 用户管理
+        href: Product-Introduction/JDNoSQL/User.md
+      - name: 访问控制（白名单）
+        href: Product-Introduction/JDNoSQL/ACL.md
+  - name: 操作指南
     items:
     - name: Rowkey设计指导
       href: Develop-Guide/RowkeyDesign.md
-    - name: SDK使用
-      href: Develop-Guide/sdk.md
   - name: FAQ
     items:
     - name: 如何配置ACL
       href: FAQ/ACLconf.md
+    - name: JDNoSQL管理 常见问题
+      href: FAQ/ClusterManager.md
       

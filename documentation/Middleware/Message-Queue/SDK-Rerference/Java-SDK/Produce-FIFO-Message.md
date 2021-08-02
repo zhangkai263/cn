@@ -44,9 +44,9 @@ public class GlobalOrderProducerDemo {
      */
     private static final String SECRET_KEY = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB0";
     /**
-     * 元数据服务器地址（接入点地址）
+     * 元数据服务器地址（SDK接入点地址，在控制台Topic详情获取）
      */
-    private static final String META_SERVER_ADDRESS = "127.0.0.1:18888";
+    private static final String META_SERVER_ADDRESS = "cn-north-1-##################.##########.jdcloud.com:####";
     /**
      * topic名称
      */

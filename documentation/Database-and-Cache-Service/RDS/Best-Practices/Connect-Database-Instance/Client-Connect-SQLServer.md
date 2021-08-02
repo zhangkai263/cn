@@ -1,8 +1,7 @@
 # 客户端连接SQL Server实例
 
 ## 微软客户端下载地址
-首先下载SQL Server Management Studio（以下简称SSMS），官方地址：<br>
-http://download.microsoft.com/download/0/9/9/099E0C83-072B-42A5-83A0-9BB3D2E6E2A3/SQLManagementStudio_x64_CHS.exe
+首先下载SQL Server Management Studio（以下简称SSMS），[跳转下载地址](https://docs.microsoft.com/en-us/sql/ssms).
 
 ## 不开启外网访问的连接方法
 为了数据库的安全性，在生产环境中不建议开启外网访问功能。 如果用户临时需要在本地通过客户端访问数据库实例，可以借助SSH2的端口转发功能实现从本地直接连接云上的SQL Server数据库，具体步骤如下：（以SecureCRT为例）

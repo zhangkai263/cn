@@ -14,7 +14,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|---|---|---|
 |**regionId**|String|True| |缓存Redis实例所在区域的Region ID。目前有华北-北京、华南-广州、华东-上海三个区域，Region ID分别为cn-north-1、cn-south-1、cn-east-2|
 |**cacheInstanceId**|String|True| |缓存Redis实例ID，是访问实例的唯一标识|
-|**taskId**|String|True| |查询缓存分析任务详情的任务ID|
+|**taskId**|String|True| |任务ID，即request ID|
 
 ## 请求参数
 无
@@ -57,3 +57,59 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetCacheAnalysisDetail() {
+  // 1. 设置请求参数
+  DescribeCacheAnalysisResultRequest request = new DescribeCacheAnalysisResultRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").taskId("task-1234");
+
+  // 2. 发起请求
+  DescribeCacheAnalysisResultResponse response = redisClient.describeCacheAnalysisResult(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o90nww5rgfrhitif97cwoh8mjgsi33", 
+    "result": {
+        "analysisType": 1, 
+        "cmdCallTimesTop": [
+            {
+                "data": 1, 
+                "name": "get"
+            }, 
+            {
+                "data": 1, 
+                "name": "psync"
+            }
+        ], 
+        "cmdUseCpuTop": [
+            {
+                "data": 135, 
+                "name": "psync"
+            }, 
+            {
+                "data": 3, 
+                "name": "get"
+            }
+        ], 
+        "finishTime": "2021-07-14 15:20:06.020918609 +0800 CST m=+650.859919607", 
+        "hotKeys": null, 
+        "keySizeDistribution": {}, 
+        "keyTypeDistribution": {}, 
+        "otherBigkeys": [], 
+        "startTime": "2021-07-14 15:20:05.970576399 +0800 CST m=+650.809577370", 
+        "status": "", 
+        "stringBigKeys": []
+    }
+}
+```
