@@ -5,7 +5,7 @@
 
 1.右键左下角【开始】，选择【磁盘管理】，选择【MBR（主启动记录）】，点击【确定】。
 
-![](../../../../..//image/Elastic-Compute/Virtual-Machine/Windows/Windows2012%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%9601.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2012%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%9601.png)
 
 ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2012%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%9602.png)
 
