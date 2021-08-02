@@ -45,7 +45,7 @@
 
 **说明：**
 
-* KEYS命令：不推荐使用KEYS*命令查询，可用scan命令进行查询。KEYS命令只能在VPC网络下使用，属于危险的命令，可能造成性能问题。如需使用，请确保在key很少的情况下再用。
+* KEYS命令：不推荐使用KEYS* 命令查询，可用scan命令进行查询。KEYS命令只能在VPC网络下使用，属于危险的命令，可能造成性能问题。如需使用，请确保在key很少的情况下使用。
 
 * SORT命令使用方法：SORT key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern ...]] [ASC|DESC] [ALPHA] [STORE destination]
 
