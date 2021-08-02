@@ -3,30 +3,30 @@
 
 ## 1.左下角点击开始，打开控制面板。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问01.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问01.png)
 
 ## 2.选择Windows防火墙，高级设置。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问02.png)
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问03.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问02.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问03.png)
 
 ## 3.左侧栏选择入站规则，右侧栏选择新建规则。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问04.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问04.png)
 
 ## 4.选择端口，特定本地端口，填写需要允许/禁止的端口号。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问05.png)
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问06.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问05.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问06.png)
 
 ## 5.选择允许或阻止连接策略，默认下一步。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问07.png)
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问08.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问07.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问08.png)
 
 ## 6.为此规则填写名称，配置完成。
 
-![](C:\guanfagnwendang\cn\image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问09.png)
+![](../../../../../image\vm\cn_image_Elastic-Compute_Virtual-Machine_Windows_Windows防火墙允许禁止端口访问09.png)
 
 如无法解决您的问题，请向我们提工单。
 
