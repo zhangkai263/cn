@@ -295,5 +295,5 @@
 
 * ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
 
-	* 指定的所有key和destination 必须要要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
+	* 指定的所有key和destination 必须要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
 
