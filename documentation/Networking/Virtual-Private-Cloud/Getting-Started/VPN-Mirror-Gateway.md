@@ -1,4 +1,4 @@
-## **VPN镜像网关**
+# 配置VPN镜像网关
 
 ### **产品概述** 
 
@@ -46,37 +46,32 @@ VPN默认提供隧道连通性自动检测，定时检测隧道的连通状况�
 
 ### **操作指南** 
 
-- 创建VPN镜像网关 
+**创建VPN镜像网关**
 
-1、  打开控制台菜单-云主机，点击创建； 
+步骤1：访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏 弹性计算->【云主机】-> 进入实例列表页。 
 
-2、  云主机创建页选择地域、镜像类型选择“镜像市场”； 
+步骤2：点击【创建】按钮，进入云主机创建页面。选择地域、镜像类型选择【镜像市场】； 
 
-3、  在镜像列表中选择所需的VPN镜像，点击“查看详情”可以查看对应的VPN镜像信息；
+步骤3：在镜像列表中选择所需的VPN镜像，点击“查看详情”可以查看对应的VPN镜像信息；
 
-4、  选择CPU、内存、系统盘； 
+步骤4：选择CPU、内存、系统盘； 
 
-5、  选择VPC、子网； 
+步骤5：选择VPC、子网； 
 
-6、  选择安全组，根据需求设置安全策略； 
+步骤6：选择安全组，根据需求设置安全策略； 
 
-7、  设置公网IP类型、计费方式、带宽；注意：作为VPN网关的主机需要绑定公网IP，如创建页不购买，后续需单独绑定公网IP； 
+步骤7：设置公网IP类型、计费方式、带宽；注意：作为VPN网关的主机需要绑定公网IP，如创建页不购买，后续需单独绑定公网IP； 
 
-8、  设置主机名称； 
+步骤8：设置主机名称； 
 
-9、  设置密码，建议设置密码，否则将会生成一个随机登陆密码； 
+步骤9：设置密码，建议设置密码，否则将会生成一个随机登陆密码； 
 
-10、 选择购买时长； 
+步骤10：选择购买时长； 
 
-11、 页面右侧确认当前已选信息，点击“立即购买”，完成支付并创建资源。
+步骤11：页面右侧确认当前已选信息，点击“立即购买”，完成支付并创建资源。
 
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step2.jpg)
 
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step3.jpg)
-
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step4.jpg)
-
-- 配置路由 
+**配置路由** 
 
 根据实际需要联通的网络资源规划，配置子网路由，将下一跳指向VPN网关所在的主机。注意需提前规划子网，需要通过VPN通信的主机不能与作为VPN网关的主机在同一子网，且所在子网不能绑定同一路由表。
 
@@ -88,16 +83,26 @@ VPN默认提供隧道连通性自动检测，定时检测隧道的连通状况�
 
 ![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step6.jpg)
 
--  配置VPN隧道 
+
+**配置VPN隧道**
+
 
 详见VPN镜像产品使用说明。查看方式：主机创建页，选择相应的VPN镜像后，点击右侧“查看详情”打开产品详情页，或者通过云市场检索相应的镜像产品信息。
 
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step7.jpg)
+![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/vpnmirrior.png)
 
-![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/step8.jpg)
+![](/image/Networking/Virtual-Private-Cloud/Getting-Started/VPN-Mirror-Gateway/shenxinfu.png)
 
-- 配置对端网关 
+
+**配置对端网关**
+
 
 详见VPN镜像产品使用说明，或咨询对应服务提供商。 
 
 - 通过PING对端IP等方式，检测网络连通性。
+
+
+## 相关参考
+- [创建VPN镜像网关](../Operation-Guide/NFV-Configuration/VPN-Mirror-Gateway-Configuration.md)
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
+- [配置路由表](../Operation-Guide/Route-Table-Configuration.md)
