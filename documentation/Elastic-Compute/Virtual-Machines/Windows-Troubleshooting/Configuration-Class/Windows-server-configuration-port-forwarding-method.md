@@ -1,11 +1,9 @@
 # Windows服务器配置端口转发的方法
 Windows服务器端口转发配置，可以使用Windows自带的portproxy功能实现，操作方法如下：
 
-```
-netsh interface protproxy add v4tov4 listenaddress=* listenport=12345 connectaddress=116.196.123.136 connectport=22
-```
 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%9A%84%E6%96%B9%E6%B3%9501.png)
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows服务器配置端口转发的方法01.png)
+
 
 此命令的含义是：
 
@@ -13,9 +11,8 @@ netsh interface protproxy add v4tov4 listenaddress=* listenport=12345 connectadd
 
 可以通过show all来查看已经添加的端口转发的配置信息：
 
-```
-netsh interface portproxy show all
-```
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows服务器配置端口转发的方法02.png)
+
 
 
 
@@ -25,10 +22,4 @@ netsh interface portproxy show all
 
 如果想删除配置的转发策略，可以使用如下命令删除下：
 
-```
-netsh interface portproxy delete v4tov4 listenaddress=* listenport=12345
-```
-
-
-
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%9A%84%E6%96%B9%E6%B3%9503.png)
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows服务器配置端口转发的方法03.png)
