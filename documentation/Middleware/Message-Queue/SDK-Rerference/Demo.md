@@ -14,4 +14,4 @@
    
    查看 Java SDK [最新版本号](https://mvnrepository.com/artifact/com.jdcloud/jcq-java-sdk)
    
-   SDK培训视频可参考：[SDK使用指南](https://online-demo-donot-delete.s3.cn-north-1.jdcloud-oss.com/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97JCQ%20SDK%E5%9F%B9%E8%AE%AD%E8%A7%86%E9%A2%91.mp4)
+   SDK培训视频可参考：[SDK使用指南](https://online-demo-donot-delete.s3.cn-north-1.jdcloud-oss.com/JCQ-SDK-demo-video.mp4)
