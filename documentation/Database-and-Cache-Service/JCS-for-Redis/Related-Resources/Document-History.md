@@ -57,7 +57,7 @@
 |   开放参数修改	|  帮助用户对当前Redis实例的参数进行配置调优。	|   2020-01	|    [参数修改](../Operation-Guide/Instance-Management/Modify-Instancename.md)	| 
 
 
-## 2019年
+## 2019年及之前
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
 |   开放scan命令	|   开放scan命令	|   2019-11	|    -   |   
