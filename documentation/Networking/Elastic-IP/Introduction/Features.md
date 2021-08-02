@@ -25,5 +25,5 @@
 ## 相关参考
 - [核心概念](Core-Concepts.md)
 - [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
-- [解绑弹性公网IP](Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)
+- [解绑弹性公网IP](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)
 - [共享带宽包](https://docs.jdcloud.com/cn/shared-bandwidth-package/product-overview)
