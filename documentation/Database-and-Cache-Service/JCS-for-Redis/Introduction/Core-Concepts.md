@@ -6,7 +6,7 @@
 | 集群实例	  |  实例是使用Redis 的基本单位，用户可在控制台中看到自己购买的实例列表。京东云缓存Redis对单个实例根据不同的容量规格有不同的连接数、带宽、CPU 处理能力。  |
 | 访问域名  |  	为云Redis的内网连接地址，用于连接Redis 的 Host 地址，以域名方式展示，可在 实例信息 > 访问信息 中查询到。如需公网访问，请参考   [公网连接Redis实例 ](../Operation-Guide/Connect/ConnectInstance.md) 。  |
 | 连接密码  |  	用于连接Redis 的密码。提供免密访问、密码访问两种方式。如果需要使用WebCli功能，则必须开启密码访问。  |
-| 逐出策略  |  	与开源Redis 的逐出策略保持一致。控制台上的逐出策略配置请参考： [参数修改](../Operation-Guide/Instance-Management/Modify-Instancename.md)	。开源说明具体参见：http://redis.io/topics/lru-cache  |
+| 驱逐策略  |  	控制台与开源Redis 的驱逐策略保持一致。控制台上的驱逐策略配置请参考： [参数修改](../Operation-Guide/Instance-Management/Modify-Instancename.md)	。开源说明请参考：http://redis.io/topics/lru-cache  |
 | DataBase  |  	即 Redis 中的 Database，支持256个 DB，数据库命名从 0 到 255，且无法自定义命名。默认写入到第0个 DB 中。  |
 | 地域（Region）  |  	云主机机房分布在全球多个位置，这些位置成为地域（region）。每个地域都是一个独立的地理区域且是完全独立的。云 Redis 支持同地域下跨多可用区部署，不同地域资源内网不互通，创建云Redis实例后地域和可用区信息都将不可更改。  |
 | 可用区（Availability Zone）  |  	可用区是同一地域下，电力、网络隔离的物理区域。相同可用区内的实例之间，较之同地域不同可用区内实例之间的网络延时更小。同地域内不同可用区之间提供内网互通环境，可用区之间可做到故障隔离。单可用区故障不会影响其他可用区云服务的正常运行。创建云 Redis 时，建议主副本、从副本不在同一可用区，以便增强在发生可用区中断情况时的容错性。  |
