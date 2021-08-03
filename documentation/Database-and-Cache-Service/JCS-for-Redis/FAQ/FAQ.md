@@ -62,6 +62,10 @@ A：导出请参考： [备份恢复](../Operation-Guide/Backup-And-Recovery.md)
 A：jedis序列化问题，请修改redisTemplate的序列化方式，仍未解决请联系客服。
 
 
+**Q：如何超时排查？**
+A：如果连接redis偶尔超时，可以尝试优化连接池参数，参考文档：[JedisPool 连接池优化](../Best-Practices/JedisPool-Connct.md) ；用户侧可以在本地抓包分析，优先排查本地网络。
+
+
 
 
 ## 常见报错信息及解决方式
