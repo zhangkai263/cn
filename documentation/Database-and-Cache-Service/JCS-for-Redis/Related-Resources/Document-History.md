@@ -14,7 +14,7 @@
 |   创建时增加规格预览	|   创建时增加规格预览,方便用户查看所选实例的分片、容量、节点个数、所需ip等信息。	|   2021-06	|  [创建实例](../Getting-Started/Create-Instance.md)  |   
 |   批量导出实例列表	|   支持全量、按找分页的方式，批量导出实例列表。  |   	2021-05	|  [批量导出实例列表](../Operation-Guide/Instance-Management/Export-Instance.md)   |   
 |   优化设置实例密码	|   已设置免密码登录的实例，可在集群详情页，修改密码和免密模式。  |   	2021-04	|  [修改密码](../Operation-Guide/Instance-Management/Change-Password.md)   |   
-|   增加监控指标	|   分类改为：实例监控、代理节点监控、Redis节点监控。每类监控下的指标按照CPU、内存、网络、请求、响应进行了分类并进行了指标补充。 	|   2021-04	|   [实例监控](../Operation-Guide/Monitoring/Monitoring.md)    |   
+|   增加监控指标	|   分类改为：实例监控、代理节点监控、Redis数据节点监控。每类监控下的指标按照CPU、内存、网络、请求、响应进行了分类并进行了指标补充。 	|   2021-04	|   [实例监控](../Operation-Guide/Monitoring/Monitoring.md)    |   
 
 ## 2021年Q1
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
@@ -60,13 +60,12 @@
 ## 2019年及之前
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   开放scan命令	|   开放scan命令	|   2019-11	|    -   |   
+|   开放scan命令 |   开放scan命令，各版本的命令支持情况请参考Redis命令支持页。 		|   2019-11	|     [Redis命令支持](../Getting-Started/Command-Supported.md)    |   
 |   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-10	|   -   |   
 |   新增备份恢复	|      新增备份恢复、访问控制等功能。  |   2019-09	|     [备份恢复](../Operation-Guide/Backup-And-Recovery.md)    |   
 |   新增4.0版本	|      redis 4.0版 正式上线。 	  |   2019-08	|   -   |   
 |   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Getting-Started/Command-Supported.md) |   
 |   上线公测|   	redis 4.0版  开放公测。 	|   	2019-01 |  -    |   
-|   开放scan命令 |   开放scan命令，各版本的命令支持情况请参考Redis命令支持页。 		|   2018-11	|     [Redis命令支持](../Getting-Started/Command-Supported.md)    |   
 |   新增Web Cli	|   控制台新增Web Cli工具，方便用户在线使用数据库。 		|   2018-11	|      [使用 Web Cli 连接实例](../Getting-Started/Connect-Instances.md)     |   
 |   Redis2.8公测上线|   	Redis2.8公测上线。 	 |   	2017-04	|  - |   
 
