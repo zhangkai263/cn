@@ -20,6 +20,7 @@
 云缓存Redis提供数据导入工具(linux 版本) redis-migration-tool，工具支持迁移 Redis 2.8和Redis3.2版本的 AOF数据，数据迁移说明如下：
 
 - 先清空目标实例，如果不清空目标实例，数据导入会覆盖原来数据；
+
 - redis-migration-tool 配置文件rmt.conf参数说明：
 
 | 术语 |  解释  | 
@@ -65,7 +66,7 @@ servers:
 
 3. 运行工具迁移数据，”./redis-migrate-tool -c rmt.conf”(server配置为服务器地址和端口时支持实时同步数据，配置为AOF存放路径时单次同步数据)
  
- - 注：如果用户key值大的话会发生failover
+**注意**：如果用户key值大的话会发生failover
 
 ## 5.其他迁移
 如需支持更多版本，请联系客服支持
