@@ -24,9 +24,13 @@
 
 -  非计算性的多key命令(MSET、MGET、DEL等),  如果这些Key属于不同的Redis分片，Proxy会将这个命令拆分为多个命令，并发送给对应的Redis分片
 
--  计算性的多key命令，Proxy会判断涉及的key是否在同一个分片上, 如果不在同一个分片上会报错：ERR CROSSSLOT Keys in request don't hash to the same slot
+-  计算性的多key命令，Proxy会判断涉及的key是否在同一个分片上, 如果不在同一个分片上会报错：
+      
+        ERR CROSSSLOT Keys in request don't hash to the same slot
 
--  事务类命令，Proxy会判断事务中命令涉及到的Key是否在同一个分片上，如果不在同一个分片上会报错：ERR CROSSSLOT Keys in request don't hash to the same slot
+-  事务类命令，Proxy会判断事务中命令涉及到的Key是否在同一个分片上，如果不在同一个分片上会报错：
+
+        ERR CROSSSLOT Keys in request don't hash to the same slot
 
 
 
@@ -34,11 +38,11 @@
 
 大部分情况，Proxy与Redis分片之间是通过建立的共享连接来处理请求的。但是在处理以下特殊命令时，Proxy会单独和Redis分片新建长连接，来处理命令。
 
--  阻塞类命令：BLPOP、BRPOP、BRPOPLPUSH
-
--  持续响应类命令：MONITOR、SUBSCRIBE、PSUBSCRIBE
-
--  事务类命令：MULTI、EXEC、WATCH
+| 类型 |  命令  | 
+|   :---  |  :---  | 
+|  阻塞类命令 | BLPOP、BRPOP、BRPOPLPUSH | 
+|  持续响应类命令 | MONITOR、SUBSCRIBE、PSUBSCRIBE | 
+|  事务类命令 | MULTI、EXEC、WATCH | 
 
 
 
