@@ -37,7 +37,7 @@
 
 ###  网络监控
 |   监控指标   |  单位   | metric	  |   说明   | 
-| :--- | :---  |:---  |:---  |
+| :--- | :---:  |:---  |:---  |
 | 	客户端到代理的TCP连接数 | 	count	| 	jmiss.redis.cluster.connected_clients	| 	单位时间内客户端到Proxy代理的TCP连接数总和| 	
 | 	实例连接使用率| 	%	| 	jmiss.redis.cluster.conn_usage| 		实际 TCP 连接数量和最大连接数比| 	
 | 	实例内网进流量| 	KBps| 		jmiss.redis.cluster.net_io_in_per_sec	| 	内网进入流量| 	
@@ -56,7 +56,7 @@
 
 ###  请求监控
 |   监控指标   |  单位   | metric	  |   说明   | 
-| :--- | :---  |:---  |:---  |
+| :--- | :---:  |:---  |:---  |
 | 	实例OPS  | 	count/s	| 	jmiss.redis.cluster.instantaneous_ops_per_sec	| 	单位时间内实例的OPS 总和| 	
 | 	实例协议错误次数   | 	count/s	| 	jmiss.redis.cluster.protocol_errors	| 	单位时间内实例协议的错误次数 | 	
 | 	代理OPS   | 	count/s	| 	jmiss.redis.proxy.ops	| 	单位时间内Proxy的OPS 总和 | 	
@@ -66,7 +66,7 @@
 
 ###  响应监控
 |   监控指标   |  单位   | metric	  |   说明   | 
-| :--- | :---  |:---  |:---  |
+| :--- | :---:  |:---  |:---  |
 | 	实例慢查询次数  | 	count/s| 		jmiss.redis.cluster.slowlog_times	| 	单位时间内实例的慢查询次数| 	
 | 	实例命中次数  | 	count  | 		jmiss.redis.cluster.keyspace_hits	| 	每秒key的命中数量| 	
 | 	实例未命中次数 | 	count	| 	jmiss.redis.cluster.keyspace_misses	| 	每秒key的未命中数量| 	
@@ -79,7 +79,7 @@
 
 ### 异常监控
 | 监控指标 | 单位 | metric | 说明 |
-| :--- | :--- |:--- |:--- |
+| :--- | :---: |:--- |:--- |
 |  主节点故障  | count  |   jmiss.redis.cluster.master_in_failover  | 单位时间内实例的所有主节点发生故障的次数    |
 |  从节点故障  | count  |  jmiss.redis.cluster.replica_in_failover  | 单位时间内实例的所有从节点发生故障的次数    |
 |  Proxy 节点故障  | count  |  jmiss.redis.cluster.proxy_in_failover  | 单位时间内实例的所有proxy节点发生故障的次数    |
