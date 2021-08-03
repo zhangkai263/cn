@@ -32,9 +32,9 @@ A：为提升数据访问的安全性，缓存Redis目前仅支持内网云主�
 
 A：建议您可进行如下检查：
 
- -  1.首先确认该云主机和Redis在同一个VPC中；
+ -  1.首先确认该云主机和Redis在同一个VPC中。
 
- -  2.如是同一VPC内，请按  [连接实例](../Getting-Started/Connect-Instances.md)	文档检查格式和内容是否正确；
+ -  2.如是同一VPC内，请按  [连接实例](../Getting-Started/Connect-Instances.md)	文档检查格式和内容是否正确。
 
  -  3.是否开启了Redis白名单功能。
 
