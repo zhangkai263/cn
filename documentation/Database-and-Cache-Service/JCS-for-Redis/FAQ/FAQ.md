@@ -68,6 +68,6 @@ A：jedis序列化问题，请修改redisTemplate的序列化方式，仍未解�
 
 
 | 报错信息 | 解决方法建议  |  
-|:--:|:--:|
-| OOM command not allowed when used memory maxmemory  redis-7cxm…… |  该错误为无法连接，磁盘跑满不可用。清理该分片的数据后，应可连接恢复。建议配置分片内存使用率监控的报警，或进行扩容。  |
+|:--  |:--  |
+| OOM command not allowed when used memory maxmemory  redis-7cxm…… |  该错误为无法连接，内存跑满不可用。清理该分片的数据后，应可连接恢复。建议配置分片内存使用率监控的报警，或进行扩容。  |
 | Redis Client On Error:Error:connct ETIMEDOUT |  该错误为连接超时。建议查看网络信息是否正确配置并重试。  |
