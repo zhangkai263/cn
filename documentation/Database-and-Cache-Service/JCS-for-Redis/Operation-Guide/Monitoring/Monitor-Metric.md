@@ -14,7 +14,7 @@
 
 ###  内存监控
 |   监控指标   |  单位   | metric	  |   说明   | 
-| :--- | :---  |:---  |:---  |
+| :--- | :---:  |:---  |:---  |
 | 	实例内存使用量   |  Bytes   |  jmiss.redis.cluster.used_memory	   |  单位时间内Redis实例的内存使用量数据   |  
 | 	实例内存使用率   |  %	   |  jmiss.redis.cluster.memory_usage	   |  单位时间内Redis实例的内存使用率。为实际使用内存和申请总内存之比   |  
 | 	实例节点最大内存使用率   |  %	   |  jmiss.redis.cluster.memory_max_usage	   |  单位时间内Redis实例所有节点中的最大内存使用率   |  
