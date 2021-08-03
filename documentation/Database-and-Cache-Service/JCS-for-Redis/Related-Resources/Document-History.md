@@ -67,7 +67,7 @@
 |   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Getting-Started/Command-Supported.md) |   
 |   上线公测|   	redis 4.0版  开放公测。 	|   	2019-01 |  -    |   
 |   开放scan命令 |   开放scan命令，各版本的命令支持情况请参考Redis命令支持页。 		|   2018-11	|     [Redis命令支持](../Getting-Started/Command-Supported.md)    |   
-|   新增Web Cli	|   新增Web Cli，方便用户在线使用数据库。 		|   2018-11	|      [使用 Web Cli 连接实例](../Getting-Started/Connect-Instances.md)     |   
+|   新增Web Cli	|   控制台新增Web Cli工具，方便用户在线使用数据库。 		|   2018-11	|      [使用 Web Cli 连接实例](../Getting-Started/Connect-Instances.md)     |   
 |   Redis2.8公测上线|   	Redis2.8公测上线。 	 |   	2017-04	|  - |   
 
 
