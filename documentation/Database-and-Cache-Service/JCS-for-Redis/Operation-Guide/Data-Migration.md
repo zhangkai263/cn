@@ -59,7 +59,7 @@ servers:
 
 ## 4.使用方式：
 
-1. 下载解压[redis-migrate-tool.tar.gz](https://img1.jcloudcs.com/cms/4c5a2fc3-1dc5-468c-89d5-7d38dbc1a5c720180910162509.gz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
+1. 下载解压[redis-migrate-tool.tar.gz](https://jcloud-opmid.s3.cn-north-1.jdcloud-oss.com/redis-migrate-tool.tgz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
 
 2. 修改配置文件，配置source和target端redis信息(建议配置从节点同步数据)
 
