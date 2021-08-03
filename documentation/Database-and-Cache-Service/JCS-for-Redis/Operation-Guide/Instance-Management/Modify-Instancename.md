@@ -33,7 +33,8 @@
 |  volatile-random  |  只限于设置了expire的部分，删除一部分expire的key。  |  
 |  volatile-ttl  |  只限于设置了expire的部分，优先删除剩余时间(time to live,TTL)短的key。  |  
 |  allkeys-lru  |  优先删除最近最少使用的(less recently used,LRU)key。  |  
-|  allkeys-lfu  |  在所有的key中使用LFU算法淘汰数据  |  
+|  allkeys-lfu  |  在所有的key中使用LFU算法淘汰数据 。 |  
 |  allkeys-random  |  随机删除一部分key。  |  
 |  noeviction  |  不删除策略，达到最大内存限制时，如果需要更多内存，直接返回错误信息。  |  
+| volatile-lfu | 只对设置了过期时间的key使用LFU算法淘汰数据。  |  
 
