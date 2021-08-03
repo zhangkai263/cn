@@ -45,7 +45,7 @@ redis-cli是原生Redis自带的命令行工具，使用可参考：https://redi
 
   -   [Java连接](../Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md)   
 
-  -   [Node.js连接](../Operation-Guide/Connect/Node.js-Connect-to-Redis-Instance.md)   
+  -   [Node.js连接](../Operation-Guide/Connect/Node-Connect-to-Redis-Instance.md)   
 
   -   [PHP连接](../Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md)   
 
