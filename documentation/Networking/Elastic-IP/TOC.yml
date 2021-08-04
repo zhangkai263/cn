@@ -2,9 +2,7 @@
   href: 
   items:
   - name: 产品动态
-    items:
-      - name: 文档更新记录
-        href: Related-Resources/Release-Records.md
+    href: Related-Resources/Release-Records.md
   - name: 产品简介
     items:
       - name: 产品概述
