@@ -32,8 +32,6 @@
 
 -  可查询一个月内的分析结果，选择需要查询的日期后，再选该日期下的分析记录。
 
--  因版本不同，Redis 2.8版返回的分析结果无法统计内存大小，只能显示value长度，且无法进行热Key分析。
-
 -  Redis 4.0版要查看热KEY分析需要先修改参数，把实例maxmemory-policy参数配置为allkeys-lfu或者volatile-lfu（该参数默认为	volatile-lru）。修改方式请参考： [参数修改](../Instance-Management/Modify-Instancename.md)
 
  

@@ -9,7 +9,7 @@
 |  网络连接  |  说明  |  
 | :--- | :---  | 
 |  内网连接	|  云缓存Redis实例仅支持通过京东云内网连接。京东云内其它产品与其连接则需要与云缓存Redis在相同地域、相同VPC内。|  
-|  公网连接	|  目前暂不支持直接公网访问，但可通过云主机代理转发方式连接实例。具体请见:  [公网链接Redis实例](../Operation-Guide/Connect/ConnectInstance.md)  |  
+|  公网连接	|  目前暂不支持直接公网访问，但可通过云主机代理转发方式连接实例。具体请见:  [公网连接Redis实例](../Operation-Guide/Connect/ConnectInstance.md)  |  
 
 
 
@@ -45,7 +45,7 @@ redis-cli是原生Redis自带的命令行工具，使用可参考：https://redi
 
   -   [Java连接](../Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md)   
 
-  -   [Node.js连接](../Operation-Guide/Connect/Node.js-Connect-to-Redis-Instance.md)   
+  -   [Node.js连接](../Operation-Guide/Connect/Node-Connect-to-Redis-Instance.md)   
 
   -   [PHP连接](../Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md)   
 
