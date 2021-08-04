@@ -2,7 +2,7 @@
 
 **编写systemd下服务脚本**
 
-Red Hat Enterprise Linux 7（RHEL 7）已经将服务管理工具从SysVinit和Upstart迁移到了systemd上，相应的服务脚本也需要改变。前面的版本里，所有的启动脚本都是放在/etc/rc.d/init.d/ 目录下。这些脚本都是bash脚本，可以让系统管理员控制这些服务的状态，通常，这些脚本中包含了start，stop，restart这些方法，以提供系统自动调用这些方法。但是在RHEL 7中当中已经完全摒弃了这种方法，而采用了一种叫unit的配置文件来管理服务
+Red Hat Enterprise Linux 7（RHEL 7）已经将服务管理工具从SysVinit和Upstart迁移到了systemd上，相应的服务脚本也需要改变。前面的版本里，所有的启动脚本都是放在`/etc/rc.d/init.d/ `目录下。这些脚本都是bash脚本，可以让系统管理员控制这些服务的状态，通常，这些脚本中包含了start，stop，restart这些方法，以提供系统自动调用这些方法。但是在RHEL 7中当中已经完全摒弃了这种方法，而采用了一种叫unit的配置文件来管理服务
 
 **Systemd下的unit文件**
 
@@ -32,46 +32,46 @@ unit 类型如下：
 
 路径：
 
-*/etc/systemd/system/**     ――――  供系统管理员和用户使用
+**/etc/systemd/system/**     ――――  供系统管理员和用户使用
 
-*/run/systemd/system/**     ――――  运行时配置文件
+**/run/systemd/system/**     ――――  运行时配置文件
 
-*/usr/lib/systemd/system/**   ――――  安装程序使用（如RPM包安装）
-
-
-
-以下是一段service unit文件的例子，属于/usr/lib/systemd/system/NetworkManager.service文件，它描述的是系统中的网络管理服务。
+**/usr/lib/systemd/system/**   ――――  安装程序使用（如RPM包安装）
 
 
 
-*[Unit]*
+以下是一段service unit文件的例子，属于`/usr/lib/systemd/system/NetworkManager.service`文件，它描述的是系统中的网络管理服务。
 
-*Description=Network Manager*
 
-*Wants=network.target*
+```
+[Unit]
 
-*Before=network.target network.service*
+Description=Network Manager
 
-*[Service]*
+Wants=network.target
 
-*Type=dbus*
+Before=network.target network.service
 
-*BusName=org.freedesktop.NetworkManager*
+[Service]
 
-*ExecStart=/usr/sbin/NetworkManager --no-daemon*
+Type=dbus
 
-*# NM doesn't want systemd to kill its children for it*
+BusName=org.freedesktop.NetworkManager
 
-*KillMode=process*
+ExecStart=/usr/sbin/NetworkManager --no-daemon
 
-*[Install]*
+# NM doesn't want systemd to kill its children for it
 
-*WantedBy=multi-user.target*
+KillMode=process
 
-*Alias=dbus-org.freedesktop.NetworkManager.service*
+[Install]
 
-*Also=NetworkManager-dispatcher.service*
+WantedBy=multi-user.target
 
+Alias=dbus-org.freedesktop.NetworkManager.service
+
+Also=NetworkManager-dispatcher.service
+```
 
 
 整个文件分三个部分，**[Unit]·[Service]·[Install]**
@@ -128,19 +128,20 @@ notify,idle类型比较少见，不介绍。
 
 ●  **SuccessExitStatus**：参考ExecStart中返回值，定义何种情况算是启动成功。
 
-eg：SuccessExitStatus=1 2 8 SIGKILL
+eg：`SuccessExitStatus=1 2 8 SIGKILL`
 
 **Install主要包含以下内容：**
 
 ●  **WantedBy**：何种情况下，服务被启用。
 
-eg：WantedBy=multi-user.target（多用户环境下启用）
+eg：`WantedBy=multi-user.target（多用户环境下启用）`
 
 ●  **Alias**：别名
 
 
 
 旧的命令与systemd命令的映射
+```
 service systemctl Description
 service name start ----> systemctl start name.service ●Starts a service.
 service name stop ----> systemctl stopname.service ●Stops a service.
@@ -160,17 +161,18 @@ system ctl is-enabled name.service
 ●Checks if a service is enabled.
 chkconfig --list ----> systemctl list-unit-files –type service
 ●Lists all services and checks if they are enabled.
-
+```
 
 
 **创建自己的systemd服务**
 
 弄清了unit文件的各项意义，我们可以尝试编写自己的服务，与以前用SysV来编写服务相比，整个过程比较简单。unit文件有着简洁的特点，是以前臃肿的脚本所不能比的。
 
-在本例中，尝试写一个命名为my-demo.service的服务，整个服务很简单：在开机的时候将服务启动时的时间写到一个文件当中。可以通过这个小小的例子来说明整个服务的创建过程。
+在本例中，尝试写一个命名为`my-demo.service`的服务，整个服务很简单：在开机的时候将服务启动时的时间写到一个文件当中。可以通过这个小小的例子来说明整个服务的创建过程。
 
-**Step1**：编写属于自己的unit文件，命令为my-demo.service，整个文件如下：
+**Step1**：编写属于自己的unit文件，命名为`my-demo.service`，整个文件如下：
 
+```
 [Unit]
 Description=My-demo Service
 
@@ -182,26 +184,26 @@ StandardError=inherit
 
 [Install]
 WantedBy=multi-user.target
+```
 
+**Step2**：将上述的文件拷贝到RHEL 7系统中`/usr/lib/systemd/system/`目录下
 
+**Step3**：编写unit文件中`ExecStart=/bin/bash /root/test.sh`所定义的`test.sh`文件，将其放在定义的目录当中，此文件是服务的执行主体。文件内容如下：
 
-**Step2**：将上述的文件拷贝到RHEL 7系统中/usr/lib/systemd/system/*目录下
+```
+#!/bin/bash
 
-**Step3**：编写unit文件中ExecStart=/bin/bash /root/test.sh所定义的test.sh文件，将其放在定义的目录当中，此文件是服务的执行主体。文件内容如下：
+date >> /tmp/date
+```
+Step4：将`my-demo.service`注册到系统当中并设置开机自启动执行命令：
+```
+# systemctl enable my-demo.service
+```
+输出：`ln -s'/usr/lib/systemd/system/my-demo.service' '/etc/systemd/system/multi-user.target.wants/my-demo.service'`
 
-*#!/bin/bash*
+输出表明，注册的过程实际上就是将服务链接到`/etc/systemd/system/`目录下。
 
-*date >> /tmp/date*
-
-Step4：将my-demo.service注册到系统当中并设置开机自启动执行命令：
-
-*# systemctl enable my-demo.service*
-
-输出：ln -s'/usr/lib/systemd/system/my-demo.service' '/etc/systemd/system/multi-user.target.wants/my-demo.service'
-
-输出表明，注册的过程实际上就是将服务链接到/etc/systemd/system/目录下。
-
-至此服务已经创建完成。重新启动系统，会发现/tmp/date文件已经生成，服务在开机时启动成功。当然本例当中的test.sh文件可以换成任意的可执行文件作为服务的主体，这样就可以实现各种各样的功能。
+至此服务已经创建完成。重新启动系统，会发现`/tmp/date`文件已经生成，服务在开机时启动成功。当然本例当中的`test.sh`文件可以换成任意的可执行文件作为服务的主体，这样就可以实现各种各样的功能。
 
 
 
@@ -211,8 +213,8 @@ Step4：将my-demo.service注册到系统当中并设置开机自启动执行命
 
 #查看SSHD服务是否启动
 
-*systemctl status sshd*
+`systemctl status sshd`
 
-请注意，如果已经有enabled标记，表示该服务会开机自启动。如果是disabled 则表示不会开机自启动，需要执行如下指令设置开机自启动：
+请注意，如果已经有**enabled**标记，表示该服务会开机自启动。如果是**disabled** 则表示不会开机自启动，需要执行如下指令设置开机自启动：
 
-*systemctl enable sshd*
+`systemctl enable sshd`
