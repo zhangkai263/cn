@@ -3,12 +3,15 @@
 
 下文以Windows Server 2012 R2 标准版操作系统为例，介绍具体操作步骤：
 
-1. 登录Windows实例后，右键点击左下角的**开始**按钮，在弹出的菜单中选择**磁盘管理**，弹出磁盘管理窗口，选择磁盘及对应的分区形式后，单击确定按钮；<br>
+1. 登录Windows实例后，右键点击左下角的**开始**按钮，在弹出的菜单中选择**磁盘管理**，弹出磁盘管理窗口，选择磁盘及对应的分区形式后，单击确定按钮。<br>
+   数据盘支持创建GPT分区和MBR分区，其中：
+    * GPT：可识别大于2 TiB的分区，最多可创建128个主分区。
+    * MBR：只可识别不超过2 TiB的分区，最多可创建4个主分区。
 <div align="center">
 <img src="../../../../image/vm/Getting-Start-Windows-FileSystem-1.png" width="700">
 </div>
 
-
+   
 2. 选择未分配的磁盘，右键单击**新建简单卷**；<br>
 <div align="center">
 <img src="../../../../image/vm/Getting-Start-Windows-FileSystem-2.png" width="700">
