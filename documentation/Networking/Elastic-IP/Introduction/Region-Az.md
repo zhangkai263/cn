@@ -12,7 +12,7 @@
 ## 相关参考
 - [使用限制](Restrictions.md)
 - [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
-- [价格总览](Pricing/Price-Overview.md)
+- [价格总览](../Pricing/Price-Overview.md)
 - [常见问题](../FAQ/FAQ.md)
 
 
