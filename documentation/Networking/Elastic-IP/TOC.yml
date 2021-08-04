@@ -2,7 +2,9 @@ name: 弹性公网 IP
 href: 
   items:
   - name: 产品动态
-    href: Related-Resources/Release-Records.md
+    items: 
+      - name: 文档历史记录
+        href: Related-Resources/Release-Records.md
   - name: 产品简介
     items:
       - name: 产品概述
