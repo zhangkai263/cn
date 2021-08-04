@@ -3,7 +3,7 @@
 
 使用 Windows Server 2012系统，在安装 .NET Framework 3.5.1 时报错，报错内容如下图所示：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows2012%E5%AE%89%E8%A3%85.NET%20Framework%203.5.1%E6%8A%A5%E9%94%99%E6%89%BE%E4%B8%8D%E5%88%B0%E6%BA%90%E6%96%87%E4%BB%B601.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows2012%E5%AE%89%E8%A3%85.NET%20Framework%203.5.1%E6%8A%A5%E9%94%99%E6%89%BE%E4%B8%8D%E5%88%B0%E6%BA%90%E6%96%87%E4%BB%B601.png)
 
 **问题原因：**
 
