@@ -73,7 +73,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/{appId}
 ## 请求示例
 GET
 ```
-https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6c7?userRoomId=userRoomId1&filters.1.name=status&filters.1.values.1=1&filters.1.operator=eq&pageNumber=1&pageSize=10
+https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/692bc3400134a7b1ad4578a7c16?userRoomId=userRoomId1&filters.1.name=status&filters.1.values.1=1&filters.1.operator=eq&pageNumber=1&pageSize=10
 
 ```
 
@@ -86,7 +86,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
     "result": {
         "content": [
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "1cdaf4bd-ab37-4a54-81a8-3da9a9c6c1f1", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId125", 
@@ -96,7 +96,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "fbddd50e-bfc9-4170-a371-58957081724f", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId117", 
@@ -106,7 +106,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "23d6b65e-4c4c-4f01-9c05-97764be9bd39", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId18", 
@@ -116,7 +116,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "c8b56bbf-cb47-4055-b935-a27b299b20f5", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId15", 
@@ -126,7 +126,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "d71f95ed-0c71-4f37-b2ea-9abf097b3ffd", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId16", 
@@ -136,7 +136,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "079b8d9b-601b-4a68-89e8-17bb590206fa", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId13", 
@@ -146,7 +146,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "45e430ad-3c21-46f5-8680-872220e22ec1", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId14", 
@@ -156,7 +156,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "a5f884f5-cbeb-4a1f-b63c-fe374fa47c6e", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId12", 
@@ -166,7 +166,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "10dead53-197f-4199-8c31-09687bb9c7c4", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId128", 
@@ -176,7 +176,7 @@ https://openjrtc.jdcloud-api.com/v1/describeRoomUsers/292bc340011234a7b1ad1ea7c6
                 "userRoomId": "userRoomId1"
             }, 
             {
-                "appId": "292bc340011234a7b1ad1ea7c6c7", 
+                "appId": "692bc3400134a7b1ad4578a7c16", 
                 "connectId": "3767d9e6-f130-4997-b8e7-03b5f55ba06d", 
                 "joinTime": "2021-06-28T07:50:45Z", 
                 "nickName": "wahahauserRoomId120", 

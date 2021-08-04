@@ -43,7 +43,7 @@ Kernel \r on an \m
 [root@localhost ~]# vi /etc/yum.conf
 ```
 
-![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作01.png)
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作01.png)
 
 ​	4、在[main]的后面加入如下内容：
 
@@ -51,7 +51,7 @@ Kernel \r on an \m
 exclude=kernel*
 ```
 
-![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作02.png)
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作02.png)
 
 ​	5、按下Esc，输入下面命令进行保存：wq。
 
@@ -72,10 +72,11 @@ CentOS release 6.8 (Final)
 Kernel \r on an \m
 ```
 
-![](C:\guanfagnwendang\cn\image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作03.png)
+![](../../../../../image\Elastic-Compute\Virtual-Machine\Linux\Linux系统升级时不升内核操作03.png)
 
 可以看到yum update后系统版本升级了，内核版本没有升级。如果同时要禁止升级系统，则在其 [main] 部分末尾增加 “exclude=kernel centos-release”。
 
 
 
 如无法解决您的问题，请向我们提工单。
+

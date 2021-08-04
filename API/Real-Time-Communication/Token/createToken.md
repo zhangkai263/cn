@@ -59,8 +59,8 @@ https://openjrtc.jdcloud-api.com/v1/createToken
     "error": null, 
     "requestId": "10-12-212-116-2561fbd6-23cb-4697-8379-7cbb762ee9c3", 
     "result": {
-        "appId": "febf9a1401763b0e14739c4be622", 
-        "appKey": "nfBFR+ZuFXyF98Anu9eD8smheI+kaTT1gYQWLmbQFpjVfOIAoKIeiIF6L2X0FU4BvwL6B4wtqyh2A==", 
+        "appId": "febf9a1401233b0e4739cbe622", 
+        "appKey": "nfBFR+ZuFXyF988smheI+kaTT112bQFpjVfOIAoKIeiIF6L2X0FU4BvwL6B4wtqy2A=", 
         "available": true, 
         "nonce": "AK-3643dc5a-def9-11eb-961a-fa163e94c6c2", 
         "timestamp": 3243435465788, 

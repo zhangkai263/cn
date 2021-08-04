@@ -66,13 +66,13 @@ Windows 服务器默认提供两个用户的免费远程桌面管理授权。如
 
        3. 在页面右上角，选择管理>删除角色。
 
-          ![](D:/%E5%AE%98%E7%BD%91/cn/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E8%AF%8105.png)
+          ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E8%AF%8105.png)
 
        4. 在删除功能和角色窗口，单击下一步，然后再单击下一步。
 
        5. 在向导第三步，取消勾选远程桌面服务，其它默认配置。
 
-          ![](D:/%E5%AE%98%E7%BD%91/cn/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E8%AF%8106.png)
+          ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E8%AF%8106.png)
 
        6. 完成以上操作后重启服务器即可。
 
