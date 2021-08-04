@@ -41,7 +41,7 @@
 
 1.输入命令*vncserver* ，开启 vnc服务。首次启动会要求设置密码，后面可以使用 *vncpasswd* 修改
 
-[![ ](../../../../../image/Elastic-Compute/Virtual-Machine/Linux/Ubuntu%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E5%92%8Cvnc06.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Linux/Ubuntu%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E5%92%8Cvnc06.png)
 
 2.备份原有 xstartup 文件，执行命令：
 
