@@ -30,3 +30,28 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**409**|STATE|
+
+## 请求示例
+POST
+```
+@Test
+public void testCreateCacheAnalysis() {
+  // 1. 设置请求参数
+  CreateCacheAnalysisRequest request = new CreateCacheAnalysisRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  CreateCacheAnalysisResponse response = redisClient.createCacheAnalysis(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mcc"
+}
+```

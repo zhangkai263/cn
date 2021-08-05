@@ -1,5 +1,5 @@
 # ISO格式镜像转换
-iso是光盘镜像格式，无法直接使用创建虚拟机，下文将介绍如何使用virt-manager使用iso镜像创建虚拟机并制作虚拟机镜像。
+iso是光盘镜像格式，无法直接使用创建虚拟机，下文将介绍如何通过virt-manager使用iso镜像创建虚拟机并制作虚拟机镜像。
 
 ### 1、安装并运行virt-manager
 准备一台支持虚拟化技术的Linux系统主机（物理机或虚拟机均可），执行下述指令进行安装。
@@ -14,7 +14,8 @@ systemctl start libvirtd
 ```
 virt-manager
 ```
-如果您在本地windows系统下通过Xshell等客户端登录linux服务器后发现无法显示virt-manager界面，可尝试通过配置服务器sshd允许X11转发，同时在本地windows下安装Xming来启动X server的方式尝试解决，在此不做详细介绍。
+>注意：<br>
+>如果您在本地windows系统下通过Xshell等客户端登录linux服务器后发现无法显示virt-manager界面，可尝试通过配置服务器sshd允许X11转发，同时在本地windows下安装Xming来启动X server的方式尝试解决，在此不做详细介绍。
 
 ### 2、配置 virt-manager 软件，设置虚机的虚拟硬件配置
 在virt-manager 界面，点击左上角红框中图标打开创建虚机的界面，选择使用iso镜像安装操作系统，随后选择iso镜像文件（以CentOS 7为例）。

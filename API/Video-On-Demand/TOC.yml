@@ -61,6 +61,20 @@ items:
             href: Transcode-Template/updateTranscodeTemplate.md
           - name: 删除转码模板
             href: Transcode-Template/deleteTranscodeTemplate.md
+      - name: 转码模板组管理
+        items:
+          - name: 查询转码模板组列表
+            href: Transcode-Template-Group/listTranscodeTemplateGroups.md
+          - name: 创建转码模板组
+            href: Transcode-Template-Group/createTranscodeTemplateGroup.md
+          - name: 查询转码模板组
+            href: Transcode-Template-Group/getTranscodeTemplateGroup.md
+          - name: 修改转码模板组
+            href: Transcode-Template-Group/updateTranscodeTemplateGroup.md
+          - name: 删除转码模板组
+            href: Transcode-Template-Group/deleteTranscodeTemplateGroup.md
+          - name: 删除转码模板组中的模板
+            href: Transcode-Template-Group/deleteGroupedTranscodeTemplates.md
       - name: 水印管理
         items:
           - name: 添加水印
@@ -97,6 +111,24 @@ items:
             href: Quality-Detection/submitQualityDetectionJob.md
           - name: 批量提交质检作业
             href: Quality-Detection/batchSubmitQualityDetectionJobs.md
+      - name: 视频剪辑工程管理
+        items:
+          - name: 查询视频剪辑工程列表
+            href: Vedit-Project/listVeditProjects.md
+          - name: 创建视频剪辑工程
+            href: Vedit-Project/createVeditProject.md
+          - name: 查询视频剪辑工程
+            href: Vedit-Project/getVeditProject.md
+          - name: 修改视频剪辑工程
+            href: Vedit-Project/updateVeditProject.md
+          - name: 删除视频剪辑工程
+            href: Vedit-Project/deleteVeditProject.md
+      - name: 视频剪辑作业
+        items:
+          - name: 提交视频剪辑作业
+            href: Vedit/submitVeditJob.md
+          - name: 创建视频剪辑作业
+            href: Vedit/createVeditJob.md
       - name: 域名配置
         items:
           - name: 添加域名

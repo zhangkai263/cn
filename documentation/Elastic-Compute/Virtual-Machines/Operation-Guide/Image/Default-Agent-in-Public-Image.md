@@ -3,8 +3,8 @@
 
 受系统升级和组件演进的客观因素影响，早期官方镜像中可能未安装以下组件，建议您核查当前系统的安装情况后逐一完成安装。
 
-    * 提示：
-      ifrit可实现JCS-Agent的自动安装和更新，在导入镜像/镜像组件更新场景下，建议您参照下方指导，在确保云主机内cloud-init和QGA已卸载的前提下，直接安装ifrit。安装完成后最多等待10分钟即可完成JCS-Agent的安装或更新。
+>提示：
+>ifrit可实现JCS-Agent的自动安装和更新，在导入镜像/镜像组件更新场景下，建议您参照下方指导，在确保云主机内cloud-init和QGA已卸载的前提下，直接安装ifrit。安装完成后最多等待10分钟即可完成JCS-Agent的安装或更新。
     
 
 | 组件名称    | 相关进程名称    | 主要功能     | 不安装有何影响    |
@@ -37,14 +37,14 @@ JCS-Agent是京东智联云自研的云主机核心组件，可提供诸如云�
 如果卸载时提示软件未安装，则说明当前系统未做安装，可不用进行后续的配置文件和日志清理。同时建议卸载完成后运行`ps -ef`查看服务是否已清理。
 
 ① cloudinit卸载清理：<br>
-CentOS：`rpm -e cloud-init`、`rm -rf /etc/conf/cloud/*`、`rm -rf /var/lib/cloud/*`<br>
-Ubuntu：` apt-get purge cloud-init`  <br>
-Windows：【控制面板】—【程序】，找到Cloudbase-Init，右键点击卸载
+* CentOS：`rpm -e cloud-init`、`rm -rf /etc/conf/cloud/*`、`rm -rf /var/lib/cloud/*`<br>
+* Ubuntu：` apt-get purge cloud-init`  <br>
+* Windows：【控制面板】—【程序】，找到Cloudbase-Init，右键点击卸载
 
 ② qemu-guest-agent卸载清理：<br>
-CentOS：`rpm -e qemu-guest-agent`、`rm -fr /var/log/qemu-ga` <br>
-Ubuntu：`apt-get purge qemu-guest-agent` <br>
-Windows：【控制面板】—【程序】，找到qemu-guest-agent，右键点击卸载
+* CentOS：`rpm -e qemu-guest-agent`、`rm -fr /var/log/qemu-ga` <br>
+* Ubuntu：`apt-get purge qemu-guest-agent` <br>
+* Windows：【控制面板】—【程序】，找到qemu-guest-agent，右键点击卸载
 
 #### 查看当前软件版本
 通过查看监控插件的版本来获悉JCS-Agent版本号。<br>
@@ -103,7 +103,7 @@ Ifrit是京东智联云自研的轻量、通用的部署运维工具，可实现
 **Linux：** <br>
 * 公网/外网环境执行安装：<br>
 ```
-wget -c http://devops-hb.s3.cn-north-1.jdcloud-oss.com/ifrit/ifrit-agent-external-v0.01.465.534ae3d.20190523181914.bin -O installer && sh installer -- -a jcs-agent-core,jcs-agent-script,jcs-agent-monitor -O /usr/local/share/jcloud/ifrit && rm -f installer
+wget -c http://devops-hb.s3.cn-north-1.jdcloud-oss.com/ifrit/ifrit-agent-external-v0.01.465.534ae3d.20190523181914.bin -O installer && sh installer -- -a jcs-agent-core,jcs-agent-script,jcs-agent-monitor /usr/local/share/jcloud/ifrit && rm -f installer
 ```
 
 * 京东智联云内网环境执行安装：<br>

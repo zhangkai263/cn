@@ -1,0 +1,51 @@
+  name: 优化顾问
+  href: 
+  items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 应用场景 
+        href: Introduction/Application-Scenarios.md    
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+  - name: 入门指南
+    items:
+      - name: 如何使用优化顾问产品
+        href: Getting-Started/Advisor.md
+  - name: 操作指南
+    items:
+      - name: 成本优化管理
+        href: Operation-Guide/Cost-Optimization-Manage.md
+  - name: 最佳实践
+    items:
+    status: 0
+  - name: 问题排查
+    items:
+    status: 0      
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: API参考
+    href:
+    status: 0      
+  - name: SDK参考
+    href:
+    status: 0      
+  - name: 用户协议
+    href:
+    status: 0    
+  - name: 相关资源
+    items:
+    - name: 文档历史记录
+      href: Related-Resources/Document-History.md   
+

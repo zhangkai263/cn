@@ -32,3 +32,28 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+PATCH
+```
+@Test
+public void testModifyBackupPolicy() {
+  // 1. 设置请求参数
+  ModifyBackupPolicyRequest request = new ModifyBackupPolicyRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").backupTime("05:00-06:00 +0800").backupPeriod("Sunday");
+
+  // 2. 发起请求
+  ModifyBackupPolicyResponse response = redisClient.modifyBackupPolicy(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9d57e8vijdogtpo25okjage1bpan3"
+}
+```

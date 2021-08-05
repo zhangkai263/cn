@@ -39,3 +39,36 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetClientList() {
+  // 1. 设置请求参数
+  DescribeClientListRequest request = new DescribeClientListRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeClientListResponse response = redisClient.describeClientList(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o95bwhnfcoh3uqpqowjoouuk4g2m28", 
+    "result": {
+        "ips": [
+            {
+                "clientCount": 3, 
+                "ip": "10.0.5.8"
+            }
+        ]
+    }
+}
+```

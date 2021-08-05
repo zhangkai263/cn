@@ -35,3 +35,31 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetInstanceAnalysisTime() {
+  // 1. 设置请求参数
+  DescribeAnalysisTimeRequest request = new DescribeAnalysisTimeRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeAnalysisTimeResponse response = redisClient.describeAnalysisTime(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mcb", 
+    "result": {
+        "time": "-"
+    }
+}
+```

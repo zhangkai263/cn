@@ -26,9 +26,10 @@
 - 加密的数据库暂不支持跨域备份备份同步
 
 ## 1. 开启TDE加密
-1. 登录RDS控制台，点击实例，进入到 **“安全管理”** 页面
-2. 选择 **“TDE透明数据加密”** ，点击开关，开启实例级别的TDE
-3) 对要开启TDE的数据库，执行以下SQL。 以数据库db1为例
+1. 登录RDS控制台，点击实例，进入到 **安全管理** 页面
+2. 选择 **TDE透明数据加密** ，点击 **开关** 按钮，开启实例级别的TDE
+3. 对要开启TDE的数据库，执行以下SQL。 以数据库db1为例
+
 ```SQL
 USE master
 GO
@@ -51,15 +52,16 @@ GO
 SELECT name FROM sys.databases WHERE is_encrypted = 1
 GO
 SELECT db_name(database_id) as DatabaseName, * FROM sys.dm_database_encryption_keys
-GO 
+GO
 ```
 
 ## 2. 下载TDE证书和获取密钥
 数据库开启TDE后，下载到本地的备份无法直接恢复，必须结合TDE证书和密钥才能恢复到本地SQL Server实例中
 
 1. 在控制台开启TDE后，可以下载TDE的证书。证书可以从内网或者公网中下载。
-2. 点击 **“点击复制”** 可以获取密钥
+2. 点击 **点击复制** 可以获取密钥
 3. 对要恢复的备份，执行以下SQL
+
 ```SQL
 USE master
 GO

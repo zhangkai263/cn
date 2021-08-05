@@ -49,3 +49,45 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetSlowlogs() {
+  // 1. 设置请求参数
+  DescribeSlowLogRequest request = new DescribeSlowLogRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeSlowLogResponse response = redisClient.describeSlowLog(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9oteswcpou221oegepq4mtd4or99c", 
+    "result": {
+        "slowLogs": [
+            {
+                "command": "hgetall post:user1:1234", 
+                "executionTime": "10.58 ms", 
+                "shardId": "redis-1234-shard-0", 
+                "startTime": "2021-07-14T08:09:48Z"
+            }, 
+            {
+                "command": "keys *", 
+                "executionTime": "15.85 ms", 
+                "shardId": "redis-1234-shard-0", 
+                "startTime": "2021-07-14T08:06:20Z"
+            }
+        ], 
+        "totalCount": 2
+    }
+}
+```

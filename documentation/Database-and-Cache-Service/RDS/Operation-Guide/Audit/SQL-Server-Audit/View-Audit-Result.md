@@ -1,4 +1,4 @@
-# 查看审计文件内容
+# 查看审计结果
 
 SQL Server生成的审计文件是二进制格式的，可通过SQL Server内置函数fn_get_audit_file查看，具体步骤如下：
 

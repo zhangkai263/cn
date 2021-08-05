@@ -21,6 +21,13 @@ curl [http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v1.0.0.bin](http
 chmod +x jdcps-agent-v1.0.0.bin<br/>
 sudo ./jdcps-agent-v1.0.0.bin<br/>
 
+说明：基础网络实例安装前准备工作如下：<br/>
+基础网络实例增加路由<br/>
+1、确定内网Gateway地址 route -n <br/>
+查询eth0对应的Gateway地址（eg：10.123.0.1）<br/>
+2、将监控流量引导到内网网关<br/>
+route add -net 100.66.1.0 netmask 255.255.255.0 gw {机器内网网关地址}<br/>
+
 ## 卸载Agent
 
 service jdcpsd stop <br/>

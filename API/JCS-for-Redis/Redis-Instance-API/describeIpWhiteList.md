@@ -35,3 +35,34 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetIpWhiteList() {
+  // 1. 设置请求参数
+  DescribeIpWhiteListRequest request = new DescribeIpWhiteListRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeIpWhiteListResponse response = redisClient.describeIpWhiteList(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9kige7vab8hoac9jqet64kvc0kkug", 
+    "result": {
+        "Ipv6": false, 
+        "ipWhiteList": [
+            "0.0.0.0/0"
+        ]
+    }
+}
+```

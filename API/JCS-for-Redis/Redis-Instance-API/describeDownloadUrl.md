@@ -42,3 +42,37 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetBackupDownloadUrl() {
+  // 1. 设置请求参数
+  DescribeDownloadUrlRequest request = new DescribeDownloadUrlRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").baseId("1234");
+
+  // 2. 发起请求
+  DescribeDownloadUrlResponse response = redisClient.describeDownloadUrl(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9fibpqgf1p17a6pbo13f5e1oc8791", 
+    "result": {
+        "downloadUrls": [
+            {
+                "internalLink": "http://jmiss-redis-backup-hb.s3-internal.cn-north-1.jdcloud-oss.com/redis-1234/20210714153657-backup1-0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4034CAC03D9B83501CDACA21E939B07F%2F20210714%2Fcn-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210714T075241Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=216c79b2eda15af43e12d97e191c8766f22fa0b3c371612deb2dc82e1037481c", 
+                "link": "http://jmiss-redis-backup-hb.s3.cn-north-1.jdcloud-oss.com/redis-1234/20210714153657-backup1-0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4034CAC03D9B83501CDACA21E939B07F%2F20210714%2Fcn-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210714T075241Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=33d74059436e9a808d5c97569bcde885ff106f9daca7824b7973eed1f807a5c2", 
+                "name": "node 0"
+            }
+        ]
+    }
+}
+```
