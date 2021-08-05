@@ -66,7 +66,7 @@ SELinux status:	enabled
 3.使用 vi 等编辑器，编辑 /etc/selinux/config 文件，修改或进行如下设置：
 
 ```shell
-SELINUX=disabled
+#SELINUX=disabled
 ```
 
 4.重启服务器，用以永久禁用SELinux
