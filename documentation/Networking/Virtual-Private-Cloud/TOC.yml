@@ -1,6 +1,8 @@
-﻿  name: 私有网络
-  href:
+name: 私有网络
+href:
   items:
+  - name: 产品动态
+    href: Related-Resources/Release-Records.md
   - name: 产品简介
     items:
       - name: 产品概述
@@ -29,6 +31,8 @@
             href: Introduction/Features/VPC-Peering-Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
+      - name: 地域及可用区
+        href: Introduction/Region-Az.md
       - name: 应用场景
         items:
           - name: 基础业务上云
@@ -41,35 +45,27 @@
             href: Introduction/Application-Scenarios/Multiple-Virtual-Machines-Use-Shared-IpAddress-To-Access-Internet.md
   - name: 产品定价
     items:
-      - name: 计费规则
+      - name: 计费概览
         href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
        - name: 搭建IPv4/IPv6双栈私有网络
          href: Getting-Started/Create-VPC-For-IPv4andIPv6.md
-       - name: 私有网络中创建云主机实例
+       - name: 私有网络中部署云主机
          href: Getting-Started/Create-Virtual-Machine-Instance-In-VPC.md
-       - name: 边缘子网中创建云主机实例
+       - name: 边缘子网中部署云主机
          href: Getting-Started/Create-Virtual-Machine-Instance-In-Edge-Zone.md
-       - name: 标准WEB+APP+DB架构服务部署
-         href: Getting-Started/Standard-WEB-APP-DB-Architectural-Service-Deployment.md
-       - name: 私有网络中云主机与公网互通
-         href: Getting-Started/Virtual-Machine-In-VPC-InterConnect-With-Internet.md
-       - name: 子网业务安全访问控制
+       - name: 基于网络ACL配置子网级别的访问控制
          href: Getting-Started/Subnet-Business-Security-Access-Control.md
-       - name: 主机实例安全组规则配置
+       - name: 基于安全组实现主机级别的访问控制
          href: Getting-Started/Virtual-Machine-Instance-Security-Group-Rule-Configuration.md
        - name: 安全组规则典型配置
          href: Getting-Started/Security-Group-Rules-Typically-Configured.md
-       - name: 多主机共享公网IP
+       - name: 多主机共享公网IP访问公网
          href: Getting-Started/Muitiple-Virtual-Machine-Use-Shared-IpAddress.md
-       - name: 基于子网的策略路由管理
-         href: Getting-Started/Subnet-Based-Policy-Routing-Management.md
-       - name: VPC对等连接
-         href: Getting-Started/VPC-Peering.md
-       - name: 边界网关连通多VPC
+       - name: 使用边界网关实现多VPC互通
          href: Getting-Started/Multiple-VPCs-Interconnection.md
-       - name: NAT实例网关
+       - name: NAT实例网关访问公网
          href: Getting-Started/NAT-Instance-Gateway.md
        - name: VPN镜像网关
          href: Getting-Started/VPN-Mirror-Gateway.md

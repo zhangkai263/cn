@@ -111,6 +111,24 @@ items:
             href: Quality-Detection/submitQualityDetectionJob.md
           - name: 批量提交质检作业
             href: Quality-Detection/batchSubmitQualityDetectionJobs.md
+      - name: 视频剪辑工程管理
+        items:
+          - name: 查询视频剪辑工程列表
+            href: Vedit-Project/listVeditProjects.md
+          - name: 创建视频剪辑工程
+            href: Vedit-Project/createVeditProject.md
+          - name: 查询视频剪辑工程
+            href: Vedit-Project/getVeditProject.md
+          - name: 修改视频剪辑工程
+            href: Vedit-Project/updateVeditProject.md
+          - name: 删除视频剪辑工程
+            href: Vedit-Project/deleteVeditProject.md
+      - name: 视频剪辑作业
+        items:
+          - name: 提交视频剪辑作业
+            href: Vedit/submitVeditJob.md
+          - name: 创建视频剪辑作业
+            href: Vedit/createVeditJob.md
       - name: 域名配置
         items:
           - name: 添加域名

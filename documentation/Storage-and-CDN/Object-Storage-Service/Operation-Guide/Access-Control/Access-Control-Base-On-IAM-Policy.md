@@ -153,7 +153,7 @@ jrn:oss:*:*:bucket_name/key_name
 }
 ```
 
-4. 不限制前缀的只写不读IAM Policy
+4. 限制前缀的只写不读IAM Policy
 
 此Policy表示应用可以对名为app-base-oss的Bucket中完成带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
@@ -172,7 +172,7 @@ jrn:oss:*:*:bucket_name/key_name
     "Version": "3"
 }
 ```
-5. 限制前缀的只写不读IAM Policy
+5. 不限制前缀的只写不读IAM Policy
 
 此Policy表示应用只可以对名为app-base-oss的Bucket进行上传。
 ```

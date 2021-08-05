@@ -1,5 +1,5 @@
 # Windows修改磁盘盘符
-**Windows2008系统：**
+## Windows2008系统：
 
 1.右键点击“开始”菜单里的“计算机”，在弹出的菜单的“管理”
 
@@ -15,11 +15,13 @@
 
 ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E7%9B%98%E7%AC%A604.png)
 
+
 4.若更改的磁盘正在被系统使用，那么修改需要重启服务器后才能生效，您可以在业务低峰时期重启服务器使得配置生效。
 
-**Windows2012系统：**
+## Windows2012系统：
 
 1.右键左下角开始，选择磁盘管理。
+
 
 ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E7%9B%98%E7%AC%A605.png)
 
@@ -33,6 +35,8 @@
 
 ![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E4%BF%AE%E6%94%B9%E7%A3%81%E7%9B%98%E7%9B%98%E7%AC%A604.png)
 
+
 4.若更改的磁盘正在被系统使用，那么修改需要重启服务器后才能生效，您可以在业务低峰时期重启服务器使得配置生效。
 
 如无法解决您的问题，请向我们提工单。
+

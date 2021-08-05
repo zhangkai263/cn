@@ -17,32 +17,39 @@ items:
             href: Application/describeApps.md
       - name: 用户管理
         items:
-          - name: 创建用户
-            href: User/createUser.md
+          - name: 注册用户
+            href: User/registerUser.md
+          - name: 查询注册用户
+            href: User/describeRegisterUser.md
+          - name: 查询注册用户列表
+            href: User/describeRegisterUsers.md
       - name: 房间管理
         items:
-          - name: 创建房间
-            href: Room/createRoom.md
+          - name: 注册房间
+            href: Room/registerUserRoom.md
           - name: 修改房间
-            href: Room/updateRoom.md
-          - name: 查询房间详情
-            href: Room/describeRoomInfo.md
-          - name: 查询应用下的房间列表
-            href: Room/describeRooms.md
-          - name: 删除房间
-            href: Room/deleteRoom.md
+            href: Room/updateUserRoom.md
+          - name: 查询注册房间详情
+            href: Room/describeUserRoom.md
+          - name: 查询应用下的注册房间列表
+            href: Room/describeUserRooms.md
           - name: 移除房间内所有人员
-            href: Room-User/removeAllRoomUsers.md
+            href: Room-User/removeAllUsersByUserRoomId.md
           - name: 移除房间内指定人员
-            href: Room-User/removeRoomUser.md
+            href: Room-User/removeUserByUserRoomId.md
       - name: 消息管理
         items:
           - name: 发送自定义信令消息给房间
-            href: Message/sendMessageToRoom.md
+            href: Message/postMessageToUserRoom.md
           - name: 发送自定义信令消息给房间内的指定人员
-            href: Message/sendMessageToUser.md
+            href: Message/postMessageToUser.md
       - name: 查询统计
         items:
-          - name: 查询房间实时在线人数
-            href: Room-User/describeRoomOnlineUserNum.md
-
+          - name: 房间人数统计
+            href: Room-User/describeRoomUsersNum.md
+          - name: 查询房间人员记录
+            href: Room-User/describeRoomUsers.md
+      - name: token管理
+        items:
+          - name: 生成token
+            href: Token/createToken.md

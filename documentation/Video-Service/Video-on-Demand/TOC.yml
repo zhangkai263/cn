@@ -55,8 +55,10 @@ items:
       items:
         - name: 文件上传回调
           href: Developer-Guide/File-Upload-Complete.md
-        - name: 视频转码回调
+        - name: 转码流完成回调
           href: Developer-Guide/Stream-Transcode-Complete.md
+        - name: 视频剪辑完成回调
+          href: Developer-Guide/Vedit-Complete.md
 - name: 上传SDK
   items:
     - name: AWS原生SDK上传

@@ -1,12 +1,13 @@
 # Linux系统配置yum源和ntpd服务 
 
-**一.配置yum源：**
+## 一.配置yum源：
 
 **1.Centos7系统：**
 
-执行*vi /etc/yum.repos.d/CentOS-Base.repo*
+执行`vi /etc/yum.repos.d/CentOS-Base.repo`
 ，将原有内容替换为如下内容：
 
+```
 [base]
 name=CentOS-$releasever - Base - mirrors.jdcloudcs.com
 baseurl=http://mirrors.jdcloudcs.com/centos/$releasever/os/$basearch/
@@ -38,14 +39,14 @@ baseurl=http://mirrors.jdcloudcs.com/centos/$releasever/contrib/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=http://mirrors.jdcloudcs.com/centos/RPM-GPG-KEY-CentOS-7
-
+```
 wq保存文件退出。
 
 **2.Centos6系统：**
 
-执行*vi /etc/yum.repos.d/CentOS-6.repo*
+执行`vi /etc/yum.repos.d/CentOS-6.repo`
 ，将原有内容替换为如下内容：
-
+```
 [base]
 name=CentOS-$releasever - Base - mirrors.jdcloudcs.com
 baseurl=http://mirrors.jdcloudcs.com/centos/$releasever/os/$basearch/
@@ -77,14 +78,14 @@ baseurl=http://mirrors.jdcloudcs.com/centos/$releasever/contrib/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=http://mirrors.jdcloudcs.com/centos/RPM-GPG-KEY-CentOS-6
-
+```
 wq保存文件退出。
 
 **3.Ubantu系统：**
 
-执行*vi /etc/apt/sources.list*
+执行`vi /etc/apt/sources.list`
 ，将原有内容替换为如下内容：
-
+```
 deb http://mirrors.jdcloudcs.com/ubuntu/ xenial main restricted
 
 deb http://mirrors.jdcloudcs.com/ubuntu/ xenial-updates main restricted
@@ -104,15 +105,15 @@ deb http://mirrors.jdcloudcs.com/ubuntu/ xenial-security main restricted
 deb http://mirrors.jdcloudcs.com/ubuntu/ xenial-security universe
 
 deb http://mirrors.jdcloudcs.com/ubuntu/ xenial-security multiverse
-
+```
 wq保存文件退出。
 
-**二.配置ntpd服务：**
+## 二.配置ntpd服务：
 
 **1.调整ntpd配置文件：**
 
-执行*vi /etc/ntp.conf*，将原有内容替换为如下内容：
-
+执行`vi /etc/ntp.conf`，将原有内容替换为如下内容：
+```
 driftfile /var/lib/ntp/drift
 
 pidfile /var/run/ntpd.pid
@@ -139,20 +140,22 @@ server ntp.jdcloudcs.com iburst minpoll 4 maxpoll 10
 
 fudge ntp.jdcloudcs.com stratum 2
 
+```
+
 wq保存文件退出。
 
 **2.启动ntpd服务：**
 
-执行*services ntpd start*（Centos6系统）
+执行`services ntpd start`（Centos6系统）
 
-执行*systemctl start ntpd*（Centos7系统）
+执行`systemctl start ntpd`（Centos7系统）
 
-执行*services ntpd start*（Ubantu系统）
+执行`services ntpd start`（Ubantu系统）
 
 **3.设置开机自启动服务：**
 
-执行*chkconfig ntpd on*（Centos6系统）
+执行`chkconfig ntpd on`（Centos6系统）
 
-执行*systemctl enable ntpd*（Centos7系统）
+执行`systemctl enable ntpd`（Centos7系统）
 
-执行*chkconfig ntpd on*（Ubantu系统，需要先apt-get install chkconfig进行安装）
+执行`chkconfig ntpd on`（Ubantu系统，需要先`apt-get install chkconfig`进行安装）

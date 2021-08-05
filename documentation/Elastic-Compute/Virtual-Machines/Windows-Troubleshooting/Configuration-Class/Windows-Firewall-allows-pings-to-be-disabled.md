@@ -4,14 +4,15 @@
 
 ## 1.左下角点击开始，打开控制面板。
 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E9%98%B2%E7%81%AB%E5%A2%99%E5%85%81%E8%AE%B8%E7%A6%81%E6%AD%A2ping01.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows防火墙允许禁止端口访问01.png)
 
 ## 2.选择Windows防火墙，高级设置。 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E9%98%B2%E7%81%AB%E5%A2%99%E5%85%81%E8%AE%B8%E7%A6%81%E6%AD%A2ping02.png)
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E9%98%B2%E7%81%AB%E5%A2%99%E5%85%81%E8%AE%B8%E7%A6%81%E6%AD%A2ping03.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows防火墙允许禁止端口访问02.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows防火墙允许禁止端口访问03.png)
 
 ## 3.左侧栏选择入站规则，中间栏双击选择文件和打印机共享（回显请求 - ICMPv4-In）。 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E9%98%B2%E7%81%AB%E5%A2%99%E5%85%81%E8%AE%B8%E7%A6%81%E6%AD%A2ping04.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows防火墙允许禁止端口访问04.png)
 
 ## 4.常规，操作，选择允许/阻止连接，来设置允许/禁止ping，确定即可生效。 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E9%98%B2%E7%81%AB%E5%A2%99%E5%85%81%E8%AE%B8%E7%A6%81%E6%AD%A2ping05.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows防火墙允许禁止端口访问05.png)
+

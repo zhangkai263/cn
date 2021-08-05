@@ -1,8 +1,7 @@
 # 查看账号信息
 
-（如果您使用的是京东账号，请参考[《京东账号管理》](../../../documentation/User-Service/Account-Management/Manage-JD-Account.md) 进行操作。）
+登录京东云后，可以通过账户管理-[基本资料](https://uc.jdcloud.com/account/basic-info)页面查看账号信息：
 
-登录京东云后，可以通过 “账户管理 - 基本资料” 页面查看账号信息：
 - 账号名：注册或京东账号升级时由用户设置，用于登录。账号名不支持修改
 - 账号ID：账号标识，用于 IAM 授权（参考 [IAM 帮助文档](https://docs.jdcloud.com/iam)）。账号ID不支持修改
 - PIN (客户识别码)：账号的系统标识，一些 OpenAPI 中可能会要求传递 pin 参数（例如 [shareImage](https://docs.jdcloud.com/virtual-machines/api/shareimage?content=API)）。PIN不支持修改

@@ -3,7 +3,7 @@
 
 远程桌面连接显示：发生身份验证错误 要求的函数不受支持。如图：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8101.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8101.png)
 
 **问题原因：**
 
@@ -13,21 +13,21 @@
 
 **解决方法：**
 
-1.客户端在运行中输入*gpedit.msc*，进入本地组策略编辑器。
+1.客户端在运行中输入`gpedit.msc`，进入本地组策略编辑器。
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8102.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8102.png)
 
-2.选择计算机配置>管理模板>系统>凭据分配>加密Oracle修正。
+2.选择【计算机配置】>【管理模板】>【系统】>【凭据分配】>【加密Oracle修正】。
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8103.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8103.png)
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8104.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8104.png)
 
-3.选择启用并选择易受攻击。
+3.选择【已启用】并选择【易受攻击】。
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8105.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E8%BF%9C%E7%A8%8B%E6%8F%90%E7%A4%BA%E5%87%BA%E7%8E%B0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%8105.png)
 
-该问题同样适用于远程登陆云主机后再次输入密码的情况（输入两次密码的问题）：将加密Oracle修正由未配置改为已启用，并将保护级别设置为易受攻击。
+该问题同样适用于远程登陆云主机后再次输入密码的情况（输入两次密码的问题）：将【加密Oracle修正】由【未配置】改为【已启用】，并将保护级别设置为【易受攻击】。
 
 
 

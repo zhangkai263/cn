@@ -42,6 +42,12 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**redisVersion**|String|False| |缓存Redis引擎主次版本号：目前支持2.8和4.0，默认为2.8|
 |**ipv6On**|Integer|False| |是否支持IPv6，0或空表示不支持，1表示支持IPv6，注意不是所有区域都支持IPv6，且必须保证VPC支持IPv6|
 |**shardNumber**|Integer|False| |分片数，自定义分片规格集群版实例必须有，且大于1。每种分片规格支持的分片数可调用describeSpecConfig接口获取|
+|**userTags**|[Tag[]](createcacheinstance#tag)|False| |用户普通标签|
+### <div id="tag">Tag</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|False| |标签的键|
+|**value**|String|False| |标签的值|
 ### <div id="azidspec">AzIdSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -65,3 +71,59 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+import com.google.gson.Gson;
+import com.jdcloud.sdk.auth.StaticCredentialsProvider;
+import com.jdcloud.sdk.service.redis.client.RedisClient;
+import com.jdcloud.sdk.service.redis.model.*;
+import org.junit.Test;
+
+public class JDCloudRedisTest {
+  RedisClient redisClient = RedisClient.builder().credentialsProvider(new StaticCredentialsProvider("accessKeyId", "secretKey")).build();
+
+  @Test
+  public void testCreateInstance() {
+    // 1. 设置请求参数：在华北北京地域，创建总可用内存16G、8分片的集群基础版，4.0，按配置后付费实例
+    CacheInstanceSpec spec = new CacheInstanceSpec();
+    spec.cacheInstanceName("xx系统使用") // 实例名
+        .password("W342azxj") // 实例访问密码
+        .redisVersion("4.0") // 引擎版本：4.0
+        .cacheInstanceClass("redis.s.small.basic") // 单分片规格：2G
+        .shardNumber(8) // 分片数：8
+        .azId(new AzIdSpec().master("cn-north-1a").slave("cn-north-1b")) // 跨可用区部署：主在cn-north-1a，从在cn-north-1b
+        .vpcId("vpc-1234")
+        .subnetId("subnet-1234");
+
+    CreateCacheInstanceRequest request = new CreateCacheInstanceRequest();
+    request.regionId("cn-north-1").cacheInstance(spec);
+
+    // 2. 发起请求
+    CreateCacheInstanceResponse response = redisClient.createCacheInstance(request);
+
+    // 3. 处理响应结果
+    if (response == null) {
+      System.out.println("response is empty");
+    } else if (response.getError() != null) {
+      System.out.println(new Gson().toJson(response.getError()));
+    } else {
+      System.out.println(new Gson().toJson(response.getResult()));
+    }
+  }
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mc1", 
+    "result": {
+        "buyId": "B121116677688212350", 
+        "cacheInstanceId": "redis-uae71bbgsga9", 
+        "orderNum": "12882167725209383"
+    }
+}
+```
