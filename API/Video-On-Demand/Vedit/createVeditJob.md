@@ -19,7 +19,7 @@ https://vod.jdcloud-api.com/v1/veditJobs
 |**description**|String|False| |工程描述|
 |**timeline**|[Timeline](createveditjob#timeline)|True| |时间线信息|
 |**mediaMetadata**|[MediaMetadata](createveditjob#mediametadata)|False| |剪辑合成媒资元数据|
-|**userData**|String|False| |用户数据，JSON格式的字符串|
+|**userData**|String|False| |用户数据，JSON格式的字符串。<br>在Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>|
 
 ### <div id="mediametadata">MediaMetadata</div>
 |名称|类型|是否必需|默认值|描述|
@@ -33,11 +33,11 @@ https://vod.jdcloud-api.com/v1/veditJobs
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**trackType**|String|True| |轨类型。当前只支持 video|
-|**clips**|[MediaClip[]](createveditjob#mediaclip)|False| | |
+|**clips**|[MediaClip[]](createveditjob#mediaclip)|True| |视频剪辑片段。一个Timeline中的所有MediaClip，总共不能超过20个。|
 ### <div id="mediaclip">MediaClip</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**mediaId**|String|True| |素材ID，此处，必须为视频点播媒资的视频ID|
+|**mediaId**|String|True| |素材ID，此处，必须为视频点播媒资的视频ID。<br>一个Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>|
 |**mediaIn**|Integer|False| |素材片段在媒资中的入点|
 |**mediaOut**|Integer|False| |素材片段在媒资中的出点|
 |**timelineIn**|Integer|False| |素材片段在合成时间线中的入点|
