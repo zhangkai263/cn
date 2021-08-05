@@ -55,5 +55,3 @@ vi /etc/passwd
 5.从客户端再次尝试连接服务器。
 
 如无法解决您的问题，请向我们提工单。
-
-SSH-connection-error-session-closed.md
