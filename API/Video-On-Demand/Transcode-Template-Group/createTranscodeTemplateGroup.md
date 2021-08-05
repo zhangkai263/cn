@@ -15,7 +15,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplateGroups
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**groupName**|String|False| |转码模板组名称|
-|**templates**|[GroupedTranscodeTemplateData](createtranscodetemplategroup#groupedtranscodetemplatedata)|False| | |
+|**templates**|[GroupedTranscodeTemplateData[]](createtranscodetemplategroup#groupedtranscodetemplatedata)|False| | |
 
 ### <div id="groupedtranscodetemplatedata">GroupedTranscodeTemplateData</div>
 |名称|类型|是否必需|默认值|描述|
@@ -62,7 +62,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplateGroups
 |---|---|---|
 |**groupId**|String|转码模板组ID|
 |**groupName**|String|转码模板组名称|
-|**templates**|[GroupedTranscodeTemplateData](createtranscodetemplategroup#groupedtranscodetemplatedata)| |
+|**templates**|[GroupedTranscodeTemplateData[]](createtranscodetemplategroup#groupedtranscodetemplatedata)| |
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
 ### <div id="groupedtranscodetemplatedata">GroupedTranscodeTemplateData</div>

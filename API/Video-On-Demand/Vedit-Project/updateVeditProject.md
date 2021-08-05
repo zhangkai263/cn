@@ -22,12 +22,12 @@ https://vod.jdcloud-api.com/v1/veditProjects/{projectId}
 ### <div id="timeline">Timeline</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**trackList**|[MediaTrack[]](updateveditproject#mediatrack)|False| |媒体轨列表，有序，若有重合时间段，则排在后面的媒体轨上的重叠部分将被忽略|
+|**trackList**|[MediaTrack[]](updateveditproject#mediatrack)|True| |媒体轨列表，有序，若有重合时间段，则排在后面的媒体轨上的重叠部分将被忽略|
 ### <div id="mediatrack">MediaTrack</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**trackType**|String|False| |轨类型。当前只支持 video|
-|**clips**|[MediaClip[]](updateveditproject#mediaclip)|False| | |
+|**trackType**|String|True| |轨类型。当前只支持 video|
+|**clips**|[MediaClip[]](updateveditproject#mediaclip)|True| |视频剪辑片段。一个Timeline中的所有MediaClip，总共不能超过20个。 |
 ### <div id="mediaclip">MediaClip</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

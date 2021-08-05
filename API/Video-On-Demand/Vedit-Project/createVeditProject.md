@@ -25,12 +25,12 @@ https://vod.jdcloud-api.com/v1/veditProjects
 ### <div id="mediatrack">MediaTrack</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**trackType**|String|False| |轨类型。当前只支持 video|
-|**clips**|[MediaClip[]](createveditproject#mediaclip)|True| | |
+|**trackType**|String|True| |轨类型。当前只支持 video|
+|**clips**|[MediaClip[]](createveditproject#mediaclip)|True| |视频剪辑片段。一个Timeline中的所有MediaClip，总共不能超过20个。 |
 ### <div id="mediaclip">MediaClip</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**mediaId**|String|True| |素材ID，此处，必须为视频点播媒资的视频ID|
+|**mediaId**|String|True| |素材ID，此处，必须为视频点播媒资的视频ID。<br>一个Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>|
 |**mediaIn**|Integer|False| |素材片段在媒资中的入点|
 |**mediaOut**|Integer|False| |素材片段在媒资中的出点|
 |**timelineIn**|Integer|False| |素材片段在合成时间线中的入点|
@@ -65,11 +65,11 @@ https://vod.jdcloud-api.com/v1/veditProjects
 |名称|类型|描述|
 |---|---|---|
 |**trackType**|String|轨类型。当前只支持 video|
-|**clips**|[MediaClip[]](createveditproject#mediaclip)| |
+|**clips**|[MediaClip[]](createveditproject#mediaclip)|视频剪辑片段。一个Timeline中的所有MediaClip，总共不能超过20个。|
 ### <div id="mediaclip">MediaClip</div>
 |名称|类型|描述|
 |---|---|---|
-|**mediaId**|String|素材ID，此处，必须为视频点播媒资的视频ID|
+|**mediaId**|String|素材ID，此处，必须为视频点播媒资的视频ID。<br>一个Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>|
 |**mediaIn**|Integer|素材片段在媒资中的入点|
 |**mediaOut**|Integer|素材片段在媒资中的出点|
 |**timelineIn**|Integer|素材片段在合成时间线中的入点|

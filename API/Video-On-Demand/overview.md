@@ -87,6 +87,7 @@ v1
 |**updateSnapshotTemplate**|PATCH|修改截图模板|
 |**updateTranscodeTemplate**|PUT|修改转码模板|
 |**updateTranscodeTemplateGroup**|PUT|修改转码模板组|
+|**updateVeditProject**|PUT|修改视频剪辑工程信息|
 |**updateVideo**|PUT|修改视频信息|
 |**updateWatermark**|PUT|修改水印|
 |**videoAudit**|POST|视频审核<br>视频在上传中或者转码中不允许更改视频审核状态，即视频只有在正常或屏蔽状态下才可以调用此接口设置审核状态<br>|
