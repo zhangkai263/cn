@@ -38,10 +38,10 @@
 
    `cat /etc/hosts.deny` 是否存在denyIP地址，当IP地址被加入到该文件中后，该地址将无法登录（防护时间30分钟，30分钟后自动清除）； `vim /etc/hosts.deny` 删除文件内IP地址即可；
 
-   [![ ](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Elastic-Compute/Virtual-Machine/Linux/SSH%E6%97%A0%E6%B3%95%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E6%8E%92%E6%9F%A501.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Elastic-Compute/Virtual-Machine/Linux/SSH无法远程登录排查01.png)
+   ![](../../../../../image/Elastic-Compute/Virtual-Machine/Linux/SSH%E6%97%A0%E6%B3%95%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E6%8E%92%E6%9F%A501.png)
 
    如果删除后再次被加入到`hosts.deny`中，您可以将本地出口IP地址加入到`hosts.allow`中，
 
-   [![ ](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Elastic-Compute/Virtual-Machine/Linux/SSH%E6%97%A0%E6%B3%95%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E6%8E%92%E6%9F%A502.png)](https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Elastic-Compute/Virtual-Machine/Linux/SSH无法远程登录排查02.png)
+   ![](../../../../../image/Elastic-Compute/Virtual-Machine/Linux/SSH%E6%97%A0%E6%B3%95%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E6%8E%92%E6%9F%A502.png)
 
    以上，便是SSH无法远程登录的部分原因，如无法解决您的问题，请向我们提工单

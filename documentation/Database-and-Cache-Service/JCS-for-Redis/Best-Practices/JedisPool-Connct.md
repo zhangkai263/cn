@@ -98,7 +98,7 @@ Jedis连接池底层使用了 Apache Commons Pool 2，相关的类包括：Gener
 
 ###   testWhileIdle、timeBetweenEvictionRunsMillis、minEvictableIdleTimeMillis
 
-由于京东云Redis服务端会主动关闭超过5分钟的空闲连接，因此把testWhileIdle设为true，可以防止连接因服务端执主动关闭，而客户端继续使用导致的异常。同时由于服务端有5分钟空闲连接关闭逻辑，故timeBetweenEvictionRunsMillis与minEvictableIdleTimeMillis不能超过5分钟，否则客户端的连接池空闲连接检测就没有意义了，同时这两个值也不宜设置过小，否则会影响客户端负载，避免连接池大部分时间都在检测空闲连接、新建连接与释放老连接。
+由于京东云Redis服务端会主动关闭超过5分钟的空闲连接，因此把testWhileIdle设为true，可以防止连接因服务端主动关闭，而客户端继续使用导致的异常。同时由于服务端有5分钟空闲连接关闭逻辑，故timeBetweenEvictionRunsMillis与minEvictableIdleTimeMillis不能超过5分钟，否则客户端的连接池空闲连接检测就没有意义了，同时这两个值也不宜设置过小，否则会影响客户端负载，避免连接池大部分时间都在检测空闲连接、新建连接与释放老连接。
 
 ###  numTestsPerEvictionRun
 

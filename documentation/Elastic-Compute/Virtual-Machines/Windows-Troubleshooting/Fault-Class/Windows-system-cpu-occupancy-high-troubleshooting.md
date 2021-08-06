@@ -23,24 +23,26 @@
 
 ### windows2008系统查看方式：
 
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查01.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查01.png)
 
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查02.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查02.png)
 
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查03.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查03.png)
 
 ### windows2012系统查看方式：
 
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查04.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查04.png)
 
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查05.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查05.png)
+
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查06.png)
 
 ### 通过Process Explorer工具查看方式：
 
 微软官方sysinternals工具，下载链接：https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx
 
 该工具非常强大，在检查高CPU问题方面，通过配置正确的Symbols，可以通过检查对应应用程序的线程调用的Call Stack，来定位可能的问题驱动。
-![](../../../../../image\Elastic-Compute\Virtual-Machine\Windows\Windows系统cpu占用高排查07.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows系统cpu占用高排查07.png)
 
 如无法解决您的问题，请向我们提工单。
 

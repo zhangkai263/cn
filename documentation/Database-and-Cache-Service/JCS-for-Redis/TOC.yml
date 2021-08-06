@@ -82,7 +82,7 @@
           - name: Java连接Redis实例
             href: Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md
           - name: Node.js连接Redis实例
-            href: Operation-Guide/Connect/Node.js-Connect-to-Redis-Instance.md
+            href: Operation-Guide/Connect/Node-Connect-to-Redis-Instance.md
           - name: PHP连接Redis实例
             href: Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md
           - name: Python连接Redis实例
