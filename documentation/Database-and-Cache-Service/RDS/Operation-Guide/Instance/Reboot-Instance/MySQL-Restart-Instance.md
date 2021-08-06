@@ -17,4 +17,4 @@
    > * 先从后主重启方式对服务影响时间较短
    > * 先主后从方式适用于数据库服务出现异常的情况
    
-    ![截图](../../../../image/RDS/MySQL-Restart-Instance.png)
+    ![截图](../../../../../../image/RDS/MySQL-Restart-Instance.png)
