@@ -9,6 +9,8 @@
 |资源预留型实例抵扣券产品上线|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2021-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
 |云主机事件服务上线|云主机事件是对接云事件服务，提供的一类系统事件通知功能。事件是针对资源生命周期中平台底层基础设施维护、资源重要属性变更等所发送的一类统一格式的通知。基于事件用户可及时获知资源动态，完善云上业务的自动化运维和监控流程。|2021-03|[事件服务](https://docs.jdcloud.com/cn/virtual-machines/event-overview)
 | CentOS 8.2 镜像发布|全地域支持CentOS 8.2 镜像，丰富操作系统类型。|2021-06|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+|Windows Server 2019 数据中心版 64位 中文版 镜像发布|全地域支持	Windows Server 2019 数据中心版 64位 中文版 镜像，丰富操作系统类型。|2021-07|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+|私有镜像导出控制台入口上线|私有镜像导出功能提供控制台操作入口，方便用户操作，功能目前为灰度，如需使用请工单提交申请。|2021-07|[私有镜像导出](https://docs.jdcloud.com/virtual-machines/export-private-image)
 ## 2020年
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
