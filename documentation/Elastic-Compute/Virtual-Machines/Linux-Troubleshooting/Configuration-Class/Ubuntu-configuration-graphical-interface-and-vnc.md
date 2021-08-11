@@ -4,7 +4,7 @@
 
 ## **安装gnome桌面环境：**
 
-1. 1. 安装x－windows的基础，执行以下命令：
+1. 安装x－windows的基础，执行以下命令：
 
 `*sudo apt-get -y install x-window-system-core*`
 
