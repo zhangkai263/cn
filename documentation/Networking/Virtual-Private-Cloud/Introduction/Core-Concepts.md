@@ -27,5 +27,5 @@
 ## 相关参考
 - [VPC](Features/VPC-Features.md)
 - [产品优势](Benefits.md)
-- [创建VPC](Operation-Guide/VPC-Configuration.md)
+- [创建VPC](../Operation-Guide/VPC-Configuration.md)
 - [地域及可用区](Region-Az.md)
