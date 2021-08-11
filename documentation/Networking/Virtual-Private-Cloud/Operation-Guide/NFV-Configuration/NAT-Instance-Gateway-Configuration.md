@@ -29,5 +29,5 @@
 ## 相关参考
 
 - [NAT实例网关访问公网](../../Getting-Started/NAT-Instance-Gateway.md)
-- [创建云主机](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
+- [创建云主机](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
 - [创建NAT网关](https://docs.jdcloud.com/cn/nat-gateway/create-nat-gateway)
