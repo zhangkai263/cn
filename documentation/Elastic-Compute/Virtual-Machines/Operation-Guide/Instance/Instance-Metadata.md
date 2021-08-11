@@ -7,14 +7,14 @@
 在实例内获取元数据不需要对安全组或网络ACL做任何调整，只要有登录实例的权限，均可获取元数据。另外，如果您在实例内部修改了部分属性，如密码、密钥和hostname，这部分变更不会更新到元数据，可能导致查询结果与实际数据不一致的情况。
 
 ## 元数据信息
-京东智联云现支持以下实例元数据查询：
+京东云现支持以下实例元数据查询：
 | 元数据项                 | 说明                 | 返回示例  |
 | :------------------- | :-------------------|:-----------------|
 | pin |实例所属用户pin|"abcdabdc"|
 | instance-id  |  实例ID| "i-abcdefg123" |
 | instance-type| 实例规格| "g.n3.large" |
 | instance-name |实例名称| "jdcloud-instance" |
-| description | 实例描述 | "京东智联云云主机" |
+| description | 实例描述 | "京东云云主机" |
 | attributes/ssh-keys | 实例绑定的密钥公钥 | "c3NoLXJzYSBBQUFBQ...p2aXJ0"|
 | attributes/activation/KMS| KMS服务器地址，仅windows返回 | "169.254.169.250:1688" |
 | attributes/hostname | 实例hostname | "jdcloud-server.internal" |
