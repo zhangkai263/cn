@@ -41,8 +41,8 @@ CIDR（无类别域间路由，Classless Inter-Domain Routing）是由用户指�
 ## 相关参考
 
 - [子网](https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)
-- [配置VPC](../Operation-Guide/VPC-Configuration.md)
-- [配置子网](../Operation-Guide/Subnet-Configuration.md)
+- [配置VPC](../../Operation-Guide/VPC-Configuration.md)
+- [配置子网](../../Operation-Guide/Subnet-Configuration.md)
 - [使用限制](https://docs.jdcloud.com/cn/virtual-private-cloud/restrictions)
 - [常见问题](../FAQ/FAQ.md)
 
