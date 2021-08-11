@@ -1,5 +1,5 @@
 # Windows带宽占用高的处理
-**导致服务器出带宽占用高的可能原因：**
+## 导致服务器出带宽占用高的可能原因
 
 1.客户正常应用业务访问频繁，正常占用较高带宽。
 
@@ -7,15 +7,15 @@
 
 3.Windows自身服务(更新服务等)可能会占用较高网络流量。
 
-**通过windows资源监视器查看占用出带宽的进程：**
+## 通过windows资源监视器查看占用出带宽的进程
 
 Windows 2008 R2，打开任务管理器 -> 性能 -> 资源监视器 -> 网络， 如下图：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E9%AB%98%E7%9A%84%E5%A4%84%E7%90%8601.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E9%AB%98%E7%9A%84%E5%A4%84%E7%90%8601.png)
 
 Windows 2012 R2，打开任务管理器 -> 性能 -> 资源监视器 -> 网络， 如下图：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E9%AB%98%E7%9A%84%E5%A4%84%E7%90%8602.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E9%AB%98%E7%9A%84%E5%A4%84%E7%90%8602.png)
 
 如果该进程是正常业务进程，确实因为客户端访问量大造成带宽占用高，请酌情考虑购买更多带宽。
 
