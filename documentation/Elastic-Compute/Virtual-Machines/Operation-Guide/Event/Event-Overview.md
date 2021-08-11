@@ -97,16 +97,16 @@
 ## 事件通知详情
 
 云事件服务提供事件订阅功能，可指定事件和资源订阅并设置事件目的地，在短信和邮件等通知途径中，事件详情会以以下形式发送。
-* [实例创建失败](event-overview#SystemFailure.Delete)
-* [系统异常实例迁移](event-overview#SystemFailure.Migrate)
-* [系统异常实例不可用](event-overview#SystemFailure.Fault)
-* [实例停止（资源到期）](event-overview#InstanceExpiration.Stop)
-* [实例删除（资源到期）](event-overview#InstanceExpiration.Delete)
-* [实例停止（资源欠费）](event-overview#AccountArrearage.Stop)
-* [实例删除（资源欠费）](event-overview#AccountArrearage.Delete)
-* [实例状态变更](event-overview#StateChange)
+* [实例创建失败](event-overview#user-content-1)
+* [系统异常实例迁移](event-overview#user-content-2)
+* [系统异常实例不可用](event-overview#user-content-3)
+* [实例停止（资源到期）](event-overview#user-content-4)
+* [实例删除（资源到期）](event-overview#user-content-5)
+* [实例停止（资源欠费）](event-overview#user-content-6)
+* [实例删除（资源欠费）](event-overview#user-content-7)
+* [实例状态变更](event-overview#user-content-8)
 
-<div id="SystemFailure.Delete"></div>
+<div id="user-content-1"></div>
 
 ### 实例创建失败
 * 事件代码：SystemFailure.Delete
@@ -128,7 +128,7 @@
 }
 ```
 
-<div id="SystemFailure.Migrate"></div>
+<div id="user-content-2"></div>
 
 ### 系统异常实例迁移
 * 事件代码：SystemFailure.Migrate
@@ -140,8 +140,8 @@
 	"eventTime": "2021-02-25 06:44:06",
 	"instanceId": "i-bc4****9oh"
 }
-```JSON
 ```
+```JSON
 {
 	"eventAction": "SystemFailure.Migrate",
 	"eventState":"Executed",
@@ -149,7 +149,8 @@
 	"instanceId": "i-bc4****9oh"
 }
 ```
-<div id="SystemFailure.Fault"></div>
+
+<div id="user-content-3"></div>
 
 ### 系统异常实例不可用
 * 事件代码：SystemFailure.Fault
@@ -162,12 +163,12 @@
 }
 ```
 
-<div id="InstanceExpiration.Stop"></div>
+<div id="user-content-4"></div>
 
 ### 实例停止（资源到期）
 * 事件代码：InstanceExpiration.Stop
 * 事件通知说明：此事件会在开始停止和停止完成后发送两条通知，事件详情如下：
-```JSONJSON
+```JSON
 {
 	"eventAction": "InstanceExpiration.Stop",
 	"eventState": "Executing",
@@ -183,7 +184,8 @@
 	"instanceId": "i-l16****r0v"
 }
 ```
-<div id="InstanceExpiration.Delete"></div>
+
+<div id="user-content-5"></div>
 
 ### 实例删除（资源到期）
 * 事件代码：InstanceExpiration.Delete
@@ -204,7 +206,8 @@
 	"instanceId": "i-l16****r0v"
 }
 ```
-<div id="AccountArrearage.Stop"></div>
+
+<div id="user-content-6"></div>
 
 ### 实例停止（资源欠费）
 * 事件代码：AccountArrearage.Stop
@@ -225,7 +228,8 @@
 	"instanceId": "i-l16****r0v"
 }
 ```
-<div id="AccountArrearage.Delete"></div>
+
+<div id="user-content-7"></div>
 
 ### 实例删除（资源欠费）
 * 事件代码：AccountArrearage.Delete
@@ -246,7 +250,8 @@
 	"instanceId": "i-l16****r0v"
 }
 ```
-<div id="StateChange"></div>
+
+<div id="user-content-8"></div>
 
 ### 实例状态变更
 * 事件代码：StateChange
