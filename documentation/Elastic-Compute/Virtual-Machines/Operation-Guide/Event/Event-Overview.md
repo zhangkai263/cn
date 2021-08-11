@@ -6,10 +6,10 @@
 <table>
 	<thead>
     <tr>
-	<th>事件类型</th>
-      	<th>事件名称</th>
-      	<th>事件代码</th>
-        <th>事件描述</th>
+	<th width="100">事件类型</th>
+      	<th width="190">事件名称</th>
+      	<th width="200">事件代码</th>
+        <th width="280">事件描述</th>
         <th>应对建议</th>
     </tr>
 	</thead>
