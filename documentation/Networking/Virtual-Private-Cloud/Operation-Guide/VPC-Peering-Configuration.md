@@ -35,7 +35,7 @@
 
 步骤4：补充完相关信息后，点击【确定】按钮，完成VPC Peering一端创建；
 
-步骤5：VPC对等连接创建完成后，需要配置路由，支持立即配置或稍后配置，本例选择【立即配置】，稍后配置请参考[配置路由策略](route-table-configuration#user-content-2)
+步骤5：VPC对等连接创建完成后，需要配置路由，支持立即配置或稍后配置，本例选择【立即配置】，稍后配置请参考[配置路由策略](Route-Table-Configuration.md)
 
 步骤6：定位本端VPC下的路由表，点击路由表名称进入详情页；
 
@@ -65,5 +65,5 @@
 
 - [VPC对等连接](../Introduction/Features/VPC-Peering-Features.md)
 - [配置路由表](Route-Table-Configuration.md)
-- [使用限制](..//Introduction/Restrictions.md)
+- [使用限制](../Introduction/Restrictions.md)
 - [常见问题](../FAQ/FAQ.md)
