@@ -21,6 +21,6 @@
 
 ## 相关参考
 
-- [配置子网](../Operation-Guide/Subnet-Configuration.md)
+- [配置子网](../../Operation-Guide/Subnet-Configuration.md)
 - [使用限制](../Restrictions.md)
-- [常见问题](../FAQ/FAQ.md)
+- [常见问题](../../FAQ/FAQ.md)

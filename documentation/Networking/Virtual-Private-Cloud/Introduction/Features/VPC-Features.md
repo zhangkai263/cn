@@ -36,14 +36,14 @@ CIDR（无类别域间路由，Classless Inter-Domain Routing）是由用户指�
 - 目前VPC和子网 CIDR 的mask值支持16至28之间的整数。
 - 对于支持IPv6地址的VPC，不支持自定义CIDR，京东云提供固定大小的（/56）IPV6 CIDR
 
-关于CIDR的具体请见：[CIDR简介](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+关于CIDR的具体请见：https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 
 ## 相关参考
 
 - [子网](https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)
-- [配置VPC](../Operation-Guide/VPC-Configuration.md)
-- [配置子网](../Operation-Guide/Subnet-Configuration.md)
+- [配置VPC](../../Operation-Guide/VPC-Configuration.md)
+- [配置子网](../../Operation-Guide/Subnet-Configuration.md)
 - [使用限制](https://docs.jdcloud.com/cn/virtual-private-cloud/restrictions)
-- [常见问题](../FAQ/FAQ.md)
+- [常见问题](../../FAQ/FAQ.md)
 
 

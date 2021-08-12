@@ -210,6 +210,6 @@
 - [创建VPC](VPC-Configuration.md)
 - [子网配置](Subnet-Configuration.md)
 - [使用限制](../Introduction/Restrictions.md)
-- [地域及可用区](Introduction/Region-Az.md)
+- [地域及可用区](../Introduction/Region-Az.md)
 - [常见问题](../FAQ/FAQ.md)
 
