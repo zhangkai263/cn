@@ -1,6 +1,8 @@
 name: 云主机
 href:
 items:
+  - name: 产品动态
+    href: Product-News/Product-News.md
   - name: 产品简介
     items:
       - name: 产品概述
@@ -15,7 +17,7 @@ items:
         href: Introduction/Features.md
       - name: 实例规格类型
         href: Introduction/Instance-Type-Family.md
-      - name: 限制说明
+      - name: 使用限制
         href: Introduction/Restrictions.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
@@ -31,6 +33,10 @@ items:
         href: Pricing/Purchase-Process.md
       - name: 续费流程
         href: Pricing/Renew-Process.md
+      - name: 计费类型转换
+        href: Change-Chage-Type.md
+      - name: 计费FAQ
+        href: Pricing-FAQ.md      
   - name: Linux入门指南
     items:
       - name: 创建前准备
@@ -65,18 +71,18 @@ items:
             href: Operation-Guide/Instance/Lifecycle.md
           - name: 创建实例
             href: Operation-Guide/Instance/Create-Instance.md
+          - name: 查看实例信息
+            href: Operation-Guide/Instance/Query-Instance-Info.md            
           - name: 登录实例
             href: Operation-Guide/Instance/Connect-To-Instance.md
-          - name: 重置密码
-            href: Operation-Guide/Instance/Reset-Password.md
-          - name: 查看实例信息
-            href: Operation-Guide/Instance/Query-Instance-Info.md
           - name: 启动实例
             href: Operation-Guide/Instance/Start-Instance.md
           - name: 停止实例
             href: Operation-Guide/Instance/Stop-Instance.md
-          - name: 重启实例
+          - name: 重启实例          
             href: Operation-Guide/Instance/Reboot-Instance.md
+          - name: 重置密码
+            href: Operation-Guide/Instance/Reset-Password.md            
           - name: 重置系统
             href: Operation-Guide/Instance/Rebuild-Instance.md
           - name: 调整配置
@@ -85,19 +91,19 @@ items:
             href: Operation-Guide/Instance/Modify-Instance-Name.md
           - name: 查找实例
             href: Operation-Guide/Instance/Search-Instance.md
-          - name: 重启动到期/欠费实例
-            href: Operation-Guide/Instance/Restart-Overdue-or-Arrear-Instance.md
-          - name: 实例停机不计费
-            href: Operation-Guide/Instance/uncharged_for_stopped_vm.md    
           - name: 导出实例信息
             href: Operation-Guide/Instance/Export-Instance.md
-          - name: 从按配置转换为包年包月
+          - name: 实例停机不计费
+            href: Operation-Guide/Instance/uncharged_for_stopped_vm.md               
+          - name: 重启动到期/欠费实例
+            href: Operation-Guide/Instance/Restart-Overdue-or-Arrear-Instance.md
+          - name: 按配置转换为包年包月
             href: Operation-Guide/Instance/Switch-from-Postpaid-to-Prepaid.md
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
-          - name: GPU云主机
+          - name: GPU实例
             href: Operation-Guide/Instance/GPU-VM.md
-          - name: vGPU云主机
+          - name: vGPU实例
             href: Operation-Guide/Instance/vGPU-VM.md
           - name: 突发性能型实例
             items: 
@@ -108,17 +114,21 @@ items:
               - name: 创建突发性能型实例
                 href: Operation-Guide/Instance/Burst-Instance/Create-Burst-Instance.md
               - name: 调整性能模式
-                href: Operation-Guide/Instance/Burst-Instance/Modify-Burst-Mode.md             
-          - name: 裸金属云主机
+                href: Operation-Guide/Instance/Burst-Instance/Modify-Burst-Mode.md
+          - name: 裸金属实例
             items: 
-              - name: 裸金属云主机概述
+              - name: 裸金属实例概述
                 href:  Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md
-              - name: 创建裸金属云主机
+              - name: 创建裸金属实例
                 href:  Operation-Guide/Instance/Bare-Metal/Create-BM-Instance.md
-          - name: 自定义数据
-            href: Operation-Guide/Instance/Userdata.md
           - name: 实例元数据
-            href: Operation-Guide/Instance/Instance-Metadata.md            
+            items:     
+              - name: 实例元数据
+                href: Operation-Guide/Instance/Instance-Metadata.md            
+              - name: 自定义数据
+                href: Operation-Guide/Instance/Userdata.md
+              - name: 自定义元数据
+                href: Operation-Guide/Instance/Custom-Metadata.md        
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -127,6 +137,8 @@ items:
             href: Operation-Guide/Instance-Template/Create-Instance-Template.md
           - name: 删除实例模板
             href: Operation-Guide/Instance-Template/Delete-Instance-Template.md
+          - name: 实例模板FAQ
+            href: Operation-Guide/Instance-Template/Instance-Template-FAQ.md        
       - name: 镜像
         items:
           - name: 镜像概述
@@ -163,6 +175,8 @@ items:
             href: Operation-Guide/Image/Cancel-Share-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
+          - name: FAQ
+            href: Operation-Guide/Image/Image-FAQ.md          
       - name: 实例抵扣券
         items:
           - name: 实例抵扣券概述
@@ -171,14 +185,18 @@ items:
             href: Operation-Guide/Instance-Voucher/Price-and-Billing-Rules-of-Instancevoucher.md
           - name: 购买实例抵扣券
             href: Operation-Guide/Instance-Voucher/Purchase-Instancevoucher.md
+          - name: 调整实例抵扣券配置
+            href: Operation-Guide/Instance-Voucher/Resize-Instancevoucher.md
           - name: 续费实例抵扣券
-            href: Operation-Guide/Instance-Voucher/Renew-Instancevoucher.md
-          - name: 调整实例抵扣券
-            href: Operation-Guide/Instance-Voucher/Resize-Instancevoucher.md           
+            href: Operation-Guide/Instance-Voucher/Renew-Instancevoucher.md   
+          - name: 删除实例抵扣券
+            href: Operation-Guide/Instance-Voucher/Delete-Instancevoucher.md               
           - name: 查看抵扣明细
             href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
           - name: 查看预留资源
-            href: Operation-Guide/Instance-Voucher/Reserved-Resources.md             
+            href: Operation-Guide/Instance-Voucher/Reserved-Resources.md
+          - name: 实例抵扣券FAQ
+            href: InstanceVoucher-FAQ.md      
       - name: 存储
         items:
           - name: 存储概述
@@ -205,6 +223,8 @@ items:
             href: Operation-Guide/Storage/Configurate-Delete-Attributes.md
           - name: 云硬盘加密
             href: Operation-Guide/Storage/Encryption-of-Cloud-Disk.md
+          - name: 存储FAQ
+            href: Operation-Guide/Storage/Strorage-Overview.md
       - name: 网络
         items:
           - name: 网络概述
@@ -226,7 +246,9 @@ items:
           - name: 配置弹性网卡删除属性
             href: Operation-Guide/Network/Configurate-ENI-Delete-Attributes.md
           - name: 修改私有网络配置
-            href: Operation-Guide/Network/Modify-VPC-Attribute.md           
+            href: Operation-Guide/Network/Modify-VPC-Attribute.md
+          - name: 网络FAQ
+            href: Operation-Guide/Network/Network-FAQ.md       
       - name: 密钥
         items:
           - name: 密钥概述
@@ -235,6 +257,8 @@ items:
             href: Operation-Guide/Key-Pair/Create-Keypair.md
           - name: 绑定密钥
             href: Operation-Guide/Key-Pair/Bind-Keypair.md
+          - name: 解绑密钥
+            href: Operation-Guide/Key-Pair/Unbind-Keypair.md      
           - name: 删除密钥
             href: Operation-Guide/Key-Pair/Delete-Keypair.md
       - name: 安全组
@@ -259,6 +283,8 @@ items:
             href: Operation-Guide/Security-Group/Configurate-Outbound-Rules.md
           - name: 删除安全组
             href: Operation-Guide/Security-Group/Delete-Security-Group.md
+          - name: 安全组FAQ
+            href: Operation-Guide/Security-Group/Security-Group-FAQ.md          
       - name: 标签
         items:
           - name: 标签概述
@@ -267,10 +293,8 @@ items:
             href: Operation-Guide/Tag/Filter-by-Tag.md
           - name: 编辑标签
             href: Operation-Guide/Tag/Edit-Tag.md
-      - name: 安全
-        items:
-          - name: 开启CC防护
-            href: Operation-Guide/Security/Turn-on-CC-Protection.md
+          - name: 标签FAQ
+            href: Operation-Guide/Tag/Tag-FAQ.md          
       - name: 监控
         items:
           - name: 监控概述
@@ -282,11 +306,13 @@ items:
       - name: 事件
         items:
           - name: 事件通知
-            href: Operation-Guide/Monitoring/Event-Overview.md
+            href: Operation-Guide/Monitoring/Event/Event-Overview.md
       - name: 自动任务策略
         items:
           - name: 自动镜像策略
             href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md                           
+  - name: 性能测试
+    href: Operation-Guide/Performence-Test/Linux-Performance-Test.md
   - name: 最佳实践
     items:
       - name: 安全

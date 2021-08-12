@@ -20,11 +20,29 @@
 * 安全组规则策略始终是“允许”；您无法创建“拒绝”访问的规则。
 * 安全组是有状态的：如果您配置出站规则允许实例向外部发送一个请求，则无论入站安全组规则如何，都将允许该请求的响应流量流入，反之亦然。
 * 您可以随时添加和删除规则。新的安全组策略会自动应用于与安全组相关联的实例。
+## 常用端口
+|端口|服务|说明
+|:---|:---|:---|
+|21|FTP|FTP服务所开放的端口，用于上传、下载文件。
+|22|SSH|SSH端口，用于通过命令行模式或远程连接软件（例如PuTTY、Xshell、SecureCRT等）连接Linux实例。详情请参见使用用户名密码验证[连接Linux实例](http://docs.jdcloud.com/cn/virtual-machines/connect-to-linux-instance)。
+|23|Telnet|Telnet端口，用于Telnet实例
+|25|SMTP|SMTP服务所开放的端口，用于发送邮件。目前若要开放该端口需要提交工单申请。
+|80|HTTP|用于网站服务例如 IIS、Apache、Nginx 等提供对外访问。
+|110|POP3|POP3（邮件协议 3）服务开放的端口。
+|137、138、139|NETBIOS 协议|其中137、138是 UDP 端口，当通过网上邻居传输文件时用这个端口。通过139端口进入的连接试图获得 NetBIOS/SMB 服务。这个协议被用于 Windows 文件和打印机共享和 SAMBA。
+|143|IMAP|用于IMAP（Internet Message Access Protocol）协议，也是电子邮件的接收的协议。
+|443|HTTPS|用于HTTPS服务提供访问功能。HTTPS是一种能提供加密和通过安全端口传输的一种协议。
+|1433|SQL Server|SQL Server	SQL Server的TCP端口，用于供SQL Server对外提供服务。
+|1434|SQL Server|SQL Server	SQL Server的UDP端口，用于向请求者返回SQL Server使用了哪个TCP/IP端口。
+|3306|MySQL|MySQL 数据库的默认端口，用于 MySQL 对外提供服务。
+|3389|Windows Server Remote Desktop Services|Windows Server Remote Desktop Services（远程桌面服务）端口，可以通过这个端口使用软件连接Windows实例。详情请参见[连接Windows实例](http://docs.jdcloud.com/cn/virtual-machines/connect-to-windows-instance)。
+|8080|代理端口|8080端口同80端口，是被用于 WWW 代理服务的，可以实现网页浏览，经常在访问某个网站或使用代理服务器的时候，需要在IP地址后加上“:8080”端口号。另外安装 Apache Tomcat web server 服务后，默认的服务端口即8080。
 
 ## 安全组优先级
 安全组无优先级，当一个实例关联多个安全组联时，将对每个安全组的规则进行聚合生效，根据聚合后的规则确定是否允许访问。
 
-## 安全组使用限制
-* 安全组适用于私有网络环境下的实例； 　　
-* 您可以在每个区域每个私有网络下创建50个安全组，每个安全组双向最多可添加100条规则；
-* 每个实例单块网卡可同时关联5个安全组；
+## 相关参考
+
+[连接Linux实例](http://docs.jdcloud.com/cn/virtual-machines/connect-to-linux-instance)
+
+[连接Windows实例](http://docs.jdcloud.com/cn/virtual-machines/connect-to-windows-instance)
