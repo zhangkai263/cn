@@ -21,3 +21,6 @@
 * 实例外查询<br>
   * 暂不提供控制台查询，OpenAPI接口详见 [describeInstancesCustomData](https://docs.jdcloud.com/virtual-machines/api/describeinstancescustomdata?content=API)。
  
+# 相关参考
+
+[实例元数据](https://docs.jdcloud.com/virtual-machines/instance-metadata)
