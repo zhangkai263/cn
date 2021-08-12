@@ -48,7 +48,6 @@
 |  64G集群版（16分片）|  	redis.s.medium.basic   |   	16   |   	160000   |   	768   |   
 |  128G集群版（16分片）|  	redis.s.large.basic   |   	16   |   	160000   |   	768   |   
 |  256G集群版（16分片）|  	redis.s.xlarge.basic   |   	16   |   	160000   |   	768   |   
-|  512G集群版（16分片）|  	redis.s.2xlarge.basic   |   16   |   	160000   |   	768   |   
 |  64G集群版（32分片）|  	redis.s.small.basic32   |   32   |   	320000   |   	1536   |   
 |  128G集群版（32分片）|  	redis.s.medium.basic    |   32   |   	320000   |   	1536   |   
 |  256G集群版（32分片）|  	redis.s.large.basic	    |   32   |   	320000   |   	1536   |   
