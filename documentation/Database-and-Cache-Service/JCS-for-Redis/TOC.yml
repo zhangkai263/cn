@@ -1,14 +1,16 @@
   name: 云缓存 Redis
   href: 
   items:
+  - name: 产品动态
+    href: Related-Resources/Document-History.md
   - name: 产品简介
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
-      - name: 基础架构
-        href: Introduction/Basic-Infrastructure.md
+      - name: 地域及可用区
+        href: Introduction/Regions-and-AvailabilityZones.md
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品功能
@@ -19,8 +21,6 @@
         href: Introduction/Restrictions.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
-      - name: 新版本特性介绍 
-        href: Introduction/New-version.md 
   - name: 产品定价
     items:
       - name: 计费概述
@@ -34,63 +34,87 @@
       - name: 续费流程
         href: Pricing/Renewal-Process.md
   - name: 入门指南
-    items:
-      - name: 入门指南概述
-        href: Getting-Started/Getting-Started-Overview.md
+    items:          
       - name: 创建实例
         href: Getting-Started/Create-Instance.md
       - name: 连接实例
         href: Getting-Started/Connect-Instances.md
       - name: 命令支持
         href: Getting-Started/Command-Supported.md
+      - name: Redis Proxy特性说明
+        href: Getting-Started/Proxy-Info.md
   - name: 操作指南
     items:
       - name: 登录账号
         href: Operation-Guide/Login.md
       - name: 实例管理
         items:
+          - name: 实例状态
+            href: Operation-Guide/Instance-Management/LifeCycle.md
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Change-Configuration.md
-          - name: 修改密码
-            href: Operation-Guide/Instance-Management/Change-Password.md
-          - name: 更改实例名称
-            href: Operation-Guide/Instance-Management/Modify-Instancename.md      
           - name: 释放实例
             href: Operation-Guide/Instance-Management/Release-Instance.md
-      - name: 备份恢复
-        href: Operation-Guide/Backup-And-Recovery.md
-      - name: 参数修改
-        href: Operation-Guide/Parameter-Modification.md
-      - name: 慢日志查询
-        href: Operation-Guide/SlowLog.md
-      - name: 缓存分析
-        href: Operation-Guide/Cache-Analysis.md
-      - name: 白名单设置
-        href: Operation-Guide/Whitelist.md
+          - name: 免密和修改密码
+            href: Operation-Guide/Instance-Management/Change-Password.md
+          - name: 参数修改
+            href: Operation-Guide/Instance-Management/Modify-Instancename.md      
+          - name: 标签管理
+            href: Operation-Guide/Instance-Management/TagManage.md
+          - name: 导出实例列表
+            href: Operation-Guide/Instance-Management/Export-Instance.md
+          - name: 客户端IP列表
+            href: Operation-Guide/Instance-Management/ClientIPList.md
+          - name: 备份恢复
+            href: Operation-Guide/Backup-And-Recovery.md
+          - name: 白名单设置
+            href: Operation-Guide/Whitelist.md
+      - name: 连接实例
+        items:
+          - name: 公网连接Redis实例
+            href: Operation-Guide/Connect/ConnectInstance.md    
+          - name: 使用redis-cli连接Redis实例
+            href: Operation-Guide/Connect/Tool-Redis-CLI.md
+          - name: C/C++连接Redis实例
+            href: Operation-Guide/Connect/CorCplusplus-Connect-to-Redis-Instance.md
+          - name: Golang连接Redis实例
+            href: Operation-Guide/Connect/Golang-Connect-to-Redis-Instance.md
+          - name: Java连接Redis实例
+            href: Operation-Guide/Connect/Java-Connect-to-Redis-Instance.md
+          - name: Node.js连接Redis实例
+            href: Operation-Guide/Connect/Node-Connect-to-Redis-Instance.md
+          - name: PHP连接Redis实例
+            href: Operation-Guide/Connect/PHP-Connect-to-Redis-Instance.md
+          - name: Python连接Redis实例
+            href: Operation-Guide/Connect/Python-Connect-to-Redis-Instance.md         
+      - name: 性能分析
+        items:         
+          - name: 慢日志查询
+            href: Operation-Guide/Cache-Analysis/SlowLog.md
+          - name: 缓存分析
+            href: Operation-Guide/Cache-Analysis/Cache-Analysis.md
+          - name: 热key大key
+            href: Operation-Guide/Cache-Analysis/Key-Analysis.md     
       - name: 监控报警
         items:
           - name: 查看监控信息
             href: Operation-Guide/Monitoring/Monitoring.md
+          - name: 监控指标说明
+            href: Operation-Guide/Monitoring/Monitor-Metric.md
           - name: 设置报警规则
             href: Operation-Guide/Monitoring/Alarm-Rules.md   
+          - name: 节点异常监控
+            href: Operation-Guide/Monitoring/Node-Notice.md    
       - name: 数据迁移
         href: Operation-Guide/Data-Migration.md   
   - name: 最佳实践
     items:
-      - name: C/C++连接Redis实例
-        href: Best-Practices/CorCplusplus-Connect-to-Redis-Instance.md
-      - name: Golang连接Redis实例
-        href: Best-Practices/Golang-Connect-to-Redis-Instance.md
-      - name: Java连接Redis实例
-        href: Best-Practices/Java-Connect-to-Redis-Instance.md
-      - name: Node.js连接Redis实例
-        href: Best-Practices/Node.js-Connect-to-Redis-Instance.md
-      - name: PHP连接Redis实例
-        href: Best-Practices/PHP-Connect-to-Redis-Instance.md
-      - name: Python连接Redis实例
-        href: Best-Practices/Python-Connect-to-Redis-Instance.md
-      - name: 公网连接Redis实例
-        href: Best-Practices/Public-Network-Connect-to-Redis-Instance.md    
+      - name: JedisPool 连接池优化
+        href: Best-Practices/JedisPool-Connct.md
+      - name: “京东到家”上云实践
+        href: Best-Practices/Doc-1.md
+      - name: Redis迁移解决方案
+        href: Best-Practices/Doc-2.md      
   - name: 性能测试
     items:
       - name: 测试环境
@@ -105,7 +129,5 @@
     href: FAQ/FAQ.md     
   - name: 相关资源      
     items:
-       - name: 文档发布历史
-         href: Related-Resources/Document-History.md 
        - name: 服务条款
          href: Related-Resources/Product-Service-Agreement.md

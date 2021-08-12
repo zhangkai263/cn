@@ -161,6 +161,8 @@
   
       - name: 备份管理
         items:
+          - name: 快照备份
+            href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
             items:
             - name: MySQL 创建备份
@@ -231,6 +233,8 @@
             items:
             - name: MySQL 根据时间点恢复
               herf: Operation-Guide/Backup/Recover-To-Point-In-Time/MySQL-Recover-To-Point-In-Time.md
+          - name: 灾备实例
+            href: Operation-Guide/Backup/Disaster-Recovery-Example.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
             

@@ -188,9 +188,9 @@ items:
           - name: 调整实例抵扣券配置
             href: Operation-Guide/Instance-Voucher/Resize-Instancevoucher.md
           - name: 续费实例抵扣券
-            href: Renew-Instancevoucher.md   
+            href: Operation-Guide/Instance-Voucher/Renew-Instancevoucher.md   
           - name: 删除实例抵扣券
-            href: Delete-Instancevoucher.md               
+            href: Operation-Guide/Instance-Voucher/Delete-Instancevoucher.md               
           - name: 查看抵扣明细
             href: Operation-Guide/Instance-Voucher/Check-Usage-of-Instancevoucher.md  
           - name: 查看预留资源

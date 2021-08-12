@@ -8,27 +8,28 @@
 
 ## 2.迁移术语
 
-术语|解释
-:--|:--
-源实例source|迁移的源实例
-目标实例target|迁移的目标实例，即用户购买的京东云 Redis
-云主机自建|用户在京东云服务器上部署的Redis 服务迁移至京东云Redis
-公网自建|用户在外网环境下部署的 Redis 服务迁移至京东云Redis
+| 术语 |  解释  | 
+| :--- | :---  | 
+|  源实例source |  迁移的源实例 | 
+|  目标实例target|迁移的目标实例，即用户购买的京东云 Redis | 
+|  云主机自建|用户在京东云服务器上部署的Redis 服务迁移至京东云Redis | 
+|  公网自建|用户在外网环境下部署的 Redis 服务迁移至京东云Redis | 
 
 ## 3.数据迁移说明
 
 云缓存Redis提供数据导入工具(linux 版本) redis-migration-tool，工具支持迁移 Redis 2.8和Redis3.2版本的 AOF数据，数据迁移说明如下：
 
 - 先清空目标实例，如果不清空目标实例，数据导入会覆盖原来数据；
+
 - redis-migration-tool 配置文件rmt.conf参数说明：
 
-[source]：源实例/[target]：目标实例
-
-type：类型，有single和aof file两种
-
-redis_auth：redis实例访问密码
-
-servers：服务器地址和端口或者AOF存放路径
+| 术语 |  解释  | 
+| :--- | :---  | 
+|  source   | 源实例 | 
+|  target  |  目标实例 | 
+|  type | 类型，有single和aof file两种 | 
+|  redis_auth | redis实例访问密码 | 
+|  servers  | 服务器地址和端口或者AOF存放路径 | 
  
 实时迁移数据配置示例：
 ```
@@ -59,13 +60,13 @@ servers:
 
 ## 4.使用方式：
 
-1.下载解压[redis-migrate-tool.tar.gz](https://img1.jcloudcs.com/cms/4c5a2fc3-1dc5-468c-89d5-7d38dbc1a5c720180910162509.gz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
+1. 下载解压[redis-migrate-tool.tar.gz](https://jcloud-opmid.s3.cn-north-1.jdcloud-oss.com/redis-migrate-tool.tgz)，内容为迁移工具redis-migrate-tool和配置文件rmt.conf
 
-2.修改配置文件，配置source和target端redis信息(建议配置从节点同步数据)
+2. 修改配置文件，配置source和target端redis信息(建议配置从节点同步数据)
 
-3.运行工具迁移数据，”./redis-migrate-tool -c rmt.conf”(server配置为服务器地址和端口时支持实时同步数据，配置为AOF存放路径时单次同步数据)
+3. 运行工具迁移数据，”./redis-migrate-tool -c rmt.conf”(server配置为服务器地址和端口时支持实时同步数据，配置为AOF存放路径时单次同步数据)
  
-- 注：如果用户key值大的话会发生failover
+**注意**：如果用户key值大的话会发生failover
 
 ## 5.其他迁移
 如需支持更多版本，请联系客服支持

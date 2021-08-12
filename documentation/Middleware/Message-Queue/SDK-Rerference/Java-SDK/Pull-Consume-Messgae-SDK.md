@@ -1,11 +1,13 @@
 # 消费消息（Pull）
 
-在使用消息队列 JCQ SDK消费消息的时候可以进行消息过滤，如果多个consumer在同一consumerGroup下，进行消费实现的集群消费的语义，如果多个consumer分别在不同consumerGroup下，进行消费实现的广播消费的语义。
+在使用消息队列 JCQ SDK消费消息的时候可以进行消息过滤。如果多个consumer在同一consumerGroup下，进行消费实现的集群消费的语义；如果多个consumer分别在不同consumerGroup下，进行消费实现的广播消费的语义。
+
+注意: 如果以重启进程方式拉取消息(例如使用linux的计划任务定时拉取)，每次拉取一条消息，则都会拉同一个partition，若此partition无消息则会一直拉不到，建议将拉取逻辑放到循环里，在进程内循环拉取。
 
 ## 可配置参数
 | 参数             | 参数描述                                          |
 | ---------------- | ------------------------------------------------- |
-| filterExpression | 可以设置consumer接收消息的标签（tag），暂时为一条 |
+| filterExpression | 可以设置consumer接收消息的标签（tag），只支持设置一个标签 |
 
 ## 手动ack的action
 | ackAction             | 参数描述                                          |

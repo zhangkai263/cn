@@ -11,7 +11,7 @@
 1. 安装环境依赖，见注意事项
 2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
-    ```
+    ```SQL 
     # 查看帮助手册
     ./mysql_backup_extract.py -h
      
@@ -20,7 +20,7 @@
     ```
 3. 下载备份文件
 
-    ```
+    ```SQL
     wget -c '<数据备份下载地址>' -O <自定义备份文件名>.xbstream
 
     -c：启动断点续传
@@ -29,7 +29,7 @@
 
 4. 解压备份数据，解压后的文件会保存在当前目录的子目录 tmp_snapshot 中，假设当前目录为 $HOME。
 
-    ```
+    ```SQL
     ./mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
     
     -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
@@ -37,14 +37,14 @@
 
 5. 恢复解压好的备份文件
 
-    ```
+    ```SQL
     innobackupex --defaults-file=$HOME/tmp_snapshot/backup-my.cnf --apply-log $HOME/tmp_snapshot
-    ``` 
+    ```
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
 6. 修改配置文件 backup-my.cnf
 
-    ```
+    ```SQL
     # The MySQL server
     [mysqld]
     innodb_checksum_algorithm=innodb
@@ -62,19 +62,19 @@
 
 7. 修改文件属主，并确定文件所属为 MySQL 用户
 
-    ```
+    ```SQL
     chown -R mysql:mysql $HOME/tmp_snapshot
     ```
 
 8. 启动 Percona 进程
 
-    ```
+    ```SQL
     mysqld --defaults-file=$HOME/tmp_snapshot/backup-my.cnf --user=mysql --datadir=$HOME/tmp_snapshot --socket=$HOME/tmp_snapshot/mysql.sock &
     ```
 
 9. 登录 Percona 数据库
 
-    ```
+    ```SQL
     mysql -uroot -p --socket=$HOME/tmp_snapshot/mysql.sock
     ```
 

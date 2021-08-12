@@ -39,6 +39,8 @@
         href: Getting-Started/Create-ES.md
       - name: 访问集群
         href: Getting-Started/accesscluster.md
+      - name: 多可用区部署说明
+        href: Getting-Started/MultiAZ-ES.md
       - name: 管理数据
         items:
         - name: 管理数据概述
