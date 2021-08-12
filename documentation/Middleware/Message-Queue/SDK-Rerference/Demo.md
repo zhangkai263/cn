@@ -1,11 +1,10 @@
 # Demo示例
 ## Demo下载
 
-- 消息队列 JCQ Java demo示例：[jcq-sdk-demo.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-sdk-demo-20210716update.zip)
-- Spring框架下消息队列 JCQ的集成，请参考demo示例：[jcq-spring-demo.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-spring-demo-20210716update.zip)
-- Spring Boot框架下消息队列 JCQ的集成，请参考demo示例：[jcq-springboot-demo.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-springboot-demo-20210716update.zip)
-- 消息队列 JCQ PHP 参考demo示例：[jcq-php-demo.zip](../../../../image/Internet-Middleware/Message-Queue/PHP_Demo.zip)
-- Http方式访问，请参考java demo示例：[jcq-http-demo.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-http-demo-20210716update.zip)
+- 消息队列 JCQ Java demo示例：[jcq-skd-demo-v1.0.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-skd-demo-v1.0.zip)
+- Spring框架下消息队列 JCQ的集成，请参考demo示例：[jcq-spring-demo-v1.0.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-spring-demo-v1.0.zip)
+- 消息队列 JCQ PHP 参考demo示例：[jcq-php-demo-v1.0.zip](../../../../image/Internet-Middleware/Message-Queue/PHP_Demo.zip)
+- Http方式访问，请参考java demo示例：[jcq-http-demo-v1.0.zip](../../../../image/Internet-Middleware/Message-Queue/jcq-http-demo-v1.0.zip)
 
 
 
