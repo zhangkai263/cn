@@ -76,9 +76,9 @@ items:
     href: Elastic-Ip--Level-Agreements-X-SLA.md 
   - name: 共享带宽包服务协议
     href: Shared-Bandwidth-Package-Service-Clause.md
-  - name: IP高防服务协议
+  - name: DDoS IP高防服务协议
     href: IP-High-Protection-Clause.md
-  - name: IP高防服务等级协议（SLA）
+  - name: DDoS IP高防服务等级协议（SLA）
     href: IP-High-Level-Of-Service-Agreement-SLA.md
   - name: Web应用防火墙服务协议
     href: Web-Application-Firewall-Service-Terms-Of-Service.md 
