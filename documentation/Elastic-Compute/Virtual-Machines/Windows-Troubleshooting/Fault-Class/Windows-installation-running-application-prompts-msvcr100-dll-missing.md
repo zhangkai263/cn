@@ -3,7 +3,7 @@
 
 Windows系统安装运行应用程序时，提示无法启动此程序，因为计算机丢失msvcr100.dll，如图：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8F%90%E7%A4%BAmsvcr100.dll%E4%B8%A2%E5%A4%B101.png)
+![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/Windows%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8F%90%E7%A4%BAmsvcr100.dll%E4%B8%A2%E5%A4%B101.png)
 
 **问题原因：**
 
