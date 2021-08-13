@@ -427,8 +427,6 @@ items:
         href: Linux-Troubleshooting/Fault-Class/SSH-login-time-report-User-root-not-allowed-because-not-listed-in.md
       - name: SSH 连接时出现如下错误：error Could not get shadow infromation for root
         href: Linux-Troubleshooting/Fault-Class/SSH-connection-error.md
-      - name: SSH 连接时出现如下错误：pam_limits(sshd：session)：could not sent limit for 'nofile'
-        href: Linux-Troubleshooting/Fault-Class/SSH-connection-Error.md
       - name: SSH 连接时出现如下错误：pam_unix(sshdsession) session closed for user
         href: Linux-Troubleshooting/Fault-Class/SSH-connection-error-session-closed.md
       - name: SSH 登录时出现如下错误：Disconnected：No supported authentication methods available
