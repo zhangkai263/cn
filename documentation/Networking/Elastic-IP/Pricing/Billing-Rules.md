@@ -111,5 +111,5 @@
 - [价格总览](Price-Overview.md)
 - [计费类型转换](Change-Billing.md)
 - [续费公网IP](../Operation-Guide/Elastic-IP-Management/Renew-Elastic-IP.md)
-- [常见计费问题](FAQ.md)
+- [常见计费问题](Bill-FAQ.md)
 
