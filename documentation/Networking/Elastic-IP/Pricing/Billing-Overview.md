@@ -22,4 +22,4 @@
 - [价格总览](Price-Overview.md)
 - [计费类型转换](Change-Billing.md)
 - [计费规则](Billing-Rules.md)
-- [常见计费问题](FAQ.md)
+- [常见计费问题](Bill-FAQ.md)
