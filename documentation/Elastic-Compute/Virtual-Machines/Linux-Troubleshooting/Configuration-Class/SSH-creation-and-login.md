@@ -1,7 +1,8 @@
 # SSH创建和登录
 对于Linux主机，SSH 服务可以对所有传输的数据进行加密，提供比传统 telnet 服务更高的安全性。而基于密钥认证的 SSH 自动化登录，在保障安全性的同时，可以简化登录过程，降低运维成本。本文主要对用户自己配置方法进行说明，京东智联云也在控制台提供密钥注入入口，请参考SSH密钥。
 
-**Linux系统云主机密钥配置**
+## Linux系统云主机密钥配置
+
 准备阶段需要用户登录云主机编辑云主机的配置文件，流程为“创建密钥”——“将公钥传入认证文件”——“配置密钥登录文件”——“重启密钥服务”。具体命令如下：
 
 ```shell
@@ -57,7 +58,7 @@ PasswordAuthentication no              #关闭密码认证（可选）
 service sshd restart      #重启sshd服务
 ```
 
-**用户登录**
+## 用户登录
 
 1.Windows用户以SecureCRT登录为例。具体操作如下图：
 
@@ -75,13 +76,7 @@ ssh [–i path][-p port][user@hostname]
 ssh -i /path/to/JD –p 22 root@192.168.0.1
 ```
 
-**更多信息**
+## 更多信息
 
-[Secure Shell：Wikipedia 上关于 SSH 的介绍和讨论](https://en.wikipedia.org/wiki/Secure_Shell?spm=5176.7741493.0.0.dYU3RS)
-
-[OpenSSH Manual Pages：OpenSSH 官方使用手册](www.openssh.com/manual.html?spm=5176.7741493.0.0.dYU3RS)
-
-[RSA：Wikipedia 上关于 RSA 算法的介绍](https://en.wikipedia.org/wiki/RSA_(cryptosystem)?spm=5176.7741492.0.0.K5YDOk)
-
-[DSA：Wikipedia 上关于 DSA 算法的介绍](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm?spm=5176.7741492.0.0.K5YDOk)
+[OpenSSH Manual Pages：OpenSSH 官方使用手册](https://www.openssh.com/manual.html?spm=5176.7741493.0.0.dYU3RS)
 
