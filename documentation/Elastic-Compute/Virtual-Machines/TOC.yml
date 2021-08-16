@@ -196,7 +196,7 @@ items:
           - name: 查看预留资源
             href: Operation-Guide/Instance-Voucher/Reserved-Resources.md
           - name: 实例抵扣券FAQ
-            href: InstanceVoucher-FAQ.md      
+            href: Operation-Guide/Instance-Voucher/InstanceVoucher-FAQ.md      
       - name: 存储
         items:
           - name: 存储概述
