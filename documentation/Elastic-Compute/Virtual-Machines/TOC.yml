@@ -102,9 +102,9 @@ items:
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU实例
-            href: Operation-Guide/Instance/GPU/GPU-VM.md
+            href: Operation-Guide/Instance/GPU-VM.md
           - name: vGPU实例
-            href: Operation-Guide/Instance/GPU/vGPU-VM.md
+            href: Operation-Guide/Instance/vGPU-VM.md
           - name: 突发性能型实例
             items: 
               - name: 突发性能型实例概述
