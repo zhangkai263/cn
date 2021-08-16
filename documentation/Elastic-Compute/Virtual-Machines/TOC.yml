@@ -306,7 +306,7 @@ items:
       - name: 事件
         items:
           - name: 事件通知
-            href: Operation-Guide/Monitoring/Event/Event-Overview.md
+            href: Operation-Guide/Event/Event-Overview.md
       - name: 自动任务策略
         items:
           - name: 自动镜像策略
