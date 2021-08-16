@@ -34,9 +34,9 @@ items:
       - name: 续费流程
         href: Pricing/Renew-Process.md
       - name: 计费类型转换
-        href: Change-Chage-Type.md
+        href: Pricing/Change-Chage-Type.md
       - name: 计费FAQ
-        href: Pricing-FAQ.md      
+        href: Pricing/Pricing-FAQ.md      
   - name: Linux入门指南
     items:
       - name: 创建前准备
