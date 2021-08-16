@@ -19,7 +19,7 @@ CIDR，无类别域间路由（Classless Inter-Domain Routing）是一个用于�
 若要更改内网IPv4地址，则可通过[修改网络配置](Modify-VPC-Attribute.md)实现。
 
 ### 如何在云主机内获取IP地址信息？
-您可以通过[查询实例元数据](../instance/instance-metadata.md)来获取IP地址。若您希望获取内网IP地址，也可通过以下方式获得：
+您可以通过[查询实例元数据](../Instance/Instance-Metadata.md)来获取IP地址。若您希望获取内网IP地址，也可通过以下方式获得：
 * Linux系统
   通过`ifconfig`命令查询
 * Windows系统
