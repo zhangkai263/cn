@@ -36,7 +36,7 @@ items:
       - name: 续费流程
         href: Pricing/Renew-Process.md
       - name: 常见计费问题
-        href: Pricing/FAQ.md      
+        href: Pricing/Bill-FAQ.md      
   - name: 入门指南
     items:
       - name: 云主机使用弹性公网IP
