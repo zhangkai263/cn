@@ -34,9 +34,9 @@ items:
       - name: 续费流程
         href: Pricing/Renew-Process.md
       - name: 计费类型转换
-        href: Change-Chage-Type.md
+        href: Pricing/Change-Chage-Type.md
       - name: 计费FAQ
-        href: Pricing-FAQ.md      
+        href: Pricing/Pricing-FAQ.md      
   - name: Linux入门指南
     items:
       - name: 创建前准备
@@ -102,9 +102,9 @@ items:
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU实例
-            href: Operation-Guide/Instance/GPU-VM.md
+            href: Operation-Guide/Instance/GPU/GPU-VM.md
           - name: vGPU实例
-            href: Operation-Guide/Instance/vGPU-VM.md
+            href: Operation-Guide/Instance/GPU/vGPU-VM.md
           - name: 突发性能型实例
             items: 
               - name: 突发性能型实例概述
@@ -196,7 +196,7 @@ items:
           - name: 查看预留资源
             href: Operation-Guide/Instance-Voucher/Reserved-Resources.md
           - name: 实例抵扣券FAQ
-            href: InstanceVoucher-FAQ.md      
+            href: Operation-Guide/Instance-Voucher/InstanceVoucher-FAQ.md      
       - name: 存储
         items:
           - name: 存储概述
@@ -306,7 +306,7 @@ items:
       - name: 事件
         items:
           - name: 事件通知
-            href: Operation-Guide/Monitoring/Event/Event-Overview.md
+            href: Operation-Guide/Event/Event-Overview.md
       - name: 自动任务策略
         items:
           - name: 自动镜像策略

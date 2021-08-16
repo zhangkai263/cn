@@ -44,7 +44,7 @@
 * 如您不想继续使用按配置计费的实例，请及时[删除实例](../Operation-Guide/Instance/Delete-Instance.md)。
 
 ### 实例抵扣券
-与按配置计费实例配合使用，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的实例的费用抵扣，被抵扣部分将以0元账单方式体现。实例抵扣券将付费和资源创建解耦，其属性决定了可抵扣的实例特征而不限于具体某个或某些实例，因此既可满足有长期资源使用计划时的经济性考量，又可满足保持资源创删灵活的需求。详情请查阅[实例抵扣券](../Operation-Guide/Instance-Voucher/instancevoucher-overview)。
+与按配置计费实例配合使用，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的实例的费用抵扣，被抵扣部分将以0元账单方式体现。实例抵扣券将付费和资源创建解耦，其属性决定了可抵扣的实例特征而不限于具体某个或某些实例，因此既可满足有长期资源使用计划时的经济性考量，又可满足保持资源创删灵活的需求。详情请查阅[实例抵扣券](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview)。
 
 ## 功能限制
 不同计费方式的实例支持不同的功能，详细如下表：
@@ -78,7 +78,7 @@
 
 [实例停机不计费](../Operation-Guide/Instance/uncharged_for_stopped_vm.md)
 
-[实例抵扣券](../Operation-Guide/Instance-Voucher/instancevoucher-overview)
+[实例抵扣券](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview)
 
 
 

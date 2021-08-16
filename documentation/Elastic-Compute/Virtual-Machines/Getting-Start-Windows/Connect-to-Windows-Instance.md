@@ -103,7 +103,7 @@ rdesktop -u administrator -p <实例登录密码> <实例公网IP地址>
 ```
 
 ## 本地为MAC，使用远程桌面登录Windows实例
-以微软官方提供的Remote Desktop为例，示意本地为MAC OS如何远程登录Windows实例。Remote Desktop可以前往[HockeyApp](https://rink.hockeyapp.net/apps/5e0c144289a51fca2d3bfa39ce7f2b06/)下载，下载前请确认当前系统版本是否支持。
+以微软官方提供的Remote Desktop为例，示意本地为MAC OS如何远程登录Windows实例。Remote Desktop可以前往[HockeyApp](https://appcenter.ms/)下载，下载前请确认当前系统版本是否支持。
 
 1. 运行Microsoft Remote Desktop，点击**Add Desktop**。
 

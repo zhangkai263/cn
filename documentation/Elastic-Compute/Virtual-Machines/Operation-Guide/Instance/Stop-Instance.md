@@ -1,6 +1,6 @@
 # 停止实例
 
-如果您需要暂停实例服务或作为其他操作的前置条件，如[重置系统](rebuild-instance.md)及[调整配置](resize-instance.md)等，您可操作停止实例。
+如果您需要暂停实例服务或作为其他操作的前置条件，如[重置系统](https://docs.jdcloud.com/virtual-machines/rebuild-instance)及[调整配置](https://docs.jdcloud.com/virtual-machines/resize-instance)等，您可操作停止实例。
 
 ## 前提条件及限制
 
@@ -11,7 +11,7 @@
 
 * 触发停止操作后实例将进入**停止中**状态，实例将无法进行其他操作。当停止完成后，实例将进入**停止**状态。
 * 对于包年包月计费的实例，停止后不会影响实例及关联资源的计费状态。
-* 对于按配置计费且满足[停机不计费](uncharged_for_stopped_vm.md)的实例，操作停止时可选择是否选择**停机不计费**，设置停机不计费后，**停止**状态的实例不再计费，但关联资源仍正常计费。
+* 对于按配置计费且满足[停机不计费](https://docs.jdcloud.com/virtual-machines/uncharged_for_stopped_vm)的实例，操作停止时可选择是否选择**停机不计费**，设置停机不计费后，**停止**状态的实例不再计费，但关联资源仍正常计费。
 
 >请注意：<br> 1、停止操作会造成您业务中断，还请谨慎操作；<br>2、选择停机不计费并成功停止后的实例，其vCPU、内存、GPU资源将释放，本地数据盘数据将被清空，后续启动时受当时库存限制，可能存在库存不足导致无法启动的情况，还请谨慎操作。
 
@@ -30,8 +30,8 @@
 
 ## 相关参考
 
-[重置系统](rebuild-instance.md)
+[重置系统](https://docs.jdcloud.com/virtual-machines/rebuild-instance)
 
-[调整配置](resize-instance.md)
+[调整配置](https://docs.jdcloud.com/virtual-machines/resize-instance)
 
-[实例停机不计费](uncharged_for_stopped_vm.md)
+[实例停机不计费](https://docs.jdcloud.com/virtual-machines/uncharged_for_stopped_vm)

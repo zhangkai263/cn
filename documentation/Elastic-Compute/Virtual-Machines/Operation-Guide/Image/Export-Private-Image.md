@@ -41,7 +41,7 @@
 
 >注意：<br>
 
->1、将模板中```3241xxxx0385```替换为您的账号ID，账号ID在 [账户基本信息](https://uc.jdcloud.com/account/basic-info) 中查看;<br> 2、将模板中```image-export-bucket```替换为您期望存镜像文件的bucket名称，如有多个地域Bucket需要授权访问，可按此格式直接追加。
+>1、将模板中`3241xxxx0385`替换为您的账号ID，账号ID在 [账户基本信息](https://uc.jdcloud.com/account/basic-info) 中查看;<br> 2、将模板中`image-export-bucket`替换为您期望存镜像文件的bucket名称，如有多个地域Bucket需要授权访问，可按此格式直接追加。
 
 >1、将模板中`3241xxxx0385`替换为您的账号ID，账号ID在 [账户基本信息](https://uc.jdcloud.com/account/basic-info) 中查看;<br> 
 >2、将模板中`image-export-bucket`替换为您期望存镜像文件的bucket名称，如有多个地域Bucket需要授权访问，可按此格式直接追加。
