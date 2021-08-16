@@ -78,7 +78,7 @@
 
 [实例停机不计费](../Operation-Guide/Instance/uncharged_for_stopped_vm.md)
 
-[实例抵扣券](../Operation-Guide/Instance-Voucher/instancevoucher-overview)
+[实例抵扣券](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview)
 
 
 
