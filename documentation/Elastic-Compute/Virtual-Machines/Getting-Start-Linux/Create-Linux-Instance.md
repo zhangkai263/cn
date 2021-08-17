@@ -1,7 +1,7 @@
 # 创建Linux实例
-1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东智联云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。
+1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。
 
-2. 选择创建实例所属地域，点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东智联云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
+2. 选择创建实例所属地域，点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
 ![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-Region.png)
 
 3. 选择计费模式：包年包月和按配置计费，包年包月按一个整月进行购买付费，按配置计费按照实际使用的时长（精确至秒）每小时进行扣费。关于两种计费方式的区别，请参见[计费规则](../Pricing/Billing-Rules.md)。
@@ -17,9 +17,9 @@
 	
 	此外，每类镜像都分提供以下镜像类型：**官方镜像**、**私有镜像**、**共享镜像**、**镜像市场镜像**四类镜像，详细区分请参见[镜像概述](../Operation-Guide/Image/Image-Overview.md)。
     
-    对于初次使用京东智联云的用户可以选择京东智联云提供的“官方镜像”，您可以根据需要选择对应的系统，并选择合适的版本。
+    对于初次使用京东云的用户可以选择京东云提供的“官方镜像”，您可以根据需要选择对应的系统，并选择合适的版本。
     
-    如果您已经创建好自己的实例，并配置好相应的环境，可以将此实例进行制作私有镜像操作，同时基于此镜像批量创建有相同系统及环境配置的主机，还可以将此私有镜像共享给其他京东智联云用户。 
+    如果您已经创建好自己的实例，并配置好相应的环境，可以将此实例进行制作私有镜像操作，同时基于此镜像批量创建有相同系统及环境配置的主机，还可以将此私有镜像共享给其他京东云用户。 
 ![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-image.png)
 
 7. 选择实例规格：实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到72C576GB（如m.n2.18xlarge），用户可以根据不同业务场景选择实例规格及相应配置，详细请参见[实例规格](../Introduction/Instance-Type-Family.md)。
@@ -36,7 +36,7 @@
     
     支持按配置计费且非多点挂载云硬盘设置随实例删除属性，若勾选，会在实例删除时一并删除。
     
-    支持单盘粒度指定云盘快照策略，您可根据备份需要为不同云盘指定不同或相同的快照策略，京东智联云会根据您指定的策略自动定期备份您的云硬盘。详情参见详情请参见[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)。 
+    支持单盘粒度指定云盘快照策略，您可根据备份需要为不同云盘指定不同或相同的快照策略，京东云会根据您指定的策略自动定期备份您的云硬盘。详情参见详情请参见[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)。 
     
 	云硬盘费用与实例独立，具体价格信息请查阅[云硬盘价格](http://docs.jdcloud.com/cn/cloud-disk-service/billing-rules)。
 ![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-disk-new.png)
@@ -50,7 +50,7 @@
 ![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-network-ipv6.png)
 
 10. 配置公网带宽：
-  * 带宽计费方式：京东智联云提供按固定带宽和按使用流量两种带宽计费类型的弹性公网IP，按固定带宽计费按购买时设置的带宽上限值付费，而与实际访问公网所用带宽无关，按使用流量计费则根据您实时访问公网的实际流量计费。
+  * 带宽计费方式：京东云提供按固定带宽和按使用流量两种带宽计费类型的弹性公网IP，按固定带宽计费按购买时设置的带宽上限值付费，而与实际访问公网所用带宽无关，按使用流量计费则根据您实时访问公网的实际流量计费。
   * 线路：弹性公网IP线路分为：BGP和非BGP，若您需要更快更高效的网络接入请选用BGP。                
   * 带宽范围：1Mbps~200Mbps。
 在创建主机过程中可以暂不购买公网IP，完成主机创建后，再进行绑定。弹性公网IP带宽费用与实例费用独立。具体价格信息请查阅[弹性公网IP价格](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。      
