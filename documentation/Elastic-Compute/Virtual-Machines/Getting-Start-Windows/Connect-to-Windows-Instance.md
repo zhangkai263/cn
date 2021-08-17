@@ -38,14 +38,14 @@ VNC登陆的场景至少包括以下几种：
 
 1. 在实例列表的操作列，点击【远程连接】即可通过 VNC 连接至 Windows 实例。
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-console.png">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-console.png">
 </div>
 
 2. 通过在左上角点击 Ctrl+Alt+Del 命令进入系统登录界面：
 * 默认用户名：administrator        
 * 密码：为您创建实例时设置的实例密码 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-VNC.png">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-VNC.png">
 </div>
 
 请注意：
@@ -58,35 +58,35 @@ VNC登陆的场景至少包括以下几种：
 使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东智联云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
 1. 点击电脑**开始**按钮，找到“运行”<br>
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-menu.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-menu.png" width="700">
 </div>
 2. 在运行中输入mstsc命令，点击确定，即可打开远程桌面连接对话框。<br>
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc.png" width="700">
 </div>
 
 3. 根据创建实例时绑定的公网IP，连接实例，输入用户名：Administrator，勾选**允许我保存凭据**。
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc1.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc1.png" width="700">
 </div>
 
 4. 点击**连接**后，输入密码，连接到实例。<br>
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc2.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc2.png" width="700">
 </div>
 
 5. 勾选**不再询问我是否连接到此计算机**，点击**是**。<br>
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png" width="700">
 </div>
 
 6. 成功连接到您在京东智联云创建的Windows实例。<br>
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png" width="700">
 </div>
 
 7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
@@ -108,22 +108,22 @@ rdesktop -u administrator -p <实例登录密码> <实例公网IP地址>
 1. 运行Microsoft Remote Desktop，点击**Add Desktop**。
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac1.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Windows-Connect-Windows-mac1.png" width="700">
 </div>
 
 2. 在弹出的窗口中输入windows实例的公网IP地址,点击**Add**添加保存。
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac2.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Windows-Connect-Windows-mac2.png" width="700">
 </div>
 
 3. 完成添加后，在“saved Desktop”中通过公网IP地址找到该实例，点击图标，输入用户名和密码，Windows实例的默认用户名是 administrator。随后点击**Done**即可连接实例。
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac3.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Windows-Connect-Windows-mac3.png" width="700">
 </div>
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Windows-Connect-Windows-mac4.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Windows-Connect-Windows-mac4.png" width="700">
 </div>
 
 4. 首次连接后，再次连接时可以直接找到并选中希望连接的实例图标，点击窗口设置图标里的**Connect**完成登录信息输入后进行连接。

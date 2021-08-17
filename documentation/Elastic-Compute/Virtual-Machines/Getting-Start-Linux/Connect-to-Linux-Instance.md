@@ -35,7 +35,7 @@ VNC登陆的场景至少包括以下几种：
 1. 在实例列表的操作列，点击**远程连接**即可通过 VNC 连接至Linux实例。
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-console.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-console.png" width="700">
 </div>
 
 2. 点击VNC之后进入到登录页面
@@ -43,7 +43,7 @@ VNC登陆的场景至少包括以下几种：
 * 密码：为您创建实例时设置的实例密码 
 
 <div align="center">
-<img src="../../../../image/vm/Getting-Start-Linux-Connect-vnc.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-vnc.png" width="700">
 </div>
 
 请注意：
@@ -69,35 +69,35 @@ VNC登陆的场景至少包括以下几种：
 	* 协议：SSH
 	* 主机：实例所绑定的公网IP，可在实例列表查询
 	* 端口号：22!
-	[](../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell.png)
+	[](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell.png)
 
 3. 选择用户身份认证
 	* 密码登录
 		* 方法：选择Password
 		* 用户名：默认用户名为root<br>
 		<div align="center">
-		<img src="../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell1.png" width="700">
+		<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell1.png" width="700">
 		</div>
 		* 点击确定，连接实例，如下图：<br>
 		<div align="center">
-		<img src="../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell2.png" width="700">
+		<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell2.png" width="700">
 		</div>
 	* 密钥登录
 		*  方法：选择Public Key
 		*  用户名：默认用户名为root
 		*  用户密钥：点击**浏览**-**导入**，打开弹窗后找到本地保存的私钥，点击**打开**，返回用户密钥配置窗口。
 		<div align="center">
-		<img src="../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell3.png" width="700">
+		<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell3.png" width="700">
 		</div>
 		
 		* 选中导入的密钥后，点击**确定**，可以看到该密钥显示在**用户密钥**处。再次点击**确定**。
 		* 在会话连接确认窗口中，选择**连接**，选择以何种方式接受实例密钥。
 		<div align="center">
-		<img src="../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell4.png" width="700">
+		<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell4.png" width="700">
 		</div>
 		* 若连接成功，显示如下图，若连接失败，请确认公网IP地址是否输入正确，并查看安全组和网络ACL配置。
 		<div align="center">
-		<img src="../../../../image/vm/Getting-Start-Linux-Connect-linux-xshell5.png" width="700">
+		<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-linux-xshell5.png" width="700">
 		</div>
 
 ## 本地为Linux/Mac OS，使用密码登录Linux实例
