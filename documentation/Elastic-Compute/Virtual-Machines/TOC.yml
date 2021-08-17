@@ -224,7 +224,7 @@ items:
           - name: 云硬盘加密
             href: Operation-Guide/Storage/Encryption-of-Cloud-Disk.md
           - name: 存储FAQ
-            href: Operation-Guide/Storage/Strorage-Overview.md
+            href: Operation-Guide/Storage/Storage-FAQ.md
       - name: 网络
         items:
           - name: 网络概述
