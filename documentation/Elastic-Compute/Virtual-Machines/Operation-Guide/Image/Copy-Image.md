@@ -18,19 +18,19 @@
 ## 操作步骤
 1. 访问[镜像控制台][1]，即进入镜像列表页面。或访问[京东云控制台][2]点击顶部导航栏 **弹性计算-云主机-镜像** 进入镜像列表页。
 2. 选择**私有镜像**TAB，选择需要复制的云硬盘系统盘私有镜像，点击**更多-复制镜像**；或批量勾选不多于5个镜像，点击列表下方的**复制镜像**。
-   ![](../../../../../image/vm/Operation-Guide-Image-copy1a.png)
+   ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-copy1a.png)
 
-   ![](../../../../../image/vm/Operation-Guide-Image-copy2a.png)
+   ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-copy2a.png)
 
 3. 在确认弹窗中会显示所选源镜像镜像包含的快照数量，以及除当前地域外其他支持复制操作的地域下私有镜像及云硬盘快照的配额用量。点击**确定**，开始镜像复制任务。
 <div align="center">
-<img src="../../../../../image/vm/Operation-Guide-Image-copy3a.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-copy3a.png" width="700">
 </div>
 
 4. 复制任务提交成功后，副本镜像会处于**创建中**状态，同时以百分比的形式显示整体复制进度。副本镜像名称与源镜像相同，自动添加描述字段，可创建完成后自行修改。
-   ![](../../../../../image/vm/Operation-Guide-Image-copy4a.png)
+   ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-copy4a.png)
  
-   ![](../../../../../image/vm/Operation-Guide-Image-copy5a.png)
+   ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-copy5a.png)
  
  
  

@@ -12,11 +12,11 @@
 2. 选择地域后在实例列表中选择需要配置弹性网卡删除属性的实例，点击名称进入详情页。
 3. 点击 **弹性网卡Tab**，选择需要配置的弹性网卡，点击 **删除属性** 后的 **修改**ICON。
 
-![](../../../../../image/vm/eni-delete-attributes1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/eni-delete-attributes1.png)
 
 5. 在弹出弹窗中根据需要配置，点击 **确定**。
 
-<div align="center"><img src="../../../../../image/vm/eni-delete-attributes2.png" width="500"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/eni-delete-attributes2.png" width="500"></div>
 		
 此外您还可以从弹性网卡控制台进行配置操作，详细步骤请参见[弹性网卡侧配置删除属性](../../../../Networking/Elastic-Network-Interface//Operation-Guide/Elastic-Network-Interface-Management/Enable-Delete-with-VM.md)。
 

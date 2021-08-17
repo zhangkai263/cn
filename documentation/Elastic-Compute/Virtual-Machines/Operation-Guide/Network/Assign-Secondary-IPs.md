@@ -25,9 +25,9 @@
 4. 在弹出的弹窗中添加需要分配的内网IP，可选择由系统自动分配或自定义内网IP地址，如自定义需在当前网卡所在子网CIDR范围内指定，且不能与已占用的地址冲突。支持同时分配多个，配置完成后点击  **确定**。
 5.登录实例进行配置，配置方式见下文。
 
-![](../../../../../image/vm/assign-sip1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/assign-sip1.png)
 
-<div align="center"><img src="../../../../../image/vm/assign-sip2.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/assign-sip2.png" width="600"></div>
 
 此外您还可以从弹性网卡控制台进行分配操作，详细步骤请参见[弹性网卡侧分配辅助IP](../../../../Networking/Elastic-Network-Interface/Operation-Guide/Private-IP-Management/Assign-Secondary-IP.md)。
 
@@ -79,26 +79,26 @@ Windows系统以Windows Server 2012 R2 标准版 64位 中文版为例，假设�
 2. 在左下角右键点击 **开始** 按钮，选择 **网络连接**。<br>
 
 3. 出现网络连接后，右键点击后选择 **属性**。<br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP2.png" width="700"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP2.png" width="700"></div>
 
 4. 打开属性后，选择 **Internet协议版本4（TCP/IPv4）**，点击 **属性**。<br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP3.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP3.png" width="400"></div>
 
 5. 打开属性后，显示如下<br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP4.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP4.png" width="400"></div>
 
 将内容修改为下图所示后，再点击 **高级** <br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP5.png" width="400"></div>
-  <div align="left"><img src="../../../../../image/vm/AssignIP6.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP5.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP6.png" width="400"></div>
 
 点击 **添加**，按下图填写确认。<br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP7.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP7.png" width="400"></div>
 
 点击 **确认** 回到属性页<br>
-  <div align="left"><img src="../../../../../image/vm/AssignIP8.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP8.png" width="400"></div>
 
 在DNS服务器地址处填写`103.224.222.222`及`103.224.222.223`后点击 **确定** 即设置完成。
-  <div align="left"><img src="../../../../../image/vm/AssignIP9.png" width="400"></div>
+  <div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/AssignIP9.png" width="400"></div>
 
 
 ## 相关参考

@@ -20,24 +20,24 @@
 
 ## 导出步骤
 
-![](../../../../../image/vm/image-export-image1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image1.png)
 
 ### 1. 确认对象存储空间<br>
 镜像只能导出到同地域下OSS的Bucket中，因此如果有多个地域下的私有镜像需要导出，请确认各地域下均有可以存放镜像文件的Bucket（当前仅支持华东-上海地域）。<br>有关Bucket创建请参考：[创建存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)。<br>
 
 ### 2. 创建服务角色<br>
 访问 [角色管理控制台](https://iam-console.jdcloud.com/role/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部**云服务**菜单中的**管理-访问控制-角色管理**进入角色管理页面。<br>
-![](../../../../../image/vm/image-export-image2.png)
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image2.png)
 
 点击**创建角色**，选择**服务角色**，在角色创建页面中，自定义服务角色名称，如：image-export，该角色名称需要在导出时作为必传参数提供。<br>在信任关系中选择**云硬盘**（云硬盘系统盘镜像本质是云硬盘快照，因此导出最终操作是由云硬盘服务代表您向对象存储写入镜像文件）。<br>
-![](../../../../../image/vm/image-export-image3.png)
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image3.png)
 
 ### 3、为服务角色创建策略<br>
 访问 [策略管理控制台](https://iam-console.jdcloud.com/policy/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部**云服务**菜单中的**管理-访问控制-策略管理**进入策略管理页面。
-![](../../../../../image/vm/image-export-image4.png)
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image4.png)
 点击**创建策略**，选择“策略编辑器，在策略创建页面中，自定义策略名称，如：```image-export-policy```。将下方JSON格式策略模板复制到内容输入区域。<br>
-![](../../../../../image/vm/image-export-image5.png)  
-![](../../../../../image/vm/image-export-image6.png)  
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image5.png)  
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image6.png)  
 
 >注意：<br>
 
@@ -79,17 +79,17 @@
 
 ### 4、为服务角色授权策略<br>
 返回角色管理列表，找到第2步中创建的服务角色```image-export```，点击操作中的**授权**。
-![](../../../../../image/vm/image-export-image7.png)  
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image7.png)  
 
 在授权弹窗中查找并选中第3步中创建的策略“image-export-policy”，点击确定完成授权。可进入角色详情页确认授权是否成功。
-![](../../../../../image/vm/image-export-image8.png)  
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image8.png)  
 
 >提示：如您希望仅在导出操作时才对系统服务进行授权，可以保留服务角色和策略，在每次导出前进行授权，导出完成后解除授权。
       
 ### 5、导出镜像
 完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。
 >提示：目前导出镜像控制台操作入口为灰度开放，如需使用请提交工单申请。
-<div align="center"><img src="../../../../../image/vm/exportimage.png" width="650"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/exportimage.png" width="650"></div>
 
 * OpenAPI文档见：[镜像导出](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
@@ -101,7 +101,7 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name ima
 
 #### 接口参数说明：
 参数中，ossUrl须填写OSS Bucket的完整**内网域名**(包含‘https://’)，如下图中的bucket，ossUrl请填写 'https://test-export.s3-internal.cn-east-2.jdcloud-oss.com' 。
-![](../../../../../image/vm/image-export-image9.png)  
+![](https://img1.jcloudcs.com/cn/image/vm/image-export-image9.png)  
 
 | 参数                  | 类型      |是否必填     | 说明 |
 | :------------------- |  :------------------- | :------------------- |:------------------- |

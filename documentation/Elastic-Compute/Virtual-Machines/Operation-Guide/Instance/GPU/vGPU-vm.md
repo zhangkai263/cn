@@ -74,7 +74,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 	* 安装License Server
 		运行 ` sh setup.bin -i console `
-		参照下图进行安装：<br>![](../../../../../../image/vm/vgpu-licenseserver1.png)
+		参照下图进行安装：<br>![](https://img1.jcloudcs.com/cn/image/vm/vgpu-licenseserver1.png)
 
 	* 安装完成后，执行以下指令：
 
@@ -85,7 +85,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 		systemctl start flexnetls-nvidia.service
 		```
 	* 配置License Server
-		* 在安装License Server的云主机上打开配置页面（内网/外网远程访问请将localhost替换成/公网IP地址） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>![](../../../../../../image/vm/vgpu-licenseserver2.png)
+		* 在安装License Server的云主机上打开配置页面（内网/外网远程访问请将localhost替换成/公网IP地址） http://localhost:8080/licserver, 记录下图所示的MAC地址。<br>![](https://img1.jcloudcs.com/cn/image/vm/vgpu-licenseserver2.png)
 		* 登录NVIDIA官网”NVIDIA SOFTWARE LICENSING CENTER”页面，进入Register License Server页面,将获取到的MAC地址，输入“MAC address”中，并点击“Create”。
 		* 创建完成后，进入分配license页面，在View Server页面单击“Map Add-Ons”，会显示您当前账号可以分配的License数量。
 		* 在Qty to Add框中填入数量，然后点击Map Add-Ons即可完成对Server的License分配。
@@ -119,9 +119,9 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 `grep gridd /var/log/messages`
 
 * 如下图显示即表示vGPU云主机已认证成功 <br>
-![](../../../../../../image/vm/vgpu-licenseserver3.png)
+![](https://img1.jcloudcs.com/cn/image/vm/vgpu-licenseserver3.png)
 
 #### Windows系统
 * 桌面下点击右键，选择“NVIDIA控制面板”。<br>
 * 在弹出页面的左侧菜单中选择“管理许可证”，填写License Server的IP地址（填写同VPC内，License Server主机的内网IP地址）和端口号7070。<br>
-![](../../../../../../image/vm/vgpu-licenseserver4.png)
+![](https://img1.jcloudcs.com/cn/image/vm/vgpu-licenseserver4.png)

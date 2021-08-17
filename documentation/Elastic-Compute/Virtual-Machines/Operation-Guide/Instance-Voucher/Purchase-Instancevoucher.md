@@ -49,21 +49,21 @@
 
 1、访问[实例抵扣券控制台](https://cns-console.jdcloud.com/host/instancevoucher/list)，或在[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航栏**弹性计算-云主机-实例抵扣券**或**弹性计算-原生容器-实例抵扣券**进入实例抵扣券列表页。<br>
 
-![](../../../../../image/vm/iv-buy1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/iv-buy1.png)
 2、地域与可用区选择<br>
 * 地域：实例抵扣券不能跨地域使用且购买后无法修改地域属性，请根据实例地域分布情况选择抵扣券地域。<br>
 * 资源预留：根据是否需要预留资源选择“无预留”或“有预留”。<br>
 * 可用区：“无预留”型抵扣券仅需指定地域，所选地域下所有可用区的实例，如符合抵扣券抵扣要求，均可使用；“有预留”型抵扣券须指定具体可用区，仅所选可用区下且符合抵扣要求的实例才可使用。<br>
 >预留型实例抵扣券当前为公测阶段，如需购买请提交工单申请。
 
-<div align="left"><img src="../../../../../image/vm/iv-buy2a.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy2a.png" width="800"></div>
 
-<div align="left"><img src="../../../../../image/vm/iv-buy2b.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy2b.png" width="800"></div>
 
 3、适用产品选择<br>
 提供云主机实例、容器实例、POD实例三种适用实例类型。<br>
 
-<div align="left"><img src="../../../../../image/vm/iv-buy3a.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy3a.png" width="800"></div>
 
 4、实例属性配置<br>
 
@@ -82,14 +82,14 @@
 
 计算力输入范围：`[所选规格族最小可抵扣规格的规格尺寸,当前地域剩余配额]`，且仅支持输入所选规格族下最小规格规格尺寸（核数/卡数）的整数倍，如c.n3规格族下最小规格c.n3.large的规格尺寸为2，则所购计算力不能小于2且必须为2的整数倍。
 
-<div align="left"><img src="../../../../../image/vm/iv-buy4.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy4.png" width="800"></div>
 
 #### 有预留型：
 指定规格、数量购买。
 * 规格族+规格：资源预留型实例抵扣券按规格，可根据规格族筛选出期望预留资源的实例规格，规格列表中可选规格即为购买时刻处于售卖状态的规格。
 * 数量：期望预占指定规格的资源数量。数量输入范围:·[1,当前地域剩余配额]·，如云主机当前地域可用配额为500计算力（非GPU规格），则购买4核规格最多可输入数量125。
 
-<div align="left"><img src="../../../../../image/vm/iv-buy4a.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy4a.png" width="800"></div>
 
 
 5. 购买参数配置：<br>
@@ -98,7 +98,7 @@
 * 购买时长：购买时长支持1个月~9个月、1年、2年及3年。
 * 自动续费：支持购买时直接配置自动续费，自动续费时长默认同购买时长，如后续需要调整可随时前往续费管理控制台调整。
 
-<div align="left"><img src="../../../../../image/vm/iv-buy5.png" width="800"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-buy5.png" width="800"></div>
 
 ## 相关参考
 [实例抵扣券概述](https://docs.jdcloud.com/virtual-machines/instancevoucher-overview)

@@ -10,7 +10,7 @@
 
 ## 概览页
 
-[概览页](https://console.jdcloud.com)即为您登录京东智联云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](../../../../../image/vm/queryinstance4.png)
+[概览页](https://console.jdcloud.com)即为您登录京东智联云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](https://img1.jcloudcs.com/cn/image/vm/queryinstance4.png)
 
 	
 	
@@ -19,13 +19,13 @@
 ## 实例列表页
 
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏**弹性计算-云主机**进入实例列表页。
-2. 选择地域。![](../../../../../image/vm/QueryInstanceInfo-1.png)
+2. 选择地域。![](https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-1.png)
 
 	您可查看选定地域下所有实例的信息，包括ID、名称、可用区、私有网络及IP地址等。由于实例信息项较多，您可按需通过自定义列表调整在实例列表页显示的信息项，详细操作步骤如下：
 
-3. 点击实例列表页右上角自定义列表icon ![](../../../../../image/vm/QueryInstanceInfo-2.png)
+3. 点击实例列表页右上角自定义列表icon ![](https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-2.png)
 
-4. 在弹出的自定义列表弹窗中勾选您需要显示的信息项，点击**确认**。<div align="center"><img src="../../../../../image/vm/QueryInstanceInfo-3.png" width="700"></div>
+4. 在弹出的自定义列表弹窗中勾选您需要显示的信息项，点击**确认**。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-3.png" width="700"></div>
 
 
 > 请注意：当前列表至多支持显示10项信息项。
@@ -38,7 +38,7 @@
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏**弹性计算-云主机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要查看详细信息的实例，点击实例名称进入详情页。
-![](../../../../../image/vm/QueryInstanceInfo-4.png)
+![](https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-4.png)
 您可查看以下实例信息：
 * 资源信息
 	* 基本信息：ID、名称、描述、计费类型、创建时间、到期时间（包年包月计费类型）、地域、可用区、高可用组、故障域、专有宿主机、标签、停机不计费、自动镜像策略

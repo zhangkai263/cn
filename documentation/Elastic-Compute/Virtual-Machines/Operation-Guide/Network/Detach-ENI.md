@@ -17,9 +17,9 @@
 3. 点击 **弹性网卡Tab** ，选择需要解绑的弹性网卡点解 **解绑** 按钮。
 4. 在弹出的二次确认弹窗中，点击 **确定**。
 		
-![](../../../../../image/vm/detach-eni1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/detach-eni1.png)
 
-<div align="center"><img src="../../../../../image/vm/detach-eni2.png" width="500"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/detach-eni2.png" width="500"></div>
 
 此外您还可以从弹性网卡控制台进行解绑操作，详细步骤请参见[弹性网卡侧解绑弹性网卡](../../../../Networking/Elastic-Network-Interface/Operation-Guide/Elastic-Network-Interface-Management/Disassociate-Elastic-Network-Interface.md)。
 

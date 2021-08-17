@@ -17,9 +17,9 @@
 2. 选择地域。
 3. 在实例列表中选择需要重置密码的实例，确认其状态为**运行中**。如果需要同时操作多台实例，可通过多选实现。
 4. 单台操作：点击**操作-更多-重置密码**按钮，或点击实例名称进入详情页后点击**操作-重置密码**按钮。<br>批量操作：点击列表下方**更多-重置密码**按钮
-![](../../../../../image/vm/resetpassword1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/resetpassword1.png)
 5. 在弹出的“重置密码”弹窗中，输入符合要求的新密码，点击**确定**提交修改，之后在控制台重启实例后新密码即可生效。
-<div align="center"><img src="../../../../../image/vm/resetpassword2.png"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/resetpassword2.png"></div>
 
 ## 相关参考
 

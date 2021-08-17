@@ -20,10 +20,10 @@
 ## 操作步骤
 1. 访问[镜像控制台][1]，即进入镜像列表页面。或访问[京东云控制台][2]点击顶部导航栏 **弹性计算-云主机-镜像** 进入镜像列表页。
 2. 在**私有镜像**TAB下，选择需要转换的本地盘系统盘私有镜像，点击 **更多-镜像类型转换**。<br>
-![](../../../../../image/vm/Operation-Guide-Image-Convert1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-Convert1.png)
 3. 在确认弹窗中点击 **确定**，开始镜像转换任务。新镜像名称、系统盘快照名称均默认与原镜像相同，可创建完成后自行修改。
 <div align="center">
-<img src="../../../../../image/vm/Operation-Guide-Image-convert2.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-convert2.png" width="700">
 </div>
 
 ## 相关参考

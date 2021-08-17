@@ -16,7 +16,7 @@
    
 5. 创建成功后，可以在密钥的详情页内查看公钥指纹信息。
 
-<div align="center"><img src="../../../../../image/vm/Operation-Guide-keypair-create1.png" width="500"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-keypair-create1.png" width="500"></div>
 
 
 
