@@ -21,7 +21,7 @@
 3. 点击 **磁盘Tab-挂载** 按钮。
 4. 在弹出的弹窗中，选择期望挂载的云硬盘，可通过云硬盘名称或ID进行搜索。若选择的是按配置计费的且非多点挂载云硬盘，则可设置随实例删除属性（释放行为），若勾选则在实例删除时将一起删除该云硬盘，若不勾选则在实例删除时云硬盘将保留。包年包月云硬盘或多点挂载盘无法指定删除属性，实例删除时保留。
 
-<div align="center"><img src="../../../../../image/vm/attachclouddisk.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/attachclouddisk.png" width="700"></div>
 
 
 ### 挂载为系统盘
@@ -38,9 +38,9 @@
 >* 云硬盘作为系统盘挂载时，实例须处于**已停止**状态；
 >* 待挂载磁盘容量须在40GB～500GB之间。
 
-<div align="center"><img src="../../../../../image/vm/attachclouddisk1.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/attachclouddisk1.png" width="700"></div>
 
-<div align="center"><img src="../../../../../image/vm/attachclouddisk2.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/attachclouddisk2.png" width="700"></div>
 
 完成以上操作后，云硬盘挂载状态将变更为**挂载中**，挂载云盘可能需要一段时间，还请您耐心等候并刷新页面，挂载成功后挂载状态将变更为**已挂载**。云硬盘在挂载完后还需要进行分区、格式化等一系列操作。具体操作方式请见：[Linux系统数据盘分区及格式化](http://docs.jdcloud.com/cn/cloud-disk-service/linux-partition)、[Windows系统盘分区及格式化](http://docs.jdcloud.com/cn/cloud-disk-service/windows-partition)。
 

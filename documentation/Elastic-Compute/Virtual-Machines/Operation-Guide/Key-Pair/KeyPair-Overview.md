@@ -11,7 +11,7 @@ SSH密钥登录是指使用密钥技术对登录信息进行加密解密，为�
 ## 原理流程
 使用SSH密钥登录实例过程如下：
 
-<div align="center"><img src="../../../../../image/vm/Operation-Guide-keypair-overview1.png" width="650"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-keypair-overview1.png" width="650"></div>
 
 ### 准备阶段：
 1. 您在京东云创建密钥对（新生成或导入），并将私钥保存至本地。

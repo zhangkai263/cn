@@ -10,6 +10,6 @@
 
 2、选择期望续费的实例抵扣券，点击操作中的**续费**。在续费页面中选择期望续费的时长，点击**去支付**完成付款后即可完续费。
 
-<div align="left"><img src="../../../../../image/vm/iv-manage1.png" width="1000"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-manage1.png" width="1000"></div>
 
-<div align="left"><img src="../../../../../image/vm/iv-manage2.png" width="1000"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-manage2.png" width="1000"></div>

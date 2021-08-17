@@ -18,10 +18,10 @@
 3. 在实例列表中选择需要删除的实例，确认其状态为**已停止**。如果需要同时操作多台实例，可通过多选实现。
 4. 单台操作：点击**操作-更多-删除**按钮，或点击实例名称进入详情页后点击**操作-删除**按钮
 <br>批量操作：点击列表下方**更多-删除**按钮
-![](../../../../../image/vm/delete-instance-1.png)
-![](../../../../../image/vm/delete-instance-2.png)
+![](https://img1.jcloudcs.com/cn/image/vm/delete-instance-1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/delete-instance-2.png)
 
-5. 在弹出的**删除实例**弹窗中，确认信息，点击**确定**提交删除。<div align="center"><img src="../../../../../image/vm/delete-instance-3.png"  width="600"></div>
+5. 在弹出的**删除实例**弹窗中，确认信息，点击**确定**提交删除。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/delete-instance-3.png"  width="600"></div>
 
 之后实例将进入**删除中**状态，请您耐心等待删除完成。
 

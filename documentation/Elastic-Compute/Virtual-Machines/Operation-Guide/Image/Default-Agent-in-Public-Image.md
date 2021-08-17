@@ -141,17 +141,17 @@ curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_jcs | bash
 
 在安装向导中单击“下一步”，在配置信息页面中，只需在AGENTS配置中填写：jcs-agent-core-win,jcs-agent-script-win,jcs-agent-monitor-win，其他配置不用填写采用默认值。
 
-![](../../../../../image/vm/ifrit-install-1.png)
-![](../../../../../image/vm/ifrit-install-2.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-2.png)
 
 暂不支持自定义安装路径，勾选“我同意许可条款和条件”，点击“下一步”。
 
-![](../../../../../image/vm/ifrit-install-3.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-3.png)
 
 点击“安装”，完成ifrit安装。
 
-![](../../../../../image/vm/ifrit-install-4.png)
-![](../../../../../image/vm/ifrit-install-5.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-4.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-5.png)
 
 
 <div id="user-content-3"></div>

@@ -47,7 +47,7 @@
 
 ## 操作步骤
 
-![](../../../../../image/vm/Image-Import-Image-Overview.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Overview.png)<br>
 ### 1、镜像准备
 为保证导入镜像的可用性，请务必在导入前参照上述京东智联云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东智联云规范后再行操作导入。<br>
 
@@ -64,10 +64,10 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取镜像文件内网下载链接（将下载地址域名中的"s3"改成"s3-internal"即可）。<br>
 
 如果存储空间访问权限为“公有读写”或者“公有读私有写”，可直接点击“复制”图标获取外链。<br>
-<div align="center"><img src="../../../../../image/vm/Image-Import-Image-Step1.png" width="800"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step1.png" width="800"></div>
 
 如果存储空间访问权限为“私有读写”或者“自定义权限”，在获取外链时需要指定链接有效期，由于导入镜像耗时与文件大小和系统处理队列中的任务数量有关，为保证导入过程顺利，建议您设置不少于1天的有效时间。<br>
-<div align="center"><img src="../../../../../image/vm/Image-Import-Image-Step2.png" width="800"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step2.png" width="800"></div>
 
 ### 4、导入镜像
 
@@ -77,7 +77,7 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 
 >提示：目前导入镜像控制台操作入口为灰度开放，如需使用请提交工单申请。<br>
 
-<div align="center"><img src="../../../../../image/vm/Image-Import-Image-Step3.png" width="650"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step3.png" width="650"></div>
 
 * OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>

@@ -23,7 +23,7 @@ ll /dev/disk/by-id
 ```
 	
 4. 如下图所示，其中virtio-Ephemeral\_Disk\_1至virtio-Ephemeral\_Disk\_4即为对应四块本地数据盘<br>
-![](../../../../../image/vm/localdatadisklinux.png)
+![](https://img1.jcloudcs.com/cn/image/vm/localdatadisklinux.png)
 
 
 ### Windows系统
@@ -38,7 +38,7 @@ Windows以 Windows 2008 标准版 系统为例，操作步骤如下：
 diskdrive get PNPDeviceID,SerialNumber
 ```
 	
-4. 如下图所示，其中序列号Ephemeral\_Disk\_1至Ephemeral\_Disk\_4即为对应四块本地数据盘<br>![](../../../../../image/vm/localdatadiskwin.png)
+4. 如下图所示，其中序列号Ephemeral\_Disk\_1至Ephemeral\_Disk\_4即为对应四块本地数据盘<br>![](https://img1.jcloudcs.com/cn/image/vm/localdatadiskwin.png)
 
 ## 相关参考
 

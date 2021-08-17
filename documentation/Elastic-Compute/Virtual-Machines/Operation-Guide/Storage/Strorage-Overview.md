@@ -74,7 +74,7 @@
 
 下图显示了如何将块存储设备映射到实例上，将 /dev/vda 映射到系统盘上，并将两块数据盘分别映射到 /dev/vdb 及 /dev/vdc。不同操作系统内设备名或有不同，详细规则可查阅[设备名分配规则](https://docs.jdcloud.com/virtual-machines/assign-device-name)。
 
-![](../../../../../image/vm/Operation-Guide-CD-overview.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-CD-overview.png)
 
 <div id="user-content-1"></div>
 

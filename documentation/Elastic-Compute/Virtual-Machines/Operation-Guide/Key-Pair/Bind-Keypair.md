@@ -21,7 +21,7 @@
 2、选择地域后在实例列表中选择需要绑定SSH密钥的实例，点击 **操作-更多-绑定密钥** 按钮。<br>
 3、在弹窗中选择要使用的SSH密钥，根据登录需求选择是否禁用SSH密码登录，点击 **确定** 后完成密钥绑定。
 
-<div align="center"><img src="../../../../../image/vm/attach-ssh1.png" width="650"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/attach-ssh1.png" width="650"></div>
 
 
 ## 相关参考

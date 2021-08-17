@@ -26,7 +26,7 @@
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页。或访问[京东云控制台](https://console.jdcloud.com/overview)点击顶部导航栏 **弹性计算-云主机-实例** 进入实例列表页。
 2. 选择地域后，在实例列表中选择需要调整性能模式的实例。
 3. 点击 **操作-更多** 中的 **开启无约束模式** 或 **关闭无约束模式** 按钮，在弹出的确认弹窗中，点击 **确定** 即可。
-![](../../../../../../image/vm/modify-burstmode1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/modify-burstmode1.png)
 
 >说明：<br>
 >仅突发型实例显示此操作；<br>

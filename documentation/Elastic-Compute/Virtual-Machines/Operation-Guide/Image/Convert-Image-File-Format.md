@@ -24,7 +24,7 @@ tar -zcvf image_out.tar.gz image_out.qcow2
 sz image_out.tar.gz
 ```
 
-![](../../../../../image/vm/Image-Import-convert1.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-convert1.png)<br>
 
 ### 转换镜像文件格式
 如果镜像文件格式不在京东智联云支持的格式之内，可以使用qemu-img执行下述指令可进行指定镜像文件的格式转换。
@@ -47,7 +47,7 @@ Windows系统可使用微软官方提供的 [Disk2vhd](https://docs.microsoft.co
 
 2、解压后执行disk2vhd.exe，显示如下界面。指定存放路径及文件名称，勾选系统盘，并取消勾选“use Vhdx”，随后点击【Create】即可导出格式为VHD的系统盘镜像。
 
-![](../../../../../image/vm/Image-Import-convert2.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-convert2.png)<br>
 
 ### 转换镜像文件格式
 1、前往并下载 [qemu-img-windows](https://cloudbase.it/qemu-img-windows/)

@@ -9,7 +9,7 @@
 3. 在实例列表中选择需要绑定安全组的实例，点击名称进入详情页。
 4. 点击**安全组**Tab。
 5. 找到需要解绑的安全组，点击【移除】按钮。
-	![](../../../../../image/vm/Operation-Guide-SG-unbind1.png)
+	![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-SG-unbind1.png)
 6. 在弹出确认弹窗中，点击**确定**按钮。
 
 实例侧仅支持对实例主网卡进行安全组解绑操作，若要对实例辅助网卡操作，请从安全组侧操作。详细步骤请参见[安全组解绑实例](../../../../Networking/Virtual-Private-Cloud/Operation-Guide/Security-Group-Configuration.md)。
