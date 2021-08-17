@@ -1,6 +1,6 @@
 # 创建实例
 
-创建实例时，需指定实例规格、镜像、私有网络、安全组及登录密码等信息。京东智联云为用户提供了多种创建实例的方法，包括：
+创建实例时，需指定实例规格、镜像、私有网络、安全组及登录密码等信息。京东云为用户提供了多种创建实例的方法，包括：
 
 * [自定义创建](Create-Instance#user-content-1)
 * [使用实例模板创建](Create-Instance#user-content-2)
@@ -38,7 +38,7 @@
 <div id="user-content-2"></div>
 
 ## 使用实例模板创建
-实例模板是京东智联云提供的创建云主机的配置信息模板，包括镜像、云主机规格、系统盘及数据盘类型和容量、私有网络、安全组及登录信息等，但不包括可用区、实例名称及描述等信息。实例模板详细介绍请参见 [实例模板概述](http://docs.jdcloud.com/cn/virtual-machines/instance-template-overview)。
+实例模板是京东云提供的创建云主机的配置信息模板，包括镜像、云主机规格、系统盘及数据盘类型和容量、私有网络、安全组及登录信息等，但不包括可用区、实例名称及描述等信息。实例模板详细介绍请参见 [实例模板概述](http://docs.jdcloud.com/cn/virtual-machines/instance-template-overview)。
 
 使用实例模板创建将默认选中与实例模板中已包含的配置，您可以在此基础上更改。
 
@@ -62,7 +62,7 @@
 <div id="user-content-3"></div>
 
 ## 在高可用组内创建
-高可用组（Availability Group，AG）是京东智联云提供的云主机实例逻辑集合，高可用组内的实例分散部署在互相隔离的物理资源上，当出现硬件故障时只会影响到部分实例，您整体业务仍未可用状态。高可用组详细内容请参见 [高可用组概述](http://docs.jdcloud.com/cn/availability-group/product-overview)。
+高可用组（Availability Group，AG）是京东云提供的云主机实例逻辑集合，高可用组内的实例分散部署在互相隔离的物理资源上，当出现硬件故障时只会影响到部分实例，您整体业务仍未可用状态。高可用组详细内容请参见 [高可用组概述](http://docs.jdcloud.com/cn/availability-group/product-overview)。
 
 在高可用组内创建是指新建的实例将按照当前高可用组分散部署的规则，分散部署在对应的物理资源上，与该高可用组内其他云主机
 
