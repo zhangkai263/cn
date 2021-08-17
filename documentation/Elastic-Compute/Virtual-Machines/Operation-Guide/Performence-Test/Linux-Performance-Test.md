@@ -24,7 +24,7 @@ cd UnixBench
 
 - -c 后跟cpu线程数，可通过命令"cat /proc/cpuinfo | grep process | wc -l"获取。
 
-<div align="center"><img src="../../../../../image/vm/CPU-Test-UnixBench.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/CPU-Test-UnixBench.png" width="600"></div>
 
 1.3 分析结果
 
@@ -51,7 +51,7 @@ make
 
 - scale指定计算到小数点后多少位，通常要算小数点后1M位（2^20次方），最大到2^25次方。如：./pi_css5 $((1 << 20))结果为计算小数点后1M位圆周率的时间。 
 
-<div align="center"><img src="../../../../../image/vm/CPU-Test-SuperPI.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/CPU-Test-SuperPI.png" width="600"></div>
 
 2.3	分析结果
 观察测试结果中的real time（计算指定位数圆周率所用的时间），该值越小越好。
@@ -87,7 +87,7 @@ gcc stream.c -O3 -fopenmp -DSTREAM_ARRAY_SIZE=200000000 -DNTIMES=100 -mcmodel=me
 ./stream.out
 ```
 
-<div align="center"><img src="../../../../../image/vm/Mem-Test-Stream.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Mem-Test-Stream.png" width="600"></div>
 
 1.3 分析结果
 
@@ -117,7 +117,7 @@ tar xf mlc_v3.9a.tgz
 - -r 随机内存访问
 - -D 指定随机访问的范围的最大值
 
-<div align="center"><img src="../../../../../image/vm/Mem-Test-MLC.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Mem-Test-MLC.png" width="600"></div>
 
 2.3分析结果
 

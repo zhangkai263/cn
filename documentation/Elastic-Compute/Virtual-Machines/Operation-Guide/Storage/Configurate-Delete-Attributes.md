@@ -11,9 +11,9 @@
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏 **弹性计算-云主机** 进入实例列表页。
 2. 选择地域后在实例列表中选择需要配置云硬盘删除属性的实例，点击名称进入详情页。
 3. 点击**磁盘Tab**，选择需要配置的云硬盘，点击 **操作-修改属性** 按钮。
-<div align="center"><img src="../../../../../image/vm/deleteattribute1.png" width="900"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/deleteattribute1.png" width="900"></div>
 
 4. 在弹出弹窗中根据需要配置，点击**确定**。
-<div align="center"><img src="../../../../../image/vm/deleteattribute2.png" width="500"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/deleteattribute2.png" width="500"></div>
 
 
