@@ -72,4 +72,4 @@
 
 > 实际可使用可用区请以控制台显示为准。
 
-![](../../../../image/vm/region-and-az.png)
+![](https://img1.jcloudcs.com/cn/image/vm/region-and-az.png)
