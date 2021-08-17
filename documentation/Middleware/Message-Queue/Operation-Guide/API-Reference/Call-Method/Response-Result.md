@@ -10,6 +10,7 @@
 | **400**    | ACK_FAILED              | ACK_FAILED                                          | ack失败         |                         |
 | **400**    | TOPIC_NOT_EXIST         | TOPIC_NOT_EXIST                                     | topic不存在     | 建议检查topic是否存在   |
 | **400**    | INVALID_ARGUMENT        | INVALID_ARGUMENT                                    | 参数无效        | 建议检查参数            |
+| **400**    | SUSPEND_CAUSE_DEAD_LETTER         | SUSPEND_CAUSE_DEAD_LETTER            | 死信队列超出导致暂停消费        | 清空或重放死信队列     |
 | **403**    | PERMISSION_DENIED       | Authentication failure                              | 认证失败        | 建议检查accesskey及签名 |
 | **403**    | USER_AUTH_FAILED        | USER_AUTH_FAILED                                    | 认证失败        | 建议检查用户权限        |
 | **403**    | TOPIC_AUTH_FAILED       | TOPIC_AUTH_FAILED                                   | topic认证失败   | 建议检查topic权限       |
