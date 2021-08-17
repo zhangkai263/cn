@@ -11,7 +11,7 @@
 以Windows 2008 R2 数据中心版为例，安装GPU驱动步骤如下：
 
 1. 获取GPU驱动安装包：
-	* 进入[NVIDIA官网](https://www.nvidia.com/Download/Find.aspx)；
+	* 进入[NVIDIA官网](https://www.nvidia.cn/Download/index.aspx?lang=cn)；
 	* 手动查找适用于实例的驱动程序，并单击**搜索**。筛选信息说明如下图所示。<br>![](../../../../../../image/vm/GPUdriver1.png)
 	* 确认无误后，单击**下载**按钮，下图是Windows Server 2008 R2的驱动截图。<br>![](../../../../../../image/vm/GPUdriver2.png)
 2. 安装GPU驱动：
@@ -27,7 +27,7 @@
 以CentOS 7.6为例，安装GPU驱动步骤如下：
 
 1. 获取GPU驱动安装包：
-	* 进入[NVIDIA官网](https://www.nvidia.com/Download/Find.aspx)；
+	* 进入[NVIDIA官网](https://www.nvidia.cn/Download/index.aspx?lang=cn)；
 	* 手动查找适用于实例的驱动程序，并单击【搜索】。筛选信息说明如下图所示。<br>![](../../../../../../image/vm/GPUdriver5new.png)
 	* 确认无误后，两次单击【下载】按钮，下图是CentOS7.6的驱动截图。<br>![](../../../../../../image/vm/GPUdriver6new.png)<br>![](../../../../../../image/vm/GPUdriver6nnew.png)
 	* 在CentOS 7.6中也可以通过以下命令直接下载上述驱动，其中下载链接可在上图中右键点击下载按钮获取：<br>
