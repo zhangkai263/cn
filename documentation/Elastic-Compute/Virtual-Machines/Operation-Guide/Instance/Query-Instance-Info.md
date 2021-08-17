@@ -10,7 +10,7 @@
 
 ## 概览页
 
-[概览页](https://console.jdcloud.com)即为您登录京东智联云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](https://img1.jcloudcs.com/cn/image/vm/queryinstance4.png)
+[概览页](https://console.jdcloud.com)即为您登录京东云控制台的默认首页。可查看当前账号下各地域实例数及配额情况。![](https://img1.jcloudcs.com/cn/image/vm/queryinstance4.png)
 
 	
 	
