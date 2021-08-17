@@ -55,7 +55,7 @@ VNC登陆的场景至少包括以下几种：
 * 暂不支持文件上传下载。
 
 ## 本地为Windows，使用远程桌面登录Windows实例
-使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东智联云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
+使用MSTSC 远程桌面连接Window实例，须先确保实例绑定公网IP，并且安全组和网络ACL规则中允许通过此类访问。可在京东云控制台创建Windows系统实例，获得公网IP：XXX.XXX.XXX.XXX
 1. 点击电脑**开始**按钮，找到“运行”<br>
 <div align="center">
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-menu.png" width="700">
@@ -83,7 +83,7 @@ VNC登陆的场景至少包括以下几种：
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png" width="700">
 </div>
 
-6. 成功连接到您在京东智联云创建的Windows实例。<br>
+6. 成功连接到您在京东云创建的Windows实例。<br>
 
 <div align="center">
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png" width="700">
