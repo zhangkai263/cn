@@ -177,7 +177,7 @@ items:
             href: Operation-Guide/Image/Cancel-Share-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
-          - name: FAQ
+          - name: 镜像FAQ
             href: Operation-Guide/Image/Image-FAQ.md          
       - name: 实例抵扣券
         items:
