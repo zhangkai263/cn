@@ -128,7 +128,9 @@ items:
               - name: 自定义数据
                 href: Operation-Guide/Instance/Userdata.md
               - name: 自定义元数据
-                href: Operation-Guide/Instance/Custom-Metadata.md        
+                href: Operation-Guide/Instance/Custom-Metadata.md  
+          - name: 实例FAQ
+            href: Operation-Guide/Instance/Instance-FAQ.md               
       - name: 实例模板
         items:
           - name: 实例模板概述
