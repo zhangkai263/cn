@@ -108,8 +108,8 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求正处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
 
 * OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
-
-* CLI指令示意：
+* CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
+  * CLI指令示意：
 
 ```
 jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
