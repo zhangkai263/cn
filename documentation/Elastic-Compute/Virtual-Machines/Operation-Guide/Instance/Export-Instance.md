@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏【弹性计算】-【云主机】进入实例列表页。
+1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏 **弹性计算-云主机** 进入实例列表页。
 2. 选择地域。
 3. 点击实例列表页右上角点击导出列表icon。<br> ![](https://img1.jcloudcs.com/cn/image/vm/exportinstance.png)
 4. 您可按需选择导出范围、导出方式及导出信息。
