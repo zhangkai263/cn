@@ -359,8 +359,9 @@ g.n1.8xlarge|32|128|4 |	 |
 |m.n1.2xlarge|8|64|4  | |
 |m.n1.4xlarge|16|128|4 | |
 
+<div id="user-content-12"></div>
 
-### 突发性能型
+## 突发性能型
 
 突发性能型实例是一种通过积分机制约束CPU使用率的实例规格，适用于平时CPU使用率较低，偶发使用率突增的入门级或轻量级计算场景。突发型实例提供了在一定时间区间内动态分配计算力的能力，闲时积累忙时消耗，相对于普通实例规格，更为经济。[突发性能型规格介绍](https://docs.jdcloud.com/virtual-machines/Burst-Instance-Overview)
 
