@@ -28,7 +28,7 @@
 ![](https://img1.jcloudcs.com/cn/image/vm/resize1.png) ![](https://img1.jcloudcs.com/cn/image/vm/resize2.png)
 5. 选择新实例规格，点击 **立即调配**。对于 **运行中** 状态的实例，需要先触发停止实例操作。对于按配置计费实例触发调整配置；对于包年包月计费实例且需要支付差价则需要进行支付，支付完成后则触发调整配置。
 ![](https://img1.jcloudcs.com/cn/image/vm/resize3.png)
-<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/resize-instance-1.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/resize-instance-1.png" width="500"></div>
 
 之后实例将进入 **调整配置中** 状态，调配完成后将恢复成 **已停止** 状态，操作“启动”实例后即可正常使用实例。
 
