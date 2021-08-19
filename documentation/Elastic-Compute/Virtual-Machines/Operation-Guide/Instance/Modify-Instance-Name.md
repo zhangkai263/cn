@@ -10,4 +10,4 @@
 2. 选择地域。
 3. 在实例列表中选择需要修改名称的实例，点击实例名称进入详情页。
 4. 点击**资源信息-基本信息-名称**右侧修改按钮。![](https://img1.jcloudcs.com/cn/image/vm/modifyname.png)
-5. 在弹出的**修改名称**弹窗中，按需输入新实例名称，点击**确定**提交修改。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/modifyname2.png" width="500"></div>
+5. 在弹出的**修改名称**弹窗中，按需输入新实例名称，点击**确定**提交修改。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/modifyname2.png" width="400"></div>
