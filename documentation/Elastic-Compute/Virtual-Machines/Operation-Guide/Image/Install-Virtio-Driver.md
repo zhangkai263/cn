@@ -66,6 +66,7 @@ B.编译内核
 ```
 make mrproper
 ```
+
 * 进入图形化配置界面
 ```
 make menuconfig
