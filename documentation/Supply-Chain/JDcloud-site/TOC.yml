@@ -4,11 +4,11 @@ items:
 - name: 服务概览
   items:
     - name: 概述
-      href: Introduction/Product-Overview.md
+      href: documentation/Supply-Chain/JDcloud-site/Introduction/Product-Overview
     - name: 产品优势
-      href: Introduction/Benefits.md
+      href: documentation/Supply-Chain/JDcloud-site/Introduction/Benefits
     - name: 功能介绍
-      href: Introduction/Functions.md
+      href: documentation/Supply-Chain/JDcloud-site/Introduction/Functions
 
       
 
