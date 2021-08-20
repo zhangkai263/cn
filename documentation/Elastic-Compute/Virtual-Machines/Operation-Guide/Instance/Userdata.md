@@ -91,14 +91,16 @@ echo %random%>cmd-text1.txt
       ```
       wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
       ```
+      
       ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata4.png)
+      
 
       > 如您当前实例内未安装JCS-Agent或当前版本不支持自定义数据，请提交工单由技服人员协助安装。
 
 <div id="user-content-4"></div>
 
 ## 操作步骤
-1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东智联云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
+1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
 2. 选择创建实例所属地域，点击【创建】按钮进入云主机实例购买页面。
 3. 选择镜像并完成其他基本配置后，在“高级选项”区域开启“自定义数据”功能。
 ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata5.png)
