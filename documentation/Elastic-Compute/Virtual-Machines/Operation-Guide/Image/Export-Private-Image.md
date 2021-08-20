@@ -1,6 +1,6 @@
 # 私有镜像导出
 
-私有镜像导出，是指将您在京东智联云环境下制作的私有镜像，导出至同地域下的京东智联云对象存储空间中。导出之后，可随时下载镜像文件用作其他环境下的部署。
+私有镜像导出，是指将您在京东云环境下制作的私有镜像，导出至同地域下的京东智联云对象存储空间中。导出之后，可随时下载镜像文件用作其他环境下的部署。
 
 > 请注意：
 <br>1. 仅支持系统盘镜像导出，即使镜像有关联的数据盘快照，也仅会导出系统盘镜像文件。<br>2. 导出的镜像文件格式为QCOW2。
@@ -34,19 +34,18 @@
 
 ### 3、为服务角色创建策略<br>
 访问 [策略管理控制台](https://iam-console.jdcloud.com/policy/list)，或访问 [京东云控制台](https://console.jdcloud.com/overview) 依次点击顶部**云服务**菜单中的**管理-访问控制-策略管理**进入策略管理页面。
+
 ![](https://img1.jcloudcs.com/cn/image/vm/image-export-image4.png)
+
 点击**创建策略**，选择“策略编辑器，在策略创建页面中，自定义策略名称，如：```image-export-policy```。将下方JSON格式策略模板复制到内容输入区域。<br>
+
 ![](https://img1.jcloudcs.com/cn/image/vm/image-export-image5.png)  
 ![](https://img1.jcloudcs.com/cn/image/vm/image-export-image6.png)  
 
 >注意：<br>
-
->1、将模板中`3241xxxx0385`替换为您的账号ID，账号ID在 [账户基本信息](https://uc.jdcloud.com/account/basic-info) 中查看;<br> 2、将模板中`image-export-bucket`替换为您期望存镜像文件的bucket名称，如有多个地域Bucket需要授权访问，可按此格式直接追加。
-
 >1、将模板中`3241xxxx0385`替换为您的账号ID，账号ID在 [账户基本信息](https://uc.jdcloud.com/account/basic-info) 中查看;<br> 
 >2、将模板中`image-export-bucket`替换为您期望存镜像文件的bucket名称，如有多个地域Bucket需要授权访问，可按此格式直接追加。
 
-  
   
 ```JSON
 {
@@ -88,12 +87,14 @@
       
 ### 5、导出镜像
 完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。
+
 >提示：目前导出镜像控制台操作入口为灰度开放，如需使用请提交工单申请。
+
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/exportimage.png" width="650"></div>
 
 * OpenAPI文档见：[镜像导出](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
-* CLI指令示意：
+  * CLI指令示意：
 
 ```
 jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name image-export --oss-url https://test-export.s3-internal.cn-east-2.jdcloud-oss.com --oss-prefix jdcloud
@@ -113,7 +114,7 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name ima
 ## 查看导出进度
 成功提交导出镜像请求后，可通过镜像任务查询接口查看导出进展。
 * OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
-* CLI指令示意：
+  * CLI指令示意：
 
 ```
 jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json '{"taskIds":[xxx]}'
