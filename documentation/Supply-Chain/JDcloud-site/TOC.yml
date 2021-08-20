@@ -15,26 +15,26 @@ items:
 - name: 快速入门
   items:
     - name: 概述
-      href: Guide/Summary.md
+      href: documentation/Supply-Chain/JDcloud-site/Guide/Summary
     - name: 操作指南
-      href: Guide/Operation-Guide.md
+      href: documentation/Supply-Chain/JDcloud-site/Guide/Operation-Guide
     - name: 开通网站
-      href: Guide/Create-Website.md
+      href: documentation/Supply-Chain/JDcloud-site/Guide/Create-Website
     - name: 配置域名
-      href: Guide/Configure-domain-nameOperation-Guide.md
+      href: documentation/Supply-Chain/JDcloud-site/Guide/Configure-domain-name
      
 - name: 用户指南
   items:
     - name: 建站注意事项
-      href: Users'-Guide/Notice.md 
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Notice
     - name: 升级站点
-      href: Users'-Guide/Upgrade-site.md 
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Upgrade-site 
     - name: 续费站点
-      href: Users'-Guide/Renew-site.md
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Renew-site
     - name: 复制站点
-      href: Users'-Guide/Copy-site.md
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Copy-site
     - name: 查看站点信息
-      href: Users'-Guide/Check-site-information.md
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Check-site-information
     - name: 定制站点
-      href: Users'-Guide/Custom-site.md
+      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Custom-site
 
