@@ -1,37 +1,38 @@
 name: 京美建站
+href: 
+items:
+- name: 服务概览
   items:
-  - name: 服务概览
-    items:
-      - name: 概述
-        href: Introduction/Product-Overview.md
-      - name: 产品优势
-        href: Introduction/Benefits.md
-      - name: 功能介绍
-        href: Introduction/Functions.md
+    - name: 概述
+      href: Introduction/Product-Overview.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 功能介绍
+      href: Introduction/Functions.md
       
 
-  - name: 快速入门
-    items:
-      - name: 概述
-        href: Guide/Summary.md
-      - name: 操作指南
-        href: Guide/Operation-Guide.md
-      - name: 开通网站
-        href: Guide/Create-Website.md
-      - name: 配置域名
-        href: Guide/Configure-domain-nameOperation-Guide.md
+- name: 快速入门
+  items:
+    - name: 概述
+      href: Guide/Summary.md
+    - name: 操作指南
+      href: Guide/Operation-Guide.md
+    - name: 开通网站
+      href: Guide/Create-Website.md
+    - name: 配置域名
+      href: Guide/Configure-domain-nameOperation-Guide.md
      
-  - name: 用户指南
-    items:
+- name: 用户指南
+  items:
     - name: 建站注意事项
-      href: Users'-Guide/Notice.md  
+      href: Users'-Guide/Notice.md 
     - name: 升级站点
-      href: Users'-Guide/Upgrade-site.md  
+      href: Users'-Guide/Upgrade-site.md 
     - name: 续费站点
-      href: Users'-Guide/Renew-site.md  
+      href: Users'-Guide/Renew-site.md
     - name: 复制站点
-      href: Users'-Guide/Copy-site.md  
+      href: Users'-Guide/Copy-site.md
     - name: 查看站点信息
       href: Users'-Guide/Check-site-information.md
     - name: 定制站点
-      href: Users'-Guide/Custom-site.md    
+      href: Users'-Guide/Custom-site.md
