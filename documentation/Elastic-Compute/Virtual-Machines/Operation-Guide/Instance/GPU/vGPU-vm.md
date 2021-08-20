@@ -10,7 +10,8 @@
 	* gcc 
 	* kernel-devel (请确保kernel-devel与kernel版本一致，如CentOS7.6对应kernel-devel-3.10.0-957.el7.x86_64)
 2. 禁用nouveau
-	如果系统中安装了nouveau(使用```lsmod | grep nouveau```查看)执行如下步骤，如未装直接转到第3步安装驱动。<br>
+	
+	如果系统中安装了nouveau(使用`lsmod | grep nouveau`查看)执行如下步骤，如未装直接转到第3步安装驱动。<br>
 	* 打开 /etc/modprobe.d/blacklist.conf， 在文件内添加 `blacklist nouveau` <br>
 	* 依次执行下述指令
 		```Shell
