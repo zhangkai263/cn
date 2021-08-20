@@ -1,5 +1,5 @@
 # 镜像自检工具
-针对Linux系统，您可使用京东智联云提供的镜像自检工具，在从外部环境导出镜像之前，运行自检工具对关键系统配置进行检测，并根据检测报告进行调整。
+针对Linux系统，您可使用京东云提供的镜像自检工具，在从外部环境导出镜像之前，运行自检工具对关键系统配置进行检测，并根据检测报告进行调整。
 
 为尽可能保证导入镜像的可用性和易用性，在导入镜像的过程中，系统会对镜像中的关键配置进行检测，如不符合会导致导入失败。因此，建议您在生产导入镜像之前，参照 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) 中的镜像基本要求确认系统配置并使用镜像自检工具对主要配置进行检查。
 
@@ -39,7 +39,7 @@ sudo ./jcs-image-tool
 | partition     | 采用MBR分区     | 无法正常启动实例     |采用MBR分区
 |  diskCharacterCheck    |正确配置fstab  | 无法正常启动实例     | 使用/dev/vda或者uuid的形式配置自动挂载
 | network     | 未启用NetworkManager	     |可能与network服务冲突导致网络不可用      |关闭或删除NetworkManager
-| firewall      |iptables服务已关闭      | 在京东智联云环境下配置的访问策略失效，可能导致某些内部服务由于访问受限导致无法正常运行     |关闭防火墙
+| firewall      |iptables服务已关闭      | 在京东云环境下配置的访问策略失效，可能导致某些内部服务由于访问受限导致无法正常运行     |关闭防火墙
 | driver     | virtio驱动已编译进内核或编译成内核模块     |  无法正常启动实例    |  [安装virtio驱动](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver)
 
 
