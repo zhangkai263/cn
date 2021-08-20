@@ -78,7 +78,8 @@
 * 华东-上海：https://sh-jcs-agent-linux.s3-internal.cn-east-2.jdcloud-oss.com/multi-queue-jd.tgz
 
 2. 解压并安装。
-```
+
+```shell
 tar zxvf multi-queue-jd.tgz
 cd multi-queue-jd
 bash install.sh <image-type> <version-num>
