@@ -1,13 +1,13 @@
 # 常见计费问题
 
-- [哪种类型的公网IP支持加入共享带宽包](FAQ#user-content-1)
-- [公网IP加入共享带宽包后还会计费吗](FAQ#user-content-2)
-- [公网IP加入共享带宽包为什么不支持续费](FAQ#user-content-3)
-- [后付费的公网IP欠费后还会产生费用吗](FAQ#user-content-4)
-- [包年包月计费类型的公网IP降低带宽上限，会退款](FAQ#user-content-5)
-- [包年包月计费类型的公网IP支持转成按配置或按用量计费吗](FAQ#user-content-6)
-- [边缘公网IP支持按用量计费吗](FAQ#user-content-7)
-- [按配置计费的边缘公网IP支持续费转包年包月吗](FAQ#user-content-8)
+- [哪种类型的公网IP支持加入共享带宽包](bill-faq#user-content-1)
+- [公网IP加入共享带宽包后还会计费吗](bill-faq#user-content-2)
+- [公网IP加入共享带宽包为什么不支持续费](bill-faq#user-content-3)
+- [后付费的公网IP欠费后还会产生费用吗](bill-faq#user-content-4)
+- [包年包月计费类型的公网IP降低带宽上限，会退款](bill-faq#user-content-5)
+- [包年包月计费类型的公网IP支持转成按配置或按用量计费吗](bill-faq#user-content-6)
+- [边缘公网IP支持按用量计费吗](bill-faq#user-content-7)
+- [按配置计费的边缘公网IP支持续费转包年包月吗](bill-faq#user-content-8)
 
 
 **Q：哪种类型的公网IP支持加入共享带宽包？**

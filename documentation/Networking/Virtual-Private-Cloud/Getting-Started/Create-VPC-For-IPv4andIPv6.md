@@ -17,9 +17,10 @@
 
   本教程将介绍，在京东云上部署同时支持IPv6和IPv4云主机的私有网络。首先在创建云主机之前，需创建支持IPv6的私有网络、子网。
 
-``
-创建的资源如私有网络、子网、路由表、网络ACL、安全组等需在同一地域下进行
-``
+
+> 创建的资源如私有网络、子网、路由表、网络ACL、安全组等需在同一地域下进行
+
+ 
  步骤1: 进入京东云控制台，选择私有网络，创建支持IPv6的私有网络，具体操作参考[配置双栈VPC](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)；
 
  步骤2：在步骤1中创建的私有网络下创建支持IPv6的子网，选择默认路由表，具体操作请参考[配置子网](https://docs.jdcloud.com/cn/virtual-private-cloud/subnet-configuration)；
