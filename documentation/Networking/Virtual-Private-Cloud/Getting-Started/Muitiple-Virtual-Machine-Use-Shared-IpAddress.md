@@ -41,7 +41,7 @@
 
 同理，可配置相同VPC下其他的子网路由。
 
-**注意：如主机需要通过NAT网关通信，不能选择与主机所在子网绑定同一张路由表的子网内的主机作为NAT网关。**
+> 注：如主机需要通过NAT网关通信，不能选择与主机所在子网绑定同一张路由表的子网内的主机作为NAT网关。
 
 ## 相关参考
 - [创建云主机](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
