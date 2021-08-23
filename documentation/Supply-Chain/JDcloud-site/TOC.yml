@@ -4,37 +4,36 @@ items:
 - name: 服务概览
   items:
     - name: 概述
-      href: documentation/Supply-Chain/JDcloud-site/Introduction/Product-Overview
+      href: Introduction/Product-Overview.md
     - name: 产品优势
-      href: documentation/Supply-Chain/JDcloud-site/Introduction/Benefits
+      href: Introduction/Benefits.md
     - name: 功能介绍
-      href: documentation/Supply-Chain/JDcloud-site/Introduction/Functions
+      href: Introduction/Functions.md
 
       
 
 - name: 快速入门
   items:
     - name: 概述
-      href: documentation/Supply-Chain/JDcloud-site/Guide/Summary
+      href: Guide/Summary.md
     - name: 操作指南
-      href: documentation/Supply-Chain/JDcloud-site/Guide/Operation-Guide
+      href: Guide/Operation-Guide.md
     - name: 开通网站
-      href: documentation/Supply-Chain/JDcloud-site/Guide/Create-Website
+      href: Guide/Create-Website.md
     - name: 配置域名
-      href: documentation/Supply-Chain/JDcloud-site/Guide/Configure-domain-name
+      href: Guide/Configure-domain-name.md
      
 - name: 用户指南
   items:
     - name: 建站注意事项
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Notice
+      href: Users'-Guide/Notice.md
     - name: 升级站点
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Upgrade-site 
+      href: Users'-Guide/Upgrade-site.md 
     - name: 续费站点
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Renew-site
+      href: Users'-Guide/Renew-site.md
     - name: 复制站点
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Copy-site
+      href: Users'-Guide/Copy-site.md
     - name: 查看站点信息
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Check-site-information
+      href: Users'-Guide/Check-site-information.md
     - name: 定制站点
-      href: documentation/Supply-Chain/JDcloud-site/Users'-Guide/Custom-site
-
+      href: Users'-Guide/Custom-site.md
