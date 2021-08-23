@@ -23,9 +23,9 @@
 
 更多操作请参考[创建云主机](../../..//Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
 
-```
-注：可通过创建NAT网关实现多主机共享公网IP，具体请参考NAT网关操作指南。
-```
+
+> 注：可通过创建NAT网关实现多主机共享公网IP，具体请参考NAT网关操作指南。
+
 
 
 **配置子网的路由表**
