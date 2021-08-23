@@ -51,7 +51,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTypes
 |**desc**|String|描述|
 |**state**|[InstanceTypeState[]](describeinstancetypes#instancetypestate)|规格状态|
 |**gpu**|[Gpu](describeinstancetypes#gpu)|Gpu配置|
-|**localDisks**|[LocalDisk[]](describeinstancetypes#localdisk)|本地缓存盘配置，目前只有Gpu规格上才有|
+|**localDisks**|[LocalDisk[]](describeinstancetypes#localdisk)| 本地缓存盘配置，目前只有Gpu规格上才有|
 |**generation**|Integer|实例规格代数|
 ### <div id="localdisk">LocalDisk</div>
 |名称|类型|描述|
