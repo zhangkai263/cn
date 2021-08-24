@@ -5,10 +5,12 @@
 
 创建一台或多台指定配置的云主机实例。
 
-实例有三种创建方式，不同方式下传参详见下方的请求[参数说明](createInstance#requestparameters)，也可参考请求[示例](createInstance#examples)。
+实例有三种创建方式，不同方式下传参详见下方的请求[参数说明](createInstance#requestparameters)，也可参考请求[示例](createInstance#user-content-1)。
 
-1、自定义创建：按配置要求逐一指定参数创建；
-2、使用实例模板创建：[实例模板](https://docs.jdcloud.com/virtual-machines/instance-template-overview)是实例配置信息的预配置，通过实例模板可快速创建实例，省去逐一配置参数的步骤。指定实例模板创建时，如不额外指定模板包含的参数将以模板为准创建实例，模板中未包含的参数，如可用区、内网IPv4地址、名称等仍需指定；
+1、自定义创建：按配置要求逐一指定参数创建；<br>
+
+2、使用实例模板创建：[实例模板](https://docs.jdcloud.com/virtual-machines/instance-template-overview)是实例配置信息的预配置，通过实例模板可快速创建实例，省去逐一配置参数的步骤。指定实例模板创建时，如不额外指定模板包含的参数将以模板为准创建实例，模板中未包含的参数，如可用区、内网IPv4地址、名称等仍需指定；<br>
+
 3、基于高可用组创建：[高可用组](https://docs.jdcloud.com/availability-group/product-overview)是一种高可用部署解决方案，提供了组内实例在数据中心内横跨多个故障域均衡部署的机制。高可用组须搭配实例模板使用，基于高可用组创建的实例将在其指定的可用区内以实例模板配置按一定分散机制创建实例。此创建方式下，实例创建参数除内网IPv4地址、名称等外均以实例模板为准且不支持再次指定。
 
 详细操作说明请参考帮助文档：[创建实例](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
@@ -16,7 +18,7 @@
 ## 接口说明
 - 创建实例前，请参考 [创建前准备](https://docs.jdcloud.com/virtual-machines/account-preparation-linux) 完成实名认证、支付方式确认、计费类型选择等准备工作。
 - 创建实例的配置说明和选择指导，请参考 [配置项说明](https://docs.jdcloud.com/cn/virtual-machines/select-configuration-linux)。
-- 各地域下实例及关联资源（云硬盘、弹性公网IP）的可创建数量受配额限制，创建前请通过 [DescribeQuotas](https://docs.jdcloud.com/cn/virtual-machines/api/describequotas?content=API) 确认配额，如须提升请[提交工单](https://ticket.jdcloud.com/applyorder/submit)或联系京东云客服。
+- 各地域下实例及关联资源（云硬盘、弹性公网IP）的可创建数量受配额限制，创建前请通过 [DescribeQuotas](https://docs.jdcloud.com/cn/virtual-machines/api/describequotas?content=API) 确认配额，如须提升请 [提交工单](https://ticket.jdcloud.com/applyorder/submit) 或联系京东云客服。
 - 不同地域及可用区下售卖的实例规格有差异，可通过 [DescribeInstanceTypes](https://docs.jdcloud.com/virtual-machines/api/describeinstancetypes?content=API) 查询在售规格及规格详细信息。
 - 通过本接口创建包年包月实例时将自动从账户扣款（代金券优先），如需使用第三方支付方式请通过控制台创建。
 - 单次请求最多支持创建 `100` 台实例。
@@ -39,7 +41,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**instanceSpec**|[InstanceSpec](#instancespec)|是| |实例配置。<br>|
 |**maxCount**|Integer|否|10|创建实例的数量，不能超过用户配额。<br>取值范围：[1,100]；默认值：1。<br>如果在弹性网卡中指定了内网IP地址，那么单次创建 `maxCount` 只能是 1。<br>|
-|**clientToken**|String|否| |用于保证请求的幂等性。由客户端生成，并确保不同请求中该参数唯一，长度不能超过64个字符。<br>|
+|**clientToken**|String|否| jd71-13hb-12dk-p123|用于保证请求的幂等性。由客户端生成，并确保不同请求中该参数唯一，长度不能超过64个字符。<br>|
 
 ### <div id="InstanceSpec">InstanceSpec</div>
 |名称|类型|是否必选|示例值|描述|
@@ -154,6 +156,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 
 ## 请求示例
 POST
+
+<div id="user-content-1"></div>
 
 调用方法、签名算法及公共请求参数请参考 [京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 
