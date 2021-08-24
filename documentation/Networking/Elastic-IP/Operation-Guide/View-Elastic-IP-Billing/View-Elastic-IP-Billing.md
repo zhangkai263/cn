@@ -9,10 +9,8 @@
 ### 前提条件及限制
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
-
 - 确保您已经创建弹性公网IP；
-
-- 按用量或按配置的公网IP创建后，需要一个计费周期后才会产生账单信息，更多请参考[计费规则](https://docs.jdcloud.com/cn/elastic-ip/billing-rules)
+- 按用量或按配置的公网IP创建后，需要一个计费周期后才会产生账单信息，更多请参考[计费规则](https://docs.jdcloud.com/cn/elastic-ip/billing-rules)。
 
 ## 操作步骤
 
