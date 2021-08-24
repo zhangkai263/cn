@@ -327,13 +327,13 @@ POST
 |**200**||OK||
 |**400**|INVALID_ARGUMENT|Parameter InstanceSpec.ImageId missing|参数ImageId不可为空。|
 |**400**|INVALID_ARGUMENT|Invalid password|密码不符合规范。|
-|**400**|FAILED_PRECONDITION|Disk type 'xx' is out of stock|“xx”类型云硬盘已售罄。|
+|**400**|FAILED_PRECONDITION|Disk type 'xx' is out of stock|所选类型云硬盘已售罄。|
 |**400**|FAILED_PRECONDITION|Image 'xx' not ready|所选镜像“xx”处于非可用状态。|
 |**400**|FAILED_PRECONDITION|stopCharging only applied to cloud system disk|仅系统盘类型为云硬盘的实例支持配置stopCharging参数。|
 |**400**|FAILED_PRECONDITION|stopCharging only applied to postpaid by duration|仅计费类型为按配置计费的实例实例支持配置stopCharging参数。|
 |**400**|FAILED_PRECONDITION|Image constraints. Only support cloud system disk|所选镜像仅支持硬云盘系统盘。|
-|**400**|FAILED_PRECONDITION|Image constraints. Doesn't support instanceType 'xx'|所选镜像不支持当前配置的实例规格'xx'。|
-|**400**|FAILED_PRECONDITION|Subnet 'xx' is unsupported in center zones|所选子网'xx'在中心可用区不可用。|
+|**400**|FAILED_PRECONDITION|Image constraints. Doesn't support instanceType 'xx'|所选镜像不支持当前配置的实例规格。|
+|**400**|FAILED_PRECONDITION|Subnet 'xx' is unsupported in center zones|所选子网在中心可用区不可用。|
 |**400**|FAILED_PRECONDITION|Available Ip in segments not enough|所选子网可用内网IP数量不足。|
 |**400**|OUT_OF_RANGE|Maxcount out of range|创建数量超过允许上限。|
 |**400**|OUT_OF_RANGE|InstanceSpec.SystemDisk.CloudDiskSpec.DiskSizeGB out of range|系统盘容量超出允许范围。|
