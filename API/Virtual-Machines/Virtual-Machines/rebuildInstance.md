@@ -37,7 +37,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:rebuildI
 |**keyNames**|String[]|否| |密钥对名称。仅Linux系统下该参数生效，当前仅支持输入单个密钥。<br>|
 |**hostname**|String|否| |实例hostname。<br>若不指定hostname，则默认以实例名称`name`作为hostname，但是会以RFC 952和RFC 1123命名规范做一定转义。<br>**Windows系统**：长度为2\~15个字符，允许大小写字母、数字或连字符（-），不能以连字符（-）开头或结尾，不能连续使用连字符（-），也不能全部使用数字。不支持点号（.）。<br>**Linux系统**：长度为2-64个字符，允许支持多个点号，点之间为一段，每段允许使用大小写字母、数字或连字符（-），但不能连续使用点号（.）或连字符（-），不能以点号（.）或连字符（-）开头或结尾。<br>|
 |**metadata**|[Metadata[]](#metadata)|否| |用户自定义元数据。<br>以 `key-value` 键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且 `key` 不超过256字符，`value` 不超过16KB，不区分大小写。<br>注意：`key` 不要以连字符(-)结尾，否则此 `key` 不生效。<br>|
-|**userdata**|[Userdata[]](#userdata)|否| |自定义脚本。<br>目前仅支持启动脚本，即 `launch-script`，须Base64编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持bash和python，编码前须分别以 #!/bin/bash 和 #!/usr/bin/env python 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 和 作为内容首、尾行。<br>|
+|**userdata**|[Userdata[]](#userdata)|否| |自定义脚本。<br>目前仅支持启动脚本，即 `launch-script`，须Base64编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持bash和python，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 bat 和 powershell ，编码前须分别以`<cmd>、</cmd>`和`<powershell>、</powershell>`作为内容首、尾行。<br>|
 
 ### <div id="Userdata">Userdata</div>
 |名称|类型|是否必选|示例值|描述|
