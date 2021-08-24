@@ -23,3 +23,8 @@
 * 不同监控数据统计周期监控值会做对应聚合，例如查看6小时的监控数据，每5分钟聚合一个监控值，该监控值为对应统计周期内采集值的聚合，支持以不同的聚合方式查询；
 * 在控制台可以观察30天的监控数据，在后台监控数据最多保存60天，若需要获取30天-60天的监控数据，请提交工单。
 
+## 相关参考
+
+- [云监控](https://docs.jdcloud.com/cn/monitoring/product-overview)
+- [管理报警规则](https://docs.jdcloud.com/cn/monitoring/manage_alarmrules_cm)
+
