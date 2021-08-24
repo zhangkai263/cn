@@ -7,7 +7,7 @@
 - [如何将公网IP加入共享带宽包](faq#user-content-5)
 - [如何确定公网IP是否已加入共享带宽包](faq#user-content-6)
 - [公网IP加入共享带宽包后如何调整带宽上限](faq#user-content-7)
-- [公网IP加入共享带宽包如何删除IP资源](faq#user-content-8)
+- [公网IP加入共享带宽包后如何删除IP资源](faq#user-content-8)
 - [为什么IP的公网带宽使用率会超过100%](faq#user-content-9)
 
 <div id="user-content-1"> </div>
@@ -97,7 +97,7 @@ A：加入共享带宽包后仅支持在对应的共享带宽包中调整公网I
 
 <div id="user-content-8"> </div>
 
-### Q：公网IP加入共享带宽包如何删除IP资源？
+### Q：公网IP加入共享带宽包后如何删除IP资源？
 
 A：公网IP加入共享带宽包后不支持在IP侧直接删除，需先从共享带宽包中移除公网IP，然后在公网IP列表页中进行删除。
 
