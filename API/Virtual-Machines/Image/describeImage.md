@@ -30,13 +30,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](describeImage#result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="Result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**image**|[Image](#image)| |镜像信息。|
+|**image**|[Image](describeImage#image)| |镜像信息。|
 ### <div id="Image">Image</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
@@ -54,8 +54,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |**desc**|String| |镜像描述。|
 |**ownerPin**|String| |该镜像拥有者的用户PIN。|
 |**launchPermission**|String|all|镜像的使用权限。返回值：<br>`all`：没有限制，所有人均可以使用。<br>`specifiedUsers`：只有共享用户可以使用。<br>`ownerOnly`：镜像拥有者自己可以使用。<br>|
-|**systemDisk**|[InstanceDiskAttachment](#instancediskattachment)| |镜像系统盘配置。|
-|**dataDisks**|[InstanceDiskAttachment[]](#instancediskattachment)| |镜像数据盘配置列表。|
+|**systemDisk**|[InstanceDiskAttachment](describeImage#instancediskattachment)| |镜像系统盘配置。|
+|**dataDisks**|[InstanceDiskAttachment[]](describeImage#instancediskattachment)| |镜像数据盘配置列表。|
 |**snapshotId**|String|snapshot-h8u1****36|创建云盘系统盘所使用的快照ID。系统盘类型为本地盘的镜像，此参数为空。|
 |**rootDeviceType**|String|cloudDisk|镜像支持的系统盘类型。返回值：<br>`localDisk`：本地盘系统盘。<br>`cloudDisk`：云盘系统盘。<br>|
 |**progress**|String|100|镜像复制和转换时的进度，仅显示数值，单位为百分比。|
@@ -67,8 +67,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |---|---|---|---|
 |**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：返回值：`local` 本地系统盘 或 `cloud` 云盘系统盘。<br>**数据盘**：返回值：`local` 本地数据盘 或 `cloud` 云盘数据盘。<br>|
 |**autoDelete**|Boolean|True|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**localDisk**|[LocalDisk](#localdisk)| |本地磁盘配置，对应 `diskCategory=local`。|
-|**cloudDisk**|[Disk](#disk)| |云硬盘配置，对应 `diskCategory=cloud`。|
+|**localDisk**|[LocalDisk](describeImage#localdisk)| |本地磁盘配置，对应 `diskCategory=local`。|
+|**cloudDisk**|[Disk](describeImage#disk)| |云硬盘配置，对应 `diskCategory=cloud`。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：返回值：`[vdb~vdbm]`。<br>|
 |**status**|String|attached|磁盘挂载状态。<br>返回值：`attaching、detaching、attached、detached、error_attach、error_detach`。|
 ### <div id="Disk">Disk</div>
@@ -83,15 +83,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |**iops**|Integer| |该云硬盘实际应用的iops值|
 |**throughput**|Integer| |该云硬盘实际应用的吞吐量的数值|
 |**status**|String| |云硬盘状态，返回值： creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
-|**attachments**|[DiskAttachment[]](#diskattachment)| |挂载信息|
+|**attachments**|[DiskAttachment[]](describeImage#diskattachment)| |挂载信息|
 |**snapshotId**|String| |创建该云硬盘的快照ID|
 |**multiAttachable**|Boolean| |云盘是否支持多挂载|
 |**encrypted**|Boolean| |云盘是否为加密盘|
 |**enabled**|Boolean| |云盘是否被暂停（IOPS限制为极低）|
 |**createTime**|String| |创建云硬盘时间|
-|**charge**|[Charge](#charge)| |云硬盘计费配置信息|
-|**tags**|[Tag[]](#tag)| | |
-|**snapshotPolicies**|[SnapshotPolicy[]](#snapshotpolicy)| | |
+|**charge**|[Charge](describeImage#charge)| |云硬盘计费配置信息|
+|**tags**|[Tag[]](describeImage#tag)| | |
+|**snapshotPolicies**|[SnapshotPolicy[]](describeImage#snapshotpolicy)| | |
 ### <div id="SnapshotPolicy">SnapshotPolicy</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
@@ -103,7 +103,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |**lastTriggerTime**|String| |策略上次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`|
 |**nextTriggerTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`|
 |**snapshotLifecycle**|Integer| |快照保留时间。单位:秒。0：永久保留|
-|**contactInfo**|[ContactInfo](#contactinfo)| |联系人信息|
+|**contactInfo**|[ContactInfo](describeImage#contactinfo)| |联系人信息|
 |**createTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`|
 |**updateTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`|
 |**status**|Integer| |策略状态。1：启用 2：禁用|
