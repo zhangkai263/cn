@@ -5,9 +5,7 @@
 
 查询镜像任务详情。
 
-将京东云私有镜像导出至京东云以外环境。
-
-详细操作说明请参考帮助文档：
+任务关联操作说明请参考帮助文档：
 [导入私有镜像](https://docs.jdcloud.com/cn/virtual-machines/import-private-image)
 [导出私有镜像](https://docs.jdcloud.com/cn/virtual-machines/export-private-image)
 
@@ -28,9 +26,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**taskAction**|String|是|ImportImage|任务操作类型。支持范围：`ImportImage、ExportImage`。|
+|**taskAction**|String|是|ImportImage|任务操作类型。取值范围：`ImportImage、ExportImage`。|
 |**taskIds**|Integer[]|否|\[101,102]|任务id列表。|
-|**taskStatus**|String|否|finished|任务状态。支持范围：`pending、running、failed、finished`。|
+|**taskStatus**|String|否|finished|任务状态。取值范围：`pending、running、failed、finished`。|
 |**startTime**|String|否|2020-07-02 17:34:44|任务开始时间|
 |**endTime**|String|否|2020-07-02 17:35:00|任务结束时间|
 |**pageNumber**|Integer|否| |页码；默认为1。|
@@ -40,20 +38,20 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](imageTasks#result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="Result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**taskSet**|[TaskInfo[]](#taskinfo)| |镜像导出导出任务详情。|
+|**taskSet**|[TaskInfo[]](imageTasks#taskinfo)| |镜像导出导出任务详情。|
 |**totalCount**|Integer| |总数量|
 ### <div id="TaskInfo">TaskInfo</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**taskId**|Integer| |任务ID。|
-|**action**|String|ImportImage|任务操作类型。支持范围：`ImportImage、ExportImage`。|
-|**taskStatus**|String|finished|任务状态。支持范围：`pending、running、failed、finished`。|
+|**action**|String|ImportImage|任务操作类型。返回值：`ImportImage、ExportImage`。|
+|**taskStatus**|String|finished|任务状态。返回值：`pending、running、failed、finished`。|
 |**progress**|Integer|50|任务进度，0% - 100%。|
 |**message**|String| |额外描述信息。|
 |**createdTime**|String|2020-07-02 17:34:44|任务创建时间。|
