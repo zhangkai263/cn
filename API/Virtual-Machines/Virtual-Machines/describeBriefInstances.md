@@ -102,13 +102,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances:describeBriefInstance
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**diskId**|String|vol-u8r2****c1|云硬盘ID。|
-|**diskType**|String|ssd.io1|云硬盘类型。可能值：`ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1`。|
+|**diskType**|String|ssd.io1|云硬盘类型。可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
 |**diskSizeGB**|Integer|120|云硬盘大小，单位为 GiB。|
 
 ### <div id="user-content-7">LocalDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.gp1|磁盘类型，可能值：`ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1`。|
+|**diskType**|String|ssd.gp1|磁盘类型，可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
 |**diskSizeGB**|Integer|120|磁盘大小，单位为 GiB。|
 
 
