@@ -333,7 +333,7 @@ POST
 |**400**|FAILED_PRECONDITION|stopCharging only applied to postpaid by duration|仅计费类型为按配置计费的实例实例支持配置stopCharging参数。|
 |**400**|FAILED_PRECONDITION|Image constraints. Only support cloud system disk|所选镜像仅支持硬云盘系统盘。|
 |**400**|FAILED_PRECONDITION|Image constraints. Doesn't support instanceType 'xx'|所选镜像不支持当前配置的实例规格'xx'。|
-|**400**|FAILED_PRECONDITION|Subnet 'xx' is unsupported in center zones.|所选子网'xx'在中心可用区不可用。|
+|**400**|FAILED_PRECONDITION|Subnet 'xx' is unsupported in center zones|所选子网'xx'在中心可用区不可用。|
 |**400**|FAILED_PRECONDITION|Available Ip in segments not enough|所选子网可用内网IP数量不足。|
 |**400**|OUT_OF_RANGE|Maxcount out of range|创建数量超过允许上限。|
 |**400**|OUT_OF_RANGE|InstanceSpec.SystemDisk.CloudDiskSpec.DiskSizeGB out of range|系统盘容量超出允许范围。|
