@@ -65,7 +65,7 @@ POST
 |---|---|---|---|
 |**200**||OK||
 |**400**|FAILED_PRECONDITION|Conflict with underlay task xx|云主机实例正在执行其它任务，请稍后再试。|
-|**400**|FAILED_PRECONDITION|Invalid instance status xx|云主机当前状态不支持执行此操作。|
+|**400**|FAILED_PRECONDITION|Invalid instance status xx|错误的云主机状态。|
 |**400**|FAILED_PRECONDITION|Flavor constraints. NetworkInterface limit exceeded|实例可绑定的弹性网卡已达到实例规格支持的上限。|
 |**400**|FAILED_PRECONDITION|NetworkInterface has been attached on other device|该弹性网卡已经绑定了其它实例。|
 |**400**|FAILED_PRECONDITION|No NetworkInterface permissions.|没有权限绑定该弹性网卡。|
