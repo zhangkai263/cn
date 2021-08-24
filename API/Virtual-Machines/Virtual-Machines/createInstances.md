@@ -328,7 +328,7 @@ POST
 |**400**|INVALID_ARGUMENT|Parameter InstanceSpec.ImageId missing|参数ImageId不可为空。|
 |**400**|INVALID_ARGUMENT|Invalid password|密码不符合规范。|
 |**400**|FAILED_PRECONDITION|Disk type 'xx' is out of stock|所选类型云硬盘已售罄。|
-|**400**|FAILED_PRECONDITION|Image 'xx' not ready|所选镜像“xx”处于非可用状态。|
+|**400**|FAILED_PRECONDITION|Image 'xx' not ready|所选镜像处于非可用状态。|
 |**400**|FAILED_PRECONDITION|stopCharging only applied to cloud system disk|仅系统盘类型为云硬盘的实例支持配置stopCharging参数。|
 |**400**|FAILED_PRECONDITION|stopCharging only applied to postpaid by duration|仅计费类型为按配置计费的实例实例支持配置stopCharging参数。|
 |**400**|FAILED_PRECONDITION|Image constraints. Only support cloud system disk|所选镜像仅支持硬云盘系统盘。|
