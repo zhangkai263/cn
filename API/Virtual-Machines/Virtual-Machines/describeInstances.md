@@ -159,58 +159,11 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**diskType**|String| ssd.gp1|云硬盘类型，可能值：` ssd.gp1、ssd.io1、hdd.std1`|
 |**diskSizeGB**|Integer| 40|云硬盘大小，单位为 GiB。|
 |**iops**|Integer| 2000|该云硬盘实际应用的iops值。|
-|**throughput**|Integer|150 |该云硬盘实际应用的吞吐量的数值。|
 |**status**|String|in-use |云硬盘状态，可能值：` creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend`。|
-|**attachments**|[DiskAttachment[]](#user-content-13)| |挂载信息。|
 |**snapshotId**|String| |创建该云硬盘的快照ID。|
 |**multiAttachable**|Boolean| false|云盘是否支持多挂载。|
 |**encrypted**|Boolean| false|云盘是否为加密盘。|
-|**enabled**|Boolean|false |云盘是否被暂停（IOPS限制为极低）。|
 |**createTime**|String| 2021-07-19 20:32:53|创建云硬盘时间。|
-|**charge**|[Charge](#user-content-4)| |云硬盘计费配置信息。|
-|**tags**|[Tag[]](#user-content-5)| | Tag信息。|
-|**snapshotPolicies**|[SnapshotPolicy[]](#user-content-14)| |云硬盘自动快照策略信息。 |
-
-### <div id="user-content-14">SnapshotPolicy</div>
-|名称|类型|示例值|描述|
-|---|---|---|---|
-|**id**|String|ss-policy-5v25****us |策略ID。|
-|**name**|String|policy2108 |策略名称。|
-|**pin**|String| |用户pin。|
-|**interval**|Integer| |策略执行间隔，单位:秒。|
-|**effectiveTime**|String| |策略生效时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`。|
-|**lastTriggerTime**|String| |策略上次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`。|
-|**nextTriggerTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`。|
-|**snapshotLifecycle**|Integer| |快照保留时间。单位:秒。0：永久保留。|
-|**contactInfo**|[ContactInfo](#user-content-15)| |联系人信息。|
-|**createTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`。|
-|**updateTime**|String| |策略下次执行时间。格式`YYYY-MM-DDTHH:mm:ss+xx:xx`。如`2020-02-02T20:02:00+08:00`。|
-|**status**|Integer| |策略状态。可能值：`1`：启用，`2`：禁用|
-|**diskCount**|Integer| |策略绑定的disk数量。|
-
-### <div id="user-content-15">ContactInfo</div>
-|名称|类型|示例值|描述|
-|---|---|---|---|
-|**sms**|Integer| |是否发送短信。可能值：`0`:不发送，`1`:发送。|
-|**email**|Integer| |是否发送邮件。可能值：`0`:不发送，`1`:发送。|
-|**personIds**|Integer[]| |联系人ID。|
-|**groupIds**|Integer[]| |联系组ID。|
-
-### <div id="user-content-5">Tag</div>
-|名称|类型|示例值|描述|
-|---|---|---|---|
-|**key**|String|环境 |Tag键。|
-|**value**|String| 测试|Tag值。|
-
-### <div id="user-content-13">DiskAttachment</div>
-|名称|类型|示例值|描述|
-|---|---|---|---|
-|**attachmentId**|String| |挂载ID。|
-|**diskId**|String| |云硬盘ID。|
-|**instanceType**|String| |挂载实例的类型。可能值：`vm`：云主机实例，`nc`：原生容器实例。|
-|**instanceId**|String| |挂载实例的ID。|
-|**status**|String| |挂载状态。可能值：`attaching、attached、detaching、detached`。|
-|**attachTime**|String| |挂载时间。|
 
 ### <div id="user-content-12">LocalDisk</div>
 |名称|类型|示例值|描述|
