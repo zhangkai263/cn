@@ -40,7 +40,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**instanceSpec**|[InstanceSpec](#user-content-1)|是| |实例配置。<br>|
-|**maxCount**|Integer|否|10|创建实例的数量，不能超过用户配额。<br>取值范围：[1,100]；默认值：1。<br>如果在弹性网卡中指定了内网IP地址，那么单次创建 `maxCount` 只能是 1。<br>|
+|**maxCount**|Integer|否|10|创建实例的数量，不能超过用户配额。<br>取值范围：`[1,100]`；默认值：`1`。<br>如果在弹性网卡中指定了内网IP地址，那么单次创建 `maxCount` 只能是 `1`。<br>|
 |**clientToken**|String|否| jd71-13hb-12dk-p123|用于保证请求的幂等性。由客户端生成，并确保不同请求中该参数唯一，长度不能超过64个字符。<br>|
 
 ### <div id="user-content-2">InstanceSpec</div>
