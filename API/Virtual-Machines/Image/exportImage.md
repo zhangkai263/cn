@@ -36,7 +36,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:exportImage
 |**roleName**|String|是|exportRole |用户创建的服务角色名称。|
 |**ossUrl**|String|是|https://test.s3-internal.cn-north-1.jdcloud-oss.com|存储导出镜像文件的 `oss bucket` 的域名，请填写以 https:// 开头的完整url。|
 |**ossPrefix**|String|否|testExport|导出镜像文件名前缀，仅支持英文字母和数字，不能超过32个字符。|
-|**clientToken**|String|否|19c4w0n8w0qcc2hmdfui62dmaaw3f7ft|用户导出镜像的幂等性保证。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果，不能超过64个字符。|
+|**clientToken**|String|否|jd71-13hb-12dk-p123|用户导出镜像的幂等性保证。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果，不能超过64个字符。|
 
 
 ## 返回参数
