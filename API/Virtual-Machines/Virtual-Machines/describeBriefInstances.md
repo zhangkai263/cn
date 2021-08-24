@@ -91,11 +91,11 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances:describeBriefInstance
 ### <div id="user-content-5">BriefInstanceDiskAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：取值为：`local` 本地系统盘 或 `cloud` 云盘系统盘。<br>**数据盘**：取值为：`local` 本地数据盘 或 `cloud` 云盘数据盘。<br>|
+|**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：可能值：`local` ：本地系统盘， `cloud` 云盘系统盘。<br>**数据盘**：可能值：`local` ：本地数据盘 或 `cloud` ：云盘数据盘。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
 |**localDisk**|[LocalDisk](#user-content-7)| |本地磁盘配置，对应 `diskCategory=local`。|
 |**cloudDisk**|[LightCloudDiskInfo](#user-content-8)| |云硬盘配置，对应 `diskCategory=cloud`。|
-|**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
+|**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：可能值：`[vdb~vdbm]`。<br>|
 |**status**|String|attached|磁盘挂载状态。<br>可能值：`attaching、detaching、attached、detached、error_attach、error_detach`。|
 
 ### <div id="user-content-8">LightCloudDiskInfo</div>
