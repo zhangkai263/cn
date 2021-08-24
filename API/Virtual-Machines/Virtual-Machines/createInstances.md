@@ -181,6 +181,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 
 - 请求示例
 
+POST
+
 ```JSON
 /v1/regions/cn-north-1/instances
 {
@@ -243,6 +245,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 
 - 请求示例
 
+POST
+
 ```JSON
 /v1/regions/cn-north-1/instances
 {
@@ -281,6 +285,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 基于高可用组创建实例，除名称必须指定外，另外增加tag用于标识实例环境信息。
 
 - 请求示例
+
+POST
 
 ```JSON
 /v1/regions/cn-north-1/instances
