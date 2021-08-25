@@ -21,9 +21,7 @@
 
 * [不修改VPC和子网，仅调整内网IP地址](Modify-VPC-Attribute#user-content-Method1)
 * [不修改VPC，仅修改子网](Modify-VPC-Attribute#user-content-Method2)
-* [修改VPC及子网](#user-content-Method3)
-
-</div>
+* [修改VPC及子网](Modify-VPC-Attribute#user-content-Method3)
 
 ### <div id="user-content-Method1">① 不修改VPC和子网，仅调整内网IP地址</div>
 * 调整方式选择“同子网修改内网IP”；<br>
