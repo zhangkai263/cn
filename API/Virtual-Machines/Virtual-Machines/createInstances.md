@@ -101,15 +101,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**chargeMode**|String|否|prepaid_by_duration |计费模式。<br>可选值：<br>`postpaid_by_duration`（默认值）：按配置（后付费）<br>`prepaid_by_duration`：包年包月（预付费）<br>`postpaid_by_usage`：按用量（后付费）<br>仅弹性公网IP支持`postpaid_by_usage`，具体计费说明请参考[实例计费类型说明](https://docs.jdcloud.com/cn/virtual-machines/billing-overview)。|
 |**chargeUnit**|String|否| month|包年包月（预付费）付费单位。仅`chargeMode=prepaid_by_duration`时此参数有效。<br>可选值：<br>`month`（默认值）：月<br>`year`：年|
 |**chargeDuration**|Integer|否|1 |包年包月（预付费）付费单位。仅`chargeMode=prepaid_by_duration`时此参数有效。<br>取值范围：<br>`chargeUnit=month`时：`[1,9]`<br>`chargeUnit=year`时：`[1,3]`|
-|**autoRenew**|Boolean|否|true |自动续费。<br>可选值：<br>`True`：开通自动续费<br>`False`（默认值）：不开通自动续费|
+|**autoRenew**|Boolean|否|true |自动续费。<br>可选值：<br>`true`：开通自动续费<br>`false`（默认值）：不开通自动续费|
 |**buyScenario**|String|否| |统一活动凭证。此参数暂未启用，无须指定且指定无效。|
 
 ### <div id="user-content-7">InstanceDiskAttachmentSpec</div>
 
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskCategory**|String|否|cloud|磁盘类型。<br>**系统盘**：此参数无须指定，其类型取决于镜像类型。<br>**数据盘**：可选值：`cloud`：云硬盘，数据盘仅支持云硬盘。<br>|
-|**autoDelete**|Boolean|否|True|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
+|**diskCategory**|String|否||磁盘类型。<br>**系统盘**：此参数无须指定，其类型取决于镜像类型。<br>**数据盘**：数据盘仅支持云硬盘`cloud`。<br>|
+|**autoDelete**|Boolean|否|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
 |**cloudDiskSpec**|[diskspec](createInstances#user-content-8)|否| |磁盘详细配置。此参数仅针对云硬盘，本地系统盘无须指定且指定无效。<br>|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
 |**noDevice**|Boolean|否| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
