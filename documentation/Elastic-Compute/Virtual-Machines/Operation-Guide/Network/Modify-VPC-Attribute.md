@@ -19,11 +19,11 @@
 2、在停止状态下点击 **操作-更多-修改网络配置** 按钮。<br>
 3、在弹窗中选择调整方式，修改网络配置支持以下三种形式的调整：
 
-* [不修改VPC和子网，仅调整内网IP地址](Modify-VPC-Attribute#Modify-Method-1)
-* [不修改VPC，仅修改子网](Modify-VPC-Attribute#Modify-Method-2)
-* [修改VPC及子网](Modify-VPC-Attribute#Modify-Method-3)
+* [不修改VPC和子网，仅调整内网IP地址](Modify-VPC-Attribute#user-content-Method1)
+* [不修改VPC，仅修改子网](Modify-VPC-Attribute#user-content-Method2)
+* [修改VPC及子网](#user-content-Method3)
 
-<div id="Modify-Method-1"></div>
+<div id="user-content-Method1"></div>
 
 ### ① 不修改VPC和子网，仅调整内网IP地址
 * 调整方式选择“同子网修改内网IP”；<br>
@@ -31,7 +31,7 @@
 
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-modifyvpc1.png" width="600"></div>
 
-<div id="Modify-Method-2"></div>
+<div id="user-content-Method2"></div>
 
 ### ② 不修改VPC，仅修改子网
 * 调整方式选择“同VPC修改子网”；<br>
@@ -40,7 +40,7 @@
 
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-modifyvpc2.png" width="600"></div>
 
-<div id="Modify-Method-3"></div>
+<div id="user-content-Method3"></div>
 
 ### ③ 修改VPC及子网
 * 调整方式选择“修改VPC和子网”；<br>
