@@ -46,11 +46,11 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**keypairs**|[Keypair[]](#keypair)| |密钥信息列表。|
-|**totalCount**|Number| |本次查询可匹配到的总记录数，使用者需要结合 `pageNumber` 和 `pageSize` 计算是否可以继续分页。|
+|**totalCount**|Number|2 |本次查询可匹配到的总记录数，使用者需要结合 `pageNumber` 和 `pageSize` 计算是否可以继续分页。|
 ### <div id="Keypair">Keypair</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**keyName**|String| |密钥对名称。|
+|**keyName**|String|ssh-test |密钥对名称。|
 |**keyFingerprint**|String|25:65:12:a8:2a:d9:03:79:a4:59:2a:ce:fe:00:aa:7f|密钥对的指纹，根据 `RFC4716` 定义的公钥指纹格式，采用 `MD5` 信息摘要算法。|
 |**createTime**|String|2020-11-11 12:22:56|密钥创建时间。|
 |**instanceIds**|String[]| |绑定了此密钥的云主机ID列表。|
