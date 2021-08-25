@@ -5,7 +5,7 @@
 
 创建一台或多台指定配置的云主机实例。
 
-实例有三种创建方式，不同方式下传参详见下方的请求[参数说明](createInstance#requestparameters)，也可参考请求[示例](createInstance#user-content-1)。
+实例有三种创建方式，不同方式下传参详见下方的请求[参数说明](createInstances#user-content-requestparameters)，也可参考请求[示例](createInstances#user-content-1)。
 
 1、自定义创建：按配置要求逐一指定参数创建；<br>
 
@@ -36,10 +36,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**regionId**|String|是|cn-north-1|地域ID。|
 
-## 请求参数
+## <div id="user-content-requestparameters">请求参数</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**instanceSpec**|[InstanceSpec](#user-content-1)|是| |实例配置。<br>|
+|**instanceSpec**|[InstanceSpec](createInstances#user-content-1)|是| |实例配置。<br>|
 |**maxCount**|Integer|否|10|创建实例的数量，不能超过用户配额。<br>取值范围：`[1,100]`；默认值：`1`。<br>如果在弹性网卡中指定了内网IP地址，那么单次创建 `maxCount` 只能是 `1`。<br>|
 |**clientToken**|String|否| jd71-13hb-12dk-p123|用于保证请求的幂等性。由客户端生成，并确保不同请求中该参数唯一，长度不能超过64个字符。<br>|
 
@@ -56,18 +56,18 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**hostname**|String|否|instance-\[001\]-ops|实例hostname。若不指定hostname，则默认以实例名称 `name` 作为hostname，但是会以RFC 952和RFC 1123命名规范做一定转义。<br>**Windows系统**：长度为2\~15个字符，允许大小写字母、数字或连字符（-），不能以连字符（-）开头或结尾，不能连续使用连字符（-），也不能全部使用数字。不支持点号（.）。<br>**Linux系统**：长度为2-64个字符，允许支持多个点号，点之间为一段，每段允许使用大小写字母、数字或连字符（-），但不能连续使用点号（.）或连字符（-），不能以点号（.）或连字符（-）开头或结尾。<br>批量创建多台实例时，可在hostname中非首位位置以\[start_number]格式来设置有序hostname。start_number为起始序号，其位数代表编号字符位数，范围：\[0,9999]。详情参见[为实例设置有序名称及Hostname]()。|
 |**password**|String|否|Instance@010|实例密码。可用于SSH登录和VNC登录。长度为8\~30个字符，必须同时包含大、小写英文字母、数字和特殊符号中的三类字符。特殊符号包括：\(\)\`~!@#$%^&\*\_-+=\|{}\[ ]:";'<>,.?/，更多密码输入要求请参见 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。<br>如指定密钥且 `passwordAuth` 设置为 `true` ，则密码不会生成注入，否则即使不指定密码系统也将默认自动生成随机密码，并以短信和邮件通知。<br>|
 |**keyNames**|String[]|否|\[&quot;keypair001&quot;\]|密钥对名称。仅Linux系统下该参数生效，当前仅支持输入单个密钥。<br>|
-|**elasticIp**|[ElasticIpSpec](#user-content-11)|否| |主网卡主IP关联的弹性公网IP配置。<br>|
-|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachmentSpec](#user-content-9)|否| |主网卡配置。<br>|
-|**systemDisk**|[InstanceDiskAttachmentSpec](#user-content-7)|否| |系统盘配置。<br>|
-|**dataDisks**|[InstanceDiskAttachmentSpec[]](#user-content-7)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。<br>|
-|**charge**|[ChargeSpec](#user-content-6)|否| |计费配置。<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
-|**metadata**|[Metadata[]](#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
-|**userdata**|[Userdata[]](#user-content-4)|否| |自定义脚本。目前仅支持启动脚本，即 `launch-script`，须 `base64` 编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持 `bash` 和 `python`，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 `<cmd></cmd>和<powershell></powershell>` 作为内容首、尾行。<br>|
+|**elasticIp**|[ElasticIpSpec](createInstances#user-content-11)|否| |主网卡主IP关联的弹性公网IP配置。<br>|
+|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachmentSpec](createInstances#user-content-9)|否| |主网卡配置。<br>|
+|**systemDisk**|[InstanceDiskAttachmentSpec](createInstances#user-content-7)|否| |系统盘配置。<br>|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](createInstances#user-content-7)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。<br>|
+|**charge**|[ChargeSpec](createInstances#user-content-6)|否| |计费配置。<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
+|**metadata**|[Metadata[]](createInstances#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
+|**userdata**|[Userdata[]](createInstances#user-content-4)|否| |自定义脚本。目前仅支持启动脚本，即 `launch-script`，须 `base64` 编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持 `bash` 和 `python`，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 `<cmd></cmd>和<powershell></powershell>` 作为内容首、尾行。<br>|
 |**description**|String|否| |实例描述。256字符以内。<br>|
 |**noPassword**|Boolean|否| |使用实例模板创建实例时，如模板中已设置密码，期望不使用该密码而由系统自动生成时，可通过此参数（`true`）实现。<br>可选值：<br>`true`：不使用实例模板中配置的密码。<br>`false`：使用实例模板中配置的密码。<br>仅在未指定 `agId` 且指定 `instanceTemplateId`，且 `password` 为空时，此参数(`true`)生效。<br>|
 |**noKeyNames**|Boolean|否| |使用实例模板创建实例时，如模板中已设置密钥，期望不使用该密钥仅使用密码作为登录凭证时，可通过此参数（`true`）实现。<br>仅在未指定 `agId` 且指定 `instanceTemplateId`，且 `keyNames` 为空时，此参数(`true`)生效。<br>|
 |**noElasticIp**|Boolean|否| |使用实例模板创建实例时，如模板中已设置弹性公网IP，期望不绑定弹性公网IP时，可通过此参数（`true`）实现。<br>仅在未指定 `agId` 且指定 `instanceTemplateId`，且 `elasticIp` 为空时，此参数(`true`)生效。<br>|
-|**userTags**|[Tag[]](#user-content-3)|否| |自定义实例标签。以key-value键值对形式指定，最多支持10个标签。key不能以 "jrn:" 或“jdc-”开头，仅支持中文、大/小写英文、数字及如下符号：`\_.,:\/=+-@`。<br>|
+|**userTags**|[Tag[]](createInstances#user-content-3)|否| |自定义实例标签。以key-value键值对形式指定，最多支持10个标签。key不能以 "jrn:" 或“jdc-”开头，仅支持中文、大/小写英文、数字及如下符号：`\_.,:\/=+-@`。<br>|
 |**chargeOnStopped**|String|否|stopCharging|停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。配置停机不计费且停机后，实例部分将停止计费，且释放实例自身包含的资源（CPU/内存/GPU/本地数据盘）。<br>可选值：<br>`keepCharging`（默认值）：停机后保持计费，不释放资源。<br>`stopCharging`：停机后停止计费，释放实例资源。<br>|
 |**autoImagePolicyId**|String|否|pol-xgsc****7e|自动任务策略ID。<br>|
 |**passwordAuth**|String|否|True|允许SSH密码登录。<br>可选值：<br>`yes`（默认值）：允许SSH密码登录。<br>`no`：禁止SSH密码登录。<br>仅在指定密钥时此参数有效，指定此参数后密码即使输入也将被忽略，同时会在系统内禁用SSH密码登录。<br>|
@@ -110,7 +110,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**diskCategory**|String|否|cloud|磁盘类型。<br>**系统盘**：此参数无须指定，其类型取决于镜像类型。<br>**数据盘**：可选值：`cloud`：云硬盘，数据盘仅支持云硬盘。<br>|
 |**autoDelete**|Boolean|否|True|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
-|**cloudDiskSpec**|[user-content-8](#diskspec)|否| |磁盘详细配置。此参数仅针对云硬盘，本地系统盘无须指定且指定无效。<br>|
+|**cloudDiskSpec**|[diskspec](createInstances#user-content-8)|否| |磁盘详细配置。此参数仅针对云硬盘，本地系统盘无须指定且指定无效。<br>|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
 |**noDevice**|Boolean|否| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
 
@@ -123,19 +123,19 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**description**|String|否| |云硬盘描述。|
 |**diskType**|String|是|ssd.gp1 |云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型SSD<br>|
 |**diskSizeGB**|Integer|是|50 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
-|**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,`diskSizeGB\*50`]`<br>默认值：`diskSizeGB*30`|
+|**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,diskSizeGB*50)]`<br>默认值：`diskSizeGB*30`|
 |**snapshotId**|String|否|snapshot-ev1h****gd |创建云硬盘使用的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us |云硬盘自动快照策略ID。|
-|**charge**|[ChargeSpec](#user-content-6)|否| |云硬盘计费配置。创建实例时此参数无须指定且指定无效，云硬盘计费类型默认与实例计费类型一致。|
-|**multiAttachable**|Boolean|否|false|云硬盘是否支持多点挂载。<br>可选值：<br>`true`：支持<br>`false`（默认值）：不支持|
+|**charge**|[ChargeSpec](createInstances#user-content-6)|否| |云硬盘计费配置。创建实例时此参数无须指定且指定无效，云硬盘计费类型默认与实例计费类型一致。|
+|**multiAttachable**|Boolean|否||云硬盘是否支持多点挂载。创建实例时此参数无须指定。|
 |**encrypt**|Boolean|否| false|云硬盘是否加密。<br>可选值：<br>`true`：加密<br>`false`（默认值）：不加密|
 
 ### <div id="user-content-9">InstanceNetworkInterfaceAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**deviceIndex**|Integer|否|2|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
-|**autoDelete**|Boolean|否|True|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
-|**networkInterface**|[NetworkInterfaceSpec](#user-content-10)|否| |网卡设备详细配置。<br>|
+|**deviceIndex**|Integer|否|1|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1。<br>|
+|**autoDelete**|Boolean|否|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>主网卡此属性默认为`true`|
+|**networkInterface**|[NetworkInterfaceSpec](createInstances#user-content-10)|否| |网卡设备详细配置。<br>|
 
 ### <div id="user-content-10">NetworkInterfaceSpec</div>
 |名称|类型|是否必选|示例值|描述|
@@ -160,7 +160,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#user-content-12)| |响应结果。|
+|**result**|[Result](createInstances#user-content-12)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="user-content-12">Result</div>
