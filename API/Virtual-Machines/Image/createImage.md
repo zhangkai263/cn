@@ -33,7 +33,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |---|---|---|---|---|
 |**name**|String|是| image-test|镜像名称，长度为2\~32个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.）。<br>|
 |**description**|String|否| |镜像描述。256字符以内。<br>|
-|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>如果希望在打包镜像中插入一块新盘，该盘不在实例中，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在打包镜像中插入一块盘符为 `vdx` 的新盘，可创建空盘或通过`snapshotId`指定快照创建。<br>如果使用 `deviceName` 指定了与实例中已挂载盘相同的盘符，那么实例中对应的云盘数据盘也不会制作快照，并使用新指定的参数进行替换。<br>|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br><br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
 
 ### <div id="InstanceDiskAttachmentSpec">InstanceDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
@@ -57,7 +57,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |**policyId**|String|否| |云硬盘自动快照策略ID。此参数无须指定且指定无效。|
 |**charge**|ChargeSpec|否| |计费配置。此参数无须指定且指定无效。|
 |**multiAttachable**|Boolean|否| |云硬盘是否支持一盘多主机挂载。此参数无须指定且指定无效。|
-|**encrypt**|Boolean|否| |云硬盘是否加密。<br>可选值：<br>`true`：加密<br>`false`（默认值）：不加密|
+|**encrypt**|Boolean|否| |云硬盘是否加密。仅添加空数据盘时此参数有效，指定快照ID创建时加密属性继承自快照。<br>可选值：<br>`true`：加密<br>`false`（默认值）：不加密|
 
 
 ## 返回参数
@@ -74,6 +74,12 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 
 ## 请求示例
 POST
+
+#### 场景：<br>
+基于实例创建私有镜像，并做如下调整：
+* 当前设备名为`vdc`的云硬盘排除，镜像不包含此数据盘的快照；
+* 新增（或覆盖）设备名为`vde`的云硬盘，使用快照`snapshot-h8u1****36`创建，并指定磁盘类型、容量、IOPS；
+* 新增（或覆盖）设备名为`vdh`的云硬盘，该盘为空盘，并指定磁盘类型及容量。
 
 ```
 /v1/regions/cn-north-1/instances/i-eumm****d6:createImage
@@ -92,8 +98,7 @@ POST
             	"snapshotId":"snapshot-h8u1****36",
                 "diskType":"ssd.io1",
                 "diskSizeGB":40,
-                "iops":500,
-                "encrypt":false
+                "iops":500
             }
         },
         {
