@@ -98,7 +98,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ### <div id="user-content-3">InstanceNetworkInterfaceAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**deviceIndex**|Integer|2|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
+|**deviceIndex**|Integer||网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
 |**networkInterface**|[InstanceNetworkInterface](#user-content-8)| |网卡设备详细配置。|
 
