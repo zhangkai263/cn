@@ -31,8 +31,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 |**taskStatus**|String|否|finished|任务状态。可选值：`pending、running、failed、finished`。|
 |**startTime**|String|否|2020-07-02 17:34:44|任务开始时间。|
 |**endTime**|String|否|2020-07-02 17:35:00|任务结束时间。|
-|**pageNumber**|Integer|否| |页码；默认为1。|
-|**pageSize**|Integer|否| |分页大小；默认为10；取值范围`[1, 10]`。|
+|**pageNumber**|Integer|否| |页码。默认为1。|
+|**pageSize**|Integer|否| |分页大小。取值范围：`[1, 10]`，默认为10；。|
 
 
 ## 返回参数
