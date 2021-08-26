@@ -31,22 +31,24 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageConstraints
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](describeImageConstraintsBatch#result)| |响应结果。|
+|**result**|[Result](describeImageConstraintsBatch#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**imageConstraints**|[ImageConstraint[]](describeImageConstraintsBatch#imageconstraint)| |镜像限制信息列表。|
-### <div id="ImageConstraint">ImageConstraint</div>
+|**imageConstraints**|[ImageConstraint[]](describeImageConstraintsBatch#user-content-imageconstraint)| |镜像限制信息列表。|
+
+### <div id="user-content-imageconstraint">ImageConstraint</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String|img-m5s0****29|镜像ID。|
-|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](describeImageConstraintsBatch#imageinstancetypeconstraint)| |镜像对实例规格的约束信息。|
-### <div id="ImageInstanceTypeConstraint">ImageInstanceTypeConstraint</div>
+|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](describeImageConstraintsBatch#user-content-imageinstancetypeconstraint)| |镜像对实例规格的约束信息。|
+
+### <div id="user-content-imageinstancetypeconstraint">ImageInstanceTypeConstraint</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**constraintsType**|String|excludes|对实例规格的限制类型。取值范围：<br>`excludes`：不支持的实例规格，当前只支持 excludes 一种数据。<br>`includes`：支持的实例规格。<br>|
+|**constraintsType**|String|excludes|对实例规格的限制类型。可能值：<br>`excludes`：不支持的实例规格，当前只支持 excludes 一种数据。<br>`includes`：支持的实例规格。<br>|
 |**instanceTypes**|String[]|\[&quot;g.n4.xlarge&quot;,&quot;m.n4.xlarge&quot;\]|实例规格列表。|
 
 
