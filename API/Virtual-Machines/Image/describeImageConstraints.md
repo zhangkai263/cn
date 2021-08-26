@@ -5,7 +5,7 @@
 
 查询单个镜像的实例规格限制。
 
-详细操作说明请参考帮助文档：[镜像概述](https://docs.jdcloud.com/cn/virtual-machines/image-overview)
+详细操作说明请参考帮助文档：[实例使用限制](https://docs.jdcloud.com/cn/virtual-machines/restrictions)
 
 ## 接口说明
 - 该接口与批量查询镜像的实例规格限制返回的信息一致。
@@ -31,22 +31,24 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](describeImageConstraints#result)| |响应结果。|
+|**result**|[Result](describeImageConstraints#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**imageConstraints**|[ImageConstraint](describeImageConstraints#imageconstraint)| |镜像限制信息。|
-### <div id="ImageConstraint">ImageConstraint</div>
+|**imageConstraints**|[ImageConstraint](describeImageConstraints#user-content-imageconstraint)| |镜像限制信息。|
+
+### <div id="user-content-imageconstraint">ImageConstraint</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String|img-m5s0****29|镜像ID。|
-|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](describeImageConstraints#imageinstancetypeconstraint)| |镜像对实例规格的约束信息。|
-### <div id="ImageInstanceTypeConstraint">ImageInstanceTypeConstraint</div>
+|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](describeImageConstraints#user-content-imageinstancetypeconstraint)| |镜像对实例规格的约束信息。|
+
+### <div id="user-content-imageinstancetypeconstraint">ImageInstanceTypeConstraint</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**constraintsType**|String|excludes|对实例规格的限制类型。取值范围：<br>`excludes`：不支持的实例规格，当前只支持 excludes 一种数据。<br>`includes`：支持的实例规格。<br>|
+|**constraintsType**|String|excludes|对实例规格的限制类型。可能值：<br>`excludes`：不支持的实例规格，当前只支持 excludes 一种类型。<br>`includes`：支持的实例规格。<br>|
 |**instanceTypes**|String[]|\[&quot;g.n4.xlarge&quot;,&quot;m.n4.xlarge&quot;\]|实例规格列表。|
 
 
