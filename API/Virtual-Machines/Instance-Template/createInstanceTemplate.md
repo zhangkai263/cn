@@ -76,7 +76,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 ### <div id="user-content-5">InstanceTemplateNetworkInterfaceAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**deviceIndex**|Integer|否|1|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1。<br>|
+|**deviceIndex**|Integer|否||网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1。<br>|
 |**autoDelete**|Boolean|否|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>主网卡此属性默认为`true`|
 |**networkInterface**|[InstanceTemplateNetworkInterfaceSpec](createInstanceTemplate#user-content-10)|否| |网卡设备详细配置。<br>|
 
