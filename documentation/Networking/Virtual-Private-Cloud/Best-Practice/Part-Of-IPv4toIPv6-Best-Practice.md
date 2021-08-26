@@ -13,9 +13,7 @@
 
 ## 操作步骤
 - [搭建IPv4/IPv6双栈VPC](Part-Of-IPv4toIPv6-Best-Practice#user-content-1)
-
 - [通过VPC peering连接单栈VPC和双栈VPC](Part-Of-IPv4toIPv6-Best-Practice#user-content-2)
-
 - [配置负载均衡](Part-Of-IPv4toIPv6-Best-Practice#user-content-3)
 
 ### 搭建IPv4/IPv6双栈VPC
