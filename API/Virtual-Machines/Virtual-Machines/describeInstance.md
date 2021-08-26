@@ -158,7 +158,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**diskType**|String|ssd.gp1|磁盘类型。可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
-|**diskSizeGB**|Integer|120|磁盘大小。|
+|**diskSizeGB**|Integer|120|磁盘容量，单位为 GiB。|
 
 
 ## 请求示例
