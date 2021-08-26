@@ -66,7 +66,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 ### <div id="user-content-7">InstanceTemplateDiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型SSD<br>
+|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
 |**diskSizeGB**|Integer|否|50|云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
 |**snapshotId**|String|否|snapshot-h8u1****36|创建云硬盘的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us|云硬盘自动快照策略ID。|
