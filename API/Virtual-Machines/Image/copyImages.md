@@ -9,7 +9,7 @@
 
 ## 接口说明
 - 调用该接口将私有镜像复制到其它地域下,目标地域仅可选择除当前镜像所在地域外的其他地域，且单次仅可选择一个地域。
-- 仅镜像类型为“云硬盘系统盘”且状态为"可用"的私有镜像支持复制操作。
+- 仅镜像类型为“云硬盘系统盘”且状态为`ready`(可用)的私有镜像支持复制操作。
 - 由于复制操作会占用目标地域下私有镜像和云硬盘快照的配额，因此请在操作前确保目标地域下相应的配额充足。
 - 不支持复制带有加密快照的镜像。
 
@@ -27,21 +27,22 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images:copyImages
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**sourceImageIds**|String[]|是|\[&quot;img-m5s0****29&quot;,&quot;img-m5s0****30&quot;]|要复制的私有镜像ID列表，最多支持10个。|
+|**sourceImageIds**|String[]|是|\[&quot;img-m5s0\*\*\*\*29&quot;,&quot;img-m5s0\*\*\*\*30&quot;]|要复制的私有镜像ID列表，最多支持10个。|
 |**destinationRegion**|String|是|cn-east-2|目标地域。|
 
 
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](copyImages#result)| |响应结果。|
+|**result**|[Result](copyImages#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**copyImages**|[CopyImage[]](copyImages#copyimage)| |源镜像与目标镜像映射关系。|
-### <div id="CopyImage">CopyImage</div>
+|**copyImages**|[CopyImage[]](copyImages#user-content-copyimage)| |源镜像与目标镜像映射关系。|
+
+### <div id="user-content-copyimage">CopyImage</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**destinationImageId**|String|img-m5s0****29|跨区复制产生的目标镜像ID。|
