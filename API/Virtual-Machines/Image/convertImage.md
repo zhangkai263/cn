@@ -31,10 +31,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:convertImage
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](convertImage#result)| |响应结果。|
+|**result**|[Result](convertImage#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String|img-m5s0****29|转换后新镜像的ID。|
