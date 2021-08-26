@@ -6,7 +6,7 @@
 查询资源配额。
 
 ## 接口说明
-- 调用该接口可查询 `云主机`、`镜像`、`密钥`、`实例模板`、`镜像共享` 的配额。
+- 调用该接口可查询 云主机、私有镜像、SSH密钥、实例模板、镜像共享 的配额。
 
 
 ## 请求方式
@@ -22,30 +22,31 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**filters**|[Filter[]](#user-content-1)|否| |<b>filters 中支持使用以下关键字进行过滤</b><br>`resourceTypes`: 资源类型，支持多个，可选范围：`instance、keypair、image、instanceTemplate、imageShare`<br>|
-|**imageId**|String|否| |私有镜像Id。<br>查询镜像共享 `imageShare` 的配额时，此参数必传。<br>|
+|**filters**|[Filter[]](describeQuotas#user-content-1)|否| |<b>filters 中支持使用以下关键字进行过滤</b><br>`resourceTypes`: 资源类型，支持多个，可选值：`instance、keypair、image、instanceTemplate、imageShare`<br>|
+|**imageId**|String|否| |私有镜像Id。<br>查询指定镜像可共享用户数的配额时，此参数必传。<br>|
 
 ### <div id="user-content-1">Filter</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**name**|String|是| |过滤条件的名称|
-|**operator**|String|否| |过滤条件的操作符，默认eq|
-|**values**|String[]|是| |过滤条件的值|
+|**name**|String|是| |过滤条件的名称。|
+|**operator**|String|否| |过滤条件的操作符，默认eq。|
+|**values**|String[]|是| |过滤条件的值。|
 
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#user-content-2)| |响应结果。|
+|**result**|[Result](describeQuotas#user-content-2)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="user-content-2">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**quotas**|[Quota[]](#user-content-3)| |配额列表。|
+|**quotas**|[Quota[]](describeQuotas#user-content-3)| |配额列表。|
+
 ### <div id="user-content-3">Quota</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**resourceType**|String|instance|资源类型。支持范围：<br>`instance`：云主机。<br>`keypair`：密钥。<br>`image`：镜像。<br>`instanceTemplate`：实例模板。<br>`imageShare`：共享镜像。<br>|
+|**resourceType**|String|instance|资源类型。可能值：<br>`instance`：云主机。<br>`keypair`：密钥。<br>`image`：镜像。<br>`instanceTemplate`：实例模板。<br>`imageShare`：镜像共享。<br>|
 |**limit**|Integer|20|配额上限。|
 |**used**|Integer|12|已用配额。|
 
