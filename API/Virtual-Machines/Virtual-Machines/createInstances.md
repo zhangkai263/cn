@@ -122,7 +122,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**name**|String|否| |云硬盘名称。创建实例时此参数无须指定。如指定则按指定名称创建，如不指定云硬盘名称同实例名称，创建多块磁盘时会在名称后依次追加序号1,2...。|
 |**description**|String|否| |云硬盘描述。|
 |**diskType**|String|是|ssd.gp1 |云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型SSD<br>|
-|**diskSizeGB**|Integer|是|50 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
+|**diskSizeGB**|Integer|是|50 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量。|
 |**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,diskSizeGB*50)]`<br>默认值：`diskSizeGB*30`|
 |**snapshotId**|String|否|snapshot-ev1h****gd |创建云硬盘使用的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us |云硬盘自动快照策略ID。|
@@ -146,7 +146,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**primaryIpAddress**|String|否| 10.192.0.\*\* |网卡主IP。如不指定，则自动从所选子网可用IP中分配；如指定，请在在子网可用IP范围内指定。<br>指定IP地址时，主机数量`maxCount`仅可指定为`1`。|
 |**secondaryIpAddresses**|String[]|否| |网卡辅助内网IP地址。创建实例时此参数无须指定且指定无效。|
 |**secondaryIpCount**|Integer|否| |自动分配的网卡辅助内网IP数量。创建实例时此参数无须指定且指定无效|
-|**securityGroups**|String[]|否| sg-1r4z****ra |实例（主网卡）所属绑定的安全组ID。最多可指定5个。|
+|**securityGroups**|String[]|否| ["sg-1r4z****ra"] |实例（主网卡）所属绑定的安全组ID。最多可指定5个。|
 |**sanityCheck**|Integer|否| |参数已弃用，指定无效。|
 |**description**|String|否| |网卡描述。创建实例时此参数无须指定且指定无效。|
 
@@ -154,7 +154,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|是|10|弹性公网IP的带宽上限，单位：Mbps。<br>取值范围为：`[1-200]`。|
-|**provider**|String|是| bgp|弹性公网IP线路。中心可用区目前仅提供BGP类型IP。|
+|**provider**|String|是| bgp|弹性公网IP线路。中心可用区目前仅提供`BGP`类型IP。|
 |**chargeSpec**|[ChargeSpec](#chargespec)|否| |弹性公网IP计费配置。<br>**中心可用区**：支持包年包月、按配置、按流量。<br>**边缘可用区**：支持包年包月、按配置。<br>中心可用区下如指定按流量计费，则IP计费独立于实例的计费类型，否则以实例计费类型为准与其保持一致。|
 
 ## 返回参数
