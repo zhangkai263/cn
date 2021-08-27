@@ -29,7 +29,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**imageSource**|String|否|public|镜像来源，如果没有指定 `ids` 参数，此参数必传。可选值：<br>`public`：官方镜像。<br>`thirdparty`：镜像市场镜像。<br>`private`：用户自己的私有镜像。<br>`shared`：其他用户共享的镜像。|
+|**imageSource**|String|否|public|镜像来源，如果没有指定 `ids` 参数，此参数必传。可选值：<br>`public`：官方镜像。<br>`thirdparty`：镜像市场镜像。<br>`private`：用户自己的私有镜像。<br>`shared`：其他用户共享的镜像。<br>`community`：社区镜像。|
 |**offline**|Boolean|否| |查询已经下线的镜像时使用。<br>只有查询 `imageSource=public` 或 `imageSource=thirdparty` 时，此参数才有意义，其它情况下此参数无效。<br>指定 `ids` 查询时，此参数无效。<br>可能值：`true` ：已下线；`false`：未下线。|
 |**platform**|String|否|CentOS|根据镜像的操作系统发行版查询。<br>可选值：`Ubuntu、CentOS、Windows Server`。<br>|
 |**ids**|String[]|否|\[&quot;img-m5s0\*\*\*\*29&quot;,&quot;img-m5s0****30&quot;]|指定镜像ID查询，如果指定了此参数，其它参数可以不传。<br>|
