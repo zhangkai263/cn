@@ -44,10 +44,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyIn
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**subnetId**|String|是|subnet-c2p3****9o|子网Id。|
-|**assignIpv6**|Boolean|否| |`true`: 分配IPV6地址。<br>`false`: 不分配IPV6地址。<br>|
-|**privateIpAddress**|String|否| |Ipv4地址。<br>不变更 `vpc` 及子网时必须指定Ipv4地址<br>|
-|**securityGroups**|String[]|否| |安全组列表。<br>更换 `vpc` 时必须指定新的安全组。<br>不更换 `vpc` 时不可以指定安全组。<br>|
+|**subnetId**|String|是|subnet-c2p3\*\*\*\*9o|子网Id。|
+|**assignIpv6**|Boolean|否| false|可选值：<br>`true`: 分配IPV6地址。<br>`false`: 不分配IPV6地址。<br>|
+|**privateIpAddress**|String|否| 10.0.0.10|Ipv4地址。<br>不变更 `vpc` 及子网时必须指定Ipv4地址<br>|
+|**securityGroups**|String[]|否|["sg-p2d1\*\*\*\*ya", "sg-zn1a\*\*\*\*3c"] |安全组列表。<br>更换 `vpc` 时必须指定新的安全组。<br>不更换 `vpc` 时不可以指定安全组。<br>|
 
 
 ## 返回参数

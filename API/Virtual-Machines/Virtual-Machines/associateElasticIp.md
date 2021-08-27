@@ -61,9 +61,9 @@ POST
 |---|---|---|---|
 |**200**||OK||
 |**400**|FAILED_PRECONDITION|ElasticIp xx already in use|弹性公网IP已经绑定了其它实例。|
-|**400**|FAILED_PRECONDITION|The instance and elasticIp 'xx' are in different azs.|弹性公网IP与云主机实例不在同一个可用区中。|
+|**400**|FAILED_PRECONDITION|The instance and elasticIp 'xx' are in different azs|弹性公网IP与云主机实例不在同一个可用区中。|
 |**400**|FAILED_PRECONDITION|NetworkInterface already in use|云主机实例主网卡主内网IP已经绑定了公网IP。|
 |**404**|NOT_FOUND|ElasticIpId xxx not found|弹性公网IP不存在。|
-|**404**|NOT_FOUND|Instance 'xx' not found.|云主机实例不存在。|
+|**404**|NOT_FOUND|Instance 'xx' not found|云主机实例不存在。|
 |**500**|INTERNAL|Internal server error|系统内部错误，请稍后重试。如果多次尝试失败，请提交工单。|
 |**500**|UNKNOWN|Unknown server error|服务暂时不可用，请稍后重试。如果多次尝试失败，请提交工单。|

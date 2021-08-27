@@ -9,8 +9,8 @@
 
 ## 接口说明
 - 云主机实例没有正在进行中的任务时才可制作镜像。
-- 本地系统盘的实例，仅支持关机（已停止）状态下制作私有镜像。
-- 云盘系统盘的实例，支持开机(运行中)/关机（已停止）状态下制作私有镜像。
+- 本地系统盘的实例，仅支持`stopped`（已停止）状态下制作私有镜像。
+- 云盘系统盘的实例，支持`running`(运行中)、`stopped`（已停止）状态下制作私有镜像。
 - 调用接口后，需要等待镜像状态变为 `ready` 后，才能正常使用镜像。
 - 若当前实例系统盘为本地盘，则创建完成后的私有镜像为本地盘系统盘镜像；若当前实例系统盘为云硬盘，则创建完成后的私有镜像为云硬盘系统盘镜像。您可通过镜像类型转换 [convertImage](https://docs.jdcloud.com/Image/api/convertimage) 将本地盘系统盘镜像转换为云硬盘系统盘镜像后使用。
 - 默认情况下，制作的镜像中包括数据盘中的云硬盘（制作快照），但是不包含本地数据盘。
@@ -31,40 +31,34 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**name**|String|是| |镜像名称，长度为2\~32个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.）。<br>|
+|**name**|String|是| image-test|镜像名称，长度为2\~32个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.）。<br>|
 |**description**|String|否| |镜像描述。256字符以内。<br>|
-|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会将该实例中的所有云盘数据盘制作快照，并与系统盘一起，制作成打包镜像。<br>如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 就不会将 `vdb` 制作快照。<br>如果希望在打包镜像中插入一块新盘，该盘不在实例中，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在打包镜像中插入一块盘符为 `vdx` 的新盘，支持新盘使用或不使用快照都可以。<br>如果使用 `deviceName` 指定了与实例中相同的盘符，那么实例中对应的云盘数据盘也不会制作快照，并使用新指定的参数进行替换。<br>|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br><br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
 
 ### <div id="InstanceDiskAttachmentSpec">InstanceDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskCategory**|String|否|cloud|磁盘类型。<br>**系统盘**：此参数无须指定，其类型取决于镜像类型。<br>**数据盘**：可选值：`cloud`：云硬盘，数据盘仅支持云硬盘。<br>|
-|**autoDelete**|Boolean|否|True|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
-|**cloudDiskSpec**|[DiskSpec](#diskspec)|否| |磁盘详细配置。此参数仅针对云硬盘，本地系统盘无须指定且指定无效。<br>|
+|**diskCategory**|String|否|cloud|磁盘类型。数据盘仅支持云硬盘`cloud`。<br>|
+|**autoDelete**|Boolean|否|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>如不指定，则默认与磁盘当前删除属性一致。|
+|**cloudDiskSpec**|[DiskSpec](#diskspec)|否| |云硬盘详细配置。|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
-|**noDevice**|Boolean|否| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
+|**noDevice**|Boolean|否|false |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
+
 ### <div id="DiskSpec">DiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**az**|String|是| |云硬盘所属的可用区|
-|**name**|String|是| |云硬盘名称|
-|**description**|String|否| |云硬盘描述|
-|**diskType**|String|是| |云硬盘类型，取值为ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一|
-|**diskSizeGB**|Integer|是| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G, ssd.gp1, ssd.io1, hdd.std1 类型取值均是范围[20,16000]GB，步长为10G|
-|**iops**|Integer|否| |云硬盘IOPS的大小，当且仅当云盘类型是ssd.io1型的云盘有效，步长是10.|
-|**snapshotId**|String|否| |用于创建云硬盘的快照ID|
-|**policyId**|String|否| |策略ID|
-|**charge**|[ChargeSpec](#chargespec)|否| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
-|**multiAttachable**|Boolean|否| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
-|**encrypt**|Boolean|否| |云硬盘是否加密，默认为false（不加密）|
-### <div id="ChargeSpec">ChargeSpec</div>
-|名称|类型|是否必选|示例值|描述|
-|---|---|---|---|---|
-|**chargeMode**|String|否| |计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
-|**chargeUnit**|String|否| |预付费计费单位，预付费必填，当chargeMode为prepaid_by_duration时有效，取值为：month、year，默认为month|
-|**chargeDuration**|Integer|否| |预付费计费时长，预付费必填，当chargeMode取值为prepaid_by_duration时有效。当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3|
-|**autoRenew**|Boolean|否| |True=：OPEN——开通自动续费、False=CLOSE—— 不开通自动续费，默认为CLOSE|
-|**buyScenario**|String|否| |产品线统一活动凭证JSON字符串，需要BASE64编码，目前要求编码前格式为 {"activity":{"activityType":必填字段, "activityIdentifier":必填字段}}|
+|**az**|String|是| |云硬盘所属的可用区。此参数无须指定且指定无效。|
+|**name**|String|是| |云硬盘名称。此参数无须指定且指定无效|
+|**description**|String|否| |云硬盘描述。此参数无须指定且指定无效。|
+|**diskType**|String|是| ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>|
+|**diskSizeGB**|Integer|是|100 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
+|**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,diskSizeGB*50)]`<br>默认值：`diskSizeGB*30`|
+|**snapshotId**|String|否|snapshot-ev1h****gd |创建云硬盘使用的快照ID。仅制作镜像添加新盘时此参数有效。|
+|**policyId**|String|否| |云硬盘自动快照策略ID。此参数无须指定且指定无效。|
+|**charge**|ChargeSpec|否| |计费配置。此参数无须指定且指定无效。|
+|**multiAttachable**|Boolean|否| |云硬盘是否支持一盘多主机挂载。此参数无须指定且指定无效。|
+|**encrypt**|Boolean|否| |云硬盘是否加密。仅添加空数据盘时此参数有效，指定快照ID创建时加密属性继承自快照。<br>可选值：<br>`true`：加密<br>`false`（默认值）：不加密|
+
 
 ## 返回参数
 |名称|类型|示例值|描述|
@@ -80,6 +74,12 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 
 ## 请求示例
 POST
+
+#### 场景：<br>
+基于实例创建私有镜像，并做如下调整：
+* 当前设备名为`vdc`的云硬盘排除，镜像不包含此数据盘的快照；
+* 新增（或覆盖）设备名为`vde`的云硬盘，使用快照`snapshot-h8u1****36`创建，并指定磁盘类型、容量、IOPS；
+* 新增（或覆盖）设备名为`vdh`的云硬盘，该盘为空盘，并指定磁盘类型及容量。
 
 ```
 /v1/regions/cn-north-1/instances/i-eumm****d6:createImage
@@ -98,8 +98,7 @@ POST
             	"snapshotId":"snapshot-h8u1****36",
                 "diskType":"ssd.io1",
                 "diskSizeGB":40,
-                "iops":500,
-                "encrypt":false
+                "iops":500
             }
         },
         {
