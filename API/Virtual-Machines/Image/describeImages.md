@@ -30,11 +30,11 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**imageSource**|String|否|public|镜像来源，如果没有指定 `ids` 参数，此参数必传。可选值：<br>`public`：官方镜像。<br>`thirdparty`：镜像市场镜像。<br>`private`：用户自己的私有镜像。<br>`shared`：其他用户共享的镜像。|
-|**offline**|Boolean|否| |查询已经下线的镜像时使用。<br>只有查询 `imageSource=public` 或 `imageSource=thirdparty` 时，此参数才有意义，其它情况下此参数无效。<br>指定 `ids` 查询时，此参数无效。<br>可能值：`true` ：已下线；`false`：未下线。|
+|**offline**|Boolean|否| |查询已经下线的镜像时使用。<br>只有查询 `imageSource=public` 或 `imageSource=thirdparty` 时，此参数才有意义，其它情况下此参数无效。<br>指定 `ids` 查询时，此参数无效。可选值：<br>`true` ：已下线；<br>`false`：未下线。|
 |**platform**|String|否|CentOS|根据镜像的操作系统发行版查询。<br>可选值：`Ubuntu、CentOS、Windows Server`。<br>|
 |**ids**|String[]|否|\[&quot;img-m5s0\*\*\*\*29&quot;,&quot;img-m5s0****30&quot;]|指定镜像ID查询，如果指定了此参数，其它参数可以不传。<br>|
 |**imageName**|String|否| image|根据镜像名称模糊查询。|
-|**rootDeviceType**|String|否|cloudDisk|根据镜像支持的系统盘类型查询。<br>可选值：`localDisk` ：本地系统盘镜像；`cloudDisk`： 云盘系统盘镜像。|
+|**rootDeviceType**|String|否|cloudDisk|根据镜像支持的系统盘类型查询。可选值：<br>`localDisk` ：本地系统盘镜像；<br>`cloudDisk`： 云盘系统盘镜像。|
 |**launchPermission**|String|否|ownerOnly|根据镜像的使用权限查询，仅当 `imageSource` 为 `private` 时有效。可选值：<br>`specifiedUsers`：存在共享关系镜像。<br>`ownerOnly`：不存在共享关系的镜像。<br>|
 |**status**|String|否|ready|根据镜像状态查询。参考 [镜像状态](https://docs.jdcloud.com/virtual-machines/api/image_status)|
 |**pageNumber**|Integer|否|1|页码；默认为1。|
@@ -62,7 +62,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 |**osVersion**|String|8.2|镜像的操作系统版本。|
 |**architecture**|String|x86_64|镜像架构。可能值：`x86_64、i386`。|
 |**systemDiskSizeGB**|Integer|40|镜像系统盘大小。|
-|**imageSource**|String|public|镜像来源，可能值：<br>`public`：官方镜像。<br>`thirdparty`：镜像市场镜像。<br>`private`：用户自己的私有镜像。<br>`shared`：其他用户共享的镜像。<br>`community`：社区镜像。<br>|
+|**imageSource**|String|public|镜像来源，可能值：<br>`public`：官方镜像。<br>`thirdparty`：镜像市场镜像。<br>`private`：用户自己的私有镜像。<br>`shared`：其他用户共享的镜像。|
 |**osType**|String|linux|镜像的操作系统类型。可能值：`windows、linux`。|
 |**status**|String|ready|镜像状态。参考 [镜像状态](https://docs.jdcloud.com/virtual-machines/api/image_status)。|
 |**createTime**|String|2020-08-21 11:36:36|镜像的创建时间。|
@@ -75,7 +75,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images
 |**snapshotId**|String|snapshot-h8u1****36|创建云盘系统盘所使用的快照ID。系统盘类型为本地盘的镜像，此参数为空。|
 |**rootDeviceType**|String|cloudDisk|镜像支持的系统盘类型。可能值：<br>`localDisk`：本地盘系统盘。<br>`cloudDisk`：云硬盘系统盘。<br>|
 |**progress**|String|100|镜像复制和镜像类型转换时的进度，仅显示数值，单位为百分比。|
-|**offline**|Boolean| |镜像的上下线状态。仅官方镜像和云市场镜像返回此值。<br>可能值：`true` ：已下线；`false`：未下线。|
+|**offline**|Boolean| |镜像的上下线状态。仅官方镜像和云市场镜像返回此值。可能值：<br>`true` ：已下线；<br>`false`：未下线。|
 
 
 ### <div id="user-content-instancediskattachment">InstanceDiskAttachment</div>
