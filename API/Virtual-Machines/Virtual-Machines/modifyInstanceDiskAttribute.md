@@ -27,9 +27,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyIn
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**dataDisks**|[InstanceDiskAttribute[]](#instancediskattribute)|否| |云硬盘列表。|
+|**dataDisks**|[InstanceDiskAttribute[]](modifyInstanceDiskAttribute#user-content-instancediskattribute)|否| |云硬盘列表。|
 
-### <div id="InstanceDiskAttribute">InstanceDiskAttribute</div>
+### <div id="user-content-instancediskattribute">InstanceDiskAttribute</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**diskId**|String|否|vol-u8r2****c1|云硬盘ID。|
