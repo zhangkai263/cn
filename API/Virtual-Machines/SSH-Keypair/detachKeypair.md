@@ -8,8 +8,9 @@
 详细操作说明请参考帮助文档：[绑定密钥](https://docs.jdcloud.com/cn/virtual-machines/bind-keypair)
 
 ## 接口说明
-- 实例已通过京东云绑定密钥，且实例须处于**运行中**或**已停止**状态。
+- 实例已通过京东云绑定密钥，且实例须处于 **运行中** 或 **已停止** 状态。
 - 解绑密钥后，须启动（停止状态绑定）或重启（运行状态绑定）实例才可生效。
+- 密钥解绑功能依赖于镜像中内置的京东云官方系统组件，由于组件具备自动升级功能，因此通常情况下均支持密钥绑定功能。如需确认可进入系统运行`cat /usr/local/share/jcloud/agent/core/componentInfo.cfg`查看系统组件版本是否不低于`3.0.1042`。
 
 
 ## 请求方式
@@ -32,10 +33,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs/{keyName}:detach
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](detachKeypair#user-contemt-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-contemt-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**successInstanceId**|String[]| |请求成功的云主机实例ID列表。|

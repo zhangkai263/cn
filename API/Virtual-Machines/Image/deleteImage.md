@@ -42,6 +42,9 @@ DELETE
 
 ```
 /v1/regions/cn-north-1/images/img-m5s0****29
+{
+    "deleteSnapshot":"true"
+}
 ```
 
 
