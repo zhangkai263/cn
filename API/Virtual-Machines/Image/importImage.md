@@ -25,26 +25,26 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images:import
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**architecture**|String|是|x86_64|镜像架构。取值范围：`x86_64、i386`。|
-|**osType**|String|是|linux|镜像的操作系统类型。取值范围：`windows、linux`。|
-|**platform**|String|是|CentOS|镜像的操作系统平台名称。<br>取值范围：`Ubuntu、CentOS、Windows Server、Other Linux、Other Windows`。<br>|
-|**diskFormat**|String|是|qcow2|磁盘格式，取值范围：`qcow2、vhd、vmdk、raw`。|
-|**systemDiskSizeGB**|Integer|是|40|以此镜像需要制作的系统盘的默认大小，单位GB。最小值40，最大值500，要求值是10的整数倍。|
-|**imageUrl**|String|是|https://test.s3-internal.cn-north-1.jdcloud-oss.com/linux/system_img.raw|要导入镜像的对象存储外链地址。|
+|**architecture**|String|是|x86_64|镜像架构。可选值：`x86_64、i386`。|
+|**osType**|String|是|linux|镜像的操作系统类型。可选值：`windows、linux`。|
+|**platform**|String|是|CentOS|镜像的操作系统平台名称。<br>可选值：`Ubuntu、CentOS、Windows Server、Other Linux、Other Windows`。<br>|
+|**diskFormat**|String|是|qcow2|磁盘格式，可选值：`qcow2、vhd、vmdk、raw`。|
+|**systemDiskSizeGB**|Integer|是|40|镜像系统盘的默认容量，单位GiB。取值范围：`[40,500]`，要求值是10的整数倍。须保证此容量不小于镜像文件系统实际空间大小。|
+|**imageUrl**|String|是|https://test.s3-internal.cn-north-1.jdcloud-oss.com/linux/system_img.raw|要导入镜像的对象存储内网下载地址。|
 |**osVersion**|String|否|8.2|镜像的操作系统版本。|
-|**imageName**|String|是| |导入镜像的自定义名称。参考 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。|
+|**imageName**|String|是|image-test |导入镜像的自定义名称。参考 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。|
 |**description**|String|否| |导入镜像的描述信息。参考 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。|
-|**forceImport**|Boolean|否| |是否强制导入。强制导入会忽略镜像的合规性检测。默认为false。|
-|**clientToken**|String|否|19c4w0n8w0qcc2hmdfui62dmaaw3f7ft|用户导出镜像的幂等性保证。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果，不能超过64个字符。|
+|**forceImport**|Boolean|否|false |是否强制导入。强制导入会忽略镜像的可用性检测。<br>可选值：<br>`true`：强制导入；<br>`false`（默认值）：不强制导入。|
+|**clientToken**|String|否|jd71-13hb-12dk-p123|用于保证请求的幂等性。由客户端生成，并确保不同请求中该参数唯一，长度不能超过64个字符。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果。|
 
 
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](importImage#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String| |镜像id。|

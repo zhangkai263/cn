@@ -5,7 +5,7 @@
 
 导入密钥。
 
-与创建密钥不同的是，导入的密钥是由用户生成的。生成之后将公钥部分导入到京东云。
+与创建密钥不同的是，导入的密钥是由用户在本地生成的，生成之后将公钥部分导入到京东云使用。
 
 详细操作说明请参考帮助文档：[创建密钥](https://docs.jdcloud.com/cn/virtual-machines/create-keypair)
 
@@ -33,10 +33,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs:import
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](importKeypair#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**keyName**|String|my-test|密钥对名称。|

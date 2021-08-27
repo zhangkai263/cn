@@ -5,16 +5,18 @@
 
 导出私有镜像。
 
-将京东云私有镜像导出至京东云以外环境。
+将您在京东云环境下制作的私有镜像，导出至同地域下的京东云对象存储空间中。
 
 详细操作说明请参考帮助文档：[导出私有镜像](https://docs.jdcloud.com/cn/virtual-machines/export-private-image)
 
 ## 接口说明
-- 调用此接口将私有镜像导出到京东云对象存储空间中。
+- 由于导出镜像需要对您的对象存储空间进行操作，因此需要您创建服务角色并授予系统相应的访问权限，请参照[导出私有镜像](https://docs.jdcloud.com/cn/virtual-machines/export-private-image)中创建服务角色的说明进行创建。
+- 镜像必须为“可用”状态，其他状态镜像无法导出。
 - 仅支持系统盘镜像导出，即使镜像有关联的数据盘快照，也仅会导出系统盘镜像文件。
-- 导出的镜像文件格式为QCOW2。
+- 镜像必须为您的私有镜像，官方镜像、云市场镜像或其他人共享给您的镜像，即使有使用权限也无法直接导出原镜像。
 - `Windows Server` 操作系统的镜像不支持导出（若镜像来源为导入镜像，则无此限制）。
 - 镜像必须为 `云硬盘系统盘` 镜像，如您的镜像是 `本地盘系统盘` 镜像，可以通过镜像类型转换功能转换为云盘系统盘镜像后再导出。
+- 导出的镜像文件格式为QCOW2。
 
 
 ## 请求方式
@@ -31,16 +33,16 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:exportImage
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**roleName**|String|是| |用户创建的服务角色名称。|
+|**roleName**|String|是|exportRole |用户创建的服务角色名称。|
 |**ossUrl**|String|是|https://test.s3-internal.cn-north-1.jdcloud-oss.com|存储导出镜像文件的 `oss bucket` 的域名，请填写以 https:// 开头的完整url。|
 |**ossPrefix**|String|否|testExport|导出镜像文件名前缀，仅支持英文字母和数字，不能超过32个字符。|
-|**clientToken**|String|否|19c4w0n8w0qcc2hmdfui62dmaaw3f7ft|用户导出镜像的幂等性保证。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果，不能超过64个字符。|
+|**clientToken**|String|否|jd71-13hb-12dk-p123|用户导出镜像的幂等性保证。每次导出请传入不同的值，如果传值与某次的clientToken相同，则返还同一个请求结果，不能超过64个字符。|
 
 
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](exportImage#result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="Result">Result</div>

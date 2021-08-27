@@ -5,12 +5,11 @@
 
 创建密钥。
 
-公钥和私钥都由京东云生成，公钥保存在京东云，私钥返回给用户，由用户保存。
-
 详细操作说明请参考帮助文档：[创建密钥](https://docs.jdcloud.com/cn/virtual-machines/create-keypair)
 
 ## 接口说明
 - 调用该接口创建密钥后，公钥部分存储在京东云，并返回未加密的 `PEM` 编码的 `PKCS#8` 格式私钥，您只有一次机会保存您的私钥。请妥善保管。
+- 单地域密钥上限为20，如需创建更多请提交工单提升配额。
 
 
 ## 请求方式
@@ -32,10 +31,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](createKeypair#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**keyName**|String|my-test|密钥对名称。|

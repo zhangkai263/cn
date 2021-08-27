@@ -29,13 +29,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/members
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](describeImageMembers#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**pins**|String[]| |京东云帐户列表。|
+|**pins**|String[]| |被共享的京东云帐户列表。|
 
 
 ## 请求示例

@@ -27,58 +27,61 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTypes
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**serviceName**|String|否|vm|产品线类型，默认为 `vm`。支持范围：`vm` 云主机，`nc` 原生容器。|
-|**filters**|[Filter[]](#filter)|否| |<b>filters 中支持使用以下关键字进行过滤</b><br>`instanceTypes`: 实例规格，精确匹配，支持多个<br>`az`: 可用区，精确匹配，支持多个<br>|
+|**serviceName**|String|否|vm|产品线类型，可选值：<br>`vm`（默认值）：云主机<br>`nc`：原生容器|
+|**filters**|[Filter[]](describeInstanceTypes#user-content-filter)|否| |<b>filters 中支持使用以下关键字进行过滤</b><br>`instanceTypes`: 实例规格，精确匹配，支持多个<br>`az`: 可用区，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**name**|String|是| |过滤条件的名称|
-|**operator**|String|否| |过滤条件的操作符，默认eq|
-|**values**|String[]|是| |过滤条件的值|
+|**name**|String|是|instanceTypes |过滤条件的名称|
+|**operator**|String|否| eq|过滤条件的操作符，默认eq|
+|**values**|String[]|是| g.n2.xlarge|过滤条件的值|
 
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](describeInstanceTypes#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**instanceTypes**|[InstanceType[]](#instancetype)| |实例规格详情列表。|
-|**specificInstanceTypes**|[InstanceType[]](#instancetype)| |已废弃。|
+|**instanceTypes**|[InstanceType[]](describeInstanceTypes#user-content-instancetype)| |实例规格详情列表。|
+|**specificInstanceTypes**|[InstanceType[]](describeInstanceTypes#instancetype)| |参数已废弃，无须关注。|
 |**totalCount**|Integer| |本次查询到的所有实例规格数量。|
-### <div id="InstanceType">InstanceType</div>
+
+### <div id="user-content-instancetype">InstanceType</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**family**|String|g.n|实例规格族。|
+|**generation**|Integer|2|实例规格代数。|
 |**instanceType**|String|g.n2.xlarge|实例规格。|
-|**cpu**|Integer|4|cpu个数。|
-|**memoryMB**|Integer|8192|内存大小。|
+|**cpu**|Integer|4|vcpu个数。|
+|**memoryMB**|Integer|8192|内存大小，单位GiB。|
 |**nicLimit**|Integer|4|支持绑定的弹性网卡数量，包括主网卡。|
 |**cloudDiskCountLimit**|Integer|8|支持挂载的云硬盘数量，包括云盘系统盘。|
 |**desc**|String| |实例规格描述。|
-|**state**|[InstanceTypeState[]](#instancetypestate)| |实例规格售卖状态。已售罄的实例规格无法使用。|
-|**gpu**|[Gpu](#gpu)| |GPU配置，针对GPU类型的实例规格有效。|
-|**localDisks**|[LocalDisk[]](#localdisk)| |本地数据盘配置（缓存盘），针对GPU类型、或本地存储型的实例规格有效。|
-|**generation**|Integer|3|实例规格代数。|
-### <div id="LocalDisk">LocalDisk</div>
+|**state**|[InstanceTypeState[]](describeInstanceTypes#user-content-instancetypestate)| |实例规格售卖状态。已售罄的实例规格无法使用。|
+|**gpu**|[Gpu](describeInstanceTypes#user-content-gpu)| |GPU配置，针对GPU类型的实例规格有效。|
+|**localDisks**|[LocalDisk[]](describeInstanceTypes#user-content-localdisk)| |本地数据盘配置（缓存盘），针对GPU类型、或本地存储型的实例规格有效。|
+
+### <div id="user-content-localdisk">LocalDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.gp1|磁盘类型，取值范围：`ssd、premium-hdd、hdd.std1、ssd.gp1、ssd.io1`。|
-|**diskSizeGB**|Integer|120|磁盘大小。|
-### <div id="Gpu">Gpu</div>
+|**diskType**|String|HDD|磁盘类型。可能值：`NVMe SSD、HDD`。|
+|**diskSizeGB**|Integer|1117|磁盘大小，单位GiB。|
+
+### <div id="user-content-gpu">Gpu</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**model**|String|Nvidia Tesla P40|GPU卡型号。|
 |**number**|Integer|4|GPU卡数量。|
-### <div id="InstanceTypeState">InstanceTypeState</div>
+
+### <div id="user-content-instancetypestate">InstanceTypeState</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**az**|String|cn-north-1b|可用区。|
 |**inStock**|Boolean|True|售卖状态，`true`：可售卖、`false`：已售罄不可用。|
-|**availableCount**|Integer|166|可用库存数量，目前该字段为预留阶段，敬请期待。|
 
 
 ## 请求示例

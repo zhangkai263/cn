@@ -8,9 +8,9 @@
 详细操作说明请参考帮助文档：[镜像类型转换](https://docs.jdcloud.com/cn/virtual-machines/convert-image)
 
 ## 接口说明
-- 该接口为内部接口。
+- 转换操作会创建一个与原镜像数据内容完全一致，仅镜像类型不同的新镜像，原镜像仍会保留，可以继续用来创建本地盘系统盘的实例。
 - 由于转换操作会占用镜像配额和云硬盘快照配额，因此请在操作前确保镜像所在地域下私有镜像和云硬盘快照配额充足。
-- 转换规则只允许从 `localDisk` 转换为 `cloudDisk`，即从本地系统盘镜像转换为云盘系统盘镜像，无法反向操作。
+- 转换规则只允许从 `localDisk` 转换为 `cloudDisk`，即从本地系统盘镜像转换为云盘系统盘镜像，无法反向操作；且镜像状态需为`ready`（可用）。
 
 
 ## 请求方式
@@ -31,10 +31,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:convertImage
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](convertImage#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String|img-m5s0****29|转换后新镜像的ID。|
