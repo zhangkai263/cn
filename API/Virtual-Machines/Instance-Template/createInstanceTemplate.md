@@ -51,8 +51,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**dataDisks**|[InstanceTemplateDiskAttachmentSpec[]](createInstanceTemplate#user-content-6)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。|
 |**chargeOnStopped**|String|否| |停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。配置停机不计费且停机后，实例部分将停止计费，且释放实例自身包含的资源（CPU/内存/GPU/本地数据盘）。<br>可选值：<br>`keepCharging`（默认值）：停机后保持计费，不释放资源。<br>`stopCharging`：停机后停止计费，释放实例资源。<br>|
 |**autoImagePolicyId**|String|否|pol-xgsc****7e|自动任务策略ID。|
-|**passwordAuth**|String|true|是否允许SSH密码登录。<br>`yes`：允许SSH密码登录。<br>`no`：禁止SSH密码登录。<br>仅在指定密钥时此参数有效，指定此参数后密码即使输入也将被忽略，同时会在系统内禁用SSH密码登录。<br>|
-|**imageInherit**|String| |是否使用镜像中的登录凭证，不再指定密码或密钥。<br>`yes`：使用镜像登录凭证。<br>`no`（默认值）：不使用镜像登录凭证。<br>仅使用私有或共享镜像时此参数有效。若指定`imageInherit=yes`则指定的密码或密钥将无效。|
+|**passwordAuth**|String|否|true|是否允许SSH密码登录。<br>`yes`：允许SSH密码登录。<br>`no`：禁止SSH密码登录。<br>仅在指定密钥时此参数有效，指定此参数后密码即使输入也将被忽略，同时会在系统内禁用SSH密码登录。<br>|
+|**imageInherit**|String|否 ||是否使用镜像中的登录凭证，不再指定密码或密钥。<br>`yes`：使用镜像登录凭证。<br>`no`（默认值）：不使用镜像登录凭证。<br>仅使用私有或共享镜像时此参数有效。若指定`imageInherit=yes`则指定的密码或密钥将无效。|
 
 ### <div id="user-content-6">InstanceTemplateDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
