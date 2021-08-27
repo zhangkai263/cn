@@ -77,14 +77,14 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**ag**|[Ag](#user-content-7)| |云主机关联的高可用组，如果创建云主机使用了高可用组，此处可展示高可用组名称。|
 |**faultDomain**|String|2|高可用组中的故障域。|
 |**tags**|[Tag[]](#user-content-5)| |Tag信息。|
-|**chargeOnStopped**|String|keepCharging|停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|
-|**policies**|[Policy[]](#user-content-6)| |自动任务策略，关联了自动任务策略时可获取相应信息。|
+|**chargeOnStopped**|String|keepCharging|停机不计费模式。可能值：<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|
+|**policies**|[Policy[]](#user-content-6)| |任务策略，关联了自动任务策略时可获取相应信息。|
 
 ### <div id="user-content-6">Policy</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**policyId**|String|policy-g65r****o2|自动任务策略ID。|
-|**policyType**|String|AutoImage|自动任务策略类型，当前只支持 `AutoImage` 自动备份镜像。|
+|**policyType**|String|AutoImage|自动任务策略类型，当前只支持 `AutoImage` 即自动镜像策略。|
 
 ### <div id="user-content-5">Tag</div>
 |名称|类型|示例值|描述|
@@ -110,8 +110,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 ### <div id="user-content-3">InstanceNetworkInterfaceAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**deviceIndex**|Integer|2|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
-|**autoDelete**|Boolean|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
+|**deviceIndex**|Integer|1|网卡设备Index。<br>对于主网卡默认Index为1。<br>|
+|**autoDelete**|Boolean|true|是否随实例一起删除。可能值：<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
 |**networkInterface**|[InstanceNetworkInterface](#user-content-8)| |网卡设备详细配置。|
 
 ### <div id="user-content-8">InstanceNetworkInterface</div>
@@ -168,8 +168,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 ### <div id="user-content-12">LocalDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.gp1|磁盘类型。可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
-|**diskSizeGB**|Integer|120|磁盘大小。|
+|**diskType**|String|HDD|磁盘类型。可能值：`NVMe SSD、HDD`。|
+|**diskSizeGB**|Integer|1187|磁盘大小。|
 
 
 ## 请求示例
