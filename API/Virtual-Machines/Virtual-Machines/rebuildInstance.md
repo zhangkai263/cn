@@ -13,7 +13,7 @@
 - 云主机的状态必须为 `stopped` 状态。
 - 若实例基于私有镜像创建，而私有镜像已被删除，则无法使用原镜像重置系统，即无法恢复至刚创建时的系统状态，建议保留被实例引用的私有镜像。
 - 重置系统需要重新指定密码，对于 `Linux` 系统您还可以重新指定 `SSH密钥`。
-- 对于云盘作系统盘的实例，当前系统盘大小不能超过目标镜像对应系统盘快照的容量。
+- 对于云盘作系统盘的实例，当前系统盘大小不能小于目标镜像对应系统盘快照的容量。
 - 云主机系统盘类型必须与待更换镜像支持的系统盘类型保持一致，若当前云主机系统盘为 `local` 类型，则更换镜像的系统盘类型必须为 `loaclDisk` 类型；同理，若当前云主机系统盘为 `cloud` 类型，则更换镜像的系统盘类型必须为 `cloudDisk` 类型。可查询 [DescribeImages](https://docs.jdcloud.com/virtual-machines/api/describeimages) 接口获得指定地域的镜像信息。
 - 指定的镜像必须能够支持当前主机的实例规格 `instanceType`，否则会返回错误。可查询 [DescribeImageConstraints](docs.jdcloud.com/virtual-machines/api/describeimageconstraints) 接口获得指定镜像支持的系统盘类型信息。
 
