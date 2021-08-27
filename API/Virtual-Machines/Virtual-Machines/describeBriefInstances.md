@@ -70,31 +70,29 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances:describeBriefInstance
 |**status**|String|running|云主机状态，参考 [云主机状态](https://docs.jdcloud.com/virtual-machines/api/vm_status)。|
 |**description**|String| |云主机描述。|
 |**imageId**|String|img-m5s0****29|云主机使用的镜像ID。|
-|**systemDisk**|[BriefInstanceDiskAttachment](#user-content-5)| |系统盘配置。|
-|**dataDisks**|[BriefInstanceDiskAttachment[]](#user-content-5)| |数据盘配置列表。|
-|**primaryNetworkInterface**|[BriefInstanceNetworkInterfaceAttachment](#user-content-6)| |主网卡配置。|
-|**secondaryNetworkInterfaces**|[BriefInstanceNetworkInterfaceAttachment[]](#user-content-6)| |辅助网卡配置列表。|
+|**systemDisk**|[BriefInstanceDiskAttachment](describeBriefInstances#user-content-5)| |系统盘配置。|
+|**dataDisks**|[BriefInstanceDiskAttachment[]](describeBriefInstances#user-content-5)| |数据盘配置列表。|
+|**primaryNetworkInterface**|[BriefInstanceNetworkInterfaceAttachment](describeBriefInstances#user-content-6)| |主网卡配置。|
+|**secondaryNetworkInterfaces**|[BriefInstanceNetworkInterfaceAttachment[]](describeBriefInstances#user-content-6)| |辅助网卡配置列表。|
 |**launchTime**|String|2020-11-11 12:22:56|云主机实例的创建时间。|
 |**az**|String|cn-north-1b|云主机所在可用区。|
 |**keyNames**|String[]|key123 |云主机使用的密钥对名称。|
 |**faultDomain**|String|2|高可用组中的故障域。|
-|**chargeOnStopped**|String|keepCharging|停机不计费模式，仅云硬盘做系统盘的按配置计费实例此参数生效。<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|
-|**dedicatedPoolId**|String|pool-s0o8****56|云主机所属的专有宿主机池。|
-|**dedicatedHostId**|String|host-h67j****p0|云主机所属的专有宿主机ID。|
+|**chargeOnStopped**|String|keepCharging|停机不计费模式。可能值：<br>`keepCharging`：停机后继续计费。<br>`stopCharging`：停机后停止计费。<br>|
 
 ### <div id="user-content-6">BriefInstanceNetworkInterfaceAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**deviceIndex**|Integer|2|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
+|**deviceIndex**|Integer|1|网卡设备Index。<br>对于主网卡默认Index为1。<br>|
 |**autoDelete**|Boolean|true|是否随实例关联删除。|
 
 ### <div id="user-content-5">BriefInstanceDiskAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：可能值：`local` ：本地系统盘， `cloud` 云盘系统盘。<br>**数据盘**：可能值：`local` ：本地数据盘 或 `cloud` ：云盘数据盘。<br>|
-|**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**localDisk**|[LocalDisk](#user-content-7)| |本地磁盘配置，对应 `diskCategory=local`。|
-|**cloudDisk**|[LightCloudDiskInfo](#user-content-8)| |云硬盘配置，对应 `diskCategory=cloud`。|
+|**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。可能值：<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
+|**localDisk**|[LocalDisk](describeBriefInstances#user-content-7)| |本地磁盘配置，对应 `diskCategory=local`。|
+|**cloudDisk**|[LightCloudDiskInfo](describeBriefInstances#user-content-8)| |云硬盘配置，对应 `diskCategory=cloud`。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：可能值：`[vdb~vdbm]`。<br>|
 |**status**|String|attached|磁盘挂载状态。<br>可能值：`attaching、detaching、attached、detached、error_attach、error_detach`。|
 
@@ -108,7 +106,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances:describeBriefInstance
 ### <div id="user-content-7">LocalDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.gp1|磁盘类型，可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
+|**diskType**|String|ssd.gp1|磁盘类型，可能值：`NVMe SSD、HDD`。|
 |**diskSizeGB**|Integer|120|磁盘大小，单位为 GiB。|
 
 
