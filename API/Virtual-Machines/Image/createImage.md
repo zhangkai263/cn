@@ -33,7 +33,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |---|---|---|---|---|
 |**name**|String|是| image-test|镜像名称，长度为2\~32个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.）。<br>|
 |**description**|String|否| |镜像描述。256字符以内。<br>|
-|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br><br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
 
 ### <div id="InstanceDiskAttachmentSpec">InstanceDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
@@ -42,7 +42,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |**autoDelete**|Boolean|否|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>如不指定，则默认与磁盘当前删除属性一致。|
 |**cloudDiskSpec**|[DiskSpec](#diskspec)|否| |云硬盘详细配置。|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
-|**noDevice**|Boolean|否|false |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
+|**noDevice**|Boolean|否|false |排除参与制作镜像的磁盘，使用此参数 `noDevice` 配合 `deviceName` 一起使用。|
 
 ### <div id="DiskSpec">DiskSpec</div>
 |名称|类型|是否必选|示例值|描述|

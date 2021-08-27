@@ -99,7 +99,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates/{instanceTemp
 |**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
 |**instanceTemplateDisk**|[InstanceTemplateDisk](describeInstanceTemplate#user-content-instancetemplatedisk)| |云硬盘配置。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：可能值：`[vdb~vdbm]`。<br>|
-|**noDevice**|Boolean| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，配置`deviceName=vdb`、`noDevice=true`，则表示在使用实例模板创建实例时，忽略镜像中数据盘vdb配置，不创建磁盘。|
+|**noDevice**|Boolean| |排除镜像中的磁盘，此参数 `noDevice` 配合 `deviceName` 一起使用。<br>使用实例模板创建实例的场景下，使用此参数可以排除镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，配置`deviceName=vdb`、`noDevice=true`，则表示在使用实例模板创建实例时，忽略镜像中数据盘vdb配置，不创建磁盘。|
 
 
 ### <div id="user-content-instancetemplatedisk">InstanceTemplateDisk</div>

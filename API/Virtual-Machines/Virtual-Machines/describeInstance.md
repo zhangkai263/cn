@@ -30,13 +30,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#user-content-16)| |响应结果。|
+|**result**|[Result](describeInstance#user-content-16)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="user-content-16">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**instance**|[Instance](#user-content-1)| | |
+|**instance**|[Instance](describeInstance#user-content-1)| | |
 
 ### <div id="user-content-1">Instance</div>
 |名称|类型|示例值|描述|
@@ -53,26 +53,26 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**status**|String|running|云主机状态，参考 [云主机状态](https://docs.jdcloud.com/virtual-machines/api/vm_status)。|
 |**description**|String| |云主机描述。|
 |**imageId**|String|img-m5s0****29|云主机使用的镜像ID。|
-|**systemDisk**|[InstanceDiskAttachment](#user-content-2)| |系统盘配置。|
-|**dataDisks**|[InstanceDiskAttachment[]](#user-content-2)| |数据盘配置列表。|
-|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](#user-content-3)| |主网卡主IP关联的弹性公网IP配置。|
-|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](#user-content-3)| |辅助网卡配置列表。|
+|**systemDisk**|[InstanceDiskAttachment](describeInstance#user-content-2)| |系统盘配置。|
+|**dataDisks**|[InstanceDiskAttachment[]](describeInstance#user-content-2)| |数据盘配置列表。|
+|**primaryNetworkInterface**|[InstanceNetworkInterfaceAttachment](describeInstance#user-content-3)| |主网卡主IP关联的弹性公网IP配置。|
+|**secondaryNetworkInterfaces**|[InstanceNetworkInterfaceAttachment[]](describeInstance#user-content-3)| |辅助网卡配置列表。|
 |**launchTime**|String|2020-11-11 12:22:56|云主机实例的创建时间。|
 |**az**|String|cn-north-1b|云主机所在可用区。|
 |**keyNames**|String[]| key123|云主机使用的密钥对名称。|
-|**charge**|[Charge](#user-content-4)| |云主机的计费信息。|
+|**charge**|[Charge](describeInstance#user-content-4)| |云主机的计费信息。|
 |**ag**|[Ag](#user-content-7)| |云主机关联的高可用组，如果创建云主机使用了高可用组，此处可展示高可用组名称。|
 |**faultDomain**|String|2|高可用组中的故障域。|
-|**tags**|[Tag[]](#user-content-5)| |Tag信息。|
-|**chargeOnStopped**|String|keepCharging|停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|
-|**policies**|[Policy[]](#user-content-6)| |自动任务策略，关联了自动任务策略时可获取相应信息。|
+|**tags**|[Tag[]](describeInstance#user-content-5)| |Tag信息。|
+|**chargeOnStopped**|String|keepCharging|停机不计费模式。可能值：<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|
+|**policies**|[Policy[]](describeInstance#user-content-6)| |自动任务策略，关联了自动任务策略时可获取相应信息。|
 
 
 ### <div id="user-content-6">Policy</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**policyId**|String|policy-g65r****o2|自动任务策略ID。|
-|**policyType**|String|AutoImage|自动任务策略类型，当前只支持 `AutoImage` 自动备份镜像。|
+|**policyType**|String|AutoImage|自动任务策略类型，当前只支持 `AutoImage` 自动镜像策略。|
 
 ### <div id="user-content-5">Tag</div>
 |名称|类型|示例值|描述|
@@ -98,9 +98,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ### <div id="user-content-3">InstanceNetworkInterfaceAttachment</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**deviceIndex**|Integer||网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1，辅助网卡自动分配。<br>|
-|**autoDelete**|Boolean|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
-|**networkInterface**|[InstanceNetworkInterface](#user-content-8)| |网卡设备详细配置。|
+|**deviceIndex**|Integer||网卡设备Index。<br>对于主网卡默认Index为1。<br>|
+|**autoDelete**|Boolean|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
+|**networkInterface**|[InstanceNetworkInterface](describeInstance#user-content-8)| |网卡设备详细配置。|
 
 ### <div id="user-content-8">InstanceNetworkInterface</div>
 |名称|类型|示例值|描述|
@@ -109,10 +109,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**macAddress**|String| fa:16:3e:a8:a4:xx|弹性网卡MAC地址。|
 |**vpcId**|String|vpc-z9r3****p8|弹性网卡所属VPC的ID。|
 |**subnetId**|String|subnet-c2p3****9o|子网ID。|
-|**securityGroups**|[SecurityGroupSimple[]](#user-content-9)| | |
+|**securityGroups**|[SecurityGroupSimple[]](describeInstance#user-content-9)| | |
 |**sanityCheck**|Integer| |参数已弃用。|
-|**primaryIp**|[NetworkInterfacePrivateIp](#user-content-10)| |网卡主IP配置。|
-|**secondaryIps**|[NetworkInterfacePrivateIp[]](#user-content-10)| |网卡辅IP地址列表。|
+|**primaryIp**|[NetworkInterfacePrivateIp](describeInstance#user-content-10)| |网卡主IP配置。|
+|**secondaryIps**|[NetworkInterfacePrivateIp[]](describeInstance#user-content-10)| |网卡辅IP地址列表。|
 
 ### <div id="user-content-10">NetworkInterfacePrivateIp</div>
 |名称|类型|示例值|描述|
@@ -132,8 +132,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |---|---|---|---|
 |**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：可能值：`local`：本地系统盘， `cloud` ：云盘系统盘。<br>**数据盘**：可能值：`local` ：本地数据盘， `cloud` ：云盘数据盘。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**localDisk**|[LocalDisk](#user-content-12)| |本地磁盘配置，对应 `diskCategory=local`。|
-|**cloudDisk**|[Disk](#user-content-11)| |云硬盘配置，对应 `diskCategory=cloud`。|
+|**localDisk**|[LocalDisk](describeInstance#user-content-12)| |本地磁盘配置，对应 `diskCategory=local`。|
+|**cloudDisk**|[Disk](describeInstance#user-content-11)| |云硬盘配置，对应 `diskCategory=cloud`。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：可能值：`[vdb~vdbm]`。<br>|
 |**status**|String|attached|磁盘挂载状态。<br>可能值：`attaching、detaching、attached、detached、error_attach、error_detach`。|
 
@@ -157,7 +157,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ### <div id="user-content-12">LocalDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.gp1|磁盘类型。可能值：`hdd.std1、ssd.gp1、ssd.io1`。|
+|**diskType**|String|ssd.gp1|磁盘类型。可能值：`NVMe SSD、HDD`。|
 |**diskSizeGB**|Integer|120|磁盘容量，单位为 GiB。|
 
 
