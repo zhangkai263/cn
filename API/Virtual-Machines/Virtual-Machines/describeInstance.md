@@ -30,13 +30,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#user-content-16)| |响应结果。|
+|**result**|[Result](describeInstance#user-content-16)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
 ### <div id="user-content-16">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**instance**|[Instance](#user-content-1)| | |
+|**instance**|[Instance](describeInstance#user-content-1)| | |
 
 ### <div id="user-content-1">Instance</div>
 |名称|类型|示例值|描述|
