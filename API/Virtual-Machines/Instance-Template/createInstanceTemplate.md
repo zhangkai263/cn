@@ -51,8 +51,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**dataDisks**|[InstanceTemplateDiskAttachmentSpec[]](createInstanceTemplate#user-content-6)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。|
 |**chargeOnStopped**|String|否| |停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。配置停机不计费且停机后，实例部分将停止计费，且释放实例自身包含的资源（CPU/内存/GPU/本地数据盘）。<br>可选值：<br>`keepCharging`（默认值）：停机后保持计费，不释放资源。<br>`stopCharging`：停机后停止计费，释放实例资源。<br>|
 |**autoImagePolicyId**|String|否|pol-xgsc****7e|自动任务策略ID。|
-|**passWordAuth**|String|否| |允许SSH密码登录。<br>可选值：<br>`yes`（默认值）：允许SSH密码登录。<br>`no`：禁止SSH密码登录。<br>仅在指定密钥时此参数有效，指定此参数后密码即使输入也将被忽略，同时会在系统内禁用SSH密码登录。<br>|
-|**imageInherit**|String|否| |使用镜像中的登录凭证，无须再指定密码或密钥（指定无效）。<br>可选值：<br>`yes`：使用镜像登录凭证。<br>`no`（默认值）：不使用镜像登录凭证。<br>仅使用私有或共享镜像时此参数有效。|
+|**passwordAuth**|String|true|是否允许SSH密码登录。<br>`yes`：允许SSH密码登录。<br>`no`：禁止SSH密码登录。<br>仅在指定密钥时此参数有效，指定此参数后密码即使输入也将被忽略，同时会在系统内禁用SSH密码登录。<br>|
+|**imageInherit**|String| |是否使用镜像中的登录凭证，不再指定密码或密钥。<br>`yes`：使用镜像登录凭证。<br>`no`（默认值）：不使用镜像登录凭证。<br>仅使用私有或共享镜像时此参数有效。若指定`imageInherit=yes`则指定的密码或密钥将无效。|
 
 ### <div id="user-content-6">InstanceTemplateDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
@@ -61,13 +61,13 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**autoDelete**|Boolean|否|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。<br>|
 |**cloudDiskSpec**|[InstanceTemplateDiskSpec](createInstanceTemplate#user-content-7)|否| |磁盘详细配置。此参数仅针对云硬盘，本地系统盘无须指定且指定无效。<br>|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
-|**noDevice**|Boolean|否| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建镜像的场景下：使用此参数可以排除云主机实例中的云硬盘不参与制作快照。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>创建云主机的场景下：使用此参数可以排除实例模板、或镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，可通过此参数忽略部分磁盘配置。此参数须配合 `deviceName` 一起使用。<br>例：`deviceName=vdb`、`noDevice=true`，则表示在使用镜像创建实例时，忽略数据盘vdb配置，不创建磁盘。|
+|**noDevice**|Boolean|否| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，配置`deviceName=vdb`、`noDevice=true`，则表示在使用实例模板创建实例时，忽略镜像中数据盘vdb配置，不创建磁盘。|
 
 ### <div id="user-content-7">InstanceTemplateDiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
-|**diskSizeGB**|Integer|否|50|云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
+|**diskSizeGB**|Integer|否|50|云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量。|
 |**snapshotId**|String|否|snapshot-h8u1****36|创建云硬盘的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us|云硬盘自动快照策略ID。|
 |**encrypt**|Boolean|否| |云硬盘是否加密。<br>可选值：<br>`true`：加密<br>`false`（默认值）：不加密|
@@ -76,7 +76,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 ### <div id="user-content-5">InstanceTemplateNetworkInterfaceAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**deviceIndex**|Integer|否||网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1。<br>|
+|**deviceIndex**|Integer|否|1|网卡设备Index。创建实例时此参数无须指定且指定无效。<br>对于主网卡默认Index为1。<br>|
 |**autoDelete**|Boolean|否|true|是否随实例一起删除。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>主网卡此属性默认为`true`|
 |**networkInterface**|[InstanceTemplateNetworkInterfaceSpec](createInstanceTemplate#user-content-10)|否| |网卡设备详细配置。<br>|
 
@@ -92,7 +92,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|是|20|弹性公网IP的带宽上限，单位：Mbps。<br>取值范围为：`[1-200]`。|
 |**provider**|String|否|BGP|弹性公网IP线路。中心可用区目前仅提供`BGP`类型IP。|
-|**chargeMode**|String|是|bandwith|计费模式。可选值：<br>`bandwith`：按带宽计费 <br>`flow`：按流量计费 |
+|**chargeMode**|String|是|bandwith|弹性公网IP计费模式。可选值：<br>`bandwith`：按带宽计费 <br>`flow`：按流量计费。若指定`chargeSpec=bandwith`则弹性公网IP计费类型同实例（包年包月或按配置）。边缘可用区目前仅支持`flow`计费模式。 |
 
 ### <div id="user-content-3">Userdata</div>
 |名称|类型|是否必选|示例值|描述|
