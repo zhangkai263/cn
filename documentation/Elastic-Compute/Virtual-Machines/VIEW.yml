@@ -119,7 +119,7 @@ items:
           items:
             - name: 接口概览
               href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
-            - name: 描述实例规格
+            - name: 查询实例规格
               href: https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API
             - name: 创建实例
               href: https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API

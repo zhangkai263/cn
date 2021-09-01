@@ -323,6 +323,8 @@ items:
         href: Best-Practices/Storage.md
       - name: 备份与恢复
         href: Best-Practices/Backup-and-Restore.md
+      - name: 设置有序名称或主机名称
+        href: Best-Practices/Set-Ordered-Name.md        
   - name: Linux运维指南
     items:
       - name: Linux环境配置
