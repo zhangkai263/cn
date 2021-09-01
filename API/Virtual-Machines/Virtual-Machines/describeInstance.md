@@ -61,7 +61,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**az**|String|cn-north-1b|云主机所在可用区。|
 |**keyNames**|String[]| key123|云主机使用的密钥对名称。|
 |**charge**|[Charge](describeInstance#user-content-4)| |云主机的计费信息。|
-|**ag**|[Ag](#user-content-7)| |云主机关联的高可用组，如果创建云主机使用了高可用组，此处可展示高可用组名称。|
+|**ag**|[Ag](describeInstance#user-content-7)| |云主机关联的高可用组，如果创建云主机使用了高可用组，此处可展示高可用组名称。|
 |**faultDomain**|String|2|高可用组中的故障域。|
 |**tags**|[Tag[]](describeInstance#user-content-5)| |Tag信息。|
 |**chargeOnStopped**|String|keepCharging|停机不计费模式。可能值：<br>`keepCharging`：关机后继续计费。<br>`stopCharging`：关机后停止计费。<br>|

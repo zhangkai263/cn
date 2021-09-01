@@ -155,7 +155,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|是|10|弹性公网IP的带宽上限，单位：Mbps。<br>取值范围为：`[1-200]`。|
 |**provider**|String|是| bgp|弹性公网IP线路。中心可用区目前仅提供`BGP`类型IP。|
-|**chargeSpec**|[ChargeSpec](#chargespec)|否| |弹性公网IP计费模式。可选值：<br>`bandwith`：按带宽计费 <br>`flow`：按流量计费。若指定`chargeSpec=bandwith`则弹性公网IP计费类型同实例（包年包月或按配置）。边缘可用区目前仅支持`flow`计费模式。|
+|**chargeSpec**|[ChargeSpec](createInstances#chargespec)|否| |弹性公网IP计费模式。可选值：<br>`bandwith`：按带宽计费 <br>`flow`：按流量计费。若指定`chargeSpec=bandwith`则弹性公网IP计费类型同实例（包年包月或按配置）。边缘可用区目前仅支持`flow`计费模式。|
 
 ## 返回参数
 |名称|类型|示例值|描述|

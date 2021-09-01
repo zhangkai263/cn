@@ -33,18 +33,18 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |---|---|---|---|---|
 |**name**|String|是| image-test|镜像名称，长度为2\~32个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.）。<br>|
 |**description**|String|否| |镜像描述。256字符以内。<br>|
-|**dataDisks**|[InstanceDiskAttachmentSpec[]](#instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
+|**dataDisks**|[InstanceDiskAttachmentSpec[]](createImage#user-content-instancediskattachmentspec)|否| |数据盘列表。<br>在不指定该参数的情况下，制作镜像的过程中会默认将该实例挂载的所有云盘数据盘制作快照，并与系统盘一起，制作成整机镜像。<br>- 如果不希望将实例中的某个云盘数据盘制作快照，可使用 `noDevice` 的方式排除，例如：`deviceName=vdb`、`noDevice=true` 制作的镜像中就不会包含 `vdb` 数据盘的快照。<br>- 如果希望调整已有设备的磁盘属性，比如上调容量，可指定`deviceName`并设置新属性，例如：`deviceName=vdb`、`diskSizeGB=100`<br>- 如果希望在整机镜像中插入一块新盘，若新加设备名，可通过指定新的 `deviceName` 的方式实现，例如：`deviceName=vdx` 将会在整机镜像中插入一块盘符为 `vdx` 的新盘，新盘可创建空盘或通过`snapshotId`指定快照创建；若新加盘期望替换已有设备，可先参照第一种情况将已有盘排除掉再指定新属性。|
 
-### <div id="InstanceDiskAttachmentSpec">InstanceDiskAttachmentSpec</div>
+### <div id="user-content-instancediskattachmentspec">InstanceDiskAttachmentSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**diskCategory**|String|否|cloud|磁盘类型。数据盘仅支持云硬盘`cloud`。<br>|
 |**autoDelete**|Boolean|否|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>如不指定，则默认与磁盘当前删除属性一致。|
-|**cloudDiskSpec**|[DiskSpec](#diskspec)|否| |云硬盘详细配置。|
+|**cloudDiskSpec**|[DiskSpec](createImage#user-content-diskspec)|否| |云硬盘详细配置。|
 |**deviceName**|String|否|vdb|磁盘逻辑挂载点。<br>**系统盘**：此参数无须指定且指定无效，默认为vda。<br>**数据盘**：取值范围：`[vdb~vdbm]`。<br>|
 |**noDevice**|Boolean|否|false |排除参与制作镜像的磁盘，使用此参数 `noDevice` 配合 `deviceName` 一起使用。|
 
-### <div id="DiskSpec">DiskSpec</div>
+### <div id="user-content-diskspec">DiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**az**|String|是| |云硬盘所属的可用区。此参数无须指定且指定无效。|
@@ -63,10 +63,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果。|
+|**result**|[Result](createImage#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String|img-m5s0****29|镜像ID。|

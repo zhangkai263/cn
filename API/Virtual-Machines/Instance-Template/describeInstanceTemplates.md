@@ -71,10 +71,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**vpcId**|String|vpc-z9r3****p8|实例主网卡所属VPC的ID。|
 |**imageId**|String|img-m5s0****29|实例使用的镜像ID。|
 |**includePassword**|Boolean|true|实例模板中是否包含自定义密码。<br>`true`：包含自定义密码，`false`：未包含自定义密码。|
-|**systemDisk**|[InstanceTemplateDiskAttachment](describeInstanceTemplate#user-content-instancetemplatediskattachment)| |系统盘配置。|
-|**dataDisks**|[InstanceTemplateDiskAttachment[]](describeInstanceTemplate#user-content-instancetemplatediskattachment)| |数据盘配置列表。|
-|**primaryNetworkInterface**|[InstanceTemplateNetworkInterfaceAttachment](describeInstanceTemplate#user-content-instancetemplatenetworkinterfaceattachment)| |主网卡配置。|
-|**elasticIp**|[InstanceTemplateElasticIp](describeInstanceTemplate#user-content-instancetemplateelasticip)| |主网卡主IP关联的弹性公网IP配置。|
+|**systemDisk**|[InstanceTemplateDiskAttachment](describeInstanceTemplates#user-content-instancetemplatediskattachment)| |系统盘配置。|
+|**dataDisks**|[InstanceTemplateDiskAttachment[]](describeInstanceTemplates#user-content-instancetemplatediskattachment)| |数据盘配置列表。|
+|**primaryNetworkInterface**|[InstanceTemplateNetworkInterfaceAttachment](describeInstanceTemplates#user-content-instancetemplatenetworkinterfaceattachment)| |主网卡配置。|
+|**elasticIp**|[InstanceTemplateElasticIp](describeInstanceTemplates#user-content-instancetemplateelasticip)| |主网卡主IP关联的弹性公网IP配置。|
 |**keyNames**|String[]| key-124|云主机使用的密钥对名称。|
 |**chargeOnStopped**|String|keepCharging|停机不计费模式。该参数仅对按配置计费且系统盘为云硬盘的实例生效，并且不是专有宿主机中的实例。<br>`keepCharging`：停机后继续计费。<br>`stopCharging`：停机后停止计费。<br>|
 |**autoImagePolicyId**|String|pol-xgsc****7e|自动镜像任务策略ID。|
@@ -93,7 +93,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |---|---|---|---|
 |**deviceIndex**|Integer|1|网卡设备Index。<br>对于主网卡默认Index为1。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除。可能值：<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**networkInterface**|[InstanceTemplateNetworkInterface](describeInstanceTemplate#user-content-instancetemplatenetworkinterface)| |网卡设备详细配置。|
+|**networkInterface**|[InstanceTemplateNetworkInterface](describeInstanceTemplates#user-content-instancetemplatenetworkinterface)| |网卡设备详细配置。|
 
 ### <div id="user-content-instancetemplatenetworkinterface">InstanceTemplateNetworkInterface</div>
 |名称|类型|示例值|描述|
@@ -107,7 +107,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |---|---|---|---|
 |**diskCategory**|String|cloud|磁盘类型。<br>**系统盘**：可能值：`local`：本地系统盘， `cloud` ：云盘系统盘。<br>**数据盘**：可能值：`local` ：本地数据盘， `cloud` ：云盘数据盘。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**instanceTemplateDisk**|[InstanceTemplateDisk](describeInstanceTemplate#user-content-instancetemplatedisk)| |云硬盘配置。|
+|**instanceTemplateDisk**|[InstanceTemplateDisk](describeInstanceTemplates#user-content-instancetemplatedisk)| |云硬盘配置。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：可能值：`[vdb~vdbm]`。<br>|
 |**noDevice**|Boolean| |排除设备，使用此参数 `noDevice` 配合 `deviceName` 一起使用。<br>创建实例模板的场景下：使用此参数可以排除镜像中的数据盘。<br>示例：如果镜像中除系统盘还包含一块或多块数据盘，期望仅使用镜像中的部分磁盘，配置`deviceName=vdb`、`noDevice=true`，则表示在使用实例模板创建实例时，忽略镜像中数据盘vdb配置，不创建磁盘。|
 

@@ -55,8 +55,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |**desc**|String| |镜像描述。|
 |**ownerPin**|String| |该镜像拥有者的用户PIN。|
 |**launchPermission**|String|all|镜像的使用权限。可能值：<br>`all`：所有人均可使用（官方镜像和镜像市场镜像会返回此值）。<br>`specifiedUsers`：镜像存在共享关系，仅拥有者和共享对象可以使用。<br>`ownerOnly`：镜像不存在共享关系，仅拥有者可以使用。<br>|
-|**systemDisk**|[InstanceDiskAttachment](describeImages#user-content-instancediskattachment)| |镜像系统盘配置。|
-|**dataDisks**|[InstanceDiskAttachment[]](describeImages#user-content-instancediskattachment)| |镜像数据盘配置列表。|
+|**systemDisk**|[InstanceDiskAttachment](describeImage#user-content-instancediskattachment)| |镜像系统盘配置。|
+|**dataDisks**|[InstanceDiskAttachment[]](describeImage#user-content-instancediskattachment)| |镜像数据盘配置列表。|
 |**snapshotId**|String|snapshot-h8u1****36|创建云盘系统盘所使用的快照ID。系统盘类型为本地盘的镜像，此参数为空。|
 |**rootDeviceType**|String|cloudDisk|镜像支持的系统盘类型。可能值：<br>`localDisk`：本地盘系统盘。<br>`cloudDisk`：云硬盘系统盘。<br>|
 |**progress**|String|100|镜像复制和镜像类型转换时的进度，仅显示数值，单位为百分比。|
@@ -68,8 +68,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 |---|---|---|---|
 |**diskCategory**|String|cloud|磁盘类型。可能值：<br>**系统盘**：`local` ：本地盘；`cloud` ：云硬盘。<br>**数据盘**：`cloud`：云硬盘。<br>|
 |**autoDelete**|Boolean|true|是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。可能值：<br>`true`：随实例删除。<br>`false`：不随实例删除。<br>|
-|**localDisk**|[LocalDisk](describeImages#user-content-localdisk)| |仅本地系统盘返回此参数。对应 `diskCategory=local`。|
-|**cloudDisk**|[Disk](describeImages#user-content-clouddisk)| |云硬盘配置。对应 `diskCategory=cloud`。|
+|**localDisk**|[LocalDisk](describeImage#user-content-localdisk)| |仅本地系统盘返回此参数。对应 `diskCategory=local`。|
+|**cloudDisk**|[Disk](describeImage#user-content-clouddisk)| |云硬盘配置。对应 `diskCategory=cloud`。|
 |**deviceName**|String|vdb|磁盘逻辑挂载点。<br>**系统盘**：默认为vda。<br>**数据盘**：返回值：`[vdb~vdbm]`。<br>|
 
 
