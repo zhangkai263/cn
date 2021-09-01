@@ -19,28 +19,26 @@
 2、在停止状态下点击 **操作-更多-修改网络配置** 按钮。<br>
 3、在弹窗中选择调整方式，修改网络配置支持以下三种形式的调整：
 
-* [不修改VPC和子网，仅调整内网IP地址](Modify-VPC-Attribute#Modify-Method-1)
-* [不修改VPC，仅修改子网](Modify-VPC-Attribute#Modify-Method-2)
-* [修改VPC及子网](Modify-VPC-Attribute#Modify-Method-3)
+* [不修改VPC和子网，仅调整内网IP地址](Modify-VPC-Attribute#user-content-method1)
+* [不修改VPC，仅修改子网](Modify-VPC-Attribute#user-content-Method2)
+* [修改VPC及子网](Modify-VPC-Attribute#user-content-Method3)
 
-<div id="Modify-Method-1"></div>
-
-### ① 不修改VPC和子网，仅调整内网IP地址
+### <div id="user-content-method1">① 不修改VPC和子网，仅调整内网IP地址</div>
 * 调整方式选择“同子网修改内网IP”；<br>
 * 此调整方式下仅支持重新指定内网IPv4地址，且须自定义，其他属性均不支持调整。<br>
 
-<div align="center"><img src="../../../../../image/vm/iv-modifyvpc1.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-modifyvpc1.png" width="600"></div>
 
-<div id="Modify-Method-2"></div>
+<div id="user-content-method2"></div>
 
 ### ② 不修改VPC，仅修改子网
 * 调整方式选择“同VPC修改子网”；<br>
 * 在当前VPC下重新选择子网，并指定内网IPv4地址的分配方式；<br>
 * 如新选子网支持IPv6，可选择是否分配IPv6地址。<br>
 
-<div align="center"><img src="../../../../../image/vm/iv-modifyvpc2.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-modifyvpc2.png" width="600"></div>
 
-<div id="Modify-Method-3"></div>
+<div id="user-content-method3"></div>
 
 ### ③ 修改VPC及子网
 * 调整方式选择“修改VPC和子网”；<br>
@@ -48,7 +46,7 @@
 * 如新选子网支持IPv6，可选择是否分配IPv6地址；<br>
 * 选择新VPC下的安全组，最多可同时指定5个。
 
-<div align="center"><img src="../../../../../image/vm/iv-modifyvpc3.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-modifyvpc3.png" width="600"></div>
 
 4、点击【确定】调整，控制台实例相关网络信息即刻更新，但须启动实例才可在实例系统内生效。
 

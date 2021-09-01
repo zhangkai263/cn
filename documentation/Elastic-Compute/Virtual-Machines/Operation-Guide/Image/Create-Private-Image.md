@@ -18,15 +18,15 @@
 ## 操作步骤
 1. 访问[云主机控制台][1]，即进入实例列表页面。或访问[京东云控制台][2]点击顶部导航栏 **弹性计算-云主机-实例** 进入实例列表页。
 2. 选择要创建私有镜像的实例，点击 **更多-制作镜像**。
-![](../../../../../image/vm/Operation-Guide-Image-create1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-create1.png)
 
 3. 在创建镜像的弹窗中，完成对私有镜像“名称”、“描述”的补充，点击 **确定**，开始私有镜像创建。
 4. 除系统盘外，可以选择一同备份实例当前挂载的云硬盘数据盘（本地数据盘不支持快照功能），数据盘将以快照的形式与系统盘镜像进行关联，并显示在私有镜像详情页中的“设备映射信息”中，作为后续使用该私有镜像创建实例时数据盘的预设配置，方便快速整机部署。如果您希望对数据盘的容量进行修改可在基于该镜像创建主机时调整。
 5. 制作整机镜像耗时较长，为避免制作失败，请在制作过程中不要对实例和云硬盘进行其他操作。
 
-<div align="center"><img src="../../../../../image/vm/Operation-Guide-Image-create2-a.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-create2-a.png" width="700"></div>
 
-![](../../../../../image/vm/Operation-Guide-Image-create3.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-create3.png)
  
 ## 相关参考
  

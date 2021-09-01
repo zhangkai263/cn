@@ -19,5 +19,5 @@
 您可以通过控制台查看实例状态，也可通过[describeInstanceStatus](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancestatus?content=API)或[describeInstances
 ](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstances?content=API)查看。
 <div align="center">
-<img src="../../../../../image/vm/lifecycle.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/lifecycle.png" width="700">
 </div>

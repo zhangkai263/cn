@@ -19,6 +19,8 @@
 
 如果您需要更高的攻击防护能力，请购买DDoS防护包。
 
+购买防护包后，黑洞阈值即为DDoS防护包保底+弹性总带宽值。
+
 
 ## 相关参考
 - [DDoS防护包介绍](https://www.jdcloud.com/cn/products/anti-ddos-protection-package)

@@ -13,13 +13,13 @@
 
 ### 操作步骤
 
-![](../../../../../../image/vm/baremetal-1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/baremetal-1.png)
 
 <div id="user-content-2"></div>
 
 ### 将镜像转换为支持UEFI启动的镜像：
 1. 使用您的私有镜像创建一台镜像分类为云硬盘系统盘的实例VM1。<br>
-![](../../../../../../image/vm/ImgTranfer1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/ImgTranfer1.png)
 2. 在VM1中下载并运行脚本：
     ```
     wget https://bm-img-trans.s3.cn-north-1.jdcloud-oss.com/os-init.sh
@@ -30,7 +30,7 @@
 3. 当脚本执行完成后，在控制台将vm1停止，将其系统盘卸载。可参考[卸载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk)
 4. 将已卸载的vm1系统盘作为数据盘挂载在另一台操作系统与vm1相同的实例vm2上。为可参考文档[挂载云硬盘](https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk)。请确保vm1与vm2使用的操作系统一致，如vm1操作系统为CentOS 7.6，vm2操作系统为CentOS 7.4，vm1与vm2均为CentOS操作系统。
 5. 挂载完成后，登录实例vm2, 可以通过`lsblk`命令来查看磁盘分区信息：
- 如下图所示，新挂载的磁盘设备是/dev/vdb1，lsblk 的输出从完整的设备路径中去掉了 /dev/ 前缀。/dev/vdb1即为原主机vm1的系统盘。<br><div align="center"><img src="../../../../../../image/vm/ImgTranfer3.png" width="700"></div>
+ 如下图所示，新挂载的磁盘设备是/dev/vdb1，lsblk 的输出从完整的设备路径中去掉了 /dev/ 前缀。/dev/vdb1即为原主机vm1的系统盘。<br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer3.png" width="700"></div>
 
 6. 需要执行以下命令创建一个文件（下述命令创建新文件newFile）作为/dev/vdb1的挂载点并将其挂载：
 
@@ -39,7 +39,7 @@
     mount -o nouuid /dev/vdb1 newFile
     ```
 
-    挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br><br><div align="center"><img src="../../../../../../image/vm/ImgTranfer4.png" width="700"></div>
+    挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br><br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer4.png" width="700"></div>
 
 7. 在当前目录（挂载点的上层目录）下载脚本并运行，请确保脚本文件在挂载点的上层目录中：
     ```
@@ -54,9 +54,9 @@
     ```
     ./generate-img.sh newFile centos7 20G
     ```
-    出现下图说明bm-generate-img.sh运行完成：<br><br><div align="center"><img src="../../../../../../image/vm/ImgTranfer5.png" width="700"></div>
+    出现下图说明bm-generate-img.sh运行完成：<br><br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer5.png" width="700"></div>
 
-    您可查询当前目录下该镜像文件是否存在。<br><br><div align="center"><img src="../../../../../../image/vm/ImgTranfer6.png" width="700"></div>
+    您可查询当前目录下该镜像文件是否存在。<br><br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer6.png" width="700"></div>
 
     该镜像文件为裸金属实例可使用的镜像文件。请通过以下操作将该镜像文件导入您的私有镜像。
 

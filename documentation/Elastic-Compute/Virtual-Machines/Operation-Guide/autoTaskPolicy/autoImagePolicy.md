@@ -36,7 +36,7 @@
 10. 策略日志。为了记录策略的执行情况，您可以在此处开启策略日志并指定日志的投递目的地（日志集、日志主题）。在指定投递目的地前，请确保您在[日志服务][3]中已创建了**日志来源**为**云产品**，**云产品**为**自动镜像任务策略**，**日志类型**为**自动镜像策略执行日志**的相关日志集与日志主题。详细操作可参考[云产品日志采集][4]。
 指定投递后，您可在指定的日志集及日志主题下找到相关的策略执行日志，若您删除了当前策略指定投递的日志主题或日志集，当前策略的日志投递功能将自动关闭。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy1.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy1.png" width="700">
 </div>
 
 ### 修改自动镜像策略
@@ -44,12 +44,12 @@
 
 1. 您可以对已创建的自动镜像策略进行修改。点击**修改策略**，可进入策略修改页面
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy2.png">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy2.png">
 </div>
 
 2. 您可在此页面修改策略的规则与信息，若您修改了开始执行时间，则下次执行时间会相应进行改变，开始执行时间需要在当前时间的30分钟后。需若您修改了执行间隔，此次修改将不会影响下次执行时间。在下次执行完成后，新的执行间隔将生效。为避免同一策略前后两次任务间隔过短，策略的上一次执行时间与下一次执行时间要保持最少为12小时的时间间隔。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy3.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy3.png" width="700">
 </div>
 
 ### 关联资源
@@ -59,14 +59,14 @@
 
 1. 在[自动任务策略控制台][1]点击**关联资源**，或点击策略名称进入详情页后点击**操作-关联资源**
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy4.png" width="600">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy4.png" width="600">
 </div>
 
 2. 勾选当前地域下需要与策略进行关联的云主机，点击确定将自动镜像策略与云主机进行关联。策略不能与本地盘系统盘云主机进行关联，您无法在列表中找到您的本地盘系统盘云主机。每个云主机只能同时与一个自动镜像策略进行关联。对已关联策略的云主机进行操作将解除其与原策略的关联关系。
 
 3. 若您的云主机资源较多，您可以在当前页面根据云主机ID或云主机名称进行搜索，找到您希望与策略进行关联的云主机。云主机ID为精确搜索，云主机名称为模糊搜索。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy6.png" width="600">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy6.png" width="600">
 </div>
 
 #### 为云主机资源关联自动镜像策略
@@ -77,12 +77,12 @@
 
 2. 在高级选项模块，打开自动镜像策略后方开关，为云主机指定自动镜像策略。<br>
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy14.png" width="900">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy14.png" width="900">
 </div>
 
 3. 请在主机创建完成后在主机详情页中查看云主机是否已与指定策略成功关联。。<br>
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy15.png" width="900">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy15.png" width="900">
 </div>
 
 
@@ -95,12 +95,12 @@
 
 3. 单台操作：点击**操作-更多-自动镜像**，或点击云主机名称进入详情页后点击**操作-更多-自动镜像**，为云主机选择关联策略。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy7.png" width="600">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy7.png" width="600">
 </div>
 
 <br>批量操作：点击列表下方**更多-自动镜像**
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy8.png" width="600">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy8.png" width="600">
 </div>
 
 ### 解除资源关联
@@ -110,7 +110,7 @@
 
 1. 点击策略名称进入详情页后看到目前与与当前资源关联的实例。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy9.png" width="900">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy9.png" width="900">
 </div>
 
 2.单台解除关联：点击资源列表右侧**操作-解除关联**。批量操作：勾选多台云主机，点击列表下方**解除关联**。若您的策略目前正在制作镜像，当前解除关联操作不会影响该次镜像制作结果。
@@ -120,7 +120,7 @@
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，进入实例列表页面。
 2. 点击**操作-更多-自动镜像**，或点击云主机名称进入详情页后点击**操作-更多-自动镜像**，将关联策略设置为**不关联**。若您的策略目前正在制作镜像，当前解除关联操作不会影响该次镜像制作结果。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy10.png" width="600">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy10.png" width="600">
 </div>
 
 ### 禁用策略状态
@@ -128,7 +128,7 @@
 
 在[自动任务策略控制台][1]点击**操作-更多-禁用策略**，或点击策略名称进入详情页后点击**操作-更多-禁用策略**。禁用状态的策略不会触发自动制作镜像任务。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy11.png">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy11.png">
 </div>
 
 ### 启用策略状态
@@ -136,7 +136,7 @@
 
 在[自动任务策略控制台][1]点击**操作-更多-启用策略**，或点击策略名称进入详情页后点击**操作-更多-启用策略**。启用状态的策略会根据策略中的规则定时触发自动制作镜像任务。
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy12.png">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy12.png">
 </div>
 
 ### 策略跨区复制
@@ -144,7 +144,7 @@
 
 在[自动任务策略控制台][1]点击**操作-更多-策略跨区复制**，或点击策略名称进入详情页后点击**操作-更多-策略跨区复制**，可快速将当前策略复制至其他地域下。策略副本默认与源策略同名，同时将自动添加描述信息以标识策略来源
 <div align="center">
-<img src="../../../../../image/vm/autotaskpolicy13.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/autotaskpolicy13.png" width="700">
 </div>
 
 ### 删除策略

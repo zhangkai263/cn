@@ -23,7 +23,7 @@
 
 通过对实例制作镜像或从外部环境导入均可获得私有镜像，用户对私有镜像拥有绝对的使用和管理权限，可以将其复制到其他地域、共享给其他用户、导出京东云或进行删除，京东云早期提供的本地系统盘镜像，可以通过镜像类型转换功能生成云盘系统盘镜像继续使用。
 
-<div align="center"><img src="../../../../../image/vm/image-overview.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/image-overview.png" width="700"></div>
 
 
 ## 相关参考

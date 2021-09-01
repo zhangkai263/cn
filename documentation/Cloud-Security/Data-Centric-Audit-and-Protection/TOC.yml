@@ -1,0 +1,84 @@
+name: 数据安全中心
+href:
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: Introduction/Product-Overview.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 产品功能
+      href: Introduction/Features.md
+    - name: 产品规格
+      href: Introduction/Specifications.md
+      status: 0
+    - name: 使用约束
+      href: Introduction/Restrictions.md
+- name: 产品定价
+  items:
+    - name: 计费概述
+      href: Pricing/Billing-Overview.md
+      status: 0
+    - name: 计费规则
+      href: Pricing/Price-Overview.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md
+      status: 0
+    - name: 续费流程
+      href: Pricing/Renew-Process.md
+      status: 0
+    - name: 升配流程
+      href: Pricing/Upgrade-Process.md
+      status: 0
+- name: 入门指南
+  items:
+    - name: 
+      href: Getting-Started/1.md
+      status: 0
+  status: 0
+- name: 操作指南
+  items:
+    - name: 敏感数据管理
+      items: 
+        - name: 敏感数据发现
+          href: Sensitive-Data-Management/Discovery.md
+          status: 0
+        - name: 分类分级策略
+          href: Sensitive-Data-Management/Classification.md
+        - name: 敏感数据资产
+          items:
+            - name: 数据源管理
+              href: Sensitive-Data-Management/DataSource.md
+            - name: 元数据管理
+              href: Sensitive-Data-Management/MetaData.md
+            - name: 防护策略
+              href: Sensitive-Data-Management/Policy.md
+    - name: 敏感数据保护
+      items:
+        - name: 防护实例
+          items:
+            - name: 创建防护实例
+              href: Sensitive-Data-Protection/Instance/CreateInstance.md
+            - name: 接入网关类型防护实例
+              href: Sensitive-Data-Protection/Instance/GatewayInstance.md
+            - name: 接入插件类型防护实例
+              href: Sensitive-Data-Protection/Instance/PluginInstance.md
+        - name: 数据加密
+          href: Sensitive-Data-Protection/Encryption.md
+          tatus: 0
+        - name: 数据脱敏
+          href: Sensitive-Data-Protection/Mask.md
+          status: 0
+        - name: 防护策略
+          href: Sensitive-Data-Protection/Policy.md
+          status: 0
+- name: 最佳实践
+  items:
+    - name: 数据保护
+      href: Best-Practices/DataProtection.md
+- name: 常见问题
+  items:
+    - name: FAQ/faq.md 
+      href:
+      status: 0
+  status: 0

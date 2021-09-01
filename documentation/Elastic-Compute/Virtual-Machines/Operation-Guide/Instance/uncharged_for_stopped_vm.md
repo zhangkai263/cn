@@ -19,19 +19,19 @@
 
 您可在停机不计费功能上线通知弹窗中设置您停机不计费的默认状态，之后在新建满足条件的实例时将首先根据您选择的默认状态为您进行配置，简化您的操作。您也可在每次创建实例或停止实例时重新指定实例的停机不计费状态。
 
-![](../../../../../image/vm/uncharge-1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/uncharge-1.png)
 
 ### 在创建实例时开启/关闭停机不计费
 
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏**弹性计算-云主机-实例**进入实例列表页。
-2. 选择创建实例所属地域，点击**创建**按钮，进入云主机购买页面。![](../../../../../image/vm/Getting-Start-Linux-Create-Region.png)
-3. 在高级选项中，为您的实例设置开启/关闭停机不计费。若不做更改，实例的停机不计费状态为您之前设置的停机不计费默认状态。![](../../../../../image/vm/uncharged1.png)
-4.若您当前实例不适用停机不计费功能，此处将无法进行设置。![](../../../../../image/vm/uncharge6.png)
+2. 选择创建实例所属地域，点击**创建**按钮，进入云主机购买页面。![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-Region.png)
+3. 在高级选项中，为您的实例设置开启/关闭停机不计费。若不做更改，实例的停机不计费状态为您之前设置的停机不计费默认状态。![](https://img1.jcloudcs.com/cn/image/vm/uncharged1.png)
+4. 若您当前实例不适用停机不计费功能，此处将无法进行设置。![](https://img1.jcloudcs.com/cn/image/vm/uncharge6.png)
 
 ### 在创建实例模板时开启/关闭停机不计费
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏**弹性计算-云主机-实例模板**进入实例列表页。
 2. 选择地域，点击**创建**，进入实例模板创建页面。
-3. 在高级选项中，为您实例模板中的实例设置开启/关闭停机不计费。若不做更改，实例的停机不计费状态为您之前设置的停机不计费默认状态。<div align="center"><img src="../../../../../image/vm/uncharge5.png"></div>
+3. 在高级选项中，为您实例模板中的实例设置开启/关闭停机不计费。若不做更改，实例的停机不计费状态为您之前设置的停机不计费默认状态。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/uncharge5.png"></div>
 
 4. 若您当前实例模板中的实例不适用停机不计费功能，此处将无法进行设置。	
 > 如果您使用开启停机不计费功能的实例模板来创建计费方式为包年包月的实例，创建出的实例将会保持包年包月计费状态且不适用停机不计费功能。
@@ -41,10 +41,10 @@
 
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏**弹性计算-云主机**进入实例列表页。
 2. 选择地域。
-3. 在实例列表中选择需要停止且适用停机不计费的实例，点击**操作-停止**按钮、或点击实例名称进入详情页后点击**操作-停止**按钮并在**停止**弹窗中选择停机不计费功能的开启/关闭。如果您当前的实例不支持停机不计费功能，将不显示停机不计费设置相关信息，无法进行设置。<div align="center"><img src="../../../../../image/vm/stopinstance-2.png"></div>
+3. 在实例列表中选择需要停止且适用停机不计费的实例，点击**操作-停止**按钮、或点击实例名称进入详情页后点击**操作-停止**按钮并在**停止**弹窗中选择停机不计费功能的开启/关闭。如果您当前的实例不支持停机不计费功能，将不显示停机不计费设置相关信息，无法进行设置。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/stopinstance-2.png"></div>
 4. 可通过多选实现同时操作多台实例。在实例列表中勾选需要停止的实例，点击列表下方**停止**按钮，在**停止**弹窗中选择停机不计费功能的统一开启/关闭。勾选**保持当前配置**，每台实例的停机后是否计费将维持当前设置；勾选**统一设置**，设置的结果将对满足停机不计费配置的实例生效，对不支持停机不计费功能的实例实例，该实例在**停机不计费**一列中将显示为**不适用**，您无法将该实例的该功能设置为开启/关闭。
 
-<div align="center"><img src="../../../../../image/vm/uncharge-2.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/uncharge-2.png" width="600"></div>
 
 5. 在**停止**弹窗中确认相关信息，点击**确定**提交停止操作，实例将进入**停止中**状态，当停止完成后，实例将进入**停止**状态.
 

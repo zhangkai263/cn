@@ -11,7 +11,7 @@
 * 目前只能通过PIN(客户识别码)进行共享，不支持使用账号ID或账号绑定手机号进行共享，请通过如下方式，获取正确的用户PIN：
     * 点击右上角的用户账号，选择【账户管理】进入用户中心。
     * 在“基本资料”中查看账号信息，使用“PIN (客户识别码)”进行共享操作。
-<div align="center"><img src="../../../../../image/vm/Operation-Guide-Image-share1.png" width="900"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-share1.png" width="900"></div>
 
 ## 操作影响
 * 存在共享关系的镜像无法删除，共享后如需删除镜像请先取消所有共享关系；
@@ -28,7 +28,7 @@
 4. 在共享镜像弹框中，输入共享对象的京东云账号PIN，点击**共享镜像**按钮，账户验证成功则完成共享，验证失败会提示您“京东云账号不存在”。共享后结果显示可能有延迟，可点击刷新按钮更新共享结果。
 
 5. 已经共享的账号会在下方列表中展示，可在此直接进行【取消共享】操作。
-![](../../../../../image/vm/Operation-Guide-Image-share2.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-share2.png)
 
 ## 相关参考
 [取消共享私有镜像](https://docs.jdcloud.com/virtual-machines/cancel-share-image)

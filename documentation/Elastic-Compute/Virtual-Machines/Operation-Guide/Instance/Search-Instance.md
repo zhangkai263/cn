@@ -30,8 +30,8 @@
 1. 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏**弹性计算-云主机**进入实例列表页。
 2. 选择地域。
 3. 您可通过键盘输入或下拉框选择搜索条件。
-<div align="center"><img src="../../../../../image/vm/search-instance-1.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/search-instance-1.png" width="700"></div>
 4. 输入搜索值，若支持多个搜索值，则以逗号分隔，回车生成搜索项后，可继续选择其他搜索条件并生成搜索项。完成输入后回车或点击搜索按钮则触发条件搜索。
-<div align="center"><img src="../../../../../image/vm/search-instance-2.png" width="1000"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/search-instance-2.png" width="1000"></div>
 5. 若需要删除搜索项，则可通过键盘方向键选中搜索项再使用删除键删除选中项，或点击删除按钮进行删除，删除后需要重新触发搜索。
-<div align="center"><img src="../../../../../image/vm/search-instance-3.png" width="800"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/search-instance-3.png" width="800"></div>

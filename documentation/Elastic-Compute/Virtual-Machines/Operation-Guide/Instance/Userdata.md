@@ -75,34 +75,36 @@ echo %random%>cmd-text1.txt
       systemctl status jcs-agent-core.service
       ```
 如下图显示服务为enabled，且状态为active，则说明当前实例已安装并使用JCS-Agent。
-![](../../../../../image/vm/Operation-Guide-Instance-userdata1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata1.png)
 
 2.确认JCS-Agent版本是 非“1.0.675.56819b0”的版本，即表明支持自定义数据功能。输入如下指令如图查看版本号：
       ```
       ps -ef|grep MonitorPlugin
       ```
 
-![](../../../../../image/vm/Operation-Guide-Instance-userdata2.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata2.png)
 
 #### Windows系统： <br>
 1. 确认当前实例内安装了JCS-Agent，并处于运行状态。
-    在“运行”中执行`services.msc`，查看windows运行服务，如下图显示JCSAgentCore正在运行，且启动类型为自动，则说明当前实例已安装并使用JCS-Agent。<br>![](../../../../../image/vm/Operation-Guide-Instance-userdata3.png)
+    在“运行”中执行`services.msc`，查看windows运行服务，如下图显示JCSAgentCore正在运行，且启动类型为自动，则说明当前实例已安装并使用JCS-Agent。<br>![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata3.png)
 2. 确认JCS-Agent版本是 非“1.0.641.fc127b7 ”的版本，即表明支持自定义数据功能。在命令行工具中执行如下代码，如图可获知当前版本情况。  
       ```
       wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
       ```
-      ![](../../../../../image/vm/Operation-Guide-Instance-userdata4.png)
+      
+      ![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata4.png)
+      
 
       > 如您当前实例内未安装JCS-Agent或当前版本不支持自定义数据，请提交工单由技服人员协助安装。
 
 <div id="user-content-4"></div>
 
 ## 操作步骤
-1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东智联云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
+1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com/)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页，点击【创建】按钮，进入云主机购买页面。
 2. 选择创建实例所属地域，点击【创建】按钮进入云主机实例购买页面。
 3. 选择镜像并完成其他基本配置后，在“高级选项”区域开启“自定义数据”功能。
-![](../../../../../image/vm/Operation-Guide-Instance-userdata5.png)
-4. 在文本框中输入自定义数据，如果数据已进行Base64编码，请勾选“以下输入已进行Base64编码”，若数据为明文未进行编码，请保持未勾选状态。<br>![](../../../../../image/vm/Operation-Guide-Instance-userdata6.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata5.png)
+4. 在文本框中输入自定义数据，如果数据已进行Base64编码，请勾选“以下输入已进行Base64编码”，若数据为明文未进行编码，请保持未勾选状态。<br>![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Instance-userdata6.png)
 5. 为保证脚本正确执行，请务必参照上方【格式要求】检查数据首/尾行的声明格式是否正确。
 6. 等待实例运行后，登录实例查看自定义数据运行结果，如执行失败请查看相关日志定位问题。Linux系统日志路径：/var/log/jcloud/agent；Windows系统日志路径：C:\ProgramData\JD.com\jCloud\Agent\Logs。
 

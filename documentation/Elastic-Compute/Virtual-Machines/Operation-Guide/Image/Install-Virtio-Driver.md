@@ -7,7 +7,7 @@
 grep -i virtio /boot/config-$(uname -r)
 ```
 
-![](../../../../../image/vm/Image-Import-Virtio00.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio00.png)<br>
 * 如果参数 `CONFIG_VIRTIO_BLK` 及 `CONFIG_VIRTIO_NET` 取值为 y，表示驱动已编译进了内核，无须执行下述操作，可导入。
 * 如果参数 `CONFIG_VIRTIO_BLK` 及 `CONFIG_VIRTIO_NET` 取值为 m，表示驱动已编译成内核模块，请执行下述操作“②”,确认initramfs（或initrd）文件中是否包含virtio_blk驱动，若无则需要重新制作文件。
 * 如果在输出信息中没有找到 `VIRTIO_BLK` 及 `VIRTIO_NET` 的信息，表示该操作系统没有安装 virtio 相关驱动，需要编译安装virtio驱动，见请执行下述“③”。
@@ -17,7 +17,7 @@ grep -i virtio /boot/config-$(uname -r)
 lsinitrd /boot/initramfs-$(uname -r).img | grep virtio
 ```
 
-![](../../../../../image/vm/Image-Import-Virtio01.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio01.png)<br>
 如果initramfs已经包含了`virtio_blk`驱动，以及其所依赖的`virtio.ko`、`virtio_pci.ko` 和 `virtio_ring.ko`，则无须执行下述操作。<br>
 如果initramfs未找到 virtio 相关信息，则需要修复临时文件系统：<br>
  A. CentOS 7/6
@@ -66,16 +66,17 @@ B.编译内核
 ```
 make mrproper
 ```
+
 * 进入图形化配置界面
 ```
 make menuconfig
 ```
 
 在 Device Drivers-->Block devices 中选择Virtio block driver <br>
-<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio1.png" width="400"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio1.png" width="400"></div>
 
 在 Device Drivers-->Network device support 中选择Virtio network driver
-<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio2.png" width="400"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio2.png" width="400"></div>
 
 * 完成模块编译 (可能需要30~40分钟，具体时间取决于服务器配置)
 ```
@@ -98,7 +99,7 @@ find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
 ② 将virtio-win-0.1.137.iso文件拷贝到Windows虚机里面的某个目录下，可以通过远程连接共享文件夹等方式，将ios文件拷贝到虚机里。<br>
 
 ③ 双击iso文件，Windows会自动将其挂载到DVD设备上用于读取数据，下图中右侧的文件夹就是iso软件包里的内容，包括各种设备的驱动程序，如NetKVM对应的就是网卡驱动。<br>
-<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio3.png" width="600"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio3.png" width="600"></div>
 
 ④ 从控制面板里，找到并打开“设备管理器”窗口，只需要安装以下三个设置的驱动程序：
 * 存储控制器－Red Hat VirtIO SCSI controller
@@ -106,7 +107,7 @@ find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
 * 串口设备－Virtio Serial Driver
 
 打开设备管理器。会发现有三个打着黄色感叹号的设备没有安装驱动程序，一个SCSI Controller设备，一个网卡和一个PCI简单通信设备，如下图所示。<br>
-![](../../../../../image/vm/Image-Import-Virtio4.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio4.png)<br>
 
 ⑤ 首先安装存储控制器驱动，右键点击选择“更新驱动程序软件”，在出现的窗口点击“浏览计算机以查找驱动程序软件”，并在弹出的窗口中定位到DVD驱动器里的“viostor“目录中的2k12R2/amd64/文件夹（Windows Server 2012R2）。点击确定按钮后，再点击下一步，直到按指示完成该驱动安装。系统如果提示重启，请选择稍后重启。待完全安装完三个驱动以后再考虑重启操作。<br>
 
@@ -117,7 +118,7 @@ find /lib/modules/"$(uname -r)"/ -name "virtio.*" | grep -E "virtio.*"
 ⑧ 重启系统。<br>
 
 ⑨ 打开“设备管理器”，并检查我们安装的三个驱动程序的版本号：在我们文档的例子里，目标版本号是以13700结尾的数字字符串。<br>
-<div align="left"><img src="../../../../../image/vm/Image-Import-Virtio5.png" width="600"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Virtio5.png" width="600"></div>
 
 ⑩ 清理配置信息，此步骤极为重要。打开命令行窗口或powershell运行窗口，执行如下命令：
 ```
