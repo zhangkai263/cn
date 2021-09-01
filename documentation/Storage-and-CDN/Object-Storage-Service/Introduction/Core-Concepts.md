@@ -15,4 +15,4 @@
 |Object Meta|文件元数据|一组键值(Key-Value)的组合，分为系统预定义元数据(System-DefinedMetadata)和用户自定义元数据(User-Defined Metadata)两部分，用来描述文件信息，如长度，类型等|
 |Data|文件数据|用户上传的文本、多媒体、二进制等任何类型的数据|
 |Key|文件名|Object的唯一名称标识，如test.jpg|
-
+|Storage Class|存储类型|OSS提供标准存储（STANDARD）、低频存储（STANDARD-IA）、归档存储（GLACIER）、低冗余存储（REDUCED_REDUNDANCY）四种存储类型，全面覆盖从热倒棱的各种存储场景|
