@@ -30,8 +30,7 @@
 	- [添加安全组](../Operation-Guide/Security-Group-Management/Associate-Security-Group.md)
 	- [移除安全组](../Operation-Guide/Security-Group-Management/Disassociate-Security-Group.md)
 - 云主机配置
-	- [Linux系统临时配置](../Operation-Guide/VM-Configuration/Linux-Temporary-Configuration.md)
-	- [Linux系统永久配置](../Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md)
+	- [Linux系统配置弹性网卡](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)
 
 ## 计费
 弹性网卡服务免费，弹性网卡关联的弹性公网IP独立计费。详细说明请参见：[计费说明](../Pricing/Billing-Overview.md)。
