@@ -98,4 +98,6 @@ bash install.sh <image-type> <version-num>
 
 [登录实例](../../Getting-Start-Linux/Connect-to-Linux-Instance.md)
 
+[实例规格类型](../../Introduction/Instance-Type-Family.md)
+
 
