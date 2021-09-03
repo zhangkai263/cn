@@ -14,7 +14,7 @@
 	如果系统中安装了nouveau(使用`lsmod | grep nouveau`查看)执行如下步骤，如未装直接转到第3步安装驱动。<br>
 	* 打开 /etc/modprobe.d/blacklist.conf， 在文件内添加 `blacklist nouveau` <br>
 	* 依次执行下述指令
-		```Shell
+		```
 		mv /boot/initramfs-$(uname r).img /boot/initramfs-$(uname -r)-nouveau.img
 		dracut /boot/initramfs-$(uname -r).img $(uname -r)
 		reboot
@@ -24,7 +24,7 @@
 	* 下载Linux系统驱动，请登录实例后在系统内通过内网下载，地址：<br> https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/NVIDIA-Linux-x86_64-430.46-grid.run
 		
 	* 在下载目录执行如下命令：
-		```Shell
+		```
 		sh ./NVIDIA-Linux-x86_64-430.46-grid.run
 		reboot
 		```
@@ -57,7 +57,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 1. 为云主机安装图形界面
 	License Server可以通过远程web管理也可以在本地进行管理。如想要在本地管理（在安装License Server的云主机上访问管理），需要为云主机安装图形界面（如仅需远程web管理，可跳过此步骤），指令如下：            
-	```Shell
+	```
 	yum groupinstall "GNOME Desktop" "Graphical Administration Tools" -y
 	ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target                
 	reboot
@@ -65,7 +65,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 2. 下载License Server安装文件
 
-	```Shell
+	```
 	wget https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/setup.bin
 	```
 3. 安装License Server软件
@@ -84,7 +84,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 	* 安装完成后，执行以下指令：
 
-		```Shell
+		```
 		wget https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/producer-settings.xml
 		cp producer-settings.xml /opt/flexnetls/nvidia/producer-settings.xml
 		systemctl stop flexnetls-nvidia.service
@@ -103,7 +103,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 
 * 在/etc/nvidia目录下，执行` cp gridd.conf.template gridd.conf `，在gridd.conf文件中的如下位置填写license server的IP和端口：
 
-	```Shell
+	```
 	ServerAddress=主机IP
 	# Description: Set License Server port number
 	# Data type: integer
