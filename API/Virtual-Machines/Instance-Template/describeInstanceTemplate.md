@@ -105,7 +105,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates/{instanceTemp
 ### <div id="user-content-instancetemplatedisk">InstanceTemplateDisk</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**diskType**|String|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可能值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD|
+|**diskType**|String|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/instance-type)。<br>可能值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD|
 |**diskSizeGB**|Integer|50|云硬盘容量，单位为 GiB。|
 |**snapshotId**|String|snapshot-h8u1****36|创建云硬盘的快照ID。|
 |**policyId**|String| |云硬盘自动快照策略ID。|
