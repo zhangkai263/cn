@@ -59,6 +59,8 @@
             href: Image/createImage.md          
           - name: copyImages
             href: Image/copyImages.md
+          - name: copyImages
+            href: Image/convertImage.md
           - name: deleteImage
             href: Image/deleteImage.md
           - name: describeImages
