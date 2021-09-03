@@ -98,7 +98,7 @@ VNC登陆的场景至少包括以下几种：
 登录之前请您查看实例所在[安全组](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)
 配置，确保实例3389端口已开放。在安装了rdesktop之后，运行以下命令登录实例：
 
-```Shell
+```
 rdesktop -u administrator -p <实例登录密码> <实例公网IP地址>
 ```
 
