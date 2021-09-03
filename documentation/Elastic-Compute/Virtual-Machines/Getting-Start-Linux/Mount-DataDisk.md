@@ -11,13 +11,13 @@
 
 1. 不带任何参数：该脚本会自动将您所有未分区的设备进行分区、格式化、挂载（默认挂载点为/jddata1、/jddata2……/jddatan）操作，并在/etc/fstab文件中通过UUID的方式实现云硬盘自动挂载。
 
-```Shell
+```
 sh auto_fdisk.sh
 
 ```
 2. 带设备名（如/dev/vdc等）、挂载点、文件系统参数：该脚本会根据您输入参数自动完成分区、格式化、挂载操作。
  
-```Shell
+```
 sh auto_fdisk.sh /dev/vdb /jddata1 ext4
 ```
 
@@ -33,7 +33,7 @@ sh auto_fdisk.sh /dev/vdb /jddata1 ext4
 
 1. 在控制台完成挂载后，您在云主机中就可以看到一块未经分区、格式化的磁盘，您可以通过如下命令来查看磁盘分区信息：
 	
-```Shell
+```
 fdisk -l
 ```
 <div align="center">
@@ -42,7 +42,7 @@ fdisk -l
 
 2. 您可以通过如下命令完成分区，/dev/vdb请您修改为需要分区的设备名
 
-```Shell
+```
 fdisk /dev/vdb	
 ```
 输入命令后，依次输入 n, p, 1, 以及 两次回车，然后是 wq，完成保存。 这样再次通过 fdisk -l 查看时，你可以看到新建的分区/dev/vdb1。<br>
@@ -67,7 +67,7 @@ fdisk /dev/vdb
 
 3. 之后您需要对分区后的硬盘进行格式化，命令如下：
 
-```Shell
+```
 mkfs -t ext4 /dev/vdb1
 ```
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount5.png" width="700"></div>
@@ -76,13 +76,13 @@ mkfs -t ext4 /dev/vdb1
 
 4. 在mnt目录下创建vdb1目录，并将磁盘挂载到该目录下，方便管理。
 
-```Shell
+```
 mkdir -p /mnt/vdb1 && mount -t ext4 /dev/vdb1 /mnt/vdb1
 ```
 
 5. 查看磁盘的UUID
 	
-```Shell
+```
 blkid /dev/vdb1
 ```
 
