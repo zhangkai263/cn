@@ -21,6 +21,7 @@
 1. 使用您的私有镜像创建一台镜像分类为云硬盘系统盘的实例VM1。<br>
 ![](https://img1.jcloudcs.com/cn/image/vm/ImgTranfer1.png)
 2. 在VM1中下载并运行脚本：
+
     ```
     wget https://bm-img-trans.s3.cn-north-1.jdcloud-oss.com/os-init.sh
     chmod u+x os-init.sh
@@ -39,18 +40,19 @@
     mount -o nouuid /dev/vdb1 newFile
     ```
 
-    挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br><br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer4.png" width="700"></div>
+挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer4.png" width="700"></div>
 
 7. 在当前目录（挂载点的上层目录）下载脚本并运行，请确保脚本文件在挂载点的上层目录中：
+
     ```
     wget https://bm-img-trans.s3.cn-north-1.jdcloud-oss.com/generate-img.sh
-   
     chmod u+x generate-img.sh
-   
     ./generate-img.sh [MountPoint] [OS] [RawSize]
     ```
     其中，mount point 为原主机vm1系统盘在当前主机vm2中的挂载点（即示例中的newFile）；OS为原主机vm1系统盘的操作系统，也可以说是您私有镜像的操作系统，在此处只需要指定操作系统不需要指定系统版本，如CentOS 7.6只需要指定为centos7即可；RawSize为制作的镜像在raw格式下的大小，若不指定默认为10G。若指定，RawSize的大小请不要小于10G。
     例如挂载点为newFile且vm1操作系统为CentOS 7.6,可执行以下命令：
+    
     ```
     ./generate-img.sh newFile centos7 20G
     ```
