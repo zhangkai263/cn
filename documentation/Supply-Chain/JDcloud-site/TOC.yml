@@ -3,25 +3,16 @@ href:
 items:
 - name: 服务概览
   items:
-    - name: 概述
-      href: Introduction/Product-Overview.md
-    - name: 产品优势
-      href: Introduction/Benefits.md
-    - name: 功能介绍
-      href: Introduction/Functions.md
-
+  - name: 服务概览
+    items:
+      - name: 概述
+        href: Introduction/Product-Overview.md
       
 
-- name: 快速入门
-  items:
-    - name: 概述
-      href: Guide/Summary.md
-    - name: 操作指南
-      href: Guide/Operation-Guide.md
-    - name: 开通网站
-      href: Guide/Create-Website.md
-    - name: 配置域名
-      href: Guide/Configure-domain-name.md
+  - name: 快速入门
+    items:
+      - name: 概述
+        href: Guide/Summary.md
      
 - name: 用户指南
   items:
