@@ -44,10 +44,6 @@ items:
     href: Cloud-Database-MongoDB-Service-Cause.md
   - name: 云数据库MongoDB服务等级协议（SLA）
     href: Cloud-Database-MongoDB-Service-Level-Agreement-SLA.md
-  - name: 云数据库InfluxDB服务条款
-    href: JCS-For-InfluxDB-Terms-Of-Service.md
-  - name: 云数据库InfluxDB服务等级协议（SLA）
-    href: JCS-For-InfluxDB-Level-Agreement-SLA.md 
   - name: 分布式数据库TiDB服务条款
     href: JCS-For-TiDB-Terms-Of-Service.md
   - name: 分布式数据库TiDB服务等级协议（SLA）

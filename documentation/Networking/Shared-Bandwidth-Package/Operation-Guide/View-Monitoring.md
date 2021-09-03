@@ -12,9 +12,8 @@
 **步骤4：** 点击监控 tab，进入共享带宽包监控页面可查看监控数据；
 
 
-```
- 可选择监控时间段或者自定义时间段进行查看监控数据，如需查看单个公网IP的监控数据须到公网IP详情页查看；
- ```
+> 注：可选择监控时间段或者自定义时间段进行查看监控数据，如需查看单个公网IP的监控数据须到公网IP详情页查看。
+
  
 完成以上步骤即可查看共享带宽包的监控信息。
 
@@ -26,4 +25,11 @@
 |公网入包量	|统计周期内，共享带宽包中所有公网IP绑定的网卡每秒出包量之和|
 |公网出带宽使用率 |统计周期内，共享带宽包出方向带宽峰值占带宽上限的百分比 |
 |公网入带宽使用率 |统计周期内，共享带宽包入方向带宽峰值占带宽上限的百分比 |
+
+## 相关参考
+
+- [云监控概述](https://docs.jdcloud.com/cn/monitoring/product-overview)
+- [查看资源监控](https://docs.jdcloud.com/cn/monitoring/view-resource-monitoring-chart-details)
+- [添加报警规则](https://docs.jdcloud.com/cn/monitoring/add-rule-in-batches)
+- [查看报警规则](https://docs.jdcloud.com/cn/monitoring/add-rule-in-batches)
 

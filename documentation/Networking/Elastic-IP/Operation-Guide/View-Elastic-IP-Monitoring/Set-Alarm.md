@@ -8,10 +8,9 @@
 ### 前提条件及限制
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
-
 - 确定已创建一个公网IP，已绑定资源，且所绑定的云资源已产生流量数据，如未绑定资源或未产生监控数据，则会显示“数据不足”
 
-## 操作不足
+## 操作步骤
 
 步骤1：登录京东云控制台，进入控制台导航页面。
 

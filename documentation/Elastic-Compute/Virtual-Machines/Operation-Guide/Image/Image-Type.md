@@ -6,7 +6,8 @@
 
 在使用镜像创建实例，及基于实例创建私有镜像的过程中，镜像的架构模式是继承并不可更改的，若希望基于已有的本地盘系统盘镜像创建云硬盘系统盘云主机，可以通过 [镜像类型转换](Convert-Image.md) 基于本地盘系统盘镜像生成一个云硬盘系统盘镜像，然后再进行云主机创建。
 
-![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-imagetype.png)
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-imagetype.png" width="600"></div>
+
 
 ### 本地盘系统盘镜像
 本地盘系统盘镜像仅可用于创建系统盘为本地盘的实例，其设备映射信息中/dev/vda 引用了本地系统盘镜像文件，其余设备信息均引用数据盘快照文件。

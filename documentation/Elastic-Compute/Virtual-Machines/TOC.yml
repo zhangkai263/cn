@@ -125,10 +125,12 @@ items:
             items:     
               - name: 实例元数据
                 href: Operation-Guide/Instance/Instance-Metadata.md            
-              - name: 自定义数据
+              - name: 自定义脚本
                 href: Operation-Guide/Instance/Userdata.md
               - name: 自定义元数据
-                href: Operation-Guide/Instance/Custom-Metadata.md        
+                href: Operation-Guide/Instance/Custom-Metadata.md  
+          - name: 实例FAQ
+            href: Operation-Guide/Instance/Instance-FAQ.md               
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -175,7 +177,7 @@ items:
             href: Operation-Guide/Image/Cancel-Share-Image.md
           - name: 删除私有镜像
             href: Operation-Guide/Image/Delete-Private-Image.md
-          - name: FAQ
+          - name: 镜像FAQ
             href: Operation-Guide/Image/Image-FAQ.md          
       - name: 实例抵扣券
         items:
@@ -321,6 +323,8 @@ items:
         href: Best-Practices/Storage.md
       - name: 备份与恢复
         href: Best-Practices/Backup-and-Restore.md
+      - name: 设置有序名称或主机名称
+        href: Best-Practices/Set-Ordered-Name.md        
   - name: Linux运维指南
     items:
       - name: Linux环境配置

@@ -26,7 +26,7 @@
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击顶部导航栏**弹性计算-云主机-实例**进入实例列表页。
 2. 选择创建实例所属地域，点击**创建**按钮，进入云主机购买页面。![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-Region.png)
 3. 在高级选项中，为您的实例设置开启/关闭停机不计费。若不做更改，实例的停机不计费状态为您之前设置的停机不计费默认状态。![](https://img1.jcloudcs.com/cn/image/vm/uncharged1.png)
-4.若您当前实例不适用停机不计费功能，此处将无法进行设置。![](https://img1.jcloudcs.com/cn/image/vm/uncharge6.png)
+4. 若您当前实例不适用停机不计费功能，此处将无法进行设置。![](https://img1.jcloudcs.com/cn/image/vm/uncharge6.png)
 
 ### 在创建实例模板时开启/关闭停机不计费
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏**弹性计算-云主机-实例模板**进入实例列表页。

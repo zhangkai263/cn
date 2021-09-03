@@ -1,7 +1,7 @@
 # 概述
 云主机（Virtual Machines,VM）是京东云提供的一种基础计算服务单元，提供处理能力可弹性伸缩的计算服务。云主机涉及多种概念，如下图所示，包括镜像、云硬盘、VPC/子网等，每种资源都提供多种配置选项，您可以根据实际需要进行选择。
 <div align="center">
-<img src="https://img1.jcloudcs.com/cn/image/vm/Product-Introduction-Overview-New.png" width="700">
+<img src="https://img1.jcloudcs.com/cn/image/vm/Product-Introduction-Overview-New.png" width="500">
 </div>
 云主机管理方式比物理服务器更简单高效，您可根据实际需要对这些资源进行灵活的组合，您可通过控制台、OpenAPI或CLI随时创建指定数量的云主机，在使用过程中可以根据业务规模随时调整实例规格，对于过剩或闲置的资源也可以进行释放以便节约投入成本。京东云云主机为您快速部署应用提供稳定可靠的基础能力，使您更专注于核心业务创新。
 

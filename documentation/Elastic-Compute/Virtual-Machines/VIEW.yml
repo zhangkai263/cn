@@ -60,6 +60,7 @@ items:
     - name: 使用
       items:
         - name: 入门指南
+          items:        
             - name: 账号及支付准备
               href: https://docs.jdcloud.com/cn/virtual-machines/account-preparation-linux
             - name: 配置参数说明
@@ -118,7 +119,7 @@ items:
           items:
             - name: 接口概览
               href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
-            - name: 描述实例规格
+            - name: 查询实例规格
               href: https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API
             - name: 创建实例
               href: https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API
