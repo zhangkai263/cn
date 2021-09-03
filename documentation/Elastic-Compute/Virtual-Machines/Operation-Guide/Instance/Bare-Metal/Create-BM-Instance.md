@@ -40,7 +40,7 @@
     mount -o nouuid /dev/vdb1 newFile
     ```
 
-挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br>
+    挂载完成后，可通过运行 `df -h`命令验证是否成功，若出现如下结果，说明/dev/vdb1已成功挂载在newFile下。<br>
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer4.png" width="700"></div>
 
 7. 在当前目录（挂载点的上层目录）下载脚本并运行，请确保脚本文件在挂载点的上层目录中：
