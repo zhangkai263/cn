@@ -27,19 +27,19 @@
 
 1. 登录[云监控控制台](https://cms-console.jdcloud.com/overview)。点击左侧菜单目录【Dashboard】-【监控面板】进入面板管理列表。
 
-   ![](../../img/dashbaord_1.png)
+   ![](../../../../../image/Cloud-Monitor/img/dashbaord_1.png)
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，点击右上角的【添加图表】。
-   ![](../../img/dashboard_detail.png)
+   ![](../../../../../image/Cloud-Monitor/img/dashboard_detail.png)
 
 3. 选择图表类型、产品类型、视图维度、监控项（支持添加多个监控项）、图表名称，选择监控资源，点击“确定”按钮，完成监控图表的创建。
-   ![](../../img/chart_add.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_add.png)
 
 ## 删除监控图表
 
 1. 登录[云监控控制台](https://cms-console.jdcloud.com/overview)。点击左侧菜单目录【Dashboard】-【监控面板】进入面板管理列表。
 2. 选中一个面板，点击面板名称，进入监控面板详情页，鼠标移入要删除的图表点击操作栏下【删除】按钮。
-   ![](../../img/chart_delete.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_delete.png)
 
 3. 弹框提示是否删除监控图表，点击确定，删除监控图表完成。
    ![](../../img/chart_delete_1.png)
@@ -50,7 +50,7 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，鼠标移入要复制的图表点击操作栏下【复制】按钮。
 
-   ![](../../img/chart_copy.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_copy.png)
 
 3. 在复制打开的添加监控图页面与原监控图表各项配置及监控资源完全相同的监控图表，可以对图表的配置及监控资源进行调整，点击确定，生成一张新的监控图表。
 
@@ -60,13 +60,13 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，切换面板的时间按钮，如下图所示，则将整张面板的全部监控图时间进行调整。支持快捷时间区间选择，也支持自定义时间日期范围。
 
-   ![](../../img/chart_time_set.png)
+   ![](../../../../../image/Cloud-Monitor/chart_time_set.png)
 
 3. 如果只需要对某张图的时间进行调整，则选中一个图表，点击时间设置按钮，再弹出的时间选择控件修改时间，支持快捷时间选择，也支持自定义时间日期范围。
 
-   ![](../../img/chart_time_set_1.png)
+   ![](.../../../../../image/Cloud-Monitor/img/chart_time_set_1.png)
 
-   ![](../../img/chart_time_set_2.png)
+   ![](.../../../../../image/Cloud-Monitor/img/chart_time_set_2.png)
 
 ## 刷新图表
 
@@ -74,7 +74,7 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，点击面板的刷新按钮，则整个面板新加载一下数据；如果期望开启自动刷新操作，则选中自动刷新时间间隔即可。
 
-   ![](../../img/chart_refresh.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_refresh.png)
 
 3. 单张图也支持刷新操作，鼠标移入要刷新的监控图表，点击刷新按钮，则所选图表的数据重新加载。
 
@@ -84,11 +84,11 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页。选中要放大的监控图表，点击放大展示图标。
 
-   ![](../../img/chart_up.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_up.png)
 
 3. 所选图表放大至整个浏览器展示。点击顶部的关闭按钮，可返回至面板详情页。
 
-   ![](../../img/chart_up_1.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_up_1.png)
 
 ## 全屏展示
 
@@ -96,7 +96,7 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页。点击顶部的放大操作按钮，可将整个面板全屏展示。
 
-   ![](../../img/chart_up_2.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_up_2.png)
 
 3. 退出全屏展示，按esc键即可。
 
@@ -106,9 +106,9 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，鼠标移入要导出数据的图表点击操作栏下【下载】按钮。
 
-   ![](../../img/chart_download.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_download.png)
 
 3. 若为折线图在弹出的数据导出弹窗中，选择导出数据的时间范围，默认为图表选中的时间段， 也可以只导出某个时间点的监控数据。若为TopN表格图，则直接导出监控图设置的时间段。
 
-   ![](../../img/chart_download_1.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_download_1.png)
 
