@@ -41,7 +41,7 @@ VNC登陆的场景至少包括以下几种：
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-console.png">
 </div>
 
-2. 通过在左上角点击 Ctrl+Alt+Del 命令进入系统登录界面：
+2. 通过在左上角点击 `Ctrl+Alt+Del` 命令进入系统登录界面：
 * 默认用户名：administrator        
 * 密码：为您创建实例时设置的实例密码 
 <div align="center">
@@ -60,7 +60,7 @@ VNC登陆的场景至少包括以下几种：
 <div align="center">
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-menu.png" width="700">
 </div>
-2. 在运行中输入mstsc命令，点击确定，即可打开远程桌面连接对话框。<br>
+2. 在运行中输入`mstsc`命令，点击确定，即可打开远程桌面连接对话框。<br>
 <div align="center">
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Connect-Windows-mstsc.png" width="700">
 </div>
@@ -98,7 +98,7 @@ VNC登陆的场景至少包括以下几种：
 登录之前请您查看实例所在[安全组](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)
 配置，确保实例3389端口已开放。在安装了rdesktop之后，运行以下命令登录实例：
 
-```
+```Shell
 rdesktop -u administrator -p <实例登录密码> <实例公网IP地址>
 ```
 
