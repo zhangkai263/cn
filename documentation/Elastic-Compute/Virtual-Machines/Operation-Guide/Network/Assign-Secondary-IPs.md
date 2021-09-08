@@ -60,13 +60,13 @@ GATEWAY="192.168.0.1"
 
 3. 重启网卡。
 
-```
+```Shell
 systemctl restart network
 ```
 
 4. 检查 eth0 网卡是否已经加入了 IP 地址。
 
-```
+```Shell
 ip addr
 ```
 
