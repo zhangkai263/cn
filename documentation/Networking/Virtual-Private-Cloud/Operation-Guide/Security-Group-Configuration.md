@@ -124,7 +124,8 @@
 步骤3：点击【确认】按钮，完成删除安全组操作。
 
 >  注：当安全组为绑定任一云资源时，支持删除安全组。
- 
+
+
 ## 相关参考
 
 - [安全组概述](../Introduction/Features/Security-Group-Features.md)
