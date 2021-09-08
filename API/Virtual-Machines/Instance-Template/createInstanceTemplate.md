@@ -12,7 +12,7 @@
 详细操作说明请参考帮助文档：[创建实例模板](https://docs.jdcloud.com/cn/virtual-machines/create-instance-template)
 
 ## 接口说明
-- 创建实例模板的限制基本与创建云主机一致，可参考 [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance-template)。
+- 创建实例模板的限制基本与创建云主机一致，可参考 [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)。
 - 实例模板中包含创建云主机的大部分配置参数，可以避免每次创建云主机时的重复性配置参数的工作。
 - 使用实例模板创建云主机时，如果再次指定了某些参数，并且与实例模板中的参数相冲突，那么新指定的参数会替换模板中的参数，以新指定的参数为准。
 - 使用实例模板创建云主机时，如果再次指定了镜像ID，并且与模板中的镜像ID不一致，那么模板中的 `systemDisk` 和 `dataDisks` 配置会失效，以新指定的镜像为准。
@@ -66,7 +66,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 ### <div id="user-content-7">InstanceTemplateDiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
+|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/instance-type)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
 |**diskSizeGB**|Integer|否|50|云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量。|
 |**snapshotId**|String|否|snapshot-h8u1****36|创建云硬盘的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us|云硬盘自动快照策略ID。|

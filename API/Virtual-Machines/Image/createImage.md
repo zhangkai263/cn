@@ -50,7 +50,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createIm
 |**az**|String|是| |云硬盘所属的可用区。此参数无须指定且指定无效。|
 |**name**|String|是| |云硬盘名称。此参数无须指定且指定无效|
 |**description**|String|否| |云硬盘描述。此参数无须指定且指定无效。|
-|**diskType**|String|是| ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>|
+|**diskType**|String|是| ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/instance-type)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>|
 |**diskSizeGB**|Integer|是|100 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量|
 |**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,diskSizeGB*50)]`<br>默认值：`diskSizeGB*30`|
 |**snapshotId**|String|否|snapshot-ev1h****gd |创建云硬盘使用的快照ID。仅制作镜像添加新盘时此参数有效。|

@@ -45,12 +45,12 @@ Linux系统以CentOS 7.2为例，假设实例主内网IP为192.168.0.4，分配�
 
 2. 执行以下命令（以主网卡示例，若为辅助网卡则对应修改为eth1、eth2等），查看并修改当前网卡配置。
 
-```shell
+```Shell
 vim /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 将`BOOTPROTO="dhcp"`注释掉，调整为`#BOOTPROTO="dhcp"`，然后追加以下配置项：
 
-```shell
+```Shell
 IPADDR="192.168.0.4"
 IPADDR1="192.168.0.5"
 NETMASK="255.255.255.0"
@@ -60,13 +60,13 @@ GATEWAY="192.168.0.1"
 
 3. 重启网卡。
 
-```
+```Shell
 systemctl restart network
 ```
 
 4. 检查 eth0 网卡是否已经加入了 IP 地址。
 
-```
+```Shell
 ip addr
 ```
 
