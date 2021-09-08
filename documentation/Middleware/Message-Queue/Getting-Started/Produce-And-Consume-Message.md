@@ -51,7 +51,7 @@
 
 查看 Java SDK [最新版本号](https://mvnrepository.com/artifact/com.jdcloud/jcq-java-sdk)
 
-2. 发送和订阅代码部分请参考[demo示例](../SDK-Rerference/Demo.md)。
+2. 发送和订阅代码部分请参考[demo示例](../SDK-Rerference/Demo.md)中Java demo。
 
 ### 说明：
 
