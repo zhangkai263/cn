@@ -59,7 +59,7 @@
 
 2. 服务端在尝试推送消息16次均失败后，消息会进入死信队列，在死信队列保存时间为消息的生命周期3天，超过消息生命周期消息不可恢复、重发。
 
-3. Spring框架下消息队列 JCQ的集成，请参考[demo示例](../SDK-Rerference/Demo.md)。
+3. Spring框架下消息队列 JCQ的集成，请参考[demo示例](../SDK-Rerference/Demo.md)：Spring框架下消息队列 JCQ的集成。
 
 
 
