@@ -20,14 +20,10 @@ items:
       href: Pricing/Billing-Overview.md
 - name: 入门指南
   items:
-    - name: 入门指南概述
-      href: Getting-Started/getting-started-overview.md
+    - name: 监控概览
+      href: Getting-Started/monitoring_overview.md
     - name: 资源监控
-      items:
-        - name: 查看监控图表
-          href: Getting-Started/View-monitoring-cahrt.md
-        - name: 添加报警规则
-          href: Getting-Started/CreateRule.md 
+      href: Getting-Started/resource_monitoring.md
     - name: 使用Dashboard
       href: Getting-Started/use-dashboard.md
     - name: 使用自定义监控
@@ -84,10 +80,10 @@ items:
       href: Operation-Guide/Alarm-Management/One-Click-Alarming.md
 - name: 最佳实践
   items:
-    - name: 批量资源监控
+    - name: 监控面板批量资源监控
       href: Best-Practices/bulk-resource-monitoring.md
-    - name: 日常业务监控
-      href: Best-Practices/daily-business-monitoring.md
+    - name: 报警回调至钉钉群组
+      href: Best-Practices/webhook.md      
 - name: 云资源监控指标
   items:
     - name: 监控指标概述
