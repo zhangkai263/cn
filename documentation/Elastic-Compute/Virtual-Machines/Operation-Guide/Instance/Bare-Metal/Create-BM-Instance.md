@@ -22,7 +22,7 @@
 ![](https://img1.jcloudcs.com/cn/image/vm/ImgTranfer1.png)
 2. 在VM1中下载并运行脚本：
 
-    ```
+    ```Shell
     wget https://bm-img-trans.s3.cn-north-1.jdcloud-oss.com/os-init.sh
     chmod u+x os-init.sh
     ./os-init.sh
@@ -35,7 +35,7 @@
 
 6. 需要执行以下命令创建一个文件（下述命令创建新文件newFile）作为/dev/vdb1的挂载点并将其挂载：
 
-    ```
+    ```Shell
     mkdir newFile
     mount -o nouuid /dev/vdb1 newFile
     ```
@@ -45,7 +45,7 @@
 
 7. 在当前目录（挂载点的上层目录）下载脚本并运行，请确保脚本文件在挂载点的上层目录中：
 
-    ```
+    ```Shell
     wget https://bm-img-trans.s3.cn-north-1.jdcloud-oss.com/generate-img.sh
     chmod u+x generate-img.sh
     ./generate-img.sh [MountPoint] [OS] [RawSize]
@@ -53,7 +53,7 @@
     其中，mount point 为原主机vm1系统盘在当前主机vm2中的挂载点（即示例中的newFile）；OS为原主机vm1系统盘的操作系统，也可以说是您私有镜像的操作系统，在此处只需要指定操作系统不需要指定系统版本，如CentOS 7.6只需要指定为centos7即可；RawSize为制作的镜像在raw格式下的大小，若不指定默认为10G。若指定，RawSize的大小请不要小于10G。
     例如挂载点为newFile且vm1操作系统为CentOS 7.6,可执行以下命令：
     
-    ```
+    ```Shell
     ./generate-img.sh newFile centos7 20G
     ```
     出现下图说明bm-generate-img.sh运行完成：<br><br><div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/ImgTranfer5.png" width="700"></div>
