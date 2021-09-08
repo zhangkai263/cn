@@ -115,6 +115,8 @@ items:
                 href: Operation-Guide/Instance/Burst-Instance/Create-Burst-Instance.md
               - name: 调整性能模式
                 href: Operation-Guide/Instance/Burst-Instance/Modify-Burst-Mode.md
+              - name: 积分查看及变化示例  
+                href: Credit-Examples.md
           - name: 裸金属实例
             items: 
               - name: 裸金属实例概述
