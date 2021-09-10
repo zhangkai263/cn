@@ -42,7 +42,7 @@
    ![](../../../../../image/Cloud-Monitor/img/chart_delete.png)
 
 3. 弹框提示是否删除监控图表，点击确定，删除监控图表完成。
-   ![](../../img/chart_delete_1.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_delete_1.png)
 
 ## 复制监控图表
 
@@ -60,13 +60,13 @@
 
 2. 选中一个面板，点击面板名称，进入监控面板详情页，切换面板的时间按钮，如下图所示，则将整张面板的全部监控图时间进行调整。支持快捷时间区间选择，也支持自定义时间日期范围。
 
-   ![](../../../../../image/Cloud-Monitor/chart_time_set.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_time_set.png)
 
 3. 如果只需要对某张图的时间进行调整，则选中一个图表，点击时间设置按钮，再弹出的时间选择控件修改时间，支持快捷时间选择，也支持自定义时间日期范围。
 
-   ![](.../../../../../image/Cloud-Monitor/img/chart_time_set_1.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_time_set_1.png)
 
-   ![](.../../../../../image/Cloud-Monitor/img/chart_time_set_2.png)
+   ![](../../../../../image/Cloud-Monitor/img/chart_time_set_2.png)
 
 ## 刷新图表
 
