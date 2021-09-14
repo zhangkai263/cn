@@ -67,7 +67,7 @@
 
 ### 服务器配置
 
-本章节将介绍本文档所描述的测试环境中云主机需要的软件的安装与配置。主要工作包括京东云Python SDK环境安装、keepalived安装与配置等。分别在主服务器和备用服务器上执行以下操作，主备服务在配置文件中的配置信息存在细微差别。
+本章节将介绍本文档所描述的测试环境中云主机需要的软件的安装与配置。主要工作包括京东云Python SDK环境安装、keepalived安装与配置等。分别在主服务器和备用服务器上执行以下操作：
 
 步骤1：通过SSH以root权限远程登录主/备服务器。
 
@@ -90,7 +90,7 @@ yum -y install keepalived
 ```
 vi /etc/keepalived/keepalived.conf
 ```
-步骤6：将keepalived.conf文件中替换为以下内容
+步骤6：将keepalived.conf文件中替换为以下内容，下例以配置主服务器为例，在配置备用服务器的时候，unicast_src_ip处的IP地址配置成备用服务器的主ip；unicast_peer出的内网IP改成主服务器的主IP
 ```
 ! Configuration File for keepalived
 
@@ -141,8 +141,6 @@ track_interface {
 }
 }
 ```
-
-> 在配置备用服务器的时候，unicast_src_ip处的IP地址配置成备用服务器的主ip；unicast_peer出的内网IP改成主服务器的主IP
 
 步骤7：进入/etc/keepalived路径并创建notify_action.sh文件，并进入该文件编辑模式
 
