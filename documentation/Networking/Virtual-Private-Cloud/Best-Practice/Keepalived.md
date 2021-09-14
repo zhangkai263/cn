@@ -228,6 +228,8 @@ except Exception, e:
 
 > 上述文件的账户AK、账户SK内容更改为您账户对应的AK、SK。云主机网卡ID分别在配置主服务器时更改为对应的主服务网卡ID，在配置备用服务器时改为备用服务器的主网卡ID，secondaryIps的值改为辅IP
 
+<div id = "user-content-3"> </div>
+
 ### 测试
 
 步骤1：通过SSH以root权限远程登录主服务器。
