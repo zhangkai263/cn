@@ -16,12 +16,14 @@
 
 ## 操作步骤
 
-- [部署云资源]()
-- [服务器配置]()
-- [测试]()
+- [部署云资源](keepalived#user-content-1)
+- [服务器配置](keepalived#user-content-2)
+- [测试](keepalived#user-content-3)
 
 
 ## 操作步骤
+
+<div id = "user-content-1"> </div>
 
 ### 部署云资源
 
@@ -55,13 +57,15 @@
 
 步骤5：订单确认页面，点击立即开通，备服务器创建成功。
 
-步骤6：登录京东云用户控制台，进入弹性计算-云主机-实例页面，定位到步骤2中创建的云主机“主服务器”，点击云主机ID进入云主机详情页面。
+步骤6：在主服务器上分配一个内网辅IP，进入弹性计算-云主机-实例页面，定位到步骤2中创建的云主机“主服务器”，点击云主机ID进入云主机详情页面。
 
 步骤7：云主机详情页面，切换至弹性网卡管理页面，选定主网卡，点击分配内网IP按键。
 
 步骤8：分配内网IP按键，分配IP选择“自定义”模式并指定为“10.0.0.5”，点击确定按键，完成辅助IP分配。
 
-### 云主机软件安装与配置
+<div id = "user-content-2"> </div>
+
+### 服务器配置
 
 本章节将介绍本文档所描述的测试环境中云主机需要的软件的安装与配置。主要工作包括京东云Python SDK环境安装、keepalived安装与配置等。分别在主服务器和备用服务器上执行以下操作，主备服务在配置文件中的配置信息存在细微差别。
 
@@ -101,7 +105,7 @@ global_defs {
    smtp_connect_timeout 30
    router_id LVS_DEVEL
    vrrp_skip_check_adv_addr
-   vrrp_strict
+   # vrrp_strict
    vrrp_garp_interval 0
    vrrp_gna_interval 0
 }
@@ -117,12 +121,12 @@ nopreempt
         auth_type PASS
         auth_pass 1111
 }
-unicast_src_ip 10.0.1.3
+unicast_src_ip 10.0.0.12
 unicast_peer {
-    10.0.1.4
+    10.0.0.4
 }
     virtual_ipaddress {
-        10.0.1.5
+        10.0.0.5
 }
 
 notify_master "/etc/keepalived/notify_action.sh MASTER"
@@ -137,6 +141,9 @@ track_interface {
 }
 }
 ```
+
+> 在配置备用服务器的时候，unicast_src_ip处的IP地址配置成备用服务器的主ip；unicast_peer出的内网IP改成主服务器的主IP
+
 步骤7：进入/etc/keepalived路径并创建notify_action.sh文件，并进入该文件编辑模式
 
 ```
@@ -144,14 +151,8 @@ track_interface {
 # touch notify_action.sh
 # vi notify_action.sh
 ```
-步骤8：创建日志记录文件夹以及日志记录文件
-```
-# mkdir /var/keepalived
-# touch /var/log/keepalived.log
-# touch /var/keepalived/state
-# touch /var/keepalived/vip_check_failed_count
-```
-步骤9：在notify_action.sh文件中写入以下内容
+
+步骤8：在notify_action.sh文件中写入以下内容
 ```
 #!/bin/bash
 #/etc/keepalived/notify_action.sh
@@ -184,6 +185,13 @@ if [ $1 == 'STOP' ]; then
         log_write " notify_stop" 
 fi
 ```
+步骤9：创建日志记录文件夹以及日志记录文件
+```
+# mkdir /var/keepalived
+# touch /var/log/keepalived.log
+# touch /var/keepalived/state
+# touch /var/keepalived/vip_check_failed_count
+```
 步骤10：修改keepalived.conf与notify_action.sh文件的执行权限
 ```
 # chmod 744 /etc/keepalived/notify_action.sh
@@ -207,7 +215,7 @@ client = VpcClient(credential)
 
 try:
     parameters = AssignSecondaryIpsParameters(regionId='cn-north-1', networkInterfaceId='云主机主网卡ID')
-    secondaryIps=['10.0.1.5']
+    secondaryIps=['10.0.0.5']
     parameters.setSecondaryIps(secondaryIps)
     request = AssignSecondaryIpsRequest(parameters)
     resp = client.send(request)
@@ -219,5 +227,33 @@ try:
 except Exception, e:
     print e
 ```
+
+> 上述文件的账户AK、账户SK内容更改为您账户对应的AK、SK。云主机网卡ID分别在配置主服务器时更改为对应的主服务网卡ID，在配置备用服务器时改为备用服务器的主网卡ID，secondaryIps的值改为辅IP
+
+### 测试
+
+步骤1：通过SSH以root权限远程登录主服务器。
+
+步骤2：执行以下命令重启keepalived。
+```
+systemctl restart keepalived
+```
+
+步骤3：通过控制台或者登录备服务器后执行以下命令在备服务器上查看IP分配情况。
+
+```
+ip addr list
+```
+步骤4：如备用服务器中有辅IP，则表示迁移成功，在客户端，通过ping命令测试与VIP地址或VIP地址关联的弹性公网IP的连通性。
+```
+ping 10.0.0.5
+```
+
+## 相关参考
+
+- [创建VPC](../Operation-Guide/VPC-Configuration.md)
+- [创建子网](../Operation-Guide/Subnet-Configuration.md)
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
+- [分配内网IP](https://docs.jdcloud.com/cn/virtual-machines/assign-secondary-ips)
 
 本文档中如有遗漏与错误，请反馈至京东云IaaS产品团队，IaaS产品团队将持续改进文档，为用户提供优质的服务。
