@@ -145,9 +145,9 @@ track_interface {
 步骤7：进入/etc/keepalived路径并创建notify_action.sh文件，并进入该文件编辑模式
 
 ```
-# cd /etc/keepalived
-# touch notify_action.sh
-# vi notify_action.sh
+cd /etc/keepalived
+touch notify_action.sh
+vi notify_action.sh
 ```
 
 步骤8：在notify_action.sh文件中写入以下内容
@@ -185,20 +185,20 @@ fi
 ```
 步骤9：创建日志记录文件夹以及日志记录文件
 ```
-# mkdir /var/keepalived
-# touch /var/log/keepalived.log
-# touch /var/keepalived/state
-# touch /var/keepalived/vip_check_failed_count
+mkdir /var/keepalived
+touch /var/log/keepalived.log
+touch /var/keepalived/state
+touch /var/keepalived/vip_check_failed_count
 ```
 步骤10：修改keepalived.conf与notify_action.sh文件的执行权限
 ```
-# chmod 744 /etc/keepalived/notify_action.sh
-# chmod 644 /etc/keepalived/keepalived.conf
+chmod 744 /etc/keepalived/notify_action.sh
+chmod 644 /etc/keepalived/keepalived.conf
 ```
 步骤11：在/etc/keepalived路径下创建switch_sip.py文件，并进入该文件编辑模式
 ```
-# touch switch_sip.py
-# vi switch_sip.py
+touch switch_sip.py
+vi switch_sip.py
 ```
 步骤12：在switch_sip.py文件中写入以下内容，其中账户AK，账户SK，云主机主网卡ID等参数请于控制台查看。
 ```
