@@ -1,0 +1,8 @@
+# 查看规则详情
+
+1.	登录[云监控控制台](https://cms-console.jdcloud.com/overview)。点击左侧菜单目录【资源监控】-【全部报警规则】-【资源监控】，进入云资源的全部报警规则列表页面。 
+   ![报警规则列表](../../../../../image/Cloud-Monitor/8-qbbj-1.png)    
+2.	点击操作列下【 更多】-【查看详情】按钮，进入报警规则详情页面。
+   ![规则详情](/Users/luolei1/Desktop/image/Cloud-Monitor/10-bjgz-xq.png)  
+3.	可查看到该规则配置的基本信息、报警资源、触发条件和通知策略信息。
+
