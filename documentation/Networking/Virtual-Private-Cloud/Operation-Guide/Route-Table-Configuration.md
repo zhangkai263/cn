@@ -17,7 +17,7 @@
 ## 前提条件及限制
 
 - 确保您已经[注册京东云账号](https://user.jdcloud.com/register?returnUrl=https%3A%2F%2Fwww.jdcloud.com%2F)，并实现[实名认证](https://docs.jdcloud.com/cn/real-name-verification/introduction)；
-- 确保您已创建了一个私有网络(VPC)；
+- 确保您已创建了一个私有网络(VPC)，拥有一个路由表。
 
 - 每个子网必须关联一张路由表，每张路由表可以关联多个子网；
 - 默认路由表及已经关联了子网的自定义路由表不支持删除；
@@ -77,7 +77,7 @@
 |配置名称   |说明|示例|   
 |-----------|----|------|
 |目的端|输入要转发到的目标网段，目的端输入格式为网段的CIDR，如需输入指定地址，IPv4地址输入：x.x.x.x/32，IPv6地址输入：xxxx::/128|10.0.0.0/16|
-|下一跳类型|选择将目的地址在目的端范围内的流量的下一跳类型，支持Internet、云主机、边界网关、VPC对等连接、NAT网关;其中IPv6路由策略的下一跳类型支持云主机、VPC对等连接和Internet；流量若要访问Internet，可选择Internet网关，或自建云主机作为公网网关；nternet|
+|下一跳类型|选择将目的地址在目的端范围内的流量的下一跳类型，支持Internet、云主机、弹性网卡、边界网关、VPC对等连接、NAT网关;其中IPv6路由策略的下一跳类型支持云主机、VPC对等连接和Internet；流量若要访问Internet，可选择Internet网关，或自建云主机作为公网网关；nternet|
 |下一跳 |根据下一跳类型为将目的地址在目的端范围内的流量选择某个具体的下一跳|internet|
 |路由类型|默认为静态|静态|
 |备注|用于区分说明路由策略的用途|路由至公网|
@@ -87,6 +87,8 @@
 > 1. 路由策略目的端不能完全相同，如须配置相同目的端，可申请ECMP功能权限，目前ECMP处于灰度测试中；
 > 2. 若路由表所在的私有网络有预设CIDR，则路由规则的目的端不能与所属私有网络的CIDR有冲突；
 > 3. 若路由表所在的私有网络无预设CIDR，则路由规则的目的端不能与所属私有网络中的任何子网的CIDR有冲突；
+> 4. 路由表支持弹性网卡处于灰度，如需使用请提[工单申请](https://docs.jdcloud.com/cn/cloud-cabinet-service/submitticket);
+> 5. 路由表下一跳配置弹性网卡时，需先配置网卡，使网卡在其绑定的资源上已生效，如弹性网卡绑定的是云主机，配置请参考[Linux服务器弹性网卡配置](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)
 
 步骤4：补充完相关信息后，点击【保存】后即可完成新增路由策略；
 
