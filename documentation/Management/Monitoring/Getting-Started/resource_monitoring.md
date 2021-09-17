@@ -14,7 +14,7 @@
 
 3. 找到您需要查看监控的资源，点击名称或操作列下的监控图表按钮，进入监控页面。
 
-   ![](../../../../image/Cloud-Monitor//img/vm_monitoring.png)
+   ![](../../../../image/Cloud-Monitor/img/vm_monitoring.png)
 4. 在上图中，点击【报警规则】，切换至报警规则列表页面。
 
    ![](../../../../image/Cloud-Monitor/img/vm_rule.png)
