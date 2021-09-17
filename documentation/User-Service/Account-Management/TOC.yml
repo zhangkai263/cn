@@ -19,3 +19,5 @@
       href: Setting-Up-IP-Protection.md
     - name: 设置虚拟MFA认证
       href: Setting-up-MFA.md
+  - name: 登录与注册
+      href: Account-change.md
