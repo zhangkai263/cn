@@ -14,7 +14,7 @@
 - MariaDB
     - 10.2
     
-PostgreSQL
+- PostgreSQL
     - 9.6
     - 10
     - 11
