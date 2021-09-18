@@ -78,8 +78,8 @@ items:
               href: Operation-Guide/resource-monitoring/Alarmtemplate/delete-template.md 
             - name: 使用报警模版
               href: Operation-Guide/resource-monitoring/Alarmtemplate/use-template.md
-        - name: 报警模板
-          href: Operation-Guide/resource-monitoring/alarm-template.md
+        - name: 云资源监控FAQ
+          href: Operation-Guide/resource-monitoring/FAQ.md
     - name: 自定义监控 
       items:
         - name: 概述
