@@ -3,11 +3,11 @@
 
 1. 登录[云监控控制台](https://cms-console.jdcloud.com/overview)，左侧菜单选中【资源监控】-【云主机】，进入云主机监控列表。  
 
-   ![云主机监控](../../../../../image/Cloud-Monitor/1-zylb.png)  
+   ![云主机监控](../../../../../../image/Cloud-Monitor/1-zylb.png)  
 
 2. 选中需要查看的云主机，点击操作列下的【报警规则】按钮，进入对应云主机实例的报警规则列表页面。  
 
-   ![云主机报警规则](../../../../../image/Cloud-Monitor/1-zylb-gz.png)
+   ![云主机报警规则](../../../../../../image/Cloud-Monitor/1-zylb-gz.png)
 
 3. 可以查看到该资源关联的全部报警规则。
 
