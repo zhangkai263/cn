@@ -1,0 +1,53 @@
+name: 内网域名解析服务
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: changeLog.md
+  - name: 接口信息
+    items:
+      - name: Zone管理接口
+        items:
+          - name: describeZones
+            herf: Zone-APIs/describeZones.md
+          - name: createZone
+            herf: Zone-APIs/createZone.md
+          - name: bindVpc
+            herf: Zone-APIs/bindVpc.md
+          - name: retryRecurse
+            herf: Zone-APIs/retryRecurse.md
+          - name: deleteZone
+            herf: Zone-APIs/deleteZone.md
+      - name: 解析记录管理接口
+        items:
+          - name: describeResourceRecords
+            herf: Resolve-Record-APIs/describeResourceRecords.md
+          - name: createResourceRecord
+            herf: Resolve-Record-APIs/createResourceRecord.md
+          - name: modifyResourceRecord
+            herf: Resolve-Record-APIs/modifyResourceRecord.md
+          - name: setResourceRecordsStatus
+            herf: Resolve-Record-APIs/setResourceRecordsStatus.md
+          - name: importResourceRecords
+            herf: Resolve-Record-APIs/importResourceRecords.md
+          - name: exportResourceRecords
+            herf: Resolve-Record-APIs/exportResourceRecords.md
+          - name: deleteResourceRecords
+            herf: Resolve-Record-APIs/deleteResourceRecords.md
+      - name: 套餐实例管理接口
+        items:
+          - name: describeInstances
+            herf: Instance-APIs/describeInstances.md
+      - name: 解析统计接口
+        items:
+          - name: zoneFlowCount
+            herf: Stat-APIs/zoneFlowCount.md
+          - name: zoneResolveCount
+            herf: Stat-APIs/zoneResolveCount.md
+      - name: 操作日志接口
+        items:
+          - name: describeActionLogs
+            herf: Action-Log-APIs/describeActionLogs.md
+
+
