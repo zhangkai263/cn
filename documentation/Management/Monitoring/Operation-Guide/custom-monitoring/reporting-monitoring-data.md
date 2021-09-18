@@ -49,7 +49,8 @@ metric|	String |True |	监控指标名称，长度不超过255字节，只允许
 namespace |	String|	True|命名空间 ，长度不超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]，  其它会返回err               
 timestamp|Integer|True|上报数据点的时间戳,只支持10位，秒级时间戳，不能写入过去30天的时间                              
 type |Integer|True |数据类型，当前仅支持输入值1，表示原始数据。                          
-values |	Object | True |指标值集合，数据类型必须为map类型，key为数据类型，value为数据值，当前仅支持type=1，且key只能为”value”。  
+values |	Object | True |指标值集合，数据类型必须为map类型，key为数据类型，value为数据值，当前仅支持type=1，且key只能为”value”。 
+unit | String |False |数据的单位，长度不超过64字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]， 其它会返回err
 
 ### 返回参数  
 
