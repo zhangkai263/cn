@@ -19,7 +19,7 @@ https://cdn.jdcloud-api.com/v1/domain
 |**pageSize**|Integer|False|20|pageSize,最大值50,默认值20|
 |**status**|String|False| |根据域名状态查询, 可选值[offline, online, configuring, auditing, audit_reject]|
 |**type**|String|False| |域名类型，(web:静态小文件，download:大文件加速，vod:视频加速，live:直播加速),不传查所有|
-|**accelerateRegion**|String|False| |加速区域，(mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球),不传查所有|
+|**accelerateRegion**|String|False| |加速区域，(mainland:中国大陆，nonMainland:海外加港澳台，all:全球),不传查所有|
 
 
 ## 返回参数
