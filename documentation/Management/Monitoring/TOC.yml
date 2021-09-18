@@ -51,6 +51,8 @@ items:
         - name: 报警规则管理
           items:
             - name: 查看报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/view-resource-rules.md
+            - name: 查看规则详情
               href: Operation-Guide/resource-monitoring/AlarmMangent/rule-details.md
             - name: 添加报警规则
               href: Operation-Guide/resource-monitoring/AlarmMangent/add-rule.md
