@@ -29,7 +29,7 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 |**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 |**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
-|**accelerateRegion**|String|False| |加速区域 (mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
+|**accelerateRegion**|String|False| |加速区域 (mainland:中国大陆，nonMainland:海外加港澳台，all:全球)默认为中国大陆|
 
 ### <div id="DomainSourceInfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
