@@ -94,8 +94,8 @@ items:
           href: Operation-Guide/custom-monitoring/manage_alarmrules_cm.md
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
-    - name: 一键报警
-      href: Operation-Guide/Alarm-Management/One-Click-Alarming.md
+    - name: 自定义监控FAQ
+      href: Operation-Guide/custom-monitoring/FAQ.md
 - name: 最佳实践
   items:
     - name: 监控面板批量资源监控
@@ -167,9 +167,7 @@ items:
   items:
   status: 0       
 - name: 常见问题
-  href: FAQ/FAQ.md
-- name: 文档历史记录
-  href: Related-Resources/document-history.md     
+  href: FAQ/FAQ.md   
 - name: 服务条款         
   status: 0      
 - name: SLA         
