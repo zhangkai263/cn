@@ -14,7 +14,7 @@
 1. 安装环境依赖，见注意事项
 2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
-    ```SQL
+    ```Python
     # 增加解压工具文件可执行权限
     chmod mysql_backup_extract.py +x
     
@@ -22,7 +22,7 @@
     ./mysql_backup_extract.py -h
      
      # 解压云数据库 MySQL 实例的备份数据
-     ./mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
+     python mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
     ```
 3. 下载备份文件
 
@@ -35,15 +35,15 @@
 
 4. 解压备份数据，解压后的文件会保存在当前目录的子目录 tmp_snapshot 中，假设当前目录为 $HOME。
 
-    ```SQL
-    ./mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
+    ```python
+    python mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
     
     -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
     ```
 
 5. 恢复解压好的备份文件
 
-    ```SQL
+    ```python
     innobackupex --defaults-file=$HOME/tmp_snapshot/backup-my.cnf --apply-log $HOME/tmp_snapshot
     ``` 
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
