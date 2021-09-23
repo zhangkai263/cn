@@ -104,4 +104,8 @@
 
 > 注：公网IP从共享带宽包移除后，立即恢复原有的计费规则和带宽上限，如不再使用请删除IP资源，避免产生费用。
 
+## 相关参考
 
+[创建共享带宽包](../Operation-Guide/Create-Bwp.md)
+[使用限制](../Introductions/Restrictions.md)
+[创建问题](../FAQ/FAQ.md)
