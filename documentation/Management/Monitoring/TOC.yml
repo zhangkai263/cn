@@ -1,5 +1,7 @@
 name: 云监控
 items:
+- name: 产品动态
+  href: Related-Resources/Product-News.md
 - name: 产品简介
   items:
     - name: 产品概述
@@ -42,7 +44,7 @@ items:
           href: Operation-Guide/dashboard/dashboard-management.md      
         - name: 管理监控图表
           href: Operation-Guide/dashboard/monitoring-chart-management.md
-    - name: 云资源监控
+    - name: 资源监控
       items:
         - name: 概述
           href: Operation-Guide/resource-monitoring/resource-monitoring-overview.md
