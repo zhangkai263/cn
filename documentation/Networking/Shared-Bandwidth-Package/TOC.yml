@@ -1,6 +1,10 @@
-﻿  name: 共享带宽包
+  name: 共享带宽包
   href: 
   items:
+  - name: 产品动态
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Release-Records.md
   - name: 产品简介
     items:
       - name: 产品概述
