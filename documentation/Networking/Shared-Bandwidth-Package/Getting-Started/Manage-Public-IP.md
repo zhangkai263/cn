@@ -106,6 +106,6 @@
 
 ## 相关参考
 
-[创建共享带宽包](../Operation-Guide/Create-Bwp.md)
-[使用限制](../Introductions/Restrictions.md)
-[创建问题](../FAQ/FAQ.md)
+- [创建共享带宽包](../Operation-Guide/Create-Bwp.md)
+- [使用限制](../Introductions/Restrictions.md)
+- [创建问题](../FAQ/FAQ.md)
