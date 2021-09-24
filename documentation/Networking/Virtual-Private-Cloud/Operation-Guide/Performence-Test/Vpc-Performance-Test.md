@@ -116,7 +116,7 @@ UDP buffer size: 208 KByte (default)
 
 ##### 服务端
 
-为服务器配置默认端口
+执行以下命令为服务器配置默认端口
 
 ```
  sudo iperf -s [-p 5001]
