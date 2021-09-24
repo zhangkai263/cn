@@ -94,7 +94,11 @@ items:
   - name: 最佳实践
     items:
      - name: IPv4私有网络业务迁移至IPv4/IPv6双栈网络
-       href: Best-Practice/Part-Of-IPv4toIPv6-Best-Practice.md
+       href: Best-Practice/Part-Of-IPv4toIPv6-Best-Practice.md  
+  - name: 性能测试
+    items:
+     - name: 网络性能测试
+       href: Operation-Guide/Performence-Test/Vpc-Performance-Test.md
   - name: 问题排查
     items:
     status: 0
