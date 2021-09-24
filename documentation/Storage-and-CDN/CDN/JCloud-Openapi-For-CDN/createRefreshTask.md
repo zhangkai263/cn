@@ -29,6 +29,7 @@ https://cdn.jdcloud-api.com/v1/task
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|
 |**taskId**|String|任务的id|
+|**includeOversea**|Boolean|预热时urls中是否包含全球或海外域名，默认为false，境外不支持预热|
 
 ## 返回码
 |返回码|描述|
