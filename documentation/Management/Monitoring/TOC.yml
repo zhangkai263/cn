@@ -1,5 +1,7 @@
 name: 云监控
 items:
+- name: 产品动态
+  href: Related-Resources/Product-News.md
 - name: 产品简介
   items:
     - name: 产品概述
@@ -34,34 +36,52 @@ items:
   items:
     - name: Dashboard
       items:
-        - name: 使用须知
-          href: Operation-Guide/dashboard/terms-and-conditions.md
+        - name: 概述
+          href: Operation-Guide/dashboard/dashboard-overview.md
         - name: 我关注的面板
           href: Operation-Guide/dashboard/focus-page.md
         - name: 管理监控面板
           href: Operation-Guide/dashboard/dashboard-management.md      
         - name: 管理监控图表
           href: Operation-Guide/dashboard/monitoring-chart-management.md
-    - name: 云资源监控
+    - name: 资源监控
       items:
-        - name: 资源监控概述
+        - name: 概述
           href: Operation-Guide/resource-monitoring/resource-monitoring-overview.md
         - name: 查看监控图表
-          href: Operation-Guide/resource-monitoring/view-resource-monitoring-chart-details.md
-        - name: 查看报警规则
-          href: Operation-Guide/resource-monitoring/view-resource-rules.md     
-        - name: 添加报警规则
+          href: Operation-Guide/resource-monitoring/view-resource-monitoring-chart-details.md    
+        - name: 报警规则管理
           items:
-            - name: 批量添加报警
-              href: Operation-Guide/resource-monitoring/add-rule-in-batches.md
-            - name: 指定资源添加报警
-              href: Operation-Guide/resource-monitoring/add-rule.md
-            - name: 基于标签添加报警
-              href: Operation-Guide/resource-monitoring/add-rule-tags.md 
-        - name: 管理报警规则
-          href: Operation-Guide/resource-monitoring/resource-rules.md  
-        - name: 报警模板
-          href: Operation-Guide/resource-monitoring/alarm-template.md
+            - name: 查看报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/view-resource-rules.md
+            - name: 查看规则详情
+              href: Operation-Guide/resource-monitoring/AlarmMangent/rule-details.md
+            - name: 添加报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/add-rule.md
+            - name: 启用禁用报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/enalbe-rule.md
+            - name: 修改报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/update-rule.md
+            - name: 查看报警历史
+              href: Operation-Guide/resource-monitoring/AlarmMangent/rule-alarms.md 
+            - name: 删除报警规则
+              href: Operation-Guide/resource-monitoring/AlarmMangent/delete-rule.md
+         - name: 报警模版管理
+          items:
+            - name: 概述
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/template-overview.md
+            - name: 查看报警模版
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/view-template.md
+            - name: 添加报警模版
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/add-template.md
+            - name: 复制报警模版
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/copy-template.md
+            - name: 删除报警模版
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/delete-template.md 
+            - name: 使用报警模版
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/use-template.md
+        - name: 云资源监控FAQ
+          href: Operation-Guide/resource-monitoring/FAQ.md
     - name: 自定义监控 
       items:
         - name: 概述
@@ -76,8 +96,8 @@ items:
           href: Operation-Guide/custom-monitoring/manage_alarmrules_cm.md
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
-    - name: 一键报警
-      href: Operation-Guide/Alarm-Management/One-Click-Alarming.md
+    - name: 自定义监控FAQ
+      href: Operation-Guide/custom-monitoring/FAQ.md
 - name: 最佳实践
   items:
     - name: 监控面板批量资源监控
@@ -149,9 +169,7 @@ items:
   items:
   status: 0       
 - name: 常见问题
-  href: FAQ/FAQ.md
-- name: 文档历史记录
-  href: Related-Resources/document-history.md     
+  href: FAQ/FAQ.md   
 - name: 服务条款         
   status: 0      
 - name: SLA         
