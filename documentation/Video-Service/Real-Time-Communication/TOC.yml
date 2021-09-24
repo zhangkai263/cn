@@ -7,8 +7,6 @@ items:
       href: Introduction/Product-Overview.md
     - name: 核心概念
       href: Introduction/Core-Concepts.md
-    - name: 基础架构
-      href: Introduction/Basic-Infrastructure.md
     - name: 产品优势
       href: Introduction/Benefits.md
     - name: 产品功能
@@ -21,6 +19,8 @@ items:
   items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
+    - name: 计费规则
+      href: Pricing/Billing-Rules.md
 - name: 入门指南
   items:
     - name: 开通服务
@@ -53,6 +53,12 @@ items:
           href: SDK-Reference/H5-JRTC-SDK-quick-integration.md
         - name: H5 JRTC 接口说明
           href: SDK-Reference/H5-JRTC-API-overview.md
+    - name: 微信小程序 SDK参考
+      items:
+        - name: 微信小程序 JRTC SDK快速集成
+          href: SDK-Reference/WeChat-JRTC-SDK-quick-integration.md
+        - name: 微信小程序 JRTC 接口说明
+          href: SDK-Reference/Wechat-JRTC-API-overview.md
 - name: 相关资源
   items:
     - name: 文档历史记录
