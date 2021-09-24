@@ -2,11 +2,18 @@
 
 ## 概述
 
-本文主要介绍vpc内的网络性能测试的方法，您可根据测试后的数据判断网络性能。网络性能受多种因素的影响，例如：实例的物理距离、云主机的性能、操作系统参数等，请结合实际情况判断
+本文主要介绍vpc内的网络性能测试的方法，您可根据测试后的数据判断网络性能。网络性能受多种因素的影响，例如：实例的物理距离、云主机的性能、操作系统参数等，请结合实际情况判断。
 
 ## 操作步骤
+- [搭建测试环境](vpc-performance-test#user-content-1)
+- [部署测试工具](vpc-performance-test#user-content-2)
+- [UDP网络性能测试](vpc-performance-test#user-content-3)
+- [TCP网络性能测试](vpc-performance-test#user-content-4)
+
+<div id="user-content-1"> </div>
 
 #### 搭建测试环境
+在京东云平台中创建一个VPC，在VPC中部署两个云主机，分别作为服务端、客户端，具体参数配置如下：
 
 |参数|服务器|客户端|
 |----|----|----|
@@ -16,22 +23,24 @@
 |IP地址|10.0.0.1|10.0.0.2|
 
 
+<div id="user-content-2"> </div>
+
 #### 部署测试工具
 
 > **注：** 在测试环境搭建和测试时都需要保证自己拥有 root 用户权限。
 
 ##### 安装iperf3
 
-按以下步骤在服务器和客户端上安装iperf3工具。
+分别登录服务端、客户端，按以下步骤在服务器和客户端上安装iperf3工具。
 
-1. 依次执行以下命令，下载iperf3。
+步骤1：依次执行以下命令，下载iperf3。
 
    ```
    yum install git -y
    git clone https://github.com/esnet/iperf
    ```
 
-2. 依次执行以下命令，安装iperf3。
+步骤2：依次执行以下命令，安装iperf3。
 
    ```
    cd iperf
@@ -42,13 +51,16 @@
    export PATH
    ```
 
-3. 执行`iperf3 -h`命令，确认安装成功。
+步骤3：执行`iperf3 -h`命令，确认安装成功。
 
-### UDP 网络性能测试
 
-推荐使用两台相同配置的云服务器进行测试，避免性能测试结果出现偏差。其中一台云服务器作为服务端，另一台云服务器作为客户端。本示例中指定10.0.0.1与10.0.0.2进行测试。
+<div id="user-content-3"> </div>
 
-#### 服务端
+#### UDP 网络性能测试
+
+在进行UDP网络性能测试时，推荐使用两台相同配置的云服务器进行测试，避免性能测试结果出现偏差。其中一台云服务器作为服务端，另一台云服务器作为客户端。本示例中指定10.0.0.1与10.0.0.2进行测试。
+
+##### 服务端
 
 执行以下命令：
 
@@ -56,7 +68,7 @@
 iperf -s
 ```
 
-#### 客户端端
+##### 客户端
 
 执行以下命令，其中 `${网卡队列数目}` 可通过 `ethtool -l eth0` 命令获取。
 
@@ -96,11 +108,13 @@ UDP buffer size: 208 KByte (default)
 [ 17] 0.00-10.25 sec 31 datagrams received out-of-order
 ```
 
-### TCP 网络性能测试
+<div id="user-content-4"> </div>
 
-推荐使用两台相同配置的云服务器进行测试。其中10.0.0.1为服务端，10.0.0.2作为客户端。
+#### TCP 网络性能测试
 
-#### 服务端
+在进行TCP网络性能测试时，推荐使用两台相同配置的云服务器进行测试。其中10.0.0.1为服务端，10.0.0.2作为客户端。
+
+##### 服务端
 
 为服务器配置默认端口
 
@@ -108,7 +122,7 @@ UDP buffer size: 208 KByte (default)
  sudo iperf -s [-p 5001]
 ```
 
-#### 客户端
+##### 客户端
 
 执行以下命令：
 
@@ -139,3 +153,8 @@ TCP window size: 715 KByte (default)
 ...
 [SUM] 0.0- 2.0 sec 21.5 GBytes 92.2 Gbits/sec
 ```
+
+## 相关参考
+
+- [部署VPC](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)
+- [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
