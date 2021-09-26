@@ -81,7 +81,7 @@ items:
             - name: 使用报警模版
               href: Operation-Guide/resource-monitoring/Alarmtemplate/use-template.md
         - name: 云资源监控FAQ
-          href: Operation-Guide/resource-monitoring/FAQ.md
+          href: Operation-Guide/resource-monitoring/Resource-Monitoing-FAQ.md
     - name: 自定义监控 
       items:
         - name: 概述
@@ -97,7 +97,7 @@ items:
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
     - name: 自定义监控FAQ
-      href: Operation-Guide/custom-monitoring/FAQ.md
+      href: Operation-Guide/custom-monitoring/CustomMetric-FAQ.md
 - name: 最佳实践
   items:
     - name: 监控面板批量资源监控
