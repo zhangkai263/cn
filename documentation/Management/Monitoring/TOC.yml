@@ -57,7 +57,7 @@ items:
             - name: 查看规则详情
               href: Operation-Guide/resource-monitoring/AlarmMangent/rule-details.md
             - name: 添加报警规则
-              href: Operation-Guide/resource-monitoring/AlarmMangent/add-rule.md
+              href: Operation-Guide/resource-monitoring/AlarmMangent/add-rule-in-batches.md
             - name: 启用禁用报警规则
               href: Operation-Guide/resource-monitoring/AlarmMangent/enalbe-rule.md
             - name: 修改报警规则
