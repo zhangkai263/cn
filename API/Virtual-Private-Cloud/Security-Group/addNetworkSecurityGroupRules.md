@@ -18,9 +18,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**networkSecurityGroupRuleSpecs**|AddSecurityGroupRules[]|True| |安全组规则信息|
+|**networkSecurityGroupRuleSpecs**|[AddSecurityGroupRules[]](#addsecuritygrouprules)|True| |安全组规则信息|
 
-### AddSecurityGroupRules
+### <div id="AddSecurityGroupRules">AddSecurityGroupRules</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**protocol**|Number|True| |规则限定协议。300:All; 6:TCP; 17:UDP; 1:ICMP|
@@ -44,3 +44,32 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 |**404**|Resource not found|
 |**409**|SecurityGroup rules not in the same vpc|
 |**500**|Internal server error|
+
+## 请求示例
+POST
+```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 在安全组 sg-yjdd312xqk 下添加安全组规则
+https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/sg-yjdd312xqk:addNetworkSecurityGroupRules
+{
+    "networkSecurityGroupRuleSpecs":[
+        {
+            "fromPort":22,
+            "toPort":22,
+            "protocol":6,
+            "addressPrefix":"0.0.0.0/0",
+            "ipVersion":4,
+            "direction":0,
+            "description":""
+        }
+    ]
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45psof0obqq042o4ticwwu4t0g0oc09"
+}
+```
