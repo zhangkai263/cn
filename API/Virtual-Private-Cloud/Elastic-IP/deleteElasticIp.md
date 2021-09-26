@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除弹性Ip
+删除弹性公网IP，已加入共享带宽包的公网IP不能删除，需要先从共享带宽包移出
 
 ## 请求方式
 DELETE
@@ -33,3 +33,19 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**404**|elasticIp 'xxx' not found|
 |**500**|Unknown server error|
 |**503**|Service unavailable|
+
+## 请求示例
+DELETE
+```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 删除id为fip-xcgb8fva97的弹性公网ip
+  https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/fip-xcgb8fva97
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "ca095087-322b-4471-8646-7efc661cefe7"
+}
+```
