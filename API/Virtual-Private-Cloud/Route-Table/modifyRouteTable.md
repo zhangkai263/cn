@@ -34,3 +34,22 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**200**|OK|
 |**400**|Request parameter x.y.z is 'xxx', expected one of [yyy,zzz]|
 |**404**|Resource not found|
+
+## 请求示例
+PATCH
+```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 将id为rtb-olajkrx4xr的路由表名称改为”自建路由表1“
+  https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/rtb-olajkrx4xr
+  body:{
+    "routeTableName":"自建路由表1"
+  }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45pbafcwj6tmo1c3w6rv1i9n78kucup"
+}
+```
