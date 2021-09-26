@@ -44,7 +44,7 @@ items:
             - name: 查看资源监控图表
               href: https://docs.jdcloud.com/cn/monitoring/view-resource-monitoring-chart-details
             - name: 添加报警规则
-              href: https://docs.jdcloud.com/cn/monitoring/add-rule
+              href: https://docs.jdcloud.com/cn/monitoring/add-rule-in-batches
             - name: 添加报警模版
               href: https://docs.jdcloud.com/cn/monitoring/add-template
             - name: 管理Dashboard监控图表
