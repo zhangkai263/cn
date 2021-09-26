@@ -25,10 +25,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|返回结果|
+|**result**|[Result](#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**vpcId**|String|私有网络ID|
@@ -44,3 +44,26 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
 |**429**|Quota exceeded|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+POST
+```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 创建无预设CIDR的虚拟网络
+  https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
+  body:{
+           "vpcName" :"cheney_test",
+            "description":"openapi-test"
+       }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "fa965e64-0d46-4a88-87b1-2b9366a83886", 
+    "result": {
+        "vpcId": "vpc-nirzvoacvu"
+    }
+}
+```
