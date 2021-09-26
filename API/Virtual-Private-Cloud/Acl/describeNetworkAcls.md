@@ -19,9 +19,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|Filter[]|False| | |
+|**filters**|[Filter[]](#filter)|False| | |
 
-### Filter
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -31,25 +31,25 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|返回结果|
+|**result**|[Result](#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**networkAcls**|NetworkAcl[]|networkAcl资源信息列表|
+|**networkAcls**|[NetworkAcl[]](#networkacl)|networkAcl资源信息列表|
 |**totalCount**|Number|总数量|
-### NetworkAcl
+### <div id="NetworkAcl">NetworkAcl</div>
 |名称|类型|描述|
 |---|---|---|
 |**networkAclId**|String|networkAcl ID|
 |**networkAclName**|String|networkAcl名称|
 |**vpcId**|String|私有网络 ID|
-|**networkAclRules**|NetworkAclRule[]|networkAcl规则列表|
+|**networkAclRules**|[NetworkAclRule[]](#networkaclrule)|networkAcl规则列表|
 |**subnetIds**|String[]|networkAcl绑定的子网列表|
 |**description**|String|描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 |**createdTime**|String|networkAcl创建时间|
-### NetworkAclRule
+### <div id="NetworkAclRule">NetworkAclRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleId**|String|networkAcl规则ID|
@@ -62,6 +62,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/
 |**priority**|Integer|规则匹配优先级，取值范围为[1,32768]，优先级数字越小优先级越高|
 |**description**|String|描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 |**createdTime**|String|networkAclRule创建时间|
+|**ruleType**|String|规则类型，default：默认规则，custom：自定义规则|
 
 ## 返回码
 |返回码|描述|
@@ -72,3 +73,62 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/
 |**404**|Not found|
 |**429**|Quota exceeded|
 |**500**|Internal error|
+
+## 请求示例
+GET
+```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 查询vpcId为vpc-six71yb530的networkAcl列表
+networkAcls?filters.1.name=vpcIds&filters.1.values.1=vpc-six71yb530
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "fd846351-6862-4c9e-9e1c-f67b1db022af", 
+    "result": {
+        "NetworkAcls": [
+            {
+                "createdTime": "2021-04-19T07:42:06Z", 
+                "description": "", 
+                "networkAclId": "acl-1lt77tthz5", 
+                "networkAclName": "dddd", 
+                "networkAclRules": [
+                    {
+                        "addressPrefix": "0.0.0.0/0", 
+                        "createdTime": "2021-04-19T07:42:06Z", 
+                        "description": "", 
+                        "direction": "ingress", 
+                        "fromPort": 1, 
+                        "ipVersion": 4, 
+                        "priority": 60000, 
+                        "protocol": "ALL", 
+                        "ruleAction": "deny", 
+                        "ruleId": "aclr-9id1i3cxl6", 
+                        "ruleType": "default", 
+                        "toPort": 65535
+                    }, 
+                    {
+                        "addressPrefix": "0.0.0.0/0", 
+                        "createdTime": "2021-04-19T07:42:06Z", 
+                        "description": "", 
+                        "direction": "egress", 
+                        "fromPort": 1, 
+                        "ipVersion": 4, 
+                        "priority": 60000, 
+                        "protocol": "ALL", 
+                        "ruleAction": "deny", 
+                        "ruleId": "aclr-fyjdmc0x71", 
+                        "ruleType": "default", 
+                        "toPort": 65535
+                    }
+                ], 
+                "subnetIds": null, 
+                "vpcId": "vpc-six71yb530"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```
