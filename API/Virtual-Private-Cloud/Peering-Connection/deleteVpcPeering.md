@@ -30,3 +30,17 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+DELETE
+```
+curl -X DELETE 'http://127.0.0.1:19690/v1/regions/cn-east-1/vpcPeerings/vpcpr-qrn8hp2btw' -H 'x-jcloud-pin: Ym9zcy0wMQ==' -H 'Content-Type: application/json'
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "4ffc48b6-e1ff-4ff6-8ec8-0ad4c394ecac"
+}
+```

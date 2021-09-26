@@ -25,24 +25,24 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**vpcPeering**|VpcPeering|VpcPeering资源信息|
+|**vpcPeering**|[VpcPeering](#vpcpeering)|VpcPeering资源信息|
 |**requestId**|String|请求ID|
 
-### VpcPeering
+### <div id="VpcPeering">VpcPeering</div>
 |名称|类型|描述|
 |---|---|---|
-|**vpcPeering**|VpcPeering| |
-### VpcPeering
+|**vpcPeering**|[VpcPeering](#vpcpeering)| |
+### <div id="VpcPeering">VpcPeering</div>
 |名称|类型|描述|
 |---|---|---|
 |**vpcPeeringId**|String|VpcPeering的Id|
 |**vpcPeeringName**|String|VpcPeering名称，同账号下不允许重名，取值范围：1-32个中文、英文大小写的字母、数字和下划线分隔符|
 |**vpcPeeringState**|String|状态，取值为Connected，Disconnected，Initiated|
 |**description**|String|VpcPeering 描述，可为空值，取值范围：0-256个中文、英文大小写的字母、数字和下划线分隔符|
-|**vpcInfo**|VpcPeeringVpcInfo|发起VpcPeering的Vpc信息|
-|**remoteVpcInfo**|VpcPeeringVpcInfo|对端的Vpc信息|
+|**vpcInfo**|[VpcPeeringVpcInfo](#vpcpeeringvpcinfo)|发起VpcPeering的Vpc信息|
+|**remoteVpcInfo**|[VpcPeeringVpcInfo](#vpcpeeringvpcinfo)|对端的Vpc信息|
 |**createdTime**|String|VpcPeering创建时间|
-### VpcPeeringVpcInfo
+### <div id="VpcPeeringVpcInfo">VpcPeeringVpcInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**vpcId**|String|子网所属VPC的Id|
@@ -56,3 +56,17 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 |**429**|VpcPeering quota limit exceeded.|
 |**404**|Resource not found|
 |**409**|Already has VpcPeering with param|
+
+## 请求示例
+PUT
+```
+curl -X PUT 'http://127.0.0.1:19690/v1/regions/cn-east-1/vpcPeerings/vpcpr-qrn8hp2btw' -H 'x-jcloud-pin: Ym9zcy0wMQ==' -H 'Content-Type: application/json' -d '{"vpcPeeringName": "zcx-modify"}'
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "061ecf0b-234b-439e-900a-cda03da071a6"
+}
+```
