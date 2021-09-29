@@ -59,14 +59,14 @@ items:
             - name: 添加报警规则
               href: Operation-Guide/resource-monitoring/AlarmMangent/add-rule-in-batches.md
             - name: 启用禁用报警规则
-              href: Operation-Guide/resource-monitoring/AlarmMangent/enalbe-rule.md
+              href: Operation-Guide/resource-monitoring/AlarmMangent/enable-rule.md
             - name: 修改报警规则
               href: Operation-Guide/resource-monitoring/AlarmMangent/update-rule.md
             - name: 查看报警历史
               href: Operation-Guide/resource-monitoring/AlarmMangent/rule-alarms.md 
             - name: 删除报警规则
               href: Operation-Guide/resource-monitoring/AlarmMangent/delete-rule.md
-         - name: 报警模版管理
+        - name: 报警模版管理
           items:
             - name: 概述
               href: Operation-Guide/resource-monitoring/Alarmtemplate/template-overview.md
