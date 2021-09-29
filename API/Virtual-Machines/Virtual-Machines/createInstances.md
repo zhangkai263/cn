@@ -61,7 +61,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**systemDisk**|[InstanceDiskAttachmentSpec](createInstances#user-content-7)|否| |系统盘配置。<br>|
 |**dataDisks**|[InstanceDiskAttachmentSpec[]](createInstances#user-content-7)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。<br>|
 |**charge**|[ChargeSpec](createInstances#user-content-6)|否| |计费配置。<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
-|**metadata**|[Metadata[]](createInstances#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
+|**metadata**|[Metadata[]](createInstances#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持20对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
 |**userdata**|[Userdata[]](createInstances#user-content-4)|否| |自定义脚本。目前仅支持启动脚本，即 `launch-script`，须 `base64` 编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持 `bash` 和 `python`，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 `<cmd></cmd>和<powershell></powershell>` 作为内容首、尾行。<br>|
 |**description**|String|否| |实例描述。256字符以内。<br>|
 |**noPassword**|Boolean|否| |使用实例模板创建实例时，如模板中已设置密码，期望不使用该密码而由系统自动生成时，可通过此参数（`true`）实现。<br>可选值：<br>`true`：不使用实例模板中配置的密码。<br>`false`：使用实例模板中配置的密码。<br>仅在未指定 `agId` 且指定 `instanceTemplateId`，且 `password` 为空时，此参数(`true`)生效。<br>|
