@@ -8,9 +8,9 @@
 
 ## 操作指南
 
-添加报警规则支持[批量资源添加](#jump)、[指定资源添加](#jump1)和[基于标签添加](#jump2)三种方式。以【云主机】为例具体操作分别如下：
+添加报警规则支持[批量资源添加](add-rule#user-content-1)、[指定资源添加](add-rule#user-content-2)和[基于标签添加](add-rule#user-content-3)三种方式。以【云主机】为例具体操作分别如下：
 
-<span id="jump"></span>
+<span id="user-content-1"></span>
 
 ### 批量添加报警
 
@@ -45,7 +45,7 @@
 
 4. 点击页面底部的“完成创建”，则支持添加报警规则，点击“取消”按钮， 放弃本次操作。
 
-<span id="jump1"></span>
+<span id="user-content-2"></span>
 
 #### 指定资源添加报警
 
@@ -57,7 +57,7 @@
    ![添加报警规则](../../../../../../image/Cloud-Monitor/7-zybjgz-tj.png) 
 4. 配置规则名称、触发条件和通知策略（同批量设置报警规则) ，点击“完成创建”按钮即可。
 
-<span id="jump2"></span>
+<span id="user-content-3"></span>
 
 ### 基于标签添加报警
 
