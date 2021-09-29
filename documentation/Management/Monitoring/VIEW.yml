@@ -1,0 +1,81 @@
+name: 云监控概览
+items:
+- name: 云监控概述
+  desc: 云监控（Monitoring）是对用户名下的云资源进行监控和报警的服务，展现各项监控指标情况并对指标设置报警，云监控会通过短信、邮件等方式发送报警通知，还提供当前报警状态和报警历史的查看。通过监控，方便客户了解在京东云上的资源使用情况、性能和运行情况；通过报警，客户可以及时作出反应，保障应用程序的稳定运行。
+  items:
+    - name: 立即使用
+      href: https://cms-console.jdcloud.com/overview
+      btnstyle: white
+    - name: 产品动态
+      href: https://docs.jdcloud.com/cn/monitoring/product-news
+      btnstyle: white
+- name: 学习路线
+  items:
+    - name: 了解
+      items:
+        - name: 产品简介
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/monitoring/product-overview
+            - name: 核心概念
+              href: https://docs.jdcloud.com/cn/monitoring/core-concepts
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/monitoring/benefits
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/monitoring/features
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/monitoring/application-scenarios
+            - name: 使用限制
+              href: https://docs.jdcloud.com/cn/monitoring/restrictions           
+    - name: 使用
+      items:
+        - name: 入门指南
+          items:        
+            - name: 资源监控
+              href: https://docs.jdcloud.com/cn/monitoring/resource_monitoring
+            - name: 使用Dashboard
+              href: https://docs.jdcloud.com/cn/monitoring/use-dashboard
+            - name: 使用自定义监控
+              href: https://docs.jdcloud.com/cn/monitoring/use-custom-monitoring
+        - name: 常用操作
+          items:
+            - name: 监控概览
+              href: https://docs.jdcloud.com/cn/monitoring/monitoring_overview
+            - name: 查看资源监控图表
+              href: https://docs.jdcloud.com/cn/monitoring/view-resource-monitoring-chart-details
+            - name: 添加报警规则
+              href: https://docs.jdcloud.com/cn/monitoring/add-rule-in-batches
+            - name: 添加报警模版
+              href: https://docs.jdcloud.com/cn/monitoring/add-template
+            - name: 管理Dashboard监控图表
+              href: https://docs.jdcloud.com/cn/monitoring/monitoring-chart-management
+        - name: 使用进阶
+          items:
+            - name: 使用报警模版添加报警
+              href: https://docs.jdcloud.com/cn/monitoring/use-template
+            - name: 使用报警回调
+              href: https://docs.jdcloud.com/cn/monitoring/webhook
+            - name: 上报自定义监控指标
+              href: https://docs.jdcloud.com/cn/monitoring/reporting-monitoring-data
+            - name: 查看自定义监控指标数据
+              href: https://docs.jdcloud.com/cn/virtual-machines/chart-view
+    - name: 开发
+      items:
+        - name: API文档
+          items:
+            - name: 接口概览
+              href: https://docs.jdcloud.com/cn/monitoring/api/overview?content=API
+            - name: 查询资源监控指标数据
+              href: https://docs.jdcloud.com/cn/monitoring/api/describemetricdata?content=API
+            - name: 创建报警规则
+              href: https://docs.jdcloud.com/cn/monitoring/api/createalarm?content=API
+            - name: Java SDK使用说明
+              href: https://docs.jdcloud.com/cn/sdk/java
+            - name: CLI使用说明
+              href: https://docs.jdcloud.com/cn/cli/usage
+- name: 常见问题
+  items:
+    - name: 云资源监控FAQ
+      href: https://docs.jdcloud.com/cn/monitoring/Resource-Monitoing-FAQ
+    - name: 自定义监控FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/CustomMetric-FAQ
