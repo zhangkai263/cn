@@ -8,7 +8,7 @@
 
 ## 操作指南
 
-添加报警规则支持[批量资源添加](add-rule#user-content-1)、[指定资源添加](add-rule#user-content-2)和[基于标签添加](add-rule#user-content-3)三种方式。以【云主机】为例具体操作分别如下：
+添加报警规则支持[批量资源添加](add-rule-in-batches#user-content-1)、[指定资源添加](add-rule-in-batches#user-content-2)和[基于标签添加](add-rule-in-batches#user-content-3)三种方式。以【云主机】为例具体操作分别如下：
 
 <span id="user-content-1"></span>
 
