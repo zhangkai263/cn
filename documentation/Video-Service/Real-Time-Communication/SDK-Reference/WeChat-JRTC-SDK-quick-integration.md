@@ -9,7 +9,7 @@
 <li>在线客服：为客户提供在线服务，1 对 1 实时交流</li>
 <li>在线会议：1 对 1 及 1 对多线上会议，嘉宾与观众实时互动</li></ul>
 <h1>前提条件<span style="color: rgb(165,173,186);"></span></h1>
-<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="http://player.jdcloud-elive.com/app-download/jrtc/jrtc_sdk.zip">SDK下载</a>。</p>
+<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/sdk-download">SDK下载</a>。</p>
 <h1>操作步骤</h1>
 <p>1.集成SDK。</p>
 <blockquote>
