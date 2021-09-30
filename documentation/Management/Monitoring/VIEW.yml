@@ -58,7 +58,7 @@ items:
             - name: 上报自定义监控指标
               href: https://docs.jdcloud.com/cn/monitoring/reporting-monitoring-data
             - name: 查看自定义监控指标数据
-              href: https://docs.jdcloud.com/cn/virtual-machines/chart-view
+              href: https://docs.jdcloud.com/cn/monitoring/chart-view
     - name: 开发
       items:
         - name: API文档
@@ -78,4 +78,4 @@ items:
     - name: 云资源监控FAQ
       href: https://docs.jdcloud.com/cn/monitoring/Resource-Monitoing-FAQ
     - name: 自定义监控FAQ
-      href: https://docs.jdcloud.com/cn/virtual-machines/CustomMetric-FAQ
+      href: https://docs.jdcloud.com/cn/monitoring/CustomMetric-FAQ
