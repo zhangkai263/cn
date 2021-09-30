@@ -96,8 +96,8 @@ items:
           href: Operation-Guide/custom-monitoring/manage_alarmrules_cm.md
         - name: 查看历史报警
           href: Operation-Guide/custom-monitoring/view-alarm-history-CustomMetric.md
-    - name: 自定义监控FAQ
-      href: Operation-Guide/custom-monitoring/CustomMetric-FAQ.md
+        - name: 自定义监控FAQ
+          href: Operation-Guide/custom-monitoring/CustomMetric-FAQ.md
 - name: 最佳实践
   items:
     - name: 监控面板批量资源监控
