@@ -41,6 +41,11 @@ A：1.Topic下没有此订阅；
 
    2.订阅的创建者是子账号A，但是代码中使用的AK/SK，不是该子账号的AK/SK；   建议消费请使用使用与创建订阅相同账号的AK/SK。
 
+**Q：使用sync方法单条/批量发送消息，但日志中出现ASYNC_REQUEST，是什么原因？**
+
+A：日志中ASYNC_REQUEST发送的是trace topic消息轨迹，trace topic是采用异步发送的。
+
+
 **Q：SDK报错``` 
 exception:[com.jcloud.jcq.communication.exception.CommunicationException: ChannelFuture has been completed, but the channel localAddress: , remoteAddress: is still not active!]```**
 
@@ -55,3 +60,5 @@ A：该报错是因为网络不通，通常有如下几种原因:
 The heart beat service for the channel localAddress: 10.0.0.3:44452, remoteAddress: 100.72.13.171:2888 has already been shutdown```**
 
 A：该报错是客户端重新拉取路由，属于正常情况。
+
+
