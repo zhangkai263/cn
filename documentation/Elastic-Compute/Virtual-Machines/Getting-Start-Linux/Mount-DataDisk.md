@@ -51,20 +51,14 @@ fdisk /dev/vdb
 <img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount1.png" width="700">
 </div>
 	
-	注：如您创建的硬盘容量大于2T，请不要使用分区或参考如下步骤使用parted分区：
+>注：如您创建的硬盘容量大于2T，请不要使用分区或参考如下步骤使用parted分区：<br>
 
-	1）创建分区表，选择GPT格式：<br>
-	<div align="center">
-	<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount2.png" width="700">
-	</div>
-	2）创建分区<br>
-	<div align="center">
-	<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount3.png" width="700">
-	</div>
-	3）再次运行`fdisk -l`命令，确认分区<br>
-	<div align="center">
-	<img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount4.png" width="700">
-	</div>
+ 1）创建分区表，选择GPT格式：<br>
+ <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount2.png" width="700"></div>
+ 2）创建分区<br>
+ <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount3.png" width="700"></div>
+ 3）再次运行`fdisk -l`命令，确认分区<br>
+ <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-mount4.png" width="700"></div>
 
 3. 之后您需要对分区后的硬盘进行格式化，命令如下：
 
