@@ -49,8 +49,10 @@ POST
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 将id为rtb-olajkrx4xr的路由表中目的地址为10.0.0.0/8,下一跳改为internet
-  https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/rtb-olajkrx4xr:modifyRouteTableRules
-  body:{
+
+
+  /v1/regions/cn-north-1/routeTables/rtb-olajkrx4xr:modifyRouteTableRules
+    {
            "modifyRouteTableRulesSpec":{
              "nextHopType":"internet",
              "ruleId":"rt-lcvm7xqeza",
@@ -58,7 +60,7 @@ POST
              "nextHopId":"internet",
              "description":""
            }
-       }
+      }
 
 ```
 

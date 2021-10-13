@@ -55,7 +55,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**nextHopType**|String|下一跳类型, 取值范围:local:本地, instance:云主机, internet:公网, vpc_peering:vpc对等连接, bgw:边界网关, natgw:NAT网关|
 |**nextHopId**|String|下一跳id|
 |**addressPrefix**|String|匹配地址前缀, internet类型路由跟其他类型的路由，addressPrefix不允许重复|
-|**routeType**|String|路由类型，propagated:传播、static:静态|
+|**origin**|String|路由类型，propagated:传播、static:静态|
 |**description**|String|路由描述，允许输入UTF-8编码下的全部字符，不超过256字符。|
 
 ## 返回码
@@ -70,7 +70,9 @@ GET
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 查询id为rtb-olajkrx4xr的路由表详情
-  https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/rtb-olajkrx4xr
+
+
+  /v1/regions/cn-north-1/routeTables/rtb-olajkrx4xr
 
 ```
 
