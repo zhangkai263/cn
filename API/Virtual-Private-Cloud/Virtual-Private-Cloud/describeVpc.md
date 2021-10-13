@@ -66,13 +66,11 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 |**401**|Authentication failed|
 
 ## 请求示例
+调用方法、签名算法及公共请求参数请参考 [京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 GET
 ```
-调用方法、签名算法及公共请求参数请参考 [京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 
- - 请求示例:
-
- https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/vpc-s5e3eqf9pk
+/v1/regions/{regionId}/vpcs/vpc-s5e3eqf9pk
 
 ```
 
