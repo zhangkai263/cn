@@ -76,7 +76,9 @@ GET
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 在账号下查询安全组列表，且ID为 sg-yjdd312xqk 的安全组
-https://vpc.jdcloud-api.com/v1/regions/{regionId}/post/networkSecurityGroups?pageNumber=1&pageSize=10&filters.1.name=networkSecurityGroupIds&filters.1.values.1=sg-yjdd312xqk
+
+
+/v1/regions/cn-north-1/networkSecurityGroups?pageNumber=1&pageSize=10&filters.1.name=networkSecurityGroupIds&filters.1.values.1=sg-yjdd312xqk
 
 ```
 
