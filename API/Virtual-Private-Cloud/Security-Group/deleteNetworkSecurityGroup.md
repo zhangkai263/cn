@@ -34,12 +34,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 |**500**|Internal server error|
 
 ## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例：删除安全组ID为 sg-yjdd312xqk 的安全组
 DELETE
 ```
-调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例:删除安全组ID为 sg-yjdd312xqk 的安全组
-
-
 /v1/regions/cn-north-1/networkSecurityGroups/sg-yjdd312xqk
 
 ```
