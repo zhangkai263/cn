@@ -77,12 +77,14 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 |**401**|Authentication failed|
 
 ## 请求示例
-GET
-```
+
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
 - 请求示例: 查询vpc ID为vpc-c10xjyfiaf的弹性网卡列表
 
 
+GET
+```
   /v1/regions/cn-north-1/networkInterfaces?pageNumber=1&&pageSize=10&filters.1.name=vpcIds&filters.1.values.1=vpc-c10xjyfiaf
 
 ```
