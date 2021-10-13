@@ -52,7 +52,9 @@ POST
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 创建网卡
-networkInterfaces 
+
+
+/v1/regions/cn-north-1/networkInterfaces
 {
 	"subnetId":"subnet-wobzpv8cng",
    "securityGroups":["sg-0yb6oqxxc0"],
