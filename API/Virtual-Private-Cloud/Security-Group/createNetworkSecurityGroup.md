@@ -42,12 +42,11 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/
 |**500**|Internal server error|
 
 ## 请求示例
-POST
-```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 在vpc-2wzrfdesf下创建名称为“自建安全组”的安全组
 
-
+POST
+```
 /v1/regions/cn-north-1/networkSecurityGroups/
 {
 	"networkSecurityGroupName": "自建安全组",
