@@ -64,12 +64,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |**503**|Service unavailable|
 
 ## 请求示例
-POST
-```
+
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
 - 请求示例: 创建一个弹性公网ip
 
-
+POST
+```
   /v1/regions/cn-north-1/elasticIps/
     {
            "maxCount":1,
