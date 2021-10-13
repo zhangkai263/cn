@@ -41,10 +41,12 @@ PATCH
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 查询子网id是subnet-5g97rio80i的子网信息
-  https://vpc.jdcloud-api.com/v1/regions/{regionId}/subnets/subnet-5g97rio80i
-body:{
- "subnetName":"subnet_path"
-}
+
+
+  /v1/regions/cn-north-1/subnets/subnet-5g97rio80i
+    {
+     "subnetName":"subnet_path"
+    }
 
 ```
 
