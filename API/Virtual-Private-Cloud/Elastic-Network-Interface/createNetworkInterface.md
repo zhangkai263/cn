@@ -48,12 +48,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 |**409**|Resource 'primaryIp' already be used|
 
 ## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 创建辅助网卡
+
 POST
 ```
-调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例: 创建网卡
-
-
 /v1/regions/cn-north-1/networkInterfaces
 {
 	"subnetId":"subnet-wobzpv8cng",
