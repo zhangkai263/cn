@@ -49,13 +49,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}:add
 
 ## 请求示例
 POST
-
-调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-
-请求示例: 给networkAclId为acl-1lt77tthz5的networkAcl增加rule
-
-networkAcls/acl-1lt77tthz5:addNetworkAclRules
 ```
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 给networkAclId为acl-1lt77tthz5的networkAcl增加rule
+networkAcls/acl-1lt77tthz5:addNetworkAclRules
 {
     "networkAclRuleSpecs": [
         {
