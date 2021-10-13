@@ -66,12 +66,11 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**401**|Authentication failed|
 
 ## 请求示例
-GET
-```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
 - 请求示例: 查询id为rtb-olajkrx4xr的路由表详情
 
-
+GET
+```
   /v1/regions/cn-north-1/routeTables/rtb-olajkrx4xr
 
 ```
