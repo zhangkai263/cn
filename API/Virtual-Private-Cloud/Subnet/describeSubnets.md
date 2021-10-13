@@ -63,11 +63,11 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/subnets/
 |**200**|OK|
 
 ## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例：查询虚拟网络ID为vpc-xmgvmynmkj下的所有子网
+
 GET
 ```
-调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例: 查询虚拟网络id为vpc-xmgvmynmkj下的所有子网
-
 
   /v1/regions/cn-north-1/subnets/?filters.1.name=vpcId&filters.1.values.1=vpc-xmgvmynmkj
 
