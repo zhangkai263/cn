@@ -34,7 +34,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 ## 请求示例
 DELETE
 ```
-curl -X DELETE 'http://127.0.0.1:19690/v1/regions/cn-east-1/vpcPeerings/vpcpr-qrn8hp2btw' -H 'x-jcloud-pin: Ym9zcy0wMQ==' -H 'Content-Type: application/json'
+
+
+/v1/regions/cn-north-1/vpcPeerings/vpcpr-qrn8hp2btw
 
 ```
 

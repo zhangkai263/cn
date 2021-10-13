@@ -60,7 +60,12 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 ## 请求示例
 PUT
 ```
-curl -X PUT 'http://127.0.0.1:19690/v1/regions/cn-east-1/vpcPeerings/vpcpr-qrn8hp2btw' -H 'x-jcloud-pin: Ym9zcy0wMQ==' -H 'Content-Type: application/json' -d '{"vpcPeeringName": "zcx-modify"}'
+
+
+/v1/regions/cn-north-1/vpcPeerings/vpcpr-qrn8hp2btw
+{
+  "vpcPeeringName": "zcx-modify"
+}
 
 ```
 
