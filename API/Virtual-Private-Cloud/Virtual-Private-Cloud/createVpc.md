@@ -49,12 +49,15 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
 POST
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例: 创建无预设CIDR的虚拟网络
-  https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
-  body:{
-           "vpcName" :"cheney_test",
-            "description":"openapi-test"
-       }
+
+- 请求示例
+
+
+/v1/regions/cn-north-1/vpcs/
+  {
+       "vpcName" :"cheney_test",
+        "description":"openapi-test"
+   }
 
 ```
 

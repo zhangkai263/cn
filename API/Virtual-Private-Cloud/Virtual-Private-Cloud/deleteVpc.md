@@ -40,8 +40,11 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 DELETE
 ```
 调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例: 将id为vpc-s5e3eqf9pk的虚拟网络删除
-  https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/vpc-s5e3eqf9pk
+
+- 请求示例:
+
+
+  /v1/regions/cn-north-1/vpcs/vpc-s5e3eqf9pk
 
 ```
 
