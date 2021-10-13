@@ -58,10 +58,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 |**409**|Already has VpcPeering with param|
 
 ## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
 PUT
 ```
-
-
 /v1/regions/cn-north-1/vpcPeerings/vpcpr-qrn8hp2btw
 {
   "vpcPeeringName": "zcx-modify"
