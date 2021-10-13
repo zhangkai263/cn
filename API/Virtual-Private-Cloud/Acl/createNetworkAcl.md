@@ -43,12 +43,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/
 |**500**|Internal error|
 
 ## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例：在id为vpc-1gnm8i9qi4的vpc下创建名称为“测试acl”的acl
+
 POST
 ```
-调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
-- 请求示例: 在id为vpc-1gnm8i9qi4的vpc下创建名称为”测试acl“的acl
-
-
   /v1/regions/cn-north-1/networkAcls/
     {
            "networkAclName":"测试acl",
