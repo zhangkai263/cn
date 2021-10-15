@@ -18,7 +18,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**subnetId**|String|True| |子网ID|
-|**az**|String|False| |可用区，用户的默认可用区|
+|**az**|String|False| |可用区，用户的默认可用区，该参数无效，不建议使用|
 |**networkInterfaceName**|String|False| |网卡名称，只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符。|
 |**primaryIpAddress**|String|False| |网卡主IP，如果不指定，会自动从子网中分配|
 |**secondaryIpAddresses**|String[]|False| |SecondaryIp列表|
@@ -31,10 +31,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|返回结果|
+|**result**|[Result](#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**networkInterfaceId**|String|弹性网卡Id|
@@ -46,3 +46,30 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 |**429**|NetworkInterface quota limit exceeded|
 |**404**|Resource 'subnetId' not found|
 |**409**|Resource 'primaryIp' already be used|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 创建辅助网卡
+
+POST
+```
+/v1/regions/cn-north-1/networkInterfaces
+{
+	"subnetId":"subnet-wobzpv8cng",
+   "securityGroups":["sg-0yb6oqxxc0"],
+   "networkInterfaceName":"55"
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "33746575-19ab-4341-a155-7d0764a38367", 
+    "result": {
+        "networkInterfaceId": "port-xyaoj5k08j"
+    }
+}
+```

@@ -22,24 +22,24 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|返回结果|
+|**result**|[Result](#result)|返回结果|
 |**requestId**|String|请求ID|
 
-### Result
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**networkAcl**|NetworkAcl|networkAcl资源信息|
-### NetworkAcl
+|**networkAcl**|[NetworkAcl](#networkacl)|networkAcl资源信息|
+### <div id="NetworkAcl">NetworkAcl</div>
 |名称|类型|描述|
 |---|---|---|
 |**networkAclId**|String|networkAcl ID|
 |**networkAclName**|String|networkAcl名称|
 |**vpcId**|String|私有网络 ID|
-|**networkAclRules**|NetworkAclRule[]|networkAcl规则列表|
+|**networkAclRules**|[NetworkAclRule[]](#networkaclrule)|networkAcl规则列表|
 |**subnetIds**|String[]|networkAcl绑定的子网列表|
 |**description**|String|描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 |**createdTime**|String|networkAcl创建时间|
-### NetworkAclRule
+### <div id="NetworkAclRule">NetworkAclRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleId**|String|networkAcl规则ID|
@@ -52,6 +52,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}
 |**priority**|Integer|规则匹配优先级，取值范围为[1,32768]，优先级数字越小优先级越高|
 |**description**|String|描述,允许输入UTF-8编码下的全部字符，不超过256字符|
 |**createdTime**|String|networkAclRule创建时间|
+|**ruleType**|String|规则类型，default：默认规则，custom：自定义规则|
 
 ## 返回码
 |返回码|描述|
@@ -61,3 +62,76 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}
 |**401**|Authentication failed|
 |**404**|Not found|
 |**500**|Internal error|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 查询networkAcl ID为acl-1lt77tthz5的networkAcl资源详情
+
+GET
+```
+networkAcls/acl-1lt77tthz5:addNetworkAclRules
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "9ff55148-49a0-4bf3-b0b9-56e2afa57bb4", 
+    "result": {
+        "networkAcl": {
+            "createdTime": "2021-04-19T07:42:06Z", 
+            "description": "", 
+            "networkAclId": "acl-1lt77tthz5", 
+            "networkAclName": "dddd", 
+            "networkAclRules": [
+                {
+                    "addressPrefix": "0.0.0.0/32", 
+                    "createdTime": "2021-08-05T06:11:32Z", 
+                    "description": "", 
+                    "direction": "ingress", 
+                    "fromPort": 1, 
+                    "ipVersion": 4, 
+                    "priority": 10, 
+                    "protocol": "TCP", 
+                    "ruleAction": "allow", 
+                    "ruleId": "aclr-f4cuqo0utk", 
+                    "ruleType": "custom", 
+                    "toPort": 10
+                }, 
+                {
+                    "addressPrefix": "0.0.0.0/0", 
+                    "createdTime": "2021-04-19T07:42:06Z", 
+                    "description": "", 
+                    "direction": "ingress", 
+                    "fromPort": 1, 
+                    "ipVersion": 4, 
+                    "priority": 60000, 
+                    "protocol": "ALL", 
+                    "ruleAction": "deny", 
+                    "ruleId": "aclr-9id1i3cxl6", 
+                    "ruleType": "default", 
+                    "toPort": 65535
+                }, 
+                {
+                    "addressPrefix": "0.0.0.0/0", 
+                    "createdTime": "2021-04-19T07:42:06Z", 
+                    "description": "", 
+                    "direction": "egress", 
+                    "fromPort": 1, 
+                    "ipVersion": 4, 
+                    "priority": 60000, 
+                    "protocol": "ALL", 
+                    "ruleAction": "deny", 
+                    "ruleId": "aclr-fyjdmc0x71", 
+                    "ruleType": "default", 
+                    "toPort": 65535
+                }
+            ], 
+            "subnetIds": null, 
+            "vpcId": "vpc-six71yb530"
+        }
+    }
+}
+```

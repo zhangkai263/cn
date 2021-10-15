@@ -18,9 +18,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**modifySecurityGroupRuleSpecs**|ModifySecurityGroupRules[]|True| |安全组规则信息|
+|**modifySecurityGroupRuleSpecs**|[ModifySecurityGroupRules[]](#modifysecuritygrouprules)|True| |安全组规则信息|
 
-### ModifySecurityGroupRules
+### <div id="ModifySecurityGroupRules">ModifySecurityGroupRules</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ruleId**|String|True| |安全组规则的ID。|
@@ -43,3 +43,36 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 |**400**|invalid parameter|
 |**404**|SecurityGroup or SecurityGroupRule not found|
 |**500**|Internal server error|
+
+## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例：在安全组 sg-yjdd312xqk下修改安全组规则
+
+POST
+```
+/v1/regions/cn-north-1/networkSecurityGroups/sg-yjdd312xqk:modifyNetworkSecurityGroupRules
+{
+    "modifySecurityGroupRuleSpecs":[
+        {
+            "ruleId":"sgr-88sfhkskac",
+            "ruleType":"custom",
+            "direction":0,
+            "protocol":6,
+            "addressPrefix":"10.0.0.0/24",
+            "ipVersion":4,
+            "fromPort":22,
+            "toPort":22,
+            "createdTime":"2021-08-05T07:06:05Z",
+            "description":""
+        }
+    ]
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45punbv4fmc8qk43m088r78p2imo1wv"
+}
+```
