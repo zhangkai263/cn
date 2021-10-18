@@ -51,6 +51,8 @@
             href: Virtual-Machines/modifyInstanceDiskAttribute.md
           - name: modifyInstanceNetworkAttribute
             href: Virtual-Machines/modifyInstanceNetworkAttribute.md
+          - name: mmodifyInstanceVpcAttribute
+            href: Virtual-Machines/modifyInstanceVpcAttribute.md
           - name: modifyInstancePassword
             href: Virtual-Machines/modifyInstancePassword.md
       - name: 镜像
