@@ -1,715 +1,614 @@
-<p>script标签引入jrtc.min.js</p>
-<h2>1.JRTCClient&nbsp;</h2>
-<h3><span style="color: rgb(0,0,0);"><strong>c</strong><strong>heckSystemRequirements</strong>()</span></h3>
-<p>const&nbsp;checkResult&nbsp;= JRTCClient.<span style="color: rgb(0,51,102);">checkSystemRequirements()</span></p>
-<p><span style="color: rgb(0,0,0);">参数：<span style="color: rgb(0,0,0);">无</span></span></p>
-<p><span style="color: rgb(0,0,0);">说明：</span><span style="color: rgb(0,0,0);">检查 JRTC H5 SDK 对正在使用的浏览器的适配情况。</span><span style="color: rgb(0,0,0);">此方法建议在初始化SDK前调用。</span></p>
-<p>返回：checkResult&nbsp;</p>
-<table class="relative-table wrapped" style="width: 36.0943%;"><colgroup><col style="width: 14.003%;" /><col style="width: 64.9924%;" /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th><span style="color: rgb(0,0,0);">说明</span></th></tr>
-<tr>
-<td colspan="1"><span style="color: rgb(0,0,0);">isSupport</span></td>
-<td colspan="1">是否支持当前浏览器, true: 支持 ， false： 不支持</td></tr>
-<tr>
-<td colspan="1">message</td>
-<td colspan="1">支持结果描述</td></tr>
-<tr>
-<td colspan="1">result</td>
-<td colspan="1">其它信息</td></tr></tbody></table>
-<h3><span style="color: rgb(0,0,0);">init(<span style="color: rgb(253,151,31);">JRTCInitParams</span>)</span></h3>
-<p><span style="color: rgb(0,0,0);"><span>const JWebrtc = JRTCClient.init(</span><span style="color: rgb(253,151,31);">JRTCInitParams:</span>{&nbsp;appId<span style="color: rgb(249,38,114);">:</span>&nbsp;<span style="color: rgb(102,217,239);">string</span>&nbsp;}<span>)</span><br /></span></p>
-<p><span style="color: rgb(0,0,0);">参数：initParam</span></p>
-<p><span style="color: rgb(0,0,0);">返回:&nbsp;&nbsp;JRTCClient实例</span></p>
-<p><span style="color: rgb(0,0,0);"><span style="color: rgb(253,151,31);">JRTCInitParams:&nbsp;</span></span></p>
-<table class="relative-table wrapped" style="width: 22.979%;"><colgroup><col style="width: 21.7391%;" /><col style="width: 24.8792%;" /><col style="width: 53.3816%;" /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th colspan="1">类型</th>
-<th><span style="color: rgb(0,0,0);">说明</span></th></tr>
-<tr>
-<td colspan="1">appId</td>
-<td colspan="1">string</td>
-<td colspan="1">appId</td></tr></tbody></table>
-<h3><span style="color: rgb(0,0,0);">setVideoRecvonly<span style="color: rgb(23,43,77);">()</span><s style="color: rgb(23,43,77);letter-spacing: -0.006em;"><span style="color: rgb(0,0,0);"><br /></span></s></span></h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.</span><span style="color: rgb(0,0,0);">setVideoRecvonly</span><span style="color: rgb(0,0,0);">(</span><span style="color: rgb(0,0,0);">videoRecvonly</span><span style="color: rgb(0,0,0);">: boolean)</span></p>
-<p><span style="color: rgb(0,0,0);">参数：&nbsp;<span>videoRecvonly</span></span><span style="color: rgb(0,0,0);">：true是，false否, 默认false</span></p>
-<p><span style="color: rgb(0,0,0);">说明：此方法需要在加入房间前调用</span></p>
-<p><span style="color: rgb(0,0,0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **有些手机上由于浏览器的版本问题，导致推视频流不支持，但是又想去拉视频流。&nbsp; 通过这个方法设置成只接受模式，就可以兼容上述问题。**<br /></span></p>
-<h3><span style="color: rgb(0,0,0);">setVideoEncodingParam</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.setVideoEncodingParam(resolution: string)</span></p>
-<p><span style="color: rgb(0,0,0);">说明：设置分辨率</span></p>
-<p><span style="color: rgb(0,0,0);">参数：&nbsp;resolution</span></p>
-<table class="relative-table wrapped" style="width: 31.2846%;"><colgroup><col style="width: 14.8936%;" /><col style="width: 70.0355%;" /><col style="width: 15.0709%;" /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th><span style="color: rgb(0,0,0);">resolution<br /></span></th>
-<th colspan="1">必填</th></tr>
-<tr>
-<td>resolution</td>
-<td>
-<p>nhd(640*360)、hd(1280*720)、fhd(1920*1080)</p></td>
-<td colspan="1">Y</td></tr></tbody></table>
-<h3><span style="color: rgb(0,0,0);"><br />setAudioCodecOptions</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.setSudioCodecOptions(isStereo: Boolean)</span></p>
-<p><span style="color: rgb(0,0,0);">参数：&nbsp;isStereo&nbsp;是否开启立体声：true开启，false关闭</span></p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">getVideoTrack</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.getVideoTrack()</span></p>
-<p><span style="color: rgb(0,0,0);">参数： 无</span></p>
-<p><span style="color: rgb(0,0,0);">说明：获取视频track</span></p>
-<p>返回：videoTrack</p>
-<h3><span style="color: rgb(0,0,0);">getAudioTrack</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.getAudioTrack()</span></p>
-<p><span style="color: rgb(0,0,0);">参数： 无</span></p>
-<p><span style="color: rgb(0,0,0);">说明：获取音频track<br /></span></p>
-<p>返回：audioTrack</p>
-<h3><span style="color: rgb(0,0,0);">getScreenTrack</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.getScreenTrack()</span></p>
-<p><span style="color: rgb(0,0,0);">说明： 获取屏幕共享track</span></p>
-<p><span style="color: rgb(0,0,0);">参数： 无</span></p>
-<p>返回：screenTrack</p>
-<h3>enterRoom()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.</span>enterRoom(<span style="color: rgb(0,0,0);">enterRoomInfo:&nbsp;{&nbsp;appId:&nbsp;string,&nbsp;token:&nbsp;string,&nbsp;userId:&nbsp;string&nbsp;|&nbsp;number,&nbsp;nonce:&nbsp;string&nbsp;|&nbsp;number,&nbsp;timestamp:&nbsp;string&nbsp;|&nbsp;number,&nbsp;<span>userRoomId</span>:&nbsp;number,&nbsp;nickName?:&nbsp;string,&nbsp;subscribeType?:&nbsp;string&nbsp;|&nbsp;number,useVp8?: boolean }</span>)</p>
-<p>进入房间成功, 会返回一个ROOM对象:&nbsp;JRTCRoom,</p>
-<p><span style="color: rgb(0,51,102);">enterRoomInfo:&nbsp;</span></p>
-<table class="relative-table wrapped"><colgroup><col style="width: 128.0px;" /><col style="width: 55.0px;" /><col style="width: 655.0px;" /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th colspan="1">必填</th>
-<th colspan="1">说明</th></tr>
-<tr>
-<td colspan="1">appId</td>
-<td colspan="1">Y</td>
-<td colspan="1">应用ID，控制台获取</td></tr>
-<tr>
-<td colspan="1">token</td>
-<td colspan="1">Y</td>
-<td colspan="1">用户生成token，生成方式参见XXXX</td></tr>
-<tr>
-<td colspan="1">userId</td>
-<td colspan="1">Y</td>
-<td colspan="1">用户Id</td></tr>
-<tr>
-<td colspan="1">nonce</td>
-<td colspan="1">Y</td>
-<td colspan="1">令牌随机码，用户生成</td></tr>
-<tr>
-<td colspan="1">timeStamp</td>
-<td colspan="1">Y</td>
-<td colspan="1">令牌过期时间，用户生成</td></tr>
-<tr>
-<td>userRoomId</td>
-<td colspan="1">Y</td>
-<td colspan="1">房间Id</td></tr>
-<tr>
-<td>nickname</td>
-<td colspan="1">N</td>
-<td colspan="1">昵称</td></tr>
-<tr>
-<td colspan="1"><span style="color: rgb(0,51,102);">subscribeType</span></td>
-<td colspan="1">N</td>
-<td colspan="1">大房间模式下，音频订阅模式： 1 固定订阅 2 普通订阅 。 默认为 1</td></tr>
-<tr>
-<td colspan="1">useVp8</td>
-<td colspan="1">N</td>
-<td colspan="1">是否开启vp8环境，默认false</td></tr></tbody></table>
-<p>ROOM：</p>
-<table class="relative-table wrapped"><colgroup><col /><col /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th colspan="1">说明</th></tr>
-<tr>
-<td colspan="1">
-<p>roomId</p></td>
-<td colspan="1">房间ID</td></tr>
-<tr>
-<td colspan="1">
-<p>peers</p></td>
-<td colspan="1">
-<p>当前房间内成员信息</p>
-<p><span>peers:[{&quot;userId&quot;:&quot;12&quot;,&quot;peerId&quot;:&quot;129532&quot;,&quot;nickName&quot;:&quot;AAs&quot;},{&quot;userId&quot;:&quot;13&quot;,&quot;peerId&quot;:&quot;129533&quot;,&quot;nickName&quot;:&quot;AAs&quot;}]</span></p></td></tr>
-<tr>
-<td colspan="1">
-<p>streamInfos</p></td>
-<td colspan="1">
-<p><span>当前房间内已发布流信息</span></p>
-<p><span><span>streamInfos:[{&quot;peerId&quot;:&quot;129533&quot;,&quot;streamId&quot;:&quot;12.129533.2.1.480&quot;,&quot;kind&quot;:&quot;video&quot;},{&quot;peerId&quot;:&quot;129533&quot;,&quot;streamId&quot;:&quot;12.129533.1.1.1&quot;,&quot;kind&quot;:&quot;audio&quot;}</span></span></p></td></tr>
-<tr>
-<td colspan="1">
-<p>roomTemplate</p></td>
-<td colspan="1">
-<p>1小房间， <span> 2代表大房间</span></p></td></tr></tbody></table>
-<p><br /></p>
-<h3>exitRoom()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.exitRoom()</span></p>
-<p>说明：退出房间</p>
-<p>参数： <span style="color: rgb(0,0,0);">无</span></p>
-<p>返回：无</p>
-<h3>错误监听</h3>
-<p><span style="color: rgb(0,51,102);"><span style="color: rgb(0,0,0);">JWebrtc</span>.on('onError',&nbsp;</span><span style="color: rgb(0,0,0);">(</span><span style="color: rgb(0,0,0);"><span style="color: rgb(0,51,102);">err</span></span><span style="color: rgb(0,0,0);">)&nbsp;</span><span style="color: rgb(0,51,102);">=&gt;&nbsp;{</span><span style="color: rgb(0,51,102);">})</span></p>
-<p>说明：错误事件<span style="color: rgb(0,51,102);">，返回 { errorCode: XXX, message: XXXX}</span></p>
-<p><span style="color: rgb(0,51,102);">错误信息参考：</span></p>
-<p><br /></p>
-<table class="relative-table wrapped" style="width: 61.5172%;"><colgroup><col style="width: 19.4595%;" /><col style="width: 14.7748%;" /><col style="width: 35.1351%;" /><col style="width: 30.6306%;" /></colgroup>
-<tbody>
-<tr>
-<th colspan="1">类型</th>
-<th>errorCode</th>
-<th colspan="1">message</th>
-<th colspan="1">说明</th></tr>
-<tr>
-<td colspan="1">鉴权错误</td>
-<td colspan="1">12000</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">err.msg&nbsp;||&nbsp;'Authentication&nbsp;failure.'</span></p></td>
-<td colspan="1">鉴权错误</td></tr>
-<tr>
-<td colspan="1">网络错误</td>
-<td colspan="1">11000</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">network_error</span></p></td>
-<td colspan="1">网络已断开</td></tr>
-<tr>
-<td rowspan="3">音频错误</td>
-<td colspan="1">10001</td>
-<td colspan="1">audio&nbsp;device&nbsp;not&nbsp;found</td>
-<td colspan="1">未找到音频设备</td></tr>
-<tr>
-<td colspan="1">10003</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">audio&nbsp;device&nbsp;not&nbsp;allowed</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">浏览器禁用音频设备</span></p></td></tr>
-<tr>
-<td colspan="1">10005</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">audio&nbsp;device&nbsp;not&nbsp;readable</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">系统禁用音频设备</span></p></td></tr>
-<tr>
-<td colspan="1">视频错误</td>
-<td><span style="color: rgb(0,0,0);">10002</span></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">video&nbsp;device&nbsp;not&nbsp;found</span></p></td>
-<td colspan="1">未找到视频设备</td></tr>
-<tr>
-<td colspan="1"><br /></td>
-<td colspan="1">10004</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">video&nbsp;device&nbsp;not&nbsp;allowed</span></p></td>
-<td colspan="1"><span style="color: rgb(0,51,102);">浏览器禁用视频设备</span></td></tr>
-<tr>
-<td colspan="1"><br /></td>
-<td colspan="1">10006</td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">video&nbsp;device&nbsp;not&nbsp;readable</span></p></td>
-<td colspan="1"><span style="color: rgb(0,51,102);">系统禁用视频设备</span></td></tr>
-<tr>
-<td rowspan="3"><span style="color: rgb(0,51,102);">屏幕共享</span><br /><br /></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">10010</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">err.message&nbsp;<span style="color: rgb(249,38,114);"> || </span>&quot;unknown&nbsp;screenshare&nbsp;error&quot;</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">屏幕共享未知错误</span></p></td></tr>
-<tr>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">10011</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">screenshare&nbsp;not&nbsp;allowed</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">屏幕共享被禁用</span></p></td></tr>
-<tr>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">10012</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">screenshare&nbsp;ended</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">屏幕共享已取消</span></p></td></tr>
-<tr>
-<td rowspan="3">其它错误</td>
-<td colspan="1"><span style="color: rgb(0,51,102);">10007</span></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">&quot;constraints&nbsp;&quot;&nbsp;+&nbsp;e.constraint&nbsp;+&nbsp;&quot;&nbsp;error&quot;</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">OverConstrainedError无法满足要求错误</span></p></td></tr>
-<tr>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">1e4</span></p></td>
-<td colspan="1">
-<p><span style="color: rgb(0,51,102);">e.message&nbsp;:&nbsp;&quot;device&nbsp;unknown&nbsp;error&quot;</span></p></td>
-<td colspan="1">未知错误</td></tr>
-<tr>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td></tr></tbody></table>
-<p><span style="color: rgb(0,51,102);"><br /></span></p>
-<h2>2.JRTCRoom</h2>
-<p><span style="color: rgb(0,0,0);">调用JWebrtc.</span>enterRoom 进入房间成功, 会返回一个ROOM对象:&nbsp;JRTCRoom,可通过JRTCRoom来进行房间内操作</p>
-<ol>
-<li>可直接通过调用JRTCRoom = await&nbsp;<span style="color: rgb(0,0,0);">JWebrtc.</span>enterRoom(XXXX)加入房间成功后的返回值来获取</li>
-<li>也可在加入房间成功后，调用JRTCRoom =&nbsp;<span style="color: rgb(0,0,0);">JWebrtc.getRoomObj() 来获取</span></li></ol>
-<h3><span style="color: rgb(0,0,0);">publishVideoStream</span>()</h3>
-<p><span style="color: rgb(0,0,0);">const&nbsp;{&nbsp;track,&nbsp;streamId&nbsp;}&nbsp;=&nbsp;await&nbsp;JRTCRoom.publishVideoStream(videoTrack)</span></p>
-<p><span style="color: rgb(0,0,0);">说明：发布视频流</span></p>
-<p><span style="color: rgb(0,0,0);">参数： videoTrack</span></p>
-<p><span style="color: rgb(0,0,0);">返回：track及streamId</span></p>
-<h3><span style="color: rgb(0,0,0);">publishAudioStream</span>()</h3>
-<p><span style="color: rgb(0,0,0);">const&nbsp;{&nbsp;track,&nbsp;streamId&nbsp;}&nbsp;=&nbsp;await&nbsp;JRTCRoom.publishAudioStream(audioTrack)</span></p>
-<p>说明：发布音频</p>
-<p>参数： audioTrack</p>
-<p>返回：track及streamId</p>
-<h3><span style="color: rgb(0,0,0);">unPublishStream</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.unPublishStream(streamId)</span></p>
-<p>说明：取消发布</p>
-<p>参数： streamId</p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">subscribeStreams</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.subscribeStreams(streamIds: string[])</span></p>
-<p>说明：订阅流，订阅成功如果产生新的消费者需手动监听streamSubscribed</p>
-<p>参数： streamIds: string[]</p>
-<p>返回：无</p>
-<p>监听：<span style="color: rgb(0,51,102);">streamSubscribed，返回</span><span style="color: rgb(0,0,0);">peerInfo,&nbsp;peerInfo信息如下</span></p>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('StreamSubscribed',&nbsp;({ stream<span style="color: rgb(0,0,0);">Info</span>})&nbsp;=&gt;&nbsp;{</span></p>
-<p><span style="color: rgb(0,51,102);">&nbsp; &nbsp;console.log(stream<span style="color: rgb(0,0,0);">Info</span>)</span><br /><span style="color: rgb(0,51,102);">})</span></p>
+
+<p><ac:structured-macro ac:name="toc" ac:schema-version="1" ac:macro-id="7dc710f5-a249-4151-8c4c-a8451b68f956" /></p>
+<h1>JRTCBase</h1>
+<h2>1.基础方法</h2>
+<h3>sharedInstance()</h3>
+<p>static JRTCBase sharedInstance( Context context )</p>
+<p>创建JRTCBase单例</p>
 <table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td>userId</td>
-<td colspan="1">用户Id</td></tr>
-<tr>
-<td colspan="1">nickName</td>
-<td colspan="1">昵称</td></tr>
-<tr>
-<td colspan="1">audioTrack</td>
-<td colspan="1">audioTrack</td></tr>
-<tr>
-<td>videoTrack</td>
-<td colspan="1">videoTrack</td></tr></tbody></table>
-<h3><span style="color: rgb(0,0,0);"><br />unSubscribeStreams</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.unSubscribeStreams(streamIds: string[])</span></p>
-<p>说明：取消订阅</p>
-<p>参数： streamIds: string[]</p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">pausePublish</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.pausePublish(streamId)</span></p>
-<p>说明：暂停发布</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">streamId</span></p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">resumePublish</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.resumePublish(streamId)</span></p>
-<p>说明：恢复发布</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">streamId</span></p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">pauseSubscribe</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.pauseSubscribe(streamId)</span></p>
-<p>说明：暂停订阅</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">streamId</span></p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">resumeSubscribe</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.resumeSubscribe(streamId)</span></p>
-<p>说明：恢复订阅</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">streamId</span></p>
-<p>返回：无</p>
-<h3><span style="color: rgb(0,0,0);">sendMessage</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.sendMessaage({msg: string, <span style="color: rgb(0,0,0);">userId</span>?: string})</span></p>
-<p>说明：发送消息，可发送给指定人，可发送消息到房间</p>
-<p>参数：<span style="color: rgb(0,0,0);">msg: 消息体， userId: 指定<span style="color: rgb(0,0,0);">userId</span></span></p>
-<p>返回：无</p>
-<h3>changeNickName()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.changeNickName(nickName:&nbsp;string)</span></p>
-<p>说明：修改昵称</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">nickName</span></p>
-<p>返回：无</p>
-<p>监听：NickNameUpdate, 返回&nbsp;&nbsp;{userRoomId:&nbsp;<span style="color: rgb(102,217,239);">string</span>, <span style="color: rgb(0,0,0);">userId</span><span style="color: rgb(249,38,114);">:</span>&nbsp;&nbsp;<span style="color: rgb(102,217,239);">string</span>,&nbsp;nickName<span style="color: rgb(249,38,114);">:</span>&nbsp;<span style="color: rgb(102,217,239);">string</span>}</p>
-<h3><span style="color: rgb(0,51,102);">enableStreamStat()</span></h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.</span><span style="color: rgb(0,51,102);">enableStreamStat</span><span style="color: rgb(0,0,0);">(isStat, intervalSec)</span></p>
-<p><span style="color: rgb(0,0,0);">说明： 监控接口</span></p>
-<p><span style="color: rgb(0,0,0);">参数：</span></p>
+<td>context</td>
+<td>Android 上下文，内部会转为 ApplicationContext 用于系统 API 调用</td></tr></tbody></table>
+<p><strong>返回</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JRTCBase 实例</p>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可以调用 destroySharedInstance 销毁单例对象</p>
+<h3>setNetListener()</h3>
+<p>void setNetListener(JRTCNetListener listener)</p>
+<p>设置网络状态回调接口 JRTCNetListener，用户获得来自JRTC 信令服务器网络状态通知</p>
 <p><br /></p>
-<table class="relative-table wrapped" style="width: 22.3699%;"><colgroup><col /><col /><col /></colgroup>
+<h3>setStatsListener()</h3>
+<p>void setStatsListener(JRTCStatsListener listener)</p>
+<p>设置统计信息回调接口JRTCStatsListener, 来获取发布和订阅的流的状态信息</p>
+<h2>2.房间相关接口函数</h2>
+<h3>init()</h3>
+<p>void init()</p>
+<p><span style="color: rgb(92,99,112);">初始化接口，</span><span style="color: rgb(92,99,112);">用于启动native sdk</span></p>
+<h3>enterRoom()</h3>
+<p>void enterRoom(JRTCJoinRoomInfo info, JRTCRoomListener listener)</p>
+<p>进入房间，成功会收到 <span style="color: rgb(92,99,112);">JRTRoomCListener</span>::onEnterRoom</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th>
-<th colspan="1">类型</th></tr>
+<th><br /></th></tr>
 <tr>
-<td>isStat</td>
-<td colspan="1">是否开启监控</td>
-<td colspan="1">boolean</td></tr>
+<td>joinroomInfo</td>
+<td>
+<p>JRTCJoinRoomInfo{</p>
+<pre><span style="color: rgb(92,99,112);">ver : 1.0</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">roomId : 1044</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">peerId : 107330</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">nickName : zhanghao274</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">appId : 9f3440230172c69b5e01b1ad1ea7c6c7</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">token : NGVTSUUwYlBIdTV5TnZweWVvaTZWaXFEdUNKU1lnVmhtYmdUVUkrUlB1WT0_</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">userId : 6fKFbW0B</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">nonce : ak-12a1521482145</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">timestamp : 1625220102000</span><span style="color: rgb(92,99,112);"><br /></span><span style="color: rgb(92,99,112);">roomType : 2 </span></pre>
+<pre>recordFileName : fileName</pre>
+<p>liveStreamName <span style="color: rgb(92,99,112);">: </span>livestreamName</p>
+<p>}</p>
+<p><br /></p>
+<p><ac:link><ri:page ri:content-title="用户token计算" /></ac:link></p></td></tr>
 <tr>
-<td colspan="1">interValSec</td>
-<td colspan="1">几秒获取一次监控信息</td>
-<td colspan="1">number</td></tr></tbody></table>
-<p><span style="color: rgb(0,0,0);">返回：{&nbsp;</span><span>JRTCNetStats,&nbsp;</span>JRTCLocalStreamStats,&nbsp;JRTCRemoteStreamStats&nbsp;<span style="color: rgb(0,0,0);">}</span></p>
-<table class="relative-table wrapped" style="width: 38.5936%;"><colgroup><col style="width: 20.6897%;" /><col style="width: 26.1494%;" /><col style="width: 53.1609%;" /></colgroup>
+<td>listener</td>
+<td>设置回调接口 JRTCRoomListener，用户获得来自JRTC的各种状态通知</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 不管进房是否成功，enterRoom必须与exitRoom配对使用，在调用exitRoom前在此调用enterRoom函数会导致不可预期的错误问题</p>
+<h3>exitRoom()</h3>
+<p>void exitRoom()</p>
+<p>退出房间</p>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 调用 exitRoom() 接口会执行退出房间的相关逻辑，例如释放音视频设备资源和编解码器资源等。 待资源释放完毕，SDK 会通过JTRTListener::onExitRoom() 回调通知到您。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果您要再次调用 enterRoom() 或者切换到其他的音视频 SDK，请等待 onExitRoom() 回调到来之后再执行相关操作。 否则可能会遇到摄像头或麦克风被占用等各种异常问题，例如常见的 Android 媒体音量和通话音量切换问题等等。</p>
+<p><br /></p>
+<h2>3.视频相关接口函数</h2>
+<h3>setVideoEncodingParam()</h3>
+<p>void setVideoEncodingParam( Resolution.Type resolution, Fps.Type fps)</p>
+<p>设置发布的视频参数</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th>
-<th colspan="1">类型</th></tr>
+<th><br /></th></tr>
 <tr>
-<td>JRTCNetStats</td>
-<td colspan="1">
-<p>基本信息：</p></td>
-<td colspan="1">
-<p>{</p>
-<p>localIp：XX，</p>
-<p>serverIp： XX</p>
-<p>}</p></td></tr>
-<tr>
-<td colspan="1">JRTCLocalStreamStats</td>
-<td colspan="1">本地流信息</td>
-<td colspan="1">
-<p>{</p>
-<p><span style="color: rgb(0,0,0);">userId</span>: XX,</p>
-<p>streamId: XX,</p>
-<p>kind: XX,</p>
-<p>rtt: XX,</p>
-<p>netLoss: XX,</p>
-<p>frameWidth: XX,</p>
-<p>frameHeight: XX,</p>
-<p>fps: XX</p>
-<p>}</p></td></tr>
-<tr>
-<td colspan="1">JRTCRemoteStreamStats&nbsp;</td>
-<td colspan="1">远端流信息</td>
-<td colspan="1">
-<p>{</p>
-<p><span style="color: rgb(0,0,0);">userId</span>: XX,</p>
-<p>streamId: XX,</p>
-<p>kind: XX,</p>
-<p>jitterBufferDelay: XX,</p>
-<p>netLoss: XX,</p>
-<p>frameWidth: XX,</p>
-<p>frameHeight: XX,</p>
-<p>fps: XX</p>
-<p>}</p></td></tr></tbody></table>
-<h3><span style="color: rgb(0,51,102);"><br />getFixedAudioConsumers</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JRTCRoom.</span><span style="color: rgb(0,51,102);">getFixedAudioConsumers</span><span style="color: rgb(0,0,0);">()</span></p>
-<p>说明：如果房间为大房间，可获取大房间固定音频， 可自行订阅</p>
-<p>参数：&nbsp;<span style="color: rgb(0,0,0);">无</span></p>
-<p>返回：fixedAudioConsumerList</p>
-<p>fixedAudioConsumerList：</p>
-<table class="relative-table wrapped" style="width: 19.6567%;"><colgroup><col style="width: 43.2203%;" /><col style="width: 56.7797%;" /></colgroup>
+<td>JRTCEncodeParams</td>
+<td>
+<p>resolution&nbsp;&nbsp;&nbsp; 分辨率:</p>
+<p>JRTC_VIDEO_RESOLUTION_360P</p>
+<p>JRTC_VIDEO_RESOLUTION_720P</p>
+<p>JRTC_VIDEO_RESOLUTION_1080P</p>
+<p><br /></p>
+<p>fps&nbsp;&nbsp; 帧率</p>
+<p>JRTC_VIDEO_FPS_15</p>
+<p>JRTC_VIDEO_FPS_20</p>
+<p>JRTC_VIDEO_FPS_25</p>
+<p>JRTC_VIDEO_FPS_30</p></td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 此接口需要在startLocalPreview之前调用</p>
+<p><br /></p>
+<h3>startLocalPreview()</h3>
+<p>void startLocalPreview( JRTCVideoView view )</p>
+<p>开启本地视频的预览画面，并且当用户成功进入房间后会自动进行发布</p>
+<p><br /></p>
+<h3>stopLocalPreview()</h3>
+<p>void stopLocalPreview()</p>
+<p>停止本地视频采集和预览，并停止发布</p>
+<p><br /></p>
+<h3>startRemoteView()</h3>
+<p>void startRemoteVIew(int peerId, String streamId, JRTCVideoVIew view)</p>
+<p>开始置顶远端用户视频画面，并显示在指定的JRTCVideoView上</p>
+<p>用户成功进入房间后会收到<span style="color: rgb(92,99,112);">JRTRoomCListener</span>::onUserVIdeoAvailable()回调通知，该通知表示远端用户发布/取消了一条视频流，这个回调会带有远端用户的peerid以及发布的流streamid</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
+<tr>
+<td>peerId</td>
+<td>远端用户的peerId</td></tr>
 <tr>
 <td>streamId</td>
-<td colspan="1">流ID</td></tr>
+<td>远端用户的streamId</td></tr>
 <tr>
-<td colspan="1">kind</td>
-<td colspan="1">媒体类型</td></tr>
-<tr>
-<td>track</td>
-<td colspan="1">音频track</td></tr></tbody></table>
-<h3><span style="color: rgb(0,51,102);">会控相关接口</span></h3>
-<h4><span style="color: rgb(0,51,102);">removePeer</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">removePeer<span>(<span style="color: rgb(0,0,0);">userId</span>, appData)</span></span></p>
-<p>说明：移除指定用户</p>
-<p>参数说明：</p>
-<table class="relative-table wrapped" style="width: 29.9003%;"><colgroup><col style="width: 22.449%;" /><col style="width: 26.1596%;" /><col style="width: 18.3673%;" /><col style="width: 33.0241%;" /></colgroup>
+<td>view</td>
+<td>指定显示远端用户视频画面的view</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 每一个JRTCVideoView需要绑定到一个远端用户，不可以重复绑定，所以如果需要显示一个新的远端用户，JRTCVideoView需要重新创建</p>
+<p><br /></p>
+<h3>stopRemoteView()</h3>
+<p>void stopRemoteView(int peerId, String streamId)</p>
+<p>停止显示远端用户视频画面，同时不再拉取该远端用户的视频流数据</p>
+<p>调用此接口后SDK会停止接受远端用户的视频流，同时会清理相关的视频显示资源</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">类型</th>
-<th colspan="1">是否必须</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">string</td>
-<td colspan="1">Y</td>
-<td colspan="1">移除目标用户ID</td></tr>
+<td>peerid</td>
+<td>远端用户id</td></tr>
 <tr>
-<td colspan="1">
-<pre>appData</pre></td>
-<td colspan="1">Object</td>
-<td colspan="1">N 默认为 {}</td>
-<td colspan="1">自定义参数</td></tr></tbody></table>
-<h4><span style="color: rgb(0,51,102);">muteAudio</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">muteAudio({<span style="color: rgb(0,0,0);">userId</span><span>, appData}</span>)</span></p>
-<p>说明：广播 房间内全局静音/指定用户静音</p>
-<p>参数说明：</p>
-<table class="relative-table wrapped" style="width: 40.1993%;"><colgroup><col style="width: 16.6897%;" /><col style="width: 19.4483%;" /><col style="width: 13.6552%;" /><col style="width: 50.2069%;" /></colgroup>
+<td>streamId</td>
+<td>远端用户发布的流</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在startRemoteView传入的JRTCVideoView，在调用stopRemoteView后，SDK会进行资源释放并销毁，外部不需要再次销毁</p>
+<p><br /></p>
+<h3>muteLocalVideo()</h3>
+<p>void muteLocalVideo(boolean mute)</p>
+<p>暂停/恢复推送本地的视频数据</p>
+<p>当暂停推送本地视频后，房间里的其他成员将会收到 onUserVideoMute(streamId, false)回调通知</p>
+<p>当恢复推送本地视频后，房间里的其他成员将会收到 onUserVideoMute(streamId, true)回调通知</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">类型</th>
-<th colspan="1">是否必须</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">string</td>
-<td colspan="1">N</td>
-<td colspan="1">目标用户ID，如果传入<span style="color: rgb(0,0,0);">userId</span>则为指定用户操作，不传则是对房间全局操作</td></tr>
-<tr>
-<td colspan="1">
-<pre>appData</pre></td>
-<td colspan="1">Object</td>
-<td colspan="1">N 默认为 {}</td>
-<td colspan="1">自定义参数</td></tr></tbody></table>
-<h4><span style="color: rgb(0,51,102);">closeVideo</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">closeVideo()</span></p>
-<p>说明：广播 房间内全局关闭视频/关闭指定用户视频</p>
-<p>参数说明：同muteAudio</p>
-<h4><span style="color: rgb(0,51,102);">forbidChat</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">forbidChat(appData)</span></p>
-<p>说明：广播房间禁言</p>
-<p>参数说明：</p>
-<table class="relative-table wrapped" style="width: 40.1993%;"><colgroup><col style="width: 16.6897%;" /><col style="width: 19.4483%;" /><col style="width: 13.6552%;" /><col style="width: 50.2069%;" /></colgroup>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果当前用户没有发布视频，调用此函数会返回false(失败)</p>
+<p><br /></p>
+<h3>muteRemoteVideoStream()</h3>
+<p>void muteRemoteVIdeoStream(String streamId, boolean mute)</p>
+<p>暂停/恢复 接收远端的视频数据</p>
+<p>该接口仅暂停/恢复接受指定的远端用户的视频流，但并不释放显示资源，所以如果暂停，视频画面会冻屏在mute前的最后一帧</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">类型</th>
-<th colspan="1">是否必须</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">
-<pre>appData</pre></td>
-<td colspan="1">Object</td>
-<td colspan="1">N 默认为 {}</td>
-<td colspan="1">自定义参数</td></tr></tbody></table>
-<h4><span style="color: rgb(0,51,102);">unForbidChat</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">unForbidChat()</span></p>
-<p>说明：广播房间解除禁言</p>
-<p>参数：同forbidChat</p>
-<h4><span style="color: rgb(0,51,102);">customSignal</span></h4>
-<p>JRTCRoom.<span style="color: rgb(0,51,102);">customSignal()</span></p>
-<p>说明：广播用户自定义信令</p>
-<p>参数说明：</p>
-<table class="relative-table wrapped" style="width: 40.1993%;"><colgroup><col style="width: 16.6897%;" /><col style="width: 19.4483%;" /><col style="width: 13.6552%;" /><col style="width: 50.2069%;" /></colgroup>
+<td>streamid</td>
+<td>远端用户的流id</td></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><br /></p>
+<h3>muteAllRemoteVideoStream()</h3>
+<p>void muteAllRemoteVideoStream(boolean mute)</p>
+<p>暂停/恢复 全部的远端视频数据</p>
+<p>该接口 暂停全部的远端用户的视频流，但并不释放显示资源，所以如果暂停，视频画面会冻屏在mute前的最后一帧</p>
+<table class="wrapped">
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">类型</th>
-<th colspan="1">是否必须</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td>eventName</td>
-<td colspan="1">string</td>
-<td colspan="1">Y</td>
-<td colspan="1">自定义信令名称</td></tr>
-<tr>
-<td colspan="1"><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);">userId</span><br /></span></td>
-<td colspan="1">string</td>
-<td colspan="1">N</td>
-<td colspan="1">目标用户ID</td></tr>
-<tr>
-<td colspan="1">
-<pre>appData</pre></td>
-<td colspan="1">Object</td>
-<td colspan="1">N 默认为 {}</td>
-<td colspan="1">自定义参数</td></tr></tbody></table>
-<p><br /><br /></p>
-<h3>JRTCRoom房间内消息监听</h3>
-<h4>UserJoinedRoom</h4>
-<p>JRTCRoom.on('UserJoinRoom',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：加入房间</p>
-<h4>UserLeavedRoom</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('UserLeaveRoom',</span><span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})&nbsp;</span><span style="color: rgb(0,51,102);">=&gt;&nbsp;{</span><span style="color: rgb(0,51,102);">})</span></p>
-<p>说明：离开房间</p>
-<h4>NickNameUpdated</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('NickNameUpdate',&nbsp;</span><span style="color: rgb(0,51,102);">(data:&nbsp;{userRoomId:&nbsp;string, <span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;<span style="color: rgb(0,51,102);">=&gt;&nbsp;{</span><span style="color: rgb(0,51,102);">})</span></p>
-<p>说明：用户修改昵称</p>
-<h4>MessageRecived</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('MessageRecived',&nbsp;</span>(<span style="color: rgb(0,51,102);">data</span><span style="color: rgb(249,38,114);">:</span>&nbsp;{<span style="color: rgb(0,0,0);">userId</span>: string, nickName: string, msg<span style="color: rgb(249,38,114);">:</span>&nbsp;&nbsp;<span style="color: rgb(0,51,102);">string</span>})&nbsp;<span style="color: rgb(0,51,102);">=&gt;&nbsp;{</span><span style="color: rgb(0,51,102);">})</span></p>
-<p>说明：有成员发送消息时</p>
-<table class="relative-table wrapped" style="width: 21.7608%;"><colgroup><col style="width: 26.5306%;" /><col style="width: 73.4694%;" /></colgroup>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><br /></p>
+<h2>4.音频相关接口函数</h2>
+<h3>startLocalAudio()</h3>
+<p>void startLocalAudio()</p>
+<p>开启本地音频的采集和上行</p>
+<h3>stopLocalAudio()</h3>
+<p>void stopLocalAudio()</p>
+<p>关闭本地音频采集和上行</p>
+<h3>startRemoteAudio()</h3>
+<p>void startRemoteAudio(int peerId, String streamId)</p>
+<p>订阅远端用户发布的音频流</p>
+<p>用户成功进入房间后会收到<span style="color: rgb(92,99,112);">JRTRoomCListener</span>::onUserAudioAvailable()回调通知，该通知表示远端用户发布/取消了一条音频流，这个回调会带有远端用户的peerid以及发布的流streamid</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">发送者id</td></tr>
+<td>peerid</td>
+<td>远端用户id</td></tr>
 <tr>
-<td colspan="1">nickName</td>
-<td colspan="1">发送者昵称</td></tr>
+<td>streamid</td>
+<td>远端用户发布的流</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 远端用户发布的视频流与音频流ID并不相同，不可以通过此接口去订阅一条视频流</p>
+<h3>stopRemoteAudio()</h3>
+<p>void stopRemoteAudio(int peerId, String streamId)</p>
+<p>停止订阅远端用户发布的音频流</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerid</td>
+<td>远端用户id</td></tr>
+<tr>
+<td>streamid</td>
+<td>远端用户发布的流</td></tr></tbody></table>
+<p><br /></p>
+<h3>muteLocalAudio()</h3>
+<p>void muteLocalAudio(boolean mute)</p>
+<p>暂停/恢复 推送本地音频数据</p>
+<p>当暂停推送本地视频后，房间里的其他成员将会收到 onUserAudioMute(streamId, false)回调通知</p>
+<p>当恢复推送本地视频后，房间里的其他成员将会收到 onUserAudioMute(streamId, true)回调通知</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><strong>注意</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果当前用户没有发布音频，调用此函数会返回false(失败)</p>
+<p><br /></p>
+<h3>muteRemoteAudioStream()</h3>
+<p>void muteRemoteAudioStream(String streamId, boolean mute)</p>
+<p>暂停/恢复 接收远端的音频数据</p>
+<p>该接口仅暂停/恢复接受指定的远端用户的音频流，但并不释放显示资源</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>streamId</td>
+<td>远端用户的流id</td></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><strong><br /></strong></p>
+<h3>muteAllRemoteAudioStream()</h3>
+<p>void muteAllRemoteAudioStream(boolean mute)</p>
+<p>暂停/恢复 全部的远端音频数据</p>
+<p>该接口 暂停全部的远端用户的音频流</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><br /></p>
+<h2>5.摄像头相关接口函数</h2>
+<h3>switchCamera()</h3>
+<p>void switchCamera()</p>
+<p>切换前后摄像头</p>
+<h2>6.自定义采集和渲染</h2>
+<h3>setLocalVideoFrameListener()</h3>
+<p>void setLocalVIdeoFrameListener( JRTCLocalVideoFrameListener listener)</p>
+<p>设置视频帧数据的原始数据监听，通过此监听可以修改采集到的帧数据，之后做编码及预览的数据都以此接口处理过的最终数据为准</p>
+<p><br /></p>
+<h2>7.用户相关操作</h2>
+<h3>changeNickName()</h3>
+<p>void checkNickName(String nickname)</p>
+<p>修改当前用户的昵称</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>nickname</td>
+<td>要修改的用户昵称</td></tr></tbody></table>
+<p><br /></p>
+<h2>8.消息</h2>
+<h3>sendMessage()</h3>
+<p>void sendMessage(Message msg, JRTCSendMessageListener listener)</p>
+<p>发送消息</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
 <tr>
 <td>msg</td>
-<td colspan="1">消息体</td></tr></tbody></table>
-<h4>StreamPublished<span style="color: rgb(0,51,102);"><br /></span></h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('StreamPublished',&nbsp;(streamsInfo:&nbsp;streamInfo[])&nbsp;=&gt;&nbsp;{</span></p>
-<p><span style="color: rgb(0,51,102);">&nbsp; &nbsp; &nbsp; let&nbsp;streamIds&nbsp;=&nbsp;streamInfos.map(streamInfo&nbsp;=&gt;&nbsp;streamInfo.streamId);</span></p>
-<p><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('StreamPublished',&nbsp;streamIds)</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JRTCRoom.subscribeStreams(streamIds) // 可选择订阅</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;})</span></p>
-<p>说明：有新流发布</p>
-<p><span style="color: rgb(0,51,102);">streamsInfo:,已发布流数组&nbsp;streamInfo[]:&nbsp;streamInfo信息如下:<br /></span></p>
-<table class="relative-table wrapped" style="width: 30.5094%;"><colgroup><col style="width: 16.0%;" /><col style="width: 84.0%;" /></colgroup>
+<td>
+<p>Message{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integer targetId;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要发送的目标ID(如果为null,则直接向房间内发送；不为null，指定发送给某一用户)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ConversationType type;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要发送到的回话类型:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.RTC_ROOM(直播间消息,需要进入会议房间后才可以发送成功)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.BROADCAST(消息大厅全局广播)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.BROADCAST_SINGLE(消息大厅单聊，在消息大厅中发送给某一个人)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MessageContent content;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要发送的内容,目前只支持文本消息TextMessage</p>
+<p>}</p></td></tr>
+<tr>
+<td>listener</td>
+<td>
+<p>发送成功/失败回调</p>
+<p>JRTCSendMessageListener{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; void onSuccess(Message message); 消息发送成功</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; viod onError(Message message, int errorCode);消息发送失败</p>
+<p>}</p></td></tr></tbody></table>
+<p>样例:</p>
+<p>TextMessage textMessage = TextMessage.obtain(&quot;test message&quot;);</p>
+<p>ConversationType type = ConversationType.RTC_ROOM;</p>
+<p>Message message = Message.obtain(targetId,&nbsp; type, textMessage);</p>
+<p>jcloud.sendMessage(message, new JRTCSendMessageListener() {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onSuccess(Message message){}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onError(Message message, int errorCode){}</p>
+<p>})</p>
+<h3>initBroadcast()</h3>
+<p>void initBroadcast(int peerId, String nickName)</p>
+<p>初始化消息大厅</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">用户Id</td></tr>
+<td>peerId</td>
+<td>用户id</td></tr>
 <tr>
-<td colspan="1">streamId</td>
-<td colspan="1">流ID</td></tr>
-<tr>
-<td>kind</td>
-<td colspan="1">流类型</td></tr>
-<tr>
-<td colspan="1">streamName</td>
-<td colspan="1">流名称</td></tr></tbody></table>
-<h4>StreamUnpublished</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('StreamUnpublished',&nbsp;(streamInfo: StreamInfo)&nbsp;=&gt;&nbsp;{</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('StreamUnpulished',&nbsp;streamInfo)&nbsp;// 返回取消发布的流信息</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;})</span></p>
-<p><span style="color: rgb(0,51,102);">说明：当有成员取消音频或视频发布时</span></p>
-<p><span style="color: rgb(0,51,102);">StreamInfo:&nbsp;<br /></span></p>
-<table class="relative-table wrapped" style="width: 30.5094%;"><colgroup><col style="width: 16.0%;" /><col style="width: 84.0%;" /></colgroup>
-<tbody>
-<tr>
-<th>参数</th>
-<th colspan="1">说明</th></tr>
-<tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">用户Id</td></tr>
-<tr>
-<td colspan="1">streamId</td>
-<td colspan="1">流ID</td></tr>
-<tr>
-<td>kind</td>
-<td colspan="1">流类型</td></tr></tbody></table>
-<h4><br />StreamPaused</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('StreamPaused',&nbsp;(streamInfo: StreamInfo)&nbsp;=&gt;&nbsp;{</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('StreamPaused',&nbsp;streamInfo)&nbsp;//&nbsp;// 返回目标消费信息</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;})</span></p>
-<p><span style="color: rgb(0,51,102);">说明：当有成员暂停音频或视频发布时，返回StreamInfo信息如下</span></p>
+<td>nickName</td>
+<td>昵称</td></tr></tbody></table>
 <p><br /></p>
-<table class="relative-table wrapped" style="width: 21.5393%;"><colgroup><col style="width: 35.8247%;" /><col style="width: 64.1753%;" /></colgroup>
+<h3>setReceiveMessageListener()</h3>
+<p>void setReceiveMessageListener(JRTCReceiveMessageListener listener)</p>
+<p>设置消息监听,服务器下发了消息</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">userRoomId</td>
-<td colspan="1">房间ID</td></tr>
-<tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">暂停流发布 用户Id</td></tr>
-<tr>
-<td colspan="1">streamId</td>
-<td colspan="1">流ID</td></tr>
-<tr>
-<td>kind</td>
-<td colspan="1">流类型</td></tr></tbody></table>
-<h4><br />StreamResumed</h4>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('StreamResumed',&nbsp;(streamInfo: StreamInfo)&nbsp;=&gt;&nbsp;{</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('StreamResumed',&nbsp;streamInfo)&nbsp;// 返回目标消费信息</span><br /><span style="color: rgb(0,51,102);">&nbsp;&nbsp;&nbsp;&nbsp;})</span></p>
-<p><span style="color: rgb(0,51,102);">说明：当有成员恢复音频或视频发布时，返回StreamInfo信息如下</span></p>
+<td>listener</td>
+<td>
+<p>JRTCReceiveMessageListener{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; void onReceived(Message message);</p>
+<p>}</p></td></tr></tbody></table>
+<p>样例:</p>
+<p>jrtcCloud.setReceiveMessageListener(new JRTCReceiveMessageListener()&nbsp; {</p>
+<p>&nbsp;&nbsp;&nbsp; public void onReceived(Message message){</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UserInfo sendInfo = message.getContent().getUserInfo;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(sendInfo != null){</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int peerId = sendInfo.getPeerId();&nbsp;&nbsp;&nbsp;&nbsp; //发送者的peerId</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String nickName = sendInfo.getNickName();//&nbsp; 发送者的昵称</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(message.getContent() instanceOf TextMessage){</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String msg = ((TextMessage)message.getContent).getContent(); //发送内容</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ConversationType type = message.getConversationType();&nbsp; // 会话类型</p>
+<p>&nbsp;&nbsp;&nbsp; }</p>
+<p>});</p>
 <p><br /></p>
-<table class="relative-table wrapped" style="width: 21.5393%;"><colgroup><col /><col /></colgroup>
+<h2>9.控制</h2>
+<h3>sendControlSignal()</h3>
+<p>void sendControlSignal(Control control)</p>
+<p>发送控制信令</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1"><span>userRoomId</span></td>
-<td colspan="1">房间ID</td></tr>
-<tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">暂停流发布 用户Id</td></tr>
-<tr>
-<td colspan="1">streamId</td>
-<td colspan="1">流ID</td></tr>
-<tr>
-<td>kind</td>
-<td colspan="1">流类型</td></tr></tbody></table>
-<h4><span style="color: rgb(0,51,102);"><br />会控相关监听</span></h4>
-<p><span style="color: rgb(0,51,102);font-weight: 600;letter-spacing: 0.0px;"><br />UserRemoved</span></p>
-<p>JRTCRoom.on('<span style="color: rgb(0,51,102);">UserRemoved</span>',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：某个用户被移出房间</p>
-<p>返回参数 data:&nbsp;</p>
-<table class="relative-table wrapped" style="width: 30.5094%;"><colgroup><col /><col /></colgroup>
+<td>Control</td>
+<td>
+<p>Control{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integer targetId;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要发送的目标ID(如果为null,则直接向房间内发送；不为null，指定发送给某一用户)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ControlType type;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要发送到的控制类型:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.MUTE_AUDIO_PEER(静音某一个人)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.MUTE_AUDIO_ROOM(静音广播)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.UNMUTE_AUDIO_PEER(解除静音)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.UNMUTE_AUDIO_ROOM(解除静音房间)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.CUSTOM(自定义)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ControlContent content;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于自定义信令 CUSTOM</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.event 自定义控制事件</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.eventData 自定义内容</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.UserInfo 发送人信息</p>
+<p>}</p></td></tr></tbody></table>
+<p><br /></p>
+<h3>sendReceiveControlListener()</h3>
+<p>void sendReceiveControlListener(JRTCReceiveControlListrener listener)</p>
+<p>接收控制信令</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">
-<p>userRoomId</p></td>
-<td colspan="1">userRoomId</td></tr>
-<tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">发送者 用户Id</td></tr>
-<tr>
-<td colspan="1">nickName</td>
-<td colspan="1">发送者 用户昵称</td></tr>
-<tr>
-<td>appData</td>
-<td colspan="1">用户自定义参数</td></tr></tbody></table>
-<h5><span style="color: rgb(0,51,102);">AudioMuted</span></h5>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('<span style="color: rgb(0,51,102);">AudioMuted</span><span style="color: rgb(23,43,77);font-weight: 400;letter-spacing: 0.0px;">',</span><span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span><span style="color: rgb(23,43,77);font-weight: 400;letter-spacing: 0.0px;">&nbsp;=&gt;&nbsp;{</span></span>})</p>
-<p>说明：某个用户被静音</p>
-<p>返回参数 data:&nbsp;</p>
-<table class="relative-table wrapped" style="width: 30.5094%;"><colgroup><col /><col /></colgroup>
+<td>listener</td>
+<td>
+<pre><span style="color: rgb(198,120,221);">public interface </span><span style="color: rgb(229,192,123);">JRTCReceiveControlListener </span><span style="color: rgb(209,154,102);">{<br /></span><span style="color: rgb(209,154,102);"> </span><span style="color: rgb(198,120,221);">void </span><span style="color: rgb(97,175,239);">onReceived</span><span style="color: rgb(209,154,102);">(</span><span style="color: rgb(198,120,221);">final </span><span style="color: rgb(229,192,123);">Control </span><span style="color: rgb(209,154,102);">control)</span>;<br /><span style="color: rgb(209,154,102);">}</span></pre></td></tr></tbody></table>
+<p><br /></p>
+<p><br /></p>
+<h1>JRTCRoomListener</h1>
+<p>房间内的状态监听，其回调调用都是在MainThread之中，您可以直接在回调中 操作UI</p>
+<h2>onError()</h2>
+<p>void onError(int errorCode, String msg, Bundle bundle)</p>
+<p>调用jrtc接口收到的错误码</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">
-<p>userRoomId</p></td>
-<td colspan="1">userRoomId</td></tr>
+<td>errorCode</td>
+<td>错误码</td></tr>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">发送者 用户Id</td></tr>
+<td>msg</td>
+<td>错误描述</td></tr>
 <tr>
-<td colspan="1">nickName</td>
-<td colspan="1">发送者 用户昵称</td></tr>
-<tr>
-<td>appData</td>
-<td colspan="1">用户自定义参数</td></tr></tbody></table>
-<h5><span style="color: rgb(0,51,102);">RoomAudioMuted</span></h5>
-<p>JRTCRoom.on('<span style="color: rgb(0,51,102);">RoomAudioMuted</span>',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：房间被静音</p>
-<p>返回参数 data:&nbsp; 同上</p>
-<p><span style="color: rgb(0,51,102);font-weight: 600;letter-spacing: 0.0px;"><br />VideoClosed</span></p>
-<p>JRTCRoom.on('<span style="color: rgb(0,51,102);">VideoClosed</span>',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：某个用户视频被关闭</p>
-<p>返回参数 data:&nbsp; 同上</p>
-<p><span style="color: rgb(0,51,102);font-weight: 600;letter-spacing: 0.0px;"><br />RoomVideoClosed</span></p>
-<p>JRTCRoom.on('<span style="color: rgb(0,51,102);">RoomVideoClosed</span>',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：房间被关闭所有视频</p>
-<p>返回参数 data:&nbsp; 同上</p>
-<p><span style="color: rgb(0,51,102);font-weight: 600;letter-spacing: 0.0px;"><br />RoomChatForbidden</span></p>
-<p>JRTCRoom.on('<span style="color: rgb(0,51,102);">RoomChatForbidden</span>',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：房间禁止所有文字聊天</p>
-<p>返回参数 data:&nbsp; 同上</p>
-<h5><span style="color: rgb(0,51,102);">RoomChatUnForbidden</span></h5>
-<p><span style="color: rgb(0,51,102);">JRTCRoom.on('<span style="color: rgb(0,51,102);">RoomChatForbidden</span><span style="color: rgb(0,51,102);">losed</span><span style="color: rgb(23,43,77);font-weight: 400;letter-spacing: 0.0px;">',</span><span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string})</span><span style="color: rgb(23,43,77);font-weight: 400;letter-spacing: 0.0px;">&nbsp;=&gt;&nbsp;{})</span></span></p>
-<p>说明：房间取消禁言</p>
-<p>返回参数 data:&nbsp; 同上</p>
-<h5><span style="color: rgb(0,51,102);">SignalCustom</span></h5>
-<p>JRTCRoom.on('SignalCustom',<span style="color: rgb(0,51,102);">&nbsp;(data:&nbsp;{<span style="color: rgb(0,0,0);">userId</span>:&nbsp;&nbsp;string,&nbsp;nickName:&nbsp;string, eventName})</span>&nbsp;=&gt;&nbsp;{})</p>
-<p>说明：用户自定义信令</p>
-<p>返回参数data:</p>
-<table class="relative-table wrapped" style="width: 30.5094%;"><colgroup><col /><col /></colgroup>
+<td>bundle</td>
+<td>extraInfo(不需要为null)</td></tr></tbody></table>
+<h2>onEnterRoom()</h2>
+<p>void onEnterRoom(PeersInfo info)</p>
+<p>当用户成功加入房间后会收到这个回调</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
 <th>参数</th>
-<th colspan="1">说明</th></tr>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">
-<p>userRoomId</p></td>
-<td colspan="1">userRoomId</td></tr>
+<td>PeersInfo</td>
+<td>
+<p>当前房间已经存在的用户列表，表示每一个远端用户的peerId以及nickname</p></td></tr></tbody></table>
+<p><strong><br /></strong></p>
+<h2>onExitRoom()</h2>
+<p>void onExitRoom()</p>
+<p>当用户调用exitRoom后收到的回调</p>
+<p>调用exitRoom会执行退出房间的相关逻辑，例如释放音视频设备资源和编码器资源等</p>
+<p>待资源释放完毕，SDK会通过onExitRoom回调通知</p>
+<p>如果您要在此调用enterRoom()获取切换到其他音视频sdk，请等待onExitRoom回调到来之后再执行相关操作</p>
+<p>否则会遇到音视频设备被占用等各种异常问题</p>
+<h2>onRemoteUserEnterRoom()</h2>
+<p>void onRemoteUserEnterRoom(int peerId, String nickname)</p>
+<p>远端用户加入房间的监听</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
 <tr>
-<td><span style="color: rgb(0,0,0);">userId</span></td>
-<td colspan="1">发送者 用户Id</td></tr>
+<th>参数</th>
+<th><br /></th></tr>
 <tr>
-<td colspan="1">nickName</td>
-<td colspan="1">发送者 用户昵称</td></tr>
+<td>peerid</td>
+<td>远端用户id</td></tr>
 <tr>
-<td>appData</td>
-<td colspan="1">用户自定义参数，</td></tr>
+<td>nickname</td>
+<td>远端用户nickname</td></tr></tbody></table>
+<h2>onRemoteLeaveRoom()</h2>
+<p>void onRemoteLeaveRoom(int peerId, int reason);</p>
+<p>远端用户离开当前房间的监听</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
 <tr>
-<td colspan="1">eventName</td>
-<td colspan="1">自定义信令名称</td></tr></tbody></table>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerid</td>
+<td>远端用户的id</td></tr>
+<tr>
+<td>reason</td>
+<td>被踢原因(目前暂未实现)</td></tr></tbody></table>
+<p><br /></p>
+<h2>onUserVideoAvailable()</h2>
+<p>void onUserVIdeoAvailable(int peerId, String streamId, String streamName, boolean available)</p>
+<p>远端用户是否发布/取消发布了一条视频流</p>
+<p>当您收到onUserVIdeoAvailable(streamId, true)通知时，表示远端用户发布了一条视频流</p>
+<p>此时，您需要通过调用JRTCBase::startRemoteView接口来订阅该用户的远程画面</p>
+<p>当您收到onUserVIdeoAvailable(streamId, false)通知时，表示远端用户取消发布了一条视频流</p>
+<p>此时，如果您之前订阅过远端视频流，您需要将订阅时为该用户绑定的JRTCVideoView销毁即可</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerId</td>
+<td>远端用户id</td></tr>
+<tr>
+<td>streamId</td>
+<td>远端用户流id</td></tr>
+<tr>
+<td>streamName</td>
+<td>远端用户流name</td></tr>
+<tr>
+<td>available</td>
+<td>是否有效</td></tr></tbody></table>
+<p><br /></p>
+<h2>onUserAudioAvailable()</h2>
+<p>void onUserAudioAvailable(int peerId, String streamId, boolean available)</p>
+<p>远端用户是否存在可播放的音频数据</p>
+<p>当您收到onUserAudioAvailable(streamId, true)通知时，表示远端用户发布了一条音频流</p>
+<p>此时，您需要通过调用JRTCBase::startRemoteAudio接口来订阅该用户的远程画面</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerId</td>
+<td>远端用户id</td></tr>
+<tr>
+<td>streamId</td>
+<td>流id</td></tr>
+<tr>
+<td>available</td>
+<td>是否有效</td></tr></tbody></table>
+<p><br /></p>
+<h2>onUserVideoMute()</h2>
+<p>void onUserVIdeoMute(int peerId, String streamId, boolean mute)</p>
+<p>远端用户是否暂停的某一条视频流</p>
+<p>当您收到onUserVideoMute(streamId, false)通知时，表示远端用户暂停了一条视频流，不发数据，但是通路还在</p>
+<p>此时，如果您之前订阅过这条流，那么您绑定的JRTCVideoView会显示最后一帧画面</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerId</td>
+<td>远端用户id</td></tr>
+<tr>
+<td>streamId</td>
+<td>流id</td></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><br /></p>
+<h2>onUserAudioMute()</h2>
+<p>void onUserAudioMute(int peerId, String streamId, boolean mute)</p>
+<p>远端用户是否暂停了一条音频流</p>
+<p>当您收到onUserAudioMute(streamId, false)通知时，表示远端用户暂停了一条音频流，不发数据，但是通路还在</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>peerId</td>
+<td>远端用户id</td></tr>
+<tr>
+<td>streamId</td>
+<td>流id</td></tr>
+<tr>
+<td>mute</td>
+<td>true:暂停 false:恢复</td></tr></tbody></table>
+<p><br /></p>
+<h2>onFIrstVideoFrame()</h2>
+<p>void onFIrstVIdeoFrame(int peerId, String streamId)</p>
+<p>标识对应peer的对应视频流streamID已经渲染出了第一帧画面</p>
+<p><br /></p>
+<h2>onAudioVolume()</h2>
+<p>void onAudioVolume(List&lt;JRTCVolumeInfo&gt; jrtcVolumeInfos)</p>
+<p>房间内的发布的音频音量列表</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>JRTCVolumeInfo</td>
+<td>
+<p>JRTCVolumeInfo{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int peerId;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float volume; 音量范围0.0~1.0f</p>
+<p>}</p></td></tr></tbody></table>
+<p><br /></p>
+<h1>JRTCNetListener</h1>
+<h2>onConnectionRecovery()</h2>
+<p>恢复与服务器的连接</p>
+<h2>onConnectionLost()</h2>
+<p>失去与服务器的连接</p>
+<h2>onReConnecting()</h2>
+<p>正在与服务端重新连接</p>
+<p><br /></p>
+<h1>JRTCStatsListener</h1>
+<h2>onStats()</h2>
+<p>void onStats(String stats);</p>
+<p>回报统计信息</p>
+<p><br /></p>
+<h1>JRTCLocalVideoFrameListener</h1>
+<p>public interface JRTCLocalVIdeoFrameLIstener{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTCVideoFrame processVideoFrame(RTCVideoFrame videoFrame);</p>
+<p>}</p>
+<p>此监听为相机原始数据的监听</p>
+<table class="wrapped"><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th><br /></th></tr>
+<tr>
+<td>RTCVideoFrame</td>
+<td>
+<p>当前帧数据</p>
+<p>textureId:RGB类型的纹理</p>
+<p>width:宽</p>
+<p>height:高</p>
+<p>rotation:旋转</p>
+<p>timestamp:时间戳</p>
+<p>textureType:纹理类型(目前为RGB)</p></td></tr></tbody></table>
+<p>如果对当前的纹理做了处理，您需要将新的纹理id设置到入参的videoFrame之中，然后直接返回即可</p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
