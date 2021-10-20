@@ -86,6 +86,7 @@ public class CensorClientApplication {
     }
 }
 
+
 ```
 
 ### 异步图片审核调用
@@ -143,7 +144,7 @@ public class CensorClientApplication {
         //5. 处理响应（注意task code和error code非200的返回均需要进行异常处理）
         System.out.println(new Gson().toJson(response));	
     }
-}
+
 ```
 
 
@@ -198,4 +199,5 @@ public class CensorClientApplication {
         System.out.println(new Gson().toJson(response));
 	}
 }
+
 ```
