@@ -80,6 +80,7 @@ public class CensorClientApplication {
         System.out.println(new Gson().toJson(response));
     }
 }
+
 ```
 
 ### 
