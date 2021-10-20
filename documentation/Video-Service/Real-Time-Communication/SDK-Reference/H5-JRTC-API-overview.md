@@ -1,4 +1,3 @@
-<p>script标签引入jrtc.min.js</p>
 <h2>1.JRTCClient&nbsp;</h2>
 <h3><span style="color: rgb(0,0,0);"><strong>c</strong><strong>heckSystemRequirements</strong>()</span></h3>
 <p>const&nbsp;checkResult&nbsp;= JRTCClient.<span style="color: rgb(0,51,102);">checkSystemRequirements()</span></p>
