@@ -14,9 +14,9 @@
 ```
 <!-- 对应产品线的SDK -->
 <dependency>
-	<groupId>com.jdcloud.sdk</groupId>
-	<artifactId>vm</artifactId>
-	<version>1.2.0</version>
+ <groupId>com.jdcloud.sdk</groupId>
+ <artifactId>censor</artifactId>
+ <version>1.0.3</version>
 </dependency>
 ```
 
