@@ -46,8 +46,12 @@ b）推流地址
 三、 控制台更改及关闭功能
 
 1、 更改配置:开通状态下，可通过点击更改配置按钮弹出配置窗口进行配置更新。
+![image](https://user-images.githubusercontent.com/89631429/138056224-c7175a60-0f28-481c-8016-880840a22353.png)
+
 
 2、 关闭功能：开通状态下，可通过点击功能关闭按钮关闭本功能。功能关闭将导致业务流再无法推送，请谨慎操作。
+![image](https://user-images.githubusercontent.com/89631429/138056365-be40b9d1-8e88-4bbe-adb7-a6a1ea22cbe4.png)
+
 
 
 
