@@ -75,8 +75,6 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 
 完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。
 
->提示：目前导入镜像控制台操作入口为灰度开放，如需使用请提交工单申请。<br>
-
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step3.png" width="650"></div>
 
 * OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
