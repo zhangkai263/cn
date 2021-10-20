@@ -76,7 +76,7 @@
 <td>authModel</td>
 <td>JRTCEnterRoomAuthModel</td>
 <td>是</td>
-<td>authModel 初始化消息大厅必须的认证信息，由京东云控制台相关接口下发</td></tr></tbody></table>
+<td><span>加入房间必传的参数，携带加入房间必须的鉴权信息，authModel相关鉴权数据，由京东云控制台相关接口下发，其它数据由用户填写</span></td></tr></tbody></table>
 <p>7.开启/关闭 网络增强</p>
 <p>只能在进入房间前进行设置，不设置的话，默认为NO</p>
 <h3><code>enableNetWorkEnhance:</code></h3>
@@ -99,7 +99,7 @@
 <ul>
 <li>注意:只有处于未进入房间状态下，才能调用加入房间，否则调用无效。</li>
 <li>enterRoomModel 加入房间必传的参数，携带加入房间必须的鉴权信息，其中enterRoomModel中的authModel相关数据，由京东云控制台相关接口下发</li></ul>
-<h3><code>enterRoomWithEnterRoomModel:</code></h3>
+<h3><code>enterRoomWithEnterAuthModel:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -110,10 +110,12 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>enterRoomModel</td>
-<td>JRTCEnterRoomModel</td>
+<td>
+<p>authMode</p></td>
+<td>
+<p>JRTCEnterRoomAuthModel</p></td>
 <td>是</td>
-<td>enterRoomModel 加入房间必传的参数，携带加入房间必须的鉴权信息，其中enterRoomModel中的authModel相关数据，由京东云控制台相关接口下发</td></tr></tbody></table>
+<td>加入房间必传的参数，携带加入房间必须的鉴权信息，authModel相关鉴权数据，由京东云控制台相关接口下发，其它数据由用户填写</td></tr></tbody></table>
 <p>9.离开房间</p>
 <p>本地用户调用离开房间后，同一房间内，远端用户会收到JRTCCloudRoomDelegate中用户离开房间的回调消息，</p>
 <ul>
@@ -203,7 +205,7 @@
 <p>加入房间成功后，才可调用此接口。同一房间中，订阅远端视频流成功后， 用户会收到JRTCCloudRoomDelegate中是否有 视频暂停或继续的回调消息，及视频画面第一帧宽高的回调消息。如果视频第一帧宽高都不为0，则可以展示此画面。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。 本地用户加入房间后，调用此函数，订阅远端视频流，订阅视频流超时，会触发JRTC_ERROR_CODE_SUBSCRIBE_VEDIO_STREAM_TIMEOUT类型的错误回调，超时时间15秒，本地用户可重新调用此函数，重新订阅视频流。如果远端用户只发布了小画面视频流，本地用户订阅大小画面视频流无效，都会只订阅成功远端用户发布的视频流。 如果远端用户只发布了大画面视频流，本地用户订阅大小画面视频流会有效，会订阅成功远端用户发布的大小画面视频流。</p>
 <ul>
 <li>本地用户加入房间后，调用此函数，订阅远端视频流，订阅视频流超时，会触发JRTC_ERROR_CODE_SUBSCRIBE_VEDIO_STREAM_TIMEOUT类型的错误回调，超时时间15秒，本地用户可重新调用此函数，重新订阅视频流。</li></ul>
-<h3><code class="language-Object-C">startRemoteVideoWithVideoView:us</code><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: -0.006em;">erID:streamID:streamModelType:streamType:</span></h3>
+<h3><code class="language-Object-C">startRemoteVideoWithVideoView:peer</code><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: -0.006em;">ID:streamID:streamModelType:streamType:</span></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -219,10 +221,10 @@
 <td>是</td>
 <td>远端视频流要绘制的画面</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>要订阅视频流对应的userID</td></tr>
+<td>要订阅视频流对应的peerID</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -240,7 +242,7 @@
 <td>视频流类型，0为小画面视频流 1为大画面视频流</td></tr></tbody></table>
 <p>15.切换大小画面流</p>
 <p>加入房间成功后，才可调用此接口。 全屏展示视频时，可以选择视频流为大画面视频流， 小屏展示视频时，可选择视频流为小画面视频流，已达到减少耗电与节省流量。 此接口没有相应的成功失败回调，如果失败，则保持为切换前的大小画面视频流。 如果视频流大小画面切换成功，会触发onFirstVideoFrame视频帧宽高改变回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。 如果远端用户只发布了小画面视频流，本地用户切换远端用户大小画面视频流无效，都会只展示远端用户发布的视频流。 如果远端用户只发布了大画面视频流，本地用户切换远端用户大小画面视频流会有效，会展示远端用户发布的大小画面视频流。 注意:未订阅成功的视频流，禁止切换大小画面流。</p>
-<h3><code class="language-Object-C">changeVideoStreamWithStreamId:
+<h3><code class="language-Object-C">changeVideoStreamWithPeerId: videoStreamId:
             streamModelType:
                  streamType:
 </code></h3>
@@ -253,6 +255,13 @@
 <th>是否必传</th>
 <th>说明</th></tr></thead>
 <tbody>
+<tr>
+<td colspan="1">peerId</td>
+<td colspan="1">
+<p>NSString</p></td>
+<td colspan="1"><span>是</span></td>
+<td colspan="1">
+<p>视频流对应的peerId</p></td></tr>
 <tr>
 <td>videoStreamId</td>
 <td>NSString</td>
@@ -270,7 +279,7 @@
 <td>视频流类型，0为小画面视频流 1为大画面视频流</td></tr></tbody></table>
 <p>16.取消订阅远端视频流，</p>
 <p>加入房间成功后，才可调用此接口。 取消订阅成功后，本地用户会收到JRTCCloudRoomDelegate.h中对应视频流不可用回调， 进而更改相应UI展示。 调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调； 成功的话本地用户端不会收到任何回调，直接修改相关数据状态。 调完此接口后，videoView会展示为黑色画面。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
-<h3><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">stopRemoteVideoWithVideoView:userId:streamID:</span></h3>
+<h3><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">stopRemoteVideoWithVideoView:peerId:streamID:</span></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -286,10 +295,10 @@
 <td>是</td>
 <td>远端视频流要取消绘制的画面</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>要取消订阅视频流对应的userID</td></tr>
+<td>要取消订阅视频流对应的peerID</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -364,7 +373,7 @@
 <ul>
 <li>大房间模式下，用户不可订阅远端用户音频流。</li>
 <li>本地用户加入房间后，调用此函数，订阅远端音频流，订阅音频流超时，会触发JRTC_ERROR_CODE_SUBSCRIBE_AUDIO_STREAM_TIMEOUT类型的错误回调，超时时间15秒，本地用户可重新调用此函数，重新订阅音频流。</li></ul>
-<h3><code class="language-Object-C">startRemoteAudioWithUserId: streamID:</code></h3>
+<h3><code class="language-Object-C">startRemoteAudioWithPeerId: streamID:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -375,10 +384,10 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>要订阅音频流对应的userID</td></tr>
+<td>要订阅音频流对应的peerID</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -388,7 +397,7 @@
 <p>加入房间成功后，才可调用此接口。 调用此接口，出错时，本地用户会收到JRTCCloudRoomDelegate中的错误回调； 成功的话本地用户端不会收到任何回调，直接修改相关数据状态。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <ul>
 <li>注意:1.大房间模式下，本地用户不可取消订阅远端用户音频流。</li></ul>
-<h3><code class="language-Object-C">stopRemoteAudioWithUserId:streamID:</code></h3>
+<h3><code class="language-Object-C">stopRemoteAudioWithPeerId:streamID:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -399,10 +408,10 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>要取消订阅音频流对应的userID</td></tr>
+<td>要取消订阅音频流对应的peerID</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -735,7 +744,7 @@
 <td>静音/取消静音</td></tr></tbody></table>
 <p>41.单独静音或取消静音某个用户</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，房间中对应人员会收到JRTCCloudRoomDelegate.h静音或取消静音的回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
-<h3><code class="language-Object-C">mutePeerAudioWithIsMute:userID:</code></h3>
+<h3><code class="language-Object-C">mutePeerAudioWithIsMute:peerID:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -751,10 +760,10 @@
 <td>是</td>
 <td>静音/取消静音</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>对应用户userId</td></tr></tbody></table>
+<td>对应用户peerId</td></tr></tbody></table>
 <p>42.房间中禁止/允许开启视频</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，远端用户全部禁止/允许开启视频频流，本地用户不会收到回调消息； 远端所有用户都会收到JRTCCloudRoomDelegate.h中房间中禁止/允许开启视频流的回调。</p>
 <h3><code>forbidAllVideoWithIsForbid:</code></h3>
@@ -774,7 +783,7 @@
 <td>关闭或取消关闭推视频流</td></tr></tbody></table>
 <p>43.远端用户禁止/允许开启视频流，</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调消息； 远端对应用户会收到JRTCCloudRoomDelegate.h单个用户禁止/允许开启视频流回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
-<h3><code class="language-Object-C">forbidPeerVideoWithIsForbid:userID:</code></h3>
+<h3><code class="language-Object-C">forbidPeerVideoWithIsForbid:peerID:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -790,10 +799,10 @@
 <td>是</td>
 <td>禁止/允许开启视频流</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>对应用户<span style="background-color: rgb(255,222,0);">userId</span></td></tr></tbody></table>
+<td>对应用户pe<span style="background-color: rgb(255,222,0);">erId</span></td></tr></tbody></table>
 <p>44.禁止/允许聊天</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调消息； 远端所有用户都会收到JRTCCloudRoomDelegate.h中房间中禁止/允许聊天回调。</p>
 <h3><code>forbidChatWithIsForbid:</code></h3>
@@ -816,7 +825,7 @@
 <h3><code>hosterFinishMeeting</code></h3>
 <p>46.主持人离开房间时，产生新的主持人</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，远端用户会收到JRTCCloudRoomDelegate.h中产生新的主持人回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
-<h3><code>creatNewHosterWithHosterUserId:</code></h3>
+<h3><code>creatNewHosterWithHosterPeerId:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -827,10 +836,10 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>hosterUserId</td>
+<td>hosterPeerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>新的主持人userId</td></tr></tbody></table>
+<td>新的主持人peerId</td></tr></tbody></table>
 <p>47.向整个房间发送自定义事件。</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调， 远端用户会收到JRTCCloudRoomDelegate.h中自定义房间事件回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">customSignalToRoomWithEventName:eventInfo:</code></h3>
@@ -855,7 +864,7 @@
 <td>事件需要携带的信息，不能为空</td></tr></tbody></table>
 <p>48.向某个人发送自定义事件。</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调， 对应远端用户会收到JRTCCloudRoomDelegate.h中自定义事件回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
-<h3><code class="language-Object-C">customSignalToPeerWithTargetUserId:eventName:eventInfo:</code></h3>
+<h3><code class="language-Object-C">customSignalToPeerWithTargetPeerId:eventName:eventInfo:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -866,10 +875,10 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
 <td>是</td>
-<td>接受事件人的userId，不能为空</td></tr>
+<td>接受事件人的peerId，不能为空</td></tr>
 <tr>
 <td>eventName</td>
 <td>NSString</td>
@@ -975,9 +984,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
@@ -993,12 +1002,12 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr></tbody></table>
+<td>用户peerId</td></tr></tbody></table>
 <h2>流信息事件回调</h2>
 <p>5.对于远端视频流对应为是否可订阅回调；对于用户自己的视频流，用户本地视频流推流成功后，本行用户会收到此回调，同时available为YES。</p>
-<h3><code class="language-Object-C">onUserVideoAvailableWithUserId:streamId:streamName:available:</code></h3>
+<h3><code class="language-Object-C">onUserVideoAvailableWithPeerId:streamId:streamName:available:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1008,9 +1017,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -1024,7 +1033,7 @@
 <td>BOOL</td>
 <td>视频流是否可用</td></tr></tbody></table>
 <p>6.对于远端音频流对应为是否可订阅回调；对于用户自己的音频流，用户本地音频流推流成功后，本行用户会收到此回调，同时available为YES。</p>
-<h3><code class="language-Object-C">onUserAudioAvailableWithUserId:streamId:streamName:available:</code></h3>
+<h3><code class="language-Object-C">onUserAudioAvailableWithPeerId:streamId:streamName:available:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1034,9 +1043,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -1050,7 +1059,7 @@
 <td>BOOL</td>
 <td>音频流是否可用</td></tr></tbody></table>
 <p>7.视频流暂停或者继续回调</p>
-<h3><code class="language-Object-C">onUserVideoMuteWithUserId:streamId:mute:</code></h3>
+<h3><code class="language-Object-C">onUserVideoMuteWithPeerId:streamId:mute:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1060,9 +1069,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -1072,7 +1081,7 @@
 <td>BOOL</td>
 <td>视频流暂停或者继续</td></tr></tbody></table>
 <p>8.音频流暂停或者继续回调</p>
-<h3><code class="language-Object-C">onUserAudioMuteWithUserId:streamId:mute:</code></h3>
+<h3><code class="language-Object-C">onUserAudioMuteWithPeerId:streamId:mute:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1082,9 +1091,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -1108,9 +1117,9 @@
 <td>NSString</td>
 <td>房间ID</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>volume</td>
 <td>NSDictionary</td>
@@ -1119,7 +1128,7 @@
 <p><span style="letter-spacing: 0.0px;">10.视频流开始展示的第一帧宽高回调</span></p>
 <p>用户可以根据视频帧宽高比来展示相应的视频画面</p>
 <p><br /></p>
-<h3><code class="language-Object-C">onFirstVideoFrameWithUserId:streamId:width:height:</code></h3>
+<h3><code class="language-Object-C">onFirstVideoFrameWithPeerId:streamId:width:height:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1129,9 +1138,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>视频流对应的userId</td></tr>
+<td>视频流对应的peerId</td></tr>
 <tr>
 <td>streamId</td>
 <td>NSString</td>
@@ -1146,7 +1155,7 @@
 <td>视频帧高度</td></tr></tbody></table>
 <h2>修改昵称回调</h2>
 <p>11.有用户修改昵称回调</p>
-<h3><code class="language-Object-C">onRoomUserUpdateNickName:userId:nickName:</code></h3>
+<h3><code class="language-Object-C">onRoomUserUpdateNickName:peerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1160,9 +1169,9 @@
 <td>NSString</td>
 <td>房间ID</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>用户userId</td></tr>
+<td>用户peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>BOOL</td>
@@ -1184,7 +1193,7 @@
 <h2>消息事件回调</h2>
 <p>13.普通房间接收到广播消息回调</p>
 <p>如果是自己发送给所有人，自己也会收到这条回调</p>
-<h3><code class="language-Object-C">onRecvMsgFromUserId:nickName:msg:</code></h3>
+<h3><code class="language-Object-C">onRecvMsgFromPwerId:nickName:msg:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1194,9 +1203,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发送消息者userId</td></tr>
+<td>发送消息者peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
@@ -1236,7 +1245,7 @@
 <td>更新后,生成混流的streamId</td></tr></tbody></table>
 <h2>会议控制</h2>
 <p>16.本地用户接收到向整个房间广播的静音或者取消静音回调</p>
-<h3><code class="language-Object-C">onAudioMuteToRoomWithIsMute:fromUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onAudioMuteToRoomWithIsMute:fromPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1250,15 +1259,15 @@
 <td>BOOL</td>
 <td>静音或者取消静音</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发出静音或者取消静音room的userId</td></tr>
+<td>发出静音或者取消静音room的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
 <td>发出静音或者取消静音room的的nickName</td></tr></tbody></table>
 <p>17.本地用户接收到被静音或者取消静音回调</p>
-<h3><code class="language-Object-C">onAudioMuteFromPeerWithIsMute:fromUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onAudioMuteFromPeerWithIsMute:fromPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1272,15 +1281,15 @@
 <td>BOOL</td>
 <td>静音或者取消静音</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发送静音或者取消静音者的userId</td></tr>
+<td>发送静音或者取消静音者的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
 <td>发送静音或者取消静音者的nickName</td></tr></tbody></table>
 <p>18.本地用户接收到向整个房间广播的禁止或者取消禁止房间视频回调</p>
-<h3><code class="language-Object-C">onForbidVideoToRoomWithIsForbid:fromUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onForbidVideoToRoomWithIsForbid:fromPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1294,15 +1303,15 @@
 <td>BOOL</td>
 <td>禁止或者取消禁止房间视频</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发出关闭或取消关闭房间视频的userId</td></tr>
+<td>发出关闭或取消关闭房间视频的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
 <td>发出关闭或取消关闭房间视频的的nickName</td></tr></tbody></table>
 <p>19.本地用户接收到被禁止或者取消禁止视频回调</p>
-<h3><code class="language-Object-C">onForbidVideoFromUserWithIsForbid:fromUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onForbidVideoFromUserWithIsForbid:fromPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1316,15 +1325,15 @@
 <td>BOOL</td>
 <td>禁止或者取消禁止房间某个userId的视频</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发送关闭或取消关闭房间视频者的userId</td></tr>
+<td>发送关闭或取消关闭房间视频者的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
 <td>发送关闭或取消关闭房间视频者userId对应的nickName</td></tr></tbody></table>
 <p>20.本地用户接收到向整个房间广播禁言回调</p>
-<h3><code class="language-Object-C">onForbiddenChatToRoomWithUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onForbiddenChatToRoomWithPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1334,15 +1343,15 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>禁言房间聊天发出者userId</td></tr>
+<td>禁言房间聊天发出者peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
 <td>禁言房间聊天发出者nickName</td></tr></tbody></table>
 <p>21.本地用户接收到向整个房间取消禁言回调</p>
-<h3><code class="language-Object-C">onUnForbiddenChatToRoomWithUserId:nickName:</code></h3>
+<h3><code class="language-Object-C">onUnForbiddenChatToRoomWithPeerId:nickName:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1352,9 +1361,9 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSInteger</td>
-<td>关闭禁言房间聊天发出者userId</td></tr>
+<td>关闭禁言房间聊天发出者peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
@@ -1378,7 +1387,7 @@
 <td>新的主持人userId</td></tr></tbody></table>
 <p>24.本地用户接收到向整个房间广播的自定义信令回调</p>
 <p>同一房间里除了主持人，其他人都会收到此回调</p>
-<h3><code class="language-Object-C">onCustomSignalToRoomWithEventName:userId:nickName:eventInfo:</code></h3>
+<h3><code class="language-Object-C">onCustomSignalToRoomWithEventName:peerId:nickName:eventInfo:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1392,9 +1401,9 @@
 <td>NSString</td>
 <td>自定义事件名称</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发出自定义广播信令者的userId</td></tr>
+<td>发出自定义广播信令者的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
@@ -1404,7 +1413,7 @@
 <td>NSDictionary</td>
 <td>自定义事件携带的信息，可以是普通字符串，也可以是可转化为json格式的字符串，客户端可根据自己需要获取相关信息</td></tr></tbody></table>
 <p>25.本地用户接收到发送给本地用户的自定义信令回调</p>
-<h3><code class="language-Object-C">onCustomSignalToUserWithEventName:userId:nickName:eventInfo:</code></h3>
+<h3><code class="language-Object-C">onCustomSignalToUserWithEventName:peerId:nickName:eventInfo:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1418,9 +1427,9 @@
 <td>NSString</td>
 <td>自定义事件名称</td></tr>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发出自定义信令者的userId</td></tr>
+<td>发出自定义信令者的peerId</td></tr>
 <tr>
 <td>nickName</td>
 <td>NSString</td>
@@ -1431,9 +1440,8 @@
 <td>自定义事件携带的信息，可以是普通字符串，也可以是可转化为json格式的字符串，客户端可根据自己需要获取相关信息</td></tr></tbody></table>
 <h2>2. JRTCCloudNetDelegate</h2>
 <p>描述<span style="letter-spacing: 0.0px;">视频通话网络事件回调接口</span></p>
-<p>1.网络连接状态错误回调</p>
-<p>errorCode错误码，errorCode如果为JRTC_ERROR_CODE_NETWORK，SDK自动重新加入房间， 本地App层需要相应的正在重新加入房间弹框做提示，本地App需要清空订阅的远端信息， 本地App层不需要对本地音视频做特殊处理，可保持原状。 注意：远端画面会保持一段时间拉取不到远端画面视频流。</p>
-<h3><code class="language-Object-C">onNetErrorWithErrorCode:errorState:</code></h3>
+<p>1.<span style="letter-spacing: 0.0px;">当前网络连接类型。</span></p>
+<p><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">onNetType:</span></p>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1443,19 +1451,15 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>errorCode</td>
-<td>NSInteger</td>
-<td>错误码，errorCode如果为JRTC_ERROR_CODE_NETWORK，需重新加入房间</td></tr>
-<tr>
-<td>errorState</td>
-<td>NSString</td>
-<td>错误描述</td></tr></tbody></table>
-<p>2.网络类型切换</p>
-<h3><code class="language-Object-C">onNetTypeChange:</code></h3>
-<p>3.网络状态发生变化</p>
-<p>SDK自动重新加入房间，本地App层需要相应的正在重新加入房间弹框做提示， 本地App需要清空订阅的远端信息，本地App层不需要对本地音视频做特殊处理，可保持原状。 注意：远端画面会保持一段时间拉取不到远端画面视频流。</p>
-<h3><code class="language-Object-C">-(void)onNetStatusChanged;
-</code></h3>
+<td>
+<p>type</p></td>
+<td>
+<p>JRTC_NetWorkType</p></td>
+<td>当前网络连接类型</td></tr></tbody></table>
+<p>2.<span style="letter-spacing: 0.0px;">网络连接断开，触发这个回调后SDK内部会一直重新加入房间，直到有网后加入房间成功，然后会触发网络连接恢复。</span></p>
+<h3><span>onNetStatusClose</span></h3>
+<p>3.&nbsp;<span style="letter-spacing: 0.0px;">网络连接恢复，网络链接恢复后，App会收到加入房间成功及当前哪些流可以订阅的回调。</span></p>
+<h3><code class="language-Object-C">-(void)onNetStatusRecovery</code></h3>
 <h2>3. JRTCCloudMessageDelegate</h2>
 <p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">视频通话消息大厅事件回调接口</span></p>
 <p>1.消息大厅错误事件回调</p>
@@ -1477,7 +1481,7 @@
 <td>NSString</td>
 <td>错误描述</td></tr></tbody></table>
 <p>2.消息大厅接收到广播事件回调</p>
-<h3><code class="language-Object-C">messageOnUserBroadcastMessageFromUserID:msg:</code></h3>
+<h3><code class="language-Object-C">messageOnUserBroadcastMessageFromPeerID:msg:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1487,15 +1491,15 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>发送广播者userId</td></tr>
+<td>发送广播者peerId</td></tr>
 <tr>
 <td>msg</td>
 <td>NSString</td>
 <td>消息内容</td></tr></tbody></table>
 <p>3.消息大厅接收到消息回调</p>
-<h3><code class="language-Object-C">messageOnUserSendMessageFromUserWithUserID:msg:</code></h3>
+<h3><code class="language-Object-C">messageOnUserSendMessageFromPeerWithPeerID:msg:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /></colgroup>
 <thead>
@@ -1505,49 +1509,15 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>userId</td>
+<td>peerId</td>
 <td>NSString</td>
-<td>消息发送者userId</td></tr>
+<td>消息发送者peerId</td></tr>
 <tr>
 <td>msg</td>
 <td>NSString</td>
 <td>消息内容</td></tr></tbody></table>
 <h1>4 保存数据信息的模型类</h1>
-<h2>1. JRTCEnterRoomModel类</h2>
-<p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">保存房间信息，包括加入房间鉴权认证所必须的信息，加入房间所需的设备信息</span></p>
-<p>1.鉴权认证信息</p>
-<h3><code>@property(nonatomic,strong)JRTCEnterRoomAuthModel *authModel;</code></h3>
-<p>属性说明:</p>
-<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>属性名</th>
-<th>属性类型</th>
-<th>是否必须设置</th>
-<th>说明</th></tr></thead>
-<tbody>
-<tr>
-<td>authModel</td>
-<td>JRTCEnterRoomAuthModel</td>
-<td>是</td>
-<td>加入房间鉴权认证所必须的信息</td></tr></tbody></table>
-<p>2.设备信息</p>
-<h3><code>@property(nonatomic,strong)JRTCEnterRoomDeviceModel *deviceModel;</code></h3>
-<p>属性说明:</p>
-<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>属性名</th>
-<th>属性类型</th>
-<th>是否必须设置</th>
-<th>说明</th></tr></thead>
-<tbody>
-<tr>
-<td>deviceModel</td>
-<td>JRTCEnterRoomDeviceModel</td>
-<td>是</td>
-<td>加入房间所需的设备信息</td></tr></tbody></table>
-<h2>2. JRTCEnterRoomAuthModel类</h2>
+<h2>1. JRTCEnterRoomAuthModel类</h2>
 <p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">加入房间必传的鉴权信息</span></p>
 <p>1.SDK版本</p>
 <h3><code>@property(nonatomic,strong)NSString *ver;</code></h3>
@@ -1693,10 +1663,8 @@
 <td>NSNumber</td>
 <td>是</td>
 <td>房间类型roomType 1 小会议 2 大会议 3 MCU混音模式会议 4 视频连麦模式会议 5 音频连麦模式，</td></tr></tbody></table>
-<h2>3. JRTCEnterRoomDeviceModel类</h2>
-<p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">加入房间必传的设备信息</span></p>
-<p>1.设备ID</p>
-<h3><code>@property(nonatomic,strong)NSString *deviceId;</code></h3>
+<p>10.<span style="letter-spacing: 0.0px;">设备唯一号</span><span style="letter-spacing: 0.0px;">unionId</span></p>
+<h3><span>&nbsp;</span><code>@property(nonatomic,strong)NSString *unionId;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -1707,12 +1675,15 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>deviceId</td>
-<td>NSString</td>
+<td>
+<p>unionId</p></td>
+<td>
+<p>NSString</p></td>
 <td>是</td>
-<td>设备ID，设备MAC base64, 或者其他唯一信息 base64</td></tr></tbody></table>
-<p>2.设备名称</p>
-<h3><code>@property(nonatomic,strong)NSString *deviceName;</code></h3>
+<td>
+<p>同一台设备，要保证unionId唯一且不变</p></td></tr></tbody></table>
+<p>11.<span style="letter-spacing: 0.0px;">录制文件名</span><span style="letter-spacing: 0.0px;">recordFileName</span></p>
+<h3><span>&nbsp;</span><code>@property(nonatomic,strong)NSString *recordFileName;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -1723,12 +1694,14 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>deviceName</td>
+<td>
+<p>recordFileName</p></td>
 <td>NSString</td>
-<td>是</td>
-<td>设备名称</td></tr></tbody></table>
-<p>3.设备类型</p>
-<h3><code>@property(nonatomic,strong)NSString *deviceType;</code></h3>
+<td>否</td>
+<td>
+<p>录制文件名</p></td></tr></tbody></table>
+<p>12.<span style="letter-spacing: 0.0px;">转推直播流名</span><span style="letter-spacing: 0.0px;">liveStreamName</span></p>
+<h3><span>&nbsp;</span><code>@property(nonatomic,strong)NSString *liveStreamName;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -1739,43 +1712,13 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>deviceType</td>
-<td>NSString</td>
-<td>是</td>
-<td>设备类型，IOS、MAC</td></tr></tbody></table>
-<p>4.设备分类</p>
-<h3><code>@property(nonatomic,strong)NSString *deviceMode;</code></h3>
-<p>属性说明:</p>
-<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>属性名</th>
-<th>属性类型</th>
-<th>是否必须设置</th>
-<th>说明</th></tr></thead>
-<tbody>
-<tr>
-<td>deviceMode</td>
-<td>NSString</td>
-<td>是</td>
-<td>设备分类，如iPhone，iPod touch</td></tr></tbody></table>
-<p>5.设备操作系统版本</p>
-<h3><code>@property(nonatomic,strong)NSString *osVersion;</code></h3>
-<p>属性说明:</p>
-<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>属性名</th>
-<th>属性类型</th>
-<th>是否必须设置</th>
-<th>说明</th></tr></thead>
-<tbody>
-<tr>
-<td>osVersion</td>
-<td>NSString</td>
-<td>是</td>
-<td>设备操作系统版本</td></tr></tbody></table>
-<h2>4. JRTCMessageModel类</h2>
+<td><span>liveStreamName</span></td>
+<td>
+<p>NSString</p></td>
+<td><span>否</span></td>
+<td>
+<p>转推直播流名</p></td></tr></tbody></table>
+<h2><span style="letter-spacing: -0.008em;">2. JRTCMessageModel类</span></h2>
 <p>描述<span style="letter-spacing: 0.0px;">保存消息信息</span></p>
 <p>1.JRTC_MESSAGE_MODE</p>
 <p>消息类型</p>
@@ -1797,8 +1740,8 @@
 <tr>
 <td>JRTC_MESSAGE_MODE_NEWSHALL</td>
 <td>消息大厅类型</td></tr></tbody></table>
-<p>2.fromUserID</p>
-<h3><code>@property(nonatomic,strong)NSString *fromUserID;</code></h3>
+<p>2.fromPeerID</p>
+<h3><code>@property(nonatomic,strong)NSString *fromPeerID;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -1809,12 +1752,12 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>fromUserID</td>
+<td>fromPeerID</td>
 <td>NSString</td>
 <td>是</td>
-<td>消息发送者userID</td></tr></tbody></table>
-<p>3.toUserID</p>
-<h3><code>@property(nonatomic,strong)NSString *toUserID;</code></h3>
+<td>消息发送者peerID</td></tr></tbody></table>
+<p>3.toPeerID</p>
+<h3><code>@property(nonatomic,strong)NSString *toPeerID;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
@@ -1825,10 +1768,10 @@
 <th>说明</th></tr></thead>
 <tbody>
 <tr>
-<td>toUserID</td>
+<td>toPeerID</td>
 <td>NSString</td>
 <td>是</td>
-<td>消息接受者userID，为空时，为广播此条消息，不为空时为单聊</td></tr></tbody></table>
+<td>消息接受者peerID，为空时，为广播此条消息，不为空时为单聊</td></tr></tbody></table>
 <p>4.msg</p>
 <h3><code>@property(nonatomic,strong)NSString *msg;</code></h3>
 <p>属性说明:</p>
@@ -2289,12 +2232,12 @@
     JRTC_ERROR_CODE_ENTER_ROOM_NONCE_INVALID        = -127,           
     JRTC_ERROR_CODE_ENTER_ROOM_TIMESTAMP_INVALID    = -128,            
     JRTC_ERROR_CODE_ENTER_ROOM_ROOMTYPE_INVALID     = -129,           
-    JRTC_ERROR_CODE_ENTER_ROOM_DEVICEID_INVALID     = -130,            
-    JRTC_ERROR_CODE_ENTER_ROOM_DEVICENAME_INVALID   = -131,           
-    JRTC_ERROR_CODE_ENTER_ROOM_DEVICETYPE_INVALID   = -132,            
-    JRTC_ERROR_CODE_ENTER_ROOM_DEVICEMODE_INVALID   = -133,           
-    JRTC_ERROR_CODE_ENTER_ROOM_OSVERSION_INVALID    = -134,</code></pre>
-<pre><span>JRTC_ERROR_CODE_ENTER_ROOM_HASJOINING_OR_JOINED_ERROR&nbsp; &nbsp; = -</span><span style="color: rgb(28,0,207);">135,</span></pre>
+    JRTC_ERROR_CODE_ENTER_ROOM_</code><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: 0.0px;">UNIONID</span><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: 0.0px;">_INVALID = -130,</span></pre>
+<pre><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: 0.0px;"> JRTC_ERROR_CODE_ENTER_ROOM_HASJOINING_OR_JOINED_ERROR = 135,</span></pre>
+<p><br /></p>
+<pre>&nbsp; &nbsp; JRTC_ERROR_CODE_ENTER_ROOM_RECORDFILENAME_INVALID  = -140,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</pre>
+<pre>&nbsp; &nbsp; JRTC_ERROR_CODE_ENTER_ROOM_LIVESTREAMNAME_INVALID &nbsp;= -141, &nbsp;&nbsp;</pre>
+<pre><br /></pre>
 <pre><code class="language-Object-C">    JRTC_ERROR_CODE_INITJMSG_VER_INVALID            = -150, 
     JRTC_ERROR_CODE_INITJMSG_ROOMID_INVALID         = -151,                      
     JRTC_ERROR_CODE_INITJMSG_NICKNAME_INVALID       = -153,            
@@ -2305,26 +2248,26 @@
     JRTC_ERROR_CODE_INITJMSG_TIMESTAMP_INVALID      = -158,           
     JRTC_ERROR_CODE_INITJMSG_ROOMTYPE_INVALID       = -159,           
 
-    JRTC_ERROR_CODE_MUTEPEERAUDIO_USERID_INVALID    = -190,         
+    JRTC_ERROR_CODE_MUTEPEERAUDIO_PEERID_INVALID    = -190,         
 
-    JRTC_ERROR_CODE_FORBIDPEERVIDEO_USERID_INVALID  = -191,           
+    JRTC_ERROR_CODE_FORBIDPEERVIDEO_PEERID_INVALID  = -191,           
 
-    JRTC_ERROR_CODE_CREATNEWHOSTER_USERID_INVALID   = -192,                   
+    JRTC_ERROR_CODE_CREATNEWHOSTER_PEERID_INVALID   = -192,                   
 
     JRTC_ERROR_CODE_STARTLOCALPREVIEW_VIEW_INVALID  = -210,     
     JRTC_ERROR_CODE_STARTREMOTEVIDEO_VIDEOVIEW_INVALID = -220,     
-    JRTC_ERROR_CODE_STARTREMOTEVIDEO_USERID_INVALID    = -221,      
+    JRTC_ERROR_CODE_STARTREMOTEVIDEO_PEERID_INVALID    = -221,      
     JRTC_ERROR_CODE_STARTREMOTEVIDEO_STREAMID_INVALID  = -223,      
     JRTC_ERROR_CODE_STARTREMOTEVIDEO_MODEL_INVALID     = -224,       
     JRTC_ERROR_CODE_STARTREMOTEVIDEO_TYPE_INVALID      = -225,        
 
-    JRTC_ERROR_CODE_STOPREMOTEVIDEO_USERID_INVALID     = -230,        
+    JRTC_ERROR_CODE_STOPREMOTEVIDEO_PEERID_INVALID     = -230,        
     JRTC_ERROR_CODE_STOPREMOTEVIDEO_STREAMID_INVALID   = -231,        
 
-    JRTC_ERROR_CODE_STARTREMOTEAUDIO_USERID_INVALID    = -240,        
+    JRTC_ERROR_CODE_STARTREMOTEAUDIO_PEERID_INVALID    = -240,        
     JRTC_ERROR_CODE_STARTREMOTEAUDIO_STREAMID_INVALID  = -241,        
 
-    JRTC_ERROR_CODE_STOPREMOTEAUDIO_USERID_INVALID     = -250,         
+    JRTC_ERROR_CODE_STOPREMOTEAUDIO_PEERID_INVALID     = -250,         
     JRTC_ERROR_CODE_STOPREMOTEAUDIO_STREAMID_INVALID   = -251,       
 
     JRTC_ERROR_CODE_MUTEREMOTEVIDEO_STREAMID_INVALID   = -260,         
@@ -2335,7 +2278,9 @@
     JRTC_ERROR_CODE_CHANGE_VIDEO_STREAM_INVALID   = -263,        
     JRTC_ERROR_CODE_CHANGE_VIDEO_MODE_INVALID   = -264,        
     JRTC_ERROR_CODE_CHANGE_VIDEO_TYPE_INVALID   = -265,        
-    JRTC_ERROR_CODE_CHANGE_VIDEO_SUBSTATUS_INVALID   = -266,    
+    JRTC_ERROR_CODE_CHANGE_VIDEO_SUBSTATUS_INVALID   = -266,</code></pre>
+<pre>&nbsp; &nbsp; JRTC_ERROR_CODE_CHANGE_VIDEO_NO_VIDEO_TYPE &nbsp; = -267, &nbsp; &nbsp;</pre>
+<pre><code class="language-Object-C">    
 
     JRTC_ERROR_CODE_SETAUDIOROUTE_ROUTE_INVALID        = -270,        
 
@@ -2462,25 +2407,24 @@
 <td>JRTC_ERROR_CODE_ENTER_ROOM_ROOMTYPE_INVALID</td>
 <td>进入房间roomType不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_ENTER_ROOM_DEVICEID_INVALID</td>
-<td>进入房间deviceId不正确</td></tr>
-<tr>
-<td>JRTC_ERROR_CODE_ENTER_ROOM_DEVICENAME_INVALID</td>
-<td>进入房间deviceName不正确</td></tr>
-<tr>
-<td>JRTC_ERROR_CODE_ENTER_ROOM_DEVICETYPE_INVALID</td>
-<td>进入房间deviceType不正确</td></tr>
-<tr>
-<td>JRTC_ERROR_CODE_ENTER_ROOM_DEVICEMODE_INVALID</td>
-<td>进入房间deviceMode不正确</td></tr>
-<tr>
-<td>JRTC_ERROR_CODE_ENTER_ROOM_OSVERSION_INVALID</td>
-<td>进入房间osVersion不正确</td></tr>
+<td>JRTC_ERROR_CODE_ENTER_ROOM_UNIONID_INVALID</td>
+<td>
+<p>进入房间设备唯一号不正确</p></td></tr>
 <tr>
 <td colspan="1">
 <p>JRTC_ERROR_CODE_ENTER_ROOM_HASJOINING_OR_JOINED_ERROR</p></td>
 <td colspan="1">
 <p>已正在加进房间或已加入房间，再次加入房间错误</p></td></tr>
+<tr>
+<td colspan="1">
+<p>JRTC_ERROR_CODE_ENTER_ROOM_RECORDFILENAME_INVALID</p></td>
+<td colspan="1">
+<p>录制文件名无效</p></td></tr>
+<tr>
+<td colspan="1">
+<p>JRTC_ERROR_CODE_ENTER_ROOM_LIVESTREAMNAME_INVALID</p></td>
+<td colspan="1">
+<p>转推直播流名无效</p></td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_INITJMSG_VER_INVALID</td>
 <td>初始化消息大厅ver不正确</td></tr>
@@ -2509,14 +2453,14 @@
 <td>JRTC_ERROR_CODE_INITJMSG_ROOMTYPE_INVALID</td>
 <td>初始化消息大厅roomType不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_MUTEPEERAUDIO_USERID_INVALID</td>
-<td>静音userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_MUTEPEERAUDIO_PEERID_INVALID</td>
+<td>静音peerId不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_FORBIDPEERVIDEO_USERID_INVALID</td>
-<td>禁止user开视频userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_FORBIDPEERVIDEO_PEERID_INVALID</td>
+<td>禁止peer开视频peerId不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_CREATNEWHOSTER_USERID_INVALID</td>
-<td>产生新的主持人hosterUserId不正确</td></tr>
+<td>JRTC_ERROR_CODE_CREATNEWHOSTER_PEERID_INVALID</td>
+<td>产生新的主持人hosterPeerId不正确</td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_STARTLOCALPREVIEW_VIEW_INVALID</td>
 <td>打开本地视频预览videoView不正确</td></tr>
@@ -2524,8 +2468,8 @@
 <td>JRTC_ERROR_CODE_STARTREMOTEVIDEO_VIDEOVIEW_INVALID</td>
 <td>订阅远端视频videoView不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_STARTREMOTEVIDEO_USERID_INVALID</td>
-<td>订阅远端视频userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_STARTREMOTEVIDEO_PEERID_INVALID</td>
+<td>订阅远端视频peerId不正确</td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_STARTREMOTEVIDEO_STREAMID_INVALID</td>
 <td>订阅远端视频streamId不正确</td></tr>
@@ -2536,20 +2480,20 @@
 <td>JRTC_ERROR_CODE_STARTREMOTEVIDEO_TYPE_INVALID</td>
 <td>订阅远端视频TYPE不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_STOPREMOTEVIDEO_USERID_INVALID</td>
-<td>取消订阅远端视频userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_STOPREMOTEVIDEO_PEERID_INVALID</td>
+<td>取消订阅远端视频peerId不正确</td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_STOPREMOTEVIDEO_STREAMID_INVALID</td>
 <td>取消订阅远端视频streamId不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_STARTREMOTEAUDIO_USERID_INVALID</td>
-<td>订阅远端音频userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_STARTREMOTEAUDIO_PEERID_INVALID</td>
+<td>订阅远端音频peerId不正确</td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_STARTREMOTEAUDIO_STREAMID_INVALID</td>
 <td>订阅远端音频streamId不正确</td></tr>
 <tr>
-<td>JRTC_ERROR_CODE_STOPREMOTEAUDIO_USERID_INVALID</td>
-<td>取消订阅远端音频userId不正确</td></tr>
+<td>JRTC_ERROR_CODE_STOPREMOTEAUDIO_PEERID_INVALID</td>
+<td>取消订阅远端音频peerId不正确</td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_STOPREMOTEAUDIO_STREAMID_INVALID</td>
 <td>取消订阅远端音频streamId不正确</td></tr>
@@ -2571,6 +2515,11 @@
 <tr>
 <td>JRTC_ERROR_CODE_CHANGE_VIDEO_SUBSTATUS_INVALID</td>
 <td>当前视频流未订阅成功，禁止切换远端视频订阅</td></tr>
+<tr>
+<td colspan="1">
+<p>JRTC_ERROR_CODE_CHANGE_VIDEO_NO_VIDEO_TYPE</p></td>
+<td colspan="1">
+<p>当前切换的流为非视频流</p></td></tr>
 <tr>
 <td>JRTC_ERROR_CODE_SETAUDIOROUTE_ROUTE_INVALID</td>
 <td>设置音频路由route不正确</td></tr>
