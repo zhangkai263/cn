@@ -32,7 +32,7 @@ items:
         - name: 转发
           href: Operation-guide/System-settings/forward.md 
         - name: 监控
-          href:Operation-guide/System-settings/monitor.md
+          href: Operation-guide/System-settings/monitor.md
         - name: 管理公告
           href: Operation-guide/System-settings/notice.md
         - name: 域级白名单
