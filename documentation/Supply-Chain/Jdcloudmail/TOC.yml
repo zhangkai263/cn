@@ -5,25 +5,50 @@ items:
 - name: 产品简介
   items:
     - name: 产品介绍
-      href: 产品简介/产品介绍.md 
+      href: Introduction/Product-Overview.md 
 
-      
-
-- name: 快速入门
-  href: Guide/Summary.md
-   
-     
-- name: 用户指南
+- name: 产品定价
   items:
-    - name: 建站注意事项
-      href: Users'-Guide/Notice.md 
-    - name: 升级站点
-      href: Users'-Guide/Upgrade-site.md 
-    - name: 续费站点
-      href: Users'-Guide/Renew-site.md
-    - name: 复制站点
-      href: Users'-Guide/Copy-site.md
-    - name: 查看站点信息
-      href: Users'-Guide/Check-site-information.md
-    - name: 定制站点
-      href: Users'-Guide/Custom-site.md 
+    - name: 购买说明
+      href: price/instructions.md      
+
+
+- name: 操作指南
+  items:
+    - name: 用户管理
+      items:
+        - name: 人员部门管理
+          href: Operation-guide/User-Management/managerment.md      
+        - name: 别名
+          href: Operation-guide/User-Management/alias.md 
+        - name: 导入邮件账户
+          href: Operation-guide/User-Management/Import-User.md
+        - name: 操作日志
+          href: Operation-guide/User-Management/Operation_log.md
+    - name: 系统设置
+      items:
+        - name: 邮箱搬家
+          href: Operation-guide/System-settings/Mail_move.md     
+        - name: 转发
+          href: Operation-guide/System-settings/forward.md 
+        - name: 监控
+          href:Operation-guide/System-settings/monitor.md
+        - name: 管理公告
+          href: Operation-guide/System-settings/notice.md
+        - name: 域级白名单
+          href: Operation-guide/System-settings/White-list.md
+        - name: 域级黑名单
+          href: Operation-guide/System-settings/blacklist.md
+    - name: 个性化定制
+      items:
+        - name: 个性化信息
+          href: Operation-guide/personalized/information.md     
+        - name: 登录页定制
+          href: Operation-guide/personalized/Login-page.md 
+      
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: problem/faq.md    
+      
+      
