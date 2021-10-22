@@ -167,4 +167,7 @@ items:
             href: Domain/setHttpSsl.md
           - name: 查询域名SSL配置
             href: Domain/getHttpSsl.md
-
+      - name: 直播转点播
+        items:
+          - name: 直播转点播
+            href: Live-to-Vod/createLiveToVodTask.md
