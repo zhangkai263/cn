@@ -338,4 +338,4 @@ e) 其他京东云有充足理由需要对多个京东云账户进行统一处�
 本服务条款之效力、解释、变更、执行与争议解决均适用中华人民共和国法律。因本服务条款产生之争议，均应依照中华人民共和国法律予以处理，并提交本合同签订地北京市大兴区有管辖权人民法院审判。
 
 
-[京东云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/Yhfwxy.pdf)
+[京东云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/yhfwxyzx.pdf)
