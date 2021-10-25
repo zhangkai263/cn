@@ -97,30 +97,30 @@ items:
         href: SDK-Reference/SDK-Overview.md
       - name: SDK调用参数说明
         href: SDK-Reference/SDK-Args.md
-      - name: GO SDK
-        items:
-          - name: 安装与初始化
-            href: SDK-Reference/GO-SDK/Install-And-Initialization.md
-          - name: 文本检测
-            href: GO-SDK/Text-Detection.md
-          - name: 图片检测
-            href: GO-SDK/Picture-Detection.md
-          - name: 视频检测
-            href: GO-SDK/Video-Detection.md
-          - name: 音频检测
-            href: GO-SDK/Audio-Detection.md
-      - name: JAVA SDK
-        items: 
-          - name: 安装与初始化
-            href: JAVA-SDK/Install-And-Initialization.md
-          - name: 文本检测
-            href: JAVA-SDK/Text-Detection.md
-          - name: 图片检测
-            href: JAVA-SDK/Picture-Detection.md
-          - name: 视频检测
-            href: JAVA-SDK/Video-Detection.md
-          - name: 音频检测
-            href: JAVA-SDK/Audio-Detection.md 
+  - name: GO SDK
+    items:
+      - name: 安装与初始化
+        href: SDK-Reference/GO-SDK/Install-And-Initialization.md
+      - name: 文本检测
+        href: GO-SDK/Text-Detection.md
+      - name: 图片检测
+        href: GO-SDK/Picture-Detection.md
+      - name: 视频检测
+        href: GO-SDK/Video-Detection.md
+      - name: 音频检测
+        href: GO-SDK/Audio-Detection.md
+  - name: JAVA SDK
+    items: 
+       - name: 安装与初始化
+         href: JAVA-SDK/Install-And-Initialization.md
+       - name: 文本检测
+         href: JAVA-SDK/Text-Detection.md
+       - name: 图片检测
+         href: JAVA-SDK/Picture-Detection.md
+       - name: 视频检测
+         href: JAVA-SDK/Video-Detection.md
+       - name: 音频检测
+         href: JAVA-SDK/Audio-Detection.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新
