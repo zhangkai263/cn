@@ -79,6 +79,10 @@ e) 其他京东云有充足理由需要对多个京东云账户进行统一处�
 
 **您认可京东云有权在您违反上述约定时有权终止向您提供服务，即您将不能再登录任意一家京东网站，所有京东网站的服务将同时终止。**
 
+**2.4 《京东企业用户协议》**
+
+**您了解并同意，您在本网站完成的注册程序并注册成功后，您即已同意[《京东企业用户协议》](https://help.jd.com/user/issue/945-4099.html)所有条款，**
+
 ### 3、网站服务使用守则
 
 为有效保障您使用本服务的合法权益，您理解并同意接受以下规则：
@@ -334,4 +338,4 @@ e) 其他京东云有充足理由需要对多个京东云账户进行统一处�
 本服务条款之效力、解释、变更、执行与争议解决均适用中华人民共和国法律。因本服务条款产生之争议，均应依照中华人民共和国法律予以处理，并提交本合同签订地北京市大兴区有管辖权人民法院审判。
 
 
-[京东云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/Yhfwxy.pdf)
+[京东云用户服务协议-PDF下载](https://github.com/jdcloudcom/cn/blob/edit/image/Service-Agreements-and-Guarantees/Platform-Agreement/yhfwxyzx.pdf)
