@@ -112,15 +112,15 @@ items:
       - name: JAVA SDK
         items: 
           - name: 安装与初始化
-            href: JAVA-SDK/Install-And-Initialization.md
+            href: JAVA-SDK/Install-And-initialization.md
           - name: 文本检测
-            href: JAVA-SDK/Text-Detection.md
+            href: JAVA-SDK/Text-detection.md
           - name: 图片检测
-            href: JAVA-SDK/Picture-Detection.md
+            href: JAVA-SDK/Picture-detection.md
           - name: 视频检测
-            href: JAVA-SDK/Video-Detection.md
+            href: JAVA-SDK/Video-detection.md
           - name: 音频检测
-            href: JAVA-SDK/Audio-Detection.md 
+            href: JAVA-SDK/Audio-detection.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新
