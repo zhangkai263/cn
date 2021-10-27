@@ -12,7 +12,7 @@
 - 可选择账户数，以5的倍数进行增加，可根据企业实际人数选择适合的账户数。
 - 支持按年购买，支持1年、2年、3年。
 
-![购买说明](https://img1.jcloudcs.com/cn/image/jdcloud-mail/%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E.png)
+![购买说明](https://img1.jcloudcs.com/cn/image/jdcloud-mail/%E9%82%AE%E4%BB%B6%E8%B4%AD%E4%B9%B0%E9%A1%B5.png)
 
 
 
