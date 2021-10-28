@@ -99,6 +99,8 @@
               href: Operation-Guide/Instance/Reboot-Instance/MariaDB-Restart-Instance.md
             - name: 重启 SQL Server
               href: Operation-Guide/Instance/Reboot-Instance/SQLServer-Restart-Instance.md
+            - name: 重启 PostgreSQL
+              href: Operation-Guide/Instance/Reboot-Instance/PostgreSQL-Restart-Instance.md
   
       - name: 只读实例管理
         items:
