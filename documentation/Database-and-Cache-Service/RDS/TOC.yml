@@ -221,6 +221,8 @@
               herf: Operation-Guide/Backup/Create-From-Backup/Percona-Create-From-Backup.md
             - name: MariaDB 根据备份创建
               herf: Operation-Guide/Backup/Create-From-Backup/MariaDB-Create-From-Backup.md
+            - name: PostgreSQL根据备份创建
+              herf: Operation-Guide/Backup/Create-From-Backup/Postgresql-Create-From-Backup.md
           - name: 根据时间点创建
             items:
             - name: SQL Server 根据时间点创建
@@ -230,7 +232,9 @@
             - name: Percona 根据时间点创建
               herf: Operation-Guide/Backup/Create-To-Point-In-Time/Percona-Create-To-Point-In-Time.md                  
             - name: MariaDB 根据时间点创建
-              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MariaDB-Create-To-Point-In-Time.md                  
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MariaDB-Create-To-Point-In-Time.md  
+            - name: PostgreSQL根据时间点创建
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/PostgreSQL-Create-To-Point-In-Time.md        
           - name: 根据时间点恢复
             items:
             - name: MySQL 根据时间点恢复
