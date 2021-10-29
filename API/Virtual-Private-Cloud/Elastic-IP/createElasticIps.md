@@ -19,8 +19,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |---|---|---|---|---|
 |**maxCount**|Integer|True| |购买弹性ip数量；取值范围：[1,100]|
 |**elasticIpAddress**|String|False| |指定弹性ip地址进行创建，当申请创建多个弹性ip时，必须为空|
-|**elasticIpSpec**|[ElasticIpSpec](createElasticIps#elasticipspec)|True| |弹性ip规格|
-|**userTags**|[Tag[]](createElasticIps#tag)|False| |用户标签|
+|**elasticIpSpec**|[ElasticIpSpec](#elasticipspec)|True| |弹性ip规格|
+|**userTags**|[Tag[]](#tag)|False| |用户标签|
 |**ipType**|String|False| |弹性ip类型，取值：standard(标准公网IP)，edge(边缘公网IP)，默认为standard|
 
 ### <div id="Tag">Tag</div>
@@ -33,7 +33,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |---|---|---|---|---|
 |**bandwidthMbps**|Integer|True| |弹性公网IP的限速（单位：Mbps），取值范围为[1-200]|
 |**provider**|String|True| |IP线路信息。当IP类型为标准公网IP时，取值为bgp或no_bgp，cn-north-1：bgp；cn-south-1：bgp；cn-east-1：bgp；cn-east-2：bgp。当IP类型为边缘公网IP时，其值可通过调用describeEdgeIpProviders、获取不同边缘节点的边缘公网IP线路信息|
-|**chargeSpec**|[ChargeSpec](createElasticIps#chargespec)|False| |计费配置。边缘公网IP支持包年包月、按配置；标准公网IP支持包年包月、按配置、按流量|
+|**chargeSpec**|[ChargeSpec](#chargespec)|False| |计费配置。边缘公网IP支持包年包月、按配置；标准公网IP支持包年包月、按配置、按流量|
 ### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -46,7 +46,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createElasticIps#result)|返回结果|
+|**result**|[Result](#result)|返回结果|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
