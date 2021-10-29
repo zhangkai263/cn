@@ -24,14 +24,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$rocket_l
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getRocketLoaderSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[RocketLoader](#rocketloader)| |
-### <div id="RocketLoader">RocketLoader</div>
+|**data**|[RocketLoader](getRocketLoaderSetting#rocketloader)| |
+### <div id="rocketloader">RocketLoader</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

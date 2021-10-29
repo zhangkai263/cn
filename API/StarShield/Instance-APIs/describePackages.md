@@ -24,17 +24,17 @@ https://starshield.jdcloud-api.com/v1/regions/{regionId}/packages
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describePackages#result)| |
 |**requestId**|String|此次请求的ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[DescribePackRes[]](#describepackres)|套餐实例信息列表|
+|**dataList**|[DescribePackRes[]](describePackages#describepackres)|套餐实例信息列表|
 |**currentCount**|Integer|当前页记录数量|
 |**totalCount**|Integer|总记录数量|
 |**totalPage**|Integer|总页数|
-### <div id="DescribePackRes">DescribePackRes</div>
+### <div id="describepackres">DescribePackRes</div>
 |名称|类型|描述|
 |---|---|---|
 |**packType**|String|套餐类型|

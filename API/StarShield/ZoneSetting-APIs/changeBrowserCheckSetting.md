@@ -24,14 +24,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$browser_
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeBrowserCheckSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[BrowserCheck](#browsercheck)| |
-### <div id="BrowserCheck">BrowserCheck</div>
+|**data**|[BrowserCheck](changeBrowserCheckSetting#browsercheck)| |
+### <div id="browsercheck">BrowserCheck</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

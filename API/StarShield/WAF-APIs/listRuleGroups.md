@@ -31,14 +31,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/firewall$$waf$$pac
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](listRuleGroups#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[WAFRuleGroup[]](#wafrulegroup)| |
-### <div id="WAFRuleGroup">WAFRuleGroup</div>
+|**dataList**|[WAFRuleGroup[]](listRuleGroups#wafrulegroup)| |
+### <div id="wafrulegroup">WAFRuleGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|WAF组标识符标签|

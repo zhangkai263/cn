@@ -32,24 +32,24 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_id}/firewall$$waf$$packages/{p
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](listRules#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[WAFRule[]](#wafrule)| |
-### <div id="WAFRule">WAFRule</div>
+|**dataList**|[WAFRule[]](listRules#wafrule)| |
+### <div id="wafrule">WAFRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|WAF规则标识符标签|
 |**description**|String|规则的公开说明|
 |**priority**|String|在相关组中执行单个规则的顺序|
-|**group**|[Group](#group)| |
+|**group**|[Group](listRules#group)| |
 |**package_id**|String|WAF包标识符标签|
 |**allowed_modes**|String[]|定义触发规则时规则交互方式的可用模式。|
 |**mode**|String|评估请求时是否使用基于异常的规则。|
-### <div id="Group">Group</div>
+### <div id="group">Group</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|WAF group identifier tag|

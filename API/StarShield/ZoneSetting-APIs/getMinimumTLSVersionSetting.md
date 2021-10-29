@@ -21,14 +21,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$min_tls_
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getMinimumTLSVersionSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[ZoneSetting](#zonesetting)| |
-### <div id="ZoneSetting">ZoneSetting</div>
+|**data**|[ZoneSetting](getMinimumTLSVersionSetting#zonesetting)| |
+### <div id="zonesetting">ZoneSetting</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |

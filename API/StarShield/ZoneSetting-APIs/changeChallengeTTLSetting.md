@@ -24,14 +24,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$challeng
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeChallengeTTLSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[ChallengePageTTL](#challengepagettl)| |
-### <div id="ChallengePageTTL">ChallengePageTTL</div>
+|**data**|[ChallengePageTTL](changeChallengeTTLSetting#challengepagettl)| |
+### <div id="challengepagettl">ChallengePageTTL</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

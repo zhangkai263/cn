@@ -21,14 +21,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$http2
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getHTTP2Setting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[HTTP2Value](#http2value)| |
-### <div id="HTTP2Value">HTTP2Value</div>
+|**data**|[HTTP2Value](getHTTP2Setting#http2value)| |
+### <div id="http2value">HTTP2Value</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

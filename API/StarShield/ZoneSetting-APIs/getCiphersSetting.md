@@ -21,10 +21,10 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$ciphers
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getCiphersSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**dataList**|String[]| |

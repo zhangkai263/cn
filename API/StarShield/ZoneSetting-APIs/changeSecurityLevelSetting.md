@@ -24,14 +24,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$security
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeSecurityLevelSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SecurityLevel](#securitylevel)| |
-### <div id="SecurityLevel">SecurityLevel</div>
+|**data**|[SecurityLevel](changeSecurityLevelSetting#securitylevel)| |
+### <div id="securitylevel">SecurityLevel</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

@@ -24,14 +24,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$waf
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getWebApplicationFirewallWAFSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[WebApplicationFirewall](#webapplicationfirewall)| |
-### <div id="WebApplicationFirewall">WebApplicationFirewall</div>
+|**data**|[WebApplicationFirewall](getWebApplicationFirewallWAFSetting#webapplicationfirewall)| |
+### <div id="webapplicationfirewall">WebApplicationFirewall</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

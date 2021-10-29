@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$opportun
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeOpportunisticEncryptionSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[ZoneEnableOpportunisticEncryption](#zoneenableopportunisticencryption)| |
-### <div id="ZoneEnableOpportunisticEncryption">ZoneEnableOpportunisticEncryption</div>
+|**data**|[ZoneEnableOpportunisticEncryption](changeOpportunisticEncryptionSetting#zoneenableopportunisticencryption)| |
+### <div id="zoneenableopportunisticencryption">ZoneEnableOpportunisticEncryption</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

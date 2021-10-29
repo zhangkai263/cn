@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$http3
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeHTTP3Setting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[HTTP3Value](#http3value)| |
-### <div id="HTTP3Value">HTTP3Value</div>
+|**data**|[HTTP3Value](changeHTTP3Setting#http3value)| |
+### <div id="http3value">HTTP3Value</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

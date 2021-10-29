@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$0rtt
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](change0_RTTSessionResumptionSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[Zero_RTTValue](#zero_rttvalue)| |
-### <div id="Zero_RTTValue">Zero_RTTValue</div>
+|**data**|[Zero_RTTValue](change0_RTTSessionResumptionSetting#zero_rttvalue)| |
+### <div id="zero_rttvalue">Zero_RTTValue</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

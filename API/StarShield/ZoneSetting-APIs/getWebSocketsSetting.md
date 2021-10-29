@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$websocke
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getWebSocketsSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[WebSockets](#websockets)| |
-### <div id="WebSockets">WebSockets</div>
+|**data**|[WebSockets](getWebSocketsSetting#websockets)| |
+### <div id="websockets">WebSockets</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|
