@@ -22,37 +22,37 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|返回结果|
+|**result**|[Result](#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**networkSecurityGroup**|[NetworkSecurityGroup](#networksecuritygroup)|安全组资源信息|
-### <div id="NetworkSecurityGroup">NetworkSecurityGroup</div>
+|**networkSecurityGroup**|[NetworkSecurityGroup](#user-content-networksecuritygroup)|安全组资源信息|
+### <div id="user-content-networksecuritygroup">NetworkSecurityGroup</div>
 |名称|类型|描述|
 |---|---|---|
 |**networkSecurityGroupId**|String|安全组ID|
 |**networkSecurityGroupName**|String|安全组名称|
 |**description**|String|安全组描述信息|
 |**vpcId**|String|安全组所在vpc的Id|
-|**securityGroupRules**|[SecurityGroupRule[]](#securitygrouprule)|安全组规则信息|
+|**securityGroupRules**|[SecurityGroupRule[]](#user-content-securitygrouprule)|安全组规则信息|
 |**createdTime**|String|安全组创建时间|
-|**networkSecurityGroupType**|String|安全组类型, default：默认安全组，custom：自定义安全组|
+|**networkSecurityGroupType**|String|安全组类型，default：默认安全组，custom：自定义安全组|
 |**networkInterfaceIds**|String[]|安全组绑定的弹性网卡列表|
-### <div id="SecurityGroupRule">SecurityGroupRule</div>
+### <div id="user-content-securitygrouprule">SecurityGroupRule</div>
 |名称|类型|描述|
 |---|---|---|
 |**ruleId**|String|安全组规则ID|
-|**direction**|Number|安全组规则方向。0：入规则; 1：出规则|
-|**protocol**|Number|规则限定协议。300:All; 6:TCP; 17:UDP; 1:ICMP|
+|**direction**|Number|安全组规则方向。0：入规则； 1：出规则|
+|**protocol**|Number|规则限定协议。300：All；6：TCP；17：UDP；1：ICMP|
 |**addressPrefix**|String|匹配地址前缀|
 |**ipVersion**|Number|匹配地址协议版本。4：IPv4|
-|**fromPort**|Number|规则限定起始传输层端口, 默认1 ，若protocal不是传输层协议，恒为0|
-|**toPort**|Number|规则限定终止传输层端口, 默认1 ，若protocal不是传输层协议，恒为0|
+|**fromPort**|Number|规则限定起始传输层端口, 默认1，若protocal不是传输层协议，恒为0|
+|**toPort**|Number|规则限定终止传输层端口, 默认1，若protocal不是传输层协议，恒为0|
 |**createdTime**|String|安全组规则创建时间|
-|**description**|String|描述,​ 允许输入UTF-8编码下的全部字符，不超过256字符|
-|**ruleType**|String|安全组规则类型, default：默认安全组规则，custom：自定义安全组规则|
+|**description**|String|描述，允许输入UTF-8编码下的全部字符，不超过256字符|
+|**ruleType**|String|安全组规则类型，default：默认安全组规则，custom：自定义安全组规则|
 
 ## 返回码
 |返回码|描述|
