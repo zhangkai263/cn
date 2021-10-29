@@ -20,7 +20,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}:add
 |---|---|---|---|---|
 |**networkAclRuleSpecs**|[AddNetworkAclRuleSpec[]](#user-content-addnetworkaclrulespec)|True| |networkAcl规则列表|
 
-### <div id="user-content-AddNetworkAclRuleSpec">AddNetworkAclRuleSpec</div>
+### <div id="user-content-addnetworkaclrulespec">AddNetworkAclRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**protocol**|String|True| |规则限定协议。取值范围：All,TCP,UDP,ICMP|
