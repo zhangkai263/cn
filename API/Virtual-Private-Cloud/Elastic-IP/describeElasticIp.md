@@ -22,14 +22,14 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)|返回结果|
+|**result**|[Result](#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIp**|[ElasticIp](#elasticip)|elasticIp资源信息|
-### <div id="ElasticIp">ElasticIp</div>
+|**elasticIp**|[ElasticIp](#user-content-elasticip)|elasticIp资源信息|
+### <div id="user-content-elasticip">ElasticIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**elasticIpId**|String|弹性公网IP的Id|
@@ -40,18 +40,18 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**networkInterfaceId**|String|配置弹性网卡Id|
 |**instanceId**|String|实例Id|
 |**instanceType**|String|实例类型,取值为：compute、lb、container、pod|
-|**charge**|[Charge](#charge)|计费配置|
+|**charge**|[Charge](#user-content-charge)|计费配置|
 |**createdTime**|String|弹性公网IP的创建时间|
 |**az**|String|弹性公网IP的可用区属性，如果为空，表示全可用区|
-|**tags**|[Tag[]](#tag)|Tag信息|
+|**tags**|[Tag[]](#user-content-tag)|Tag信息|
 |**ipType**|String|弹性公网IP的IP类型，取值：standard(标准弹性IP)、edge(边缘弹性IP)|
 |**bandwidthPackageId**|String|加入的共享带宽包ID，如果没有加入共享带宽包该值为空|
-### <div id="Tag">Tag</div>
+### <div id="user-content-tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String|Tag键|
 |**value**|String|Tag值|
-### <div id="Charge">Charge</div>
+### <div id="user-content-charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
