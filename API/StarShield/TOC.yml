@@ -1,0 +1,223 @@
+name: 星盾安全加速
+href:
+items:
+  - name: 接口概览
+    href: overview.md
+  - name: 更新历史
+    href: changeLog.md
+  - name: 接口信息
+    items:
+      - name: 域管理接口
+        items:
+          - name: listZones
+            herf: Zone-APIs/listZones.md
+          - name: deleteZone
+            herf: Zone-APIs/deleteZone.md
+          - name: purgeAllFiles
+            herf: Zone-APIs/purgeAllFiles.md
+          - name: purgeFilesByURL
+            herf: Zone-APIs/purgeFilesByURL.md
+          - name: purgeFilesByCache_TagsAndHostOrPrefix
+            herf: Zone-APIs/purgeFilesByCache_TagsAndHostOrPrefix.md
+      - name: 域配置管理接口
+        items:
+          - name: change0_RTTSessionResumptionSetting
+            herf: ZoneSetting-APIs/change0_RTTSessionResumptionSetting.md
+          - name: changeAlwaysOnlineSetting
+            herf: ZoneSetting-APIs/changeAlwaysOnlineSetting.md
+          - name: changeAlwaysUseHTTPSSetting
+            herf: ZoneSetting-APIs/changeAlwaysUseHTTPSSetting.md
+          - name: changeAutomaticHTTPSRewritesSetting
+            herf: ZoneSetting-APIs/changeAutomaticHTTPSRewritesSetting.md
+          - name: changeBrotliSetting
+            herf: ZoneSetting-APIs/changeBrotliSetting.md
+          - name: changeBrowserCacheTTLSetting
+            herf: ZoneSetting-APIs/changeBrowserCacheTTLSetting.md
+          - name: changeBrowserCheckSetting
+            herf: ZoneSetting-APIs/changeBrowserCheckSetting.md
+          - name: changeCacheLevelSetting
+            herf: ZoneSetting-APIs/changeCacheLevelSetting.md
+          - name: changeChallengeTTLSetting
+            herf: ZoneSetting-APIs/changeChallengeTTLSetting.md
+          - name: changeCiphersSetting
+            herf: ZoneSetting-APIs/changeCiphersSetting.md
+          - name: changeDevelopmentModeSetting
+            herf: ZoneSetting-APIs/changeDevelopmentModeSetting.md
+          - name: changeEmailObfuscationSetting
+            herf: ZoneSetting-APIs/changeEmailObfuscationSetting.md
+          - name: changeEnableErrorPagesOnSetting
+            herf: ZoneSetting-APIs/changeEnableErrorPagesOnSetting.md
+          - name: changeEnableQueryStringSortSetting
+            herf: ZoneSetting-APIs/changeEnableQueryStringSortSetting.md
+          - name: changeHotlinkProtectionSetting
+            herf: ZoneSetting-APIs/changeHotlinkProtectionSetting.md
+          - name: changeHTTP2EdgePrioritizationSetting
+            herf: ZoneSetting-APIs/changeHTTP2EdgePrioritizationSetting.md
+          - name: changeHTTP2Setting
+            herf: ZoneSetting-APIs/changeHTTP2Setting.md
+          - name: changeHTTP3Setting
+            herf: ZoneSetting-APIs/changeHTTP3Setting.md
+          - name: changeIPGeolocationSetting
+            herf: ZoneSetting-APIs/changeIPGeolocationSetting.md
+          - name: changeIPv6Setting
+            herf: ZoneSetting-APIs/changeIPv6Setting.md
+          - name: changeMaxUploadSetting
+            herf: ZoneSetting-APIs/changeMaxUploadSetting.md
+          - name: changeMinifySetting
+            herf: ZoneSetting-APIs/changeMinifySetting.md
+          - name: changeMinimumTLSVersionSetting
+            herf: ZoneSetting-APIs/changeMinimumTLSVersionSetting.md
+          - name: changeMirageSetting
+            herf: ZoneSetting-APIs/changeMirageSetting.md
+          - name: changeMobileRedirectSetting
+            herf: ZoneSetting-APIs/changeMobileRedirectSetting.md
+          - name: changeOpportunisticEncryptionSetting
+            herf: ZoneSetting-APIs/changeOpportunisticEncryptionSetting.md
+          - name: changePolishSetting
+            herf: ZoneSetting-APIs/changePolishSetting.md
+          - name: changePrefetchPreloadSetting
+            herf: ZoneSetting-APIs/changePrefetchPreloadSetting.md
+          - name: changePrivacyPassSetting
+            herf: ZoneSetting-APIs/changePrivacyPassSetting.md
+          - name: changePseudoIPv4Setting
+            herf: ZoneSetting-APIs/changePseudoIPv4Setting.md
+          - name: changeRocketLoaderSetting
+            herf: ZoneSetting-APIs/changeRocketLoaderSetting.md
+          - name: changeSecurityLevelSetting
+            herf: ZoneSetting-APIs/changeSecurityLevelSetting.md
+          - name: changeServerSideExcludeSetting
+            herf: ZoneSetting-APIs/changeServerSideExcludeSetting.md
+          - name: changeSSLSetting
+            herf: ZoneSetting-APIs/changeSSLSetting.md
+          - name: changeTLS1_3Setting
+            herf: ZoneSetting-APIs/changeTLS1_3Setting.md
+          - name: changeTLSClientAuthSetting
+            herf: ZoneSetting-APIs/changeTLSClientAuthSetting.md
+          - name: changeTrueClientIPSetting
+            herf: ZoneSetting-APIs/changeTrueClientIPSetting.md
+          - name: changeWebApplicationFirewallWAFSetting
+            herf: ZoneSetting-APIs/changeWebApplicationFirewallWAFSetting.md
+          - name: changeWebPSetting
+            herf: ZoneSetting-APIs/changeWebPSetting.md
+          - name: changeWebSocketsSetting
+            herf: ZoneSetting-APIs/changeWebSocketsSetting.md
+          - name: editZoneSettingsInfo
+            herf: ZoneSetting-APIs/editZoneSettingsInfo.md
+          - name: getAdvancedDDOSSetting
+            herf: ZoneSetting-APIs/getAdvancedDDOSSetting.md
+          - name: getAlwaysOnlineSetting
+            herf: ZoneSetting-APIs/getAlwaysOnlineSetting.md
+          - name: getAlwaysUseHTTPSSetting
+            herf: ZoneSetting-APIs/getAlwaysUseHTTPSSetting.md
+          - name: getAutomaticHTTPSRewritesSetting
+            herf: ZoneSetting-APIs/getAutomaticHTTPSRewritesSetting.md
+          - name: getBrowserCacheTTLSetting
+            herf: ZoneSetting-APIs/getBrowserCacheTTLSetting.md
+          - name: getCacheLevelSetting
+            herf: ZoneSetting-APIs/getCacheLevelSetting.md
+          - name: getChallengeTTLSetting
+            herf: ZoneSetting-APIs/getChallengeTTLSetting.md
+          - name: getCiphersSetting
+            herf: ZoneSetting-APIs/getCiphersSetting.md
+          - name: getDevelopmentModeSetting
+            herf: ZoneSetting-APIs/getDevelopmentModeSetting.md
+          - name: getEmailObfuscationSetting
+            herf: ZoneSetting-APIs/getEmailObfuscationSetting.md
+          - name: getEnableErrorPagesOnSetting
+            herf: ZoneSetting-APIs/getEnableErrorPagesOnSetting.md
+          - name: getEnableQueryStringSortSetting
+            herf: ZoneSetting-APIs/getEnableQueryStringSortSetting.md
+          - name: getHotlinkProtectionSetting
+            herf: ZoneSetting-APIs/getHotlinkProtectionSetting.md
+          - name: getHTTP2EdgePrioritizationSetting
+            herf: ZoneSetting-APIs/getHTTP2EdgePrioritizationSetting.md
+          - name: getHTTP2Setting
+            herf: ZoneSetting-APIs/getHTTP2Setting.md
+          - name: getHTTP3Setting
+            herf: ZoneSetting-APIs/getHTTP3Setting.md
+          - name: getImageResizingSetting
+            herf: ZoneSetting-APIs/getImageResizingSetting.md
+          - name: getIPGeolocationSetting
+            herf: ZoneSetting-APIs/getIPGeolocationSetting.md
+          - name: getIPv6Setting
+            herf: ZoneSetting-APIs/getIPv6Setting.md
+          - name: getMinifySetting
+            herf: ZoneSetting-APIs/getMinifySetting.md
+          - name: getMinimumTLSVersionSetting
+            herf: ZoneSetting-APIs/getMinimumTLSVersionSetting.md
+          - name: getMirageSetting
+            herf: ZoneSetting-APIs/getMirageSetting.md
+          - name: getMobileRedirectSetting
+            herf: ZoneSetting-APIs/getMobileRedirectSetting.md
+          - name: getOpportunisticEncryptionSetting
+            herf: ZoneSetting-APIs/getOpportunisticEncryptionSetting.md
+          - name: getPolishSetting
+            herf: ZoneSetting-APIs/getPolishSetting.md
+          - name: getPrefetchPreloadSetting
+            herf: ZoneSetting-APIs/getPrefetchPreloadSetting.md
+          - name: getPrivacyPassSetting
+            herf: ZoneSetting-APIs/getPrivacyPassSetting.md
+          - name: getPseudoIPv4Setting
+            herf: ZoneSetting-APIs/getPseudoIPv4Setting.md
+          - name: getRocketLoaderSetting
+            herf: ZoneSetting-APIs/getRocketLoaderSetting.md
+          - name: getSecurityHeaderHSTSSetting
+            herf: ZoneSetting-APIs/getSecurityHeaderHSTSSetting.md
+          - name: getSecurityLevelSetting
+            herf: ZoneSetting-APIs/getSecurityLevelSetting.md
+          - name: getServerSideExcludeSetting
+            herf: ZoneSetting-APIs/getServerSideExcludeSetting.md
+          - name: getSSLSetting
+            herf: ZoneSetting-APIs/getSSLSetting.md
+          - name: getTLSClientAuthSetting
+            herf: ZoneSetting-APIs/getTLSClientAuthSetting.md
+          - name: getTrueClientIPSetting
+            herf: ZoneSetting-APIs/getTrueClientIPSetting.md
+          - name: getWebApplicationFirewallWAFSetting
+            herf: ZoneSetting-APIs/getWebApplicationFirewallWAFSetting.md
+          - name: getWebPSetting
+            herf: ZoneSetting-APIs/getWebPSetting.md
+          - name: getWebSocketsSetting
+            herf: ZoneSetting-APIs/getWebSocketsSetting.md
+          - name: getZoneEnableTLS1_3Setting
+            herf: ZoneSetting-APIs/getZoneEnableTLS1_3Setting.md
+      - name: 套餐实例管理接口
+        items:
+          - name: checkInstancesName
+            herf: Instance-APIs/checkInstancesName.md
+          - name: createInstance
+            herf: Instance-APIs/createInstance.md
+          - name: describeInstances
+            herf: Instance-APIs/describeInstances.md
+          - name: modifyInstance
+            herf: Instance-APIs/modifyInstance.md
+          - name: selectDetailList
+            herf: Instance-APIs/selectDetailList.md
+          - name: describePackage
+            herf: Instance-APIs/describePackage.md
+          - name: describePackages
+            herf: Instance-APIs/describePackages.md
+      - name: SSL管理接口
+        items:
+          - name: listCertificatePacks
+            herf: SSL-APIs/listCertificatePacks.md
+          - name: deleteAdvancedCertificateManagerCertificatePack
+            herf: SSL-APIs/deleteAdvancedCertificateManagerCertificatePack.md
+          - name: listSSLConfigurations
+            herf: SSL-APIs/listSSLConfigurations.md
+          - name: deleteSSLConfiguration
+            herf: SSL-APIs/deleteSSLConfiguration.md
+          - name: universalSSLSettingsDetails
+            herf: SSL-APIs/universalSSLSettingsDetails.md
+      - name: WAF管理接口
+        items:
+          - name: listRuleGroups
+            herf: WAF-APIs/listRuleGroups.md
+          - name: ruleGroupDetails
+            herf: WAF-APIs/ruleGroupDetails.md
+          - name: firewallPackageDetails
+            herf: WAF-APIs/firewallPackageDetails.md
+          - name: listFirewallPackages
+            herf: WAF-APIs/listFirewallPackages.md
+          - name: listRules
+            herf: WAF-APIs/listRules.md
