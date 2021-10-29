@@ -21,25 +21,25 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$security
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getSecurityHeaderHSTSSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SecurityHeader](#securityheader)| |
-### <div id="SecurityHeader">SecurityHeader</div>
+|**data**|[SecurityHeader](getSecurityHeaderHSTSSetting#securityheader)| |
+### <div id="securityheader">SecurityHeader</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|
-|**value**|[Value](#value)| |
+|**value**|[Value](getSecurityHeaderHSTSSetting#value)| |
 |**editable**|Boolean|该配置是否可以修改|
 |**modified_on**|String|上次修改此设置的时间|
-### <div id="Value">Value</div>
+### <div id="value">Value</div>
 |名称|类型|描述|
 |---|---|---|
-|**strict_transport_security**|[Strict_transport_security](#strict_transport_security)| |
-### <div id="Strict_transport_security">Strict_transport_security</div>
+|**strict_transport_security**|[Strict_transport_security](getSecurityHeaderHSTSSetting#strict_transport_security)| |
+### <div id="strict_transport_security">Strict_transport_security</div>
 |名称|类型|描述|
 |---|---|---|
 |**enabled**|Boolean|是否启用了严格传输安全|

@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$always_o
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeAlwaysOnlineSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[AlwaysOnlineMode](#alwaysonlinemode)| |
-### <div id="AlwaysOnlineMode">AlwaysOnlineMode</div>
+|**data**|[AlwaysOnlineMode](changeAlwaysOnlineSetting#alwaysonlinemode)| |
+### <div id="alwaysonlinemode">AlwaysOnlineMode</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

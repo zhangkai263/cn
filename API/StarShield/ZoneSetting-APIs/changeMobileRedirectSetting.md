@@ -17,9 +17,9 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$mobile_r
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**value**|[Value_0](#value_0)|False| | |
+|**value**|[Value_0](changeMobileRedirectSetting#value_0)|False| | |
 
-### <div id="Value_0">Value_0</div>
+### <div id="value_0">Value_0</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**status**|String|False| |是否启用移动重定向|
@@ -29,21 +29,21 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$mobile_r
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeMobileRedirectSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[MobileRedirect](#mobileredirect)| |
-### <div id="MobileRedirect">MobileRedirect</div>
+|**data**|[MobileRedirect](changeMobileRedirectSetting#mobileredirect)| |
+### <div id="mobileredirect">MobileRedirect</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|
-|**value**|[Value_0](#value_0)| |
+|**value**|[Value_0](changeMobileRedirectSetting#value_0)| |
 |**editable**|Boolean|该配置是否可以修改|
 |**modified_on**|String|上次修改此设置的时间|
-### <div id="Value_0">Value_0</div>
+### <div id="value_0">Value_0</div>
 |名称|类型|描述|
 |---|---|---|
 |**status**|String|是否启用移动重定向|

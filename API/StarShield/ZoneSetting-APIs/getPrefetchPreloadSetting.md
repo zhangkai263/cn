@@ -21,14 +21,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$prefetch
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getPrefetchPreloadSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[ZoneSetting](#zonesetting)| |
-### <div id="ZoneSetting">ZoneSetting</div>
+|**data**|[ZoneSetting](getPrefetchPreloadSetting#zonesetting)| |
+### <div id="zonesetting">ZoneSetting</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String| |

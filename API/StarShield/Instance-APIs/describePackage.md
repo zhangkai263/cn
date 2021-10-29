@@ -22,14 +22,14 @@ https://starshield.jdcloud-api.com/v1/regions/{regionId}/packages/{packType}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describePackage#result)| |
 |**requestId**|String|此次请求的ID|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**describePackRes**|[DescribePackRes](#describepackres)| |
-### <div id="DescribePackRes">DescribePackRes</div>
+|**describePackRes**|[DescribePackRes](describePackage#describepackres)| |
+### <div id="describepackres">DescribePackRes</div>
 |名称|类型|描述|
 |---|---|---|
 |**packType**|String|套餐类型|

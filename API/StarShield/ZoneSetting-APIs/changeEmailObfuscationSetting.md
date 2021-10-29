@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$email_ob
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeEmailObfuscationSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[EmailObfuscation](#emailobfuscation)| |
-### <div id="EmailObfuscation">EmailObfuscation</div>
+|**data**|[EmailObfuscation](changeEmailObfuscationSetting#emailobfuscation)| |
+### <div id="emailobfuscation">EmailObfuscation</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

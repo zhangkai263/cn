@@ -25,14 +25,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$hotlink_
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeHotlinkProtectionSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[HotlinkProtection](#hotlinkprotection)| |
-### <div id="HotlinkProtection">HotlinkProtection</div>
+|**data**|[HotlinkProtection](changeHotlinkProtectionSetting#hotlinkprotection)| |
+### <div id="hotlinkprotection">HotlinkProtection</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

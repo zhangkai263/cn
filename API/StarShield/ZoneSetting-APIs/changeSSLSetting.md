@@ -30,14 +30,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$ssl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changeSSLSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SSL](#ssl)| |
-### <div id="SSL">SSL</div>
+|**data**|[SSL](changeSSLSetting#ssl)| |
+### <div id="ssl">SSL</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

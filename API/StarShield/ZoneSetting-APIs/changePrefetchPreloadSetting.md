@@ -23,14 +23,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$prefetch
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](changePrefetchPreloadSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[PrefetchPreload](#prefetchpreload)| |
-### <div id="PrefetchPreload">PrefetchPreload</div>
+|**data**|[PrefetchPreload](changePrefetchPreloadSetting#prefetchpreload)| |
+### <div id="prefetchpreload">PrefetchPreload</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

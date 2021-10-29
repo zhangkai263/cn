@@ -22,14 +22,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$advanced
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getAdvancedDDOSSetting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[AdvancedDDoSProtection](#advancedddosprotection)| |
-### <div id="AdvancedDDoSProtection">AdvancedDDoSProtection</div>
+|**data**|[AdvancedDDoSProtection](getAdvancedDDOSSetting#advancedddosprotection)| |
+### <div id="advancedddosprotection">AdvancedDDoSProtection</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|

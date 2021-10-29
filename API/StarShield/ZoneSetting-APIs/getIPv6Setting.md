@@ -21,14 +21,14 @@ https://starshield.jdcloud-api.com/v1/zones/{zone_identifier}/settings$$ipv6
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getIPv6Setting#result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[IPv6](#ipv6)| |
-### <div id="IPv6">IPv6</div>
+|**data**|[IPv6](getIPv6Setting#ipv6)| |
+### <div id="ipv6">IPv6</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|String|域设置的ID|
