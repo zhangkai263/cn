@@ -24,7 +24,7 @@
 |存储类型|不同的存储类对应的实例规格的最大IOPS不同，当前支持本地SSD、本地NVMe、SSD云盘，具体以控制台为准。存储类型情况请参考 [MySQL 产品规格](../../Introduction/Specifications/MySQL-Specifications.md)。|
 |规格|实例的CPU和内存，不同的规格对应不同的最大连接数和最大IOPS, 请参考 [MySQL 产品规格](../../Introduction/Specifications/MySQL-Specifications.md)。|
 |存储空间|该存储空间包括数据空间、系统文件空间以及日志文件空间。|
-|私有网络|&bull;请确保需要连接数据库实例的云主机和数据库实例在同一个私有网络内。<br>&bull;由于管理需要，创建MySQL, Percona, MariaDB所绑定的子网需要4个以上的剩余IP<br>&bull;由于管理需要，创建SQL Server、PostgreSQL所绑定的子网需要10个以上的剩余IP |
+|私有网络|&bull;请确保需要连接数据库实例的云主机和数据库实例在同一个私有网络内。<br>&bull;由于管理需要，创建MySQL, Percona, MariaDB所绑定的子网需要4个以上的剩余IP<br>&bull;由于管理需要，创建SQL Server、PostgreSQL所绑定的子网需要10个以上的剩余IP。<br>&bull;当该私有网络支持IPV6时，创建的 RDS 实例也支持IPV6。 |
 |部署方式|&bull;支持多区域和单区域部署两种方式。<br>&bull;多可用区部署：数据库主从分别位于不同的可用区，可用性更高：一个可用区发生故障，整个实例仍然可提供服务。<br>&bull;单可用区部署：主从位于同一可用区，如果该可用区发生故障，整个实例无法对外提供服务。|
 |参数组|根据实际需求选择参数设置，建议与原实例参数保持一致|
 |实例名称|&bull; 2-32位字符<br>&bull; 支持数字、小写字母、中文以及英文下划线|
