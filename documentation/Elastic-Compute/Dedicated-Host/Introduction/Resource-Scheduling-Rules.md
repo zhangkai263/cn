@@ -11,7 +11,7 @@
 
 如下图示，设专有资源池配置了可用区A及可用区B，若需要新建一台专有宿主机，系统将选择可用区B的逻辑机架2上分配。
 
-<div align="center"><img src="https://img1.jcloudcs.com/cn/image/dh/resource-scheduling-rules.png" width="700"></div>
+![](../../../../image/dh/resource-scheduling-rules.png)
 
 ## 云主机调度规则
 
