@@ -1,7 +1,7 @@
 # 创建集群
 
 您可以通过 JMR 控制台快速创建集群。
-关于JMR的计费说明请参见：[价格总览](../Pricing/Price-Overview.md)、[计费概述](../Pricing/Billing-Overview.md)，本文介绍通过控制台创建JMR集群(在支持 IPV6 的私有网络及子网中创建集群时，创建的 JMR集群 将自动支持IPv6)。
+关于JMR的计费说明请参见：[价格总览](../Pricing/Price-Overview.md)、[计费概述](../Pricing/Billing-Overview.md)，本文介绍通过控制台创建JMR集群(在支持 IPv6 的私有网络及子网中创建集群时，创建的 JMR集群 将自动支持IPv6)。
 
 ## 前提条件
 
