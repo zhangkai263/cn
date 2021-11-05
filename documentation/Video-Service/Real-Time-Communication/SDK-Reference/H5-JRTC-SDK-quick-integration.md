@@ -1,7 +1,7 @@
 <h1>JRTC简介</h1>
 <p>JRTC的基本功能包含创建实例、加入房间、本地发布、订阅远端和离开房间等。当您成功创建实例，您可以进行本地预览视频功能，进行简单的预览和测试。</p>
 <h1>前提条件</h1>
-<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/sdk-download">SDK下载</a>。</p>
+<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/JRTC-H5.zip">SDK下载</a>。</p>
 <h1>操作步骤</h1>
 <p>1.使用scripty引入SDK,&nbsp; demo中SDK存放于public文件夹下。</p>
 <pre class="code highlight js-syntax-highlight shell white" lang="shell"><code><span class="line" lang="shell">&lt;script src=&quot;./jrtc.min.js&quot;&gt;&lt;/script&gt;</span></code></pre>
