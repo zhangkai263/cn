@@ -268,7 +268,7 @@
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">屏幕共享已取消</span></p></td></tr>
 <tr>
-<td rowspan="3">其它错误</td>
+<td rowspan="2">其它错误</td>
 <td colspan="1"><span style="color: rgb(0,51,102);">10007</span></td>
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">&quot;constraints&nbsp;&quot;&nbsp;+&nbsp;e.constraint&nbsp;+&nbsp;&quot;&nbsp;error&quot;</span></p></td>
@@ -279,11 +279,7 @@
 <p><span style="color: rgb(0,51,102);">1e4</span></p></td>
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">e.message&nbsp;:&nbsp;&quot;device&nbsp;unknown&nbsp;error&quot;</span></p></td>
-<td colspan="1">未知错误</td></tr>
-<tr>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td></tr></tbody></table>
+<td colspan="1">未知错误</td></tr></tbody></table>
 <p><span style="color: rgb(0,51,102);"><br /></span></p>
 <h2>2.JRTCRoom</h2>
 <p><span style="color: rgb(0,0,0);">调用JWebrtc.</span>enterRoom 进入房间成功, 会返回一个ROOM对象:&nbsp;JRTCRoom,可通过JRTCRoom来进行房间内操作</p>
