@@ -1,5 +1,5 @@
-# Android JRTC SDK 快速集成  
-本文主要介绍如何快速的将JRTC集成到您的项目中，只要按照如下步骤进行配置，就可以完成SDK的集成工作。  
+# Android JRTC SDK 快速集成
+本文主要介绍如何快速的将JRTC集成到您的项目中，只要按照如下步骤进行配置，就可以完成SDK的集成工作。
 
 + ## 开发环境要求
     Android Studio 3.5+
@@ -46,7 +46,4 @@
     在manifest中配置APP的权限，JRTC SDK需要以下权限<br>\<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><br>\<uses-permission android:name="android.permission.INTERNET" /><br>\<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><br>\<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><br>\<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /><br>\<uses-permission android:name="android.permission.RECORD_AUDIO" /><br>\<uses-permission android:name="android.permission.CAMERA" /><br>\<uses-permission android:name="android.permission.READ_PHONE_STATE" /><br>\<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /><br>\<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /><br>\<uses-permission android:name="android.permission.BLUETOOTH" /><br>\<uses-permission android:name="android.permission.READ_PHONE_STATE" /><br>\<uses-feature android:name="android.hardware.camera" /><br>\<uses-feature android:name="android.hardware.camera.autofocus" />
 + ## 设置混淆规则
     在 proguard-rules.pro 文件，将JRTC SDK 相关类加入不混淆名单：
-    
-    -keep class com.google.gson.** {*;}
-    
     -keep class com.jdcloud.jrtc.** {*;}
