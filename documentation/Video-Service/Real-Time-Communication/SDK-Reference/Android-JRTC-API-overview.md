@@ -9,7 +9,7 @@
         创建JRTCBase单例
 
         static JRTCBase sharedInstance( Context context )
-        | 参数 | |说明|
+        | 参数 | |说明|   
         | --- | ---|
         | context | Android上下文,内部会转为ApplicationContext用于系统API调用 |
 
