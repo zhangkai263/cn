@@ -1,6 +1,6 @@
 # 应用配置
 
-登录实时音视频控制台，单击左侧菜单栏选择“应用管理”，找到需要配置的应用，点击列表中的“配置”。
+登录视音频通信控制台，单击左侧菜单栏选择“应用管理”，找到需要配置的应用，点击列表中的“配置”。
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Real-Time-Communication/image/Real-Time-Communicat/RTC-%E5%BA%94%E7%94%A8%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png)
 
