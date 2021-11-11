@@ -8,7 +8,7 @@
 <th colspan="1">说明</th></tr>
 <tr>
 <td>IOS</td>
-<td><a href="https://jrtcpictures.s3.cn-north-1.jdcloud-oss.com/1020sdk/JRTC_iOS.framework.zip">DownLoad</a></td>
+<td><a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/JRTC_iOS.framework-2021-11-09-17-27_release-1.6.7.zip">DownLoad</a></td>
 <td colspan="1">音视频通信IOS SDK文件</td></tr>
 <tr>
 <td>Android</td>
