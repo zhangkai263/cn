@@ -6,7 +6,7 @@
 
 ## 回调配置
 
-进入应用配置页面，默认显示回调配置tab栏，点击”更改“即可进行回调配置，目前支持配置房间回调地址和媒体回调地址，JRTC后续将支持更多回调类型。
+进入应用配置页面，默认显示回调配置选项卡，点击”更改“即可进行回调配置，目前支持配置房间回调地址和媒体回调地址，JRTC后续将支持更多回调类型。
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Real-Time-Communication/image/Real-Time-Communicat/RTC%E5%BA%94%E7%94%A8%E7%AE%A1%E7%90%86-%E9%85%8D%E7%BD%AE.png)
 ![](https://github.com/jdcloudcom/cn/blob/cn-Real-Time-Communication/image/Real-Time-Communicat/RTC-%E5%9B%9E%E8%B0%83%E9%85%8D%E7%BD%AE.png)
@@ -27,22 +27,17 @@
   
 2.控制台开通及配置
 
-1）通过音视频通信控制台，应用管理页卡进入APP列表，选择要开通云端录制的APP，如图所示
-
-![image](https://user-images.githubusercontent.com/89631429/138041272-1d922232-3ad9-4ac1-a011-ba351df3e3f5.png)
-
-
-2）配置页面中，选择云端录制选项卡，默认状态为未开启
+1）配置页面中，选择云端录制选项卡，默认状态为未开启
 
 ![image](https://user-images.githubusercontent.com/89631429/138041301-555cc121-b1f1-4e31-bd56-98b913082cbd.png)
 
 
-3）点击 功能开启按钮，进行配置
+2）点击 功能开启按钮，进行配置
 
 ![image](https://user-images.githubusercontent.com/89631429/138041339-ddc2be30-0ccf-405d-825d-117c838ea820.png)
 
 
-4）配置项目说明
+3）配置项目说明
 
 a)录制方式
 
@@ -105,22 +100,17 @@ e)回调秘钥
 
 2.控制台开通及配置
 
-1）通过音视频通信控制台，应用管理页卡进入APP列表，选择要开通的APP，如图所示
-
-![image](https://user-images.githubusercontent.com/89631429/138047797-0d1312fa-e799-4bb7-8089-b8c782c2a1e7.png)
-
-
-2）配置页面中，选择旁路转推选项卡，默认状态为未开启
+1）配置页面中，选择旁路转推选项卡，默认状态为未开启
 
 ![image](https://user-images.githubusercontent.com/89631429/138047857-20ec6436-50bc-4861-9f2b-5fe16fca9acb.png)
 
 
-3）点击 功能开启按钮，进行配置
+2）点击 功能开启按钮，进行配置
 
 ![image](https://user-images.githubusercontent.com/89631429/138047913-4089f08e-4b18-42dc-bee6-50cdca1e7b91.png)
 
 
-4）配置项目说明
+3）配置项目说明
 
 a）推流方式：
 
