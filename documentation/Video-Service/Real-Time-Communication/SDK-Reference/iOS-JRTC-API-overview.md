@@ -1520,7 +1520,7 @@
 <h2>1. JRTCEnterRoomAuthModel类</h2>
 <p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">加入房间必传的鉴权信息</span></p>
 <p>1.SDK版本</p>
-<h3><code>@property(nonatomic,strong)NSString *ver;</code></h3>
+<h3><code>@property(nonatomic,strong)NSString *;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
 <thead>
