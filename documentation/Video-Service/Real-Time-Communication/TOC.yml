@@ -25,10 +25,22 @@ items:
   items:
     - name: 开通服务
       href: Getting-Started/Service-Provisioning.md
-    - name: 云端录制功能
-      href: Getting-Started/Record-to-the-Cloud.md
-    - name: 旁路转推功能
-      href: Getting-Started/Push-to-Video.md
+    - name: 概览
+      href: Getting-Started/Overview.md  
+    - name: 应用管理
+      items:
+        - name: 应用管理列表
+          href: Getting-Started/Application-Management.md
+        - name: 应用配置
+          href: Getting-Started/App-Configuration.md
+    - name: Token管理
+      href: Getting-Started/Token-Management.md  
+    - name: 统计分析
+      items:
+        - name: 通讯查询
+          href: Getting-Started/Communicate.md
+        - name: 用量查询
+          href: Getting-Started/Usage.md
 - name: SDK参考
   items:
     - name: 公共参数
