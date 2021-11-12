@@ -1,5 +1,3 @@
-
-<p><ac:structured-macro ac:name="toc" ac:schema-version="1" ac:macro-id="3d7fe1ed-b882-49c1-b975-3c22fcbba3e2" /></p>
 <p>iOS JRTC API接口说明</p>
 <h1>1 JRTCCloud类</h1>
 <p>描述 &nbsp;<span style="letter-spacing: 0.0px;">JRTCCloud类是音视频会议开发最主要的类，提供了各种接口，供音视频会议App开发者调用</span></p>
@@ -473,11 +471,29 @@
 <td>BOOL</td>
 <td>是</td>
 <td>YES为静音 NO为取消静音</td></tr></tbody></table>
+<p><br /></p>
+<p>27.设置听筒或者外放</p>
+<p><span>只有在未链接耳机的情况下，生效。</span></p>
+<h3><code>setSpeaker:</code></h3>
+<p>参数说明：</p>
+<table><colgroup><col /><col /><col /><col /></colgroup>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>是否必传</th>
+<th>说明</th></tr></thead>
+<tbody>
+<tr>
+<td>isSpeaker</td>
+<td>BOOL</td>
+<td>否</td>
+<td>YES为外放，NO为听筒，默认为听筒</td></tr></tbody></table>
 <h2>JRTCCloud类切换摄像头接口</h2>
-<p>27.切换前后摄像头</p>
+<p>28.切换前后摄像头</p>
 <h3><code>switchCamera</code></h3>
 <h2>JRTCCloud类美颜美白，滤镜相关接口</h2>
-<p>28.设置美颜美白</p>
+<p>29.设置美颜美白</p>
 <p>参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code>setBeautyWhiteLevelWithLeve:</code></h3>
 <p>参数说明：</p>
@@ -494,7 +510,7 @@
 <td>int</td>
 <td>是</td>
 <td>美颜美白级别只能是0-5。0的话代表不进行美颜美白处理</td></tr></tbody></table>
-<p>29.获取美颜美白级别</p>
+<p>30.获取美颜美白级别</p>
 <h3><code>getBeautyWhiteLevelWithFinishBlock:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
@@ -510,7 +526,7 @@
 <td>void(^)(int result)</td>
 <td>是</td>
 <td>获取到的美颜美白级别回调 result为美颜美白级别，result 美颜美白级别只能是0-5。0的话代表不进行美颜美白处理</td></tr></tbody></table>
-<p>30.设置滤镜级别</p>
+<p>31.设置滤镜级别</p>
 <p>参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code>setFilterEffectIndexWithIndex:</code></h3>
 <p>参数说明：</p>
@@ -527,7 +543,7 @@
 <td>int</td>
 <td>是</td>
 <td>滤镜级别，滤镜级别只能是0-5。0的话代表不进行滤镜处理</td></tr></tbody></table>
-<p>31.获取滤镜级别</p>
+<p>32.获取滤镜级别</p>
 <h3><code>getFilterEffectIndexWithFinishBlock:</code></h3>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
@@ -543,7 +559,7 @@
 <td>void(^)(int result)</td>
 <td>是</td>
 <td>获取到的滤镜级别回调 result为滤镜级别，result 滤镜级别，滤镜级别只能是0-5。0的话代表不进行滤镜处理</td></tr></tbody></table>
-<p>32.使用滤镜对原始图片进行滤镜渲染</p>
+<p>33.使用滤镜对原始图片进行滤镜渲染</p>
 <p>参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">getEffectImageWithEffectIndex:preImage:finishBlock:</code></h3>
 <p>参数说明：</p>
@@ -572,7 +588,7 @@
 <td>渲染完成后，生成新的图片的回调，image为新生成的图片</td></tr></tbody></table>
 <h2>JRTCCloud类修改昵称接口</h2>
 <p>注意：只能是进入房间成功后，才能修改昵称</p>
-<p>33.修改昵称</p>
+<p>34.修改昵称</p>
 <p>加入房间成功后，才可以调用此接口。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code>changeNickNameWithNickName:</code></h3>
 <p>参数说明：</p>
@@ -590,7 +606,7 @@
 <td>是</td>
 <td>新的昵称</td></tr></tbody></table>
 <h2>JRTCCloud类监控开启与关闭接口</h2>
-<p>34.开启与关闭监控</p>
+<p>35.开启与关闭监控</p>
 <p>开启监控会走JRTCCloudRoomDelegate.h中状态统计信息的回调</p>
 <ul>
 <li>注意:暂时只能在订阅远端流成功后，才能开启监控</li></ul>
@@ -615,10 +631,10 @@
 <td>是</td>
 <td>监控时间间隔</td></tr></tbody></table>
 <h2>JRTCCloud类获取版本号接口</h2>
-<p>35.获取版本号</p>
+<p>36.获取版本号</p>
 <h3><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;letter-spacing: 0.0px;">getSDKVersion</span></h3>
 <h2>JRTCCloud类发送消息接口</h2>
-<p>36.发送消息</p>
+<p>37.发送消息</p>
 <p>发送消息，消息大厅和普通模式下，发送消息都调用此函数。</p>
 <ul>
 <li>
@@ -648,7 +664,7 @@
 <td>是</td>
 <td>发送消息完成回调</td></tr></tbody></table>
 <h2>JRTCCloud类混流接口</h2>
-<p>37.开始混流任务</p>
+<p>38.开始混流任务</p>
 <p>下发混流任务，混流成功后，本地用户会收到JRTCCloudRoomDelegate中混流成功的回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">startMixStreamWithSrcStreamInfos:destStreamInfo:toPushStreamUrl:</code></h3>
 <p>参数说明：</p>
@@ -675,7 +691,7 @@
 <td>NSString</td>
 <td>非</td>
 <td>推直播平台的推流地址，如果存在必须携带</td></tr></tbody></table>
-<p>38.更新混流任务</p>
+<p>39.更新混流任务</p>
 <p>只有已经混流成功的视频流，才可以调用此接口 更新混流成功后，本地用户会收到JRTCCloudRoomDelegate中更新混流成功的回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">updateMixStreamWithSrcStreamInfos:destStreamId:toPushStreamUrl:</code></h3>
 <p>参数说明：</p>
@@ -702,7 +718,7 @@
 <td>NSString</td>
 <td>非</td>
 <td>推直播平台的推流地址，如果存在必须携带</td></tr></tbody></table>
-<p>39.关闭混流任务</p>
+<p>40.关闭混流任务</p>
 <p>本地用户不会收到任何回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">closeMixStreamWithDestStreamId:toPushStreamUrl:</code></h3>
 <p>参数说明：</p>
@@ -725,7 +741,8 @@
 <td>非</td>
 <td>推直播平台的推流地址，如果存在必须携带</td></tr></tbody></table>
 <h2>JRTCCloud类会控接口</h2>
-<p>40.远端用户全体静音或取消静音</p>
+<p><br /></p>
+<p>41.远端用户全体静音或取消静音</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调消息； 远端所有用户都会收到JRTCCloudRoomDelegate.h房间静音或取消静音的回调消息。</p>
 <h3><code>muteAllAudioWithIsMute:</code></h3>
 <p>参数说明：</p>
@@ -742,7 +759,7 @@
 <td>BOOL</td>
 <td>是</td>
 <td>静音/取消静音</td></tr></tbody></table>
-<p>41.单独静音或取消静音某个用户</p>
+<p>42.单独静音或取消静音某个用户</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，房间中对应人员会收到JRTCCloudRoomDelegate.h静音或取消静音的回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">mutePeerAudioWithIsMute:peerID:</code></h3>
 <p>参数说明：</p>
@@ -764,7 +781,7 @@
 <td>NSString</td>
 <td>是</td>
 <td>对应用户peerId</td></tr></tbody></table>
-<p>42.房间中禁止/允许开启视频</p>
+<p>43.房间中禁止/允许开启视频</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，远端用户全部禁止/允许开启视频频流，本地用户不会收到回调消息； 远端所有用户都会收到JRTCCloudRoomDelegate.h中房间中禁止/允许开启视频流的回调。</p>
 <h3><code>forbidAllVideoWithIsForbid:</code></h3>
 <p>参数说明：</p>
@@ -781,7 +798,7 @@
 <td>BOOL</td>
 <td>是</td>
 <td>关闭或取消关闭推视频流</td></tr></tbody></table>
-<p>43.远端用户禁止/允许开启视频流，</p>
+<p>44.远端用户禁止/允许开启视频流，</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调消息； 远端对应用户会收到JRTCCloudRoomDelegate.h单个用户禁止/允许开启视频流回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">forbidPeerVideoWithIsForbid:peerID:</code></h3>
 <p>参数说明：</p>
@@ -803,7 +820,7 @@
 <td>NSString</td>
 <td>是</td>
 <td>对应用户pe<span style="background-color: rgb(255,222,0);">erId</span></td></tr></tbody></table>
-<p>44.禁止/允许聊天</p>
+<p>45.禁止/允许聊天</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调消息； 远端所有用户都会收到JRTCCloudRoomDelegate.h中房间中禁止/允许聊天回调。</p>
 <h3><code>forbidChatWithIsForbid:</code></h3>
 <p>参数说明：</p>
@@ -820,10 +837,10 @@
 <td>BOOL</td>
 <td>是</td>
 <td>禁止/允许聊天</td></tr></tbody></table>
-<p>45.主持人结束会议</p>
+<p>46.主持人结束会议</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，远端用户会收到JRTCCloudRoomDelegate.h中主持人结束会议回调。</p>
 <h3><code>hosterFinishMeeting</code></h3>
-<p>46.主持人离开房间时，产生新的主持人</p>
+<p>47.主持人离开房间时，产生新的主持人</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，远端用户会收到JRTCCloudRoomDelegate.h中产生新的主持人回调。 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code>creatNewHosterWithHosterPeerId:</code></h3>
 <p>参数说明：</p>
@@ -840,7 +857,7 @@
 <td>NSString</td>
 <td>是</td>
 <td>新的主持人peerId</td></tr></tbody></table>
-<p>47.向整个房间发送自定义事件。</p>
+<p>48.向整个房间发送自定义事件。</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调， 远端用户会收到JRTCCloudRoomDelegate.h中自定义房间事件回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">customSignalToRoomWithEventName:eventInfo:</code></h3>
 <p>参数说明：</p>
@@ -862,7 +879,7 @@
 <td>NSDictionary</td>
 <td>是</td>
 <td>事件需要携带的信息，不能为空</td></tr></tbody></table>
-<p>48.向某个人发送自定义事件。</p>
+<p>49.向某个人发送自定义事件。</p>
 <p>加入房间成功后，才可以调用此接口。 同一房间内，本地用户不会收到回调， 对应远端用户会收到JRTCCloudRoomDelegate.h中自定义事件回调 参数错误的话，会收到JRTCCloudRoomDelegate中错误回调。</p>
 <h3><code class="language-Object-C">customSignalToPeerWithTargetPeerId:eventName:eventInfo:</code></h3>
 <p>参数说明：</p>
@@ -890,10 +907,10 @@
 <td>是</td>
 <td>事件需要携带的信息，不能为空</td></tr></tbody></table>
 <h2>JRTCCloud类分享屏幕接口</h2>
-<p>49.<span style="letter-spacing: 0.0px;">只支持iOS12及以上系统，开始分享录屏前，调用此接口，开始分享</span></p>
+<p>50.<span style="letter-spacing: 0.0px;">只支持iOS12及以上系统，开始分享录屏前，调用此接口，开始分享</span></p>
 <p><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">screenShareStart</span></p>
 <p><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;"><br /></span></p>
-<p>50.<span style="letter-spacing: 0.0px;">只支持iOS12及以上系统，录屏分享结束后，调用此接口，结束分享</span></p>
+<p>51.<span style="letter-spacing: 0.0px;">只支持iOS12及以上系统，录屏分享结束后，调用此接口，结束分享</span></p>
 <p><span style="font-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , &quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monospace;font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">screenShareFinished</span></p>
 <p>参数说明：</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
@@ -1519,23 +1536,7 @@
 <h1>4 保存数据信息的模型类</h1>
 <h2>1. JRTCEnterRoomAuthModel类</h2>
 <p>描述<span style="font-size: 14.0px;letter-spacing: 0.0px;">加入房间必传的鉴权信息</span></p>
-<p>1.SDK版本</p>
-<h3><code>@property(nonatomic,strong)NSString *;</code></h3>
-<p>属性说明:</p>
-<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
-<thead>
-<tr>
-<th>属性名</th>
-<th>属性类型</th>
-<th>是否必须设置</th>
-<th>说明</th></tr></thead>
-<tbody>
-<tr>
-<td>ver</td>
-<td>NSString</td>
-<td>是</td>
-<td>SDK版本，由JRTCCloud中getSDKVersion获取到</td></tr></tbody></table>
-<p>2.房间号</p>
+<p><span style="letter-spacing: 0.0px;">1.房间号</span></p>
 <h3><code>@property(nonatomic,strong)NSNumber *roomId;</code></h3>
 <p>属性说明:</p>
 <table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
@@ -1551,6 +1552,23 @@
 <td>NSNumber</td>
 <td>是</td>
 <td>房间号</td></tr></tbody></table>
+<p>2.用户peerId</p>
+<h3><code>@property(nonatomic,strong)NSNumber *peerId;</code></h3>
+<p>属性说明:</p>
+<table class="wrapped"><colgroup><col /><col /><col /><col /></colgroup>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性类型</th>
+<th>是否必须设置</th>
+<th>说明</th></tr></thead>
+<tbody>
+<tr>
+<td>peerId</td>
+<td>NSNumber</td>
+<td>是</td>
+<td>
+<p>用户peerId，用户京东账号登录成功后，控制台相关接口会下发peerId</p></td></tr></tbody></table>
 <p>3.用户昵称</p>
 <h3><code>@property(nonatomic,strong)NSString *nickName;</code></h3>
 <p>属性说明:</p>
@@ -1699,7 +1717,7 @@
 <td>NSString</td>
 <td>否</td>
 <td>
-<p>录制文件名</p></td></tr></tbody></table>
+<p>录制文件名，<span style="color: rgb(0,0,0);">用于指定是否要在云端将该用户的音视频流录制下来，<span style="color: rgb(0,0,0);">限制长度为64字节，只允许包含大小写英文字母（a-zA-Z）、数字（0-9）及下划线和连词符</span></span></p></td></tr></tbody></table>
 <p>12.<span style="letter-spacing: 0.0px;">转推直播流名</span><span style="letter-spacing: 0.0px;">liveStreamName</span></p>
 <h3><span>&nbsp;</span><code>@property(nonatomic,strong)NSString *liveStreamName;</code></h3>
 <p>属性说明:</p>
@@ -1717,7 +1735,7 @@
 <p>NSString</p></td>
 <td><span>否</span></td>
 <td>
-<p>转推直播流名</p></td></tr></tbody></table>
+<p>转推直播流名，<span style="color: rgb(0,0,0);">设置之后，您可以在京东云直播 CDN 上通过标准拉流方案播放该用户的音视频流。</span></p></td></tr></tbody></table>
 <h2><span style="letter-spacing: -0.008em;">2. JRTCMessageModel类</span></h2>
 <p>描述<span style="letter-spacing: 0.0px;">保存消息信息</span></p>
 <p>1.JRTC_MESSAGE_MODE</p>
