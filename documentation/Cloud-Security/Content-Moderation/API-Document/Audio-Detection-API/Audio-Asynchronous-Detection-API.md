@@ -32,48 +32,56 @@
 POST
 
 ## 请求地址
+
 https://censor.jdcloud-api.com/v1/audio:asyncscan
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**bizType**|String|False| |机审策略，eg: default|
-|**scenes**|String|True| |指定检测场景|
-|**tasks**| AudioTask |True| |检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，每个元素的具体结构描述见audioTask。|
-|**callback**|String|False| |异步检测结果回调通知您的URL，支持HTTP/HTTPS。该字段为空时，您必须定时检索检测结果。|
-|**seed**|String|False| |随机字符串，该值用于回调通知请求中的签名。当使用callback时，该字段必须提供。|
 
-### <div id="AudioTask">AudioTask</div>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**dataId**|String|False| |数据Id。需要保证在一次请求中所有的Id不重复|
-|**url**|String|True| |待检测音频的URL，最大100M|
+| 名称         | 类型      | 是否必需 | 默认值 | 描述                                                         |
+| ------------ | --------- | -------- | ------ | ------------------------------------------------------------ |
+| **bizType**  | String    | False    |        | 机审策略，eg: default                                        |
+| **scenes**   | String    | True     |        | 指定检测场景                                                 |
+| **tasks**    | AudioTask | True     |        | 检测任务列表，包含一个或多个元素。每个元素是个结构体，最多可添加10个元素，每个元素的具体结构描述见audioTask。 |
+| **callback** | String    | False    |        | 异步检测结果回调通知您的URL，支持HTTP/HTTPS。该字段为空时，您必须定时检索检测结果。 |
+| **seed**     | String    | False    |        | 随机字符串，该值用于回调通知请求中的签名。当使用callback时，该字段必须提供。 |
+
+### <div id="audiotask">AudioTask</div>
+
+| 名称       | 类型   | 是否必需 | 默认值 | 描述                                       |
+| ---------- | ------ | -------- | ------ | ------------------------------------------ |
+| **dataId** | String | False    |        | 数据Id。需要保证在一次请求中所有的Id不重复 |
+| **url**    | String | True     |        | 待检测音频的URL，最大100M                  |
 
 ## 返回参数
-|名称|类型|描述|
-|---|---|---|
-|**result**|Result| |
 
-### <div id="Result">Result</div>
-|名称|类型|描述|
-|---|---|---|
-|**data**|TaskData| |
-### <div id="TaskData">TaskData</div>
-|名称|类型|描述|
-|---|---|---|
-|**code**|Integer|错误码，和HTTP的status code一致|
-|**msg**|String|错误描述信息|
-|**dataId**|String|对应请求的dataId|
-|**taskId**|String|该检测任务的ID|
-|**url**|String|对应请求中的url|
+| 名称       | 类型   | 描述 |
+| ---------- | ------ | ---- |
+| **result** | Result |      |
+
+### <div id="result">Result</div>
+
+| 名称     | 类型     | 描述 |
+| -------- | -------- | ---- |
+| **data** | TaskData |      |
+
+### <div id="taskdata">TaskData</div>
+
+| 名称       | 类型    | 描述                            |
+| ---------- | ------- | ------------------------------- |
+| **code**   | Integer | 错误码，和HTTP的status code一致 |
+| **msg**    | String  | 错误描述信息                    |
+| **dataId** | String  | 对应请求的dataId                |
+| **taskId** | String  | 该检测任务的ID                  |
+| **url**    | String  | 对应请求中的url                 |
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**500**|Internal Server Error|
-|**400**|Bad Request|
+
+| 返回码  | 描述                  |
+| ------- | --------------------- |
+| **200** | OK                    |
+| **500** | Internal Server Error |
+| **400** | Bad Request           |
 
 ### 音频审核-异步检测通知回调
 
@@ -172,13 +180,13 @@ https://censor.jdcloud-api.com/v1/audio:results
 | ---------- | ------ | ---- |
 | **result** | Result |      |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 
 | 名称     | 类型        | 描述 |
 | -------- | ----------- | ---- |
 | **data** | AudioResult |      |
 
-### <div id="AudioResult">AudioResult</div>
+### <div id="audioresult">AudioResult</div>
 
 | 名称        | 类型              | 描述                                                         |
 | ----------- | ----------------- | ------------------------------------------------------------ |
@@ -189,7 +197,7 @@ https://censor.jdcloud-api.com/v1/audio:results
 | **url**     | String            | 对应请求中的url                                              |
 | **results** | AudioResultDetail | 返回结果。调用成功时（code=200），返回结果中包含一个或多个元素。每个元素是个结构体，具体结构描述见AudioResultDetail |
 
-### <div id="AudioResultDetail">AudioResultDetail</div>
+### <div id="audioresultdetail">AudioResultDetail</div>
 
 | 名称           | 类型                  | 描述                                                         |
 | -------------- | --------------------- | ------------------------------------------------------------ |
@@ -199,7 +207,7 @@ https://censor.jdcloud-api.com/v1/audio:results
 | **suggestion** | String                | 建议用户执行的操作，取值范围pass：图片正常，无需进行其余操作，或者未识别出目标对象review：检测结果不确定，需要进行人工审核，或识别出目标对象block：图片违规，建议执行进一步操作（如直接删除或做限制处理） |
 | **details**    | AudioScanResultDetail | 语音对应的文本详情（每一句文本对应一个元素），包含一个或者多个元素，具体结构描述见detail。 |
 
-### <div id="AudioScanResultDetail">AudioScanResultDetail</div>
+### <div id="audioscanresultdetail">AudioScanResultDetail</div>
 
 | 名称               | 类型          | 描述                                                         |
 | ------------------ | ------------- | ------------------------------------------------------------ |
@@ -209,7 +217,7 @@ https://censor.jdcloud-api.com/v1/audio:results
 | **label**          | String        | 该句语言的检测结果的分类，取值参见audioScenes与label参数说明。 |
 | **hintWordsInfos** | HintWordsInfo | 命中该风险的上下文信息。具体结构描述见hintWordsInfo          |
 
-### <div id="HintWordsInfo">HintWordsInfo</div>
+### <div id="hintwordsinfo">HintWordsInfo</div>
 
 | 名称        | 类型   | 描述                                                         |
 | ----------- | ------ | ------------------------------------------------------------ |

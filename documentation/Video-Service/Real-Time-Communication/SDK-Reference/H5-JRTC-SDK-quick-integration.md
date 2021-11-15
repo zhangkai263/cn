@@ -1,7 +1,8 @@
+
 <h1>JRTC简介</h1>
 <p>JRTC的基本功能包含创建实例、加入房间、本地发布、订阅远端和离开房间等。当您成功创建实例，您可以进行本地预览视频功能，进行简单的预览和测试。</p>
 <h1>前提条件</h1>
-<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/sdk-download">SDK下载</a>。</p>
+<p>在执行Demo步骤之前，您需要从控制台获取鉴权信息，具体操作请参见<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">生成Token</a>。 您需要下载示例代码，详情请参见<a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/JRTC-H5.zip">SDK下载</a>。</p>
 <h1>操作步骤</h1>
 <p>1.使用scripty引入SDK,&nbsp; demo中SDK存放于public文件夹下。</p>
 <pre class="code highlight js-syntax-highlight shell white" lang="shell"><code><span class="line" lang="shell">&lt;script src=&quot;./jrtc.min.js&quot;&gt;&lt;/script&gt;</span></code></pre>
@@ -18,7 +19,7 @@
 <span class="line" lang="javascript"> <span class="nx">timestamp</span><span class="p">,</span> <span class="c1">// 令牌过期时间，用户生成</span></span>
 <span class="line" lang="javascript"> userR<span class="nx">oomId</span><span class="p">,</span> <span class="c1">// 房间ID</span></span>
 <span class="line" lang="javascript"> <span class="nx">nickName</span><span class="p">,</span> <span class="c1">// 昵称</span></span>
-<span class="line" lang="javascript"> <span class="nx">subscribeType，</span> <span class="c1">// 大房间模式下，音频订阅模式：1.固定订阅 2.普通订阅。 默认为 1<br /></span></span> useVp8 // 是否开启vp8运行环境，布尔值，默认false
+<span class="line" lang="javascript"> <span class="nx">subscribeType，</span> <span class="c1">// 大房间模式下，音频订阅模式：1.固定订阅 2.普通订阅。 默认为 1<br /></span></span>  useVp8 // 是否开启vp8运行环境，布尔值，默认false
 <span class="line" lang="javascript"><span class="p">}).</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span></span>
 <span class="line" lang="javascript"> <span class="c1">// 成功加入会议</span></span>
 <span class="line" lang="javascript"><span class="p">}).</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span></span>
@@ -30,7 +31,7 @@
 <li>发布音频流。通过getAudioTrack方法获取音频轨道后，使用publishAudioStream方法可以发布音频流。</li></ul>
 <pre class="code highlight js-syntax-highlight javascript white" lang="javascript"><code><span class="line" lang="javascript"><span class="nx">JWebrtc</span><span class="p">.</span><span class="nx">getAudioTrack</span><span class="p">()</span> <span class="c1">// 该方法返回 audioTrack</span></span>
 <span class="line" lang="javascript"> <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">track</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span></span>
-<span class="line" lang="javascript"> <span class="nx">JRTCRoom</span><span class="p">.</span><span class="nx">publishAudioStream</span><span class="p">(</span><span class="nx">track</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span></span>
+<span class="line" lang="javascript"><span class="nx">JRTCRoom</span><span class="p">.</span><span class="nx">publishAudioStream</span><span class="p">(</span><span class="nx">track</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span></span>
 <span class="line" lang="javascript"> <span class="p">({</span> <span class="nx">track</span><span class="p">,</span> <span class="nx">streamId</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span></span>
 <span class="line" lang="javascript"> <span class="c1">// 音频流发布成功</span></span>
 <span class="line" lang="javascript"> <span class="p">}</span></span>
@@ -144,3 +145,4 @@
 <span class="line" lang="javascript"> <span class="nx">JWebrtc</span><span class="p">.</span><span class="nx">disconnectAll</span><span class="p">();</span> <span class="c1">// 断开通信连接，销毁房间</span></span>
 <span class="line" lang="javascript"> <span class="nx">JWebrtc</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// 全局变量 JWebrtc 设置为null</span></span>
 <span class="line" lang="javascript"> <span class="p">})</span></span></code></pre>
+<p><br /></p>

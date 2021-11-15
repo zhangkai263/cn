@@ -11,12 +11,11 @@
 | --- | --- | --- | --- |
 |   JCS-Agent  | JCSAgentCore <br> MonitorPlugin-‘版本号’  <br>  UpgradePlugin-‘版本号’  | 通用核心组件，配合元数据服务提供密码密钥注入、自定义脚本注入、监控数据上报等功能    |  无法通过京东云控制台或openAPI设置密码、密钥、自定义用户数据，无法获得部分云主机监控数据   |
 | Ifrit    |  ifrit-agent <br> ifrit-supervise   |   通用部署插件，实现JCS-Agent的自动升级	  |  无法获得自动升级JCS-Agent的能力，如后续希望使用基于JCS-Agent开发的新功能，需要手动升级JCS-Agent   |
-|  Jcloudhids   |jcloudhids <br> jcloudhidsupdate    | 安全核心组件，提供安全防护能力    | 无法通过“主机安全”产品获得关于云主机的安全隐患及异常行为监测   |
-| Jdog-Monitor |	jdog-monitor.'版本号'<br>jdog-watchdog<br>jdog-kunlunmirror| 安全辅助插件，实现Jcloudhids的自动升级及其他辅助功能（目前仅安装于Linux系统）|无法获得自动升级Jcloudhids的能力，如后续希望使用基于Jcloudhids开发的新功能，需要手动升级|
+|  Jcloudhids   |jcloudhids <br> jcloudhidsupdate    | 早期安全组件，逐步下线中    | 无须安装   |
+| Jdog-Monitor |	jdog-monitor.'版本号'<br>jdog-watchdog<br>jdog-kunlunmirror| 安全核心插件，提供安全防护能力|无法通过“主机安全”产品获得关于云主机的安全隐患及异常行为监测 |
 
 * [JCS-Agent](default-agent-in-public-image#user-content-1)
 * [Ifrit](default-agent-in-public-image#user-content-2)
-* [Jcloudhids](default-agent-in-public-image#user-content-3)
 * [Jdog-Monitor](default-agent-in-public-image#user-content-4)
 
 
@@ -152,17 +151,6 @@ curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_jcs | bash
 
 ![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-4.png)
 ![](https://img1.jcloudcs.com/cn/image/vm/ifrit-install-5.png)
-
-
-<div id="user-content-3"></div>
-
-## Jcloudhids
-### 组件介绍
-Jcloudhids是京东云提供的早期主机安全核心组件，可提供防暴力破解、异常登陆检测、高危漏洞检测等安全功能。
-
-目前官方镜像均默认安装了Jcloudhids。云市场镜像安装情况视服务商制作镜像情况，如镜像功能与Jcloudhids功能重复或冲突，不强制要求其安装Jcloudhids，具体请咨询云市场。
-
-由于该组件即将下线，后续安全防护功能主要有下方的Jdog-Monitor组件承担，因此不再提供相关安装方式。如须自行安装请直接参考下方Jdog-Monitor组件介绍。
 
 
 
