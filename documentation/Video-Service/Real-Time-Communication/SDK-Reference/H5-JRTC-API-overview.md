@@ -1,3 +1,4 @@
+<p>script标签引入jrtc.min.js</p>
 <h2>1.JRTCClient&nbsp;</h2>
 <h3><span style="color: rgb(0,0,0);"><strong>c</strong><strong>heckSystemRequirements</strong>()</span></h3>
 <p>const&nbsp;checkResult&nbsp;= JRTCClient.<span style="color: rgb(0,51,102);">checkSystemRequirements()</span></p>
@@ -38,9 +39,31 @@
 <p><span style="color: rgb(0,0,0);">参数：&nbsp;<span>videoRecvonly</span></span><span style="color: rgb(0,0,0);">：true是，false否, 默认false</span></p>
 <p><span style="color: rgb(0,0,0);">说明：此方法需要在加入房间前调用</span></p>
 <p><span style="color: rgb(0,0,0);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **有些手机上由于浏览器的版本问题，导致推视频流不支持，但是又想去拉视频流。&nbsp; 通过这个方法设置成只接受模式，就可以兼容上述问题。**<br /></span></p>
-<h3><span style="color: rgb(0,0,0);">setVideoEncodingParam</span>()</h3>
-<p><span style="color: rgb(0,0,0);">JWebrtc.setVideoEncodingParam(resolution: string)</span></p>
-<p><span style="color: rgb(0,0,0);">说明：设置分辨率</span></p>
+<h3><span style="color: rgb(0,0,0);">setVideoParam</span>()</h3>
+<p><span style="color: rgb(0,0,0);">JWebrtc.<span style="color: rgb(0,0,0);">setVideoParam</span>(videoParams)</span></p>
+<p><span style="color: rgb(0,0,0);">说明：设置分辨率、码率、帧率</span></p>
+<p><span style="color: rgb(0,0,0);">参数： videoParams对象</span></p>
+<table class="relative-table wrapped" style="width: 30.9929%;"><colgroup><col style="width: 17.0213%;" /><col style="width: 82.9787%;" /></colgroup>
+<tbody>
+<tr>
+<th>参数</th>
+<th>说明</th></tr>
+<tr>
+<td colspan="1">width</td>
+<td colspan="1">宽， 默认 width: 640</td></tr>
+<tr>
+<td colspan="1">height</td>
+<td colspan="1">高， 默认 height: 360</td></tr>
+<tr>
+<td colspan="1">fps</td>
+<td colspan="1">帧率, <span>默认</span> fps: 25</td></tr>
+<tr>
+<td colspan="1">
+<p>bitrate</p></td>
+<td colspan="1">码率, <span>默认 </span>{start: 300, min: 100, max: 500}</td></tr></tbody></table>
+<p><span style="color: rgb(0,0,0);"><br /></span></p>
+<h3><span style="color: rgb(0,0,0);">JWebrtc.setVideoEncodingParam(resolution: string, fps)</span></h3>
+<p><span style="color: rgb(0,0,0);">说明：设置分辨率、帧率</span></p>
 <p><span style="color: rgb(0,0,0);">参数：&nbsp;resolution</span></p>
 <table class="relative-table wrapped" style="width: 31.2846%;"><colgroup><col style="width: 14.8936%;" /><col style="width: 70.0355%;" /><col style="width: 15.0709%;" /></colgroup>
 <tbody>
@@ -52,7 +75,11 @@
 <td>resolution</td>
 <td>
 <p>nhd(640*360)、hd(1280*720)、fhd(1920*1080)</p></td>
-<td colspan="1">Y</td></tr></tbody></table>
+<td colspan="1">Y</td></tr>
+<tr>
+<td colspan="1">fps</td>
+<td colspan="1">可选值15、20、25， 默认25</td>
+<td colspan="1">N</td></tr></tbody></table>
 <h3><span style="color: rgb(0,0,0);"><br />setAudioCodecOptions</span>()</h3>
 <p><span style="color: rgb(0,0,0);">JWebrtc.setSudioCodecOptions(isStereo: Boolean)</span></p>
 <p><span style="color: rgb(0,0,0);">参数：&nbsp;isStereo&nbsp;是否开启立体声：true开启，false关闭</span></p>
@@ -117,7 +144,15 @@
 <tr>
 <td colspan="1">useVp8</td>
 <td colspan="1">N</td>
-<td colspan="1">是否开启vp8环境，默认false</td></tr></tbody></table>
+<td colspan="1">是否开启vp8环境，默认false</td></tr>
+<tr>
+<td colspan="1"><span style="color: rgb(0,0,0);">recordFileName</span></td>
+<td colspan="1">N</td>
+<td colspan="1">录制文件名</td></tr>
+<tr>
+<td colspan="1"><span style="color: rgb(0,0,0);">liveStreamName</span></td>
+<td colspan="1">N</td>
+<td colspan="1">转推直播流名</td></tr></tbody></table>
 <p>ROOM：</p>
 <table class="relative-table wrapped"><colgroup><col /><col /></colgroup>
 <tbody>
@@ -233,7 +268,7 @@
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">屏幕共享已取消</span></p></td></tr>
 <tr>
-<td rowspan="3">其它错误</td>
+<td rowspan="2">其它错误</td>
 <td colspan="1"><span style="color: rgb(0,51,102);">10007</span></td>
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">&quot;constraints&nbsp;&quot;&nbsp;+&nbsp;e.constraint&nbsp;+&nbsp;&quot;&nbsp;error&quot;</span></p></td>
@@ -244,11 +279,7 @@
 <p><span style="color: rgb(0,51,102);">1e4</span></p></td>
 <td colspan="1">
 <p><span style="color: rgb(0,51,102);">e.message&nbsp;:&nbsp;&quot;device&nbsp;unknown&nbsp;error&quot;</span></p></td>
-<td colspan="1">未知错误</td></tr>
-<tr>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td>
-<td colspan="1">。。。</td></tr></tbody></table>
+<td colspan="1">未知错误</td></tr></tbody></table>
 <p><span style="color: rgb(0,51,102);"><br /></span></p>
 <h2>2.JRTCRoom</h2>
 <p><span style="color: rgb(0,0,0);">调用JWebrtc.</span>enterRoom 进入房间成功, 会返回一个ROOM对象:&nbsp;JRTCRoom,可通过JRTCRoom来进行房间内操作</p>
