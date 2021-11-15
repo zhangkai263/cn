@@ -9,7 +9,6 @@ JCHDB 实例的价格 = 计算节点单价 * 计算节点数 + 存储空间单�
 ## 1. 计算节点 / ZooKeeper节点
 |规格代码|VCPU(核)|内存（GB）|包年包月（元/月）|按配置收费（元/小时）|
 |-|-|-|-|-|
-|clickhouse.s1.xlarge|4|16|672|1.4|
 |clickhouse.s1.2xlarge|8|32|1392|2.9|
 |clickhouse.s1.4xlarge|16|64|2784|5.8|
 |clickhouse.s1.6xlarge|24|96|4176|8.7|
