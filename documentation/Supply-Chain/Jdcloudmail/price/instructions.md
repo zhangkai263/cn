@@ -1,6 +1,6 @@
 ## 购买说明
 
-京美云邮支持试用版和专业版。
+京东云邮箱支持试用版和专业版。
 
 - 试用版：支持1元试用一个月，一个京东云账户可试用一次，需要进行企业实名认证；
 
@@ -12,7 +12,7 @@
 - 可选择账户数，以5的倍数进行增加，可根据企业实际人数选择适合的账户数。
 - 支持按年购买，支持1年、2年、3年。
 
-![购买说明](https://img1.jcloudcs.com/cn/image/jdcloud-mail/%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E.png)
+![购买说明](https://img1.jcloudcs.com/cn/image/jdcloud-mail/%E9%82%AE%E4%BB%B6%E8%B4%AD%E4%B9%B0%E9%A1%B5.png)
 
 
 
