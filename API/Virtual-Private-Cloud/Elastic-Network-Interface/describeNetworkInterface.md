@@ -22,13 +22,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/{networkInte
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](describeNetworkInterface#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**networkInterface**|[NetworkInterface](#user-content-networkinterface)|networkInterface资源信息|
+|**networkInterface**|[NetworkInterface](describeNetworkInterface#user-content-networkinterface)|networkInterface资源信息|
 ### <div id="user-content-networkinterface">NetworkInterface</div>
 |名称|类型|描述|
 |---|---|---|
@@ -41,8 +41,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/{networkInte
 |**subnetId**|String|子网ID|
 |**networkSecurityGroupIds**|String[]|安全组ID列表|
 |**sanityCheck**|Integer|源和目标IP地址校验，取值为0或者1|
-|**primaryIp**|[NetworkInterfacePrivateIp](#user-content-networkinterfaceprivateip)|网卡主IP|
-|**secondaryIps**|[NetworkInterfacePrivateIp[]](#user-content-networkinterfaceprivateip)|网卡附属IP列表|
+|**primaryIp**|[NetworkInterfacePrivateIp](describeNetworkInterface#user-content-networkinterfaceprivateip)|网卡主IP|
+|**secondaryIps**|[NetworkInterfacePrivateIp[]](describeNetworkInterface#user-content-networkinterfaceprivateip)|网卡附属IP列表|
 |**secondaryCidrs**|String[]|网卡附属IP网段|
 |**instanceType**|String|关联实例类型，取值范围：vm|
 |**instanceId**|String|关联实例ID|
