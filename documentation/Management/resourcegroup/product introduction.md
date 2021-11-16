@@ -17,38 +17,40 @@
 
 资源组列表展示如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/2-list.png)
-初始化状态下：只有“默认资源组”，所有资源归属于“默认资源组”
+初始化状态下：只有“默认资源组”，所有资源归属于“默认资源组”。
 
-##### 创建资源组
+#### 创建资源组
 
 在资源组列表页，点击左上角的“创建资源组”，弹出如下页面：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/3-create.png)
 用户可自行录入资源组名称和描述，创建自定义资源组。
 
-##### 编辑资源组
+#### 编辑资源组
 
+在资源组列表页，点击对应的资源组后的“编辑”，可支持编辑资源组信息。
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/4-edit.png)
 
+您可以在如下弹窗内编辑资源组名称和描述信息：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/4-edit2.png)
 
-##### 资源管理
+#### 资源管理
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
 
-##### 修改资源标签
+#### 修改资源标签
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label2.png)
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20labeil3.png)
 
 
-##### 转出资源
+#### 转出资源
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7-out1.png)
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7out2.png)
 
 
-##### 删除资源组
+#### 删除资源组
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/8-delete.png)
 
@@ -57,12 +59,12 @@
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/9-detail.png)
 
 
-##### 转出资源
+#### 转出资源
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out1.png)
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out2.png)
 
-##### 管理标签
+#### 管理标签
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label1.png)
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label2.png)
