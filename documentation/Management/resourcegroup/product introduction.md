@@ -33,10 +33,6 @@
 您可以在如下弹窗内编辑资源组名称和描述信息：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/4-edit2.png)
 
-#### 资源管理
-
-![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
-
 #### 修改资源标签
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
@@ -53,6 +49,12 @@
 #### 删除资源组
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/8-delete.png)
+
+
+#### 资源管理
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
+
 
 ### 资源组详情
 
