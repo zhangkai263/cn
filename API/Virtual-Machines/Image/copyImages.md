@@ -22,7 +22,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images:copyImages
 
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**regionId**|String|是|cn-north-1|地域ID。|
+|**regionId**|String|是|cn-north-1|地域ID。可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。|
 
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
