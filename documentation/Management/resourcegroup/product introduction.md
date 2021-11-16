@@ -74,6 +74,8 @@
 
 #### 资源管理
 
+在资源组列表页，点击对应的资源组后的“编辑”，可支持编辑资源组信息。
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
 
 
