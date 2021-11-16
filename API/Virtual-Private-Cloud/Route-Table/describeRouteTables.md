@@ -19,7 +19,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](#user-content-filter)|False| |routeTableIds - 路由表ID列表，支持多个<br>routeTableNames - 路由表名称列表，支持多个<br>vpcId	- 路由表所属vpc Id，支持单个<br>|
+|**filters**|[Filter[]](describeRouteTables#user-content-filter)|False| |routeTableIds - 路由表ID列表，支持多个<br>routeTableNames - 路由表名称列表，支持多个<br>vpcId	- 路由表所属vpc Id，支持单个<br>|
 
 ### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -31,13 +31,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](describeRouteTables#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**routeTables**|[RouteTable[]](#user-content-routetable)|路由表资源信息列表|
+|**routeTables**|[RouteTable[]](describeRouteTables#user-content-routetable)|路由表资源信息列表|
 |**totalCount**|Number|总数量|
 ### <div id="user-content-routetable">RouteTable</div>
 |名称|类型|描述|
@@ -47,8 +47,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/
 |**routeTableType**|String|路由表类型，default：默认路由表，custom：自定义路由表|
 |**description**|String|路由表描述信息，允许输入UTF-8编码下的全部字符，不超过256字符。|
 |**vpcId**|String|私有网络ID|
-|**routeTableRules**|[RouteTableRule[]](#user-content-routetablerule)|路由表规则信息|
-|**routePropagations**|[RoutePropagation[]](#user-content-routepropagation)|路由传播列表|
+|**routeTableRules**|[RouteTableRule[]](describeRouteTables#user-content-routetablerule)|路由表规则信息|
+|**routePropagations**|[RoutePropagation[]](describeRouteTables#user-content-routepropagation)|路由传播列表|
 |**subnetIds**|String[]|路由表绑定的子网列表|
 |**createdTime**|String|路由表创建时间|
 ### <div id="user-content-routepropagation">RoutePropagation</div>

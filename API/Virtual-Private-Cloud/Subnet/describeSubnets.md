@@ -19,7 +19,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/subnets/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](#user-content-filter)|False| |subnetIds - subnet ID列表，支持多个<br>subnetNames - subnet名称列表，支持多个<br>routeTableId	- 子网关联路由表Id，支持单个<br>aclId - 子网关联acl Id，支持单个<br>vpcId - 子网所属VPC Id，支持单个<br>subnetType - 子网类型，取值：all(全部类型)，standard(标准子网)，edge(边缘子网)，默认standard ，支持单个<br>azs - 可用区，支持多个<br>|
+|**filters**|[Filter[]](describeSubnets#user-content-filter)|False| |subnetIds - subnet ID列表，支持多个<br>subnetNames - subnet名称列表，支持多个<br>routeTableId	- 子网关联路由表Id，支持单个<br>aclId - 子网关联acl Id，支持单个<br>vpcId - 子网所属VPC Id，支持单个<br>subnetType - 子网类型，取值：all(全部类型)，standard(标准子网)，edge(边缘子网)，默认standard ，支持单个<br>azs - 可用区，支持多个<br>|
 
 ### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -31,13 +31,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/subnets/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](describeSubnets#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**subnets**|[Subnet[]](#user-content-subnet)|子网资源信息列表|
+|**subnets**|[Subnet[]](describeSubnets#user-content-subnet)|子网资源信息列表|
 |**totalCount**|Number|总数量|
 ### <div id="user-content-subnet">Subnet</div>
 |名称|类型|描述|

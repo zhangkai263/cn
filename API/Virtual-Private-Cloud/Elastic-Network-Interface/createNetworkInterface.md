@@ -25,13 +25,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 |**secondaryIpCount**|Integer|False| |自动分配的SecondaryIp数量|
 |**securityGroups**|String[]|False| |要绑定的安全组ID列表，最多指定5个安全组|
 |**sanityCheck**|Integer|False| |源和目标IP地址校验，取值为0或者1,默认为1|
-|**description**|String|False| |描述,​ 允许输入UTF-8编码下的全部字符，不超过256字符|
+|**description**|String|False| |描述，允许输入UTF-8编码下的全部字符，不超过256字符|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](createNetworkInterface#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-result">Result</div>
