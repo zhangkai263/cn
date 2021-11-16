@@ -14,11 +14,16 @@
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/1-road.png)
 
 ### 资源组列表
+
+资源组列表展示如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/2-list.png)
+初始化状态下：只有“默认资源组”，所有资源归属于“默认资源组”
 
 ##### 创建资源组
 
+在资源组列表页，点击左上角的“创建资源组”，弹出如下页面：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/3-create.png)
+用户可自行录入资源组名称和描述，创建自定义资源组。
 
 ##### 编辑资源组
 
