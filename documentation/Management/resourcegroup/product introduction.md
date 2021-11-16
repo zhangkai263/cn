@@ -37,9 +37,11 @@
 
 在资源组列表页，点击对应的资源组后的“更多”-“修改资源标签”，可支持修改该资源组下资源的标签。
 如下图：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
 
 弹出“修改资源标签”弹窗，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label2.png)
 可支持根据"满足以下所有条件"和"满足以下任意条件"两种形式，圈定要修改标签的资源。
 
