@@ -10,18 +10,55 @@
 ### 菜单路径
 用户登录控制台，在云服务下找到“资源管理”菜单，资源组管理页面在资源管理菜单下。
 如下：
-![路径](../../../../image/resourcegroup/1-路径.png)
 
-![图片名称](../../../../image/resourcegroup/1-路径.png)
-
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/1-road.png)
 
 ### 资源组列表
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/2-list.png)
+
 ##### 创建资源组
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/3-create.png)
+
 ##### 编辑资源组
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/4-edit.png)
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/4-edit2.png)
+
 ##### 资源管理
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
+
 ##### 修改资源标签
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label2.png)
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20labeil3.png)
+
+
 ##### 转出资源
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7-out1.png)
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7out2.png)
+
+
 ##### 删除资源组
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/8-delete.png)
+
 ### 资源组详情
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/9-detail.png)
+
+
 ##### 转出资源
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out1.png)
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out2.png)
+
 ##### 管理标签
+
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label1.png)
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label2.png)
+
