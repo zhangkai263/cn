@@ -19,7 +19,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](describeElasticIps#user-content-filter)|False| |elasticIpIds - elasticip id数组条件，支持多个<br>elasticIpAddress - eip的IP地址，支持单个<br>chargeStatus	- eip的费用支付状态,normal(正常状态) or overdue(预付费已到期) or arrear(欠费状态)，支持单个<br>ipType - eip类型，取值：all(所有类型)、standard(标准弹性IP)、edge(边缘弹性IP)，默认standard，支持单个<br>azs - eip可用区，支持多个<br>bandwidthPackageId - 共享带宽包ID，支持单个<br>|
+|**filters**|[Filter[]](describeElasticIps#user-content-filter)|False| |elasticIpIds - elasticip id数组条件，支持多个<br>elasticIpAddress - eip的IP地址，支持单个<br>chargeStatus	- eip的费用支付状态，normal(正常状态) or overdue(预付费已到期) or arrear(欠费状态)，支持单个<br>ipType - eip类型，取值：all(所有类型)、standard(标准弹性IP)、edge(边缘弹性IP)，默认standard，支持单个<br>azs - eip可用区，支持多个<br>bandwidthPackageId - 共享带宽包ID，支持单个<br>|
 |**tags**|[TagFilter[]](describeElasticIps#user-content-tagfilter)|False| |Tag筛选条件|
 
 ### <div id="user-content-tagfilter">TagFilter</div>
@@ -55,7 +55,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |**privateIpAddress**|String|私有IP的IPV4地址|
 |**networkInterfaceId**|String|配置弹性网卡Id|
 |**instanceId**|String|实例Id|
-|**instanceType**|String|实例类型,取值为：compute、lb、container、pod|
+|**instanceType**|String|实例类型，取值为：compute、lb、container、pod|
 |**charge**|[Charge](describeElasticIps#user-content-charge)|计费配置|
 |**createdTime**|String|弹性公网IP的创建时间|
 |**az**|String|弹性公网IP的可用区属性，如果为空，表示全可用区|
