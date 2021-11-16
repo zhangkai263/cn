@@ -36,6 +36,7 @@
 #### 修改资源标签
 
 在资源组列表页，点击对应的资源组后的“更多”-“修改资源标签”，可支持修改该资源组下资源的标签。
+
 如下图：
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
@@ -43,33 +44,42 @@
 弹出“修改资源标签”弹窗，如下：
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label2.png)
+
 可支持根据"满足以下所有条件"和"满足以下任意条件"两种形式，圈定要修改标签的资源。
 
 点击“下一步”，可为圈定的资源设置目标标签，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20labeil3.png)
 
 
 #### 转出资源
 
 在资源组列表页，点击对应的资源组后的“更多”-“转出资源”，可支持将该资源组下资源的转出到另外的资源组。
+
 如下图：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
 
 弹出“转出资源”弹窗，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7-out1.png)
 可支持根据"满足以下所有条件"和"满足以下任意条件"两种形式，圈定要修改标签的资源。
 
 点击“下一步”，可将圈定的资源转出至选定的资源组。
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7out2.png)
 
 
 #### 删除资源组
 
 在资源组列表页，点击对应的资源组后的“更多”-“删除”，可支持删除资源组。
+
 如下图：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
 
 删除资源组时，需要先将该资源组下的资源转出至选定的资源组。
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/8-delete.png)
 注：默认资源组不支持删除，默认资源组ID为“rg-default”
 
@@ -91,17 +101,22 @@
 #### 转出资源
 
 在资源组详情页面，点击对应资源右侧的“转出资源”，支持将该资源从该资源组下转出，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out1.png)
 
 在该弹出框，可选择转出的目标资源组，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out2.png)
 
 #### 管理标签
 
 在资源组详情页面，点击对应资源右侧的“管理标签”，支持对该资源标签进行修改，操作如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label1.png)
 
 在如下页面支持对该资源进行标签管理：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label2.png)
+
 在该弹窗，支持添加/删除标签。
 
