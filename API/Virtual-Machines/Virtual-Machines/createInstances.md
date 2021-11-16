@@ -34,7 +34,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**regionId**|String|是|cn-north-1|地域ID。|
+|**regionId**|String|是|cn-north-1|地域ID。可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。|
 
 ## <div id="user-content-requestparameters">请求参数</div>
 |名称|类型|是否必选|示例值|描述|
@@ -49,7 +49,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**agId**|String|否|ag-81qq****pn|高可用组ID。指定此参数后，将默认使用高可用组关联的实例模板创建实例，实例模板中的参数不可覆盖替换。实例模板以外的参数（内网IPv4/Ipv6分配方式、名称、描述、标签）可指定。<br>|
 |**instanceTemplateId**|String|否|it-u3o8****yy|实例模板ID。指定此参数后，如实例模板中参数不另行指定将默认以模板配置创建实例，如指定则以指定值为准创建。<br>指定 `agId` 时此参数无效。<br>|
-|**az**|String|否|cn-north-1a|实例所属的可用区。<br>如不指定 `agId` 以使用高可用组设置的可用区，此参数为必选。<br>|
+|**az**|String|否|cn-north-1a|实例所属的可用区，可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。<br>如不指定 `agId` 以使用高可用组设置的可用区，此参数为必选。<br>|
 |**instanceType**|String|否|g.n2.xlarge|实例规格。可通过 [DescribeInstanceTypes](https://docs.jdcloud.com/virtual-machines/api/describeinstancetypes) 接口查询各地域及可用区下的规格售卖情况。<br>如不指定 `agId` 或 `instanceTemplateId` 以使用实例模板中配置的规格，此参数为必选。<br>|
 |**imageId**|String|否| img-m5s0****29|镜像ID。可通过 [DescribeImages](https://docs.jdcloud.com/virtual-machines/api/describeimages) 接口获得指定地域的镜像信息。<br>如不指定 `agId` 或 `instanceTemplateId` 以使用实例模板中配置的镜像，此参数为必选。<br>|
 |**name**|String|是|instance-\[001\]-ops|实例名称。长度为1\~128个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.），不能以（.）作为首尾。<br>批量创建多台实例时，可在name中非首位位置以\[start_number]格式来设置有序name。start_number为起始序号，其位数代表编号字符位数，范围：\[0,9999]。详情参见[为实例设置有序名称](https://docs.jdcloud.com/cn/virtual-machines/set-ordered-name)。<br>|

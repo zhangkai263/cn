@@ -113,110 +113,110 @@
       <td>g.n4.medium</td>
       <td>1</td>
       <td>4</td>
-      <td>120</td>
-      <td>120</td>
-      <td>0.25</td>
-      <td>0.25</td>
+      <td>138</td>
+      <td>138</td>
+      <td>0.29</td>
+      <td>0.29</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.large</td>
       <td>2</td>
       <td>8</td>
-      <td>240</td>
-      <td>240</td>
-      <td>0.5</td>
-      <td>0.5</td>
+      <td>276</td>
+      <td>276</td>
+      <td>0.58</td>
+      <td>0.58</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.xlarge</td>
       <td>4</td>
       <td>16</td>
-      <td>480</td>
-      <td>480</td>
-      <td>1</td>
-      <td>1</td>
+      <td>552</td>
+      <td>552</td>
+      <td>1.15</td>
+      <td>1.15</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.2xlarge</td>
       <td>8</td>
       <td>32</td>
-      <td>960</td>
-      <td>960</td>
-      <td>2</td>
-      <td>2</td>
+      <td>1104</td>
+      <td>1104</td>
+      <td>2.3</td>
+      <td>2.3</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.3xlarge</td>
       <td>12</td>
       <td>48</td>
-      <td>1440</td>
-      <td>1440</td>
-      <td>3</td>
-      <td>3</td>
+      <td>1656</td>
+      <td>1656</td>
+      <td>3.45</td>
+      <td>3.45</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.4xlarge</td>
       <td>16</td>
       <td>64</td>
-      <td>1920</td>
-      <td>1920</td>
-      <td>4</td>
-      <td>4</td>
+      <td>2208</td>
+      <td>2208</td>
+      <td>4.6</td>
+      <td>4.6</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.6xlarge</td>
       <td>24</td>
       <td>96</td>
-      <td>2880</td>
-      <td>2880</td>
-      <td>6</td>
-      <td>6</td>
+      <td>3312</td>
+      <td>3312</td>
+      <td>6.9</td>
+      <td>6.9</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.8xlarge</td>
       <td>32</td>
       <td>128</td>
-      <td>3840</td>
-      <td>3840</td>
-      <td>8</td>
-      <td>8</td>
+      <td>4416</td>
+      <td>4416</td>
+      <td>9.2</td>
+      <td>9.2</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.12xlarge</td>
       <td>48</td>
       <td>192</td>
-      <td>5760</td>
-      <td>5760</td>
-      <td>12</td>
-      <td>12</td>
+      <td>6624</td>
+      <td>6624</td>
+      <td>13.8 </td>
+      <td>13.8 </td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.16xlarge</td>
       <td>64</td>
       <td>256</td>
-      <td>7680</td>
-      <td>7680</td>
-      <td>16</td>
-      <td>16</td>
+      <td>8832</td>
+      <td>8832</td>
+      <td>18.4</td>
+      <td>18.4</td>
       <td></td>
    </tr>
    <tr>
       <td>g.n4.24xlarge</td>
       <td>96</td>
       <td>352</td>
-      <td>11520</td>
-      <td>11520</td>
-      <td>24</td>
-      <td>24</td>
+      <td>13248</td>
+      <td>13248</td>
+      <td>27.6</td>
+      <td>27.6</td>
       <td></td>
    </tr>
    <tr>
@@ -576,100 +576,100 @@
       <td>c.n4.large</td>
       <td>2</td>
       <td>4</td>
-      <td>187</td>
-      <td>187</td>
-      <td>0.39</td>
-      <td>0.39</td>
+      <td>215.05</td>
+      <td>215.05</td>
+      <td>0.45</td>
+      <td>0.45</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.xlarge</td>
       <td>4</td>
       <td>8</td>
-      <td>374</td>
-      <td>374</td>
-      <td>0.78</td>
-      <td>0.78</td>
+      <td>430.1</td>
+      <td>430.1</td>
+      <td>0.9</td>
+      <td>0.9</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.2xlarge</td>
       <td>8</td>
       <td>16</td>
-      <td>748</td>
-      <td>748</td>
-      <td>1.56</td>
-      <td>1.56</td>
+      <td>860.2</td>
+      <td>860.2</td>
+      <td>1.79</td>
+      <td>1.79</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.3xlarge</td>
       <td>12</td>
       <td>24</td>
-      <td>1122</td>
-      <td>1122</td>
-      <td>2.34</td>
-      <td>2.34</td>
+      <td>1290.3</td>
+      <td>1290.3</td>
+      <td>2.69</td>
+      <td>2.69</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.4xlarge</td>
       <td>16</td>
       <td>32</td>
-      <td>1496</td>
-      <td>1496</td>
-      <td>3.12</td>
-      <td>3.12</td>
+      <td>1720.4</td>
+      <td>1720.4</td>
+      <td>3.58</td>
+      <td>3.58</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.6xlarge</td>
       <td>24</td>
       <td>48</td>
-      <td>2244</td>
-      <td>2244</td>
-      <td>4.68</td>
-      <td>4.68</td>
+      <td>2580.6</td>
+      <td>2580.6</td>
+      <td>5.38</td>
+      <td>5.38</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.8xlarge</td>
       <td>32</td>
       <td>64</td>
-      <td>2992</td>
-      <td>2992</td>
-      <td>6.23</td>
-      <td>6.23</td>
+      <td>3440.8</td>
+      <td>3440.8</td>
+      <td>7.17</td>
+      <td>7.17</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.12xlarge</td>
       <td>48</td>
       <td>96</td>
-      <td>4488</td>
-      <td>4488</td>
-      <td>9.36</td>
-      <td>9.36</td>
+      <td>5161.2</td>
+      <td>5161.2</td>
+      <td>10.75</td>
+      <td>10.75</td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.16xlarge</td>
       <td>64</td>
       <td>128</td>
-      <td>5984</td>
-      <td>5984</td>
-      <td>12.46</td>
-      <td>12.46</td>
+      <td>6881.6</td>
+      <td>6881.6</td>
+      <td>14.34 </td>
+      <td>14.34 </td>
       <td></td>
    </tr>
    <tr>
       <td>c.n4.24xlarge</td>
       <td>96</td>
       <td>192</td>
-      <td>8976</td>
-      <td>8976</td>
-      <td>18.7</td>
-      <td>18.7</td>
+      <td>10322.4</td>
+      <td>10322.4</td>
+      <td>21.51</td>
+      <td>21.51</td>
       <td></td>
    </tr>
    </tr>
@@ -948,70 +948,70 @@
       <td>m.n4.large</td>
       <td>2</td>
       <td>16</td>
-      <td>318</td>
-      <td>318</td>
-      <td>0.66</td>
-      <td>0.66</td>
+      <td>359.34</td>
+      <td>359.34</td>
+      <td>0.75 </td>
+      <td>0.75 </td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.xlarge</td>
       <td>4</td>
       <td>32</td>
-      <td>636</td>
-      <td>636</td>
-      <td>1.33</td>
-      <td>1.33</td>
+      <td>718.68</td>
+      <td>718.68</td>
+      <td>1.5 </td>
+      <td>1.5 </td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.2xlarge</td>
       <td>8</td>
       <td>64</td>
-      <td>1272</td>
-      <td>1272</td>
-      <td>2.65</td>
-      <td>2.65</td>
+      <td>1437.36</td>
+      <td>1437.36</td>
+      <td>2.99 </td>
+      <td>2.99 </td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.3xlarge</td>
       <td>12</td>
       <td>96</td>
-      <td>1908</td>
-      <td>1908</td>
-      <td>3.98</td>
-      <td>3.98</td>
+      <td>2156.04</td>
+      <td>2156.04</td>
+      <td>4.49 </td>
+      <td>4.49 </td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.4xlarge</td>
       <td>16</td>
       <td>128</td>
-      <td>2544</td>
-      <td>2544</td>
-      <td>5.3</td>
-      <td>5.3</td>
+      <td>2874.72</td>
+      <td>2874.72</td>
+      <td>5.99 </td>
+      <td>5.99 </td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.6xlarge</td>
       <td>24</td>
       <td>192</td>
-      <td>3816</td>
-      <td>3816</td>
-      <td>7.95</td>
-      <td>7.95</td>
+      <td>4312.08</td>
+      <td>4312.08</td>
+      <td>8.98</td>
+      <td>8.98</td>
       <td></td>
    </tr>
    <tr>
       <td>m.n4.8xlarge</td>
       <td>32</td>
       <td>256</td>
-      <td>5088</td>
-      <td>5088</td>
-      <td>10.6</td>
-      <td>7.95</td>
+      <td>5749.44</td>
+      <td>5749.44</td>
+      <td>11.98 </td>
+      <td>11.98 </td>
       <td></td>
    </tr>
    </tr>
