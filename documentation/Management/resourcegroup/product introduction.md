@@ -8,7 +8,7 @@
 ## 操作指南
 
 ### 菜单路径
-用户登录控制台，在云服务下找到“资源管理”菜单，资源组管理页面在资源管理菜单下。
+用户登录控制台，在云服务下“管理”模块可找到“资源管理”菜单，资源组管理页面在资源管理菜单下。
 如下：
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/1-road.png)
