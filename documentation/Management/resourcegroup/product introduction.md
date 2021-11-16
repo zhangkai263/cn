@@ -93,11 +93,15 @@
 在资源组详情页面，点击对应资源右侧的“转出资源”，支持将该资源从该资源组下转出，如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out1.png)
 
-
+在该弹出框，可选择转出的目标资源组，如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out2.png)
 
 #### 管理标签
 
+在资源组详情页面，点击对应资源右侧的“管理标签”，支持对该资源标签进行修改，操作如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label1.png)
+
+在如下页面支持对该资源进行标签管理：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/11-manage%20label2.png)
+在该弹窗，支持添加/删除标签。
 
