@@ -22,13 +22,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](describeRouteTable#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-esult">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**routeTable**|[RouteTable](#user-content-routetable)|路由表资源信息|
+|**routeTable**|[RouteTable](describeRouteTable#user-content-routetable)|路由表资源信息|
 ### <div id="user-content-routetable">RouteTable</div>
 |名称|类型|描述|
 |---|---|---|
@@ -37,8 +37,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 |**routeTableType**|String|路由表类型，default：默认路由表，custom：自定义路由表|
 |**description**|String|路由表描述信息，允许输入UTF-8编码下的全部字符，不超过256字符。|
 |**vpcId**|String|私有网络ID|
-|**routeTableRules**|[RouteTableRule[]](#user-content-routetablerule)|路由表规则信息|
-|**routePropagations**|[RoutePropagation[]](#user-content-routepropagation)|路由传播列表|
+|**routeTableRules**|[RouteTableRule[]](describeRouteTable#user-content-routetablerule)|路由表规则信息|
+|**routePropagations**|[RoutePropagation[]](describeRouteTable#user-content-routepropagation)|路由传播列表|
 |**subnetIds**|String[]|路由表绑定的子网列表|
 |**createdTime**|String|路由表创建时间|
 ### <div id="user-content-routepropagation">RoutePropagation</div>
