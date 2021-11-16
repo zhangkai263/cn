@@ -74,19 +74,24 @@
 
 #### 资源管理
 
-在资源组列表页，点击对应的资源组后的“编辑”，可支持编辑资源组信息。
+在资源组列表页，点击对应的资源组后的“资源管理”，或者点击“资源组ID”，可进入资源组详情页面。
 
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/5-manage.png)
 
 
 ### 资源组详情
 
+资源组详情页面，展示归属于该资源组的所有资源，如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/9-detail.png)
 
 
 #### 转出资源
 
+在资源组详情页面，点击对应资源右侧的“转出资源”，支持将该资源从该资源组下转出，如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out1.png)
+
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/10-out2.png)
 
 #### 管理标签
