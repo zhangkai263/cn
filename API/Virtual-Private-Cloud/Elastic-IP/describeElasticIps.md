@@ -19,8 +19,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞), 页码超过总页数时, 显示最后一页|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
-|**filters**|[Filter[]](#user-content-filter)|False| |elasticIpIds - elasticip id数组条件，支持多个<br>elasticIpAddress - eip的IP地址，支持单个<br>chargeStatus	- eip的费用支付状态,normal(正常状态) or overdue(预付费已到期) or arrear(欠费状态)，支持单个<br>ipType - eip类型，取值：all(所有类型)、standard(标准弹性IP)、edge(边缘弹性IP)，默认standard，支持单个<br>azs - eip可用区，支持多个<br>bandwidthPackageId - 共享带宽包ID，支持单个<br>|
-|**tags**|[TagFilter[]](#user-content-tagfilter)|False| |Tag筛选条件|
+|**filters**|[Filter[]](describeElasticIps#user-content-filter)|False| |elasticIpIds - elasticip id数组条件，支持多个<br>elasticIpAddress - eip的IP地址，支持单个<br>chargeStatus	- eip的费用支付状态,normal(正常状态) or overdue(预付费已到期) or arrear(欠费状态)，支持单个<br>ipType - eip类型，取值：all(所有类型)、standard(标准弹性IP)、edge(边缘弹性IP)，默认standard，支持单个<br>azs - eip可用区，支持多个<br>bandwidthPackageId - 共享带宽包ID，支持单个<br>|
+|**tags**|[TagFilter[]](describeElasticIps#user-content-tagfilter)|False| |Tag筛选条件|
 
 ### <div id="user-content-tagfilter">TagFilter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -37,13 +37,13 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#user-content-result)|返回结果|
+|**result**|[Result](describeElasticIps#user-content-result)|返回结果|
 |**requestId**|String|请求ID|
 
 ### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIps**|[ElasticIp[]](#user-content-elasticip)|elasticIp资源信息列表|
+|**elasticIps**|[ElasticIp[]](describeElasticIps#user-content-elasticip)|elasticIp资源信息列表|
 |**totalCount**|Integer|总数量|
 ### <div id="user-content-elasticip">ElasticIp</div>
 |名称|类型|描述|
@@ -56,10 +56,10 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 |**networkInterfaceId**|String|配置弹性网卡Id|
 |**instanceId**|String|实例Id|
 |**instanceType**|String|实例类型,取值为：compute、lb、container、pod|
-|**charge**|[Charge](#user-content-charge)|计费配置|
+|**charge**|[Charge](describeElasticIps#user-content-charge)|计费配置|
 |**createdTime**|String|弹性公网IP的创建时间|
 |**az**|String|弹性公网IP的可用区属性，如果为空，表示全可用区|
-|**tags**|[Tag[]](#user-content-tag)|Tag信息|
+|**tags**|[Tag[]](describeElasticIps#user-content-tag)|Tag信息|
 |**ipType**|String|弹性公网IP的IP类型，取值：standard(标准弹性IP)、edge(边缘弹性IP)|
 |**bandwidthPackageId**|String|加入的共享带宽包ID，如果没有加入共享带宽包该值为空|
 ### <div id="user-content-tag">Tag</div>
