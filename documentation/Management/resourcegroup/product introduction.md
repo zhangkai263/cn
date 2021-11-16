@@ -16,6 +16,7 @@
 ### 资源组列表
 
 资源组列表展示如下：
+
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/2-list.png)
 初始化状态下：只有“默认资源组”，所有资源归属于“默认资源组”。
 
