@@ -3,7 +3,7 @@
 
 资源组管理提供一种资源管理工具，支持用户对所拥有的云资源从用途、权限、归属等维度上进行分组，以便满足企业内部多用户、多项目的资源分级管理的需求。
 
-一个云资源只能归属于一个资源组。 所有资源初始化归属于“默认资源组”
+一个云资源只能归属于一个资源组。 所有资源初始化归属于“默认资源组”。
 
 ## 操作指南
 
@@ -49,13 +49,27 @@
 
 #### 转出资源
 
+在资源组列表页，点击对应的资源组后的“更多”-“转出资源”，可支持将该资源组下资源的转出到另外的资源组。
+如下图：
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
+
+弹出“转出资源”弹窗，如下：
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7-out1.png)
+可支持根据"满足以下所有条件"和"满足以下任意条件"两种形式，圈定要修改标签的资源。
+
+点击“下一步”，可将圈定的资源转出至选定的资源组。
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/7out2.png)
 
 
 #### 删除资源组
 
+在资源组列表页，点击对应的资源组后的“更多”-“删除”，可支持删除资源组。
+如下图：
+![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/6-modify%20label1.png)
+
+删除资源组时，需要先将该资源组下的资源转出至选定的资源组。
 ![](https://github.com/jdcloudcom/cn/blob/wangxiaguang1116/image/resourcegroup/8-delete.png)
+注：默认资源组不支持删除，默认资源组ID为“rg-default”
 
 
 #### 资源管理
