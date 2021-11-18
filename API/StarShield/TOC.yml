@@ -9,6 +9,8 @@ items:
     items:
       - name: 域管理接口
         items:
+          - name: createZone
+            href: Zone-APIs/createZone.md
           - name: listZones
             href: Zone-APIs/listZones.md
           - name: deleteZone
@@ -19,6 +21,16 @@ items:
             href: Zone-APIs/purgeFilesByURL.md
           - name: purgeFilesByCache_TagsAndHostOrPrefix
             href: Zone-APIs/purgeFilesByCache_TagsAndHostOrPrefix.md
+      - name: DNS记录管理接口
+        items:
+          - name: createDNSRecord
+            href: DNSRecord-APIs/createDNSRecord.md
+          - name: updateDNSRecord
+            href: DNSRecord-APIs/updateDNSRecord.md
+          - name: deleteDNSRecord
+            href: DNSRecord-APIs/deleteDNSRecord.md
+          - name: listDNSRecords
+            href: DNSRecord-APIs/listDNSRecords.md
       - name: 域配置管理接口
         items:
           - name: change0_RTTSessionResumptionSetting
@@ -103,6 +115,8 @@ items:
             href: ZoneSetting-APIs/changeWebSocketsSetting.md
           - name: editZoneSettingsInfo
             href: ZoneSetting-APIs/editZoneSettingsInfo.md
+          - name: getAllZoneSettings
+            href: ZoneSetting-APIs/getAllZoneSettings.md
           - name: getAdvancedDDOSSetting
             href: ZoneSetting-APIs/getAdvancedDDOSSetting.md
           - name: getAlwaysOnlineSetting
@@ -113,6 +127,8 @@ items:
             href: ZoneSetting-APIs/getAutomaticHTTPSRewritesSetting.md
           - name: getBrowserCacheTTLSetting
             href: ZoneSetting-APIs/getBrowserCacheTTLSetting.md
+          - name: getBrowserCheckSetting
+            href: ZoneSetting-APIs/getBrowserCheckSetting.md
           - name: getCacheLevelSetting
             href: ZoneSetting-APIs/getCacheLevelSetting.md
           - name: getChallengeTTLSetting
@@ -185,6 +201,8 @@ items:
         items:
           - name: checkInstancesName
             href: Instance-APIs/checkInstancesName.md
+          - name: createFlowPack
+            href: Instance-APIs/createFlowPack.md
           - name: createInstance
             href: Instance-APIs/createInstance.md
           - name: describeInstances
@@ -201,12 +219,16 @@ items:
         items:
           - name: listCertificatePacks
             href: SSL-APIs/listCertificatePacks.md
+          - name: orderAdvancedCertificateManagerCertificatePack
+            href: SSL-APIs/orderAdvancedCertificateManagerCertificatePack.md
           - name: deleteAdvancedCertificateManagerCertificatePack
             href: SSL-APIs/deleteAdvancedCertificateManagerCertificatePack.md
           - name: listSSLConfigurations
             href: SSL-APIs/listSSLConfigurations.md
           - name: deleteSSLConfiguration
             href: SSL-APIs/deleteSSLConfiguration.md
+          - name: editUniversalSSLSettings
+            href: SSL-APIs/editUniversalSSLSettings.md
           - name: universalSSLSettingsDetails
             href: SSL-APIs/universalSSLSettingsDetails.md
       - name: WAF管理接口
@@ -219,5 +241,43 @@ items:
             href: WAF-APIs/firewallPackageDetails.md
           - name: listFirewallPackages
             href: WAF-APIs/listFirewallPackages.md
+          - name: editFirewallPackage
+            href: WAF-APIs/editFirewallPackage.md
           - name: listRules
             href: WAF-APIs/listRules.md
+      - name: 防火墙规则管理接口
+        items:
+          - name: createFirewallRules
+            href: FirewallRule-APIs/createFirewallRules.md
+          - name: listOfFirewallRules
+            href: FirewallRule-APIs/listOfFirewallRules.md
+          - name: updateIndividualFirewallRule
+            href: FirewallRule-APIs/updateIndividualFirewallRule.md
+          - name: deleteIndividualFirewallRules
+            href: FirewallRule-APIs/deleteIndividualFirewallRules.md
+          - name: createFilters
+            href: FirewallRule-APIs/createFilters.md
+          - name: updateIndividualFilter
+            href: FirewallRule-APIs/updateIndividualFilter.md
+          - name: openFirewallBot
+            href: FirewallRule-APIs/openFirewallBot.md
+          - name: describeBotStatus
+            href: FirewallRule-APIs/describeBotStatus.md
+      - name: 页面规则管理接口
+        items:
+          - name: createPageRule
+            href: PageRule-APIs/createPageRule.md
+          - name: updatePageRule
+            href: PageRule-APIs/updatePageRule.md
+          - name: deletePageRule
+            href: PageRule-APIs/deletePageRule.md
+          - name: listPageRules
+            href: PageRule-APIs/listPageRules.md
+          - name: listAvailablePageRuleSetting
+            href: PageRule-APIs/listAvailablePageRuleSetting.md
+      - name: 自定义页面管理接口
+        items:
+          - name: listAvailableCustomPages
+            href: CustomPage-APIs/listAvailableCustomPages.md
+          - name: updateCustomPageURL
+            href: CustomPage-APIs/updateCustomPageURL.md
