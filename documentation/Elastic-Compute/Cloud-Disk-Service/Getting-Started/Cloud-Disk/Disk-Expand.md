@@ -40,7 +40,7 @@
 2、在云硬盘列表页面找到需要进行容量升级的云硬盘，在您需要扩容的云硬盘右侧点击【更多】-扩容；
 <br>
 
-![](../../../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-014.png)
+![](../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-014.png)
 
 <br>
 
@@ -48,14 +48,14 @@
 
 <br>
 
-![](../../../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015.png)
+![](../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015.png)
 
 <br>
 
 4、如您对性能型SSD规格的云硬盘进行扩容，请注意调整云硬盘的iops性能，以和您所需的性能相匹配。避免容量提升，iops配置过低的情况，影响您的使用。
 <br>
 
-![](../../../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015-io1.png)
+![](../../../../cn/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015-io1.png)
 
 <br>
 
