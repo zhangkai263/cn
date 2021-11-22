@@ -24,7 +24,7 @@ I/O性能：最高提供32000随机读写IOPS、150MBps吞吐性能；
 - 适用于对数据可靠性要求高的I/O密集型核心业务场景。
 
 
-![ app_scenario_001 ](../../../../image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_001.jpg)
+![ app_scenario_001 ](../../../../../image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_001.jpg)
 
 
 **容量型HDD云硬盘**
@@ -40,5 +40,5 @@ I/O性能：最高提供500随机读写IOPS、80MBps吞吐性能，因其物理�
 - 适用于web服务器，大容量，事务性处理较少的应用；
 - 适用于大文件顺序读写、冷数据备份等归档存储。
 
-![ app_scenario_002 ](../../../../image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_002.jpg)
+![ app_scenario_002 ](../../../../../image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_002.jpg)
 
