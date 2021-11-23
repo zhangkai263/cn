@@ -130,8 +130,6 @@ jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json 
 
 [服务角色](https://docs.jdcloud.com/cn/iam/role)
 
-[任务管理](Image-Task.md)
-
 [镜像导出OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)
 
 [查询镜像任务OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)
