@@ -127,8 +127,6 @@ jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json
 
 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 
-[任务管理](Image-Task.md)
-
 [镜像导入OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)
 
 [镜像任务查询OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 
