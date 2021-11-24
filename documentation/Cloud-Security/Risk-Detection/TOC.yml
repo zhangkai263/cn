@@ -34,7 +34,17 @@ items:
       - name: 资源包管理
         href: Operation-Guide/Resource-package-management.md
       - name: 手动试用
-        href: Operation-Guide/Trial.md         
+        href: Operation-Guide/Trial.md
+      - name: 决策引擎
+        items:
+          - name: 字段管理
+            href: Risk-Control-Platform/Field-management.md
+          - name: 事件管理
+            href: Risk-Control-Platform/Event-management.md
+          - name: 策略管理
+            href: Risk-Control-Platform/Strategy-management.md
+          - name: 变量管理
+            href: Risk-Control-Platform/Var-management.md
   - name: API指南
     items:
       - name: 接口概览
@@ -53,6 +63,7 @@ items:
             href:  API-Document/RiskDetection/CreditScoreMartketing.md
           - name: 订单风险识别API
             href:  API-Document/RiskDetection/CreditScoreOrder.md
+
       - name: 黑白名单设置
         items:
           - name: 添加黑白名单
