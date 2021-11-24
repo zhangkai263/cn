@@ -45,34 +45,35 @@
 
 5. 恢复解压好的备份文件。工具中包含多个配置文件，根据实际的实例类型及版本进行使用,对应关系见下方表格。  
 
-  |实例类型及版本|选择配置文件|
-  |---|---|
-  |MySQL 5.5、5.6、5.7|mysql-5.cnf|
-  |MySQL 8.0|mysql-8.cnf|
-  |MariaDB|mariadb-10.2.cnf|
-  |Percona|percona-7.cnf|
-
-    ```python  
-  xtrabackup --defaults-file=$HOME/<在工具里面有多个配置文件，根据MySQL版本选择使用>.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
-    ``` 
+    |实例类型及版本|选择配置文件|
+    |---|---|
+    |MySQL 5.5、5.6、5.7|mysql-5.cnf|
+    |MySQL 8.0|mysql-8.cnf|
+    |MariaDB|mariadb-10.2.cnf|
+    |Percona|percona-7.cnf|  
+  
+    ```python
+    xtrabackup --defaults-file=$HOME/<在工具里面有多个配置文件，根据MySQL版本选择使用>.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
+    ```   
+    
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
 6. 修改文件属主，并确定文件所属为 MySQL 用户
 
-  ```python  
-  chown -R mysql:mysql $HOME/tmp_snapshot
-  ```
+   ```python
+   chown -R mysql:mysql $HOME/tmp_snapshot
+   ```
 
 7. 启动 MySQL 进程。<配置文件根据实例类型及版本选择>.cnf文件与实例版本对应关系同步骤5.
 
-  ```python  
-    mysqld_safe --defaults-file=$HOME/<配置文件根据实例类型及版本选择>.cnf --user=mysql --datadir=$HOME/tmp_snapshot &
-  ```
+   ```python
+   mysqld_safe --defaults-file=$HOME/<配置文件根据实例类型及版本选择>.cnf --user=mysql --datadir=$HOME/tmp_snapshot &
+   ```
 
 8. 登录 MySQL 数据库
 
-  ```SQL  
-  mysql -uroot -p
-  ```
+   ```SQL
+   mysql -uroot -p
+   ```
 
 - 密码默认为空， 直接回车即可。
