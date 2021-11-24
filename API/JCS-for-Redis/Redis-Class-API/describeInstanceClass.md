@@ -46,3 +46,51 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/instanceClass
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testInstanceClass() {
+  // 1. 设置请求参数
+  DescribeInstanceClassRequest request = new DescribeInstanceClassRequest();
+  request.regionId("cn-north-1").redisVersion("4.0");
+
+  // 2. 发起请求
+  DescribeInstanceClassResponse response = redisClient.describeInstanceClass(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5me0", 
+    "result": {
+        "instanceClasses": [
+            {
+                "bandwidthMbps": 48, 
+                "cpu": 1, 
+                "diskGB": 20, 
+                "instanceClass": "redis.m.micro.basic", 
+                "instanceType": "master-slave", 
+                "maxConnection": 10000, 
+                "memoryMB": 1024
+            }, 
+            {
+                "bandwidthMbps": 384, 
+                "cpu": 8, 
+                "diskGB": 160, 
+                "instanceClass": "redis.c.small.basic", 
+                "instanceType": "cluster", 
+                "maxConnection": 80000, 
+                "memoryMB": 16384
+            }
+        ], 
+        "totalCount": 2
+    }
+}
+```

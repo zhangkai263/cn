@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改弹性IP
+修改弹性公网IP，当弹性公网IP加入共享带宽包后，此公网IP限速需要调用共享带宽包的接口（修改共享带宽包内公网IP带宽上限）
 
 ## 请求方式
 PATCH
@@ -33,3 +33,25 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**200**|Successful operation|
 |**400**|Invalid param 'xxx'|
 |**404**|Resource not found|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 修改id为fip-xcgb8fva97的弹性公网IP
+
+PATCH
+```
+  https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/fip-xcgb8fva97
+  body:{
+           "bandwidthMbps" :"2"
+       }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "a5097e38-8ed6-40b2-903b-780cd0fea263"
+}
+```

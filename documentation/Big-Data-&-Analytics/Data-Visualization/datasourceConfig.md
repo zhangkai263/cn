@@ -223,3 +223,33 @@ return data
 
 ![](http://storage.360buyimg.com/docs-image/20201010155722.png)
 
+# 统一数据请求
+
+针对大屏新增统一数据请求设置，用户可以在大屏的数据配置中新增数据设置，添加一个可以让当前大屏下所有组件都可以使用的“统一数据设置”。
+
+![image-20210425140957165](https://raw.githubusercontent.com/zhangzhenjiang1/Alotofphotos/master/img/image-20210425140957165.png)
+
+在这里设置的数据，大屏中所有的组件将都可以使用。
+
+统一数据配置中，我们也依旧支持数据库，API和静态数据这三种类型：
+
+![image-20210425141132635](https://raw.githubusercontent.com/zhangzhenjiang1/Alotofphotos/master/img/image-20210425141132635.png)
+
+在配置完数据后，大屏中所有组件都可以直接使用统一数据配置中配置的数据源。
+
+![image-20210425141247123](https://raw.githubusercontent.com/zhangzhenjiang1/Alotofphotos/master/img/image-20210425141247123.png)
+
+推荐各位首先使用统一数据源的数据配置。
+
+## 保存已有组件的独立数据请求配置
+
+当一个组件的数据配置需要被应用到其他组件上时，您可以直接使用“另存为统一数据请求”的功能。
+
+例如一个组件的数据设置，与其他组件的数据设置一致，或者包含了其他组件的数据设置，则您可以选择将这个组件的数据设置保存为“统一数据请求"供其他组件使用。
+
+![image-20210425142315512](https://raw.githubusercontent.com/zhangzhenjiang1/Alotofphotos/master/img/image-20210425142315512.png)
+
+您也可以在保存时直接在当前组件使用统一数据请求，选择“另存为且应用”即可。
+
+![image-20210425142356093](https://raw.githubusercontent.com/zhangzhenjiang1/Alotofphotos/master/img/image-20210425142356093.png)
+

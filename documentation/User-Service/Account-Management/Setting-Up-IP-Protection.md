@@ -14,7 +14,7 @@
 请注意，一般来说连接VPN不会改变您的访问IP，请和VPN提供商进行确认。
 
 ## 设置IP保护的步骤
-1. 登录账户管理 - 安全设置，找到IP保护设置项，点击设置
+1. 登录账户管理 - [安全设置](https://uc.jdcloud.com/account/security-settings)，找到IP保护设置项，点击设置
 
 ![](../../../image/User/Account-Mgmt/IP-1.png)
 

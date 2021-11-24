@@ -22,6 +22,7 @@ https://vod.jdcloud-api.com/v1/videoUploadTask
 |**description**|String|False| |视频描述|
 |**categoryId**|Long|False| |分类ID|
 |**tags**|String[]|False| |视频标签集合|
+|**transcodeTemplateGroupId**|String|False| |转码模板组ID|
 |**transcodeTemplateIds**|Long[]|False| |转码模板ID集合|
 |**watermarkIds**|Long[]|False| |水印ID集合|
 |**userData**|String|False| |自定义数据|

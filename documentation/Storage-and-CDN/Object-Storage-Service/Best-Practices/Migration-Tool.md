@@ -237,7 +237,7 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 ```
 ### Osstransfer使用说明
 
-1.Osstransfer迁移工具大体分为三种job，分别为listObject，transfer。在迁移过程中，put上传及分片上传的每片文件都已经进行了md5的对比。
+1.Osstransfer迁移工具大体分为三种job，分别为listObject，transfer，check。在迁移过程中，put上传及分片上传的每片文件都已经进行了md5的对比。
 
 2.文件迁移单文件最大为19.5T。
 

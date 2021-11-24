@@ -2,7 +2,7 @@
 消息队列 JCQ提供了三种消息查询的方式：按Business ID，按Message ID，以及按Topic时间范围查询。
 
 ## 前提条件
-- 消息已经在所查询的topic中发送
+- 消息已经发送到所查询的topic中
 - 所查询的消息在消息生命周期内（3天）
 
 ## 操作步骤
@@ -26,7 +26,7 @@
 输入或选取想要查询的topic名称,输入Message ID，点击搜索。  
 可以点击某条message的操作，查看消息详情或者消息轨迹。
 
-### 3. 按Topic查询
+### 3. 按时间日期查询
 ![查询1](../../../../../image/Internet-Middleware/Message-Queue/查询-01.png)
 输入或选取想要查询的Topic名称和时间范围，点击搜索，得到查询结果。  
 可以点击某条message的操作，查看消息详情或者消息轨迹。
@@ -35,7 +35,7 @@
 ## 查询结果
 查询列表展示消息的Message ID、Business ID、Tag以及存储时间。进一步可查看消息详情，其中包含消息轨迹。
 #### 消息详情
-查询详情里详细展示了消息的Message Body、Userproperties以及消息体大小。
+查询详情里详细展示了消息的Message Body、User Properties以及消息体大小。
 ![查询4](../../../../../image/Internet-Middleware/Message-Queue/查询-04.png)
 #### 消息轨迹
 消息轨迹部分可以展示消息的完整生产和消费过程，详情参见[消息轨迹](Message-Trace.md)。

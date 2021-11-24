@@ -34,3 +34,8 @@ v1
 |**removePermission**|DELETE|删除当前topic对目标用户授权的权限|
 |**resendDeadLetters**|POST|重发死信消息|
 |**resetConsumeOffset**|POST|重置消费位|
+
+## 常用参数说明
+|参数名称|参数说明|备注|
+|---|---|---|
+|regionId|华北-北京：cn-north-1<br>华东-上海：cn-east-2<br>华北-公网：cn-north-internet|消息队列JCQ当前支持region|

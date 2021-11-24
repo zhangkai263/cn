@@ -115,6 +115,12 @@
   	</thead>
     <tbody>    
     <tr>
+        <td>2021-06-18 北京/广州/宿迁/上海</td>
+      	<td>Ubuntu 20.04</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr>    
+    <tr>
         <td>2019-12-19 北京/广州/宿迁/上海</td>
       	<td>Ubuntu 18.04</td>
       	<td>* 发布上线</td>
@@ -185,6 +191,12 @@
     </tr>
   	</thead>
     <tbody>    
+    <tr>
+        <td>2021-07-05 北京/广州/宿迁/上海</td>
+      	<td>Windows Server 2019 数据中心版 中文版</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr>   
     <tr>
         <td>2019-08-27 北京/广州/宿迁/上海</td>
       	<td>Windows Server 2016 数据中心版 中文版<br>Windows Server 2012 R2 标准版 中文版<br>Windows Server 2008 R2 数据中心版 中文版</td>

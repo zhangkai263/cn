@@ -33,3 +33,24 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}:dis
 |**200**|Successful operation|
 |**400**|Request parameter x.y.z is 'xxx', expected one of [yyy,zzz]|
 |**404**|Resource not found|
+
+## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例: 将id为rtb-olajkrx4xr的路由表解绑
+
+POST
+```
+
+  /v1/regions/cn-north-1/routeTables/rtb-olajkrx4xr:disassociateRouteTable
+       {
+           "subnetId":["subnet-5lymzx3989"]
+       }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45pbafcwj6tmo1c3w6rv1i9n78kucup"
+}
+```

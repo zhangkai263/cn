@@ -1,0 +1,141 @@
+name: 云主机概览
+items:
+- name: 云主机概述
+  desc: 云主机（Virtual Machines,VM）是京东云提供的一种管理便捷、安全可靠的云计算服务单元。您无需为硬件的购买和维护投入精力，可随时创建和释放多台云主机，快速部署应用，并且可根据业务需要扩展计算能力，按需付费，节约成本，帮助您更高效稳定的开展业务。
+  items:
+    - name: 立即购买
+      href: https://cns-console.jdcloud.com/host/compute/create
+    - name: 实例规格类型
+      href: https://docs.jdcloud.com/cn/virtual-machines/instance-type-family
+      btnstyle: white
+    - name: 产品动态
+      href: https://docs.jdcloud.com/cn/virtual-machines/product-news
+      btnstyle: white
+- name: 学习路线
+  items:
+    - name: 了解
+      items:
+        - name: 产品简介
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/product-overview
+            - name: 核心概念
+              href: https://docs.jdcloud.com/cn/virtual-machines/core-concepts
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/virtual-machines/benefits
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/virtual-machines/features
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/virtual-machines/application-scenarios
+            - name: 使用限制
+              href: https://docs.jdcloud.com/cn/virtual-machines/restrictions
+        - name: 产品计费
+          items:
+            - name: 计费概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/billing-overview
+            - name: 计费规则
+              href: https://docs.jdcloud.com/cn/virtual-machines/billing-rules
+            - name: 实例停机不计费
+              href: https://docs.jdcloud.com/cn/virtual-machines/uncharged_for_stopped_vm
+            - name: 实例续费
+              href: https://docs.jdcloud.com/cn/virtual-machines/renew-process
+            - name: 实例抵扣券
+              href: https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview
+            - name: 价格总览
+              href: https://docs.jdcloud.com/cn/virtual-machines/price-overview
+        - name: 关联资源概述
+          items:
+            - name: 镜像概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/image-overview
+            - name: 存储概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/strorage-overview
+            - name: 网络概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/network-overview
+            - name: 安全组概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/security-group-overview            
+            - name: 实例模板概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/instance-template-overview
+            - name: 实例抵扣券概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview              
+    - name: 使用
+      items:
+        - name: 入门指南
+          items:        
+            - name: 账号及支付准备
+              href: https://docs.jdcloud.com/cn/virtual-machines/account-preparation-linux
+            - name: 配置参数说明
+              href: https://docs.jdcloud.com/cn/virtual-machines/select-configuration-linux
+            - name: 创建Linux实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-linux-instance
+            - name: 创建Windows实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-windows-instance
+            - name: 登录Linux实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/connect-to-linux-instance
+            - name: 登录Windows实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/connect-to-windows-instance
+        - name: 常用操作
+          items:
+            - name: 创建实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-instance
+            - name: 调整配置
+              href: https://docs.jdcloud.com/cn/virtual-machines/resize-instance
+            - name: 重置系统
+              href: https://docs.jdcloud.com/cn/virtual-machines/rebuild-instance
+            - name: 制作镜像
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-private-image
+            - name: 挂载云硬盘
+              href: https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk
+            - name: 绑定弹性公网IP
+              href: https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip
+            - name: 安全组典型规则配置
+              href: https://docs.jdcloud.com/cn/virtual-machines/typical-configuration
+            - name: 查看实例监控项
+              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
+            - name: 账号访问控制
+              href: https://docs.jdcloud.com/cn/iam/features
+        - name: 使用进阶
+          items:
+            - name: 导入镜像
+              href: https://docs.jdcloud.com/cn/virtual-machines/import-private-image
+            - name: 自动镜像策略
+              href: https://docs.jdcloud.com/cn/virtual-machines/autoimagepolicy
+            - name: 绑定弹性网卡
+              href: https://docs.jdcloud.com/cn/virtual-machines/attach-eni
+            - name: 扩容云硬盘
+              href: https://docs.jdcloud.com/cn/virtual-machines/resize-cloud-disk
+            - name: 创建实例模板
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-instance-template
+            - name: 实例元数据
+              href: https://docs.jdcloud.com/cn/virtual-machines/instance-metadata
+            - name: 实例启动脚本
+              href: https://docs.jdcloud.com/cn/virtual-machines/userdata
+            - name: 设置事件通知
+              href: https://docs.jdcloud.com/cn/virtual-machines/event-overview
+            - name: 设置监控报警
+              href: https://docs.jdcloud.com/cn/virtual-machines/set-alarm
+    - name: 开发
+      items:
+        - name: API文档
+          items:
+            - name: 接口概览
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
+            - name: 查询实例规格
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API
+            - name: 创建实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API
+            - name: Java SDK使用说明
+              href: https://docs.jdcloud.com/cn/sdk/java
+            - name: CLI使用说明
+              href: https://docs.jdcloud.com/cn/cli/usage
+- name: 常见问题
+  items:
+    - name: 实例FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/instance-faq
+    - name: 镜像FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/image-faq
+    - name: 存储FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/strorage-faq
+    - name: 网络FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/network-faq
+    - name: 计费FAQ
+      href: https://docs.jdcloud.com/cn/virtual-machines/pricing-faq

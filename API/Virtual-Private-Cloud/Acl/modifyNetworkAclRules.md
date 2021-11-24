@@ -18,9 +18,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}:mod
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**modifyNetworkAclRuleSpecs**|ModifyNetworkAclRuleSpec[]|True| |networkAcl规则列表|
+|**modifyNetworkAclRuleSpecs**|[ModifyNetworkAclRuleSpec[]](#user-content-modifynetworkaclrulespec)|True| |networkAcl规则列表|
 
-### ModifyNetworkAclRuleSpec
+### <div id="user-content-modifynetworkaclrulespec">ModifyNetworkAclRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**ruleId**|String|True| |networkAcl规则ID|
@@ -45,3 +45,36 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}:mod
 |**400**|Invalid parameter|
 |**404**|Not found|
 |**500**|Internal error|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 修改networkAcl ID为acl-1lt77tthz5的修改networkAcl
+
+POST
+```
+networkAcls/acl-1lt77tthz5:modifyNetworkAclRules
+{
+    "modifyNetworkAclRuleSpecs": [
+        {
+            "ruleId": "aclr-f4cuqo0utk",
+            "protocol": "TCP",
+            "fromPort": 1,
+            "toPort": 1000,
+            "addressPrefix": "0.0.0.0/32",
+            "ruleAction": "allow",
+            "priority": 10,
+            "description": "123"
+        }
+    ]
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c7b2b506-3a2d-44db-81a4-391104169801"
+}
+```

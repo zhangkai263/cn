@@ -21,11 +21,11 @@ DistCp（distributed copy）是用于大型集群间/集群内复制的工具。
 $HADOOP_HOME/bin/hadoop distcp <src> <dist> -p
 ```
 
-其中，各参数的含义如下。
+其中，各参数的含义如下：
 
 - *$HADOOP_HOME*：目的集群Hadoop客户端安装目录
-- <src>：源集群HDFS目录
-- <dist>：目的集群HDFS目录
+- *src*：源集群HDFS目录
+- *dist*：目的集群HDFS目录
 
 例如，将nn1节点所在集群A上目录a.dir拷贝到nn2节点所在集群B目的b.dir上：
 

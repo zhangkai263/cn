@@ -8,12 +8,12 @@
 - 已经创建topic及订阅关系，并且状态处于服务中。
 
 ## 注意事项
-- 对于单个topic的每秒事务处理数最大为5000TPS
+- 对于单个topic的每秒事务处理数最大为5000TPS（如需提升请提交工单）
 - 消息的生命周期为3天
-- 消息体大小为256KB
+- 消息体大小最大为256KB
 
 ## 方式一：通过控制台生产消息
-1. 在Topic管理页面中，找到想要发送消息的topic，在操作中可以选择发送消息。
+1. 在Topic管理页面中，找到想要发送消息的topic，在操作中选择发送消息。
 
 2. 输入Message Body、Business ID和tag，并且如果想要发送延时消息可以设置消息延迟时间。
 
@@ -21,7 +21,7 @@
 
 ### 说明：
 
-1. 消息的生命周期为3天，超过生命周期消息删除无法恢复，Message Body的最大支持256Kb。
+1. 消息的生命周期为3天，超过生命周期消息删除无法恢复，Message Body的最大支持256KB。
 
 2. 消息的延迟时间范围为：0~3600秒。
 
@@ -38,7 +38,7 @@
 
 ## 方式二：通过SDK/API生产和消费消息
 
-以Java SDK为例进行说明，其他方式及开发语言请参考其他章节。
+以Java SDK为例进行说明。
 
 1. 引入依赖
 ```XML
@@ -48,7 +48,10 @@
    <version>${jcq.sdk.version}</version>
 </dependency>
 ```
-2. 发送和订阅代码部分请参考demo示例：[jcq-sdk-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-sdk-demo.zip)。
+
+查看 Java SDK [最新版本号](https://mvnrepository.com/artifact/com.jdcloud/jcq-java-sdk)
+
+2. 发送和订阅代码部分请参考[demo示例](../SDK-Rerference/Demo.md)：Java demo。
 
 ### 说明：
 
@@ -56,7 +59,7 @@
 
 2. 服务端在尝试推送消息16次均失败后，消息会进入死信队列，在死信队列保存时间为消息的生命周期3天，超过消息生命周期消息不可恢复、重发。
 
-3. Spring框架下消息队列 JCQ的集成，请参考demo示例：[jcq-spring-demo.zip](http://jcq-inuse-important-cannotdelete.oss.cn-north-1.jcloudcs.com/jcq-spring-demo.zip)。
+3. Spring框架下消息队列 JCQ的集成，请参考[demo示例](../SDK-Rerference/Demo.md)：Spring框架下消息队列 JCQ的集成。
 
 
 

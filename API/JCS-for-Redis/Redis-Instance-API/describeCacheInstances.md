@@ -57,7 +57,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**cacheInstanceId**|String|实例ID|
 |**cacheInstanceName**|String|实例名称|
 |**cacheInstanceClass**|String|规格代码，2.8、4.0标准版是实例规格，4.0自定义分片集群版实例表示单分片规格|
-|**cacheInstanceMemoryMB**|Integer|实例的总内存（MB）|
+|**cacheInstanceMemoryMB**|Integer|实例的总内存（MB），表示用户购买的可使用内存|
 |**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中|
 |**cacheInstanceDescription**|String|实例描述|
 |**createTime**|String|创建时间（ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ）|
@@ -98,3 +98,79 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetInstanceList() {
+  // 1. 设置请求参数
+  Filter redisVersionFilter = new Filter(); // 过滤条件：4.0版本
+  redisVersionFilter.name("redisVersion").operator("eq").addValue("4.0");
+  Filter redisTypeFilter = new Filter(); // 过滤条件：集群版
+  redisTypeFilter.name("instanceType").operator("eq").addValue("redis_cluster");
+  List<Filter> filters = new ArrayList<>(); // 多个条件是并且的关系
+  filters.add(redisVersionFilter);
+  filters.add(redisTypeFilter);
+
+  List<Sort> sorts = new ArrayList<>(); // 排序：按创建时间降序
+  sorts.add(new Sort().name("createTime").direction("desc"));
+
+  DescribeCacheInstancesRequest request = new DescribeCacheInstancesRequest();
+  request.regionId("cn-north-1").filters(filters).sorts(sorts).pageNumber(1).pageSize(20); // 取第一页，一页20个实例
+
+  // 2. 发起请求
+  DescribeCacheInstancesResponse response = redisClient.describeCacheInstances(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mc2", 
+    "result": {
+        "cacheInstances": [
+            {
+                "auth": true, 
+                "azId": {
+                    "master": "cn-north-1a", 
+                    "slave": "cn-north-1b"
+                }, 
+                "cacheInstanceClass": "redis.m.micro.basic", 
+                "cacheInstanceDescription": "", 
+                "cacheInstanceId": "redis-dr8kqlkauchk", 
+                "cacheInstanceMemoryMB": 1024, 
+                "cacheInstanceName": "测试", 
+                "cacheInstanceStatus": "running", 
+                "cacheInstanceType": "master-slave", 
+                "charge": {
+                    "chargeMode": "postpaid_by_duration", 
+                    "chargeStartTime": "2021-07-05T02:44:34Z", 
+                    "chargeStatus": "normal"
+                }, 
+                "connectionDomain": "redis-dr8kqlkauchk-proxy-nlb.jvessel-open-hb.jdcloud.com", 
+                "createTime": "2021-07-05T02:43:43Z", 
+                "instanceVersion": "4.0-1.3", 
+                "ipv6On": 0, 
+                "memoryMBPerShard": 1024, 
+                "port": 6379, 
+                "redisVersion": "4.0", 
+                "shardNumber": 1, 
+                "subnetId": "subnet-mvge5y02rx", 
+                "tags": [
+                    {
+                        "key": "部门", 
+                        "value": "研发部"
+                    }
+                ], 
+                "vpcId": "vpc-6nz3a9drut"
+            }
+        ], 
+        "totalCount": 1
+    }
+}
+```

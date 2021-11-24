@@ -7,13 +7,14 @@
 在实例内获取元数据不需要对安全组或网络ACL做任何调整，只要有登录实例的权限，均可获取元数据。另外，如果您在实例内部修改了部分属性，如密码、密钥和hostname，这部分变更不会更新到元数据，可能导致查询结果与实际数据不一致的情况。
 
 ## 元数据信息
-京东智联云现支持以下实例元数据查询：
+京东云现支持以下实例元数据查询：
 | 元数据项                 | 说明                 | 返回示例  |
 | :------------------- | :-------------------|:-----------------|
+| pin |实例所属用户pin|"abcdabdc"|
 | instance-id  |  实例ID| "i-abcdefg123" |
 | instance-type| 实例规格| "g.n3.large" |
 | instance-name |实例名称| "jdcloud-instance" |
-| description | 实例描述 | "京东智联云云主机" |
+| description | 实例描述 | "京东云云主机" |
 | attributes/ssh-keys | 实例绑定的密钥公钥 | "c3NoLXJzYSBBQUFBQ...p2aXJ0"|
 | attributes/activation/KMS| KMS服务器地址，仅windows返回 | "169.254.169.250:1688" |
 | attributes/hostname | 实例hostname | "jdcloud-server.internal" |
@@ -37,50 +38,56 @@
 
 ### Linux系统
 
-1、在系统内获取元数据根目录：
-```
-curl http://169.254.169.254/metadata/latest/
-```
-将以以下形式返回：
-```
-["attributes/","network/","placement/","image/","description","instance-name","instance-type","instance-id","pin"]
-```
-2、参照【元数据信息】，根据目录结构指定元数据查询：<br>
-* 获取实例的hostname：
-```
-curl http://169.254.169.254/metadata/latest/attributes/hostname
-```
-* 获取实例的ID：
-```
-curl http://169.254.169.254/metadata/latest/instance-id
-```
+1. 在系统内获取元数据根目录：<br>
+
+    ```Shell
+    curl http://169.254.169.254/metadata/latest/
+    ```
+    将以以下形式返回:
+   
+    ```Shell
+    ["attributes/","network/","placement/","image/","description","instance-name","instance-type","instance-id","pin"]
+    ```
+2. 参照【元数据信息】，根据目录结构指定元数据查询：<br>
+  * 获取实例的hostname：
+  
+    ```Shell
+    curl http://169.254.169.254/metadata/latest/attributes/hostname
+    ```
+  * 获取实例的ID：
+  
+    ```Shell
+    curl http://169.254.169.254/metadata/latest/instance-id
+    ```
 
 ### Windows系统
 
-1、在系统内获取元数据根目录（使用Powershell）：<br>
-```
-Invoke-RestMethod http://169.254.169.254/metadata/latest/
-```
-将以以下形式返回：
-```
-attributes/
-network/
-placement/
-image/
-description
-instance-name
-instance-type
-instance-id
-pin
-```
+1. 在系统内获取元数据根目录（使用Powershell）：<br>
+    ```
+    Invoke-RestMethod http://169.254.169.254/metadata/latest/
+    ```
+    将以以下形式返回：
+    ```
+    attributes/
+    network/
+    placement/
+    image/
+    description
+    instance-name
+    instance-type
+    instance-id
+    pin
+    ```
 
-3、参照【元数据信息】，根据目录结构指定元数据查询：<br>
-* 获取实例的镜像ID：
-```
-Invoke-RestMethod http://169.254.169.254/metadata/latest/image/image-id
-```
-* 获取实例主网卡的内网IPv4地址（网卡索引从1开始，主网卡填写“1”，以此类推）：
-```
-Invoke-RestMethod http://169.254.169.254/metadata/latest/network/1/local-ipv4
-```
+2. 参照**元数据信息**，根据目录结构指定元数据查询：<br>
+  * 获取实例的镜像ID：
+  
+    ```Shell
+    Invoke-RestMethod http://169.254.169.254/metadata/latest/image/image-id
+    ```
+  * 获取实例主网卡的内网IPv4地址（网卡索引从1开始，主网卡填写“1”，以此类推）：
+  
+    ```Shell
+    Invoke-RestMethod http://169.254.169.254/metadata/latest/network/1/local-ipv4
+    ```
 

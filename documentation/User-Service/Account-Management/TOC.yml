@@ -1,19 +1,25 @@
   name: 账户管理
-  href: 
+  href:
   items:
   - name: 登录与注册
     href: Sign-In-And-Sign-Up.md
   - name: 查看账号信息
     href: Check-JDCloud-Account.md
-  - name: 管理绑定手机或邮箱
-    href: Change-JDCloud-Phone-Number.md
-  - name: 修改登录密码
-    href: Set-User-Password.md
-  - name: 设置账户IP保护
-    href: Setting-Up-IP-Protection.md
-  - name: AccessKey 管理
-    href: AccessKey-Management.md
   - name: 账号注销
     href: Account-Revocation.md
-  - name: 京东账号管理
-    href: Manage-JD-Account.md
+  - name: AccessKey 管理
+    href: AccessKey-Management.md
+  - name: 安全设置
+    href: 
+    items:
+    - name: 修改登录密码
+      href: Set-User-Password.md
+    - name: 管理绑定手机或邮箱
+      href: Change-JDCloud-Phone-Number.md
+    - name: 设置账户IP保护
+      href: Setting-Up-IP-Protection.md
+    - name: 设置虚拟MFA认证
+      href: Setting-up-MFA.md
+    - name: 切换京东集团账号服务
+      href: Account-change.md
+

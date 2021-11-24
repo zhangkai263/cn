@@ -51,7 +51,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/specConfig
 |**instanceClass**|String|实例规格，标准版不为空，4.0 自定义分片集群版规格为空，具体规格参考单分片规格|
 |**cpu**|Integer|实例CPU核数，0表示自定义分片集群版规格，CPU核数由分片数变化|
 |**diskGB**|Integer|实例磁盘大小（GB)，0表示自定义分片集群版规格，磁盘大小由分片数变化|
-|**maxConntion**|Integer|最大连接数，0表示自定义分片集群版规格，最大连接数由分片数变化|
+|**maxConnection**|Integer|最大连接数，0表示自定义分片集群版规格，最大连接数由分片数变化|
 |**bandwidthMbps**|Integer|带宽（Mbps)，0表示自定义分片集群版规格，带宽由分片数变化|
 |**ipNumber**|Integer|需要的IP数，0表示自定义分片集群版规格，IP数由分片数变化|
 |**shard**|[ShardInfo](describespecconfig#shardinfo)|实例的分片列表信息，redis 2.8标准版、集群版以及redis 4.0标准版没有分片列表信息|
@@ -68,3 +68,111 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/specConfig
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+GET
+```
+@Test
+public void testAvailableRegion() {
+  // 1. 设置请求参数
+  DescribeSpecConfigRequest request = new DescribeSpecConfigRequest();
+  request.regionId("cn-north-1");
+
+  // 2. 发起请求
+  DescribeSpecConfigResponse response = redisClient.describeSpecConfig(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5me2", 
+    "result": {
+        "instanceSpec": {
+            "instanceVersions": [
+                {
+                    "instanceTypes": [
+                        {
+                            "instanceType": "master-slave", 
+                            "specs": [
+                                {
+                                    "azs": [
+                                        "cn-north-1b", 
+                                        "cn-north-1c", 
+                                        "cn-north-1a"
+                                    ], 
+                                    "bandwidthMbps": 48, 
+                                    "cpu": 1, 
+                                    "diskGB": 20, 
+                                    "instanceClass": "redis.m.micro.basic", 
+                                    "ipNumber": 6, 
+                                    "maxConnection": 10000, 
+                                    "memoryGB": 1, 
+                                    "shard": null
+                                }
+                            ]
+                        }, 
+                        {
+                            "instanceType": "cluster", 
+                            "specs": [
+                                {
+                                    "azs": [
+                                        "cn-north-1b", 
+                                        "cn-north-1c", 
+                                        "cn-north-1a"
+                                    ], 
+                                    "bandwidthMbps": 0, 
+                                    "cpu": 0, 
+                                    "diskGB": 0, 
+                                    "instanceClass": "", 
+                                    "ipNumber": 0, 
+                                    "maxConnection": 0, 
+                                    "memoryGB": 16, 
+                                    "shard": {
+                                        "defaultShardClass": "redis.s.medium.basic", 
+                                        "defaultShardNumber": 4, 
+                                        "ipNumberList": [
+                                            8, 
+                                            14, 
+                                            26
+                                        ], 
+                                        "shardNumberList": [
+                                            2, 
+                                            4, 
+                                            8
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ], 
+                    "redisVersion": "4.0"
+                }
+            ], 
+            "region": "cn-north-1"
+        }, 
+        "shardSpec": {
+            "redis.s.micro.basic": {
+                "bandwidthMbps": 48, 
+                "cpu": 1, 
+                "diskGB": 20, 
+                "maxConnection": 10000, 
+                "memoryGB": 1, 
+                "shardClass": "redis.s.micro.basic"
+            }, 
+            "redis.s.small.basic": {
+                "bandwidthMbps": 48, 
+                "cpu": 1, 
+                "diskGB": 20, 
+                "maxConnection": 10000, 
+                "memoryGB": 2, 
+                "shardClass": "redis.s.small.basic"
+            }
+        }
+    }
+}
+```

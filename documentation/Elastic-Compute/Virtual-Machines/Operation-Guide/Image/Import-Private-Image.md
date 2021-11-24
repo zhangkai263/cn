@@ -1,19 +1,16 @@
 # 私有镜像导入
-## 功能概述
 
 私有镜像导入是指，将您在本地或其他云环境下所用服务器的系统盘以镜像的形式保存并导入到京东智联云环境，以便快速实现京东智联云上的业务部署。<br>
 
-导入镜像使用说明：<br>
-
-* 导入镜像当前仅支持导入系统盘镜像；
-
-* 导入镜像在使用方式上与通过“制作镜像”创建的私有镜像无异，但某些功能（诸如设置密码密钥、主机安全监控等）由于依赖镜像中的官方组件，因此是否支持取决于您在导入镜像之前是否进行了对应组件的安装。关于官方组件的介绍请参见 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)；
-
-* 导入后的镜像将以“云硬盘系统盘镜像”格式作为私有镜像使用，同时会自动生成一个与导入镜像关联的快照；
-
+## 前提条件及限制
+* 当前仅支持导入系统盘镜像；<br>
+* 导入后的镜像将以“云硬盘系统盘镜像”格式作为私有镜像使用，同时会自动生成一个与导入镜像关联的快照；<br>
 * “云硬盘系统盘”镜像可用来创建系统盘是云硬盘的主机，无法将镜像转换为“本地盘系统盘”镜像。关于“本地盘系统盘”镜像和“云硬盘系统盘”镜像的区别请参见 [镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)。
 
-* 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能。
+> 特殊说明：<br>
+> * 导入镜像在使用方式上与通过“制作镜像”创建的私有镜像无异，但某些功能（诸如设置密码密钥、主机监控等）由于依赖镜像中的官方组件，因此建议您在导入后手动进行安装。关于官方组件的介绍请参见 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)；<br>
+> * 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能；<br>
+> * 导入成功后，如需配置京东智联云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
 ## 镜像基本要求<br>
 ### Linux系统基本要求<br>
@@ -48,9 +45,9 @@
 |系统组件|* 安装JCS-agent|
 |冲突组件|* 确保卸载qemu-ga<br>* 确保卸载cloudbase-init|
 
-## 导入步骤
+## 操作步骤
 
-![](../../../../../image/vm/Image-Import-Image-Overview.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Overview.png)<br>
 ### 1、镜像准备
 为保证导入镜像的可用性，请务必在导入前参照上述京东智联云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东智联云规范后再行操作导入。<br>
 
@@ -61,23 +58,24 @@ Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的
 ### 2、镜像文件生成
 支持RAW、VHD、QCOW2、VMDK四种格式的镜像文件导入，请在生成镜像文件时指定正确的文件格式。<br>
 
-不支持iso镜像格式，请通过使用VirtualBox、virt-manager 等工具制作成指定格式的镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
+无法直接导入iso格式的镜像，如您当前镜像为iso格式请通过VirtualBox、virt-manager 等工具制作成虚拟机镜像再行导入。操作指导请参见：[转换镜像格式](Convert-Image-File-Format.md)、 [ISO格式镜像转换](Convert-Image-File-Format-From-ISO.md)
 
 ### 3、上传镜像文件
-操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取文件内网下载链接（将下载地址域名中的"s3"改成"s3-internal"即可）。<br>
+操作导入镜像之前，需要确保已 [开通对象存储服务](https://docs.jdcloud.com/cn/object-storage-service/sign-up-service-2) 、[创建存储空间（Bucket）](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)，然后将镜像文件上传至与期望导入镜像**相同地域**的存储空间中，并获取镜像文件内网下载链接（将下载地址域名中的"s3"改成"s3-internal"即可）。<br>
 
 如果存储空间访问权限为“公有读写”或者“公有读私有写”，可直接点击“复制”图标获取外链。<br>
-![](../../../../../image/vm/Image-Import-Image-Step1.png)
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step1.png" width="800"></div>
 
 如果存储空间访问权限为“私有读写”或者“自定义权限”，在获取外链时需要指定链接有效期，由于导入镜像耗时与文件大小和系统处理队列中的任务数量有关，为保证导入过程顺利，建议您设置不少于1天的有效时间。<br>
-![](../../../../../image/vm/Image-Import-Image-Step2.png)
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step2.png" width="800"></div>
 
 ### 4、导入镜像
 
 <div id="user-content-1"></div>
 
-完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。（**目前导入镜像控制台操作入口为灰度开放，如需使用请提交工单申请**）
-![](../../../../../image/vm/Image-Import-Image-Step3.png)
+完成以上几步操作后，可通过控制台/CLI或SDK完成镜像导入。
+
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Step3.png" width="650"></div>
 
 * OpenAPI接口见：[镜像导入](https://docs.jdcloud.com/cn/virtual-machines/api/importimage?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation) [CLI配置](https://docs.jdcloud.com/cn/cli/config)<br>
@@ -105,20 +103,18 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 ## 查看及测试镜像
 成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度。
 
-由于华北-北京地域的云硬盘做系统盘功能处于灰度开放期间，如您无法在私有镜像列表中查看到导入成功的云盘系统盘镜像，请提交工单申请权限。
-
-如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求整处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求正处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
 
 * OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
-
-* CLI指令示意：
+* CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
+  * CLI指令示意：
 
 ```
 jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
 ```
-镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
 
-导入成功后，如需配置京东智联云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
+> 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
+
 
 ## 相关参考
 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)

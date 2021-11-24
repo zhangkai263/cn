@@ -80,7 +80,9 @@
       - name: 自建PostgreSQL迁移至云数据库PostgreSQL
         href: Operation-Guide/PostgreSQL-Migrate-to-JCS-for-PostgreSQL.md
       - name: 自建MongoDB迁移至云数据库MongoDB
-        href: Operation-Guide/MongoDB-Migrate-to-JCS-for-MongoDB.md 
+        href: Operation-Guide/MongoDB-Migrate-to-JCS-for-MongoDB.md
+      - name: 自建/云数据库MySQL同步至云搜索Elasticsearch
+        href: Operation-Guide/MySQL-to-Elasticsearch.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 用户协议

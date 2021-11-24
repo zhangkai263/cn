@@ -51,6 +51,8 @@
             href: Virtual-Machines/modifyInstanceDiskAttribute.md
           - name: modifyInstanceNetworkAttribute
             href: Virtual-Machines/modifyInstanceNetworkAttribute.md
+          - name: modifyInstanceVpcAttribute
+            href: Virtual-Machines/modifyInstanceVpcAttribute.md
           - name: modifyInstancePassword
             href: Virtual-Machines/modifyInstancePassword.md
       - name: 镜像
@@ -59,6 +61,8 @@
             href: Image/createImage.md          
           - name: copyImages
             href: Image/copyImages.md
+          - name: convertImages
+            href: Image/convertImage.md
           - name: deleteImage
             href: Image/deleteImage.md
           - name: describeImages

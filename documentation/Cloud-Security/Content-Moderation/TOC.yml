@@ -100,30 +100,28 @@ items:
       - name: GO SDK
         items:
           - name: 安装与初始化
-            href: SDK-Reference/GO-SDK/Install-And-Initialization.md
+             href:GO-SDK/Install-And-Initialization.md
           - name: 文本检测
-            href: SDK-Reference/GO-SDK/Text-Detection.md
+            href: GO-SDK/Text-Detection.md
           - name: 图片检测
-            href: SDK-Reference/GO-SDK/Picture-Detection.md
+            href: GO-SDK/Picture-Detection.md
           - name: 视频检测
-            href: SDK-Reference/GO-SDK/Video-Detection.md
+            href: GO-SDK/Video-Detection.md
           - name: 音频检测
-            href: SDK-Reference/GO-SDK/Audio-Detection.md
+            href: GO-SDK/Audio-Detection.md
       - name: JAVA SDK
         items: 
           - name: 安装与初始化
-            href: SDK-Reference/JAVA-SDK/Install-And-Initialization.md
+            href: JAVA-SDK/Install-And-initialization.md
           - name: 文本检测
-            href: SDK-Reference/JAVA-SDK/Text-Detection.md
+            href: JAVA-SDK/Text-detection.md
           - name: 图片检测
-            href: SDK-Reference/JAVA-SDK/Picture-Detection.md
+            href: JAVA-SDK/Picture-detection.md
           - name: 视频检测
-            href: SDK-Reference/JAVA-SDK/Video-Detection.md
+            href: JAVA-SDK/Video-detection.md
           - name: 音频检测
-            href: SDK-Reference/JAVA-SDK/Audio-Detection.md 
+            href: JAVA-SDK/Audio-detection.md 
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 文档历史更新
     href: Document-Update-History/Doucument-Update-History.md
-
-

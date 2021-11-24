@@ -4,12 +4,12 @@
 ## 查看字符集
 首先我们得先登录云数据库 RDS 实例看看当前字符集的设置是怎么样的，当你通过远程连接到数据库实例之后，通过命令选择你需要使用的库，命令如下：
 
-```
+```SQL
 use <库名>
 ```
 执行完上面的命令，你就进入到了一个库中，然后执行如下命令：
 
-```
+```SQL
 show variables like '%character%'
 ```
 可以看到字符集的具体情况如下
@@ -49,7 +49,7 @@ show variables like '%character%'
 ## 客户端设置字符集
 上面提到了`character_set_client`、`character_set_connection `、`character_set_results` 这三个参数值是会话级别的，可以通过客户端进行设置的，当你连接上云数据库 RDS 实例后，执行以下 SQL 指令：
 
-```
+```SQL
 set names <字符集编码>;
 ```
 执行成功后，这三个参数值会被设置成相应的字符集编码；
@@ -64,7 +64,7 @@ set names <字符集编码>;
 如果要在云数据库 RDS 实例中存储 emoji 表情，请确保`character_set_client`、`character_set_connection `、`character_set_results`、`character_set_database`这四个参数组值都是 ***utf8mb4***。
 
 通过客户端设置字符集的 c++ 示例代码如下, 仅供参考
-```
+```SQL
 string sql = "set names utf8mb4";
 mysql_query(connection, sql.c_str());
 ```

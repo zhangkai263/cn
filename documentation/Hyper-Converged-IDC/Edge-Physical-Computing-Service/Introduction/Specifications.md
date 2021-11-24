@@ -18,11 +18,26 @@
 		<td >E5-2620 v4 * 2/32G * 4/960G SSD * 4</td>
 	        <td >4900</td>
      </tr> 
+     <tr>
+		<td >EPCS-Z17</td>
+		<td >E5-2620 v4 * 2/16 GB*8/300 GB*2(HDD) + 2000 GB*2(HDD)</td>
+	        <td >4900</td>
+     </tr> 
 	<tr>
 		<td >EPCS-TS3040</td>
 		<td >E5-2640 v3 * 2/16G * 8/2.05T NVME-PCIE SSD * 1 + 300G SAS HDD * 2 + 4.1T SATA HDD * 12</td>
 	        <td >4860</td>   
-     </tr>   
+     </tr>
+	<tr>
+		<td >EPCS-C14</td>
+		<td >E5-2683 v4 * 2/32 GB*8/600 GB*8(HDD)</td>
+	        <td >6925</td>   
+     </tr>
+	<tr>
+		<td >EPCS-B12</td>
+		<td >E5-2620 v4*2 /16GB*4/4TB SATA HDD*12 + 300GB SAS HDD*2</td>
+	        <td >7950</td>   
+     </tr>
 	<tr>
 		<td >EPCS-B14</td>
 		<td >E5-2650 v4 * 2/32G * 8/300G SAS HDD * 2 + 6000G SATA HDD * 12</td>

@@ -12,4 +12,11 @@ cdn.pv.ratio.5xx |返回码5xx占比|5XX Return Code| % |
 cdn.pv.ratio.hit |命中率 | cdn.pv.ratio.hit | %|
 cdn.out.flow|公网网络出流量| Internet Outbound Traffic | MB | 
 cdn.pv | 每秒请求数 | QPS | count　|
+cdn.pv.external|海外每秒请求数|cdn.pv.external|counts/s|
+cdn.pv.ratio.4xx.external|海外返回码4xx占比|cdn.pv.ratio.4xx.external | % | 
+cdn.pv.ratio.5xx.external|海外返回码5xx占比|cdn.pv.ratio.5xx.external | % | 
+cdn.pv.ratio.hit.external|海外命中率|cdn.pv.ratio.hit.external  | % | 
+cdn.out.flow.external | 海外公网网络出流量 |cdn.out.flow.external | MB |
+
+
 

@@ -34,3 +34,23 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}:rem
 |**400**|Request field x.y.z is missing.|
 |**404**|Target 'xxx' not found; TargetGroup 'xxx' not found.|
 |**500**|internal server error|
+
+## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例：将id为rtb-olajkrx4xr的路由表中目的地址为10.0.0.0/8，下一跳为边界网关的路由删除
+
+POST
+```
+  /v1/regions/cn-north-1/routeTables/rtb-olajkrx4xr:removeRouteTableRules
+      {
+           "ruleIds":["rt-pjv7eex4tp"]
+       }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45pbafcwj6tmo1c3w6rv1i9n78kucup"
+}
+```
