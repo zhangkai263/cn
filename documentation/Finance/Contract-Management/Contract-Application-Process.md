@@ -75,21 +75,7 @@
 ![image](https://user-images.githubusercontent.com/94958273/143207689-8dabca34-22df-4ac7-a994-58bd10145318.png)
 
 
-
-
-
-
-### 将草稿合同转为正式合同或作废草稿合同。
-确认合同信息无误后，可单击“立即转为正式合同“或在合同管理页面，单击该合同操作栏中“转为正式”按钮，将草稿合同转为正式合同。
-转为正式合同前需短信验签授予京东云待为生成有效甲方电子签章，并加盖在合同内。
-转为正式合同后具有法律效力，落款章有效，不可自行作废。请用 Adobe Reader 查看正式合同电子章。 
-
-如果合同信息有误或您想放弃此次合同申请，可在[合同管理](https://contract.jdcloud.com/contract/apply/attachment)页面，单击草稿状态下的合同操作栏中“作废”按钮
-
-
-### 一、申请框架协议
-登录京东云官网，进入[控制台](https://console.jdcloud.com/)/费用管理-[合同管理](https://contract.jdcloud.com/contract/apply/attachment)，单击【申请合同】，根据页面提示完善信息后，生成框架协议。
-
+### 框架协议如何申请附件协议
 #### （一）申请带备案信息附件
 1.框架协议生效后，可在控制台费用管理/[合同管理](https://contract.jdcloud.com/contract/apply/attachment)，单击【申请合同】，选择带备案信息附件。如需要将多个备案信息放在一份合同中，可勾选多个备案单。
 
@@ -108,16 +94,16 @@
 线上申请的合同带有京东云电子红章，具有法律效力，可以直接使用。
 
 框架协议生效后，可进入控制台费用管理/合同管理，选择对应合同的申请线下盖章，根据提示信息进行相应操作。
-![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%94%B3%E8%AF%B7%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.png)
+![image](https://user-images.githubusercontent.com/94958273/143208375-fd0f1c4c-814d-4be4-ac5d-def002c72274.png)
 
 如您备案时，需要盖鲜章的合同。请在申请合同后，再进入 纸质合同申请 页面，按页面提示填写信息。合同编号，请在 合同管理 页面查看。
-![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.png)
+![image](https://user-images.githubusercontent.com/94958273/143208428-ba040fa6-661f-4946-b4db-7a3bdef0db9d.png)
 
 我们会在收到您的申请后10个工作日内，为您邮寄盖鲜章的纸质合同。
 
 您收到合同后不需要再回寄给我们。
 
-## 线下合同申请
+## 三、线下合同申请
 需登录管理控制台提交工单。
 
 ### 工单中需包含以下信息：<br>
