@@ -431,7 +431,13 @@
         - name: 从云主机 PostgreSQL 导入
           href: Best-Practices/Data-Migration/Import-Data-Into-PostgreSQL-Instance/VM-to-PostgreSQL.md
     - name: 将备份文件恢复到自建数据库
-      href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-MySQL-Database.md
+      items:
+      - name: 将备份恢复到自建 MySQL
+        href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-MySQL-Database.md
+      - name: 将备份恢复到自建 Percona
+        href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-Percona-Database.md
+      - name: 将备份恢复到自建 MariaDB 
+        href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-MariaDB-Database.md
     - name: 连接数据库实例
       items:
       - name: 连接实例
