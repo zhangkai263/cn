@@ -15,7 +15,7 @@
 </tr>
 <tr>
     <td>移动端播放器iOS端</td>
-    <td><a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/SDK/live/jdcloud_live_ios_demo.zip">点击下载</a><br/> </td>
+    <td><a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/jdt_video_sdk_ios_1.2.1.1001.zip">点击下载</a><br/> </td>
 </tr>
 <tr>
     <td>Web/H5端</td>
