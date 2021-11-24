@@ -13,4 +13,4 @@ A：Token是一种安全保护签名，目的是为了阻止恶意攻击者盗�
 
 **Q：视音频通信如何收费？**
 
-A：视音频通讯收费项包括音视频通信时长、云端录制、旁路转推等计费项，详细计费说明请参见“[计费规则](https://docs.jdcloud.com/cn/real-time-communication/billing-rules)”。
+A：视音频通讯收费项包括音视频通信时长、云端录制、旁路转推等计费项，详细计费说明请参见“[计费说明](https://docs.jdcloud.com/cn/real-time-communication/billing-rules)”。
