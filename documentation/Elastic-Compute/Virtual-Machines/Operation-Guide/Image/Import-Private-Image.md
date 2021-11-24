@@ -1,6 +1,6 @@
 # 私有镜像导入
 
-私有镜像导入是指，将您在本地或其他云环境下所用服务器的系统盘以镜像的形式保存并导入到京东智联云环境，以便快速实现京东智联云上的业务部署。<br>
+私有镜像导入是指，将您在本地或其他云环境下所用服务器的系统盘以镜像的形式保存并导入到京东云环境，以便快速实现京东云上的业务部署。<br>
 
 ## 前提条件及限制
 * 当前仅支持导入系统盘镜像；<br>
@@ -10,7 +10,7 @@
 > 特殊说明：<br>
 > * 导入镜像在使用方式上与通过“制作镜像”创建的私有镜像无异，但某些功能（诸如设置密码密钥、主机监控等）由于依赖镜像中的官方组件，因此建议您在导入后手动进行安装。关于官方组件的介绍请参见 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)；<br>
 > * 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能；<br>
-> * 导入成功后，如需配置京东智联云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
+> * 导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
 ## 镜像基本要求<br>
 ### Linux系统基本要求<br>
@@ -49,9 +49,9 @@
 
 ![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-Image-Overview.png)<br>
 ### 1、镜像准备
-为保证导入镜像的可用性，请务必在导入前参照上述京东智联云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东智联云规范后再行操作导入。<br>
+为保证导入镜像的可用性，请务必在导入前参照上述京东云镜像制作要求进行镜像配置检测，尤其是启动方式、分区及 [virtio安装](https://docs.jdcloud.com/cn/virtual-machines/install-virtio-driver) 等影响启动的关键配置，确认导入镜像符合京东云规范后再行操作导入。<br>
 
-同时为了保证导入镜像在京东智联云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
+同时为了保证导入镜像在京东云环境下可以获得修改密码、上报监控数据、安全扫描检测等功能，建议您在导出镜像之前进行重要系统组件的安装。系统组件功能及安装方法请参见：[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image) <br>
 
 Linux镜像可使用我们提供的镜像自检工具完成重要系统配置的自检，使用方法请参见：[镜像自检工具](Image-Check-Tool.md)
 
@@ -101,9 +101,7 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 | clientToken |  string    |否  |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符
 
 ## 查看及测试镜像
-成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度。
-
-如果查询时发现镜像长时间处于“创建中 0%“，可能是由于导入镜像请求过多，您的请求正处于排队状态，此时可通过openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度；也可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)或openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
 
 * OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
 * CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
