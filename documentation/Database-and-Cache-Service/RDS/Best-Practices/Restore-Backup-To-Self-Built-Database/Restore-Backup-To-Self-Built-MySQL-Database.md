@@ -43,7 +43,8 @@
      -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
     ```
 
-5. 恢复解压好的备份文件。工具中包含多个配置文件，根据实际的实例类型及版本进行使用,对应关系见下方表格。
+5. 恢复解压好的备份文件。工具中包含多个配置文件，根据实际的实例类型及版本进行使用,对应关系见下方表格。  
+
   |实例类型及版本|选择配置文件|
   |---|---|
   |MySQL 5.5、5.6、5.7|mysql-5.cnf|
@@ -52,7 +53,7 @@
   |Percona|percona-7.cnf|
 
     ```python  
-   innobackupex --defaults-file=$HOME/<配置文件根据实例类型及版本选择>.cnf --apply-log $HOME/tmp_snapshot
+  xtrabackup --defaults-file=$HOME/<在工具里面有多个配置文件，根据MySQL版本选择使用>.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
     ``` 
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
