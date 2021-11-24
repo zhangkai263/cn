@@ -47,8 +47,6 @@ items:
             href: Video/getVideoPlayInfo.md
           - name: 删除视频转码流信息
             href: Video/deleteVideoStreams.md
-          - name: 获取视频源文件信息
-            href: Video/getVideoSourceInfo.md
       - name: 转码模板管理
         items:
           - name: 查询转码模板列表
