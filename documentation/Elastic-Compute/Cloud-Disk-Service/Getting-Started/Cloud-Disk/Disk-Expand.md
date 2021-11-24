@@ -1,6 +1,6 @@
 # 控制台扩容操作
 
-云硬盘是云上可扩展的存储设备，云硬盘创建完成后，随着业务需求的增长，当现有云硬盘容量无法满足当前系统的存储需求时，您可以随时扩展其大小，以扩大其存储容量，同时保持云硬盘上原有的数据不变。为了保证云硬盘扩容的空间可用，您不仅需要扩展云硬盘容量的大小，还需要扩展其上的文件系统以保证新增的云硬盘空间可用。请在控制台操作完成后，参考[扩容文件系统（有分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-multi-partition)或[扩容文件系统（Linux无分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-raw-disk-file-system)，对文件系统进行扩容。
+云硬盘是云上可扩展的存储设备，云硬盘创建完成后，随着业务需求的增长，当现有云硬盘容量无法满足当前系统的存储需求时，您可以随时扩展其大小，以扩大其存储容量，同时保持云硬盘上原有的数据不变。为了保证云硬盘扩容的空间可用，您不仅需要扩展云硬盘容量的大小，还需要扩展其上的文件系统以保证新增的云硬盘空间可用。请在控制台操作完成后，参考[扩容文件系统（有分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-multi-partition)或[扩容文件系统（Linux无分区）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-raw-disk-file-system)，对文件系统进行扩容。数据盘需要您手动对分区（如有）及文件系统进行扩容，系统盘当云主机重启后，会自动进行扩容。
 
 <br>
 
@@ -10,11 +10,11 @@
 
 
 
-- 仅可用状态的云硬盘支持扩容(云硬盘在非挂载且无正在进行的操作时为“可用”状态）。
+- 当前云硬盘支持在线扩容。云硬盘在“已挂载”或“可用”状态下，均可扩容。
 
 
 
-- 建议在扩容云硬盘之前创建云硬盘快照，以备份数据。
+- 建议在扩容云硬盘之前创建云硬盘快照，备份数据，降低扩容时误操作的风险。
 
 
 
@@ -26,34 +26,37 @@
 
 ### 扩容后
 
-- 只做云硬盘容量的扩容，未做文件系统的扩容。
+- 云硬盘的扩容操作，只对云硬盘设备的容量进行扩容，并未对云主机内，该云硬盘上所做的分区及文件系统进行扩容。
 
-- 扩容生效之后的云硬盘，仍然需要用户手动格式化新扩展的存储空间，新增的云硬盘空间才可见；具体操作方法详见[云硬盘扩容概述](https://docs.jdcloud.com/cn/cloud-disk-service/cloud-disk-expansion-overview)。
+- 扩容生效之后的云硬盘，如为数据盘，则您仍然需要用户在云硬盘所挂载的云主机内，对云硬盘的分区（如有）及文件系统进行扩容，新增的云硬盘空间才可以被依赖于文件系统的应用所使用；如为系统盘，当云主机重启后，会自动进行扩容。
 
 <br>
 
 ##  操作指南
 
 
-1、打开[京东云控制台](https://console.jdcloud.com/)，选择【弹性计算】-【云主机】-【云硬盘】；
+1、打开[京东云控制台](https://console.jdcloud.com/)，选择【弹性计算】-【云硬盘】；
 
-2、在云硬盘列表页面找到需要进行容量升级的云硬盘，点击云硬盘列表中对应的云硬盘名称跳转到其详情页面；
+2、在云硬盘列表页面找到需要进行容量升级的云硬盘，在您需要扩容的云硬盘右侧点击【更多】-扩容；
+<br>
 
-3、点击右上角【操作】-【升级容量】，进入【升级容量】弹窗；
+![扩容按钮](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-014.png)
 
 <br>
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-014.jpg)
+3、选择或直接输入升级后的容量数值，点击【确定】完成支付后即可进入控制台查看扩容后的云硬盘容量；
 
 <br>
 
-
-4、选择或直接输入升级后的容量数值，点击【确定】完成支付后即可进入控制台查看扩容后的云硬盘容量；
-
-<br>
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015.jpg)
+![扩容](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015.png)
 
 <br>
 
-5、扩容成功，则相关信息更新；若扩容失败，则出现提示框；如果多次扩容失败，请联系客服。
+4、如您对性能型SSD规格的云硬盘进行扩容，请注意调整云硬盘的iops性能，以和您所需的性能相匹配。避免容量提升，iops配置过低的情况，影响您的使用。
+<br>
+
+![扩容-io1](../../../../../image/Elastic-Compute/CloudDisk/cloud-disk/cloud-disk-015-io1.png)
+
+<br>
+
+5、控制台云硬盘列表中显示的容量信息会在扩容操作后延迟更新。不影响您在扩容后直接在云主机内对云硬盘的使用。
