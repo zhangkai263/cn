@@ -48,7 +48,7 @@
 ![image](https://user-images.githubusercontent.com/94958273/143207148-cc8f48aa-615d-4c01-97f9-989a20f2e784.png)
 
 3.完善法人信息：如果企业实名是对公账户打款认证，缺少法人信息，会要求完善法人信息。
-![image](https://user-images.githubusercontent.com/94958273/143207275-c2383d61-4480-4220-99e5-fb5cf30a7ade.png)
+![image](https://user-images.githubusercontent.com/94958273/143209024-ee5ea847-da5d-4815-ae38-b22bc7700a1f.png)
 
 4.客户信息管理-实名认证变更授权：校验实名认证信息是否变更，如有变更，需求授权。
 ![image](https://user-images.githubusercontent.com/94958273/143207338-7c4aae40-94c9-42ea-acf7-1273e9704bcb.png)
