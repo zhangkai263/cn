@@ -1,26 +1,34 @@
-# 将备份文件恢复到自建数据库 MariaDB 
-您可以将云数据库 MariaDB 实例的备份数据恢复到自建数据库中。
+# 将备份文件恢复到自建数据库
+
+您可以将云数据库 MySQL、Percona、MariaDB 实例的备份数据恢复到自建数据库中。
 
 ## 注意事项
 * 自建数据库版本需要和备份文件的源数据库版本一致。
 * 备份的解压软件只支持在 Linux 下执行。
 * 解压工具的系统软件依赖：tee，python 版本 >= 2.7。
-* 当前系统已经安装 percona xtrabackup >= 2.4.8 ；如果没有安装，请参考 [官方手册](https://www.percona.com/doc/percona-xtrabackup/2.4/index.html)。
+* 当前系统已经安装 percona xtrabackup, 如果没有安装，请参考 [官方手册](https://www.percona.com/doc/percona-xtrabackup/2.4/index.html)。
+     - MySQL版本为8.0时，需要xtrabackup >= 8.0.14；
+     - MySQL版本为5.6、5.7时，需要xtrabackup >= 2.4.8；
+     - MariaDB版本为10.2时，需要xtrabackup >= 2.4.8；
+     - Percona版本为5.7时，需要xtrabackup >= 2.4.9；
 
 ## 操作说明
-1. 安装环境依赖，见注意事项
+1. 安装环境依赖，见注意事项DB。
 2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
-    ```SQL
-    # 查看帮助手册
+    ```Python
+     # 增加解压工具文件可执行权限
+    chmod mysql_backup_extract.py +x
+    
+     # 查看帮助手册
     ./mysql_backup_extract.py -h
      
-     # 解压云数据库 MariaDB 实例的备份数据
-     ./mysql_backup_extract.py  -v 10.2 -f ./backup.xbstream
+     # 解压云数据库 MySQL 实例的备份数据
+     python mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
     ```
 3. 下载备份文件
 
-    ```markdown
+    ```SQL
     wget -c '<数据备份下载地址>' -O <自定义备份文件名>.xbstream
 
     -c：启动断点续传
@@ -29,53 +37,43 @@
 
 4. 解压备份数据，解压后的文件会保存在当前目录的子目录 tmp_snapshot 中，假设当前目录为 $HOME。
 
-    ```markdown
-    ./mysql_backup_extract.py -v 10.2 -f <自定义备份文件名>.xbstream
+    ```python
+     python mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
     
-    -v 参数必须指定，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
+     -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
     ```
 
-5. 恢复解压好的备份文件
+5. 恢复解压好的备份文件。工具中包含多个配置文件，根据实际的实例类型及版本进行使用,对应关系见下方表格。  
 
-    ```markdown
-    innobackupex --defaults-file=$HOME/tmp_snapshot/backup-my.cnf --apply-log $HOME/tmp_snapshot
-    ```
-    当看到 **innobackupex completed OK!** 时， 表明执行成功，你就可以继续下一步操作了。
+    |实例类型及版本|选择配置文件|
+    |---|---|
+    |MySQL 5.5、5.6、5.7|mysql-5.cnf|
+    |MySQL 8.0|mysql-8.cnf|
+    |MariaDB|mariadb-10.2.cnf|
+    |Percona|percona-7.cnf|  
+  
+    ```python
+    xtrabackup --defaults-file=$HOME/<在工具里面有多个配置文件，根据MySQL版本选择使用>.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
+    ```   
+    
+    当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
-6. 修改配置文件 backup-my.cnf
+6. 修改文件属主，并确定文件所属为 MySQL 用户
 
-    ```SQL
-    # The MySQL server
-    [mysqld]
-    innodb_checksum_algorithm=innodb
-    #innodb_log_checksum_algorithm=strict_crc32
-    innodb_data_file_path=ibdata1:512M;ibdata2:512M:autoextend
-    innodb_log_files_in_group=3
-    innodb_log_file_size=536870912
-    #innodb_fast_checksum=false
-    #innodb_page_size=16384
-    #innodb_log_block_size=512
-    innodb_undo_directory=.
-    innodb_undo_tablespaces=0
-    #redo_log_version=1
-    ```
+   ```python
+   chown -R mysql:mysql $HOME/tmp_snapshot
+   ```
 
-7. 修改文件属主，并确定文件所属为 MySQL 用户
+7. 启动 MariaDB 进程。<配置文件根据实例类型及版本选择>.cnf文件与实例版本对应关系同步骤5.
 
-    ```markdown
-    chown -R mysql:mysql $HOME/tmp_snapshot
-    ```
+   ```python
+   mysqld_safe --defaults-file=$HOME/<配置文件根据实例类型及版本选择>.cnf --user=mysql --datadir=$HOME/tmp_snapshot &
+   ```
 
-8. 启动 MariaDB 进程
+8. 登录 MariaDB 数据库
 
-    ```markdown
-    mysqld --defaults-file=/export/tmp_snapshot/backup-my.cnf --user=mysql --datadir=/export/tmp_snapshot
-    ```
+   ```SQL
+   mysql -uroot -p
+   ```
 
-9. 登录 MariaDB 数据库
-
-    ```markdown
-    mysql -uroot -p
-    ```
-
-* 密码默认为空， 直接回车即可。
+- 密码默认为空， 直接回车即可。
