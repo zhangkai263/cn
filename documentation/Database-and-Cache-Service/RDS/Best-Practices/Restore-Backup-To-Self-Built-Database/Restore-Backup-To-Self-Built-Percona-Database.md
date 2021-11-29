@@ -37,7 +37,7 @@
 
 4. 解压备份数据，解压后的文件会保存在当前目录的子目录 tmp_snapshot 中，假设当前目录为 $HOME。
 
-    ```python
+    ```Python
      python mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
     
      -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
@@ -51,8 +51,9 @@
     |MySQL 8.0|mysql-8.cnf|
     |MariaDB|mariadb-10.2.cnf|
     |Percona|percona-7.cnf|  
-  
-    ```python
+</p>
+
+    ```Python
     xtrabackup --defaults-file=$HOME/percona-7.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
     ```   
     
@@ -60,13 +61,13 @@
 
 6. 修改文件属主，并确定文件所属为 MySQL 用户
 
-   ```python
+   ```Python
    chown -R mysql:mysql $HOME/tmp_snapshot
    ```
 
 7. 启动 Percona 进程。
 
-   ```python
+   ```Python
    mysqld_safe --defaults-file=$HOME/percona-7.cnf --user=mysql --datadir=$HOME/tmp_snapshot &
    ```
 

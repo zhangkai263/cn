@@ -8,7 +8,7 @@
 * 运维账号适用于MySQL、Percona、mariaDB
 
 ## 开启运维账号
-1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
+1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/rds/database)。
 2. 选择需要开启运维账号的目标实例，进入实例详情页。
 3. 选择 **账号管理** 标签，打开账号管理页面，点击 **开启运维账号** 按钮，在弹框中设置运维账号到期时间:
     * 账号有效期默认为24小时，可根据实际需求调整；
