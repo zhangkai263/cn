@@ -11,16 +11,38 @@ items:
         href: Introduction/Application-Scenarios.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
+      - name: 产品功能
+        href: Introduction/Features.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 支持IAM的云产品
         href: Introduction/Support-Services.md
+  - name: 快速入门
+    items:
+      - name: 为团队成员授权
+        href: Getting-Started/Empower-the-Team.md
+      - name: 跨账户访问授权
+        href: Getting-Started/Authorize-3P-Partners.md
   - name: 操作指南
     items:
       - name: 概览
         href: Operation-manual/overview.md
       - name: 子用户管理
-        href: Operation-manual/subuser-management.md
+        items:
+          - name: 子用户管理概述
+            href: Operation-manual/User-management/user-overview.md
+          - name: 创建子用户
+            href: Operation-manual/User-management/Create-subuser.md
+          - name: 管理子用户
+            href: Operation-manual/User-management/Manage-user.md
+          - name: 设置子用户的安全凭证
+            href: Operation-manual/User-management/setting-user-credentials.md
+          - name: 设置子用户密码策略
+            href: Operation-manual/User-management/setting-up-credential-policies.md
+          - name: 子用户访问控制台
+            href: Operation-manual/User-management/User-visit-console.md
+          - name: 子用户编程访问 OpenAPI
+            href: Operation-manual/User-management/User-visit-openapi.md
       - name: 群组管理
         href: Operation-manual/group-management.md
       - name: 角色管理
@@ -37,11 +59,9 @@ items:
                 href: Operation-manual/Role-management/create-role/createfederatedrole.md
           - name: 为角色授权策略
             href: Operation-manual/Role-management/attach-policy.md
-          - name: 编辑角色
+          - name: 管理角色
             href: Operation-manual/Role-management/modify-role.md
-          - name: 删除角色
-            href: Operation-manual/Role-management/delete-role.md
-          - name: 代入角色
+          - name: 代入用户角色访问
             href: Operation-manual/Role-management/switch-role.md
       - name: 策略管理
         items:
@@ -65,9 +85,8 @@ items:
                 href: Operation-manual/Policy-management/policy-manage/edit.md
               - name: 删除策略
                 href: Operation-manual/Policy-management/policy-manage/delete.md
-              
-               
-            
+      - name: 常见问题（FAQ）
+        href: Operation-manual/FAQ.md
            
           
             

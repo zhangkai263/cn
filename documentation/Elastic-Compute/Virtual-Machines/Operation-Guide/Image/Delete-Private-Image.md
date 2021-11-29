@@ -10,14 +10,14 @@
 1、访问[镜像控制台][1]，或访问[京东云控制台](https://console.jdcloud.com/overview)点击顶部导航栏**弹性计算-云主机-镜像**进入镜像列表页。<br>
 2、选择**私有镜像**TAB，找到要删除的私有镜像，在私有镜像列表**更多**操作中选择**删除**操作。
 
-![](../../../../../image/vm/Operation-Guide-Image-delete1.png)
+![](https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-delete1.png)
 
 3、在确认删除弹出框中，点击**确认**，即可删除私有镜像。镜像删除时默认不删除关联快照，如期望一并删除，可勾选“将镜像关联快照一同删除”，系统会在镜像删除成功后尝试删除其原始关联快照，须注意的是，快照能否删除成功受其他因素影响（如是否存在共享关系，是否有其他关联镜像，是否有其他任务正在进行等），无论快照能否成功删除均不影响镜像本身删除。
 		
 >注意：
 >* 镜像删除后，基于镜像创建的云主机（包括共享镜像后，其他用户创建的云主机）将无法通过重置系统功能初始化磁盘至此镜像的备份时间点。
 
-<div align="center"><img src="../../../../../image/vm/Operation-Guide-Image-delete2.png" width="700"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/Operation-Guide-Image-delete2.png" width="700"></div>
 
 4、私有镜像支持批量删除，可在列表页批量选择多个镜像后一同删除。
 

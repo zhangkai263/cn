@@ -54,3 +54,55 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
+## 请求示例
+GET
+```
+@Test
+public void testGetBackups() {
+  // 1. 设置请求参数
+  DescribeBackupsRequest request = new DescribeBackupsRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DescribeBackupsResponse response = redisClient.describeBackups(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9a8amafuww3hauj30aeifde85g140", 
+    "result": {
+        "backups": [
+            {
+                "backupDownloadURL": "", 
+                "backupEndTime": "2021-07-14T15:36:57+08:00", 
+                "backupFileName": "backup1", 
+                "backupSize": 179, 
+                "backupStartTime": "2021-07-14T15:36:57+08:00", 
+                "backupStatus": 2, 
+                "backupType": 1, 
+                "baseId": "a607efba-ff06-4d78-ba3c-b3119fce27fd", 
+                "cacheInstanceId": "redis-1234"
+            }, 
+            {
+                "backupDownloadURL": "", 
+                "backupEndTime": "2021-07-11T04:30:04+08:00", 
+                "backupFileName": "autoBackuper", 
+                "backupSize": 179, 
+                "backupStartTime": "2021-07-11T04:30:04+08:00", 
+                "backupStatus": 2, 
+                "backupType": 0, 
+                "baseId": "53a0b10d-a99a-44d3-97ca-ee892dba71ee", 
+                "cacheInstanceId": "redis-1234"
+            }
+        ], 
+        "totalCount": 2
+    }
+}
+```

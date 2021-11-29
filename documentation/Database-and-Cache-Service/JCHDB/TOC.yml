@@ -77,4 +77,14 @@
       - name: 常见问题
         items:
           - name: FAQ
-            href: FAQ/FAQ.md            
+            href: FAQ/FAQ.md     
+            
+      - name: 开发指南
+        items:
+          - name: 集群参数设置
+            href: DevelopmentGuide/ParameterSetting.md
+          - name: 数据库引擎
+            href: DevelopmentGuide/DatabaseEngine.md
+          - name: SQL语法
+            href: DevelopmentGuide/SQLGrammar.md
+     

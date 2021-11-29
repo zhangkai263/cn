@@ -28,7 +28,7 @@ https://vod.jdcloud-api.com/v1/transcodeTemplateGroups/{groupId}
 |---|---|---|
 |**groupId**|String|转码模板组ID|
 |**groupName**|String|转码模板组名称|
-|**templates**|[GroupedTranscodeTemplateData](gettranscodetemplategroup#groupedtranscodetemplatedata)| |
+|**templates**|[GroupedTranscodeTemplateData[]](gettranscodetemplategroup#groupedtranscodetemplatedata)| |
 |**createTime**|String|创建时间|
 |**updateTime**|String|修改时间|
 ### <div id="groupedtranscodetemplatedata">GroupedTranscodeTemplateData</div>

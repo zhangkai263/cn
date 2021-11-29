@@ -1,6 +1,7 @@
 # 调整实例抵扣券配置
 
 实例抵扣券购买后，如果资源用量有波动或者实例调整配置为其他规格类型，可通过调整配置功能调整抵扣券的部分属性，以确保和实例相匹配。
+> 调整配置功能目前处于灰度，如需使用请提交工单申请。
 
 ## 前提条件及限制
 * 仅**可用**状态下的实例抵扣券可以调整配置。
@@ -14,5 +15,5 @@
 1、访问[实例抵扣券控制台](https://cns-console.jdcloud.com/host/instancevoucher/list)，或在[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航栏**弹性计算-云主机-实例抵扣券**或**弹性计算-原生容器-实例抵扣券**进入实例抵扣券列表页。<br>
 
 2、选择期望调整的实例抵扣券，点击操作中的**调整配置**。在调配页面中对抵扣券属性进行调整，点击**立即购买**完成订单确认后即可完成配置调整。
-<div align="left"><img src="../../../../../image/vm/iv-manage0b.png" width="1000"></div>
-<div align="left"><img src="../../../../../image/vm/iv-manage0a.png" width="1000"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-manage0b.png" width="1000"></div>
+<div align="left"><img src="https://img1.jcloudcs.com/cn/image/vm/iv-manage0a.png" width="1000"></div>

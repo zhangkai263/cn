@@ -3,11 +3,17 @@
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------
+|突发性能型规格上线 |突发性能型实例是一种通过积分机制提供并约束CPU使用的实例规格，适用于平时CPU使用率较低，偶发使用率突增的入门级或轻量级计算场景。|2021-08|[突发性能型实例](https://docs.jdcloud.com/cn/virtual-machines/burst-instance-overview)
+|私有镜像导出控制台入口上线|私有镜像导出功能提供控制台操作入口，方便用户操作，功能目前为灰度，如需使用请工单提交申请。|2021-07|[私有镜像导出](https://docs.jdcloud.com/virtual-machines/export-private-image)
+|Windows Server 2019 数据中心版 64位 中文版 镜像发布|全地域支持	Windows Server 2019 数据中心版 64位 中文版 镜像，丰富操作系统类型。|2021-07|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+|Ubuntu 20.04 镜像发布|全地域支持Ubuntu 20.04 镜像，丰富操作系统类型。|2021-06|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
 |修改云主机私有网络配置功能上线|若创建实例时选错VPC/子网或在与其他网络环境打通时存在IP地址冲突，可通过修改网络配置功能调整实例的内网IP地址，进而实现网络的重新规划。|2021-04|[修改私有网络配置](https://docs.jdcloud.com/cn/virtual-machines/modify-vpc-attribute)|
-|实例抵扣券支持调整配置|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2021-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
+|实例抵扣券调整配置功能上线|无资源预留型抵扣券支持调整规格族和计算力，资源预留型抵扣券支持调整可用区、规格和数量。|2021-04|[调整实例抵扣券配置](https://docs.jdcloud.com/cn/virtual-machines/resize-instancevoucher)
 |资源预留型实例抵扣券产品上线|实例抵扣券是计算实例的另一种付费购买方式，以接近包年包月计费的价格按月/年预付费购买抵扣券后，用于按配置计费的计算实例（云主机实例、容器实例、POD实例）费用抵扣。|2021-04|[实例抵扣券](https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview)
 |云主机事件服务上线|云主机事件是对接云事件服务，提供的一类系统事件通知功能。事件是针对资源生命周期中平台底层基础设施维护、资源重要属性变更等所发送的一类统一格式的通知。基于事件用户可及时获知资源动态，完善云上业务的自动化运维和监控流程。|2021-03|[事件服务](https://docs.jdcloud.com/cn/virtual-machines/event-overview)
+|云主机元数据查询功能上线|实例元数据（metadata）是云主机实例的基本信息，包括实例id、内/外网IP地址等，用户可在云主机内通过访问元数据服务来查看实例的元数据，以便于针对某些元数据进行实例内部的配置或与外部应用的连接。|2021-01 |[实例元数据](https://docs.jdcloud.com/cn/virtual-machines/instance-metadata)
 | CentOS 8.2 镜像发布|全地域支持CentOS 8.2 镜像，丰富操作系统类型。|2021-01|[镜像类型](https://docs.jdcloud.com/cn/virtual-machines/image-type)
+
 ## 2020年
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|

@@ -32,3 +32,28 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+DELETE
+```
+@Test
+public void testDeleteInstance() {
+  // 1. 设置请求参数
+  DeleteCacheInstanceRequest request = new DeleteCacheInstanceRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
+
+  // 2. 发起请求
+  DeleteCacheInstanceResponse response = redisClient.deleteCacheInstance(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mc6"
+}
+```

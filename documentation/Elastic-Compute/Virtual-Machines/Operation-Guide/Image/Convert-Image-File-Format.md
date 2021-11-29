@@ -1,7 +1,7 @@
 # 转换镜像格式
 导入镜像的格式支持QCOW2、RAW、VHD和VMDK，如果您的镜像文件为其他格式，需要在导入前将镜像转换为以上四种格式中的任意一种。
 
-在导出镜像之前，请参照 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) 并使用[镜像自检工具](https://docs.jdcloud.com/cn/virtual-machines/image-check-tool)，确保当前系统配置符合京东智联云镜像要求。
+在导出镜像之前，请参照 [私有镜像导入](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) 并使用 [镜像自检工具](https://docs.jdcloud.com/cn/virtual-machines/image-check-tool)，确保当前系统配置符合京东云镜像要求。
 
 ## Linux系统
 Linux系统可使用qemu-img进行系统盘镜像的导出及格式转换。支持互相转换的格式包括：raw、qcow2、qcow、cow、vmdk、cloop。
@@ -13,6 +13,7 @@ Linux系统可使用qemu-img进行系统盘镜像的导出及格式转换。支�
 ```
 qemu-img convert -O qcow2 /dev/vda /mnt/vdb/image_out.qcow2
 ```
+
 >说明：<br>
 >* -O 用来指定目标镜像格式（示例中：qcow2）、导出为镜像的源磁盘（示例中：/dev/vda）、目标镜像文件名及存放路径（示例中：/mnt/vdb/image_out.qcow2）
 
@@ -24,10 +25,10 @@ tar -zcvf image_out.tar.gz image_out.qcow2
 sz image_out.tar.gz
 ```
 
-![](../../../../../image/vm/Image-Import-convert1.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-convert1.png)<br>
 
 ### 转换镜像文件格式
-如果镜像文件格式不在京东智联云支持的格式之内，可以使用qemu-img执行下述指令可进行指定镜像文件的格式转换。
+如果镜像文件格式不在京东云支持的格式之内，可以使用qemu-img执行下述指令可进行指定镜像文件的格式转换。
 ```
 qemu-img convert -f raw -O qcow2 image.raw image_out.qcow2
 ```
@@ -47,7 +48,7 @@ Windows系统可使用微软官方提供的 [Disk2vhd](https://docs.microsoft.co
 
 2、解压后执行disk2vhd.exe，显示如下界面。指定存放路径及文件名称，勾选系统盘，并取消勾选“use Vhdx”，随后点击【Create】即可导出格式为VHD的系统盘镜像。
 
-![](../../../../../image/vm/Image-Import-convert2.png)<br>
+![](https://img1.jcloudcs.com/cn/image/vm/Image-Import-convert2.png)<br>
 
 ### 转换镜像文件格式
 1、前往并下载 [qemu-img-windows](https://cloudbase.it/qemu-img-windows/)
@@ -58,6 +59,7 @@ Windows系统可使用微软官方提供的 [Disk2vhd](https://docs.microsoft.co
 ```
 .\qemu-img.exe convert -f raw -O qcow2 image.raw image_out.qcow2
 ```
+
 >说明：<br>
 >* -f 用来指定源镜像文件格式（示例中：raw）<br>
 >* -O 用来指定目标镜像格式（示例中：qcow2）、源镜像文件名（示例中：image.raw）、目标镜像文件名（示例中：image_out.qcow2）

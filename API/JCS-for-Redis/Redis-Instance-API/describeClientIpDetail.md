@@ -45,3 +45,56 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+@Test
+public void testGetClientIpDetail() {
+  // 1. 设置请求参数
+  DescribeClientIpDetailRequest request = new DescribeClientIpDetailRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").ip("10.0.5.8");
+
+  // 2. 发起请求
+  DescribeClientIpDetailResponse response = redisClient.describeClientIpDetail(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o95re1cmcqf60qrvtiren04owgepeb", 
+    "result": {
+        "details": [
+            {
+                "age": "1343", 
+                "db": "0", 
+                "idle": "4", 
+                "lastCmd": "info", 
+                "name": "", 
+                "port": "48694"
+            }, 
+            {
+                "age": "1343", 
+                "db": "0", 
+                "idle": "4", 
+                "lastCmd": "info", 
+                "name": "", 
+                "port": "44326"
+            }, 
+            {
+                "age": "1343", 
+                "db": "0", 
+                "idle": "4", 
+                "lastCmd": "info", 
+                "name": "", 
+                "port": "47224"
+            }
+        ]
+    }
+}
+```

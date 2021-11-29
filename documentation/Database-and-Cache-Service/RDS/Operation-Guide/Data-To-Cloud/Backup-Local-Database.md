@@ -12,11 +12,11 @@ where name not   in ('master','tempdb','model','msdb');
 go
 ```
 
-**注意：数据库的恢复模式必须为Full**
-- 如果model值不为Full，请执行步骤2
-- 如果model值为Full，请执行步骤3
+>**注意：数据库的恢复模式必须为Full**
+- 如果model值不为Full，请执行 **步骤2**
+- 如果model值为Full，请执行 **步骤3**
 
-用户也可使用使用SQL Server Management Studio客户端工具对数据库进行完整备份，同样需确保数据库的恢复模式为“完整”
+也可使用使用SQL Server Management Studio客户端工具对数据库进行完整备份，同样需确保数据库的恢复模式为“完整”
 ![本地备份1](../../../../../image/RDS/Backup-Local-Database-1.png)
 
 ## 2.将数据库的恢复模式设置为Full
@@ -25,7 +25,7 @@ alter database [dbname] set recovery full;
 go
 ```
 
-重复步骤1，确认数据库恢复模式修改成功
+重复 **步骤1** ，确认数据库恢复模式修改成功
 
 ## 3.  备份数据库
 下面以备份文件名为testdb.bak为例：
@@ -59,4 +59,4 @@ go
 
 ## 6.    创建一个空数据库
 最后，在云数据库上创建一个空库，用于备份文件导入。
-用户也可使用使用SQL Server Management Studio客户端工具对数据库进行完整备份，同样需确保数据库的恢复模式为“完整”
+用户也可使用使用 **SQL Server Management Studio** 客户端工具对数据库进行完整备份，同样需确保数据库的恢复模式为 **完整**。

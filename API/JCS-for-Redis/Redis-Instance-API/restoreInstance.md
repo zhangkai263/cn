@@ -31,3 +31,28 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |返回码|描述|
 |---|---|
 |**200**|OK|
+
+## 请求示例
+POST
+```
+@Test
+public void testRestore() {
+  // 1. 设置请求参数
+  RestoreInstanceRequest request = new RestoreInstanceRequest();
+  request.regionId("cn-north-1").cacheInstanceId("redis-1234").baseId("1234");
+
+  // 2. 发起请求
+  RestoreInstanceResponse response = redisClient.restoreInstance(request);
+
+  // 3. 处理响应结果
+  System.out.println(new Gson().toJson(response));
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c3o9dduk3miqp55a26msaa6eepk2onge"
+}
+```
