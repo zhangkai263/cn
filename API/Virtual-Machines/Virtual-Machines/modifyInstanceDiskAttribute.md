@@ -2,8 +2,15 @@
 
 
 ## 描述
-修改云主机挂载的数据盘属性，包括是否随主机删除。<br>
-仅按配置计费云硬盘支持设置随实例删除属性;包年包月计费云硬盘该属性不生效,实例删除时云硬盘将保留。<br>
+
+修改一台云主机中的云硬盘属性。
+
+详细操作说明请参考帮助文档：[配置云硬盘删除属性](https://docs.jdcloud.com/cn/virtual-machines/configurate-delete-attributes)
+
+## 接口说明
+- 该接口当前只能修改实例中的云硬盘随实例删除属性。
+- 仅按配置计费、并且非共享型的云硬盘支持修改。
+- 包年包月计费的云硬盘该属性不生效，实例删除时云硬盘将保留。
 
 
 ## 请求方式
@@ -12,32 +19,60 @@ POST
 ## 请求地址
 https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyInstanceDiskAttribute
 
-|名称|类型|是否必需|默认值|描述|
+|名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID|
-|**instanceId**|String|True| |云主机ID|
+|**regionId**|String|是|cn-north-1|地域ID。|
+|**instanceId**|String|是|i-eumm****d6|云主机ID。|
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
+|名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**dataDisks**|[InstanceDiskAttribute[]](modifyinstancediskattribute#instancediskattribute)|False| |云硬盘列表|
+|**dataDisks**|[InstanceDiskAttribute[]](modifyInstanceDiskAttribute#user-content-instancediskattribute)|否| |云硬盘列表。|
 
-### <div id="instancediskattribute">InstanceDiskAttribute</div>
-|名称|类型|是否必需|默认值|描述|
+### <div id="user-content-instancediskattribute">InstanceDiskAttribute</div>
+|名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskId**|String|False| |云硬盘ID|
-|**autoDelete**|Boolean|False| |随云主机一起删除，删除主机时自动删除此磁盘，默认为false，本地盘(local)不能更改此值。<br>如果云主机中的数据盘(cloud)是包年包月计费方式，此参数不生效。<br>如果云主机中的数据盘(cloud)是共享型数据盘，此参数不生效。<br>|
+|**diskId**|String|否|vol-u8r2****c1|云硬盘ID。|
+|**autoDelete**|Boolean|否| |是否随实例一起删除，即删除实例时是否自动删除此磁盘。此参数仅对按配置计费的非多点挂载云硬盘生效。<br>`true`：随实例删除。<br>`false`（默认值）：不随实例删除。|
 
 ## 返回参数
-无
+|名称|类型|示例值|描述|
+|---|---|---|---|
+|**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
+
+
+## 请求示例
+POST
+
+```
+/v1/regions/cn-north-1/instances/i-eumm****d6:modifyInstanceDiskAttribute
+{
+  "dataDisks":[
+    {
+      "diskId" : "vol-u8r2****c1", "autoDelete" : true
+    },
+    {
+      "diskId" : "vol-7u8a****23", "autoDelete" : false
+    }
+  ]
+}
+```
+
+
+
+## 返回示例
+```
+{
+    "requestId": "a0633f72670e59f8c6db36b1ee257011"
+}
+```
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Invalid parameter|
-|**401**|Authentication failed|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|错误解析|
+|---|---|---|---|
+|**200**||OK||
+|**400**|FAILED_PRECONDITION|disk 'xx' not mounted on instance|云硬盘没有挂载在当前实例中。|
+|**404**|NOT_FOUND|Instance 'xx' not found.|云主机实例不存在。|
+|**500**|INTERNAL|Internal server error|系统内部错误，请稍后重试。如果多次尝试失败，请提交工单。|
+|**500**|UNKNOWN|Unknown server error|服务暂时不可用，请稍后重试。如果多次尝试失败，请提交工单。|

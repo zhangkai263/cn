@@ -1,5 +1,5 @@
   name: 账户管理
-  href: 
+  href:
   items:
   - name: 登录与注册
     href: Sign-In-And-Sign-Up.md
@@ -10,6 +10,7 @@
   - name: AccessKey 管理
     href: AccessKey-Management.md
   - name: 安全设置
+    href: 
     items:
     - name: 修改登录密码
       href: Set-User-Password.md
@@ -19,3 +20,6 @@
       href: Setting-Up-IP-Protection.md
     - name: 设置虚拟MFA认证
       href: Setting-up-MFA.md
+    - name: 切换京东集团账号服务
+      href: Account-change.md
+

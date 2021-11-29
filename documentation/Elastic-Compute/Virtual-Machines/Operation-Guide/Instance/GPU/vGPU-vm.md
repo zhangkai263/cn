@@ -14,6 +14,7 @@
 	如果系统中安装了nouveau(使用`lsmod | grep nouveau`查看)执行如下步骤，如未装直接转到第3步安装驱动。<br>
 	* 打开 /etc/modprobe.d/blacklist.conf， 在文件内添加 `blacklist nouveau` <br>
 	* 依次执行下述指令
+	
 		```Shell
 		mv /boot/initramfs-$(uname r).img /boot/initramfs-$(uname -r)-nouveau.img
 		dracut /boot/initramfs-$(uname -r).img $(uname -r)
@@ -24,6 +25,7 @@
 	* 下载Linux系统驱动，请登录实例后在系统内通过内网下载，地址：<br> https://vgpu-driver.s3-internal.cn-north-1.jdcloud-oss.com/NVIDIA-Linux-x86_64-430.46-grid.run
 		
 	* 在下载目录执行如下命令：
+	
 		```Shell
 		sh ./NVIDIA-Linux-x86_64-430.46-grid.run
 		reboot
@@ -56,7 +58,7 @@ vGPU的计算和图显功能均依赖GRID驱动和相应的License，每台vGPU�
 License Server必须确保vGPU虚机能够通过内网或者外网访问，建议搭建在您VPC内的云主机上。一台License Server可以提供最多15万的license请求(此数量请求下配置至少满足4C16G，可根据处理请求数调整服务器的配置), 下文以部署在京东云上的Linux云主机为例，使用一台8G16G的CentOS 7.6 云主机搭建License Server。
 
 1. 为云主机安装图形界面
-	License Server可以通过远程web管理也可以在本地进行管理。如想要在本地管理（在安装License Server的云主机上访问管理），需要为云主机安装图形界面（如仅需远程web管理，可跳过此步骤），指令如下：            
+	License Server可以通过远程web管理也可以在本地进行管理。如想要在本地管理（在安装License Server的云主机上访问管理），需要为云主机安装图形界面（如仅需远程web管理，可跳过此步骤），指令如下：<br>            
 	```Shell
 	yum groupinstall "GNOME Desktop" "Graphical Administration Tools" -y
 	ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target                
@@ -72,6 +74,7 @@ License Server必须确保vGPU虚机能够通过内网或者外网访问，建�
 	* 安装Java和tomcat
 		* Linux默认已安装java，无须单独安装。
 		* 依次执行如下指令安装tomcat：  
+		
 			```Shell
 			yum install tomcat tomcat-webapps
 			systemctl enable tomcat.service

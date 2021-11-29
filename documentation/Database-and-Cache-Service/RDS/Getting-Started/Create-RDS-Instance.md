@@ -20,15 +20,15 @@
 |计费方式|支持包年包月和按配置计费。关于计费方式的选择，请参考[计费规则](https://docs.jdcloud.com/cn/rds/billing-rules)。|
 |地域|&bull;选择实例所在的地域， **不同地域资源的内网不互通，创建后不能更改** 。<br>&bull;关于地域的详细说明，请参考 [核心概念](https://docs.jdcloud.com/cn/rds/core-concepts)。<br>&bull;建议选择最靠近您的地域，可降低访问时延、提高下载速度。|
 |数据库类型|目前支持 MySQL，SQL Server，Percona, MariaDB, PostgreSQL 五种数据库类型，不同地域支持的数据库类型不同，具体以控制台为准。|
-|实例类型|分为主备和单机两种实例，用户根据需求进行选择|
+|实例类型|分为主备、单机、灾备实例三种，用户根据需求进行选择|
 |存储类型|不同的存储类对应的实例规格的最大IOPS不同，当前支持本地SSD、本地NVMe、SSD云盘，具体以控制台为准。存储类型情况请参考 [MySQL 产品规格](https://docs.jdcloud.com/cn/rds/mysql-specifications)。|
 |规格|实例的CPU和内存，不同的规格对应不同的最大连接数和最大IOPS, 请参考 [MySQL 产品规格](https://docs.jdcloud.com/cn/rds/mysql-specifications)。|
 |存储空间|该存储空间包括数据空间、系统文件空间以及日志文件空间。|
-|私有网络|&bull;请确保需要连接数据库实例的云主机和数据库实例在同一个私有网络内。<br>&bull;由于管理需要，创建MySQL, Percona, MariaDB所绑定的子网需要4个以上的剩余IP<br>&bull;由于管理需要，创建SQL Server、PostgreSQL所绑定的子网需要10个以上的剩余IP |
+|私有网络|&bull;请确保需要连接数据库实例的云主机和数据库实例在同一个私有网络内。<br>&bull;由于管理需要，创建MySQL, Percona, MariaDB所绑定的子网需要4个以上的剩余IP<br>&bull;由于管理需要，创建SQL Server、PostgreSQL所绑定的子网需要10个以上的剩余IP。|
 |部署方式|&bull;支持多区域和单区域部署两种方式。<br>&bull;多可用区部署：数据库主从分别位于不同的可用区，可用性更高：一个可用区发生故障，整个实例仍然可提供服务。<br>&bull;单可用区部署：主从位于同一可用区，如果该可用区发生故障，整个实例无法对外提供服务。|
 |参数组|根据实际需求选择参数设置，建议与原实例参数保持一致|
 |实例名称|&bull; 2-32位字符<br>&bull; 支持数字、小写字母、中文以及英文下划线|
-|端口|&bull; 支持输入1150-5999 <br>&bull; 目前 MySQL，Percona，MariaDB 支持指定运行端口，默认值为 3306|
+|端口|支持输入1150-5999 |
 |购买时长|确认购买时长，购买包年包月套餐时间越长越优惠|
 
 

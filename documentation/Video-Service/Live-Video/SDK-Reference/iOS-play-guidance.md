@@ -15,7 +15,7 @@ SDK编译环境Xcode 8.0及以上版本，Xcode运行环境OS X 10.10 及以上�
 本章节提供一个快速集成京东云播放器SDK基础功能的示例。  
 具体可以参考demo工程中的相应文件。  
 **下载工程**   
-iOS端推流SDK&播放器SDK请<a href="https://zhanghao274.s3.cn-north-1.jdcloud-oss.com/SDK/live/jdcloud_live_ios_demo.zip">点击下载</a>  
+iOS端推流SDK&播放器SDK请<a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/jdt_video_sdk_ios_1.2.1.1001.zip">点击下载</a>  
 **工程目录结构**   
 推流SDK的工程目录如下：包含头文件Headers。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE1.png)  

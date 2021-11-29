@@ -9,15 +9,15 @@
 
 
 
-- 一台云主机最多可挂载8块云硬盘；
+- 一台云主机最多可挂载8块云硬盘（含系统盘）；
 
 
 
-- 三款新云硬盘最大都支持4000GB容量；（OpenAPI创建支持到16000GB）
+- 三款新云硬盘最大都支持16000GB容量；（OpenAPI创建支持到16000GB）
 
 
 
-- 如您需要在新硬盘中保留某一云硬盘的历史数据，可以使用某个云硬盘的快照创建新盘，请参考[使用快照创建](https://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)；
+- 您可以通过云硬盘快照功能，快速将云硬盘的数据复制到新的云硬盘上，请参考[使用快照创建](https://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)；
 
 
 

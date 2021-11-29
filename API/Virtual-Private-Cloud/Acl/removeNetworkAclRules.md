@@ -34,3 +34,25 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkAcls/{networkAclId}:rem
 |**400**|Invalid parameter|
 |**404**|Not found|
 |**500**|Internal error|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例：移除networkAclRule ID为aclr-f4cuqo0utk的rule
+
+POST
+```
+networkAcls/acl-1lt77tthz5:removeNetworkAclRules
+{
+    "ruleIds": ["aclr-f4cuqo0utk"]
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "84e9bf55-7b90-4482-9455-7a694ba05590"
+}
+```

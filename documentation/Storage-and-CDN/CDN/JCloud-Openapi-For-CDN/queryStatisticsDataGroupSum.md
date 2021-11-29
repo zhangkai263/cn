@@ -23,7 +23,7 @@ https://cdn.jdcloud-api.com/v1/vodStatistics:groupSum
 |**isp**|String|False| | |
 |**origin**|String|False| | |
 |**period**|String|False| |时间粒度，可选值:[oneMin,fiveMin,followTime],followTime只会返回一个汇总后的数据|
-|**groupBy**|String|False| |分组依据|
+|**groupBy**|String|True| |分组依据，可选项为area,isp,domain|
 
 
 ## 返回参数

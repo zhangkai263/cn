@@ -94,7 +94,6 @@
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-accelerate.md
            - name: Put Bucket InventoryConfiguration
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md
-
       - name: 关于Object操作 
         items:
              - name: Abort Multipart Upload

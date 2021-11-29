@@ -21,7 +21,7 @@ https://cdn.jdcloud-api.com/v1/statistics:groupSum
 |**area**|String|False| | |
 |**isp**|String|False| | |
 |**period**|String|False| |时间粒度，可选值:[oneMin,fiveMin,followTime],followTime只会返回一个汇总后的数据|
-|**groupBy**|String|False| |分组依据,只能按域名分组|
+|**groupBy**|String|True| |分组依据,可选项为domain,area,isp|
 
 
 ## 返回参数

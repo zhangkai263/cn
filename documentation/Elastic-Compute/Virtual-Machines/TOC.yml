@@ -115,6 +115,8 @@ items:
                 href: Operation-Guide/Instance/Burst-Instance/Create-Burst-Instance.md
               - name: 调整性能模式
                 href: Operation-Guide/Instance/Burst-Instance/Modify-Burst-Mode.md
+              - name: 积分查看及变化示例  
+                href: Operation-Guide/Instance/Burst-Instance/Credit-Examples.md
           - name: 裸金属实例
             items: 
               - name: 裸金属实例概述
@@ -323,6 +325,8 @@ items:
         href: Best-Practices/Storage.md
       - name: 备份与恢复
         href: Best-Practices/Backup-and-Restore.md
+      - name: 设置有序名称或主机名称
+        href: Best-Practices/Set-Ordered-Name.md        
   - name: Linux运维指南
     items:
       - name: Linux环境配置

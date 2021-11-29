@@ -34,3 +34,25 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/{network
 |**400**|Request field x.y.z is missing.|
 |**404**|Target 'xxx' not found; TargetGroup 'xxx' not found.|
 |**500**|internal server error|
+
+## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+- 请求示例：在安全组sg-yjdd312xqk下删除安全组规则
+
+POST
+```
+/v1/regions/cn-north-1/networkSecurityGroups/sg-yjdd312xqk:removeNetworkSecurityGroupRules
+{
+    "ruleIds":[
+        "sgr-88sfhkskac"
+    ]
+}
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "c45pvff687kkj1r7phgnhsbe1nv00i9k"
+}
+```

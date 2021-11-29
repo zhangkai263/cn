@@ -35,3 +35,29 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/{networkInte
 |**200**|Successful operation|
 |**400**|Request parameter x.y.z is 'xxx', expected one of [yyy,zzz]|
 |**404**|Resource not found|
+
+## 请求示例
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+- 请求示例: 给ID为port-xyaoj5k08j的弹性网卡绑定弹性IP
+
+
+POST
+```
+
+ /v1/regions/cn-north-1/networkInterfaces/port-xyaoj5k08j:associateElasticIp
+  {
+      "elasticIpId": "fip-agqacodoa3",
+      "privateIpAddress": "10.0.0.4",
+      "elasticIpAddress": "114.67.200.50"
+  }
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "23a5a8f2-7b94-40b8-85c0-8656140c3af4"
+}
+```

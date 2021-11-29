@@ -25,7 +25,7 @@
 
 3. 点击实例列表页右上角自定义列表icon ![](https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-2.png)
 
-4. 在弹出的自定义列表弹窗中勾选您需要显示的信息项，点击**确认**。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-3.png" width="700"></div>
+4. 在弹出的自定义列表弹窗中勾选您需要显示的信息项，点击**确认**。<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/QueryInstanceInfo-3.png" width="600"></div>
 
 
 > 请注意：当前列表至多支持显示10项信息项。
