@@ -2,7 +2,7 @@
 在使用数据库之前，您需要在云数据库 MySQL 实例中创建账号。目前您无法通过 SQL 语句来管理数据库账号，只能通过控制台操作。
 
 ## 操作步骤 
-1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
+1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/rds/database)。
 2. 选择需要创建账号的目标实例，点击目标实例，进入实例详情页。
 3. 点击 **账号管理** 标签进入账号管理页面，点击 **创建账号** 按钮，创建账号弹出框参数说明如下:
     * 数据库账号，密码：数据库账号我们保留了一些关键字名称，请参考 [限制说明](../../../Introduction/Restrictions/MySQL-Restrictions.md)，并且账号，密码的长度和字符有一定限制，具体以控制台为准。
