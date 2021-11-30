@@ -122,7 +122,7 @@ QuoteEscapeCharacter|指定引用转义符，不能为空。如"""a,b"""将解�
 
 消息块（Message）结构如图所示，每个消息块可能包含多个 header：
 
-![Message](../../../../../../image/Object-Storage-Service/OSS-178.png)
+![Message](../../../../../image/Object-Storage-Service/OSS-178.png)
 
 
 ### 消息块（Message）类型
@@ -141,7 +141,7 @@ RequestLevelError message|报错信息，出现错误时返回。如果返回了
 
 Records message 包括":message-type"， ":event-type"， ":content-type"3种报头。如图：
 
-![Records message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+![Records message](../../../../../image/Object-Storage-Service/OSS-179.png)
 
 Records message 的正文，根据结果长度，可能包含单条记录、部分记录或者多条记录。
 
@@ -149,7 +149,7 @@ Records message 的正文，根据结果长度，可能包含单条记录、部�
 
 Continuation message包括":message-type"， ":event-type"2种报头。如图：
 
-![Continuation message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+![Continuation message](../../../../../image/Object-Storage-Service/OSS-180.png)
 
 Continuation message只有报头，没有正文信息。
 
@@ -157,7 +157,7 @@ Continuation message只有报头，没有正文信息。
 
 Progress Message包括":message-type"， ":event-type"， ":content-type"3种报头。如图：
 
-![Progress Message](../../../../../../image/Object-Storage-Service/OSS-180.png)
+![Progress Message](../../../../../image/Object-Storage-Service/OSS-180.png)
 
 Progress Message正文是一个XML文本，包含以下信息：
 * BytesScanned：表示文件被压缩前，已经扫描过的字节数。
@@ -178,7 +178,7 @@ Progress Message正文是一个XML文本，包含以下信息：
 
 Stats Message包含":message-type"， ":event-type"， ":content-type"3种报头。如图：
 
-![Stats Message](../../../../../../image/Object-Storage-Service/OSS-181.png)
+![Stats Message](../../../../../image/Object-Storage-Service/OSS-181.png)
 
 Stats Message正文是一个XML文本，包含以下信息：
 * BytesScanned：表示文件被压缩前，已经扫描过的字节数。
@@ -199,7 +199,7 @@ Stats Message正文是一个XML文本，包含以下信息：
 
 End Message包含":message-type"，":event-type"2种报头。如图：
 
-![End Message](../../../../../../image/Object-Storage-Service/OSS-182.png)
+![End Message](../../../../../image/Object-Storage-Service/OSS-182.png)
 
 End Message只有报头，没有正文信息。
 
@@ -207,7 +207,7 @@ End Message只有报头，没有正文信息。
 
 Request Level Error Message包含“:error-code”，“:error-message”，“:message-type”3种报头。如图：
 
-![Request Level Error Message Message](../../../../../../image/Object-Storage-Service/OSS-183.png)
+![Request Level Error Message Message](../../../../../image/Object-Storage-Service/OSS-183.png)
 
 Request Level Error Message只有报头，没有正文信息。
 
