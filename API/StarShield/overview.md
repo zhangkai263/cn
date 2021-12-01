@@ -29,6 +29,7 @@ v1
 |**checkInstancesName**|GET|检查实例名称|
 |**createFlowPack**|POST|购买流量包|
 |**createInstance**|POST|创建套餐实例|
+|**describeInstanceByOrderNo**|GET|根据订单号查询套餐实例详情|
 |**describeInstances**|GET|套餐实例列表信息查询|
 |**describePackage**|GET|套餐包详情查询|
 |**describePackages**|GET|套餐包列表查询|
