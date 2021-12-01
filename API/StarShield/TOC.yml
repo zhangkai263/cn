@@ -205,6 +205,8 @@ items:
             href: Instance-APIs/createFlowPack.md
           - name: createInstance
             href: Instance-APIs/createInstance.md
+          - name: describeInstanceByOrderNo
+            href: Instance-APIs/describeInstanceByOrderNo.md
           - name: describeInstances
             href: Instance-APIs/describeInstances.md
           - name: modifyInstance
