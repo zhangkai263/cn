@@ -2,12 +2,11 @@
 
 ## 购买建站产品
 
-访问 [京美建站](https://www.jdcloud.com/cn/products/jdcloud-site-short) 产品详情页，购买建站产品，如果符合新用户1元试用条件，可以先进行试用。
+访问 [京美建站](https://www.jdcloud.com/cn/products/jdcloud-site-short) ，购买建站产品。
 
 
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-5.png)
 
-
--- 加入图片
 
 
 
@@ -30,19 +29,10 @@
 > 3. 入门版PC站不支持升级；入门版四合一版可以升级到标准版或者营销版
 
 
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-4.png)
 
 
-
--- 加入图片
-
-
-
-选择规格进行支付后，可以在控制台看到购买的建站产品
-
-
-
-
-
+选择规格进行支付后，可以在控制台就可以看到购买的建站产品了。
 
 
 
@@ -52,13 +42,13 @@
 
 访问京美建站控制台的模板市场，根据行业、色系、站点、功能筛选出合适的模板，记录待购买模板的编号，并在待购买的模板右下角，单击“立即购买”。
 
--- 加入图片
 
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-8.png)
 
 
 输入上文购买的建站站点，确认无误后点击立即购买并支付。
 
--- 加入图片
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-6.png)
 
 
 
@@ -69,17 +59,14 @@
 
 在京美建站控制台，选择购买的站点，单击“后台管理”进入站点编辑页面
 
-
-
--- 加入图片
-
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-7.png)
 
 
 选择“模板”，在弹出模板对话框中输入购买模板时记录的模板编号进行搜索，安装购买的模板。
 
 
 
--- 加入图片
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-1.png)
 
 
 
