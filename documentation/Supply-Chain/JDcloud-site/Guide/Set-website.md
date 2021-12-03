@@ -6,12 +6,11 @@
 
 在京美建站控制台，选择购买的站点，单击“后台管理”进入站点编辑页面
 
--- 加入图片
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-7.png)
 
 在站点编辑页面，点击后台管理进行访问
 
--- 加入图片
-
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-9.png)
 
 
 
@@ -21,4 +20,4 @@
 在网站后台，点击站点编辑，进行编辑网站前台内容
 
 
--- 加入图片
+![图片名称](https://img1.jcloudcs.com/image/docs/site1203-10.png)
