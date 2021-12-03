@@ -5,10 +5,16 @@ items:
   items:
   href: Introduction/Product-Overview.md
       
-
-  - name: 快速入门
-    items:
-    href: Guide/Summary.md
+- name: 快速入门
+  items:
+    - name: 概述
+      href: Guide/Summary.md
+    - name: 开通网站
+      href: Guide/Open_website.md 
+    - name: 配置域名
+      href: Guide/Configure_domain.md 
+    - name: 设置网站
+      href: Set-website.md
      
 - name: 用户指南
   items:
