@@ -133,6 +133,8 @@
 
 > **关于裸金属云主机g.n2.metal更详细说明请查阅 [裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
 
+<div id="user-content-13"></div>
+
 第二代（AMD规格）
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
 :---|:---|:---|:---|:---
