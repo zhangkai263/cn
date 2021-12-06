@@ -112,7 +112,7 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name ima
 | clientToken	 | string    | 否   | 用户导出镜像的幂等性保证。如传参值与某次的clientToken相同，则认为是同一个请求，将返回相同的请求结果。长度不能超过64个字符。
 
 ## 查看导出进度
-成功提交导出镜像请求后，可通过镜像任务查询接口查看导出进展。
+成功提交导出镜像请求后，可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)或任务查询接口查看导出进展。
 * OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
   * CLI指令示意：
 

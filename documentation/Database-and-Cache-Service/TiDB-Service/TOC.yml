@@ -76,6 +76,9 @@ items:
             href: Operation-Guide/Backup/Delete-Backup.md
           - name: 设置备份策略
             href: Operation-Guide/Backup/Modify-Backup-Strategy.md
+            
+      - name: 安全管理
+        href: Operation-Guide/Security/Set-Whitelist.md            
   
       - name: 参数修改
         href: Operation-Guide/Parameter/Modify-Parameters.md  

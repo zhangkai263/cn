@@ -12,7 +12,7 @@
 详细操作说明请参考帮助文档：[创建实例模板](https://docs.jdcloud.com/cn/virtual-machines/create-instance-template)
 
 ## 接口说明
-- 创建实例模板的限制基本与创建云主机一致，可参考 [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance-template)。
+- 创建实例模板的限制基本与创建云主机一致，可参考 [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)。
 - 实例模板中包含创建云主机的大部分配置参数，可以避免每次创建云主机时的重复性配置参数的工作。
 - 使用实例模板创建云主机时，如果再次指定了某些参数，并且与实例模板中的参数相冲突，那么新指定的参数会替换模板中的参数，以新指定的参数为准。
 - 使用实例模板创建云主机时，如果再次指定了镜像ID，并且与模板中的镜像ID不一致，那么模板中的 `systemDisk` 和 `dataDisks` 配置会失效，以新指定的镜像为准。
@@ -27,7 +27,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**regionId**|String|是|cn-north-1|地域ID。|
+|**regionId**|String|是|cn-north-1|地域ID。可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。|
 
 ## 请求参数
 |名称|类型|是否必选|示例值|描述|
@@ -43,7 +43,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 |**imageId**|String|是|img-m5s0****29|镜像ID，可查询 [DescribeImages](https://docs.jdcloud.com/virtual-machines/api/describeimages) 接口获得指定地域的镜像信息。|
 |**password**|String|否|Instance@010|实例密码。可用于SSH登录和VNC登录。长度为8\~30个字符，必须同时包含大、小写英文字母、数字和特殊符号中的三类字符。特殊符号包括：\(\)\`~!@#$%^&\*\_-+=\|{}\[ ]:";'<>,.?/，更多密码输入要求请参见 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。<br>如指定密钥且 `passwordAuth` 设置为 `true`，则密码不会生成注入，否则即使不指定密码系统也将默认自动生成随机密码，并以短信和邮件通知。<br>|
 |**keyNames**|String[]|否|\[&quot;keypair001&quot;\]|密钥对名称。仅Linux系统下该参数生效，当前仅支持输入单个密钥。|
-|**metadata**|[Metadata[]](createInstanceTemplate#user-content-2)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
+|**metadata**|[Metadata[]](createInstanceTemplate#user-content-2)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持20对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
 |**userdata**|[Userdata[]](createInstanceTemplate#user-content-3)|否| |自定义脚本。目前仅支持启动脚本，即 `launch-script`，须 `base64` 编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持 `bash` 和 `python`，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 `<cmd></cmd>和<powershell></powershell>` 作为内容首、尾行。<br>|
 |**elasticIp**|[InstanceTemplateElasticIpSpec](createInstanceTemplate#user-content-4)|否| |主网卡主IP关联的弹性公网IP配置。|
 |**primaryNetworkInterface**|[InstanceTemplateNetworkInterfaceAttachmentSpec](createInstanceTemplate#user-content-5)|是| |主网卡配置。|
@@ -66,7 +66,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTemplates
 ### <div id="user-content-7">InstanceTemplateDiskSpec</div>
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
-|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
+|**diskType**|String|否|ssd.io1|云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/instance-type)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>
 |**diskSizeGB**|Integer|否|50|云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量。|
 |**snapshotId**|String|否|snapshot-h8u1****36|创建云硬盘的快照ID。|
 |**policyId**|String|否| ss-policy-5v25****us|云硬盘自动快照策略ID。|

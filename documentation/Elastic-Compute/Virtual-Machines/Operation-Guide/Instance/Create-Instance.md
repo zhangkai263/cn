@@ -86,7 +86,7 @@
 
 ## 相关参考
 
-[创建Linux实例](https://cns-console.jdcloud.com/host/compute/list)
+[创建Linux实例](https://docs.jdcloud.com/cn/virtual-machines/create-linux-instance)
 
 [创建Windows实例](http://docs.jdcloud.com/cn/virtual-machines/create-windows-instance)
 

@@ -35,3 +35,20 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 |**409**|Parameter conflict|
 |**500**|Internal server error|
 |**503**|Service unavailable|
+
+## 请求示例
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+DELETE
+```
+
+  /v1/regions/cn-north-1/vpcs/vpc-s5e3eqf9pk
+
+```
+
+## 返回示例
+```
+{
+    "requestId": "45e96de4-6a3b-41e1-9e3d-53f86d846f8f"
+}
+```

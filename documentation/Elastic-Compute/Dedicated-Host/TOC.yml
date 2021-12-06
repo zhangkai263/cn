@@ -1,0 +1,47 @@
+  name: 专有宿主机
+  href: 
+  items:
+  - name: 产品简介
+    items:
+    - name: 产品概述
+      href: Introduction/Product-Overview.md
+    - name: 核心概念
+      href: Introduction/Core-Concepts.md
+    - name: 产品优势
+      href: Introduction/Benefits.md
+    - name: 产品功能
+      href: Introduction/Features.md
+    - name: 宿主机规格
+      href: Introduction/Dedicated-Host-Type.md
+    - name: 限制说明 
+      href: Introduction/Restrictions.md
+    - name: 资源调度说明 
+      href: Introduction/Resource-Scheduling-Rules.md
+    - name: 应用场景 
+      href: Introduction/Scenarios.md    
+  - name: 产品定价
+    items:
+    - name: 计费概述
+      href: Pricing/Billing-Overview.md
+    - name: 计费规则
+      href: Pricing/Billing-Rules.md
+    - name: 价格总览
+      href: Pricing/Price-Overview.md
+    - name: 购买流程
+      href: Pricing/Purchase-Process.md
+    - name: 续费流程
+      href: Pricing/Renew-Process.md
+  - name: 操作指南
+    items:
+    - name: 创建专有宿主机
+      href: Operation-Guide/Create-DH.md
+    - name: 创建专有资源池
+      href: Operation-Guide/Create-DP.md
+    - name: 在专有资源池或专有宿主机上新建云主机
+      href: Operation-Guide/Add-Instance-in-DH-or-DP.md
+    - name: 删除专有宿主机
+      href: Operation-Guide/Delete-DH.md
+    - name: 删除专有资源池
+      href: Operation-Guide/Delete-DP.md
+    - name: 删除专有资源池或专有宿主机上的云主机
+      href: Operation-Guide/Delete-Instance-in-DH-or-DP.md

@@ -27,9 +27,11 @@
 |属性|说明|示例|
 |:--------|:--------|:--------|
 |目的端|目的网段描述（仅支持网段格式，如果希望目的端为单个 IP，可设置掩码为`32`（如：IPv4：`192.168.10.10/32`，IPv6:`2002::/128`），目的端若为路由表所在VPC内的网段时，则该条路由策略将被Local规则覆盖，数据包将按Local规则进行路由|10.0.1.41/24|
-|下一跳类型|私有网络流量的出口，如Internet、云主机、VPC对等连接、NAT网关、[边界网关](https://docs.jdcloud.com/cn/direct-connection/border-gateway-features)|Internet|
+|下一跳类型|私有网络流量的出口，如Internet、云主机、VPC对等连接、NAT网关、[边界网关](https://docs.jdcloud.com/cn/direct-connection/border-gateway-features)、弹性网卡|Internet|
 |下一跳|基于下一跳类型的下一跳路由实例|云主机实例、Internet|
 |路由类型|包括静态路由和动态路由|默认为静态路由|
+
+> 路由表支持弹性网卡功能处于灰度中，目前支持华东-上海地域，如需使用请提[工单申请](https://ticket.jdcloud.com/applyorder/submit)。
 
 其中Internet用于公网访问，通过公网IP进行Internet通信的实例必须配置该条路由，云主机可作为公网网关使用，详见访问Internet，从控制台自定义的路由类型均为静态路由。
  

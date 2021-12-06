@@ -16,8 +16,18 @@
 
 ## 自定义元数据查询
 * 实例内查询<br>
-  * 查询实例全部自定义元数据：`http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/[key]`；
-  * 查询指定`key`对应的`value`：`http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/[key]`。
+  * 查询实例全部自定义元数据：
+  
+  ```
+  http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/[key]
+  ```
+  
+  * 查询指定`key`对应的`value`：
+  
+  ```
+  http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/[key]
+  ```
+  
 * 实例外查询<br>
   * 暂不提供控制台查询，OpenAPI接口详见 [describeInstancesCustomData](https://docs.jdcloud.com/virtual-machines/api/describeinstancescustomdata?content=API)。
  

@@ -5,148 +5,147 @@
  - name: S3 API
    items:
       - name: S3 API概述
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Introduction-2.md
+        href: API-Reference-S3-Compatible/Introduction-2.md
       - name: S3 API接口概览
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md
+        href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md
       - name: 服务器域名
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Regions-And-Endpoints.md
+        href: API-Reference-S3-Compatible/Regions-And-Endpoints.md
       - name: 签名认证
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/User-Signature-Authentication-s3.md  
+        href: API-Reference-S3-Compatible/User-Signature-Authentication-s3.md  
       - name: 公共头定义
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-Header.md
+        href: API-Reference-S3-Compatible/Compatibility-Header.md
       - name: 关于Service操作
         items: 
            - name: GetService
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Service-Related/Get-Service-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Service-Related/Get-Service-2.md
       - name: 关于Bucket操作 
         items:
            - name: Delete Bucket
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-2-Compatibility-API.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-2-Compatibility-API.md
            - name: Delete Bucket cors
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Cors-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Cors-2.md
            - name: Delete Bucket encryption
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Encryption-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Encryption-2.md
            - name: Delete Bucket policy
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Policy-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Policy-2.md
            - name: Delete Bucket replication
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Replication-2.md 
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Replication-2.md 
            - name: Delete Bucket website
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Website-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Website-2.md
            - name: Delete Bucket lifecycle
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Lifecycle.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Lifecycle.md
            - name: Delete Bucket InventoryConfiguration
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-InventoryConfiguration.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-InventoryConfiguration.md
            - name: GET Bucket acl
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Acl-2.md           
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Acl-2.md           
            - name: GET Bucket notification
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Notification-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Notification-2.md
            - name: Get Bucket(ListObjects)
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-2.md 
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-2.md 
            - name: Get Bucket cors
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Cors-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Cors-2.md
            - name: Get Bucket encryption
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Encryption-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Encryption-2.md
            - name: Get Bucket policy
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Policy-2.md           
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Policy-2.md           
            - name: Get Bucket replication
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Replication-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Replication-2.md
            - name: Get Bucket website
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Website-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Website-2.md
            - name: Get Bucket lifecycle
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Lifecycle.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Lifecycle.md
            - name: Get Bucket object lock configuration
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Object-Lock-Configuration.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Object-Lock-Configuration.md
            - name: Get Bucket tagging
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Tagging.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Tagging.md
            - name: Get Bucket accelerate
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-accelerate.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-accelerate.md
            - name: Get Bucket InventoryConfiguration
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-InventoryConfiguration.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-InventoryConfiguration.md
            - name: Head Bucket
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
            - name: List Multipart Uploads
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Multipart-Uploads-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Multipart-Uploads-2.md
            - name: List Bucket InventoryConfigurations
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Bucket-InventoryConfigurations.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Bucket-InventoryConfigurations.md
            - name: PUT Bucket notification
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
            - name: Put Bucket
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-2.md
            - name: Put Bucket ACL
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bukcet-acl-2.md        
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bukcet-acl-2.md        
            - name: Put Bucket cors
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Cors-2.md 
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Cors-2.md 
            - name: Put Bucket encryption
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Encryption-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Encryption-2.md
            - name: Put Bucket policy
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Policy-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Policy-2.md
            - name: Put Bucket replication
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Replication-2.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Replication-2.md
            - name: Put Bucket website
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md 
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md 
            - name: Put Bucket lifecycle
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md  
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md  
            - name: Put Bucket object lock configuration
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Object-Lock-Configuration.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Object-Lock-Configuration.md
            - name: Put Bucket tagging
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Tagging.md 
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Tagging.md 
            - name: Put Bucket accelerate
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-accelerate.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-accelerate.md
            - name: Put Bucket InventoryConfiguration
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md
-
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md
       - name: 关于Object操作 
         items:
              - name: Abort Multipart Upload
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Abort-Multipart-Upload-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Abort-Multipart-Upload-2.md
              - name: Complete Multipart Upload
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Complete-Multipart-Upload-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Complete-Multipart-Upload-2.md
              - name: Delete Multiple Objects
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Delete-Multiple-Objects-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Delete-Multiple-Objects-2.md
              - name: Delete Object
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Delete-Object-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Delete-Object-2.md
              - name: Get Object
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-2.md
              - name: Get Object legal hold
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Legal-Hold.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Legal-Hold.md
              - name: Get Object retention
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Retention.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Retention.md
              - name: Get Object Tagging
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Tagging.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Get-Object-Tagging.md
              - name: Head Object
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Head-Object-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Head-Object-2.md
              - name: Initiate Multipart Upload
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Initiate-Multipart-Upload-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Initiate-Multipart-Upload-2.md
              - name: List Parts
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/List-Parts-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/List-Parts-2.md
              - name: Post Object
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-2.md
              - name: Put Object
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-2.md
              - name: Put Object Copy	
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Copy-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Copy-2.md
              - name: Put Object legal hold
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Legal-Hold.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Legal-Hold.md
              - name: Put Object retention
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Retention.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Retention.md
              - name: Put Object Tagging
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Tagging.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Put-Object-Tagging.md
              - name: Upload Part
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-2.md
              - name: Upload Part Copy	
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-Copy-2.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Upload-Part-Copy-2.md
              - name: Post Object Restore
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-Restore.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Post-Object-Restore.md
              - name: Select Object Content(公测)
-               href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md
+               href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Objects/Select-Object-Content.md
       - name: 错误响应
-        href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Error-Response-2.md                
+        href: API-Reference-S3-Compatible/Error-Response-2.md                
       - name: 扩展接口
         items:
            - name: Compress Object
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Extension-API/Compress-Object.md
+             href: API-Reference-S3-Compatible/Extension-API/Compress-Object.md
            - name: ImgProtected
-             href: ../../documentation/Storage-and-CDN/Object-Storage-Service/API-Reference-S3-Compatible/Extension-API/ImgProtected.md
+             href: API-Reference-S3-Compatible/Extension-API/ImgProtected.md
    
  - name: 京东云OpenAPI
    items:

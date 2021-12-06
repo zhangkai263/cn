@@ -36,7 +36,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-7.png) 
 
-进行浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的”我已阅读并同意《协助更改备案信息服务在线服务条款不》”，提交备案信息
+进行浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的”我已阅读并同意《协助更改备案信息服务在线服务条款》”，提交备案信息
 
   ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-8.png)
 

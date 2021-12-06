@@ -15,11 +15,12 @@ items:
       href: Guide/Configure_domain.md 
     - name: 设置网站
       href: Set-website.md
+
      
 - name: 用户指南
   items:
     - name: 建站注意事项
-      href: Users'-Guide/Notice.md
+      href: Users'-Guide/Notice.md 
     - name: 升级站点
       href: Users'-Guide/Upgrade-site.md 
     - name: 续费站点
@@ -29,4 +30,4 @@ items:
     - name: 查看站点信息
       href: Users'-Guide/Check-site-information.md
     - name: 定制站点
-      href: Users'-Guide/Custom-site.md
+      href: Users'-Guide/Custom-site.md 

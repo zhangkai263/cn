@@ -34,7 +34,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**regionId**|String|是|cn-north-1|地域ID。|
+|**regionId**|String|是|cn-north-1|地域ID。可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。|
 
 ## <div id="user-content-requestparameters">请求参数</div>
 |名称|类型|是否必选|示例值|描述|
@@ -49,10 +49,10 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |---|---|---|---|---|
 |**agId**|String|否|ag-81qq****pn|高可用组ID。指定此参数后，将默认使用高可用组关联的实例模板创建实例，实例模板中的参数不可覆盖替换。实例模板以外的参数（内网IPv4/Ipv6分配方式、名称、描述、标签）可指定。<br>|
 |**instanceTemplateId**|String|否|it-u3o8****yy|实例模板ID。指定此参数后，如实例模板中参数不另行指定将默认以模板配置创建实例，如指定则以指定值为准创建。<br>指定 `agId` 时此参数无效。<br>|
-|**az**|String|否|cn-north-1a|实例所属的可用区。<br>如不指定 `agId` 以使用高可用组设置的可用区，此参数为必选。<br>|
+|**az**|String|否|cn-north-1a|实例所属的可用区，可参考[地域及可用区](https://docs.jdcloud.com/cn/virtual-machines/regions-and-availabilityzones)。<br>如不指定 `agId` 以使用高可用组设置的可用区，此参数为必选。<br>|
 |**instanceType**|String|否|g.n2.xlarge|实例规格。可通过 [DescribeInstanceTypes](https://docs.jdcloud.com/virtual-machines/api/describeinstancetypes) 接口查询各地域及可用区下的规格售卖情况。<br>如不指定 `agId` 或 `instanceTemplateId` 以使用实例模板中配置的规格，此参数为必选。<br>|
 |**imageId**|String|否| img-m5s0****29|镜像ID。可通过 [DescribeImages](https://docs.jdcloud.com/virtual-machines/api/describeimages) 接口获得指定地域的镜像信息。<br>如不指定 `agId` 或 `instanceTemplateId` 以使用实例模板中配置的镜像，此参数为必选。<br>|
-|**name**|String|是|instance-\[001\]-ops|实例名称。长度为2\~128个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.），不能以（.）作为首尾。<br>批量创建多台实例时，可在name中非首位位置以\[start_number]格式来设置有序name。start_number为起始序号，其位数代表编号字符位数，范围：\[0,9999]。详情参见[为实例设置有序名称](https://docs.jdcloud.com/cn/virtual-machines/set-ordered-name)。<br>|
+|**name**|String|是|instance-\[001\]-ops|实例名称。长度为1\~128个字符，只允许中文、数字、大小写字母、英文下划线（\_）、连字符（-）及点（.），不能以（.）作为首尾。<br>批量创建多台实例时，可在name中非首位位置以\[start_number]格式来设置有序name。start_number为起始序号，其位数代表编号字符位数，范围：\[0,9999]。详情参见[为实例设置有序名称](https://docs.jdcloud.com/cn/virtual-machines/set-ordered-name)。<br>|
 |**hostname**|String|否|instance-\[001\]-ops|实例hostname。若不指定hostname，则默认以实例名称 `name` 作为hostname，但是会以RFC 952和RFC 1123命名规范做一定转义。<br>**Windows系统**：长度为2\~15个字符，允许大小写字母、数字或连字符（-），不能以连字符（-）开头或结尾，不能连续使用连字符（-），也不能全部使用数字。不支持点号（.）。<br>**Linux系统**：长度为2-64个字符，允许支持多个点号，点之间为一段，每段允许使用大小写字母、数字或连字符（-），但不能连续使用点号（.）或连字符（-），不能以点号（.）或连字符（-）开头或结尾。<br>批量创建多台实例时，可在hostname中非首位位置以\[start_number]格式来设置有序hostname。start_number为起始序号，其位数代表编号字符位数，范围：\[0,9999]。详情参见[为实例设置Hostname](https://docs.jdcloud.com/cn/virtual-machines/set-ordered-name)。|
 |**password**|String|否|Instance@010|实例密码。可用于SSH登录和VNC登录。长度为8\~30个字符，必须同时包含大、小写英文字母、数字和特殊符号中的三类字符。特殊符号包括：\(\)\`~!@#$%^&\*\_-+=\|{}\[ ]:";'<>,.?/，更多密码输入要求请参见 [公共参数规范](https://docs.jdcloud.com/virtual-machines/api/general_parameters)。<br>如指定密钥且 `passwordAuth` 设置为 `true` ，则密码不会生成注入，否则即使不指定密码系统也将默认自动生成随机密码，并以短信和邮件通知。<br>|
 |**keyNames**|String[]|否|\[&quot;keypair001&quot;\]|密钥对名称。仅Linux系统下该参数生效，当前仅支持输入单个密钥。<br>|
@@ -61,7 +61,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**systemDisk**|[InstanceDiskAttachmentSpec](createInstances#user-content-7)|否| |系统盘配置。<br>|
 |**dataDisks**|[InstanceDiskAttachmentSpec[]](createInstances#user-content-7)|否| |数据盘配置。单实例最多可挂载云硬盘（系统盘+数据盘）的数量受实例规格的限制。<br>|
 |**charge**|[ChargeSpec](createInstances#user-content-6)|否| |计费配置。<br>云主机不支持按用量方式计费，默认为按配置计费。<br>打包创建数据盘的情况下，数据盘的计费方式只能与云主机保持一致。<br>打包创建弹性公网IP的情况下，若公网IP的计费方式没有指定为按用量计费，那么公网IP计费方式只能与云主机保持一致。<br>|
-|**metadata**|[Metadata[]](createInstances#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持40对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
+|**metadata**|[Metadata[]](createInstances#user-content-5)|否| |用户自定义元数据。以key-value键值对形式指定，可在实例系统内通过元数据服务查询获取。最多支持20对键值对，且key不超过256字符，value不超过16KB，不区分大小写。<br>注意：key不要以连字符(-)结尾，否则此key不生效。<br>|
 |**userdata**|[Userdata[]](createInstances#user-content-4)|否| |自定义脚本。目前仅支持启动脚本，即 `launch-script`，须 `base64` 编码且编码前数据长度不能超过16KB。<br>**linux系统**：支持 `bash` 和 `python`，编码前须分别以 `#!/bin/bash` 和 `#!/usr/bin/env python` 作为内容首行。<br>**Windows系统**：支持 `bat` 和 `powershell`，编码前须分别以 `<cmd></cmd>和<powershell></powershell>` 作为内容首、尾行。<br>|
 |**description**|String|否| |实例描述。256字符以内。<br>|
 |**noPassword**|Boolean|否| |使用实例模板创建实例时，如模板中已设置密码，期望不使用该密码而由系统自动生成时，可通过此参数（`true`）实现。<br>可选值：<br>`true`：不使用实例模板中配置的密码。<br>`false`：使用实例模板中配置的密码。<br>仅在未指定 `agId` 且指定 `instanceTemplateId`，且 `password` 为空时，此参数(`true`)生效。<br>|
@@ -121,7 +121,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances
 |**az**|String|否| |云硬盘可用区。创建实例时此参数无须指定且指定无效。云硬盘可用区默认同实例。|
 |**name**|String|否| |云硬盘名称。创建实例时此参数无须指定。如指定则按指定名称创建，如不指定云硬盘名称同实例名称，创建多块磁盘时会在名称后依次追加序号1,2...。|
 |**description**|String|否| |云硬盘描述。|
-|**diskType**|String|是|ssd.gp1 |云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/specifications)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>|
+|**diskType**|String|是|ssd.gp1 |云硬盘类型。各类型介绍请参见[云硬盘类型](https://docs.jdcloud.com/cn/cloud-disk-service/instance-type)。<br>可选值：<br>`ssd.gp1`：通用型SSD<br>`ssd.io1`：性能型SSD<br>`hdd.std1`：容量型HDD<br>|
 |**diskSizeGB**|Integer|是|50 |云硬盘容量，单位为 GiB，步长10GiB。<br>取值范围：<br>系统盘：`[40,500]`GiB，且不能小于镜像系统盘容量<br>数据盘：`[20,16000]`GiB，如指定`snapshotId`创建云硬盘则不能小于快照容量。|
 |**iops**|Integer|否| 2000|云硬盘IOPS，步长为10。仅`diskType=ssd.io1`时此参数有效。<br>取值范围：`[200,min(32000,diskSizeGB*50)]`<br>默认值：`diskSizeGB*30`|
 |**snapshotId**|String|否|snapshot-ev1h****gd |创建云硬盘使用的快照ID。|

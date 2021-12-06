@@ -47,7 +47,7 @@
 1. [登录实例](../../Getting-Start-Linux/Connect-to-Linux-Instance.md)。
 2. 运行`ethtool -l eth0`查看网卡是否支持多队列以及目前支持的最大队列数。`Pre-set maximums`和`Current hardware settings`中的`Combined`分别为支持设置的队列数和当前生效的队列数。
 	
-	```shell
+	```Shell
 	[root@test ~]# ethtool -l eth0
 	Channel parameters for eth0:
 	Pre-set maximums:
@@ -60,6 +60,8 @@
 	TX:		0
 	Other:		0
 	Combined:	1      # 此行代表当前生效1个队列
+	```
+	
 
 	
 3. 运行`ethtool -L eth0 combined x`，设置网卡当前使用多队列，x为设置的队列数。
@@ -79,7 +81,7 @@
 
 2. 解压并安装。
 
-```shell
+```Shell
 tar zxvf multi-queue-jd.tgz
 cd multi-queue-jd
 bash install.sh <image-type> <version-num>
@@ -95,5 +97,7 @@ bash install.sh <image-type> <version-num>
 ## 相关参考
 
 [登录实例](../../Getting-Start-Linux/Connect-to-Linux-Instance.md)
+
+[实例规格类型](../../Introduction/Instance-Type-Family.md)
 
 

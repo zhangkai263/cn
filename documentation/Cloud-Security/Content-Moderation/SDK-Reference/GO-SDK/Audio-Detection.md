@@ -57,17 +57,20 @@ func main() {
 	client := client.NewCensorClient(credentials)
 	client.SetConfig(config)
 
-	/** 创建异步音频审核请求 **/
-	req := censor.NewAsyncAudioScanRequest()
-	task := models.AudioTask{
-		DataId: fmt.Sprintf("%d", rand.Intn(100)),
-		Url:    "yourAudioURL",
+	/** 创建异步视频审核请求 **/
+	req := censor.NewAsyncVideoScanRequest()
+	task := models.VideoTask{
+		DataId:    fmt.Sprintf("%d", rand.Intn(100)),
+		Url:       "yourVideoURL",
+		Interval:  1,
+		MaxFrames: 10,
 	}
-	req.SetTasks([]models.ImageTask{task})
-	req.SetScenes([]string{"antispam"})
+	req.SetTasks([]models.VideoTask{task})
+	req.SetScenes([]string{"porn"})
+	req.SetLive(false)
 
-	/** 发送异步音频审核请求 **/
-	resp, err := client.AsyncImageScan(req)
+	/** 发送异步视频频审核请求 **/
+	resp, err := client.AsyncVideoScan(req)
 	if err != nil {
 		/** TODO: error **/
 	} else {
@@ -85,6 +88,7 @@ func main() {
 	fmt.Println("req: ", string(reqBytes))
 	fmt.Println("resp:", string(respBytes))
 }
+
 ```
 
 
@@ -144,4 +148,5 @@ func main() {
 	fmt.Println("req: ", string(reqBytes))
 	fmt.Println("resp:", string(respBytes))
 }
+
 ```
