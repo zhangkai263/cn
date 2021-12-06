@@ -39,9 +39,16 @@
 ![图片名称](https://img1.jcloudcs.com/image/docs/site1203-3.png)
 
 
+## 域名备案
+
+域名完成备案后才能正常使用，可以访问[备案服务](https://record-console.jdcloud.com/index)进行快速备案。
+
+
+
+
 ## 域名解析
 
-域名是方便记忆的一套地址转换系统，通过域名访问某个站点的服务器，必须通过IP地址来实现，域名解析就是将域名重新转换为IP地址的过程。
+通过域名访问某个站点的服务器，必须通过IP地址来实现，域名解析就是将域名重新转换为IP地址的过程。
 
 访问[云解析DNS](https://www.jdcloud.com/cn/products/jd-cloud-dns)对域名进行解析，具体操作可查看[云解析帮助文档](https://docs.jdcloud.com/cn/jd-cloud-dns/product-overview)
 
@@ -50,6 +57,7 @@
 
 
 ![图片名称](https://img1.jcloudcs.com/image/docs/site1203-11.png)
+
 
 
 
