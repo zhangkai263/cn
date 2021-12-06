@@ -14,7 +14,7 @@ items:
     - name: 配置域名
       href: Guide/Configure_domain.md 
     - name: 设置网站
-      href: Set-website.md
+      href: Guide/Set-website.md
 
      
 - name: 用户指南
