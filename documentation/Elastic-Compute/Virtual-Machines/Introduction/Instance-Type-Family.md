@@ -13,7 +13,7 @@
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 
 ## 通用型
-通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个Intel Xeon处理器的超线程核，其vCPU与内存比为1:4。
+通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个处理器的超线程核，其vCPU与内存比为1:4。
 
 ### 通用共享型
 
@@ -67,12 +67,16 @@
 * 处理器：
 	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第二代：
+	  * 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
 	* 容量型HDD云盘
+* 镜像使用限制：
+	* 3代及以上Intel系列，AMD系列仅支持云盘系统盘镜像
 * 适用场景：
 	* 各种类型和规模的企业级应用
 	* 中小型数据系统、缓存、搜索集群
@@ -129,6 +133,18 @@
 
 > **关于裸金属云主机g.n2.metal更详细说明请查阅 [裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
 
+第二代（AMD规格）
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.n2a.large|2|8|2|2
+|g.n2a.xlarge|4|16|4|4
+|g.n2a.2xlarge|8|32|4|4
+|g.n2a.4xlarge|16|64|8|4
+|g.n2a.8xlarge|32|128|8|4
+|g.n2a.16xlarge|64|256|8|4
+|g.n2a.32xlarge|128|512|8|4
+
+
 第一代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数|备注
@@ -157,6 +173,8 @@ g.n1.8xlarge|32|128|8|4 |	 |
 	* 通用型SSD云盘
 	* 性能型SSD云盘
 	* 容量型HDD云盘
+* 镜像使用限制：
+	* 3代及以上Intel系列，AMD系列仅支持云盘系统盘镜像
 * 适用场景：
 	* 小规模机器学习、数据分析
 	* 小规模爬虫
@@ -214,7 +232,9 @@ g.n1.8xlarge|32|128|8|4 |	 |
 * 处理器：
 	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第二代：
+	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
@@ -271,6 +291,18 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |c.n2.16xlarge|64|128|8|4
 |c.n2.18xlarge	|72|144|8|4
 
+第二代（AMD）
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|c.n2a.large|2|4|2|2
+|c.n2a.xlarge|4|8|4|4
+|c.n2a.2xlarge|8|16|4|4
+|c.n2a.4xlarge|16|32|8|4
+|c.n2a.8xlarge|32|64|8|4
+|c.n2a.16xlarge|64|128|8|4
+|c.n2a.32xlarge	|128|256|8|4
+
 第一代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数|备注
@@ -299,12 +331,16 @@ g.n1.8xlarge|32|128|8|4 |	 |
 * 处理器：
 	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
-	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第二代：
+	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
 	* 容量型HDD云盘
+* 镜像使用限制：
+	* 3代及以上Intel系列，AMD系列仅支持云盘系统盘镜像
 * 适用场景：
 	* 高性能数据库、内存数据库
 	* 数据分析与挖掘、分布式内存缓存
@@ -348,6 +384,17 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |m.n2.16xlarge|64|512|8|4
 |m.n2.18xlarge|72|576|8|4
 
+第二代（AMD）
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|m.n2a.large|2|16|2|2
+|m.n2a.xlarge|4|32|4|4
+|m.n2a.2xlarge|8|64|4|4
+|m.n2a.4xlarge|16|128|8|4
+|m.n2a.8xlarge|32|256|8|4
+|m.n2a.16xlarge|64|512|8|4
+
 第一代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数|备注
@@ -369,16 +416,16 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * 基于规格和基准性能提供算力，允许一定时间范围内算力的累积，通过积分体现实例算力的消耗和积累情况。
 * 处理器：
-	* 第二代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+    * 第二代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 * 支持以下类型云硬盘：
-	* 通用型SSD云盘
-	* 性能型SSD云盘
-	* 容量型HDD云盘
+    * 通用型SSD云盘
+    * 性能型SSD云盘
+    * 容量型HDD云盘
 * 镜像使用限制：
-        * 仅支持云盘系统盘镜像
+    * 仅支持云盘系统盘镜像
 * 适用场景：
-	* 微服务、轻负载应用
-	* 代码库、Web服务、开发测试环境
+    * 微服务、轻负载应用
+    * 代码库、Web服务、开发测试环境
 
 **实例规格**
 
