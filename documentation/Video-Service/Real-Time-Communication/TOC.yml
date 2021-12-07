@@ -69,12 +69,6 @@ items:
           href: SDK-Reference/H5-JRTC-SDK-quick-integration.md
         - name: H5 JRTC 接口说明
           href: SDK-Reference/H5-JRTC-API-overview.md
-    - name: 微信小程序 SDK参考
-      items:
-        - name: 微信小程序 JRTC SDK快速集成
-          href: SDK-Reference/WeChat-JRTC-SDK-quick-integration.md
-        - name: 微信小程序 JRTC 接口说明
-          href: SDK-Reference/Wechat-JRTC-API-overview.md
 - name: 常见问题
   href: FAQ/FAQ.md
 - name: 相关资源
