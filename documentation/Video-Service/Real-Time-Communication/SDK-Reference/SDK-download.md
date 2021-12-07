@@ -17,8 +17,7 @@
 <tr>
 <td>H5</td>
 <td><a href="https://sdk-publish.s3.cn-north-1.jdcloud-oss.com/JRTC-H5.zip"><span>DownLoad</span></a></td>
-<td colspan="1"><span>音视频通信H5 SDK文件及Demo</span></td></tr>
-<tr>
+<td colspan="1"><span>音视频通信H5 SDK文件及Demo</span></td></tr></tbody></table>
 <p><br /></p>
 <p><br /></p>
 <p><br /></p>
