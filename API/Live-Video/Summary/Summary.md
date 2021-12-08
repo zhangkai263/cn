@@ -2,7 +2,7 @@
 =================================
 
 直播加速服务（Live-Video）基于京东云大规模云计算基础资源，为客户提供低延迟、高可用、易接入的视频直播一站式服务，帮助客户快速搭建自己的直播平台及应用。客户开通京东云直播加速服务后，可以使用京东云提供的直播Open API，更方便、更细维度的管理自己的直播业务。      
-当前直播Open API的版本号为：1.0.17
+当前直播Open API的版本号为：1.0.21
         
         
 ##术语表：
@@ -29,11 +29,13 @@
 |**checkDomainIcp**|校验域名是否备案|
 |**closeLiveRestart**|关闭回看|
 |**closeLiveTimeshift**|关闭时移|
+|**createLiveForwardTask**|创建拉流转推任务|
 |**deleteCustomLiveStreamRecordTemplate**|删除用户自定义录制模板<br>- 删除用户自定义录制模板之前必须先删除此模板在各域名、应用、流级别的录制设置<br>|
 |**deleteCustomLiveStreamSnapshotTemplate**|删除用户自定义直播截图模板<br>- 删除截图模板前,请先删除此模板相关的截图配置,否则将会影响线上业务<br>|
 |**deleteCustomLiveStreamTranscodeTemplate**|删除用户自定义转码模板<br>- 删除用户自定义转码模板之前必须先删除此模板在各域名、应用、流级别的转码设置<br>|
 |**deleteCustomLiveStreamWatermarkTemplate**|删除用户自定义水印模板<br>- 删除用户自定义水印模板之前必须先删除此模板在各域名、应用、流级别的水印设置<br>|
 |**deleteLiveDomain**|删除直播域名<br>- 请慎重操作（建议在进行域名删除前到域名解析服务商处恢复域名A记录），以免导致删除操作后此域名不可访问。<br>  deleteLiveDomain调用成功后将删除本条直播域名的全部相关记录，对于仅需要暂停使用该直播域名，推荐stopLiveDomain接口<br>|
+|**deleteLiveForwardTask**|删除拉流转推任务|
 |**deleteLiveRecordFiles**|删除录制文件<br>|
 |**deleteLiveSnapshots**|删除截图<br>|
 |**deleteLiveStreamAppRecord**|删除应用级别录制模板配置<br>- 删除应用级别的录制模板配置,重新推流后生效<br>|
@@ -122,6 +124,7 @@
 |**openLiveRestart**|开启回看<br>1、直播回看文件格式仅支持m3u8。<br>2、回看时长用户可以配置，最大支持7天，即用户请求回看内容，最多可以请求最近7天的直播回看内容。<br>3、域名格式：http://{restartDomain}/{appName}/{streamName}/index.m3u8?starttime=1527756680&endtime=1527760280 (unix时间戳)<br>4、starttime-endtime最长可支持24小时，可跨天<br>|
 |**openLiveService**|开通直播服务|
 |**openLiveTimeshift**|开启时移<br>直播支持最大4小时的HLS时移，使用方式为在播放域名后增加时移参数来实现，参数类型支持指定开始时间和时间偏移量2种方式进行时移。 开启直播时移后，重新推流生效，使用播放域名带相应参数访问即可播放<br>- 域名格式：<br>1、http://{playDomain}/{appName}/{streamName}/index.m3u8?timeshift=400（秒，指从当前时间往前时移的偏移量）<br>2、http://{playDomain}/{appName}/{streamName}/index.m3u8?starttime=1529223702 (unix时间戳)<br>|
+|**queryLiveForwardTask**|查询拉流转推任务|
 |**resumeLiveStream**|恢复直播流推送|
 |**setLivePlayAuthKey**|设置播放鉴权KEY|
 |**setLiveStreamNotifyConfig**|设置直播流状态回调地址|
@@ -134,11 +137,14 @@
 |**setPublishAuthIPConfig**|设置推流鉴权IP黑名单|
 |**startLiveApp**|启用应用<br>- 启用 停用 状态的应用<br>|
 |**startLiveDomain**|启动域名<br>- 启用状态为 停用 的直播域名对(推流域名,播放域名)将DomainStatus变更为online<br>|
+|**startLiveForwardTask**|开始拉流转推任务|
 |**stopLiveApp**|停用 运行中 状态的应用<br>- 停用应用之后,不能再用此应用名推流<br>|
 |**stopLiveDomain**|停用域名<br>- 停用直播域名对(推流域名,播放域名),将DomainStatus变更为offline<br>- 停用该直播域名对后,直播域名信息仍保留,但用户将不能再用该推流域名推流或播放域名播放<br>|
 |**updateCustomLiveStreamRecordTemplate**|修改用户自定义直播录制模板<br>|
 |**updateCustomLiveStreamSnapshotTemplate**|修改直播截图模板|
 |**updateCustomLiveStreamTranscodeTemplate**|修改自定义转码模板<br>|
 |**updateCustomLiveStreamWatermarkTemplate**|修改用户自定义水印模板<br>|
+|**stopLiveForwardTask**|停止拉流转推任务|
+|**updateLiveForwardTask**|更新拉流转推任务|
 
 

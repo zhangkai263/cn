@@ -205,6 +205,20 @@ items:
         href: Live-Video/closeLiveRestart.md
       - name: 查询回看配置
         href: Live-Video/describeLiveRestartConfigs.md
+  - name: 拉流转推
+    items:
+      - name: 创建拉流转推任务
+        href: Live-Video/createLiveForwardTask.md
+      - name: 查询拉流转推任务
+        href: Live-Video/queryLiveForwardTask.md
+      - name: 更新拉流转推任务
+        href: Live-Video/updateLiveForwardTask.md
+      - name: 开始拉流转推任务
+        href: Live-Video/startLiveForwardTask.md
+      - name: 停止拉流转推任务
+        href: Live-Video/stopLiveForwardTask.md
+      - name: 删除拉流转推任务
+        href: Live-Video/deleteLiveForwardTask.md
   - name: 数据统计
     items:
       - name: 查询直播录制时长数据
