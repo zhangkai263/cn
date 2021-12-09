@@ -61,6 +61,8 @@
             href: Operation-Guide/Instance/Instance-Alias-IP.md
           - name: SOS带外控制台
             href: Operation-Guide/Instance/SOS.md
+          - name: 更换网络配置
+            href: Operation-Guide/Networking/Modifying-Network-Configurations.md
       - name: 网络
         items:
           - name: 私有网络
