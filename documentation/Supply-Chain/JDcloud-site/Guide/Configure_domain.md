@@ -41,9 +41,13 @@
 
 ## 域名备案
 
-域名完成备案后才能正常使用，可以访问[备案服务](https://record-console.jdcloud.com/index)进行快速备案。
+域名完成备案后才能正常使用。
 
+可以访问[备案服务](https://record-console.jdcloud.com/index)进行快速备案，备案授权码在建站服务控制台获取。
 
+![图片名称](https://img1.jcloudcs.com/image/docs/site-21.png)
+
+![图片名称](https://img1.jcloudcs.com/image/docs/site-22.png)
 
 
 ## 域名解析
