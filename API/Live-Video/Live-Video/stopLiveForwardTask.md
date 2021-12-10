@@ -42,7 +42,7 @@ https://live.jdcloud-api.com/v1/LiveForwardTask:stop
 ```
 
 ```
-"https://live.jdcloud-api.com/v1/LiveForwardTask:stop?taskId=9"
+"https://live.jdcloud-api.com/v1/LiveForwardTask:stop?taskIds=9"
 ```
 
 ## 返回示例
