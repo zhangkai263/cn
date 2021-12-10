@@ -9,6 +9,8 @@
         href: Personal/Phone.md
       - name: 个人扫脸认证
         href: Personal/Face.md
+      - name: 京东/京东金融APP扫码认证
+        href: Personal/jdscan.md
   - name: 企业实名认证
     items: 
       - name: 对公账户打款认证
