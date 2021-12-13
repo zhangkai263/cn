@@ -4,7 +4,7 @@
 
 ## 产品流程
 
-![](../../Image/DMS/introduction1.png)
+![](../../image/DMS/introduction1.png)
 
 ## 功能概述
 ### 表管理
