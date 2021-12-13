@@ -19,7 +19,7 @@
   * 查询实例全部自定义元数据：
   
   ```
-  http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/[key]
+  http://169.254.169.254/metadata/latest/attributes/customdata/custom-metadata/
   ```
   
   * 查询指定`key`对应的`value`：
