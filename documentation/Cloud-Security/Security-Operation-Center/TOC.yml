@@ -19,6 +19,8 @@
             href: Operation-Guide/01-view/01-Dashboard.md
           - name: 安全大屏
             href: Operation-Guide/01-view/02-SecurityScreen.md
+          - name: 安全报表
+            href: Operation-Guide/01-view/03-SecurityReport.md
       - name: 资产中心
         items:
           - name: 资产中心概览
@@ -35,6 +37,8 @@
             href: Operation-Guide/03-SecurityPrecautions/03-CloudBaseline.md
           - name: 合规基线
             href: Operation-Guide/03-SecurityPrecautions/04-ComplianceBaseline.md
+          - name: 攻击面分析
+            href: Operation-Guide/03-SecurityPrecautions/05-AttackAnalysis.md
       - name: 威胁检测
         items:
           - name: 安全告警
@@ -47,6 +51,8 @@
             href: Operation-Guide/05-SurveyResponse/01-Tracing.md
           - name: 全量日志分析
             href: Operation-Guide/05-SurveyResponse/02-Fulllog.md
+          - name: 用户行为分析
+            href: Operation-Guide/05-SurveyResponse/03-Ueba.md
       - name: 安全托管
         items:
           - name: 托管角色
