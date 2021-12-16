@@ -1,0 +1,28 @@
+name: 数据管理DMS
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+      
+  - name: 操作指南
+    items:
+      - name: 登录数据库
+        href: Operation-Guide/login-database.md
+      - name: SQL查询
+        href: Operation-Guide/sql-console.md
+      - name: 表管理
+        href: Operation-Guide/table-management.md
+      - name: 数据导入导出
+        items:
+          - name: 数据导入
+            href: Operation-Guide/data-import.md
+          - name: 数据导出
+            href: Operation-Guide/data-export.md
