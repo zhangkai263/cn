@@ -6,16 +6,16 @@
 
 用户存储数据可以通过数据功能同步数据到指定区域，实现数据异地容灾，从容应对极端灾难保证业务流畅，为重要数据加上多重保险。
 
-![跨区域复制容灾](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-001.jpg)
+![跨区域复制容灾](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-001.png)
 
 ## 数据加速分发
 
 面对视频点播源，图片资源等热点文件下发的场景，您可以将京东云的对象存储和CDN服务搭配使用，实现全网覆盖、快速高效的内容分发，使您灵活应对大流量和高并发的业务场景。您可以使用对象存储作为源站，将热点资源放在对象存储，然后通过CDN将资源下发给终端用户。这样以来，既降低了您下发的流量费用，又降低了终端访问的时延。
 
-![数据加速分发](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-002.jpg)
+![数据加速分发](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-002.png)
 
 ## 云端数据处理
 
 上传文件到京东云对象存储后，您可以配合音视频转码服务，图片处理服务（缩放、裁剪、旋转、水印等），图像识别服务（鉴黄、人脸识别等）充分挖掘您数据的价值。
 
-![云端数据处理](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-003.jpg)
+![云端数据处理](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-003.png)
