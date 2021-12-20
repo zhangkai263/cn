@@ -26,7 +26,7 @@
 
 “虚拟 MFA 设备” 是一个能生成 6 位 TOTP 随机验证码的软件程序，即安装在指定手机上的特定版本的 “[京东云 APP](https://console.jdcloud.com/download)” 。启用 MFA 需要您使用京东云 APP 扫码，将该 APP 绑定为虚拟 MFA 设备，后续即可通过该 APP 上生产的验证码进行身份确认。
 
-![image-20210714231812428](../../../../../image/IAM/SubUserManagement/image-20210714231812428.png)
+![image-20210714231812428](../../../../../image/IAM/SubUserManagement/mfa1.png)
 
 **请注意，如果绑定后，更换手机重装 APP 或是将 APP 卸载重装，则新的 APP 不再是您绑定的虚拟 MFA 设备，不能再用作身份认证。此时请联系管理员，协助重新绑定虚拟 MFA 设备（即先停用 MFA，再重新绑定启用）。**
 
