@@ -145,7 +145,9 @@
 
 ### 攻击源分析
 
-![](/Users/chentongle/Documents/GitHub/cn/image/CSoC/CSoC-SC-00-4.png)
+![](../../../../../image/CSoC/CSoC-SC-00-4.png)
+
+
 
 #### 攻击源分析
 
