@@ -36,9 +36,9 @@
 2. 管理员不启用 MFA，而是要求子用户【必须开启 MFA 认证】（推荐）：子用户首次登录时，自行绑定虚拟 MFA 设备；后续每一次登录控制台，都使用自己的京东云 APP 进行验证；
 3. 在 MFA 已经启用的情况下，可以【启用操作保护】：子用户执行所有的[敏感操作](../../../../../documentation/User-Service/Security-Operation-Protection/Introduction/Support-Services.md)，无论通过控制台访问还是通过 OpenAPI 访问，都需要使用 MFA 验证码进行身份确认。
 
-![image-20210714232129506](../../../../../image/IAM/SubUserManagement/image-20210714232129506.png)
+![image-20210714232129506](../../../../../image/IAM/SubUserManagement/user1.png)
 
-![image-20210714232100395](../../../../../image/IAM/SubUserManagement/image-20210714232100395.png)
+![image-20210714232100395](../../../../../image/IAM/SubUserManagement/user2.png)
 
 ## AccessKey 管理
 
@@ -46,5 +46,5 @@
 
 每个子用户最多可以创建 2 个 AccessKeys 以支持秘钥的定期轮换。
 
-![image-20210714232701097](../../../../../image/IAM/SubUserManagement/image-20210714232701097.png)
+![image-20210714232701097](../../../../../image/IAM/SubUserManagement/access key1.png)
 
