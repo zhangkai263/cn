@@ -46,5 +46,5 @@
 
 每个子用户最多可以创建 2 个 AccessKeys 以支持秘钥的定期轮换。
 
-![image-20210714232701097](../../../../../image/IAM/SubUserManagement/access key1.png)
+![image-20210714232701097](../../../../../image/IAM/SubUserManagement/accesskey1.png)
 
