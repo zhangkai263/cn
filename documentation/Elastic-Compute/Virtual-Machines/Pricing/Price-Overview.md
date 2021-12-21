@@ -420,43 +420,23 @@
       <td></td>
    </tr>
       <tr>
-      <td>g.n2a.32xlarge</td>
-      <td>240</td>
-      <td>960</td>
-      <td>25344</td>
-      <td>19008</td>
-      <td>88</td>
-      <td>66</td>
+      <td>g.n2a.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>211.20</td>
+      <td>158.40</td>
+      <td>0.73</td>
+      <td>0.55</td>
       <td></td>
-   </tr>
-      <tr>
-      <td>g.n2a.16xlarge</td>
-      <td>64</td>
-      <td>256</td>
-      <td>6758.40</td>
-      <td>5068.80</td>
-      <td>23.47</td>
-      <td>17.60</td>
-      <td></td>
-   </tr>
-      <tr>
-      <td>g.n2a.8xlarge</td>
-      <td>32</td>
-      <td>128</td>
-      <td>3379.20</td>
-      <td>2534.40</td>
-      <td>11.73</td>
-      <td>8.80</td>
-      <td></td>
-   </tr>
-      <tr>
-      <td>g.n2a.4xlarge</td>
+   </tr>        
+   <tr>
+      <td>g.n2a.xlarge</td>
+      <td>4</td>
       <td>16</td>
-      <td>64</td>
-      <td>1689.6</td>
-      <td>1267.2</td>
-      <td>5.87</td>
-      <td>4.40</td>
+      <td>422.40</td>
+      <td>316.8</td>
+      <td>1.47</td>
+      <td>1.10</td>
       <td></td>
    </tr>
       <tr>
@@ -470,25 +450,45 @@
       <td></td>
    </tr>
       <tr>
-      <td>g.n2a.xlarge</td>
-      <td>4</td>
+      <td>g.n2a.4xlarge</td>
       <td>16</td>
-      <td>422.40</td>
-      <td>316.8</td>
-      <td>1.47</td>
-      <td>1.10</td>
+      <td>64</td>
+      <td>1689.6</td>
+      <td>1267.2</td>
+      <td>5.87</td>
+      <td>4.40</td>
       <td></td>
    </tr>
       <tr>
-      <td>g.n2a.large</td>
-      <td>2</td>
-      <td>8</td>
-      <td>211.20</td>
-      <td>158.40</td>
-      <td>0.73</td>
-      <td>0.55</td>
+      <td>g.n2a.8xlarge</td>
+      <td>32</td>
+      <td>128</td>
+      <td>3379.20</td>
+      <td>2534.40</td>
+      <td>11.73</td>
+      <td>8.80</td>
       <td></td>
-   </tr>  
+   </tr>
+      <tr>
+      <td>g.n2a.16xlarge</td>
+      <td>64</td>
+      <td>256</td>
+      <td>6758.40</td>
+      <td>5068.80</td>
+      <td>23.47</td>
+      <td>17.60</td>
+      <td></td>
+   </tr>
+      <tr>
+      <td>g.n2a.32xlarge</td>
+      <td>240</td>
+      <td>960</td>
+      <td>25344</td>
+      <td>19008</td>
+      <td>88</td>
+      <td>66</td>
+      <td></td>
+   </tr>
    <tr>
      <td>g.n1.medium</td>
       <td>1</td>
