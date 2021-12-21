@@ -18,10 +18,10 @@
     
     ```Python
      # 增加解压工具文件可执行权限
-    chmod mysql_backup_extract.py +x
+     chmod mysql_backup_extract.py +x
     
      # 查看帮助手册
-    ./mysql_backup_extract.py -h
+     python mysql_backup_extract.py -h
      
      # 解压云数据库 MariaDB 实例的备份数据
      python mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
@@ -50,13 +50,11 @@
     |MySQL 8.0|mysql-8.cnf|
     |MariaDB|mariadb-10.2.cnf|
     |Percona|percona-7.cnf|
-</p>
 
-    ```Pythonn
+    ```Python
    xtrabackup --defaults-file=$HOME/mariadb-10.2.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
     ```
-</p>
-
+    
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
 6. 修改文件属主，并确定文件所属为 MySQL 用户
