@@ -48,5 +48,3 @@ items:
     items:
       - name: FAQ
         href: FAQ/FAQ.md
-      - name: JDBC探活配置
-        href: FAQ/JDBC-Config.md
