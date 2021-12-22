@@ -77,7 +77,7 @@
 ```
 
 ### 4、为服务角色授权策略<br>
-返回角色管理列表，找到第2步中创建的服务角色```image-export```，点击操作中的 **授权**。
+返回角色管理列表，找到第2步中创建的服务角色`image-export`，点击操作中的 **授权**。
 ![](https://img1.jcloudcs.com/cn/image/vm/image-export-image7.png)  
 
 在授权弹窗中查找并选中第3步中创建的策略“image-export-policy”，点击确定完成授权。可进入角色详情页确认授权是否成功。
@@ -128,7 +128,7 @@ jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json 
 
 [创建OSS存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)
 
-[服务角色](https://docs.jdcloud.com/cn/iam/role)
+[服务角色](https://docs.jdcloud.com/cn/iam/role-overview)
 
 [镜像导出OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)
 
