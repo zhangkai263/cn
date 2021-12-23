@@ -6,7 +6,11 @@
   - name: 查看账号信息
     href: Check-JDCloud-Account.md
   - name: 账号注销
-    href: Account-Revocation.md
+    items:
+    - name: 账户注销
+      href: Account-Revocation.md
+    - name: 账户注销须知
+      href: Account-Revocation-Notice.md
   - name: AccessKey 管理
     href: AccessKey-Management.md
   - name: 安全设置
