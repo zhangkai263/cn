@@ -1,4 +1,4 @@
-  name: 分析型云数据库 JCHDB
+  name: 分析型云数据库 ClickHouse
   href: 
   items:
   - name: 产品简介
@@ -45,9 +45,9 @@
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 变更配置
-            href: Operation-Guide/Instance/Update-Version.md 
-          - name: 实例版本升级
             href: Operation-Guide/Instance/Update-Instance.md
+          - name: 实例版本升级
+            href: Operation-Guide/Instance/Update-Version.md 
             
       - name: 账号管理
         items:
