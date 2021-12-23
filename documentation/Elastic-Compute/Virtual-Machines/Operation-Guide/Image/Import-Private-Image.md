@@ -9,7 +9,7 @@
 
 > 特殊说明：<br>
 > * 导入镜像在使用方式上与通过“制作镜像”创建的私有镜像无异，但某些功能（诸如设置密码密钥、主机监控等）由于依赖镜像中的官方组件，因此建议您在导入后手动进行安装。关于官方组件的介绍请参见 [官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)；<br>
-> * 若导入镜像需支持网卡都队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能；<br>
+> * 若导入镜像需支持网卡多队列，还请查阅[网卡多队列](../Network/Configurate-ENI-Multi-Queue.md)确认镜像操作系统和版本是否支持，并正确配置，导入镜像成功后须 [提交工单](https://ticket.jdcloud.com/applyorder/submit)申请使用网卡多队列功能；<br>
 > * 导入成功后，如需配置京东云内网yum源或ntp服务，可参考 [Linux系统配置yum源和ntpd服务](https://docs.jdcloud.com/cn/virtual-machines/linux-yum-ntpd)。
 
 ## 镜像基本要求<br>
