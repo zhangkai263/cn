@@ -24,25 +24,25 @@ items:
         href: Pricing/Billing-Rules.md
 
   - name: 操作指南
-      items:
-          - name: 逻辑库管理
-            items:
-              - name: 创建逻辑库
-                href: Operation-Guide/Keyspace/Create-Keyspace.md
-              - name: 查看逻辑库
-                href: Operation-Guide/Keyspace/View-Keyspace.md
-              - name: 连接逻辑库
-                href: Operation-Guide/Keyspace/Connect-Keyspace.md
+    items:
+      - name: 逻辑库管理
+        items:
+          - name: 创建逻辑库
+            href: Operation-Guide/Keyspace/Create-Keyspace.md
+          - name: 查看逻辑库
+            href: Operation-Guide/Keyspace/View-Keyspace.md
+          - name: 连接逻辑库
+            href: Operation-Guide/Keyspace/Connect-Keyspace.md
 
-            - name: 账号管理
-              items:
-                - name: 账号列表
-                  href: Operation-Guide/Account/Account-List.md
+      - name: 账号管理
+        items:
+          - name: 账号列表
+            href: Operation-Guide/Account/Account-List.md
 
-            - name: 实例管理
-              items:
-                - name: 实例管理
-                  href: Operation-Guide/Instance/Instance-Management.md
+      - name: 实例管理
+        items:
+          - name: 实例管理
+            href: Operation-Guide/Instance/Instance-Management.md
 
   - name: 常见问题
     items:
