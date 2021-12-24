@@ -8,24 +8,24 @@
 读取当前配置并显示，仅能修改数据库账号和密码，其他配置不允许修改。
 保存后，后端对配置进行检查。
 
-![](../../DBS/Image/Operation-Guide/edit-del-backup-schedule1.png)
+![](../../image/DBS/edit-del-backup-schedule1.png)
  
 ## 调整备份策略
 点击 备份策略 后的  调整备份策略，弹出弹窗修改备份策略。
 读取当前配置并显示，备份类型不能修改，因此调整为仅展示当前的备份类型。
 如果用户调整了备份保留时长（全量 or 增量）且新的备份保留时长小于原先的时长，给出提示红色信息：您调小了备份保存时长，超出该时长的备份将被删除，请注意！
 
-![](../../DBS/Image/Operation-Guide/edit-del-backup-schedule2.png)
+![](../../image/DBS/edit-del-backup-schedule2.png)
  
 ## 配置备份对象
 点击 数据源 后的 配置备份对象 ，弹出弹窗修改备份策略，弹窗样式与 初始化备份计划 中 备份对象 相同；
 上述操作中，打开窗口时，调用接口读取配置数据。 如无配置数据（例如未初始化），则采用默认值；反之显示当前配置值。
 处理逻辑与 初始化备份计划 中 相同。
 
-![](../../DBS/Image/Operation-Guide/edit-del-backup-schedule3.png)
+![](../../image/DBS/edit-del-backup-schedule3.png)
 
 # 删除备份计划
 用户输入备份ID后，删除。
  
-![](../../DBS/Image/Operation-Guide/edit-del-backup-schedule4.png)
+![](../../image/DBS/edit-del-backup-schedule4.png)
  
