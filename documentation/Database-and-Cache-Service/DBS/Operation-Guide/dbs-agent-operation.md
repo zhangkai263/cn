@@ -59,7 +59,7 @@ chmod 755 xtrabackup
 #### 安装后的目录结构
 * 目录结构
 
-![](../../DBS/Image/Operation-Guide/dbs-agent-operation1.png)
+![](../../image/DBS/dbs-agent-operation1.png)
 
 #### dbs-agent.yml 配置样例
 
