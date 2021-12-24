@@ -123,7 +123,7 @@ items:
   - name: 专线服务条款
     href: Direct-Connection-Terms-Of-Service.md
   - name: 专线服务等级协议（SLA）
-    href: Direct-Connection-Level-Agreements-SLA.md    
+    href: Direct-Connect-SLA.md    
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
   - name: API中心用户服务协议
