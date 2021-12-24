@@ -1,15 +1,37 @@
-  name: 数据库备份 DBS
-  href: 
-  items:
-  - name: 产品简介 
+name: 数据库管理DBS
+href:
+items:
+  - name: 产品简介
     items:
-      - name: 产品概述 
+      - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: 基础架构 
-        href: Introduction/Basic-Infrastructure.md
-      - name: 产品优势 
+      - name: 产品优势
         href: Introduction/Benefits.md
-      - name: 产品功能 
+      - name: 产品功能
         href: Introduction/Features.md
-      - name: 应用场景  
+      - name: 应用场景
         href: Introduction/Application-Scenarios.md
+  - name: 产品定价
+    href: Pricing/product-price.md
+  - name: 操作指南
+    items:
+      - name: DBS Agent操作说明
+        href: Operation-Guide/dbs-agent-operation.md
+      - name: 备份计划管理
+        items:
+          - name: 创建备份计划
+            href: Operation-Guide/create-backup-schedule.md
+          - name: 初始化备份计划
+            href: Operation-Guide/init-backup-schedule.md
+          - name: 查看备份计划（列表和详情）
+            href: Operation-Guide/check-backup-schedule.md
+          - name: 修改、删除备份计划
+            href: Operation-Guide/edit-del-backup-schedule.md
+      - name: 备份管理
+        href: Operation-Guide/check-manual-backup.md
+      - name: 数据恢复
+        items:
+          - name: 物理备份恢复
+            href: Operation-Guide/physical-recovery.md
+          - name: 逻辑备份恢复
+            href: Operation-Guide/logical-recovery.md
