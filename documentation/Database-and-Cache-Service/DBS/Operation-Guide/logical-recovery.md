@@ -5,10 +5,10 @@
 
 点击恢复后，跳出以下弹窗，可以将备份恢复到指定的主机。
  
-![](../../DBS/Image/Operation-Guide/logical-recovery1.png)
+![](../../image/DBS/logical-recovery1.png)
 
-![](../../DBS/Image/Operation-Guide/logical-recovery2.png) 
+![](../../image/DBS/logical-recovery2.png) 
  
 逻辑恢复列表：
  
-![](../../DBS/Image/Operation-Guide/logical-recovery3.png) 
+![](../../image/DBS/logical-recovery3.png) 
