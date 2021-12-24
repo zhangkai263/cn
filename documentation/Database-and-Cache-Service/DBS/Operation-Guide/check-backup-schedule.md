@@ -28,8 +28,8 @@
 
 逻辑备份计划详情如下图：
 
-![](../../DBS/Image/Operation-Guide/check-backup-schedule1.png) 
+![](../../DBS/image/Operation-Guide/check-backup-schedule1.png) 
  
 物理备份计划详情如下图：
 
-![](../../DBS/Image/Operation-Guide/check-backup-schedule2.png)  
+![](../../DBS/image/Operation-Guide/check-backup-schedule2.png)  
