@@ -10,10 +10,10 @@
 
 用户可以选择是使用已有端口和账号或者用户选择新建端口或账号。
 
-![](../../DBS/Image/Operation-Guide/physical-recovery1.png)
+![](../../image/DBS/physical-recovery1.png)
 
-![](../../DBS/Image/Operation-Guide/physical-recovery2.png) 
+![](../../image/DBS/physical-recovery2.png) 
 
 物理恢复列表如下：
  
-![](../../DBS/Image/Operation-Guide/physical-recovery3.png) 
+![](../../image/DBS/physical-recovery3.png) 
