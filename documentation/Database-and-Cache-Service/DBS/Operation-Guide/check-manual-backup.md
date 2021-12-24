@@ -10,6 +10,6 @@
 
 对应物理备份或者逻辑备份tab页，用户可以手动创建对应物理备份或者逻辑备份。
  
-![](../../DBS/Image/Operation-Guide/check-manual-backup1.png)
+![](../../image/DBS/check-manual-backup1.png)
 
-![](../../DBS/Image/Operation-Guide/check-manual-backup2.png)
+![](../../image/DBS/check-manual-backup2.png)
