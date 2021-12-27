@@ -8,6 +8,8 @@
 
 ### DBS Agent下载地址
 
+https://jddb-common-public.s3.cn-north-1.jdcloud-oss.com/dbsv2/dbs-agent.zip
+
 #### 安装前准备工作
 
 * 修改mysql配置文件
@@ -61,56 +63,24 @@ chmod 755 xtrabackup
 
 ![](../../image/DBS/dbs-agent-operation1.png)
 
-#### dbs-agent.yml 配置样例
+#### dbs-agent.yml 配置说明
 
 ```
-StandaloneMode: true
 UseHttps: false
-ManagerAddr: "127.0.0.1:9090"
-InstallPath: "/opt/dbs"
-RuntimePath: "/tmp/dbs"
+Region: "cn-north-1" // agent 所在的 region
+ManagerAddr: "10.226.148.63:8000" // agent 所在的 region 的网关地址
+AccessKey: "DD1B0BFA7BAA5DAED057ACF4817AF55B" // 访问网关的 ak
+SecretKey: "6FC47989E4F4B1F489004F12FFFD89DE" // 访问网关的 sk
+InstallPath: "/opt/dbs" // agent 的安装目录，建议用该默认值
+RuntimePath: "/tmp/dbs" // agent 的运行目录，建议用该默认值
 Storage:
   Type: "S3"
   S3:
-    Endpoint: "s3.cn-east-2.jdcloud-oss.com"
-    Region: "cn-east-2"
-    Bucket: "dbs-xsf"
-    AccessKey: ""
-    SecretKey: ""
-  LocalDir:
-    Dir: "/tmp/mysqlbackup"
-    Owner: "xiaoshengfeng"
-BackupPlan:
-  - BackupType: "Logical"
-    Databases:
-      - "mysql"
-    Tables:
-      - "time_zone"
-      - "db"
-    UseBinlog: true
-    Schedule:
-      Period: "weekly"
-      Days: "1,2,3,4,5,6,0"
-      StartTime: "21:43:00"
-    DataSource:
-      Type: "mysql5"
-      CnfPath: "/etc/my.cnf"
-      Port: 3306
-      Account: "root"
-      Pwd: ""
- 
-  - BackupType: "Physical"
-    UseBinlog: true
-    Schedule:
-      Period: "weekly"
-      Days: "1,2,3,4,5,6,0"
-      StartTime: "21:43:00"
-    DataSource:
-      Type: "mysql5"
-      CnfPath: "/etc/my.cnf"
-      Port: 3306
-      Account: "root"
-      Pwd: ""
+    Endpoint: "s3-internal.cn-east-1.jdcloud-oss.com" // 对象存储的地址
+    Region: "cn-east-1" // 对象存储的region 
+    Bucket: "dbs-bucket" // 对象存储的 bucket
+    AccessKey: "4C93C07FF84687DFCE494434CEF032AA" // 对象存储的 ak
+    SecretKey: "39F845FD940AFB330AC3DF2717380C56" // 对象存储的 sk
   
 ```
 
