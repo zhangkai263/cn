@@ -37,7 +37,7 @@ select clienthost,count(1) where query_time > 1 group by clienthost
 在mysql的慢日志中，按照秒的粒度汇总统计query_time大于1s的发生次数，时间格式为“xxxx年-xx月-xx日 xx时:xx分:xx秒”。
 
 ```sql
-select date_format(date_trunc('second', timestamp), 'YYYY-MM-dd HH:mm:ss') as time, count(1) where query_time > 1 group by date_format(date_trunc('second', timestamp), 'YYY-MM-dd HH:mm:ss')
+select date_format(date_trunc('second', time), 'YYYY-MM-dd HH:mm:ss'), count(1) where query_time > 1 group by date_format(date_trunc('second', time), 'YYY-MM-dd HH:mm:ss')
 ```
 
 展示结果如下，在选定的时间内，2021-12-25 10:01:23超过1秒的次数有5次，2021-12-25 10:01:24超过1秒的次数有7次。
@@ -94,50 +94,10 @@ select date_format(date_trunc('second', timestamp), 'YYYY-MM-dd HH:mm:ss') as ti
 9. 支持date_trunc()指定时间粒度，支持的时间粒度包括second, minute, hour, day。
 
    ```sql
-   select count(1), date_trunc('hour', timestamp) as time group by date_trunc('hour', timestamp)
+   select count(1), date_trunc('hour', time) group by date_trunc('hour', time)
    ```
 
-10. 支持date_format()格式化时间。
-
-    语法格式为：
-
-    ```sql
-    date_format(datetime_exp, string_exp)
-    ```
-
-    例如将日期按照“xxxx年-xx月-xx日 xx时:xx分:xx秒”的格式进行格式化的示例如下：
-
-    ```sql
-    select count(1), date_format(date_trunc('hour', timestamp), 'YYYY-MM-dd HH:mm') as time group by date_format(date_trunc('hour', timestamp), 'YYYY-MM-dd HH:mm')
-    ```
-
-    支持的解析占位符列表如下：
-
-    | 输入   | 例子             | 详情                                 |
-    | ------ | ---------------- | ------------------------------------ |
-    | `YY`   | 21               | 两位数年份                           |
-    | `YYYY` | 2021             | 四位数年份                           |
-    | `M`    | 1-12             | 月份，无前导零                       |
-    | `MM`   | 01-12            | 月份，两位数，有前导零               |
-    | `MMM`  | Jan-Dec          | 缩写的英文月份名称                   |
-    | `MMMM` | January-December | 完整的英文月份名称                   |
-    | `d`    | 1-31             | 日期，月份里的一天，无前导零         |
-    | `dd`   | 01-31            | 日期，月份里的一天，两位数，有前导零 |
-    | `H`    | 0-23             | 小时，24小时制，无前导零             |
-    | `HH`   | 00-23            | 小时，24小时制，两位数，有前导零     |
-    | `h`    | 1-12             | 小时，12小时制，无前导零             |
-    | `hh`   | 01-12            | 小时，12小时制，两位数，有前导零     |
-    | `m`    | 0-59             | 分钟，无前导零                       |
-    | `mm`   | 00-59            | 分钟，两位数，有前导零               |
-    | `s`    | 0-59             | 秒，无前导零                         |
-    | `ss`   | 00-59            | 秒，两位数，有前导零                 |
-    | `S`    | 0-9              | 毫秒，一位数                         |
-    | `SS`   | 00-99            | 毫秒，两位数                         |
-    | `SSS`  | 000-999          | 毫秒，三位数                         |
-    | `A`    | AM PM            | 上午，下午，大写                     |
-    | `a`    | am pm            | 上午，下午，小写                     |
-
-11. 需要补充说明的是，在自动生成的语句中每个字段都会用反引号`` ,这是防止查询语句中的某些字段是SQL的关键字。用户在手动数据字段时候，需注意适当加上反引号。
+10. 需要补充说明的是，在自动生成的语句中每个字段都会用反引号`` ,这是防止查询语句中的某些字段是SQL的关键字。用户在手动数据字段时候，需注意适当加上反引号。
 
 12. 各个数据类型支持的操作符说明如下：
 
