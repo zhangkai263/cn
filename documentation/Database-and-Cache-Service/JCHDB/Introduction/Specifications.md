@@ -1,5 +1,5 @@
-# JCHDB 支持的实例规格
-JCHDB分为计算节点和ZooKeeper节点，相同规格的计算节点和ZooKeeper节点，规格代码相同。
+# 分析型云数据库ClickHouse支持的实例规格
+ClickHouse分为计算节点和ZooKeeper节点，相同规格的计算节点和ZooKeeper节点，规格代码相同。
 - 计算节点使用3副本的云盘作为存储空间
 - ZooKeeper节点不存储用户数据，无存储空间
 
