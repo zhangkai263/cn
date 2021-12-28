@@ -67,23 +67,43 @@ chmod 755 xtrabackup
 #### dbs-agent.yml 配置说明
 
 ```
+StandaloneMode: false
 UseHttps: false
-Region: "cn-north-1" // agent 所在的 region
-ManagerAddr: "10.226.148.63:8000" // agent 所在的 region 的网关地址
-AccessKey: "DD1B0BFA7BAA5DAED057ACF4817AF55B" // 访问网关的 ak
-SecretKey: "6FC47989E4F4B1F489004F12FFFD89DE" // 访问网关的 sk
-InstallPath: "/opt/dbs" // agent 的安装目录，建议用该默认值
-RuntimePath: "/tmp/dbs" // agent 的运行目录，建议用该默认值
+Region: "cn-north-1"
+ManagerAddr: ""
+AccessKey: ""
+SecretKey: ""
+InstallPath: "/opt/dbs"
+RuntimePath: "/tmp/dbs"
 Storage:
   Type: "S3"
   S3:
-    Endpoint: "s3-internal.cn-east-1.jdcloud-oss.com" // 对象存储的地址
-    Region: "cn-east-1" // 对象存储的region 
-    Bucket: "dbs-bucket" // 对象存储的 bucket
-    AccessKey: "4C93C07FF84687DFCE494434CEF032AA" // 对象存储的 ak
-    SecretKey: "39F845FD940AFB330AC3DF2717380C56" // 对象存储的 sk
+    Endpoint: ""
+    Region: ""
+    Bucket: ""
+    AccessKey: ""
+    SecretKey: ""
   
 ```
+
+| agent配置项	 | 说明	            |
+| -------------- | ---------------     |
+| StandaloneMode | 是否开启脱机模式。| 
+| UseHttps       | 是否开启 https。 |
+| Region         | agent 所在的 region。|
+| ManagerAddr    | agent 所在的 region 的网关地址。| 
+| AccessKey      | 访问网关的 ak。 |
+| SecretKey      | 访问网关的 sk。|
+| InstallPath    | agent 的安装目录，建议用该默认值。| 
+| RuntimePath    | agent 的运行目录，建议用该默认值。 |
+
+| Storage配置项  | 说明	            |
+| -------------- | ---------------  |
+| Endpoint       | 对象存储的地址。|
+| Region         | 对象存储的region 。| 
+| Bucket         | 对象存储的 bucket。 |
+| AccessKey      | 对象存储的 ak。|
+| SecretKey      | 对象存储的 sk。|
 
 ##### 修改备份策略查看备份结果
 
