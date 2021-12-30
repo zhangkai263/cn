@@ -7,7 +7,7 @@
 | HTTP状态码 | 错误状态码              | message                                             | 描述            | 建议                    |
 | ---------- | ----------------------- | --------------------------------------------------- | --------------- | ----------------------- |
 | **400**    | INVALID_ARGUMENT        | Invalid request parameters：[ error parameter name] | 参数校验失败    | 建议检查提示错误的参数  |
-| **400**    | ACK_FAILED              | ACK_FAILED                                          | ack失败         |                         |
+| **400**    | ACK_FAILED              | ACK_FAILED                                          | ack失败         | 建议检查是否超过订阅关系设定的超时时间|
 | **400**    | TOPIC_NOT_EXIST         | TOPIC_NOT_EXIST                                     | topic不存在     | 建议检查topic是否存在   |
 | **400**    | INVALID_ARGUMENT        | INVALID_ARGUMENT                                    | 参数无效        | 建议检查参数            |
 | **400**    | SUSPEND_CAUSE_DEAD_LETTER         | SUSPEND_CAUSE_DEAD_LETTER            | 死信队列超出导致暂停消费        | 清空或重放死信队列     |
