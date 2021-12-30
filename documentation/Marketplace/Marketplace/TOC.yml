@@ -70,6 +70,8 @@ items:
           herf: Service-Related/Messaging-Service/Sign-Rule.md
         - name: 模板审核规则
           herf: Service-Related/Messaging-Service/Templet-Rule.md
+      - name: FAQ
+        herf: Service-Related/FAQ.md
   - name: 联系我们
     items:
       - name: 联系我们
