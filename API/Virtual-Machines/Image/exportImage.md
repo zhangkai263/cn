@@ -48,7 +48,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:exportImage
 ### <div id="Result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**exportTaskId**|Integer| |导出任务id。|
+|**exportTaskId**|String| |导出任务id。|
 
 
 ## 请求示例
