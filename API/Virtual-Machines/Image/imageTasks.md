@@ -27,7 +27,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 |名称|类型|是否必选|示例值|描述|
 |---|---|---|---|---|
 |**taskAction**|String|是|ImportImage|任务操作类型。<br>可选值：`ImportImage`：镜像导入、`ExportImage`：镜像导出。|
-|**taskIds**|Integer[]|否|\[101,102]|任务id列表。|
+|**taskIds**|String[]|否|\["101","102"]|任务id列表。|
 |**taskStatus**|String|否|finished|任务状态。可选值：`pending、running、failed、finished`。|
 |**startTime**|String|否|2020-07-02 17:34:44|任务开始时间。|
 |**endTime**|String|否|2020-07-02 17:35:00|任务结束时间。|
@@ -50,7 +50,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/imageTasks
 ### <div id="user-content-taskinfo">TaskInfo</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**taskId**|Integer| 794|任务ID。|
+|**taskId**|String| 7094|任务ID。|
 |**action**|String|ImportImage|任务操作类型。可能值：`ImportImage、ExportImage`。|
 |**taskStatus**|String|finished|任务状态。可能值：`pending、running、failed、finished`。|
 |**progress**|Integer|50|任务进度，仅显示数值，单位为百分比。|
@@ -81,7 +81,7 @@ GET
                 "finishedTime": "2021-07-02 17:42:05", 
                 "message": "", 
                 "progress": 100, 
-                "taskId": 794, 
+                "taskId": "7094", 
                 "taskStatus": "finished"
             }, 
             {
@@ -91,7 +91,7 @@ GET
                 "finishedTime": "2020-11-30 22:12:35", 
                 "message": "", 
                 "progress": 100, 
-                "taskId": 709, 
+                "taskId": "709", 
                 "taskStatus": "finished"
             }
         ], 
