@@ -70,7 +70,7 @@ POST
 {
     "requestId": "24237da676d9e815f78a476ff8269ab0", 
     "result": {
-        "exportTaskId": "8023"
+        "taskId": "8023"
     }
 }
 ```
