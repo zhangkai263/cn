@@ -76,7 +76,7 @@ POST
 ```
 {
     "imageId": "img-m5s0****29", 
-    "importTaskId": "0589"
+    "taskId": "0589"
 }
 ```
 
