@@ -48,7 +48,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images:import
 |名称|类型|示例值|描述|
 |---|---|---|---|
 |**imageId**|String| |镜像id。|
-|**importTaskId**|Integer| |导入任务id。|
+|**taskId**|String| |导入任务id。|
 
 
 ## 请求示例
@@ -76,7 +76,7 @@ POST
 ```
 {
     "imageId": "img-m5s0****29", 
-    "importTaskId": 541
+    "importTaskId": "0589"
 }
 ```
 
