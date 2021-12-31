@@ -28,13 +28,13 @@ https://captcha.jdcloud-api.com/v1/captcha:getsessionid
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|Result| |
 
-### <div id="Result">Result</div>
+### Result
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SessionDataResp](#sessiondataresp)| |
-### <div id="SessionDataResp">SessionDataResp</div>
+|**data**|SessionDataResp| |
+### SessionDataResp
 |名称|类型|描述|
 |---|---|---|
 |**code**|String|代号, 0000:通过，0001:拒绝，0002:内部错误，0003:补充验证|
