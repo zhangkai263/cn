@@ -57,7 +57,11 @@ items:
   - name: 数据仓库JDW服务等级协议（SLA）
     href: JCS-For-Greenplum-Level-Agreement-SLA.md
   - name: 数据库审计服务条款
-    href: Database-Audit-Terms-Of-Service.md   
+    href: Database-Audit-Terms-Of-Service.md  
+  - name: 数据库备份服务条款
+    href: DBS-Service-Terms.md
+  - name: 数据库备份服务等级协议（SLA）
+    href: DBS-Service-Level-Agreement-SLA.md    
   - name: 云主机安全服务协议
     href: Cloud-Host-Security-Service-Clause.md
   - name: 云主机安全等级协议（SLA）
@@ -476,5 +480,8 @@ items:
     href: JDCloud-Mail.md  
   - name: 京美建站服务条款
     href: JDCloud-Site.md   
-    
+  - name: 实名认证服务条款
+    href: Real-Name-Authentication.md
+  - name: 实名认证服务等级协议（SLA）
+    href: Real-Name-Authentication-SLA.md 
     
