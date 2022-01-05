@@ -48,7 +48,7 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}:exportImage
 ### <div id="Result">Result</div>
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**exportTaskId**|Integer| |导出任务id。|
+|**taskId**|String| |导出任务id。|
 
 
 ## 请求示例
@@ -70,7 +70,7 @@ POST
 {
     "requestId": "24237da676d9e815f78a476ff8269ab0", 
     "result": {
-        "exportTaskId": 823
+        "taskId": "8023"
     }
 }
 ```
