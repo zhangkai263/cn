@@ -48,9 +48,9 @@ items:
     href: JCS-For-TiDB-Terms-Of-Service.md
   - name: 分布式数据库TiDB服务等级协议（SLA）
     href: JCS-For-TiDB-Level-Agreement-SLA.md
-  - name: 分析型云数据库JCHDB服务条款
+  - name: 分析型云数据库ClickHouse服务条款
     href: JCS-For-JCHDB-Terms-Of-Service.md
-  - name: 分析型云数据库JCHDB服务等级协议（SLA）
+  - name: 分析型云数据库ClickHouse服务等级协议（SLA）
     href: JCS-For-JCHDB-Level-Agreement-SLA.md 
   - name: 数据仓库JDW服务条款
     href: JCS-For-Greenplum-Terms-Of-Service.md
