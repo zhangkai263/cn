@@ -62,7 +62,7 @@ redis-cli -h ip -p port -a username:password
 
 3.在"账号管理"页面，可以看到已经配置的账号列表，并执行创建账号、修改权限、修改密码、删除账号、修改备注操作。
 
-![](../../../../../image/Redis/UserManage-1.png)
+![](../../../../image/Redis/UserManage-1.png)
 
 4.使用账号管理功能，需在密码访问模式下才能使用。因此，您需要先关闭“免密访问”。
 
@@ -80,7 +80,7 @@ redis-cli -h ip -p port -a username:password
 
 -  在关闭“免密访问”时设置的密码，为默认账号的密码。
 
-![](../../../../../image/Redis/UserManage-2.png)
+![](../../../../image/Redis/UserManage-2.png)
 
 
 ### 创建账号
@@ -93,28 +93,28 @@ redis-cli -h ip -p port -a username:password
 
 -  创建完账号后如果列表中并未出现，可点击刷新按钮。
 
-![](../../../../../image/Redis/UserManage-3.png)
+![](../../../../image/Redis/UserManage-3-1.png)
 
 
 ### 修改权限
 
 使用修改权限功能时，修改将会对新建连接生效，而存量连接将保留原有策略不变。
 
-![](../../../../../image/Redis/UserManage-4.png)
+![](../../../../image/Redis/UserManage-4-1.png)
 
 
 ### 删除账号
 
 账号删除后，将不能访问当前实例。
 
-![](../../../../../image/Redis/UserManage-5.png)
+![](../../../../image/Redis/UserManage-5-1.png)
 
 
 ### 修改密码
 
 对于用户自定义账号的密码，可在账号管理中直接进行操作修改。
 
-![](../../../../../image/Redis/UserManage-6.png)
+![](../../../../image/Redis/UserManage-6-1.png)
 
 对于默认账号的密码，可在3个入口进行修改：
 
