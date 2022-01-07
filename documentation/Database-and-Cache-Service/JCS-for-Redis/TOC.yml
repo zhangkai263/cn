@@ -54,9 +54,7 @@
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Change-Configuration.md
           - name: 释放实例
-            href: Operation-Guide/Instance-Management/Release-Instance.md
-          - name: 免密和修改密码
-            href: Operation-Guide/Instance-Management/Change-Password.md
+            href: Operation-Guide/Instance-Management/Release-Instance.md          
           - name: 参数修改
             href: Operation-Guide/Instance-Management/Modify-Instancename.md      
           - name: 标签管理
@@ -66,9 +64,7 @@
           - name: 客户端IP列表
             href: Operation-Guide/Instance-Management/ClientIPList.md
           - name: 备份恢复
-            href: Operation-Guide/Backup-And-Recovery.md
-          - name: 白名单设置
-            href: Operation-Guide/Whitelist.md
+            href: Operation-Guide/Backup-And-Recovery.md          
       - name: 连接实例
         items:
           - name: 公网连接Redis实例
@@ -95,6 +91,14 @@
             href: Operation-Guide/Cache-Analysis/Cache-Analysis.md
           - name: 热key大key
             href: Operation-Guide/Cache-Analysis/Key-Analysis.md     
+      - name: 账号与安全
+        items:
+          - name: 免密和修改密码
+            href: Operation-Guide/User-Manage/Change-Password.md
+          - name: 账号管理
+            href: Operation-Guide/User-Manage/UserManage.md
+          - name: 白名单设置
+            href: Operation-Guide/User-Manage/Whitelist.md
       - name: 监控报警
         items:
           - name: 查看监控信息
