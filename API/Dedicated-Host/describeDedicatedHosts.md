@@ -2,8 +2,7 @@
 
 
 ## 描述
-查询专有宿主机列表。<br>
-此接口支持分页查询，默认每页20条。
+查询一台或多台专有宿主机的详细信息。
 
 
 ## 请求方式
@@ -14,21 +13,21 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID|
+|**regionId**|String|是| |地域ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**pageNumber**|Integer|False|1|页码；默认为1|
-|**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[10, 100]|
-|**filters**|[Filter[]](#filter)|False| |dedicatedHostId - 专有宿主机ID，精确匹配，支持多个<br>az - 可用区，精确匹配，支持多个<br>status - 专有宿主机状态，精确匹配，支持多个，<a href="http://docs.jdcloud.com/dedicated-hosts/api/dh_status">参考专有宿主机状态</a><br>name - 专有宿主机名称，模糊匹配，支持单个<br>dedicatedPoolId - 专有宿主机池ID，精确匹配，支持多个<br>dedicatedHostType - 专有宿主机机型，精确匹配，支持多个<br>|
+|**pageNumber**|Integer|否 |1|页码；默认为1|
+|**pageSize**|Integer|否|20|分页大小；默认为20；取值范围[10, 100]|
+|**filters**|[Filter[]](#filter)|否| |dedicatedHostId - 专有宿主机ID，精确匹配，支持多个<br>az - 可用区，精确匹配，支持多个<br>status - 专有宿主机状态，精确匹配，支持多个，<a href="http://docs.jdcloud.com/dedicated-hosts/api/dh_status">参考专有宿主机状态</a><br>name - 专有宿主机名称，模糊匹配，支持单个<br>dedicatedPoolId - 专有宿主机池ID，精确匹配，支持多个<br>dedicatedHostType - 专有宿主机机型，精确匹配，支持多个<br>|
 
 ### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
+|**name**|String|是 | |过滤条件的名称|
+|**operator**|String|否| |过滤条件的操作符，默认eq|
+|**values**|String[]|是 | |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
