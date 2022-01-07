@@ -38,6 +38,20 @@
 | @cluster-compat-enable | 主从版是否兼容cluster语法，集群版没有效果  | yes  |yes/no  | 
 | timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s） | 300  | 0~100000  | 
 
+####     notify-keyspace-events参数说明
+| 字符  |  参数说明  | 
+| :--- | :---  |
+| K  |  键空间通知，所有通知以__keyspace@<db>__为前缀  |
+| E  |  键事件通知，所有通知以__keyevent@<db>__为前缀  |
+| g  |  DEL、EXPIRE、RENAME 等类型无关的通用命令的通知  |
+| $  |  字符串命令的通知  |
+| l  |  列表命令的通知  |
+| s  |  集合命令的通知  |
+| h  |  哈希命令的通知  |
+| z  |  有序集合命令的通知  |
+| x  |  过期事件，每当有过期键被删除时发送  |
+| e  |  驱逐（evict）事件，每当有键因为 maxmemory 策略而被删除时发送  |
+| A  |  参数 g$lshzxe 的别名  |
 
 
 ####    驱逐策略maxmemory-policy参数说明
