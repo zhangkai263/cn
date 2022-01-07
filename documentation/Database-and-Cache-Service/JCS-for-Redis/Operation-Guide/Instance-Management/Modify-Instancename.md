@@ -24,6 +24,20 @@
 |  zset-max-ziplist-entries	|  当zset元素数量不大于指定值时，使用特殊编码（ziplist）来节省存储空间  |	128		  |  0-10000	  |  
 |  zset-max-ziplist-value	|  当元素值得最大长度不大于指定值时，使用特殊编码（ziplist）来节省存储空间  |	64		  |  0-10000	  |  
 |  slowlog-log-slower-than	|  慢日志功能记录命令的最大执行时间，单位：微秒  |	10000		  |  0-10000	  |  
+|  notify-keyspace-events |  定义了服务器将发送哪些类型的通知   |	 		  | [K , E , g , $ , l , s , h , z , x , e , A]字母的组合 |  
+| min-slaves-to-write | 当主节点有效的从节点个数小于这个值时拒绝写入   |  0   | 	0/1  | 
+| min-slaves-max-lag |有效从节点的延时必须小于这个值，单位秒  | 10  | 1-3600  | 
+| @slave-appendonly |  开启从持久化  | no  | yes/no | 
+| appendfsync | aof文件调用fsync强制落盘的策略    | everysec  | no/everysec/always  | 
+| lua-time-limit |  lua脚本的最长执行时间（毫秒）, 当超过这个时间时,可通过执行script kill，设置为0表示没有时间限制  | 5000 | 1000-60000  | 
+| slowlog-max-len | 最多记录最近多少条慢日志。慢日志记录会消耗内存   | 1024 | 128-10000  | 
+| latency-monitor-threshold | 延时监控的采集阀值。为0表示禁用延时监控采集。  | 2  | 0-10000  | 
+| hz | 设置Redis后台任务执行频率，例如清除过期键任务。取值范围为1~500，默认值为10，即每秒执行10次   |100  |10-500  | 
+| client-output-buffer pubsub | 订阅客户端输出缓冲区大小  | 134217728 33554432 60  | \d+\s+\d+\s+\d+   | 
+| @no-auth-ignore | 实例没有密码时，即使客户端发送了错误的密码，也返回OK | no  | yes/no  | 
+| @cluster-compat-enable | 主从版是否兼容cluster语法，集群版没有效果  | yes  |yes/no  | 
+| timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s） | 300  | 0~100000  | 
+
 
 
 ####    驱逐策略maxmemory-policy参数说明
