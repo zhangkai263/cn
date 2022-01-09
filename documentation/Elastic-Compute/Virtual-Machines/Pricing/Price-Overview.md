@@ -27,7 +27,7 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="52">通用</td>
+      <td rowspan="51">通用</td>
       <td rowspan="8">共享</td>
       <td>g.s2.micro</td>
       <td>1</td>
@@ -109,7 +109,7 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="44">标准</td>
+      <td rowspan="43">标准</td>
       <td>g.n4.medium</td>
       <td>1</td>
       <td>4</td>
@@ -407,16 +407,6 @@
       <td>6540.75</td>
       <td>30.277</td>
       <td>22.71</td>
-      <td></td>
-   </tr>
-      <tr> 
-      <td>g.n2.metal</td>
-      <td>80</td>
-      <td>384</td>
-      <td>9690</td>
-      <td>7267.5</td>
-      <td>33.65</td>
-      <td>25.23</td>
       <td></td>
    </tr>
       <tr>
@@ -1680,8 +1670,8 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="24">存储优化</td>
-      <td rowspan="14">IO</td>
+      <td rowspan="22">存储优化</td>
+      <td rowspan="12">IO</td>
       <td>s.i3.2xlarge</td>
       <td>8</td>
       <td>32</td>
@@ -1750,26 +1740,6 @@
       <td>48.77</td>
       <td>36.58</td>
       <td>8*1862GB NVMe SSD</td>
-   </tr> 
-   <tr>
-      <td>s.i3f.metal</td>
-      <td>96</td>
-      <td>384</td>
-      <td>11955.71</td>
-      <td>11955.71</td>
-      <td>24.91</td>
-      <td>24.91</td>
-      <td>1*1862GB NVMe SSD</td>
-   </tr> 
-   <tr>
-      <td>s.i2.metal</td>
-      <td>80</td>
-      <td>384</td>
-      <td>10125.7</td>
-      <td>7594.3</td>
-      <td>35.16</td>
-      <td>26.37</td>
-      <td>1*1862GB NVMe SSD</td>
    </tr> 
    <tr>
       <td>s.i1.xlarge</td>
@@ -2096,6 +2066,53 @@
       <td>6.16</td>
       <td>1*1/2 P40 </td>   
     </tr>  
+   <tr>
+      <td rowspan="4">裸金属</td>
+      <td>通用</td>
+      <td>g.n2.metal</td>
+      <td>80</td>
+      <td>384</td>
+      <td>9690</td>
+      <td>7267.5</td>
+      <td>33.65</td>
+      <td>25.23</td>
+      <td> </td>
+   </tr>   
+   <tr>
+      <td>安全增强内存优化</td>
+      <td>m.n4ft.metal</td>
+      <td>128</td>
+      <td>1024</td>
+      <td>21369.6</td>
+      <td>21369.6</td>
+      <td>11955.71</td>
+      <td>44.52</td>
+      <td>44.52</td> 
+      <td> </td> 
+   </tr> 
+   <tr>
+      <td  rowspan="2">存储优化IO</td>
+      <td>s.i3f.metal</td>
+      <td>96</td>
+      <td>384</td>
+      <td>9690</td>
+      <td>11955.71</td>
+      <td>11955.71</td>
+      <td>24.91</td>
+      <td>24.91</td>
+      <td>1*1862GB NVMe SSD</td>   
+   </tr>    
+   <tr>
+      <td>s.i2.metal</td>
+      <td>80</td>
+      <td>384</td>
+      <td>9690</td>
+      <td>10125.7</td>
+      <td>7594.3</td>
+      <td>35.16</td>
+      <td>26.37</td>
+      <td>1*1862GB NVMe SSD</td>   
+   </tr>    
 </table>
 请注意：
 
