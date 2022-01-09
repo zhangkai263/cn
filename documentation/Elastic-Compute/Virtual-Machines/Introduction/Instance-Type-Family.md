@@ -704,7 +704,8 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 **规格类型特点：**
 
 * 处理器：
-	* 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -720,6 +721,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 实例规格|vCPU（核）|内存（GiB）|本地数据盘（临时存储 GiB）|网卡数|单网卡队列数
 :---|:---|:---|:---|:---|:---
+|s.i3f.metal|96|384|1 x 1862 NVMe SSD|1|4
 |s.i2.metal|80|384|1 x 1862 NVMe SSD|8|4
 
 <div id="user-content-15"></div>
