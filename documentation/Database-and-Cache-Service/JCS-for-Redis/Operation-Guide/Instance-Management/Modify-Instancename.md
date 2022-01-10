@@ -10,7 +10,7 @@
 
 3. 点击修改当前运行值操作后当前运行值列变为可输入，在输入完后点击保存既完成修改。
 
-![](../../../../../image/Redis/Modify-Instancename-1.png)
+![](../../../../../image/Redis/Modify-Instancename-1-1.png)
 
 
 | 参数名称  |  参数说明  | 默认值	  |  参数范围  |  
