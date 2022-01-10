@@ -1,7 +1,7 @@
 # 查看NAT网关计费信息
 NAT网关计费分为NAT网关和NAT网关公网IP两部分，需要分别查询
 
-1. 打开京东智联云主控制台 https://console.jdcloud.com/overview
+1. 打开京东云主控制台 https://console.jdcloud.com/overview
 
 2. 在上方导航菜单中选择**费用-消费记录**
 
