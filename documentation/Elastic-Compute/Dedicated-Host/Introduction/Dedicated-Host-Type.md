@@ -4,8 +4,8 @@
 
 以下为当前京东云在售的专有宿主机规格信息，不同地域可售卖规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
-* [通用型](instance-type-family#user-content-1)
-* [内存型](instance-type-family#user-content-2)
+* [通用型](Dedicated-Host-Type#user-content-1)
+* [内存型](Dedicated-Host-Type#user-content-2)
 
 
 ## 通用型
