@@ -55,16 +55,18 @@
             href: Operation-Guide/Instance-Management/Change-Configuration.md
           - name: 释放实例
             href: Operation-Guide/Instance-Management/Release-Instance.md          
-          - name: 参数修改
-            href: Operation-Guide/Instance-Management/Modify-Instancename.md      
+          - name: 参数配置
+            href: Operation-Guide/Instance-Management/Modify-Instancename.md
+          - name: 命令禁用管理
+            href: Operation-Guide/Instance-Management/CommandDisable.md             
+          - name: 客户端IP列表
+            href: Operation-Guide/Instance-Management/ClientIPList.md
+          - name: 备份恢复
+            href: Operation-Guide/Backup-And-Recovery.md        
           - name: 标签管理
             href: Operation-Guide/Instance-Management/TagManage.md
           - name: 导出实例列表
             href: Operation-Guide/Instance-Management/Export-Instance.md
-          - name: 客户端IP列表
-            href: Operation-Guide/Instance-Management/ClientIPList.md
-          - name: 备份恢复
-            href: Operation-Guide/Backup-And-Recovery.md          
       - name: 连接实例
         items:
           - name: 公网连接Redis实例
