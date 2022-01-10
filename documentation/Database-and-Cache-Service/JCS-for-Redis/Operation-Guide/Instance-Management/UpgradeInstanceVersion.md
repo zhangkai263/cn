@@ -44,7 +44,7 @@
 
 ![](../../../../../image/Redis/UpgradeInstanceVersion-3.png)
 
-3.升级过程中，在列表页将会提供进度条功能参考。
+3.升级过程中，在列表页将会提供进度条参考。
 
 ![](../../../../../image/Redis/UpgradeInstanceVersion-4.png)
 
