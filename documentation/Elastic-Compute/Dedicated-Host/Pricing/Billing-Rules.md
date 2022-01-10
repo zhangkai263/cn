@@ -34,7 +34,7 @@
 * 当您的专有宿主机欠费后，会向您发送资源欠费通知，请您务必注意查看通知并及时充值，以免造成不必要的损失，详细请参考到期&欠费提醒；
 * 从停止服务时刻起您的专有宿主机和专有宿主机上的数据保留7天，7天后会向您发送资源释通知，资源回收后数据无法找回；
 * 当您补缴欠费金额后，资源将自动恢复使用并重新开始计费。若续费后专有宿主机上云主机未恢复成运行状态，请您手动[启动云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)；
-* 如您不想继续使用按配置计费的专有宿主机，请及时[删除专有宿主机](../Operation-Guide/Instance/Delete-Dedicated-Host.md)。
+* 如您不想继续使用按配置计费的专有宿主机，请及时[删除专有宿主机](../Operation-Guide/Delete-Dedicated-Host.md)。
 
 
 ## 功能限制
@@ -56,11 +56,11 @@
 
 [续费](Renew-Process.md)
 
-[启动云主机](../Operation-Guide/Instance/Start-Instance.md)
+[启动云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)
 
-[删除云主机](../Operation-Guide/Instance/Stop-Instance.md)
+[删除云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)
 
-[删除专有宿主机](../Operation-Guide/Instance/Delete-Dedicated-Host.md)
+[删除专有宿主机](../Operation-Guide/Delete-Dedicated-Host.md)
 
 
 
