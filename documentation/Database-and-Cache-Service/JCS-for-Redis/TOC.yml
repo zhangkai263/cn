@@ -62,7 +62,9 @@
           - name: 客户端IP列表
             href: Operation-Guide/Instance-Management/ClientIPList.md
           - name: 备份恢复
-            href: Operation-Guide/Backup-And-Recovery.md        
+            href: Operation-Guide/Backup-And-Recovery.md   
+          - name: AOF持久化
+            href: Operation-Guide/AOFSwitch.md        
           - name: 标签管理
             href: Operation-Guide/Instance-Management/TagManage.md
           - name: 导出实例列表
