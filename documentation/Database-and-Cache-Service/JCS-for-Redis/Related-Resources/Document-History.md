@@ -1,10 +1,11 @@
 # 版本说明
 
-## 2021年Q4
+## 2022年Q1
 
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
 |  开放tiemout参数配置   |  提供开放tiemout参数配置，为0表示不开启   |   2022-01    |   [集群参数配置](../Operation-Guide/Instance-Management/Modify-Instancename.md)    |
+
 
 ## 2021年Q4
 
