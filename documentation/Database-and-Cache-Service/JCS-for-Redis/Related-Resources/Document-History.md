@@ -36,7 +36,7 @@
 |   批量导出实例列表	|   支持全量、按找分页的方式，批量导出实例列表。  |   	2021-05	|  [批量导出实例列表](../Operation-Guide/Instance-Management/Export-Instance.md)   |   
 |   pipeline使用事务	|   代理支持在pipeline中使用事务相关命令。	|   2021-05 |  -    |   
 |   代理性能优化	|   避免在极端情况下代理程序内存使用率高的问题。	|   2021-05  |  -    |    
-|   优化设置实例密码	|   已设置免密码登录的实例，可在集群详情页，修改密码和免密模式。  |   	2021-04	|  [修改密码](../Operation-Guide/Instance-Management/Change-Password.md)   |   
+|   优化设置实例密码	|   已设置免密码登录的实例，可在集群详情页，修改密码和免密模式。  |   	2021-04	|  [修改密码](../Operation-Guide/User-Manage/Change-Password.md)   |   
 |   增加监控指标	|   分类改为：实例监控、代理节点监控、Redis数据节点监控。每类监控下的指标按照CPU、内存、网络、请求、响应进行了分类并进行了指标补充。 	|   2021-04	|   [实例监控](../Operation-Guide/Monitoring/Monitoring.md)    |   
 
 ## 2021年Q1
