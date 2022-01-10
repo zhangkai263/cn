@@ -1,6 +1,6 @@
 # 参数修改
 
-该功能可帮助用户对当前Redis实例的参数进行配置调优。目前，云上参数修改中开放了九个参数供用户修改。
+该功能可帮助用户对当前Redis实例的参数进行配置调优。
 
 ##  操作步骤
 
@@ -29,14 +29,14 @@
 | min-slaves-max-lag |有效从节点的延时必须小于这个值，单位秒  | 10  | 1-3600  | 
 | @slave-appendonly |  开启从持久化  | no  | yes/no | 
 | appendfsync | aof文件调用fsync强制落盘的策略    | everysec  | no/everysec/always  | 
-| lua-time-limit |  lua脚本的最长执行时间（毫秒）, 当超过这个时间时,可通过执行script kill，设置为0表示没有时间限制  | 5000 | 1000-60000  | 
+| lua-time-limit |  lua脚本的最长执行时间（毫秒）, 当超过这个时间时,可通过执行script kill杀死正在执行的Lua脚本，设置为0表示没有时间限制  | 5000 | 1000-60000  | 
 | slowlog-max-len | 最多记录最近多少条慢日志。慢日志记录会消耗内存   | 1024 | 128-10000  | 
-| latency-monitor-threshold | 延时监控的采集阀值。为0表示禁用延时监控采集。  | 2  | 0-10000  | 
-| hz | 设置Redis后台任务执行频率，例如清除过期键任务。取值范围为1~500，默认值为10，即每秒执行10次   |100  |10-500  | 
+| latency-monitor-threshold | 延时监控的采集阀值。为0表示禁用延时监控采集  | 2  | 0-10000  | 
+| hz | 设置Redis后台任务执行频率，例如清除过期键任务。取值范围为1~500，默认值为100，即每秒执行100次   |100  |10-500  | 
 | client-output-buffer pubsub | 订阅客户端输出缓冲区大小  | 134217728 33554432 60  | \d+\s+\d+\s+\d+   | 
-| @no-auth-ignore | 实例没有密码时，即使客户端发送了错误的密码，也返回OK | no  | yes/no  | 
+| @no-auth-ignore |  实例没有密码时，即使客户端发送了密码，也返回OK | no  | yes/no  | 
 | @cluster-compat-enable | 主从版是否兼容cluster语法，集群版没有效果  | yes  |yes/no  | 
-| timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s） | 300  | 0~100000  | 
+| timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s），为0表示不开启 | 300  | 0~100000  | 
 
 ####     notify-keyspace-events参数说明
 | 字符  |  参数说明  | 
