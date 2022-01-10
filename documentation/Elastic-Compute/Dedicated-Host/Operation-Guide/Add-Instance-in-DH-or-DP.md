@@ -32,10 +32,10 @@
 8. 完成以上配置后，点击**立即购买**，对于按配置计费实例则将直接触发创建。实例从创建到可用将有几分钟时间，还请耐心等待。
 
 
-更详细的云主机创建步骤介绍请参考[创建云主机](../../Virtual-Machine/Operation-Guide/Instance/Create-Instance.md)
+更详细的云主机创建步骤介绍请参考[创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
 
 
 
 ## 相关参考
 
-[创建云主机](../../Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
+[创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)
