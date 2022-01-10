@@ -11,6 +11,7 @@
 * 高频计算型：[高频计算通用型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
+* 裸金属：[标准型](instance-type-family#user-content-13)、[存储优化IO型](instance-type-family#user-content-14)、[安全增强内存优化型](instance-type-family#user-content-15)
 
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个处理器的超线程核，其vCPU与内存比为1:4。
@@ -129,9 +130,6 @@
 |g.n2.8xlarge|32|128|8|4
 |g.n2.16xlarge|64|256|8|4
 |g.n2.18xlarge|72|288|8|4
-|g.n2.metal|80|384|8|8|60
-
-> **关于裸金属云主机g.n2.metal更详细说明请查阅 [裸金属云主机概述](../Operation-Guide/Instance/Bare-Metal/Bare-Metal-Overview.md)**
 
 <div id="user-content-13"></div>
 
@@ -373,6 +371,7 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |m.n3.4xlarge|16|128|8|4
 |m.n3.6xlarge|24|192|8|4
 |m.n3.8xlarge|32|256|8|4
+|m.n3.16xlarge|64|512|8|4
 
 第二代
 
@@ -423,8 +422,8 @@ g.n1.8xlarge|32|128|8|4 |	 |
     * 通用型SSD云盘
     * 性能型SSD云盘
     * 容量型HDD云盘
-* 镜像使用限制：
-    * 仅支持云盘系统盘镜像
+* 系统盘使用限制：
+    * 仅支持云硬盘系统盘
 * 适用场景：
     * 微服务、轻负载应用
     * 代码库、Web服务、开发测试环境
@@ -533,11 +532,6 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|8|4
 |s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|8|4
 
-第二代：
-
-实例规格|vCPU（核）|内存（GiB）|本地数据盘（临时存储 GiB）|网卡数|单网卡队列数
-:---|:---|:---|:---|:---|:---
-|s.i2.metal|80|384|1 x 1862 NVMe SSD|60
 
 第一代：
 
@@ -675,6 +669,87 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 |p.q1p40g.xlarge|4|14|1 x 1/4 Nvidia Tesla P40|6|4|4
 |p.q1p40g.3large|6|28|1 x 1/2 Nvidia Tesla P40|12|4|4
 
+## 裸金属
+
+裸金属是基于京东云新一代自研硬件卸载虚拟化技术架构所提供的实例规格，同时兼顾物理机性能及虚拟机灵活性，无额外虚拟化损耗，支持嵌套虚拟化。[裸金属实例介绍](https://docs.jdcloud.com/cn/virtual-machines/bare-metal-overview)。
+
+<div id="user-content-13"></div>
+
+### 通用型
+**规格类型特点：**
+
+* 处理器：
+	* 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 系统盘使用限制：
+	* 仅支持云硬盘系统盘
+* 适用场景：
+	* 各种类型和规模的企业级应用
+	* 中大型数据库系统、缓存、搜索集群
+	* 高性能科学及工程应用
+	* 高网络包收发场景，如视频、直播、游戏等
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+|:---|:---|:---|:---|:---
+|g.n2.metal|80|384|8|8
+
+<div id="user-content-14"></div>
+
+### 存储优化IO型
+**规格类型特点：**
+
+* 处理器：
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 系统盘使用限制：
+	* 仅支持云硬盘系统盘
+* 适用场景：
+	* NoSQL数据库（如：MongoDB等）
+	* OLTP、高性能关系型数据库
+	* Elasticsearch等低时延I/O密集型应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|本地数据盘（临时存储 GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---|:---
+|s.i3f.metal|96|384|1 x 1862 NVMe SSD|1|4
+|s.i2.metal|80|384|1 x 1862 NVMe SSD|8|4
+
+<div id="user-content-15"></div>
+
+### 安全增强内存优化型
+**规格类型特点：**
+
+* 基于京东云最新一代虚拟化架构-京刚，将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能。
+* 支持Intel® SGX加密计算，保障关键代码和数据的机密性与完整性。
+* 处理器：
+	* 2.6 GHz主频的Intel Xeon Gold（Icelake）处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 系统盘使用限制：
+	* 仅支持云硬盘系统盘
+* 适用场景：
+	* 各种类型和规模的企业级应用
+	* 机密计算、数据加密、区块链场景
+	* 高安全可信要求场景，如：金融、政府等
+	* 多方计算中共享机密数据
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|含机密内存（GiB）|网卡数|单网卡队列数
+|:---|:---|:---|:---|:---|:---
+|m.n4ft.metal|128|1024|512|16|32
 
 请注意：
 
