@@ -4,7 +4,7 @@
 ## 描述
 查询一台或多台专有宿主机的详细信息。
 
-### 接口说明
+## 接口说明
 - 使用 `filters` 过滤器进行条件筛选，每个 `filter` 之间的关系为逻辑与（AND）的关系。
 - 单次查询最大可查询100条专有宿主机实例数据。
 - 尽量一次调用接口查询多条数据，不建议使用该批量查询接口一次查询一条数据，如果使用不当导致查询过于密集，可能导致网关触发限流。
@@ -84,14 +84,14 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 |**localDiskType**|String|专有宿主机本地盘类型|
 |**instanceCount**|Integer|专有宿主机上的云主机个数|
 
-### 请求示例
+## 请求示例
 GET
 
 ```
 /v1/regions/cn-north-1/dedicatedHosts
 ```
 
-### 返回示例
+## 返回示例
 ```
 {
     "requestId": "9d832c955a6ed94884bba7bec1505d3c",
