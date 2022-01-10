@@ -21,7 +21,7 @@
 
 2、HTTPS-->HTTP表示：客户端协议是HTTPS，则到CDN节点的请求协议为HTTP；
 
-3、HTTP-->HTTPS表示：客户端协议是HTTP，则到CDN节点的请求协议为HTTP
+3、HTTP-->HTTPS表示：客户端协议是HTTP，则到CDN节点的请求协议为HTTPS。
 
  
 
