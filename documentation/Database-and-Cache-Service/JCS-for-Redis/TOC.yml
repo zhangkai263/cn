@@ -64,9 +64,9 @@
           - name: 备份恢复
             href: Operation-Guide/Backup-And-Recovery.md   
           - name: AOF持久化
-            href: Operation-Guide/AOFSwitch.md   
+            href: Operation-Guide/Instance-Management/AOFSwitch.md   
           - name: 升级实例版本
-            href: Operation-Guide/UpgradeInstanceVersion
+            href: Operation-Guide/Instance-Management/UpgradeInstanceVersion.md
           - name: 标签管理
             href: Operation-Guide/Instance-Management/TagManage.md
           - name: 导出实例列表
