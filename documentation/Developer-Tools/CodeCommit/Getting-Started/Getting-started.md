@@ -8,6 +8,3 @@
 
 3、跳转到代码托管页，点击右上角的登录按钮，使用京东云账户进行登录
 
-![1.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/signin.png)
-
-
